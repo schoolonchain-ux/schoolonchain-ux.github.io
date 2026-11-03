@@ -1,0 +1,72 @@
+{
+ "entradas": [
+  {
+   "cadena": "Arbitrum",
+   "token": "ETH",
+   "cantidad": 3478.4,
+   "de": "0xf92402bb795fd7cd08fb83839689db79099c8c9c",
+   "hora": 1793305936000,
+   "tx": "0xc45dd9f98fa7e08440d591045d91bab4e421281af4b003f6e5071a668a10ae15"
+  },
+  {
+   "cadena": "Arbitrum",
+   "token": "ETH",
+   "cantidad": 2959.2,
+   "de": "0x1b5b4e441f5a22bfd91b7772c780463f66a74b35",
+   "hora": 1793305967000,
+   "tx": "0x31a4acf9fbf07f497a4d328038ec7ff19b16822464e630c6612161571b07bcab"
+  },
+  {
+   "cadena": "Arbitrum",
+   "token": "ETH",
+   "cantidad": 1988.6,
+   "de": "0x3931dab967c3e2dbb492fe12460a66d0fe4cc857",
+   "hora": 1793306033000,
+   "tx": "0xd3be30c8352918194c275e74ebb72033ca912a450b211420a4448d006bd14055"
+  },
+  {
+   "cadena": "Arbitrum",
+   "token": "ARB",
+   "contrato": "0x912ce59144191c1204e64559fe8253a0e49e6548",
+   "cantidad": 74559805.2,
+   "de": "0xb38e8c17e38363af6ebdcb3dae12e0243582891d",
+   "hora": 1793305834000,
+   "tx": "0xa18e57027dae90de066ac093bbb4ae3d63598accbe5175cdf4195c686462edff"
+  },
+  {
+   "cadena": "Polygon",
+   "token": "ETH",
+   "cantidad": 46626589.6,
+   "de": "0xe7804c37c13166ff0b37f5ae0bb07a3aebb6e245",
+   "hora": 1793315155000,
+   "tx": "0x27f8969e8c3ba27eb5cab9e139805b3618d8f4811d8686d1518e20f6e9ee38c8"
+  },
+  {
+   "cadena": "Polygon",
+   "token": "USDT0",
+   "contrato": "0xc2132d05d31c914a87c6611c10748aeb04b58e8f",
+   "cantidad": 6185900.1,
+   "de": "0xe7804c37c13166ff0b37f5ae0bb07a3aebb6e245",
+   "hora": 1793315155000,
+   "tx": "0x8f5c8b8a834b94396cb18ffad4483c1ae694bcd768f27a27e2bcd0f429e7b25b"
+  }
+ ],
+ "reenvio": [
+  {
+   "token": "USDT",
+   "cantidad": 229911.256201,
+   "de": "0x1f748c76de468e9d11bd340fa9d5cbadf315dfb0",
+   "a": "0x9de7ead321892c1f12b1a5e8b5dc21cf540795e5",
+   "hora": 1793382587000,
+   "tx": "0x3b5fa51a39040fb07f9cc70b6867e39c50be622a99eaf43b42dff8c3d8f21b26"
+  },
+  {
+   "token": "USDT",
+   "cantidad": 229911.256201,
+   "de": "0x9de7ead321892c1f12b1a5e8b5dc21cf540795e5",
+   "a": "0x067cb62f4dcc0a45edcb6b7c018d4077abd10c67",
+   "hora": 1793382611000,
+   "tx": "0x51f10dae3a80612aa4e9ed1c2be6a6b44c35476261a0c1f60da466630edc967a"
+  }
+ ]
+}

@@ -1,0 +1,203 @@
+EQUIPO IA                                                              ANÁLISIS · v1.0
+
+SCHOOL ON-CHAIN
+
+INFORME DE ANÁLISIS
+
+Movimientos de tokens
+de 0x5227...2f8c y vínculo
+con el hackeo de Binance
+
+Análisis elaborado con datos guardados y herramientas de
+cálculo verificables.
+
+FECHA                  REFERENCIA                         PARA
+
+30 de octubre de 2026  ui-fb29df2b-dfa6-4ba1-             Propietario
+                       b08a-268f2231020d
+
+DATOS VERIFICABLES                                        DECISIONES CON CRITERIO
+     EQUIPO IA                      Movimientos de tokens de 0x5227...2f8c y vínculo con el hackeo | 30 de octubre de 2026
+
+Índice
+
+1. Conclusión                                                               3
+
+2. Bloqueos (congelación)                                                   3
+
+3. Adónde fue el dinero                                                     3
+
+4. Lo que muestran las lecturas externas (una sola fuente, sin contrastar)  5
+
+5. Qué tener en cuenta                                                      5
+
+6. Referencias para verificar en Etherscan                                  5
+
+7. Anexo: de dónde sale cada cifra                                          6
+
+Equipo IA | School On-chain                                                 Página 2 de 6
+ EQUIPO IA                              Movimientos de tokens de 0x5227...2f8c y vínculo con el hackeo | 30 de octubre de 2026
+
+1. Conclusión
+
+           EN RESUMEN
+
+           Los datos guardados muestran que la dirección
+           0x5227f603C1eE34CE3C06eFe6477003BDfCCB2f8c movió mucho dinero el 29-10-2026 y que
+           Tether la bloqueó ese mismo día. Fue en Ethereum, Avalanche y Polygon. Según la ruta de
+           fondos, desde ella salieron unos 1.193.653.443 $ en transferencias directas entre el 29-10-2026
+           y el 30-10-2026, en dólares digitales (USDT) y en ether (ETH).
+
+           Con estas herramientas no se puede confirmar que la dirección tenga que ver con el hackeo
+           de Binance. Los informes no incluyen ninguna fuente sobre ese incidente. Que una dirección
+           esté bloqueada o aparezca en movimientos grandes no demuestra quién la usa ni con qué
+           intención.
+
+2. Bloqueos (congelación)
+
+Dato de la lista de Tether y de los bloqueos de USDT0 (la versión de USDT que viaja entre cadenas). Lectura del
+30-10-2026, 08:09 UTC.
+
+Red                          Estado                 Desde (UTC)       Saldo al leerlo
+
+Ethereum                     Bloqueada              29-10-2026 21:01  no disponible
+
+Avalanche                    Bloqueada              29-10-2026 21:07  8.409.928 $
+
+Polygon                      Bloqueada              29-10-2026 23:25  6.185.900 $
+
+   No aparece bloqueada en otras 17 redes (Arbitrum, Optimism y otras). En una de ellas, Plasma, solo
+   respondió una fuente.
+   Está bloqueada una sola vez en Ethereum y no consta ninguna liberación.
+   Tether también usa estas listas para recuperar fondos enviados por error, así que el bloqueo no implica por
+   sí solo que la dirección sea sospechosa.
+   Los bloqueos se refieren a USDT. No hay datos de congelaciones de otros emisores, como Circle.
+
+3. Adónde fue el dinero
+
+Primer salto: transferencias directas (observadas en la cadena)
+
+Fecha y hora (UTC)           Importe                Destino
+
+29-10-2026 20:30             500.000.000 $ en USDT  0x9749292d74fd460982d0912ea9515ea24736c762
+
+29-10-2026 20:33             200.000.000 $ en USDT  0x0ddf0480016e6bcb2c1f5d190d221fba1320697e
+
+Equipo IA | School On-chain                                                                     Página 3 de 6
+   EQUIPO IA                 Movimientos de tokens de 0x5227...2f8c y vínculo con el hackeo | 30 de octubre de 2026
+Fecha y hora (UTC)
+                             Importe               Destino
+29-10-2026 20:38
+30-10-2026 05:15             453.598.637 $ en ETH  0x8532fa14acaf483729c449b8458aeddb900543d4
+                             40.054.806 $ en ETH   0x03b0ee5d82990cff1bda48651ac3e436d1a020ea
+
+Las dos direcciones que recibieron ETH no tienen salidas de ese activo en el periodo leído, que llega hasta el 30-
+10-2026.
+
+Saltos 2 y 3: solo inferidos
+
+Las dos direcciones que recibieron USDT repartieron el dinero a otras. Esta parte es una estimación hecha con un
+método de reparto por orden de llegada. En todos los casos el informe avisa de que se mezcla con otros
+ingresos, así que es una atribución dudosa.
+
+       Desde la primera dirección (...c762):
+       50.000.000 $ a 0x74edc79fea13bdf1f7841570227127cec493bdd9, un contrato sin etiqueta. A cambio
+       recibió ETH por unos 48.595.177 $ en la misma operación, es decir, un cambio de activo.
+       100.000.000 $ a 0x0000000000be226afde21672a5e4adc45692e69d, que después envió otros 100.000.000 $
+       a 0x111116058b9828cdcdd810c502b925c14f34ca11. El informe lo identifica como un bot o enrutador a
+       medida para swaps (confianza media).
+       75.000.000 $ a 0xbeef02961503351625926ea9a11ae13b29f5c555, que después envió 75.000.000 $ a
+       0x8f10b468b06c6fd214b65f87778827f7d113f996, un contrato sin etiqueta.
+
+       175.000.000 $ a 0x811f15855476156ebf86ba3b84fafb8ceaa4e84c, que después envió 175.000.000 $ a
+       0xaa246bf639586a6ba46762d378ce50ca4fc654a0.
+       Desde la segunda dirección (...697e):
+       190.000.000 $ a 0x8d53903625b8e839b9df4bd28b0efb1cd6b8639a. De ahí salieron 10.000.000 $ y
+       50.000.000 $ a 0x23878914efe38d27c4d67ab83ed1b93a74d4086a, que el informe identifica como un
+       contrato de token de Aave (confianza alta). También salieron 130.000.000 $ a
+       0x77edef23fbd05921c26fe29fcc3a65e14d2ac3eb.
+       Tres reparticiones de 4.120.000 $, 3.390.000 $ y 1.390.000 $, todas el 29-10-2026 a las 20:47, hacia el gestor
+       de pools de Uniswap 0x000000000004444c5dc75cb358380d2e3de08a90 (confianza media) y los pools de
+       liquidez de Uniswap V3 0x4e68ccd3e89f51c3074ca5072bbac773960dfa36 y
+       0x56534741cd8b152df6d48adf7ac51f75169a83b2 (confianza alta).
+
+Swaps: no hay una herramienta que los dé directamente. Solo se ven de forma indirecta, porque parte del dinero
+acabó en pools de intercambio y en contratos de swap. Tras ellos el dinero cambia de activo y la ruta no se
+puede seguir. En varios casos el informe dice que el resultado del swap no se parece a lo enviado, porque la
+transacción mezcla otros movimientos.
+
+Dónde se detiene el rastreo: en los pools y contratos de swap ya citados. Tres direcciones quedaron en el límite
+de 3 saltos y se podría seguir con más.
+
+Lo que no se siguió:
+
+       652 transferencias de tokens sin precio verificado, entre ellas OGN ×99, RED ×65, RAD ×37, CVX ×35 y ETH
+       ×25.
+       1 movimiento menor de 1.000 $ (232 $ en total).
+
+Equipo IA | School On-chain                                                                    Página 4 de 6
+EQUIPO IA                    Movimientos de tokens de 0x5227...2f8c y vínculo con el hackeo | 30 de octubre de 2026
+
+28 ramas más por el límite de 4 por dirección (105.899.392 $).
+
+4. Lo que muestran las lecturas externas (una sola fuente, sin
+  contrastar)
+
+   Ethereum: saldo de 4,33 ETH. La lista de transacciones y la de transferencias de tokens llegan a 50 de 50, y
+   el informe avisa de que hay más en la cadena. Entre lo último hay entradas de varios tokens (RLUSD, PROM,
+   FUN).
+   Polygon: saldo de 46.626.593,5 POL, y 4 transacciones y 4 transferencias de tokens leídas.
+   Arbitrum: saldo de 0 ETH. El 29-10-2026 aparece un envío de 8.425 ETH, y el 30-10-2026 uno de
+   74.559.805,2 ARB. Algunos nombres de token usan letras que imitan a otras (por ejemplo, un «ETH» escrito
+   con caracteres distintos). Esto es una hipótesis mía: puede tratarse de tokens falsos o de un patrón de
+   «envenenamiento de direcciones», pero los informes no lo afirman.
+
+5. Qué tener en cuenta
+
+   Son datos guardados, no una lectura en vivo. «No guardado» no es «sin movimientos» y «sin etiqueta»
+   no es «limpia». La dirección no está en el grafo de movimientos, así que no hay lista de contrapartes. Para
+   tener la historia completa hay que leerla en vivo desde ChainScope.
+   Cobertura incompleta. Las listas de Ethereum están truncadas en 50. En la lectura de bloqueos faltan
+   tramos en tres redes (Ink, Morph y XLayer). No se sabe si hay actividad posterior a la lectura.
+   Los saltos 2 y 3 son estimaciones. Un vínculo entre direcciones es solo un vínculo probable, nunca prueba
+   de que sean de la misma persona o entidad. La consulta en la base de casos conocidos (295 casos en
+   Ethereum, revisada el 25-10-2026) no dio coincidencias, y eso tampoco significa que sea limpia.
+   Ni confirmado ni descartado. Las herramientas no pueden confirmar ni descartar la relación con el
+   hackeo de Binance. Estar en un incidente documentado no convierte en culpable a quien usa una dirección,
+   y para eso haría falta la fuente oficial del incidente.
+
+6. Referencias para verificar en Etherscan
+
+       Bloqueo en Ethereum, bloque 26300954:
+       0x7baba482077843514d9c72bac0110ba0916b0814288a72917e2c3bb27a9d8659
+       500.000.000 $ en USDT: 0x68d7d69deaeb9750c38020b4f8d3728146ca8d2267eba1e38cf9b56722ad659a
+       200.000.000 $ en USDT: 0x1fc0ef33a767132edad434834a5555b30fcb5a171206c03b86175ef6dafac81c
+       453.598.637 $ en ETH: 0x551d7961652e6d9835b11988908adf86ebe480badb4ce2d7d52193b2b1b02c76
+       40.054.806 $ en ETH: 0x9edf86533e73658700c5dadb2432dd7bebb628dc0f5fe37991c241f537856071
+
+Las transacciones de los saltos 2 y 3 están en el informe completo de la ruta.
+
+Equipo IA | School On-chain                                     Página 5 de 6
+EQUIPO IA                           Movimientos de tokens de 0x5227...2f8c y vínculo con el hackeo | 30 de octubre de 2026
+
+7. Anexo: de dónde sale cada cifra
+
+La herramienta que calculó cada cifra y el identificador de su ejecución.
+
+Origen                              Estado                                 Identificador
+
+análisis on-chain /cs-ficha         success                                 --
+                                                                            --
+análisis on-chain /cs-contrapartes  success                                 --
+                                                                            --
+análisis on-chain /blacklist        success                                 --
+
+análisis on-chain /ruta             success
+
+análisis on-chain /rastrear         success
+
+Documento generado por Equipo IA · School On-chain. Las cifras calculadas proceden de herramientas deterministas identificadas en el anexo; el
+texto interpretativo lo redacta un agente. Es un análisis de datos, no asesoramiento financiero.
+
+Equipo IA | School On-chain                                                               Página 6 de 6
+

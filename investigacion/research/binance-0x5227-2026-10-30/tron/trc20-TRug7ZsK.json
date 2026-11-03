@@ -1,0 +1,65 @@
+{
+ "total": 1,
+ "contractInfo": {},
+ "rangeTotal": 1,
+ "token_transfers": [
+  {
+   "transaction_id": "464f9dd4a7e269e56f37f0931c0d0f79c8e355ab9eafe80d429216b8e204737b",
+   "status": 0,
+   "block_ts": 1779616638000,
+   "from_address": "TQ4PApXLCGhwKpn3KBjqqwHbyw8x36Vwx8",
+   "to_address": "TRug7ZsKi7LjSg2n8A9a2CUFurE6u6HSwb",
+   "block": 82982662,
+   "contract_address": "TG7EUp7RCXypj7BcQJW9dBfrEG22FxMSUX",
+   "quant": "999999000000",
+   "approval_amount": "0",
+   "event_type": "Transfer",
+   "confirmed": true,
+   "contractRet": "SUCCESS",
+   "finalResult": "SUCCESS",
+   "tokenType2": "trc20",
+   "tokenInfo": {
+    "tokenId": "TG7EUp7RCXypj7BcQJW9dBfrEG22FxMSUX",
+    "tokenAbbr": "JF TG:gazige666",
+    "tokenName": "U JD TG:gazige666",
+    "tokenDecimal": 6,
+    "tokenCanShow": 1,
+    "tokenType": "trc20",
+    "tokenLogo": "https://static.tronscan.org/production/upload/logo/new/TG7EUp7RCXypj7BcQJW9dBfrEG22FxMSUX.jpeg?t=1777303771507",
+    "tokenLevel": "0",
+    "issuerAddr": "TNeSFcmNrF75EU88uvu6Q55enBftLjHotb",
+    "vip": false
+   },
+   "fromAddressIsContract": false,
+   "from_address_tag": {
+    "from_address_tag_logo": ""
+   },
+   "toAddressIsContract": false,
+   "to_address_tag": {
+    "to_address_tag_logo": ""
+   },
+   "trigger_info": {
+    "method": "transfer(address recipient,uint256 amount)",
+    "data": "a9059cbb000000000000000000000000aed6fb17be8d99fb8335faa16d777df0aec350ad000000000000000000000000000000000000000000000000000000e8d495cdc0",
+    "parameter": {
+     "amount": "999999000000",
+     "recipient": "TRug7ZsKi7LjSg2n8A9a2CUFurE6u6HSwb"
+    },
+    "methodName": "transfer",
+    "contract_address": "TG7EUp7RCXypj7BcQJW9dBfrEG22FxMSUX",
+    "call_value": 0
+   },
+   "revert": false,
+   "contract_type": "trc20",
+   "riskTransaction": false
+  }
+ ],
+ "normalAddressInfo": {
+  "TRug7ZsKi7LjSg2n8A9a2CUFurE6u6HSwb": {
+   "risk": false
+  },
+  "TQ4PApXLCGhwKpn3KBjqqwHbyw8x36Vwx8": {
+   "risk": false
+  }
+ }
+}

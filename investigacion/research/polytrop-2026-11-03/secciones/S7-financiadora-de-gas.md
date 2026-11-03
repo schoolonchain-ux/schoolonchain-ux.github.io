@@ -1,0 +1,29 @@
+# S7 · La cuenta que pone el gas a billeteras del ladrón (TBEbSQuJwpnRSaaD5v4DCSCggbJoRNzi9B)
+
+Guiones: `guiones/across-ejecutor.cjs`, `guiones/across-metadatos.cjs`, `guiones/financiadora-gas.cjs`, `guiones/receptoras-gas.cjs`. Datos: `datos/across-ejecutor.json`, `across-metadatos.json`, `financiadora-gas.json`, `receptoras-gas.json` (respuestas de TronGrid guardadas tal cual). **Esta sección no ha pasado por Codex.**
+
+## Hechos medidos
+- Las primeras billeteras del ladrón que usaron el Gateway de Across (30-oct 12:22–13:08 UTC) recibieron 50 TRX de gas pocos minutos antes de su primer uso: `TCSvYrAhw…` y `TGTRJoQtg…` de `TBEbSQuJwp…`; `TDzNk9PZw…` de `TFawow3Cb…`, que a su vez recibió 25 TRX de `TCSvYrAhw…` y 200 TRX de `TBEbSQuJwp…`.
+- `TBEbSQuJwp…` es una cuenta de nov-2023. Entre el 28-oct y el 2-nov (18:40 UTC) hizo 151 envíos de TRX a 129 direcciones distintas (importes más repetidos: 70, 50, 100, 20, 30 y 80 TRX). Se leyeron 5.494 transacciones suyas (la mayoría entradas de polvo).
+- De esas 129 receptoras: 75 aparecen en nuestros datos, 62 en la lista de Polytrop (58 en ambas) y **50 en ninguna de las dos**.
+- De las 50: 29 tienen movimientos TRC20 (sobre todo USDT) en sus primeras 30 transferencias; 8 tocan el contrato JustLend jUSDT y 5 enviaron USDT al Executor de Across (`TZERmKVpq1…` 30-oct 14:32; `TSYSUsyMot…` 30-oct 17:08, 10.662 USDT; `TYgFq1N5pL…` 31-oct 21:18; `TQfYXx35fE…` 2-nov 03:08; `TVd46N5fQc…` 2-nov 05:55); 15 tienen contrapartes que son direcciones nuestras y 5 contrapartes de Polytrop.
+- Metadatos de las llamadas a Across: todas van al mismo contrato «Gateway» (creado por la misma cuenta que el Executor), con la misma función (`e3a64e34`), 2.852–2.916 bytes de datos y caducidad de 1 minuto; el usuario `TF8hfWoLx…`, anterior al robo, usó exactamente los mismos valores, así que esa uniformidad no prueba un programa. No hay marca de «integrator id» de Across en las 14 llamadas leídas.
+
+## Límites
+- «Nuestros datos» = el texto de la dirección aparece en las cachés de los tramos 3–6 (incluye contrapartes, no solo billeteras rastreadas).
+- Que `TBEbSQuJwp…` financie billeteras del ladrón no prueba que sea del ladrón: puede ser un servicio de gas que atiende a muchos clientes. Lo que apunta a una relación es que 62 de 129 receptoras están en Polytrop y 75 en nuestros datos.
+- Las primeras 30 transferencias de cada receptora son un tope técnico; la suma de USDT de las 50 (≈ 7 M$) cuenta transferencias de entrada y salida y no es dinero distinto.
+- La energía no sirve para enlazar: se puede obtener de cualquier servicio de alquiler.
+
+## Corrección y ampliación (3-nov, tarde) — esta parte tampoco ha pasado por Codex
+**Error mío corregido:** arriba se decía que la mayoría de las 5.494 operaciones de `TBEbSQuJwp…` eran «entradas de polvo». Es falso. Releídas todas (`guiones/financiadora-gas-completa.cjs`, `datos/financiadora-gas-completa.json`, 5.776 operaciones desde el 28-oct): 2.757 delegaciones de recursos, 2.734 retiradas de delegación, 152 envíos de TRX, 34 creaciones de cuenta y solo 99 entradas de TRX (94 de menos de 1 TRX, o sea polvo). Ninguna operación lleva mensaje.
+
+**Dos negocios distintos en la misma cuenta (`guiones/financiadora-gas-analisis.cjs`):**
+- *Delegaciones*: a 1.294 receptoras distintas, de las que solo 2 están en nuestros datos y 0 en Polytrop. Es un servicio de alquiler de energía general. **No sirve para enlazar** (coincide con lo que dijo el propietario).
+- *Envíos de TRX*: a 129 receptoras; 73 de ellas son billeteras que nuestro rastreo sigue (en `rec` o `term` de los tramos 3–6, no solo mencionadas), 58 de esas 73 también en Polytrop. Importes redondos (45, 50, 60, 70, 100 TRX por envío) y el primer envío a cada una cae entre el 30-oct 12:22 y el 1-nov 00:39 UTC. Las 56 no rastreadas tienen importes variados (1, 12, 20, 30, 800, 1.100 TRX…); 9 de ellas, además, pagaron TRX a `TAT51WDhq…` y reciben casi lo mismo de vuelta, patrón de devolución de un cliente corriente, no de gas.
+
+**De dónde sale el TRX (`guiones/inspeccionar-cuenta.cjs`, `datos/cuenta-TAT51WDh.json`):** `TBEbSQuJwp…` recibió 437.800 TRX en 8 envíos de `TAT51WDhqSgozpH5pypBkEhe9kYXBAF8XJ` entre el 9-oct y el 2-nov (50.000 el 30-oct 08:27) y 5.000 de `TUcEx932…`. `TAT51WDhq…` es una cuenta de cobros de un negocio: 5.520 clientes pagadores en oct-nov (TRX y USDT), un solo destino de TRX (`TBEbSQuJwp…`) y un solo destino de USDT (`TCQZ5n9u5P…`, 7,1 M USDT en 31 envíos del 1 al 17-oct, antes del robo). Solo 2 de esos 5.520 clientes están en lo que sigue nuestro rastreo.
+
+**Vínculo comprobado en cadena (`guiones/vinculo-pago-tat51.cjs`, `datos/gas-vinculo-pago.json`):** `TDa5kRYUX3…` y `TWTzEAWq5f…` recibieron TRX de billeteras de nuestros tramos 5 y 6 y, minutos después, pagaron el mismo importe, al céntimo, a `TAT51WDhq…`: **3 pagos emparejados** (1.052,0259 TRX en 0,5 min; 2.676,4771 TRX en 5,5 min; 1.270,7915 TRX en 0,3 min), **4.999,3 TRX en total (≈ 1.760 $ a 0,352 $/TRX)**. Las dos intermediarias pagaron además 3.421,3 TRX en otros cuatro pagos que **no** tienen entrada desde nuestras billeteras. (Una versión anterior de esta sección decía «≈ 8,4 mil TRX»: sumaba todos los pagos de las dos intermediarias en vez de solo los emparejados; corregido.) Es el único vínculo directo de pago que se ve.
+
+**Límites:** (1) para las otras 71 receptoras de gas rastreadas **no se ve quién pagó el gas**: puede haberse pagado fuera de TRON, en otra cuenta o en USDT desde billeteras que no seguimos. (2) Que la cuenta reparta TRX casi solo a billeteras del ladrón no demuestra que sea del ladrón: también encaja un cliente que compró «paquetes» de gas a un negocio. (3) Existe `TAT51WDhaz8G…`, de prefijo idéntico, que envió dos veces 0,00068 TRX a `TBEbSQuJwp…`: parece una dirección imitadora; es solo una observación. (4) «Rastreada por nosotros» = clave en `rec`/`term`, que incluye billeteras de paso.

@@ -1,0 +1,848 @@
+{
+ "generado": "2026-10-31T10:31:02.404Z",
+ "minutos": 2,
+ "reparto": {
+  "fuente": "TronScan",
+  "incompleto": false,
+  "envios": 379,
+  "enviosDe10000TRXomas": 377,
+  "usd": 50773216.863587685,
+  "destinos": 122,
+  "informe": {
+   "envios": 379,
+   "usd": 50773216.863587685,
+   "sobre3520": 377
+  },
+  "informeDestinos": 122,
+  "guardada": {
+   "envios": 379,
+   "usd": 50773216.863587685,
+   "soloTronScan": 0,
+   "soloGuardada": 0
+  }
+ },
+ "postFoto": {
+  "desde": 1793400000000,
+  "hasta": 1793442556934,
+  "envios": 363,
+  "usd": 60661467.934155256,
+  "destinos": 51,
+  "entradas": [
+   {
+    "at": 1793408475000,
+    "sim": "TRX",
+    "cant": 120000000,
+    "de": "TL2F4GhnaFVZBZPncHYjwfYZFW44NcfVwj",
+    "tx": "bb05d43bfde6cb869448ad03bf06969e32cc7cd77252a78d41dd7f7c26dbf0b3"
+   },
+   {
+    "at": 1793433528000,
+    "sim": "TRX",
+    "cant": 120000000,
+    "de": "TCBAz7itvtX5CjBzVMPQdrbwQLN63ao1fk",
+    "tx": "d3684f76b615028b350c294c2c774313af2212319de653f5a04ff68bc351d465"
+   }
+  ],
+  "primeras": [
+   "559a1af1a88cd655f0a926b2fc8e2112e71493ca83307df665163b5c800b9b6e",
+   "280d2d119d6527c779465c75a47511daea68d2829f9e83d2f3435742ece2fcad",
+   "a83a1527b0e091ff7a96b2501b3d28dc574e3a6c461227ee8b72fe2149bc66a1"
+  ],
+  "incompleto": false
+ },
+ "lector": {
+  "tot": {
+   "billeteras": 70,
+   "aristasGuardadas": 578,
+   "aristasTronScan": 565,
+   "iguales": 565,
+   "soloGuardada": 13,
+   "soloTronScan": 0,
+   "importeDistinto": 0,
+   "internasSoloGuardada": 0,
+   "noAuditadas": 0
+  },
+  "detalle": [
+   {
+    "tramo": "tramo 1",
+    "a": "TG5mePAPa9ovvWE7Ub7jfqM4YNfS62ws7K",
+    "guardadas": 6,
+    "tronscan": 6,
+    "iguales": 6,
+    "soloGuardada": 0,
+    "soloTronScan": 0,
+    "importeDistinto": 0
+   },
+   {
+    "tramo": "tramo 1",
+    "a": "TQwGu2DyZKqg11ye4cph5aw9SREkuVbkmL",
+    "guardadas": 2,
+    "tronscan": 2,
+    "iguales": 2,
+    "soloGuardada": 0,
+    "soloTronScan": 0,
+    "importeDistinto": 0
+   },
+   {
+    "tramo": "tramo 1",
+    "a": "TKKBjet7C94gUTo3TWW69mbcVX4rCo3wUQ",
+    "guardadas": 5,
+    "tronscan": 5,
+    "iguales": 5,
+    "soloGuardada": 0,
+    "soloTronScan": 0,
+    "importeDistinto": 0
+   },
+   {
+    "tramo": "tramo 1",
+    "a": "TQPuvc4LRqXPW6949mNk4KxEa9135s6Ssq",
+    "guardadas": 2,
+    "tronscan": 2,
+    "iguales": 2,
+    "soloGuardada": 0,
+    "soloTronScan": 0,
+    "importeDistinto": 0
+   },
+   {
+    "tramo": "tramo 1",
+    "a": "TGUNQ8vErX3ac384P9XottFX6zDde5xrXK",
+    "guardadas": 2,
+    "tronscan": 1,
+    "iguales": 1,
+    "soloGuardada": 1,
+    "soloTronScan": 0,
+    "importeDistinto": 0
+   },
+   {
+    "tramo": "tramo 1",
+    "a": "TYpCh3nkuuiA84CfkwbgT72k34zfCUyH3J",
+    "guardadas": 133,
+    "tronscan": 133,
+    "iguales": 133,
+    "soloGuardada": 0,
+    "soloTronScan": 0,
+    "importeDistinto": 0
+   },
+   {
+    "tramo": "tramo 1",
+    "a": "TXqeTnL2S4BAwWumECxAJA7V8iouSdLBuz",
+    "guardadas": 2,
+    "tronscan": 2,
+    "iguales": 2,
+    "soloGuardada": 0,
+    "soloTronScan": 0,
+    "importeDistinto": 0
+   },
+   {
+    "tramo": "tramo 1",
+    "a": "TPskgmUhvtycmFhYbbsrPEbvtVf8Qr81mH",
+    "guardadas": 2,
+    "tronscan": 2,
+    "iguales": 2,
+    "soloGuardada": 0,
+    "soloTronScan": 0,
+    "importeDistinto": 0
+   },
+   {
+    "tramo": "tramo 1",
+    "a": "TBHTpXotQ4CgfiBkZ4YnhWNUfKQdTMW12h",
+    "guardadas": 2,
+    "tronscan": 2,
+    "iguales": 2,
+    "soloGuardada": 0,
+    "soloTronScan": 0,
+    "importeDistinto": 0
+   },
+   {
+    "tramo": "tramo 1",
+    "a": "TFxoVSvHm77jqm5h4bzDmYUgA1MNbXvyHj",
+    "guardadas": 1,
+    "tronscan": 1,
+    "iguales": 1,
+    "soloGuardada": 0,
+    "soloTronScan": 0,
+    "importeDistinto": 0
+   },
+   {
+    "tramo": "tramo 1",
+    "a": "TRrui1grPYM8saAfMZAguiU9RKBGkGkTjS",
+    "guardadas": 4,
+    "tronscan": 4,
+    "iguales": 4,
+    "soloGuardada": 0,
+    "soloTronScan": 0,
+    "importeDistinto": 0
+   },
+   {
+    "tramo": "tramo 1",
+    "a": "TGWT8qMajbZr5AYeaSXiif1K4KTeWPFUKc",
+    "guardadas": 2,
+    "tronscan": 2,
+    "iguales": 2,
+    "soloGuardada": 0,
+    "soloTronScan": 0,
+    "importeDistinto": 0
+   },
+   {
+    "tramo": "tramo 1",
+    "a": "TGvujUaYtv3rpmq6j6S85sC8PkxQEKdkCR",
+    "guardadas": 2,
+    "tronscan": 2,
+    "iguales": 2,
+    "soloGuardada": 0,
+    "soloTronScan": 0,
+    "importeDistinto": 0
+   },
+   {
+    "tramo": "tramo 1",
+    "a": "TM6WAH6FyvH25JM3iwYw185ScRqLEFAZCK",
+    "guardadas": 7,
+    "tronscan": 5,
+    "iguales": 5,
+    "soloGuardada": 2,
+    "soloTronScan": 0,
+    "importeDistinto": 0
+   },
+   {
+    "tramo": "tramo 1",
+    "a": "TFB9ctAhKxiCtoPAW5xZox6s53G1xX2M18",
+    "guardadas": 4,
+    "tronscan": 3,
+    "iguales": 3,
+    "soloGuardada": 1,
+    "soloTronScan": 0,
+    "importeDistinto": 0
+   },
+   {
+    "tramo": "tramo 1",
+    "a": "TNVTXxySMyknBKUpxG3XbdLTczyAzCbHV1",
+    "guardadas": 2,
+    "tronscan": 2,
+    "iguales": 2,
+    "soloGuardada": 0,
+    "soloTronScan": 0,
+    "importeDistinto": 0
+   },
+   {
+    "tramo": "tramo 1",
+    "a": "TDxspm4wkmkCwZkPMH2euJMcnXVFJx9CxP",
+    "guardadas": 2,
+    "tronscan": 2,
+    "iguales": 2,
+    "soloGuardada": 0,
+    "soloTronScan": 0,
+    "importeDistinto": 0
+   },
+   {
+    "tramo": "tramo 1",
+    "a": "TCp4YWjce3Mg4ndQYrM53dseJgjsXCMZyV",
+    "guardadas": 4,
+    "tronscan": 3,
+    "iguales": 3,
+    "soloGuardada": 1,
+    "soloTronScan": 0,
+    "importeDistinto": 0
+   },
+   {
+    "tramo": "tramo 1",
+    "a": "TCyUYEDqvVYme4G394Ny61DBEroGZzo5oL",
+    "guardadas": 0,
+    "tronscan": 0,
+    "iguales": 0,
+    "soloGuardada": 0,
+    "soloTronScan": 0,
+    "importeDistinto": 0
+   },
+   {
+    "tramo": "tramo 1",
+    "a": "TYU57PVPa96UEENByz2SkJcoDStDg9H1Mn",
+    "guardadas": 2,
+    "tronscan": 2,
+    "iguales": 2,
+    "soloGuardada": 0,
+    "soloTronScan": 0,
+    "importeDistinto": 0
+   },
+   {
+    "tramo": "tramo 1",
+    "a": "TLpRbvNTjcW2NHiT37MpW2jnsgrSrBMB5Q",
+    "guardadas": 1,
+    "tronscan": 1,
+    "iguales": 1,
+    "soloGuardada": 0,
+    "soloTronScan": 0,
+    "importeDistinto": 0
+   },
+   {
+    "tramo": "tramo 1",
+    "a": "TJFmNNzrogKUZSsoQYfcZgAXpNfPViYRJx",
+    "guardadas": 4,
+    "tronscan": 4,
+    "iguales": 4,
+    "soloGuardada": 0,
+    "soloTronScan": 0,
+    "importeDistinto": 0
+   },
+   {
+    "tramo": "tramo 1",
+    "a": "TXkRPkuq2VFbSWMcVGmYrUtu55xqKi85wf",
+    "guardadas": 1,
+    "tronscan": 1,
+    "iguales": 1,
+    "soloGuardada": 0,
+    "soloTronScan": 0,
+    "importeDistinto": 0
+   },
+   {
+    "tramo": "tramo 1",
+    "a": "TQqVGxxcjwQ52QichhTxrrJbSCYfrmeNcE",
+    "guardadas": 2,
+    "tronscan": 2,
+    "iguales": 2,
+    "soloGuardada": 0,
+    "soloTronScan": 0,
+    "importeDistinto": 0
+   },
+   {
+    "tramo": "tramo 1",
+    "a": "TNh1faLrXYXeZCDaVrfx9r1HtQdRt63hAd",
+    "guardadas": 4,
+    "tronscan": 3,
+    "iguales": 3,
+    "soloGuardada": 1,
+    "soloTronScan": 0,
+    "importeDistinto": 0
+   },
+   {
+    "tramo": "tramo 1",
+    "a": "TWEwztx6zXUEqfvZ6DDmm2dQC96cnRu4wf",
+    "guardadas": 2,
+    "tronscan": 1,
+    "iguales": 1,
+    "soloGuardada": 1,
+    "soloTronScan": 0,
+    "importeDistinto": 0
+   },
+   {
+    "tramo": "tramo 1",
+    "a": "TVRAJeNNN2rJYSPhWg2AEEyRKBETPw3JB8",
+    "guardadas": 3,
+    "tronscan": 3,
+    "iguales": 3,
+    "soloGuardada": 0,
+    "soloTronScan": 0,
+    "importeDistinto": 0
+   },
+   {
+    "tramo": "tramo 1",
+    "a": "TRQn7MCroGW6V72TZLXjKisckgSuYBMCRh",
+    "guardadas": 4,
+    "tronscan": 3,
+    "iguales": 3,
+    "soloGuardada": 1,
+    "soloTronScan": 0,
+    "importeDistinto": 0
+   },
+   {
+    "tramo": "tramo 1",
+    "a": "TEo6su3YB92jApkJ69QzfKw1e9PBXAzv6J",
+    "guardadas": 4,
+    "tronscan": 4,
+    "iguales": 4,
+    "soloGuardada": 0,
+    "soloTronScan": 0,
+    "importeDistinto": 0
+   },
+   {
+    "tramo": "tramo 1",
+    "a": "TRYKNdT7jPeotTUK2MicL81yWAL5N67Kkp",
+    "guardadas": 2,
+    "tronscan": 2,
+    "iguales": 2,
+    "soloGuardada": 0,
+    "soloTronScan": 0,
+    "importeDistinto": 0
+   },
+   {
+    "tramo": "tramo 1",
+    "a": "TT2NxqvHsm5g5NTtW99rsu1cstgTvHFPBc",
+    "guardadas": 1,
+    "tronscan": 1,
+    "iguales": 1,
+    "soloGuardada": 0,
+    "soloTronScan": 0,
+    "importeDistinto": 0
+   },
+   {
+    "tramo": "tramo 1",
+    "a": "TLHkjropapkRY39HRf82CBMt44ssgCnqWi",
+    "guardadas": 4,
+    "tronscan": 3,
+    "iguales": 3,
+    "soloGuardada": 1,
+    "soloTronScan": 0,
+    "importeDistinto": 0
+   },
+   {
+    "tramo": "tramo 1",
+    "a": "THsoMuaDxxf2hoTMBhHKe6QJYsXdnedstf",
+    "guardadas": 4,
+    "tronscan": 3,
+    "iguales": 3,
+    "soloGuardada": 1,
+    "soloTronScan": 0,
+    "importeDistinto": 0
+   },
+   {
+    "tramo": "tramo 1",
+    "a": "TW9MQ4wqvqECAebfRgC1QyA9ohTpjgRFdi",
+    "guardadas": 4,
+    "tronscan": 3,
+    "iguales": 3,
+    "soloGuardada": 1,
+    "soloTronScan": 0,
+    "importeDistinto": 0
+   },
+   {
+    "tramo": "tramo 1",
+    "a": "TE26NoRewfmDaXPF9XEcBu5fp92MJjBpnR",
+    "guardadas": 13,
+    "tronscan": 13,
+    "iguales": 13,
+    "soloGuardada": 0,
+    "soloTronScan": 0,
+    "importeDistinto": 0
+   },
+   {
+    "tramo": "tramo 1",
+    "a": "TSJoGNEjvSvK1d8vHVHtrhEbDRxHBi8F8g",
+    "guardadas": 4,
+    "tronscan": 4,
+    "iguales": 4,
+    "soloGuardada": 0,
+    "soloTronScan": 0,
+    "importeDistinto": 0
+   },
+   {
+    "tramo": "tramo 1",
+    "a": "TNh7oqQN9WfdJvYyZDHh8pRk21mfUP8wf1",
+    "guardadas": 176,
+    "tronscan": 176,
+    "iguales": 176,
+    "soloGuardada": 0,
+    "soloTronScan": 0,
+    "importeDistinto": 0
+   },
+   {
+    "tramo": "tramo 1",
+    "a": "TKiBHda1iczsZ6gsvys489BTrtBjYUeEha",
+    "guardadas": 2,
+    "tronscan": 2,
+    "iguales": 2,
+    "soloGuardada": 0,
+    "soloTronScan": 0,
+    "importeDistinto": 0
+   },
+   {
+    "tramo": "tramo 1",
+    "a": "TC7V2PdZ7oRmtyApKxnbnDu141CusUeWhx",
+    "guardadas": 2,
+    "tronscan": 2,
+    "iguales": 2,
+    "soloGuardada": 0,
+    "soloTronScan": 0,
+    "importeDistinto": 0
+   },
+   {
+    "tramo": "tramo 1",
+    "a": "TX24DMVLQSpyKJdPK7hvVPKJezT2VKogca",
+    "guardadas": 1,
+    "tronscan": 1,
+    "iguales": 1,
+    "soloGuardada": 0,
+    "soloTronScan": 0,
+    "importeDistinto": 0
+   },
+   {
+    "tramo": "tramo 1",
+    "a": "THwWbGkF32zcYURtfoNciUREAmguUKn6sY",
+    "guardadas": 2,
+    "tronscan": 2,
+    "iguales": 2,
+    "soloGuardada": 0,
+    "soloTronScan": 0,
+    "importeDistinto": 0
+   },
+   {
+    "tramo": "tramo 1",
+    "a": "THi8Ar3JN4j2cMUqjTG8T289uHNyavoitG",
+    "guardadas": 4,
+    "tronscan": 4,
+    "iguales": 4,
+    "soloGuardada": 0,
+    "soloTronScan": 0,
+    "importeDistinto": 0
+   },
+   {
+    "tramo": "tramo 1",
+    "a": "TDtfJrVxnYaDjb2pC5frG7uiCVCZm8TTfW",
+    "guardadas": 0,
+    "tronscan": 0,
+    "iguales": 0,
+    "soloGuardada": 0,
+    "soloTronScan": 0,
+    "importeDistinto": 0
+   },
+   {
+    "tramo": "tramo 1",
+    "a": "TXqnDANSqY8My4ymgGGh55osEYk41zVSX7",
+    "guardadas": 2,
+    "tronscan": 2,
+    "iguales": 2,
+    "soloGuardada": 0,
+    "soloTronScan": 0,
+    "importeDistinto": 0
+   },
+   {
+    "tramo": "tramo 1",
+    "a": "TK6CTjyG4Y4YXvrauKQtubFi8BUJCyWqiV",
+    "guardadas": 2,
+    "tronscan": 2,
+    "iguales": 2,
+    "soloGuardada": 0,
+    "soloTronScan": 0,
+    "importeDistinto": 0
+   },
+   {
+    "tramo": "tramo 2",
+    "a": "TRujEz84xzN4YxQAPJCrtnWptYJD2w4enf",
+    "guardadas": 2,
+    "tronscan": 2,
+    "iguales": 2,
+    "soloGuardada": 0,
+    "soloTronScan": 0,
+    "importeDistinto": 0
+   },
+   {
+    "tramo": "tramo 2",
+    "a": "TBWH5f2YMduK4F6zPVJkeTtqZMaLZzdSX2",
+    "guardadas": 2,
+    "tronscan": 2,
+    "iguales": 2,
+    "soloGuardada": 0,
+    "soloTronScan": 0,
+    "importeDistinto": 0
+   },
+   {
+    "tramo": "tramo 2",
+    "a": "TNp9m7D6SGYmBAjgbASpvAJswnuE2cDi7y",
+    "guardadas": 2,
+    "tronscan": 2,
+    "iguales": 2,
+    "soloGuardada": 0,
+    "soloTronScan": 0,
+    "importeDistinto": 0
+   },
+   {
+    "tramo": "tramo 2",
+    "a": "TBFrxNjuf6DJ4xLwEG94FCxAnoiH4ULHxX",
+    "guardadas": 2,
+    "tronscan": 1,
+    "iguales": 1,
+    "soloGuardada": 1,
+    "soloTronScan": 0,
+    "importeDistinto": 0
+   },
+   {
+    "tramo": "tramo 2",
+    "a": "THqityomhj3ASxRJuKkECLEP2k4XJbxA31",
+    "guardadas": 4,
+    "tronscan": 4,
+    "iguales": 4,
+    "soloGuardada": 0,
+    "soloTronScan": 0,
+    "importeDistinto": 0
+   },
+   {
+    "tramo": "tramo 2",
+    "a": "THtc2XTaKQbECZAiX5CLWTwgB21wCJ4Dcm",
+    "guardadas": 0,
+    "tronscan": 0,
+    "iguales": 0,
+    "soloGuardada": 0,
+    "soloTronScan": 0,
+    "importeDistinto": 0
+   },
+   {
+    "tramo": "tramo 2",
+    "a": "TT48Qbe2REz8KEqhGq1eTrZyPsGZsPfzbU",
+    "guardadas": 72,
+    "tronscan": 72,
+    "iguales": 72,
+    "soloGuardada": 0,
+    "soloTronScan": 0,
+    "importeDistinto": 0
+   },
+   {
+    "tramo": "tramo 2",
+    "a": "TM1R9HpboBPfveSRGDcEX3XoB3HVs8znPf",
+    "guardadas": 3,
+    "tronscan": 3,
+    "iguales": 3,
+    "soloGuardada": 0,
+    "soloTronScan": 0,
+    "importeDistinto": 0
+   },
+   {
+    "tramo": "tramo 2",
+    "a": "TG783DqR1t7RcpubYUjpbkY6r4weV6C53c",
+    "guardadas": 4,
+    "tronscan": 4,
+    "iguales": 4,
+    "soloGuardada": 0,
+    "soloTronScan": 0,
+    "importeDistinto": 0
+   },
+   {
+    "tramo": "tramo 2",
+    "a": "TH6Wi45ZepWSR8kzFki2sQwBDF2HpoG7ew",
+    "guardadas": 0,
+    "tronscan": 0,
+    "iguales": 0,
+    "soloGuardada": 0,
+    "soloTronScan": 0,
+    "importeDistinto": 0
+   },
+   {
+    "tramo": "tramo 2",
+    "a": "TYv6xtGBtXHNANvUwpoS5LimiEjLEsL3z8",
+    "guardadas": 2,
+    "tronscan": 2,
+    "iguales": 2,
+    "soloGuardada": 0,
+    "soloTronScan": 0,
+    "importeDistinto": 0
+   },
+   {
+    "tramo": "tramo 2",
+    "a": "TW8pyqtxMvQYNvZGAUACvTBzUqDFiZ8VYN",
+    "guardadas": 1,
+    "tronscan": 1,
+    "iguales": 1,
+    "soloGuardada": 0,
+    "soloTronScan": 0,
+    "importeDistinto": 0
+   },
+   {
+    "tramo": "tramo 2",
+    "a": "TMjvFDtsCzC4e7AiyKpR2UqBtc4DBXanUZ",
+    "guardadas": 0,
+    "tronscan": 0,
+    "iguales": 0,
+    "soloGuardada": 0,
+    "soloTronScan": 0,
+    "importeDistinto": 0
+   },
+   {
+    "tramo": "tramo 2",
+    "a": "TGw2kWurwBvEfuhGAMdqQodKG1BbBAhx24",
+    "guardadas": 6,
+    "tronscan": 6,
+    "iguales": 6,
+    "soloGuardada": 0,
+    "soloTronScan": 0,
+    "importeDistinto": 0
+   },
+   {
+    "tramo": "tramo 2",
+    "a": "TYNJWjRsYsnHTXWugvWZtQTxnXA3v6hf7x",
+    "guardadas": 2,
+    "tronscan": 2,
+    "iguales": 2,
+    "soloGuardada": 0,
+    "soloTronScan": 0,
+    "importeDistinto": 0
+   },
+   {
+    "tramo": "tramo 2",
+    "a": "TKCwVf93w4j1jDLGvLTJbpW9xxSAvy24G2",
+    "guardadas": 15,
+    "tronscan": 15,
+    "iguales": 15,
+    "soloGuardada": 0,
+    "soloTronScan": 0,
+    "importeDistinto": 0
+   },
+   {
+    "tramo": "tramo 2",
+    "a": "THzT1dGU93Kd1Fc8cGmYtwuBkHdoTMNXuG",
+    "guardadas": 2,
+    "tronscan": 2,
+    "iguales": 2,
+    "soloGuardada": 0,
+    "soloTronScan": 0,
+    "importeDistinto": 0
+   },
+   {
+    "tramo": "tramo 2",
+    "a": "TGHvrRe48M3ZuQb28kDcVJFefgMDwTBhNT",
+    "guardadas": 2,
+    "tronscan": 1,
+    "iguales": 1,
+    "soloGuardada": 1,
+    "soloTronScan": 0,
+    "importeDistinto": 0
+   },
+   {
+    "tramo": "tramo 2",
+    "a": "TTLm5mJjE4yxNFK3KWFP3dUNk5ft2YNgR9",
+    "guardadas": 10,
+    "tronscan": 10,
+    "iguales": 10,
+    "soloGuardada": 0,
+    "soloTronScan": 0,
+    "importeDistinto": 0
+   },
+   {
+    "tramo": "tramo 2",
+    "a": "TUywQ7mkHPTUNosrRwVH5AU5XMwrRUm4A3",
+    "guardadas": 1,
+    "tronscan": 1,
+    "iguales": 1,
+    "soloGuardada": 0,
+    "soloTronScan": 0,
+    "importeDistinto": 0
+   },
+   {
+    "tramo": "tramo 2",
+    "a": "TT6SwmVRYCMXUXtoamR4wFJm56rVcitooC",
+    "guardadas": 2,
+    "tronscan": 2,
+    "iguales": 2,
+    "soloGuardada": 0,
+    "soloTronScan": 0,
+    "importeDistinto": 0
+   },
+   {
+    "tramo": "tramo 2",
+    "a": "TXYat4rneuYYdkZmbwB5js4Wnugvf79J5Y",
+    "guardadas": 4,
+    "tronscan": 4,
+    "iguales": 4,
+    "soloGuardada": 0,
+    "soloTronScan": 0,
+    "importeDistinto": 0
+   },
+   {
+    "tramo": "tramo 2",
+    "a": "TCx1JhQYZM9SbbSCLKBbFyaPb21S2QvJES",
+    "guardadas": 2,
+    "tronscan": 2,
+    "iguales": 2,
+    "soloGuardada": 0,
+    "soloTronScan": 0,
+    "importeDistinto": 0
+   },
+   {
+    "tramo": "tramo 2",
+    "a": "TQqrMuu6kcBLcXg2AC5NKUyAtkWRw7bXhk",
+    "guardadas": 2,
+    "tronscan": 2,
+    "iguales": 2,
+    "soloGuardada": 0,
+    "soloTronScan": 0,
+    "importeDistinto": 0
+   },
+   {
+    "tramo": "tramo 2",
+    "a": "TWrL5MeCLJkGZy9Uso63sd3GKNpRykp2LX",
+    "guardadas": 2,
+    "tronscan": 2,
+    "iguales": 2,
+    "soloGuardada": 0,
+    "soloTronScan": 0,
+    "importeDistinto": 0
+   }
+  ],
+  "discrepancias": [
+   {
+    "a": "TGUNQ8vErX3ac384P9XottFX6zDde5xrXK",
+    "k": "14e3d9932356af62ce1e",
+    "flujo": "nativo",
+    "v": 11580.8
+   },
+   {
+    "a": "TM6WAH6FyvH25JM3iwYw185ScRqLEFAZCK",
+    "k": "34228d10acb3b9cf7388",
+    "flujo": "nativo",
+    "v": 14080
+   },
+   {
+    "a": "TM6WAH6FyvH25JM3iwYw185ScRqLEFAZCK",
+    "k": "b02c9a7190601c089728",
+    "flujo": "nativo",
+    "v": 14009.599999999999
+   },
+   {
+    "a": "TFB9ctAhKxiCtoPAW5xZox6s53G1xX2M18",
+    "k": "a31ba199b02fc430551c",
+    "flujo": "nativo",
+    "v": 3854.3999999999996
+   },
+   {
+    "a": "TCp4YWjce3Mg4ndQYrM53dseJgjsXCMZyV",
+    "k": "9c3e8e5b71f9e7bbe5a1",
+    "flujo": "nativo",
+    "v": 2338.411796864
+   },
+   {
+    "a": "TNh1faLrXYXeZCDaVrfx9r1HtQdRt63hAd",
+    "k": "2cbc485cd95af29f8ca4",
+    "flujo": "nativo",
+    "v": 3500.640000352
+   },
+   {
+    "a": "TWEwztx6zXUEqfvZ6DDmm2dQC96cnRu4wf",
+    "k": "2d20fccabd82551c65d9",
+    "flujo": "nativo",
+    "v": 23804.009430784
+   },
+   {
+    "a": "TRQn7MCroGW6V72TZLXjKisckgSuYBMCRh",
+    "k": "4c959b81c0dc54d7cd73",
+    "flujo": "nativo",
+    "v": 2106.7200024639997
+   },
+   {
+    "a": "TLHkjropapkRY39HRf82CBMt44ssgCnqWi",
+    "k": "e4935d2faa942b3d1bd7",
+    "flujo": "nativo",
+    "v": 5104
+   },
+   {
+    "a": "THsoMuaDxxf2hoTMBhHKe6QJYsXdnedstf",
+    "k": "050cb9def4755a18e9e9",
+    "flujo": "nativo",
+    "v": 10876.8
+   },
+   {
+    "a": "TW9MQ4wqvqECAebfRgC1QyA9ohTpjgRFdi",
+    "k": "47b78b73cc70eeb50679",
+    "flujo": "nativo",
+    "v": 4195.170078176
+   },
+   {
+    "a": "TBFrxNjuf6DJ4xLwEG94FCxAnoiH4ULHxX",
+    "k": "51c110f3aed8a744b5e8",
+    "flujo": "nativo",
+    "v": 3866.332800704
+   },
+   {
+    "a": "TGHvrRe48M3ZuQb28kDcVJFefgMDwTBhNT",
+    "k": "8ea0a10e7a68317f67b4",
+    "flujo": "nativo",
+    "v": 8172.399210976
+   }
+  ]
+ }
+}

@@ -1,0 +1,115 @@
+{
+ "por": {
+  "Gate": {
+   "n": 19,
+   "bruto": 3858362.3060230003,
+   "robo": 736790.9187180162,
+   "alta": 0,
+   "media": 149775.1254492283,
+   "baja": 587015.7932687879,
+   "brutoAlta": 0,
+   "senders": 14,
+   "sendersAlta": 0
+  },
+  "Bybit": {
+   "n": 87,
+   "bruto": 3339897.172862097,
+   "robo": 2214737.390630027,
+   "alta": 0,
+   "media": 2136078.7682682327,
+   "baja": 78658.62236179349,
+   "brutoAlta": 0,
+   "senders": 28,
+   "sendersAlta": 0
+  },
+  "OKX Hot Wallet 8": {
+   "n": 120,
+   "bruto": 4890462.224802998,
+   "robo": 954596.9227681175,
+   "alta": 6445.869847810898,
+   "media": 130555.86082491116,
+   "baja": 817595.1920953954,
+   "brutoAlta": 8000,
+   "senders": 77,
+   "sendersAlta": 1
+  },
+  "Kucoin 4": {
+   "n": 6,
+   "bruto": 200976.69178,
+   "robo": 135032.55197456482,
+   "alta": 0,
+   "media": 132097.91633192066,
+   "baja": 2934.6356426441616,
+   "brutoAlta": 0,
+   "senders": 4,
+   "sendersAlta": 0
+  },
+  "Bitget 9": {
+   "n": 9,
+   "bruto": 133723.21014799998,
+   "robo": 84654.24369790996,
+   "alta": 0,
+   "media": 81337.22762986437,
+   "baja": 3317.0160680455715,
+   "brutoAlta": 0,
+   "senders": 7,
+   "sendersAlta": 0
+  },
+  "MXC": {
+   "n": 6,
+   "bruto": 60663.650049,
+   "robo": 22257.187481955996,
+   "alta": 0,
+   "media": 14392.0122732433,
+   "baja": 7865.175208712697,
+   "brutoAlta": 0,
+   "senders": 5,
+   "sendersAlta": 0
+  },
+  "Kraken: Hot Wallet": {
+   "n": 2,
+   "bruto": 16188.8,
+   "robo": 5455.9415566818225,
+   "alta": 0,
+   "media": 3200.8554340835412,
+   "baja": 2255.086122598281,
+   "brutoAlta": 0,
+   "senders": 2,
+   "sendersAlta": 0
+  }
+ },
+ "total": {
+  "n": 249,
+  "bruto": 12500274.055665093,
+  "robo": 4153525.1568272733,
+  "alta": 6445.869847810898,
+  "media": 2647437.766211484,
+  "baja": 1499641.5207679777
+ },
+ "remitentes": [
+  {
+   "de": "TKNJbXPG5F9GSmps1vkHZugao2zrm1ao1F",
+   "casa": {},
+   "n": 1,
+   "bruto": 8000,
+   "robo": 6445.869847810898,
+   "pureza": 0.8057337309763623,
+   "primera": 1793385111000,
+   "ultima": 1793385111000,
+   "mayor": {
+    "de": "TKNJbXPG5F9GSmps1vkHZugao2zrm1ao1F",
+    "a": "TLaGjwhvA8XQYSxFAcAXy7Dvuue9eGYitv",
+    "tipo": "casa",
+    "nombre": "OKX Hot Wallet 8",
+    "v": 8000,
+    "pureza": 0.8057337309763623,
+    "tainted": 6445.869847810898,
+    "sim": "USDT",
+    "cant": 8000,
+    "at": 1793385111000,
+    "tx": "0eed828b399b77c25ba32fea8eb495fd84a4c7fbb16980179f7d458a8f3be8b8",
+    "nivel": 2
+   }
+  }
+ ]
+}

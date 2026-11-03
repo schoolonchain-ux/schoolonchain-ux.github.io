@@ -1,0 +1,248 @@
+{
+ "generado": "2026-10-30T20:33:19.544Z",
+ "eventos": 9165,
+ "saltos": 8828,
+ "llegadas": {
+  "Bybit": {
+   "n": 89,
+   "trx": 2768437.7545620003,
+   "usdt": 18081312.136986002,
+   "desde": 38,
+   "primera": 1793360976000,
+   "ultima": 1793390391000,
+   "destino": "TU4vEruvZwLLkSfV9bNw12EJTPvNr7Pvaa",
+   "horas": {
+    "11": 1,
+    "13": 1,
+    "14": 3,
+    "15": 11,
+    "16": 17,
+    "17": 20,
+    "18": 29,
+    "19": 7
+   }
+  },
+  "OKX Hot Wallet 8": {
+   "n": 114,
+   "trx": 0,
+   "usdt": 122816483.70780097,
+   "desde": 60,
+   "primera": 1793354511000,
+   "ultima": 1793388711000,
+   "destino": "TLaGjwhvA8XQYSxFAcAXy7Dvuue9eGYitv",
+   "horas": {
+    "10": 1,
+    "11": 2,
+    "12": 10,
+    "13": 7,
+    "14": 14,
+    "15": 15,
+    "16": 18,
+    "17": 18,
+    "18": 18,
+    "19": 11
+   }
+  },
+  "Kraken: Hot Wallet": {
+   "n": 45,
+   "trx": 477406.0956110002,
+   "usdt": 7565631.752103,
+   "desde": 10,
+   "primera": 1793351049000,
+   "ultima": 1793387610000,
+   "destino": "TG2CMGxnTPgQ6V58kiKd7wbyN8ewtAmY76",
+   "horas": {
+    "10": 5,
+    "11": 16,
+    "12": 10,
+    "13": 2,
+    "14": 3,
+    "15": 2,
+    "16": 2,
+    "17": 1,
+    "18": 2,
+    "19": 1,
+    "09": 1
+   }
+  },
+  "Kucoin 4": {
+   "n": 15,
+   "trx": 0,
+   "usdt": 2374215.550568,
+   "desde": 10,
+   "primera": 1793353782000,
+   "ultima": 1793387802000,
+   "destino": "TUpHuDkiCCmwaTZBHZvQdwWzGNm5t8J2b9",
+   "horas": {
+    "10": 2,
+    "11": 1,
+    "14": 2,
+    "16": 2,
+    "17": 3,
+    "18": 2,
+    "19": 2,
+    "09": 1
+   }
+  },
+  "Bitget 9": {
+   "n": 7,
+   "trx": 0,
+   "usdt": 148083.300148,
+   "desde": 6,
+   "primera": 1793362032000,
+   "ultima": 1793385306000,
+   "destino": "TJ7hhYhVhaxNx6BPyq7yFpqZrQULL3JSdb",
+   "horas": {
+    "12": 1,
+    "14": 3,
+    "16": 1,
+    "18": 2
+   }
+  },
+  "Gate": {
+   "n": 11,
+   "trx": 0,
+   "usdt": 3977335.152631,
+   "desde": 10,
+   "primera": 1793364975000,
+   "ultima": 1793389245000,
+   "destino": "TBA6CypYJizwA9XdC7Ubgc5F1bxrQ7SqPt",
+   "horas": {
+    "12": 1,
+    "17": 3,
+    "18": 5,
+    "19": 2
+   }
+  },
+  "Bitfinex": {
+   "n": 1,
+   "trx": 0,
+   "usdt": 44100000,
+   "desde": 1,
+   "primera": 1793383677000,
+   "ultima": 1793383677000,
+   "destino": "TXFBqBbqJommqZf7BV8NNYzePh97UmJodJ",
+   "horas": {
+    "18": 1
+   }
+  }
+ },
+ "contratos": {
+  "«UniversalRouter»": {
+   "n": 367,
+   "trx": 47026598.024789,
+   "usdt": 100000
+  },
+  "«BWSwapRouterV1»": {
+   "n": 437,
+   "trx": 15824316.142582005,
+   "usdt": 0
+  },
+  "sin nombre": {
+   "n": 186,
+   "trx": 1790837.017655,
+   "usdt": 10148781.627182001
+  },
+  "«UsdtOFT»": {
+   "n": 29,
+   "trx": 0,
+   "usdt": 3270379.926824
+  },
+  "«MetaRouterGateway»": {
+   "n": 172,
+   "trx": 5226245,
+   "usdt": 0
+  },
+  "«CErc20Delegator»": {
+   "n": 72,
+   "trx": 0,
+   "usdt": 15299474.406530997
+  },
+  "«Bridgers»": {
+   "n": 3,
+   "trx": 0,
+   "usdt": 48886
+  },
+  "«RangoDiamond»": {
+   "n": 7,
+   "trx": 281515.736041,
+   "usdt": 0
+  },
+  "«PoolManager»": {
+   "n": 5,
+   "trx": 0,
+   "usdt": 91893.097895
+  },
+  "«UniswapV2Router02»": {
+   "n": 1,
+   "trx": 55319.290685,
+   "usdt": 0
+  },
+  "«AuthGemJoin5»": {
+   "n": 11,
+   "trx": 0,
+   "usdt": 1078466.3374
+  },
+  "«None»": {
+   "n": 1,
+   "trx": 0,
+   "usdt": 10000
+  },
+  "«Treasury»": {
+   "n": 1,
+   "trx": 0,
+   "usdt": 19117
+  },
+  "«SmartExchangeRouter»": {
+   "n": 2,
+   "trx": 37605.457345999996,
+   "usdt": 0
+  },
+  "«PayoutBufferV5»": {
+   "n": 3,
+   "trx": 0,
+   "usdt": 50026.5
+  },
+  "«WTRX»": {
+   "n": 7,
+   "trx": 1156442.422272,
+   "usdt": 0
+  },
+  "«TronUsdt0Source»": {
+   "n": 1,
+   "trx": 0,
+   "usdt": 230000
+  },
+  "«SunSwapProxy»": {
+   "n": 1,
+   "trx": 0,
+   "usdt": 32883.952226
+  },
+  "«Tron_PrefundedAdapter»": {
+   "n": 2,
+   "trx": 0,
+   "usdt": 100000
+  }
+ },
+ "niveles": {
+  "1": 92,
+  "2": 180,
+  "3": 254,
+  "4": 158,
+  "5": 130,
+  "6": 126,
+  "7": 96,
+  "8": 54,
+  "9": 54,
+  "10": 267,
+  "11": 245,
+  "12": 271,
+  "13": 403,
+  "14": 302,
+  "15": 401,
+  "16": 270,
+  "17": 235,
+  "18": 151,
+  "19": 1
+ }
+}

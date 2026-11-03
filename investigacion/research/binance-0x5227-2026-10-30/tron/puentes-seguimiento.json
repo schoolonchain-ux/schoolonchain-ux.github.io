@@ -1,0 +1,2069 @@
+[
+ {
+  "cadena": "Ethereum",
+  "evm": "0x68fbc6f669dd0c7aa3b3307979ee518473717037",
+  "recibidoDesdeTron": 550432.930908,
+  "roboEstimado": 545314.4383167897,
+  "enviosPuente": 3,
+  "entradasUSD": 550267.80113,
+  "salidasUSD": 550267.80103,
+  "nEntradas": 4,
+  "nSalidas": 24,
+  "primeraEntrada": 1793351723,
+  "ultimaSalida": 1793352311,
+  "ethSaldo": 0,
+  "saldos": {
+   "USDT": 0.0001,
+   "USDT0": 0,
+   "USDC": 0
+  },
+  "txPropias": 4,
+  "destinos": [
+   {
+    "a": "0x000000000004444c5dc75cb358380d2e3de08a90",
+    "v": 277176.409968,
+    "n": 10,
+    "sim": "USDT",
+    "nombre": "contrato PoolManager"
+   },
+   {
+    "a": "0x56534741cd8b152df6d48adf7ac51f75169a83b2",
+    "v": 119686.138975,
+    "n": 2,
+    "sim": "USDT",
+    "nombre": "contrato UniswapV3Pool"
+   },
+   {
+    "a": "0xd3d5abbd6dd40b69ca365ae45f1ffd3870b1ddf9",
+    "v": 74241.6084,
+    "n": 2,
+    "sim": "USDT",
+    "nombre": "contrato sin verificar"
+   },
+   {
+    "a": "0x11b815efb8f581194ae79006d24e0d814b7697f6",
+    "v": 58706.887223,
+    "n": 2,
+    "sim": "USDT",
+    "nombre": "contrato UniswapV3Pool"
+   }
+  ],
+  "etiqueta": null
+ },
+ {
+  "cadena": "Ethereum",
+  "evm": "0x1645dc4b3c9d6fd8ec9d21dcc07099c6924d9f1d",
+  "recibidoDesdeTron": 490703.80081100005,
+  "roboEstimado": 485926.67113802163,
+  "enviosPuente": 3,
+  "entradasUSD": 490556.58987300005,
+  "salidasUSD": 490556.589773,
+  "nEntradas": 5,
+  "nSalidas": 30,
+  "primeraEntrada": 1793343899,
+  "ultimaSalida": 1793344415,
+  "ethSaldo": 0,
+  "saldos": {
+   "USDT": 0.0001,
+   "USDT0": 0,
+   "USDC": 0
+  },
+  "txPropias": 4,
+  "destinos": [
+   {
+    "a": "0x000000000004444c5dc75cb358380d2e3de08a90",
+    "v": 263612.63149500004,
+    "n": 14,
+    "sim": "USDT",
+    "nombre": "contrato PoolManager"
+   },
+   {
+    "a": "0x56534741cd8b152df6d48adf7ac51f75169a83b2",
+    "v": 98172.44169800001,
+    "n": 2,
+    "sim": "USDT",
+    "nombre": "contrato UniswapV3Pool"
+   },
+   {
+    "a": "0xf3c2de39a77b0966cedccfdfb4de0a22dcc416b8",
+    "v": 59018.305985,
+    "n": 1,
+    "sim": "USDT",
+    "nombre": "contrato sin verificar"
+   },
+   {
+    "a": "0x11b815efb8f581194ae79006d24e0d814b7697f6",
+    "v": 43469.667998,
+    "n": 3,
+    "sim": "USDT",
+    "nombre": "contrato UniswapV3Pool"
+   }
+  ],
+  "etiqueta": null
+ },
+ {
+  "cadena": "Ethereum",
+  "evm": "0xbe6eedf71ae89f9d8517ac35595f08195790b77e",
+  "recibidoDesdeTron": 392043.153061,
+  "roboEstimado": 286360.1565947246,
+  "enviosPuente": 14,
+  "entradasUSD": 1274461.0132090002,
+  "salidasUSD": 1214259.110242,
+  "nEntradas": 91,
+  "nSalidas": 177,
+  "primeraEntrada": 1793378279,
+  "ultimaSalida": 1793433347,
+  "ethSaldo": 1.045975,
+  "saldos": {
+   "USDT": 0,
+   "USDT0": 0,
+   "USDC": 78102.545669
+  },
+  "txPropias": 59,
+  "destinos": [
+   {
+    "a": "0xd37bbe5744d730a1d98d8dc97c42f0ca46ad7146",
+    "v": 810377.86,
+    "n": 139,
+    "sim": "USDC,USDT",
+    "nombre": "contrato THORChain_Router"
+   },
+   {
+    "a": "0x082738d007001080a00099a000004f3006152085",
+    "v": 127980.82636899999,
+    "n": 5,
+    "sim": "USDT",
+    "nombre": "contrato sin verificar"
+   },
+   {
+    "a": "0x8f10b468b06c6fd214b65f87778827f7d113f996",
+    "v": 82051.467019,
+    "n": 3,
+    "sim": "USDT",
+    "nombre": "contrato sin verificar"
+   },
+   {
+    "a": "0x111116058b9828cdcdd810c502b925c14f34ca11",
+    "v": 74609.38773300001,
+    "n": 2,
+    "sim": "USDT,USDC",
+    "nombre": "contrato sin verificar"
+   }
+  ],
+  "etiqueta": null
+ },
+ {
+  "cadena": "Ethereum",
+  "evm": "0x9af28eb4506c4dee5edaaf4d0d9e9f2685a800d3",
+  "recibidoDesdeTron": 239546,
+  "roboEstimado": 174362.9381468358,
+  "enviosPuente": 21,
+  "entradasUSD": 1690839.188693001,
+  "salidasUSD": 1697928.325956,
+  "nEntradas": 107,
+  "nSalidas": 183,
+  "primeraEntrada": 1793353967,
+  "ultimaSalida": 1793441543,
+  "ethSaldo": 1.285799,
+  "saldos": {
+   "USDT": 0,
+   "USDT0": 0,
+   "USDC": 0
+  },
+  "txPropias": 60,
+  "destinos": [
+   {
+    "a": "0xd37bbe5744d730a1d98d8dc97c42f0ca46ad7146",
+    "v": 827231,
+    "n": 144,
+    "sim": "USDC,USDT",
+    "nombre": "contrato THORChain_Router"
+   },
+   {
+    "a": "0x8eed5e28216c0bc6f817df40ae6ca11c2294cc1c",
+    "v": 700594.2985010002,
+    "n": 20,
+    "sim": "USDT,USDC",
+    "nombre": "contrato Permit2Proxy"
+   },
+   {
+    "a": "0x082738d007001080a00099a000004f3006152085",
+    "v": 93745.690008,
+    "n": 6,
+    "sim": "USDT,USDC",
+    "nombre": "contrato sin verificar"
+   },
+   {
+    "a": "0x006d0e0d006109f0020f3050000a713780b7b000",
+    "v": 47357.337447,
+    "n": 6,
+    "sim": "USDC,USDT",
+    "nombre": "contrato sin verificar"
+   }
+  ],
+  "etiqueta": null
+ },
+ {
+  "cadena": "Ethereum",
+  "evm": "0x8db6f39a49f7e26e2e85de598f9faf18e1c570ad",
+  "recibidoDesdeTron": 515796.934945,
+  "roboEstimado": 164380.47653286383,
+  "enviosPuente": 3,
+  "entradasUSD": 515642.196066,
+  "salidasUSD": 515642.19596599997,
+  "nEntradas": 5,
+  "nSalidas": 17,
+  "primeraEntrada": 1793349947,
+  "ultimaSalida": 1793350475,
+  "ethSaldo": 0,
+  "saldos": {
+   "USDT": 0.0001,
+   "USDT0": 0,
+   "USDC": 0
+  },
+  "txPropias": 3,
+  "destinos": [
+   {
+    "a": "0x000000000004444c5dc75cb358380d2e3de08a90",
+    "v": 295803.949961,
+    "n": 6,
+    "sim": "USDT",
+    "nombre": "contrato PoolManager"
+   },
+   {
+    "a": "0x56534741cd8b152df6d48adf7ac51f75169a83b2",
+    "v": 166764.226449,
+    "n": 2,
+    "sim": "USDT",
+    "nombre": "contrato UniswapV3Pool"
+   },
+   {
+    "a": "0x11b815efb8f581194ae79006d24e0d814b7697f6",
+    "v": 41870.910154,
+    "n": 2,
+    "sim": "USDT",
+    "nombre": "contrato UniswapV3Pool"
+   },
+   {
+    "a": "0xc7bbec68d12a0d1830360f8ec58fa599ba1b0e9b",
+    "v": 5823.061362,
+    "n": 2,
+    "sim": "USDT",
+    "nombre": "contrato UniswapV3Pool"
+   }
+  ],
+  "etiqueta": null
+ },
+ {
+  "cadena": "Ethereum",
+  "evm": "0x3614504fc81cb09ea6d01514d532bebe8d211b4e",
+  "recibidoDesdeTron": 210000,
+  "roboEstimado": 150632.66601197395,
+  "enviosPuente": 11,
+  "entradasUSD": 1318313.0294150007,
+  "salidasUSD": 1253274,
+  "nEntradas": 86,
+  "nSalidas": 188,
+  "primeraEntrada": 1793365319,
+  "ultimaSalida": 1793435327,
+  "ethSaldo": 3.759156,
+  "saldos": {
+   "USDT": 104980.346135,
+   "USDT0": 0,
+   "USDC": 88.823152
+  },
+  "txPropias": 60,
+  "destinos": [
+   {
+    "a": "0xd37bbe5744d730a1d98d8dc97c42f0ca46ad7146",
+    "v": 1185274,
+    "n": 113,
+    "sim": "USDC,USDT",
+    "nombre": "contrato THORChain_Router"
+   },
+   {
+    "a": "0x01c2373dd04d94cdf5b2a6d89020692c0a046b96",
+    "v": 10000,
+    "n": 1,
+    "sim": "USDT",
+    "nombre": null
+   },
+   {
+    "a": "0x91158eb941b4e340e35b39c76a577667bd86a9cb",
+    "v": 10000,
+    "n": 1,
+    "sim": "USDT",
+    "nombre": null
+   },
+   {
+    "a": "0x2e5736e3de82b192bd40f8aaf1bb1c0a68f50035",
+    "v": 8000,
+    "n": 1,
+    "sim": "USDT",
+    "nombre": null
+   }
+  ],
+  "etiqueta": null
+ },
+ {
+  "cadena": "Ethereum",
+  "evm": "0x35006cdf05363766e863a0c00bef5fbcc82027a6",
+  "recibidoDesdeTron": 144862.28143099998,
+  "roboEstimado": 144862.28143099998,
+  "enviosPuente": 2,
+  "entradasUSD": 144818.822747,
+  "salidasUSD": 144818.822747,
+  "nEntradas": 2,
+  "nSalidas": 2,
+  "primeraEntrada": 1793393783,
+  "ultimaSalida": 1793394155,
+  "ethSaldo": 0,
+  "saldos": {
+   "USDT": 0,
+   "USDT0": 0,
+   "USDC": 0
+  },
+  "txPropias": 3,
+  "destinos": [
+   {
+    "a": "0x9008d19f58aabd9ed0d60971565aa8510560ab41",
+    "v": 144818.822747,
+    "n": 2,
+    "sim": "USDT",
+    "nombre": "contrato GPv2Settlement"
+   }
+  ],
+  "etiqueta": null
+ },
+ {
+  "cadena": "Ethereum",
+  "evm": "0x111c09990a872946128a2acd26af398513d97ce5",
+  "recibidoDesdeTron": 122714.31413,
+  "roboEstimado": 122714.31413,
+  "enviosPuente": 1,
+  "entradasUSD": 0,
+  "salidasUSD": 0,
+  "nEntradas": 0,
+  "nSalidas": 0,
+  "primeraEntrada": null,
+  "ultimaSalida": null,
+  "ethSaldo": 0.014339,
+  "saldos": {
+   "USDT": 0,
+   "USDT0": 0,
+   "USDC": 0
+  },
+  "txPropias": 0,
+  "destinos": [],
+  "etiqueta": null
+ },
+ {
+  "cadena": "Ethereum",
+  "evm": "0xea2b1f83c372ba3c6704658a7dddc472e9c18b98",
+  "recibidoDesdeTron": 103101.226632,
+  "roboEstimado": 102142.4851849902,
+  "enviosPuente": 1,
+  "entradasUSD": 103070.296265,
+  "salidasUSD": 103070.296265,
+  "nEntradas": 1,
+  "nSalidas": 12,
+  "primeraEntrada": 1793353163,
+  "ultimaSalida": 1793353283,
+  "ethSaldo": 0,
+  "saldos": {
+   "USDT": 0,
+   "USDT0": 0,
+   "USDC": 0
+  },
+  "txPropias": 2,
+  "destinos": [
+   {
+    "a": "0x000000000004444c5dc75cb358380d2e3de08a90",
+    "v": 50391.067842,
+    "n": 4,
+    "sim": "USDT",
+    "nombre": "contrato PoolManager"
+   },
+   {
+    "a": "0x56534741cd8b152df6d48adf7ac51f75169a83b2",
+    "v": 19995.637475,
+    "n": 1,
+    "sim": "USDT",
+    "nombre": "contrato UniswapV3Pool"
+   },
+   {
+    "a": "0xd3d5abbd6dd40b69ca365ae45f1ffd3870b1ddf9",
+    "v": 15872.825624,
+    "n": 1,
+    "sim": "USDT",
+    "nombre": "contrato sin verificar"
+   },
+   {
+    "a": "0x11b815efb8f581194ae79006d24e0d814b7697f6",
+    "v": 10966.679522,
+    "n": 1,
+    "sim": "USDT",
+    "nombre": "contrato UniswapV3Pool"
+   }
+  ],
+  "etiqueta": null
+ },
+ {
+  "cadena": "Ethereum",
+  "evm": "0x86d82a09dce269a6cb44fae172f28d328d1a378d",
+  "recibidoDesdeTron": 108050.60884,
+  "roboEstimado": 99306.29876331093,
+  "enviosPuente": 3,
+  "entradasUSD": 108018.193659,
+  "salidasUSD": 108018.193659,
+  "nEntradas": 3,
+  "nSalidas": 3,
+  "primeraEntrada": 1793390435,
+  "ultimaSalida": 1793392115,
+  "ethSaldo": 0,
+  "saldos": {
+   "USDT": 0,
+   "USDT0": 0,
+   "USDC": 0
+  },
+  "txPropias": 6,
+  "destinos": [
+   {
+    "a": "0x9008d19f58aabd9ed0d60971565aa8510560ab41",
+    "v": 74249.242704,
+    "n": 2,
+    "sim": "USDT",
+    "nombre": "contrato GPv2Settlement"
+   },
+   {
+    "a": "0x8eed5e28216c0bc6f817df40ae6ca11c2294cc1c",
+    "v": 33768.950955,
+    "n": 1,
+    "sim": "USDT",
+    "nombre": "contrato Permit2Proxy"
+   }
+  ],
+  "etiqueta": null
+ },
+ {
+  "cadena": "Ethereum",
+  "evm": "0x3a2c6bbe9775fff0cc8ada21d2c565928c5b8a65",
+  "recibidoDesdeTron": 281317.262643,
+  "roboEstimado": 92052.34789794768,
+  "enviosPuente": 5,
+  "entradasUSD": 376284.09618299996,
+  "salidasUSD": 358730.524131,
+  "nEntradas": 9,
+  "nSalidas": 42,
+  "primeraEntrada": 1793338775,
+  "ultimaSalida": 1793340551,
+  "ethSaldo": 0,
+  "saldos": {
+   "USDT": 0,
+   "USDT0": 0,
+   "USDC": 0
+  },
+  "txPropias": 9,
+  "destinos": [
+   {
+    "a": "0x000000000004444c5dc75cb358380d2e3de08a90",
+    "v": 198549.814436,
+    "n": 20,
+    "sim": "USDT",
+    "nombre": "contrato PoolManager"
+   },
+   {
+    "a": "0x56534741cd8b152df6d48adf7ac51f75169a83b2",
+    "v": 57958.31206,
+    "n": 1,
+    "sim": "USDT",
+    "nombre": "contrato UniswapV3Pool"
+   },
+   {
+    "a": "0xf99f08f69f45541222429aec99315630639bd81b",
+    "v": 38998.753333,
+    "n": 1,
+    "sim": "USDT",
+    "nombre": "contrato GenericSwapExecutor"
+   },
+   {
+    "a": "0x11b815efb8f581194ae79006d24e0d814b7697f6",
+    "v": 37643.493641,
+    "n": 4,
+    "sim": "USDT",
+    "nombre": "contrato UniswapV3Pool"
+   }
+  ],
+  "etiqueta": null
+ },
+ {
+  "cadena": "Ethereum",
+  "evm": "0x378af0874ef26db41142d1e8ddbdd012bc058052",
+  "recibidoDesdeTron": 90950.605886,
+  "roboEstimado": 90950.605886,
+  "enviosPuente": 1,
+  "entradasUSD": 90923.320705,
+  "salidasUSD": 90923.320705,
+  "nEntradas": 1,
+  "nSalidas": 1,
+  "primeraEntrada": 1793393915,
+  "ultimaSalida": 1793394107,
+  "ethSaldo": 0,
+  "saldos": {
+   "USDT": 0,
+   "USDT0": 0,
+   "USDC": 0
+  },
+  "txPropias": 4,
+  "destinos": [
+   {
+    "a": "0x8eed5e28216c0bc6f817df40ae6ca11c2294cc1c",
+    "v": 90923.320705,
+    "n": 1,
+    "sim": "USDT",
+    "nombre": "contrato Permit2Proxy"
+   }
+  ],
+  "etiqueta": null
+ },
+ {
+  "cadena": "Ethereum",
+  "evm": "0x69773eea5a9cc883cd4acdf654bde7bb4d29823c",
+  "recibidoDesdeTron": 121440,
+  "roboEstimado": 88973.20873455984,
+  "enviosPuente": 12,
+  "entradasUSD": 342510.38059099996,
+  "salidasUSD": 342510.37,
+  "nEntradas": 50,
+  "nSalidas": 60,
+  "primeraEntrada": 1793379683,
+  "ultimaSalida": 1793420303,
+  "ethSaldo": 0.002799,
+  "saldos": {
+   "USDT": 0.007641,
+   "USDT0": 0,
+   "USDC": 0.00295
+  },
+  "txPropias": 60,
+  "destinos": [
+   {
+    "a": "0xd37bbe5744d730a1d98d8dc97c42f0ca46ad7146",
+    "v": 322510.37,
+    "n": 48,
+    "sim": "USDT,USDC",
+    "nombre": "contrato THORChain_Router"
+   },
+   {
+    "a": "0xce24321d0544f2873d028342a66e9998fb487e1b",
+    "v": 10000,
+    "n": 1,
+    "sim": "USDT",
+    "nombre": null
+   },
+   {
+    "a": "0x62b616164a3fb47db87a0e84e055d41544e713fb",
+    "v": 10000,
+    "n": 1,
+    "sim": "USDT",
+    "nombre": null
+   },
+   {
+    "a": "0xce24c0968cd7ab4333b29982599eacd200ba7e1b",
+    "v": 0,
+    "n": 2,
+    "sim": "USDT",
+    "nombre": null
+   }
+  ],
+  "etiqueta": null
+ },
+ {
+  "cadena": "Ethereum",
+  "evm": "0xd50943f09a20c3eaa0a392a8ed5f17732985eaa2",
+  "recibidoDesdeTron": 87633.720192,
+  "roboEstimado": 87633.720192,
+  "enviosPuente": 1,
+  "entradasUSD": 87607.430076,
+  "salidasUSD": 87607.430076,
+  "nEntradas": 1,
+  "nSalidas": 1,
+  "primeraEntrada": 1793394191,
+  "ultimaSalida": 1793394287,
+  "ethSaldo": 0,
+  "saldos": {
+   "USDT": 0,
+   "USDT0": 0,
+   "USDC": 0
+  },
+  "txPropias": 3,
+  "destinos": [
+   {
+    "a": "0x8eed5e28216c0bc6f817df40ae6ca11c2294cc1c",
+    "v": 87607.430076,
+    "n": 1,
+    "sim": "USDT",
+    "nombre": "contrato Permit2Proxy"
+   }
+  ],
+  "etiqueta": null
+ },
+ {
+  "cadena": "Ethereum",
+  "evm": "0x27cdf8658d0fa30a9aac57c0c8010a1a9dcc10a7",
+  "recibidoDesdeTron": 87205.55031,
+  "roboEstimado": 87205.55031,
+  "enviosPuente": 1,
+  "entradasUSD": 87179.388645,
+  "salidasUSD": 87179.388645,
+  "nEntradas": 1,
+  "nSalidas": 1,
+  "primeraEntrada": 1793393267,
+  "ultimaSalida": 1793393543,
+  "ethSaldo": 0,
+  "saldos": {
+   "USDT": 0,
+   "USDT0": 0,
+   "USDC": 0
+  },
+  "txPropias": 2,
+  "destinos": [
+   {
+    "a": "0x9008d19f58aabd9ed0d60971565aa8510560ab41",
+    "v": 87179.388645,
+    "n": 1,
+    "sim": "USDT",
+    "nombre": "contrato GPv2Settlement"
+   }
+  ],
+  "etiqueta": null
+ },
+ {
+  "cadena": "Ethereum",
+  "evm": "0x306dc9f1913617b756cd49e9d9e10543e475ca6f",
+  "recibidoDesdeTron": 110037.76776300001,
+  "roboEstimado": 80865.17040136144,
+  "enviosPuente": 5,
+  "entradasUSD": 383810.90917100006,
+  "salidasUSD": 335728.22212000005,
+  "nEntradas": 23,
+  "nSalidas": 63,
+  "primeraEntrada": 1793387651,
+  "ultimaSalida": 1793421983,
+  "ethSaldo": 0.753877,
+  "saldos": {
+   "USDT": 23622.492773,
+   "USDT0": 0,
+   "USDC": 24460.194278
+  },
+  "txPropias": 60,
+  "destinos": [
+   {
+    "a": "0xd37bbe5744d730a1d98d8dc97c42f0ca46ad7146",
+    "v": 231058.9,
+    "n": 14,
+    "sim": "USDT",
+    "nombre": "contrato THORChain_Router"
+   },
+   {
+    "a": "0x8eed5e28216c0bc6f817df40ae6ca11c2294cc1c",
+    "v": 74669.32212,
+    "n": 6,
+    "sim": "USDT",
+    "nombre": "contrato Permit2Proxy"
+   },
+   {
+    "a": "0xce24321d0544f2873d028342a66e9998fb487e1b",
+    "v": 20000,
+    "n": 1,
+    "sim": "USDT",
+    "nombre": null
+   },
+   {
+    "a": "0x8f10b468b06c6fd214b65f87778827f7d113f996",
+    "v": 10000,
+    "n": 1,
+    "sim": "USDT",
+    "nombre": "contrato sin verificar"
+   }
+  ],
+  "etiqueta": null
+ },
+ {
+  "cadena": "Ethereum",
+  "evm": "0xb1a556b4ccdbb5d4b24de68420360a8603349b8b",
+  "recibidoDesdeTron": 108102.231795,
+  "roboEstimado": 80806.82068937033,
+  "enviosPuente": 6,
+  "entradasUSD": 576435.836939999,
+  "salidasUSD": 721344.51134,
+  "nEntradas": 79,
+  "nSalidas": 129,
+  "primeraEntrada": 1793343815,
+  "ultimaSalida": 1793437799,
+  "ethSaldo": 0.008233,
+  "saldos": {
+   "USDT": 49046.288316,
+   "USDT0": 0,
+   "USDC": 382.656824
+  },
+  "txPropias": 60,
+  "destinos": [
+   {
+    "a": "0xd37bbe5744d730a1d98d8dc97c42f0ca46ad7146",
+    "v": 537006.89,
+    "n": 82,
+    "sim": "USDT,USDC",
+    "nombre": "contrato THORChain_Router"
+   },
+   {
+    "a": "0x000000000004444c5dc75cb358380d2e3de08a90",
+    "v": 86165,
+    "n": 2,
+    "sim": "USDT",
+    "nombre": "contrato PoolManager"
+   },
+   {
+    "a": "0xdacb42fccbc859a64a2f362d1b6723847dac1cbd",
+    "v": 51619.890273000005,
+    "n": 21,
+    "sim": "USDT",
+    "nombre": "contrato sin verificar"
+   },
+   {
+    "a": "0x0094a825c69ad721cd3a3c9d04f2134ba670ec54",
+    "v": 20000,
+    "n": 1,
+    "sim": "USDT",
+    "nombre": null
+   }
+  ],
+  "etiqueta": null
+ },
+ {
+  "cadena": "Ethereum",
+  "evm": "0x3a793b6ffea212acc8e2d2b9b45a3db7c9c4248d",
+  "recibidoDesdeTron": 244102.696485,
+  "roboEstimado": 77793.63321621904,
+  "enviosPuente": 1,
+  "entradasUSD": 543939.465777,
+  "salidasUSD": 543939.465677,
+  "nEntradas": 3,
+  "nSalidas": 23,
+  "primeraEntrada": 1793348375,
+  "ultimaSalida": 1793348939,
+  "ethSaldo": 0,
+  "saldos": {
+   "USDT": 0.0001,
+   "USDT0": 0,
+   "USDC": 0
+  },
+  "txPropias": 3,
+  "destinos": [
+   {
+    "a": "0x000000000004444c5dc75cb358380d2e3de08a90",
+    "v": 248689.139194,
+    "n": 11,
+    "sim": "USDT",
+    "nombre": "contrato PoolManager"
+   },
+   {
+    "a": "0x56534741cd8b152df6d48adf7ac51f75169a83b2",
+    "v": 151637.812786,
+    "n": 2,
+    "sim": "USDT",
+    "nombre": "contrato UniswapV3Pool"
+   },
+   {
+    "a": "0x4e68ccd3e89f51c3074ca5072bbac773960dfa36",
+    "v": 71678.49,
+    "n": 1,
+    "sim": "USDT",
+    "nombre": "contrato UniswapV3Pool"
+   },
+   {
+    "a": "0x11b815efb8f581194ae79006d24e0d814b7697f6",
+    "v": 56139.271866,
+    "n": 2,
+    "sim": "USDT",
+    "nombre": "contrato UniswapV3Pool"
+   }
+  ],
+  "etiqueta": null
+ },
+ {
+  "cadena": "Ethereum",
+  "evm": "0xb8ea8bdf42629587be3b67260cce0d2383b81330",
+  "recibidoDesdeTron": 243959.036623,
+  "roboEstimado": 77747.84993412814,
+  "enviosPuente": 1,
+  "entradasUSD": 243885.848913,
+  "salidasUSD": 243885.848913,
+  "nEntradas": 1,
+  "nSalidas": 10,
+  "primeraEntrada": 1793349383,
+  "ultimaSalida": 1793349407,
+  "ethSaldo": 0,
+  "saldos": {
+   "USDT": 0,
+   "USDT0": 0,
+   "USDC": 0
+  },
+  "txPropias": 3,
+  "destinos": [
+   {
+    "a": "0x000000000004444c5dc75cb358380d2e3de08a90",
+    "v": 135478.58906700002,
+    "n": 6,
+    "sim": "USDT",
+    "nombre": "contrato PoolManager"
+   },
+   {
+    "a": "0x56534741cd8b152df6d48adf7ac51f75169a83b2",
+    "v": 83384.571743,
+    "n": 1,
+    "sim": "USDT",
+    "nombre": "contrato UniswapV3Pool"
+   },
+   {
+    "a": "0x11b815efb8f581194ae79006d24e0d814b7697f6",
+    "v": 20681.519994,
+    "n": 1,
+    "sim": "USDT",
+    "nombre": "contrato UniswapV3Pool"
+   },
+   {
+    "a": "0xc7bbec68d12a0d1830360f8ec58fa599ba1b0e9b",
+    "v": 3877.784997,
+    "n": 1,
+    "sim": "USDT",
+    "nombre": null
+   }
+  ],
+  "etiqueta": null
+ },
+ {
+  "cadena": "Arbitrum",
+  "evm": "0x7bc4ef25e98059f624fa1d0bb4193fb0aa27413d",
+  "recibidoDesdeTron": 140078.263725,
+  "roboEstimado": 74670.3560093519,
+  "enviosPuente": 17,
+  "entradasUSD": 224099.76046599998,
+  "salidasUSD": 224099.76012100003,
+  "nEntradas": 28,
+  "nSalidas": 37,
+  "primeraEntrada": 1793382020,
+  "ultimaSalida": 1793436383,
+  "ethSaldo": 0.076824,
+  "saldos": {
+   "USDT": 0.000345,
+   "USDC": 0
+  },
+  "txPropias": 54,
+  "destinos": [
+   {
+    "a": "0x216a51e9f4f2db8d21df95c38364b76943733ecc",
+    "v": 16638.85,
+    "n": 1,
+    "sim": "USD₮0",
+    "nombre": null
+   },
+   {
+    "a": "0x3341230c79824092bea4267c3ac7668975c8cc57",
+    "v": 16456.22,
+    "n": 1,
+    "sim": "USD₮0",
+    "nombre": null
+   },
+   {
+    "a": "0x1e4d552a251f484275912e80e06cbe6a7e59e2c9",
+    "v": 16385.11,
+    "n": 1,
+    "sim": "USD₮0",
+    "nombre": null
+   },
+   {
+    "a": "0x878900579dd1f4cb91e45cd83f0570e018f8e4fa",
+    "v": 16249.06,
+    "n": 1,
+    "sim": "USD₮0",
+    "nombre": null
+   }
+  ],
+  "etiqueta": null
+ },
+ {
+  "cadena": "Ethereum",
+  "evm": "0x00c78c256b12d21f8a7dc06fe6dfe07c16886e4c",
+  "recibidoDesdeTron": 78707.31669499999,
+  "roboEstimado": 57961.66416124726,
+  "enviosPuente": 13,
+  "entradasUSD": 353535.22524600005,
+  "salidasUSD": 349332,
+  "nEntradas": 113,
+  "nSalidas": 173,
+  "primeraEntrada": 1793390987,
+  "ultimaSalida": 1793441567,
+  "ethSaldo": 5.295083,
+  "saldos": {
+   "USDT": 5889.231562,
+   "USDT0": 0,
+   "USDC": 10
+  },
+  "txPropias": 56,
+  "destinos": [
+   {
+    "a": "0xd37bbe5744d730a1d98d8dc97c42f0ca46ad7146",
+    "v": 178031,
+    "n": 83,
+    "sim": "USDT",
+    "nombre": "contrato THORChain_Router"
+   },
+   {
+    "a": "0x0729e2a4716d9f7dd17858d5d504426d228697f7",
+    "v": 69249,
+    "n": 30,
+    "sim": "USDT",
+    "nombre": "contrato RelayRouter"
+   },
+   {
+    "a": "0xd39bd131eb88771be62119ce0d518a4db62df678",
+    "v": 4068,
+    "n": 1,
+    "sim": "USDT",
+    "nombre": null
+   },
+   {
+    "a": "0xe756b3936661718172db4b4f8c7f305f2903ec10",
+    "v": 2514,
+    "n": 1,
+    "sim": "USDT",
+    "nombre": null
+   }
+  ],
+  "etiqueta": null
+ },
+ {
+  "cadena": "Ethereum",
+  "evm": "0x454f6768fbfc47af2ca22113451e17e6373dbdee",
+  "recibidoDesdeTron": 64559.015237,
+  "roboEstimado": 47889.24997396881,
+  "enviosPuente": 1,
+  "entradasUSD": 64539.647533,
+  "salidasUSD": 64539.647533,
+  "nEntradas": 1,
+  "nSalidas": 1,
+  "primeraEntrada": 1793392571,
+  "ultimaSalida": 1793392667,
+  "ethSaldo": 0.000001,
+  "saldos": {
+   "USDT": 0,
+   "USDT0": 0,
+   "USDC": 0
+  },
+  "txPropias": 3,
+  "destinos": [
+   {
+    "a": "0x8eed5e28216c0bc6f817df40ae6ca11c2294cc1c",
+    "v": 64539.647533,
+    "n": 1,
+    "sim": "USDT",
+    "nombre": "contrato Permit2Proxy"
+   }
+  ],
+  "etiqueta": null
+ },
+ {
+  "cadena": "Ethereum",
+  "evm": "0x8a111b449ac13d9fcc040759f7de89e6639519fb",
+  "recibidoDesdeTron": 60505.362486,
+  "roboEstimado": 42420.84650455691,
+  "enviosPuente": 4,
+  "entradasUSD": 921507.761157,
+  "salidasUSD": 980553.5351280003,
+  "nEntradas": 80,
+  "nSalidas": 138,
+  "primeraEntrada": 1793391647,
+  "ultimaSalida": 1793420879,
+  "ethSaldo": 0.004236,
+  "saldos": {
+   "USDT": 0,
+   "USDT0": 0,
+   "USDC": 0.044083
+  },
+  "txPropias": 48,
+  "destinos": [
+   {
+    "a": "0xd37bbe5744d730a1d98d8dc97c42f0ca46ad7146",
+    "v": 901737.4500000002,
+    "n": 99,
+    "sim": "USDT,USDC",
+    "nombre": "contrato THORChain_Router"
+   },
+   {
+    "a": "0x0729e2a4716d9f7dd17858d5d504426d228697f7",
+    "v": 43317.320563999994,
+    "n": 2,
+    "sim": "USDC",
+    "nombre": "contrato RelayRouter"
+   },
+   {
+    "a": "0x4cd00e387622c35bddb9b4c962c136462338bc31",
+    "v": 28498.764564,
+    "n": 5,
+    "sim": "USDT",
+    "nombre": "contrato RelayDepository"
+   },
+   {
+    "a": "0x635616444a98925d1abddaf40311aa8cc3b33c91",
+    "v": 5000,
+    "n": 1,
+    "sim": "USDT",
+    "nombre": null
+   }
+  ],
+  "etiqueta": null
+ },
+ {
+  "cadena": "Ethereum",
+  "evm": "0x8b439b6ea499a5ab6ee9c0b9322b4094fd3a8252",
+  "recibidoDesdeTron": 42322.228922,
+  "roboEstimado": 38669.179942090246,
+  "enviosPuente": 1,
+  "entradasUSD": 42309.532254,
+  "salidasUSD": 42309.532254,
+  "nEntradas": 1,
+  "nSalidas": 1,
+  "primeraEntrada": 1793392643,
+  "ultimaSalida": 1793392847,
+  "ethSaldo": 0,
+  "saldos": {
+   "USDT": 0,
+   "USDT0": 0,
+   "USDC": 0
+  },
+  "txPropias": 4,
+  "destinos": [
+   {
+    "a": "0x8eed5e28216c0bc6f817df40ae6ca11c2294cc1c",
+    "v": 42309.532254,
+    "n": 1,
+    "sim": "USDT",
+    "nombre": "contrato Permit2Proxy"
+   }
+  ],
+  "etiqueta": null
+ },
+ {
+  "cadena": "Ethereum",
+  "evm": "0x1e46774848299872968446243f906d0770bc63b6",
+  "recibidoDesdeTron": 33774.312044,
+  "roboEstimado": 33774.312044,
+  "enviosPuente": 1,
+  "entradasUSD": 33764.179751,
+  "salidasUSD": 33764.179751,
+  "nEntradas": 1,
+  "nSalidas": 1,
+  "primeraEntrada": 1793391695,
+  "ultimaSalida": 1793391875,
+  "ethSaldo": 0.000001,
+  "saldos": {
+   "USDT": 0,
+   "USDT0": 0,
+   "USDC": 0
+  },
+  "txPropias": 2,
+  "destinos": [
+   {
+    "a": "0x9008d19f58aabd9ed0d60971565aa8510560ab41",
+    "v": 33764.179751,
+    "n": 1,
+    "sim": "USDT",
+    "nombre": "contrato GPv2Settlement"
+   }
+  ],
+  "etiqueta": null
+ },
+ {
+  "cadena": "Ethereum",
+  "evm": "0x84d9f5b6f7e7637f9f2b0e5ce79aa178945c3c44",
+  "recibidoDesdeTron": 43727.926708,
+  "roboEstimado": 31395.741217124712,
+  "enviosPuente": 5,
+  "entradasUSD": 319859.531043,
+  "salidasUSD": 318364.4,
+  "nEntradas": 70,
+  "nSalidas": 83,
+  "primeraEntrada": 1793390027,
+  "ultimaSalida": 1793418335,
+  "ethSaldo": 0.010075,
+  "saldos": {
+   "USDT": 503.969446,
+   "USDT0": 0,
+   "USDC": 991.161597
+  },
+  "txPropias": 45,
+  "destinos": [
+   {
+    "a": "0xd37bbe5744d730a1d98d8dc97c42f0ca46ad7146",
+    "v": 318364.4,
+    "n": 83,
+    "sim": "USDC,USDT",
+    "nombre": "contrato THORChain_Router"
+   }
+  ],
+  "etiqueta": null
+ },
+ {
+  "cadena": "Ethereum",
+  "evm": "0x82c58a7e35ddf16af35901cdc379de57fa2b8080",
+  "recibidoDesdeTron": 42318.172803,
+  "roboEstimado": 31198.44311636439,
+  "enviosPuente": 6,
+  "entradasUSD": 355943.9807900001,
+  "salidasUSD": 355943.8827810001,
+  "nEntradas": 35,
+  "nSalidas": 52,
+  "primeraEntrada": 1793385935,
+  "ultimaSalida": 1793415851,
+  "ethSaldo": 0.000022,
+  "saldos": {
+   "USDT": 0,
+   "USDT0": 0,
+   "USDC": 0.098009
+  },
+  "txPropias": 45,
+  "destinos": [
+   {
+    "a": "0xd37bbe5744d730a1d98d8dc97c42f0ca46ad7146",
+    "v": 198348.33000000002,
+    "n": 25,
+    "sim": "USDC,USDT",
+    "nombre": "contrato THORChain_Router"
+   },
+   {
+    "a": "0x9791f20407fcd8e36c53d456e94d05cd724bac2c",
+    "v": 25536.172732,
+    "n": 1,
+    "sim": "USDT",
+    "nombre": "contrato SwapEscrowV7"
+   },
+   {
+    "a": "0x538fdaf80df94528898d99a5b3e98d1b601d7f04",
+    "v": 25153.706635,
+    "n": 1,
+    "sim": "USDT",
+    "nombre": "contrato SwapEscrowV7"
+   },
+   {
+    "a": "0x87865cc833784e58b9dfe97f06c8ee525d9410db",
+    "v": 24823.545231,
+    "n": 1,
+    "sim": "USDT",
+    "nombre": "contrato SwapEscrowV7"
+   }
+  ],
+  "etiqueta": null
+ },
+ {
+  "cadena": "Ethereum",
+  "evm": "0x2c121f83825e59f7b995d67084d872c18bebf5be",
+  "recibidoDesdeTron": 26959.90389,
+  "roboEstimado": 26959.90389,
+  "enviosPuente": 1,
+  "entradasUSD": 26951.815919,
+  "salidasUSD": 26951.815919,
+  "nEntradas": 1,
+  "nSalidas": 1,
+  "primeraEntrada": 1793392151,
+  "ultimaSalida": 1793392307,
+  "ethSaldo": 0.000001,
+  "saldos": {
+   "USDT": 0,
+   "USDT0": 0,
+   "USDC": 0
+  },
+  "txPropias": 3,
+  "destinos": [
+   {
+    "a": "0x8eed5e28216c0bc6f817df40ae6ca11c2294cc1c",
+    "v": 26951.815919,
+    "n": 1,
+    "sim": "USDT",
+    "nombre": "contrato Permit2Proxy"
+   }
+  ],
+  "etiqueta": null
+ },
+ {
+  "cadena": "Ethereum",
+  "evm": "0x1145e4661a7ca95af6913c219bd0e6d0ae5298bb",
+  "recibidoDesdeTron": 23605.364418,
+  "roboEstimado": 20768.275635262682,
+  "enviosPuente": 1,
+  "entradasUSD": 23598.282809,
+  "salidasUSD": 23598.282809,
+  "nEntradas": 1,
+  "nSalidas": 1,
+  "primeraEntrada": 1793391827,
+  "ultimaSalida": 1793392031,
+  "ethSaldo": 0,
+  "saldos": {
+   "USDT": 0,
+   "USDT0": 0,
+   "USDC": 0
+  },
+  "txPropias": 3,
+  "destinos": [
+   {
+    "a": "0x11b815efb8f581194ae79006d24e0d814b7697f6",
+    "v": 23598.282809,
+    "n": 1,
+    "sim": "USDT",
+    "nombre": "contrato UniswapV3Pool"
+   }
+  ],
+  "etiqueta": null
+ },
+ {
+  "cadena": "Ethereum",
+  "evm": "0xaf1b2e02decc11462b9d54fafd0098862eb9e503",
+  "recibidoDesdeTron": 207250.20013,
+  "roboEstimado": 13789.252705352941,
+  "enviosPuente": 9,
+  "entradasUSD": 714731.2274600001,
+  "salidasUSD": 714731.2274600001,
+  "nEntradas": 43,
+  "nSalidas": 92,
+  "primeraEntrada": 1793319887,
+  "ultimaSalida": 1793439407,
+  "ethSaldo": 1.863836,
+  "saldos": {
+   "USDT": 0,
+   "USDT0": 0,
+   "USDC": 0
+  },
+  "txPropias": 44,
+  "destinos": [
+   {
+    "a": "0x000000000004444c5dc75cb358380d2e3de08a90",
+    "v": 220385.22036099999,
+    "n": 11,
+    "sim": "USDT,USDC",
+    "nombre": "contrato PoolManager"
+   },
+   {
+    "a": "0xe0554a476a092703abdb3ef35c80e0d76d32939f",
+    "v": 70513.835084,
+    "n": 7,
+    "sim": "USDC",
+    "nombre": "contrato UniswapV3Pool"
+   },
+   {
+    "a": "0x88e6a0c2ddd26feeb64f039a2c41296fcb3f5640",
+    "v": 40294.405388,
+    "n": 5,
+    "sim": "USDC",
+    "nombre": "contrato UniswapV3Pool"
+   },
+   {
+    "a": "0x4cd00e387622c35bddb9b4c962c136462338bc31",
+    "v": 28052.044199,
+    "n": 2,
+    "sim": "USDT",
+    "nombre": "contrato RelayDepository"
+   }
+  ],
+  "etiqueta": null
+ },
+ {
+  "cadena": "Ethereum",
+  "evm": "0x1c7c2eb0e93d166acf71f3ee775e387dc9379f54",
+  "recibidoDesdeTron": 6758.984279,
+  "roboEstimado": 6758.984279,
+  "enviosPuente": 1,
+  "entradasUSD": 6756.956584,
+  "salidasUSD": 6756.956584,
+  "nEntradas": 1,
+  "nSalidas": 1,
+  "primeraEntrada": 1793390987,
+  "ultimaSalida": 1793391239,
+  "ethSaldo": 0,
+  "saldos": {
+   "USDT": 0,
+   "USDT0": 0,
+   "USDC": 0
+  },
+  "txPropias": 2,
+  "destinos": [
+   {
+    "a": "0x9008d19f58aabd9ed0d60971565aa8510560ab41",
+    "v": 6756.956584,
+    "n": 1,
+    "sim": "USDT",
+    "nombre": "contrato GPv2Settlement"
+   }
+  ],
+  "etiqueta": null
+ },
+ {
+  "cadena": "Ethereum",
+  "evm": "0xb196981c37cfe105506613d1bd4153b9e63df92e",
+  "recibidoDesdeTron": 1000,
+  "roboEstimado": 990.6040170355355,
+  "enviosPuente": 1,
+  "entradasUSD": 49401.10162999999,
+  "salidasUSD": 49401.101630000005,
+  "nEntradas": 15,
+  "nSalidas": 8,
+  "primeraEntrada": 1793330567,
+  "ultimaSalida": 1793338031,
+  "ethSaldo": 0.000044,
+  "saldos": {
+   "USDT": 0,
+   "USDT0": 0,
+   "USDC": 0
+  },
+  "txPropias": 10,
+  "destinos": [
+   {
+    "a": "0xf99f08f69f45541222429aec99315630639bd81b",
+    "v": 45427.36163000001,
+    "n": 5,
+    "sim": "USDT",
+    "nombre": "contrato GenericSwapExecutor"
+   },
+   {
+    "a": "0x3fecfdf6ba478287ff9246ddb9c3028c9f1f7624",
+    "v": 2986.36,
+    "n": 1,
+    "sim": "USDT",
+    "nombre": null
+   },
+   {
+    "a": "0x11b815efb8f581194ae79006d24e0d814b7697f6",
+    "v": 700.05242,
+    "n": 1,
+    "sim": "USDT",
+    "nombre": null
+   },
+   {
+    "a": "0x000000000004444c5dc75cb358380d2e3de08a90",
+    "v": 287.32758,
+    "n": 1,
+    "sim": "USDT",
+    "nombre": null
+   }
+  ],
+  "etiqueta": null
+ },
+ {
+  "cadena": "Ethereum",
+  "evm": "0x63898c6238cd417cf3a1db16d11a1b515077d743",
+  "recibidoDesdeTron": 800000,
+  "roboEstimado": 0,
+  "enviosPuente": 1,
+  "entradasUSD": 2800216.933931,
+  "salidasUSD": 19195296.954017002,
+  "nEntradas": 18,
+  "nSalidas": 29,
+  "primeraEntrada": 1793360819,
+  "ultimaSalida": 1793432063,
+  "ethSaldo": 0.009526,
+  "saldos": {
+   "USDT": 0.000999,
+   "USDT0": 0,
+   "USDC": 0
+  },
+  "txPropias": 33,
+  "destinos": [
+   {
+    "a": "0xb03f746f7ccb513cd67358d1b1941f59be17a7c2",
+    "v": 16395080.020186003,
+    "n": 18,
+    "sim": "USDT",
+    "nombre": "contrato sin verificar"
+   },
+   {
+    "a": "0xb032f13624e1fda66ae642a6d9e2c0fa2d17a7c2",
+    "v": 2799160.002898,
+    "n": 3,
+    "sim": "USDT",
+    "nombre": null
+   },
+   {
+    "a": "0x76ce2a89d993c5bd8934c0244894445e54e2e18b",
+    "v": 1056.930933,
+    "n": 1,
+    "sim": "USDT",
+    "nombre": null
+   },
+   {
+    "a": "0xb032870bcfd98b3f5fd183889d5756ee736da7c2",
+    "v": 0,
+    "n": 5,
+    "sim": "USDT",
+    "nombre": null
+   }
+  ],
+  "etiqueta": null
+ },
+ {
+  "cadena": "Ethereum",
+  "evm": "0xa3b26a7ce77715cd016e0ef7d0b750972178e246",
+  "recibidoDesdeTron": 771846.4523309999,
+  "roboEstimado": 0,
+  "enviosPuente": 4,
+  "entradasUSD": 771614.898596,
+  "salidasUSD": 771614.8984960001,
+  "nEntradas": 6,
+  "nSalidas": 39,
+  "primeraEntrada": 1793346755,
+  "ultimaSalida": 1793347439,
+  "ethSaldo": 0,
+  "saldos": {
+   "USDT": 0.0001,
+   "USDT0": 0,
+   "USDC": 0
+  },
+  "txPropias": 5,
+  "destinos": [
+   {
+    "a": "0x000000000004444c5dc75cb358380d2e3de08a90",
+    "v": 257970.37979500004,
+    "n": 19,
+    "sim": "USDT",
+    "nombre": "contrato PoolManager"
+   },
+   {
+    "a": "0x56534741cd8b152df6d48adf7ac51f75169a83b2",
+    "v": 238778.18995000003,
+    "n": 4,
+    "sim": "USDT",
+    "nombre": "contrato UniswapV3Pool"
+   },
+   {
+    "a": "0xd3d5abbd6dd40b69ca365ae45f1ffd3870b1ddf9",
+    "v": 168910.501845,
+    "n": 3,
+    "sim": "USDT",
+    "nombre": "contrato sin verificar"
+   },
+   {
+    "a": "0x11b815efb8f581194ae79006d24e0d814b7697f6",
+    "v": 87741.29077699999,
+    "n": 4,
+    "sim": "USDT",
+    "nombre": "contrato UniswapV3Pool"
+   }
+  ],
+  "etiqueta": null
+ },
+ {
+  "cadena": "Ethereum",
+  "evm": "0x1000dd0da96d523a2361cf3ec4a7c45c9bca997e",
+  "recibidoDesdeTron": 250000,
+  "roboEstimado": 0,
+  "enviosPuente": 5,
+  "entradasUSD": 249925.004888,
+  "salidasUSD": 1740000,
+  "nEntradas": 17,
+  "nSalidas": 51,
+  "primeraEntrada": 1793381303,
+  "ultimaSalida": 1793437415,
+  "ethSaldo": 0.027007,
+  "saldos": {
+   "USDT": 65925.004888,
+   "USDT0": 0,
+   "USDC": 0
+  },
+  "txPropias": 6,
+  "destinos": [
+   {
+    "a": "0xffe0f681bf17cf1d4fd1b259eb134668175f67ae",
+    "v": 1296000,
+    "n": 9,
+    "sim": "USDT",
+    "nombre": "contrato sin verificar"
+   },
+   {
+    "a": "0xff4d068fc68ed2082c9667b72b7fddfddf7d4783",
+    "v": 260000,
+    "n": 26,
+    "sim": "USDT",
+    "nombre": "contrato sin verificar"
+   },
+   {
+    "a": "0xffe73a9c7bbe26e08f3d062197ea6a01d05f67ae",
+    "v": 144000,
+    "n": 1,
+    "sim": "USDT",
+    "nombre": null
+   },
+   {
+    "a": "0xff4d28c2ed9f74875bec186a7a224e672c7d4783",
+    "v": 30000,
+    "n": 3,
+    "sim": "USDT",
+    "nombre": null
+   }
+  ],
+  "etiqueta": null
+ },
+ {
+  "cadena": "Ethereum",
+  "evm": "0xb8cf53044eff4a71bbf085514cff932b48a203b1",
+  "recibidoDesdeTron": 206441.70232,
+  "roboEstimado": 0,
+  "enviosPuente": 1,
+  "entradasUSD": 206379.76991,
+  "salidasUSD": 206379.76980999997,
+  "nEntradas": 2,
+  "nSalidas": 12,
+  "primeraEntrada": 1793345039,
+  "ultimaSalida": 1793345147,
+  "ethSaldo": 0,
+  "saldos": {
+   "USDT": 0.0001,
+   "USDT0": 0,
+   "USDC": 0
+  },
+  "txPropias": 2,
+  "destinos": [
+   {
+    "a": "0x000000000004444c5dc75cb358380d2e3de08a90",
+    "v": 115840.964797,
+    "n": 6,
+    "sim": "USDT",
+    "nombre": "contrato PoolManager"
+   },
+   {
+    "a": "0x56534741cd8b152df6d48adf7ac51f75169a83b2",
+    "v": 54257.241483,
+    "n": 1,
+    "sim": "USDT",
+    "nombre": "contrato UniswapV3Pool"
+   },
+   {
+    "a": "0x11b815efb8f581194ae79006d24e0d814b7697f6",
+    "v": 26788.094121,
+    "n": 1,
+    "sim": "USDT",
+    "nombre": "contrato UniswapV3Pool"
+   },
+   {
+    "a": "0xc7bbec68d12a0d1830360f8ec58fa599ba1b0e9b",
+    "v": 3405.266201,
+    "n": 1,
+    "sim": "USDT",
+    "nombre": null
+   }
+  ],
+  "etiqueta": null
+ },
+ {
+  "cadena": "Ethereum",
+  "evm": "0xed17ca397ac96f55ea8f2f626a5ff1af0086bd7a",
+  "recibidoDesdeTron": 206127.443687,
+  "roboEstimado": 0,
+  "enviosPuente": 1,
+  "entradasUSD": 206065.605454,
+  "salidasUSD": 0,
+  "nEntradas": 1,
+  "nSalidas": 1,
+  "primeraEntrada": 1793374703,
+  "ultimaSalida": 1793363747,
+  "ethSaldo": 0,
+  "saldos": {
+   "USDT": 206065.605454,
+   "USDT0": 0,
+   "USDC": 0
+  },
+  "txPropias": 0,
+  "destinos": [
+   {
+    "a": "0x647d877668a7b7944630f3f4c3c8b9a5261837eb",
+    "v": 0,
+    "n": 1,
+    "sim": "USDT",
+    "nombre": null
+   }
+  ],
+  "etiqueta": null
+ },
+ {
+  "cadena": "Ethereum",
+  "evm": "0x97545f49ed1bd88ca965ba438e85c02fec7f1c53",
+  "recibidoDesdeTron": 53850.220386999994,
+  "roboEstimado": 0,
+  "enviosPuente": 3,
+  "entradasUSD": 184645.13039899996,
+  "salidasUSD": 184645.13039899996,
+  "nEntradas": 14,
+  "nSalidas": 28,
+  "primeraEntrada": 1793393795,
+  "ultimaSalida": 1793440823,
+  "ethSaldo": 1.931856,
+  "saldos": {
+   "USDT": 0,
+   "USDT0": 0,
+   "USDC": 0
+  },
+  "txPropias": 29,
+  "destinos": [
+   {
+    "a": "0x000000000004444c5dc75cb358380d2e3de08a90",
+    "v": 90453.155666,
+    "n": 9,
+    "sim": "USDT,USDC",
+    "nombre": "contrato PoolManager"
+   },
+   {
+    "a": "0x4cd00e387622c35bddb9b4c962c136462338bc31",
+    "v": 29087.718169,
+    "n": 2,
+    "sim": "USDT",
+    "nombre": "contrato RelayDepository"
+   },
+   {
+    "a": "0xe0554a476a092703abdb3ef35c80e0d76d32939f",
+    "v": 24999.49149,
+    "n": 2,
+    "sim": "USDC",
+    "nombre": "contrato UniswapV3Pool"
+   },
+   {
+    "a": "0xaf1b2e02decc11462b9d54fafd0098862eb9e503",
+    "v": 19811.773416,
+    "n": 1,
+    "sim": "USDC",
+    "nombre": null
+   }
+  ],
+  "etiqueta": null
+ },
+ {
+  "cadena": "Ethereum",
+  "evm": "0x4339db78baf5bcd6d09b46a7d57db69500433bb6",
+  "recibidoDesdeTron": 40233.096416,
+  "roboEstimado": 0,
+  "enviosPuente": 1,
+  "entradasUSD": 40221.026488,
+  "salidasUSD": 40221.026488,
+  "nEntradas": 1,
+  "nSalidas": 1,
+  "primeraEntrada": 1793408027,
+  "ultimaSalida": 1793408087,
+  "ethSaldo": 0,
+  "saldos": {
+   "USDT": 0,
+   "USDT0": 0,
+   "USDC": 0
+  },
+  "txPropias": 2,
+  "destinos": [
+   {
+    "a": "0x9008d19f58aabd9ed0d60971565aa8510560ab41",
+    "v": 40221.026488,
+    "n": 1,
+    "sim": "USDT",
+    "nombre": "contrato GPv2Settlement"
+   }
+  ],
+  "etiqueta": null
+ },
+ {
+  "cadena": "Ethereum",
+  "evm": "0xba450a4fae10137b922d44e8891aa40dd4db9514",
+  "recibidoDesdeTron": 40228.4258,
+  "roboEstimado": 0,
+  "enviosPuente": 1,
+  "entradasUSD": 40216.357273,
+  "salidasUSD": 40216.357273,
+  "nEntradas": 1,
+  "nSalidas": 1,
+  "primeraEntrada": 1793407631,
+  "ultimaSalida": 1793407691,
+  "ethSaldo": 0,
+  "saldos": {
+   "USDT": 0,
+   "USDT0": 0,
+   "USDC": 0
+  },
+  "txPropias": 2,
+  "destinos": [
+   {
+    "a": "0x9008d19f58aabd9ed0d60971565aa8510560ab41",
+    "v": 40216.357273,
+    "n": 1,
+    "sim": "USDT",
+    "nombre": "contrato GPv2Settlement"
+   }
+  ],
+  "etiqueta": null
+ },
+ {
+  "cadena": "Ethereum",
+  "evm": "0x774941813067292159851b3c146bfb83f9c8ed61",
+  "recibidoDesdeTron": 40215.266892,
+  "roboEstimado": 0,
+  "enviosPuente": 1,
+  "entradasUSD": 40203.202312,
+  "salidasUSD": 40203.202312,
+  "nEntradas": 1,
+  "nSalidas": 1,
+  "primeraEntrada": 1793408459,
+  "ultimaSalida": 1793408531,
+  "ethSaldo": 0,
+  "saldos": {
+   "USDT": 0,
+   "USDT0": 0,
+   "USDC": 0
+  },
+  "txPropias": 2,
+  "destinos": [
+   {
+    "a": "0x9008d19f58aabd9ed0d60971565aa8510560ab41",
+    "v": 40203.202312,
+    "n": 1,
+    "sim": "USDT",
+    "nombre": "contrato GPv2Settlement"
+   }
+  ],
+  "etiqueta": null
+ },
+ {
+  "cadena": "Ethereum",
+  "evm": "0x99cf1cfde73db118c1ebdbeb46c9a6f46dbf9337",
+  "recibidoDesdeTron": 40203.054589,
+  "roboEstimado": 0,
+  "enviosPuente": 1,
+  "entradasUSD": 40190.993673,
+  "salidasUSD": 40190.993673,
+  "nEntradas": 1,
+  "nSalidas": 1,
+  "primeraEntrada": 1793414543,
+  "ultimaSalida": 1793414699,
+  "ethSaldo": 0,
+  "saldos": {
+   "USDT": 0,
+   "USDT0": 0,
+   "USDC": 0
+  },
+  "txPropias": 2,
+  "destinos": [
+   {
+    "a": "0x9008d19f58aabd9ed0d60971565aa8510560ab41",
+    "v": 40190.993673,
+    "n": 1,
+    "sim": "USDT",
+    "nombre": "contrato GPv2Settlement"
+   }
+  ],
+  "etiqueta": null
+ },
+ {
+  "cadena": "Ethereum",
+  "evm": "0xae92c810e72dd5e7632439542da0a9f26989d1f0",
+  "recibidoDesdeTron": 39804.305833,
+  "roboEstimado": 0,
+  "enviosPuente": 1,
+  "entradasUSD": 39792.364542,
+  "salidasUSD": 39792.364542,
+  "nEntradas": 1,
+  "nSalidas": 1,
+  "primeraEntrada": 1793407151,
+  "ultimaSalida": 1793407211,
+  "ethSaldo": 0,
+  "saldos": {
+   "USDT": 0,
+   "USDT0": 0,
+   "USDC": 0
+  },
+  "txPropias": 2,
+  "destinos": [
+   {
+    "a": "0x9008d19f58aabd9ed0d60971565aa8510560ab41",
+    "v": 39792.364542,
+    "n": 1,
+    "sim": "USDT",
+    "nombre": "contrato GPv2Settlement"
+   }
+  ],
+  "etiqueta": null
+ },
+ {
+  "cadena": "Ethereum",
+  "evm": "0x68cc01eec3ced55c80c03066ce26081a5f49d9cc",
+  "recibidoDesdeTron": 36920.51102,
+  "roboEstimado": 0,
+  "enviosPuente": 1,
+  "entradasUSD": 36909.434867,
+  "salidasUSD": 36909.434867,
+  "nEntradas": 1,
+  "nSalidas": 1,
+  "primeraEntrada": 1793406707,
+  "ultimaSalida": 1793406791,
+  "ethSaldo": 0,
+  "saldos": {
+   "USDT": 0,
+   "USDT0": 0,
+   "USDC": 0
+  },
+  "txPropias": 2,
+  "destinos": [
+   {
+    "a": "0x9008d19f58aabd9ed0d60971565aa8510560ab41",
+    "v": 36909.434867,
+    "n": 1,
+    "sim": "USDT",
+    "nombre": "contrato GPv2Settlement"
+   }
+  ],
+  "etiqueta": null
+ },
+ {
+  "cadena": "Ethereum",
+  "evm": "0x5349ccd4909bbe97106cf17fc6bd52d579295dea",
+  "recibidoDesdeTron": 36916.017982,
+  "roboEstimado": 0,
+  "enviosPuente": 1,
+  "entradasUSD": 36904.943177,
+  "salidasUSD": 36904.943177,
+  "nEntradas": 1,
+  "nSalidas": 1,
+  "primeraEntrada": 1793406263,
+  "ultimaSalida": 1793406371,
+  "ethSaldo": 0,
+  "saldos": {
+   "USDT": 0,
+   "USDT0": 0,
+   "USDC": 0
+  },
+  "txPropias": 2,
+  "destinos": [
+   {
+    "a": "0x9008d19f58aabd9ed0d60971565aa8510560ab41",
+    "v": 36904.943177,
+    "n": 1,
+    "sim": "USDT",
+    "nombre": "contrato GPv2Settlement"
+   }
+  ],
+  "etiqueta": null
+ },
+ {
+  "cadena": "Ethereum",
+  "evm": "0xb39221c74becaab0050ba3ec922701b6fa50173c",
+  "recibidoDesdeTron": 33572.140948,
+  "roboEstimado": 0,
+  "enviosPuente": 1,
+  "entradasUSD": 33562.069306,
+  "salidasUSD": 33562.069306,
+  "nEntradas": 1,
+  "nSalidas": 1,
+  "primeraEntrada": 1793405723,
+  "ultimaSalida": 1793405831,
+  "ethSaldo": 0,
+  "saldos": {
+   "USDT": 0,
+   "USDT0": 0,
+   "USDC": 0
+  },
+  "txPropias": 2,
+  "destinos": [
+   {
+    "a": "0x9008d19f58aabd9ed0d60971565aa8510560ab41",
+    "v": 33562.069306,
+    "n": 1,
+    "sim": "USDT",
+    "nombre": "contrato GPv2Settlement"
+   }
+  ],
+  "etiqueta": null
+ },
+ {
+  "cadena": "Ethereum",
+  "evm": "0x1a9197e46c9e157c0b8368350a478de4082f22c4",
+  "recibidoDesdeTron": 33507.010532,
+  "roboEstimado": 0,
+  "enviosPuente": 1,
+  "entradasUSD": 33496.958429,
+  "salidasUSD": 33496.958429,
+  "nEntradas": 1,
+  "nSalidas": 1,
+  "primeraEntrada": 1793408579,
+  "ultimaSalida": 1793408819,
+  "ethSaldo": 0.591521,
+  "saldos": {
+   "USDT": 0,
+   "USDT0": 0,
+   "USDC": 0
+  },
+  "txPropias": 1,
+  "destinos": [
+   {
+    "a": "0x9008d19f58aabd9ed0d60971565aa8510560ab41",
+    "v": 33496.958429,
+    "n": 1,
+    "sim": "USDT",
+    "nombre": "contrato GPv2Settlement"
+   }
+  ],
+  "etiqueta": null
+ },
+ {
+  "cadena": "Arbitrum",
+  "evm": "0x28470b9f10ba0d7d8e2147d3dcf4269584e6edb5",
+  "recibidoDesdeTron": 33506.752535,
+  "roboEstimado": 0,
+  "enviosPuente": 1,
+  "entradasUSD": 33496.70051,
+  "salidasUSD": 33496.70051,
+  "nEntradas": 1,
+  "nSalidas": 1,
+  "primeraEntrada": 1793407445,
+  "ultimaSalida": 1793408155,
+  "ethSaldo": 0.011669,
+  "saldos": {
+   "USDT": 0,
+   "USDC": 0
+  },
+  "txPropias": 1,
+  "destinos": [
+   {
+    "a": "0x8eed5e28216c0bc6f817df40ae6ca11c2294cc1c",
+    "v": 33496.70051,
+    "n": 1,
+    "sim": "USD₮0",
+    "nombre": "contrato Permit2Proxy"
+   }
+  ],
+  "etiqueta": null
+ },
+ {
+  "cadena": "Ethereum",
+  "evm": "0x1c59fed4188b8c1c11bd9aa0b3264e7c1648a528",
+  "recibidoDesdeTron": 33506.175633,
+  "roboEstimado": 0,
+  "enviosPuente": 1,
+  "entradasUSD": 0,
+  "salidasUSD": 0,
+  "nEntradas": 0,
+  "nSalidas": 0,
+  "primeraEntrada": null,
+  "ultimaSalida": null,
+  "ethSaldo": 0.020015,
+  "saldos": {
+   "USDT": 0,
+   "USDT0": 0,
+   "USDC": 0
+  },
+  "txPropias": 0,
+  "destinos": [],
+  "etiqueta": null
+ },
+ {
+  "cadena": "Ethereum",
+  "evm": "0x743e860399469763b52df89d3417d37ab5c02646",
+  "recibidoDesdeTron": 30219.689908,
+  "roboEstimado": 0,
+  "enviosPuente": 1,
+  "entradasUSD": 30210.624002,
+  "salidasUSD": 30210.624002,
+  "nEntradas": 1,
+  "nSalidas": 1,
+  "primeraEntrada": 1793405219,
+  "ultimaSalida": 1793405387,
+  "ethSaldo": 0,
+  "saldos": {
+   "USDT": 0,
+   "USDT0": 0,
+   "USDC": 0
+  },
+  "txPropias": 2,
+  "destinos": [
+   {
+    "a": "0x9008d19f58aabd9ed0d60971565aa8510560ab41",
+    "v": 30210.624002,
+    "n": 1,
+    "sim": "USDT",
+    "nombre": "contrato GPv2Settlement"
+   }
+  ],
+  "etiqueta": null
+ },
+ {
+  "cadena": "Ethereum",
+  "evm": "0x45323d50a3e1ca8fdf24df0a323fc9e38fd6b01c",
+  "recibidoDesdeTron": 12662.996998,
+  "roboEstimado": 0,
+  "enviosPuente": 1,
+  "entradasUSD": 131475.89463000002,
+  "salidasUSD": 131477.723674,
+  "nEntradas": 29,
+  "nSalidas": 46,
+  "primeraEntrada": 1793359151,
+  "ultimaSalida": 1793431079,
+  "ethSaldo": 0.068888,
+  "saldos": {
+   "USDT": 0.000989,
+   "USDT0": 0,
+   "USDC": 0.001803
+  },
+  "txPropias": 60,
+  "destinos": [
+   {
+    "a": "0xd37bbe5744d730a1d98d8dc97c42f0ca46ad7146",
+    "v": 122105.948,
+    "n": 41,
+    "sim": "USDT,USDC",
+    "nombre": "contrato THORChain_Router"
+   },
+   {
+    "a": "0x000000000004444c5dc75cb358380d2e3de08a90",
+    "v": 9371.775674,
+    "n": 1,
+    "sim": "USDC",
+    "nombre": "contrato PoolManager"
+   },
+   {
+    "a": "0x8cd9f1a98154f9bb153131c3caabc178c3b057ce",
+    "v": 0,
+    "n": 4,
+    "sim": "USDT",
+    "nombre": null
+   }
+  ],
+  "etiqueta": null
+ },
+ {
+  "cadena": "Ethereum",
+  "evm": "0x0ca66669a498e685d6d7522acf2683559e70d7e7",
+  "recibidoDesdeTron": 10051.341951,
+  "roboEstimado": 0,
+  "enviosPuente": 1,
+  "entradasUSD": 10048.326549,
+  "salidasUSD": 10048.326549,
+  "nEntradas": 1,
+  "nSalidas": 1,
+  "primeraEntrada": 1793404631,
+  "ultimaSalida": 1793404799,
+  "ethSaldo": 0,
+  "saldos": {
+   "USDT": 0,
+   "USDT0": 0,
+   "USDC": 0
+  },
+  "txPropias": 2,
+  "destinos": [
+   {
+    "a": "0x9008d19f58aabd9ed0d60971565aa8510560ab41",
+    "v": 10048.326549,
+    "n": 1,
+    "sim": "USDT",
+    "nombre": "contrato GPv2Settlement"
+   }
+  ],
+  "etiqueta": null
+ }
+]

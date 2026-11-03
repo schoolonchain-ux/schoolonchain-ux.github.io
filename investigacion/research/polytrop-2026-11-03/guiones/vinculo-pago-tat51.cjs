@@ -1,0 +1,14 @@
+'use strict';
+// Vínculo de pago comprobado: billeteras de nuestro recorrido → intermediaria (TDa5kRYUX3…, TWTzEAWq5f…) → TAT51WDhq… (cuenta de cobros del negocio que alimenta a la cuenta de gas).
+// Para cada intermediaria: lo que recibió de billeteras de nuestros tramos 5/6 (con hash) y lo que pagó a TAT51WDhq…, emparejado por importe (±0,01 TRX) y por orden de hora. Solo lectura de ficheros ya guardados.
+const fs = require('fs'); const path = require('path'); const D = path.join(__dirname, '..', 'datos') + '/'; const R = 'C:/EquipoIA/research/auditoria-adversarial-2026-10-31/';
+const INTER = ['TDa5kRYUX3bYGRBrGSDoatjMNKEfcNJb59', 'TWTzEAWq5ff6YNbgzvpB7jHULdfmZD75F6']; const TAT = 'TAT51WDhqSgozpH5pypBkEhe9kYXBAF8XJ';
+const T = JSON.parse(fs.readFileSync(D + 'cuenta-TAT51WDh.json', 'utf8')); const entradas = new Map();
+for (const t of ['tramo5-v02', 'tramo6-v03']) { const n = t.slice(0, 6); const { rec } = JSON.parse(fs.readFileSync(R + t + '/' + n + '-cache.json', 'utf8'));
+  for (const [w, r] of Object.entries(rec)) for (const e of r.sal || []) if (INTER.includes(e.a) && e.sim === 'TRX') { const k = e.tx; if (!entradas.has(k)) entradas.set(k, { tx: e.tx, de: w, a: e.a, t: e.at, trx: e.cant, tramo: n }); else if (!entradas.get(k).tramo.includes(n)) entradas.get(k).tramo += '+' + n; } }
+const filas = []; for (const a of INTER) {
+  const ent = [...entradas.values()].filter(e => e.a === a).sort((x, y) => x.t - y.t); const pag = T.trx.filter(x => x.de === a && x.a === TAT).sort((x, y) => x.t - y.t); const usados = new Set();
+  for (const e of ent) { const k = pag.findIndex((p, i) => !usados.has(i) && p.t >= e.t && Math.abs(p.v - e.trx) < 0.01); if (k >= 0) { usados.add(k); filas.push({ intermediaria: a, desde: e.de, txEntrada: e.tx, horaEntrada: new Date(e.t).toISOString(), trx: e.trx, txPago: pag[k].tx, horaPago: new Date(pag[k].t).toISOString(), pagado: pag[k].v, minutos: +((pag[k].t - e.t) / 60000).toFixed(1), tramo: e.tramo }); } else filas.push({ intermediaria: a, desde: e.de, txEntrada: e.tx, horaEntrada: new Date(e.t).toISOString(), trx: e.trx, sinPago: true, tramo: e.tramo }); }
+  pag.forEach((p, i) => { if (!usados.has(i)) filas.push({ intermediaria: a, soloPago: true, txPago: p.tx, horaPago: new Date(p.t).toISOString(), pagado: p.v }); }); }
+fs.writeFileSync(D + 'gas-vinculo-pago.json', JSON.stringify(filas, null, 1));
+for (const f of filas) console.log(f.intermediaria.slice(0, 8), f.soloPago ? 'PAGO SIN ENTRADA ' + f.horaPago.slice(5, 16) + ' ' + f.pagado.toFixed(4) : (f.sinPago ? 'ENTRADA SIN PAGO ' : 'emparejado ') + (f.desde || '').slice(0, 8) + ' ' + (f.horaEntrada || '').slice(5, 16) + ' ' + (f.trx || 0).toFixed(4) + (f.pagado ? ' → ' + f.horaPago.slice(5, 16) + ' ' + f.pagado.toFixed(4) + ' (' + f.minutos + ' min)' : '') + ' ' + (f.tramo || ''));

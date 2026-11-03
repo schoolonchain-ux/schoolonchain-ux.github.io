@@ -1,0 +1,3555 @@
+[
+ {
+  "destino": "TLQh52eDXwkHyWLQLmQzSoW4shogGKwjow",
+  "tipo": "nodo",
+  "nombre": null,
+  "tainted": 996185.9546222277,
+  "hashFinal": "9ae112acd2063a7b988f499df734805b69e10960c1cf31a22668c768a4d5ce35",
+  "horaFinal": 1793393220000,
+  "pasos": [
+   {
+    "w": "TH1YKH9MUuJtDmekPia4x9fZXAcpPrMv8B",
+    "nivel": 0
+   },
+   {
+    "w": "THebATKiZFWAR854kQU5uEF5WZ88t3aSh3",
+    "nivel": 1,
+    "tx": "5a1555a7c94c6fac4e86f81a673d6d6cf4dda48b83a56160d01e7cb6e56e68ed",
+    "desde": "TH1YKH9MUuJtDmekPia4x9fZXAcpPrMv8B",
+    "v": 20729.498696,
+    "at": 1793377713000,
+    "virtual": false
+   },
+   {
+    "w": "TWJjufVoDeKM1WZU8HD3bRoWttkzMCkKa5",
+    "nivel": 2,
+    "tx": "96770b5a272b90df228c38dc433dfd849fee3597cc97c0365ecfe1c26a2ac6b3",
+    "desde": "THebATKiZFWAR854kQU5uEF5WZ88t3aSh3",
+    "v": 20725,
+    "at": 1793384679000,
+    "virtual": false
+   },
+   {
+    "w": "TEhvuDCJLqw7KC3bnt6JBcZfFPPDxSykKc",
+    "nivel": 6,
+    "tx": "0cd628589de66e674e19822ae093505622f1212ab94768a2be68abfdf469d0ed",
+    "desde": "TWJjufVoDeKM1WZU8HD3bRoWttkzMCkKa5",
+    "v": 500000,
+    "at": 1793376258000,
+    "virtual": false
+   },
+   {
+    "w": "TKKD5Jn76hdttjCtxhtqXgmuPwgtjdNUCH",
+    "nivel": 6,
+    "tx": "ce1910cbb3980a3311936fa0d04018bcd2346e98925e7ed279952217abcaed81",
+    "desde": "TEhvuDCJLqw7KC3bnt6JBcZfFPPDxSykKc",
+    "v": 2797571.120502,
+    "at": 1793387979000,
+    "virtual": false
+   },
+   {
+    "w": "TWdD4RqFJFZA4829bGnUbLBKU5FTykTWCa",
+    "nivel": 7,
+    "tx": "1101fa32d4d25ca2cd5c7f7c4ad29db4f7ad3e746fd142464c958062f8ba7d6b",
+    "desde": "TKKD5Jn76hdttjCtxhtqXgmuPwgtjdNUCH",
+    "v": 2900000,
+    "at": 1793388036000,
+    "virtual": false
+   },
+   {
+    "w": "TJ7yL6gPVxqVorfGhnkjErt4tssHSUrxvW",
+    "nivel": 6,
+    "tx": "1f05148931db5c6a822146c44b21642d6a97006ff24cb2b24d4d1438782f09bb",
+    "desde": "TWdD4RqFJFZA4829bGnUbLBKU5FTykTWCa",
+    "v": 7000000,
+    "at": 1793381964000,
+    "virtual": false
+   },
+   {
+    "w": "TPp6W1FuHD1JAEk72hKzVHmzNXW9cDARP2",
+    "nivel": 7,
+    "tx": "c22bbd984fd8bf76dbb1182981c156261e38cca77f6849285410da7607df6059",
+    "desde": "TJ7yL6gPVxqVorfGhnkjErt4tssHSUrxvW",
+    "v": 7500000,
+    "at": 1793383305000,
+    "virtual": false
+   },
+   {
+    "w": "TFMtb34v76WmmcmMmMUip3JTj8jTA6ybTn",
+    "nivel": 8,
+    "tx": "17e6e09360c1e295a1bc49d60db43790aac254b689f98c5d37639a5c2b5129a3",
+    "desde": "TPp6W1FuHD1JAEk72hKzVHmzNXW9cDARP2",
+    "v": 1499900,
+    "at": 1793392140000,
+    "virtual": false
+   }
+  ]
+ },
+ {
+  "destino": "TLQh52eDXwkHyWLQLmQzSoW4shogGKwjow",
+  "tipo": "nodo",
+  "nombre": null,
+  "tainted": 815606.2462814437,
+  "hashFinal": "b9b803c7288c231ee5ed98e5c6d9e9efef7cf14aa66a1e339244ac9cf24dfc49",
+  "horaFinal": 1793393178000,
+  "pasos": [
+   {
+    "w": "TH1YKH9MUuJtDmekPia4x9fZXAcpPrMv8B",
+    "nivel": 0
+   },
+   {
+    "w": "THebATKiZFWAR854kQU5uEF5WZ88t3aSh3",
+    "nivel": 1,
+    "tx": "5a1555a7c94c6fac4e86f81a673d6d6cf4dda48b83a56160d01e7cb6e56e68ed",
+    "desde": "TH1YKH9MUuJtDmekPia4x9fZXAcpPrMv8B",
+    "v": 20729.498696,
+    "at": 1793377713000,
+    "virtual": false
+   },
+   {
+    "w": "TWJjufVoDeKM1WZU8HD3bRoWttkzMCkKa5",
+    "nivel": 2,
+    "tx": "96770b5a272b90df228c38dc433dfd849fee3597cc97c0365ecfe1c26a2ac6b3",
+    "desde": "THebATKiZFWAR854kQU5uEF5WZ88t3aSh3",
+    "v": 20725,
+    "at": 1793384679000,
+    "virtual": false
+   },
+   {
+    "w": "TJACbCzPJGooYSedne1NZYMVUbkK8aSn8e",
+    "nivel": 6,
+    "tx": "393e73bc1f5c969fe5bd782f364a96da0afc646e3b06c53b51a5d948e6c335a8",
+    "desde": "TWJjufVoDeKM1WZU8HD3bRoWttkzMCkKa5",
+    "v": 500000,
+    "at": 1793380575000,
+    "virtual": false
+   },
+   {
+    "w": "TRExECTG6fJrYP16givZxM5gvvbtxm6i6F",
+    "nivel": 7,
+    "tx": "f12ff21f4a91b58adc0702c123dd39c62a3f96c0e57f60ad9273c2efc435a42e",
+    "desde": "TJACbCzPJGooYSedne1NZYMVUbkK8aSn8e",
+    "v": 400000,
+    "at": 1793382225000,
+    "virtual": false
+   },
+   {
+    "w": "TASX3B24NDuvcbwy9vFoqD2Lc6dw5aJZkg",
+    "nivel": 8,
+    "tx": "9989841a7f927e923fbc479ddeade449b681deed05576c080ddb34ba89d06924",
+    "desde": "TRExECTG6fJrYP16givZxM5gvvbtxm6i6F",
+    "v": 3652.1626542719996,
+    "at": 1793392851000,
+    "virtual": false
+   },
+   {
+    "w": "TTiDrGzU3LUZ99igsUhGbSGcd96jiQWfc6",
+    "nivel": 9,
+    "tx": "963a9ac78cef9520fd88d3ddc513b8c419259fc0b2870851226c9c68f11651f7",
+    "desde": "TASX3B24NDuvcbwy9vFoqD2Lc6dw5aJZkg",
+    "v": 3649.805138848,
+    "at": 1793392896000,
+    "virtual": false
+   },
+   {
+    "w": "TFRvate5UQVttFn8nhvTgDdUDH5dBAVsWD",
+    "nivel": 10,
+    "tx": "42d43daa41d6f50e1c65839cac8718a6dac946023707c7defaeff3fb34e6b5cb",
+    "desde": "TTiDrGzU3LUZ99igsUhGbSGcd96jiQWfc6",
+    "v": 3647.4476209599998,
+    "at": 1793392938000,
+    "virtual": false
+   },
+   {
+    "w": "TCXfgVdgrpN9z7n9MA6P75BZaX7995ndfM",
+    "nivel": 11,
+    "tx": "013c35db3ebaf294e5316fb5adddd5777e14c4fc87127f77d7cdcaff89dc2666",
+    "desde": "TFRvate5UQVttFn8nhvTgDdUDH5dBAVsWD",
+    "v": 3645.0901551679995,
+    "at": 1793392983000,
+    "virtual": false
+   },
+   {
+    "w": "TLRPBTcrzKb98N6JaUXpSDqXLsuLVcsgJi",
+    "nivel": 12,
+    "tx": "2b6a9dad3b0095269a54af1b685d39555e4bd67f7d5b4c884ebacbe3c7ed35db",
+    "desde": "TCXfgVdgrpN9z7n9MA6P75BZaX7995ndfM",
+    "v": 3642.4401298559997,
+    "at": 1793393025000,
+    "virtual": false
+   },
+   {
+    "w": "TE23uCWWWvVnFCEu43jbKMvZTpWaRDPnFD",
+    "nivel": 13,
+    "tx": "18f6f5279b18ecf70cb0655dc05fa0a6558e1fe6d4577989846534d911ea903f",
+    "desde": "TLRPBTcrzKb98N6JaUXpSDqXLsuLVcsgJi",
+    "v": 3640.08261056,
+    "at": 1793393070000,
+    "virtual": false
+   },
+   {
+    "w": "TCmQTAQy5fGnjwrWsNEzhQN1Pzp132Lff8",
+    "nivel": 14,
+    "tx": "e1626eeceb1b7de67a748ed24e76706351cdfcd8406458eff46139c391ada626",
+    "desde": "TE23uCWWWvVnFCEu43jbKMvZTpWaRDPnFD",
+    "v": 3637.725103936,
+    "at": 1793393112000,
+    "virtual": false
+   },
+   {
+    "w": "TZ6yTzhuxYvrxCSmk3EtBvfkMZF8MXXNFt",
+    "nivel": 15,
+    "tx": "68fd2a0692636d153014844b96ac28c880ac9df4f030217cbfeea0a4d34ddf9c",
+    "desde": "TCmQTAQy5fGnjwrWsNEzhQN1Pzp132Lff8",
+    "v": 3635.36759168,
+    "at": 1793393157000,
+    "virtual": false
+   }
+  ]
+ },
+ {
+  "destino": "TBA6CypYJizwA9XdC7Ubgc5F1bxrQ7SqPt",
+  "tipo": "casa",
+  "nombre": "Gate",
+  "tainted": 547253.8864841334,
+  "hashFinal": "940bb88e6166db496a3a2e33a99437b5cb6b539c9d1e501665e95d2e571677bd",
+  "horaFinal": 1793364975000,
+  "pasos": [
+   {
+    "w": "TLtmxkug5K1pa2MpxiA2XRz6pkJGxpHCum",
+    "nivel": 3,
+    "tx": "d6d42ea75479dfc842633082a4c7afcaf961acbb282cd66a9e7f1ada4db8612e",
+    "desde": "TUpFTof5ugRydmMRKtrVpXNNGR2VpTQKxW",
+    "v": 1552032.9797,
+    "at": 1793368848000,
+    "virtual": false
+   },
+   {
+    "w": "TUpFTof5ugRydmMRKtrVpXNNGR2VpTQKxW",
+    "nivel": 4,
+    "tx": "ba4fafc5e57d686a5bad8cebe78cf3016cece241bbec737e8944dbdedd13d30d",
+    "desde": "TLtmxkug5K1pa2MpxiA2XRz6pkJGxpHCum",
+    "v": 1525193.01721,
+    "at": 1793361927000,
+    "virtual": false
+   },
+   {
+    "w": "TXhu1HqTNDZKuJ1wVRYwB7ydyGyKYXxusz",
+    "nivel": 5,
+    "tx": "130b6ae494cd0562e8f79acce51c8f15f4ba57c1cb5055cfa6217e9440b189d3",
+    "desde": "TUpFTof5ugRydmMRKtrVpXNNGR2VpTQKxW",
+    "v": 40000,
+    "at": 1793363019000,
+    "virtual": false
+   },
+   {
+    "w": "TStvMPH7wv3Z6FR4YWxpkbf6iEn3WyRAvC",
+    "nivel": 6,
+    "tx": "bbc77b592da92bcaeeec03d5359fa0e0b974aee33a80af73359b90c2a49364f3",
+    "desde": "TXhu1HqTNDZKuJ1wVRYwB7ydyGyKYXxusz",
+    "v": 70000,
+    "at": 1793363130000,
+    "virtual": false
+   }
+  ]
+ },
+ {
+  "destino": "TWhDfwC8QE6pQyiYy248dNor3uphPEw5M2",
+  "tipo": "nodo",
+  "nombre": "Proveedora de TRX de TRON Inc. (según Protos)",
+  "tainted": 515304.2585030935,
+  "hashFinal": "bd5bf9a3b26e1e8d31c497c0bcf34c218c29194efb962cc385013bffd4ae9bd4",
+  "horaFinal": 1793359581000,
+  "pasos": [
+   {
+    "w": "TUpFTof5ugRydmMRKtrVpXNNGR2VpTQKxW",
+    "nivel": 4,
+    "tx": "ba4fafc5e57d686a5bad8cebe78cf3016cece241bbec737e8944dbdedd13d30d",
+    "desde": "TLtmxkug5K1pa2MpxiA2XRz6pkJGxpHCum",
+    "v": 1525193.01721,
+    "at": 1793361927000,
+    "virtual": false
+   },
+   {
+    "w": "TLtmxkug5K1pa2MpxiA2XRz6pkJGxpHCum",
+    "nivel": 3,
+    "tx": "d6d42ea75479dfc842633082a4c7afcaf961acbb282cd66a9e7f1ada4db8612e",
+    "desde": "TUpFTof5ugRydmMRKtrVpXNNGR2VpTQKxW",
+    "v": 1552032.9797,
+    "at": 1793368848000,
+    "virtual": false
+   },
+   {
+    "w": "TRXQLc8Zdf3Q2bMNs75WFfNDTpkh94wYpC",
+    "nivel": 4,
+    "tx": "0c58c94974d26b8216e95ae52b924a90697c24767bba44ee0d4a490823bc07cd",
+    "desde": "TLtmxkug5K1pa2MpxiA2XRz6pkJGxpHCum",
+    "v": 1395613.049173,
+    "at": 1793359881000,
+    "virtual": false
+   },
+   {
+    "w": "TWddHLyQWcuSkfHcnukuc1B9WXcHjg8KEZ",
+    "nivel": 5,
+    "tx": "77b03138757dab6638f6ac738a1b3a1ff6a899e59a4c01f07ba2bb7d0ee64f11",
+    "desde": "TRXQLc8Zdf3Q2bMNs75WFfNDTpkh94wYpC",
+    "v": 2684000,
+    "at": 1793359230000,
+    "virtual": false
+   },
+   {
+    "w": "TS639Y6J54TQmQiK9BKdZoihnirqhJobwu",
+    "nivel": 6,
+    "tx": "c4779806ce00ba285de3c9180b74921687f03155bafafcd17c38b15d092e5055",
+    "desde": "TWddHLyQWcuSkfHcnukuc1B9WXcHjg8KEZ",
+    "v": 2684000,
+    "at": 1793359461000,
+    "virtual": false
+   }
+  ]
+ },
+ {
+  "destino": "TLQh52eDXwkHyWLQLmQzSoW4shogGKwjow",
+  "tipo": "nodo",
+  "nombre": null,
+  "tainted": 437488.3830915353,
+  "hashFinal": "490426d33b5ee26548234bece22349cb58bf3c0482ecfe2edb2ae1fe41bdea97",
+  "horaFinal": 1793382033000,
+  "pasos": [
+   {
+    "w": "TH1YKH9MUuJtDmekPia4x9fZXAcpPrMv8B",
+    "nivel": 0
+   },
+   {
+    "w": "THebATKiZFWAR854kQU5uEF5WZ88t3aSh3",
+    "nivel": 1,
+    "tx": "5a1555a7c94c6fac4e86f81a673d6d6cf4dda48b83a56160d01e7cb6e56e68ed",
+    "desde": "TH1YKH9MUuJtDmekPia4x9fZXAcpPrMv8B",
+    "v": 20729.498696,
+    "at": 1793377713000,
+    "virtual": false
+   },
+   {
+    "w": "TWJjufVoDeKM1WZU8HD3bRoWttkzMCkKa5",
+    "nivel": 2,
+    "tx": "96770b5a272b90df228c38dc433dfd849fee3597cc97c0365ecfe1c26a2ac6b3",
+    "desde": "THebATKiZFWAR854kQU5uEF5WZ88t3aSh3",
+    "v": 20725,
+    "at": 1793384679000,
+    "virtual": false
+   },
+   {
+    "w": "TEhvuDCJLqw7KC3bnt6JBcZfFPPDxSykKc",
+    "nivel": 6,
+    "tx": "0cd628589de66e674e19822ae093505622f1212ab94768a2be68abfdf469d0ed",
+    "desde": "TWJjufVoDeKM1WZU8HD3bRoWttkzMCkKa5",
+    "v": 500000,
+    "at": 1793376258000,
+    "virtual": false
+   },
+   {
+    "w": "TKKD5Jn76hdttjCtxhtqXgmuPwgtjdNUCH",
+    "nivel": 6,
+    "tx": "ce1910cbb3980a3311936fa0d04018bcd2346e98925e7ed279952217abcaed81",
+    "desde": "TEhvuDCJLqw7KC3bnt6JBcZfFPPDxSykKc",
+    "v": 2797571.120502,
+    "at": 1793387979000,
+    "virtual": false
+   },
+   {
+    "w": "TWdD4RqFJFZA4829bGnUbLBKU5FTykTWCa",
+    "nivel": 7,
+    "tx": "1101fa32d4d25ca2cd5c7f7c4ad29db4f7ad3e746fd142464c958062f8ba7d6b",
+    "desde": "TKKD5Jn76hdttjCtxhtqXgmuPwgtjdNUCH",
+    "v": 2900000,
+    "at": 1793388036000,
+    "virtual": false
+   },
+   {
+    "w": "TJ7yL6gPVxqVorfGhnkjErt4tssHSUrxvW",
+    "nivel": 6,
+    "tx": "1f05148931db5c6a822146c44b21642d6a97006ff24cb2b24d4d1438782f09bb",
+    "desde": "TWdD4RqFJFZA4829bGnUbLBKU5FTykTWCa",
+    "v": 7000000,
+    "at": 1793381964000,
+    "virtual": false
+   },
+   {
+    "w": "TPp6W1FuHD1JAEk72hKzVHmzNXW9cDARP2",
+    "nivel": 7,
+    "tx": "c22bbd984fd8bf76dbb1182981c156261e38cca77f6849285410da7607df6059",
+    "desde": "TJ7yL6gPVxqVorfGhnkjErt4tssHSUrxvW",
+    "v": 7500000,
+    "at": 1793383305000,
+    "virtual": false
+   },
+   {
+    "w": "TBmb7JgvToaSCBpCnhZgNaJ8qAnhGxEcqa",
+    "nivel": 8,
+    "tx": "082d56480de6b4b3bef95abe2f4f424d08a359c3ac8d12f851ffe06405fcd168",
+    "desde": "TPp6W1FuHD1JAEk72hKzVHmzNXW9cDARP2",
+    "v": 2199900,
+    "at": 1793379915000,
+    "virtual": false
+   }
+  ]
+ },
+ {
+  "destino": "TWhDfwC8QE6pQyiYy248dNor3uphPEw5M2",
+  "tipo": "nodo",
+  "nombre": "Proveedora de TRX de TRON Inc. (según Protos)",
+  "tainted": 425644.38938202616,
+  "hashFinal": "0f4fbe20ff12c54ad29a07e52f8a9cf7d19dc8fdf09e716deb23f951ab1b1a1a",
+  "horaFinal": 1793364087000,
+  "pasos": [
+   {
+    "w": "TUpFTof5ugRydmMRKtrVpXNNGR2VpTQKxW",
+    "nivel": 4,
+    "tx": "ba4fafc5e57d686a5bad8cebe78cf3016cece241bbec737e8944dbdedd13d30d",
+    "desde": "TLtmxkug5K1pa2MpxiA2XRz6pkJGxpHCum",
+    "v": 1525193.01721,
+    "at": 1793361927000,
+    "virtual": false
+   },
+   {
+    "w": "TLtmxkug5K1pa2MpxiA2XRz6pkJGxpHCum",
+    "nivel": 3,
+    "tx": "d6d42ea75479dfc842633082a4c7afcaf961acbb282cd66a9e7f1ada4db8612e",
+    "desde": "TUpFTof5ugRydmMRKtrVpXNNGR2VpTQKxW",
+    "v": 1552032.9797,
+    "at": 1793368848000,
+    "virtual": false
+   },
+   {
+    "w": "TRXQLc8Zdf3Q2bMNs75WFfNDTpkh94wYpC",
+    "nivel": 4,
+    "tx": "0c58c94974d26b8216e95ae52b924a90697c24767bba44ee0d4a490823bc07cd",
+    "desde": "TLtmxkug5K1pa2MpxiA2XRz6pkJGxpHCum",
+    "v": 1395613.049173,
+    "at": 1793359881000,
+    "virtual": false
+   },
+   {
+    "w": "TWddHLyQWcuSkfHcnukuc1B9WXcHjg8KEZ",
+    "nivel": 5,
+    "tx": "77b03138757dab6638f6ac738a1b3a1ff6a899e59a4c01f07ba2bb7d0ee64f11",
+    "desde": "TRXQLc8Zdf3Q2bMNs75WFfNDTpkh94wYpC",
+    "v": 2684000,
+    "at": 1793359230000,
+    "virtual": false
+   },
+   {
+    "w": "TS639Y6J54TQmQiK9BKdZoihnirqhJobwu",
+    "nivel": 6,
+    "tx": "c4779806ce00ba285de3c9180b74921687f03155bafafcd17c38b15d092e5055",
+    "desde": "TWddHLyQWcuSkfHcnukuc1B9WXcHjg8KEZ",
+    "v": 2684000,
+    "at": 1793359461000,
+    "virtual": false
+   }
+  ]
+ },
+ {
+  "destino": "TFAntDrvjV6cRxFgSNz51s4a91Fvx7Te9C",
+  "tipo": "nodo",
+  "nombre": null,
+  "tainted": 403495.42904932343,
+  "hashFinal": "6afdda52399431a17003d286cd24afd079b3c62735c36665cb929361109887e0",
+  "horaFinal": 1793374998000,
+  "pasos": [
+   {
+    "w": "TLtmxkug5K1pa2MpxiA2XRz6pkJGxpHCum",
+    "nivel": 3,
+    "tx": "d6d42ea75479dfc842633082a4c7afcaf961acbb282cd66a9e7f1ada4db8612e",
+    "desde": "TUpFTof5ugRydmMRKtrVpXNNGR2VpTQKxW",
+    "v": 1552032.9797,
+    "at": 1793368848000,
+    "virtual": false
+   },
+   {
+    "w": "TUpFTof5ugRydmMRKtrVpXNNGR2VpTQKxW",
+    "nivel": 4,
+    "tx": "ba4fafc5e57d686a5bad8cebe78cf3016cece241bbec737e8944dbdedd13d30d",
+    "desde": "TLtmxkug5K1pa2MpxiA2XRz6pkJGxpHCum",
+    "v": 1525193.01721,
+    "at": 1793361927000,
+    "virtual": false
+   },
+   {
+    "w": "TYu3oZJA213jad4t4Us6pv8fMmA2ZobAXP",
+    "nivel": 5,
+    "tx": "f03661d31ab33dcb596db3a745f3afc28ade0d02b27711aa991f4b06b31b89be",
+    "desde": "TUpFTof5ugRydmMRKtrVpXNNGR2VpTQKxW",
+    "v": 175385,
+    "at": 1793365803000,
+    "virtual": false
+   },
+   {
+    "w": "TXHHPkv3FtsvMhJ77B1fSkGfC9tJ2yLpLw",
+    "nivel": 6,
+    "tx": "acca2c437923fa46225f0573221cb7e8f9a1a29524204703abd30cb1af87e42b",
+    "desde": "TYu3oZJA213jad4t4Us6pv8fMmA2ZobAXP",
+    "v": 749777,
+    "at": 1793371554000,
+    "virtual": false
+   },
+   {
+    "w": "TR85AJTKyfU6oZTCkPKXyGCydGXAUT1kCt",
+    "nivel": 7,
+    "tx": "8d0cdf2013e76334965d703fdb60c8ebe6c59d57135ac9cedc4c83e7d57d3de0",
+    "desde": "TXHHPkv3FtsvMhJ77B1fSkGfC9tJ2yLpLw",
+    "v": 1000000,
+    "at": 1793372397000,
+    "virtual": false
+   },
+   {
+    "w": "TRciCd3QnnJaBiZk7LVUjHZA4LDMjrgD8n",
+    "nivel": 8,
+    "tx": "59d7efba1f68e92a03dcf9e1e3a9cdc590c7453d25d09dab9dc34562ff740e21",
+    "desde": "TR85AJTKyfU6oZTCkPKXyGCydGXAUT1kCt",
+    "v": 3111714.775865,
+    "at": 1793372859000,
+    "virtual": false
+   }
+  ]
+ },
+ {
+  "destino": "TLQh52eDXwkHyWLQLmQzSoW4shogGKwjow",
+  "tipo": "nodo",
+  "nombre": null,
+  "tainted": 300365.7591368061,
+  "hashFinal": "14a947d63a9f245d45a987c60cee5a9d7f79afdb100f76bcd177d445bac78094",
+  "horaFinal": 1793393133000,
+  "pasos": [
+   {
+    "w": "TH1YKH9MUuJtDmekPia4x9fZXAcpPrMv8B",
+    "nivel": 0
+   },
+   {
+    "w": "THebATKiZFWAR854kQU5uEF5WZ88t3aSh3",
+    "nivel": 1,
+    "tx": "5a1555a7c94c6fac4e86f81a673d6d6cf4dda48b83a56160d01e7cb6e56e68ed",
+    "desde": "TH1YKH9MUuJtDmekPia4x9fZXAcpPrMv8B",
+    "v": 20729.498696,
+    "at": 1793377713000,
+    "virtual": false
+   },
+   {
+    "w": "TWJjufVoDeKM1WZU8HD3bRoWttkzMCkKa5",
+    "nivel": 2,
+    "tx": "96770b5a272b90df228c38dc433dfd849fee3597cc97c0365ecfe1c26a2ac6b3",
+    "desde": "THebATKiZFWAR854kQU5uEF5WZ88t3aSh3",
+    "v": 20725,
+    "at": 1793384679000,
+    "virtual": false
+   },
+   {
+    "w": "TJACbCzPJGooYSedne1NZYMVUbkK8aSn8e",
+    "nivel": 6,
+    "tx": "393e73bc1f5c969fe5bd782f364a96da0afc646e3b06c53b51a5d948e6c335a8",
+    "desde": "TWJjufVoDeKM1WZU8HD3bRoWttkzMCkKa5",
+    "v": 500000,
+    "at": 1793380575000,
+    "virtual": false
+   },
+   {
+    "w": "TRExECTG6fJrYP16givZxM5gvvbtxm6i6F",
+    "nivel": 7,
+    "tx": "f12ff21f4a91b58adc0702c123dd39c62a3f96c0e57f60ad9273c2efc435a42e",
+    "desde": "TJACbCzPJGooYSedne1NZYMVUbkK8aSn8e",
+    "v": 400000,
+    "at": 1793382225000,
+    "virtual": false
+   },
+   {
+    "w": "TASX3B24NDuvcbwy9vFoqD2Lc6dw5aJZkg",
+    "nivel": 8,
+    "tx": "9989841a7f927e923fbc479ddeade449b681deed05576c080ddb34ba89d06924",
+    "desde": "TRExECTG6fJrYP16givZxM5gvvbtxm6i6F",
+    "v": 3652.1626542719996,
+    "at": 1793392851000,
+    "virtual": false
+   },
+   {
+    "w": "TTiDrGzU3LUZ99igsUhGbSGcd96jiQWfc6",
+    "nivel": 9,
+    "tx": "963a9ac78cef9520fd88d3ddc513b8c419259fc0b2870851226c9c68f11651f7",
+    "desde": "TASX3B24NDuvcbwy9vFoqD2Lc6dw5aJZkg",
+    "v": 3649.805138848,
+    "at": 1793392896000,
+    "virtual": false
+   },
+   {
+    "w": "TFRvate5UQVttFn8nhvTgDdUDH5dBAVsWD",
+    "nivel": 10,
+    "tx": "42d43daa41d6f50e1c65839cac8718a6dac946023707c7defaeff3fb34e6b5cb",
+    "desde": "TTiDrGzU3LUZ99igsUhGbSGcd96jiQWfc6",
+    "v": 3647.4476209599998,
+    "at": 1793392938000,
+    "virtual": false
+   },
+   {
+    "w": "TCXfgVdgrpN9z7n9MA6P75BZaX7995ndfM",
+    "nivel": 11,
+    "tx": "013c35db3ebaf294e5316fb5adddd5777e14c4fc87127f77d7cdcaff89dc2666",
+    "desde": "TFRvate5UQVttFn8nhvTgDdUDH5dBAVsWD",
+    "v": 3645.0901551679995,
+    "at": 1793392983000,
+    "virtual": false
+   },
+   {
+    "w": "TLRPBTcrzKb98N6JaUXpSDqXLsuLVcsgJi",
+    "nivel": 12,
+    "tx": "2b6a9dad3b0095269a54af1b685d39555e4bd67f7d5b4c884ebacbe3c7ed35db",
+    "desde": "TCXfgVdgrpN9z7n9MA6P75BZaX7995ndfM",
+    "v": 3642.4401298559997,
+    "at": 1793393025000,
+    "virtual": false
+   },
+   {
+    "w": "TE23uCWWWvVnFCEu43jbKMvZTpWaRDPnFD",
+    "nivel": 13,
+    "tx": "18f6f5279b18ecf70cb0655dc05fa0a6558e1fe6d4577989846534d911ea903f",
+    "desde": "TLRPBTcrzKb98N6JaUXpSDqXLsuLVcsgJi",
+    "v": 3640.08261056,
+    "at": 1793393070000,
+    "virtual": false
+   },
+   {
+    "w": "TCmQTAQy5fGnjwrWsNEzhQN1Pzp132Lff8",
+    "nivel": 14,
+    "tx": "e1626eeceb1b7de67a748ed24e76706351cdfcd8406458eff46139c391ada626",
+    "desde": "TE23uCWWWvVnFCEu43jbKMvZTpWaRDPnFD",
+    "v": 3637.725103936,
+    "at": 1793393112000,
+    "virtual": false
+   }
+  ]
+ },
+ {
+  "destino": "TDAZMd5XcMGNs2hyViRMzAj3Kd2Ew9RVRU",
+  "tipo": "nodo",
+  "nombre": null,
+  "tainted": 229798.05434784948,
+  "hashFinal": "aa51fe19ac350a740b4367a73775b5d100f5dbcc6bcfe3fec05f55f0631405ba",
+  "horaFinal": 1793387025000,
+  "pasos": [
+   {
+    "w": "TGSNahJvAdh86aR5pdcxiep1mBWSRK3HHL",
+    "nivel": 0
+   },
+   {
+    "w": "TT6jH4b96ULXAECRD91iTT5kvouogC6XWC",
+    "nivel": 1,
+    "tx": "2933cf7394bdc9f868683d444f323f3d40970bdff6b8129eddc83d5dcb092a87",
+    "desde": "TGSNahJvAdh86aR5pdcxiep1mBWSRK3HHL",
+    "v": 5959.005507,
+    "at": 1793359491000,
+    "virtual": false
+   },
+   {
+    "w": "TP89vFidZ4SDn2kzCrBZuJwjJi4Euwg39a",
+    "nivel": 2,
+    "tx": "f5a4426e338c62d5eaf6c970d8d703e865427a8f9e33dd639996f3b07a31b4ea",
+    "desde": "TT6jH4b96ULXAECRD91iTT5kvouogC6XWC",
+    "v": 8064.516,
+    "at": 1793359752000,
+    "virtual": false
+   },
+   {
+    "w": "TF3DYPJEBfSk67HYzdGJMZPm7TsakATu1J",
+    "nivel": 3,
+    "tx": "3eee910bd1217b530a4df225c2d2d39c6160bef39b7a8589c7f01ec59cfd86f6",
+    "desde": "TP89vFidZ4SDn2kzCrBZuJwjJi4Euwg39a",
+    "v": 15554,
+    "at": 1793371623000,
+    "virtual": false
+   },
+   {
+    "w": "TSfkrG4TrdzBDYManQfE4Y9Tur3fVW9ZZo",
+    "nivel": 4,
+    "tx": "985f5cb3a614b8885b960f22f371d1143533021983e76290bae1469d8dac4e69",
+    "desde": "TF3DYPJEBfSk67HYzdGJMZPm7TsakATu1J",
+    "v": 19517,
+    "at": 1793371878000,
+    "virtual": false
+   },
+   {
+    "w": "TC8aHVxAYFJXSUhwjCo2APYGLX9M7ADDiv",
+    "nivel": 5,
+    "tx": "8ac17c7531d1effb6e8a70f51fd2b87bf01ee2e24ca6667737fb7d7ef00b8bf3",
+    "desde": "TSfkrG4TrdzBDYManQfE4Y9Tur3fVW9ZZo",
+    "v": 15775,
+    "at": 1793372340000,
+    "virtual": false
+   },
+   {
+    "w": "TTYCUHM2iDNJ8EscjNEKbYtoFZHnFuYdqB",
+    "nivel": 6,
+    "tx": "b1a92fc1edeafee146f1d028b2f1ea5ad784b3c93561deeabadcc012d4a1cefb",
+    "desde": "TC8aHVxAYFJXSUhwjCo2APYGLX9M7ADDiv",
+    "v": 15771.216661,
+    "at": 1793372730000,
+    "virtual": false
+   },
+   {
+    "w": "TUM9D9ZZTqJ29Mjvzt3dR7usz6NkWXRCwM",
+    "nivel": 7,
+    "tx": "efe8c341678ccf86c289bbb01828f8e95a7fe870e5b00e046cc6bc68e079cfb4",
+    "desde": "TTYCUHM2iDNJ8EscjNEKbYtoFZHnFuYdqB",
+    "v": 318613.062598,
+    "at": 1793386941000,
+    "virtual": false
+   }
+  ]
+ },
+ {
+  "destino": "TLQh52eDXwkHyWLQLmQzSoW4shogGKwjow",
+  "tipo": "nodo",
+  "nombre": null,
+  "tainted": 204093.12489592232,
+  "hashFinal": "06f548495af5c3cf6a5a0fb73c3ddb288d98126c6f869dce8e62b46aad838b18",
+  "horaFinal": 1793393091000,
+  "pasos": [
+   {
+    "w": "TH1YKH9MUuJtDmekPia4x9fZXAcpPrMv8B",
+    "nivel": 0
+   },
+   {
+    "w": "THebATKiZFWAR854kQU5uEF5WZ88t3aSh3",
+    "nivel": 1,
+    "tx": "5a1555a7c94c6fac4e86f81a673d6d6cf4dda48b83a56160d01e7cb6e56e68ed",
+    "desde": "TH1YKH9MUuJtDmekPia4x9fZXAcpPrMv8B",
+    "v": 20729.498696,
+    "at": 1793377713000,
+    "virtual": false
+   },
+   {
+    "w": "TWJjufVoDeKM1WZU8HD3bRoWttkzMCkKa5",
+    "nivel": 2,
+    "tx": "96770b5a272b90df228c38dc433dfd849fee3597cc97c0365ecfe1c26a2ac6b3",
+    "desde": "THebATKiZFWAR854kQU5uEF5WZ88t3aSh3",
+    "v": 20725,
+    "at": 1793384679000,
+    "virtual": false
+   },
+   {
+    "w": "TJACbCzPJGooYSedne1NZYMVUbkK8aSn8e",
+    "nivel": 6,
+    "tx": "393e73bc1f5c969fe5bd782f364a96da0afc646e3b06c53b51a5d948e6c335a8",
+    "desde": "TWJjufVoDeKM1WZU8HD3bRoWttkzMCkKa5",
+    "v": 500000,
+    "at": 1793380575000,
+    "virtual": false
+   },
+   {
+    "w": "TRExECTG6fJrYP16givZxM5gvvbtxm6i6F",
+    "nivel": 7,
+    "tx": "f12ff21f4a91b58adc0702c123dd39c62a3f96c0e57f60ad9273c2efc435a42e",
+    "desde": "TJACbCzPJGooYSedne1NZYMVUbkK8aSn8e",
+    "v": 400000,
+    "at": 1793382225000,
+    "virtual": false
+   },
+   {
+    "w": "TASX3B24NDuvcbwy9vFoqD2Lc6dw5aJZkg",
+    "nivel": 8,
+    "tx": "9989841a7f927e923fbc479ddeade449b681deed05576c080ddb34ba89d06924",
+    "desde": "TRExECTG6fJrYP16givZxM5gvvbtxm6i6F",
+    "v": 3652.1626542719996,
+    "at": 1793392851000,
+    "virtual": false
+   },
+   {
+    "w": "TTiDrGzU3LUZ99igsUhGbSGcd96jiQWfc6",
+    "nivel": 9,
+    "tx": "963a9ac78cef9520fd88d3ddc513b8c419259fc0b2870851226c9c68f11651f7",
+    "desde": "TASX3B24NDuvcbwy9vFoqD2Lc6dw5aJZkg",
+    "v": 3649.805138848,
+    "at": 1793392896000,
+    "virtual": false
+   },
+   {
+    "w": "TFRvate5UQVttFn8nhvTgDdUDH5dBAVsWD",
+    "nivel": 10,
+    "tx": "42d43daa41d6f50e1c65839cac8718a6dac946023707c7defaeff3fb34e6b5cb",
+    "desde": "TTiDrGzU3LUZ99igsUhGbSGcd96jiQWfc6",
+    "v": 3647.4476209599998,
+    "at": 1793392938000,
+    "virtual": false
+   },
+   {
+    "w": "TCXfgVdgrpN9z7n9MA6P75BZaX7995ndfM",
+    "nivel": 11,
+    "tx": "013c35db3ebaf294e5316fb5adddd5777e14c4fc87127f77d7cdcaff89dc2666",
+    "desde": "TFRvate5UQVttFn8nhvTgDdUDH5dBAVsWD",
+    "v": 3645.0901551679995,
+    "at": 1793392983000,
+    "virtual": false
+   },
+   {
+    "w": "TLRPBTcrzKb98N6JaUXpSDqXLsuLVcsgJi",
+    "nivel": 12,
+    "tx": "2b6a9dad3b0095269a54af1b685d39555e4bd67f7d5b4c884ebacbe3c7ed35db",
+    "desde": "TCXfgVdgrpN9z7n9MA6P75BZaX7995ndfM",
+    "v": 3642.4401298559997,
+    "at": 1793393025000,
+    "virtual": false
+   },
+   {
+    "w": "TE23uCWWWvVnFCEu43jbKMvZTpWaRDPnFD",
+    "nivel": 13,
+    "tx": "18f6f5279b18ecf70cb0655dc05fa0a6558e1fe6d4577989846534d911ea903f",
+    "desde": "TLRPBTcrzKb98N6JaUXpSDqXLsuLVcsgJi",
+    "v": 3640.08261056,
+    "at": 1793393070000,
+    "virtual": false
+   }
+  ]
+ },
+ {
+  "destino": "TLQh52eDXwkHyWLQLmQzSoW4shogGKwjow",
+  "tipo": "nodo",
+  "nombre": null,
+  "tainted": 203901.56157036094,
+  "hashFinal": "a903a65132af6c03e432942ac77afe6d80658c883c29ed820d48a438fa61b865",
+  "horaFinal": 1793393004000,
+  "pasos": [
+   {
+    "w": "TH1YKH9MUuJtDmekPia4x9fZXAcpPrMv8B",
+    "nivel": 0
+   },
+   {
+    "w": "THebATKiZFWAR854kQU5uEF5WZ88t3aSh3",
+    "nivel": 1,
+    "tx": "5a1555a7c94c6fac4e86f81a673d6d6cf4dda48b83a56160d01e7cb6e56e68ed",
+    "desde": "TH1YKH9MUuJtDmekPia4x9fZXAcpPrMv8B",
+    "v": 20729.498696,
+    "at": 1793377713000,
+    "virtual": false
+   },
+   {
+    "w": "TWJjufVoDeKM1WZU8HD3bRoWttkzMCkKa5",
+    "nivel": 2,
+    "tx": "96770b5a272b90df228c38dc433dfd849fee3597cc97c0365ecfe1c26a2ac6b3",
+    "desde": "THebATKiZFWAR854kQU5uEF5WZ88t3aSh3",
+    "v": 20725,
+    "at": 1793384679000,
+    "virtual": false
+   },
+   {
+    "w": "TJACbCzPJGooYSedne1NZYMVUbkK8aSn8e",
+    "nivel": 6,
+    "tx": "393e73bc1f5c969fe5bd782f364a96da0afc646e3b06c53b51a5d948e6c335a8",
+    "desde": "TWJjufVoDeKM1WZU8HD3bRoWttkzMCkKa5",
+    "v": 500000,
+    "at": 1793380575000,
+    "virtual": false
+   },
+   {
+    "w": "TRExECTG6fJrYP16givZxM5gvvbtxm6i6F",
+    "nivel": 7,
+    "tx": "f12ff21f4a91b58adc0702c123dd39c62a3f96c0e57f60ad9273c2efc435a42e",
+    "desde": "TJACbCzPJGooYSedne1NZYMVUbkK8aSn8e",
+    "v": 400000,
+    "at": 1793382225000,
+    "virtual": false
+   },
+   {
+    "w": "TASX3B24NDuvcbwy9vFoqD2Lc6dw5aJZkg",
+    "nivel": 8,
+    "tx": "9989841a7f927e923fbc479ddeade449b681deed05576c080ddb34ba89d06924",
+    "desde": "TRExECTG6fJrYP16givZxM5gvvbtxm6i6F",
+    "v": 3652.1626542719996,
+    "at": 1793392851000,
+    "virtual": false
+   },
+   {
+    "w": "TTiDrGzU3LUZ99igsUhGbSGcd96jiQWfc6",
+    "nivel": 9,
+    "tx": "963a9ac78cef9520fd88d3ddc513b8c419259fc0b2870851226c9c68f11651f7",
+    "desde": "TASX3B24NDuvcbwy9vFoqD2Lc6dw5aJZkg",
+    "v": 3649.805138848,
+    "at": 1793392896000,
+    "virtual": false
+   },
+   {
+    "w": "TFRvate5UQVttFn8nhvTgDdUDH5dBAVsWD",
+    "nivel": 10,
+    "tx": "42d43daa41d6f50e1c65839cac8718a6dac946023707c7defaeff3fb34e6b5cb",
+    "desde": "TTiDrGzU3LUZ99igsUhGbSGcd96jiQWfc6",
+    "v": 3647.4476209599998,
+    "at": 1793392938000,
+    "virtual": false
+   },
+   {
+    "w": "TCXfgVdgrpN9z7n9MA6P75BZaX7995ndfM",
+    "nivel": 11,
+    "tx": "013c35db3ebaf294e5316fb5adddd5777e14c4fc87127f77d7cdcaff89dc2666",
+    "desde": "TFRvate5UQVttFn8nhvTgDdUDH5dBAVsWD",
+    "v": 3645.0901551679995,
+    "at": 1793392983000,
+    "virtual": false
+   }
+  ]
+ },
+ {
+  "destino": "TLQh52eDXwkHyWLQLmQzSoW4shogGKwjow",
+  "tipo": "nodo",
+  "nombre": null,
+  "tainted": 203901.56157036094,
+  "hashFinal": "2f3795274e1f494e08772e05b228255648ad3efe495b86f49b9a491943308d14",
+  "horaFinal": 1793393049000,
+  "pasos": [
+   {
+    "w": "TH1YKH9MUuJtDmekPia4x9fZXAcpPrMv8B",
+    "nivel": 0
+   },
+   {
+    "w": "THebATKiZFWAR854kQU5uEF5WZ88t3aSh3",
+    "nivel": 1,
+    "tx": "5a1555a7c94c6fac4e86f81a673d6d6cf4dda48b83a56160d01e7cb6e56e68ed",
+    "desde": "TH1YKH9MUuJtDmekPia4x9fZXAcpPrMv8B",
+    "v": 20729.498696,
+    "at": 1793377713000,
+    "virtual": false
+   },
+   {
+    "w": "TWJjufVoDeKM1WZU8HD3bRoWttkzMCkKa5",
+    "nivel": 2,
+    "tx": "96770b5a272b90df228c38dc433dfd849fee3597cc97c0365ecfe1c26a2ac6b3",
+    "desde": "THebATKiZFWAR854kQU5uEF5WZ88t3aSh3",
+    "v": 20725,
+    "at": 1793384679000,
+    "virtual": false
+   },
+   {
+    "w": "TJACbCzPJGooYSedne1NZYMVUbkK8aSn8e",
+    "nivel": 6,
+    "tx": "393e73bc1f5c969fe5bd782f364a96da0afc646e3b06c53b51a5d948e6c335a8",
+    "desde": "TWJjufVoDeKM1WZU8HD3bRoWttkzMCkKa5",
+    "v": 500000,
+    "at": 1793380575000,
+    "virtual": false
+   },
+   {
+    "w": "TRExECTG6fJrYP16givZxM5gvvbtxm6i6F",
+    "nivel": 7,
+    "tx": "f12ff21f4a91b58adc0702c123dd39c62a3f96c0e57f60ad9273c2efc435a42e",
+    "desde": "TJACbCzPJGooYSedne1NZYMVUbkK8aSn8e",
+    "v": 400000,
+    "at": 1793382225000,
+    "virtual": false
+   },
+   {
+    "w": "TASX3B24NDuvcbwy9vFoqD2Lc6dw5aJZkg",
+    "nivel": 8,
+    "tx": "9989841a7f927e923fbc479ddeade449b681deed05576c080ddb34ba89d06924",
+    "desde": "TRExECTG6fJrYP16givZxM5gvvbtxm6i6F",
+    "v": 3652.1626542719996,
+    "at": 1793392851000,
+    "virtual": false
+   },
+   {
+    "w": "TTiDrGzU3LUZ99igsUhGbSGcd96jiQWfc6",
+    "nivel": 9,
+    "tx": "963a9ac78cef9520fd88d3ddc513b8c419259fc0b2870851226c9c68f11651f7",
+    "desde": "TASX3B24NDuvcbwy9vFoqD2Lc6dw5aJZkg",
+    "v": 3649.805138848,
+    "at": 1793392896000,
+    "virtual": false
+   },
+   {
+    "w": "TFRvate5UQVttFn8nhvTgDdUDH5dBAVsWD",
+    "nivel": 10,
+    "tx": "42d43daa41d6f50e1c65839cac8718a6dac946023707c7defaeff3fb34e6b5cb",
+    "desde": "TTiDrGzU3LUZ99igsUhGbSGcd96jiQWfc6",
+    "v": 3647.4476209599998,
+    "at": 1793392938000,
+    "virtual": false
+   },
+   {
+    "w": "TCXfgVdgrpN9z7n9MA6P75BZaX7995ndfM",
+    "nivel": 11,
+    "tx": "013c35db3ebaf294e5316fb5adddd5777e14c4fc87127f77d7cdcaff89dc2666",
+    "desde": "TFRvate5UQVttFn8nhvTgDdUDH5dBAVsWD",
+    "v": 3645.0901551679995,
+    "at": 1793392983000,
+    "virtual": false
+   },
+   {
+    "w": "TLRPBTcrzKb98N6JaUXpSDqXLsuLVcsgJi",
+    "nivel": 12,
+    "tx": "2b6a9dad3b0095269a54af1b685d39555e4bd67f7d5b4c884ebacbe3c7ed35db",
+    "desde": "TCXfgVdgrpN9z7n9MA6P75BZaX7995ndfM",
+    "v": 3642.4401298559997,
+    "at": 1793393025000,
+    "virtual": false
+   }
+  ]
+ },
+ {
+  "destino": "TFG4wBaDQ8sHWWP1ACeSGnoNR6RRzevLPt",
+  "tipo": "puente",
+  "nombre": "UsdtOFT",
+  "tainted": 190474.7820438495,
+  "hashFinal": "8a0caceb853a7b3deb931123e1cc4bf806fd5f0eff978488c8c10a0beab9212d",
+  "horaFinal": 1793348703000,
+  "pasos": [
+   {
+    "w": "THPaGKe6aZkUcNht24hcscZPLwtcJAbpun",
+    "nivel": 0
+   },
+   {
+    "w": "TDNF7CwfcKvgtaRPrMg4isijtf73kr8uRA",
+    "nivel": 1,
+    "tx": "239ad385ca5992bb0ae2f10768c78b6ef879fc123e5d915fb5ddcb3654fd0b70",
+    "desde": "THPaGKe6aZkUcNht24hcscZPLwtcJAbpun",
+    "v": 210148.76222348798,
+    "at": 1793342571000,
+    "virtual": false
+   },
+   {
+    "w": "TKBLWEB2CVk1LWdbi8SHfnF2XeUWExvpod",
+    "nivel": 2,
+    "tx": "b5c4f0613b7a8394eb622f980eccdd7b50072a637f0f1c046dc209f0922870ef",
+    "desde": "TDNF7CwfcKvgtaRPrMg4isijtf73kr8uRA",
+    "v": 170148.704,
+    "at": 1793348745000,
+    "virtual": false
+   }
+  ]
+ },
+ {
+  "destino": "TFG4wBaDQ8sHWWP1ACeSGnoNR6RRzevLPt",
+  "tipo": "puente",
+  "nombre": "UsdtOFT",
+  "tainted": 190362.68340136448,
+  "hashFinal": "27fcf2379822115e08b3f65bfe65986df987e0b420402745eacf08df316824ff",
+  "horaFinal": 1793349102000,
+  "pasos": [
+   {
+    "w": "THPaGKe6aZkUcNht24hcscZPLwtcJAbpun",
+    "nivel": 0
+   },
+   {
+    "w": "TDNF7CwfcKvgtaRPrMg4isijtf73kr8uRA",
+    "nivel": 1,
+    "tx": "239ad385ca5992bb0ae2f10768c78b6ef879fc123e5d915fb5ddcb3654fd0b70",
+    "desde": "THPaGKe6aZkUcNht24hcscZPLwtcJAbpun",
+    "v": 210148.76222348798,
+    "at": 1793342571000,
+    "virtual": false
+   },
+   {
+    "w": "TKBLWEB2CVk1LWdbi8SHfnF2XeUWExvpod",
+    "nivel": 2,
+    "tx": "b5c4f0613b7a8394eb622f980eccdd7b50072a637f0f1c046dc209f0922870ef",
+    "desde": "TDNF7CwfcKvgtaRPrMg4isijtf73kr8uRA",
+    "v": 170148.704,
+    "at": 1793348745000,
+    "virtual": false
+   },
+   {
+    "w": "TYVEyGcpjZwoVgBYyHB2i342DRXZttQqjc",
+    "nivel": 3,
+    "tx": "d3abd4e9b8b2a794661b38ff4f70c7baa4cebeaf1d3903912e45c41fc82ec66c",
+    "desde": "TKBLWEB2CVk1LWdbi8SHfnF2XeUWExvpod",
+    "v": 522124.280684864,
+    "at": 1793349015000,
+    "virtual": false
+   }
+  ]
+ },
+ {
+  "destino": "TU4vEruvZwLLkSfV9bNw12EJTPvNr7Pvaa",
+  "tipo": "casa",
+  "nombre": "Bybit",
+  "tainted": 181220.46874163396,
+  "hashFinal": "ab0a3dcb1da4f0febb28413472874724ea030db28e8b91e338fb3641e973be61",
+  "horaFinal": 1793391738000,
+  "pasos": [
+   {
+    "w": "TBAPnuwEht65McDbxDvDYs2XLRSSbYQMUM",
+    "nivel": 0
+   },
+   {
+    "w": "TXT7HsVbGExzXHBG6XN6XSqkAYzWTLkahT",
+    "nivel": 1,
+    "tx": "af2b7196dc068b90493e427989e42a9e13f2118be88fb61278a7385757038f08",
+    "desde": "TBAPnuwEht65McDbxDvDYs2XLRSSbYQMUM",
+    "v": 75680.495659,
+    "at": 1793344635000,
+    "virtual": false
+   },
+   {
+    "w": "TXYiPCELFdqELhQ4vGhniwJeNqEjruZCKv",
+    "nivel": 2,
+    "tx": "7ff01e4c52e6926cc08f114508289caaa4f2694e45526e4c0c56cc0977adbabc",
+    "desde": "TXT7HsVbGExzXHBG6XN6XSqkAYzWTLkahT",
+    "v": 107226.299989,
+    "at": 1793371563000,
+    "virtual": false
+   }
+  ]
+ },
+ {
+  "destino": "TNpajVxzkynMoE5Bp5kyJPBCXNyx5qW5ZD",
+  "tipo": "nodo",
+  "nombre": null,
+  "tainted": 178952.63452003303,
+  "hashFinal": "5b5899cc4f1c14da4d0a562179a227a8af59afbd5f4465b3d42682e93cef2a0a",
+  "horaFinal": 1793392785000,
+  "pasos": [
+   {
+    "w": "TH1YKH9MUuJtDmekPia4x9fZXAcpPrMv8B",
+    "nivel": 0
+   },
+   {
+    "w": "THebATKiZFWAR854kQU5uEF5WZ88t3aSh3",
+    "nivel": 1,
+    "tx": "5a1555a7c94c6fac4e86f81a673d6d6cf4dda48b83a56160d01e7cb6e56e68ed",
+    "desde": "TH1YKH9MUuJtDmekPia4x9fZXAcpPrMv8B",
+    "v": 20729.498696,
+    "at": 1793377713000,
+    "virtual": false
+   },
+   {
+    "w": "TWJjufVoDeKM1WZU8HD3bRoWttkzMCkKa5",
+    "nivel": 2,
+    "tx": "96770b5a272b90df228c38dc433dfd849fee3597cc97c0365ecfe1c26a2ac6b3",
+    "desde": "THebATKiZFWAR854kQU5uEF5WZ88t3aSh3",
+    "v": 20725,
+    "at": 1793384679000,
+    "virtual": false
+   },
+   {
+    "w": "TEhvuDCJLqw7KC3bnt6JBcZfFPPDxSykKc",
+    "nivel": 6,
+    "tx": "0cd628589de66e674e19822ae093505622f1212ab94768a2be68abfdf469d0ed",
+    "desde": "TWJjufVoDeKM1WZU8HD3bRoWttkzMCkKa5",
+    "v": 500000,
+    "at": 1793376258000,
+    "virtual": false
+   },
+   {
+    "w": "TKKD5Jn76hdttjCtxhtqXgmuPwgtjdNUCH",
+    "nivel": 6,
+    "tx": "ce1910cbb3980a3311936fa0d04018bcd2346e98925e7ed279952217abcaed81",
+    "desde": "TEhvuDCJLqw7KC3bnt6JBcZfFPPDxSykKc",
+    "v": 2797571.120502,
+    "at": 1793387979000,
+    "virtual": false
+   },
+   {
+    "w": "TWdD4RqFJFZA4829bGnUbLBKU5FTykTWCa",
+    "nivel": 7,
+    "tx": "1101fa32d4d25ca2cd5c7f7c4ad29db4f7ad3e746fd142464c958062f8ba7d6b",
+    "desde": "TKKD5Jn76hdttjCtxhtqXgmuPwgtjdNUCH",
+    "v": 2900000,
+    "at": 1793388036000,
+    "virtual": false
+   },
+   {
+    "w": "TJ7yL6gPVxqVorfGhnkjErt4tssHSUrxvW",
+    "nivel": 6,
+    "tx": "1f05148931db5c6a822146c44b21642d6a97006ff24cb2b24d4d1438782f09bb",
+    "desde": "TWdD4RqFJFZA4829bGnUbLBKU5FTykTWCa",
+    "v": 7000000,
+    "at": 1793381964000,
+    "virtual": false
+   },
+   {
+    "w": "TPp6W1FuHD1JAEk72hKzVHmzNXW9cDARP2",
+    "nivel": 7,
+    "tx": "c22bbd984fd8bf76dbb1182981c156261e38cca77f6849285410da7607df6059",
+    "desde": "TJ7yL6gPVxqVorfGhnkjErt4tssHSUrxvW",
+    "v": 7500000,
+    "at": 1793383305000,
+    "virtual": false
+   },
+   {
+    "w": "TH8s86Zck48rxBSscc5A9khhYtuxFc98Y1",
+    "nivel": 8,
+    "tx": "8c77e97fed528955118013d730582b0d36826f93ed885241725cf997ed94f8fc",
+    "desde": "TPp6W1FuHD1JAEk72hKzVHmzNXW9cDARP2",
+    "v": 899900,
+    "at": 1793392608000,
+    "virtual": false
+   }
+  ]
+ },
+ {
+  "destino": "TGXb2sF7dgsNq4XX42hMpLPL8sKpfW1y62",
+  "tipo": "nodo",
+  "nombre": null,
+  "tainted": 164221.82287428182,
+  "hashFinal": "8bcd3732b9dcde4d22032b3c50d60997372ea7ead786db354f49b9133156f63a",
+  "horaFinal": 1793380014000,
+  "pasos": [
+   {
+    "w": "TH1YKH9MUuJtDmekPia4x9fZXAcpPrMv8B",
+    "nivel": 0
+   },
+   {
+    "w": "THebATKiZFWAR854kQU5uEF5WZ88t3aSh3",
+    "nivel": 1,
+    "tx": "5a1555a7c94c6fac4e86f81a673d6d6cf4dda48b83a56160d01e7cb6e56e68ed",
+    "desde": "TH1YKH9MUuJtDmekPia4x9fZXAcpPrMv8B",
+    "v": 20729.498696,
+    "at": 1793377713000,
+    "virtual": false
+   },
+   {
+    "w": "TWJjufVoDeKM1WZU8HD3bRoWttkzMCkKa5",
+    "nivel": 2,
+    "tx": "96770b5a272b90df228c38dc433dfd849fee3597cc97c0365ecfe1c26a2ac6b3",
+    "desde": "THebATKiZFWAR854kQU5uEF5WZ88t3aSh3",
+    "v": 20725,
+    "at": 1793384679000,
+    "virtual": false
+   },
+   {
+    "w": "TJACbCzPJGooYSedne1NZYMVUbkK8aSn8e",
+    "nivel": 6,
+    "tx": "393e73bc1f5c969fe5bd782f364a96da0afc646e3b06c53b51a5d948e6c335a8",
+    "desde": "TWJjufVoDeKM1WZU8HD3bRoWttkzMCkKa5",
+    "v": 500000,
+    "at": 1793380575000,
+    "virtual": false
+   },
+   {
+    "w": "TEr9gSkUNLJaDAPtRQVyBYRbVsHeS7333n",
+    "nivel": 7,
+    "tx": "6a70b306276d3722f663e27412c38c70628efcdaa974ca9a2b9f2c983ac8d91b",
+    "desde": "TJACbCzPJGooYSedne1NZYMVUbkK8aSn8e",
+    "v": 400307.436111,
+    "at": 1793379453000,
+    "virtual": false
+   }
+  ]
+ },
+ {
+  "destino": "TLQh52eDXwkHyWLQLmQzSoW4shogGKwjow",
+  "tipo": "nodo",
+  "nombre": null,
+  "tainted": 163121.2492562887,
+  "hashFinal": "782c5f388541c8d55101dba7319f534dd8f298ab6d41242de2d0f3af2f1f9210",
+  "horaFinal": 1793392830000,
+  "pasos": [
+   {
+    "w": "TH1YKH9MUuJtDmekPia4x9fZXAcpPrMv8B",
+    "nivel": 0
+   },
+   {
+    "w": "THebATKiZFWAR854kQU5uEF5WZ88t3aSh3",
+    "nivel": 1,
+    "tx": "5a1555a7c94c6fac4e86f81a673d6d6cf4dda48b83a56160d01e7cb6e56e68ed",
+    "desde": "TH1YKH9MUuJtDmekPia4x9fZXAcpPrMv8B",
+    "v": 20729.498696,
+    "at": 1793377713000,
+    "virtual": false
+   },
+   {
+    "w": "TWJjufVoDeKM1WZU8HD3bRoWttkzMCkKa5",
+    "nivel": 2,
+    "tx": "96770b5a272b90df228c38dc433dfd849fee3597cc97c0365ecfe1c26a2ac6b3",
+    "desde": "THebATKiZFWAR854kQU5uEF5WZ88t3aSh3",
+    "v": 20725,
+    "at": 1793384679000,
+    "virtual": false
+   },
+   {
+    "w": "TJACbCzPJGooYSedne1NZYMVUbkK8aSn8e",
+    "nivel": 6,
+    "tx": "393e73bc1f5c969fe5bd782f364a96da0afc646e3b06c53b51a5d948e6c335a8",
+    "desde": "TWJjufVoDeKM1WZU8HD3bRoWttkzMCkKa5",
+    "v": 500000,
+    "at": 1793380575000,
+    "virtual": false
+   },
+   {
+    "w": "TRExECTG6fJrYP16givZxM5gvvbtxm6i6F",
+    "nivel": 7,
+    "tx": "f12ff21f4a91b58adc0702c123dd39c62a3f96c0e57f60ad9273c2efc435a42e",
+    "desde": "TJACbCzPJGooYSedne1NZYMVUbkK8aSn8e",
+    "v": 400000,
+    "at": 1793382225000,
+    "virtual": false
+   }
+  ]
+ },
+ {
+  "destino": "TLaGjwhvA8XQYSxFAcAXy7Dvuue9eGYitv",
+  "tipo": "casa",
+  "nombre": "OKX Hot Wallet 8",
+  "tainted": 160956.64206580503,
+  "hashFinal": "99b6933e5101e69fcc5547d026ada40b18a261aa086de55a5a698cd4e6f75d21",
+  "horaFinal": 1793365311000,
+  "pasos": [
+   {
+    "w": "TLtmxkug5K1pa2MpxiA2XRz6pkJGxpHCum",
+    "nivel": 3,
+    "tx": "d6d42ea75479dfc842633082a4c7afcaf961acbb282cd66a9e7f1ada4db8612e",
+    "desde": "TUpFTof5ugRydmMRKtrVpXNNGR2VpTQKxW",
+    "v": 1552032.9797,
+    "at": 1793368848000,
+    "virtual": false
+   },
+   {
+    "w": "TUpFTof5ugRydmMRKtrVpXNNGR2VpTQKxW",
+    "nivel": 4,
+    "tx": "ba4fafc5e57d686a5bad8cebe78cf3016cece241bbec737e8944dbdedd13d30d",
+    "desde": "TLtmxkug5K1pa2MpxiA2XRz6pkJGxpHCum",
+    "v": 1525193.01721,
+    "at": 1793361927000,
+    "virtual": false
+   },
+   {
+    "w": "TRgivLMgJBeNvo3z2CAHJywcKGeL1VoqBA",
+    "nivel": 5,
+    "tx": "d3910c10a026f576d6f4b63739bd0b6c0d9ca64b3853fa3c5ae3e5b031c90e6e",
+    "desde": "TUpFTof5ugRydmMRKtrVpXNNGR2VpTQKxW",
+    "v": 246399.47199999998,
+    "at": 1793363367000,
+    "virtual": false
+   },
+   {
+    "w": "TSSXn3hV89W3MXmevCte8nWmyWdh65V62D",
+    "nivel": 5,
+    "tx": "edb01caddd706177046f69c471c07f5fd9e22d0baa03f23702cae7376c95779a",
+    "desde": "TRgivLMgJBeNvo3z2CAHJywcKGeL1VoqBA",
+    "v": 900000,
+    "at": 1793364426000,
+    "virtual": false
+   }
+  ]
+ },
+ {
+  "destino": "TU4vEruvZwLLkSfV9bNw12EJTPvNr7Pvaa",
+  "tipo": "casa",
+  "nombre": "Bybit",
+  "tainted": 153520.68785455366,
+  "hashFinal": "3af93ad970e037300cb8df67fd08c7c3e6080397d0a940d341857c4963dfca98",
+  "horaFinal": 1793395803000,
+  "pasos": [
+   {
+    "w": "TBAPnuwEht65McDbxDvDYs2XLRSSbYQMUM",
+    "nivel": 0
+   },
+   {
+    "w": "TXT7HsVbGExzXHBG6XN6XSqkAYzWTLkahT",
+    "nivel": 1,
+    "tx": "af2b7196dc068b90493e427989e42a9e13f2118be88fb61278a7385757038f08",
+    "desde": "TBAPnuwEht65McDbxDvDYs2XLRSSbYQMUM",
+    "v": 75680.495659,
+    "at": 1793344635000,
+    "virtual": false
+   },
+   {
+    "w": "TXYiPCELFdqELhQ4vGhniwJeNqEjruZCKv",
+    "nivel": 2,
+    "tx": "7ff01e4c52e6926cc08f114508289caaa4f2694e45526e4c0c56cc0977adbabc",
+    "desde": "TXT7HsVbGExzXHBG6XN6XSqkAYzWTLkahT",
+    "v": 107226.299989,
+    "at": 1793371563000,
+    "virtual": false
+   }
+  ]
+ },
+ {
+  "destino": "TKBJEMyej415prEQKhNzb16Kv4oBKU6NhJ",
+  "tipo": "nodo",
+  "nombre": null,
+  "tainted": 152246.13380024288,
+  "hashFinal": "4517a109d157ff3f7d8bd1858e909aca591dc7d9b8118cb30b072645598c718f",
+  "horaFinal": 1793369307000,
+  "pasos": [
+   {
+    "w": "TUpFTof5ugRydmMRKtrVpXNNGR2VpTQKxW",
+    "nivel": 4,
+    "tx": "ba4fafc5e57d686a5bad8cebe78cf3016cece241bbec737e8944dbdedd13d30d",
+    "desde": "TLtmxkug5K1pa2MpxiA2XRz6pkJGxpHCum",
+    "v": 1525193.01721,
+    "at": 1793361927000,
+    "virtual": false
+   },
+   {
+    "w": "TLtmxkug5K1pa2MpxiA2XRz6pkJGxpHCum",
+    "nivel": 3,
+    "tx": "d6d42ea75479dfc842633082a4c7afcaf961acbb282cd66a9e7f1ada4db8612e",
+    "desde": "TUpFTof5ugRydmMRKtrVpXNNGR2VpTQKxW",
+    "v": 1552032.9797,
+    "at": 1793368848000,
+    "virtual": false
+   },
+   {
+    "w": "TD36EUVu6TRB6Sate9frEjknkLM31sG8HU",
+    "nivel": 4,
+    "tx": "eb8e32825929574ca367ea5c09caef9e9afa5c00fab07d72ef07b076c920a1b8",
+    "desde": "TLtmxkug5K1pa2MpxiA2XRz6pkJGxpHCum",
+    "v": 1736242.598022,
+    "at": 1793369232000,
+    "virtual": false
+   }
+  ]
+ },
+ {
+  "destino": "TU4vEruvZwLLkSfV9bNw12EJTPvNr7Pvaa",
+  "tipo": "casa",
+  "nombre": "Bybit",
+  "tainted": 146503.4556809114,
+  "hashFinal": "3bd40feb162535f2aff5ad418faaac55ad7fe3a84702d5551a027d8dfb3507cf",
+  "horaFinal": 1793377230000,
+  "pasos": [
+   {
+    "w": "TBAPnuwEht65McDbxDvDYs2XLRSSbYQMUM",
+    "nivel": 0
+   },
+   {
+    "w": "TXT7HsVbGExzXHBG6XN6XSqkAYzWTLkahT",
+    "nivel": 1,
+    "tx": "af2b7196dc068b90493e427989e42a9e13f2118be88fb61278a7385757038f08",
+    "desde": "TBAPnuwEht65McDbxDvDYs2XLRSSbYQMUM",
+    "v": 75680.495659,
+    "at": 1793344635000,
+    "virtual": false
+   },
+   {
+    "w": "TXYiPCELFdqELhQ4vGhniwJeNqEjruZCKv",
+    "nivel": 2,
+    "tx": "7ff01e4c52e6926cc08f114508289caaa4f2694e45526e4c0c56cc0977adbabc",
+    "desde": "TXT7HsVbGExzXHBG6XN6XSqkAYzWTLkahT",
+    "v": 107226.299989,
+    "at": 1793371563000,
+    "virtual": false
+   }
+  ]
+ },
+ {
+  "destino": "TLaGjwhvA8XQYSxFAcAXy7Dvuue9eGYitv",
+  "tipo": "casa",
+  "nombre": "OKX Hot Wallet 8",
+  "tainted": 143072.57072516004,
+  "hashFinal": "62992da274abea1b03cbe9cec84cddb0ae415f744995ec6052c68c907682583a",
+  "horaFinal": 1793361711000,
+  "pasos": [
+   {
+    "w": "TLtmxkug5K1pa2MpxiA2XRz6pkJGxpHCum",
+    "nivel": 3,
+    "tx": "d6d42ea75479dfc842633082a4c7afcaf961acbb282cd66a9e7f1ada4db8612e",
+    "desde": "TUpFTof5ugRydmMRKtrVpXNNGR2VpTQKxW",
+    "v": 1552032.9797,
+    "at": 1793368848000,
+    "virtual": false
+   },
+   {
+    "w": "TUpFTof5ugRydmMRKtrVpXNNGR2VpTQKxW",
+    "nivel": 4,
+    "tx": "ba4fafc5e57d686a5bad8cebe78cf3016cece241bbec737e8944dbdedd13d30d",
+    "desde": "TLtmxkug5K1pa2MpxiA2XRz6pkJGxpHCum",
+    "v": 1525193.01721,
+    "at": 1793361927000,
+    "virtual": false
+   },
+   {
+    "w": "TRgivLMgJBeNvo3z2CAHJywcKGeL1VoqBA",
+    "nivel": 5,
+    "tx": "d3910c10a026f576d6f4b63739bd0b6c0d9ca64b3853fa3c5ae3e5b031c90e6e",
+    "desde": "TUpFTof5ugRydmMRKtrVpXNNGR2VpTQKxW",
+    "v": 246399.47199999998,
+    "at": 1793363367000,
+    "virtual": false
+   },
+   {
+    "w": "TSSXn3hV89W3MXmevCte8nWmyWdh65V62D",
+    "nivel": 5,
+    "tx": "edb01caddd706177046f69c471c07f5fd9e22d0baa03f23702cae7376c95779a",
+    "desde": "TRgivLMgJBeNvo3z2CAHJywcKGeL1VoqBA",
+    "v": 900000,
+    "at": 1793364426000,
+    "virtual": false
+   }
+  ]
+ },
+ {
+  "destino": "TFAntDrvjV6cRxFgSNz51s4a91Fvx7Te9C",
+  "tipo": "nodo",
+  "nombre": null,
+  "tainted": 136153.6922825429,
+  "hashFinal": "29da0152cd8da9cd023abc5bf4ab0ae32dd9866e982fc6d3bafe0c7e4a25e38a",
+  "horaFinal": 1793376198000,
+  "pasos": [
+   {
+    "w": "TLtmxkug5K1pa2MpxiA2XRz6pkJGxpHCum",
+    "nivel": 3,
+    "tx": "d6d42ea75479dfc842633082a4c7afcaf961acbb282cd66a9e7f1ada4db8612e",
+    "desde": "TUpFTof5ugRydmMRKtrVpXNNGR2VpTQKxW",
+    "v": 1552032.9797,
+    "at": 1793368848000,
+    "virtual": false
+   },
+   {
+    "w": "TUpFTof5ugRydmMRKtrVpXNNGR2VpTQKxW",
+    "nivel": 4,
+    "tx": "ba4fafc5e57d686a5bad8cebe78cf3016cece241bbec737e8944dbdedd13d30d",
+    "desde": "TLtmxkug5K1pa2MpxiA2XRz6pkJGxpHCum",
+    "v": 1525193.01721,
+    "at": 1793361927000,
+    "virtual": false
+   },
+   {
+    "w": "TYu3oZJA213jad4t4Us6pv8fMmA2ZobAXP",
+    "nivel": 5,
+    "tx": "f03661d31ab33dcb596db3a745f3afc28ade0d02b27711aa991f4b06b31b89be",
+    "desde": "TUpFTof5ugRydmMRKtrVpXNNGR2VpTQKxW",
+    "v": 175385,
+    "at": 1793365803000,
+    "virtual": false
+   },
+   {
+    "w": "TXHHPkv3FtsvMhJ77B1fSkGfC9tJ2yLpLw",
+    "nivel": 6,
+    "tx": "acca2c437923fa46225f0573221cb7e8f9a1a29524204703abd30cb1af87e42b",
+    "desde": "TYu3oZJA213jad4t4Us6pv8fMmA2ZobAXP",
+    "v": 749777,
+    "at": 1793371554000,
+    "virtual": false
+   },
+   {
+    "w": "TR85AJTKyfU6oZTCkPKXyGCydGXAUT1kCt",
+    "nivel": 7,
+    "tx": "8d0cdf2013e76334965d703fdb60c8ebe6c59d57135ac9cedc4c83e7d57d3de0",
+    "desde": "TXHHPkv3FtsvMhJ77B1fSkGfC9tJ2yLpLw",
+    "v": 1000000,
+    "at": 1793372397000,
+    "virtual": false
+   },
+   {
+    "w": "TRciCd3QnnJaBiZk7LVUjHZA4LDMjrgD8n",
+    "nivel": 8,
+    "tx": "59d7efba1f68e92a03dcf9e1e3a9cdc590c7453d25d09dab9dc34562ff740e21",
+    "desde": "TR85AJTKyfU6oZTCkPKXyGCydGXAUT1kCt",
+    "v": 3111714.775865,
+    "at": 1793372859000,
+    "virtual": false
+   }
+  ]
+ },
+ {
+  "destino": "TFG4wBaDQ8sHWWP1ACeSGnoNR6RRzevLPt",
+  "tipo": "puente",
+  "nombre": "UsdtOFT",
+  "tainted": 135773.23213906577,
+  "hashFinal": "ba524ad7f5aec59699eb2126596364b65e2d42939aeff386ef94ce945f2eb50f",
+  "horaFinal": 1793349828000,
+  "pasos": [
+   {
+    "w": "THPaGKe6aZkUcNht24hcscZPLwtcJAbpun",
+    "nivel": 0
+   },
+   {
+    "w": "TDNF7CwfcKvgtaRPrMg4isijtf73kr8uRA",
+    "nivel": 1,
+    "tx": "239ad385ca5992bb0ae2f10768c78b6ef879fc123e5d915fb5ddcb3654fd0b70",
+    "desde": "THPaGKe6aZkUcNht24hcscZPLwtcJAbpun",
+    "v": 210148.76222348798,
+    "at": 1793342571000,
+    "virtual": false
+   },
+   {
+    "w": "TKBLWEB2CVk1LWdbi8SHfnF2XeUWExvpod",
+    "nivel": 2,
+    "tx": "b5c4f0613b7a8394eb622f980eccdd7b50072a637f0f1c046dc209f0922870ef",
+    "desde": "TDNF7CwfcKvgtaRPrMg4isijtf73kr8uRA",
+    "v": 170148.704,
+    "at": 1793348745000,
+    "virtual": false
+   },
+   {
+    "w": "TYVEyGcpjZwoVgBYyHB2i342DRXZttQqjc",
+    "nivel": 3,
+    "tx": "d3abd4e9b8b2a794661b38ff4f70c7baa4cebeaf1d3903912e45c41fc82ec66c",
+    "desde": "TKBLWEB2CVk1LWdbi8SHfnF2XeUWExvpod",
+    "v": 522124.280684864,
+    "at": 1793349015000,
+    "virtual": false
+   },
+   {
+    "w": "TTvuaf6nBBJPKCPsYJRmtcrS623YihKiDw",
+    "nivel": 4,
+    "tx": "0500b08984422df50ad569387857981aacd984a58b4b84a70150d32f9d1ccbf6",
+    "desde": "TYVEyGcpjZwoVgBYyHB2i342DRXZttQqjc",
+    "v": 346107.942064192,
+    "at": 1793349522000,
+    "virtual": false
+   },
+   {
+    "w": "TXfNpQrfw7fMSkcFPJXQhHzG4wsen5ww5t",
+    "nivel": 5,
+    "tx": "03f0ed21e75ba80aa0e6998b0643a6b09bed3f6d4c7db00f5c23e1b41268bbc0",
+    "desde": "TTvuaf6nBBJPKCPsYJRmtcrS623YihKiDw",
+    "v": 346103.672832544,
+    "at": 1793349645000,
+    "virtual": false
+   },
+   {
+    "w": "THYXU5hh6kLuvTHraMGqHQgjQwa9stqY5E",
+    "nivel": 6,
+    "tx": "d79c7d9ca45c0e2385b734fe984ec2ac96c8f18b16332496c6a922a7367fdbbc",
+    "desde": "TXfNpQrfw7fMSkcFPJXQhHzG4wsen5ww5t",
+    "v": 346099.051600896,
+    "at": 1793349741000,
+    "virtual": false
+   }
+  ]
+ },
+ {
+  "destino": "TFG4wBaDQ8sHWWP1ACeSGnoNR6RRzevLPt",
+  "tipo": "puente",
+  "nombre": "UsdtOFT",
+  "tainted": 135751.3157963815,
+  "hashFinal": "898b5d3f6aa7a437ab60bead337ff4d1890fe2baf17e4af5e30193f3a13c48f7",
+  "horaFinal": 1793350017000,
+  "pasos": [
+   {
+    "w": "THPaGKe6aZkUcNht24hcscZPLwtcJAbpun",
+    "nivel": 0
+   },
+   {
+    "w": "TDNF7CwfcKvgtaRPrMg4isijtf73kr8uRA",
+    "nivel": 1,
+    "tx": "239ad385ca5992bb0ae2f10768c78b6ef879fc123e5d915fb5ddcb3654fd0b70",
+    "desde": "THPaGKe6aZkUcNht24hcscZPLwtcJAbpun",
+    "v": 210148.76222348798,
+    "at": 1793342571000,
+    "virtual": false
+   },
+   {
+    "w": "TKBLWEB2CVk1LWdbi8SHfnF2XeUWExvpod",
+    "nivel": 2,
+    "tx": "b5c4f0613b7a8394eb622f980eccdd7b50072a637f0f1c046dc209f0922870ef",
+    "desde": "TDNF7CwfcKvgtaRPrMg4isijtf73kr8uRA",
+    "v": 170148.704,
+    "at": 1793348745000,
+    "virtual": false
+   },
+   {
+    "w": "TYVEyGcpjZwoVgBYyHB2i342DRXZttQqjc",
+    "nivel": 3,
+    "tx": "d3abd4e9b8b2a794661b38ff4f70c7baa4cebeaf1d3903912e45c41fc82ec66c",
+    "desde": "TKBLWEB2CVk1LWdbi8SHfnF2XeUWExvpod",
+    "v": 522124.280684864,
+    "at": 1793349015000,
+    "virtual": false
+   },
+   {
+    "w": "TTvuaf6nBBJPKCPsYJRmtcrS623YihKiDw",
+    "nivel": 4,
+    "tx": "0500b08984422df50ad569387857981aacd984a58b4b84a70150d32f9d1ccbf6",
+    "desde": "TYVEyGcpjZwoVgBYyHB2i342DRXZttQqjc",
+    "v": 346107.942064192,
+    "at": 1793349522000,
+    "virtual": false
+   },
+   {
+    "w": "TXfNpQrfw7fMSkcFPJXQhHzG4wsen5ww5t",
+    "nivel": 5,
+    "tx": "03f0ed21e75ba80aa0e6998b0643a6b09bed3f6d4c7db00f5c23e1b41268bbc0",
+    "desde": "TTvuaf6nBBJPKCPsYJRmtcrS623YihKiDw",
+    "v": 346103.672832544,
+    "at": 1793349645000,
+    "virtual": false
+   },
+   {
+    "w": "THYXU5hh6kLuvTHraMGqHQgjQwa9stqY5E",
+    "nivel": 6,
+    "tx": "d79c7d9ca45c0e2385b734fe984ec2ac96c8f18b16332496c6a922a7367fdbbc",
+    "desde": "TXfNpQrfw7fMSkcFPJXQhHzG4wsen5ww5t",
+    "v": 346099.051600896,
+    "at": 1793349741000,
+    "virtual": false
+   }
+  ]
+ },
+ {
+  "destino": "TFG4wBaDQ8sHWWP1ACeSGnoNR6RRzevLPt",
+  "tipo": "puente",
+  "nombre": "UsdtOFT",
+  "tainted": 130954.86002378313,
+  "hashFinal": "5be626d70ccce23bda8517ebe3eb8c30315c18ad0654b5330e94240445f6a123",
+  "horaFinal": 1793350236000,
+  "pasos": [
+   {
+    "w": "THPaGKe6aZkUcNht24hcscZPLwtcJAbpun",
+    "nivel": 0
+   },
+   {
+    "w": "TDNF7CwfcKvgtaRPrMg4isijtf73kr8uRA",
+    "nivel": 1,
+    "tx": "239ad385ca5992bb0ae2f10768c78b6ef879fc123e5d915fb5ddcb3654fd0b70",
+    "desde": "THPaGKe6aZkUcNht24hcscZPLwtcJAbpun",
+    "v": 210148.76222348798,
+    "at": 1793342571000,
+    "virtual": false
+   },
+   {
+    "w": "TKBLWEB2CVk1LWdbi8SHfnF2XeUWExvpod",
+    "nivel": 2,
+    "tx": "b5c4f0613b7a8394eb622f980eccdd7b50072a637f0f1c046dc209f0922870ef",
+    "desde": "TDNF7CwfcKvgtaRPrMg4isijtf73kr8uRA",
+    "v": 170148.704,
+    "at": 1793348745000,
+    "virtual": false
+   },
+   {
+    "w": "TYVEyGcpjZwoVgBYyHB2i342DRXZttQqjc",
+    "nivel": 3,
+    "tx": "d3abd4e9b8b2a794661b38ff4f70c7baa4cebeaf1d3903912e45c41fc82ec66c",
+    "desde": "TKBLWEB2CVk1LWdbi8SHfnF2XeUWExvpod",
+    "v": 522124.280684864,
+    "at": 1793349015000,
+    "virtual": false
+   },
+   {
+    "w": "TTvuaf6nBBJPKCPsYJRmtcrS623YihKiDw",
+    "nivel": 4,
+    "tx": "0500b08984422df50ad569387857981aacd984a58b4b84a70150d32f9d1ccbf6",
+    "desde": "TYVEyGcpjZwoVgBYyHB2i342DRXZttQqjc",
+    "v": 346107.942064192,
+    "at": 1793349522000,
+    "virtual": false
+   },
+   {
+    "w": "TXfNpQrfw7fMSkcFPJXQhHzG4wsen5ww5t",
+    "nivel": 5,
+    "tx": "03f0ed21e75ba80aa0e6998b0643a6b09bed3f6d4c7db00f5c23e1b41268bbc0",
+    "desde": "TTvuaf6nBBJPKCPsYJRmtcrS623YihKiDw",
+    "v": 346103.672832544,
+    "at": 1793349645000,
+    "virtual": false
+   },
+   {
+    "w": "THYXU5hh6kLuvTHraMGqHQgjQwa9stqY5E",
+    "nivel": 6,
+    "tx": "d79c7d9ca45c0e2385b734fe984ec2ac96c8f18b16332496c6a922a7367fdbbc",
+    "desde": "TXfNpQrfw7fMSkcFPJXQhHzG4wsen5ww5t",
+    "v": 346099.051600896,
+    "at": 1793349741000,
+    "virtual": false
+   }
+  ]
+ },
+ {
+  "destino": "TU4vEruvZwLLkSfV9bNw12EJTPvNr7Pvaa",
+  "tipo": "casa",
+  "nombre": "Bybit",
+  "tainted": 129310.1647414701,
+  "hashFinal": "093eb3c13d5b46d23d00171c8956977a4b604b6405d79502e63bbfcf401b5366",
+  "horaFinal": 1793393160000,
+  "pasos": [
+   {
+    "w": "TBAPnuwEht65McDbxDvDYs2XLRSSbYQMUM",
+    "nivel": 0
+   },
+   {
+    "w": "TXT7HsVbGExzXHBG6XN6XSqkAYzWTLkahT",
+    "nivel": 1,
+    "tx": "af2b7196dc068b90493e427989e42a9e13f2118be88fb61278a7385757038f08",
+    "desde": "TBAPnuwEht65McDbxDvDYs2XLRSSbYQMUM",
+    "v": 75680.495659,
+    "at": 1793344635000,
+    "virtual": false
+   },
+   {
+    "w": "TXYiPCELFdqELhQ4vGhniwJeNqEjruZCKv",
+    "nivel": 2,
+    "tx": "7ff01e4c52e6926cc08f114508289caaa4f2694e45526e4c0c56cc0977adbabc",
+    "desde": "TXT7HsVbGExzXHBG6XN6XSqkAYzWTLkahT",
+    "v": 107226.299989,
+    "at": 1793371563000,
+    "virtual": false
+   }
+  ]
+ },
+ {
+  "destino": "TU4vEruvZwLLkSfV9bNw12EJTPvNr7Pvaa",
+  "tipo": "casa",
+  "nombre": "Bybit",
+  "tainted": 123259.55483092411,
+  "hashFinal": "45f29e4f7d09b907938a730bf1ecf99e05d68205c5154d9292c249eea7904ba0",
+  "horaFinal": 1793394345000,
+  "pasos": [
+   {
+    "w": "TBAPnuwEht65McDbxDvDYs2XLRSSbYQMUM",
+    "nivel": 0
+   },
+   {
+    "w": "TXT7HsVbGExzXHBG6XN6XSqkAYzWTLkahT",
+    "nivel": 1,
+    "tx": "af2b7196dc068b90493e427989e42a9e13f2118be88fb61278a7385757038f08",
+    "desde": "TBAPnuwEht65McDbxDvDYs2XLRSSbYQMUM",
+    "v": 75680.495659,
+    "at": 1793344635000,
+    "virtual": false
+   },
+   {
+    "w": "TXYiPCELFdqELhQ4vGhniwJeNqEjruZCKv",
+    "nivel": 2,
+    "tx": "7ff01e4c52e6926cc08f114508289caaa4f2694e45526e4c0c56cc0977adbabc",
+    "desde": "TXT7HsVbGExzXHBG6XN6XSqkAYzWTLkahT",
+    "v": 107226.299989,
+    "at": 1793371563000,
+    "virtual": false
+   }
+  ]
+ },
+ {
+  "destino": "TKBJEMyej415prEQKhNzb16Kv4oBKU6NhJ",
+  "tipo": "nodo",
+  "nombre": null,
+  "tainted": 115165.04323696473,
+  "hashFinal": "620fd3cce1ab596113a6a85243abe655834180b8174c506c75538995e561b41d",
+  "horaFinal": 1793378172000,
+  "pasos": [
+   {
+    "w": "TUpFTof5ugRydmMRKtrVpXNNGR2VpTQKxW",
+    "nivel": 4,
+    "tx": "ba4fafc5e57d686a5bad8cebe78cf3016cece241bbec737e8944dbdedd13d30d",
+    "desde": "TLtmxkug5K1pa2MpxiA2XRz6pkJGxpHCum",
+    "v": 1525193.01721,
+    "at": 1793361927000,
+    "virtual": false
+   },
+   {
+    "w": "TLtmxkug5K1pa2MpxiA2XRz6pkJGxpHCum",
+    "nivel": 3,
+    "tx": "d6d42ea75479dfc842633082a4c7afcaf961acbb282cd66a9e7f1ada4db8612e",
+    "desde": "TUpFTof5ugRydmMRKtrVpXNNGR2VpTQKxW",
+    "v": 1552032.9797,
+    "at": 1793368848000,
+    "virtual": false
+   },
+   {
+    "w": "TD36EUVu6TRB6Sate9frEjknkLM31sG8HU",
+    "nivel": 4,
+    "tx": "eb8e32825929574ca367ea5c09caef9e9afa5c00fab07d72ef07b076c920a1b8",
+    "desde": "TLtmxkug5K1pa2MpxiA2XRz6pkJGxpHCum",
+    "v": 1736242.598022,
+    "at": 1793369232000,
+    "virtual": false
+   },
+   {
+    "w": "TAGUmxxhcsig9UqBZTy5DTSJcZ3dwLZmdp",
+    "nivel": 3,
+    "tx": "aa20490e0f341bc686b2d52f64e2aff6fbc8b971b1522d3048bbfdf50b40196b",
+    "desde": "TD36EUVu6TRB6Sate9frEjknkLM31sG8HU",
+    "v": 142355.75448511998,
+    "at": 1793378328000,
+    "virtual": false
+   },
+   {
+    "w": "TFn9sZS2vvDoTApPWwfcnW9aT3Bm2Pt7d9",
+    "nivel": 4,
+    "tx": "7ca809062e170583070930722f32a885e5e484a3fa68ed4dfa2597701d563fb2",
+    "desde": "TAGUmxxhcsig9UqBZTy5DTSJcZ3dwLZmdp",
+    "v": 1861415.129622,
+    "at": 1793383935000,
+    "virtual": false
+   },
+   {
+    "w": "TFKwUnshmTA4pDxWAEzh2CAk59jLjg7hMk",
+    "nivel": 4,
+    "tx": "2e9b57a6253a8c248ce49846fb889e9c5db3d1c9b10ca6c6da61952440f405bd",
+    "desde": "TFn9sZS2vvDoTApPWwfcnW9aT3Bm2Pt7d9",
+    "v": 1629054.135603,
+    "at": 1793384706000,
+    "virtual": false
+   }
+  ]
+ },
+ {
+  "destino": "TU4vEruvZwLLkSfV9bNw12EJTPvNr7Pvaa",
+  "tipo": "casa",
+  "nombre": "Bybit",
+  "tainted": 115021.32707971607,
+  "hashFinal": "d9bd4ab39f4c74300f3a453887dff481b42e77fd575f9c467daa60303de5346c",
+  "horaFinal": 1793398803000,
+  "pasos": [
+   {
+    "w": "TBAPnuwEht65McDbxDvDYs2XLRSSbYQMUM",
+    "nivel": 0
+   },
+   {
+    "w": "TXT7HsVbGExzXHBG6XN6XSqkAYzWTLkahT",
+    "nivel": 1,
+    "tx": "af2b7196dc068b90493e427989e42a9e13f2118be88fb61278a7385757038f08",
+    "desde": "TBAPnuwEht65McDbxDvDYs2XLRSSbYQMUM",
+    "v": 75680.495659,
+    "at": 1793344635000,
+    "virtual": false
+   },
+   {
+    "w": "TXYiPCELFdqELhQ4vGhniwJeNqEjruZCKv",
+    "nivel": 2,
+    "tx": "7ff01e4c52e6926cc08f114508289caaa4f2694e45526e4c0c56cc0977adbabc",
+    "desde": "TXT7HsVbGExzXHBG6XN6XSqkAYzWTLkahT",
+    "v": 107226.299989,
+    "at": 1793371563000,
+    "virtual": false
+   }
+  ]
+ },
+ {
+  "destino": "TU4vEruvZwLLkSfV9bNw12EJTPvNr7Pvaa",
+  "tipo": "casa",
+  "nombre": "Bybit",
+  "tainted": 111236.9016538136,
+  "hashFinal": "c65a63a753b25e74299b558a1ff9125d623e3d3355ce3021b6d9e83d12eae23b",
+  "horaFinal": 1793393715000,
+  "pasos": [
+   {
+    "w": "TBAPnuwEht65McDbxDvDYs2XLRSSbYQMUM",
+    "nivel": 0
+   },
+   {
+    "w": "TXT7HsVbGExzXHBG6XN6XSqkAYzWTLkahT",
+    "nivel": 1,
+    "tx": "af2b7196dc068b90493e427989e42a9e13f2118be88fb61278a7385757038f08",
+    "desde": "TBAPnuwEht65McDbxDvDYs2XLRSSbYQMUM",
+    "v": 75680.495659,
+    "at": 1793344635000,
+    "virtual": false
+   },
+   {
+    "w": "TXYiPCELFdqELhQ4vGhniwJeNqEjruZCKv",
+    "nivel": 2,
+    "tx": "7ff01e4c52e6926cc08f114508289caaa4f2694e45526e4c0c56cc0977adbabc",
+    "desde": "TXT7HsVbGExzXHBG6XN6XSqkAYzWTLkahT",
+    "v": 107226.299989,
+    "at": 1793371563000,
+    "virtual": false
+   }
+  ]
+ },
+ {
+  "destino": "TLaGjwhvA8XQYSxFAcAXy7Dvuue9eGYitv",
+  "tipo": "casa",
+  "nombre": "OKX Hot Wallet 8",
+  "tainted": 109017.56754562019,
+  "hashFinal": "7a1269fe588b3642464c514630ad84c61c71a4039d7b3cf72d8ae6a3bd073a3e",
+  "horaFinal": 1793374311000,
+  "pasos": [
+   {
+    "w": "TLtmxkug5K1pa2MpxiA2XRz6pkJGxpHCum",
+    "nivel": 3,
+    "tx": "d6d42ea75479dfc842633082a4c7afcaf961acbb282cd66a9e7f1ada4db8612e",
+    "desde": "TUpFTof5ugRydmMRKtrVpXNNGR2VpTQKxW",
+    "v": 1552032.9797,
+    "at": 1793368848000,
+    "virtual": false
+   },
+   {
+    "w": "TUpFTof5ugRydmMRKtrVpXNNGR2VpTQKxW",
+    "nivel": 4,
+    "tx": "ba4fafc5e57d686a5bad8cebe78cf3016cece241bbec737e8944dbdedd13d30d",
+    "desde": "TLtmxkug5K1pa2MpxiA2XRz6pkJGxpHCum",
+    "v": 1525193.01721,
+    "at": 1793361927000,
+    "virtual": false
+   },
+   {
+    "w": "TRgivLMgJBeNvo3z2CAHJywcKGeL1VoqBA",
+    "nivel": 5,
+    "tx": "d3910c10a026f576d6f4b63739bd0b6c0d9ca64b3853fa3c5ae3e5b031c90e6e",
+    "desde": "TUpFTof5ugRydmMRKtrVpXNNGR2VpTQKxW",
+    "v": 246399.47199999998,
+    "at": 1793363367000,
+    "virtual": false
+   },
+   {
+    "w": "TSSXn3hV89W3MXmevCte8nWmyWdh65V62D",
+    "nivel": 5,
+    "tx": "edb01caddd706177046f69c471c07f5fd9e22d0baa03f23702cae7376c95779a",
+    "desde": "TRgivLMgJBeNvo3z2CAHJywcKGeL1VoqBA",
+    "v": 900000,
+    "at": 1793364426000,
+    "virtual": false
+   }
+  ]
+ },
+ {
+  "destino": "TU4vEruvZwLLkSfV9bNw12EJTPvNr7Pvaa",
+  "tipo": "casa",
+  "nombre": "Bybit",
+  "tainted": 102302.54185340686,
+  "hashFinal": "dbda153e00cffdb92e780f828aa762d6a4e2c29b1bca65ddf82aab23171cc130",
+  "horaFinal": 1793375673000,
+  "pasos": [
+   {
+    "w": "TBAPnuwEht65McDbxDvDYs2XLRSSbYQMUM",
+    "nivel": 0
+   },
+   {
+    "w": "TXT7HsVbGExzXHBG6XN6XSqkAYzWTLkahT",
+    "nivel": 1,
+    "tx": "af2b7196dc068b90493e427989e42a9e13f2118be88fb61278a7385757038f08",
+    "desde": "TBAPnuwEht65McDbxDvDYs2XLRSSbYQMUM",
+    "v": 75680.495659,
+    "at": 1793344635000,
+    "virtual": false
+   },
+   {
+    "w": "TXYiPCELFdqELhQ4vGhniwJeNqEjruZCKv",
+    "nivel": 2,
+    "tx": "7ff01e4c52e6926cc08f114508289caaa4f2694e45526e4c0c56cc0977adbabc",
+    "desde": "TXT7HsVbGExzXHBG6XN6XSqkAYzWTLkahT",
+    "v": 107226.299989,
+    "at": 1793371563000,
+    "virtual": false
+   }
+  ]
+ },
+ {
+  "destino": "TC6aYZahWT8E2ZkMHanxCsE2VZvm9zzDsF",
+  "tipo": "nodo",
+  "nombre": null,
+  "tainted": 98397.83947840349,
+  "hashFinal": "935bb6c583c8dd40aed2e81d76d3f1bfff7998b4601d4e0974e9ac776c55ddd4",
+  "horaFinal": 1793359659000,
+  "pasos": [
+   {
+    "w": "TUpFTof5ugRydmMRKtrVpXNNGR2VpTQKxW",
+    "nivel": 4,
+    "tx": "ba4fafc5e57d686a5bad8cebe78cf3016cece241bbec737e8944dbdedd13d30d",
+    "desde": "TLtmxkug5K1pa2MpxiA2XRz6pkJGxpHCum",
+    "v": 1525193.01721,
+    "at": 1793361927000,
+    "virtual": false
+   },
+   {
+    "w": "TLtmxkug5K1pa2MpxiA2XRz6pkJGxpHCum",
+    "nivel": 3,
+    "tx": "d6d42ea75479dfc842633082a4c7afcaf961acbb282cd66a9e7f1ada4db8612e",
+    "desde": "TUpFTof5ugRydmMRKtrVpXNNGR2VpTQKxW",
+    "v": 1552032.9797,
+    "at": 1793368848000,
+    "virtual": false
+   },
+   {
+    "w": "TRXQLc8Zdf3Q2bMNs75WFfNDTpkh94wYpC",
+    "nivel": 4,
+    "tx": "0c58c94974d26b8216e95ae52b924a90697c24767bba44ee0d4a490823bc07cd",
+    "desde": "TLtmxkug5K1pa2MpxiA2XRz6pkJGxpHCum",
+    "v": 1395613.049173,
+    "at": 1793359881000,
+    "virtual": false
+   },
+   {
+    "w": "TE7MGWdj68RuASyPcC5DZRYFK93tiJcSvB",
+    "nivel": 5,
+    "tx": "8e2161d6f548a86ff5e9ff8b736fb20beb1968ecada847c9348f78fab8718d42",
+    "desde": "TRXQLc8Zdf3Q2bMNs75WFfNDTpkh94wYpC",
+    "v": 514138.8,
+    "at": 1793359308000,
+    "virtual": false
+   },
+   {
+    "w": "TYBUvPHVZMKPavpBXbjaUF1oT17qQGRgPJ",
+    "nivel": 6,
+    "tx": "40f12709a911928d60c89dca7a8781154992a5baaed42f5e4f70d6c252d050f4",
+    "desde": "TE7MGWdj68RuASyPcC5DZRYFK93tiJcSvB",
+    "v": 513479,
+    "at": 1793359410000,
+    "virtual": false
+   }
+  ]
+ },
+ {
+  "destino": "TKBJEMyej415prEQKhNzb16Kv4oBKU6NhJ",
+  "tipo": "nodo",
+  "nombre": null,
+  "tainted": 95153.8336251518,
+  "hashFinal": "7cd525672c3ca1ba743b31ead16ec5ef929493b8a0d57f4059d116e44b6be009",
+  "horaFinal": 1793372802000,
+  "pasos": [
+   {
+    "w": "TUpFTof5ugRydmMRKtrVpXNNGR2VpTQKxW",
+    "nivel": 4,
+    "tx": "ba4fafc5e57d686a5bad8cebe78cf3016cece241bbec737e8944dbdedd13d30d",
+    "desde": "TLtmxkug5K1pa2MpxiA2XRz6pkJGxpHCum",
+    "v": 1525193.01721,
+    "at": 1793361927000,
+    "virtual": false
+   },
+   {
+    "w": "TLtmxkug5K1pa2MpxiA2XRz6pkJGxpHCum",
+    "nivel": 3,
+    "tx": "d6d42ea75479dfc842633082a4c7afcaf961acbb282cd66a9e7f1ada4db8612e",
+    "desde": "TUpFTof5ugRydmMRKtrVpXNNGR2VpTQKxW",
+    "v": 1552032.9797,
+    "at": 1793368848000,
+    "virtual": false
+   },
+   {
+    "w": "TD36EUVu6TRB6Sate9frEjknkLM31sG8HU",
+    "nivel": 4,
+    "tx": "eb8e32825929574ca367ea5c09caef9e9afa5c00fab07d72ef07b076c920a1b8",
+    "desde": "TLtmxkug5K1pa2MpxiA2XRz6pkJGxpHCum",
+    "v": 1736242.598022,
+    "at": 1793369232000,
+    "virtual": false
+   }
+  ]
+ },
+ {
+  "destino": "TU4vEruvZwLLkSfV9bNw12EJTPvNr7Pvaa",
+  "tipo": "casa",
+  "nombre": "Bybit",
+  "tainted": 88289.17289226624,
+  "hashFinal": "9f56a84baef82617c8bf32708a10ca90b2daee64caca5e45a19dbb4ca8535230",
+  "horaFinal": 1793397030000,
+  "pasos": [
+   {
+    "w": "TBAPnuwEht65McDbxDvDYs2XLRSSbYQMUM",
+    "nivel": 0
+   },
+   {
+    "w": "TXT7HsVbGExzXHBG6XN6XSqkAYzWTLkahT",
+    "nivel": 1,
+    "tx": "af2b7196dc068b90493e427989e42a9e13f2118be88fb61278a7385757038f08",
+    "desde": "TBAPnuwEht65McDbxDvDYs2XLRSSbYQMUM",
+    "v": 75680.495659,
+    "at": 1793344635000,
+    "virtual": false
+   },
+   {
+    "w": "TXYiPCELFdqELhQ4vGhniwJeNqEjruZCKv",
+    "nivel": 2,
+    "tx": "7ff01e4c52e6926cc08f114508289caaa4f2694e45526e4c0c56cc0977adbabc",
+    "desde": "TXT7HsVbGExzXHBG6XN6XSqkAYzWTLkahT",
+    "v": 107226.299989,
+    "at": 1793371563000,
+    "virtual": false
+   }
+  ]
+ },
+ {
+  "destino": "TQgxyP1jDXGBvmgwqnJ7jKkEqWEogfRM5V",
+  "tipo": "nodo",
+  "nombre": "Well Wallet Hot 2",
+  "tainted": 82943.16634263626,
+  "hashFinal": "9fda613d5cd87aaa7ee41cd0ba683fc86b287233f7539c1361d2e2ae8bafeeeb",
+  "horaFinal": 1793376909000,
+  "pasos": [
+   {
+    "w": "TGSNahJvAdh86aR5pdcxiep1mBWSRK3HHL",
+    "nivel": 0
+   },
+   {
+    "w": "TT6jH4b96ULXAECRD91iTT5kvouogC6XWC",
+    "nivel": 1,
+    "tx": "2933cf7394bdc9f868683d444f323f3d40970bdff6b8129eddc83d5dcb092a87",
+    "desde": "TGSNahJvAdh86aR5pdcxiep1mBWSRK3HHL",
+    "v": 5959.005507,
+    "at": 1793359491000,
+    "virtual": false
+   },
+   {
+    "w": "TP89vFidZ4SDn2kzCrBZuJwjJi4Euwg39a",
+    "nivel": 2,
+    "tx": "f5a4426e338c62d5eaf6c970d8d703e865427a8f9e33dd639996f3b07a31b4ea",
+    "desde": "TT6jH4b96ULXAECRD91iTT5kvouogC6XWC",
+    "v": 8064.516,
+    "at": 1793359752000,
+    "virtual": false
+   },
+   {
+    "w": "TAqgm54LaMPHgFQ3w4ZhANMbhxQhuUWwuK",
+    "nivel": 3,
+    "tx": "881b12d6598660753c1823cb2d0d60baaa0799efe1b2bfdd91e4622c38797a1f",
+    "desde": "TP89vFidZ4SDn2kzCrBZuJwjJi4Euwg39a",
+    "v": 5821,
+    "at": 1793367948000,
+    "virtual": false
+   },
+   {
+    "w": "TLEqdVe4227Ckt69r8eZqTqUJPGxPUyThM",
+    "nivel": 4,
+    "tx": "22ebb0fa81f16b2a677c4fd6b5cb275973790291e4625d9b179b90e1d248eccb",
+    "desde": "TAqgm54LaMPHgFQ3w4ZhANMbhxQhuUWwuK",
+    "v": 24000,
+    "at": 1793367969000,
+    "virtual": false
+   },
+   {
+    "w": "TR4f41xZeSsW63j7yNKkyHGQh8NV3gdpGY",
+    "nivel": 5,
+    "tx": "f43db75157062fc147555f3cb6e40aa9ccb3de3868396ed91600650920bb613d",
+    "desde": "TLEqdVe4227Ckt69r8eZqTqUJPGxPUyThM",
+    "v": 19782.4,
+    "at": 1793371365000,
+    "virtual": false
+   }
+  ]
+ },
+ {
+  "destino": "TGXb2sF7dgsNq4XX42hMpLPL8sKpfW1y62",
+  "tipo": "nodo",
+  "nombre": null,
+  "tainted": 82043.34021928064,
+  "hashFinal": "845b20f6d60d15c6eeaec3abcdfa28583ccb7063f67dcba0890c0bed89b95194",
+  "horaFinal": 1793370633000,
+  "pasos": [
+   {
+    "w": "TH1YKH9MUuJtDmekPia4x9fZXAcpPrMv8B",
+    "nivel": 0
+   },
+   {
+    "w": "THebATKiZFWAR854kQU5uEF5WZ88t3aSh3",
+    "nivel": 1,
+    "tx": "5a1555a7c94c6fac4e86f81a673d6d6cf4dda48b83a56160d01e7cb6e56e68ed",
+    "desde": "TH1YKH9MUuJtDmekPia4x9fZXAcpPrMv8B",
+    "v": 20729.498696,
+    "at": 1793377713000,
+    "virtual": false
+   },
+   {
+    "w": "TWJjufVoDeKM1WZU8HD3bRoWttkzMCkKa5",
+    "nivel": 2,
+    "tx": "96770b5a272b90df228c38dc433dfd849fee3597cc97c0365ecfe1c26a2ac6b3",
+    "desde": "THebATKiZFWAR854kQU5uEF5WZ88t3aSh3",
+    "v": 20725,
+    "at": 1793384679000,
+    "virtual": false
+   },
+   {
+    "w": "TJACbCzPJGooYSedne1NZYMVUbkK8aSn8e",
+    "nivel": 6,
+    "tx": "393e73bc1f5c969fe5bd782f364a96da0afc646e3b06c53b51a5d948e6c335a8",
+    "desde": "TWJjufVoDeKM1WZU8HD3bRoWttkzMCkKa5",
+    "v": 500000,
+    "at": 1793380575000,
+    "virtual": false
+   },
+   {
+    "w": "TFTVHHGoXEP3TFKAav5JTmVZQHdLSJGUsY",
+    "nivel": 7,
+    "tx": "dd69c46dafd7f683706842c50318855c5670b9f33a02588bb1aff0dbbb2542d8",
+    "desde": "TJACbCzPJGooYSedne1NZYMVUbkK8aSn8e",
+    "v": 500000,
+    "at": 1793368788000,
+    "virtual": false
+   },
+   {
+    "w": "TKZCk4y3tzNUQ7U9fsujogjG8ob4KvrRa4",
+    "nivel": 8,
+    "tx": "64731009c017b10a94666d257b232e3401dc3e5de3f487a86673cf6382c8ca66",
+    "desde": "TFTVHHGoXEP3TFKAav5JTmVZQHdLSJGUsY",
+    "v": 500000,
+    "at": 1793369190000,
+    "virtual": false
+   },
+   {
+    "w": "TDva3rXPjPhKH4wiMEYSNKjTcXLGfWF58E",
+    "nivel": 9,
+    "tx": "4d36794c2164692d9278e8d47b6fbb2292e5bc4984a67192ea46e70b5e6f45cf",
+    "desde": "TKZCk4y3tzNUQ7U9fsujogjG8ob4KvrRa4",
+    "v": 200000,
+    "at": 1793370393000,
+    "virtual": false
+   }
+  ]
+ },
+ {
+  "destino": "TQ5SdemHpBawdb31DiwcwSVMQB7iduXgSu",
+  "tipo": "nodo",
+  "nombre": null,
+  "tainted": 78809.04899432028,
+  "hashFinal": "685a9e0a88e9d14251cfcb0fa67dd66ce764241982e5434fd153e44d5018df84",
+  "horaFinal": 1793379396000,
+  "pasos": [
+   {
+    "w": "TBAPnuwEht65McDbxDvDYs2XLRSSbYQMUM",
+    "nivel": 0
+   },
+   {
+    "w": "TDzg4Dycni6P75eJTkFB3tLLeNvjhTrYrQ",
+    "nivel": 1,
+    "tx": "96411ccf6cd9b9ffc290175aadce7f5ed11c309491f19c3b4b155cc650eac8ac",
+    "desde": "TBAPnuwEht65McDbxDvDYs2XLRSSbYQMUM",
+    "v": 11516.992102,
+    "at": 1793373822000,
+    "virtual": false
+   },
+   {
+    "w": "TXYat4rneuYYdkZmbwB5js4Wnugvf79J5Y",
+    "nivel": 2,
+    "tx": "35b95e6a08b072ed88cc48626c0075c93c1ce08aea2ddd28ce3a9f49e378a000",
+    "desde": "TDzg4Dycni6P75eJTkFB3tLLeNvjhTrYrQ",
+    "v": 11000,
+    "at": 1793373954000,
+    "virtual": false
+   },
+   {
+    "w": "TX7tU6u1KBHGcCLQmnZqZajpLoYy2WaRPc",
+    "nivel": 3,
+    "tx": "7f1e594404e3b87813119c01e0cb29021c791ba99d2ff8f29bda21037cf058c6",
+    "desde": "TXYat4rneuYYdkZmbwB5js4Wnugvf79J5Y",
+    "v": 33999.99999,
+    "at": 1793379003000,
+    "virtual": false
+   }
+  ]
+ },
+ {
+  "destino": "TQ5SdemHpBawdb31DiwcwSVMQB7iduXgSu",
+  "tipo": "nodo",
+  "nombre": null,
+  "tainted": 78809.04899432028,
+  "hashFinal": "f31c5e690463b113390949f952118b8f58d531f1588690528de4c83cd94e0f5d",
+  "horaFinal": 1793380116000,
+  "pasos": [
+   {
+    "w": "TBAPnuwEht65McDbxDvDYs2XLRSSbYQMUM",
+    "nivel": 0
+   },
+   {
+    "w": "TDzg4Dycni6P75eJTkFB3tLLeNvjhTrYrQ",
+    "nivel": 1,
+    "tx": "96411ccf6cd9b9ffc290175aadce7f5ed11c309491f19c3b4b155cc650eac8ac",
+    "desde": "TBAPnuwEht65McDbxDvDYs2XLRSSbYQMUM",
+    "v": 11516.992102,
+    "at": 1793373822000,
+    "virtual": false
+   },
+   {
+    "w": "TXYat4rneuYYdkZmbwB5js4Wnugvf79J5Y",
+    "nivel": 2,
+    "tx": "35b95e6a08b072ed88cc48626c0075c93c1ce08aea2ddd28ce3a9f49e378a000",
+    "desde": "TDzg4Dycni6P75eJTkFB3tLLeNvjhTrYrQ",
+    "v": 11000,
+    "at": 1793373954000,
+    "virtual": false
+   },
+   {
+    "w": "TX7tU6u1KBHGcCLQmnZqZajpLoYy2WaRPc",
+    "nivel": 3,
+    "tx": "7f1e594404e3b87813119c01e0cb29021c791ba99d2ff8f29bda21037cf058c6",
+    "desde": "TXYat4rneuYYdkZmbwB5js4Wnugvf79J5Y",
+    "v": 33999.99999,
+    "at": 1793379003000,
+    "virtual": false
+   },
+   {
+    "w": "TW3hsBQuXdtp1Q5ug1YvUgL9PQNZ2tDGVd",
+    "nivel": 4,
+    "tx": "b4b4bec8b7abcfb0b1f7d46940aac57b00c3e014c6c02da42fda1deb0c031194",
+    "desde": "TX7tU6u1KBHGcCLQmnZqZajpLoYy2WaRPc",
+    "v": 3502216.518221,
+    "at": 1793379801000,
+    "virtual": false
+   }
+  ]
+ },
+ {
+  "destino": "TQ5SdemHpBawdb31DiwcwSVMQB7iduXgSu",
+  "tipo": "nodo",
+  "nombre": null,
+  "tainted": 78809.04899432028,
+  "hashFinal": "773e75133922178371c0b50dab5f296467a166af57ef5e112f242eb0fddfe224",
+  "horaFinal": 1793382276000,
+  "pasos": [
+   {
+    "w": "TBAPnuwEht65McDbxDvDYs2XLRSSbYQMUM",
+    "nivel": 0
+   },
+   {
+    "w": "TDzg4Dycni6P75eJTkFB3tLLeNvjhTrYrQ",
+    "nivel": 1,
+    "tx": "96411ccf6cd9b9ffc290175aadce7f5ed11c309491f19c3b4b155cc650eac8ac",
+    "desde": "TBAPnuwEht65McDbxDvDYs2XLRSSbYQMUM",
+    "v": 11516.992102,
+    "at": 1793373822000,
+    "virtual": false
+   },
+   {
+    "w": "TXYat4rneuYYdkZmbwB5js4Wnugvf79J5Y",
+    "nivel": 2,
+    "tx": "35b95e6a08b072ed88cc48626c0075c93c1ce08aea2ddd28ce3a9f49e378a000",
+    "desde": "TDzg4Dycni6P75eJTkFB3tLLeNvjhTrYrQ",
+    "v": 11000,
+    "at": 1793373954000,
+    "virtual": false
+   },
+   {
+    "w": "TX7tU6u1KBHGcCLQmnZqZajpLoYy2WaRPc",
+    "nivel": 3,
+    "tx": "7f1e594404e3b87813119c01e0cb29021c791ba99d2ff8f29bda21037cf058c6",
+    "desde": "TXYat4rneuYYdkZmbwB5js4Wnugvf79J5Y",
+    "v": 33999.99999,
+    "at": 1793379003000,
+    "virtual": false
+   },
+   {
+    "w": "TW3hsBQuXdtp1Q5ug1YvUgL9PQNZ2tDGVd",
+    "nivel": 4,
+    "tx": "b4b4bec8b7abcfb0b1f7d46940aac57b00c3e014c6c02da42fda1deb0c031194",
+    "desde": "TX7tU6u1KBHGcCLQmnZqZajpLoYy2WaRPc",
+    "v": 3502216.518221,
+    "at": 1793379801000,
+    "virtual": false
+   },
+   {
+    "w": "TN2fo6xGCWBT7T6fv9aHpdjLEft8jED1Kd",
+    "nivel": 5,
+    "tx": "b0758ac812057befed3146c71cced0c2559d8b9f3738e2ca226611a6b47b0bc4",
+    "desde": "TW3hsBQuXdtp1Q5ug1YvUgL9PQNZ2tDGVd",
+    "v": 3602757.429091,
+    "at": 1793382135000,
+    "virtual": false
+   }
+  ]
+ },
+ {
+  "destino": "TQ5SdemHpBawdb31DiwcwSVMQB7iduXgSu",
+  "tipo": "nodo",
+  "nombre": null,
+  "tainted": 78809.04899432028,
+  "hashFinal": "56a6148187aab7524be11bfdfe68b27b4d8e877c1ea1c6bf944da4d49086d7fa",
+  "horaFinal": 1793383176000,
+  "pasos": [
+   {
+    "w": "TBAPnuwEht65McDbxDvDYs2XLRSSbYQMUM",
+    "nivel": 0
+   },
+   {
+    "w": "TDzg4Dycni6P75eJTkFB3tLLeNvjhTrYrQ",
+    "nivel": 1,
+    "tx": "96411ccf6cd9b9ffc290175aadce7f5ed11c309491f19c3b4b155cc650eac8ac",
+    "desde": "TBAPnuwEht65McDbxDvDYs2XLRSSbYQMUM",
+    "v": 11516.992102,
+    "at": 1793373822000,
+    "virtual": false
+   },
+   {
+    "w": "TXYat4rneuYYdkZmbwB5js4Wnugvf79J5Y",
+    "nivel": 2,
+    "tx": "35b95e6a08b072ed88cc48626c0075c93c1ce08aea2ddd28ce3a9f49e378a000",
+    "desde": "TDzg4Dycni6P75eJTkFB3tLLeNvjhTrYrQ",
+    "v": 11000,
+    "at": 1793373954000,
+    "virtual": false
+   },
+   {
+    "w": "TX7tU6u1KBHGcCLQmnZqZajpLoYy2WaRPc",
+    "nivel": 3,
+    "tx": "7f1e594404e3b87813119c01e0cb29021c791ba99d2ff8f29bda21037cf058c6",
+    "desde": "TXYat4rneuYYdkZmbwB5js4Wnugvf79J5Y",
+    "v": 33999.99999,
+    "at": 1793379003000,
+    "virtual": false
+   },
+   {
+    "w": "TW3hsBQuXdtp1Q5ug1YvUgL9PQNZ2tDGVd",
+    "nivel": 4,
+    "tx": "b4b4bec8b7abcfb0b1f7d46940aac57b00c3e014c6c02da42fda1deb0c031194",
+    "desde": "TX7tU6u1KBHGcCLQmnZqZajpLoYy2WaRPc",
+    "v": 3502216.518221,
+    "at": 1793379801000,
+    "virtual": false
+   },
+   {
+    "w": "TN2fo6xGCWBT7T6fv9aHpdjLEft8jED1Kd",
+    "nivel": 5,
+    "tx": "b0758ac812057befed3146c71cced0c2559d8b9f3738e2ca226611a6b47b0bc4",
+    "desde": "TW3hsBQuXdtp1Q5ug1YvUgL9PQNZ2tDGVd",
+    "v": 3602757.429091,
+    "at": 1793382135000,
+    "virtual": false
+   }
+  ]
+ },
+ {
+  "destino": "TM7KwqNofkd4UFnEwVZ7Lb1Pppb7i4pLWY",
+  "tipo": "nodo",
+  "nombre": null,
+  "tainted": 78729.40557110748,
+  "hashFinal": "a98c292a790205228d0b0e419a7e66f58054652fb71fe494cf587cd2f558c04f",
+  "horaFinal": 1793394696000,
+  "pasos": [
+   {
+    "w": "TBAPnuwEht65McDbxDvDYs2XLRSSbYQMUM",
+    "nivel": 0
+   },
+   {
+    "w": "TDzg4Dycni6P75eJTkFB3tLLeNvjhTrYrQ",
+    "nivel": 1,
+    "tx": "96411ccf6cd9b9ffc290175aadce7f5ed11c309491f19c3b4b155cc650eac8ac",
+    "desde": "TBAPnuwEht65McDbxDvDYs2XLRSSbYQMUM",
+    "v": 11516.992102,
+    "at": 1793373822000,
+    "virtual": false
+   },
+   {
+    "w": "TXYat4rneuYYdkZmbwB5js4Wnugvf79J5Y",
+    "nivel": 2,
+    "tx": "35b95e6a08b072ed88cc48626c0075c93c1ce08aea2ddd28ce3a9f49e378a000",
+    "desde": "TDzg4Dycni6P75eJTkFB3tLLeNvjhTrYrQ",
+    "v": 11000,
+    "at": 1793373954000,
+    "virtual": false
+   },
+   {
+    "w": "TX7tU6u1KBHGcCLQmnZqZajpLoYy2WaRPc",
+    "nivel": 3,
+    "tx": "7f1e594404e3b87813119c01e0cb29021c791ba99d2ff8f29bda21037cf058c6",
+    "desde": "TXYat4rneuYYdkZmbwB5js4Wnugvf79J5Y",
+    "v": 33999.99999,
+    "at": 1793379003000,
+    "virtual": false
+   },
+   {
+    "w": "TW3hsBQuXdtp1Q5ug1YvUgL9PQNZ2tDGVd",
+    "nivel": 4,
+    "tx": "b4b4bec8b7abcfb0b1f7d46940aac57b00c3e014c6c02da42fda1deb0c031194",
+    "desde": "TX7tU6u1KBHGcCLQmnZqZajpLoYy2WaRPc",
+    "v": 3502216.518221,
+    "at": 1793379801000,
+    "virtual": false
+   },
+   {
+    "w": "TN2fo6xGCWBT7T6fv9aHpdjLEft8jED1Kd",
+    "nivel": 5,
+    "tx": "b0758ac812057befed3146c71cced0c2559d8b9f3738e2ca226611a6b47b0bc4",
+    "desde": "TW3hsBQuXdtp1Q5ug1YvUgL9PQNZ2tDGVd",
+    "v": 3602757.429091,
+    "at": 1793382135000,
+    "virtual": false
+   },
+   {
+    "w": "TK15TV12RzMvvdbwucR7qDvtZcRy6KKMiD",
+    "nivel": 6,
+    "tx": "690de9334a2fdc181b8ea1d43f55685ad6cb1c518ab01fbb4611292a4b5bdd7a",
+    "desde": "TN2fo6xGCWBT7T6fv9aHpdjLEft8jED1Kd",
+    "v": 3315462.274162,
+    "at": 1793384055000,
+    "virtual": false
+   },
+   {
+    "w": "TT48Qbe2REz8KEqhGq1eTrZyPsGZsPfzbU",
+    "nivel": 7,
+    "tx": "a2c01b0f393fcf016517436efd232fc75440bdbc89dae74a63aecc68d62b071b",
+    "desde": "TK15TV12RzMvvdbwucR7qDvtZcRy6KKMiD",
+    "v": 3219071.78433,
+    "at": 1793386338000,
+    "virtual": false
+   },
+   {
+    "w": "TKboArogcb5RTx9e4KwCq7kTJTHs4VfRYh",
+    "nivel": 8,
+    "tx": "1b12b49389632a8db35e458284ccc0f917723b40bb7aaa525ef5c9fc710a1a9f",
+    "desde": "TT48Qbe2REz8KEqhGq1eTrZyPsGZsPfzbU",
+    "v": 3356327.219267,
+    "at": 1793389392000,
+    "virtual": false
+   },
+   {
+    "w": "TYh2SHRY5oPBeLPpVbGkKjtwqyF9BSWgio",
+    "nivel": 9,
+    "tx": "f94753498579f064885eacb1ef61962843a24cbcf5f795f0949ad3d503625d8c",
+    "desde": "TKboArogcb5RTx9e4KwCq7kTJTHs4VfRYh",
+    "v": 5262738.255941,
+    "at": 1793389938000,
+    "virtual": false
+   },
+   {
+    "w": "TShnemY3wsecn81WhMeUQNJaqr36Vr6DXT",
+    "nivel": 10,
+    "tx": "75af3335fe339263280b7ed176fe06fb90b3b1e5f9c3a272a16c2578200f6265",
+    "desde": "TYh2SHRY5oPBeLPpVbGkKjtwqyF9BSWgio",
+    "v": 479866.403535904,
+    "at": 1793391108000,
+    "virtual": true
+   },
+   {
+    "w": "TCRhCdCr7FQrPFN5dqBbAgjvGduBMgVVRP",
+    "nivel": 11,
+    "tx": "773ed92dda8e8903403467a9775b5baa5e74d80b2dba97eccf78a26243da4557",
+    "desde": "TShnemY3wsecn81WhMeUQNJaqr36Vr6DXT",
+    "v": 460736.720019,
+    "at": 1793390196000,
+    "virtual": true
+   }
+  ]
+ },
+ {
+  "destino": "TM7KwqNofkd4UFnEwVZ7Lb1Pppb7i4pLWY",
+  "tipo": "nodo",
+  "nombre": null,
+  "tainted": 78729.40557110748,
+  "hashFinal": "e8ae2c1d20635f37b9d63f1ebc4e7f34b02ac811864c724730bd65fa8a1692a2",
+  "horaFinal": 1793398476000,
+  "pasos": [
+   {
+    "w": "TBAPnuwEht65McDbxDvDYs2XLRSSbYQMUM",
+    "nivel": 0
+   },
+   {
+    "w": "TDzg4Dycni6P75eJTkFB3tLLeNvjhTrYrQ",
+    "nivel": 1,
+    "tx": "96411ccf6cd9b9ffc290175aadce7f5ed11c309491f19c3b4b155cc650eac8ac",
+    "desde": "TBAPnuwEht65McDbxDvDYs2XLRSSbYQMUM",
+    "v": 11516.992102,
+    "at": 1793373822000,
+    "virtual": false
+   },
+   {
+    "w": "TXYat4rneuYYdkZmbwB5js4Wnugvf79J5Y",
+    "nivel": 2,
+    "tx": "35b95e6a08b072ed88cc48626c0075c93c1ce08aea2ddd28ce3a9f49e378a000",
+    "desde": "TDzg4Dycni6P75eJTkFB3tLLeNvjhTrYrQ",
+    "v": 11000,
+    "at": 1793373954000,
+    "virtual": false
+   },
+   {
+    "w": "TX7tU6u1KBHGcCLQmnZqZajpLoYy2WaRPc",
+    "nivel": 3,
+    "tx": "7f1e594404e3b87813119c01e0cb29021c791ba99d2ff8f29bda21037cf058c6",
+    "desde": "TXYat4rneuYYdkZmbwB5js4Wnugvf79J5Y",
+    "v": 33999.99999,
+    "at": 1793379003000,
+    "virtual": false
+   },
+   {
+    "w": "TW3hsBQuXdtp1Q5ug1YvUgL9PQNZ2tDGVd",
+    "nivel": 4,
+    "tx": "b4b4bec8b7abcfb0b1f7d46940aac57b00c3e014c6c02da42fda1deb0c031194",
+    "desde": "TX7tU6u1KBHGcCLQmnZqZajpLoYy2WaRPc",
+    "v": 3502216.518221,
+    "at": 1793379801000,
+    "virtual": false
+   },
+   {
+    "w": "TN2fo6xGCWBT7T6fv9aHpdjLEft8jED1Kd",
+    "nivel": 5,
+    "tx": "b0758ac812057befed3146c71cced0c2559d8b9f3738e2ca226611a6b47b0bc4",
+    "desde": "TW3hsBQuXdtp1Q5ug1YvUgL9PQNZ2tDGVd",
+    "v": 3602757.429091,
+    "at": 1793382135000,
+    "virtual": false
+   },
+   {
+    "w": "TK15TV12RzMvvdbwucR7qDvtZcRy6KKMiD",
+    "nivel": 6,
+    "tx": "690de9334a2fdc181b8ea1d43f55685ad6cb1c518ab01fbb4611292a4b5bdd7a",
+    "desde": "TN2fo6xGCWBT7T6fv9aHpdjLEft8jED1Kd",
+    "v": 3315462.274162,
+    "at": 1793384055000,
+    "virtual": false
+   },
+   {
+    "w": "TT48Qbe2REz8KEqhGq1eTrZyPsGZsPfzbU",
+    "nivel": 7,
+    "tx": "a2c01b0f393fcf016517436efd232fc75440bdbc89dae74a63aecc68d62b071b",
+    "desde": "TK15TV12RzMvvdbwucR7qDvtZcRy6KKMiD",
+    "v": 3219071.78433,
+    "at": 1793386338000,
+    "virtual": false
+   },
+   {
+    "w": "TKboArogcb5RTx9e4KwCq7kTJTHs4VfRYh",
+    "nivel": 8,
+    "tx": "1b12b49389632a8db35e458284ccc0f917723b40bb7aaa525ef5c9fc710a1a9f",
+    "desde": "TT48Qbe2REz8KEqhGq1eTrZyPsGZsPfzbU",
+    "v": 3356327.219267,
+    "at": 1793389392000,
+    "virtual": false
+   },
+   {
+    "w": "TYh2SHRY5oPBeLPpVbGkKjtwqyF9BSWgio",
+    "nivel": 9,
+    "tx": "f94753498579f064885eacb1ef61962843a24cbcf5f795f0949ad3d503625d8c",
+    "desde": "TKboArogcb5RTx9e4KwCq7kTJTHs4VfRYh",
+    "v": 5262738.255941,
+    "at": 1793389938000,
+    "virtual": false
+   },
+   {
+    "w": "TShnemY3wsecn81WhMeUQNJaqr36Vr6DXT",
+    "nivel": 10,
+    "tx": "75af3335fe339263280b7ed176fe06fb90b3b1e5f9c3a272a16c2578200f6265",
+    "desde": "TYh2SHRY5oPBeLPpVbGkKjtwqyF9BSWgio",
+    "v": 479866.403535904,
+    "at": 1793391108000,
+    "virtual": true
+   },
+   {
+    "w": "TCRhCdCr7FQrPFN5dqBbAgjvGduBMgVVRP",
+    "nivel": 11,
+    "tx": "773ed92dda8e8903403467a9775b5baa5e74d80b2dba97eccf78a26243da4557",
+    "desde": "TShnemY3wsecn81WhMeUQNJaqr36Vr6DXT",
+    "v": 460736.720019,
+    "at": 1793390196000,
+    "virtual": true
+   }
+  ]
+ },
+ {
+  "destino": "TQ5SdemHpBawdb31DiwcwSVMQB7iduXgSu",
+  "tipo": "nodo",
+  "nombre": null,
+  "tainted": 78612.61325697725,
+  "hashFinal": "dff3f9b153bf6c003a2c8fac0707ea076aaea0430599c4c247cc3ec1a3dcdea4",
+  "horaFinal": 1793388036000,
+  "pasos": [
+   {
+    "w": "TBAPnuwEht65McDbxDvDYs2XLRSSbYQMUM",
+    "nivel": 0
+   },
+   {
+    "w": "TDzg4Dycni6P75eJTkFB3tLLeNvjhTrYrQ",
+    "nivel": 1,
+    "tx": "96411ccf6cd9b9ffc290175aadce7f5ed11c309491f19c3b4b155cc650eac8ac",
+    "desde": "TBAPnuwEht65McDbxDvDYs2XLRSSbYQMUM",
+    "v": 11516.992102,
+    "at": 1793373822000,
+    "virtual": false
+   },
+   {
+    "w": "TXYat4rneuYYdkZmbwB5js4Wnugvf79J5Y",
+    "nivel": 2,
+    "tx": "35b95e6a08b072ed88cc48626c0075c93c1ce08aea2ddd28ce3a9f49e378a000",
+    "desde": "TDzg4Dycni6P75eJTkFB3tLLeNvjhTrYrQ",
+    "v": 11000,
+    "at": 1793373954000,
+    "virtual": false
+   },
+   {
+    "w": "TX7tU6u1KBHGcCLQmnZqZajpLoYy2WaRPc",
+    "nivel": 3,
+    "tx": "7f1e594404e3b87813119c01e0cb29021c791ba99d2ff8f29bda21037cf058c6",
+    "desde": "TXYat4rneuYYdkZmbwB5js4Wnugvf79J5Y",
+    "v": 33999.99999,
+    "at": 1793379003000,
+    "virtual": false
+   },
+   {
+    "w": "TW3hsBQuXdtp1Q5ug1YvUgL9PQNZ2tDGVd",
+    "nivel": 4,
+    "tx": "b4b4bec8b7abcfb0b1f7d46940aac57b00c3e014c6c02da42fda1deb0c031194",
+    "desde": "TX7tU6u1KBHGcCLQmnZqZajpLoYy2WaRPc",
+    "v": 3502216.518221,
+    "at": 1793379801000,
+    "virtual": false
+   },
+   {
+    "w": "TN2fo6xGCWBT7T6fv9aHpdjLEft8jED1Kd",
+    "nivel": 5,
+    "tx": "b0758ac812057befed3146c71cced0c2559d8b9f3738e2ca226611a6b47b0bc4",
+    "desde": "TW3hsBQuXdtp1Q5ug1YvUgL9PQNZ2tDGVd",
+    "v": 3602757.429091,
+    "at": 1793382135000,
+    "virtual": false
+   },
+   {
+    "w": "TK15TV12RzMvvdbwucR7qDvtZcRy6KKMiD",
+    "nivel": 6,
+    "tx": "690de9334a2fdc181b8ea1d43f55685ad6cb1c518ab01fbb4611292a4b5bdd7a",
+    "desde": "TN2fo6xGCWBT7T6fv9aHpdjLEft8jED1Kd",
+    "v": 3315462.274162,
+    "at": 1793384055000,
+    "virtual": false
+   },
+   {
+    "w": "TT48Qbe2REz8KEqhGq1eTrZyPsGZsPfzbU",
+    "nivel": 7,
+    "tx": "a2c01b0f393fcf016517436efd232fc75440bdbc89dae74a63aecc68d62b071b",
+    "desde": "TK15TV12RzMvvdbwucR7qDvtZcRy6KKMiD",
+    "v": 3219071.78433,
+    "at": 1793386338000,
+    "virtual": false
+   }
+  ]
+ },
+ {
+  "destino": "TQ5SdemHpBawdb31DiwcwSVMQB7iduXgSu",
+  "tipo": "nodo",
+  "nombre": null,
+  "tainted": 78612.61325697723,
+  "hashFinal": "61330384de22dc2c39c106eb3ef573f1dfa51a922d0a16d4cf60af0d1955c176",
+  "horaFinal": 1793385162000,
+  "pasos": [
+   {
+    "w": "TBAPnuwEht65McDbxDvDYs2XLRSSbYQMUM",
+    "nivel": 0
+   },
+   {
+    "w": "TDzg4Dycni6P75eJTkFB3tLLeNvjhTrYrQ",
+    "nivel": 1,
+    "tx": "96411ccf6cd9b9ffc290175aadce7f5ed11c309491f19c3b4b155cc650eac8ac",
+    "desde": "TBAPnuwEht65McDbxDvDYs2XLRSSbYQMUM",
+    "v": 11516.992102,
+    "at": 1793373822000,
+    "virtual": false
+   },
+   {
+    "w": "TXYat4rneuYYdkZmbwB5js4Wnugvf79J5Y",
+    "nivel": 2,
+    "tx": "35b95e6a08b072ed88cc48626c0075c93c1ce08aea2ddd28ce3a9f49e378a000",
+    "desde": "TDzg4Dycni6P75eJTkFB3tLLeNvjhTrYrQ",
+    "v": 11000,
+    "at": 1793373954000,
+    "virtual": false
+   },
+   {
+    "w": "TX7tU6u1KBHGcCLQmnZqZajpLoYy2WaRPc",
+    "nivel": 3,
+    "tx": "7f1e594404e3b87813119c01e0cb29021c791ba99d2ff8f29bda21037cf058c6",
+    "desde": "TXYat4rneuYYdkZmbwB5js4Wnugvf79J5Y",
+    "v": 33999.99999,
+    "at": 1793379003000,
+    "virtual": false
+   },
+   {
+    "w": "TW3hsBQuXdtp1Q5ug1YvUgL9PQNZ2tDGVd",
+    "nivel": 4,
+    "tx": "b4b4bec8b7abcfb0b1f7d46940aac57b00c3e014c6c02da42fda1deb0c031194",
+    "desde": "TX7tU6u1KBHGcCLQmnZqZajpLoYy2WaRPc",
+    "v": 3502216.518221,
+    "at": 1793379801000,
+    "virtual": false
+   },
+   {
+    "w": "TN2fo6xGCWBT7T6fv9aHpdjLEft8jED1Kd",
+    "nivel": 5,
+    "tx": "b0758ac812057befed3146c71cced0c2559d8b9f3738e2ca226611a6b47b0bc4",
+    "desde": "TW3hsBQuXdtp1Q5ug1YvUgL9PQNZ2tDGVd",
+    "v": 3602757.429091,
+    "at": 1793382135000,
+    "virtual": false
+   },
+   {
+    "w": "TK15TV12RzMvvdbwucR7qDvtZcRy6KKMiD",
+    "nivel": 6,
+    "tx": "690de9334a2fdc181b8ea1d43f55685ad6cb1c518ab01fbb4611292a4b5bdd7a",
+    "desde": "TN2fo6xGCWBT7T6fv9aHpdjLEft8jED1Kd",
+    "v": 3315462.274162,
+    "at": 1793384055000,
+    "virtual": false
+   }
+  ]
+ },
+ {
+  "destino": "TQ5SdemHpBawdb31DiwcwSVMQB7iduXgSu",
+  "tipo": "nodo",
+  "nombre": null,
+  "tainted": 78612.61325697723,
+  "hashFinal": "a8be69628f01175efe29d98db03c502b9726c180a32fc027373076b2de92f283",
+  "horaFinal": 1793385336000,
+  "pasos": [
+   {
+    "w": "TBAPnuwEht65McDbxDvDYs2XLRSSbYQMUM",
+    "nivel": 0
+   },
+   {
+    "w": "TDzg4Dycni6P75eJTkFB3tLLeNvjhTrYrQ",
+    "nivel": 1,
+    "tx": "96411ccf6cd9b9ffc290175aadce7f5ed11c309491f19c3b4b155cc650eac8ac",
+    "desde": "TBAPnuwEht65McDbxDvDYs2XLRSSbYQMUM",
+    "v": 11516.992102,
+    "at": 1793373822000,
+    "virtual": false
+   },
+   {
+    "w": "TXYat4rneuYYdkZmbwB5js4Wnugvf79J5Y",
+    "nivel": 2,
+    "tx": "35b95e6a08b072ed88cc48626c0075c93c1ce08aea2ddd28ce3a9f49e378a000",
+    "desde": "TDzg4Dycni6P75eJTkFB3tLLeNvjhTrYrQ",
+    "v": 11000,
+    "at": 1793373954000,
+    "virtual": false
+   },
+   {
+    "w": "TX7tU6u1KBHGcCLQmnZqZajpLoYy2WaRPc",
+    "nivel": 3,
+    "tx": "7f1e594404e3b87813119c01e0cb29021c791ba99d2ff8f29bda21037cf058c6",
+    "desde": "TXYat4rneuYYdkZmbwB5js4Wnugvf79J5Y",
+    "v": 33999.99999,
+    "at": 1793379003000,
+    "virtual": false
+   },
+   {
+    "w": "TW3hsBQuXdtp1Q5ug1YvUgL9PQNZ2tDGVd",
+    "nivel": 4,
+    "tx": "b4b4bec8b7abcfb0b1f7d46940aac57b00c3e014c6c02da42fda1deb0c031194",
+    "desde": "TX7tU6u1KBHGcCLQmnZqZajpLoYy2WaRPc",
+    "v": 3502216.518221,
+    "at": 1793379801000,
+    "virtual": false
+   },
+   {
+    "w": "TN2fo6xGCWBT7T6fv9aHpdjLEft8jED1Kd",
+    "nivel": 5,
+    "tx": "b0758ac812057befed3146c71cced0c2559d8b9f3738e2ca226611a6b47b0bc4",
+    "desde": "TW3hsBQuXdtp1Q5ug1YvUgL9PQNZ2tDGVd",
+    "v": 3602757.429091,
+    "at": 1793382135000,
+    "virtual": false
+   },
+   {
+    "w": "TK15TV12RzMvvdbwucR7qDvtZcRy6KKMiD",
+    "nivel": 6,
+    "tx": "690de9334a2fdc181b8ea1d43f55685ad6cb1c518ab01fbb4611292a4b5bdd7a",
+    "desde": "TN2fo6xGCWBT7T6fv9aHpdjLEft8jED1Kd",
+    "v": 3315462.274162,
+    "at": 1793384055000,
+    "virtual": false
+   }
+  ]
+ },
+ {
+  "destino": "TQ5SdemHpBawdb31DiwcwSVMQB7iduXgSu",
+  "tipo": "nodo",
+  "nombre": null,
+  "tainted": 78290.6629258307,
+  "hashFinal": "2579676e1546fe0bf3003d4180cd6b07818ad61bf3a99f2c730feb27b8c1d640",
+  "horaFinal": 1793391816000,
+  "pasos": [
+   {
+    "w": "TBAPnuwEht65McDbxDvDYs2XLRSSbYQMUM",
+    "nivel": 0
+   },
+   {
+    "w": "TDzg4Dycni6P75eJTkFB3tLLeNvjhTrYrQ",
+    "nivel": 1,
+    "tx": "96411ccf6cd9b9ffc290175aadce7f5ed11c309491f19c3b4b155cc650eac8ac",
+    "desde": "TBAPnuwEht65McDbxDvDYs2XLRSSbYQMUM",
+    "v": 11516.992102,
+    "at": 1793373822000,
+    "virtual": false
+   },
+   {
+    "w": "TXYat4rneuYYdkZmbwB5js4Wnugvf79J5Y",
+    "nivel": 2,
+    "tx": "35b95e6a08b072ed88cc48626c0075c93c1ce08aea2ddd28ce3a9f49e378a000",
+    "desde": "TDzg4Dycni6P75eJTkFB3tLLeNvjhTrYrQ",
+    "v": 11000,
+    "at": 1793373954000,
+    "virtual": false
+   },
+   {
+    "w": "TX7tU6u1KBHGcCLQmnZqZajpLoYy2WaRPc",
+    "nivel": 3,
+    "tx": "7f1e594404e3b87813119c01e0cb29021c791ba99d2ff8f29bda21037cf058c6",
+    "desde": "TXYat4rneuYYdkZmbwB5js4Wnugvf79J5Y",
+    "v": 33999.99999,
+    "at": 1793379003000,
+    "virtual": false
+   },
+   {
+    "w": "TW3hsBQuXdtp1Q5ug1YvUgL9PQNZ2tDGVd",
+    "nivel": 4,
+    "tx": "b4b4bec8b7abcfb0b1f7d46940aac57b00c3e014c6c02da42fda1deb0c031194",
+    "desde": "TX7tU6u1KBHGcCLQmnZqZajpLoYy2WaRPc",
+    "v": 3502216.518221,
+    "at": 1793379801000,
+    "virtual": false
+   },
+   {
+    "w": "TN2fo6xGCWBT7T6fv9aHpdjLEft8jED1Kd",
+    "nivel": 5,
+    "tx": "b0758ac812057befed3146c71cced0c2559d8b9f3738e2ca226611a6b47b0bc4",
+    "desde": "TW3hsBQuXdtp1Q5ug1YvUgL9PQNZ2tDGVd",
+    "v": 3602757.429091,
+    "at": 1793382135000,
+    "virtual": false
+   },
+   {
+    "w": "TK15TV12RzMvvdbwucR7qDvtZcRy6KKMiD",
+    "nivel": 6,
+    "tx": "690de9334a2fdc181b8ea1d43f55685ad6cb1c518ab01fbb4611292a4b5bdd7a",
+    "desde": "TN2fo6xGCWBT7T6fv9aHpdjLEft8jED1Kd",
+    "v": 3315462.274162,
+    "at": 1793384055000,
+    "virtual": false
+   },
+   {
+    "w": "TT48Qbe2REz8KEqhGq1eTrZyPsGZsPfzbU",
+    "nivel": 7,
+    "tx": "a2c01b0f393fcf016517436efd232fc75440bdbc89dae74a63aecc68d62b071b",
+    "desde": "TK15TV12RzMvvdbwucR7qDvtZcRy6KKMiD",
+    "v": 3219071.78433,
+    "at": 1793386338000,
+    "virtual": false
+   },
+   {
+    "w": "TKboArogcb5RTx9e4KwCq7kTJTHs4VfRYh",
+    "nivel": 8,
+    "tx": "1b12b49389632a8db35e458284ccc0f917723b40bb7aaa525ef5c9fc710a1a9f",
+    "desde": "TT48Qbe2REz8KEqhGq1eTrZyPsGZsPfzbU",
+    "v": 3356327.219267,
+    "at": 1793389392000,
+    "virtual": false
+   },
+   {
+    "w": "TYh2SHRY5oPBeLPpVbGkKjtwqyF9BSWgio",
+    "nivel": 9,
+    "tx": "f94753498579f064885eacb1ef61962843a24cbcf5f795f0949ad3d503625d8c",
+    "desde": "TKboArogcb5RTx9e4KwCq7kTJTHs4VfRYh",
+    "v": 5262738.255941,
+    "at": 1793389938000,
+    "virtual": false
+   }
+  ]
+ },
+ {
+  "destino": "TQ5SdemHpBawdb31DiwcwSVMQB7iduXgSu",
+  "tipo": "nodo",
+  "nombre": null,
+  "tainted": 78162.12940619413,
+  "hashFinal": "940ee6f6185b9ab2f9acda8ca1b2683145fd05b0e88f677846ab749391cbf150",
+  "horaFinal": 1793394336000,
+  "pasos": [
+   {
+    "w": "TBAPnuwEht65McDbxDvDYs2XLRSSbYQMUM",
+    "nivel": 0
+   },
+   {
+    "w": "TDzg4Dycni6P75eJTkFB3tLLeNvjhTrYrQ",
+    "nivel": 1,
+    "tx": "96411ccf6cd9b9ffc290175aadce7f5ed11c309491f19c3b4b155cc650eac8ac",
+    "desde": "TBAPnuwEht65McDbxDvDYs2XLRSSbYQMUM",
+    "v": 11516.992102,
+    "at": 1793373822000,
+    "virtual": false
+   },
+   {
+    "w": "TXYat4rneuYYdkZmbwB5js4Wnugvf79J5Y",
+    "nivel": 2,
+    "tx": "35b95e6a08b072ed88cc48626c0075c93c1ce08aea2ddd28ce3a9f49e378a000",
+    "desde": "TDzg4Dycni6P75eJTkFB3tLLeNvjhTrYrQ",
+    "v": 11000,
+    "at": 1793373954000,
+    "virtual": false
+   },
+   {
+    "w": "TX7tU6u1KBHGcCLQmnZqZajpLoYy2WaRPc",
+    "nivel": 3,
+    "tx": "7f1e594404e3b87813119c01e0cb29021c791ba99d2ff8f29bda21037cf058c6",
+    "desde": "TXYat4rneuYYdkZmbwB5js4Wnugvf79J5Y",
+    "v": 33999.99999,
+    "at": 1793379003000,
+    "virtual": false
+   },
+   {
+    "w": "TW3hsBQuXdtp1Q5ug1YvUgL9PQNZ2tDGVd",
+    "nivel": 4,
+    "tx": "b4b4bec8b7abcfb0b1f7d46940aac57b00c3e014c6c02da42fda1deb0c031194",
+    "desde": "TX7tU6u1KBHGcCLQmnZqZajpLoYy2WaRPc",
+    "v": 3502216.518221,
+    "at": 1793379801000,
+    "virtual": false
+   },
+   {
+    "w": "TN2fo6xGCWBT7T6fv9aHpdjLEft8jED1Kd",
+    "nivel": 5,
+    "tx": "b0758ac812057befed3146c71cced0c2559d8b9f3738e2ca226611a6b47b0bc4",
+    "desde": "TW3hsBQuXdtp1Q5ug1YvUgL9PQNZ2tDGVd",
+    "v": 3602757.429091,
+    "at": 1793382135000,
+    "virtual": false
+   },
+   {
+    "w": "TK15TV12RzMvvdbwucR7qDvtZcRy6KKMiD",
+    "nivel": 6,
+    "tx": "690de9334a2fdc181b8ea1d43f55685ad6cb1c518ab01fbb4611292a4b5bdd7a",
+    "desde": "TN2fo6xGCWBT7T6fv9aHpdjLEft8jED1Kd",
+    "v": 3315462.274162,
+    "at": 1793384055000,
+    "virtual": false
+   },
+   {
+    "w": "TT48Qbe2REz8KEqhGq1eTrZyPsGZsPfzbU",
+    "nivel": 7,
+    "tx": "a2c01b0f393fcf016517436efd232fc75440bdbc89dae74a63aecc68d62b071b",
+    "desde": "TK15TV12RzMvvdbwucR7qDvtZcRy6KKMiD",
+    "v": 3219071.78433,
+    "at": 1793386338000,
+    "virtual": false
+   },
+   {
+    "w": "TKboArogcb5RTx9e4KwCq7kTJTHs4VfRYh",
+    "nivel": 8,
+    "tx": "1b12b49389632a8db35e458284ccc0f917723b40bb7aaa525ef5c9fc710a1a9f",
+    "desde": "TT48Qbe2REz8KEqhGq1eTrZyPsGZsPfzbU",
+    "v": 3356327.219267,
+    "at": 1793389392000,
+    "virtual": false
+   },
+   {
+    "w": "TYh2SHRY5oPBeLPpVbGkKjtwqyF9BSWgio",
+    "nivel": 9,
+    "tx": "f94753498579f064885eacb1ef61962843a24cbcf5f795f0949ad3d503625d8c",
+    "desde": "TKboArogcb5RTx9e4KwCq7kTJTHs4VfRYh",
+    "v": 5262738.255941,
+    "at": 1793389938000,
+    "virtual": false
+   },
+   {
+    "w": "TVq9x271ASpceY2v8noCXFoJFqXGfCcD7P",
+    "nivel": 10,
+    "tx": "c4d4706628c16cfc271522ef820810778ae0777237c8092b583911f3764367c2",
+    "desde": "TYh2SHRY5oPBeLPpVbGkKjtwqyF9BSWgio",
+    "v": 3520031.142854,
+    "at": 1793392995000,
+    "virtual": false
+   }
+  ]
+ },
+ {
+  "destino": "TU4vEruvZwLLkSfV9bNw12EJTPvNr7Pvaa",
+  "tipo": "casa",
+  "nombre": "Bybit",
+  "tainted": 78133.05665395063,
+  "hashFinal": "99d0687834c8c6ffeaeb2b2066433462d0fa516ac9bf5d1128fb9490ac1020e9",
+  "horaFinal": 1793373723000,
+  "pasos": [
+   {
+    "w": "TBAPnuwEht65McDbxDvDYs2XLRSSbYQMUM",
+    "nivel": 0
+   },
+   {
+    "w": "TXT7HsVbGExzXHBG6XN6XSqkAYzWTLkahT",
+    "nivel": 1,
+    "tx": "af2b7196dc068b90493e427989e42a9e13f2118be88fb61278a7385757038f08",
+    "desde": "TBAPnuwEht65McDbxDvDYs2XLRSSbYQMUM",
+    "v": 75680.495659,
+    "at": 1793344635000,
+    "virtual": false
+   },
+   {
+    "w": "TXYiPCELFdqELhQ4vGhniwJeNqEjruZCKv",
+    "nivel": 2,
+    "tx": "7ff01e4c52e6926cc08f114508289caaa4f2694e45526e4c0c56cc0977adbabc",
+    "desde": "TXT7HsVbGExzXHBG6XN6XSqkAYzWTLkahT",
+    "v": 107226.299989,
+    "at": 1793371563000,
+    "virtual": false
+   }
+  ]
+ },
+ {
+  "destino": "TQ5SdemHpBawdb31DiwcwSVMQB7iduXgSu",
+  "tipo": "nodo",
+  "nombre": null,
+  "tainted": 78018.62168281378,
+  "hashFinal": "ef990ebb5b0fde841e537e1894135de283ac1f56b312b32c5bc1e6cc10d505ed",
+  "horaFinal": 1793399196000,
+  "pasos": [
+   {
+    "w": "TBAPnuwEht65McDbxDvDYs2XLRSSbYQMUM",
+    "nivel": 0
+   },
+   {
+    "w": "TDzg4Dycni6P75eJTkFB3tLLeNvjhTrYrQ",
+    "nivel": 1,
+    "tx": "96411ccf6cd9b9ffc290175aadce7f5ed11c309491f19c3b4b155cc650eac8ac",
+    "desde": "TBAPnuwEht65McDbxDvDYs2XLRSSbYQMUM",
+    "v": 11516.992102,
+    "at": 1793373822000,
+    "virtual": false
+   },
+   {
+    "w": "TXYat4rneuYYdkZmbwB5js4Wnugvf79J5Y",
+    "nivel": 2,
+    "tx": "35b95e6a08b072ed88cc48626c0075c93c1ce08aea2ddd28ce3a9f49e378a000",
+    "desde": "TDzg4Dycni6P75eJTkFB3tLLeNvjhTrYrQ",
+    "v": 11000,
+    "at": 1793373954000,
+    "virtual": false
+   },
+   {
+    "w": "TX7tU6u1KBHGcCLQmnZqZajpLoYy2WaRPc",
+    "nivel": 3,
+    "tx": "7f1e594404e3b87813119c01e0cb29021c791ba99d2ff8f29bda21037cf058c6",
+    "desde": "TXYat4rneuYYdkZmbwB5js4Wnugvf79J5Y",
+    "v": 33999.99999,
+    "at": 1793379003000,
+    "virtual": false
+   },
+   {
+    "w": "TW3hsBQuXdtp1Q5ug1YvUgL9PQNZ2tDGVd",
+    "nivel": 4,
+    "tx": "b4b4bec8b7abcfb0b1f7d46940aac57b00c3e014c6c02da42fda1deb0c031194",
+    "desde": "TX7tU6u1KBHGcCLQmnZqZajpLoYy2WaRPc",
+    "v": 3502216.518221,
+    "at": 1793379801000,
+    "virtual": false
+   },
+   {
+    "w": "TN2fo6xGCWBT7T6fv9aHpdjLEft8jED1Kd",
+    "nivel": 5,
+    "tx": "b0758ac812057befed3146c71cced0c2559d8b9f3738e2ca226611a6b47b0bc4",
+    "desde": "TW3hsBQuXdtp1Q5ug1YvUgL9PQNZ2tDGVd",
+    "v": 3602757.429091,
+    "at": 1793382135000,
+    "virtual": false
+   },
+   {
+    "w": "TK15TV12RzMvvdbwucR7qDvtZcRy6KKMiD",
+    "nivel": 6,
+    "tx": "690de9334a2fdc181b8ea1d43f55685ad6cb1c518ab01fbb4611292a4b5bdd7a",
+    "desde": "TN2fo6xGCWBT7T6fv9aHpdjLEft8jED1Kd",
+    "v": 3315462.274162,
+    "at": 1793384055000,
+    "virtual": false
+   },
+   {
+    "w": "TT48Qbe2REz8KEqhGq1eTrZyPsGZsPfzbU",
+    "nivel": 7,
+    "tx": "a2c01b0f393fcf016517436efd232fc75440bdbc89dae74a63aecc68d62b071b",
+    "desde": "TK15TV12RzMvvdbwucR7qDvtZcRy6KKMiD",
+    "v": 3219071.78433,
+    "at": 1793386338000,
+    "virtual": false
+   },
+   {
+    "w": "TKboArogcb5RTx9e4KwCq7kTJTHs4VfRYh",
+    "nivel": 8,
+    "tx": "1b12b49389632a8db35e458284ccc0f917723b40bb7aaa525ef5c9fc710a1a9f",
+    "desde": "TT48Qbe2REz8KEqhGq1eTrZyPsGZsPfzbU",
+    "v": 3356327.219267,
+    "at": 1793389392000,
+    "virtual": false
+   },
+   {
+    "w": "TYh2SHRY5oPBeLPpVbGkKjtwqyF9BSWgio",
+    "nivel": 9,
+    "tx": "f94753498579f064885eacb1ef61962843a24cbcf5f795f0949ad3d503625d8c",
+    "desde": "TKboArogcb5RTx9e4KwCq7kTJTHs4VfRYh",
+    "v": 5262738.255941,
+    "at": 1793389938000,
+    "virtual": false
+   },
+   {
+    "w": "TVq9x271ASpceY2v8noCXFoJFqXGfCcD7P",
+    "nivel": 10,
+    "tx": "c4d4706628c16cfc271522ef820810778ae0777237c8092b583911f3764367c2",
+    "desde": "TYh2SHRY5oPBeLPpVbGkKjtwqyF9BSWgio",
+    "v": 3520031.142854,
+    "at": 1793392995000,
+    "virtual": false
+   },
+   {
+    "w": "TCR6VuYSHwTC8FrkNvq56FYMgqu2gUhwRB",
+    "nivel": 11,
+    "tx": "6e5f824820b8e30553902a4a6e3e9cd024d5f95e24778e914a1ab925a86708e9",
+    "desde": "TVq9x271ASpceY2v8noCXFoJFqXGfCcD7P",
+    "v": 4204315.577798,
+    "at": 1793394675000,
+    "virtual": false
+   },
+   {
+    "w": "TD376N3n22N5zHBugDBRPReptftJENxoC3",
+    "nivel": 12,
+    "tx": "412f30b3df73f5ecdd49519b9c586d3b8265d9a91219ea6388be2d4ae10da991",
+    "desde": "TCR6VuYSHwTC8FrkNvq56FYMgqu2gUhwRB",
+    "v": 3875022.404041,
+    "at": 1793398989000,
+    "virtual": false
+   }
+  ]
+ },
+ {
+  "destino": "TDPYVAEH2MwGCYNPfJSiJCbeCq9JmUCYRx",
+  "tipo": "nodo",
+  "nombre": null,
+  "tainted": 72870.10708050133,
+  "hashFinal": "290f848c876f3907192748b0df6c67a78350fde73a54ed0d3709876b137f28dd",
+  "horaFinal": 1793395197000,
+  "pasos": [
+   {
+    "w": "TH1YKH9MUuJtDmekPia4x9fZXAcpPrMv8B",
+    "nivel": 0
+   },
+   {
+    "w": "TPWs9UMn3vxuBmf5bqLP7q8mqLcxmZCz1v",
+    "nivel": 1,
+    "tx": "43b58c7770868f6ea2f70afb5113a30648577d05a42240896316e3f12fac57a9",
+    "desde": "TH1YKH9MUuJtDmekPia4x9fZXAcpPrMv8B",
+    "v": 220421.618821,
+    "at": 1793357394000,
+    "virtual": false
+   },
+   {
+    "w": "TWYaZseUaq19DPVJeFQMJqojgaA73UKdTF",
+    "nivel": 2,
+    "tx": "9298f4cff9315c15bd6e7a52b642e5635479c287736baf077641cfb169d234c9",
+    "desde": "TPWs9UMn3vxuBmf5bqLP7q8mqLcxmZCz1v",
+    "v": 184116,
+    "at": 1793362167000,
+    "virtual": false
+   },
+   {
+    "w": "TBu9n6kQQxgGF5PqorT2wrVp8BBBzrR2W6",
+    "nivel": 3,
+    "tx": "13e9871fb35ee008207ba0e835414f474122a813564f413cae0f7a72b1bc4c0c",
+    "desde": "TWYaZseUaq19DPVJeFQMJqojgaA73UKdTF",
+    "v": 183900,
+    "at": 1793364702000,
+    "virtual": false
+   },
+   {
+    "w": "TSAMyF1FDdeHJsuo5atW9Qv34DNmwUC1wV",
+    "nivel": 4,
+    "tx": "42af81e4b7d5c28db1526b65e5540743c1eead12e48a62858f11e774ff2859b5",
+    "desde": "TBu9n6kQQxgGF5PqorT2wrVp8BBBzrR2W6",
+    "v": 183950,
+    "at": 1793365059000,
+    "virtual": false
+   },
+   {
+    "w": "TZ8jepz9baGTGJHd5vcoDA4f6NxDehV1yU",
+    "nivel": 5,
+    "tx": "9129b8ed285179d5c4894551e03761a9c954bbf445995e2d93b678027cf2f219",
+    "desde": "TSAMyF1FDdeHJsuo5atW9Qv34DNmwUC1wV",
+    "v": 183893.652465,
+    "at": 1793377530000,
+    "virtual": false
+   },
+   {
+    "w": "TKk291ZEjxSpkJZ1RKMGufEmbK4fJn9MfD",
+    "nivel": 6,
+    "tx": "aec76087311b3bdd8fde26da22ff30c62930bb02e9082be809205cfb1b2925d1",
+    "desde": "TZ8jepz9baGTGJHd5vcoDA4f6NxDehV1yU",
+    "v": 73800,
+    "at": 1793384664000,
+    "virtual": false
+   },
+   {
+    "w": "TR8Et4uvZuptfReRuX1o4rev9hWhTducUD",
+    "nivel": 6,
+    "tx": "311c6cd592c0310350b4aeade3722d5e5b4ce672dd5584a635ef0da5cbad2396",
+    "desde": "TKk291ZEjxSpkJZ1RKMGufEmbK4fJn9MfD",
+    "v": 76000,
+    "at": 1793385216000,
+    "virtual": false
+   }
+  ]
+ },
+ {
+  "destino": "TBA6CypYJizwA9XdC7Ubgc5F1bxrQ7SqPt",
+  "tipo": "casa",
+  "nombre": "Gate",
+  "tainted": 71680.53792177954,
+  "hashFinal": "aeb9e749372f5acfe7d92fd82730199af6d6874b71440ab3705616452c508721",
+  "horaFinal": 1793364978000,
+  "pasos": [
+   {
+    "w": "TBAPnuwEht65McDbxDvDYs2XLRSSbYQMUM",
+    "nivel": 0
+   },
+   {
+    "w": "TGgk46fTtsFH5hZYNeMkTgrED8g8HeTmPy",
+    "nivel": 1,
+    "tx": "b4566090f22605de44cf44fea2b2badeefb77074aa65e6c2a51ed952644e1910",
+    "desde": "TBAPnuwEht65McDbxDvDYs2XLRSSbYQMUM",
+    "v": 15420.781101792,
+    "at": 1793340624000,
+    "virtual": false
+   },
+   {
+    "w": "TWwLaM2eFKCRzyPgajH2M6RmBxJY5VsGUe",
+    "nivel": 2,
+    "tx": "f3d5a9095f2e07497dae5914a297deaebe682311c377c56d8da08a324a19005c",
+    "desde": "TGgk46fTtsFH5hZYNeMkTgrED8g8HeTmPy",
+    "v": 17468.59424,
+    "at": 1793369484000,
+    "virtual": false
+   }
+  ]
+ },
+ {
+  "destino": "TUPLajTp6JtKijVCWTjavuNJuG3QUMof1Y",
+  "tipo": "nodo",
+  "nombre": null,
+  "tainted": 67193.67230965958,
+  "hashFinal": "c48c980741cd37bf3bc25eea835ad56b6a97d3c1fc7a6b9372f8d20db9b80db1",
+  "horaFinal": 1793397447000,
+  "pasos": [
+   {
+    "w": "TLtmxkug5K1pa2MpxiA2XRz6pkJGxpHCum",
+    "nivel": 3,
+    "tx": "d6d42ea75479dfc842633082a4c7afcaf961acbb282cd66a9e7f1ada4db8612e",
+    "desde": "TUpFTof5ugRydmMRKtrVpXNNGR2VpTQKxW",
+    "v": 1552032.9797,
+    "at": 1793368848000,
+    "virtual": false
+   },
+   {
+    "w": "TUpFTof5ugRydmMRKtrVpXNNGR2VpTQKxW",
+    "nivel": 4,
+    "tx": "ba4fafc5e57d686a5bad8cebe78cf3016cece241bbec737e8944dbdedd13d30d",
+    "desde": "TLtmxkug5K1pa2MpxiA2XRz6pkJGxpHCum",
+    "v": 1525193.01721,
+    "at": 1793361927000,
+    "virtual": false
+   },
+   {
+    "w": "TLREc4ge2dQLt4Y3w9Cnkif6U4T3tp6p1G",
+    "nivel": 5,
+    "tx": "4a70c0ab03c6993103982df633e8e372a1575fb64cf41286c454334a14501ac4",
+    "desde": "TUpFTof5ugRydmMRKtrVpXNNGR2VpTQKxW",
+    "v": 20000,
+    "at": 1793365515000,
+    "virtual": false
+   },
+   {
+    "w": "TJCu2p898x9AzWW9W5npcwHJtJZWPxm2Q7",
+    "nivel": 6,
+    "tx": "8341ca980d9faf5fe6d07f3b7a45bbc64d6251811bbbe3d79acc0991cdfd2c6d",
+    "desde": "TLREc4ge2dQLt4Y3w9Cnkif6U4T3tp6p1G",
+    "v": 356000,
+    "at": 1793366667000,
+    "virtual": false
+   },
+   {
+    "w": "TD19fYbtwnTVhPWk6hyH8HCBbvQjUbwxPg",
+    "nivel": 7,
+    "tx": "c49c39206c3f7ba845cd2076c979918e73171190e1f8d4cd21a9a2a08cba2178",
+    "desde": "TJCu2p898x9AzWW9W5npcwHJtJZWPxm2Q7",
+    "v": 356527,
+    "at": 1793368227000,
+    "virtual": false
+   }
+  ]
+ },
+ {
+  "destino": "TSUYvQ5tdd3DijCD1uGunGLpftHuSZ12sQ",
+  "tipo": "usdd",
+  "nombre": "AuthGemJoin5",
+  "tainted": 67174.64219628512,
+  "hashFinal": "5c2ac4b05aa4a2f143bcf879b926052dd154a0f200bb3605554c3e4f1048527e",
+  "horaFinal": 1793393040000,
+  "pasos": [
+   {
+    "w": "TUoVsNvkSbCQFty1tLViCgvMjNRGGEK6eM",
+    "nivel": 3,
+    "tx": "4ff04bc450b9ef1cddbe2c4811a79b50d524e101fae1ada8b6f48d2c2ec25906",
+    "desde": "TRBdWqHnDVSZCVGfgHdKFLQPirQcA2PRki",
+    "v": 168412.932749248,
+    "at": 1793392305000,
+    "virtual": false
+   }
+  ]
+ },
+ {
+  "destino": "TSUYvQ5tdd3DijCD1uGunGLpftHuSZ12sQ",
+  "tipo": "usdd",
+  "nombre": "AuthGemJoin5",
+  "tainted": 67172.63694623277,
+  "hashFinal": "af1b160d4191f78b2a3d5c7f11112a858c796bc3d8dab03adaff3acd490cda42",
+  "horaFinal": 1793393064000,
+  "pasos": [
+   {
+    "w": "TUoVsNvkSbCQFty1tLViCgvMjNRGGEK6eM",
+    "nivel": 3,
+    "tx": "4ff04bc450b9ef1cddbe2c4811a79b50d524e101fae1ada8b6f48d2c2ec25906",
+    "desde": "TRBdWqHnDVSZCVGfgHdKFLQPirQcA2PRki",
+    "v": 168412.932749248,
+    "at": 1793392305000,
+    "virtual": false
+   }
+  ]
+ },
+ {
+  "destino": "TSUYvQ5tdd3DijCD1uGunGLpftHuSZ12sQ",
+  "tipo": "usdd",
+  "nombre": "AuthGemJoin5",
+  "tainted": 67148.79516597425,
+  "hashFinal": "79c1542ae658a504a7371bd94b052bef4d00484aff943e0d1274e5138eb00f93",
+  "horaFinal": 1793393082000,
+  "pasos": [
+   {
+    "w": "TUoVsNvkSbCQFty1tLViCgvMjNRGGEK6eM",
+    "nivel": 3,
+    "tx": "4ff04bc450b9ef1cddbe2c4811a79b50d524e101fae1ada8b6f48d2c2ec25906",
+    "desde": "TRBdWqHnDVSZCVGfgHdKFLQPirQcA2PRki",
+    "v": 168412.932749248,
+    "at": 1793392305000,
+    "virtual": false
+   }
+  ]
+ },
+ {
+  "destino": "TU4vEruvZwLLkSfV9bNw12EJTPvNr7Pvaa",
+  "tipo": "casa",
+  "nombre": "Bybit",
+  "tainted": 65448.62548815199,
+  "hashFinal": "d68e47f27eee9e2e6e619d0c5d9c300cf666b67484fb55f8060ab89b8167d846",
+  "horaFinal": 1793397888000,
+  "pasos": [
+   {
+    "w": "TBAPnuwEht65McDbxDvDYs2XLRSSbYQMUM",
+    "nivel": 0
+   },
+   {
+    "w": "TXT7HsVbGExzXHBG6XN6XSqkAYzWTLkahT",
+    "nivel": 1,
+    "tx": "af2b7196dc068b90493e427989e42a9e13f2118be88fb61278a7385757038f08",
+    "desde": "TBAPnuwEht65McDbxDvDYs2XLRSSbYQMUM",
+    "v": 75680.495659,
+    "at": 1793344635000,
+    "virtual": false
+   },
+   {
+    "w": "TXYiPCELFdqELhQ4vGhniwJeNqEjruZCKv",
+    "nivel": 2,
+    "tx": "7ff01e4c52e6926cc08f114508289caaa4f2694e45526e4c0c56cc0977adbabc",
+    "desde": "TXT7HsVbGExzXHBG6XN6XSqkAYzWTLkahT",
+    "v": 107226.299989,
+    "at": 1793371563000,
+    "virtual": false
+   }
+  ]
+ },
+ {
+  "destino": "TFG4wBaDQ8sHWWP1ACeSGnoNR6RRzevLPt",
+  "tipo": "puente",
+  "nombre": "UsdtOFT",
+  "tainted": 64956.39386890541,
+  "hashFinal": "9d5b3d4abaeda401696c0c5f7954fec307594889e920d79b519e39651673c4f7",
+  "horaFinal": 1793391801000,
+  "pasos": [
+   {
+    "w": "TKCuXJnu7VFQGDDzuWNJ8m1huHuk5h1Ztd",
+    "nivel": 1,
+    "tx": "624e773c09256bf67538493f830660db33bb1fe06da9de2f0d0baf9c96c5d1f4",
+    "desde": "TRdvuePwkneZ9EkvYEjQMsqqLK7jLLyhYr",
+    "v": 337773.704639712,
+    "at": 1793399502000,
+    "virtual": false
+   },
+   {
+    "w": "TZ5E4P2TujQSrNb7yAcadmRSF1qEHEorsk",
+    "nivel": 2,
+    "tx": "3448ac55364b5ec5a0550144f39f2faee2d5efbe0e4e4dbeebe25edf67a0a326",
+    "desde": "TKCuXJnu7VFQGDDzuWNJ8m1huHuk5h1Ztd",
+    "v": 149812.550453632,
+    "at": 1793391054000,
+    "virtual": false
+   },
+   {
+    "w": "TQkQAkFc15vVRem6ZVLyzCuNyVy5uuhQz3",
+    "nivel": 3,
+    "tx": "e81af6753fd949b82dd89fe6d981d9cdbc22120b6fa89de96be1a5e216c25851",
+    "desde": "TZ5E4P2TujQSrNb7yAcadmRSF1qEHEorsk",
+    "v": 114599.17722598399,
+    "at": 1793391648000,
+    "virtual": false
+   }
+  ]
+ }
+]

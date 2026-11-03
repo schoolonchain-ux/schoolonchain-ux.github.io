@@ -1,0 +1,207 @@
+{
+ "dentro": 147650308.14553988,
+ "nodos": [
+  {
+   "a": "TLKfB2goHRY1SykEpVbiGdsesACrkCxCeW",
+   "v": 673198.244994816,
+   "n": 43,
+   "senders": 16,
+   "info": {
+    "a": "TLKfB2goHRY1SykEpVbiGdsesACrkCxCeW",
+    "txs": 8556,
+    "creada": 1791761781000,
+    "etiqueta": null,
+    "v": 980564.867589632,
+    "n": 59,
+    "desde": 16
+   }
+  },
+  {
+   "a": "TGSNahJvAdh86aR5pdcxiep1mBWSRK3HHL",
+   "v": 1569158.640687808,
+   "n": 74,
+   "senders": 35,
+   "info": {
+    "a": "TGSNahJvAdh86aR5pdcxiep1mBWSRK3HHL",
+    "txs": 8344,
+    "creada": 1791761712000,
+    "etiqueta": null,
+    "v": 2036277.0887219198,
+    "n": 103,
+    "desde": 35
+   }
+  },
+  {
+   "a": "TH1YKH9MUuJtDmekPia4x9fZXAcpPrMv8B",
+   "v": 1248583.7976748156,
+   "n": 61,
+   "senders": 36,
+   "info": {
+    "a": "TH1YKH9MUuJtDmekPia4x9fZXAcpPrMv8B",
+    "txs": 8643,
+    "creada": 1791761793000,
+    "etiqueta": null,
+    "v": 1475415.7016748155,
+    "n": 74,
+    "desde": 36
+   }
+  },
+  {
+   "a": "THPaGKe6aZkUcNht24hcscZPLwtcJAbpun",
+   "v": 1257840.295786272,
+   "n": 36,
+   "senders": 24,
+   "info": {
+    "a": "THPaGKe6aZkUcNht24hcscZPLwtcJAbpun",
+    "txs": 9295,
+    "creada": 1791761709000,
+    "etiqueta": null,
+    "v": 1490312.4877862716,
+    "n": 52,
+    "desde": 24
+   }
+  },
+  {
+   "a": "TKfz7Pu3jtxWrfHzVeozQjXsb3RfuUHGE2",
+   "v": 13951.373582,
+   "n": 1,
+   "senders": 1,
+   "info": {
+    "a": "TKfz7Pu3jtxWrfHzVeozQjXsb3RfuUHGE2",
+    "txs": 5599480,
+    "creada": 1653730677000,
+    "etiqueta": null,
+    "v": 13951.373582,
+    "n": 1,
+    "desde": 1
+   }
+  },
+  {
+   "a": "THwyeoCMSXQq2aGDpXpSqo89VnTtFktGGp",
+   "v": 75416.67816319999,
+   "n": 10,
+   "senders": 3,
+   "info": {
+    "a": "THwyeoCMSXQq2aGDpXpSqo89VnTtFktGGp",
+    "txs": 9194005,
+    "creada": 1739528130000,
+    "etiqueta": null,
+    "v": 226250.03448960002,
+    "n": 30,
+    "desde": 3
+   }
+  },
+  {
+   "a": "TFeyjyciVTayAjKJqpZ4dz6Tag5n4A8Gwt",
+   "v": 60072,
+   "n": 2,
+   "senders": 1,
+   "info": {
+    "a": "TFeyjyciVTayAjKJqpZ4dz6Tag5n4A8Gwt",
+    "txs": 9559,
+    "creada": 1773286806000,
+    "etiqueta": null,
+    "v": 60072,
+    "n": 2,
+    "desde": 1
+   }
+  },
+  {
+   "a": "TX5XiRXdyz7sdFwF5mnhT1QoGCpbkncpke",
+   "v": 105388.51353606398,
+   "n": 5,
+   "senders": 4,
+   "info": {
+    "a": "TX5XiRXdyz7sdFwF5mnhT1QoGCpbkncpke",
+    "txs": 1619805,
+    "creada": 1742999808000,
+    "etiqueta": null,
+    "v": 133213.53854300798,
+    "n": 6,
+    "desde": 4
+   }
+  }
+ ],
+ "exchanges": [
+  {
+   "k": "Bybit",
+   "n": 32,
+   "v": 1018373.09976532,
+   "senders": 5
+  },
+  {
+   "k": "OKX Hot Wallet 8",
+   "n": 12,
+   "v": 290070.707667,
+   "senders": 4
+  },
+  {
+   "k": "Bitget 9",
+   "n": 1,
+   "v": 21457.210148,
+   "senders": 1
+  }
+ ],
+ "contratos": [
+  {
+   "k": "contrato inteligente «UniversalRouter»",
+   "n": 307,
+   "v": 13939958.339502273
+  },
+  {
+   "k": "contrato inteligente «BWSwapRouterV1»",
+   "n": 439,
+   "v": 5587734.642188864
+  },
+  {
+   "k": "contrato inteligente sin nombre",
+   "n": 81,
+   "v": 4563560.2329669995
+  },
+  {
+   "k": "contrato inteligente «UsdtOFT»",
+   "n": 29,
+   "v": 3270379.926824
+  },
+  {
+   "k": "contrato inteligente «MetaRouterGateway»",
+   "n": 190,
+   "v": 2025550.5600000005
+  },
+  {
+   "k": "contrato inteligente «CErc20Delegator»",
+   "n": 73,
+   "v": 4321392.554311001
+  },
+  {
+   "k": "contrato inteligente «Bridgers»",
+   "n": 2,
+   "v": 25786
+  },
+  {
+   "k": "contrato inteligente «PoolManager»",
+   "n": 1,
+   "v": 11893.097895
+  },
+  {
+   "k": "contrato inteligente «SmartExchangeRouter»",
+   "n": 2,
+   "v": 13237.120985791998
+  },
+  {
+   "k": "contrato inteligente «WTRX»",
+   "n": 1,
+   "v": 16393.2384
+  },
+  {
+   "k": "contrato inteligente «RangoDiamond»",
+   "n": 2,
+   "v": 24299.472196736
+  }
+ ],
+ "saldo": {
+  "leidas": 316,
+  "trx": 6590234.151533988,
+  "usdt": 11847863.429746998
+ }
+}

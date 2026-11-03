@@ -1,0 +1,319 @@
+{
+ "generado": "2026-10-31T10:31:02.550Z",
+ "nota": "unión de las ejecuciones parciales; A, B, C, D de la última ejecución correcta",
+ "A": {
+  "titulo": "custodia",
+  "total": 16,
+  "ambas": 15,
+  "grid": 15,
+  "scan": 15,
+  "fallos": [
+   {
+    "tx": "bb05d43bfde6cb869448ad03bf06969e32cc7cd77252a78d41dd7f7c26dbf0b3",
+    "esperado": {
+     "tx": "bb05d43bfde6cb869448ad03bf06969e32cc7cd77252a78d41dd7f7c26dbf0b3",
+     "from": "TL2F4GhnaFVZBZPncHYjwfYZFW44NcfVwj",
+     "to": "TRBdWqHnDVSZCVGfgHdKFLQPirQcA2PRki",
+     "sim": "TRX",
+     "amt": 120000000,
+     "at": 1793404875000,
+     "tol": 1
+    },
+    "grid": {
+     "ok": false,
+     "transferencia": true,
+     "exito": true,
+     "dtSeg": 3600,
+     "importe": 120000000,
+     "ts": 1793408475000
+    },
+    "scan": {
+     "ok": false,
+     "transferencia": true,
+     "exito": true,
+     "dtSeg": 3600,
+     "importe": 120000000,
+     "ts": 1793408475000
+    }
+   }
+  ]
+ },
+ "B": [
+  {
+   "titulo": "tramo 1 (de 2020 aristas)",
+   "total": 60,
+   "ambas": 60,
+   "cambiosVirtuales": 29,
+   "grid": 60,
+   "scan": 60,
+   "fallos": [],
+   "muestra": 60
+  },
+  {
+   "titulo": "tramo 2 (de 2585 aristas)",
+   "total": 60,
+   "ambas": 60,
+   "cambiosVirtuales": 0,
+   "grid": 60,
+   "scan": 60,
+   "fallos": [],
+   "muestra": 60
+  }
+ ],
+ "C": [
+  {
+   "n": "TKkH2vH6…",
+   "a": "TKkH2vH6kyi2QKcMbqym53WMuvdd1xvw6K",
+   "informe04h15": 158200902,
+   "trxGrid": 158200902.000018,
+   "trxScan": 158200902.000018,
+   "usdtGrid": 0,
+   "usdtScan": 0
+  },
+  {
+   "n": "TCBAz7it…",
+   "a": "TCBAz7itvtX5CjBzVMPQdrbwQLN63ao1fk",
+   "informe04h15": 120000000,
+   "trxGrid": 0.000006,
+   "trxScan": 0.000006,
+   "usdtGrid": 0,
+   "usdtScan": 0
+  },
+  {
+   "n": "TJajtPqD…",
+   "a": "TJajtPqDqUGh1Sr1j8ugHoSXBVpaFLLHKT",
+   "informe04h15": 120000000,
+   "trxGrid": 120000000.000007,
+   "trxScan": 120000000.000007,
+   "usdtGrid": 0,
+   "usdtScan": 0
+  },
+  {
+   "n": "TL2F4Ghn…",
+   "a": "TL2F4GhnaFVZBZPncHYjwfYZFW44NcfVwj",
+   "informe04h15": 0,
+   "trxGrid": 0.000015,
+   "trxScan": 0.000015,
+   "usdtGrid": 0,
+   "usdtScan": 0
+  },
+  {
+   "n": "TRBdWq…",
+   "a": "TRBdWqHnDVSZCVGfgHdKFLQPirQcA2PRki",
+   "informe04h15": 93014675,
+   "trxGrid": 97213059.716503,
+   "trxScan": 97213059.716503,
+   "usdtGrid": 3,
+   "usdtScan": 3
+  },
+  {
+   "n": "TSpe5HC3…",
+   "a": "TSpe5HC3PRD2svJcr1YoGszhHk2mtkyZ8A",
+   "informe04h15": 37,
+   "trxGrid": 36.80052,
+   "trxScan": 36.80052,
+   "usdtGrid": 0,
+   "usdtScan": 0
+  },
+  {
+   "n": "TG5iBMQ…",
+   "a": "TG5iBMQPrDzJJAUM8GMVBf1hRaJ1wvzsGi",
+   "informe04h15": null,
+   "trxGrid": 0.032011,
+   "trxScan": 0.032011,
+   "usdtGrid": 312729468,
+   "usdtScan": 312729468
+  },
+  {
+   "n": "TCzBTk…",
+   "a": "TCzBTkqn66yApqbYoPezaEQosM5DAd7Y62",
+   "informe04h15": null,
+   "trxGrid": 0.100002,
+   "trxScan": 0.100002,
+   "usdtGrid": 65990000,
+   "usdtScan": 65990000
+  }
+ ],
+ "D": {
+  "control": {
+   "Binance Hot 7 (no debe estar bloqueada)": "0",
+   "TG5iBMQ… (debe estar bloqueada)": "1",
+   "TCzBTk… (debe estar bloqueada)": "1",
+   "TSpe5HC3… (cuenta de TRX)": "0"
+  },
+  "saldoTG5": 312729468,
+  "saldoTCZ": 65990000,
+  "eventosHoy": 67,
+  "eventosGuardados": 61,
+  "nuevos": 6,
+  "yaNoSalen": 0,
+  "distintas": 66,
+  "oleada": {
+   "n": 51,
+   "bloq": 51,
+   "libre": 0,
+   "ns": 0,
+   "usdtInforme": 3412374.090989,
+   "usdtHoy": 5275294.970188999,
+   "libres": []
+  },
+  "nuevosLista": [
+   {
+    "a": "0x49c3f99800a43f1818c3a2de9cdf388293bd8065",
+    "at": 1793397915000,
+    "tx": "106691f7e96163ae4df68e3144786f6168005770a454e5f9ea92540e9d39fa57"
+   },
+   {
+    "a": "0x0cc11e94f913862b56494b42bf172904786098a8",
+    "at": 1793397915000,
+    "tx": "8f433c9d2fa7f279858dafbc5c1d1ed805e9eb5389bb302bfcb3b5c63515a8be"
+   },
+   {
+    "a": "0x4ee82dcd91778e0ea677ed7c81cb6006b71bdae6",
+    "at": 1793398077000,
+    "tx": "9b80c6bc841a39dff6a0c4e2de828d0a4c99cc2980bae5cabb03ccb3b16f0fa1"
+   },
+   {
+    "a": "0xc7374bb0c03bdfa9fc2c893211e2fda51b896e6d",
+    "at": 1793398359000,
+    "tx": "c75a653acfe355ddf5e81cf51549ff70fe6d3c5432a648234cb490733a83683d"
+   },
+   {
+    "a": "0x131c8984527693e6ffc3aa50bf1a6e96ef24b37c",
+    "at": 1793398359000,
+    "tx": "31f2094e063c3f6a2a8754000ec3c9c2dd99271c048c7587c66e3e20be10244c"
+   },
+   {
+    "a": "0x0309cb092f78a21f41b9717e23a3737e047693dc",
+    "at": 1793398359000,
+    "tx": "837362171f841be7a5835686ebc2ce5d8095a5abe63fa01730c99d58ee4c68b6"
+   }
+  ]
+ },
+ "G": {
+  "TSpe5HC3": {
+   "scan": {
+    "entra": 638200942.30052,
+    "sale": 638200900,
+    "nEntra": 21,
+    "nSale": 5
+   },
+   "grid": {
+    "entra": 638200942.30052,
+    "sale": 638200900,
+    "nEntra": 21,
+    "nSale": 5
+   },
+   "opsTotalesScan": 27,
+   "opsSalientesScan": 5
+  },
+  "TKkH2vH6": {
+   "scan": {
+    "entra": 158200902.000018,
+    "sale": 0,
+    "nEntra": 6,
+    "nSale": 0
+   },
+   "grid": {
+    "entra": 158200902.000018,
+    "sale": 0,
+    "nEntra": 6,
+    "nSale": 0
+   },
+   "opsTotalesScan": 7,
+   "opsSalientesScan": 0
+  },
+  "TCBAz7it": {
+   "scan": {
+    "entra": 120000000.000006,
+    "sale": 120000000,
+    "nEntra": 2,
+    "nSale": 1
+   },
+   "grid": {
+    "entra": 120000000.000006,
+    "sale": 120000000,
+    "nEntra": 2,
+    "nSale": 1
+   },
+   "opsTotalesScan": 5,
+   "opsSalientesScan": 1
+  },
+  "TJajtPqD": {
+   "scan": {
+    "entra": 120000000.000007,
+    "sale": 0,
+    "nEntra": 2,
+    "nSale": 0
+   },
+   "grid": {
+    "entra": 120000000.000007,
+    "sale": 0,
+    "nEntra": 2,
+    "nSale": 0
+   },
+   "opsTotalesScan": 3,
+   "opsSalientesScan": 0
+  },
+  "TL2F4Ghn": {
+   "scan": {
+    "entra": 120000000.00001499,
+    "sale": 120000000,
+    "nEntra": 6,
+    "nSale": 1
+   },
+   "grid": {
+    "entra": 120000000.000015,
+    "sale": 120000000,
+    "nEntra": 6,
+    "nSale": 1
+   },
+   "opsTotalesScan": 8,
+   "opsSalientesScan": 1
+  }
+ },
+ "H": [
+  {
+   "casa": "Gate",
+   "hot": "TBA6CypYJizwA9XdC7Ubgc5F1bxrQ7SqPt",
+   "etiquetaScan": "Gate",
+   "operaciones": 49412220
+  },
+  {
+   "casa": "Bybit",
+   "hot": "TU4vEruvZwLLkSfV9bNw12EJTPvNr7Pvaa",
+   "etiquetaScan": "Bybit",
+   "operaciones": 115635621
+  },
+  {
+   "casa": "OKX Hot Wallet 8",
+   "hot": "TLaGjwhvA8XQYSxFAcAXy7Dvuue9eGYitv",
+   "etiquetaScan": "OKX Hot Wallet 8",
+   "operaciones": 121698914
+  },
+  {
+   "casa": "Kucoin 4",
+   "hot": "TUpHuDkiCCmwaTZBHZvQdwWzGNm5t8J2b9",
+   "etiquetaScan": "Kucoin 4",
+   "operaciones": 34673940
+  },
+  {
+   "casa": "Bitget 9",
+   "hot": "TJ7hhYhVhaxNx6BPyq7yFpqZrQULL3JSdb",
+   "etiquetaScan": "Bitget 9",
+   "operaciones": 29091942
+  },
+  {
+   "casa": "MXC",
+   "hot": "TEPSrSYPDSQ7yXpMFPq91Fb1QEWpMkRGfn",
+   "etiquetaScan": "MXC",
+   "operaciones": 56217284
+  },
+  {
+   "casa": "Kraken: Hot Wallet",
+   "hot": "TG2CMGxnTPgQ6V58kiKd7wbyN8ewtAmY76",
+   "etiquetaScan": "Kraken: Hot Wallet",
+   "operaciones": 3163421
+  }
+ ]
+}

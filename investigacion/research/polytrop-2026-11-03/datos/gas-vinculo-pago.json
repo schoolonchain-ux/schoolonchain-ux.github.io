@@ -1,0 +1,66 @@
+[
+ {
+  "intermediaria": "TDa5kRYUX3bYGRBrGSDoatjMNKEfcNJb59",
+  "desde": "TC7fdySNhoaUxWHVKtg9zus3PWHe3itGZ9",
+  "txEntrada": "414c220a8d57b4c159a7a6a73c92b3938b2f47c467db3e1f2f97453e55f7652b",
+  "horaEntrada": "2026-10-31T05:42:51.000Z",
+  "trx": 1052.025929,
+  "txPago": "0055ab9deb64c9b1328553785ffbfa9bd151879ea08c452f1083481610b9f9ee",
+  "horaPago": "2026-10-31T05:43:18.000Z",
+  "pagado": 1052.025929,
+  "minutos": 0.5,
+  "tramo": "tramo5"
+ },
+ {
+  "intermediaria": "TDa5kRYUX3bYGRBrGSDoatjMNKEfcNJb59",
+  "desde": "TRfTVHF9v9zeyQeQnFuu8q7R4kauZo5CB6",
+  "txEntrada": "dd4803e6369a3f32430600ba41d368e2231d458030c5b7d1dfa1b54beec46309",
+  "horaEntrada": "2026-10-31T11:13:57.000Z",
+  "trx": 2676.477054,
+  "txPago": "0e6e81688c100a974568da1cb7726319e1b06fae9c62870d8aedf105f9a2a50b",
+  "horaPago": "2026-10-31T11:19:27.000Z",
+  "pagado": 2676.477067,
+  "minutos": 5.5,
+  "tramo": "tramo5"
+ },
+ {
+  "intermediaria": "TDa5kRYUX3bYGRBrGSDoatjMNKEfcNJb59",
+  "soloPago": true,
+  "txPago": "ad43a8780bee41ed1a5f563696b87245d953b214a349b8ca362548e847e7dd20",
+  "horaPago": "2026-10-30T14:42:06.000Z",
+  "pagado": 3124.572625
+ },
+ {
+  "intermediaria": "TDa5kRYUX3bYGRBrGSDoatjMNKEfcNJb59",
+  "soloPago": true,
+  "txPago": "f8844b4b173b21d3d15b8e48ca50de6bb0aec9bf0d2a0e50aab4da84adfaa80b",
+  "horaPago": "2026-10-31T03:34:45.000Z",
+  "pagado": 153.225531
+ },
+ {
+  "intermediaria": "TDa5kRYUX3bYGRBrGSDoatjMNKEfcNJb59",
+  "soloPago": true,
+  "txPago": "187a3c59fbcbc120393e31d07cc6e6e9fe3492766600510d56aa2e0d798dd312",
+  "horaPago": "2026-10-31T05:43:00.000Z",
+  "pagado": 33.12377
+ },
+ {
+  "intermediaria": "TWTzEAWq5ff6YNbgzvpB7jHULdfmZD75F6",
+  "desde": "TEVo2PeBnJ76RiZxBTCUWDyauf4EHdS8eH",
+  "txEntrada": "7f58b762de934c103773c6702a536f5b4833849887d3a06931b4bccf0ae7ea02",
+  "horaEntrada": "2026-10-30T23:59:30.000Z",
+  "trx": 1270.791527,
+  "txPago": "549f850b745c2cc01a24d951e22355bd1550d0702d9e27734e06ce73223a0469",
+  "horaPago": "2026-10-30T23:59:51.000Z",
+  "pagado": 1270.791529,
+  "minutos": 0.3,
+  "tramo": "tramo6"
+ },
+ {
+  "intermediaria": "TWTzEAWq5ff6YNbgzvpB7jHULdfmZD75F6",
+  "soloPago": true,
+  "txPago": "b7570beae9b09958d1cc0ca3d47217a20b1b7dad0e743261acb3b1cb53a3fd9f",
+  "horaPago": "2026-10-30T18:10:51.000Z",
+  "pagado": 110.416017
+ }
+]

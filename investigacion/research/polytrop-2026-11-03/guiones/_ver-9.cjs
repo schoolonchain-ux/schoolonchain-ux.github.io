@@ -1,0 +1,6 @@
+const fs=require('fs');const D='C:/EquipoIA/research/polytrop-2026-11-03/datos/';const R='C:/EquipoIA/research/auditoria-adversarial-2026-10-31/';
+const P=JSON.parse(fs.readFileSync(D+'pagadores-tat51.json','utf8'));const F=JSON.parse(fs.readFileSync(D+'financiadora-gas.json','utf8'));const RG=JSON.parse(fs.readFileSync(D+'receptoras-gas.json','utf8'));
+const rg=new Map(RG.map(x=>[x.a,x]));const rec=new Map(F.receptoras.map(x=>[x.a,x]));
+console.log('--- las 9 receptoras de gas que también pagaron a TAT51');
+for(const a of P.receptorasQuePagaron){const r=rec.get(a);const g=rg.get(a);const e=P.clientesDesde28oct.find(x=>x.a===a)||{};console.log(a,'gas',r.n,'envíos',r.trx,'TRX','| nuestra',r.nuestra,'polytrop',r.polytrop,'| pagó TRX',Math.round(e.TRX||0),'USDT',Math.round(e.USDT||0),'| ev TRC20',g&&g.eventos?g.eventos.length:'-','| toca',g&&g.tocaConocidos);}
+for(const t of ['tramo5','tramo6']){const c=JSON.parse(fs.readFileSync(R+t+'/'+t+'-cache.json','utf8'));for(const a of ['TDa5kRYUX3bYGRBrGSDoatjMNKEfcNJb59','TWTzEAWq5ff6YNbgzvpB7jHULdfmZD75F6']){const k=['rec','term'].filter(s=>c[s]&&c[s][a]);console.log(t,a.slice(0,10),k.join(','),k.length?JSON.stringify(c[k[0]][a]).slice(0,300):'solo mencionada');}}
