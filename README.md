@@ -11,7 +11,7 @@ Web con informes de trazabilidad on-chain pensados para que los entienda cualqui
 
 ## Informe publicado
 
-**Caso Binance Hack · 29 oct 2026** — trazabilidad del robo en TRON y Ethereum (informe v0.6, datos hasta el 2-nov-2026 09:23 UTC).
+**Caso Binance Hack · 29 oct 2026** — trazabilidad del robo en TRON y Ethereum (informe v0.7, datos hasta el 2-nov-2026 09:23 UTC).
 Se lee de arriba abajo en 8 capítulos: lo esencial, cómo leer, el caso, dónde está el dinero, cómo se movió en TRON, a dónde salió, qué tan fiable es, y método y fuentes.
 
 ## Qué hay en este repositorio
