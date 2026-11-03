@@ -79,5 +79,16 @@
    "Reproducibilidad: las seis ejecuciones (2 tramos × 3 vías) se repitieron con el código final y dan exactamente los mismos resultados que las anteriores.",
    "Las cifras del informe siguen usando la vía actual; la comparación está en la sección 17. Ninguna vía está revisada por una fuente externa."
   ]
+ },
+ {
+  "version": "v0.7",
+  "fecha": "2026-11-03",
+  "cambios": [
+   "CRUCE con el trabajo del agente de investigación de ChainScope (expedientes sobre los 175 M USDT): coinciden los saldos bloqueados (1.175.464.712,88 / 174.999.872,33 / 30.000.000 USDT), las receptoras de ETH (197.460,01 + 17.260,11, comprobadas en cadena) y el recorrido 0x9749… → 0x811f… → 0xaa24… de los 175 M USDT (íntegros). Todas las diferencias salieron de MI lado y se corrigen aquí. Documento: research/auditoria-adversarial-2026-10-31/cruce-agente-chainscope/CRUCE-INFORME-VS-AGENTE-CHAINSCOPE-2026-11-03.md. El hueco «175 M USDT a 0x811f… sin seguir» queda cerrado: llegaron íntegros a 0xaa24….",
+   "CORREGIDO · Seguimiento hacia adelante en Ethereum (tramo5-v04): (1) las cuentas con delegación EIP-7702 se tratan como cuentas normales y no como contratos (2 de los 9 «contratos» cerrados lo eran; una recibía 151 ETH); (2) las transferencias de tokens por debajo de un mínimo (10 $ en stablecoins, 0,005 ETH en WETH/stETH, 0,0002 BTC en WBTC) ya no abren ramas: 28 de esas transferencias de polvo se dejan de seguir y 14 nodos que existían solo por ≈ 1 USDC desaparecen, entre ellos 0xe3478b…; (3) una billetera cuya lista llega al tope de 10.000 transacciones se cierra como «tráfico muy alto» en vez de seguirla con la lectura cortada (en esta pasada ninguna llega al tope). Resultado: 829 billeteras (antes 841). La versión anterior (tramo5-v03) se conserva como estaba.",
+   "CORREGIDO · Partida del ETH directo: ya no dice «214.735 ETH recibidos directamente de Binance». Usa el saldo real de las receptoras 1 y 2 (214.720,12 ETH) y la nota desglosa de dónde entraron los 214.734,66 ETH en 0x5227…: 169.534 de Binance 14 (etiqueta comunitaria), 28.006 de otra dirección en una sola transferencia, 16.334 de contratos de intercambio (WETH y Uniswap: venta de tokens) y 861 de otras fuentes. La suma de las partidas de Ethereum no cambia. Evidencia: resultados/eth-entradas-0x5227.json (la lectura de 0x5227… llega al tope de 1.000 transacciones normales: queda declarado).",
+   "CORREGIDO · Horas de los 175 M USDT en mi investigación a mano (docs/INVESTIGACION-BINANCE-0x5227-2026-10-30.md): 20:45:51 y 20:55:03 pasan a 20:59:11 (bloque 26300942) y 21:08:23. Las demás horas de esa tabla se comprobaron en cadena y son correctas.",
+   "Límites que siguen abiertos: el seguimiento de Ethereum sigue sin revisión externa; la lista de transferencias normales de 0x5227… se lee solo hasta el tope de 1.000 por lista; los 28.006 ETH de otra dirección (0xdfd5293d…) no están identificados; Arkham (15), EVM de Polytrop (14), cuenta de gas (16) y las dos vías de pureza (17) siguen sin revisión externa."
+  ]
  }
 ]

@@ -1,0 +1,17 @@
+INFORME DE TRAZABILIDAD v0.7 · cruzado con el trabajo del otro agente · 3-nov-2026
+
+Te paso el HTML nuevo, que sustituye al v0.6. Aplica las tres correcciones que salieron del cruce con el agente de ChainScope. Las cifras de TRON y de Ethereum NO cambian (la suma de partidas de Ethereum es idéntica); cambian textos, un documento mío y el seguimiento de Ethereum.
+
+EL CRUCE (resumen)
+Coinciden los saldos bloqueados (1.175.464.712,88 / 174.999.872,33 / 30.000.000 USDT), las receptoras de ETH (197.460,01 + 17.260,11, comprobadas en cadena) y el recorrido de los 175 M USDT (0x9749 → 0x811f → 0xaa24, íntegros). Todas las diferencias eran mías. El hueco «175 M USDT sin seguir» queda cerrado.
+
+LO QUE HE CORREGIDO
+1) Mi documento a mano: la hora de los 175 M USDT era 20:45:51 y el reenvío 20:55:03; en cadena son 20:59:11 y 21:08:23. Comprobé el resto de horas de esa tabla (500 M, 200 M, 190 M, bloqueos) y están bien.
+2) Seguimiento de Ethereum (copia nueva tramo5-v04; la anterior se conserva): las cuentas con delegación EIP-7702 ya no se tratan como contratos (eran 2 de los 9 cerrados; una recibía 151 ETH); las transferencias de tokens de polvo (menos de 10 $) ya no abren ramas: 14 nodos existían solo por ≈ 1 USDC y desaparecen, entre ellos 0xe3478b…, la dirección de altísimo tráfico; y una billetera que llegue al tope de 10.000 transacciones se cierra como «tráfico muy alto» (en esta pasada ninguna llega). Resultado: 829 billeteras (antes 841).
+3) La nota de los 214.735 ETH decía «recibidos directamente de Binance». No era exacto. Los 214.734,66 ETH que entran en 0x5227… vienen de: 169.534 de Binance 14 (etiqueta comunitaria), 28.006 de otra dirección (0xdfd5293d…) en una sola transferencia, 16.334 de contratos de intercambio (venta de tokens) y 861 de otras fuentes. Lo que llegó a las receptoras 1 y 2 son 214.720,12 ETH (0x5227… les envió 195.460 + 2.000 y 17.260). La partida usa ahora ese saldo real; ≈ 15 ETH no están desglosados.
+
+CONTROL: 9 comprobaciones, 8 en verde y 1 aviso (contratos con salida sin resolver, listados). Las 23 pruebas pasan. La evidencia de las dos vías de pureza se guardó como versión 2 (los seis resultados son idénticos a los de la versión 1).
+
+LO QUE SIGUE SIN REVISIÓN EXTERNA: Arkham, las EVM de Polytrop, la cuenta de gas, las dos vías de pureza y el seguimiento de Ethereum nuevo. Sus expedientes de los 175 M USDT también están pendientes de su revisión.
+
+PENDIENTE: los 28.006 ETH de 0xdfd5293d… no están identificados; y la lectura de 0x5227… llega al tope de 1.000 transacciones normales por lista (queda declarado). Un aviso para el otro agente, si quieres pasárselo: su relación R5 cita 195.460 ETH a la receptora 1, y en cadena hubo una segunda transferencia de 2.000 ETH a las 01:14:11 del 30-oct que explica sus 197.460.

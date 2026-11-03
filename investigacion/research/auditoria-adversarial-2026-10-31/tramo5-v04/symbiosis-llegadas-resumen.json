@@ -1,0 +1,39 @@
+{
+ "envios": 1009,
+ "conLlegada": 1009,
+ "sinLlegada": 0,
+ "estados": {
+  "Success": 994,
+  "Reverted": 15
+ },
+ "discrepanciasConLaLlamada": 30,
+ "receptoresDistintos": 258,
+ "porCadenaYActivo": {
+  "1 ETH": {
+   "n": 987,
+   "importe": 5430.904814104269,
+   "usd": 12319410.17126598
+  },
+  "728126428 USDT": {
+   "n": 12,
+   "importe": 176083.788005,
+   "usd": 176083.788005
+  },
+  "1 USDC": {
+   "n": 4,
+   "importe": 37630.767252,
+   "usd": 37630.767252
+  },
+  "13863860 sUSDC": {
+   "n": 3,
+   "importe": 10713.34785481242,
+   "usd": 10713.34785481242
+  },
+  "42161 ETH": {
+   "n": 3,
+   "importe": 14.446712893172423,
+   "usd": 32770.77905974339
+  }
+ },
+ "leidoEn": "2026-11-02T17:23:51.524Z"
+}

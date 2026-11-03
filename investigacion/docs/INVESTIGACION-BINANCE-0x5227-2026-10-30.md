@@ -79,7 +79,7 @@ Aquí no hay reparto por orden de llegada. Cada cantidad se ha seguido mirando l
 | Hora (UTC) | Movimiento | Resultado |
 |---|---|---|
 | 20:31–20:49 | 325 M USDT cambiados a ETH en 9 operaciones a través de agregadores (aprobaciones a Permit2 y al router de 1inch; una pasa por el contrato de LI.FI; los contratos `0x74edc79f…`, `0x0000…be226`, `0xbeef0296…`, `0x9b1303eb…`, `0xec4fb7e7…` son los pasos intermedios de esos cambios, no «routers a medida») | **122.316 ETH** recibidos por `0x9749` |
-| 20:45:51 | 175 M USDT → `0x811f1585…` | reenviados a las 20:55:03 a `0xaa246bf6…` |
+| 20:59:11 | 175 M USDT → `0x811f1585…` | reenviados a las 21:08:23 a `0xaa246bf6…` |
 | 21:14:59 | Tether congela `0xaa246bf6…` | **174.999.872 USDT bloqueados** ahí (solo salieron 127,67 USDT antes) |
 | 21:47:47 | `0x9749` envía **122.310 ETH** a `0xc887af690e0301cd4edbbce8f8d31b4ec65b286a` | esa billetera recibió además 15.292 ETH de `0x7f9dc988…` (ver apartado 6) y hoy tiene **137.602 ETH sin ninguna salida** |
 
@@ -223,7 +223,7 @@ Resumen: todo lo que quedó dentro de la dirección en monedas estables y oro di
 | 20:33:23 | 200 M USDT → `0x0ddf` |
 | 20:38:47 | 195.460 ETH → `0x8532` |
 | 20:41:23 | Llegan 780 M USDC a la dirección (y 43 M más a las 20:59:47) |
-| 20:45:51 | 175 M USDT → `0x811f` → (20:55:03) `0xaa24` |
+| 20:59:11 | 175 M USDT → `0x811f` → (21:08:23) `0xaa24` |
 | 20:52:59 | 190 M USDT → `0x8d53`; 20:57–21:00 depósito de 60 M en Aave y préstamo de 19.762 ETH |
 | 21:01:35 | **Tether congela la dirección y `0x9749`** |
 | 21:01:47–21:02:47 | Tether congela `0x0ddf` y `0x8d53` |
@@ -333,3 +333,5 @@ Datos en bruto (respuestas completas de la API): `research/binance-0x5227-2026-1
 ---
 
 **Actualización del 30-oct (22:45, Madrid):** el seguimiento actualizado de Ethereum y toda la parte de TRON están en [INFORME-COMPLETO-ROBO-BINANCE-2026-10-30.md](INFORME-COMPLETO-ROBO-BINANCE-2026-10-30.md). Los datos de Ethereum de este informe siguen vigentes: los 508.854 ETH no se han movido.
+
+> **Corrección (3-nov-2026):** las horas de la transferencia de 175 M USDT a `0x811f…` y de su reenvío a `0xaa24…` figuraban como 20:45:51 y 20:55:03; en cadena son **20:59:11** (bloque 26300942) y **21:08:23**. Las demás horas de esta tabla (500 M a las 20:30:11, 200 M a las 20:33:23, 190 M a las 20:52:59, bloqueos de Tether) se comprobaron y son correctas. Detectado al cruzar este informe con el trabajo del agente de ChainScope (`research/auditoria-adversarial-2026-10-31/cruce-agente-chainscope/`).

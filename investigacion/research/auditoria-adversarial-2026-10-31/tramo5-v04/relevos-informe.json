@@ -1,0 +1,1468 @@
+{
+ "depositosSinCambio": 141,
+ "brutoDepositos": 13389643.183153002,
+ "parejas": 75,
+ "total": 7033718.948734,
+ "regla": {
+  "comision": [
+   7.15,
+   7.25
+  ],
+  "ventanaMinutos": [
+   -2,
+   180
+  ],
+  "minimoUsdt": 3520
+ },
+ "sinPareja": 66,
+ "reembolsosEnteros": 4,
+ "reembolsosEnterosUsdt": 216022.20595099998,
+ "estadisticas": {
+  "medianaMinutos": 3.55,
+  "maxMinutos": 79.25,
+  "comisionMin": 7.186201,
+  "comisionMax": 7.189785,
+  "mismoReceptorQueRemitente": 3
+ },
+ "parejasLista": [
+  {
+   "remitente": "T9yNH37UzAkjC6HuRKw6LSkH1w8U7epxfZ",
+   "deposito": "f7643d283c2327c0af3efb070014d67bc3a3472b2e975de5c9bc9e37642e2143",
+   "canal": "TKDxyeH6t4ZWdygYW12fxDMCwqrsqgzq3i",
+   "importe": 150165.5328,
+   "hora": 1793400420000,
+   "pago": "16e379e9fe083a00145c0890c625cd2793e2511f2538c37a2b08c705255552bd",
+   "receptor": "TVn4J9MkKaWug6sE9egJWmgEWJXB1LNsWz",
+   "pagado": 150158.343399,
+   "comision": 7.189401,
+   "minutos": 3.85,
+   "nueva": false
+  },
+  {
+   "remitente": "T9yNH37UzAkjC6HuRKw6LSkH1w8U7epxfZ",
+   "deposito": "bb973069a5b188be386b2cced25d9bde020b544721a85ae1c6a8c58fd2d07cd7",
+   "canal": "TJtan1Fw2DyU3MFLgoXNUwT42tiLRv84FS",
+   "importe": 159192.7752,
+   "hora": 1793402454000,
+   "pago": "f627f22e96c95b4032f1f50e99f35d1d67605d915674c2c3de4c25bfe0fcf035",
+   "receptor": "TYrbuz533nmpJCdrAqYVMQG9NaoNZhPjvt",
+   "pagado": 159185.587093,
+   "comision": 7.188107,
+   "minutos": 6.25,
+   "nueva": false
+  },
+  {
+   "remitente": "TMHXoMMg8R2kNiBZC7Cysa9fow2prwz4Pg",
+   "deposito": "068ec4dca16c41635d62c29aa3ef66cd97158346cd9824aef1147273ac50eff6",
+   "canal": "TMnybB8Pic9JeN2BV1Ya2UeQrNLSphNoan",
+   "importe": 78269.2839,
+   "hora": 1793402520000,
+   "pago": "cfa910151ddf372a26b531fd7b82822e2b3c0673207c6c9e610ca9d39c843b6a",
+   "receptor": "TSXAbMLVDcFeWWUUB9pEaHJzWdNGpYDuky",
+   "pagado": 78262.095793,
+   "comision": 7.188107,
+   "minutos": 2.45,
+   "nueva": false
+  },
+  {
+   "remitente": "TSXAbMLVDcFeWWUUB9pEaHJzWdNGpYDuky",
+   "deposito": "f1e6bc26a07388a3fe6a2f9bd6615b75a7e547b0a47cb32e9f9ad00180a74e0c",
+   "canal": "TXbP4XuMXSj9m8wKiEcYosGEK75nEj3qET",
+   "importe": 78262.095793,
+   "hora": 1793403228000,
+   "pago": "d9640944fc4fc49a7bb8d08829e39a4509b340ac49543d4dde7bc76df7b08135",
+   "receptor": "TEvovFjy234rdDCN9oBgmBz4kHhSzKYBuz",
+   "pagado": 78254.906008,
+   "comision": 7.189785,
+   "minutos": 3.25,
+   "nueva": false
+  },
+  {
+   "remitente": "TSGCcr6WG372AXecAj48uqj8xxj7UED7W1",
+   "deposito": "175fe31cf103df50fbea85faadf13e3111886d33a99dc073f40ba7691c74ec9b",
+   "canal": "TY6xb5QhVN9rUWF1VQ6U3h8rZXkmed8jps",
+   "importe": 83321.0128,
+   "hora": 1793404695000,
+   "pago": "f4b79b756e509b541af051f00de5b945ecde8f9692696558b9a65223c84caba8",
+   "receptor": "TKthA3xYHqH9UrDL415Zs66KAEd7V7uAQb",
+   "pagado": 83313.823954,
+   "comision": 7.188846,
+   "minutos": 3.35,
+   "nueva": false
+  },
+  {
+   "remitente": "TAbUhaUmTPrjSWfrPENFXQRkWgMHrosb9m",
+   "deposito": "5b5adee624ec24af2f7b840484362135ba312e60cc0e5392b2fdee7ab2e5a39b",
+   "canal": "TE7EKr28xCZmnjVeuM6ybWByjCBhhWCKX4",
+   "importe": 82496.8204,
+   "hora": 1793404743000,
+   "pago": "1a8b8a9a26845aa7e09f923ad2a64e6258259eadae8d1a9d07821d597a117e40",
+   "receptor": "TMDPhjAFYLDopLcpTKWuniAmtGEcTjBSxT",
+   "pagado": 82489.631554,
+   "comision": 7.188846,
+   "minutos": 4.45,
+   "nueva": false
+  },
+  {
+   "remitente": "TSGCcr6WG372AXecAj48uqj8xxj7UED7W1",
+   "deposito": "073dfc4db608600141fb78e9775333aa04595cb1385f91f02d3c3f5fa99ebc7b",
+   "canal": "TU1jsJDYFS1epqxwnyPi9fCoS9ihjA76XS",
+   "importe": 84740.2356,
+   "hora": 1793405610000,
+   "pago": "b39b72a71c656b3906a76ec669f4ebb1508c5cb2c3aa5be1a047b6555caa4750",
+   "receptor": "TYYgzFoK9f2xCQku2BSUBneu4yj2zsG9Jb",
+   "pagado": 84733.046961,
+   "comision": 7.188639,
+   "minutos": 2.4,
+   "nueva": false
+  },
+  {
+   "remitente": "TTZatyF4DrspGJo32b1Ss87RYGKvU3ASD2",
+   "deposito": "1760b3d90c312426cbd6fa493bcdc58428e04949e0ed1791cc104b145a4ef313",
+   "canal": "TJ5ktCSt9FWDpiYECGRy9eDbYLxFcHWR3y",
+   "importe": 86997.4846,
+   "hora": 1793405973000,
+   "pago": "04d7282dbc6ceddf1c911bde76d522ae4fad995885c1e1e32c800b75a68f25cd",
+   "receptor": "TRwsav8yj6m7HcKP4UKApCG5WvGBZ63Fiu",
+   "pagado": 86990.295645,
+   "comision": 7.188955,
+   "minutos": 2.45,
+   "nueva": false
+  },
+  {
+   "remitente": "TXS2i9vVcNZ94xrHppe5WNnQmSXJGW5HWh",
+   "deposito": "f0efaa867fbcd4eaeccf0eefefcd341056fb3b740c2b393cd4914e2e22c5c2c0",
+   "canal": "TNV3wp2TSFK9UQnBUCeNuTna6bUdkdKCNG",
+   "importe": 89823.79604,
+   "hora": 1793406660000,
+   "pago": "c8591f94890244905a7d3cb7d86129c7266bd057ad97faeab58e670f6c2c321d",
+   "receptor": "TCEcCDJZmoDLhM3JMrmex34oJrnYFcmyh4",
+   "pagado": 89816.607492,
+   "comision": 7.188548,
+   "minutos": 1.85,
+   "nueva": false
+  },
+  {
+   "remitente": "TP7o729rXncyHW9qFLQA7WBaqAXariwZAu",
+   "deposito": "13180d750a3832438a6d6fbb3d4993f5ad69d1d8339c3a9cf9c07f2f9d2caccd",
+   "canal": "TH6KZrrX51TcQTyaoBY7ag9Ps2Nc8zYq27",
+   "importe": 92941.5817,
+   "hora": 1793406975000,
+   "pago": "d9a5ce76fc11e13ed095b3568c1a29829bff1a6cdaf58e63f32862000851e4ce",
+   "receptor": "TFbMDE3EUicFvfN1mJXGNkF45uNwsTvPkZ",
+   "pagado": 92934.393189,
+   "comision": 7.188511,
+   "minutos": 5,
+   "nueva": false
+  },
+  {
+   "remitente": "TXS2i9vVcNZ94xrHppe5WNnQmSXJGW5HWh",
+   "deposito": "9c29e9dc5f4443ece43d205fe1c5b1fb6484e0395ef72dc0aafe47b0ff087d8d",
+   "canal": "TTEsSKtpLrz1WYLFSAAAxjfjuCbA23geoJ",
+   "importe": 86988.38624,
+   "hora": 1793407086000,
+   "pago": "c3fc33115139281fa859fc3328a429f41828868aae5599c6efd2c64694bdf2b4",
+   "receptor": "TD9m5bavzfXpcUxAcEDzco1LhBoaLMAXCf",
+   "pagado": 86981.197391,
+   "comision": 7.188849,
+   "minutos": 2.3,
+   "nueva": false
+  },
+  {
+   "remitente": "TLyErmjfbJF2SrPwbHtNFeibemXcPNKK5H",
+   "deposito": "6560869a866b7600e25d8a96e9d02f230b3d68f254a0612a530f1ea992539edf",
+   "canal": "TJZd17EnbMqgkSsRARjJQya1XzVZAMuyVh",
+   "importe": 94679.40321,
+   "hora": 1793408256000,
+   "pago": "fd4e4cfb9340ca82e3f19b43ea2bec72b8da9c62e54476ec9829068e237c64f3",
+   "receptor": "TSiyzQFW1CMek2tvamV51aZBmAT2n4FbPL",
+   "pagado": 94672.214588,
+   "comision": 7.188622,
+   "minutos": 14.75,
+   "nueva": false
+  },
+  {
+   "remitente": "TFneNCSo73ZpfCFdFhkPRPQNUy4VJY2Xko",
+   "deposito": "83d9e3d01e0d36bc8368024cedc0fc21c08904064fdf6e969a632bb033d82dd8",
+   "canal": "TCx4VRAqd9ZvMBWtcZfKJPGgbaoMoiq25n",
+   "importe": 99082.6649,
+   "hora": 1793408367000,
+   "pago": "d8c41b2b0c2833259a0865d571833ee6a629ee929e70c36e59c7d86fbe8b54da",
+   "receptor": "TBTzLHVsZQ6C8TrS8zC54HircZnADhQsQM",
+   "pagado": 99075.476278,
+   "comision": 7.188622,
+   "minutos": 1.75,
+   "nueva": false
+  },
+  {
+   "remitente": "TNhpfKq83wufEKGjBhQFnT7jnxYmyBzH6F",
+   "deposito": "65bc93de83b9106ee09237961ac0150aeb958db7b3eb1b27c49caf8888fe1fb9",
+   "canal": "TLb47qh6ub3GkRoEQWUZHJ5FakapusD5dH",
+   "importe": 98107.95255,
+   "hora": 1793408589000,
+   "pago": "16845fa048c03556910265c582453cb88c7984769711463540892c311dd4ee65",
+   "receptor": "TJesnAA39M2pd3UHnmBh9kNuCFpZDM56uF",
+   "pagado": 98100.764228,
+   "comision": 7.188322,
+   "minutos": 3.25,
+   "nueva": false
+  },
+  {
+   "remitente": "TNhpfKq83wufEKGjBhQFnT7jnxYmyBzH6F",
+   "deposito": "e51b4d52c669a36223876567461e38effd171a5e3b5f3691e56fff287047f4ec",
+   "canal": "THu7CvNL2VrHo3vnoE3UMhdgK5kbri9mBt",
+   "importe": 98121.480539,
+   "hora": 1793409252000,
+   "pago": "1443dffef7fe65e86bc64c0224f12cdd9e0fdbba8e545534c49f7bc3c3e7a3a3",
+   "receptor": "TXYxewd7xKw5ZpKLQq6dSsSB1swtcgBxjT",
+   "pagado": 98114.292106,
+   "comision": 7.188433,
+   "minutos": 2.45,
+   "nueva": false
+  },
+  {
+   "remitente": "TEMnZsdfbnZkeVHdzy2u9GW56xTqfoEDMh",
+   "deposito": "7cddfb24a6ea2145770a27941a73acb659358d0ba74edb535626cfc843617954",
+   "canal": "TXX5v2u6q6UoCN1UD5C7nEqPq1EHbvrNAg",
+   "importe": 53110.8808,
+   "hora": 1793409540000,
+   "pago": "3a23b47c2035eba367d8637d4d824d886fd438bce17df438432c3cf15c2f8104",
+   "receptor": "TDhdwXLh1ag2rFs5fZwr6DKQF4CR9mr8Zt",
+   "pagado": 53103.692433,
+   "comision": 7.188367,
+   "minutos": 2.75,
+   "nueva": false
+  },
+  {
+   "remitente": "TNhpfKq83wufEKGjBhQFnT7jnxYmyBzH6F",
+   "deposito": "7eb88f7d41c74ddfb3609ed5436caef91127991c43b67e4c9b671dc7d592d9bd",
+   "canal": "TAZGPTHiCYgHGCLqWHupxc5D7ep8FDt1FN",
+   "importe": 98054.244497,
+   "hora": 1793409795000,
+   "pago": "94512892314ffd89f8a55c7490e4fe4e4461bb030a37789f604a6d00b14ec206",
+   "receptor": "TGzeziLqrjoyb6Vz4P54Z9MFvdWEYmXDRF",
+   "pagado": 98047.056538,
+   "comision": 7.187959,
+   "minutos": 3.25,
+   "nueva": false
+  },
+  {
+   "remitente": "TLyErmjfbJF2SrPwbHtNFeibemXcPNKK5H",
+   "deposito": "ef00fd0c516ef041e32994c4fdc2eb69b1929bdab76e61a675b9f7a980acb2d7",
+   "canal": "TB4FpehDQxUnTKe6to43zwaUz2kDKjKBMJ",
+   "importe": 93918.4731,
+   "hora": 1793409879000,
+   "pago": "942ee4b66622a5ebc1445647ca9a8727c5bccff256adabda0cc983329eb13e18",
+   "receptor": "TRNKRSQXbEPxSSMUE4FBzyaw6zxqTWyEFT",
+   "pagado": 93911.285141,
+   "comision": 7.187959,
+   "minutos": 3.2,
+   "nueva": false
+  },
+  {
+   "remitente": "TEMnZsdfbnZkeVHdzy2u9GW56xTqfoEDMh",
+   "deposito": "1fe75903413f9e4f9b1fefea0a9930c087cb7f110391850baf1e3adb69c38268",
+   "canal": "TPtkrW17KKyWS2PCDA7qLg3Mva7NPuBUFJ",
+   "importe": 52935.8784,
+   "hora": 1793410176000,
+   "pago": "82c79a978cbd1bf850ce08bc12f4e2a49eede885309e158382f4da6bcedb05f4",
+   "receptor": "TGrSqmmc94NpB95qJmFAfs1QQT9inzAwCc",
+   "pagado": 52928.690497,
+   "comision": 7.187903,
+   "minutos": 3.3,
+   "nueva": false
+  },
+  {
+   "remitente": "TNhpfKq83wufEKGjBhQFnT7jnxYmyBzH6F",
+   "deposito": "5b714c377207aa46896ce5e871a2cc7e836926e6fc1e518cb3c5911915922566",
+   "canal": "TTejYRTSkRQkx4vzugDUhXAq13GuZSW9Xi",
+   "importe": 98016.574524,
+   "hora": 1793410416000,
+   "pago": "49857dc33fbfe7095e59622632b5b8ef071a3cf5128d5626eb6b2708895b806a",
+   "receptor": "TJ1L9vDS6FfMTnbipJkMYcDAUTewDpRsdJ",
+   "pagado": 98009.386476,
+   "comision": 7.188048,
+   "minutos": 4.25,
+   "nueva": false
+  },
+  {
+   "remitente": "TNhpfKq83wufEKGjBhQFnT7jnxYmyBzH6F",
+   "deposito": "f52978e6a410f4dedaa54efe4c86b762a9757c0a36ed92edc799888a9b5d8334",
+   "canal": "THwY9tFG5FQbciKK9sCgRbWFQTfdwhnHAB",
+   "importe": 97963.59474,
+   "hora": 1793410998000,
+   "pago": "677a5278e97c99a5923242320d87d0b05e21add29fbd5cb504f063b576690fa0",
+   "receptor": "TDe6FZ71p3KH1BocHZBNPAGAEnQo2D6vLF",
+   "pagado": 97956.406767,
+   "comision": 7.187973,
+   "minutos": 2.85,
+   "nueva": false
+  },
+  {
+   "remitente": "TDGpxMPTup4s93VJQasMgSKkEwKXTx5nvv",
+   "deposito": "08ad50ef204631689da9bd923f7cdbf982e77ca90d9270af890e5c747c9dd4bb",
+   "canal": "TQhBDTYPUU4z4i8yYajLa8mGmm1bp8iriH",
+   "importe": 79546.0676,
+   "hora": 1793411274000,
+   "pago": "655856cc106e205541dd1c54ea2af2d35f69142e0891370815a53f530c6a5fce",
+   "receptor": "TRxt9DbUyVvsKMxCQ89zUqxGcAzPUsBsuP",
+   "pagado": 79538.879627,
+   "comision": 7.187973,
+   "minutos": 3.25,
+   "nueva": false
+  },
+  {
+   "remitente": "TNhpfKq83wufEKGjBhQFnT7jnxYmyBzH6F",
+   "deposito": "013faadff4765b1498b23b06b27792ec098f5324a62158a42481a647f7cf293c",
+   "canal": "TMtkaJKn5on35WcSNmGMSGvJhNhXuLPZCg",
+   "importe": 97926.928008,
+   "hora": 1793411502000,
+   "pago": "3698af044c6d6c9655ffcfc3a57e3e24fb1a1304a3e994d08357866ea816cea6",
+   "receptor": "TJZJdxPZLMeqRE2eNWmAtByZ3cC9YVxSPL",
+   "pagado": 97919.739934,
+   "comision": 7.188074,
+   "minutos": 1.85,
+   "nueva": false
+  },
+  {
+   "remitente": "TDGpxMPTup4s93VJQasMgSKkEwKXTx5nvv",
+   "deposito": "79ff952a368a7b6653d9e9e46e6139312e82d5cf612f506ddd080912155f92ea",
+   "canal": "TWXzd8qeFbJHRXcjKQPwfPk776VEWrP5Dw",
+   "importe": 79706.9756,
+   "hora": 1793411931000,
+   "pago": "68d596569fa0617085beada9eb552b7f7645e489c483378621f95eeb0db6d402",
+   "receptor": "TDRLVj3cMt4NcpLYFafnEp2RQQKXyfugmL",
+   "pagado": 79699.78726,
+   "comision": 7.18834,
+   "minutos": 1.85,
+   "nueva": false
+  },
+  {
+   "remitente": "TNhpfKq83wufEKGjBhQFnT7jnxYmyBzH6F",
+   "deposito": "750a115da856834f23d0daa6a30543ac4be884e2034861b3489dcfc458192142",
+   "canal": "TUNR3E2zXHq7dUixY4avAywhA1pWtFczTj",
+   "importe": 109202.395862,
+   "hora": 1793412102000,
+   "pago": "cb0f199b0cb55c17ffad127f31b99c8f7224270eca382c5f0b8b21cc7d4a4b89",
+   "receptor": "TXL84y4JamraWgvptdu6ZPzC5hrZMbutCx",
+   "pagado": 109195.207522,
+   "comision": 7.18834,
+   "minutos": 3.3,
+   "nueva": false
+  },
+  {
+   "remitente": "TDTFVXgP4qZS5nfCw73W1PRg2zMSuhi2EE",
+   "deposito": "cd3518e6c4559da7f31b7c9635364ecedf982e3b04e0f04fa22934e6e1c59322",
+   "canal": "TFBEDVifehR4fRdbuFzS7jo12xondopz9b",
+   "importe": 81308.15431,
+   "hora": 1793412165000,
+   "pago": "a83125dec29f06d93792ab50feb52f0681d2587a8f486c94fbe081752b9fd943",
+   "receptor": "TX51zzYjXW8SusNj4TkLd8J6gGsX3LBATC",
+   "pagado": 81300.96597,
+   "comision": 7.18834,
+   "minutos": 6.95,
+   "nueva": false
+  },
+  {
+   "remitente": "TNhpfKq83wufEKGjBhQFnT7jnxYmyBzH6F",
+   "deposito": "abf9c3266a1277335561de125e9df7c9022b50f8a21e6eb95f0b0807661d767a",
+   "canal": "TCArN4WcKB1P4LpFg2Nvnqoq6Xa6LjN1ze",
+   "importe": 93300.289586,
+   "hora": 1793415447000,
+   "pago": "02d59c3b38e4a5c92d6a99a547a92c9d5e223bf3dc70fb7d880fb84ab798e920",
+   "receptor": "TELZgVo9Lv7v7U4jkGxzrWhBkSMysVgwuQ",
+   "pagado": 93293.101975,
+   "comision": 7.187611,
+   "minutos": 3.85,
+   "nueva": false
+  },
+  {
+   "remitente": "TNhpfKq83wufEKGjBhQFnT7jnxYmyBzH6F",
+   "deposito": "413dbaad724844ed730f8c60b90e0998cef4e71cfde620224f78c10a3a420b6e",
+   "canal": "TQBgyGCdCdSndaXjKuyPfQSfY2b3vjq1f6",
+   "importe": 93239.778499,
+   "hora": 1793416173000,
+   "pago": "ce84cfb94fd66753b90f1a84d4fdc1451226dd9b101d0dd1cd31dc5b4a870a63",
+   "receptor": "TJS6xme24S3NfmVZKF5bBhzYJHN5GaCj3C",
+   "pagado": 93232.591112,
+   "comision": 7.187387,
+   "minutos": 3.3,
+   "nueva": false
+  },
+  {
+   "remitente": "TUNU8kCmJ8zR5epmx57Y3mL2otbfYHbNpz",
+   "deposito": "3fd00efefb72ee4b32a635dbe8fa62d3daf443c8a8eac4e86a5431946714c293",
+   "canal": "TE2eGH3fvMqFUHkij8mJUpRFY1sXX21sXt",
+   "importe": 84508.4696,
+   "hora": 1793416527000,
+   "pago": "80ea3a1a7181185590a4eade1c5c7ac5e2e09f39168bcf9d1dae28cc6d7c9760",
+   "receptor": "TATAuUQ7aT4fb9sPag2McVdsH4hJgeMAMH",
+   "pagado": 84501.282213,
+   "comision": 7.187387,
+   "minutos": 3.95,
+   "nueva": false
+  },
+  {
+   "remitente": "TNhpfKq83wufEKGjBhQFnT7jnxYmyBzH6F",
+   "deposito": "49546bddc56c4cf78208a8e7bcb5e7425ee0376441284ee8d04cc11bc24f02e8",
+   "canal": "TKZj68AwM7Q9nBJKFUu7AA4JueEqoxdma1",
+   "importe": 96509.208446,
+   "hora": 1793416782000,
+   "pago": "0627022d0905a050dd4520124a00565c9074be5284dfc2d2916f91124e3102dd",
+   "receptor": "TAgqkycUoxD3HM5E7QeSaz8hwgwzjJ3neF",
+   "pagado": 96502.021177,
+   "comision": 7.187269,
+   "minutos": 2.35,
+   "nueva": false
+  },
+  {
+   "remitente": "TXm2AMkgS3qCMPwcLwUqNQkTkRMdYJd6ia",
+   "deposito": "755cbb7efd3e06e5162d35d71e7d682273939d12be2afa47a5957a3af726dae8",
+   "canal": "TX2KLFwRZuXA71R8DUV58sLRWNXBrRYRrP",
+   "importe": 85970.713303,
+   "hora": 1793416992000,
+   "pago": "359e2f866436b99b896fb6d519419b1c4a29dde3b59b3520889fdafd407aa921",
+   "receptor": "TR5W6nzTjeVfxsxwpA695pWPswePHGk9Bg",
+   "pagado": 85963.526086,
+   "comision": 7.187217,
+   "minutos": 2.9,
+   "nueva": false
+  },
+  {
+   "remitente": "TNhpfKq83wufEKGjBhQFnT7jnxYmyBzH6F",
+   "deposito": "c701750ed6bd3c9b5256fdf8c8c5b0acd01b8df588959b94027c62e4f8bf9c90",
+   "canal": "TJ2RrBAPpwruGHeJF6KnF57YiLW4pSHe31",
+   "importe": 96430.40353,
+   "hora": 1793417265000,
+   "pago": "a56c5a4138fbbb7db62b51ae5cc19e561f09921c9696636a11b8e41d85c2fe79",
+   "receptor": "TSVZ32fTgXKxKswwbU7pv1NXYT5BRrxEa5",
+   "pagado": 96423.216313,
+   "comision": 7.187217,
+   "minutos": 9.15,
+   "nueva": false
+  },
+  {
+   "remitente": "TNhpfKq83wufEKGjBhQFnT7jnxYmyBzH6F",
+   "deposito": "be2c10c9f019886294c59607d99a063091240a6d02aa22da7e83641e514f17b1",
+   "canal": "TNKLbEvT1jdnGctbmCbMEkLiXtsdXEE1ns",
+   "importe": 96347.541833,
+   "hora": 1793418327000,
+   "pago": "233181a8374414bbe30744c1851a565b5606046869faec9193f642583d72820b",
+   "receptor": "TNg7nLPUuDfQdzKwMiKhSqaxn6GcaPpcxt",
+   "pagado": 96340.354797,
+   "comision": 7.187036,
+   "minutos": 2.8,
+   "nueva": false
+  },
+  {
+   "remitente": "TCeEif5LQaKewTQwcN4nPSmfSdwXxWf5Lm",
+   "deposito": "590b68c280e82f6697295bd2a8698d04430d7ede5b3587627dc977f4689cfb17",
+   "canal": "TEVHqTGosEjnbUW9W7PLsTbV7GWqn3GC8q",
+   "importe": 95438.4376,
+   "hora": 1793419500000,
+   "pago": "26f54c4cdb496f52b7a07d81a8fb0622be61e0d335658210dbc489ca5cb174ba",
+   "receptor": "TNEQB1RyRRsrXFKZKrngvBJP8FT8h7fb49",
+   "pagado": 95431.250623,
+   "comision": 7.186977,
+   "minutos": 3.3,
+   "nueva": false
+  },
+  {
+   "remitente": "TNhpfKq83wufEKGjBhQFnT7jnxYmyBzH6F",
+   "deposito": "0ba3318c5e20bf65111556765bf4cf7ab6d59448336c08b026382815f3b1827c",
+   "canal": "TScsZ21qXXgsJDGwsP6agNZECYzzPZLkUG",
+   "importe": 92910.987794,
+   "hora": 1793419662000,
+   "pago": "6bf942d2d2ddd8b6626601482027f5ba21381151c1d851153647aa1a601bb885",
+   "receptor": "TW8jAxNvVEvankJa51ZoPUjHqvk2oaGHJV",
+   "pagado": 92903.800832,
+   "comision": 7.186962,
+   "minutos": 8,
+   "nueva": false
+  },
+  {
+   "remitente": "TCeEif5LQaKewTQwcN4nPSmfSdwXxWf5Lm",
+   "deposito": "fbbf14efca815bc5d086446c802fd642e10a1fdbc58cd4256d46a8440354b05a",
+   "canal": "TJza7S39RS9VEXvr89rGo6s5QLvszrBxG2",
+   "importe": 95401.79584,
+   "hora": 1793420121000,
+   "pago": "acb263ddb186e388a16de6a0c70578162472466bc4f951bfd7f53892fd8b6088",
+   "receptor": "TAcCxWNEwYASNdEb4Uu1uF2ApNxZ3vynb2",
+   "pagado": 95394.608613,
+   "comision": 7.187227,
+   "minutos": 2.9,
+   "nueva": false
+  },
+  {
+   "remitente": "TXxypJdewBP9BpUS49GtfQXZdJiEwkyDpB",
+   "deposito": "7e2baffab81bcce63eaed52e522faf37fbad4d562d26df89cb98046ef6aaa76b",
+   "canal": "TP3oCiJTT3nEbApCaJFuUqZ6iURP8q2bet",
+   "importe": 89415.3319,
+   "hora": 1793420214000,
+   "pago": "876c0d1feeec934d969af693bfb31e14ce38c52b2d0887c834804bf878ccf53d",
+   "receptor": "TDSW2TAL74T85bY6yYvQzvNDJEc5ynLtDn",
+   "pagado": 89408.144673,
+   "comision": 7.187227,
+   "minutos": 14.15,
+   "nueva": false
+  },
+  {
+   "remitente": "TNhpfKq83wufEKGjBhQFnT7jnxYmyBzH6F",
+   "deposito": "afae53ae32e30ae8e4e3c2e52ba9aeca0cb2003073ad236f33f32e0d8deb038c",
+   "canal": "TCRvphrFSLFKBFwXeeztMAFEKpCPdBJkZb",
+   "importe": 96119.591786,
+   "hora": 1793420484000,
+   "pago": "8a88e921e9e1e2f029f233f3eae87f6764e9ad1d9d8c67e61c196eeb7dad806f",
+   "receptor": "TJXUjPVCgfs6ryaEGb5RCQznUMiePxRZr9",
+   "pagado": 96112.404603,
+   "comision": 7.187183,
+   "minutos": 3.4,
+   "nueva": false
+  },
+  {
+   "remitente": "TYd2KEJnc1ChcneRXRhm6VFUBiK89ABx1f",
+   "deposito": "400ef75f94758b77db2dcbbc1c26a2631863900b6b2115a3ea423e9a7b267652",
+   "canal": "TH5DHHoTdLsQZPufXHwMnQVy8RfMbDsv8z",
+   "importe": 62424.4593,
+   "hora": 1793421264000,
+   "pago": "6c71a3adc37a2fd07879a0281d3433799caae279ee0dbd9486af0fdaf9873531",
+   "receptor": "TVVWTUSMHAViunjzYPFVKFi2FE3uH3rUVv",
+   "pagado": 62417.272015,
+   "comision": 7.187285,
+   "minutos": 2.4,
+   "nueva": false
+  },
+  {
+   "remitente": "TNhpfKq83wufEKGjBhQFnT7jnxYmyBzH6F",
+   "deposito": "25b85d54a4635e4ab263345055cfe1ed435f1b3df912633b0b3e3f859c85c362",
+   "canal": "TCDRofxkFtZR964diBdCBK4Fgfc7QqQB3h",
+   "importe": 71889.730297,
+   "hora": 1793421408000,
+   "pago": "b4f03594083a45be3b16342886c3dab2eb92b55bcaad1769953a3e8e3ba34281",
+   "receptor": "TEYJ9TCnWJ3BiAuxaNpfVzHYSuVr3PmNks",
+   "pagado": 71882.543012,
+   "comision": 7.187285,
+   "minutos": 3.5,
+   "nueva": false
+  },
+  {
+   "remitente": "TXxypJdewBP9BpUS49GtfQXZdJiEwkyDpB",
+   "deposito": "69f4a4785ea33ec5d8774703cfa5fcdfaafb5cbd6031637421948a98f5d706ca",
+   "canal": "TY6vAB6RRc51QhvCAVQi3ZNCnGDV5Nrff4",
+   "importe": 90389.5714,
+   "hora": 1793421453000,
+   "pago": "77dbb739f21bd68d95b8c498ad992b1b3afd614694300a4912630e65aabdcf9a",
+   "receptor": "TC1YuiygXYXVH8YnYqJFvRseBNxNGVh5qx",
+   "pagado": 90382.384121,
+   "comision": 7.187279,
+   "minutos": 6.4,
+   "nueva": false
+  },
+  {
+   "remitente": "TKXhVsurw9v2oAnB9e1Uouu2XW5Rs6XCt1",
+   "deposito": "3ef8a33586f8535bd0f87b2525b589975f315ce91690a9bc333fd92003cef7f8",
+   "canal": "TV6izGA1ZDckPkGigTxDJuVuNJ4LqVBFYm",
+   "importe": 101141.1466,
+   "hora": 1793421528000,
+   "pago": "5aeb1af51a77fec9ef0191ba8f996e0d10ee0f5ac375ea6c17416888461cf979",
+   "receptor": "TQZNT4UWZbprz9KXjB6YXdEMT86xZLc4UY",
+   "pagado": 101133.959737,
+   "comision": 7.186863,
+   "minutos": 3.85,
+   "nueva": false
+  },
+  {
+   "remitente": "TYd2KEJnc1ChcneRXRhm6VFUBiK89ABx1f",
+   "deposito": "388b87ecb7f8f214dfa643048a10e8134ea81d49023d1f20cc8cefa02a6e8d2d",
+   "canal": "TBQoMTdgsujd5kXWPcjMLaVEJ9pf8FqPBo",
+   "importe": 66311.4237,
+   "hora": 1793422146000,
+   "pago": "6b3b243d1861f94710405a3e2bf85787e4091c6190eea9f9ebda2d15463746eb",
+   "receptor": "TVVWTUSMHAViunjzYPFVKFi2FE3uH3rUVv",
+   "pagado": 66304.236641,
+   "comision": 7.187059,
+   "minutos": 1.8,
+   "nueva": false
+  },
+  {
+   "remitente": "TKXhVsurw9v2oAnB9e1Uouu2XW5Rs6XCt1",
+   "deposito": "b0dd86d2287acaa7bf5d27b5385a938516fa3929aef765aea40fe89a5ebafd19",
+   "canal": "TQHYZ5Ay1sWgP12s2VCHAmccENuL4n89oM",
+   "importe": 100065.2356,
+   "hora": 1793422164000,
+   "pago": "1107212edbc1a6d64441e63aba9b7cfc3625cdf17d03bd7e8480b1aea5c8f1a1",
+   "receptor": "TLCLoBayFDvSgB4DsCakq44MHkv1wJXUP6",
+   "pagado": 100058.048541,
+   "comision": 7.187059,
+   "minutos": 5.95,
+   "nueva": false
+  },
+  {
+   "remitente": "TNhpfKq83wufEKGjBhQFnT7jnxYmyBzH6F",
+   "deposito": "1040d827f68191d2cfb336354f1727b663d8c5ae00e9ad8a5dff9d371dc54689",
+   "canal": "TSSHqZ8ZRTdxbn5NepxYyDUnum9Zge6JQ6",
+   "importe": 95925.699063,
+   "hora": 1793422218000,
+   "pago": "c724182fd7909f4a326978b842cdf6d7e1005ccfa6d4e9688f17471c757f0fae",
+   "receptor": "TAVpZWkcamBjh3u9MFVPUSLh6v5Znhe3FJ",
+   "pagado": 95918.512004,
+   "comision": 7.187059,
+   "minutos": 2.85,
+   "nueva": false
+  },
+  {
+   "remitente": "TNhpfKq83wufEKGjBhQFnT7jnxYmyBzH6F",
+   "deposito": "8030947a8062e1da5efdf9f968e888939d3fedeb51226a84a6a43d9dc75e91f6",
+   "canal": "TED98H832eYBae945g716GHDvyb3NisabF",
+   "importe": 95855.463536,
+   "hora": 1793422695000,
+   "pago": "d14648944c3255e02c6a794317baa928c25730c5b27da5a6b0671e819a1eca65",
+   "receptor": "TTUfj5S1ryTtaNYRv1QWkJRC1E4tySrpHa",
+   "pagado": 95848.276894,
+   "comision": 7.186642,
+   "minutos": 20.6,
+   "nueva": false
+  },
+  {
+   "remitente": "TVAexGBBW7BvkEFYfBKyCieh2di9CYQUnT",
+   "deposito": "541c0e0d776059b676b70458d797ea24f2e39b7c08e6521d31468f628e75ee77",
+   "canal": "TJ7rUp6dsBS9BEa3kFvKCLqXg44rhE4nDn",
+   "importe": 98301.68519,
+   "hora": 1793423106000,
+   "pago": "9d878ef0ba71fa997347a7bfe408a4f37b5eb52d5e4ba7b39e2b077f6591d57c",
+   "receptor": "TFyR99YbiMwHibnwyvQ8Vg38oV4EgAwfEw",
+   "pagado": 98294.498989,
+   "comision": 7.186201,
+   "minutos": 3.4,
+   "nueva": false
+  },
+  {
+   "remitente": "TARpK998BFK2r8cQ4Fib1oXBgfLYt852Ls",
+   "deposito": "8821fa41644c1c58c4a837b30dea60787defd71a43c34549078d39483fe64f9f",
+   "canal": "TFzyoj5oVugPPSzmpwpRuFhin7tuUcA9TJ",
+   "importe": 108087.2157,
+   "hora": 1793423238000,
+   "pago": "eb0c6576c7447feffcb4f340b1f0bf3b29d033dc9f6731a6efb037b7dee8348f",
+   "receptor": "TBUXAzmvVFoRixCwJq8S9adzr7oZ4vwrEX",
+   "pagado": 108080.029028,
+   "comision": 7.186672,
+   "minutos": 6.1,
+   "nueva": false
+  },
+  {
+   "remitente": "TARpK998BFK2r8cQ4Fib1oXBgfLYt852Ls",
+   "deposito": "b163973a9e723407302ea9d2db54fc42f73608112817ceaef20f1d979d0b2be2",
+   "canal": "TYHPa1H8HLPPGdrGzdKDYF6y6fN9xv8GtM",
+   "importe": 103428.263508,
+   "hora": 1793423979000,
+   "pago": "3a6556e92732b905dbc293cff248bdebdcc070ffd3368a9100d9c8caebe35f6d",
+   "receptor": "TBCpcoK4QfNXq7qsKuGLAHMn8W3jdjWqxT",
+   "pagado": 103421.076691,
+   "comision": 7.186817,
+   "minutos": 9.15,
+   "nueva": false
+  },
+  {
+   "remitente": "T9ye8eBVjvQKW2AXT7R8SzM5f7uHp2SSK1",
+   "deposito": "70c628018f6315fcf9462ac09ed4ffd61253647df3d2d116800e3ebe2b182673",
+   "canal": "TTYBKQtfTmUyfYzkUzcHA53BNcnVM79NCx",
+   "importe": 99814.23054,
+   "hora": 1793424084000,
+   "pago": "7187be6593d7a76ae84db8acdab1d7735731282515407ff9a4b4c2a28f287f69",
+   "receptor": "TCpiYNRUJTThahmmnnAYoZCGk6fNWYfbHm",
+   "pagado": 99807.043723,
+   "comision": 7.186817,
+   "minutos": 3.05,
+   "nueva": false
+  },
+  {
+   "remitente": "TDbJnXtyP7ySd3ZKphKLpT7bhJS2q61aoP",
+   "deposito": "031145aa0c1761dbddcfa98fdd4aa37594ffae7987641d70bff4ff28dd6f02a6",
+   "canal": "TUt42mPYvpuFHE54dZZRTuHusncqXSxjz9",
+   "importe": 100040.457517,
+   "hora": 1793424267000,
+   "pago": "31e70aebb73a761e78e7125582811b25cb45ac6d156ad3b57b5a7ca59a4a025e",
+   "receptor": "TNbPMoZQQdSynD7sD7MjZQeiQqCRKc2iPA",
+   "pagado": 100033.2707,
+   "comision": 7.186817,
+   "minutos": 12.15,
+   "nueva": false
+  },
+  {
+   "remitente": "TSCm1XXHSz4c28aiWMr9y5fHViW1PSC5Em",
+   "deposito": "2af3a5307af247fa87712a3e1e0d889e1a23839a2529f345cde2dc2a7c31800e",
+   "canal": "TDJBSSVxAVFtgr7H15jyVuhg9dLzqsZqaw",
+   "importe": 100258.42932,
+   "hora": 1793425254000,
+   "pago": "1cb280798ba6dc4c11b869af8dcfab0171b9bf51b8e5cb5aeb66896e96881f5a",
+   "receptor": "TSU5gwvEyzrECkj3eTVu9n1KbYb7a9A7Dg",
+   "pagado": 100251.242965,
+   "comision": 7.186355,
+   "minutos": 4.45,
+   "nueva": false
+  },
+  {
+   "remitente": "TBGp6LnxvgP2Qw8kjxiLCedVtLf7yWAdou",
+   "deposito": "a4cd512affb38bca1264ce1a00011c065f2e61808436fa01629f60d266a71e88",
+   "canal": "TR8HrsxB4jF3XZXT8QC5z4KYhDChTkU3qw",
+   "importe": 107819.3558,
+   "hora": 1793425371000,
+   "pago": "ef6e6d9f1be538c64bae98a4e50db428090c104a521799e47d58dcec7d114fd3",
+   "receptor": "TZBRYmrh2eYSSMK4Ay3Zteb8idN6zL5fH2",
+   "pagado": 107812.169445,
+   "comision": 7.186355,
+   "minutos": 4.1,
+   "nueva": false
+  },
+  {
+   "remitente": "TBQf7GbB6LCpddh15yyfuPCyFupk15AsoG",
+   "deposito": "23bfd97781610cbccb473a8651924c2e0537075068137581d6ab77e3c239fedb",
+   "canal": "TUCeaLWUj5VtUU6DwkktviLB6bxpuhEjZe",
+   "importe": 104508.9582,
+   "hora": 1793425815000,
+   "pago": "01be039218792a60765534fc723087fdb10848fcf857af1fa52e0990c283ac25",
+   "receptor": "TP9CwUVJHTUKAvY78hDSFFqP74hs5XSoPK",
+   "pagado": 104501.770129,
+   "comision": 7.188071,
+   "minutos": 7.5,
+   "nueva": false
+  },
+  {
+   "remitente": "TBGp6LnxvgP2Qw8kjxiLCedVtLf7yWAdou",
+   "deposito": "792c3f0a1195ea32d4003e141d4d4f5c4c5d24e7c60c611ab2ebf4ac0e0ec432",
+   "canal": "THcFuMvPADijRL15GmMaw44hZrzQ9uSLtE",
+   "importe": 115261.8152,
+   "hora": 1793426103000,
+   "pago": "cf215f82ca1c79f734e667025bdcdd2c6c5386fba08b009e8d2e7a45ab0757a4",
+   "receptor": "TPvZUNADrq7bZM35EFFXNCzN6nnjY9HKGy",
+   "pagado": 115254.62775,
+   "comision": 7.18745,
+   "minutos": 7.55,
+   "nueva": false
+  },
+  {
+   "remitente": "TUVqz6RKWYbbQ266zMMP1EWmrUSXrnhsLG",
+   "deposito": "8ac64459eb9efa786fab3cb8b9347b197f1e11431675718d42f5d56f9b461ecd",
+   "canal": "TJ8KG9S3FTimmYVZuDzcVB24Rp8fmKN7Pa",
+   "importe": 101117.46242,
+   "hora": 1793426385000,
+   "pago": "d0604d718273e4dcaddd9f1e43eae202b08a11a9b7f73272db323505bc547dc8",
+   "receptor": "TGLZDAa1obExoYsH7tAr4heMZnCp2RKtf8",
+   "pagado": 101110.275035,
+   "comision": 7.187385,
+   "minutos": 3.4,
+   "nueva": false
+  },
+  {
+   "remitente": "TTRriq8TM7ZD54z6dszYpxoM5Aay2qmPN4",
+   "deposito": "1920d9ac213b681b5fa1b8007e60d0db6486876b9a53913350bc1945f3851da1",
+   "canal": "TRiEmBiaQAvqyxjwquptiz6WD7L34oXcbR",
+   "importe": 115742.4976,
+   "hora": 1793427396000,
+   "pago": "7a380013420481773fbbf0a36346940b6e9c574f7f85d5f9d287948289773cc2",
+   "receptor": "TFNgYtSFv1PPiGnXmF3dHTdQ8ZGXm42ggt",
+   "pagado": 115735.310547,
+   "comision": 7.187053,
+   "minutos": 17.5,
+   "nueva": false
+  },
+  {
+   "remitente": "TXReLPNnx5HzpjbSp3Sj1i8p9cMvUonnmC",
+   "deposito": "3991105ba891a1a934f7e755df366e9debc6507426f20c76a65a7a20dd957f26",
+   "canal": "TFi7ZtM9wRhu91xF6vYEdk2ko7XAXcQRzU",
+   "importe": 95338.2519,
+   "hora": 1793427690000,
+   "pago": "9f804211a4c3f7ccd8232adf85d8a1f2f0e315622dfc16fd158b200226fb34a5",
+   "receptor": "TXReLPNnx5HzpjbSp3Sj1i8p9cMvUonnmC",
+   "pagado": 95331.064498,
+   "comision": 7.187402,
+   "minutos": 6.05,
+   "nueva": false
+  },
+  {
+   "remitente": "TP1xBkaW6MZoroRkTvb7znZ5r7ewcrRidm",
+   "deposito": "5948bcf1dfb5563931ff293ef62cb975dee10512bc15183bc12bbba36079ab8b",
+   "canal": "TTwZXJm4f8d7UMXuhT7i2zZcEMEFr2a7Xo",
+   "importe": 107525.40505,
+   "hora": 1793428041000,
+   "pago": "aaf75923f12fd58b98f7fe0d42f1687d50b01f84bb089af37729dd27993c027c",
+   "receptor": "THVV48XiNden66ZBiU6twUY5DDDVcqKPui",
+   "pagado": 107518.217511,
+   "comision": 7.187539,
+   "minutos": 7.5,
+   "nueva": false
+  },
+  {
+   "remitente": "TXReLPNnx5HzpjbSp3Sj1i8p9cMvUonnmC",
+   "deposito": "a1ec9c7de1e955233deb7d4ff4660bb0b180d10f8ecdd757d42617e2a02dbd3a",
+   "canal": "TKKukfShv9H9jnuoH19K2rWZq7x7SwGv7M",
+   "importe": 95331.064498,
+   "hora": 1793428152000,
+   "pago": "b67b5df452e65e389f206337209e3aea01acdf6552cbc6a55aef2dfa15ecc4f5",
+   "receptor": "TNaWcAjWKpseWTRHn3zyKcArSjvoZary4U",
+   "pagado": 95323.876959,
+   "comision": 7.187539,
+   "minutos": 23.6,
+   "nueva": false
+  },
+  {
+   "remitente": "TDepKHtE76QXvn9cErK3m5arWQ87hPVU8G",
+   "deposito": "41d7d9710636edb226808c266b3207b644e584287fe43caf76215db8eab8d367",
+   "canal": "TWzmeu3Pd31UfySjA2YtCBdzBHrc5KCXFS",
+   "importe": 99561.39048,
+   "hora": 1793428617000,
+   "pago": "f053acbbab260bae46a258f8f38ea07d3bb418fe955483c9d84159c37f2143d2",
+   "receptor": "TZ6wbv62Sc4e9gChWxwqPwdQNLAvDSEoMd",
+   "pagado": 99554.202689,
+   "comision": 7.187791,
+   "minutos": 2.9,
+   "nueva": false
+  },
+  {
+   "remitente": "TP1xBkaW6MZoroRkTvb7znZ5r7ewcrRidm",
+   "deposito": "533e7de502a9a425a7b79456fa11d3c51c32ddf3690ba286ded364c143a55a70",
+   "canal": "TWovqEnRyXSPnTGEcSmibrstRvtL1qeXqZ",
+   "importe": 112887.149798,
+   "hora": 1793429016000,
+   "pago": "5698a3ed60279758ee3a05ffb1d536e715cf0bd6eea9794bbf10900f601883ec",
+   "receptor": "TFf4eXVn62k8wDyKf4kcHEzTJE8GXF74ZZ",
+   "pagado": 112879.961974,
+   "comision": 7.187824,
+   "minutos": 2.85,
+   "nueva": false
+  },
+  {
+   "remitente": "TEQbtQGnZw2dE6EDVqvPWo9kwxZJYwYjKh",
+   "deposito": "58db3c42f38491abc80c6db241966ef19f4362789878379eec041e783b69e965",
+   "canal": "TQCeWJk8gjbiPeKUB6UnAGXWDWbszyPFpe",
+   "importe": 65654.372681,
+   "hora": 1793429508000,
+   "pago": "184ef85b59a0b7e654c91593401fd0610270714b82d3ee61e92b3a2b4546e4c7",
+   "receptor": "TEQbtQGnZw2dE6EDVqvPWo9kwxZJYwYjKh",
+   "pagado": 65647.18532,
+   "comision": 7.187361,
+   "minutos": 22.9,
+   "nueva": false
+  },
+  {
+   "remitente": "TCs9nebd7DNyvpZHA45LyT8DVU3JxpnWkc",
+   "deposito": "80cd1bdab3fbc813ad73a5593f3aa995d0358123a440c569e8235aa700981099",
+   "canal": "TJHetvgzLkqAmPSi34V1QbifPxfr4P1M4P",
+   "importe": 97647.7785,
+   "hora": 1793429625000,
+   "pago": "88db30e05a2d2bd5a2fb777a9ff97d5ec8bbd41e91d11fb64ea8b32a15f48163",
+   "receptor": "TGiJ2tD4D6YbgqzbvpxdQYA8BQiED2MkP2",
+   "pagado": 97640.590862,
+   "comision": 7.187638,
+   "minutos": 3.55,
+   "nueva": false
+  },
+  {
+   "remitente": "TB2V8urvXuZYAEHAXHGDhTFUh9y6WBiMFy",
+   "deposito": "8893c1a6ff66a4bad4a4fbe9a750fd9fa25b11866f8571982a0712c20c99f91f",
+   "canal": "TWDAB1azrW1npPVgVs8JTLSzQwHWHW34LS",
+   "importe": 99321.96519,
+   "hora": 1793431518000,
+   "pago": "c1ba9e13a53569743bec79dfd5b82da66984faa64a301c74753f1e3d72e7965d",
+   "receptor": "TW7hC4Y89n4W7g3XoBQ5wUeXQ8dG3ZavZF",
+   "pagado": 99314.777402,
+   "comision": 7.187788,
+   "minutos": 7.3,
+   "nueva": false
+  },
+  {
+   "remitente": "TBhrrFringyjrB4r7iaGycFNnurreq9XP2",
+   "deposito": "ce5306d55cbdff125ff8006c82b1703eb0a152e3cb8328cf0f318be8c4b0f09d",
+   "canal": "TMQbd8z1EPNr6e7u6ayjtA8KebzGiexWAH",
+   "importe": 115775.75451,
+   "hora": 1793432442000,
+   "pago": "9497137d9afcc68c0051c7dc9b541df499d004ca0b39d930216a20508c2f9a81",
+   "receptor": "TSmaU99ZtprH5Vt5R2nfPvmqXs5sEE6gu2",
+   "pagado": 115768.566713,
+   "comision": 7.187797,
+   "minutos": 4.05,
+   "nueva": false
+  },
+  {
+   "remitente": "TDfCzwuQ2ChVr4zmUmTCFVH3PixcJGxPJA",
+   "deposito": "88a06c120b0ec4d49882071de155509f309f2af47675e74aa046728ac14fc849",
+   "canal": "TJZNzzP8FvuezyJjjFpNgYM3ebe5zV5TGL",
+   "importe": 103638.2269,
+   "hora": 1793433615000,
+   "pago": "9f78f7a727593f454128487b437ee4bfc0d4d83c8572e9d0c2ea78b3382a4cda",
+   "receptor": "TX2NipKNMbn341CZxKp1A6naMbo5Th4Ay3",
+   "pagado": 103631.039103,
+   "comision": 7.187797,
+   "minutos": 79.25,
+   "nueva": false
+  },
+  {
+   "remitente": "TSmaU99ZtprH5Vt5R2nfPvmqXs5sEE6gu2",
+   "deposito": "fa831a58bbfcff57a6d5c4d09d70f4f5bd5bb151cf36ec5cca87f299bc18d7f2",
+   "canal": "TVkSQWL8YqVvVLVznHhQtfY4Lspfs1Yuof",
+   "importe": 115760.8782,
+   "hora": 1793433681000,
+   "pago": "692d717afb8433cbe7014d63fb94a00c9cb6472f92d26ec6f42166850bab0418",
+   "receptor": "TSmaU99ZtprH5Vt5R2nfPvmqXs5sEE6gu2",
+   "pagado": 115753.69058,
+   "comision": 7.18762,
+   "minutos": 30.9,
+   "nueva": false
+  },
+  {
+   "remitente": "TH2uUndaGQK8B5kf3uNLSWVCa6bPp5omEF",
+   "deposito": "68120566a3a1e799deff01858b3ff230c415479f53b9d09fcc55a19fbc31634d",
+   "canal": "TFc92zoFoC49WXFpSihRafWk8gAEWrUwwa",
+   "importe": 105754.68226,
+   "hora": 1793434122000,
+   "pago": "6beff3573156857983061ce0879857b1950324531e34b780a61397db3f694812",
+   "receptor": "TDSdpyYWxQFVcKD3cDav4LDjJzqBMTNUq2",
+   "pagado": 105747.495891,
+   "comision": 7.186369,
+   "minutos": 22.6,
+   "nueva": false
+  },
+  {
+   "remitente": "TSmaU99ZtprH5Vt5R2nfPvmqXs5sEE6gu2",
+   "deposito": "e33638617f09e8dc18444cd3d82195ce0af429917c272f53b2696aedd941cc61",
+   "canal": "TD5FFCqNv59m3xq9DPCFGbx5NXiZCF3Fuc",
+   "importe": 115753.690639,
+   "hora": 1793435862000,
+   "pago": "1fbb09458a171fc323b6bbe7795a746bdff5fe9d5948717fe023c03979951825",
+   "receptor": "TWoDWB7PjgWgBZeE2Qr29sNmXoN8Zi91Qd",
+   "pagado": 115746.503453,
+   "comision": 7.187186,
+   "minutos": 6.3,
+   "nueva": false
+  },
+  {
+   "remitente": "TRtj98GfUwPTLB2dyyDUAm54em8dUCcg5A",
+   "deposito": "d624648c329896a284899489dfecc96ad08f1ba51879bdfd9b278ee3c195da07",
+   "canal": "TUErRs2zzz1EYaye7jaXwNRvGCfa5zj1q6",
+   "importe": 99637.94549,
+   "hora": 1793436468000,
+   "pago": "6b83c3ab6159232ef713df51332b27d96527a5516f8cb3483ef5c26b3f213040",
+   "receptor": "TGyrXsgZbrUXr2rABN82q4wfVShViFB1Cm",
+   "pagado": 99630.758235,
+   "comision": 7.187255,
+   "minutos": 3.3,
+   "nueva": false
+  },
+  {
+   "remitente": "TGm7n5SCBMugMmJP7fVobodue1nGr8yxcx",
+   "deposito": "5aafaacf3c3c9fd284a40cd46139419924197f5bcb93a91ea97155fa02500d03",
+   "canal": "TEHhLbALbTVdyWQzFGwu1wTTe94NWd8PLc",
+   "importe": 30000,
+   "hora": 1793436834000,
+   "pago": "a375c34c20e6114160dbf633c08940ec7ee50ae905051fef19500365d39bf00c",
+   "receptor": "TSkpvxKHteuhTbsEgfzsCbRtC68Furr4R9",
+   "pagado": 29992.812745,
+   "comision": 7.187255,
+   "minutos": 54.1,
+   "nueva": false
+  },
+  {
+   "remitente": "TBhrrFringyjrB4r7iaGycFNnurreq9XP2",
+   "deposito": "fed2c5a77d4ca4876484405d703e81bc974f47ac81af9460a0661ca625404cf5",
+   "canal": "TRBY7z2eYDfXDBHDYL25RL9cdr1RyXUAo8",
+   "importe": 56709,
+   "hora": 1793437146000,
+   "pago": "74d8b9af289c0813f85da3f5b3d0b18a4916b6693de1be87438852e722c0505a",
+   "receptor": "THjgeZ3QZyBE8aRwoz7NPQKZYoGhpyHt4U",
+   "pagado": 56701.812745,
+   "comision": 7.187255,
+   "minutos": 2.35,
+   "nueva": false
+  },
+  {
+   "remitente": "THiQk8UM5zjq8eRLGzMjJzed91kCHFR7Br",
+   "deposito": "3e70d7c8e89dc9bbde9f4f01a380a136bfbeee2e924de68f286a311af2018531",
+   "canal": "TTBjcegjKe2XLwmX1KdMbeSbjLrJuQS7Jy",
+   "importe": 100022.37502,
+   "hora": 1793437620000,
+   "pago": "db8496ac0f013ff64ce4d32b4d9b7d3a83017e5506cb44e2a8adf50e8a0c65b7",
+   "receptor": "TWwvVjSGE7Pwh6WBZbD9qemk5bvgSbq8EF",
+   "pagado": 100015.187818,
+   "comision": 7.187202,
+   "minutos": 20.4,
+   "nueva": false
+  },
+  {
+   "remitente": "TBhrrFringyjrB4r7iaGycFNnurreq9XP2",
+   "deposito": "63ee5c28c872cf84ab3e9b5787018f613e2d27d11f8855544a69173868cb00a2",
+   "canal": "TEVVgrsTJRwZYmwZi8fjwJddFy8kPVqDiZ",
+   "importe": 58542.693697,
+   "hora": 1793437758000,
+   "pago": "6780a35ad14c28ac055c52349aaacc3f3c676360060510af22380ae3653ff0c6",
+   "receptor": "TNq989q63Moq2rSYBGfAzXLhKhAU1mwnAj",
+   "pagado": 58535.506495,
+   "comision": 7.187202,
+   "minutos": 39.8,
+   "nueva": false
+  }
+ ],
+ "sinParejaLista": [
+  {
+   "remitente": "TYrbuz533nmpJCdrAqYVMQG9NaoNZhPjvt",
+   "deposito": "5426053a16a7788be11ed6486a6c32fe8c0a7677317bd5d29f146e4ae276c212",
+   "canal": "TNGKDrPxfBL21yFLJTJ7m46PKULVRbZhds",
+   "importe": 77000,
+   "hora": 1793403195000
+  },
+  {
+   "remitente": "TYrbuz533nmpJCdrAqYVMQG9NaoNZhPjvt",
+   "deposito": "a10b9f0572896c210e36db9a31a6535f1cc1107ce3ba6067c905e4ff66a859c3",
+   "canal": "TPSVz9FAEn3wEungYvRH1mbRyZKLxCHAqx",
+   "importe": 82185.587093,
+   "hora": 1793403846000
+  },
+  {
+   "remitente": "TAXcZhLD3u32Lq9A2twUu2UbgbSf5hvDzE",
+   "deposito": "59b4c42bca740822f9bdd8165c6b2328c86c0a0cb067f736b3e6ce0a21cdba62",
+   "canal": "TRH8yXru7LfecwoudTQ2QPgq1u1mL5S28p",
+   "importe": 90641.339,
+   "hora": 1793417718000
+  },
+  {
+   "remitente": "TAXcZhLD3u32Lq9A2twUu2UbgbSf5hvDzE",
+   "deposito": "c74543679580f969abf9f26667112fe96357e3588a1659fd275c5814819f3460",
+   "canal": "TKRHsGNXzgJFJkQ7rtJBcqEEPuSZFfsq8j",
+   "importe": 90498.227,
+   "hora": 1793418402000
+  },
+  {
+   "remitente": "TTc8jrr1ZesYtLMYyWAZCkrDDgYMVRsHvp",
+   "deposito": "29a2f47eff305d1a65746faf04e79f0d6a5128c347aeb91d7f04e75ac1526ce2",
+   "canal": "TRZFe9JqeiYLaMLvttiZrEBD9e6cXvkiP6",
+   "importe": 82718.910836,
+   "hora": 1793418432000
+  },
+  {
+   "remitente": "TNg7nLPUuDfQdzKwMiKhSqaxn6GcaPpcxt",
+   "deposito": "07503beed93737110d1e831b098a55b1687947df7e7e5fa08dfbb7a1a46d6c43",
+   "canal": "TWWXdoGHXdokUBAFDQRNJf3QowtKFjRXZE",
+   "importe": 96340.354797,
+   "hora": 1793418663000
+  },
+  {
+   "remitente": "TTc8jrr1ZesYtLMYyWAZCkrDDgYMVRsHvp",
+   "deposito": "c12d18e7e1643d6661c994e954d8c90521d3994d61920d6dbca559e7ed5d034d",
+   "canal": "TQPX23ueodnMNKv5j2HbFCifDrhXVV4abA",
+   "importe": 87619.836732,
+   "hora": 1793418969000
+  },
+  {
+   "remitente": "TNhpfKq83wufEKGjBhQFnT7jnxYmyBzH6F",
+   "deposito": "720323b9e06c51d9d987380a367af81935f9023255ef0f7170b520808d95bb52",
+   "canal": "TEBMy73cmGUYBf9TRpECmBN1aHhAx4MNs1",
+   "importe": 96296.907982,
+   "hora": 1793419056000
+  },
+  {
+   "remitente": "TJXUjPVCgfs6ryaEGb5RCQznUMiePxRZr9",
+   "deposito": "311d656ee102db787fd014c21f8906e10b1bbd9b2a6befdfff3d7733a67cd102",
+   "canal": "TT6dN76fKjcVQu6uDedk4fxB8QhDJUSpp8",
+   "importe": 96112.404603,
+   "hora": 1793420811000
+  },
+  {
+   "remitente": "TDbJnXtyP7ySd3ZKphKLpT7bhJS2q61aoP",
+   "deposito": "3cb1f41e756baa2acd7f6c937e3b5220b236f3d63579bcdb90fcd34acb79f562",
+   "canal": "THpLMBsGRK62TEDzr7E3mNdqWd97ZCuFW5",
+   "importe": 99983.926128,
+   "hora": 1793422707000
+  },
+  {
+   "remitente": "TFyR99YbiMwHibnwyvQ8Vg38oV4EgAwfEw",
+   "deposito": "0a46da091c888372f06e17a7a43a4b1e6a7e3136d866fed241eeac5409c7106d",
+   "canal": "TCrAeio43fgfWpX47tx21q4Gw9JkfLLivn",
+   "importe": 98294.49898,
+   "hora": 1793423397000
+  },
+  {
+   "remitente": "TBUXAzmvVFoRixCwJq8S9adzr7oZ4vwrEX",
+   "deposito": "ab6f2c918c6ecb6052b980d6c7b71fe0ba5cacfbb5b6a504bfce5e9a400a4074",
+   "canal": "TPiRqLXtFpbMh2dvKb1hs7dE6DxtegSFYV",
+   "importe": 108080.029028,
+   "hora": 1793423700000
+  },
+  {
+   "remitente": "TA1CCCXhYtAb2x7ghPCtxw9GfQu2H3GZYU",
+   "deposito": "0eae9cd741721b2359cbd6ef3dce187fa7d466213d3a681dab96d1984da9b9c2",
+   "canal": "TR9jinLhJdExdLzYKhpXi9yphQdM4PcN4n",
+   "importe": 99975.363149,
+   "hora": 1793424033000
+  },
+  {
+   "remitente": "TTUfj5S1ryTtaNYRv1QWkJRC1E4tySrpHa",
+   "deposito": "f92809c3487593e15841aebc60fc567c72a264310f301a142e29f527f2eb5744",
+   "canal": "TNKPhS6UUj8NGmt1vNgAziUZAVpG23Hbit",
+   "importe": 95848.276894,
+   "hora": 1793424039000
+  },
+  {
+   "remitente": "TXReLPNnx5HzpjbSp3Sj1i8p9cMvUonnmC",
+   "deposito": "7afcd0663de140b5c91f63c812935f38cb64126bade5f37f1be722469ad87dc2",
+   "canal": "TRSzNSejVoxt4UEGqV7g5XzZfBPhvSkMsJ",
+   "importe": 95474.404682,
+   "hora": 1793426238000
+  },
+  {
+   "remitente": "TP9CwUVJHTUKAvY78hDSFFqP74hs5XSoPK",
+   "deposito": "d4668e49709c53d644c6f187b48ef66e3293ef89884fdb4457b35a804080ace1",
+   "canal": "TBjdybw2ncfyUrNDB5KgVp3nZ6uY2NDmt4",
+   "importe": 104501.7701,
+   "hora": 1793426373000
+  },
+  {
+   "remitente": "TBQf7GbB6LCpddh15yyfuPCyFupk15AsoG",
+   "deposito": "0c908149349a84e0aaee222a939d76f4a9ca59b25b9f26c749cee6199524b5f0",
+   "canal": "TJf6pyRRQrZ8benGSqT7KYvpqLFE1NfK2h",
+   "importe": 105501.304703,
+   "hora": 1793426544000
+  },
+  {
+   "remitente": "TKahDGmNkSYywUPqDvaoo7RVRCujWmDmqa",
+   "deposito": "70b2b92a5b3c63ba89816bb608f6c7975e7a24024e6cf2f1f80b3982b47f7d24",
+   "canal": "TRSn7oQpvphWzMhzsFX8Uv1aMQVd5yGUhk",
+   "importe": 100407.1714,
+   "hora": 1793427609000
+  },
+  {
+   "remitente": "THVV48XiNden66ZBiU6twUY5DDDVcqKPui",
+   "deposito": "61a351e1bd00e3c421c48bc8d23b3001818cfcb91493effbc7fc8bbd163400e3",
+   "canal": "TWJH4Edw2CAS924Y2mNJTfuNERyH4bL2W6",
+   "importe": 107518.217511,
+   "hora": 1793429148000
+  },
+  {
+   "remitente": "TSmaU99ZtprH5Vt5R2nfPvmqXs5sEE6gu2",
+   "deposito": "44295f54c853c153ee43aa251da9783aa56100a3bb2c700ca87181dbca402cea",
+   "canal": "TXgBKBekc4FdyAoi86qH2DrwTH8VMdsJox",
+   "importe": 115768.56671,
+   "hora": 1793432871000
+  },
+  {
+   "remitente": "TDSdpyYWxQFVcKD3cDav4LDjJzqBMTNUq2",
+   "deposito": "70a4be0913ab59f509e5d57b32add140e7a1ec716ec92b8336ce13666d48a931",
+   "canal": "TAZY5jz7fjH1hq6Pyoo5sWX7jtvLJwUfz4",
+   "importe": 105747.49589,
+   "hora": 1793435835000
+  },
+  {
+   "remitente": "THjgeZ3QZyBE8aRwoz7NPQKZYoGhpyHt4U",
+   "deposito": "410713a99bbd49ee12a62b47d59d3c8eda89314ea2b5507be955e45469a4aaf0",
+   "canal": "TWbRrob4GPGKiKdrbpqeyWBcoKpPozuz1j",
+   "importe": 56701.812745,
+   "hora": 1793437410000
+  },
+  {
+   "remitente": "TWwvVjSGE7Pwh6WBZbD9qemk5bvgSbq8EF",
+   "deposito": "beeaf4bdac1a9a5f02e49735c8be9f3a6dad937bc694329f99efc91b5f3d6611",
+   "canal": "TSHvScKkQY2yskv18gdAkAtgV9Le9oxjRn",
+   "importe": 50000,
+   "hora": 1793440422000
+  },
+  {
+   "remitente": "TF1Bt9zZVwALAYQGdX5N5P3ZPnAcQGUbxZ",
+   "deposito": "38fcadaf2a2f44aeab49db136dc51deebc9c968c3bbd5214f148af79186f07c1",
+   "canal": "TAGMSnRr9Si2fDTfczyGNmtEgXJ3NynBfD",
+   "importe": 56147.26591,
+   "hora": 1793443356000
+  },
+  {
+   "remitente": "TX5w9m25ENdyEQWhHziwNNGE6n5pEbEEjn",
+   "deposito": "5dab682aa69eefd0c01ee6c9b1374aca720b20f6e837ad99d4b6bd05b03c9589",
+   "canal": "TGzcHHkuiAsrDtFGX1k7uKCqJesc2tRz3z",
+   "importe": 49863.0008,
+   "hora": 1793444148000
+  },
+  {
+   "remitente": "TWPv5LkZQYjmnuUMyWezy9pzHTZKRxQTLR",
+   "deposito": "32f01f32ff68e3949a970ca9af0d99b68df734cc71577cfa6c1dc4968681ae9d",
+   "canal": "TEgR2V6ZkuR2WpSaYTcy7mXy9XHJ1eJrY2",
+   "importe": 47456.976679,
+   "hora": 1793444250000
+  },
+  {
+   "remitente": "TUwtVvVeX77V86iVL4XuomgSTo2sGv48Li",
+   "deposito": "2ac7d57939e020fd743ca67a4360a95d86c6cd02461375c981eb4e4f34cb1bbf",
+   "canal": "TVERnzv1a5QoFVYNnaTyZJXHDagbBpUWdb",
+   "importe": 10000,
+   "hora": 1793453337000
+  },
+  {
+   "remitente": "TUwtVvVeX77V86iVL4XuomgSTo2sGv48Li",
+   "deposito": "e9ece5e6ec878f9d7935493dcc2e4ad5805e13d6d6072633457af53ad1a1b686",
+   "canal": "TTvQSY6DVWycbuAuh8zr4rNgSG2mUeJqES",
+   "importe": 79528,
+   "hora": 1793453619000
+  },
+  {
+   "remitente": "TEgB1iyS9xCcaqMPW3SfkWjFZyQ6Y9qU2Y",
+   "deposito": "3f7519e8379bc51dd32072a1bd4adcfc4910d2f87247ad78300770402c907b9b",
+   "canal": "THtbv1bKXVwf6P64eaGz7EkFBUFrkKhyoz",
+   "importe": 44515,
+   "hora": 1793454474000
+  },
+  {
+   "remitente": "TEzc3uDReRLuSSpkzvpLburmcjKa6W52bt",
+   "deposito": "54e15fca173a54a380a04651b4b5086962fb551715e22dde9cb427b1635f57c8",
+   "canal": "TV9zaFVGLbTgNR1jGA69R2vMuyAHahz6z9",
+   "importe": 143117,
+   "hora": 1793455038000
+  },
+  {
+   "remitente": "TAPRLGFuxd33qPG2by3ygQC59k18tRtwHn",
+   "deposito": "33081de9311641917581859c0f04d8f0e9c86dbfca122c8735fbb919731bf9af",
+   "canal": "TXxQkXFRKUXjmAYGY2wXJ1vMAcB5bMPESh",
+   "importe": 4426,
+   "hora": 1793457117000
+  },
+  {
+   "remitente": "TKTKzuubE7JeYK627BbhjshvfTsmwkwXhF",
+   "deposito": "c42833d3a5648266cca42bf72085197f33e0845a0e4cc761044e858c9eaaf8d8",
+   "canal": "TPtuxfs6JhpV8jqRxW6nzq6AWoy9RmcCzU",
+   "importe": 150000,
+   "hora": 1793458761000
+  },
+  {
+   "remitente": "TXybC9STb5VFHW1wa8Jwcc6CvNrnLVyzGb",
+   "deposito": "0bbec0e376591fdd20e488396420ce34fc314296a8ce0fc72e0b24d44afb93cb",
+   "canal": "TFvHbWCmtEJukdLNkKCtazWFHHH4BFDYjJ",
+   "importe": 160000,
+   "hora": 1793459496000
+  },
+  {
+   "remitente": "TB8H9pPEcxU7eJpFb9eFoYL8BY2yw9s6oG",
+   "deposito": "e6f186c44c1421612a25b7d227343a2c519ad10cd33ffcf4379bd455c1ccae3f",
+   "canal": "TRn5HpWrzzecir5XJLn9rTtFFGcEDit5Vt",
+   "importe": 180000,
+   "hora": 1793460057000
+  },
+  {
+   "remitente": "TWy8z98ugt1D27QT45EQ9VLUyFgDGFH25g",
+   "deposito": "2a2234f655d797d7888b80a87990b6306ec6ecc8cc15da7764215ebb6997088d",
+   "canal": "TA7kGN1cqWz9UvNvpKDqTVXMp9CdjnRX5T",
+   "importe": 150896,
+   "hora": 1793460072000
+  },
+  {
+   "remitente": "TUeTT7E8wMp8qWpVNJojD7YCAyTrV4A8Zi",
+   "deposito": "41941df8b3e712e9ae2d087fe2e8c1437a455a3cdf01f4e27b334ec48be1f519",
+   "canal": "TS2HzxzYLgGCF9VrE9D6grRxuzcoMTfP3X",
+   "importe": 151707,
+   "hora": 1793461212000
+  },
+  {
+   "remitente": "TFkTU5cT2piVs881QQTcTYiBApqXGCmgqK",
+   "deposito": "bfdd6cff62eedb918f8897317f03218caa3f4182a6a8b0e5c37a5a49df4eaa0a",
+   "canal": "TSdinwSUYSXie3nfd7UUrCr8425jxec8Ct",
+   "importe": 102814,
+   "hora": 1793462535000
+  },
+  {
+   "remitente": "TR4Z8Wea1yzAij1295468kwYFP7hS1tNP1",
+   "deposito": "4c3e141481e900232d6a835be25794e243cd69acbe7719c3fe5bb90b5abf70a6",
+   "canal": "TTsa3ZziPKYejPfdPqWqFd4ph5R9BLmUDU",
+   "importe": 180000,
+   "hora": 1793466468000
+  },
+  {
+   "remitente": "TW3zHtorga15fjMYv9PGR6T9YyKVZv5DS5",
+   "deposito": "e50a57988db2b1c6fef67859713777968a10fe79774a8465edb815b356c83c46",
+   "canal": "TP661fq94pq8g87rrxUAGD7mHbhQHUmZfs",
+   "importe": 125321,
+   "hora": 1793479770000
+  },
+  {
+   "remitente": "TShNDbgnX3B2u6iLtQaPKxLznRCRBtcuRZ",
+   "deposito": "e4429feafa2ad0cc637f66f6482080ce360cddb09c51f3abc93fedba348b60b0",
+   "canal": "TSqNBF3ygyNSSmtCBgEJLaMhGeqpyBZ6Wp",
+   "importe": 79081,
+   "hora": 1793481102000
+  },
+  {
+   "remitente": "TJskVGJjJVfWGEZ9wtXYRNkuujgwSFg7DE",
+   "deposito": "26fc1de67e25b1569d2c95cf927c2f6f17ce13881049b073f9352a934350b24e",
+   "canal": "TExp8HjpdLcgX2bzBpU1YqPnudpgPJ6FJz",
+   "importe": 245320,
+   "hora": 1793481120000
+  },
+  {
+   "remitente": "TEJDRkp5oU4wse1FwFhEPQHZzSCPeAndBZ",
+   "deposito": "ab511e02861c9487296dc04d98fd4205b7c211dcb5e32da7d94157955d6069a0",
+   "canal": "TH8hnsS3AkuXAbdUN9RW1v5D3SofWmidhW",
+   "importe": 140000,
+   "hora": 1793483304000
+  },
+  {
+   "remitente": "TEJDRkp5oU4wse1FwFhEPQHZzSCPeAndBZ",
+   "deposito": "2873f04811090a24d7aa3d6192c559df5c63c46f0a8c0bac662598d962889147",
+   "canal": "TEdgurJ2HSUs3b19pmHjoGBDchNuPgWNbw",
+   "importe": 151183,
+   "hora": 1793483775000
+  },
+  {
+   "remitente": "TXhmoSbD7cHPS2vohryD7tXZnCq7q57XCJ",
+   "deposito": "a7d970b19289ab098cbf0e43086f0852de8dbada529cd9d3a460b1416e6fc92d",
+   "canal": "TDZ3v7ZBFrcB8yCxrBiUkN4V54oGURFFjj",
+   "importe": 84312,
+   "hora": 1793488008000
+  },
+  {
+   "remitente": "TSxzPDyySBihiXAegPnkGwMhak2SqJAd5t",
+   "deposito": "3375e2cb157d8154e847cbbd44bcdb7051838e564f5b4e010453dc8b49116b0f",
+   "canal": "TSXm7tBmi3JsoB54sTr8FdTtCMSDJT2c9c",
+   "importe": 85252,
+   "hora": 1793489085000
+  },
+  {
+   "remitente": "TSxzPDyySBihiXAegPnkGwMhak2SqJAd5t",
+   "deposito": "01a55da5c828212498886373ef1280a2d36b54a605f6257ad65b5d2a74628a2f",
+   "canal": "TMEcqtSQhQYEXoNswhw99kdENeGxvMuNm3",
+   "importe": 70728,
+   "hora": 1793489364000
+  },
+  {
+   "remitente": "TSWqhzR3dWAmYHzWEmQCNmkVRLAawpJDUP",
+   "deposito": "76a8b27f8920d585054d1a6ddacd761de78282cbe8f86349c46d1c70817bb8c6",
+   "canal": "TWZWcaUmzPKwaUCErn2kqEf1N5Ufsecre2",
+   "importe": 90000,
+   "hora": 1793489418000
+  },
+  {
+   "remitente": "TSEcYhXqrRvGs7KfaK1Jm36FZCm3waS7Tk",
+   "deposito": "3fb6ee159dfbc0bc60c907b2f1359fdc6760575bc23e11293bcc64e0ff6a8862",
+   "canal": "TWUQVg5vp5BQtrDpzSf3YYKZGJd6oBqYkj",
+   "importe": 85256,
+   "hora": 1793489493000
+  },
+  {
+   "remitente": "TSWqhzR3dWAmYHzWEmQCNmkVRLAawpJDUP",
+   "deposito": "291e194bd4f2e3225b997708296134f47f6d8f5426916a7b7af02f00c1151d6f",
+   "canal": "TE4Dv7YtHsxjH3wKAFng64QF4goiXBfjxs",
+   "importe": 80000,
+   "hora": 1793489598000
+  },
+  {
+   "remitente": "TSEcYhXqrRvGs7KfaK1Jm36FZCm3waS7Tk",
+   "deposito": "1b880fb8eecc65f9446d444a7c62db6e4d13a83a76d60610d026c0926434612b",
+   "canal": "THrdavoQ4mpRRWwfoqMkneoct9p2wTy391",
+   "importe": 89251,
+   "hora": 1793489673000
+  },
+  {
+   "remitente": "TVsuYds2wdj4XmvvAHCjaLAHR6fY5qRtGD",
+   "deposito": "bc249be8a8cd74fc3ef40565e91f3a12f61d7698e8d317f20d5896474a59fc6b",
+   "canal": "TUJXJ6ScKtio7b3eezdAE3QNYHbrLfY4L9",
+   "importe": 81123,
+   "hora": 1793490384000
+  },
+  {
+   "remitente": "TRgCvd5k6h176b2ibcbXwnk76KBLZrpvPv",
+   "deposito": "22718fd755b1cba29736515a7b7cdf4fe978bd03b07fa76d838ed7d68b23e015",
+   "canal": "TAqus8dVTpL42QN3ErK8wx1RWMj829qdVT",
+   "importe": 87750,
+   "hora": 1793490870000
+  },
+  {
+   "remitente": "TN6cdoeg1QwzYWT4Z96VGAgedy3mP2sLBp",
+   "deposito": "409750bda44b449b24a7aab474b14481ea42fa5ac15d7eccb70844bb047503ae",
+   "canal": "TYA9SrPMSW9Bd3k7rzG71r1DWSRgreYEPB",
+   "importe": 105480,
+   "hora": 1793491215000
+  },
+  {
+   "remitente": "TMWM5ZLCzqtrFQTQgJhsCzS42CdeDVwYvy",
+   "deposito": "e4c8c6bc770051cad36c8db5dcecfe0bab9fd54936cd8c94677afe725b0338fa",
+   "canal": "TDhs7v41bECSEDXRqgxqP9BD79qDKEkCSK",
+   "importe": 81697,
+   "hora": 1793491833000
+  },
+  {
+   "remitente": "TNwbrbnzxJn2uBvNH8N2gpKiNe3JFEVy35",
+   "deposito": "719bf085206484dd87b54654226241284ae4fd86e6ff907523b9757cd47326ef",
+   "canal": "TXRbvLDiggq21yP3bvcC23vum29ZtmsEWU",
+   "importe": 89978,
+   "hora": 1793491926000
+  },
+  {
+   "remitente": "TBF2HDjc2bRhPt7MN88ypcDbRbSMxfS8vk",
+   "deposito": "582bac2f0995bd2757c78c1e59fd6295c759003277da0745840aca0574594ba2",
+   "canal": "TA653FjmX4gS69KXW2WuAeEzfaXutyEN4e",
+   "importe": 89323,
+   "hora": 1793492037000
+  },
+  {
+   "remitente": "TBF2HDjc2bRhPt7MN88ypcDbRbSMxfS8vk",
+   "deposito": "a7a9d0ece416d3abf678d38a8605f7c9b830fea26ebe45a4c31c46c8ba8d6aad",
+   "canal": "TUPScHpcPxdUddDBUHwzPvdbRjedoMTnJy",
+   "importe": 102561,
+   "hora": 1793492250000
+  },
+  {
+   "remitente": "TNwbrbnzxJn2uBvNH8N2gpKiNe3JFEVy35",
+   "deposito": "3277534e84bba99ad2fc2cd163d5f7b5ba83ccb4bded349b468734419200c7de",
+   "canal": "TM7Lff7X8fndxdNAaiQreryncJWfL8CHZ8",
+   "importe": 84820,
+   "hora": 1793492283000
+  },
+  {
+   "remitente": "TPeVzQ4QUCDzJEVahFt5dUrWho3wzDQVco",
+   "deposito": "e7de23e1c8a2204440bd829ad1a8160b1c46e67f7376a87bfa08ce7d16d3fd1b",
+   "canal": "TSaCUY6c5VEZ6PCE2GmwA3ZrgMWmHK35P8",
+   "importe": 89909,
+   "hora": 1793493348000
+  },
+  {
+   "remitente": "TPeVzQ4QUCDzJEVahFt5dUrWho3wzDQVco",
+   "deposito": "4b8f41adde69167af501d7419344899b7f75a588878b3978f6ae9db46f475a22",
+   "canal": "TRcyYTWt6aL2zaQ8gGhEsa1bhVtUzhS7Zf",
+   "importe": 90608,
+   "hora": 1793493627000
+  },
+  {
+   "remitente": "TN2xcp1PRbSeJjWSoQJkTDjhJjcf4BBgnG",
+   "deposito": "8d670bd73f8f96c2f0a9f06e1f6cf84bdcdd59cc45eb01c9918c29c06d48e715",
+   "canal": "TFgGdyFfWeWo7B2yEoDxPBGPAUjmL9vJib",
+   "importe": 93456,
+   "hora": 1793493999000
+  },
+  {
+   "remitente": "TN2xcp1PRbSeJjWSoQJkTDjhJjcf4BBgnG",
+   "deposito": "da7295ac69846e259e6808bdf0fee49d5d1c037eaaea48b4a76d2a8390014f96",
+   "canal": "TAdkWfFaarq2m33fSXKztLv1kqkDpU7C6p",
+   "importe": 96218,
+   "hora": 1793494323000
+  },
+  {
+   "remitente": "TXKzRiKADJQy6daVLAUVobp47mdk38NjqK",
+   "deposito": "a2ef99fd45e401b4bcf26347179b858d6f8e878396f53f96f3a7e09f7e0886be",
+   "canal": "TRadstm3sFrdcfFFNkpBGRY1zjcPgs3vjB",
+   "importe": 52374.152579,
+   "hora": 1793495529000
+  },
+  {
+   "remitente": "TUTVMwE9iD88zYPpjtWTGEPqFrNpnpqmXw",
+   "deposito": "14eaf3ac59874c7a9f846275449ae5486c84c8a9ac545fdc6e31f0a63233d115",
+   "canal": "TV8HZnuRYxpJweySX5NJPquREoXaKxq6Kw",
+   "importe": 101577,
+   "hora": 1793496030000
+  },
+  {
+   "remitente": "TWVbWM7mpVXsuse42U7LVvAHFbtN8PLmWk",
+   "deposito": "24765386e3c9f10511c0ed4b23356778ffde254154e1aeb077fbffc6381ecff9",
+   "canal": "TXmAjx81ejG4Wkkff33gAKudCrcw5u2ZHd",
+   "importe": 101561,
+   "hora": 1793496219000
+  },
+  {
+   "remitente": "TVfSckF1uBcEPSFnhKDXDFA6dWpcVeM7Ch",
+   "deposito": "8eddc0854aae27e678d6f5919eaa7d592add2670472732b488769524d4d0d197",
+   "canal": "TVUFcYAWys8Jf3197fDtDPSNkMZaaZXGfB",
+   "importe": 28098.432488,
+   "hora": 1793531622000
+  }
+ ]
+}

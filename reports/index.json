@@ -6,15 +6,15 @@
       "semilla": "TRBdWqHnDVSZCVGfgHdKFLQPirQcA2PRki",
       "titulo": "Robo a Binance (0x5227): trazabilidad en TRON y Ethereum",
       "resumen": "Seguimiento de 628 M$ robados en TRON y de los fondos en Ethereum: qué está congelado, dónde se repartió el resto, por qué puentes salió y cuánto rastro se pierde.",
-      "version": "v0.6",
+      "version": "v0.7",
       "cadenas": [
         "TRON",
         "Ethereum",
         "Chainflip",
         "Symbiosis"
       ],
-      "corte": "2026-11-02T09:23:00Z",
-      "generado": "2026-11-03T12:28:19Z",
+      "corte": "2026-11-02T09:23:00.033Z",
+      "generado": "2026-11-03T17:39:24.000Z",
       "archivos": [
         {
           "nombre": "Informe completo (HTML)",
@@ -27,6 +27,10 @@
         {
           "nombre": "Datos del panel (JSON)",
           "ruta": "data.json"
+        },
+        {
+          "nombre": "Versión anterior v0.6 (HTML)",
+          "ruta": "../../investigacion/research/auditoria-adversarial-2026-10-31/informes-entregados/INFORME-TRAZABILIDAD-TRON-v0.6.html"
         }
       ]
     },

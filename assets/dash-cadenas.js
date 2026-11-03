@@ -30,7 +30,7 @@
       else if (/USD1|FDUSD/.test(nm)) sec2('Direcciones con USD1 y FDUSD', tTok(tokens((t) => /USD1|FDUSD/.test(t.simbolo))));
       else if (/oro/.test(nm)) sec2('Oro digital (XAUt, PAXG)', tTok(tokens((t) => /XAU|PAXG/i.test(t.simbolo))));
       else if (/Polygon|Avalanche/.test(nm)) sec2('Direcciones en Polygon y Avalanche', tTok(tokens((t) => /Polygon|Avalanche|Polygon PoS/i.test(t.cadena))));
-      else if (/ETH que entró como ETH/.test(nm)) { sec2('Billeteras que conservan el ETH', tQuieto()); if (det.ethDirecto) w.append(el('p', { class: 'narr' }, n(det.ethDirecto.entradas.length) + ' transferencias directas recibidas, ' + n(det.ethDirecto.entra) + ' ETH en total y ' + n(det.ethDirecto.sale) + ' ETH enviados.')); }
+      else if (/ETH que (entró como ETH|llegó a las receptoras)/.test(nm)) { sec2('Billeteras que conservan el ETH', tQuieto()); if (det.ethDirecto) w.append(el('p', { class: 'narr' }, n(det.ethDirecto.entradas.length) + ' transferencias directas recibidas, ' + n(det.ethDirecto.entra) + ' ETH en total y ' + n(det.ethDirecto.sale) + ' ETH enviados.')); }
       else if (/convertir/.test(nm)) {
         const abrirActivo = (r) => UI.abrir('Entradas de ' + r.activo, () => {
           const ents = r.entradas || [];

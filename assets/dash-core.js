@@ -90,6 +90,7 @@
   Dash.descArchivo = {
     'perdida-de-rastro.csv': 'La lista, en una hoja de cálculo (abre en Excel), de los puntos donde el dinero deja de poder seguirse y la causa de cada uno.',
     'data.json': 'Todos los datos que alimentan este panel, en formato abierto (JSON), para que programadores o analistas los reutilicen. No es para leer.',
+    '../../investigacion/research/auditoria-adversarial-2026-10-31/informes-entregados/INFORME-TRAZABILIDAD-TRON-v0.6.html': 'La versión anterior del informe (v0.6), tal como se publicó. La v0.7 la sustituye: cambian textos y el seguimiento de Ethereum, no las cifras de TRON ni la suma de Ethereum.',
     'detalle.json': 'Las tablas completas que hay detrás de los gráficos (cuentas congeladas, destinos, estados…), en formato abierto (JSON).',
   };
   Dash.acciones = (items) => el('div', { class: 'acciones' }, items.map(([b, t]) => el('div', { class: 'acc' }, b, el('p', { class: 'accd' }, t))));
