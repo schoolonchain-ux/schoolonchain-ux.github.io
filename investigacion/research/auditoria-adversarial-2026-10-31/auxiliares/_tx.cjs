@@ -1,0 +1,10 @@
+const { loadTronKeys } = require('C:/EquipoIA/tether-blacklist/src/adapters/bot.cjs');
+const keys = loadTronKeys({ file: 'C:/EquipoIA/tether-blacklist/config.secret.json' });
+const tx=process.argv[2];
+(async()=>{const r=await fetch('https://apilist.tronscanapi.com/api/transaction-info?hash='+tx,{headers:{'TRON-PRO-API-KEY':keys.tronscanKey}});const j=await r.json();
+ const pick=o=>({from:o.from_address,to:o.to_address,sym:o.symbol||o.token_name||o.tokenInfo?.tokenAbbr,amt:o.amount_str,ca:o.contract_address});
+ console.log('contrato',j.contractType,'toAddress',j.toAddress,'owner',j.ownerAddress,'method',JSON.stringify(j.trigger_info&&{m:j.trigger_info.method,mm:j.trigger_info.methodName}));
+ console.log('transfersAllList',JSON.stringify((j.transfersAllList||[]).map(pick)));
+ console.log('trc20',JSON.stringify((j.trc20TransferInfo||[]).map(t=>({from:t.from_address,to:t.to_address,sym:t.symbol,amt:t.amount_str}))));
+ console.log('internal',JSON.stringify((j.internal_transactions?Object.values(j.internal_transactions).flat():[]).slice(0,8).map(x=>({f:x.from_address,t:x.to_address,v:x.callValue||x.value}))).slice(0,800));
+})();

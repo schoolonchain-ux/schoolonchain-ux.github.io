@@ -1,0 +1,281 @@
+{
+ "filas": [
+  {
+   "at": 1793305200000,
+   "tx": "6f983ab745fbea298ec6376054fb16155f3142ec0d9f3fec4c053220cafc9644",
+   "tipo": "TransferContract",
+   "cant": 10000,
+   "fee": 1,
+   "ret": "SUCCESS",
+   "owner": "412a68baf67f1c497d9a4a609276a90dcd6ea77444",
+   "to": "41430b9b4a60d18affe500b731a97b5aa622c7863f",
+   "mia": false
+  },
+  {
+   "at": 1793305206000,
+   "tx": "55405d8d6bf23678c5be35aba9a03b220faaa1a9b3b4c004aa5effeef4be8182",
+   "tipo": "TransferAssetContract",
+   "cant": 0,
+   "fee": 0,
+   "ret": "SUCCESS",
+   "owner": "4102a4e816daef0384a27d41dd92373aea534e5277",
+   "to": "41430b9b4a60d18affe500b731a97b5aa622c7863f",
+   "mia": false
+  },
+  {
+   "at": 1793305272000,
+   "tx": "72f5fbedbc4d6f70113e139312eef09fb28a5fefd49d321bc1e28b6cea5bab9c",
+   "tipo": "TransferContract",
+   "cant": 46384098,
+   "fee": 0,
+   "ret": "SUCCESS",
+   "owner": "412a68baf67f1c497d9a4a609276a90dcd6ea77444",
+   "to": "41430b9b4a60d18affe500b731a97b5aa622c7863f",
+   "mia": false
+  },
+  {
+   "at": 1793306697000,
+   "tx": "aa89eeab262b80f709da647a31ccc34092114e6e17a5641769ff300a495ca1ef",
+   "tipo": "TransferContract",
+   "cant": 10000,
+   "fee": 1.1,
+   "ret": "SUCCESS",
+   "owner": "41430b9b4a60d18affe500b731a97b5aa622c7863f",
+   "to": "4190f8dfb1c5e5ebb29dcfbb66d7649fbde6a7293e",
+   "mia": true
+  },
+  {
+   "at": 1793306700000,
+   "tx": "ee135bc807d3dade3aabceb09cd424d90a61ce88920936296ec765ca21692a0c",
+   "tipo": "TransferAssetContract",
+   "cant": 0,
+   "fee": 0,
+   "ret": "SUCCESS",
+   "owner": "41ff5ca3d45bc071334360fec640365abea9ce6030",
+   "to": "41430b9b4a60d18affe500b731a97b5aa622c7863f",
+   "mia": false
+  },
+  {
+   "at": 1793306703000,
+   "tx": "d1a37568722443912341f6ea4f7b3a18e6b0e118d3b3f8e8c30b8686e14af1bb",
+   "tipo": "TransferContract",
+   "cant": 0.000005,
+   "fee": 0,
+   "ret": "SUCCESS",
+   "owner": "41bb1e88f37c8068d8c2c089399262f51a54730eb0",
+   "to": "41430b9b4a60d18affe500b731a97b5aa622c7863f",
+   "mia": false
+  },
+  {
+   "at": 1793306709000,
+   "tx": "c69986133392fb6b3abfcbbc372d0d6e6267aa1a751fd810d6e46e0a8ebe801e",
+   "tipo": "TransferContract",
+   "cant": 0.000002,
+   "fee": 0,
+   "ret": "SUCCESS",
+   "owner": "41195435b3e8de1aaedce71473c081ce0daa2ecd13",
+   "to": "41430b9b4a60d18affe500b731a97b5aa622c7863f",
+   "mia": false
+  },
+  {
+   "at": 1793306709000,
+   "tx": "3fbaac6f2cf6c6a738317fec919cb1b876aa94f074ecee0bca7dce169777a3f8",
+   "tipo": "TransferContract",
+   "cant": 0.000002,
+   "fee": 0,
+   "ret": "SUCCESS",
+   "owner": "41062d8bd233fd4d1976afcd7b8be45cb6ca3801fa",
+   "to": "41430b9b4a60d18affe500b731a97b5aa622c7863f",
+   "mia": false
+  },
+  {
+   "at": 1793306751000,
+   "tx": "fd8061aaa787ce89d707184dbfdd436a578c7840d674505067725de727c06222",
+   "tipo": "TriggerSmartContract",
+   "cant": 0,
+   "fee": 13.0285,
+   "ret": "SUCCESS",
+   "owner": "41430b9b4a60d18affe500b731a97b5aa622c7863f",
+   "to": "41a614f803b6fd780986a42c78ec9c7f77e6ded13c",
+   "mia": true
+  },
+  {
+   "at": 1793306763000,
+   "tx": "1458dfe966f15944580550dcca57e3223bf1407e851c5a1b2dd67e3fc28cee07",
+   "tipo": "TransferContract",
+   "cant": 0.000002,
+   "fee": 0,
+   "ret": "SUCCESS",
+   "owner": "41af200a74a76cc9e9dfaa744eb6314d6284481d16",
+   "to": "41430b9b4a60d18affe500b731a97b5aa622c7863f",
+   "mia": false
+  },
+  {
+   "at": 1793306814000,
+   "tx": "aac33903b3c7f0419035fd9b100a15e2fdff47a136cd313c887ec500adbd79e2",
+   "tipo": "TransferContract",
+   "cant": 0.000001,
+   "fee": 0,
+   "ret": "SUCCESS",
+   "owner": "41fec228af8139bebe8e2d513270dfeb99b0bee6d0",
+   "to": "41430b9b4a60d18affe500b731a97b5aa622c7863f",
+   "mia": false
+  },
+  {
+   "at": 1793306817000,
+   "tx": "b1feb49bb3fee2ed40c9bd65ad4b451fc8a18ac6cfee632bdb18a0958a085b87",
+   "tipo": "TransferContract",
+   "cant": 0.000002,
+   "fee": 0,
+   "ret": "SUCCESS",
+   "owner": "41e866056993769e2be247db202d506bdcc5e1525c",
+   "to": "41430b9b4a60d18affe500b731a97b5aa622c7863f",
+   "mia": false
+  },
+  {
+   "at": 1793306991000,
+   "tx": "1aa734230bb1801086b265cc3e452f11db4336000e3c1fb1d5de893ed5b32d94",
+   "tipo": "TransferContract",
+   "cant": 1000,
+   "fee": 0.269,
+   "ret": "SUCCESS",
+   "owner": "41430b9b4a60d18affe500b731a97b5aa622c7863f",
+   "to": "4190f8dfb1c5e5ebb29dcfbb66d7649fbde6a7293e",
+   "mia": true
+  },
+  {
+   "at": 1793307003000,
+   "tx": "668e69832438e77bc55e35b5fd0b8685902f63a6288d3e99a55f6ee61d123c7e",
+   "tipo": "TransferContract",
+   "cant": 0.000002,
+   "fee": 0,
+   "ret": "SUCCESS",
+   "owner": "4144b3c2b17a7a894172f57cb89a7c81cde53b1de0",
+   "to": "41430b9b4a60d18affe500b731a97b5aa622c7863f",
+   "mia": false
+  },
+  {
+   "at": 1793307369000,
+   "tx": "d40f96e23e95b7ace0ebacd3892f0a1f37555a64da69feedba73443dee4920ee",
+   "tipo": "TriggerSmartContract",
+   "cant": 0,
+   "fee": 13.3735,
+   "ret": "SUCCESS",
+   "owner": "41430b9b4a60d18affe500b731a97b5aa622c7863f",
+   "to": "41a614f803b6fd780986a42c78ec9c7f77e6ded13c",
+   "mia": true
+  },
+  {
+   "at": 1793307375000,
+   "tx": "a6cd8d53f0d9d81f4301687016eb57bb52844062e5088f630e5e442737d63eee",
+   "tipo": "TransferContract",
+   "cant": 0.000001,
+   "fee": 0,
+   "ret": "SUCCESS",
+   "owner": "41b4a18b49152bd486ff29a45b9d04b6002cb6e39a",
+   "to": "41430b9b4a60d18affe500b731a97b5aa622c7863f",
+   "mia": false
+  },
+  {
+   "at": 1793307381000,
+   "tx": "02ada8a53b464c7f088624e694c9f191d6e3fe45906a113b9cf4b98e0ad123c5",
+   "tipo": "TransferContract",
+   "cant": 0.000002,
+   "fee": 0,
+   "ret": "SUCCESS",
+   "owner": "41acc86dfef8d9295c38b4ef638b0e3634efa48a0c",
+   "to": "41430b9b4a60d18affe500b731a97b5aa622c7863f",
+   "mia": false
+  },
+  {
+   "at": 1793308155000,
+   "tx": "463986b36febc7093aff64fc7368eb6973cf1633edc2769cd06b68e3dfab72a1",
+   "tipo": "TransferAssetContract",
+   "cant": 0,
+   "fee": 0.285,
+   "ret": "SUCCESS",
+   "owner": "41aed6fb17be8d99fb8335faa16d777df0aec350ad",
+   "to": "41430b9b4a60d18affe500b731a97b5aa622c7863f",
+   "mia": false
+  },
+  {
+   "at": 1793318769000,
+   "tx": "6adfc066520a5880df18eebc61bf048d03e8d7a0fca23b04a6b36c9723892736",
+   "tipo": "TransferContract",
+   "cant": 46383069.129019,
+   "fee": 1.1,
+   "ret": "SUCCESS",
+   "owner": "41430b9b4a60d18affe500b731a97b5aa622c7863f",
+   "to": "41a6e3574ca9c37cd8b075b83d4a82a03efce79ffc",
+   "mia": true
+  },
+  {
+   "at": 1793318781000,
+   "tx": "086be3970e2a81ff856f32ac544ffae789acc07451cf80ed95d74598bcbed6e8",
+   "tipo": "TransferContract",
+   "cant": 0.000002,
+   "fee": 0,
+   "ret": "SUCCESS",
+   "owner": "417a0e06ea1bf4dcab2cba56499cfa329f786fb27d",
+   "to": "41430b9b4a60d18affe500b731a97b5aa622c7863f",
+   "mia": false
+  },
+  {
+   "at": 1793318781000,
+   "tx": "d536b1239d6f40734db2bf901411e7ff0c4ad59b4b05a90fc9c2258fa91bc92d",
+   "tipo": "TransferContract",
+   "cant": 0.000002,
+   "fee": 0,
+   "ret": "SUCCESS",
+   "owner": "416aba15385cfc77d70851c4f5c9b1ed5d3a70fca9",
+   "to": "41430b9b4a60d18affe500b731a97b5aa622c7863f",
+   "mia": false
+  },
+  {
+   "at": 1793335242000,
+   "tx": "60d45098c4ec5bc35306f93814bdf70f80567141bb6752d7d0fe7b6623bcce5d",
+   "tipo": "TransferAssetContract",
+   "cant": 0,
+   "fee": 0,
+   "ret": "SUCCESS",
+   "owner": "4186a1387c9b56551dfdb553023503e961bcbe2168",
+   "to": "41430b9b4a60d18affe500b731a97b5aa622c7863f",
+   "mia": false
+  },
+  {
+   "at": 1793366193000,
+   "tx": "66c5506cc9e1c0ad50d730c0702c7e36b4d1a8ace0edb8ed4c1e73f366bc4c19",
+   "tipo": "TransferAssetContract",
+   "cant": 0,
+   "fee": 0,
+   "ret": "SUCCESS",
+   "owner": "41c0201719ec553d0ffd48860e9f20b89c36eb2b14",
+   "to": "41430b9b4a60d18affe500b731a97b5aa622c7863f",
+   "mia": false
+  },
+  {
+   "at": 1793400948000,
+   "tx": "00b3c366c6f26079213eab9324164d4735920a7ccde74c13067ea0a7b1ebd8e9",
+   "tipo": "TransferContract",
+   "cant": 0.032007,
+   "fee": 0,
+   "ret": "SUCCESS",
+   "owner": "4196cca731564b9ab4faa49cee382d239c334e0370",
+   "to": "41430b9b4a60d18affe500b731a97b5aa622c7863f",
+   "mia": false
+  },
+  {
+   "at": 1793438799000,
+   "tx": "1a1f3ffe43e8d0047c88f44a726124f9a3a42a57dd33b617d295e3149d334f18",
+   "tipo": "TransferAssetContract",
+   "cant": 0,
+   "fee": 0,
+   "ret": "SUCCESS",
+   "owner": "411ac727761fe25e7dc8d0133884cb7469556ad7b3",
+   "to": "41430b9b4a60d18affe500b731a97b5aa622c7863f",
+   "mia": false
+  }
+ ],
+ "totalFee": 28.871000000000002,
+ "saldo": 32011
+}

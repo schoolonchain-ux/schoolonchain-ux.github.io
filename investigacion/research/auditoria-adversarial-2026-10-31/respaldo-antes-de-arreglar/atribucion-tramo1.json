@@ -1,0 +1,293 @@
+{
+ "tramo": "tramo1",
+ "generado": "2026-10-31T15:58:54.217Z",
+ "reparto": 50773216.863587685,
+ "publicado": {
+  "totales": {
+   "casa": 0,
+   "nodo": 25326222.01345038,
+   "prestamo": 4754776.920358886,
+   "puente": 2357612.782638592,
+   "usdd": 326687.80843058374,
+   "no_verificada": 0
+  },
+  "retenido": 11181558.381672151
+ },
+ "conservacion": {
+  "sumaIn": 214255369.66478372,
+  "sumaOut": 199180276.56758454,
+  "excesoTotal": 4459757.643191715,
+  "billeterasConExceso": 102,
+  "defectoTotal": 19534748.390673995,
+  "peores": [
+   {
+    "w": "TM32EDad1ZiMob3S5Rx8VJB6dnjMjD1NTY",
+    "tIn": 2930298.9730822723,
+    "tOut": 4049701.1738567995,
+    "exceso": 1119402.2007745272
+   },
+   {
+    "w": "TANBLHyBFUH2gu9NFBKMxE9kW2fbdPxQP1",
+    "tIn": 334000.612416064,
+    "tOut": 1008448.3704032319,
+    "exceso": 674447.7579871679
+   },
+   {
+    "w": "TKdLoLkYLpVygaknB2q3YPHaoL9o3AXbce",
+    "tIn": 725979.793642752,
+    "tOut": 1358929.943723616,
+    "exceso": 632950.150080864
+   },
+   {
+    "w": "TKBLWEB2CVk1LWdbi8SHfnF2XeUWExvpod",
+    "tIn": 54225.07027489718,
+    "tOut": 321938.4356206222,
+    "exceso": 267713.365345725
+   },
+   {
+    "w": "TJRbgAWaRUG2hb83nQsuVUC1RP1Y18dHfK",
+    "tIn": 71505.36819923199,
+    "tOut": 282689.108191776,
+    "exceso": 211183.739992544
+   },
+   {
+    "w": "TQXm9qEL64YmGAzZoMspM8qyWPZ3tbqt6X",
+    "tIn": 366101.52946094604,
+    "tOut": 573735.2993131413,
+    "exceso": 207633.76985219523
+   },
+   {
+    "w": "TWbRdu55N4Cwwu83fe8pomQaUCEoHVsrqy",
+    "tIn": 758660.9768672,
+    "tOut": 900072.4836407041,
+    "exceso": 141411.50677350408
+   },
+   {
+    "w": "TCXrtGCPAxvm6ekWWds4rZ8hJDouY7pFW3",
+    "tIn": 17620.768,
+    "tOut": 140820.06399999998,
+    "exceso": 123199.29599999999
+   }
+  ]
+ },
+ "modelos": {
+  "informe": {
+   "terminales": {
+    "usdd": 326736.71611018985,
+    "nodo": 25537801.357311785,
+    "puente": 2360449.8714213297,
+    "prestamo": 4754776.920358886
+   },
+   "porDestino": {
+    "usdd|AuthGemJoin5": 326736.71611018985,
+    "nodo|THPaGKe6aZkUcNht24hcscZPLwtcJAbpun": 2233836.4336041873,
+    "nodo|TM8uyBjRKzFtQdMC7tQLvKeeWieaFvXDyc": 12293581.742715193,
+    "nodo|TBAPnuwEht65McDbxDvDYs2XLRSSbYQMUM": 2028620.8166335865,
+    "nodo|TGSNahJvAdh86aR5pdcxiep1mBWSRK3HHL": 2808874.4006483853,
+    "nodo|TLKfB2goHRY1SykEpVbiGdsesACrkCxCeW": 2138733.9980245056,
+    "nodo|TH1YKH9MUuJtDmekPia4x9fZXAcpPrMv8B": 2641099.1894429526,
+    "nodo|TZG47zhb8kcriWQ2rE719yHs1KqgzwMrvF": 980214.7867225126,
+    "nodo|TX5XiRXdyz7sdFwF5mnhT1QoGCpbkncpke": 126468.14224761561,
+    "puente|UsdtOFT": 2352166.90691133,
+    "prestamo|CErc20Delegator": 4754776.920358886,
+    "nodo|TKfz7Pu3jtxWrfHzVeozQjXsb3RfuUHGE2": 172474.1635763233,
+    "nodo|TCPPRajgXVBkR5Qvpd3RHh4xUvibhzrqSa": 110380.42225991617,
+    "nodo|TMXawuHt4RoYUQ9pynNsyzqpTxxxLKZHsY": 3517.261436557967,
+    "puente|BridgersSwap": 8282.96451
+   },
+   "polvo": 1371856.5314209443,
+   "neutrales": 273041689.88112736,
+   "continuan": 223699348.05397913,
+   "retenido": 11186114.3234684,
+   "vueltas": 25,
+   "preVentana": {
+    "n": 0,
+    "billeteras": {},
+    "v": 0,
+    "tainted": 0
+   },
+   "retenidoCorregido": 10709438.802982055,
+   "netoNegativo": 22335203.203160524
+  },
+  "fifo": {
+   "terminales": {
+    "prestamo": 4862926.642844264,
+    "nodo": 25463218.554408684,
+    "sin_clasificar": 176253.4427521734,
+    "puente": 1609837.9050579125,
+    "usdd": 318916.98778969597
+   },
+   "porDestino": {
+    "prestamo|CErc20Delegator": 4862926.642844264,
+    "nodo|TM8uyBjRKzFtQdMC7tQLvKeeWieaFvXDyc": 12300590.480492178,
+    "nodo|TZG47zhb8kcriWQ2rE719yHs1KqgzwMrvF": 976436.1864546124,
+    "nodo|TBAPnuwEht65McDbxDvDYs2XLRSSbYQMUM": 2163838.1468483056,
+    "nodo|THPaGKe6aZkUcNht24hcscZPLwtcJAbpun": 2166091.34983498,
+    "sin_clasificar|sin_clasificar": 176253.4427521734,
+    "puente|UsdtOFT": 1601554.9405479126,
+    "nodo|TLKfB2goHRY1SykEpVbiGdsesACrkCxCeW": 2214230.393385232,
+    "nodo|TH1YKH9MUuJtDmekPia4x9fZXAcpPrMv8B": 2436738.407653139,
+    "nodo|TGSNahJvAdh86aR5pdcxiep1mBWSRK3HHL": 2798848.3789936174,
+    "nodo|TKfz7Pu3jtxWrfHzVeozQjXsb3RfuUHGE2": 177354.67751570523,
+    "nodo|TX5XiRXdyz7sdFwF5mnhT1QoGCpbkncpke": 127211.50108563875,
+    "nodo|TCPPRajgXVBkR5Qvpd3RHh4xUvibhzrqSa": 101086.43657138609,
+    "usdd|AuthGemJoin5": 318916.98778969597,
+    "nodo|TMXawuHt4RoYUQ9pynNsyzqpTxxxLKZHsY": 792.5955738839992,
+    "puente|BridgersSwap": 8282.96451
+   },
+   "polvo": 897174.2747899552,
+   "neutrales": 8274249.480045855,
+   "continuan": 205202612.0597684,
+   "retenido": 16975508.913814947,
+   "sinInventario": 4894242.328450799,
+   "haciaNoRastreadas": 18493.326118000004,
+   "inyectado": 58576840.33341469,
+   "convertido": 16529692.629316304,
+   "desconocidoEntra": 545283.7799736081
+  },
+  "lifo": {
+   "terminales": {
+    "prestamo": 4856999.317961015,
+    "nodo": 25426801.39518341,
+    "sin_clasificar": 254281.6463993977,
+    "puente": 2233403.646021113,
+    "usdd": 319704.52390486933
+   },
+   "porDestino": {
+    "prestamo|CErc20Delegator": 4856999.317961015,
+    "nodo|TM8uyBjRKzFtQdMC7tQLvKeeWieaFvXDyc": 12308595.225319764,
+    "nodo|TZG47zhb8kcriWQ2rE719yHs1KqgzwMrvF": 986711.031917835,
+    "nodo|TBAPnuwEht65McDbxDvDYs2XLRSSbYQMUM": 2122210.486144973,
+    "nodo|THPaGKe6aZkUcNht24hcscZPLwtcJAbpun": 1982798.1470616483,
+    "sin_clasificar|sin_clasificar": 254281.6463993977,
+    "puente|UsdtOFT": 2225120.6815111125,
+    "nodo|TLKfB2goHRY1SykEpVbiGdsesACrkCxCeW": 2126602.579911904,
+    "nodo|TH1YKH9MUuJtDmekPia4x9fZXAcpPrMv8B": 2567139.264620056,
+    "nodo|TGSNahJvAdh86aR5pdcxiep1mBWSRK3HHL": 2926972.12399022,
+    "nodo|TKfz7Pu3jtxWrfHzVeozQjXsb3RfuUHGE2": 164659.10045898444,
+    "nodo|TX5XiRXdyz7sdFwF5mnhT1QoGCpbkncpke": 125272.31834455238,
+    "nodo|TCPPRajgXVBkR5Qvpd3RHh4xUvibhzrqSa": 112321.11741347198,
+    "usdd|AuthGemJoin5": 319704.52390486933,
+    "nodo|TMXawuHt4RoYUQ9pynNsyzqpTxxxLKZHsY": 3520,
+    "puente|BridgersSwap": 8282.96451
+   },
+   "polvo": 907979.8765182307,
+   "neutrales": 8292279.817615518,
+   "continuan": 212208268.74348783,
+   "retenido": 16270991.136403078,
+   "sinInventario": 4894242.328450799,
+   "haciaNoRastreadas": 18493.326118,
+   "inyectado": 58576840.33341469,
+   "convertido": 17671893.430539988,
+   "desconocidoEntra": 545283.7799736081
+  },
+  "dyn": {
+   "terminales": {
+    "prestamo": 4835860.544530571,
+    "nodo": 25467164.24228887,
+    "sin_clasificar": 188202.66506178025,
+    "puente": 1684531.6689316737,
+    "usdd": 319091.4041414682
+   },
+   "porDestino": {
+    "prestamo|CErc20Delegator": 4835860.544530571,
+    "nodo|TM8uyBjRKzFtQdMC7tQLvKeeWieaFvXDyc": 12298571.84258767,
+    "nodo|TZG47zhb8kcriWQ2rE719yHs1KqgzwMrvF": 979119.8199048997,
+    "nodo|TBAPnuwEht65McDbxDvDYs2XLRSSbYQMUM": 2125438.525479705,
+    "nodo|THPaGKe6aZkUcNht24hcscZPLwtcJAbpun": 2059629.3024596365,
+    "sin_clasificar|sin_clasificar": 188202.66506178025,
+    "puente|UsdtOFT": 1676248.704421674,
+    "nodo|TLKfB2goHRY1SykEpVbiGdsesACrkCxCeW": 2184439.862348017,
+    "nodo|TH1YKH9MUuJtDmekPia4x9fZXAcpPrMv8B": 2563378.2031158186,
+    "nodo|TGSNahJvAdh86aR5pdcxiep1mBWSRK3HHL": 2846454.511666973,
+    "nodo|TKfz7Pu3jtxWrfHzVeozQjXsb3RfuUHGE2": 171882.96808086583,
+    "nodo|TX5XiRXdyz7sdFwF5mnhT1QoGCpbkncpke": 126486.59094890507,
+    "nodo|TCPPRajgXVBkR5Qvpd3RHh4xUvibhzrqSa": 108806.77231126862,
+    "usdd|AuthGemJoin5": 319091.4041414682,
+    "nodo|TMXawuHt4RoYUQ9pynNsyzqpTxxxLKZHsY": 2955.8433850971032,
+    "puente|BridgersSwap": 8282.96451
+   },
+   "polvo": 905682.4402935238,
+   "neutrales": 8278598.462356417,
+   "continuan": 206648514.93946657,
+   "retenido": 16896574.434741817,
+   "sinInventario": 4894242.328450799,
+   "haciaNoRastreadas": 18493.326118,
+   "inyectado": 58576840.33341469,
+   "convertido": 16755620.823434295,
+   "desconocidoEntra": 545283.7799736081
+  },
+  "taintfirst": {
+   "terminales": {
+    "prestamo": 4866388.451418772,
+    "nodo": 25799433.869995467,
+    "sin_clasificar": 267077.91555048496,
+    "puente": 2275238.6703233835,
+    "usdd": 321698.8478109705
+   },
+   "porDestino": {
+    "prestamo|CErc20Delegator": 4866388.451418772,
+    "nodo|TM8uyBjRKzFtQdMC7tQLvKeeWieaFvXDyc": 12311065.655629698,
+    "nodo|TZG47zhb8kcriWQ2rE719yHs1KqgzwMrvF": 988378.598041916,
+    "nodo|TBAPnuwEht65McDbxDvDYs2XLRSSbYQMUM": 2167743.484720592,
+    "nodo|THPaGKe6aZkUcNht24hcscZPLwtcJAbpun": 2157222.1812158143,
+    "sin_clasificar|sin_clasificar": 267077.91555048496,
+    "puente|UsdtOFT": 2266955.7058133837,
+    "nodo|TLKfB2goHRY1SykEpVbiGdsesACrkCxCeW": 2262979.8205315196,
+    "nodo|TH1YKH9MUuJtDmekPia4x9fZXAcpPrMv8B": 2625986.131641445,
+    "nodo|TGSNahJvAdh86aR5pdcxiep1mBWSRK3HHL": 2859650.4124622094,
+    "nodo|TKfz7Pu3jtxWrfHzVeozQjXsb3RfuUHGE2": 183354.96725316043,
+    "nodo|TX5XiRXdyz7sdFwF5mnhT1QoGCpbkncpke": 127211.50108563875,
+    "nodo|TCPPRajgXVBkR5Qvpd3RHh4xUvibhzrqSa": 112321.11741347198,
+    "usdd|AuthGemJoin5": 321698.8478109705,
+    "nodo|TMXawuHt4RoYUQ9pynNsyzqpTxxxLKZHsY": 3520,
+    "puente|BridgersSwap": 8282.96451
+   },
+   "polvo": 896098.0854951247,
+   "neutrales": 8292446.413449399,
+   "continuan": 212671853.2807488,
+   "retenido": 15825953.900012817,
+   "sinInventario": 4894242.328450799,
+   "haciaNoRastreadas": 18493.326118000004,
+   "inyectado": 58576840.33341469,
+   "convertido": 17725091.95373854,
+   "desconocidoEntra": 545283.7799736081
+  },
+  "cleanfirst": {
+   "terminales": {
+    "prestamo": 4854035.0102265375,
+    "nodo": 25163878.796502348,
+    "sin_clasificar": 173625.65071662166,
+    "puente": 967996.5639009741,
+    "usdd": 318916.98778969597
+   },
+   "porDestino": {
+    "prestamo|CErc20Delegator": 4854035.0102265375,
+    "nodo|TM8uyBjRKzFtQdMC7tQLvKeeWieaFvXDyc": 12302481.05308739,
+    "nodo|TZG47zhb8kcriWQ2rE719yHs1KqgzwMrvF": 978425.8423787404,
+    "nodo|TBAPnuwEht65McDbxDvDYs2XLRSSbYQMUM": 2119331.5063654887,
+    "nodo|THPaGKe6aZkUcNht24hcscZPLwtcJAbpun": 1879382.713584224,
+    "sin_clasificar|sin_clasificar": 173625.65071662166,
+    "puente|UsdtOFT": 959713.599390974,
+    "nodo|TLKfB2goHRY1SykEpVbiGdsesACrkCxCeW": 2089660.2635802838,
+    "nodo|TH1YKH9MUuJtDmekPia4x9fZXAcpPrMv8B": 2534486.1358761727,
+    "nodo|TGSNahJvAdh86aR5pdcxiep1mBWSRK3HHL": 2858734.952177202,
+    "nodo|TKfz7Pu3jtxWrfHzVeozQjXsb3RfuUHGE2": 160233.55393449633,
+    "nodo|TX5XiRXdyz7sdFwF5mnhT1QoGCpbkncpke": 125272.31834455238,
+    "nodo|TCPPRajgXVBkR5Qvpd3RHh4xUvibhzrqSa": 113205.86728313746,
+    "usdd|AuthGemJoin5": 318916.98778969597,
+    "nodo|TMXawuHt4RoYUQ9pynNsyzqpTxxxLKZHsY": 2664.5898906955877,
+    "puente|BridgersSwap": 8282.96451
+   },
+   "polvo": 896335.3378607307,
+   "neutrales": 8273508.304230654,
+   "continuan": 201333617.6527202,
+   "retenido": 17940471.207562234,
+   "sinInventario": 4894242.328450799,
+   "haciaNoRastreadas": 18493.326118,
+   "inyectado": 58576840.33341469,
+   "convertido": 16014798.702495512,
+   "desconocidoEntra": 545283.7799736081
+  }
+ }
+}

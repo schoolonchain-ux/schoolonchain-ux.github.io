@@ -1,0 +1,1800 @@
+{
+ "contratos": {
+  "TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC": {
+   "tipo": "puente",
+   "nombre": "Chainflip (bóveda de TRON)",
+   "regla": "puente",
+   "prueba": "métodos del contrato: xCallToken(uint32,bytes,uint32,bytes,uint256,address,uint256,bytes) · transfer((uint256,uint256,address),(address,address,uint256)) · executexCall((uint256,uint256,address),address,uint32,bytes,bytes) · sus llamadas «allBatch» llevan swapID y firma de grupo (bóveda de Chainflip); el explorador de Chainflip devuelve un canal de depósito para las direcciones que le envían (chainflip-destinos.json)"
+  },
+  "TANdmAmc5jyNEFB1gXbEBfaG7Ftj1XNUG1": {
+   "tipo": "puente",
+   "nombre": "Across (Tron_Executor)",
+   "regla": "puente",
+   "prueba": "métodos del contrato: executeAcrossV5(bytes,bytes) · executeSubPlan(bytes,bytes[],bytes[])"
+  },
+  "TX2Ut1reF59i2WPzsYVoMfA25EkUkavnd5": {
+   "tipo": "nodo",
+   "nombre": "contrato de servicio sin nombre (9755 operaciones)",
+   "regla": "servicio",
+   "prueba": "contrato sin verificar ni nombre, 9755 operaciones, saldo propio de 1.228.717 USDT; el 87 % de sus salidas va a THkZi2uEBzBFKZeGKKGR2vSUsTq4tqQtUx (billetera de alto uso): punto de parada del rastreo, no recuperación"
+  },
+  "TNUC9Qb1rRpS5CbWLmNMxXBjyFoydXjWFR": {
+   "tipo": "atrapado",
+   "nombre": "WTRX (contrato de token)",
+   "regla": "atrapado",
+   "prueba": "ninguna salida de USDT en el historial del contrato; el contrato de token no tiene función para sacar otros tokens: transferFrom(address,address,uint256) · transfer(address,uint256) · approve(address) · approve(address,uint256) · deposit() · withdraw(uint256)"
+  },
+  "TGdqvQw1UaQdLdJh17CjeDzPDikKAuDjko": {
+   "tipo": "recolector",
+   "nombre": "recolector hacia TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC",
+   "regla": "recolector",
+   "prueba": "100 % de 1 salidas de USDT leídas (246.253 USDT) van a TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC"
+  },
+  "TExp8HjpdLcgX2bzBpU1YqPnudpgPJ6FJz": {
+   "tipo": "recolector",
+   "nombre": "recolector hacia TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC",
+   "regla": "recolector",
+   "prueba": "100 % de 3 salidas de USDT leídas (529.257 USDT) van a TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC"
+  },
+  "TNtf4XbWPRUyFAFppDRHhGr93Bv1XxfZEP": {
+   "tipo": "recolector",
+   "nombre": "recolector hacia TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC",
+   "regla": "recolector",
+   "prueba": "100 % de 1 salidas de USDT leídas (186.256 USDT) van a TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC"
+  },
+  "TLzLUvthXu9m2UAtTSmFWqEt3xeu7yoFrf": {
+   "tipo": "recolector",
+   "nombre": "recolector hacia TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC",
+   "regla": "recolector",
+   "prueba": "100 % de 1 salidas de USDT leídas (153.413 USDT) van a TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC"
+  },
+  "TKDxyeH6t4ZWdygYW12fxDMCwqrsqgzq3i": {
+   "tipo": "recolector",
+   "nombre": "recolector hacia TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC",
+   "regla": "recolector",
+   "prueba": "100 % de 1 salidas de USDT leídas (150.166 USDT) van a TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC"
+  },
+  "TRn5HpWrzzecir5XJLn9rTtFFGcEDit5Vt": {
+   "tipo": "recolector",
+   "nombre": "recolector hacia TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC",
+   "regla": "recolector",
+   "prueba": "100 % de 7 salidas de USDT leídas (366.550 USDT) van a TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC"
+  },
+  "TXPmFyXWpiuWxnJvAGzAi9F1AgmaaDHb7u": {
+   "tipo": "recolector",
+   "nombre": "recolector hacia TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC",
+   "regla": "recolector",
+   "prueba": "100 % de 1 salidas de USDT leídas (220.000 USDT) van a TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC"
+  },
+  "TEdgurJ2HSUs3b19pmHjoGBDchNuPgWNbw": {
+   "tipo": "recolector",
+   "nombre": "recolector hacia TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC",
+   "regla": "recolector",
+   "prueba": "100 % de 6 salidas de USDT leídas (1.731.278 USDT) van a TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC"
+  },
+  "TFvHbWCmtEJukdLNkKCtazWFHHH4BFDYjJ": {
+   "tipo": "recolector",
+   "nombre": "recolector hacia TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC",
+   "regla": "recolector",
+   "prueba": "100 % de 5 salidas de USDT leídas (202.943 USDT) van a TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC"
+  },
+  "TH8hnsS3AkuXAbdUN9RW1v5D3SofWmidhW": {
+   "tipo": "recolector",
+   "nombre": "recolector hacia TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC",
+   "regla": "recolector",
+   "prueba": "100 % de 3 salidas de USDT leídas (149.619 USDT) van a TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC"
+  },
+  "TBA7RpGLr2ZNe7GPNcXgYeEt9ZC3WGSTUh": {
+   "tipo": "recolector",
+   "nombre": "recolector hacia TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC",
+   "regla": "recolector",
+   "prueba": "100 % de 1 salidas de USDT leídas (157.072 USDT) van a TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC"
+  },
+  "TYzP4tsxpzU6SjPYkARXJiLr3LjedWu2ui": {
+   "tipo": "recolector",
+   "nombre": "recolector hacia TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC",
+   "regla": "recolector",
+   "prueba": "100 % de 1 salidas de USDT leídas (127.247 USDT) van a TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC"
+  },
+  "TXVMufr7vmbVmQEVgC7fHSLmPQZSo2gtDL": {
+   "tipo": "recolector",
+   "nombre": "recolector hacia TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC",
+   "regla": "recolector",
+   "prueba": "100 % de 4 salidas de USDT leídas (292.383 USDT) van a TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC"
+  },
+  "TP661fq94pq8g87rrxUAGD7mHbhQHUmZfs": {
+   "tipo": "recolector",
+   "nombre": "recolector hacia TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC",
+   "regla": "recolector",
+   "prueba": "100 % de 12 salidas de USDT leídas (303.376 USDT) van a TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC"
+  },
+  "TS2HzxzYLgGCF9VrE9D6grRxuzcoMTfP3X": {
+   "tipo": "recolector",
+   "nombre": "recolector hacia TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC",
+   "regla": "recolector",
+   "prueba": "100 % de 1 salidas de USDT leídas (151.707 USDT) van a TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC"
+  },
+  "TA7kGN1cqWz9UvNvpKDqTVXMp9CdjnRX5T": {
+   "tipo": "recolector",
+   "nombre": "recolector hacia TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC",
+   "regla": "recolector",
+   "prueba": "100 % de 7 salidas de USDT leídas (281.627 USDT) van a TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC"
+  },
+  "THhvEUJeLZxRXTA6oKi5cM7Hfqt5Wq83XG": {
+   "tipo": "recolector",
+   "nombre": "recolector hacia TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC",
+   "regla": "recolector",
+   "prueba": "100 % de 1 salidas de USDT leídas (187.116 USDT) van a TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC"
+  },
+  "TPtuxfs6JhpV8jqRxW6nzq6AWoy9RmcCzU": {
+   "tipo": "recolector",
+   "nombre": "recolector hacia TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC",
+   "regla": "recolector",
+   "prueba": "100 % de 19 salidas de USDT leídas (569.802 USDT) van a TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC"
+  },
+  "TW4Fds7aP4j5z3wK9ZaJjjTFKFgP23hmCL": {
+   "tipo": "recolector",
+   "nombre": "recolector hacia TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC",
+   "regla": "recolector",
+   "prueba": "100 % de 1 salidas de USDT leídas (181.434 USDT) van a TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC"
+  },
+  "TTsa3ZziPKYejPfdPqWqFd4ph5R9BLmUDU": {
+   "tipo": "recolector",
+   "nombre": "recolector hacia TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC",
+   "regla": "recolector",
+   "prueba": "100 % de 7 salidas de USDT leídas (631.855 USDT) van a TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC"
+  },
+  "TUUfaDxkYAgAiMQnmZogRzFeBd2sro5SJ7": {
+   "tipo": "recolector",
+   "nombre": "recolector hacia TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC",
+   "regla": "recolector",
+   "prueba": "100 % de 1 salidas de USDT leídas (178.501 USDT) van a TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC"
+  },
+  "TFQHiGaaU6Fw63xg6Nnsh3D4qQeum1icD2": {
+   "tipo": "recolector",
+   "nombre": "recolector hacia TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC",
+   "regla": "recolector",
+   "prueba": "100 % de 1 salidas de USDT leídas (175.225 USDT) van a TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC"
+  },
+  "TRiEmBiaQAvqyxjwquptiz6WD7L34oXcbR": {
+   "tipo": "recolector",
+   "nombre": "recolector hacia TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC",
+   "regla": "recolector",
+   "prueba": "100 % de 3 salidas de USDT leídas (155.722 USDT) van a TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC"
+  },
+  "THcFuMvPADijRL15GmMaw44hZrzQ9uSLtE": {
+   "tipo": "recolector",
+   "nombre": "recolector hacia TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC",
+   "regla": "recolector",
+   "prueba": "100 % de 2 salidas de USDT leídas (117.262 USDT) van a TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC"
+  },
+  "TRruBjWsGGF5vFuBfazPLSCtomWidd3Di8": {
+   "tipo": "recolector",
+   "nombre": "recolector hacia TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC",
+   "regla": "recolector",
+   "prueba": "100 % de 1 salidas de USDT leídas (138.131 USDT) van a TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC"
+  },
+  "TUNR3E2zXHq7dUixY4avAywhA1pWtFczTj": {
+   "tipo": "recolector",
+   "nombre": "recolector hacia TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC",
+   "regla": "recolector",
+   "prueba": "100 % de 2 salidas de USDT leídas (113.962 USDT) van a TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC"
+  },
+  "TFzyoj5oVugPPSzmpwpRuFhin7tuUcA9TJ": {
+   "tipo": "recolector",
+   "nombre": "recolector hacia TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC",
+   "regla": "recolector",
+   "prueba": "100 % de 2 salidas de USDT leídas (123.601 USDT) van a TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC"
+  },
+  "TR8HrsxB4jF3XZXT8QC5z4KYhDChTkU3qw": {
+   "tipo": "recolector",
+   "nombre": "recolector hacia TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC",
+   "regla": "recolector",
+   "prueba": "100 % de 1 salidas de USDT leídas (107.819 USDT) van a TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC"
+  },
+  "TF3Cz7SHMvsZy7LQJtvBKkSErCLteNU6Xt": {
+   "tipo": "recolector",
+   "nombre": "recolector hacia TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC",
+   "regla": "recolector",
+   "prueba": "100 % de 1 salidas de USDT leídas (160.000 USDT) van a TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC"
+  },
+  "TFc92zoFoC49WXFpSihRafWk8gAEWrUwwa": {
+   "tipo": "recolector",
+   "nombre": "recolector hacia TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC",
+   "regla": "recolector",
+   "prueba": "100 % de 1 salidas de USDT leídas (105.755 USDT) van a TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC"
+  },
+  "TJf6pyRRQrZ8benGSqT7KYvpqLFE1NfK2h": {
+   "tipo": "recolector",
+   "nombre": "recolector hacia TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC",
+   "regla": "recolector",
+   "prueba": "100 % de 1 salidas de USDT leídas (105.501 USDT) van a TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC"
+  },
+  "TYA9SrPMSW9Bd3k7rzG71r1DWSRgreYEPB": {
+   "tipo": "recolector",
+   "nombre": "recolector hacia TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC",
+   "regla": "recolector",
+   "prueba": "100 % de 16 salidas de USDT leídas (340.190 USDT) van a TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC"
+  },
+  "TUCeaLWUj5VtUU6DwkktviLB6bxpuhEjZe": {
+   "tipo": "recolector",
+   "nombre": "recolector hacia TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC",
+   "regla": "recolector",
+   "prueba": "100 % de 1 salidas de USDT leídas (104.509 USDT) van a TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC"
+  },
+  "TJZNzzP8FvuezyJjjFpNgYM3ebe5zV5TGL": {
+   "tipo": "recolector",
+   "nombre": "recolector hacia TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC",
+   "regla": "recolector",
+   "prueba": "100 % de 2 salidas de USDT leídas (104.235 USDT) van a TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC"
+  },
+  "TYHPa1H8HLPPGdrGzdKDYF6y6fN9xv8GtM": {
+   "tipo": "recolector",
+   "nombre": "recolector hacia TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC",
+   "regla": "recolector",
+   "prueba": "100 % de 12 salidas de USDT leídas (344.971 USDT) van a TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC"
+  },
+  "TV6izGA1ZDckPkGigTxDJuVuNJ4LqVBFYm": {
+   "tipo": "recolector",
+   "nombre": "recolector hacia TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC",
+   "regla": "recolector",
+   "prueba": "100 % de 12 salidas de USDT leídas (745.223 USDT) van a TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC"
+  },
+  "TJ8KG9S3FTimmYVZuDzcVB24Rp8fmKN7Pa": {
+   "tipo": "recolector",
+   "nombre": "recolector hacia TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC",
+   "regla": "recolector",
+   "prueba": "100 % de 1 salidas de USDT leídas (101.117 USDT) van a TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC"
+  },
+  "TRSn7oQpvphWzMhzsFX8Uv1aMQVd5yGUhk": {
+   "tipo": "recolector",
+   "nombre": "recolector hacia TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC",
+   "regla": "recolector",
+   "prueba": "100 % de 5 salidas de USDT leídas (214.922 USDT) van a TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC"
+  },
+  "TDJBSSVxAVFtgr7H15jyVuhg9dLzqsZqaw": {
+   "tipo": "recolector",
+   "nombre": "recolector hacia TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC",
+   "regla": "recolector",
+   "prueba": "100 % de 1 salidas de USDT leídas (100.258 USDT) van a TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC"
+  },
+  "TQHYZ5Ay1sWgP12s2VCHAmccENuL4n89oM": {
+   "tipo": "recolector",
+   "nombre": "recolector hacia TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC",
+   "regla": "recolector",
+   "prueba": "100 % de 1 salidas de USDT leídas (100.065 USDT) van a TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC"
+  },
+  "TWvhQTJtke3ikQtBciqiDtUwcTynf2GimV": {
+   "tipo": "recolector",
+   "nombre": "recolector hacia TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC",
+   "regla": "recolector",
+   "prueba": "100 % de 2 salidas de USDT leídas (107.033 USDT) van a TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC"
+  },
+  "TTBjcegjKe2XLwmX1KdMbeSbjLrJuQS7Jy": {
+   "tipo": "recolector",
+   "nombre": "recolector hacia TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC",
+   "regla": "recolector",
+   "prueba": "100 % de 7 salidas de USDT leídas (272.420 USDT) van a TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC"
+  },
+  "TR9jinLhJdExdLzYKhpXi9yphQdM4PcN4n": {
+   "tipo": "recolector",
+   "nombre": "recolector hacia TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC",
+   "regla": "recolector",
+   "prueba": "100 % de 27 salidas de USDT leídas (1.372.849 USDT) van a TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC"
+  },
+  "TTYBKQtfTmUyfYzkUzcHA53BNcnVM79NCx": {
+   "tipo": "recolector",
+   "nombre": "recolector hacia TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC",
+   "regla": "recolector",
+   "prueba": "100 % de 6 salidas de USDT leídas (417.690 USDT) van a TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC"
+  },
+  "TUErRs2zzz1EYaye7jaXwNRvGCfa5zj1q6": {
+   "tipo": "recolector",
+   "nombre": "recolector hacia TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC",
+   "regla": "recolector",
+   "prueba": "100 % de 1 salidas de USDT leídas (99.638 USDT) van a TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC"
+  },
+  "TWzmeu3Pd31UfySjA2YtCBdzBHrc5KCXFS": {
+   "tipo": "recolector",
+   "nombre": "recolector hacia TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC",
+   "regla": "recolector",
+   "prueba": "100 % de 1 salidas de USDT leídas (99.561 USDT) van a TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC"
+  },
+  "TMhbgn5rRNdrE3MdShhuGhjBC6Wd4eQgg6": {
+   "tipo": "recolector",
+   "nombre": "recolector hacia TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC",
+   "regla": "recolector",
+   "prueba": "100 % de 1 salidas de USDT leídas (150.000 USDT) van a TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC"
+  },
+  "TCx4VRAqd9ZvMBWtcZfKJPGgbaoMoiq25n": {
+   "tipo": "recolector",
+   "nombre": "recolector hacia TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC",
+   "regla": "recolector",
+   "prueba": "100 % de 1 salidas de USDT leídas (99.083 USDT) van a TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC"
+  },
+  "THW73KMLbGVUN85MGNY8UNyqnNJhwsQYii": {
+   "tipo": "recolector",
+   "nombre": "recolector hacia TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC",
+   "regla": "recolector",
+   "prueba": "100 % de 3 salidas de USDT leídas (145.649 USDT) van a TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC"
+  },
+  "TJ7rUp6dsBS9BEa3kFvKCLqXg44rhE4nDn": {
+   "tipo": "recolector",
+   "nombre": "recolector hacia TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC",
+   "regla": "recolector",
+   "prueba": "100 % de 1 salidas de USDT leídas (98.302 USDT) van a TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC"
+  },
+  "THu7CvNL2VrHo3vnoE3UMhdgK5kbri9mBt": {
+   "tipo": "recolector",
+   "nombre": "recolector hacia TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC",
+   "regla": "recolector",
+   "prueba": "100 % de 1 salidas de USDT leídas (98.121 USDT) van a TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC"
+  },
+  "TLb47qh6ub3GkRoEQWUZHJ5FakapusD5dH": {
+   "tipo": "recolector",
+   "nombre": "recolector hacia TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC",
+   "regla": "recolector",
+   "prueba": "100 % de 1 salidas de USDT leídas (98.108 USDT) van a TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC"
+  },
+  "TAZGPTHiCYgHGCLqWHupxc5D7ep8FDt1FN": {
+   "tipo": "recolector",
+   "nombre": "recolector hacia TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC",
+   "regla": "recolector",
+   "prueba": "100 % de 2 salidas de USDT leídas (108.054 USDT) van a TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC"
+  },
+  "TTejYRTSkRQkx4vzugDUhXAq13GuZSW9Xi": {
+   "tipo": "recolector",
+   "nombre": "recolector hacia TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC",
+   "regla": "recolector",
+   "prueba": "100 % de 2 salidas de USDT leídas (108.017 USDT) van a TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC"
+  },
+  "THwY9tFG5FQbciKK9sCgRbWFQTfdwhnHAB": {
+   "tipo": "recolector",
+   "nombre": "recolector hacia TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC",
+   "regla": "recolector",
+   "prueba": "100 % de 3 salidas de USDT leídas (189.803 USDT) van a TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC"
+  },
+  "TMtkaJKn5on35WcSNmGMSGvJhNhXuLPZCg": {
+   "tipo": "recolector",
+   "nombre": "recolector hacia TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC",
+   "regla": "recolector",
+   "prueba": "100 % de 1 salidas de USDT leídas (97.927 USDT) van a TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC"
+  },
+  "TUR35xZpEHJuQYYTKQn1XVH3frqPnXG3mk": {
+   "tipo": "recolector",
+   "nombre": "recolector hacia TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC",
+   "regla": "recolector",
+   "prueba": "100 % de 2 salidas de USDT leídas (98.018 USDT) van a TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC"
+  },
+  "TKZj68AwM7Q9nBJKFUu7AA4JueEqoxdma1": {
+   "tipo": "recolector",
+   "nombre": "recolector hacia TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC",
+   "regla": "recolector",
+   "prueba": "100 % de 1 salidas de USDT leídas (96.509 USDT) van a TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC"
+  },
+  "TJ2RrBAPpwruGHeJF6KnF57YiLW4pSHe31": {
+   "tipo": "recolector",
+   "nombre": "recolector hacia TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC",
+   "regla": "recolector",
+   "prueba": "100 % de 2 salidas de USDT leídas (171.829 USDT) van a TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC"
+  },
+  "TNKLbEvT1jdnGctbmCbMEkLiXtsdXEE1ns": {
+   "tipo": "recolector",
+   "nombre": "recolector hacia TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC",
+   "regla": "recolector",
+   "prueba": "100 % de 2 salidas de USDT leídas (181.348 USDT) van a TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC"
+  },
+  "TEBMy73cmGUYBf9TRpECmBN1aHhAx4MNs1": {
+   "tipo": "recolector",
+   "nombre": "recolector hacia TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC",
+   "regla": "recolector",
+   "prueba": "100 % de 1 salidas de USDT leídas (96.297 USDT) van a TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC"
+  },
+  "TAdkWfFaarq2m33fSXKztLv1kqkDpU7C6p": {
+   "tipo": "recolector",
+   "nombre": "recolector hacia TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC",
+   "regla": "recolector",
+   "prueba": "100 % de 2 salidas de USDT leídas (150.193 USDT) van a TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC"
+  },
+  "TCRvphrFSLFKBFwXeeztMAFEKpCPdBJkZb": {
+   "tipo": "recolector",
+   "nombre": "recolector hacia TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC",
+   "regla": "recolector",
+   "prueba": "100 % de 2 salidas de USDT leídas (185.970 USDT) van a TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC"
+  },
+  "TSSHqZ8ZRTdxbn5NepxYyDUnum9Zge6JQ6": {
+   "tipo": "recolector",
+   "nombre": "recolector hacia TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC",
+   "regla": "recolector",
+   "prueba": "100 % de 1 salidas de USDT leídas (95.926 USDT) van a TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC"
+  },
+  "TUPScHpcPxdUddDBUHwzPvdbRjedoMTnJy": {
+   "tipo": "recolector",
+   "nombre": "recolector hacia TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC",
+   "regla": "recolector",
+   "prueba": "100 % de 7 salidas de USDT leídas (234.045 USDT) van a TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC"
+  },
+  "TED98H832eYBae945g716GHDvyb3NisabF": {
+   "tipo": "recolector",
+   "nombre": "recolector hacia TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC",
+   "regla": "recolector",
+   "prueba": "100 % de 6 salidas de USDT leídas (449.107 USDT) van a TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC"
+  },
+  "TRSzNSejVoxt4UEGqV7g5XzZfBPhvSkMsJ": {
+   "tipo": "recolector",
+   "nombre": "recolector hacia TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC",
+   "regla": "recolector",
+   "prueba": "100 % de 7 salidas de USDT leídas (344.758 USDT) van a TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC"
+  },
+  "TEVHqTGosEjnbUW9W7PLsTbV7GWqn3GC8q": {
+   "tipo": "recolector",
+   "nombre": "recolector hacia TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC",
+   "regla": "recolector",
+   "prueba": "100 % de 1 salidas de USDT leídas (95.438 USDT) van a TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC"
+  },
+  "TJza7S39RS9VEXvr89rGo6s5QLvszrBxG2": {
+   "tipo": "recolector",
+   "nombre": "recolector hacia TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC",
+   "regla": "recolector",
+   "prueba": "100 % de 1 salidas de USDT leídas (95.402 USDT) van a TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC"
+  },
+  "TFi7ZtM9wRhu91xF6vYEdk2ko7XAXcQRzU": {
+   "tipo": "recolector",
+   "nombre": "recolector hacia TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC",
+   "regla": "recolector",
+   "prueba": "100 % de 1 salidas de USDT leídas (95.338 USDT) van a TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC"
+  },
+  "TKKukfShv9H9jnuoH19K2rWZq7x7SwGv7M": {
+   "tipo": "recolector",
+   "nombre": "recolector hacia TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC",
+   "regla": "recolector",
+   "prueba": "100 % de 1 salidas de USDT leídas (95.331 USDT) van a TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC"
+  },
+  "TV8HZnuRYxpJweySX5NJPquREoXaKxq6Kw": {
+   "tipo": "recolector",
+   "nombre": "recolector hacia TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC",
+   "regla": "recolector",
+   "prueba": "100 % de 2 salidas de USDT leídas (201.577 USDT) van a TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC"
+  },
+  "TXmAjx81ejG4Wkkff33gAKudCrcw5u2ZHd": {
+   "tipo": "recolector",
+   "nombre": "recolector hacia TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC",
+   "regla": "recolector",
+   "prueba": "100 % de 3 salidas de USDT leídas (276.559 USDT) van a TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC"
+  },
+  "TJZd17EnbMqgkSsRARjJQya1XzVZAMuyVh": {
+   "tipo": "recolector",
+   "nombre": "recolector hacia TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC",
+   "regla": "recolector",
+   "prueba": "100 % de 4 salidas de USDT leídas (175.678 USDT) van a TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC"
+  },
+  "TB4FpehDQxUnTKe6to43zwaUz2kDKjKBMJ": {
+   "tipo": "recolector",
+   "nombre": "recolector hacia TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC",
+   "regla": "recolector",
+   "prueba": "100 % de 1 salidas de USDT leídas (93.918 USDT) van a TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC"
+  },
+  "TFgGdyFfWeWo7B2yEoDxPBGPAUjmL9vJib": {
+   "tipo": "recolector",
+   "nombre": "recolector hacia TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC",
+   "regla": "recolector",
+   "prueba": "100 % de 7 salidas de USDT leídas (226.581 USDT) van a TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC"
+  },
+  "TCArN4WcKB1P4LpFg2Nvnqoq6Xa6LjN1ze": {
+   "tipo": "recolector",
+   "nombre": "recolector hacia TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC",
+   "regla": "recolector",
+   "prueba": "100 % de 2 salidas de USDT leídas (151.760 USDT) van a TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC"
+  },
+  "TQBgyGCdCdSndaXjKuyPfQSfY2b3vjq1f6": {
+   "tipo": "recolector",
+   "nombre": "recolector hacia TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC",
+   "regla": "recolector",
+   "prueba": "100 % de 1 salidas de USDT leídas (93.240 USDT) van a TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC"
+  },
+  "TH6KZrrX51TcQTyaoBY7ag9Ps2Nc8zYq27": {
+   "tipo": "recolector",
+   "nombre": "recolector hacia TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC",
+   "regla": "recolector",
+   "prueba": "100 % de 1 salidas de USDT leídas (92.942 USDT) van a TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC"
+  },
+  "TScsZ21qXXgsJDGwsP6agNZECYzzPZLkUG": {
+   "tipo": "recolector",
+   "nombre": "recolector hacia TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC",
+   "regla": "recolector",
+   "prueba": "100 % de 1 salidas de USDT leídas (92.911 USDT) van a TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC"
+  },
+  "TJU8ms5qRG8mSkHM4eCZ9M7F7xnrJcbZWe": {
+   "tipo": "recolector",
+   "nombre": "recolector hacia TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC",
+   "regla": "recolector",
+   "prueba": "100 % de 1 salidas de USDT leídas (92.463 USDT) van a TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC"
+  },
+  "TMeBSdEX53oVz7t4GmtYEgL7HEwKLXQk2j": {
+   "tipo": "recolector",
+   "nombre": "recolector hacia TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC",
+   "regla": "recolector",
+   "prueba": "100 % de 1 salidas de USDT leídas (109.963 USDT) van a TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC"
+  },
+  "TRH8yXru7LfecwoudTQ2QPgq1u1mL5S28p": {
+   "tipo": "recolector",
+   "nombre": "recolector hacia TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC",
+   "regla": "recolector",
+   "prueba": "100 % de 2 salidas de USDT leídas (125.790 USDT) van a TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC"
+  },
+  "TRcyYTWt6aL2zaQ8gGhEsa1bhVtUzhS7Zf": {
+   "tipo": "recolector",
+   "nombre": "recolector hacia TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC",
+   "regla": "recolector",
+   "prueba": "100 % de 4 salidas de USDT leídas (175.953 USDT) van a TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC"
+  },
+  "TKRHsGNXzgJFJkQ7rtJBcqEEPuSZFfsq8j": {
+   "tipo": "recolector",
+   "nombre": "recolector hacia TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC",
+   "regla": "recolector",
+   "prueba": "100 % de 4 salidas de USDT leídas (247.713 USDT) van a TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC"
+  },
+  "TY6vAB6RRc51QhvCAVQi3ZNCnGDV5Nrff4": {
+   "tipo": "recolector",
+   "nombre": "recolector hacia TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC",
+   "regla": "recolector",
+   "prueba": "100 % de 1 salidas de USDT leídas (90.390 USDT) van a TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC"
+  },
+  "TWZWcaUmzPKwaUCErn2kqEf1N5Ufsecre2": {
+   "tipo": "recolector",
+   "nombre": "recolector hacia TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC",
+   "regla": "recolector",
+   "prueba": "100 % de 10 salidas de USDT leídas (355.224 USDT) van a TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC"
+  },
+  "TXRbvLDiggq21yP3bvcC23vum29ZtmsEWU": {
+   "tipo": "recolector",
+   "nombre": "recolector hacia TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC",
+   "regla": "recolector",
+   "prueba": "100 % de 2 salidas de USDT leídas (139.978 USDT) van a TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC"
+  },
+  "TSaCUY6c5VEZ6PCE2GmwA3ZrgMWmHK35P8": {
+   "tipo": "recolector",
+   "nombre": "recolector hacia TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC",
+   "regla": "recolector",
+   "prueba": "100 % de 4 salidas de USDT leídas (253.159 USDT) van a TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC"
+  },
+  "TNV3wp2TSFK9UQnBUCeNuTna6bUdkdKCNG": {
+   "tipo": "recolector",
+   "nombre": "recolector hacia TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC",
+   "regla": "recolector",
+   "prueba": "100 % de 1 salidas de USDT leídas (89.824 USDT) van a TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC"
+  },
+  "TP3oCiJTT3nEbApCaJFuUqZ6iURP8q2bet": {
+   "tipo": "recolector",
+   "nombre": "recolector hacia TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC",
+   "regla": "recolector",
+   "prueba": "100 % de 1 salidas de USDT leídas (89.415 USDT) van a TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC"
+  },
+  "TNFyj2hG3VPz6rF7kWfNq9aQ2S5S59KSLF": {
+   "tipo": "recolector",
+   "nombre": "recolector hacia TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC",
+   "regla": "recolector",
+   "prueba": "100 % de 2 salidas de USDT leídas (205.540 USDT) van a TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC"
+  },
+  "TVdq7RMWiv8gj6ezjLuMMmJ2X8Gdne4kbn": {
+   "tipo": "recolector",
+   "nombre": "recolector hacia TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC",
+   "regla": "recolector",
+   "prueba": "100 % de 7 salidas de USDT leídas (331.838 USDT) van a TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC"
+  },
+  "TQPX23ueodnMNKv5j2HbFCifDrhXVV4abA": {
+   "tipo": "recolector",
+   "nombre": "recolector hacia TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC",
+   "regla": "recolector",
+   "prueba": "100 % de 1 salidas de USDT leídas (87.620 USDT) van a TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC"
+  },
+  "TJ5ktCSt9FWDpiYECGRy9eDbYLxFcHWR3y": {
+   "tipo": "recolector",
+   "nombre": "recolector hacia TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC",
+   "regla": "recolector",
+   "prueba": "100 % de 1 salidas de USDT leídas (86.997 USDT) van a TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC"
+  },
+  "TTEsSKtpLrz1WYLFSAAAxjfjuCbA23geoJ": {
+   "tipo": "recolector",
+   "nombre": "recolector hacia TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC",
+   "regla": "recolector",
+   "prueba": "100 % de 1 salidas de USDT leídas (86.988 USDT) van a TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC"
+  },
+  "TKc8s1vemj9G89irMLrUnMtTt5t7WY5P4V": {
+   "tipo": "recolector",
+   "nombre": "recolector hacia TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC",
+   "regla": "recolector",
+   "prueba": "100 % de 1 salidas de USDT leídas (86.285 USDT) van a TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC"
+  },
+  "TX2KLFwRZuXA71R8DUV58sLRWNXBrRYRrP": {
+   "tipo": "recolector",
+   "nombre": "recolector hacia TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC",
+   "regla": "recolector",
+   "prueba": "100 % de 2 salidas de USDT leídas (150.971 USDT) van a TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC"
+  },
+  "TX1MesPdUUAvP2ZwuhMuPvwhW8xqVn9Jko": {
+   "tipo": "recolector",
+   "nombre": "recolector hacia TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC",
+   "regla": "recolector",
+   "prueba": "100 % de 1 salidas de USDT leídas (102.994 USDT) van a TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC"
+  },
+  "TSdinwSUYSXie3nfd7UUrCr8425jxec8Ct": {
+   "tipo": "recolector",
+   "nombre": "recolector hacia TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC",
+   "regla": "recolector",
+   "prueba": "100 % de 4 salidas de USDT leídas (221.787 USDT) van a TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC"
+  },
+  "TM7Lff7X8fndxdNAaiQreryncJWfL8CHZ8": {
+   "tipo": "recolector",
+   "nombre": "recolector hacia TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC",
+   "regla": "recolector",
+   "prueba": "100 % de 3 salidas de USDT leídas (150.265 USDT) van a TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC"
+  },
+  "TU1jsJDYFS1epqxwnyPi9fCoS9ihjA76XS": {
+   "tipo": "recolector",
+   "nombre": "recolector hacia TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC",
+   "regla": "recolector",
+   "prueba": "100 % de 1 salidas de USDT leídas (84.740 USDT) van a TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC"
+  },
+  "TWxmLGv2JvSaDynzA6Gk2FD3vX4Wm1gVF9": {
+   "tipo": "recolector",
+   "nombre": "recolector hacia TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC",
+   "regla": "recolector",
+   "prueba": "100 % de 1 salidas de USDT leídas (84.597 USDT) van a TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC"
+  },
+  "TETSfQ9etbx42wLeyoSqefRUKAyoL7dw9f": {
+   "tipo": "recolector",
+   "nombre": "recolector hacia TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC",
+   "regla": "recolector",
+   "prueba": "100 % de 2 salidas de USDT leídas (86.691 USDT) van a TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC"
+  },
+  "TE2eGH3fvMqFUHkij8mJUpRFY1sXX21sXt": {
+   "tipo": "recolector",
+   "nombre": "recolector hacia TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC",
+   "regla": "recolector",
+   "prueba": "100 % de 2 salidas de USDT leídas (189.740 USDT) van a TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC"
+  },
+  "TDZ3v7ZBFrcB8yCxrBiUkN4V54oGURFFjj": {
+   "tipo": "recolector",
+   "nombre": "recolector hacia TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC",
+   "regla": "recolector",
+   "prueba": "100 % de 5 salidas de USDT leídas (225.172 USDT) van a TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC"
+  },
+  "TCaEFRUQCGo6EsfK6jbFGRXgHJkoPGxnLR": {
+   "tipo": "recolector",
+   "nombre": "recolector hacia TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC",
+   "regla": "recolector",
+   "prueba": "100 % de 2 salidas de USDT leídas (89.921 USDT) van a TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC"
+  },
+  "TA653FjmX4gS69KXW2WuAeEzfaXutyEN4e": {
+   "tipo": "recolector",
+   "nombre": "recolector hacia TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC",
+   "regla": "recolector",
+   "prueba": "100 % de 2 salidas de USDT leídas (113.329 USDT) van a TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC"
+  },
+  "THrdavoQ4mpRRWwfoqMkneoct9p2wTy391": {
+   "tipo": "recolector",
+   "nombre": "recolector hacia TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC",
+   "regla": "recolector",
+   "prueba": "100 % de 21 salidas de USDT leídas (667.105 USDT) van a TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC"
+  },
+  "TY6xb5QhVN9rUWF1VQ6U3h8rZXkmed8jps": {
+   "tipo": "recolector",
+   "nombre": "recolector hacia TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC",
+   "regla": "recolector",
+   "prueba": "100 % de 1 salidas de USDT leídas (83.321 USDT) van a TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC"
+  },
+  "TRZFe9JqeiYLaMLvttiZrEBD9e6cXvkiP6": {
+   "tipo": "recolector",
+   "nombre": "recolector hacia TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC",
+   "regla": "recolector",
+   "prueba": "100 % de 2 salidas de USDT leídas (122.887 USDT) van a TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC"
+  },
+  "TE7EKr28xCZmnjVeuM6ybWByjCBhhWCKX4": {
+   "tipo": "recolector",
+   "nombre": "recolector hacia TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC",
+   "regla": "recolector",
+   "prueba": "100 % de 2 salidas de USDT leídas (173.905 USDT) van a TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC"
+  },
+  "TFBEDVifehR4fRdbuFzS7jo12xondopz9b": {
+   "tipo": "recolector",
+   "nombre": "recolector hacia TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC",
+   "regla": "recolector",
+   "prueba": "100 % de 1 salidas de USDT leídas (81.308 USDT) van a TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC"
+  },
+  "TUJXJ6ScKtio7b3eezdAE3QNYHbrLfY4L9": {
+   "tipo": "recolector",
+   "nombre": "recolector hacia TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC",
+   "regla": "recolector",
+   "prueba": "100 % de 3 salidas de USDT leídas (82.667 USDT) van a TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC"
+  },
+  "TE4Dv7YtHsxjH3wKAFng64QF4goiXBfjxs": {
+   "tipo": "recolector",
+   "nombre": "recolector hacia TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC",
+   "regla": "recolector",
+   "prueba": "100 % de 3 salidas de USDT leídas (296.619 USDT) van a TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC"
+  },
+  "TWUQVg5vp5BQtrDpzSf3YYKZGJd6oBqYkj": {
+   "tipo": "recolector",
+   "nombre": "recolector hacia TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC",
+   "regla": "recolector",
+   "prueba": "100 % de 21 salidas de USDT leídas (931.838 USDT) van a TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC"
+  },
+  "TSXm7tBmi3JsoB54sTr8FdTtCMSDJT2c9c": {
+   "tipo": "recolector",
+   "nombre": "recolector hacia TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC",
+   "regla": "recolector",
+   "prueba": "100 % de 3 salidas de USDT leídas (96.778 USDT) van a TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC"
+  },
+  "TWXzd8qeFbJHRXcjKQPwfPk776VEWrP5Dw": {
+   "tipo": "recolector",
+   "nombre": "recolector hacia TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC",
+   "regla": "recolector",
+   "prueba": "100 % de 1 salidas de USDT leídas (79.707 USDT) van a TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC"
+  },
+  "TQhBDTYPUU4z4i8yYajLa8mGmm1bp8iriH": {
+   "tipo": "recolector",
+   "nombre": "recolector hacia TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC",
+   "regla": "recolector",
+   "prueba": "100 % de 1 salidas de USDT leídas (79.546 USDT) van a TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC"
+  },
+  "TAXXAgDos4WQGTXsdBTzsh5xPacZfVbip3": {
+   "tipo": "recolector",
+   "nombre": "recolector hacia TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC",
+   "regla": "recolector",
+   "prueba": "100 % de 1 salidas de USDT leídas (79.030 USDT) van a TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC"
+  },
+  "TMnybB8Pic9JeN2BV1Ya2UeQrNLSphNoan": {
+   "tipo": "recolector",
+   "nombre": "recolector hacia TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC",
+   "regla": "recolector",
+   "prueba": "100 % de 1 salidas de USDT leídas (78.269 USDT) van a TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC"
+  },
+  "TDhs7v41bECSEDXRqgxqP9BD79qDKEkCSK": {
+   "tipo": "recolector",
+   "nombre": "recolector hacia TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC",
+   "regla": "recolector",
+   "prueba": "100 % de 3 salidas de USDT leídas (82.880 USDT) van a TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC"
+  },
+  "TSqNBF3ygyNSSmtCBgEJLaMhGeqpyBZ6Wp": {
+   "tipo": "recolector",
+   "nombre": "recolector hacia TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC",
+   "regla": "recolector",
+   "prueba": "100 % de 3 salidas de USDT leídas (115.684 USDT) van a TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC"
+  },
+  "TCDRofxkFtZR964diBdCBK4Fgfc7QqQB3h": {
+   "tipo": "recolector",
+   "nombre": "recolector hacia TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC",
+   "regla": "recolector",
+   "prueba": "100 % de 1 salidas de USDT leídas (71.890 USDT) van a TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC"
+  },
+  "TJh6Syq8fj5ekKueSKpEQgpSJqm4MX8ujw": {
+   "tipo": "recolector",
+   "nombre": "recolector hacia TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC",
+   "regla": "recolector",
+   "prueba": "100 % de 1 salidas de USDT leídas (71.476 USDT) van a TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC"
+  },
+  "TJfqRgKFcWYEE548oEo6kneDwFcZbkuxpj": {
+   "tipo": "recolector",
+   "nombre": "recolector hacia TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC",
+   "regla": "recolector",
+   "prueba": "100 % de 1 salidas de USDT leídas (69.201 USDT) van a TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC"
+  },
+  "TGFrzC6cg3UTYgPJ88n8urVshPRTYxCqtV": {
+   "tipo": "recolector",
+   "nombre": "recolector hacia TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC",
+   "regla": "recolector",
+   "prueba": "100 % de 1 salidas de USDT leídas (111.295 USDT) van a TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC"
+  },
+  "TRsGX3QjTxNxsrFKpqfmuLCwpucbV8g2jq": {
+   "tipo": "recolector",
+   "nombre": "recolector hacia TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC",
+   "regla": "recolector",
+   "prueba": "100 % de 1 salidas de USDT leídas (100.000 USDT) van a TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC"
+  },
+  "TBQoMTdgsujd5kXWPcjMLaVEJ9pf8FqPBo": {
+   "tipo": "recolector",
+   "nombre": "recolector hacia TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC",
+   "regla": "recolector",
+   "prueba": "100 % de 1 salidas de USDT leídas (66.311 USDT) van a TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC"
+  },
+  "TMEcqtSQhQYEXoNswhw99kdENeGxvMuNm3": {
+   "tipo": "recolector",
+   "nombre": "recolector hacia TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC",
+   "regla": "recolector",
+   "prueba": "100 % de 9 salidas de USDT leídas (238.722 USDT) van a TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC"
+  },
+  "TQCeWJk8gjbiPeKUB6UnAGXWDWbszyPFpe": {
+   "tipo": "recolector",
+   "nombre": "recolector hacia TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC",
+   "regla": "recolector",
+   "prueba": "100 % de 3 salidas de USDT leídas (131.689 USDT) van a TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC"
+  },
+  "TH5DHHoTdLsQZPufXHwMnQVy8RfMbDsv8z": {
+   "tipo": "recolector",
+   "nombre": "recolector hacia TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC",
+   "regla": "recolector",
+   "prueba": "100 % de 1 salidas de USDT leídas (62.424 USDT) van a TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC"
+  },
+  "TXX5v2u6q6UoCN1UD5C7nEqPq1EHbvrNAg": {
+   "tipo": "recolector",
+   "nombre": "recolector hacia TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC",
+   "regla": "recolector",
+   "prueba": "100 % de 1 salidas de USDT leídas (53.111 USDT) van a TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC"
+  },
+  "TPtkrW17KKyWS2PCDA7qLg3Mva7NPuBUFJ": {
+   "tipo": "recolector",
+   "nombre": "recolector hacia TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC",
+   "regla": "recolector",
+   "prueba": "100 % de 1 salidas de USDT leídas (52.936 USDT) van a TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC"
+  },
+  "TGzcHHkuiAsrDtFGX1k7uKCqJesc2tRz3z": {
+   "tipo": "recolector",
+   "nombre": "recolector hacia TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC",
+   "regla": "recolector",
+   "prueba": "100 % de 1 salidas de USDT leídas (49.863 USDT) van a TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC"
+  },
+  "TRadstm3sFrdcfFFNkpBGRY1zjcPgs3vjB": {
+   "tipo": "recolector",
+   "nombre": "recolector hacia TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC",
+   "regla": "recolector",
+   "prueba": "100 % de 12 salidas de USDT leídas (470.016 USDT) van a TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC"
+  },
+  "TAxmfhvNfDM4gsp3PGwhNTF2i6TTAYLd8R": {
+   "tipo": "recolector",
+   "nombre": "recolector hacia TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC",
+   "regla": "recolector",
+   "prueba": "100 % de 1 salidas de USDT leídas (42.860 USDT) van a TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC"
+  },
+  "TEHhLbALbTVdyWQzFGwu1wTTe94NWd8PLc": {
+   "tipo": "recolector",
+   "nombre": "recolector hacia TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC",
+   "regla": "recolector",
+   "prueba": "100 % de 1 salidas de USDT leídas (30.000 USDT) van a TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC"
+  },
+  "TNtk2umALkTedmwsMkymY5kATgNdwmcyBE": {
+   "tipo": "recolector",
+   "nombre": "recolector hacia TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC",
+   "regla": "recolector",
+   "prueba": "100 % de 1 salidas de USDT leídas (47.691 USDT) van a TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC"
+  },
+  "TE2RzoSV3wFK99w6J9UnnZ4vLfXYoxvRwP": {
+   "tipo": "atrapado",
+   "nombre": "JustLend TRX (contrato de token)",
+   "regla": "atrapado",
+   "prueba": "ninguna salida de USDT en el historial del contrato; el contrato de token no tiene función para sacar otros tokens: exchangeRateCurrent() · transfer(address,uint256) · initialize(address,address,uint256,string,string,uint8,uint256) · approve(address,uint256) · _setPendingAdmin(address) · seize(address,address,uint256) · redeemUnderlying(uint256) · _setComptroller(address) · totalBorrowsCurrent() · _addReserves() · mint() · repayBorrowBehalf(address) · accrueInterest() · borrow(uint256) · _setInterestRateModel(address) · balanceOfUnderlying(address) · _acceptAdmin() · repayBorrow(uint256) · transferFrom(address,address,uint256) · _reduceReserves(uint256) · _setReserveAdmin(address) · liquidateBorrow(address,address) · _setReserveFactor(uint256) · redeem(uint256) · borrowBalanceCurrent(address)"
+  },
+  "TVUFcYAWys8Jf3197fDtDPSNkMZaaZXGfB": {
+   "tipo": "recolector",
+   "nombre": "recolector hacia TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC",
+   "regla": "recolector",
+   "prueba": "100 % de 4 salidas de USDT leídas (164.507 USDT) van a TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC"
+  },
+  "TXxQkXFRKUXjmAYGY2wXJ1vMAcB5bMPESh": {
+   "tipo": "recolector",
+   "nombre": "recolector hacia TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC",
+   "regla": "recolector",
+   "prueba": "100 % de 11 salidas de USDT leídas (254.155 USDT) van a TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC"
+  },
+  "TPiRqLXtFpbMh2dvKb1hs7dE6DxtegSFYV": {
+   "tipo": "recolector",
+   "nombre": "recolector hacia TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC",
+   "regla": "recolector",
+   "prueba": "100 % de 7 salidas de USDT leídas (364.668 USDT) van a TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC"
+  },
+  "TA1hFkhGazXxAQsaHeynYAWdRLSBCoVWw6": {
+   "tipo": "recolector",
+   "nombre": "recolector hacia TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC",
+   "regla": "recolector",
+   "prueba": "100 % de 1 salidas de USDT leídas (103.421 USDT) van a TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC"
+  },
+  "TTKeuTVVSJGFxzZpQ1qAL8uZZEsWUb6WwE": {
+   "tipo": "recolector",
+   "nombre": "recolector hacia TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC",
+   "regla": "recolector",
+   "prueba": "100 % de 2 salidas de USDT leídas (101.352 USDT) van a TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC"
+  },
+  "TAmYjrYQefqaPcqrjGaKiJK22urWpcXFvn": {
+   "tipo": "recolector",
+   "nombre": "recolector hacia TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC",
+   "regla": "recolector",
+   "prueba": "100 % de 2 salidas de USDT leídas (168.423 USDT) van a TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC"
+  },
+  "TYrchgPT29VFuhENogzTcTru15PEyR8H6B": {
+   "tipo": "recolector",
+   "nombre": "recolector hacia TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC",
+   "regla": "recolector",
+   "prueba": "100 % de 1 salidas de USDT leídas (93.293 USDT) van a TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC"
+  },
+  "TAqus8dVTpL42QN3ErK8wx1RWMj829qdVT": {
+   "tipo": "recolector",
+   "nombre": "recolector hacia TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC",
+   "regla": "recolector",
+   "prueba": "100 % de 16 salidas de USDT leídas (322.312 USDT) van a TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC"
+  },
+  "TULr2xWaAkrhxxBbfXJosSd8BG2JdVdBBb": {
+   "tipo": "recolector",
+   "nombre": "recolector hacia TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC",
+   "regla": "recolector",
+   "prueba": "100 % de 1 salidas de USDT leídas (82.490 USDT) van a TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC"
+  },
+  "TXbP4XuMXSj9m8wKiEcYosGEK75nEj3qET": {
+   "tipo": "recolector",
+   "nombre": "recolector hacia TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC",
+   "regla": "recolector",
+   "prueba": "100 % de 6 salidas de USDT leídas (246.919 USDT) van a TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC"
+  },
+  "TZ1KpzghdoHXfyotjAAGNyY9reMYCUgwEg": {
+   "tipo": "recolector",
+   "nombre": "recolector hacia TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC",
+   "regla": "recolector",
+   "prueba": "100 % de 1 salidas de USDT leídas (36.590 USDT) van a TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC"
+  },
+  "TBCv5PenDxegQmezevwBYsCUKSEgBRmR8z": {
+   "tipo": "recolector",
+   "nombre": "recolector hacia TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC",
+   "regla": "recolector",
+   "prueba": "100 % de 1 salidas de USDT leídas (150.158 USDT) van a TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC"
+  },
+  "TLzXLNDfxyFKL7FAh5egou8pNEQSwXHbpb": {
+   "tipo": "recolector",
+   "nombre": "recolector hacia TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC",
+   "regla": "recolector",
+   "prueba": "100 % de 3 salidas de USDT leídas (218.663 USDT) van a TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC"
+  },
+  "TE2a9MtSE5sfDCvtrzj3ycLgFM4ZLyRTgn": {
+   "tipo": "recolector",
+   "nombre": "recolector hacia TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC",
+   "regla": "recolector",
+   "prueba": "100 % de 1 salidas de USDT leídas (134.105 USDT) van a TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC"
+  },
+  "TWNbsPCu7QFJidiWfuztZqy1yRxbokaHL4": {
+   "tipo": "recolector",
+   "nombre": "recolector hacia TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC",
+   "regla": "recolector",
+   "prueba": "100 % de 1 salidas de USDT leídas (115.255 USDT) van a TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC"
+  },
+  "TBBRMUq2rpxGmUx17LPL3KnLahfm1CpnyC": {
+   "tipo": "recolector",
+   "nombre": "recolector hacia TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC",
+   "regla": "recolector",
+   "prueba": "100 % de 1 salidas de USDT leídas (104.641 USDT) van a TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC"
+  },
+  "TNGAYGWvg7v2P1ofUQcbwrv5E9fR3nc8VJ": {
+   "tipo": "recolector",
+   "nombre": "recolector hacia TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC",
+   "regla": "recolector",
+   "prueba": "100 % de 1 salidas de USDT leídas (103.298 USDT) van a TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC"
+  },
+  "TYRpaKJatPc71dqCGgTxkgSXqpyPNRanBo": {
+   "tipo": "recolector",
+   "nombre": "recolector hacia TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC",
+   "regla": "recolector",
+   "prueba": "100 % de 1 salidas de USDT leídas (101.328 USDT) van a TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC"
+  },
+  "TAQDd4MrAYNRSfi8AXb6SsLQUzw2LhB7dg": {
+   "tipo": "recolector",
+   "nombre": "recolector hacia TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC",
+   "regla": "recolector",
+   "prueba": "100 % de 1 salidas de USDT leídas (100.319 USDT) van a TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC"
+  },
+  "TSDM8JkmHfwvkE3drCsRJNXzpFc2T1fQbr": {
+   "tipo": "recolector",
+   "nombre": "recolector hacia TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC",
+   "regla": "recolector",
+   "prueba": "100 % de 8 salidas de USDT leídas (302.424 USDT) van a TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC"
+  },
+  "TJfWV2Jb2PXNGYfv9EFfjUo2NHjM1NtB2i": {
+   "tipo": "recolector",
+   "nombre": "recolector hacia TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC",
+   "regla": "recolector",
+   "prueba": "100 % de 6 salidas de USDT leídas (270.196 USDT) van a TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC"
+  },
+  "TMVkNSCYdzsNHCNfKuhgeJCBhGZMxUHeEV": {
+   "tipo": "recolector",
+   "nombre": "recolector hacia TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC",
+   "regla": "recolector",
+   "prueba": "100 % de 4 salidas de USDT leídas (195.469 USDT) van a TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC"
+  },
+  "TAapouJWP9X2p6D5i43dLohFCHkf4rwVuQ": {
+   "tipo": "recolector",
+   "nombre": "recolector hacia TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC",
+   "regla": "recolector",
+   "prueba": "100 % de 1 salidas de USDT leídas (98.727 USDT) van a TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC"
+  },
+  "TLMc4KJ7Z5yv2UTuCcFFZwfgqKu42xCtZk": {
+   "tipo": "recolector",
+   "nombre": "recolector hacia TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC",
+   "regla": "recolector",
+   "prueba": "100 % de 1 salidas de USDT leídas (96.012 USDT) van a TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC"
+  },
+  "TT143soihZaEn7yey38qtQUFqt5zniqEq3": {
+   "tipo": "recolector",
+   "nombre": "recolector hacia TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC",
+   "regla": "recolector",
+   "prueba": "100 % de 1 salidas de USDT leídas (95.958 USDT) van a TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC"
+  },
+  "TLYZNy9KVNSyMrNNFG9yvBx8x6oY46H42g": {
+   "tipo": "recolector",
+   "nombre": "recolector hacia TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC",
+   "regla": "recolector",
+   "prueba": "100 % de 2 salidas de USDT leídas (145.395 USDT) van a TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC"
+  },
+  "TW9aPo9io5Rd2n9VaFGr9u9rwX7vGkWfvK": {
+   "tipo": "recolector",
+   "nombre": "recolector hacia TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC",
+   "regla": "recolector",
+   "prueba": "100 % de 1 salidas de USDT leídas (94.672 USDT) van a TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC"
+  },
+  "TUtJQinaKMnB3sMpA49BdubbX2T24kXzJj": {
+   "tipo": "recolector",
+   "nombre": "recolector hacia TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC",
+   "regla": "recolector",
+   "prueba": "100 % de 2 salidas de USDT leídas (169.607 USDT) van a TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC"
+  },
+  "TRey3T69qGaKHXc5ZNjTd285UXtcz7iG4W": {
+   "tipo": "recolector",
+   "nombre": "recolector hacia TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC",
+   "regla": "recolector",
+   "prueba": "100 % de 7 salidas de USDT leídas (386.976 USDT) van a TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC"
+  },
+  "TBRToy5xqCNnhCp6F8wCZPsuQEYKJ9iJo7": {
+   "tipo": "recolector",
+   "nombre": "recolector hacia TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC",
+   "regla": "recolector",
+   "prueba": "100 % de 2 salidas de USDT leídas (95.607 USDT) van a TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC"
+  },
+  "TXNrAysPwm6tWiyoqWrhSh6hAUuFPeynWj": {
+   "tipo": "recolector",
+   "nombre": "recolector hacia TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC",
+   "regla": "recolector",
+   "prueba": "100 % de 1 salidas de USDT leídas (92.934 USDT) van a TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC"
+  },
+  "TFBLBQ6aRaigVpCYrJDHiYiH2huyaaAwMV": {
+   "tipo": "recolector",
+   "nombre": "recolector hacia TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC",
+   "regla": "recolector",
+   "prueba": "100 % de 20 salidas de USDT leídas (641.613 USDT) van a TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC"
+  },
+  "TCfcNE7qGc8XCjfe542jF3Bc96z8Ltsz2Q": {
+   "tipo": "recolector",
+   "nombre": "recolector hacia TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC",
+   "regla": "recolector",
+   "prueba": "100 % de 4 salidas de USDT leídas (89.614 USDT) van a TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC"
+  },
+  "TNbCY4zvabP8n52PN9fv9DHLacRogTrike": {
+   "tipo": "recolector",
+   "nombre": "recolector hacia TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC",
+   "regla": "recolector",
+   "prueba": "100 % de 1 salidas de USDT leídas (87.198 USDT) van a TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC"
+  },
+  "TGRF33EjWPyrseLvABpX5dPT52vvo5qAq8": {
+   "tipo": "recolector",
+   "nombre": "recolector hacia TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC",
+   "regla": "recolector",
+   "prueba": "100 % de 7 salidas de USDT leídas (273.932 USDT) van a TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC"
+  },
+  "TFrKZDHo54j7wQ3eS91gKvDUyJt8er22mS": {
+   "tipo": "recolector",
+   "nombre": "recolector hacia TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC",
+   "regla": "recolector",
+   "prueba": "100 % de 1 salidas de USDT leídas (86.981 USDT) van a TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC"
+  },
+  "TQS9BKfwRgkVmVW3mhNfCsC3oBwhLJ3yPE": {
+   "tipo": "recolector",
+   "nombre": "recolector hacia TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC",
+   "regla": "recolector",
+   "prueba": "100 % de 2 salidas de USDT leídas (95.215 USDT) van a TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC"
+  },
+  "TNK6L4Qj6qcvwE3DoK44qbDFoYiueG7Zy6": {
+   "tipo": "recolector",
+   "nombre": "recolector hacia TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC",
+   "regla": "recolector",
+   "prueba": "100 % de 1 salidas de USDT leídas (86.536 USDT) van a TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC"
+  },
+  "TAAqM8gqoRr5ocWfxJvTtXLHCYyR8mwwuK": {
+   "tipo": "recolector",
+   "nombre": "recolector hacia TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC",
+   "regla": "recolector",
+   "prueba": "100 % de 1 salidas de USDT leídas (84.777 USDT) van a TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC"
+  },
+  "TGsfPLcBCEquunuqziWVg21Hqxc8jg6oi9": {
+   "tipo": "recolector",
+   "nombre": "recolector hacia TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC",
+   "regla": "recolector",
+   "prueba": "100 % de 4 salidas de USDT leídas (182.795 USDT) van a TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC"
+  },
+  "TYYVaoyiwtJvkCK7yd6q7tha8kYAzgtLgU": {
+   "tipo": "recolector",
+   "nombre": "recolector hacia TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC",
+   "regla": "recolector",
+   "prueba": "100 % de 1 salidas de USDT leídas (84.736 USDT) van a TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC"
+  },
+  "TFHVKGbtsorw4wVTAdmN5cZ8XCVLMZS8Ro": {
+   "tipo": "recolector",
+   "nombre": "recolector hacia TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC",
+   "regla": "recolector",
+   "prueba": "100 % de 2 salidas de USDT leídas (87.801 USDT) van a TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC"
+  },
+  "TXRTsA5UNUceRuJtFNraKqoYNAJWavi3WD": {
+   "tipo": "recolector",
+   "nombre": "recolector hacia TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC",
+   "regla": "recolector",
+   "prueba": "100 % de 3 salidas de USDT leídas (196.300 USDT) van a TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC"
+  },
+  "TSqdUPaicYZahoCovcTMTLaJr5zTAvnkWz": {
+   "tipo": "recolector",
+   "nombre": "recolector hacia TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC",
+   "regla": "recolector",
+   "prueba": "100 % de 3 salidas de USDT leídas (184.593 USDT) van a TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC"
+  },
+  "TFMnfwUwJ6XtAWFQgpSEVPUvdfGpitWnfZ": {
+   "tipo": "recolector",
+   "nombre": "recolector hacia TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC",
+   "regla": "recolector",
+   "prueba": "100 % de 4 salidas de USDT leídas (204.890 USDT) van a TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC"
+  },
+  "TDTGy6dKd83NYZ1thZg5rLpcRZPrtCnznY": {
+   "tipo": "recolector",
+   "nombre": "recolector hacia TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC",
+   "regla": "recolector",
+   "prueba": "100 % de 3 salidas de USDT leídas (197.526 USDT) van a TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC"
+  },
+  "TM2xjzNfMfrLi1kDRLf6Pj5zpF4yUW9X3U": {
+   "tipo": "recolector",
+   "nombre": "recolector hacia TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC",
+   "regla": "recolector",
+   "prueba": "100 % de 1 salidas de USDT leídas (84.159 USDT) van a TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC"
+  },
+  "TBHzBeFWYL59eggJoPkQY84MFEgoNjnPEr": {
+   "tipo": "recolector",
+   "nombre": "recolector hacia TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC",
+   "regla": "recolector",
+   "prueba": "100 % de 1 salidas de USDT leídas (84.046 USDT) van a TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC"
+  },
+  "TY4mkXtwn8QqXmTmMM6Tgz2Tn1uvPRoTdU": {
+   "tipo": "recolector",
+   "nombre": "recolector hacia TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC",
+   "regla": "recolector",
+   "prueba": "100 % de 1 salidas de USDT leídas (83.900 USDT) van a TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC"
+  },
+  "TTdZLkS4m5TWNV9uuRgWVZgfYVqxErf4G8": {
+   "tipo": "recolector",
+   "nombre": "recolector hacia TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC",
+   "regla": "recolector",
+   "prueba": "100 % de 4 salidas de USDT leídas (159.410 USDT) van a TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC"
+  },
+  "TAAB8SGtgJoXQm8BUZehiEEs523AF1U4wD": {
+   "tipo": "recolector",
+   "nombre": "recolector hacia TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC",
+   "regla": "recolector",
+   "prueba": "100 % de 2 salidas de USDT leídas (83.555 USDT) van a TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC"
+  },
+  "TBj8MV2NJerqaYL3r4v3Bxyze7QYhaKp75": {
+   "tipo": "recolector",
+   "nombre": "recolector hacia TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC",
+   "regla": "recolector",
+   "prueba": "100 % de 5 salidas de USDT leídas (88.081 USDT) van a TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC"
+  },
+  "TYLCK22CYRPd1ExY68uwPj4AsxqH3MFyKD": {
+   "tipo": "recolector",
+   "nombre": "recolector hacia TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC",
+   "regla": "recolector",
+   "prueba": "100 % de 2 salidas de USDT leídas (129.813 USDT) van a TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC"
+  },
+  "TCjYbT5qt7b1KhzU5fs5Vmt9sotSdeHooq": {
+   "tipo": "recolector",
+   "nombre": "recolector hacia TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC",
+   "regla": "recolector",
+   "prueba": "100 % de 4 salidas de USDT leídas (108.452 USDT) van a TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC"
+  },
+  "TY8Ck5hymivwh1NtzA9ZDm6cvfLRe9yo5M": {
+   "tipo": "recolector",
+   "nombre": "recolector hacia TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC",
+   "regla": "recolector",
+   "prueba": "100 % de 1 salidas de USDT leídas (77.288 USDT) van a TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC"
+  },
+  "TNkRoCcGwnrmv9hsE6yYsA1LRtoQs73wxZ": {
+   "tipo": "recolector",
+   "nombre": "recolector hacia TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC",
+   "regla": "recolector",
+   "prueba": "100 % de 1 salidas de USDT leídas (73.710 USDT) van a TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC"
+  },
+  "TRjWXoRr4rbSoiU6VQGTEXGsQuYjtVLf2s": {
+   "tipo": "recolector",
+   "nombre": "recolector hacia TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC",
+   "regla": "recolector",
+   "prueba": "100 % de 2 salidas de USDT leídas (1.524.759 USDT) van a TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC"
+  },
+  "TCrScyEDwqE3TGAGuLPWD6BQ5YRtCi5GDy": {
+   "tipo": "recolector",
+   "nombre": "recolector hacia TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC",
+   "regla": "recolector",
+   "prueba": "100 % de 2 salidas de USDT leídas (120.157 USDT) van a TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC"
+  },
+  "TBqogLfK8tWyEvw5M8UYGZ2Fu8gFe8xMoq": {
+   "tipo": "recolector",
+   "nombre": "recolector hacia TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC",
+   "regla": "recolector",
+   "prueba": "100 % de 1 salidas de USDT leídas (67.993 USDT) van a TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC"
+  },
+  "TDJ5TQBsWVzRneXbgz1KDVdo4WQbArfR6M": {
+   "tipo": "recolector",
+   "nombre": "recolector hacia TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC",
+   "regla": "recolector",
+   "prueba": "100 % de 21 salidas de USDT leídas (872.530 USDT) van a TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC"
+  },
+  "TCJCCCMSYqFT3AXvHys7cph1EPMWQmJzFw": {
+   "tipo": "recolector",
+   "nombre": "recolector hacia TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC",
+   "regla": "recolector",
+   "prueba": "100 % de 1 salidas de USDT leídas (62.656 USDT) van a TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC"
+  },
+  "TQJnLeXW3xfTbsQhLAwdWtjxDAaUxMCYrW": {
+   "tipo": "recolector",
+   "nombre": "recolector hacia TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC",
+   "regla": "recolector",
+   "prueba": "100 % de 1 salidas de USDT leídas (60.015 USDT) van a TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC"
+  },
+  "THMYrpTVe5hKJe4nGkuFoDmcvqa42UdVPV": {
+   "tipo": "recolector",
+   "nombre": "recolector hacia TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC",
+   "regla": "recolector",
+   "prueba": "100 % de 1 salidas de USDT leídas (57.704 USDT) van a TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC"
+  },
+  "TNk6QXnppX8Uth1Ny19xqUWA6B8jzkdwag": {
+   "tipo": "recolector",
+   "nombre": "recolector hacia TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC",
+   "regla": "recolector",
+   "prueba": "100 % de 4 salidas de USDT leídas (63.572 USDT) van a TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC"
+  },
+  "TW9dYXNzwF8r8Rz2DYUCLKM4NJvXKa8aKt": {
+   "tipo": "recolector",
+   "nombre": "recolector hacia TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC",
+   "regla": "recolector",
+   "prueba": "100 % de 1 salidas de USDT leídas (57.367 USDT) van a TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC"
+  },
+  "TK779cinFQNty7v7HDAqBEJhnotsUXJfh3": {
+   "tipo": "recolector",
+   "nombre": "recolector hacia TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC",
+   "regla": "recolector",
+   "prueba": "100 % de 1 salidas de USDT leídas (55.264 USDT) van a TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC"
+  },
+  "TKDcouiTiqwV7uEkuvwm3Y1PdBBW8AUQVB": {
+   "tipo": "recolector",
+   "nombre": "recolector hacia TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC",
+   "regla": "recolector",
+   "prueba": "100 % de 7 salidas de USDT leídas (549.677 USDT) van a TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC"
+  },
+  "TEET6ze15szzNUGNcG6sNnGt1zqnuAdfxS": {
+   "tipo": "recolector",
+   "nombre": "recolector hacia TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC",
+   "regla": "recolector",
+   "prueba": "100 % de 2 salidas de USDT leídas (91.991 USDT) van a TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC"
+  },
+  "TLcKBLCBjvjJPNSqZUNGT93TxB8eFk5zEN": {
+   "tipo": "recolector",
+   "nombre": "recolector hacia TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC",
+   "regla": "recolector",
+   "prueba": "100 % de 8 salidas de USDT leídas (163.185 USDT) van a TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC"
+  },
+  "TVBRkBCXairet7ohpzPJn8F216byhP7ypn": {
+   "tipo": "recolector",
+   "nombre": "recolector hacia TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC",
+   "regla": "recolector",
+   "prueba": "100 % de 5 salidas de USDT leídas (198.805 USDT) van a TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC"
+  },
+  "TNe5cYPtES5L8cVxH2doedPPXpw7vfSHPQ": {
+   "tipo": "recolector",
+   "nombre": "recolector hacia TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC",
+   "regla": "recolector",
+   "prueba": "100 % de 4 salidas de USDT leídas (101.415 USDT) van a TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC"
+  },
+  "TJ3uzg3nrTmRhxnnSEFUtdyZdtTbRnAS8k": {
+   "tipo": "recolector",
+   "nombre": "recolector hacia TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC",
+   "regla": "recolector",
+   "prueba": "100 % de 5 salidas de USDT leídas (61.711 USDT) van a TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC"
+  },
+  "TWmXeWsHkKtNU1yPcSJ51XFW3WB3hHps4K": {
+   "tipo": "recolector",
+   "nombre": "recolector hacia TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC",
+   "regla": "recolector",
+   "prueba": "100 % de 2 salidas de USDT leídas (59.483 USDT) van a TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC"
+  },
+  "TXuwzs66xhdvXGToSph3VrTP65AMsKDAfa": {
+   "tipo": "recolector",
+   "nombre": "recolector hacia TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC",
+   "regla": "recolector",
+   "prueba": "100 % de 2 salidas de USDT leídas (54.924 USDT) van a TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC"
+  },
+  "TF5exSujNEGAb764GnjeE6JEnTFHBhgacA": {
+   "tipo": "recolector",
+   "nombre": "recolector hacia TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC",
+   "regla": "recolector",
+   "prueba": "100 % de 1 salidas de USDT leídas (54.717 USDT) van a TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC"
+  },
+  "TVRhiK1Qf2cpa8Dbpjvd1EchWqiTbExxSr": {
+   "tipo": "recolector",
+   "nombre": "recolector hacia TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC",
+   "regla": "recolector",
+   "prueba": "100 % de 3 salidas de USDT leídas (204.696 USDT) van a TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC"
+  },
+  "TH4neY4oHejryA6AqekhXJKGCmYCyPX92T": {
+   "tipo": "recolector",
+   "nombre": "recolector hacia TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC",
+   "regla": "recolector",
+   "prueba": "100 % de 1 salidas de USDT leídas (54.430 USDT) van a TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC"
+  },
+  "TGj4JdADSSvcFAqsDvzCcsdYdrL77Fjvv1": {
+   "tipo": "recolector",
+   "nombre": "recolector hacia TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC",
+   "regla": "recolector",
+   "prueba": "100 % de 5 salidas de USDT leídas (60.616 USDT) van a TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC"
+  },
+  "TDgwmKYuHUYovXK9TUbsMJs1QXZEejhaDe": {
+   "tipo": "recolector",
+   "nombre": "recolector hacia TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC",
+   "regla": "recolector",
+   "prueba": "100 % de 2 salidas de USDT leídas (113.516 USDT) van a TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC"
+  },
+  "TF3MrQdARBLXMv6r4imjyCq11DGxR7DwT8": {
+   "tipo": "recolector",
+   "nombre": "recolector hacia TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC",
+   "regla": "recolector",
+   "prueba": "100 % de 3 salidas de USDT leídas (143.569 USDT) van a TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC"
+  },
+  "TFj2JZZrBMrp4mhNq2xZa8egePxw6yLXmD": {
+   "tipo": "recolector",
+   "nombre": "recolector hacia TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC",
+   "regla": "recolector",
+   "prueba": "100 % de 1 salidas de USDT leídas (53.104 USDT) van a TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC"
+  },
+  "TAVfXpeaMVdN1PqFcokSJTYEeuC7XPbyTR": {
+   "tipo": "recolector",
+   "nombre": "recolector hacia TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC",
+   "regla": "recolector",
+   "prueba": "100 % de 6 salidas de USDT leídas (165.720 USDT) van a TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC"
+  },
+  "TWYGCie79ko8kkg7BaNKPEMPsc44PLmyP9": {
+   "tipo": "recolector",
+   "nombre": "recolector hacia TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC",
+   "regla": "recolector",
+   "prueba": "100 % de 4 salidas de USDT leídas (222.864 USDT) van a TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC"
+  },
+  "TR6PE2byFcGRsf7qwXmryWShDDwwAxcim5": {
+   "tipo": "recolector",
+   "nombre": "recolector hacia TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC",
+   "regla": "recolector",
+   "prueba": "100 % de 5 salidas de USDT leídas (179.301 USDT) van a TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC"
+  },
+  "TSLfWKDDNuKCuJERgqGG3HmUSGwyuwwXfo": {
+   "tipo": "recolector",
+   "nombre": "recolector hacia TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC",
+   "regla": "recolector",
+   "prueba": "100 % de 1 salidas de USDT leídas (50.072 USDT) van a TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC"
+  },
+  "TM3sn5EvMt2uBrfpiy2tjiiHkr42WGsx4V": {
+   "tipo": "recolector",
+   "nombre": "recolector hacia TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC",
+   "regla": "recolector",
+   "prueba": "100 % de 1 salidas de USDT leídas (48.065 USDT) van a TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC"
+  },
+  "TJaQeMZgwXQKpwvPejRRmx6pxt9eUx8WCp": {
+   "tipo": "recolector",
+   "nombre": "recolector hacia TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC",
+   "regla": "recolector",
+   "prueba": "100 % de 2 salidas de USDT leídas (122.202 USDT) van a TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC"
+  },
+  "TTnhEugxB6Hwp5y9r6eYktodgvxvHkThJE": {
+   "tipo": "recolector",
+   "nombre": "recolector hacia TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC",
+   "regla": "recolector",
+   "prueba": "100 % de 2 salidas de USDT leídas (189.276 USDT) van a TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC"
+  },
+  "TUyTiAkE5R5GF9MrDW9oTWPCqYai42ngTc": {
+   "tipo": "recolector",
+   "nombre": "recolector hacia TD4tamFrCq7KvQEB1LArNXr9sKFC6GaAmt",
+   "regla": "recolector",
+   "prueba": "100 % de 50 salidas de USDT leídas (611.220 USDT) van a TD4tamFrCq7KvQEB1LArNXr9sKFC6GaAmt"
+  },
+  "TRWVbDuc3hoC6fJEiP4tjsBVzHQzRk2tiK": {
+   "tipo": "recolector",
+   "nombre": "recolector hacia TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC",
+   "regla": "recolector",
+   "prueba": "100 % de 2 salidas de USDT leídas (20.041 USDT) van a TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC"
+  }
+ },
+ "recolectores": {
+  "TGdqvQw1UaQdLdJh17CjeDzPDikKAuDjko": "TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC",
+  "TExp8HjpdLcgX2bzBpU1YqPnudpgPJ6FJz": "TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC",
+  "TNtf4XbWPRUyFAFppDRHhGr93Bv1XxfZEP": "TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC",
+  "TLzLUvthXu9m2UAtTSmFWqEt3xeu7yoFrf": "TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC",
+  "TKDxyeH6t4ZWdygYW12fxDMCwqrsqgzq3i": "TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC",
+  "TRn5HpWrzzecir5XJLn9rTtFFGcEDit5Vt": "TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC",
+  "TXPmFyXWpiuWxnJvAGzAi9F1AgmaaDHb7u": "TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC",
+  "TEdgurJ2HSUs3b19pmHjoGBDchNuPgWNbw": "TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC",
+  "TFvHbWCmtEJukdLNkKCtazWFHHH4BFDYjJ": "TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC",
+  "TH8hnsS3AkuXAbdUN9RW1v5D3SofWmidhW": "TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC",
+  "TBA7RpGLr2ZNe7GPNcXgYeEt9ZC3WGSTUh": "TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC",
+  "TYzP4tsxpzU6SjPYkARXJiLr3LjedWu2ui": "TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC",
+  "TXVMufr7vmbVmQEVgC7fHSLmPQZSo2gtDL": "TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC",
+  "TP661fq94pq8g87rrxUAGD7mHbhQHUmZfs": "TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC",
+  "TS2HzxzYLgGCF9VrE9D6grRxuzcoMTfP3X": "TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC",
+  "TA7kGN1cqWz9UvNvpKDqTVXMp9CdjnRX5T": "TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC",
+  "THhvEUJeLZxRXTA6oKi5cM7Hfqt5Wq83XG": "TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC",
+  "TPtuxfs6JhpV8jqRxW6nzq6AWoy9RmcCzU": "TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC",
+  "TW4Fds7aP4j5z3wK9ZaJjjTFKFgP23hmCL": "TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC",
+  "TTsa3ZziPKYejPfdPqWqFd4ph5R9BLmUDU": "TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC",
+  "TUUfaDxkYAgAiMQnmZogRzFeBd2sro5SJ7": "TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC",
+  "TFQHiGaaU6Fw63xg6Nnsh3D4qQeum1icD2": "TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC",
+  "TRiEmBiaQAvqyxjwquptiz6WD7L34oXcbR": "TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC",
+  "THcFuMvPADijRL15GmMaw44hZrzQ9uSLtE": "TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC",
+  "TRruBjWsGGF5vFuBfazPLSCtomWidd3Di8": "TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC",
+  "TUNR3E2zXHq7dUixY4avAywhA1pWtFczTj": "TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC",
+  "TFzyoj5oVugPPSzmpwpRuFhin7tuUcA9TJ": "TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC",
+  "TR8HrsxB4jF3XZXT8QC5z4KYhDChTkU3qw": "TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC",
+  "TF3Cz7SHMvsZy7LQJtvBKkSErCLteNU6Xt": "TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC",
+  "TFc92zoFoC49WXFpSihRafWk8gAEWrUwwa": "TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC",
+  "TJf6pyRRQrZ8benGSqT7KYvpqLFE1NfK2h": "TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC",
+  "TYA9SrPMSW9Bd3k7rzG71r1DWSRgreYEPB": "TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC",
+  "TUCeaLWUj5VtUU6DwkktviLB6bxpuhEjZe": "TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC",
+  "TJZNzzP8FvuezyJjjFpNgYM3ebe5zV5TGL": "TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC",
+  "TYHPa1H8HLPPGdrGzdKDYF6y6fN9xv8GtM": "TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC",
+  "TV6izGA1ZDckPkGigTxDJuVuNJ4LqVBFYm": "TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC",
+  "TJ8KG9S3FTimmYVZuDzcVB24Rp8fmKN7Pa": "TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC",
+  "TRSn7oQpvphWzMhzsFX8Uv1aMQVd5yGUhk": "TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC",
+  "TDJBSSVxAVFtgr7H15jyVuhg9dLzqsZqaw": "TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC",
+  "TQHYZ5Ay1sWgP12s2VCHAmccENuL4n89oM": "TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC",
+  "TWvhQTJtke3ikQtBciqiDtUwcTynf2GimV": "TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC",
+  "TTBjcegjKe2XLwmX1KdMbeSbjLrJuQS7Jy": "TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC",
+  "TR9jinLhJdExdLzYKhpXi9yphQdM4PcN4n": "TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC",
+  "TTYBKQtfTmUyfYzkUzcHA53BNcnVM79NCx": "TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC",
+  "TUErRs2zzz1EYaye7jaXwNRvGCfa5zj1q6": "TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC",
+  "TWzmeu3Pd31UfySjA2YtCBdzBHrc5KCXFS": "TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC",
+  "TMhbgn5rRNdrE3MdShhuGhjBC6Wd4eQgg6": "TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC",
+  "TCx4VRAqd9ZvMBWtcZfKJPGgbaoMoiq25n": "TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC",
+  "THW73KMLbGVUN85MGNY8UNyqnNJhwsQYii": "TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC",
+  "TJ7rUp6dsBS9BEa3kFvKCLqXg44rhE4nDn": "TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC",
+  "THu7CvNL2VrHo3vnoE3UMhdgK5kbri9mBt": "TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC",
+  "TLb47qh6ub3GkRoEQWUZHJ5FakapusD5dH": "TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC",
+  "TAZGPTHiCYgHGCLqWHupxc5D7ep8FDt1FN": "TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC",
+  "TTejYRTSkRQkx4vzugDUhXAq13GuZSW9Xi": "TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC",
+  "THwY9tFG5FQbciKK9sCgRbWFQTfdwhnHAB": "TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC",
+  "TMtkaJKn5on35WcSNmGMSGvJhNhXuLPZCg": "TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC",
+  "TUR35xZpEHJuQYYTKQn1XVH3frqPnXG3mk": "TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC",
+  "TKZj68AwM7Q9nBJKFUu7AA4JueEqoxdma1": "TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC",
+  "TJ2RrBAPpwruGHeJF6KnF57YiLW4pSHe31": "TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC",
+  "TNKLbEvT1jdnGctbmCbMEkLiXtsdXEE1ns": "TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC",
+  "TEBMy73cmGUYBf9TRpECmBN1aHhAx4MNs1": "TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC",
+  "TAdkWfFaarq2m33fSXKztLv1kqkDpU7C6p": "TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC",
+  "TCRvphrFSLFKBFwXeeztMAFEKpCPdBJkZb": "TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC",
+  "TSSHqZ8ZRTdxbn5NepxYyDUnum9Zge6JQ6": "TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC",
+  "TUPScHpcPxdUddDBUHwzPvdbRjedoMTnJy": "TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC",
+  "TED98H832eYBae945g716GHDvyb3NisabF": "TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC",
+  "TRSzNSejVoxt4UEGqV7g5XzZfBPhvSkMsJ": "TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC",
+  "TEVHqTGosEjnbUW9W7PLsTbV7GWqn3GC8q": "TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC",
+  "TJza7S39RS9VEXvr89rGo6s5QLvszrBxG2": "TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC",
+  "TFi7ZtM9wRhu91xF6vYEdk2ko7XAXcQRzU": "TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC",
+  "TKKukfShv9H9jnuoH19K2rWZq7x7SwGv7M": "TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC",
+  "TV8HZnuRYxpJweySX5NJPquREoXaKxq6Kw": "TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC",
+  "TXmAjx81ejG4Wkkff33gAKudCrcw5u2ZHd": "TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC",
+  "TJZd17EnbMqgkSsRARjJQya1XzVZAMuyVh": "TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC",
+  "TB4FpehDQxUnTKe6to43zwaUz2kDKjKBMJ": "TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC",
+  "TFgGdyFfWeWo7B2yEoDxPBGPAUjmL9vJib": "TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC",
+  "TCArN4WcKB1P4LpFg2Nvnqoq6Xa6LjN1ze": "TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC",
+  "TQBgyGCdCdSndaXjKuyPfQSfY2b3vjq1f6": "TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC",
+  "TH6KZrrX51TcQTyaoBY7ag9Ps2Nc8zYq27": "TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC",
+  "TScsZ21qXXgsJDGwsP6agNZECYzzPZLkUG": "TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC",
+  "TJU8ms5qRG8mSkHM4eCZ9M7F7xnrJcbZWe": "TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC",
+  "TMeBSdEX53oVz7t4GmtYEgL7HEwKLXQk2j": "TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC",
+  "TRH8yXru7LfecwoudTQ2QPgq1u1mL5S28p": "TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC",
+  "TRcyYTWt6aL2zaQ8gGhEsa1bhVtUzhS7Zf": "TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC",
+  "TKRHsGNXzgJFJkQ7rtJBcqEEPuSZFfsq8j": "TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC",
+  "TY6vAB6RRc51QhvCAVQi3ZNCnGDV5Nrff4": "TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC",
+  "TWZWcaUmzPKwaUCErn2kqEf1N5Ufsecre2": "TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC",
+  "TXRbvLDiggq21yP3bvcC23vum29ZtmsEWU": "TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC",
+  "TSaCUY6c5VEZ6PCE2GmwA3ZrgMWmHK35P8": "TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC",
+  "TNV3wp2TSFK9UQnBUCeNuTna6bUdkdKCNG": "TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC",
+  "TP3oCiJTT3nEbApCaJFuUqZ6iURP8q2bet": "TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC",
+  "TNFyj2hG3VPz6rF7kWfNq9aQ2S5S59KSLF": "TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC",
+  "TVdq7RMWiv8gj6ezjLuMMmJ2X8Gdne4kbn": "TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC",
+  "TQPX23ueodnMNKv5j2HbFCifDrhXVV4abA": "TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC",
+  "TJ5ktCSt9FWDpiYECGRy9eDbYLxFcHWR3y": "TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC",
+  "TTEsSKtpLrz1WYLFSAAAxjfjuCbA23geoJ": "TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC",
+  "TKc8s1vemj9G89irMLrUnMtTt5t7WY5P4V": "TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC",
+  "TX2KLFwRZuXA71R8DUV58sLRWNXBrRYRrP": "TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC",
+  "TX1MesPdUUAvP2ZwuhMuPvwhW8xqVn9Jko": "TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC",
+  "TSdinwSUYSXie3nfd7UUrCr8425jxec8Ct": "TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC",
+  "TM7Lff7X8fndxdNAaiQreryncJWfL8CHZ8": "TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC",
+  "TU1jsJDYFS1epqxwnyPi9fCoS9ihjA76XS": "TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC",
+  "TWxmLGv2JvSaDynzA6Gk2FD3vX4Wm1gVF9": "TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC",
+  "TETSfQ9etbx42wLeyoSqefRUKAyoL7dw9f": "TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC",
+  "TE2eGH3fvMqFUHkij8mJUpRFY1sXX21sXt": "TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC",
+  "TDZ3v7ZBFrcB8yCxrBiUkN4V54oGURFFjj": "TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC",
+  "TCaEFRUQCGo6EsfK6jbFGRXgHJkoPGxnLR": "TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC",
+  "TA653FjmX4gS69KXW2WuAeEzfaXutyEN4e": "TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC",
+  "THrdavoQ4mpRRWwfoqMkneoct9p2wTy391": "TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC",
+  "TY6xb5QhVN9rUWF1VQ6U3h8rZXkmed8jps": "TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC",
+  "TRZFe9JqeiYLaMLvttiZrEBD9e6cXvkiP6": "TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC",
+  "TE7EKr28xCZmnjVeuM6ybWByjCBhhWCKX4": "TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC",
+  "TFBEDVifehR4fRdbuFzS7jo12xondopz9b": "TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC",
+  "TUJXJ6ScKtio7b3eezdAE3QNYHbrLfY4L9": "TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC",
+  "TE4Dv7YtHsxjH3wKAFng64QF4goiXBfjxs": "TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC",
+  "TWUQVg5vp5BQtrDpzSf3YYKZGJd6oBqYkj": "TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC",
+  "TSXm7tBmi3JsoB54sTr8FdTtCMSDJT2c9c": "TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC",
+  "TWXzd8qeFbJHRXcjKQPwfPk776VEWrP5Dw": "TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC",
+  "TQhBDTYPUU4z4i8yYajLa8mGmm1bp8iriH": "TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC",
+  "TAXXAgDos4WQGTXsdBTzsh5xPacZfVbip3": "TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC",
+  "TMnybB8Pic9JeN2BV1Ya2UeQrNLSphNoan": "TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC",
+  "TDhs7v41bECSEDXRqgxqP9BD79qDKEkCSK": "TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC",
+  "TSqNBF3ygyNSSmtCBgEJLaMhGeqpyBZ6Wp": "TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC",
+  "TCDRofxkFtZR964diBdCBK4Fgfc7QqQB3h": "TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC",
+  "TJh6Syq8fj5ekKueSKpEQgpSJqm4MX8ujw": "TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC",
+  "TJfqRgKFcWYEE548oEo6kneDwFcZbkuxpj": "TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC",
+  "TGFrzC6cg3UTYgPJ88n8urVshPRTYxCqtV": "TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC",
+  "TRsGX3QjTxNxsrFKpqfmuLCwpucbV8g2jq": "TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC",
+  "TBQoMTdgsujd5kXWPcjMLaVEJ9pf8FqPBo": "TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC",
+  "TMEcqtSQhQYEXoNswhw99kdENeGxvMuNm3": "TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC",
+  "TQCeWJk8gjbiPeKUB6UnAGXWDWbszyPFpe": "TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC",
+  "TH5DHHoTdLsQZPufXHwMnQVy8RfMbDsv8z": "TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC",
+  "TXX5v2u6q6UoCN1UD5C7nEqPq1EHbvrNAg": "TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC",
+  "TPtkrW17KKyWS2PCDA7qLg3Mva7NPuBUFJ": "TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC",
+  "TGzcHHkuiAsrDtFGX1k7uKCqJesc2tRz3z": "TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC",
+  "TRadstm3sFrdcfFFNkpBGRY1zjcPgs3vjB": "TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC",
+  "TAxmfhvNfDM4gsp3PGwhNTF2i6TTAYLd8R": "TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC",
+  "TEHhLbALbTVdyWQzFGwu1wTTe94NWd8PLc": "TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC",
+  "TNtk2umALkTedmwsMkymY5kATgNdwmcyBE": "TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC",
+  "TVUFcYAWys8Jf3197fDtDPSNkMZaaZXGfB": "TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC",
+  "TXxQkXFRKUXjmAYGY2wXJ1vMAcB5bMPESh": "TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC",
+  "TPiRqLXtFpbMh2dvKb1hs7dE6DxtegSFYV": "TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC",
+  "TA1hFkhGazXxAQsaHeynYAWdRLSBCoVWw6": "TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC",
+  "TTKeuTVVSJGFxzZpQ1qAL8uZZEsWUb6WwE": "TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC",
+  "TAmYjrYQefqaPcqrjGaKiJK22urWpcXFvn": "TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC",
+  "TYrchgPT29VFuhENogzTcTru15PEyR8H6B": "TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC",
+  "TAqus8dVTpL42QN3ErK8wx1RWMj829qdVT": "TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC",
+  "TULr2xWaAkrhxxBbfXJosSd8BG2JdVdBBb": "TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC",
+  "TXbP4XuMXSj9m8wKiEcYosGEK75nEj3qET": "TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC",
+  "TZ1KpzghdoHXfyotjAAGNyY9reMYCUgwEg": "TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC",
+  "TBCv5PenDxegQmezevwBYsCUKSEgBRmR8z": "TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC",
+  "TLzXLNDfxyFKL7FAh5egou8pNEQSwXHbpb": "TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC",
+  "TE2a9MtSE5sfDCvtrzj3ycLgFM4ZLyRTgn": "TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC",
+  "TWNbsPCu7QFJidiWfuztZqy1yRxbokaHL4": "TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC",
+  "TBBRMUq2rpxGmUx17LPL3KnLahfm1CpnyC": "TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC",
+  "TNGAYGWvg7v2P1ofUQcbwrv5E9fR3nc8VJ": "TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC",
+  "TYRpaKJatPc71dqCGgTxkgSXqpyPNRanBo": "TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC",
+  "TAQDd4MrAYNRSfi8AXb6SsLQUzw2LhB7dg": "TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC",
+  "TSDM8JkmHfwvkE3drCsRJNXzpFc2T1fQbr": "TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC",
+  "TJfWV2Jb2PXNGYfv9EFfjUo2NHjM1NtB2i": "TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC",
+  "TMVkNSCYdzsNHCNfKuhgeJCBhGZMxUHeEV": "TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC",
+  "TAapouJWP9X2p6D5i43dLohFCHkf4rwVuQ": "TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC",
+  "TLMc4KJ7Z5yv2UTuCcFFZwfgqKu42xCtZk": "TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC",
+  "TT143soihZaEn7yey38qtQUFqt5zniqEq3": "TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC",
+  "TLYZNy9KVNSyMrNNFG9yvBx8x6oY46H42g": "TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC",
+  "TW9aPo9io5Rd2n9VaFGr9u9rwX7vGkWfvK": "TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC",
+  "TUtJQinaKMnB3sMpA49BdubbX2T24kXzJj": "TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC",
+  "TRey3T69qGaKHXc5ZNjTd285UXtcz7iG4W": "TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC",
+  "TBRToy5xqCNnhCp6F8wCZPsuQEYKJ9iJo7": "TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC",
+  "TXNrAysPwm6tWiyoqWrhSh6hAUuFPeynWj": "TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC",
+  "TFBLBQ6aRaigVpCYrJDHiYiH2huyaaAwMV": "TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC",
+  "TCfcNE7qGc8XCjfe542jF3Bc96z8Ltsz2Q": "TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC",
+  "TNbCY4zvabP8n52PN9fv9DHLacRogTrike": "TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC",
+  "TGRF33EjWPyrseLvABpX5dPT52vvo5qAq8": "TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC",
+  "TFrKZDHo54j7wQ3eS91gKvDUyJt8er22mS": "TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC",
+  "TQS9BKfwRgkVmVW3mhNfCsC3oBwhLJ3yPE": "TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC",
+  "TNK6L4Qj6qcvwE3DoK44qbDFoYiueG7Zy6": "TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC",
+  "TAAqM8gqoRr5ocWfxJvTtXLHCYyR8mwwuK": "TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC",
+  "TGsfPLcBCEquunuqziWVg21Hqxc8jg6oi9": "TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC",
+  "TYYVaoyiwtJvkCK7yd6q7tha8kYAzgtLgU": "TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC",
+  "TFHVKGbtsorw4wVTAdmN5cZ8XCVLMZS8Ro": "TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC",
+  "TXRTsA5UNUceRuJtFNraKqoYNAJWavi3WD": "TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC",
+  "TSqdUPaicYZahoCovcTMTLaJr5zTAvnkWz": "TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC",
+  "TFMnfwUwJ6XtAWFQgpSEVPUvdfGpitWnfZ": "TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC",
+  "TDTGy6dKd83NYZ1thZg5rLpcRZPrtCnznY": "TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC",
+  "TM2xjzNfMfrLi1kDRLf6Pj5zpF4yUW9X3U": "TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC",
+  "TBHzBeFWYL59eggJoPkQY84MFEgoNjnPEr": "TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC",
+  "TY4mkXtwn8QqXmTmMM6Tgz2Tn1uvPRoTdU": "TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC",
+  "TTdZLkS4m5TWNV9uuRgWVZgfYVqxErf4G8": "TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC",
+  "TAAB8SGtgJoXQm8BUZehiEEs523AF1U4wD": "TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC",
+  "TBj8MV2NJerqaYL3r4v3Bxyze7QYhaKp75": "TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC",
+  "TYLCK22CYRPd1ExY68uwPj4AsxqH3MFyKD": "TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC",
+  "TCjYbT5qt7b1KhzU5fs5Vmt9sotSdeHooq": "TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC",
+  "TY8Ck5hymivwh1NtzA9ZDm6cvfLRe9yo5M": "TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC",
+  "TNkRoCcGwnrmv9hsE6yYsA1LRtoQs73wxZ": "TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC",
+  "TRjWXoRr4rbSoiU6VQGTEXGsQuYjtVLf2s": "TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC",
+  "TCrScyEDwqE3TGAGuLPWD6BQ5YRtCi5GDy": "TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC",
+  "TBqogLfK8tWyEvw5M8UYGZ2Fu8gFe8xMoq": "TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC",
+  "TDJ5TQBsWVzRneXbgz1KDVdo4WQbArfR6M": "TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC",
+  "TCJCCCMSYqFT3AXvHys7cph1EPMWQmJzFw": "TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC",
+  "TQJnLeXW3xfTbsQhLAwdWtjxDAaUxMCYrW": "TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC",
+  "THMYrpTVe5hKJe4nGkuFoDmcvqa42UdVPV": "TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC",
+  "TNk6QXnppX8Uth1Ny19xqUWA6B8jzkdwag": "TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC",
+  "TW9dYXNzwF8r8Rz2DYUCLKM4NJvXKa8aKt": "TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC",
+  "TK779cinFQNty7v7HDAqBEJhnotsUXJfh3": "TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC",
+  "TKDcouiTiqwV7uEkuvwm3Y1PdBBW8AUQVB": "TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC",
+  "TEET6ze15szzNUGNcG6sNnGt1zqnuAdfxS": "TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC",
+  "TLcKBLCBjvjJPNSqZUNGT93TxB8eFk5zEN": "TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC",
+  "TVBRkBCXairet7ohpzPJn8F216byhP7ypn": "TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC",
+  "TNe5cYPtES5L8cVxH2doedPPXpw7vfSHPQ": "TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC",
+  "TJ3uzg3nrTmRhxnnSEFUtdyZdtTbRnAS8k": "TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC",
+  "TWmXeWsHkKtNU1yPcSJ51XFW3WB3hHps4K": "TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC",
+  "TXuwzs66xhdvXGToSph3VrTP65AMsKDAfa": "TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC",
+  "TF5exSujNEGAb764GnjeE6JEnTFHBhgacA": "TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC",
+  "TVRhiK1Qf2cpa8Dbpjvd1EchWqiTbExxSr": "TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC",
+  "TH4neY4oHejryA6AqekhXJKGCmYCyPX92T": "TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC",
+  "TGj4JdADSSvcFAqsDvzCcsdYdrL77Fjvv1": "TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC",
+  "TDgwmKYuHUYovXK9TUbsMJs1QXZEejhaDe": "TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC",
+  "TF3MrQdARBLXMv6r4imjyCq11DGxR7DwT8": "TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC",
+  "TFj2JZZrBMrp4mhNq2xZa8egePxw6yLXmD": "TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC",
+  "TAVfXpeaMVdN1PqFcokSJTYEeuC7XPbyTR": "TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC",
+  "TWYGCie79ko8kkg7BaNKPEMPsc44PLmyP9": "TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC",
+  "TR6PE2byFcGRsf7qwXmryWShDDwwAxcim5": "TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC",
+  "TSLfWKDDNuKCuJERgqGG3HmUSGwyuwwXfo": "TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC",
+  "TM3sn5EvMt2uBrfpiy2tjiiHkr42WGsx4V": "TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC",
+  "TJaQeMZgwXQKpwvPejRRmx6pxt9eUx8WCp": "TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC",
+  "TTnhEugxB6Hwp5y9r6eYktodgvxvHkThJE": "TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC",
+  "TUyTiAkE5R5GF9MrDW9oTWPCqYai42ngTc": "TD4tamFrCq7KvQEB1LArNXr9sKFC6GaAmt",
+  "TRWVbDuc3hoC6fJEiP4tjsBVzHQzRk2tiK": "TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC"
+ },
+ "sinResolver": [
+  {
+   "direccion": "TPuaJ6gnYfE9gLUDFrbWbPx3tMnjG8max1",
+   "nombre": "MetaRouterGateway",
+   "entraDelRobo": 13949171,
+   "envios": 1001,
+   "metodos": [
+    "metaRoute(())"
+   ],
+   "salidas": 0,
+   "destinoPrincipal": null,
+   "motivo": "sin salidas de USDT en el historial leído"
+  },
+  {
+   "direccion": "TTu9T4ff4zvNPz1dfAd36gUeB3xJgYz4G9",
+   "nombre": "BWSwapRouterV1",
+   "entraDelRobo": 212522,
+   "envios": 15,
+   "metodos": [
+    "setOperator(address)",
+    "unpause()",
+    "swap(())",
+    "rescueERC20(address)",
+    "quoteOut(())",
+    "_tryQuoteIn(())"
+   ],
+   "salidas": 150,
+   "destinoPrincipal": {
+    "a": "TM8uyBjRKzFtQdMC7tQLvKeeWieaFvXDyc",
+    "parte": 0.4035
+   },
+   "motivo": "salidas repartidas en 10 destinos (el mayor 40 %)"
+  },
+  {
+   "direccion": "TGnC7LMji8hBpyvZt1TTEJhVpAZ5HFyJ3r",
+   "nombre": "SmartExchangeRouter",
+   "entraDelRobo": 155730,
+   "envios": 43,
+   "metodos": [
+    "retrieve(address,address,uint256)",
+    "changePool(address,address[])",
+    "addPool(string,address,address[])",
+    "transferAdminship(address)",
+    "addPsmPool(string,address,address,address[])",
+    "addUsdcPool(string,address,address[])"
+   ],
+   "salidas": 50,
+   "destinoPrincipal": {
+    "a": "TSUYvQ5tdd3DijCD1uGunGLpftHuSZ12sQ",
+    "parte": 0.8844
+   },
+   "motivo": "salidas repartidas en 13 destinos (el mayor 88 %)"
+  },
+  {
+   "direccion": "TQqgNg13s2DjvXhW1ky4v6TsR8wZGvb7Y4",
+   "nombre": "UniversalRouter",
+   "entraDelRobo": 123350,
+   "envios": 6,
+   "metodos": [
+    "lockAcquired(bytes)",
+    "setStableSwap(address)",
+    "unpause()",
+    "setEnableRecipientCheck(bool)",
+    "renounceOwnership()",
+    "transferOwnership(address)"
+   ],
+   "salidas": 100,
+   "destinoPrincipal": {
+    "a": "TSHWpfK2Kvj6oi4T8H8sN113N7nX1mCq5f",
+    "parte": 0.2168
+   },
+   "motivo": "salidas repartidas en 28 destinos (el mayor 22 %)"
+  },
+  {
+   "direccion": "TMviNfNmwfefUXdhGQaDzbo5NiEVTZTqHM",
+   "nombre": "OnchainGateway",
+   "entraDelRobo": 17487,
+   "envios": 1,
+   "metodos": [
+    "onswap(address,uint256,address,address,bytes)",
+    "changeFee(uint256)",
+    "claimTokens(address)",
+    "renounceOwnership()",
+    "transferOwnership(address)"
+   ],
+   "salidas": 0,
+   "destinoPrincipal": null,
+   "motivo": "sin salidas de USDT en el historial leído"
+  },
+  {
+   "direccion": "TMDENHFSiRzmJNSEBAFmrDbLkQ672iPN8H",
+   "nombre": "TrxProviderProxy",
+   "entraDelRobo": 7040,
+   "envios": 1,
+   "metodos": [
+    "deposit(address)",
+    "renounceRole(bytes32,address)",
+    "deposit(address,address)",
+    "withdraw(uint256,address,address)",
+    "initialize(address,address)",
+    "redeem(uint256,address,address)"
+   ],
+   "salidas": 0,
+   "destinoPrincipal": null,
+   "motivo": "sin salidas de USDT en el historial leído"
+  },
+  {
+   "direccion": "TTRmy12BMrWt68drXQfn3YpC8B5TVFuyyW",
+   "nombre": "sin nombre",
+   "entraDelRobo": 19701,
+   "envios": 3,
+   "metodos": [],
+   "salidas": 22,
+   "destinoPrincipal": {
+    "a": "TEJ7NnBLStyjbb7ejvsDY4PWp78HTi9yQv",
+    "parte": 0.641
+   },
+   "motivo": "salidas repartidas en 10 destinos (el mayor 64 %)"
+  },
+  {
+   "direccion": "TXejU9jmd1ooQyY3Zmpo15yN7MjSFYUESg",
+   "nombre": "UpgradableProxy",
+   "entraDelRobo": 9799,
+   "envios": 1,
+   "metodos": [
+    "renounceRole(bytes32,address)",
+    "transfer(address,uint256)",
+    "redeem(uint256,address,address)",
+    "approve(address,uint256)",
+    "removeWhiteList(address)",
+    "updateWithdrawQueue(uint256[])"
+   ],
+   "salidas": 50,
+   "destinoPrincipal": {
+    "a": "TDH4dhmVQQNc1ZNudJwWzBcs2h6ahhWrpp",
+    "parte": 0.828
+   },
+   "motivo": "salidas repartidas en 18 destinos (el mayor 83 %)"
+  },
+  {
+   "direccion": "TZ9grqg3LwBKiddGra3WGHPdddJz3tow8N",
+   "nombre": "CrossProxy",
+   "entraDelRobo": 7648,
+   "envios": 2,
+   "metodos": [
+    "configOperator(address,bool)",
+    "setHashType(uint256)",
+    "setFees(()[])",
+    "setPartners(address,address,address,address,address)",
+    "delUintValue(bytes,bytes)",
+    "smgMint(bytes32,bytes32,uint256,uint256,uint256,address,address,bytes,bytes32)"
+   ],
+   "salidas": 50,
+   "destinoPrincipal": {
+    "a": "TGFsGKWwzGhZQzck7tiB5MJEYMPN7W3vdw",
+    "parte": 0.1924
+   },
+   "motivo": "salidas repartidas en 24 destinos (el mayor 19 %)"
+  }
+ ],
+ "leidoEn": "2026-11-03T01:01:05.706Z"
+}

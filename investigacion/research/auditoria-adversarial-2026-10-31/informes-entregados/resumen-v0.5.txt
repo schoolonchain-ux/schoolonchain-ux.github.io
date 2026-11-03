@@ -1,0 +1,21 @@
+INFORME DE TRAZABILIDAD v0.5 · dos vías de pureza en paralelo · 3-nov-2026
+
+Te paso el HTML nuevo, que sustituye al v0.4. Como pediste, no he sustituido el método actual: lo dejo vivo y calculo siempre a su lado una segunda vía. Las cifras de todo el informe siguen siendo las de la vía actual; la comparación está en la sección 17 nueva.
+
+QUÉ ES CADA VÍA (en llano)
+- ACTUAL: lo que entra a una billetera desde contratos de cambio o bóvedas no se cuenta, y se supone que es su propio dinero que vuelve. Falla si una billetera cobra pagos de otra gente desde una bóveda: se queda con la pureza de lo poco que está enlazado con nosotros y todo lo que envía se atribuye al robo (así pasaba con TB7pUXywPH…: pureza 0,999).
+- CICLO: corrige solo ese caso. Lo que entra de un contrato EN EXCESO de lo que la propia billetera le había mandado, y que no está enlazado con una salida nuestra, diluye la pureza. Las idas y vueltas legítimas no se tocan.
+
+RESULTADO (importes al precio fijo del análisis)
+- Tramo 6 (antes de la foto), entrada 50,8 M$: la vía actual reparte el 105,6 % de lo que entra; la vía ciclo, el 96,2 %. Destinos finales: de 43,9 a 39,5 M$. Puentes: de 15,6 a 12,3 M$. TB7p…: pureza de 0,999 a 0,052 (el 5 % que había calculado la revisión).
+- Tramo 5 (después de la foto), entrada 190,2 M$: actual 98,2 %; ciclo 95,9 %. Destinos: de 160,7 a 157,4 M$.
+- Con la vía ciclo cambia la pureza de 211 de 9.227 billeteras del tramo 6 y de 1.640 de 7.917 del tramo 5. En el tramo 6 una sola billetera pesa 16,6 M$ de los 25 M$ de efecto; en el tramo 5 el cambio está repartido (la mayor, 0,8 M$).
+- Los dos tramos quedan parecidos (96 %), pero algo por debajo de lo que entra. Eso NO prueba que ese dinero haya salido: es dinero que el modelo ya no puede atribuir.
+
+LA COTA BAJA (por qué no es el arreglo): probé una vía más tosca, que diluye TODO lo que entra de contratos sin enlace. Deja los dos tramos en el 80 %, así que corrige de más: muchas devoluciones legítimas de cambios no tienen su enlace registrado. La enseño solo como límite inferior.
+
+COMPROBACIÓN: la vía actual, ejecutada con el código nuevo, da exactamente los mismos resultados publicados en los dos tramos (mismas aristas, mismos destinos). Las cuentas del informe no cambian (TRON +2,3 %, Ethereum +6,4 %). Calidad: 7 comprobaciones en verde y 1 aviso.
+
+SIN REVISIÓN EXTERNA: ninguna de las dos vías está revisada por una fuente externa. Siguen igual sin revisión externa: Arkham (15), las EVM de Polytrop (14), la cuenta de gas (16), las dos vías (17), el arreglo de duplicados de Ethereum y el cruce de Polytrop repetido. Nada está commiteado.
+
+PENDIENTE DE TU DECISIÓN: si alguna vez la vía ciclo sustituye a la actual en el resto del informe (cambiaría los destinos y las partidas de los dos tramos). Mientras tanto, las dos conviven.

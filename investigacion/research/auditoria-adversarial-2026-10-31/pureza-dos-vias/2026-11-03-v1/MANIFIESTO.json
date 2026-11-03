@@ -1,0 +1,101 @@
+{
+ "version": "2026-11-03-v1",
+ "creado": "2026-11-03T12:26:57.673Z",
+ "nota": "Versión 1: las dos vías (actual y ciclo) y la cota baja (diluida), seis ejecuciones con el código final; motivo: revisión independiente del 3-nov que localizó el fallo de TB7pUXywPH…",
+ "vias": [
+  "actual",
+  "ciclo",
+  "diluida"
+ ],
+ "obligatorias": [
+  "actual",
+  "ciclo"
+ ],
+ "vivo": {
+  "tramo5": {
+   "dir": "C:/EquipoIA/research/auditoria-adversarial-2026-10-31/tramo5-v03",
+   "pref": "tramo5",
+   "entradas": {
+    "tramo5-cache.json": "f919a521b497d13ca58b81f238b590da201723f3eff41f97718fb18086bd774f",
+    "t4.json": "14ef6c1a12ce0e8f4c60f26831960991447e96e612510a5d211715ffd85af5e8",
+    "traza-clases.json": "e617cd7cbee82f0abcc1423cfbdf2c3291f53180cf36e8b5ed528ad4fc692b24",
+    "tramo5-alcanzadas.json": "2598578e802d16e892a93165ff5a78f8409a9be5ae7f20f04b960986aa17bd2b",
+    "tramo5-escontrato.json": "e92c7a56ef9dfae6313624233476c4d9943f5e0547bdaf19d001b738292db21b",
+    "tramo5-swaps.json": "c4cec073f10b8a6f69bf5d23d2c2280c33a7b3eb8209ec25e2d61578efb8042c",
+    "retiradas-informe.json": "24fc1b6ffdbe12b749a984b15ab34c30b68c058edd6c7f53d9d8e8b8ebfa46a6",
+    "contratos-clasificados.json": "da5c96d58292b81b8dc0f6f854d78f614e021b0121e59be83c4415578503c9ee"
+   },
+   "salidas": {
+    "actual:tramo5-resultado.json": "c41c870415ec0a8235fe34fa8141501c8e33f4873ff295a9a5e0de4237d3cb52",
+    "actual:tramo5-aristas-terminales.json": "146c8ac1a8175789f5207123f0c2e5248bf755096268c469cf1df894872c8595",
+    "ciclo:tramo5-resultado.ciclo.json": "2c75978abf49f662627b2be44917e00436a764019a73e0d579de20665a76596e",
+    "ciclo:tramo5-aristas-terminales.ciclo.json": "14566a88e9b6177c7768185eac88696c2dbcc27648d712f140b6e618976f60aa",
+    "diluida:tramo5-resultado.diluida.json": "7ea233eeba8232f3a967f7ceced75e8730455dfe24a2eaee3daa81f1507b3c85",
+    "diluida:tramo5-aristas-terminales.diluida.json": "e4154b3f5acf36fc18abf08259de7c8550e0c0cd61a5b8441f177bb23b9d7f7e"
+   }
+  },
+  "tramo6": {
+   "dir": "C:/EquipoIA/research/auditoria-adversarial-2026-10-31/tramo6-v03",
+   "pref": "tramo6",
+   "entradas": {
+    "tramo6-cache.json": "87cc813e33d6700b1598db8acdb899f9630b666f89fd4fda53b5297cd6637b1c",
+    "t4.json": "c1c083c8c9c290a1a2015d97eec49fa71653abcb46c9a6d00d99813b57231755",
+    "traza-clases.json": "ee6f97b0aa576ebc8acebf7e6aac53730b4f86689a3c04156117d42ad35cb35f",
+    "tramo6-alcanzadas.json": "faf878c6fe80302ce5d957d8d80265d273cc0f588194b12bd45b41f8ca4e24c6",
+    "tramo6-escontrato.json": "c77c9311ab2e7429f08d715285fd05fedd49cda083f1dc7a3dea1506c4c3b4c5",
+    "tramo6-swaps.json": "772640d49bf56f38d349bac4ad104f9185bc6e1af383208cbf12c3ad31e738b4",
+    "retiradas-informe.json": "f73cceed8a991f45026911f68d86738667d33069263285f61c7d14724a3dddcf",
+    "contratos-clasificados.json": "da5c96d58292b81b8dc0f6f854d78f614e021b0121e59be83c4415578503c9ee"
+   },
+   "salidas": {
+    "actual:tramo6-resultado.json": "416744e1ce8ab4e1097ae0bb1e2db694249d487a6cd54018cc1f5772732810c5",
+    "actual:tramo6-aristas-terminales.json": "71eb41ca803ac5b5decbe85a70aa51d56d847a10329f8b10dd07d46c48621a78",
+    "ciclo:tramo6-resultado.ciclo.json": "b5954b3678bda5494f97c753e2c84031edc968d229405571f8833222ff184645",
+    "ciclo:tramo6-aristas-terminales.ciclo.json": "ab945ce2d09cec78f31cd6c6a50c0a56bf92f35b29544b9b0ee8bcd13c7b8068",
+    "diluida:tramo6-resultado.diluida.json": "8d1a2c10e5fbb3434d7874ccea3de444004aa758dec80dbd33a7653c6b57d7fc",
+    "diluida:tramo6-aristas-terminales.diluida.json": "9e249af28c1a13d35aafaf5fe0c6146ca6c7aa7f9dd641c77d64d4a0cc1b3ad5"
+   }
+  }
+ },
+ "copias": {
+  "tramo5/tramo5-resultado.json": "c41c870415ec0a8235fe34fa8141501c8e33f4873ff295a9a5e0de4237d3cb52",
+  "tramo5/tramo5-aristas-terminales.json": "146c8ac1a8175789f5207123f0c2e5248bf755096268c469cf1df894872c8595",
+  "tramo5/tramo5-resultado.ciclo.json": "2c75978abf49f662627b2be44917e00436a764019a73e0d579de20665a76596e",
+  "tramo5/tramo5-aristas-terminales.ciclo.json": "14566a88e9b6177c7768185eac88696c2dbcc27648d712f140b6e618976f60aa",
+  "tramo5/tramo5-resultado.diluida.json": "7ea233eeba8232f3a967f7ceced75e8730455dfe24a2eaee3daa81f1507b3c85",
+  "tramo5/tramo5-aristas-terminales.diluida.json": "e4154b3f5acf36fc18abf08259de7c8550e0c0cd61a5b8441f177bb23b9d7f7e",
+  "tramo6/tramo6-resultado.json": "416744e1ce8ab4e1097ae0bb1e2db694249d487a6cd54018cc1f5772732810c5",
+  "tramo6/tramo6-aristas-terminales.json": "71eb41ca803ac5b5decbe85a70aa51d56d847a10329f8b10dd07d46c48621a78",
+  "tramo6/tramo6-resultado.ciclo.json": "b5954b3678bda5494f97c753e2c84031edc968d229405571f8833222ff184645",
+  "tramo6/tramo6-aristas-terminales.ciclo.json": "ab945ce2d09cec78f31cd6c6a50c0a56bf92f35b29544b9b0ee8bcd13c7b8068",
+  "tramo6/tramo6-resultado.diluida.json": "8d1a2c10e5fbb3434d7874ccea3de444004aa758dec80dbd33a7653c6b57d7fc",
+  "tramo6/tramo6-aristas-terminales.diluida.json": "9e249af28c1a13d35aafaf5fe0c6146ca6c7aa7f9dd641c77d64d4a0cc1b3ad5"
+ },
+ "codigo": {
+  "analisis-tramo5.cjs": "a87521425c5b69358239f633913aca480949cd0077c7b0b9e099e25c33e1c85b",
+  "analisis-tramo6.cjs": "7f28345df01d7a3e7cc2a1bbcc0ee57ef221d7f4c4ce5ef82c2b9a6b73353197",
+  "_parche-pureza-dos-vias.cjs": "e5334e8615c30aa6dbc645d6734240d9201478058bb06d7c7ce4a252c96fdc39",
+  "_parche-pureza-ciclo.cjs": "647f30108467f44ed51d18991895618832c7de586bf35f1c3021429b51efe775",
+  "_parche-corte-tramo6.cjs": "4d5c9565b4a1bb3dc7270886e3601d9a1999939da5f8a45f637cd83046121016",
+  "filtrar-corte-tramo6.cjs": "b2eb295495ed568d3d0b8155ba026a5657e4a866534e0e2e5caae7dd7c450868",
+  "dos-vias.cjs": "f3e8e6457218c3236b322e43e406357118723d631d0bcb449b28e33a135c1d34",
+  "conservar-dos-vias.cjs": "cb1717f00b78b625f74f4df337f0113b6ff74b36b841a925265a349130b92f5f"
+ },
+ "registros": {
+  "tramo5/analisis-log.actual.txt": "e55a8688bcca5b598ac392ae195611bc6dff51c35b95644da03f9f262c79887d",
+  "tramo5/analisis-log.ciclo.txt": "72a9985d78c25fedf14ffdc2c52737733b9438ebb113c84fee4dd9065c44687e",
+  "tramo5/analisis-log.diluida.txt": "4d1fa847f00ccba551e16776f1b024308fda5e658f45736c7ad7f0f54f3cc277",
+  "tramo6/analisis-log.actual-recomprobacion.txt": "dea129be53a58289f6eb30939e17b2d900c306b6b99bf7d836483e468bc6d136",
+  "tramo6/analisis-log.actual.txt": "dea129be53a58289f6eb30939e17b2d900c306b6b99bf7d836483e468bc6d136",
+  "tramo6/analisis-log.ciclo.txt": "cea9253cd71f01cfb8e64464bf9622b14514b5f7d2887976ea872d10437d961c",
+  "tramo6/analisis-log.diluida.txt": "eb74d4db57e86f652e43c68802df01174f34d1ae203bac08788391edb29503e1",
+  "tramo6/analisis-log.txt": "440f8e97826e07d89237fdd618ca81cb8ccdacb531203fc99f687b588fc46892"
+ },
+ "metodo": "01cdeb56dac26259267e546a996c362809a9e786077be8bb661a55d1da579e56",
+ "comparacion": "ef16e9574bb3114a14101ec8bf3d356e0fc7ccfc8a42c161c47a4c25522c48da",
+ "revision": {
+  "CORR-v03-AB-claude-respuesta.md": "eca71ac6ef6eea1c691b40c5668fe5ea123547e3d7ce8b5f94b055abe4193c3c",
+  "CORR-v03-AB-claude-respuesta-meta.json": "15e7bff7d7040a71f6fa753d9d7a79cc52ef597b98299b93a9e44c07512254c4",
+  "CORR-v03-AB-prompt.md": "ee23d6a679875d3dcc3da87cff249f8afc72c80881a493b66255a98d929d928a"
+ }
+}

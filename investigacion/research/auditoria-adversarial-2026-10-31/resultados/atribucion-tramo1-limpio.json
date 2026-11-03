@@ -1,0 +1,288 @@
+{
+ "tramo": "tramo1",
+ "generado": "2026-10-31T15:54:49.840Z",
+ "reparto": 50773216.863587685,
+ "publicado": {
+  "totales": {
+   "casa": 0,
+   "nodo": 25326222.01345038,
+   "prestamo": 4754776.920358886,
+   "puente": 2357612.782638592,
+   "usdd": 326687.80843058374,
+   "no_verificada": 0
+  },
+  "retenido": 11181558.381672151
+ },
+ "conservacion": {
+  "sumaIn": 214255369.66478372,
+  "sumaOut": 199180276.56758454,
+  "excesoTotal": 4459757.643191715,
+  "billeterasConExceso": 102,
+  "defectoTotal": 19534748.390673995,
+  "peores": [
+   {
+    "w": "TM32EDad1ZiMob3S5Rx8VJB6dnjMjD1NTY",
+    "tIn": 2930298.9730822723,
+    "tOut": 4049701.1738567995,
+    "exceso": 1119402.2007745272
+   },
+   {
+    "w": "TANBLHyBFUH2gu9NFBKMxE9kW2fbdPxQP1",
+    "tIn": 334000.612416064,
+    "tOut": 1008448.3704032319,
+    "exceso": 674447.7579871679
+   },
+   {
+    "w": "TKdLoLkYLpVygaknB2q3YPHaoL9o3AXbce",
+    "tIn": 725979.793642752,
+    "tOut": 1358929.943723616,
+    "exceso": 632950.150080864
+   },
+   {
+    "w": "TKBLWEB2CVk1LWdbi8SHfnF2XeUWExvpod",
+    "tIn": 54225.07027489718,
+    "tOut": 321938.4356206222,
+    "exceso": 267713.365345725
+   },
+   {
+    "w": "TJRbgAWaRUG2hb83nQsuVUC1RP1Y18dHfK",
+    "tIn": 71505.36819923199,
+    "tOut": 282689.108191776,
+    "exceso": 211183.739992544
+   },
+   {
+    "w": "TQXm9qEL64YmGAzZoMspM8qyWPZ3tbqt6X",
+    "tIn": 366101.52946094604,
+    "tOut": 573735.2993131413,
+    "exceso": 207633.76985219523
+   },
+   {
+    "w": "TWbRdu55N4Cwwu83fe8pomQaUCEoHVsrqy",
+    "tIn": 758660.9768672,
+    "tOut": 900072.4836407041,
+    "exceso": 141411.50677350408
+   },
+   {
+    "w": "TCXrtGCPAxvm6ekWWds4rZ8hJDouY7pFW3",
+    "tIn": 17620.768,
+    "tOut": 140820.06399999998,
+    "exceso": 123199.29599999999
+   }
+  ]
+ },
+ "modelos": {
+  "informe": {
+   "terminales": {
+    "usdd": 326736.71611018985,
+    "nodo": 25537801.357311785,
+    "puente": 2360449.8714213297,
+    "prestamo": 4754776.920358886
+   },
+   "porDestino": {
+    "usdd|AuthGemJoin5": 326736.71611018985,
+    "nodo|THPaGKe6aZkUcNht24hcscZPLwtcJAbpun": 2233836.4336041873,
+    "nodo|TM8uyBjRKzFtQdMC7tQLvKeeWieaFvXDyc": 12293581.742715193,
+    "nodo|TBAPnuwEht65McDbxDvDYs2XLRSSbYQMUM": 2028620.8166335865,
+    "nodo|TGSNahJvAdh86aR5pdcxiep1mBWSRK3HHL": 2808874.4006483853,
+    "nodo|TLKfB2goHRY1SykEpVbiGdsesACrkCxCeW": 2138733.9980245056,
+    "nodo|TH1YKH9MUuJtDmekPia4x9fZXAcpPrMv8B": 2641099.1894429526,
+    "nodo|TZG47zhb8kcriWQ2rE719yHs1KqgzwMrvF": 980214.7867225126,
+    "nodo|TX5XiRXdyz7sdFwF5mnhT1QoGCpbkncpke": 126468.14224761561,
+    "puente|UsdtOFT": 2352166.90691133,
+    "prestamo|CErc20Delegator": 4754776.920358886,
+    "nodo|TKfz7Pu3jtxWrfHzVeozQjXsb3RfuUHGE2": 172474.1635763233,
+    "nodo|TCPPRajgXVBkR5Qvpd3RHh4xUvibhzrqSa": 110380.42225991617,
+    "nodo|TMXawuHt4RoYUQ9pynNsyzqpTxxxLKZHsY": 3517.261436557967,
+    "puente|BridgersSwap": 8282.96451
+   },
+   "polvo": 1371856.5314209443,
+   "neutrales": 273041689.88112736,
+   "continuan": 223699348.05397913,
+   "retenido": 11186114.3234684,
+   "vueltas": 25,
+   "preVentana": {
+    "n": 0,
+    "billeteras": {},
+    "v": 0,
+    "tainted": 0
+   },
+   "retenidoCorregido": 10709438.802982055,
+   "netoNegativo": 22335203.203160524
+  },
+  "fifo": {
+   "terminales": {
+    "prestamo": 3979211.519949248,
+    "nodo": 23460692.63075745,
+    "puente": 1464728.7749642455,
+    "usdd": 298134.48887622403
+   },
+   "porDestino": {
+    "prestamo|CErc20Delegator": 3979211.519949248,
+    "nodo|TM8uyBjRKzFtQdMC7tQLvKeeWieaFvXDyc": 11560928.150628112,
+    "nodo|TZG47zhb8kcriWQ2rE719yHs1KqgzwMrvF": 765455.1181672799,
+    "nodo|TBAPnuwEht65McDbxDvDYs2XLRSSbYQMUM": 1944742.6113970547,
+    "puente|UsdtOFT": 1456445.8104542454,
+    "nodo|TLKfB2goHRY1SykEpVbiGdsesACrkCxCeW": 2147207.7178985984,
+    "nodo|TH1YKH9MUuJtDmekPia4x9fZXAcpPrMv8B": 2241381.6535254316,
+    "nodo|THPaGKe6aZkUcNht24hcscZPLwtcJAbpun": 1982239.7902886737,
+    "nodo|TGSNahJvAdh86aR5pdcxiep1mBWSRK3HHL": 2473466.7936043306,
+    "nodo|TKfz7Pu3jtxWrfHzVeozQjXsb3RfuUHGE2": 107778.63169992634,
+    "nodo|TX5XiRXdyz7sdFwF5mnhT1QoGCpbkncpke": 125273.14166832839,
+    "nodo|TCPPRajgXVBkR5Qvpd3RHh4xUvibhzrqSa": 108699.02187971197,
+    "usdd|AuthGemJoin5": 298134.48887622403,
+    "nodo|TMXawuHt4RoYUQ9pynNsyzqpTxxxLKZHsY": 3520,
+    "puente|BridgersSwap": 8282.96451
+   },
+   "polvo": 844971.8163720114,
+   "neutrales": 7797369.950361389,
+   "continuan": 190019986.9600703,
+   "retenido": 11396820.47867774,
+   "sinInventario": 11377015.064618554,
+   "haciaNoRastreadas": 0,
+   "inyectado": 58576840.33341469,
+   "preVentana": 8898147.354286106,
+   "convertido": 12961236.883127628,
+   "desconocidoEntra": 545283.7799736081
+  },
+  "lifo": {
+   "terminales": {
+    "prestamo": 3952263.51827026,
+    "nodo": 23123343.30956025,
+    "puente": 1481855.90114681,
+    "usdd": 298134.48887622403
+   },
+   "porDestino": {
+    "prestamo|CErc20Delegator": 3952263.51827026,
+    "nodo|TM8uyBjRKzFtQdMC7tQLvKeeWieaFvXDyc": 11674080.101663342,
+    "nodo|TZG47zhb8kcriWQ2rE719yHs1KqgzwMrvF": 659990.1221532846,
+    "nodo|TBAPnuwEht65McDbxDvDYs2XLRSSbYQMUM": 1857819.0212211213,
+    "puente|UsdtOFT": 1473572.93663681,
+    "nodo|TLKfB2goHRY1SykEpVbiGdsesACrkCxCeW": 1995309.481452787,
+    "nodo|TH1YKH9MUuJtDmekPia4x9fZXAcpPrMv8B": 2326712.8077404015,
+    "nodo|THPaGKe6aZkUcNht24hcscZPLwtcJAbpun": 1744962.4774770765,
+    "nodo|TGSNahJvAdh86aR5pdcxiep1mBWSRK3HHL": 2517122.525950925,
+    "nodo|TKfz7Pu3jtxWrfHzVeozQjXsb3RfuUHGE2": 109855.43167702283,
+    "nodo|TX5XiRXdyz7sdFwF5mnhT1QoGCpbkncpke": 125272.31834455238,
+    "nodo|TCPPRajgXVBkR5Qvpd3RHh4xUvibhzrqSa": 108699.02187971197,
+    "usdd|AuthGemJoin5": 298134.48887622403,
+    "nodo|TMXawuHt4RoYUQ9pynNsyzqpTxxxLKZHsY": 3520,
+    "puente|BridgersSwap": 8282.96451
+   },
+   "polvo": 822109.4432663366,
+   "neutrales": 7799333.078703707,
+   "continuan": 190163776.6074692,
+   "retenido": 11727793.2219551,
+   "sinInventario": 11377015.064618554,
+   "haciaNoRastreadas": 0,
+   "inyectado": 58576840.33341469,
+   "preVentana": 8933602.830584006,
+   "convertido": 12901404.914041173,
+   "desconocidoEntra": 545283.7799736081
+  },
+  "dyn": {
+   "terminales": {
+    "prestamo": 3975662.7183444677,
+    "nodo": 23333090.332596563,
+    "puente": 1475308.8243983397,
+    "usdd": 297856.1941554402
+   },
+   "porDestino": {
+    "prestamo|CErc20Delegator": 3975662.7183444677,
+    "nodo|TM8uyBjRKzFtQdMC7tQLvKeeWieaFvXDyc": 11606018.163991611,
+    "nodo|TZG47zhb8kcriWQ2rE719yHs1KqgzwMrvF": 726085.9146539924,
+    "nodo|TBAPnuwEht65McDbxDvDYs2XLRSSbYQMUM": 1881939.666800596,
+    "puente|UsdtOFT": 1467025.8598883399,
+    "nodo|TLKfB2goHRY1SykEpVbiGdsesACrkCxCeW": 2081626.393967386,
+    "nodo|TH1YKH9MUuJtDmekPia4x9fZXAcpPrMv8B": 2343400.8946048096,
+    "nodo|THPaGKe6aZkUcNht24hcscZPLwtcJAbpun": 1848172.3307930254,
+    "nodo|TGSNahJvAdh86aR5pdcxiep1mBWSRK3HHL": 2498710.4347113217,
+    "nodo|TKfz7Pu3jtxWrfHzVeozQjXsb3RfuUHGE2": 109368.40361926396,
+    "nodo|TX5XiRXdyz7sdFwF5mnhT1QoGCpbkncpke": 125272.41447035248,
+    "nodo|TCPPRajgXVBkR5Qvpd3RHh4xUvibhzrqSa": 108975.71498415178,
+    "usdd|AuthGemJoin5": 297856.1941554402,
+    "nodo|TMXawuHt4RoYUQ9pynNsyzqpTxxxLKZHsY": 3520,
+    "puente|BridgersSwap": 8282.96451
+   },
+   "polvo": 839350.5194485716,
+   "neutrales": 7795196.726660974,
+   "continuan": 190097201.22019684,
+   "retenido": 11512126.128540026,
+   "sinInventario": 11377015.064618554,
+   "haciaNoRastreadas": 0,
+   "inyectado": 58576840.33341469,
+   "preVentana": 8911410.373214962,
+   "convertido": 12929604.853660882,
+   "desconocidoEntra": 545283.7799736081
+  },
+  "taintfirst": {
+   "terminales": {
+    "prestamo": 3981461.8027826534,
+    "nodo": 23516120.33458809,
+    "puente": 1467128.3358684508,
+    "usdd": 298134.48887622403
+   },
+   "porDestino": {
+    "prestamo|CErc20Delegator": 3981461.8027826534,
+    "nodo|TM8uyBjRKzFtQdMC7tQLvKeeWieaFvXDyc": 11599276.929800162,
+    "nodo|TZG47zhb8kcriWQ2rE719yHs1KqgzwMrvF": 773718.146555478,
+    "nodo|TBAPnuwEht65McDbxDvDYs2XLRSSbYQMUM": 1901249.9804627986,
+    "puente|UsdtOFT": 1458845.3713584507,
+    "nodo|TLKfB2goHRY1SykEpVbiGdsesACrkCxCeW": 2137012.6629854827,
+    "nodo|TH1YKH9MUuJtDmekPia4x9fZXAcpPrMv8B": 2387845.4238981986,
+    "nodo|THPaGKe6aZkUcNht24hcscZPLwtcJAbpun": 1918641.4504536882,
+    "nodo|TGSNahJvAdh86aR5pdcxiep1mBWSRK3HHL": 2453104.9451843,
+    "nodo|TKfz7Pu3jtxWrfHzVeozQjXsb3RfuUHGE2": 107778.63169992632,
+    "nodo|TX5XiRXdyz7sdFwF5mnhT1QoGCpbkncpke": 125273.14166832839,
+    "nodo|TCPPRajgXVBkR5Qvpd3RHh4xUvibhzrqSa": 108699.02187971197,
+    "usdd|AuthGemJoin5": 298134.48887622403,
+    "nodo|TMXawuHt4RoYUQ9pynNsyzqpTxxxLKZHsY": 3520,
+    "puente|BridgersSwap": 8282.96451
+   },
+   "polvo": 836282.3182934672,
+   "neutrales": 7806365.139360119,
+   "continuan": 190049834.5699582,
+   "retenido": 11361722.087057684,
+   "sinInventario": 11377015.064618554,
+   "haciaNoRastreadas": 0,
+   "inyectado": 58576840.33341469,
+   "preVentana": 8873406.040750457,
+   "convertido": 12946232.37634746,
+   "desconocidoEntra": 545283.7799736081
+  },
+  "cleanfirst": {
+   "terminales": {
+    "prestamo": 3952263.51827026,
+    "nodo": 23090268.061488617,
+    "puente": 1479618.2475849437,
+    "usdd": 298134.48887622403
+   },
+   "porDestino": {
+    "prestamo|CErc20Delegator": 3952263.51827026,
+    "nodo|TM8uyBjRKzFtQdMC7tQLvKeeWieaFvXDyc": 11699059.950690959,
+    "nodo|TZG47zhb8kcriWQ2rE719yHs1KqgzwMrvF": 618460.2312749333,
+    "nodo|TBAPnuwEht65McDbxDvDYs2XLRSSbYQMUM": 1893547.371115539,
+    "puente|UsdtOFT": 1471335.2830749438,
+    "nodo|TLKfB2goHRY1SykEpVbiGdsesACrkCxCeW": 2006959.2961824923,
+    "nodo|TH1YKH9MUuJtDmekPia4x9fZXAcpPrMv8B": 2326240.779576761,
+    "nodo|THPaGKe6aZkUcNht24hcscZPLwtcJAbpun": 1678249.7164512319,
+    "nodo|TGSNahJvAdh86aR5pdcxiep1mBWSRK3HHL": 2522062.838709763,
+    "nodo|TKfz7Pu3jtxWrfHzVeozQjXsb3RfuUHGE2": 107311.78739300443,
+    "nodo|TX5XiRXdyz7sdFwF5mnhT1QoGCpbkncpke": 125272.31834455238,
+    "nodo|TCPPRajgXVBkR5Qvpd3RHh4xUvibhzrqSa": 109583.77174937745,
+    "usdd|AuthGemJoin5": 298134.48887622403,
+    "nodo|TMXawuHt4RoYUQ9pynNsyzqpTxxxLKZHsY": 3520,
+    "puente|BridgersSwap": 8282.96451
+   },
+   "polvo": 833311.5859032497,
+   "neutrales": 7799908.778594939,
+   "continuan": 190368279.44107938,
+   "retenido": 11746804.411447242,
+   "sinInventario": 11377015.064618556,
+   "haciaNoRastreadas": 0,
+   "inyectado": 58576840.33341469,
+   "preVentana": 8937800.31346411,
+   "convertido": 12910802.166744854,
+   "desconocidoEntra": 545283.7799736081
+  }
+ }
+}

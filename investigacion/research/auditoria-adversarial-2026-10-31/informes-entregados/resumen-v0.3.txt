@@ -1,0 +1,29 @@
+INFORME DE TRAZABILIDAD v0.3 · COMPLETO, a falta de la revisión de Codex · 3-nov-2026
+
+Ya no es parcial. Te paso solo el HTML (el listado de «dónde perdemos el rastro» está dentro, sección 13, con su botón de descarga). Lo esencial:
+
+LO QUE HE CORREGIDO (errores míos que había en el parcial)
+1) Reparto anterior a la foto (tramo 6). Contaba como «anterior a la foto» unos 137 M$ de movimientos posteriores, que ya estaban en el tramo 5. Causa: su corte de tiempo era la hora de lectura (2-nov 09:23) y no la foto (30-oct 22:40). Con el corte bien puesto, de los 50,8 M$ repartidos antes de la foto: 43,9 M$ llegan a destinos finales, 3,4 M$ quedan en billeteras, 1,6 M$ son polvo y 4,7 M$ entran en contratos sin salida visible. Suma 53,6 M$: un 5,6 % más de lo que entra, residuo del modelo que dejo declarado. Antes sumaba 194,9 M$.
+2) Ethereum. El parcial contaba dos veces 54 transferencias de ETH (aparecían en el historial del que envía y en el del que recibe). Ya no.
+Resultado: control de calidad con 7 comprobaciones en verde y 1 aviso (contratos con salida sin resolver, que están listados). El parcial tenía un aviso y, con el tramo 6 sin corte, un fallo.
+
+LAS CUENTAS, SIN FORZAR
+- TRON: capital 628,1 M$; la suma de las partidas da 642,7 M$ (supera en 14,6 M$, un 2,3 %). Una parte es ese 5,6 % del tramo 6; el resto no está desglosado.
+- Ethereum: capital 3.302 M$; suma 3.513 M$ (supera en 210,8 M$). Una explicación posible, NO demostrada: unos 61 tokens vendidos que el capital no valora.
+- Congelado hoy y comprobado contra los contratos: 2.685 M$. Quieto sin congelar: 1.195 M$.
+
+DÓNDE SE PIERDE EL RASTRO (sección 13): 180 filas, ninguna pendiente. 137 «desconocido» (6,5 M$ atribuidos: contratos con salida que no se ve) y 43 «parada» (179,4 M$: concentradores, servicios, préstamos y puentes donde el rastreo termina a propósito). Cruces de puentes: de 1.441 llegadas comprobadas, 1.412 cuadran, 0 no cuadran y 29 no se pudieron leer.
+
+LO NUEVO
+- Saldos de hoy de las 12.978 billeteras de TRON, leídos (TronScan y un nodo público a la vez; cada fila anota su fuente).
+- Seguimiento en Ethereum de los dos tramos juntos: 841 billeteras.
+- Sección 14 (Polytrop): leídas las 1.588 direcciones EVM que no teníamos; 497 conservan más de 0,01 ETH (30.138 ETH en total). Repetí el cruce con los datos finales: ahora no teníamos 1.657 direcciones (antes 1.698); 40 de las EVM ya aparecen en nuestro seguimiento de Ethereum.
+- Sección 16, cuenta que reparte TRX (TBEbSQuJwp…): hace dos cosas. Alquila energía a 1.294 direcciones, que no enlaza con nadie (se descarta). Y manda TRX normales, sin mensajes, a 129 direcciones, de las que 73 son billeteras que ya seguimos (el 30-oct 12:22 → 1-nov 00:39). Su TRX viene de TAT51WDhq…, cuenta de cobros de un negocio con 5.520 clientes. Único vínculo de pago visible: 3 pagos de nuestras billeteras que llegan al céntimo a esa cuenta (4.999 TRX, unos 1.760 $). Corrijo lo que te dije en el chat: eran 4.999 TRX, no 8.400. No se puede afirmar que la cuenta sea del ladrón ni quién pagó el resto del gas.
+
+LO QUE NO ESTÁ REVISADO POR CODEX
+Arkham (sección 15), las EVM de Polytrop (14), la cuenta de gas (16), el cruce de Polytrop repetido y mis tres correcciones. Codex agotó su cupo hasta las 13:31 de hoy; he dejado programada su revisión de las correcciones para entonces y te cuento qué encuentra. Hasta entonces, trátalo como completo pero sin revisión externa en esas partes.
+
+PENDIENTE
+- Cruce con el otro agente (equipo de investigación de ChainScope): cuando terminéis los dos. Hueco conocido en su lado: los 175 M USDT enviados a 0x811f… no se siguen en sus expedientes aprobados; en mi informe terminan en una billetera congelada por Tether, según la investigación hecha a mano, y esa parte habrá que contrastarla.
+- Los 29 cruces sin lectura y las 56 receptoras de TRX de la cuenta de gas que no seguimos.
+- Nada está commiteado en git.

@@ -1,0 +1,323 @@
+{
+ "tramos": [
+  {
+   "nombre": "tramo5",
+   "pref": "tramo5",
+   "entrada": 190199877.50903285,
+   "vias": {
+    "actual": {
+     "nodo": 115058875.86992097,
+     "puente": 21215257.521676768,
+     "usdd": 24365853.222344123,
+     "prestamo": 76416.36426198657,
+     "casa": 8042.643386675047,
+     "destinos": 160724445.62159052,
+     "retenido": 6080578.310371057,
+     "polvo": 5587499.957913191,
+     "sinResolver": 14458092.398948643,
+     "suma": 186850616.28882343,
+     "relacion": 0.9823908339791104
+    },
+    "ciclo": {
+     "nodo": 113878766.82860179,
+     "puente": 19877855.126465645,
+     "usdd": 23596636.9848489,
+     "prestamo": 66521.6997301418,
+     "casa": 7017.906208655701,
+     "destinos": 157426798.54585513,
+     "retenido": 5542186.522135166,
+     "polvo": 5109331.757056198,
+     "sinResolver": 14245047.289063524,
+     "suma": 182323364.11411002,
+     "relacion": 0.958588230980597
+    },
+    "diluida": {
+     "nodo": 91612264.29378907,
+     "puente": 13826463.33936846,
+     "usdd": 22261518.066184204,
+     "prestamo": 39277.48319534911,
+     "casa": 6970.474524646101,
+     "destinos": 127746493.65706174,
+     "retenido": 5361409.707903671,
+     "polvo": 5028764.191014873,
+     "sinResolver": 14064640.883869022,
+     "suma": 152201308.43984932,
+     "relacion": 0.8002176995756534
+    }
+   },
+   "billeterasCambian": 1640,
+   "billeterasTotal": 7917,
+   "efectoTotal": 13433931.335699262,
+   "top": [
+    {
+     "a": "TUftBTYYXgYx5yEyfeFAfGGyxmeVPqNo6c",
+     "nivel": 2,
+     "puraActual": 1,
+     "puraCiclo": 0.3274001237266264,
+     "salidas": 1209085.007906,
+     "sinEnlace": 256212.440304128,
+     "efecto": 813230.4267215665
+    },
+    {
+     "a": "TGQKCVAWXSV8Yr8mRP4peU4JU5toCUFMjt",
+     "nivel": 7,
+     "puraActual": 0.8998675685406564,
+     "puraCiclo": 0.05370030901394013,
+     "salidas": 709450,
+     "sinEnlace": 0,
+     "efecto": 600313.3622712288
+    },
+    {
+     "a": "TNx6cvwECtSdLJTtBaEJFqBphcnsxgLPrz",
+     "nivel": 2,
+     "puraActual": 0.9832060060310093,
+     "puraCiclo": 0.8922068040181377,
+     "salidas": 4411993.739828777,
+     "sinEnlace": 305109.09665546427,
+     "efecto": 401487.9096102037
+    },
+    {
+     "a": "TVz3Qdm2pt8DjUKKNBHxhE3KMCbwYkoit2",
+     "nivel": 6,
+     "puraActual": 0.8998675685406562,
+     "puraCiclo": 0.053700309013940115,
+     "salidas": 463167,
+     "sinEnlace": 37829.9,
+     "efecto": 391916.75109321054
+    },
+    {
+     "a": "TYoKc1fG4yWTt4zxJyXUsrnotr322FwVFj",
+     "nivel": 5,
+     "puraActual": 1,
+     "puraCiclo": 0.06509089499699619,
+     "salidas": 375150.2,
+     "sinEnlace": 103894.91745600001,
+     "efecto": 350731.3377236979
+    },
+    {
+     "a": "TQfjwauKaHd2TZnNddokK5bDym8RwSL6ar",
+     "nivel": 4,
+     "puraActual": 1,
+     "puraCiclo": 0.33553472591531686,
+     "salidas": 301340.71743,
+     "sinEnlace": 200230.4424,
+     "efecto": 200230.44240000003
+    },
+    {
+     "a": "TTm1qh55vBhBofBfyjYbLVD85CTNgwAdz7",
+     "nivel": 1,
+     "puraActual": 0.9567477382396687,
+     "puraCiclo": 0.7513383599364301,
+     "salidas": 960631.684443904,
+     "sinEnlace": 194001.052628416,
+     "efecto": 197322.7570800153
+    },
+    {
+     "a": "TNLvT2CRxDMEc57vf742e1R1TbmWsvjv6D",
+     "nivel": 2,
+     "puraActual": 1,
+     "puraCiclo": 0.8131717129153746,
+     "salidas": 1027783.219724,
+     "sinEnlace": 102567.956415936,
+     "efecto": 192018.97843535608
+    },
+    {
+     "a": "TNRGtU694p4X3VThaeYsCBVuh4yJFDM2fg",
+     "nivel": 1,
+     "puraActual": 1,
+     "puraCiclo": 0.5444986949794917,
+     "salidas": 386386.626921504,
+     "sinEnlace": 175999.612804576,
+     "efecto": 175999.61280521733
+    },
+    {
+     "a": "TPqgnJPVnzohDtCaxD9nLFh3iUyTzn5iDK",
+     "nivel": 3,
+     "puraActual": 0.9534119424186721,
+     "puraCiclo": 0.8651702866339689,
+     "salidas": 1742394.3808529282,
+     "sinEnlace": 0,
+     "efecto": 153751.76519642517
+    },
+    {
+     "a": "TUUcxUtMMbuRdjS1ckmxkheA4dmisgdp9T",
+     "nivel": 4,
+     "puraActual": 0.3846153722958584,
+     "puraCiclo": 0.015933669496589548,
+     "salidas": 353279.872,
+     "sinEnlace": 406890.527680736,
+     "efecto": 130247.82477366774
+    },
+    {
+     "a": "TXTE9fqkXzkNkZ199XunzZqjT2T1kwyXFu",
+     "nivel": 5,
+     "puraActual": 0.5,
+     "puraCiclo": 0.29922232770128265,
+     "salidas": 645876.073796448,
+     "sinEnlace": 0,
+     "efecto": 129677.49469028541
+    }
+   ]
+  },
+  {
+   "nombre": "tramo6",
+   "pref": "tramo6",
+   "entrada": 50773216.863587685,
+   "vias": {
+    "actual": {
+     "nodo": 27661549.41864765,
+     "puente": 15604592.562406512,
+     "usdd": 608315.7094332994,
+     "prestamo": 31845.539965,
+     "casa": 0,
+     "destinos": 43906303.23045246,
+     "retenido": 3435756.093365958,
+     "polvo": 1559725.5924434823,
+     "sinResolver": 4696384.523613255,
+     "suma": 53598169.439875156,
+     "relacion": 1.055638636879701
+    },
+    "ciclo": {
+     "nodo": 26560706.51339253,
+     "puente": 12272155.330236247,
+     "usdd": 601709.5741793342,
+     "prestamo": 27645.327211583375,
+     "casa": 0,
+     "destinos": 39462216.7450197,
+     "retenido": 3417000.355450648,
+     "polvo": 1493969.6316124173,
+     "sinResolver": 4486729.12106809,
+     "suma": 48859915.85315085,
+     "relacion": 0.962316726640006
+    },
+    "diluida": {
+     "nodo": 25161546.20056171,
+     "puente": 6613842.701623836,
+     "usdd": 424069.1447436113,
+     "prestamo": 15143.524991009108,
+     "casa": 0,
+     "destinos": 32214601.571920164,
+     "retenido": 3181752.6780305225,
+     "polvo": 1425611.0656999068,
+     "sinResolver": 3756269.7748507056,
+     "suma": 40578235.09050129,
+     "relacion": 0.799205518128244
+    }
+   },
+   "billeterasCambian": 211,
+   "billeterasTotal": 9227,
+   "efectoTotal": 24950263.61057429,
+   "top": [
+    {
+     "a": "TB7pUXywPHA4UUhyVbX4U9hsBCFQm14z31",
+     "nivel": 4,
+     "puraActual": 0.9991924496532526,
+     "puraCiclo": 0.051917548969315976,
+     "salidas": 17495360.68707401,
+     "sinEnlace": 3031525.273472001,
+     "efecto": 16572916.057277681
+    },
+    {
+     "a": "TRshfHZwd3vmEqh3gWwiWTccSWquuRtLG6",
+     "nivel": 2,
+     "puraActual": 0.9974682327180232,
+     "puraCiclo": 0.5154123123113087,
+     "salidas": 3262392.270057176,
+     "sinEnlace": 1134405.316503,
+     "efecto": 1572655.5084701627
+    },
+    {
+     "a": "TSTW8z8skmKrHinNRzQp63oQCrAJyTyxMd",
+     "nivel": 3,
+     "puraActual": 0.9974682327180232,
+     "puraCiclo": 0.4247438402849738,
+     "salidas": 1172562.672722,
+     "sinEnlace": 206290.992722,
+     "efecto": 671555.24432438
+    },
+    {
+     "a": "TRNBbpgQkRYCrmNFt5NudyW1n1297dpyj2",
+     "nivel": 4,
+     "puraActual": 0.9974681530956452,
+     "puraCiclo": 0.2917170686216379,
+     "salidas": 897961.8852759041,
+     "sinEnlace": 172161.05607257597,
+     "efecto": 633737.5743497935
+    },
+    {
+     "a": "TDXA1KjsTwCRepqGicDtzuDZdxNHKicKTG",
+     "nivel": 5,
+     "puraActual": 0.9974681530956452,
+     "puraCiclo": 0.2917170686216379,
+     "salidas": 480475.674304584,
+     "sinEnlace": 0,
+     "efecto": 339096.2282038401
+    },
+    {
+     "a": "TYixQuavsw4t8qhscSQqAuy72E8w3M9pyM",
+     "nivel": 5,
+     "puraActual": 0.9974682327180232,
+     "puraCiclo": 0.4247438402849738,
+     "salidas": 480710.624633232,
+     "sinEnlace": 0,
+     "efecto": 275314.7004291795
+    },
+    {
+     "a": "TJr7TEZ6ECRxGagVAuVLoYwLNrsSzMrUyN",
+     "nivel": 6,
+     "puraActual": 0.9974681530956453,
+     "puraCiclo": 0.2917170686216379,
+     "salidas": 373908.748875952,
+     "sinEnlace": 0,
+     "efecto": 263886.5050135224
+    },
+    {
+     "a": "TQCUcvrjjAbANCG88KZhvAAW55SRwXXbV1",
+     "nivel": 7,
+     "puraActual": 0.9974681530956452,
+     "puraCiclo": 0.2917170686216379,
+     "salidas": 329511.262861008,
+     "sinEnlace": 0,
+     "efecto": 232552.9311105561
+    },
+    {
+     "a": "TNBYBMf1d8pa7fA1xqQxfupwK4vhm8i5Rf",
+     "nivel": 4,
+     "puraActual": 0.9974682327180232,
+     "puraCiclo": 0.4247438402849738,
+     "salidas": 377535.80480140797,
+     "sinEnlace": 0,
+     "efecto": 216223.96442660873
+    },
+    {
+     "a": "TRkffj6Whqr9Kkb2xjL4QBR2cf4tN5VsWj",
+     "nivel": 6,
+     "puraActual": 0.9974682327180232,
+     "puraCiclo": 0.4247438402849738,
+     "salidas": 328324.44390099996,
+     "sinEnlace": 0,
+     "efecto": 188039.41765411902
+    },
+    {
+     "a": "TYckz6mqpspeW3GJsryNUwwJmfQFjpWKoo",
+     "nivel": 2,
+     "puraActual": 0.9974682327180231,
+     "puraCiclo": 0.5431398635770968,
+     "salidas": 400799.048304896,
+     "sinEnlace": 182570.704776,
+     "efecto": 182094.37796959875
+    },
+    {
+     "a": "TEz8jzee75rs3ji5V62HfoDTmsCGEdP1Zx",
+     "nivel": 2,
+     "puraActual": 0.9999911418220594,
+     "puraCiclo": 0.9548673729629159,
+     "salidas": 3155645.155472464,
+     "sinEnlace": 17109.4757,
+     "efecto": 142394.6025970154
+    }
+   ]
+  }
+ ],
+ "fecha": "2026-11-03"
+}

@@ -1,0 +1,19 @@
+INFORME DE TRAZABILIDAD v0.4 · corregido tras la revisión independiente · 3-nov-2026
+
+Te paso el HTML nuevo, que sustituye al v0.3. Hice una revisión independiente del corte del tramo 6 con Claude (Sonnet 5.5, esfuerzo máximo, sesión nueva, solo para recalcular; no escribió nada). Costó 3,34 $ la segunda pasada (la primera, con cuatro encargos juntos, se agotó sin respuesta: 4,49 $). Encontró cosas reales. Las compruebo yo y las corrijo:
+
+LO QUE ESTABA MAL EN EL v0.3
+1) Reembolsos de Chainflip contados dos veces: el informe decía 5 reembolsos y 300.619 $; son 4 y 216.022 $. (Un reembolso de 84.597 USDT quedó en el tramo 6 siendo posterior a la foto y ya estaba en el tramo 5.)
+2) Cambios de Chainflip contados dos veces: 1.051 sumados, 752 distintos.
+3) Dije que el +5,6 % del tramo 6 era un «residuo del modelo». FALSO. Lo explica una sola billetera, TB7pUXywPH…: recibe 3,20 M$ de la bóveda de Chainflip en 27 pagos y los reenvía a UsdtOFT; solo un 5 % de lo que recibe está enlazado con salidas nuestras, pero el modelo le asigna pureza 0,999 y atribuye los 3,20 M$ al robo. Lo comprobé: sin esas 27 aristas la suma queda un 0,7 % por debajo de la entrada.
+4) Dije que los 137 M$ «ya estaban en el tramo 5». Solo el 87 %: unos 119 M$ están duplicados, unos 14 M$ son de esa misma billetera y unos 4 M$ no tienen explicación todavía.
+5) El «retenido» del tramo 6 es lo que había en cada billetera a la hora de la foto, no hoy; y lo que estaba en tránsito en ese momento (3,4 M$ retenidos, 4,7 M$ en contratos sin salida, 1,6 M$ de polvo) no se sigue después en ninguno de los dos tramos.
+6) De los 572 cambios de Chainflip del tramo 6, solo 42 son de nuestro dinero; los otros 530 son de terceros en los mismos canales.
+7) Los guiones apuntaban por defecto a las carpetas sin corregir y dos comentarios decían que el corte era la foto cuando era la hora de lectura (eso pudo esconder el fallo). Arreglado.
+
+LAS CUENTAS NO CAMBIAN (aún): TRON suma 642,7 M$ frente a 628,1 de capital (+2,3 %); Ethereum 3.513 frente a 3.302 M$. Calidad: 7 comprobaciones en verde y 1 aviso.
+
+LO QUE NECESITO QUE DECIDAS
+Corregir el modelo de atribución para que una billetera que recibe de contratos «neutros» sin enlace a nuestras salidas no reciba pureza casi 1. Cambia la atribución de los dos tramos (la revisión estima que los destinos del tramo 6 bajarían de 43,9 a unos 40,9 M$). No lo he tocado: es un cambio de método y quiero tu OK antes.
+
+SIGUE SIN REVISIÓN EXTERNA: Arkham (15), las EVM de Polytrop (14), la cuenta de gas (16), el arreglo de duplicados de Ethereum y el cruce de Polytrop repetido. La respuesta completa de la revisión está en research/polytrop-2026-11-03/codex/CORR-v03-AB-claude-respuesta.md. Nada está commiteado.

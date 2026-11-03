@@ -1,0 +1,427 @@
+{
+ "conciliacion": {
+  "capital": 628109111.487,
+  "partidas": [
+   {
+    "nombre": "Congelados por Tether (USDT)",
+    "importe": 378719468,
+    "estado": "VERIFICADO",
+    "nota": "TG5iBMQP… y TCzBTkqn…: siguen en la lista negra de Tether HOY (se preguntó al contrato) y conservan ese saldo (leído el 2026-11-02 16:54 UTC).",
+    "fuente": "congelados-tron.json (nodo público: isBlackListed + balanceOf)",
+    "desglose": [
+     {
+      "fase": "TG5iBMQPrDzJJAUM8GMVBf1hRaJ1wvzsGi",
+      "importe": 312729468
+     },
+     {
+      "fase": "TCzBTkqn66yApqbYoPezaEQosM5DAd7Y62",
+      "importe": 65990000
+     }
+    ]
+   },
+   {
+    "nombre": "Localizados en billeteras del recorrido",
+    "importe": 8675102.906066809,
+    "estado": "ESTIMADO",
+    "nota": "Unidades que quedaron en cada billetera (entró − salió) × su parte atribuida, valoradas al precio de hoy. OJO con la fase «antes de la foto» (tramo 6): su retenido es lo que había en cada billetera A LA HORA DE LA FOTO (30-oct 22:40 UTC), no hoy, y de lo que estaba en tránsito en ese momento no se sigue su destino posterior (revisión del 3-nov: la mayor parte de esos ~3,4 M$ ya había salido de esas billeteras antes del 2-nov). El saldo real de cada billetera se lee aparte (sección 8).",
+    "fuente": "tramo5-cache.json",
+    "desglose": [
+     {
+      "fase": "Después de la foto",
+      "importe": 5553526.130467576
+     },
+     {
+      "fase": "Antes de la foto",
+      "importe": 3121576.7755992333
+     }
+    ]
+   },
+   {
+    "nombre": "En protocolos DeFi (préstamos y USDD)",
+    "importe": 36724491.85454352,
+    "estado": "ESTIMADO",
+    "nota": "Lo depositado en JustLend que NO se mandó después como justificante, y lo entregado al sistema USDD.",
+    "fuente": "tramo5-aristas-terminales.json",
+    "desglose": [
+     {
+      "fase": "Después de la foto",
+      "importe": 31087457.230661638
+     },
+     {
+      "fase": "Antes de la foto",
+      "importe": 5637034.623881887
+     }
+    ]
+   },
+   {
+    "nombre": "En servicios, nodos y casas de cambio (puntos de parada)",
+    "importe": 136696708.3211386,
+    "estado": "ESTIMADO",
+    "nota": "Destino DEL RASTREO, no destino final demostrado ni recuperación. Una llegada a una casa de cambio no prueba que se haya identificado al beneficiario.",
+    "fuente": "tramo5-aristas-terminales.json",
+    "desglose": [
+     {
+      "fase": "Después de la foto",
+      "importe": 109661334.46824275
+     },
+     {
+      "fase": "Antes de la foto",
+      "importe": 27035373.85289584
+     }
+    ]
+   },
+   {
+    "nombre": "Enviado a otras cadenas (puentes, incl. Symbiosis)",
+    "importe": 52353938.571851805,
+    "estado": "ESTIMADO",
+    "nota": "Importe que entra en un puente: Symbiosis (llegada comprobada en Ethereum), Chainflip (cambios con registro en su explorador), Across, Prefunded, Bridgers, USDT0. Los depósitos en Chainflip sin cambio registrado cuyo pago de vuelta se encuentra (relevos) NO están aquí: se siguen como dinero que continúa en TRON.",
+    "fuente": "tramo5-aristas-terminales.json; metarouter-decodificado.json",
+    "desglose": [
+     {
+      "fase": "Después de la foto",
+      "importe": 33676671.38912145
+     },
+     {
+      "fase": "Antes de la foto",
+      "importe": 18677267.182730354
+     }
+    ]
+   },
+   {
+    "nombre": "Sin localizar (salidas pequeñas no seguidas y contratos cuya salida no se ve)",
+    "importe": 6500070.589007217,
+    "estado": "ESTIMADO",
+    "nota": "No se sabe adónde fue. Incluye lo que entra en contratos sin que se vea la salida y lo no seguido por ser < 3.520 $.",
+    "fuente": "tramo5-resultado.json (sinResolver)",
+    "desglose": [
+     {
+      "fase": "Después de la foto",
+      "importe": 3904204.414226438
+     },
+     {
+      "fase": "Antes de la foto",
+      "importe": 2595866.1747807795
+     }
+    ]
+   },
+   {
+    "nombre": "Efecto de precio de la conversión USDT → TRX",
+    "importe": 23041172.615800023,
+    "estado": "ESTIMADO",
+    "nota": "El USDT se pagó a 0.3667 $/TRX y el TRX recibido vale, al precio de mercado de esa hora, menos: deslizamiento y comisiones del cambio. No es una pérdida de fondos de nadie salvo del cambio mismo.",
+    "fuente": "custodia-16.json; precios-1h.json",
+    "desglose": []
+   }
+  ],
+  "suma": 642710952.8584081,
+  "diferencia": -14601841.371408105,
+  "porcentaje": -0.023247300674940647,
+  "descuadreB": -13620427.831552714,
+  "sinExplicarA": -8890854.54333271,
+  "metodoFaseA": "tramo 6: mismo método que el tramo 5"
+ },
+ "conciliacionEth": {
+  "capital": 3302122176.6899667,
+  "partidas": [
+   {
+    "nombre": "Congelados: USDT en Ethereum (3 direcciones del robo)",
+    "importe": 1380464585.2049818,
+    "estado": "VERIFICADO",
+    "nota": "Saldo de HOY y estado de bloqueo preguntados al contrato de Tether: 0x5227… 1.175.464.713, 0xaa24…, 0xb171….",
+    "fuente": "congelados-multicadena.json"
+   },
+   {
+    "nombre": "Congelados: USDC (Circle)",
+    "importe": 823000000,
+    "estado": "VERIFICADO",
+    "nota": "isBlacklisted() = true hoy; evento «Blacklisted» el 29-oct 21:04 UTC (tx 0xc954c86f…).",
+    "fuente": "congelados-multicadena.json"
+   },
+   {
+    "nombre": "Congelados: USD1 y FDUSD",
+    "importe": 31278934.859976493,
+    "estado": "VERIFICADO",
+    "nota": "frozen() = true hoy en ambos contratos. El evento de congelación de USD1 (tx 0x171ad455…) se emitió para otra dirección (0xee9b…): el hash del informe anterior no demuestra la congelación de 0x5227… (HIPOTESIS); lo que la demuestra es la lectura del contrato de hoy.",
+    "fuente": "congelados-multicadena.json"
+   },
+   {
+    "nombre": "Congelados: oro digital (XAUt, PAXG)",
+    "importe": 57203889.4882693,
+    "estado": "VERIFICADO",
+    "nota": "Cantidades congeladas verificadas (12.574 XAUt; 1.907 PAXG); valoradas al precio de hoy (ESTIMADO).",
+    "fuente": "congelados-multicadena.json; precios-1h.json"
+   },
+   {
+    "nombre": "Congelados: USDT en Polygon (USDT0) y Avalanche (USDt)",
+    "importe": 14595828.4,
+    "estado": "VERIFICADO",
+    "nota": "Polygon: isBlocked() = true, evento BlockPlaced 29-oct 23:25 UTC. Avalanche: isBlocked() = true (RPC público).",
+    "fuente": "congelados-multicadena.json; eth-actividad.json"
+   },
+   {
+    "nombre": "ETH que entró como ETH y sigue quieto (valor de hoy)",
+    "importe": 488177772.0672553,
+    "estado": "VERIFICADO",
+    "nota": "214.735 ETH recibidos directamente de Binance (hot wallets etiquetadas por la comunidad) → Receptor 1 y 2; sin salidas.",
+    "fuente": "eth-actividad.json; eth-origen.json"
+   },
+   {
+    "nombre": "ETH obtenido de convertir USDT y tokens (valor de hoy)",
+    "importe": 683546008.0202371,
+    "estado": "ESTIMADO",
+    "nota": "300.671 ETH en las 5 billeteras de consolidación; su origen está trazado hasta 0x5227… y Binance (45 billeteras, 1841 entradas), pero el reparto entre venta de USDT y venta de ~61 tokens no se ha separado.",
+    "fuente": "eth-origen.json"
+   },
+   {
+    "nombre": "ETH en Arbitrum (0x…0da0), quieto desde el 30-oct",
+    "importe": 19155776.84118,
+    "estado": "VERIFICADO",
+    "nota": "8426 ETH: 0x5227… → 0x3e2bf1… → 0x…0da0 (30-oct 00:18 UTC); saldo de hoy 8.426,05 ETH.",
+    "fuente": "Etherscan v2 (Arbitrum)"
+   },
+   {
+    "nombre": "POL (nativo) en Polygon, sin congelar",
+    "importe": 4126474.1363999997,
+    "estado": "VERIFICADO",
+    "nota": "46,63 M POL recibidos el 29-oct 23:05 UTC y todavía allí; el informe anterior los tomó por un token falso «ETH»: es la moneda nativa de Polygon y no se puede congelar.",
+    "fuente": "Etherscan v2 (Polygon)"
+   },
+   {
+    "nombre": "Efecto de precio del ETH directo (valor al recibirlo − valor hoy)",
+    "importe": 11356988.709470928,
+    "estado": "ESTIMADO",
+    "nota": "El ETH que entró como ETH valía 499.534.761 $ al recibirse; hoy 488.177.772 $.",
+    "fuente": "precios-1h.json"
+   }
+  ],
+  "suma": 3512906257.727771,
+  "diferencia": -210784081.03780413,
+  "porcentaje": -0.06383291403502617,
+  "nota": "Capital = USDT, USDC, USD1, FDUSD, XAUt y PAXG recibidos + ETH recibido (a precio de su hora) + USDT0 de Polygon y USDt de Avalanche. Los ~61 tokens vendidos no tienen precio y no entran en el capital, pero su producto sí está en el ETH quieto: por eso la diferencia es NEGATIVA y no es una pérdida. De ella, ≈ 188.545.880 $ = valor de hoy del ETH de consolidación (683.546.008 $) menos el USDT vendido (495.000.128 $): es lo que aportaron las ventas de tokens más el efecto del precio."
+ },
+ "global": {
+  "capital": 3930231288.1769667,
+  "partidas": [
+   {
+    "nombre": "Congelado (todas las cadenas)",
+    "importe": 2685262705.9532275,
+    "estado": "VERIFICADO"
+   },
+   {
+    "nombre": "Quieto sin congelar (ETH, Arbitrum, POL)",
+    "importe": 1195006031.0650725,
+    "estado": "VERIFICADO"
+   },
+   {
+    "nombre": "Repartido en TRON y seguido (localizado, DeFi, servicios, puentes, sin localizar)",
+    "importe": 240950312.24260792,
+    "estado": "ESTIMADO"
+   },
+   {
+    "nombre": "Efectos de precio",
+    "importe": 34398161.32527095,
+    "estado": "ESTIMADO"
+   }
+  ],
+  "suma": 4155617210.5861793,
+  "diferencia": -225385922.4092126
+ },
+ "faseA": {
+  "nombre": "Antes de la foto (tramo 6)",
+  "capitalTRX": 144242093.36246496,
+  "capitalUsd": 48176264.06655539,
+  "terminales": {
+   "puente": {
+    "importe": 18677267.182730354,
+    "bruto": 18996809.30309901,
+    "n": 558
+   },
+   "nodo": {
+    "importe": 27035373.85289584,
+    "bruto": 29111599.54250836,
+    "n": 2016
+   },
+   "usdd": {
+    "importe": 608315.7094332993,
+    "bruto": 611549.438821,
+    "n": 11
+   },
+   "prestamo": {
+    "importe": 5028718.914448587,
+    "bruto": 5051031.374564999,
+    "n": 120
+   }
+  },
+  "polvo": 1140239.0281017397,
+  "sinResolver": 1455627.14667904,
+  "retenido": 3121576.7755992333,
+  "suma": 57067118.6098881,
+  "metodo": "tramo 6: mismo método que el tramo 5",
+  "descuadre": -8890854.54333271,
+  "sinExplicar": -8890854.54333271
+ },
+ "faseB": {
+  "nombre": "Después de la foto (tramo 5)",
+  "capitalTRX": 540341331.8454441,
+  "capitalUsd": 170262765.80116713,
+  "terminales": {
+   "usdd": {
+    "importe": 24365853.22234414,
+    "bruto": 25759231.98396502,
+    "n": 208
+   },
+   "nodo": {
+    "importe": 109654008.45100664,
+    "bruto": 125152481.05105557,
+    "n": 5083
+   },
+   "puente": {
+    "importe": 33676671.38912145,
+    "bruto": 35703217.553547025,
+    "n": 1453
+   },
+   "prestamo": {
+    "importe": 6721604.008317495,
+    "bruto": 6726375.298916008,
+    "n": 311
+   },
+   "casa": {
+    "importe": 7326.017236110073,
+    "bruto": 13190.0000037408,
+    "n": 3
+   }
+  },
+  "polvo": 3449300.792138179,
+  "polvoSolapado": 1901178.015104181,
+  "sinResolver": 454903.6220882591,
+  "retenido": 5553526.130467576,
+  "suma": 183883193.63271984,
+  "metodo": "tramo 5 recalculado con el método corregido",
+  "descuadre": -13620427.831552714
+ },
+ "calidad": [
+  {
+   "id": 1,
+   "titulo": "Todas las cifras tienen fuente y fecha de referencia",
+   "estado": "OK",
+   "detalle": "5 cifras con fuente y fecha",
+   "evidencia": []
+  },
+  {
+   "id": 2,
+   "titulo": "No se suman movimientos duplicados",
+   "estado": "OK",
+   "detalle": "Sin duplicados exactos en 39643 movimientos",
+   "evidencia": []
+  },
+  {
+   "id": 3,
+   "titulo": "Los importes cross-chain concilian con los recibos de destino",
+   "estado": "OK",
+   "detalle": "2253 envíos a puentes en el libro; 1625 cruces enlazados con su recibo (recibo comprobado en la cadena de destino: 1413; el resto, ESTIMADO por emparejamiento o por la API del puente); sin recibo (PENDIENTE): 0; con diferencia sin explicar (DESCONOCIDO): 0; envíos a puentes cuyo destino no se puede leer (USDT0, Across, prefinanciados, Bridgers): 628",
+   "evidencia": {
+    "enlazados": 1625,
+    "reciboVerificado": 1413,
+    "pendientes": 0,
+    "desconocidos": 0,
+    "sinGrupo": 628
+   }
+  },
+  {
+   "id": 4,
+   "titulo": "Fondos congelados separados de fondos simplemente inmóviles",
+   "estado": "OK",
+   "detalle": "Estado de congelación leído de la lista negra de Tether el 2026-11-02 16:54 UTC",
+   "evidencia": null
+  },
+  {
+   "id": 5,
+   "titulo": "Un depósito en una dirección de casa de cambio no se presenta como identificación del beneficiario",
+   "estado": "OK",
+   "detalle": "3 llegadas a direcciones etiquetadas como casa de cambio; en el informe figuran como «depósito detectado», nunca como «llegada confirmada a una cuenta de cliente»",
+   "evidencia": null
+  },
+  {
+   "id": 6,
+   "titulo": "Billeteras sin leer y ramas incompletas declaradas",
+   "estado": "AVISO",
+   "detalle": "0 billeteras que reciben dinero y no se han leído (de ellas, lecturas fallidas: 0); contratos con salida sin resolver: 5 (454.904 $); todo se lista en la sección de pendientes",
+   "evidencia": null
+  },
+  {
+   "id": 7,
+   "titulo": "Gráficos y tablas muestran los mismos datos",
+   "estado": "OK",
+   "detalle": "El total de cada partida es exactamente la suma de las filas que lo componen (se puede bajar hasta la transacción)",
+   "evidencia": []
+  },
+  {
+   "id": 8,
+   "titulo": "Recálculo independiente: el libro reproduce los totales del análisis",
+   "estado": "OK",
+   "detalle": "El libro recalcula desde los saltos los mismos totales que el análisis a su precio fijo (diferencia < 1 $ por partida); después los valora a precio horario",
+   "evidencia": []
+  },
+  {
+   "id": 9,
+   "titulo": "Las dos vías de pureza (actual y ciclo) se conservan con método, evidencia y resultados",
+   "estado": "OK",
+   "detalle": "Las dos vías de pureza (actual y ciclo) están calculadas en los dos tramos, conservadas con método, código, registros y resultados (versión 2026-11-03-v1) y los resultados vivos coinciden con su hash",
+   "evidencia": []
+  }
+ ],
+ "pendientes": [
+  {
+   "id": "P2",
+   "t": "Chainflip: depósitos sin cambio registrado ni pago de vuelta que cuadre (101 depósitos)",
+   "est": "DESCONOCIDO",
+   "causa": "El explorador de Chainflip no registra cambio ni depósito fallido para ellos y la bóveda no publica qué hizo con ese USDT; la bóveda hoy solo conserva 1.436.165 USDT (leído 2026-11-02 18:36 UTC), así que no está parado allí. No hay una segunda fuente pública que lo aclare."
+  },
+  {
+   "id": "P3",
+   "t": "Across: 172 envíos al ejecutor (1.778.085 $ atribuidos) y 159 depósitos prefinanciados (2.734.770 $)",
+   "est": "DESCONOCIDO",
+   "causa": "Llegan a un contrato «Executor» de Ethereum que ejecuta el siguiente paso con instrucciones cifradas (el mensaje del depósito solo contiene dos huellas); los prefinanciados se ejecutan en transacciones aparte sin referencia al depósito. Sin esas instrucciones no hay forma de saber quién cobra."
+  },
+  {
+   "id": "P4",
+   "t": "Enrutadores de cambio cuya salida no se decodifica (5 contratos, 454.904 $)",
+   "est": "DESCONOCIDO",
+   "causa": "Son enrutadores (BWSwap, SmartExchange, UniversalRouter…) cuya llamada de salida no se pudo decodificar; lo habitual es que el resultado vuelva al remitente en otro token (neutral), pero no está demostrado para estos envíos."
+  },
+  {
+   "id": "P5",
+   "t": "Saldos actuales de 0 billeteras del recorrido",
+   "est": "VERIFICADO",
+   "causa": "Leídas 12.978 de 12.978."
+  },
+  {
+   "id": "P6",
+   "t": "Precio: valor de cada movimiento a la apertura de la hora (Binance TRX/ETH/POL/ARB/oro tokenizado); USDT, USDC, USD1 y FDUSD nominales",
+   "est": "ESTIMADO",
+   "causa": "Se declara en cada importe; los ~61 tokens vendidos de Ethereum no tienen precio."
+  },
+  {
+   "id": "P7",
+   "t": "Posiciones DeFi de hoy",
+   "est": "DESCONOCIDO",
+   "causa": "jUSDT en poder de 8 billeteras del recorrido: 505.240 unidades (≈ 5503 USDT con el tipo de cambio de hoy, ESTIMADO). Liquidez SunSwap: 1 billetera la monta y 0 la deshace, con fichas de contratos propios sin verificar creados el 31-oct (TXYZCGuw2…, TTFwhTEP84…): no se puede leer qué posición representan."
+  }
+ ],
+ "resumen": {
+  "capital": 628109111.487,
+  "robadoUSDT": 612729468,
+  "trxDirecto": 46394098,
+  "congeladoUSDT": 378719468,
+  "convertidoUSDT": 234010000,
+  "trxTrasCambio": 638200929,
+  "precioConversion": 0.3666713559421973,
+  "precioFijo": 0.352,
+  "valoracion": 23041172.615800023,
+  "trxEnElGrupo": 684583972.3413192,
+  "trxRepartoPrevio": 144242093.36246496,
+  "trxSalidaPost": 540341331.8454441,
+  "usdPrevio": 48176264.06655539,
+  "escapadoTRX": 684585027
+ }
+}

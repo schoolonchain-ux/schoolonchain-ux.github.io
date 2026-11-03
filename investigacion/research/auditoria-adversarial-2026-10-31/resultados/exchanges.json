@@ -1,0 +1,218 @@
+{
+ "porNombre": {
+  "Gate": {
+   "n": 19,
+   "bruto": 3858361,
+   "atrib": 736791,
+   "depositos": 1,
+   "remitentes": 14,
+   "maxDep": 3349395,
+   "altaPureza": 0,
+   "bajaPureza": 587015,
+   "porTramo": {
+    "1": 0,
+    "2": 736791
+   }
+  },
+  "Bybit": {
+   "n": 87,
+   "bruto": 3339896.503999999,
+   "atrib": 2214736,
+   "depositos": 1,
+   "remitentes": 28,
+   "maxDep": 248698.91199999998,
+   "altaPureza": 0,
+   "bajaPureza": 78658,
+   "porTramo": {
+    "1": 0,
+    "2": 2214736
+   }
+  },
+  "OKX Hot Wallet 8": {
+   "n": 120,
+   "bruto": 4890466,
+   "atrib": 954597,
+   "depositos": 1,
+   "remitentes": 77,
+   "maxDep": 900000,
+   "altaPureza": 0,
+   "bajaPureza": 817595,
+   "porTramo": {
+    "1": 0,
+    "2": 954597
+   }
+  },
+  "Kucoin 4": {
+   "n": 6,
+   "bruto": 200977,
+   "atrib": 135033,
+   "depositos": 1,
+   "remitentes": 4,
+   "maxDep": 66005,
+   "altaPureza": 0,
+   "bajaPureza": 2935,
+   "porTramo": {
+    "1": 0,
+    "2": 135033
+   }
+  },
+  "Bitget 9": {
+   "n": 9,
+   "bruto": 133723,
+   "atrib": 84654,
+   "depositos": 1,
+   "remitentes": 7,
+   "maxDep": 42336,
+   "altaPureza": 0,
+   "bajaPureza": 3317,
+   "porTramo": {
+    "1": 0,
+    "2": 84654
+   }
+  },
+  "MXC": {
+   "n": 6,
+   "bruto": 60663,
+   "atrib": 22257,
+   "depositos": 1,
+   "remitentes": 5,
+   "maxDep": 17042,
+   "altaPureza": 0,
+   "bajaPureza": 7865,
+   "porTramo": {
+    "1": 0,
+    "2": 22257
+   }
+  },
+  "Kraken: Hot Wallet": {
+   "n": 2,
+   "bruto": 16188.8,
+   "atrib": 5456,
+   "depositos": 1,
+   "remitentes": 2,
+   "maxDep": 12000,
+   "altaPureza": 0,
+   "bajaPureza": 2255,
+   "porTramo": {
+    "1": 0,
+    "2": 5456
+   }
+  }
+ },
+ "total": {
+  "bruto": 12500275.304,
+  "atrib": 4153524
+ },
+ "top": [
+  {
+   "hora": "2026-10-30 12:56",
+   "nombre": "Gate",
+   "de": "TStvMPH7wv3Z6FR4YWxpkbf6iEn3WyRAvC",
+   "a": "TBA6CypYJizwA9XdC7Ubgc5F1bxrQ7SqPt",
+   "bruto": 3349395,
+   "pur": 0.163,
+   "atrib": 547254,
+   "nivel": 6,
+   "tx": "940bb88e6166db496a3a2e33a99437b5cb6b539c9d1e501665e95d2e571677bd"
+  },
+  {
+   "hora": "2026-10-30 20:22",
+   "nombre": "Bybit",
+   "de": "TXYiPCELFdqELhQ4vGhniwJeNqEjruZCKv",
+   "a": "TU4vEruvZwLLkSfV9bNw12EJTPvNr7Pvaa",
+   "bruto": 248698.91199999998,
+   "pur": 0.729,
+   "atrib": 181220,
+   "nivel": 2,
+   "tx": "ab0a3dcb1da4f0febb28413472874724ea030db28e8b91e338fb3641e973be61"
+  },
+  {
+   "hora": "2026-10-30 13:01",
+   "nombre": "OKX Hot Wallet 8",
+   "de": "TSSXn3hV89W3MXmevCte8nWmyWdh65V62D",
+   "a": "TLaGjwhvA8XQYSxFAcAXy7Dvuue9eGYitv",
+   "bruto": 900000,
+   "pur": 0.179,
+   "atrib": 160957,
+   "nivel": 5,
+   "tx": "99b6933e5101e69fcc5547d026ada40b18a261aa086de55a5a698cd4e6f75d21"
+  },
+  {
+   "hora": "2026-10-30 21:30",
+   "nombre": "Bybit",
+   "de": "TXYiPCELFdqELhQ4vGhniwJeNqEjruZCKv",
+   "a": "TU4vEruvZwLLkSfV9bNw12EJTPvNr7Pvaa",
+   "bruto": 210685.02399999998,
+   "pur": 0.729,
+   "atrib": 153521,
+   "nivel": 2,
+   "tx": "3af93ad970e037300cb8df67fd08c7c3e6080397d0a940d341857c4963dfca98"
+  },
+  {
+   "hora": "2026-10-30 16:20",
+   "nombre": "Bybit",
+   "de": "TXYiPCELFdqELhQ4vGhniwJeNqEjruZCKv",
+   "a": "TU4vEruvZwLLkSfV9bNw12EJTPvNr7Pvaa",
+   "bruto": 201054.656,
+   "pur": 0.729,
+   "atrib": 146503,
+   "nivel": 2,
+   "tx": "3bd40feb162535f2aff5ad418faaac55ad7fe3a84702d5551a027d8dfb3507cf"
+  },
+  {
+   "hora": "2026-10-30 12:01",
+   "nombre": "OKX Hot Wallet 8",
+   "de": "TSSXn3hV89W3MXmevCte8nWmyWdh65V62D",
+   "a": "TLaGjwhvA8XQYSxFAcAXy7Dvuue9eGYitv",
+   "bruto": 800000,
+   "pur": 0.179,
+   "atrib": 143073,
+   "nivel": 5,
+   "tx": "62992da274abea1b03cbe9cec84cddb0ae415f744995ec6052c68c907682583a"
+  },
+  {
+   "hora": "2026-10-30 20:46",
+   "nombre": "Bybit",
+   "de": "TXYiPCELFdqELhQ4vGhniwJeNqEjruZCKv",
+   "a": "TU4vEruvZwLLkSfV9bNw12EJTPvNr7Pvaa",
+   "bruto": 177459.392,
+   "pur": 0.729,
+   "atrib": 129310,
+   "nivel": 2,
+   "tx": "093eb3c13d5b46d23d00171c8956977a4b604b6405d79502e63bbfcf401b5366"
+  },
+  {
+   "hora": "2026-10-30 21:05",
+   "nombre": "Bybit",
+   "de": "TXYiPCELFdqELhQ4vGhniwJeNqEjruZCKv",
+   "a": "TU4vEruvZwLLkSfV9bNw12EJTPvNr7Pvaa",
+   "bruto": 169155.712,
+   "pur": 0.729,
+   "atrib": 123260,
+   "nivel": 2,
+   "tx": "45f29e4f7d09b907938a730bf1ecf99e05d68205c5154d9292c249eea7904ba0"
+  },
+  {
+   "hora": "2026-10-30 22:20",
+   "nombre": "Bybit",
+   "de": "TXYiPCELFdqELhQ4vGhniwJeNqEjruZCKv",
+   "a": "TU4vEruvZwLLkSfV9bNw12EJTPvNr7Pvaa",
+   "bruto": 157850.17599999998,
+   "pur": 0.729,
+   "atrib": 115021,
+   "nivel": 2,
+   "tx": "d9bd4ab39f4c74300f3a453887dff481b42e77fd575f9c467daa60303de5346c"
+  },
+  {
+   "hora": "2026-10-30 20:55",
+   "nombre": "Bybit",
+   "de": "TXYiPCELFdqELhQ4vGhniwJeNqEjruZCKv",
+   "a": "TU4vEruvZwLLkSfV9bNw12EJTPvNr7Pvaa",
+   "bruto": 152656.416,
+   "pur": 0.729,
+   "atrib": 111237,
+   "nivel": 2,
+   "tx": "c65a63a753b25e74299b558a1ff9125d623e3d3355ce3021b6d9e83d12eae23b"
+  }
+ ]
+}

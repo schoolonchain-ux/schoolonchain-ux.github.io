@@ -1,0 +1,252 @@
+{
+ "leidoEn": "2026-11-02T16:26:33.861Z",
+ "tokens": [
+  {
+   "cadena": "Ethereum",
+   "simbolo": "USDT",
+   "contrato": "0xdac17f958d2ee523a2206206994597c13d831ec7",
+   "direccion": "0x5227f603c1ee34ce3c06efe6477003bdfccb2f8c",
+   "saldoHoy": 1175464712.876362,
+   "errorSaldo": null,
+   "bloqueadaHoy": true,
+   "funcionUsada": "isBlackListed(address)",
+   "eventoBloqueo": null
+  },
+  {
+   "cadena": "Ethereum",
+   "simbolo": "USDT",
+   "contrato": "0xdac17f958d2ee523a2206206994597c13d831ec7",
+   "direccion": "0x9749292d74fd460982d0912ea9515ea24736c762",
+   "saldoHoy": 0.0006,
+   "errorSaldo": null,
+   "bloqueadaHoy": true,
+   "funcionUsada": "isBlackListed(address)",
+   "eventoBloqueo": null
+  },
+  {
+   "cadena": "Ethereum",
+   "simbolo": "USDT",
+   "contrato": "0xdac17f958d2ee523a2206206994597c13d831ec7",
+   "direccion": "0x0ddf0480016e6bcb2c1f5d190d221fba1320697e",
+   "saldoHoy": 0.0001,
+   "errorSaldo": null,
+   "bloqueadaHoy": true,
+   "funcionUsada": "isBlackListed(address)",
+   "eventoBloqueo": null
+  },
+  {
+   "cadena": "Ethereum",
+   "simbolo": "USDT",
+   "contrato": "0xdac17f958d2ee523a2206206994597c13d831ec7",
+   "direccion": "0x8d53903625b8e839b9df4bd28b0efb1cd6b8639a",
+   "saldoHoy": 0.0001,
+   "errorSaldo": null,
+   "bloqueadaHoy": true,
+   "funcionUsada": "isBlackListed(address)",
+   "eventoBloqueo": null
+  },
+  {
+   "cadena": "Ethereum",
+   "simbolo": "USDT",
+   "contrato": "0xdac17f958d2ee523a2206206994597c13d831ec7",
+   "direccion": "0x7aa4d3029e4c6a8e916300014ad95b6d6c03bfd1",
+   "saldoHoy": 0.0001,
+   "errorSaldo": null,
+   "bloqueadaHoy": true,
+   "funcionUsada": "isBlackListed(address)",
+   "eventoBloqueo": null
+  },
+  {
+   "cadena": "Ethereum",
+   "simbolo": "USDT",
+   "contrato": "0xdac17f958d2ee523a2206206994597c13d831ec7",
+   "direccion": "0xaa246bf639586a6ba46762d378ce50ca4fc654a0",
+   "saldoHoy": 174999872.32762,
+   "errorSaldo": null,
+   "bloqueadaHoy": true,
+   "funcionUsada": "isBlackListed(address)",
+   "eventoBloqueo": null
+  },
+  {
+   "cadena": "Ethereum",
+   "simbolo": "USDT",
+   "contrato": "0xdac17f958d2ee523a2206206994597c13d831ec7",
+   "direccion": "0xccbef95633adb5cd2b5038db5a38d77e726ca263",
+   "saldoHoy": 0.0001,
+   "errorSaldo": null,
+   "bloqueadaHoy": true,
+   "funcionUsada": "isBlackListed(address)",
+   "eventoBloqueo": null
+  },
+  {
+   "cadena": "Ethereum",
+   "simbolo": "USDT",
+   "contrato": "0xdac17f958d2ee523a2206206994597c13d831ec7",
+   "direccion": "0xb171ca86f82070282138352ff7111b494060c8c3",
+   "saldoHoy": 30000000,
+   "errorSaldo": null,
+   "bloqueadaHoy": true,
+   "funcionUsada": "isBlackListed(address)",
+   "eventoBloqueo": null
+  },
+  {
+   "cadena": "Ethereum",
+   "simbolo": "USDT",
+   "contrato": "0xdac17f958d2ee523a2206206994597c13d831ec7",
+   "direccion": "0x28c6c06298d514db089934071355e5743bf21d60",
+   "saldoHoy": 1352017.937959,
+   "errorSaldo": null,
+   "bloqueadaHoy": true,
+   "funcionUsada": "isBlackListed(address)",
+   "eventoBloqueo": null
+  },
+  {
+   "cadena": "Ethereum",
+   "simbolo": "USDC",
+   "contrato": "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
+   "direccion": "0x5227f603c1ee34ce3c06efe6477003bdfccb2f8c",
+   "saldoHoy": 823000000,
+   "errorSaldo": null,
+   "bloqueadaHoy": true,
+   "funcionUsada": "isBlacklisted(address)",
+   "eventoBloqueo": {
+    "evento": "Blacklisted",
+    "tx": "0xc954c86f118e8e410e6a3eb9e3b38ff4a95fbdae9d2d58e13166afb7a1f4fc5f",
+    "bloque": 26300971,
+    "t": 1793307899000
+   }
+  },
+  {
+   "cadena": "Ethereum",
+   "simbolo": "XAUt",
+   "contrato": "0x68749665ff8d2d112fa859aa293f07a622782f38",
+   "direccion": "0x5227f603c1ee34ce3c06efe6477003bdfccb2f8c",
+   "saldoHoy": 12574.046797,
+   "errorSaldo": null,
+   "bloqueadaHoy": true,
+   "funcionUsada": "isBlocked(address)",
+   "eventoBloqueo": {
+    "evento": "BlockPlaced",
+    "tx": "0x2d3c345297a3e8716a36992f2bf742afdb176fd6ceab1397ddc356e8cb78f650",
+    "bloque": 26301003,
+    "t": 1793308283000
+   }
+  },
+  {
+   "cadena": "Ethereum",
+   "simbolo": "USD1",
+   "contrato": "0x8d0d000ee44948fc98c9b98a4fa4921476f08b0d",
+   "direccion": "0x5227f603c1ee34ce3c06efe6477003bdfccb2f8c",
+   "saldoHoy": 27824039.936896473,
+   "errorSaldo": null,
+   "bloqueadaHoy": true,
+   "funcionUsada": "frozen(address)",
+   "eventoBloqueo": null
+  },
+  {
+   "cadena": "Ethereum",
+   "simbolo": "PAXG",
+   "contrato": "0x45804880de22913dafe09f4980848ece6ecbaf78",
+   "direccion": "0x5227f603c1ee34ce3c06efe6477003bdfccb2f8c",
+   "saldoHoy": 1906.6677286912252,
+   "errorSaldo": null,
+   "bloqueadaHoy": true,
+   "funcionUsada": "isFrozen(address)",
+   "eventoBloqueo": {
+    "evento": "FreezeAddress",
+    "tx": "0x2ba37ae7e5c74ef650705954fc9d16ce2cdb00b85c14bca6cbc1dce25d6c699e",
+    "bloque": 26301400,
+    "t": 1793313047000
+   }
+  },
+  {
+   "cadena": "Ethereum",
+   "simbolo": "FDUSD",
+   "contrato": "0xc5f0f7b66764f6ec8c8dff7ba683102295e16409",
+   "direccion": "0x5227f603c1ee34ce3c06efe6477003bdfccb2f8c",
+   "saldoHoy": 3454894.9230800187,
+   "errorSaldo": null,
+   "bloqueadaHoy": true,
+   "funcionUsada": "frozen(address)",
+   "eventoBloqueo": null
+  },
+  {
+   "cadena": "Polygon",
+   "simbolo": "USDT0",
+   "contrato": "0xc2132d05d31c914a87c6611c10748aeb04b58e8f",
+   "direccion": "0x5227f603c1ee34ce3c06efe6477003bdfccb2f8c",
+   "saldoHoy": 6185900.1,
+   "errorSaldo": null,
+   "bloqueadaHoy": true,
+   "funcionUsada": "isBlocked(address)",
+   "eventoBloqueo": {
+    "evento": "BlockPlaced",
+    "tx": "0xfab58c6d6ac5b42a10625dba6ff155d10b41532c5536e65c059bac6d58314351",
+    "bloque": 96407273,
+    "t": 1793316339000
+   }
+  },
+  {
+   "cadena": "Avalanche",
+   "simbolo": "USDt",
+   "contrato": "0x9702230a8ea53601f5cd2dc00fdbc13d4df4a8c7",
+   "direccion": "0x5227f603c1ee34ce3c06efe6477003bdfccb2f8c",
+   "saldoHoy": null,
+   "errorSaldo": "Free API access is not supported for this chain. Please upgrade your api plan for full chain coverage. https://etherscan.io/apis",
+   "bloqueadaHoy": null,
+   "funcionUsada": null,
+   "eventoBloqueo": null
+  }
+ ],
+ "tetherEthereum": [],
+ "ethQuieto": [
+  {
+   "nombre": "Receptor 1",
+   "direccion": "0x8532fa14acaf483729c449b8458aeddb900543d4",
+   "a21h": 197460.008412,
+   "hoy": 197460.01228204597
+  },
+  {
+   "nombre": "Receptor 2",
+   "direccion": "0x03b0ee5d82990cff1bda48651ac3e436d1a020ea",
+   "a21h": 17260.104736,
+   "hoy": 17260.10539738186
+  },
+  {
+   "nombre": "Consolidación A",
+   "direccion": "0xc887af690e0301cd4edbbce8f8d31b4ec65b286a",
+   "a21h": 137602.001711,
+   "hoy": 137602.00242049556
+  },
+  {
+   "nombre": "Consolidación B",
+   "direccion": "0x897c80d1a9729e94460e2bd93178bd5215158df3",
+   "a21h": 78415.252703,
+   "hoy": 78415.25463323887
+  },
+  {
+   "nombre": "Consolidación C",
+   "direccion": "0x54401f80da97893a15d43566184635b6674bc942",
+   "a21h": 40600.671849,
+   "hoy": 40600.67200108656
+  },
+  {
+   "nombre": "Consolidación D",
+   "direccion": "0x79e70d139fc05aa75f75611fdf2680e9952b544a",
+   "a21h": 34279.694892,
+   "hoy": 34279.69514412
+  },
+  {
+   "nombre": "Consolidación E",
+   "direccion": "0x8d4b8ee62124b7ee140a51ddd07390a56f1c9e19",
+   "a21h": 3236.717477,
+   "hoy": 9788.161212812825
+  },
+  {
+   "nombre": "Dirección principal 0x5227",
+   "direccion": "0x5227f603c1ee34ce3c06efe6477003bdfccb2f8c",
+   "a21h": 4.80785,
+   "hoy": 0.002188343783950741
+  }
+ ]
+}

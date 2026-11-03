@@ -1,0 +1,17 @@
+INFORME DE TRAZABILIDAD v0.6 · las dos vías de pureza se conservan siempre · 3-nov-2026
+
+Te paso el HTML nuevo, que sustituye al v0.5. Cambia una cosa: dejo por escrito y por control tu decisión de que las dos vías (actual y ciclo) se conserven siempre, con su método, su evidencia y sus resultados. Las cifras del informe no cambian.
+
+LO QUE SE CONSERVA (carpeta research/auditoria-adversarial-2026-10-31/pureza-dos-vias/2026-11-03-v1/)
+- METODO.md: qué es la pureza, definición exacta de cada vía, por qué hay dos (el caso TB7pUXywPH…), cómo reproducirlas, límites y cómo añadir una vía nueva sin tocar las otras.
+- MANIFIESTO.json: huella digital (SHA-256) de cada fichero de entrada, de cada resultado, de cada registro y de cada guion.
+- Copias de los 12 resultados (2 tramos × 3 vías × resultado y aristas) y de los registros de las seis ejecuciones.
+- Copia exacta del código que los produjo, la tabla de comparación y la revisión independiente que motivó la segunda vía.
+- Nunca se sobrescribe: si algo cambia, se guarda una versión nueva (v2, v3…).
+
+EL CONTROL (comprobación nº 9 del informe)
+- Falla si falta una de las dos vías en algún tramo, si un resultado cambió sin guardar versión, o si una copia guardada no coincide con su huella. Avisa si cambió una entrada o un guion (la copia exacta sigue guardada).
+- Lo probé: quitar un resultado o cambiarlo en 1 $ hace que falle; al restaurarlo vuelve a verde.
+- Repetí las seis ejecuciones (2 tramos × 3 vías) con el código final y dan exactamente lo mismo que antes.
+
+ESTADO: 9 comprobaciones, 8 en verde y 1 aviso (contratos con salida sin resolver, listados). Las cifras siguen siendo las de la vía actual; la comparación con la vía ciclo está en la sección 17. Ninguna vía tiene revisión externa todavía. Nada está commiteado en git.

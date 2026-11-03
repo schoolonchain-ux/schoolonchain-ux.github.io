@@ -1,0 +1,6140 @@
+{
+ "leidoUTC": "2026-11-02T09:22:24.110Z",
+ "desdeUTC": "2026-10-31T10:11:58.000Z",
+ "errores": [],
+ "cobertura": {
+  "token": {
+   "desde": 1793441518000,
+   "hasta": 1793611344110,
+   "completa": true,
+   "motivo": null
+  },
+  "nativo": {
+   "desde": 1793441518000,
+   "hasta": 1793611344110,
+   "completa": true,
+   "motivo": null
+  },
+  "interno": {
+   "desde": 1793441518000,
+   "hasta": 1793611344110,
+   "completa": true,
+   "motivo": null
+  }
+ },
+ "enviosTotal": 381,
+ "enviosMayores3520": 378,
+ "valorMayores": 131539798,
+ "primero": "2026-10-31T10:17:24.000Z",
+ "ultimo": "2026-11-01T05:33:06.000Z",
+ "entradasMayores": [
+  {
+   "at": "2026-10-31T14:50:51.000Z",
+   "tx": "7f799c3c177c40abd0e474872da5bf1667829cf2f29e0bbbeb6afa8b98723a25",
+   "sim": "TRX",
+   "cant": 120000000,
+   "v": 42240000,
+   "de": "TJajtPqDqUGh1Sr1j8ugHoSXBVpaFLLHKT"
+  },
+  {
+   "at": "2026-10-31T18:44:36.000Z",
+   "tx": "e8441d628f9395867793e7146398282bd5446afd39ff7bb8d2c9429f6b86a1b6",
+   "sim": "TRX",
+   "cant": 158200902,
+   "v": 55686717.50399999,
+   "de": "TKkH2vH6kyi2QKcMbqym53WMuvdd1xvw6K"
+  }
+ ],
+ "porHora": {
+  "2026-10-31T10": 4973777.174724512,
+  "2026-10-31T11": 6183710.826823901,
+  "2026-10-31T12": 6192037.607979519,
+  "2026-10-31T13": 7464770.886310496,
+  "2026-10-31T14": 12093066.259876093,
+  "2026-10-31T15": 9182326.062518401,
+  "2026-10-31T16": 8172509.314201055,
+  "2026-10-31T17": 12988717.585128386,
+  "2026-10-31T18": 10277017.653352737,
+  "2026-10-31T19": 10834594.853530977,
+  "2026-10-31T20": 9384575.682551166,
+  "2026-10-31T21": 8579029.635674784,
+  "2026-10-31T22": 6041206.400153759,
+  "2026-10-31T23": 2690753.865237504,
+  "2026-11-01T00": 2851572.1869363515,
+  "2026-11-01T01": 5858356.351816671,
+  "2026-11-01T02": 3687856.408544,
+  "2026-11-01T03": 2894465.4787815358,
+  "2026-11-01T04": 252655.43505769596,
+  "2026-11-01T05": 936798.7797375679
+ },
+ "saldoTRX": 131.004037,
+ "saldoUSD": 46,
+ "mayores": [
+  {
+   "at": "2026-10-31T10:17:24.000Z",
+   "tx": "1059912001501028509df9633f34fbdab9ffa4440fa13b09c46b5c1103260242",
+   "sim": "TRX",
+   "cant": 531748.252586,
+   "v": 187175.384910272,
+   "a": "TAvZoTs5P2AAVFVmQVtW9ap7jyxTkp78Su"
+  },
+  {
+   "at": "2026-10-31T10:18:12.000Z",
+   "tx": "4bdc1800908badd1f43ac2139c37445e1af5bef559a03e588444b0756e81c125",
+   "sim": "TRX",
+   "cant": 523151.362085,
+   "v": 184149.27945391997,
+   "a": "TXSt1DTjju4UQxeNo5s6yxz1cjx7698Rmd"
+  },
+  {
+   "at": "2026-10-31T10:19:15.000Z",
+   "tx": "549b647d525ce24ceb867f84145baf9e5cd9f52229edde1abcd618899c28ab0d",
+   "sim": "TRX",
+   "cant": 748027.77269,
+   "v": 263305.77598688,
+   "a": "TV1vu51cX8Fmo3iTya9d43D4Ugha1QBLbc"
+  },
+  {
+   "at": "2026-10-31T10:20:45.000Z",
+   "tx": "87529a0e0b96db42b73a313b519fc095f92484c4ffc1a1c7968d82e04dd3adb8",
+   "sim": "TRX",
+   "cant": 478655.140778,
+   "v": 168486.609553856,
+   "a": "TNpLXWxmBzo5pzwFvE7RfaLErhG1LGe1Cg"
+  },
+  {
+   "at": "2026-10-31T10:21:24.000Z",
+   "tx": "54593c9505ee939266146d7dea8295b2e9fc8f10863a8cf0578f8c4550db6c66",
+   "sim": "TRX",
+   "cant": 249493.094211,
+   "v": 87821.56916227199,
+   "a": "TUq3Mut2SKoWpaPT77LbChdDtJr3b1q4Nz"
+  },
+  {
+   "at": "2026-10-31T10:22:00.000Z",
+   "tx": "a30a85f45789233a3e8768024b82e00ec1eb55f058ea6ff2ced3e87615b74387",
+   "sim": "TRX",
+   "cant": 523619.440883,
+   "v": 184314.04319081598,
+   "a": "TUoVsNvkSbCQFty1tLViCgvMjNRGGEK6eM"
+  },
+  {
+   "at": "2026-10-31T10:23:45.000Z",
+   "tx": "1741a10dfbd8cf11e32237911b0e7078d6f1924747ad5eb72b9d026a1139b530",
+   "sim": "TRX",
+   "cant": 365033.379648,
+   "v": 128491.74963609599,
+   "a": "TPxhvNiL9UzdapjULDdTBmHvcpJXricyBC"
+  },
+  {
+   "at": "2026-10-31T10:24:36.000Z",
+   "tx": "42af541d6dbebffd1316e2534fd8c1590406f7eda5bf06915b438f4ef1767c32",
+   "sim": "TRX",
+   "cant": 1068470.161022,
+   "v": 376101.496679744,
+   "a": "TZ9gyo3kys8HXa2shfKgNbSbpmerHwEYfa"
+  },
+  {
+   "at": "2026-10-31T10:25:27.000Z",
+   "tx": "4daa997f5329d2d4a4b145304146123a6a2fd1c6586d0d9fb4379cb8a002f9c6",
+   "sim": "TRX",
+   "cant": 599048.999516,
+   "v": 210865.247829632,
+   "a": "TLXjpfw1ksE2ab897z9dqp5TiEYiPqwmmS"
+  },
+  {
+   "at": "2026-10-31T10:28:48.000Z",
+   "tx": "cb62077e36872e4400ad6b3a43252e9d39f1d68bbb3939ab109424808e37dae7",
+   "sim": "TRX",
+   "cant": 613691.336852,
+   "v": 216019.35057190398,
+   "a": "TV1vu51cX8Fmo3iTya9d43D4Ugha1QBLbc"
+  },
+  {
+   "at": "2026-10-31T10:30:42.000Z",
+   "tx": "816f031d56bac3d0a1dbdf2fe7922362886419be911b0ebc8fc07e4fd0b7d662",
+   "sim": "TRX",
+   "cant": 328047.783809,
+   "v": 115472.819900768,
+   "a": "TEg5ncDH6jwySRiAJ4sCC7JRJcmrmCmJrm"
+  },
+  {
+   "at": "2026-10-31T10:31:24.000Z",
+   "tx": "8cfbf06e340e0622253cb4eebe99bc969e6f8ce16b030bbb6428252513f2d8ae",
+   "sim": "TRX",
+   "cant": 576764.67451,
+   "v": 203021.16542752,
+   "a": "TXSt1DTjju4UQxeNo5s6yxz1cjx7698Rmd"
+  },
+  {
+   "at": "2026-10-31T10:35:33.000Z",
+   "tx": "c402b799fc8d82079348cd39293c223ba73b57cb9cd1fe731b812cf62ae13b85",
+   "sim": "TRX",
+   "cant": 411325.443589,
+   "v": 144786.556143328,
+   "a": "TUieKs2PWdeoLJToJW6wVrWG7SqkBaMfNt"
+  },
+  {
+   "at": "2026-10-31T10:36:57.000Z",
+   "tx": "6195205c20cf2b89aba1f4599eb55aa08cf8e369ecf1951c9a2691d244d761d3",
+   "sim": "TRX",
+   "cant": 360328.61267,
+   "v": 126835.67165984,
+   "a": "TAvZoTs5P2AAVFVmQVtW9ap7jyxTkp78Su"
+  },
+  {
+   "at": "2026-10-31T10:37:42.000Z",
+   "tx": "248d3317a58924f11bb376073140ba5864ca29d77df97926211c82fcba70e619",
+   "sim": "TRX",
+   "cant": 270936.613663,
+   "v": 95369.688009376,
+   "a": "THh7ABJJwMuaDrDZ9SHwNsfHUm8ewYgHnb"
+  },
+  {
+   "at": "2026-10-31T10:37:57.000Z",
+   "tx": "ba6ae53cc4375b4e78abad5d8fdbfc6ef25e6fe5bc6552fb1c92f49713d81cf0",
+   "sim": "TRX",
+   "cant": 258254.497001,
+   "v": 90905.582944352,
+   "a": "TV1vu51cX8Fmo3iTya9d43D4Ugha1QBLbc"
+  },
+  {
+   "at": "2026-10-31T10:40:00.000Z",
+   "tx": "b3d7e58c0a80c44bf77acc3cf432b5f774c53756c7913dfc615491d7aaeaa5da",
+   "sim": "TRX",
+   "cant": 546778.540715,
+   "v": 192466.04633168,
+   "a": "TUoVsNvkSbCQFty1tLViCgvMjNRGGEK6eM"
+  },
+  {
+   "at": "2026-10-31T10:40:42.000Z",
+   "tx": "bc183fe23291f784e4e6a02a3f0b57c1343003cb82629a8a78e4b110d3fac75a",
+   "sim": "TRX",
+   "cant": 477946.021799,
+   "v": 168236.99967324798,
+   "a": "TZ9gyo3kys8HXa2shfKgNbSbpmerHwEYfa"
+  },
+  {
+   "at": "2026-10-31T10:41:42.000Z",
+   "tx": "624a0ddb55be7dc59a7bdafbac951fe74419351cbb1f4be2056ee7ff10ad7081",
+   "sim": "TRX",
+   "cant": 492958.940044,
+   "v": 173521.546895488,
+   "a": "TH9czzgvmroxxd5n5fS1Gd6ZFJeJBaxVkj"
+  },
+  {
+   "at": "2026-10-31T10:42:57.000Z",
+   "tx": "b92a6622ab8ac6e4d215e5db21c1fcb26f1c21ceb9847c279f3bc983e688d40d",
+   "sim": "TRX",
+   "cant": 310985.534633,
+   "v": 109466.90819081599,
+   "a": "TNh7oqQN9WfdJvYyZDHh8pRk21mfUP8wf1"
+  },
+  {
+   "at": "2026-10-31T10:44:33.000Z",
+   "tx": "f3afbbe8ff19901fd2b9ecc685062137130e5030effe9e751aa1ce0ed3346dbb",
+   "sim": "TRX",
+   "cant": 776976.161186,
+   "v": 273495.608737472,
+   "a": "TB3viNboTwfjZ5ohzHjSBxwSRr6T6duU5b"
+  },
+  {
+   "at": "2026-10-31T10:46:24.000Z",
+   "tx": "bc7e14830607fef560741ac564c7e3d48207b6df077dbdb775c9d5e0a7064a02",
+   "sim": "TRX",
+   "cant": 99472.446244,
+   "v": 35014.301077888,
+   "a": "TF2vhjz7NNsNJVGKXUExi5YFTcc9aMPZSL"
+  },
+  {
+   "at": "2026-10-31T10:47:30.000Z",
+   "tx": "9f80d0ed6e4383c7e3e2f4f0425abdef04d07ff06862594b607415043df872d0",
+   "sim": "TRX",
+   "cant": 764491.949902,
+   "v": 269101.166365504,
+   "a": "TSGCcr6WG372AXecAj48uqj8xxj7UED7W1"
+  },
+  {
+   "at": "2026-10-31T10:50:12.000Z",
+   "tx": "6662a1552c7290c3bcd74e959627e7f28629c188596ac77ea1fa0ed936cb4022",
+   "sim": "TRX",
+   "cant": 80320.641166,
+   "v": 28272.865690431998,
+   "a": "TKTfbEfTRDqMCKzLMpuv8f2wYPSYJvzEXi"
+  },
+  {
+   "at": "2026-10-31T10:52:51.000Z",
+   "tx": "b146615c26ce7fed79814ff9377fcb82b0a5ffb79a479e2330230f791b963f78",
+   "sim": "TRX",
+   "cant": 320783.228481,
+   "v": 112915.696425312,
+   "a": "TXSt1DTjju4UQxeNo5s6yxz1cjx7698Rmd"
+  },
+  {
+   "at": "2026-10-31T10:53:39.000Z",
+   "tx": "daf0fd41d75c08cf4d0c70619aca7510cdfc0830dd47758ed9009ca36a5df075",
+   "sim": "TRX",
+   "cant": 17655.416823,
+   "v": 6214.7067216959995,
+   "a": "TA3axSgEfJMKF8CXjhUjtJMQ6QdRtsvPw9"
+  },
+  {
+   "at": "2026-10-31T10:54:36.000Z",
+   "tx": "33ee5f68e367ba2b0a59fe4d182d5f222616b3b122c1ee29dbe1a4ad7ddeeb45",
+   "sim": "TRX",
+   "cant": 381473.884077,
+   "v": 134278.807195104,
+   "a": "THMg4J1sytc6fgFZwqTgiiWJYwyWc3YpYk"
+  },
+  {
+   "at": "2026-10-31T10:56:54.000Z",
+   "tx": "63b8b5ac95f9bd6f1b4cd270338bff8c19b2eab692ce701807b394a41a3326aa",
+   "sim": "TRX",
+   "cant": 463669.673235,
+   "v": 163211.72497871998,
+   "a": "TZ9gyo3kys8HXa2shfKgNbSbpmerHwEYfa"
+  },
+  {
+   "at": "2026-10-31T10:59:06.000Z",
+   "tx": "c2d4d33a322b948b84eabfb9f3f374dbe93f8a5224790b9dced4c523004a6ec2",
+   "sim": "TRX",
+   "cant": 1489939.788013,
+   "v": 524458.8053805759,
+   "a": "THMg4J1sytc6fgFZwqTgiiWJYwyWc3YpYk"
+  },
+  {
+   "at": "2026-10-31T11:01:24.000Z",
+   "tx": "f620afb31875dfb209fc439919291c756be9a48ff7bb22fd4dc4e053d4757b76",
+   "sim": "TRX",
+   "cant": 885499.30399,
+   "v": 311695.75500448,
+   "a": "TB3viNboTwfjZ5ohzHjSBxwSRr6T6duU5b"
+  },
+  {
+   "at": "2026-10-31T11:02:03.000Z",
+   "tx": "e6019388decd358d740d94d63c922caab7cb8b00e6d5245d4a186b91bcb8eb0f",
+   "sim": "TRX",
+   "cant": 744747.623865,
+   "v": 262151.16360047995,
+   "a": "TV1vu51cX8Fmo3iTya9d43D4Ugha1QBLbc"
+  },
+  {
+   "at": "2026-10-31T11:04:06.000Z",
+   "tx": "b23e51413e0d956b5d45104818cc0bacb87a48a897ee615c64acf9700c29c3a0",
+   "sim": "TRX",
+   "cant": 407908.274294,
+   "v": 143583.712551488,
+   "a": "TAmtGeBHfeuyt4D2xcpQfZyxRojSTRiz5j"
+  },
+  {
+   "at": "2026-10-31T11:06:39.000Z",
+   "tx": "0219714752f7165db0214d1d196e5fd832761243f43eeef4d4c3d8d9f97f8851",
+   "sim": "TRX",
+   "cant": 595563.365105,
+   "v": 209638.30451696,
+   "a": "TLXjpfw1ksE2ab897z9dqp5TiEYiPqwmmS"
+  },
+  {
+   "at": "2026-10-31T11:07:27.000Z",
+   "tx": "753bdf3e41aebef12a56c46a5fbe7351b16a331dca570250bbd3df97ba205196",
+   "sim": "TRX",
+   "cant": 1488439.612886,
+   "v": 523930.743735872,
+   "a": "THMg4J1sytc6fgFZwqTgiiWJYwyWc3YpYk"
+  },
+  {
+   "at": "2026-10-31T11:09:21.000Z",
+   "tx": "41f64ec318dfb8656e2319ab8c9b563fe3a8ffde6e94e204ab8604b89a3697f5",
+   "sim": "TRX",
+   "cant": 691779.909793,
+   "v": 243506.52824713598,
+   "a": "TQ27LngyGNB8emD6mt5FqjpCvZxo91EHhn"
+  },
+  {
+   "at": "2026-10-31T11:14:00.000Z",
+   "tx": "37bcf11b35d8c0f77ea027b011924cf70be3b2c1fbd489aa0b3383c1905ed7e2",
+   "sim": "TRX",
+   "cant": 537977.195736,
+   "v": 189367.972899072,
+   "a": "TV1vu51cX8Fmo3iTya9d43D4Ugha1QBLbc"
+  },
+  {
+   "at": "2026-10-31T11:16:36.000Z",
+   "tx": "df1544b032acbdb69fd0d1d16e59bcf93d8aeac3ebabfe2e5af4a8a49f8784f5",
+   "sim": "TRX",
+   "cant": 554731.243001,
+   "v": 195265.397536352,
+   "a": "TUoVsNvkSbCQFty1tLViCgvMjNRGGEK6eM"
+  },
+  {
+   "at": "2026-10-31T11:17:12.000Z",
+   "tx": "f770513950d31b34adb6d937dabe4c79c8908ff658562d9e6ef219d977c7c091",
+   "sim": "TRX",
+   "cant": 1329914.871403,
+   "v": 468130.034733856,
+   "a": "TZ9gyo3kys8HXa2shfKgNbSbpmerHwEYfa"
+  },
+  {
+   "at": "2026-10-31T11:20:21.000Z",
+   "tx": "7eb3db8e63e558650d3a16c9c9092e2397783096bbe8c7f3420fd924f6def206",
+   "sim": "TRX",
+   "cant": 592115.479682,
+   "v": 208424.64884806398,
+   "a": "TLXjpfw1ksE2ab897z9dqp5TiEYiPqwmmS"
+  },
+  {
+   "at": "2026-10-31T11:21:12.000Z",
+   "tx": "dba5674e756cc8d5611081d8f9381f3a4b828a6c679d716b50bb8ca4cfd96828",
+   "sim": "TRX",
+   "cant": 372263.12473,
+   "v": 131036.61990495998,
+   "a": "THMg4J1sytc6fgFZwqTgiiWJYwyWc3YpYk"
+  },
+  {
+   "at": "2026-10-31T11:26:00.000Z",
+   "tx": "526466581a2af803ba2c2cbb3fddcf16676dd8977edc1e0d09260174664a8096",
+   "sim": "TRX",
+   "cant": 525962.867695,
+   "v": 185138.92942864,
+   "a": "TLXjpfw1ksE2ab897z9dqp5TiEYiPqwmmS"
+  },
+  {
+   "at": "2026-10-31T11:26:51.000Z",
+   "tx": "f5c6637d24ac0a862a6e16bce531d4338259616857a02b710d8921d04db38ad1",
+   "sim": "TRX",
+   "cant": 740137.758296,
+   "v": 260528.49092019198,
+   "a": "TV1vu51cX8Fmo3iTya9d43D4Ugha1QBLbc"
+  },
+  {
+   "at": "2026-10-31T11:28:30.000Z",
+   "tx": "e028c462ebc8f61dfeebcae000e435e35969bdcf1ffaebdfa963954ca18c8a44",
+   "sim": "TRX",
+   "cant": 58929.763762,
+   "v": 20743.276844224,
+   "a": "TGqWKQrWU2Z4GiSdAqyLaFt8SNkSovBKMG"
+  },
+  {
+   "at": "2026-10-31T11:29:06.000Z",
+   "tx": "8e97a87914900a627f025ea575e12a5efbc048a40dc7085cd61da985d2204b8a",
+   "sim": "TRX",
+   "cant": 337998.948965,
+   "v": 118975.63003567999,
+   "a": "TNWyDsFm3PY41YZnFug6xLTXsC545Z7wh9"
+  },
+  {
+   "at": "2026-10-31T11:30:09.000Z",
+   "tx": "a376b7baa32aa243ac4897093c690778c2df459eafd96a84cd3e4fe81996e523",
+   "sim": "TRX",
+   "cant": 441512.437815,
+   "v": 155412.37811088,
+   "a": "TAvZoTs5P2AAVFVmQVtW9ap7jyxTkp78Su"
+  },
+  {
+   "at": "2026-10-31T11:35:36.000Z",
+   "tx": "86682c437aa3afc4013b321136cb8dc0dfde25f23e4a06dccec73b3c6442f92d",
+   "sim": "TRX",
+   "cant": 308453.976121,
+   "v": 108575.799594592,
+   "a": "THMg4J1sytc6fgFZwqTgiiWJYwyWc3YpYk"
+  },
+  {
+   "at": "2026-10-31T11:38:30.000Z",
+   "tx": "35c3ed2dc5c402325e854ac0fb3131c3db13d325f5921d137d4b0adfddf917fe",
+   "sim": "TRX",
+   "cant": 251192.793834,
+   "v": 88419.863429568,
+   "a": "TEBcj9PcdHpUNGAKv6DN7asqDf5fbJcpDr"
+  },
+  {
+   "at": "2026-10-31T11:40:09.000Z",
+   "tx": "54ed8134ad37bef4f8e342f0ac8485a0c62e2fa19a04f0e60344e997eb40eb36",
+   "sim": "TRX",
+   "cant": 741139.03179,
+   "v": 260880.93919008,
+   "a": "TV1vu51cX8Fmo3iTya9d43D4Ugha1QBLbc"
+  },
+  {
+   "at": "2026-10-31T11:40:42.000Z",
+   "tx": "66e2d8623905d8c48ce35f053185d249f188d656dab4ab79325f86090fae0921",
+   "sim": "TRX",
+   "cant": 171356.909255,
+   "v": 60317.63205776,
+   "a": "THMg4J1sytc6fgFZwqTgiiWJYwyWc3YpYk"
+  },
+  {
+   "at": "2026-10-31T11:41:21.000Z",
+   "tx": "24ef1c4a9e3e19ae9cde743668926adcfc5caa3fc0276e1bd24888584401d9f8",
+   "sim": "TRX",
+   "cant": 523469.227839,
+   "v": 184261.16819932798,
+   "a": "TAmtGeBHfeuyt4D2xcpQfZyxRojSTRiz5j"
+  },
+  {
+   "at": "2026-10-31T11:42:45.000Z",
+   "tx": "fc77dd1675ec4951062441451c6d7752730ba2d384282c9fba3a41c96c38983b",
+   "sim": "TRX",
+   "cant": 17850.096797,
+   "v": 6283.234072543999,
+   "a": "TA3axSgEfJMKF8CXjhUjtJMQ6QdRtsvPw9"
+  },
+  {
+   "at": "2026-10-31T11:43:30.000Z",
+   "tx": "007b98c4524c70c7df5fe6e3c7715cc4c42eb670080d400e8fcaa0b85655e60f",
+   "sim": "TRX",
+   "cant": 473571.590027,
+   "v": 166697.199689504,
+   "a": "TXSt1DTjju4UQxeNo5s6yxz1cjx7698Rmd"
+  },
+  {
+   "at": "2026-10-31T11:44:00.000Z",
+   "tx": "9b6777fd325b688803635e13e13eed173f881beee62c7ac78c9f12aebe7895b2",
+   "sim": "TRX",
+   "cant": 896685.643686,
+   "v": 315633.346577472,
+   "a": "TB3viNboTwfjZ5ohzHjSBxwSRr6T6duU5b"
+  },
+  {
+   "at": "2026-10-31T11:45:21.000Z",
+   "tx": "07da5dbbce5394f1babea7f405ec5c6f1d6e713c981a23f22a8117aaea42ba6f",
+   "sim": "TRX",
+   "cant": 155727.600691,
+   "v": 54816.115443231996,
+   "a": "TB3viNboTwfjZ5ohzHjSBxwSRr6T6duU5b"
+  },
+  {
+   "at": "2026-10-31T11:47:45.000Z",
+   "tx": "20615afb4d918cb12ef702f0038db1c975669a834e69ee386563b4165f626010",
+   "sim": "TRX",
+   "cant": 471423.013503,
+   "v": 165940.900753056,
+   "a": "TH9czzgvmroxxd5n5fS1Gd6ZFJeJBaxVkj"
+  },
+  {
+   "at": "2026-10-31T11:50:30.000Z",
+   "tx": "5a7bc25d854d8608941f399b6e7609043d63dd8ace30bc4ac915fe77349ac25e",
+   "sim": "TRX",
+   "cant": 576018.847238,
+   "v": 202758.634227776,
+   "a": "TXSt1DTjju4UQxeNo5s6yxz1cjx7698Rmd"
+  },
+  {
+   "at": "2026-10-31T11:52:18.000Z",
+   "tx": "abcb0719eedfd3933c0292349c1bea2fecfe8da06897161fd706472f9837c4be",
+   "sim": "TRX",
+   "cant": 559651.445515,
+   "v": 196997.30882128,
+   "a": "TV1vu51cX8Fmo3iTya9d43D4Ugha1QBLbc"
+  },
+  {
+   "at": "2026-10-31T11:52:54.000Z",
+   "tx": "ea195214aa0158332b875ec2be3362413022499aca8710187cd7ee2be47dd881",
+   "sim": "TRX",
+   "cant": 666688.294578,
+   "v": 234674.27969145597,
+   "a": "TFyXz53eMBzVSDjor24fRjaTNxsvDRumXu"
+  },
+  {
+   "at": "2026-10-31T11:57:39.000Z",
+   "tx": "0ec54b473a32afd97c4d1dbf5ccb12faca5e1fd91f9f68b876b25ff53cf86eae",
+   "sim": "TRX",
+   "cant": 437467.918622,
+   "v": 153988.707354944,
+   "a": "TUoVsNvkSbCQFty1tLViCgvMjNRGGEK6eM"
+  },
+  {
+   "at": "2026-10-31T11:59:30.000Z",
+   "tx": "1e069e3d831f2b6d05de2bf767abb2340768b7785095a9a3f6b8f4a70e8f5289",
+   "sim": "TRX",
+   "cant": 1011182.132963,
+   "v": 355936.11080297595,
+   "a": "TZ9gyo3kys8HXa2shfKgNbSbpmerHwEYfa"
+  },
+  {
+   "at": "2026-10-31T12:00:12.000Z",
+   "tx": "c8eb69da01db4afd84ffe567c6e88434e0ac4f53f7605c730a9d3d1ad390a667",
+   "sim": "TRX",
+   "cant": 491374.073417,
+   "v": 172963.673842784,
+   "a": "THMg4J1sytc6fgFZwqTgiiWJYwyWc3YpYk"
+  },
+  {
+   "at": "2026-10-31T12:00:54.000Z",
+   "tx": "829df8f7863a480726c6ebc15493f04cac19f17b13302800fe77166304dfae38",
+   "sim": "TRX",
+   "cant": 490395.043475,
+   "v": 172619.0553032,
+   "a": "TAdborFTshbbBxpnDqNajAxH65khuKdXHX"
+  },
+  {
+   "at": "2026-10-31T12:05:33.000Z",
+   "tx": "bf783c8fc0f67f45f8792d476d3b87b96b99623b1325317f33589c93ace35a61",
+   "sim": "TRX",
+   "cant": 1900034.290227,
+   "v": 668812.070159904,
+   "a": "TNhpfKq83wufEKGjBhQFnT7jnxYmyBzH6F"
+  },
+  {
+   "at": "2026-10-31T12:08:30.000Z",
+   "tx": "f91d2f4c94221eec64b0a907a18a86c832282b42377ffdb68d61b6601098f9d0",
+   "sim": "TRX",
+   "cant": 255862.363393,
+   "v": 90063.551914336,
+   "a": "TV1vu51cX8Fmo3iTya9d43D4Ugha1QBLbc"
+  },
+  {
+   "at": "2026-10-31T12:10:15.000Z",
+   "tx": "7a71d8057742ad3e2dbae86d178317881cc7df1cc9b67c0af1052d849a57a8da",
+   "sim": "TRX",
+   "cant": 212097.343244,
+   "v": 74658.26482188799,
+   "a": "TEBcj9PcdHpUNGAKv6DN7asqDf5fbJcpDr"
+  },
+  {
+   "at": "2026-10-31T12:10:48.000Z",
+   "tx": "2b90a837b4d59af3fa9832ebad28a33f24deba07bc895593b1c7dde6f7b880d6",
+   "sim": "TRX",
+   "cant": 733162.625635,
+   "v": 258073.24422351996,
+   "a": "TQ27LngyGNB8emD6mt5FqjpCvZxo91EHhn"
+  },
+  {
+   "at": "2026-10-31T12:11:54.000Z",
+   "tx": "1734d439929c2026b55204571069ae8186b8dd646e1152fd6c3d2eac48bc3ecd",
+   "sim": "TRX",
+   "cant": 482782.898866,
+   "v": 169939.580400832,
+   "a": "TFyXz53eMBzVSDjor24fRjaTNxsvDRumXu"
+  },
+  {
+   "at": "2026-10-31T12:12:27.000Z",
+   "tx": "3dd3ff2afc9c6f56ed916e3c08b792bf2b70621de1d3dea82bc70cebae12c61d",
+   "sim": "TRX",
+   "cant": 316343.603911,
+   "v": 111352.948576672,
+   "a": "TXSt1DTjju4UQxeNo5s6yxz1cjx7698Rmd"
+  },
+  {
+   "at": "2026-10-31T12:16:03.000Z",
+   "tx": "659f7a22af6addcebba4f5a050539651adb6043c6ffc4b42bb0c8a28ec4a4ef0",
+   "sim": "TRX",
+   "cant": 395525.713297,
+   "v": 139225.05108054398,
+   "a": "TXSt1DTjju4UQxeNo5s6yxz1cjx7698Rmd"
+  },
+  {
+   "at": "2026-10-31T12:16:48.000Z",
+   "tx": "0454e3b0eb134d6ef3c4e1f87e9d5fe5c2b6533e609d77e1950252da3bb5a788",
+   "sim": "TRX",
+   "cant": 104226.116558,
+   "v": 36687.593028416,
+   "a": "TSiPtxEXrm5BSXeb3VCeUr4mdxAzwVo6gx"
+  },
+  {
+   "at": "2026-10-31T12:17:21.000Z",
+   "tx": "f67f00eb3a8a122e041b14b8e389e855348d1dd01f498d3b82bc0315acecb9ec",
+   "sim": "TRX",
+   "cant": 274816.103346,
+   "v": 96735.268377792,
+   "a": "TYZ98phfoPWmiQhfHrYHvLW6jgnRXGuKpw"
+  },
+  {
+   "at": "2026-10-31T12:17:51.000Z",
+   "tx": "d9063cb552f4c335a5682f5513877a67bd079f76bb87de25ef5612910cc37693",
+   "sim": "TRX",
+   "cant": 90902.853286,
+   "v": 31997.804356671997,
+   "a": "TGqWKQrWU2Z4GiSdAqyLaFt8SNkSovBKMG"
+  },
+  {
+   "at": "2026-10-31T12:21:12.000Z",
+   "tx": "927a68ef79835b65652f4647e4586e89d21978de9b92d634b468a9c75dc47ee5",
+   "sim": "TRX",
+   "cant": 1115607.471996,
+   "v": 392693.83014259196,
+   "a": "TB3viNboTwfjZ5ohzHjSBxwSRr6T6duU5b"
+  },
+  {
+   "at": "2026-10-31T12:21:45.000Z",
+   "tx": "5b8c16dc94ec7deb3d535887986a196005fa894a581da4913da4afe32ef71ce1",
+   "sim": "TRX",
+   "cant": 185142.987835,
+   "v": 65170.33171792,
+   "a": "TEg5ncDH6jwySRiAJ4sCC7JRJcmrmCmJrm"
+  },
+  {
+   "at": "2026-10-31T12:22:18.000Z",
+   "tx": "b238ee9702203931618a93e1cc4c8d08be0154ef854ebe9878f6c141c00060ac",
+   "sim": "TRX",
+   "cant": 893328.475373,
+   "v": 314451.62333129597,
+   "a": "TV1vu51cX8Fmo3iTya9d43D4Ugha1QBLbc"
+  },
+  {
+   "at": "2026-10-31T12:22:51.000Z",
+   "tx": "f8af21ccc54e7cb4c22430e9f1722f85c7aa421add53de5f618411ba05937fa4",
+   "sim": "TRX",
+   "cant": 610953.359814,
+   "v": 215055.58265452797,
+   "a": "TH9czzgvmroxxd5n5fS1Gd6ZFJeJBaxVkj"
+  },
+  {
+   "at": "2026-10-31T12:24:36.000Z",
+   "tx": "a71994854ddbbffca99576ff5cc59179cf40322a0f934164485fbe25e849101d",
+   "sim": "TRX",
+   "cant": 219951.438419,
+   "v": 77422.906323488,
+   "a": "TAmtGeBHfeuyt4D2xcpQfZyxRojSTRiz5j"
+  },
+  {
+   "at": "2026-10-31T12:26:03.000Z",
+   "tx": "8b65e8b8c056bcb821dd673cb1be6654e6341649b6dc9d484f5282fc318eee19",
+   "sim": "TRX",
+   "cant": 486973.106221,
+   "v": 171414.533389792,
+   "a": "TXSt1DTjju4UQxeNo5s6yxz1cjx7698Rmd"
+  },
+  {
+   "at": "2026-10-31T12:28:51.000Z",
+   "tx": "04f357e1c4bbcd8a2d5a8b453f1e28046e3ce86ed8fa41b1c3c058745ed81938",
+   "sim": "TRX",
+   "cant": 1016819.582383,
+   "v": 357920.49299881596,
+   "a": "TZ9gyo3kys8HXa2shfKgNbSbpmerHwEYfa"
+  },
+  {
+   "at": "2026-10-31T12:30:30.000Z",
+   "tx": "8a112342d4c069aa2ab12caac1a76fe186575cbd76a1a78e9d8c331bc1b0fbc9",
+   "sim": "TRX",
+   "cant": 637451.149922,
+   "v": 224382.80477254398,
+   "a": "TXSt1DTjju4UQxeNo5s6yxz1cjx7698Rmd"
+  },
+  {
+   "at": "2026-10-31T12:36:03.000Z",
+   "tx": "67145fb00c73328f53ec268a683bcfba9caa2931bbf2fb1ae61b7f68d7afa1ac",
+   "sim": "TRX",
+   "cant": 2226830.878953,
+   "v": 783844.469391456,
+   "a": "TNhpfKq83wufEKGjBhQFnT7jnxYmyBzH6F"
+  },
+  {
+   "at": "2026-10-31T12:40:51.000Z",
+   "tx": "6ba2acd9b512534332dedc0755de332c7a61502fd756c168ed0a22a8f7945b3c",
+   "sim": "TRX",
+   "cant": 477929.492919,
+   "v": 168231.18150748799,
+   "a": "TQKkLTBokGPHNKQQSne7Ucw5GMAc8eaYQf"
+  },
+  {
+   "at": "2026-10-31T12:42:03.000Z",
+   "tx": "e1be6bf75c98c34cbee1c6d4bcd4d7729802547b0e24f837723fa01dae1e4c06",
+   "sim": "TRX",
+   "cant": 747302.113551,
+   "v": 263050.34396995197,
+   "a": "TV1vu51cX8Fmo3iTya9d43D4Ugha1QBLbc"
+  },
+  {
+   "at": "2026-10-31T12:49:45.000Z",
+   "tx": "d5359c719fedafde2f99ebc846c92a567ec7845c5b18b121c968ca285181013a",
+   "sim": "TRX",
+   "cant": 583768.259261,
+   "v": 205486.42725987197,
+   "a": "TV1vu51cX8Fmo3iTya9d43D4Ugha1QBLbc"
+  },
+  {
+   "at": "2026-10-31T12:50:15.000Z",
+   "tx": "17655e56a8bd51cd3b74213b181221c99dfa41ecd327c5bef5a8873905053373",
+   "sim": "TRX",
+   "cant": 2371398.069229,
+   "v": 834732.1203686079,
+   "a": "TNhpfKq83wufEKGjBhQFnT7jnxYmyBzH6F"
+  },
+  {
+   "at": "2026-10-31T12:51:57.000Z",
+   "tx": "e6a5af54d7a18cdff26fe53ffb086558bf8846e8ea96966ff00d6868bab0d3b8",
+   "sim": "TRX",
+   "cant": 162033.598416,
+   "v": 57035.826642431995,
+   "a": "TNh7oqQN9WfdJvYyZDHh8pRk21mfUP8wf1"
+  },
+  {
+   "at": "2026-10-31T12:57:21.000Z",
+   "tx": "4000d0da176c6508ed01ecfa32302f3bb782563a52bca4e5d014736e78afad87",
+   "sim": "TRX",
+   "cant": 108002.918813,
+   "v": 38017.027422176,
+   "a": "TVuXrdY6b1ix3RFHmWtCoGAT2GJuJzEk59"
+  },
+  {
+   "at": "2026-10-31T13:00:18.000Z",
+   "tx": "924e84aa3835cd7c70e7948103941d70314a39ce23aa82c60bac150293de85ea",
+   "sim": "TRX",
+   "cant": 2478123.151014,
+   "v": 872299.349156928,
+   "a": "TNhpfKq83wufEKGjBhQFnT7jnxYmyBzH6F"
+  },
+  {
+   "at": "2026-10-31T13:01:15.000Z",
+   "tx": "4cd35597486a1dab2154f84c3c5413a1e9b3b3fdb3160e75d677d7094711c038",
+   "sim": "TRX",
+   "cant": 744898.060419,
+   "v": 262204.117267488,
+   "a": "TV1vu51cX8Fmo3iTya9d43D4Ugha1QBLbc"
+  },
+  {
+   "at": "2026-10-31T13:09:54.000Z",
+   "tx": "15801a17b24db7a593ab93b7bedff2c1c75ad6b685da1582415b6e8f2b3f4bc0",
+   "sim": "TRX",
+   "cant": 587915.970004,
+   "v": 206946.421441408,
+   "a": "TXSt1DTjju4UQxeNo5s6yxz1cjx7698Rmd"
+  },
+  {
+   "at": "2026-10-31T13:11:57.000Z",
+   "tx": "3e61b54cb82f638d89b39918277bc6ddf239306af84a2c6f831809ea0983c867",
+   "sim": "TRX",
+   "cant": 572626.144437,
+   "v": 201564.402841824,
+   "a": "TXSt1DTjju4UQxeNo5s6yxz1cjx7698Rmd"
+  },
+  {
+   "at": "2026-10-31T13:15:00.000Z",
+   "tx": "d1c00e5b6266ebd8fefdb778040dd5e53dbbb2dee0cda39ccbbc73922b9762da",
+   "sim": "TRX",
+   "cant": 2621340.636359,
+   "v": 922711.903998368,
+   "a": "TEg5ncDH6jwySRiAJ4sCC7JRJcmrmCmJrm"
+  },
+  {
+   "at": "2026-10-31T13:17:33.000Z",
+   "tx": "fa4b554318244f3c7e369ea1a28f28d9452c9e92d5d618409ac0ca785a0c9931",
+   "sim": "TRX",
+   "cant": 595504.227402,
+   "v": 209617.488045504,
+   "a": "TFyXz53eMBzVSDjor24fRjaTNxsvDRumXu"
+  },
+  {
+   "at": "2026-10-31T13:21:09.000Z",
+   "tx": "3dc6e194eee6a10f13d3af9202a1dbced6b76379dc2b109a96afcb5430be6c70",
+   "sim": "TRX",
+   "cant": 777972.798115,
+   "v": 273846.42493648,
+   "a": "TQ27LngyGNB8emD6mt5FqjpCvZxo91EHhn"
+  },
+  {
+   "at": "2026-10-31T13:26:12.000Z",
+   "tx": "5c747a589f7c0879a0ac2ae565140e465cd81a1dd08d9686ad323e4ac065c70f",
+   "sim": "TRX",
+   "cant": 446252.29426,
+   "v": 157080.80757951998,
+   "a": "TFyXz53eMBzVSDjor24fRjaTNxsvDRumXu"
+  },
+  {
+   "at": "2026-10-31T13:29:42.000Z",
+   "tx": "50769b8fbfe50b488822ec8c1a3db4b5d123f1117928e45c12ac1de521fab797",
+   "sim": "TRX",
+   "cant": 2766312.173437,
+   "v": 973741.8850498239,
+   "a": "TNhpfKq83wufEKGjBhQFnT7jnxYmyBzH6F"
+  },
+  {
+   "at": "2026-10-31T13:30:42.000Z",
+   "tx": "e9ef3ae29e48a565b7222e73e87bbf88b83c1d377047763d413d890a821efd2e",
+   "sim": "TRX",
+   "cant": 112709.964888,
+   "v": 39673.907640576,
+   "a": "THNBexynJqphhAruyUVgSG6K4kPgeBCaeo"
+  },
+  {
+   "at": "2026-10-31T13:32:00.000Z",
+   "tx": "78653a2a85246d7ed30b17a980f4c3fc6bafb3cf6771a7caaa59f7d289b06c43",
+   "sim": "TRX",
+   "cant": 334858.414105,
+   "v": 117870.16176495998,
+   "a": "TV1vu51cX8Fmo3iTya9d43D4Ugha1QBLbc"
+  },
+  {
+   "at": "2026-10-31T13:33:39.000Z",
+   "tx": "d658fe9ba4a206515b12d382c92db1ed80541a30bca5f204a1082e3cb523938d",
+   "sim": "TRX",
+   "cant": 486195.637037,
+   "v": 171140.86423702398,
+   "a": "TFyXz53eMBzVSDjor24fRjaTNxsvDRumXu"
+  },
+  {
+   "at": "2026-10-31T13:40:51.000Z",
+   "tx": "5182c012c8b85d75e0ab188eaf85d8a7ccc164d2e51ec9d2ddfa3f5cbfcfaa77",
+   "sim": "TRX",
+   "cant": 513366.996522,
+   "v": 180705.182775744,
+   "a": "TXSt1DTjju4UQxeNo5s6yxz1cjx7698Rmd"
+  },
+  {
+   "at": "2026-10-31T13:42:12.000Z",
+   "tx": "4ce50cf3dc7ee9fce3bfe62dc014219a5bfa8f1a26615ee9ffb7f8b2c422a003",
+   "sim": "TRX",
+   "cant": 2927933.620862,
+   "v": 1030632.634543424,
+   "a": "TNhpfKq83wufEKGjBhQFnT7jnxYmyBzH6F"
+  },
+  {
+   "at": "2026-10-31T13:49:54.000Z",
+   "tx": "eca0a946544a60ffdffba3f8d0ed8629831f5e9bb863505d4e7a07c152b02cdb",
+   "sim": "TRX",
+   "cant": 231128.037073,
+   "v": 81357.069049696,
+   "a": "TNh7oqQN9WfdJvYyZDHh8pRk21mfUP8wf1"
+  },
+  {
+   "at": "2026-10-31T13:53:18.000Z",
+   "tx": "88eb1e6f0e08c6498cdcc72fce81985f85c992b343ee82070598323ac2066a87",
+   "sim": "TRX",
+   "cant": 3079082.870452,
+   "v": 1083837.1703991038,
+   "a": "TNhpfKq83wufEKGjBhQFnT7jnxYmyBzH6F"
+  },
+  {
+   "at": "2026-10-31T13:56:03.000Z",
+   "tx": "e3c6ede91e657683d2b2c56373b35d7cde53a5e067ff850c9a1f98c530bd548b",
+   "sim": "TRX",
+   "cant": 745059.786028,
+   "v": 262261.04468185594,
+   "a": "TV1vu51cX8Fmo3iTya9d43D4Ugha1QBLbc"
+  },
+  {
+   "at": "2026-10-31T13:59:21.000Z",
+   "tx": "d1edc55db28cfd40bcfdb1ca0684b5141a4b72c67c4c1021c691c926eea0e5b7",
+   "sim": "TRX",
+   "cant": 820803.443056,
+   "v": 288922.811955712,
+   "a": "TQ27LngyGNB8emD6mt5FqjpCvZxo91EHhn"
+  },
+  {
+   "at": "2026-10-31T13:59:54.000Z",
+   "tx": "63373c7410223f01100848d5366a281ca4cfb00d5e5927b65d9043077046f19f",
+   "sim": "TRX",
+   "cant": 364651.247003,
+   "v": 128357.23894505599,
+   "a": "TXSt1DTjju4UQxeNo5s6yxz1cjx7698Rmd"
+  },
+  {
+   "at": "2026-10-31T14:03:21.000Z",
+   "tx": "94140308a9519c1f1473dd9f2d4f39dc3c13d7e0e3f794ee7d290a4ea2201c57",
+   "sim": "TRX",
+   "cant": 655883.007684,
+   "v": 230870.81870476797,
+   "a": "TXSt1DTjju4UQxeNo5s6yxz1cjx7698Rmd"
+  },
+  {
+   "at": "2026-10-31T14:03:57.000Z",
+   "tx": "cc2be6781fa572e7ab4ac140ec61a4a28a1e8fc8c71f0d1d7e4588c2181a6229",
+   "sim": "TRX",
+   "cant": 970945.179584,
+   "v": 341772.70321356796,
+   "a": "TV1vu51cX8Fmo3iTya9d43D4Ugha1QBLbc"
+  },
+  {
+   "at": "2026-10-31T14:05:09.000Z",
+   "tx": "6f8b4e1e9816b8c6733528b417613214654cb60482f2eb6931a28f7af3fa7290",
+   "sim": "TRX",
+   "cant": 3268886.655273,
+   "v": 1150648.1026560958,
+   "a": "TNhpfKq83wufEKGjBhQFnT7jnxYmyBzH6F"
+  },
+  {
+   "at": "2026-10-31T14:08:27.000Z",
+   "tx": "ee5135aa7b8daa6ab07934c9f8e039aefd2391ea4423cb155eacab0cded9a07b",
+   "sim": "TRX",
+   "cant": 366365.051702,
+   "v": 128960.498199104,
+   "a": "TUoVsNvkSbCQFty1tLViCgvMjNRGGEK6eM"
+  },
+  {
+   "at": "2026-10-31T14:09:15.000Z",
+   "tx": "e661b0f9c44145ea8960f78401630d7c06fe48b9add7e4e7db854814469c76bc",
+   "sim": "TRX",
+   "cant": 597690.38101,
+   "v": 210387.01411552,
+   "a": "TNRGtU694p4X3VThaeYsCBVuh4yJFDM2fg"
+  },
+  {
+   "at": "2026-10-31T14:14:12.000Z",
+   "tx": "c10066beee863870904a337bbfeb9e211fab14056d59291de079ee0981f25c99",
+   "sim": "TRX",
+   "cant": 272760.013937,
+   "v": 96011.524905824,
+   "a": "TNpLXWxmBzo5pzwFvE7RfaLErhG1LGe1Cg"
+  },
+  {
+   "at": "2026-10-31T14:15:12.000Z",
+   "tx": "6d7a44b1f422a91327f4af9274ac7c9e01e3a1982882e2a7dec3c5d9d28afe1e",
+   "sim": "TRX",
+   "cant": 807351.552382,
+   "v": 284187.746438464,
+   "a": "TV1vu51cX8Fmo3iTya9d43D4Ugha1QBLbc"
+  },
+  {
+   "at": "2026-10-31T14:18:18.000Z",
+   "tx": "6d5c66c581265161459ccacf0736f5b88e5820d222283af134651000bafd8086",
+   "sim": "TRX",
+   "cant": 3446914.040067,
+   "v": 1213313.7421035839,
+   "a": "TNhpfKq83wufEKGjBhQFnT7jnxYmyBzH6F"
+  },
+  {
+   "at": "2026-10-31T14:18:54.000Z",
+   "tx": "da53d471c9e49cd39213eebbd25a3bf51858f2d787d401b5c2e01ab72ac7e070",
+   "sim": "TRX",
+   "cant": 100414.649233,
+   "v": 35345.956530015996,
+   "a": "TNh7oqQN9WfdJvYyZDHh8pRk21mfUP8wf1"
+  },
+  {
+   "at": "2026-10-31T14:20:30.000Z",
+   "tx": "21654b6644d4b75d850cb27ef94816f984a3e43b21db8d80d5a2c765f03a5c07",
+   "sim": "TRX",
+   "cant": 664003.039409,
+   "v": 233729.06987196798,
+   "a": "TXSt1DTjju4UQxeNo5s6yxz1cjx7698Rmd"
+  },
+  {
+   "at": "2026-10-31T14:21:12.000Z",
+   "tx": "168980d437412f852cb5af1d0db30045763285d0b4ab4ee54fa03f4a934ee533",
+   "sim": "TRX",
+   "cant": 610182.361756,
+   "v": 214784.19133811197,
+   "a": "TR5xn6w2PWhjTyRhTJamjzxGaCGbu7ZFZ7"
+  },
+  {
+   "at": "2026-10-31T14:27:03.000Z",
+   "tx": "0f87eb31567c934d5231f88e6dfe7f9543e43479b53e87e38cf8186f30a10ab7",
+   "sim": "TRX",
+   "cant": 257417.370915,
+   "v": 90610.91456208,
+   "a": "TV1vu51cX8Fmo3iTya9d43D4Ugha1QBLbc"
+  },
+  {
+   "at": "2026-10-31T14:27:42.000Z",
+   "tx": "e1d40eeffe507bff9372525e7a47130d9879140b0460e5eca4d8377df91a13c8",
+   "sim": "TRX",
+   "cant": 3625881.014088,
+   "v": 1276310.116958976,
+   "a": "TNhpfKq83wufEKGjBhQFnT7jnxYmyBzH6F"
+  },
+  {
+   "at": "2026-10-31T14:29:57.000Z",
+   "tx": "3a9ca8e11a08f4947713f31deda59f99a240810c23328b6b94100e226413b745",
+   "sim": "TRX",
+   "cant": 234350.617317,
+   "v": 82491.41729558399,
+   "a": "TEL98F1EAFC4NgzWEHmJkTuRC1kY8xMJbi"
+  },
+  {
+   "at": "2026-10-31T14:33:03.000Z",
+   "tx": "3880f5316ce93128cb5a22dd97bd7b0fd70259d0fab1fa375ee67770841b7597",
+   "sim": "TRX",
+   "cant": 892133.03298,
+   "v": 314030.82760896,
+   "a": "TR5xn6w2PWhjTyRhTJamjzxGaCGbu7ZFZ7"
+  },
+  {
+   "at": "2026-10-31T14:33:36.000Z",
+   "tx": "ebee384010c9d2a153a480421120b6dac095432064cdf3dcadfa3e203df22601",
+   "sim": "TRX",
+   "cant": 748532.836516,
+   "v": 263483.558453632,
+   "a": "TV1vu51cX8Fmo3iTya9d43D4Ugha1QBLbc"
+  },
+  {
+   "at": "2026-10-31T14:35:27.000Z",
+   "tx": "d436126da681b418b17e48e46485d2ce74c26b279beee8d89f19bfb7f2f0d47f",
+   "sim": "TRX",
+   "cant": 513320.28959,
+   "v": 180688.74193567998,
+   "a": "TXSt1DTjju4UQxeNo5s6yxz1cjx7698Rmd"
+  },
+  {
+   "at": "2026-10-31T14:37:45.000Z",
+   "tx": "478f58d5fec8849e45424513954325e20029b49cea9fd2b8f28a1b2dc25698eb",
+   "sim": "TRX",
+   "cant": 3139593.698055,
+   "v": 1105136.98171536,
+   "a": "TB3viNboTwfjZ5ohzHjSBxwSRr6T6duU5b"
+  },
+  {
+   "at": "2026-10-31T14:38:18.000Z",
+   "tx": "d3cff15a037ba8fdea02eff8ec6d68dfc2db4ab80f41957afb66b9e2605dd366",
+   "sim": "TRX",
+   "cant": 3821324.732849,
+   "v": 1345106.305962848,
+   "a": "TNhpfKq83wufEKGjBhQFnT7jnxYmyBzH6F"
+  },
+  {
+   "at": "2026-10-31T14:51:00.000Z",
+   "tx": "436b170bc02666cd8edd5a3b1c6f277dc64b606ff90bdaa2893d409a66811944",
+   "sim": "TRX",
+   "cant": 1447511.065631,
+   "v": 509523.89510211203,
+   "a": "TZEvgE51pq8KZjH8oWZ7XNw9tQp2uu2ziC"
+  },
+  {
+   "at": "2026-10-31T14:52:03.000Z",
+   "tx": "5ea73827f91ccd8e5a17be7226d434a3cb63ca71ba27ee435f2af06e30141e80",
+   "sim": "TRX",
+   "cant": 4023022.875326,
+   "v": 1416104.052114752,
+   "a": "TNhpfKq83wufEKGjBhQFnT7jnxYmyBzH6F"
+  },
+  {
+   "at": "2026-10-31T14:52:33.000Z",
+   "tx": "62548c6c52e2cb89f19d4a9dddb8a94db26276758fc4f85ce02d8d79b1f7ea8f",
+   "sim": "TRX",
+   "cant": 832724.554188,
+   "v": 293119.043074176,
+   "a": "TV1vu51cX8Fmo3iTya9d43D4Ugha1QBLbc"
+  },
+  {
+   "at": "2026-10-31T14:53:09.000Z",
+   "tx": "d878d7ad180b7aed4c995d51ebcec42393b75a4efda7bcb9f0878f9a94e971b8",
+   "sim": "TRX",
+   "cant": 867380.819146,
+   "v": 305318.04833939194,
+   "a": "TQ27LngyGNB8emD6mt5FqjpCvZxo91EHhn"
+  },
+  {
+   "at": "2026-10-31T14:53:48.000Z",
+   "tx": "4b5e8c7bb73069333b53440a8a201f921d2a6ce9701e7091adae871054945665",
+   "sim": "TRX",
+   "cant": 129852.725634,
+   "v": 45708.159423168,
+   "a": "TKd2AepFXECGMf8zMZcNVpt83rpGjTMoNs"
+  },
+  {
+   "at": "2026-10-31T14:55:36.000Z",
+   "tx": "7f7348b813182f8ac75e1ad4f45a9a2cecaacceab9739db32574060455c21193",
+   "sim": "TRX",
+   "cant": 1463873.156784,
+   "v": 515283.351187968,
+   "a": "TD2d5KG1inniNzyGXiCy7uxdWX1CRVtLyt"
+  },
+  {
+   "at": "2026-10-31T14:59:48.000Z",
+   "tx": "9470a43b297dd33c0ab4d39ed6df942775046cdca8e0783e3521c92ec48eba5b",
+   "sim": "TRX",
+   "cant": 596987.153592,
+   "v": 210139.478064384,
+   "a": "TXSt1DTjju4UQxeNo5s6yxz1cjx7698Rmd"
+  },
+  {
+   "at": "2026-10-31T15:04:39.000Z",
+   "tx": "33bbacd2a6a9c706ad0418bc25f47e2152d8934eef5d7f4287641eda62d89c4e",
+   "sim": "TRX",
+   "cant": 4246998.925341,
+   "v": 1494943.6217200318,
+   "a": "TNhpfKq83wufEKGjBhQFnT7jnxYmyBzH6F"
+  },
+  {
+   "at": "2026-10-31T15:05:18.000Z",
+   "tx": "bf710b9aa5c4163b5ce2024e5fe5b5881a8aa56269f22806f89bbfc7eb704f10",
+   "sim": "TRX",
+   "cant": 378251.621779,
+   "v": 133144.57086620797,
+   "a": "TXSt1DTjju4UQxeNo5s6yxz1cjx7698Rmd"
+  },
+  {
+   "at": "2026-10-31T15:10:51.000Z",
+   "tx": "bdd11d1b1c1fb7ea64d7121aec4c870ae9f25d2c9e50fbc9e796ae20da7c5b8a",
+   "sim": "TRX",
+   "cant": 361177.152234,
+   "v": 127134.35758636799,
+   "a": "TV1vu51cX8Fmo3iTya9d43D4Ugha1QBLbc"
+  },
+  {
+   "at": "2026-10-31T15:11:36.000Z",
+   "tx": "1c8daee4dfd40a2aac90a77bdd16b7c71fe5512a777538482fa0e8326e6cf7f2",
+   "sim": "TRX",
+   "cant": 552166.917379,
+   "v": 194362.754917408,
+   "a": "TXSt1DTjju4UQxeNo5s6yxz1cjx7698Rmd"
+  },
+  {
+   "at": "2026-10-31T15:14:09.000Z",
+   "tx": "02a229022cb4bd702b5e38b005993b09a68eafa0fa7208db7333df4b1777b2bb",
+   "sim": "TRX",
+   "cant": 323318.550748,
+   "v": 113808.12986329598,
+   "a": "TNh7oqQN9WfdJvYyZDHh8pRk21mfUP8wf1"
+  },
+  {
+   "at": "2026-10-31T15:15:06.000Z",
+   "tx": "575823b4f0291e39b892e3fd066d43d888e5329d2326f80590e6bc31e495f721",
+   "sim": "TRX",
+   "cant": 245178.54383,
+   "v": 86302.84742815999,
+   "a": "TBTFih9SzdRBNcsEt17rWNV1fFENooZyk8"
+  },
+  {
+   "at": "2026-10-31T15:16:30.000Z",
+   "tx": "5236c585823ce98f6d4ad0eae1088ae3ac3302d3e8cb3fa08abe4621ba9d602c",
+   "sim": "TRX",
+   "cant": 690132.179386,
+   "v": 242926.527143872,
+   "a": "TXSt1DTjju4UQxeNo5s6yxz1cjx7698Rmd"
+  },
+  {
+   "at": "2026-10-31T15:18:15.000Z",
+   "tx": "da9ddaef350730eda89cbbbc42dfd573433192c70e4707999538e9f5aaa67a13",
+   "sim": "TRX",
+   "cant": 1054103.856523,
+   "v": 371044.55749609595,
+   "a": "TV1vu51cX8Fmo3iTya9d43D4Ugha1QBLbc"
+  },
+  {
+   "at": "2026-10-31T15:24:24.000Z",
+   "tx": "71356dfd20191533e15f0de7044f903fab176a0baf9cff2b1777265452ce981b",
+   "sim": "TRX",
+   "cant": 916400.878542,
+   "v": 322573.10924678395,
+   "a": "TQ27LngyGNB8emD6mt5FqjpCvZxo91EHhn"
+  },
+  {
+   "at": "2026-10-31T15:26:03.000Z",
+   "tx": "4edb89af82462780d1a7d284079bcfe77c4af47555f21a6ef5acfb8542fa065f",
+   "sim": "TRX",
+   "cant": 4465112.999441,
+   "v": 1571719.7758032319,
+   "a": "TNhpfKq83wufEKGjBhQFnT7jnxYmyBzH6F"
+  },
+  {
+   "at": "2026-10-31T15:26:48.000Z",
+   "tx": "39b7501af2ca241078a5cb483e2a2b7671978b1b6f98af469edaab101bd5624a",
+   "sim": "TRX",
+   "cant": 752527.788937,
+   "v": 264889.78170582396,
+   "a": "TV1vu51cX8Fmo3iTya9d43D4Ugha1QBLbc"
+  },
+  {
+   "at": "2026-10-31T15:34:48.000Z",
+   "tx": "aa597809825d895737941360dd430782826cd22bb7ad23dcceb7b7208c82ddf6",
+   "sim": "TRX",
+   "cant": 866408.028659,
+   "v": 304975.62608796795,
+   "a": "TV1vu51cX8Fmo3iTya9d43D4Ugha1QBLbc"
+  },
+  {
+   "at": "2026-10-31T15:38:12.000Z",
+   "tx": "de7a653091b43a90aca9d5574af83700c43b8cbe34c5a3b5691a3395eec1984f",
+   "sim": "TRX",
+   "cant": 378000.726372,
+   "v": 133056.255682944,
+   "a": "TXSt1DTjju4UQxeNo5s6yxz1cjx7698Rmd"
+  },
+  {
+   "at": "2026-10-31T15:41:12.000Z",
+   "tx": "6f6c6365e3f9e01a5bbdc66aa74e47481e78386950cfcab1d0875286ba03c85b",
+   "sim": "TRX",
+   "cant": 3306957.718267,
+   "v": 1164049.116829984,
+   "a": "TB3viNboTwfjZ5ohzHjSBxwSRr6T6duU5b"
+  },
+  {
+   "at": "2026-10-31T15:48:39.000Z",
+   "tx": "ae4c75329c9836d4316c15cc92fc52cb944bfa68eee879a98064fa1e34b19f23",
+   "sim": "TRX",
+   "cant": 759088.303718,
+   "v": 267199.08290873596,
+   "a": "TV1vu51cX8Fmo3iTya9d43D4Ugha1QBLbc"
+  },
+  {
+   "at": "2026-10-31T15:50:06.000Z",
+   "tx": "c2b07c36795799da2cf672bb91b9a54e4925c5277e1fb83a1f2f2862fe9147b5",
+   "sim": "TRX",
+   "cant": 4713333.929574,
+   "v": 1659093.5432100478,
+   "a": "TNhpfKq83wufEKGjBhQFnT7jnxYmyBzH6F"
+  },
+  {
+   "at": "2026-10-31T15:51:30.000Z",
+   "tx": "905ce5fc9e6077a6abbd56040b3b849f10c16277eee4d3c2a247a13bd910c00b",
+   "sim": "TRX",
+   "cant": 968221.750722,
+   "v": 340814.056254144,
+   "a": "TQ27LngyGNB8emD6mt5FqjpCvZxo91EHhn"
+  },
+  {
+   "at": "2026-10-31T15:54:42.000Z",
+   "tx": "a58be8d9005779c5d07698a841e0561e6ea85e80550f0eb02a92d8222474a270",
+   "sim": "TRX",
+   "cant": 155124.817878,
+   "v": 54603.935893056,
+   "a": "TNWyDsFm3PY41YZnFug6xLTXsC545Z7wh9"
+  },
+  {
+   "at": "2026-10-31T15:58:18.000Z",
+   "tx": "e881f6df3d72b5eb60e5c5873e589015781e0f5a2ec91ffdeed5600676bbdb6c",
+   "sim": "TRX",
+   "cant": 256807.771154,
+   "v": 90396.33544620799,
+   "a": "TBfiAPs6Bw5KSNZSL7k7dsdB8eQCt9qonS"
+  },
+  {
+   "at": "2026-10-31T15:59:30.000Z",
+   "tx": "da89ddf6c3ba4d67e685b9500fc3d198e1184d94451ee6521e7030cf6cbd911d",
+   "sim": "TRX",
+   "cant": 696841.126216,
+   "v": 245288.07642803196,
+   "a": "TXSt1DTjju4UQxeNo5s6yxz1cjx7698Rmd"
+  },
+  {
+   "at": "2026-10-31T16:00:33.000Z",
+   "tx": "b38a7526feeee83e56baad50fa8e12f0f67c633f84609d24ceec6831eebd6071",
+   "sim": "TRX",
+   "cant": 378194.76876,
+   "v": 133124.55860351998,
+   "a": "TV1vu51cX8Fmo3iTya9d43D4Ugha1QBLbc"
+  },
+  {
+   "at": "2026-10-31T16:09:09.000Z",
+   "tx": "194001000c3d312a8babb925e2312c06f3ebeafea28e56222dc5ca5569897922",
+   "sim": "TRX",
+   "cant": 531891.363022,
+   "v": 187225.75978374397,
+   "a": "TV1vu51cX8Fmo3iTya9d43D4Ugha1QBLbc"
+  },
+  {
+   "at": "2026-10-31T16:09:51.000Z",
+   "tx": "de10fdbc47c6eab75215d5438239b42a09f11ee31b161ff5fe7d3a2c01bfe586",
+   "sim": "TRX",
+   "cant": 4933934.256576,
+   "v": 1736744.8583147519,
+   "a": "TNhpfKq83wufEKGjBhQFnT7jnxYmyBzH6F"
+  },
+  {
+   "at": "2026-10-31T16:13:15.000Z",
+   "tx": "79f56d3732aea39e21fb0d0d95944bf64f98efe952d3376ec2f1c1c560c29610",
+   "sim": "TRX",
+   "cant": 1538621.776877,
+   "v": 541594.865460704,
+   "a": "TK65ThchFGhuQEfT5tUfPGGvD8wKDRDuif"
+  },
+  {
+   "at": "2026-10-31T16:13:51.000Z",
+   "tx": "71782056ac5f44c20835317900fd9ee5f77ceabee7e1335733f8c5f07f6572d0",
+   "sim": "TRX",
+   "cant": 718402.375207,
+   "v": 252877.63607286397,
+   "a": "TXSt1DTjju4UQxeNo5s6yxz1cjx7698Rmd"
+  },
+  {
+   "at": "2026-10-31T16:15:57.000Z",
+   "tx": "12203ae2cae49c721750b9bfdd5d22dc25b9adeafe5479b4812ade6381b8e76f",
+   "sim": "TRX",
+   "cant": 1021090.900316,
+   "v": 359423.99691123195,
+   "a": "TQ27LngyGNB8emD6mt5FqjpCvZxo91EHhn"
+  },
+  {
+   "at": "2026-10-31T16:20:09.000Z",
+   "tx": "bb8991f994bedf1479fba2bc97ccaf73aeca5385971dc8dc6c34537ba5b5929f",
+   "sim": "TRX",
+   "cant": 600986.588744,
+   "v": 211547.27923788797,
+   "a": "TXSt1DTjju4UQxeNo5s6yxz1cjx7698Rmd"
+  },
+  {
+   "at": "2026-10-31T16:29:12.000Z",
+   "tx": "21fdcf7ac2dd660b6e07ad03f7bd10d5a987839c057eca7405733f8b163e185f",
+   "sim": "TRX",
+   "cant": 5199028.032513,
+   "v": 1830057.867444576,
+   "a": "TNhpfKq83wufEKGjBhQFnT7jnxYmyBzH6F"
+  },
+  {
+   "at": "2026-10-31T16:56:57.000Z",
+   "tx": "95f407e3ffefdb7c789bcdefafb53463d71050d8d4e05034a3d847dc11b00fb0",
+   "sim": "TRX",
+   "cant": 5481190.786513,
+   "v": 1929379.1568525757,
+   "a": "TNhpfKq83wufEKGjBhQFnT7jnxYmyBzH6F"
+  },
+  {
+   "at": "2026-10-31T16:57:48.000Z",
+   "tx": "453cb5ca0ee67989874c1e26971acc79ef005aa83c8211f7c7dd475dcbd4c392",
+   "sim": "TRX",
+   "cant": 524378.080056,
+   "v": 184581.084179712,
+   "a": "TXSt1DTjju4UQxeNo5s6yxz1cjx7698Rmd"
+  },
+  {
+   "at": "2026-10-31T16:59:15.000Z",
+   "tx": "c72c9d42981faa9d89890afb9b264c9170efdaa5c64947e551be671ebccd2643",
+   "sim": "TRX",
+   "cant": 763883.613673,
+   "v": 268887.032012896,
+   "a": "TV1vu51cX8Fmo3iTya9d43D4Ugha1QBLbc"
+  },
+  {
+   "at": "2026-10-31T16:59:57.000Z",
+   "tx": "4477684af80d5548bae3cd9c943ab51e4824d9b12d55b1c70e4e78306454704d",
+   "sim": "TRX",
+   "cant": 1525753.463996,
+   "v": 537065.2193265919,
+   "a": "TMnCFtE8cwrVMpH3CZva9CUBjCcVo24ZSN"
+  },
+  {
+   "at": "2026-10-31T17:02:06.000Z",
+   "tx": "9f436a984a83e65f71db04bdf9d5a1eb94747590ee2719ce5eb6d8de12c9cd4e",
+   "sim": "TRX",
+   "cant": 1078669.204862,
+   "v": 379691.56011142395,
+   "a": "TQ27LngyGNB8emD6mt5FqjpCvZxo91EHhn"
+  },
+  {
+   "at": "2026-10-31T17:02:51.000Z",
+   "tx": "037f55df94bc255870298a2b7ef7795184bcc3f77ead906c650401e23c638a9c",
+   "sim": "TRX",
+   "cant": 760694.04748,
+   "v": 267764.30471296,
+   "a": "TU1k3QZMCjGF3cxGDzh8FWEHY2YppX3N2q"
+  },
+  {
+   "at": "2026-10-31T17:03:27.000Z",
+   "tx": "475deef54f4cb33a352acbc097b46b6c390549f70f84c667d4a12cf3690ca5b4",
+   "sim": "TRX",
+   "cant": 776065.535779,
+   "v": 273175.068594208,
+   "a": "TXSt1DTjju4UQxeNo5s6yxz1cjx7698Rmd"
+  },
+  {
+   "at": "2026-10-31T17:05:21.000Z",
+   "tx": "f60e37067a3c6bdff02f6e75673305425225fcafa4d6458bdd2e44a4edbab085",
+   "sim": "TRX",
+   "cant": 1142298.127188,
+   "v": 402088.94077017595,
+   "a": "TV1vu51cX8Fmo3iTya9d43D4Ugha1QBLbc"
+  },
+  {
+   "at": "2026-10-31T17:06:42.000Z",
+   "tx": "ddf07775dc578bb504990d3277e2ef6d8102627ed0d7babdeb11466d3288b1ac",
+   "sim": "TRX",
+   "cant": 268878.466537,
+   "v": 94645.22022102398,
+   "a": "TD23EVnun4A6qiMakzRDcBXCq7qH4DDThP"
+  },
+  {
+   "at": "2026-10-31T17:09:21.000Z",
+   "tx": "c6e92917b8985aaeeea2b7baa6dd079b94402cd5f557495d69ac399aedd351a4",
+   "sim": "TRX",
+   "cant": 20846.020836,
+   "v": 7337.799334271999,
+   "a": "TSRe7AfRjciGZaABj5t5ETH74S7uT6GEEg"
+  },
+  {
+   "at": "2026-10-31T17:16:15.000Z",
+   "tx": "8c7d183108b4952aa5fcdf9bcd72042ec092bfc7b5fcd58a78c3edd6e660e19e",
+   "sim": "TRX",
+   "cant": 632172.902845,
+   "v": 222524.86180144,
+   "a": "TQ27LngyGNB8emD6mt5FqjpCvZxo91EHhn"
+  },
+  {
+   "at": "2026-10-31T17:16:54.000Z",
+   "tx": "95e90397197e6ade7ed2942c0d43ea7ade6deecb33e8b0c33aac6bd41b975102",
+   "sim": "TRX",
+   "cant": 747796.057097,
+   "v": 263224.212098144,
+   "a": "TXSt1DTjju4UQxeNo5s6yxz1cjx7698Rmd"
+  },
+  {
+   "at": "2026-10-31T17:17:30.000Z",
+   "tx": "7c9d7347fbbfcd457ecd4bdfcd47347786bd424ca22b09a2feb6fe0a5fbf1059",
+   "sim": "TRX",
+   "cant": 5788793.627201,
+   "v": 2037655.356774752,
+   "a": "TNhpfKq83wufEKGjBhQFnT7jnxYmyBzH6F"
+  },
+  {
+   "at": "2026-10-31T17:18:09.000Z",
+   "tx": "259a85b0a85988912cd068135a8aff9af521bd42a2ad09196e4cc7b1bc975bcf",
+   "sim": "TRX",
+   "cant": 901324.897806,
+   "v": 317266.36402771197,
+   "a": "TV1vu51cX8Fmo3iTya9d43D4Ugha1QBLbc"
+  },
+  {
+   "at": "2026-10-31T17:23:12.000Z",
+   "tx": "0830b6db7214c461fc2f3fb1b720dac6d84cdf77768047f9536c7ef8555bfb39",
+   "sim": "TRX",
+   "cant": 409191.703965,
+   "v": 144035.47979568,
+   "a": "TXSt1DTjju4UQxeNo5s6yxz1cjx7698Rmd"
+  },
+  {
+   "at": "2026-10-31T17:25:33.000Z",
+   "tx": "a620b472ce6d288dd73123db920c21384de15d6eb4d86081867d0979e9e4d3ec",
+   "sim": "TRX",
+   "cant": 394226.229118,
+   "v": 138767.632649536,
+   "a": "TV1vu51cX8Fmo3iTya9d43D4Ugha1QBLbc"
+  },
+  {
+   "at": "2026-10-31T17:27:21.000Z",
+   "tx": "7fb99981e7040744de4342f2e612e1c0bf711c5582f53351007d46bd34ebc32b",
+   "sim": "TRX",
+   "cant": 524650.710704,
+   "v": 184677.050167808,
+   "a": "TXSt1DTjju4UQxeNo5s6yxz1cjx7698Rmd"
+  },
+  {
+   "at": "2026-10-31T17:28:24.000Z",
+   "tx": "e8cac22ca9e6f89a62e8bc2a969138b6f240f9caa0bd4c8c9ec0b074364ff6a1",
+   "sim": "TRX",
+   "cant": 22442.335483,
+   "v": 7899.702090016,
+   "a": "TSRe7AfRjciGZaABj5t5ETH74S7uT6GEEg"
+  },
+  {
+   "at": "2026-10-31T17:29:45.000Z",
+   "tx": "fae1463a71c920ee07f4ca33ab2b08dc45bda7eea0ee495b26f2d23285839bcc",
+   "sim": "TRX",
+   "cant": 1137463.409636,
+   "v": 400387.12019187195,
+   "a": "TQ27LngyGNB8emD6mt5FqjpCvZxo91EHhn"
+  },
+  {
+   "at": "2026-10-31T17:33:12.000Z",
+   "tx": "37fa441641ee499ffb9a47d6d03d1cf63aa93a75189b3437f84cac41612f965d",
+   "sim": "TRX",
+   "cant": 765758.013774,
+   "v": 269546.82084844797,
+   "a": "TV1vu51cX8Fmo3iTya9d43D4Ugha1QBLbc"
+  },
+  {
+   "at": "2026-10-31T17:34:42.000Z",
+   "tx": "94a2d1f0ad8f6d1980dddf14811f3c8514c908fb662726ac4a886ef12fa96b22",
+   "sim": "TRX",
+   "cant": 6093782.003395,
+   "v": 2145011.2651950396,
+   "a": "TNhpfKq83wufEKGjBhQFnT7jnxYmyBzH6F"
+  },
+  {
+   "at": "2026-10-31T17:40:51.000Z",
+   "tx": "89e25c6749ff041a143007a50d5369e5d560ff1c30a06a85a33234c56e732eb8",
+   "sim": "TRX",
+   "cant": 929508.817409,
+   "v": 327187.103727968,
+   "a": "TV1vu51cX8Fmo3iTya9d43D4Ugha1QBLbc"
+  },
+  {
+   "at": "2026-10-31T17:44:33.000Z",
+   "tx": "c70417d89ba902971df39dd00f3b6d61626c3d2cb63653f1bf75c017a9526500",
+   "sim": "TRX",
+   "cant": 788005.020896,
+   "v": 277377.767355392,
+   "a": "TQ27LngyGNB8emD6mt5FqjpCvZxo91EHhn"
+  },
+  {
+   "at": "2026-10-31T17:46:48.000Z",
+   "tx": "3767aa78c6a587c2efba76c2069628b426f06ebe920241492411aae5bc095b3e",
+   "sim": "TRX",
+   "cant": 599462.42046,
+   "v": 211010.77200192,
+   "a": "TXSt1DTjju4UQxeNo5s6yxz1cjx7698Rmd"
+  },
+  {
+   "at": "2026-10-31T17:47:33.000Z",
+   "tx": "c9f581386d485341fdc4865caa464d70c3b2b4d419f77b959c7e016800a5d5b7",
+   "sim": "TRX",
+   "cant": 73221.102854,
+   "v": 25773.828204608,
+   "a": "TNQ168QpHom3DcmFKTPHPzhdxyrxja8UqF"
+  },
+  {
+   "at": "2026-10-31T17:48:33.000Z",
+   "tx": "7bac3ab2603ae7421f9f63e5e2e379293b6d083871169c099cdcb9e3aed5b7a6",
+   "sim": "TRX",
+   "cant": 802566.733208,
+   "v": 282503.490089216,
+   "a": "TCtoerwxrRBtodpfdXFADerzDw8jR6qbbu"
+  },
+  {
+   "at": "2026-10-31T17:51:42.000Z",
+   "tx": "9a22eaf7e65558dbb1d9ef170f88513d460c8a14b744373ef71caa02cf703f2d",
+   "sim": "TRX",
+   "cant": 523748.451369,
+   "v": 184359.454881888,
+   "a": "TUPrEdkWXyPKRJTTjB4LTXLp6uqMx4DmBG"
+  },
+  {
+   "at": "2026-10-31T17:52:39.000Z",
+   "tx": "d105f3c587c8250d50f9f19e4e339b4a49017bf6bba5a4b466ceb99b1115aa10",
+   "sim": "TRX",
+   "cant": 23023.44904,
+   "v": 8104.254062079999,
+   "a": "TSRe7AfRjciGZaABj5t5ETH74S7uT6GEEg"
+  },
+  {
+   "at": "2026-10-31T17:56:06.000Z",
+   "tx": "c4781260e878007ef47c6b3a94e2d17d1e6a50ca51eaa705403b534aafb5e1cb",
+   "sim": "TRX",
+   "cant": 3814604.999295,
+   "v": 1342740.95975184,
+   "a": "TB3viNboTwfjZ5ohzHjSBxwSRr6T6duU5b"
+  },
+  {
+   "at": "2026-10-31T17:57:30.000Z",
+   "tx": "b59aaf26b4a20119ea0e03fa9ed96870d16f7b61e4fce0ae02ea1a546421c4c9",
+   "sim": "TRX",
+   "cant": 304431.261416,
+   "v": 107159.804018432,
+   "a": "TV1vu51cX8Fmo3iTya9d43D4Ugha1QBLbc"
+  },
+  {
+   "at": "2026-10-31T17:58:12.000Z",
+   "tx": "fc6a7ebd362a665a10a65bea7cbc3e23ad3dcb1d0818083c4a0370ebb5c84258",
+   "sim": "TRX",
+   "cant": 6374251.39219,
+   "v": 2243736.49005088,
+   "a": "TNhpfKq83wufEKGjBhQFnT7jnxYmyBzH6F"
+  },
+  {
+   "at": "2026-10-31T17:58:48.000Z",
+   "tx": "539ac75e1a7df68ec7d2afeea48fbd83ce1a56d83fa4481b66897293ab94dff3",
+   "sim": "TRX",
+   "cant": 1201888.924999,
+   "v": 423064.901599648,
+   "a": "TQ27LngyGNB8emD6mt5FqjpCvZxo91EHhn"
+  },
+  {
+   "at": "2026-10-31T18:04:39.000Z",
+   "tx": "ea4835d2fe7f99cf141a60d11224ac43b92168fb2c1ca7f269f5442c3d6b750b",
+   "sim": "TRX",
+   "cant": 386483.858548,
+   "v": 136042.318208896,
+   "a": "TXSt1DTjju4UQxeNo5s6yxz1cjx7698Rmd"
+  },
+  {
+   "at": "2026-10-31T18:08:45.000Z",
+   "tx": "42edb2638ff6fde61720a7744a154a09ef0aa4305062ee79e808be3da9542bb3",
+   "sim": "TRX",
+   "cant": 1081673.660232,
+   "v": 380749.12840166397,
+   "a": "TV1vu51cX8Fmo3iTya9d43D4Ugha1QBLbc"
+  },
+  {
+   "at": "2026-10-31T18:13:51.000Z",
+   "tx": "d877eb49c9b92b9de82be7788e039f49886735c5c023d03932a4e56624b5832d",
+   "sim": "TRX",
+   "cant": 1050993.82971,
+   "v": 369949.82805792,
+   "a": "TK5DbNJNCq1tQD4Q3kAqaRXcgYGyh2xUST"
+  },
+  {
+   "at": "2026-10-31T18:14:33.000Z",
+   "tx": "e0a41e62a411b29e05162ade2d54b735d1ab7ddb856fa4c6f2d37a9e3e6f70a3",
+   "sim": "TRX",
+   "cant": 830345.414109,
+   "v": 292281.58576636796,
+   "a": "TQ27LngyGNB8emD6mt5FqjpCvZxo91EHhn"
+  },
+  {
+   "at": "2026-10-31T18:16:51.000Z",
+   "tx": "bd942e30fd0ee9672b408be1b80d703a1005574e0c138fae46ec22232b931b25",
+   "sim": "TRX",
+   "cant": 1159034.65982,
+   "v": 407980.20025664,
+   "a": "TV1vu51cX8Fmo3iTya9d43D4Ugha1QBLbc"
+  },
+  {
+   "at": "2026-10-31T18:21:39.000Z",
+   "tx": "cc7ea6c558eb7de027ca7d7916430fb20e0dd97d765fe2e7626a888e122cbc98",
+   "sim": "TRX",
+   "cant": 525732.821905,
+   "v": 185057.95331056,
+   "a": "TUEC6tDMnGW1ub1TShJo5qeVjZ8uSm5EC3"
+  },
+  {
+   "at": "2026-10-31T18:22:30.000Z",
+   "tx": "fc56a85431f0a9329e2550435b0f391e0dbe635a01016d09dd958be6f4265a6c",
+   "sim": "TRX",
+   "cant": 24113.367907,
+   "v": 8487.905503263999,
+   "a": "TSRe7AfRjciGZaABj5t5ETH74S7uT6GEEg"
+  },
+  {
+   "at": "2026-10-31T18:23:57.000Z",
+   "tx": "0b12ed338b43bfd9407ea69ffb65e9a097ffc63839e4a7a2bf9649eaaaefaec3",
+   "sim": "TRX",
+   "cant": 524744.60165,
+   "v": 184710.09978079997,
+   "a": "TXSt1DTjju4UQxeNo5s6yxz1cjx7698Rmd"
+  },
+  {
+   "at": "2026-10-31T18:24:39.000Z",
+   "tx": "92ec5ca0b1ed3c045495c0c527a188429b689e8732e16e0371c6ea1db5eec071",
+   "sim": "TRX",
+   "cant": 6693303.201799,
+   "v": 2356042.7270332477,
+   "a": "TNhpfKq83wufEKGjBhQFnT7jnxYmyBzH6F"
+  },
+  {
+   "at": "2026-10-31T18:26:39.000Z",
+   "tx": "674f22091841ab7eb380362e7de60070dfc8ad47836310b14145268933612285",
+   "sim": "TRX",
+   "cant": 950297.276024,
+   "v": 334504.64116044797,
+   "a": "TV1vu51cX8Fmo3iTya9d43D4Ugha1QBLbc"
+  },
+  {
+   "at": "2026-10-31T18:27:21.000Z",
+   "tx": "680a12f9fe4aa328be5ce9bb14b7125cfb94fb6c9e9cd865ba289fa24af0b286",
+   "sim": "TRX",
+   "cant": 1613902.280732,
+   "v": 568093.6028176639,
+   "a": "TBye5h8DzUaAVE6v5qmmFJRHvJjmK2rZeb"
+  },
+  {
+   "at": "2026-10-31T18:28:00.000Z",
+   "tx": "4167117ad4ae5a5a160c3516fd3e05cd748b077d7bd5193d4329a8d0faca5f33",
+   "sim": "TRX",
+   "cant": 281719.96903,
+   "v": 99165.42909855998,
+   "a": "TCZRWszLiAa8YPYAmkNWpzyFhHknvrvvt7"
+  },
+  {
+   "at": "2026-10-31T18:29:03.000Z",
+   "tx": "f7e71e2004cff505c726d3f92dedd838b29faa2bb545dbd053d1f2f463f33989",
+   "sim": "TRX",
+   "cant": 488211.093077,
+   "v": 171850.30476310398,
+   "a": "TXSt1DTjju4UQxeNo5s6yxz1cjx7698Rmd"
+  },
+  {
+   "at": "2026-10-31T18:34:33.000Z",
+   "tx": "ee518532e1e825894a2c453643029ee4efde8d4231b8f4e847e9bb4c2740475a",
+   "sim": "TRX",
+   "cant": 76300.240493,
+   "v": 26857.684653536002,
+   "a": "TNQ168QpHom3DcmFKTPHPzhdxyrxja8UqF"
+  },
+  {
+   "at": "2026-10-31T18:35:36.000Z",
+   "tx": "8b8549429e001dbe12a211e4c38efa6e5df186c07c591eea4892bdff3b38714b",
+   "sim": "TRX",
+   "cant": 20978.265619,
+   "v": 7384.349497888,
+   "a": "TA3axSgEfJMKF8CXjhUjtJMQ6QdRtsvPw9"
+  },
+  {
+   "at": "2026-10-31T18:36:21.000Z",
+   "tx": "14794f5350d2dd0a572ed39d3cb59bcdb664dc9eb8b0e1454c90209b54fd5ba8",
+   "sim": "TRX",
+   "cant": 1268444.506616,
+   "v": 446492.46632883203,
+   "a": "TQ27LngyGNB8emD6mt5FqjpCvZxo91EHhn"
+  },
+  {
+   "at": "2026-10-31T18:37:24.000Z",
+   "tx": "55a1c420622923e3a03abc33782c5174913f579605061f90dd757ebdb8c99928",
+   "sim": "TRX",
+   "cant": 424434.795986,
+   "v": 149401.04818707198,
+   "a": "TV1vu51cX8Fmo3iTya9d43D4Ugha1QBLbc"
+  },
+  {
+   "at": "2026-10-31T18:40:21.000Z",
+   "tx": "f311b243f19ea6a8bdea76e1a6cc75ef3e644fcb7cf071f1b7fe28ee182a11a9",
+   "sim": "TRX",
+   "cant": 6517057.580691,
+   "v": 2294004.268403232,
+   "a": "TNhpfKq83wufEKGjBhQFnT7jnxYmyBzH6F"
+  },
+  {
+   "at": "2026-10-31T18:45:57.000Z",
+   "tx": "7a5bfb3a67cfbf7520cc3a2d7f780956db5ea419d5dd92da261d5f661c909f41",
+   "sim": "TRX",
+   "cant": 742529.371999,
+   "v": 261370.33894364798,
+   "a": "TUEC6tDMnGW1ub1TShJo5qeVjZ8uSm5EC3"
+  },
+  {
+   "at": "2026-10-31T18:48:09.000Z",
+   "tx": "2520882ce7daca122756f7559b12832ceb402bd6389c957929cca675cb3cd718",
+   "sim": "TRX",
+   "cant": 1152687.732911,
+   "v": 405746.081984672,
+   "a": "TV1vu51cX8Fmo3iTya9d43D4Ugha1QBLbc"
+  },
+  {
+   "at": "2026-10-31T18:49:18.000Z",
+   "tx": "4235a2b278e130ede13d8fc3f16b2ac43c0fb12cb8d4efda1011209cc20131b5",
+   "sim": "TRX",
+   "cant": 442420.516917,
+   "v": 155732.021954784,
+   "a": "TXSt1DTjju4UQxeNo5s6yxz1cjx7698Rmd"
+  },
+  {
+   "at": "2026-10-31T18:49:45.000Z",
+   "tx": "4a1d2b3ac7906f17203e8f09f15354ae2ba0929a7d5af56427848cfeec0282d9",
+   "sim": "TRX",
+   "cant": 77720.667356,
+   "v": 27357.674909312,
+   "a": "TSRe7AfRjciGZaABj5t5ETH74S7uT6GEEg"
+  },
+  {
+   "at": "2026-10-31T18:50:21.000Z",
+   "tx": "7d3ec373facdc117c2a176c22dda14e3b24dc78f9586be1324d09143782cb97d",
+   "sim": "TRX",
+   "cant": 453199.99777,
+   "v": 159526.39921504,
+   "a": "TVzJSHmNtfCrLBTH9uq4QfYJJZFaCpGX3i"
+  },
+  {
+   "at": "2026-10-31T18:53:33.000Z",
+   "tx": "5954732fc302fc13a56f9de3ede1d436b608048c9e44a83e58792b8b0cd1628f",
+   "sim": "TRX",
+   "cant": 776696.969763,
+   "v": 273397.333356576,
+   "a": "TXSt1DTjju4UQxeNo5s6yxz1cjx7698Rmd"
+  },
+  {
+   "at": "2026-10-31T18:55:54.000Z",
+   "tx": "39bd4ae242c80985ec69a1b2c5ba2e0ae726354146a7f8f28fddac104319870b",
+   "sim": "TRX",
+   "cant": 971430.53349,
+   "v": 341943.54778847995,
+   "a": "TV1vu51cX8Fmo3iTya9d43D4Ugha1QBLbc"
+  },
+  {
+   "at": "2026-10-31T18:56:27.000Z",
+   "tx": "20c9344b52a66f28323e4cca698215199ae7c844fbd90f43c25e11d92a23dc4c",
+   "sim": "TRX",
+   "cant": 661615.664689,
+   "v": 232888.71397052798,
+   "a": "TXSt1DTjju4UQxeNo5s6yxz1cjx7698Rmd"
+  },
+  {
+   "at": "2026-10-31T19:04:33.000Z",
+   "tx": "21842228c721e0a04d34ab7ed62a0eee8374255bd6a787074fafa56162a586eb",
+   "sim": "TRX",
+   "cant": 7363237.017993,
+   "v": 2591859.430333536,
+   "a": "TNhpfKq83wufEKGjBhQFnT7jnxYmyBzH6F"
+  },
+  {
+   "at": "2026-10-31T19:05:21.000Z",
+   "tx": "bea835de21909c2b8ed657050a91423baf3aabdf2cc1338638cc5f8f0c715402",
+   "sim": "TRX",
+   "cant": 1230297.245704,
+   "v": 433064.6304878079,
+   "a": "TV1vu51cX8Fmo3iTya9d43D4Ugha1QBLbc"
+  },
+  {
+   "at": "2026-10-31T19:08:15.000Z",
+   "tx": "e435764053324cc69104c7a3a725cf3a324370266cdd5ecc3932c5b51e83e11c",
+   "sim": "TRX",
+   "cant": 610107.394174,
+   "v": 214757.802749248,
+   "a": "TXSt1DTjju4UQxeNo5s6yxz1cjx7698Rmd"
+  },
+  {
+   "at": "2026-10-31T19:10:27.000Z",
+   "tx": "6e1a811b6bfdc14d2bf6f87b4972a945a182a42db07473f0160905711d43e65a",
+   "sim": "TRX",
+   "cant": 269372.87358,
+   "v": 94819.25150016,
+   "a": "TSmG1Bjz4zvJBacQZLZvLQ6WzXdSUR5PsT"
+  },
+  {
+   "at": "2026-10-31T19:11:00.000Z",
+   "tx": "9497cad868d1ea5e567268b59f5c6e90382b7543241a30333e341f0617869509",
+   "sim": "TRX",
+   "cant": 871234.644813,
+   "v": 306674.59497417597,
+   "a": "TQ27LngyGNB8emD6mt5FqjpCvZxo91EHhn"
+  },
+  {
+   "at": "2026-10-31T19:14:39.000Z",
+   "tx": "995f8c714a92db5d470a530f068fd2baf5e2abe6fbc91d99872eb00040783425",
+   "sim": "TRX",
+   "cant": 724986.50498,
+   "v": 255195.24975295996,
+   "a": "TXSt1DTjju4UQxeNo5s6yxz1cjx7698Rmd"
+  },
+  {
+   "at": "2026-10-31T19:15:09.000Z",
+   "tx": "999ce7ac1f52cf95e8b53483d18304b0cf396cb08e16ff3428e14c18bbb9a2f3",
+   "sim": "TRX",
+   "cant": 440380.487804,
+   "v": 155013.93170700799,
+   "a": "TV1vu51cX8Fmo3iTya9d43D4Ugha1QBLbc"
+  },
+  {
+   "at": "2026-10-31T19:18:45.000Z",
+   "tx": "69d3d3a0c8da0d278ea5ea2b78e31248984eeaba63293a5f9c1d176d69d86bfe",
+   "sim": "TRX",
+   "cant": 154398.276392,
+   "v": 54348.193289983996,
+   "a": "TSRe7AfRjciGZaABj5t5ETH74S7uT6GEEg"
+  },
+  {
+   "at": "2026-10-31T19:19:54.000Z",
+   "tx": "c43b81c5db7b8559e902127fa10d3108fa96ededd330a9bd3a4d84e9c11ace54",
+   "sim": "TRX",
+   "cant": 293379.671443,
+   "v": 103269.644347936,
+   "a": "TCZRWszLiAa8YPYAmkNWpzyFhHknvrvvt7"
+  },
+  {
+   "at": "2026-10-31T19:20:27.000Z",
+   "tx": "ec514f6afea97c1f4f6d691655ccfa7979ccb3e86a8364e256c01f3315a7b521",
+   "sim": "TRX",
+   "cant": 631405.873725,
+   "v": 222254.86755119998,
+   "a": "TXSt1DTjju4UQxeNo5s6yxz1cjx7698Rmd"
+  },
+  {
+   "at": "2026-10-31T19:22:57.000Z",
+   "tx": "b814b974664d0a93e3aaf87bab91acbedd8eb4e9c36074a4e587d19ac4f6c566",
+   "sim": "TRX",
+   "cant": 1020394.736842,
+   "v": 359178.947368384,
+   "a": "TV1vu51cX8Fmo3iTya9d43D4Ugha1QBLbc"
+  },
+  {
+   "at": "2026-10-31T19:26:15.000Z",
+   "tx": "a5dc885b71a6685eb9a852702619abe61b413a4b7b8777a28108bf730902189e",
+   "sim": "TRX",
+   "cant": 1327072.840103,
+   "v": 467129.63971625594,
+   "a": "TQ27LngyGNB8emD6mt5FqjpCvZxo91EHhn"
+  },
+  {
+   "at": "2026-10-31T19:30:42.000Z",
+   "tx": "22fb6308dffe3e5a49d68ce2e54ece084b128ce69a8f3938d7f30af8d2735180",
+   "sim": "TRX",
+   "cant": 7715717.750702,
+   "v": 2715932.648247104,
+   "a": "TNhpfKq83wufEKGjBhQFnT7jnxYmyBzH6F"
+  },
+  {
+   "at": "2026-10-31T19:31:12.000Z",
+   "tx": "486ec7768592e5d9a5c2431efc1b5dd7ad4301066c5181738d2b13b73e11cf1c",
+   "sim": "TRX",
+   "cant": 1159032.716927,
+   "v": 407979.516358304,
+   "a": "TV1vu51cX8Fmo3iTya9d43D4Ugha1QBLbc"
+  },
+  {
+   "at": "2026-10-31T19:38:00.000Z",
+   "tx": "fcbc3af5f675077703a4180fcdc4b3ed04a34d5a32a9004027ede6db4c181b02",
+   "sim": "TRX",
+   "cant": 384574.081585,
+   "v": 135370.07671792,
+   "a": "TA4RtA5TRM52jr64HopuZ5DednLeEczhKK"
+  },
+  {
+   "at": "2026-10-31T19:39:39.000Z",
+   "tx": "323f8994892a71d18087e02ac26d2a437aa0bd8bcfb75e07f1d04952e690c0da",
+   "sim": "TRX",
+   "cant": 1161693.139864,
+   "v": 408915.985232128,
+   "a": "TV1vu51cX8Fmo3iTya9d43D4Ugha1QBLbc"
+  },
+  {
+   "at": "2026-10-31T19:41:15.000Z",
+   "tx": "77bff417ad6f82c03aa547a7794dca2ea435375389913a21feeb678058895a77",
+   "sim": "TRX",
+   "cant": 369408.643647,
+   "v": 130031.842563744,
+   "a": "TUTG6q5SNdP9t9SQe47swt8tgRQ6Nhwh18"
+  },
+  {
+   "at": "2026-10-31T19:45:12.000Z",
+   "tx": "d48ff7b13a467a80050e0b0d3824fc2c98267fc75910afc79059cfa85fd9df07",
+   "sim": "TRX",
+   "cant": 1042123.748395,
+   "v": 366827.55943504,
+   "a": "TV1vu51cX8Fmo3iTya9d43D4Ugha1QBLbc"
+  },
+  {
+   "at": "2026-10-31T19:49:42.000Z",
+   "tx": "8db5f140f9db7de45e3ab363be98fb31dfe0f3cedc0fbd0b1fa702dc9d8f2346",
+   "sim": "TRX",
+   "cant": 281683.386878,
+   "v": 99152.55218105599,
+   "a": "TBW7ZquWYziFCRs9VNDLJotGNrc1pPigDm"
+  },
+  {
+   "at": "2026-10-31T19:52:30.000Z",
+   "tx": "721ea5b0f05330a1dbafc3448983b315193550b39336d0817f397dd889fa8b1f",
+   "sim": "TRX",
+   "cant": 339254.123605,
+   "v": 119417.45150895999,
+   "a": "TV1vu51cX8Fmo3iTya9d43D4Ugha1QBLbc"
+  },
+  {
+   "at": "2026-10-31T19:55:06.000Z",
+   "tx": "b2ff54c03e0ca1e212462545240b335836f32efffa2521b9e9bfda7b8bbc0da4",
+   "sim": "TRX",
+   "cant": 2587719.676093,
+   "v": 910877.325984736,
+   "a": "TRkAp7BVoksDWGZUKHW5SQr7mKoQ9beH1n"
+  },
+  {
+   "at": "2026-10-31T19:57:39.000Z",
+   "tx": "10ad983630dcc7df115c3c16cd2d243cf71b4ce41823d25e9e9e7e7d987f641b",
+   "sim": "TRX",
+   "cant": 802624.180464,
+   "v": 282523.711523328,
+   "a": "TA4RtA5TRM52jr64HopuZ5DednLeEczhKK"
+  },
+  {
+   "at": "2026-10-31T20:01:27.000Z",
+   "tx": "8fe226c564eed7a1c1cd2ad8b3566dfe1512096b355d5d0f30794331b79ae77f",
+   "sim": "TRX",
+   "cant": 82687.025074,
+   "v": 29105.832826048,
+   "a": "TNQ168QpHom3DcmFKTPHPzhdxyrxja8UqF"
+  },
+  {
+   "at": "2026-10-31T20:08:24.000Z",
+   "tx": "d2152c4bf551211d6fb4dccf0ca99049f86fd7206d019725c6460292bbbf45a2",
+   "sim": "TRX",
+   "cant": 910301.817546,
+   "v": 320426.239776192,
+   "a": "TQ27LngyGNB8emD6mt5FqjpCvZxo91EHhn"
+  },
+  {
+   "at": "2026-10-31T20:08:57.000Z",
+   "tx": "75793eee8c00c1a1bd47396d328f58c96cd3c5ed7e1924d0ed78c624bdb17ad3",
+   "sim": "TRX",
+   "cant": 419052.2019,
+   "v": 147506.3750688,
+   "a": "TA4RtA5TRM52jr64HopuZ5DednLeEczhKK"
+  },
+  {
+   "at": "2026-10-31T20:14:30.000Z",
+   "tx": "ebd425402c2cfde97eff2739c8ba0b165213e10296d991cf95735b65710a4d51",
+   "sim": "TRX",
+   "cant": 304566.630689,
+   "v": 107207.454002528,
+   "a": "TS3antQGW4PWPBixLhxPQb1Qa6ewXmsJ8x"
+  },
+  {
+   "at": "2026-10-31T20:16:03.000Z",
+   "tx": "6550f73d0b403b9fb5c1fc2bdcf6b328b74869d623580d5af18ef0487ed6c2ad",
+   "sim": "TRX",
+   "cant": 1679311.091618,
+   "v": 591117.504249536,
+   "a": "TQCGc3KsJgq5kB5vduRXVEkxwvjBPQnUUi"
+  },
+  {
+   "at": "2026-10-31T20:16:36.000Z",
+   "tx": "02c58a650974132d788c4c6f41e5e1233aea89d110e4ba69b265f96a6df5c69c",
+   "sim": "TRX",
+   "cant": 427217.950207,
+   "v": 150380.71847286398,
+   "a": "TA4RtA5TRM52jr64HopuZ5DednLeEczhKK"
+  },
+  {
+   "at": "2026-10-31T20:17:36.000Z",
+   "tx": "96f13af07c5a579e76ae9cf3f05721622ff4680d3a2177009435162e60a04525",
+   "sim": "TRX",
+   "cant": 1240872.209907,
+   "v": 436787.01788726397,
+   "a": "TV1vu51cX8Fmo3iTya9d43D4Ugha1QBLbc"
+  },
+  {
+   "at": "2026-10-31T20:18:03.000Z",
+   "tx": "665b55546aa7f8dd59eae728982c2be3705c7ae77fb771e34e1d9b0c8501a50c",
+   "sim": "TRX",
+   "cant": 1395637.810548,
+   "v": 491264.509312896,
+   "a": "TQ27LngyGNB8emD6mt5FqjpCvZxo91EHhn"
+  },
+  {
+   "at": "2026-10-31T20:22:18.000Z",
+   "tx": "dd2d273b3ada93abd24f77f8484073797503da777f94221c10d72ca6b090d073",
+   "sim": "TRX",
+   "cant": 193691.596811,
+   "v": 68179.44207747199,
+   "a": "TSRe7AfRjciGZaABj5t5ETH74S7uT6GEEg"
+  },
+  {
+   "at": "2026-10-31T20:23:51.000Z",
+   "tx": "8678528784789e210bca0ad3980e4b614db501f28f902d0c1c142c77018a0732",
+   "sim": "TRX",
+   "cant": 8356036.232844,
+   "v": 2941324.7539610877,
+   "a": "TNhpfKq83wufEKGjBhQFnT7jnxYmyBzH6F"
+  },
+  {
+   "at": "2026-10-31T20:24:54.000Z",
+   "tx": "3f7b6b7a433e92a2c79a65149add1e347aab9c2c8de7585b87adc51c185e2fcd",
+   "sim": "TRX",
+   "cant": 1076961.595958,
+   "v": 379090.481777216,
+   "a": "TV1vu51cX8Fmo3iTya9d43D4Ugha1QBLbc"
+  },
+  {
+   "at": "2026-10-31T20:25:27.000Z",
+   "tx": "6387e9f8e464ee7397fcfbe967c5393d1ab7c888364e34652f6332cc0c60d408",
+   "sim": "TRX",
+   "cant": 430688.624045,
+   "v": 151602.39566384,
+   "a": "TA4RtA5TRM52jr64HopuZ5DednLeEczhKK"
+  },
+  {
+   "at": "2026-10-31T20:26:00.000Z",
+   "tx": "a57c50259e667b0dd2b3b5151c953dd8acc9ea2f031581f32d183d25cbbc9d85",
+   "sim": "TRX",
+   "cant": 3955626.25836,
+   "v": 1392380.44294272,
+   "a": "TTvwUJ2k56NVjauF2NteBeN5ytRAxvFb2s"
+  },
+  {
+   "at": "2026-10-31T20:30:27.000Z",
+   "tx": "559edb86b37bae142f27a7dc3c05d4b7b2f070933a6de92d9b8352b31c375604",
+   "sim": "TRX",
+   "cant": 761734.540025,
+   "v": 268130.5580888,
+   "a": "TXSt1DTjju4UQxeNo5s6yxz1cjx7698Rmd"
+  },
+  {
+   "at": "2026-10-31T20:31:39.000Z",
+   "tx": "e6130dd93f86f149481b96b2c63cff6dc9901d9ff38ae977be7a4ada6ef77b6e",
+   "sim": "TRX",
+   "cant": 420005.013802,
+   "v": 147841.76485830397,
+   "a": "TA4RtA5TRM52jr64HopuZ5DednLeEczhKK"
+  },
+  {
+   "at": "2026-10-31T20:32:39.000Z",
+   "tx": "d26b996877be7c0303c183b91c42efc9d65c4897c014bf1b43394b93ccaf53ee",
+   "sim": "TRX",
+   "cant": 177306.001828,
+   "v": 62411.712643456,
+   "a": "TYCP4dU6eu5HpQ6B7AAh6ryCBquH58YErt"
+  },
+  {
+   "at": "2026-10-31T20:33:06.000Z",
+   "tx": "9ba5effffec956a77c2aa5426a8f7ccbfbb4d8d67144b7ca87fb9abd0619b450",
+   "sim": "TRX",
+   "cant": 1614985.395564,
+   "v": 568474.859238528,
+   "a": "TDpPpNAwR3Zsbf4HzBufcxsx1CKbwWzi44"
+  },
+  {
+   "at": "2026-10-31T20:34:09.000Z",
+   "tx": "5cf360af409e3626c1338ba39d7aa862f9aebb30db56369425d2f35c75fa8e2d",
+   "sim": "TRX",
+   "cant": 1162083.605486,
+   "v": 409053.42913107196,
+   "a": "TV1vu51cX8Fmo3iTya9d43D4Ugha1QBLbc"
+  },
+  {
+   "at": "2026-10-31T20:43:45.000Z",
+   "tx": "d734209308d85d16c603588aecae1e1dba59463674b64edae8b02dcd936869c0",
+   "sim": "TRX",
+   "cant": 464598.048646,
+   "v": 163538.51312339198,
+   "a": "TV1vu51cX8Fmo3iTya9d43D4Ugha1QBLbc"
+  },
+  {
+   "at": "2026-10-31T20:44:15.000Z",
+   "tx": "43699bd73ed7e381813ccbc3cb04728147106cab6b21698b3eda2e9fadd1f854",
+   "sim": "TRX",
+   "cant": 201678.771815,
+   "v": 70990.92767887999,
+   "a": "TSRe7AfRjciGZaABj5t5ETH74S7uT6GEEg"
+  },
+  {
+   "at": "2026-10-31T20:45:54.000Z",
+   "tx": "639c97b1b3c63bba3df00b9e2ada7c98ba2821c600dafd308fe343d9c85eebc4",
+   "sim": "TRX",
+   "cant": 471796.528391,
+   "v": 166072.377993632,
+   "a": "TA4RtA5TRM52jr64HopuZ5DednLeEczhKK"
+  },
+  {
+   "at": "2026-10-31T20:47:09.000Z",
+   "tx": "1cfd7b98762a84e52eb4b3c32a09651287924ef6a4aa51786267c27b8f6d11c3",
+   "sim": "TRX",
+   "cant": 578358.818912,
+   "v": 203582.304257024,
+   "a": "TXSt1DTjju4UQxeNo5s6yxz1cjx7698Rmd"
+  },
+  {
+   "at": "2026-10-31T20:52:09.000Z",
+   "tx": "e3cce8c069c128954ab9fedd1fd44e01f5ecc27c30cb5f325fb39c746c19b091",
+   "sim": "TRX",
+   "cant": 335528.600908,
+   "v": 118106.067519616,
+   "a": "TA4RtA5TRM52jr64HopuZ5DednLeEczhKK"
+  },
+  {
+   "at": "2026-10-31T21:05:09.000Z",
+   "tx": "b9b853411b5a515a734a7d246dc1975436d1daae2bdf15e9017cb251465b50f5",
+   "sim": "TRX",
+   "cant": 337932.191447,
+   "v": 118952.131389344,
+   "a": "TA4RtA5TRM52jr64HopuZ5DednLeEczhKK"
+  },
+  {
+   "at": "2026-10-31T21:06:15.000Z",
+   "tx": "3c5e28b88b3a65926534319f9bf031f2ff5e744ce83c12155546f041a1fad6bd",
+   "sim": "TRX",
+   "cant": 210030.553589,
+   "v": 73930.754863328,
+   "a": "TSRe7AfRjciGZaABj5t5ETH74S7uT6GEEg"
+  },
+  {
+   "at": "2026-10-31T21:06:57.000Z",
+   "tx": "1e296d1d10344cb2b5e7255111b4b3aa03b88eba622ffab8b2ff82f90e93e7d7",
+   "sim": "TRX",
+   "cant": 316846.325923,
+   "v": 111529.90672489599,
+   "a": "THLTrmPn17Y3RkffceprXADUPcWcZTvQ4i"
+  },
+  {
+   "at": "2026-10-31T21:09:57.000Z",
+   "tx": "b4c73e9a2dd4a4b30122d762fb41e49f490eb5700baa8cf2e7beb31e65614465",
+   "sim": "TRX",
+   "cant": 338264.674028,
+   "v": 119069.16525785599,
+   "a": "TA4RtA5TRM52jr64HopuZ5DednLeEczhKK"
+  },
+  {
+   "at": "2026-10-31T21:11:00.000Z",
+   "tx": "d30c36c728a9c2f9a3a9cd4048d7d4d60de7c4a01755161cbeb2a09541a3bf58",
+   "sim": "TRX",
+   "cant": 716277.528571,
+   "v": 252129.69005699197,
+   "a": "TQ27LngyGNB8emD6mt5FqjpCvZxo91EHhn"
+  },
+  {
+   "at": "2026-10-31T21:11:33.000Z",
+   "tx": "d5395d7b6b03c3309a7d1d44121b4059554a096fec69565c31ac3d7042e45dd5",
+   "sim": "TRX",
+   "cant": 1555905.511811,
+   "v": 547678.740157472,
+   "a": "TRkAp7BVoksDWGZUKHW5SQr7mKoQ9beH1n"
+  },
+  {
+   "at": "2026-10-31T21:14:03.000Z",
+   "tx": "7d8c848ba6ff0a6fa977514bab9262ab49337859c3947a29c3e94189c5ad52ed",
+   "sim": "TRX",
+   "cant": 454600.971477,
+   "v": 160019.541959904,
+   "a": "TA4RtA5TRM52jr64HopuZ5DednLeEczhKK"
+  },
+  {
+   "at": "2026-10-31T21:18:18.000Z",
+   "tx": "056c91f7f50c061365fa2a0e1b7c6b663c352b91be9cbef569b0cda5d07a76a7",
+   "sim": "TRX",
+   "cant": 454788.542472,
+   "v": 160085.56695014398,
+   "a": "TA4RtA5TRM52jr64HopuZ5DednLeEczhKK"
+  },
+  {
+   "at": "2026-10-31T21:18:51.000Z",
+   "tx": "eeb332c6ebc1a33293e866feb52aa0d4c16875553dccffe3a1c9aeaa31aecb1d",
+   "sim": "TRX",
+   "cant": 1556174.886033,
+   "v": 547773.5598836159,
+   "a": "TRkAp7BVoksDWGZUKHW5SQr7mKoQ9beH1n"
+  },
+  {
+   "at": "2026-10-31T21:22:00.000Z",
+   "tx": "1abc5833f9febc2b714fd9d043f490c7de5c29adf7c300c3d23f5b170e761a84",
+   "sim": "TRX",
+   "cant": 478374.997985,
+   "v": 168387.99929072,
+   "a": "TA4RtA5TRM52jr64HopuZ5DednLeEczhKK"
+  },
+  {
+   "at": "2026-10-31T21:26:03.000Z",
+   "tx": "e5e2324555445b0a8f6975621880d077b5b4b8879fa7b51d25d863da287d7d04",
+   "sim": "TRX",
+   "cant": 502137.504775,
+   "v": 176752.4016808,
+   "a": "TA4RtA5TRM52jr64HopuZ5DednLeEczhKK"
+  },
+  {
+   "at": "2026-10-31T21:26:42.000Z",
+   "tx": "447415bfa9b933b4a4902121e399488ea5bd3fdbd5089878b234f09420e3e316",
+   "sim": "TRX",
+   "cant": 1560400.837674,
+   "v": 549261.094861248,
+   "a": "TRkAp7BVoksDWGZUKHW5SQr7mKoQ9beH1n"
+  },
+  {
+   "at": "2026-10-31T21:28:30.000Z",
+   "tx": "7d2e13537c16da63ce660e01ad84c863f0a72991b0943e14dd32c0ea890e7173",
+   "sim": "TRX",
+   "cant": 846320.476932,
+   "v": 297904.807880064,
+   "a": "TFiDSKk2pvt9qQo8bRM1KfWuL7npf4Fdnw"
+  },
+  {
+   "at": "2026-10-31T21:30:15.000Z",
+   "tx": "46da82819b0c4cfc7d852b9655ba860bd4c476e8d4fce9f56673c20c921bd80c",
+   "sim": "TRX",
+   "cant": 501036.940007,
+   "v": 176365.002882464,
+   "a": "TA4RtA5TRM52jr64HopuZ5DednLeEczhKK"
+  },
+  {
+   "at": "2026-10-31T21:31:18.000Z",
+   "tx": "222cf6b923d367f6afd9549c7c58aa2e1afb4bcbe6f9571b122c4d2bc459a121",
+   "sim": "TRX",
+   "cant": 210791.81171,
+   "v": 74198.71772192,
+   "a": "TSRe7AfRjciGZaABj5t5ETH74S7uT6GEEg"
+  },
+  {
+   "at": "2026-10-31T21:33:24.000Z",
+   "tx": "76bb28efd73090a82da974159e47d31c59d62e8b32918693fb54d55d2a850b43",
+   "sim": "TRX",
+   "cant": 419576.855213,
+   "v": 147691.05303497598,
+   "a": "TXSt1DTjju4UQxeNo5s6yxz1cjx7698Rmd"
+  },
+  {
+   "at": "2026-10-31T21:33:54.000Z",
+   "tx": "7746b0d86a15b2a45f88c047e8b45afc361171a12bebed205b8c1d40ca7d90bf",
+   "sim": "TRX",
+   "cant": 514685.753783,
+   "v": 181169.38533161598,
+   "a": "TA4RtA5TRM52jr64HopuZ5DednLeEczhKK"
+  },
+  {
+   "at": "2026-10-31T21:36:48.000Z",
+   "tx": "b2980c63e1b29e8f61ee1bcdf60e64f89866a36af00dab034138f9a240087852",
+   "sim": "TRX",
+   "cant": 154618.511087,
+   "v": 54425.715902624,
+   "a": "TNhpfKq83wufEKGjBhQFnT7jnxYmyBzH6F"
+  },
+  {
+   "at": "2026-10-31T21:37:18.000Z",
+   "tx": "5b503e216764fabbfba5dbe8db4d0e40819c0f027f759aa5262a6d13adf288ba",
+   "sim": "TRX",
+   "cant": 548516.985391,
+   "v": 193077.978857632,
+   "a": "TA4RtA5TRM52jr64HopuZ5DednLeEczhKK"
+  },
+  {
+   "at": "2026-10-31T21:43:57.000Z",
+   "tx": "b57c20a2247fb339a3b47e86f3970f0a7a8994b00b037ea2036fb22968ea2ab7",
+   "sim": "TRX",
+   "cant": 739753.823388,
+   "v": 260393.345832576,
+   "a": "TXSt1DTjju4UQxeNo5s6yxz1cjx7698Rmd"
+  },
+  {
+   "at": "2026-10-31T21:44:27.000Z",
+   "tx": "5c4b27eeed17425465be29ffae133c4213402e64438bab59d176bc791c52a224",
+   "sim": "TRX",
+   "cant": 8555522.914434,
+   "v": 3011544.065880768,
+   "a": "TNhpfKq83wufEKGjBhQFnT7jnxYmyBzH6F"
+  },
+  {
+   "at": "2026-10-31T21:44:57.000Z",
+   "tx": "255fc5bf13dca35433e7584e9ca28468ab0bbaf1fbc1bb87d4323a132d7acc49",
+   "sim": "TRX",
+   "cant": 1095672.899436,
+   "v": 385676.86060147197,
+   "a": "TA4RtA5TRM52jr64HopuZ5DednLeEczhKK"
+  },
+  {
+   "at": "2026-10-31T21:47:51.000Z",
+   "tx": "84e79d1d5406dacd4058d474ab5119ce0b4fb052c192da9f016dbfc4080d8f47",
+   "sim": "TRX",
+   "cant": 225565.452976,
+   "v": 79399.039447552,
+   "a": "TSRe7AfRjciGZaABj5t5ETH74S7uT6GEEg"
+  },
+  {
+   "at": "2026-10-31T21:51:42.000Z",
+   "tx": "abbd5e38ae6a2b30aa759680dbfd304da716011be8eca4b6b938fcb174c83f2a",
+   "sim": "TRX",
+   "cant": 569120.059608,
+   "v": 200330.26098201599,
+   "a": "TA4RtA5TRM52jr64HopuZ5DednLeEczhKK"
+  },
+  {
+   "at": "2026-10-31T21:52:12.000Z",
+   "tx": "b744dfb23ab9a052e6c7c4ada76eed794616d5ef6f3c52b55ea850c2e90d7ae7",
+   "sim": "TRX",
+   "cant": 326312.221126,
+   "v": 114861.90183635199,
+   "a": "TC1BynpaJgAK1TtPveemdimvzCetA5hL8A"
+  },
+  {
+   "at": "2026-10-31T21:55:24.000Z",
+   "tx": "e12c5a9ae7f92bdce3735459c74f23f7f9f7d9b958457c982bcf357a3498371c",
+   "sim": "TRX",
+   "cant": 591626.06318,
+   "v": 208252.37423936,
+   "a": "TA4RtA5TRM52jr64HopuZ5DednLeEczhKK"
+  },
+  {
+   "at": "2026-10-31T21:58:36.000Z",
+   "tx": "05514330d233042861057a68bc8defbefb8565defb41be04a004bd9621411f0e",
+   "sim": "TRX",
+   "cant": 591387.989111,
+   "v": 208168.57216707198,
+   "a": "TA4RtA5TRM52jr64HopuZ5DednLeEczhKK"
+  },
+  {
+   "at": "2026-10-31T22:00:39.000Z",
+   "tx": "94bf7f68d39b9860138f1b967e5275b2e653c91a86a46415ab8f4df32e902f2b",
+   "sim": "TRX",
+   "cant": 226310.457063,
+   "v": 79661.280886176,
+   "a": "TSRe7AfRjciGZaABj5t5ETH74S7uT6GEEg"
+  },
+  {
+   "at": "2026-10-31T22:02:21.000Z",
+   "tx": "9ec1b280d69c2c98a7d7e462582d3917a033d309c9d0dba777b1d1ea75d6b032",
+   "sim": "TRX",
+   "cant": 620757.171754,
+   "v": 218506.524457408,
+   "a": "TA4RtA5TRM52jr64HopuZ5DednLeEczhKK"
+  },
+  {
+   "at": "2026-10-31T22:05:48.000Z",
+   "tx": "ff9e7de8eb16a9628587a42d178e99eb0195121a05fa2f32d644d44796d76d33",
+   "sim": "TRX",
+   "cant": 595173.072187,
+   "v": 209500.92140982396,
+   "a": "TA4RtA5TRM52jr64HopuZ5DednLeEczhKK"
+  },
+  {
+   "at": "2026-10-31T22:09:24.000Z",
+   "tx": "02faa44dbd06f2f89f76b200f3773e11afe7232bba5b200de6049e0b2ed208f0",
+   "sim": "TRX",
+   "cant": 630055.346258,
+   "v": 221779.48188281598,
+   "a": "TA4RtA5TRM52jr64HopuZ5DednLeEczhKK"
+  },
+  {
+   "at": "2026-10-31T22:10:24.000Z",
+   "tx": "cd2df8d026f55c6103ae3ea17bddd13c674ee3e1765c10dd6e6a46b444d7366d",
+   "sim": "TRX",
+   "cant": 1762661.798986,
+   "v": 620456.9532430719,
+   "a": "TYpBVnArsTMPXkPBxQxjLhvD4sNhBrzKTb"
+  },
+  {
+   "at": "2026-10-31T22:13:33.000Z",
+   "tx": "96445a69a6d1fbe90f23a47acfc4ac4086e972d16d317fff7bac6521c8b912be",
+   "sim": "TRX",
+   "cant": 433971.352479,
+   "v": 152757.916072608,
+   "a": "TXSt1DTjju4UQxeNo5s6yxz1cjx7698Rmd"
+  },
+  {
+   "at": "2026-10-31T22:16:15.000Z",
+   "tx": "3133c23937595a67cf8fcca92449e11e523e6ba76a218c2ae97ae059310dec14",
+   "sim": "TRX",
+   "cant": 639422.81171,
+   "v": 225076.82972192,
+   "a": "TA4RtA5TRM52jr64HopuZ5DednLeEczhKK"
+  },
+  {
+   "at": "2026-10-31T22:16:42.000Z",
+   "tx": "29f19f9d5fa7ba7a996d1037b8e04ae04963534ec2c8c1654d94c90ae85a76ba",
+   "sim": "TRX",
+   "cant": 243314.384808,
+   "v": 85646.66345241599,
+   "a": "TSRe7AfRjciGZaABj5t5ETH74S7uT6GEEg"
+  },
+  {
+   "at": "2026-10-31T22:21:06.000Z",
+   "tx": "6f14ba059ef90ed8b053b4d949ef9ceba847b7109e2856a6c4a9661ce95f200f",
+   "sim": "TRX",
+   "cant": 590539.524945,
+   "v": 207869.91278063998,
+   "a": "TA4RtA5TRM52jr64HopuZ5DednLeEczhKK"
+  },
+  {
+   "at": "2026-10-31T22:30:57.000Z",
+   "tx": "ff8535887e3fcdfa43c4bd5134baa313a64e0474a8071fd6cb95bacde5585df9",
+   "sim": "TRX",
+   "cant": 339265.704654,
+   "v": 119421.528038208,
+   "a": "TMRZcihrjRkmWw7cSsRWiA2LMms25Vt1Xp"
+  },
+  {
+   "at": "2026-10-31T22:35:21.000Z",
+   "tx": "43de264dce176470c4781fa7f33aa853d357c750dca3a6f9c4c91380304e0894",
+   "sim": "TRX",
+   "cant": 243826.09301,
+   "v": 85826.78473952,
+   "a": "TSRe7AfRjciGZaABj5t5ETH74S7uT6GEEg"
+  },
+  {
+   "at": "2026-10-31T22:40:27.000Z",
+   "tx": "b640e5140bbe2f51a768827d3a9affa06fa64fc962c9153a2ee8c9f6b2711dc1",
+   "sim": "TRX",
+   "cant": 785832.172066,
+   "v": 276612.924567232,
+   "a": "TXSt1DTjju4UQxeNo5s6yxz1cjx7698Rmd"
+  },
+  {
+   "at": "2026-10-31T22:42:21.000Z",
+   "tx": "e3c8f7c32b2b2be14678dcb2f84adfdb1586c57b7078406435fb82061346f0b8",
+   "sim": "TRX",
+   "cant": 309657.578912,
+   "v": 108999.467777024,
+   "a": "TNhpfKq83wufEKGjBhQFnT7jnxYmyBzH6F"
+  },
+  {
+   "at": "2026-10-31T22:47:57.000Z",
+   "tx": "8b16b38a738b0b7511549435242fd90c820cb44c36e847586fa00eae0899826c",
+   "sim": "TRX",
+   "cant": 8651640.236889,
+   "v": 3045377.3633849276,
+   "a": "TNhpfKq83wufEKGjBhQFnT7jnxYmyBzH6F"
+  },
+  {
+   "at": "2026-10-31T22:55:57.000Z",
+   "tx": "15d219fec3ef3c957ab088c4388847685004a43d404aaa41d4bb1db8d06e4097",
+   "sim": "TRX",
+   "cant": 251771.912402,
+   "v": 88623.71316550398,
+   "a": "TSRe7AfRjciGZaABj5t5ETH74S7uT6GEEg"
+  },
+  {
+   "at": "2026-10-31T22:58:33.000Z",
+   "tx": "6411cce1d33cf444e7e8bf386b82c2c2f829ac0c25b48b2d5b8b66b31eaa0c74",
+   "sim": "TRX",
+   "cant": 838318.564132,
+   "v": 295088.134574464,
+   "a": "TDrXgP8h6jJk1LZiy7XrCxnnp6egnHcKff"
+  },
+  {
+   "at": "2026-10-31T23:02:12.000Z",
+   "tx": "5e1d890388396344a9750b3ef4e9e9e4f07c9eb8bed6cb78048ab6ba2ae9b2c5",
+   "sim": "TRX",
+   "cant": 3600261.045308,
+   "v": 1267291.887948416,
+   "a": "TTvwUJ2k56NVjauF2NteBeN5ytRAxvFb2s"
+  },
+  {
+   "at": "2026-10-31T23:07:42.000Z",
+   "tx": "6dffde7c6eb928d093acf6ccd608a9617b23cb2c4ad0126c8fb5316bdc6346cb",
+   "sim": "TRX",
+   "cant": 258565.124406,
+   "v": 91014.92379091198,
+   "a": "TSRe7AfRjciGZaABj5t5ETH74S7uT6GEEg"
+  },
+  {
+   "at": "2026-10-31T23:15:00.000Z",
+   "tx": "9aa49ac1cf4ed27a42f2ac631b90e4ccf324565c5195b4226fda88a280e72a72",
+   "sim": "TRX",
+   "cant": 351213.415006,
+   "v": 123627.12208211201,
+   "a": "TDDmSrXi2744DynJ1MPegXJsr7AmcgDN3J"
+  },
+  {
+   "at": "2026-10-31T23:15:57.000Z",
+   "tx": "25e1eea225b43b38d026c0d3827a3f06839d2f28d68985bbbaef09a28704fcdc",
+   "sim": "TRX",
+   "cant": 282701.182568,
+   "v": 99510.816263936,
+   "a": "TTm1qh55vBhBofBfyjYbLVD85CTNgwAdz7"
+  },
+  {
+   "at": "2026-10-31T23:21:51.000Z",
+   "tx": "5a66603419e8ac3ad87b2eacfae963ca4d624f2f336a94620b58b6d6594e0a14",
+   "sim": "TRX",
+   "cant": 212015.037593,
+   "v": 74629.29323273599,
+   "a": "TSRe7AfRjciGZaABj5t5ETH74S7uT6GEEg"
+  },
+  {
+   "at": "2026-10-31T23:27:54.000Z",
+   "tx": "eee27e30dec6deb52d37d09fee1ffec2256792f201e0356d1b619bcf206ed44c",
+   "sim": "TRX",
+   "cant": 295009.767474,
+   "v": 103843.43815084799,
+   "a": "TTm1qh55vBhBofBfyjYbLVD85CTNgwAdz7"
+  },
+  {
+   "at": "2026-10-31T23:39:12.000Z",
+   "tx": "16d6513e9b858a97bfb2877ff4196a90e531592ef2e78e7117990dbf2329d1ea",
+   "sim": "TRX",
+   "cant": 219399.918039,
+   "v": 77228.771149728,
+   "a": "TSRe7AfRjciGZaABj5t5ETH74S7uT6GEEg"
+  },
+  {
+   "at": "2026-10-31T23:42:06.000Z",
+   "tx": "523202885bd0e47d9274b611f8838cdf771f9af4f996090c31322830b7306818",
+   "sim": "TRX",
+   "cant": 308180.830293,
+   "v": 108479.65226313598,
+   "a": "TTm1qh55vBhBofBfyjYbLVD85CTNgwAdz7"
+  },
+  {
+   "at": "2026-10-31T23:48:27.000Z",
+   "tx": "a30eaf82a697047504a3e55f22286a39e8030b6d22332fc787aae6209ee77c61",
+   "sim": "TRX",
+   "cant": 323247.422357,
+   "v": 113783.092669664,
+   "a": "TTm1qh55vBhBofBfyjYbLVD85CTNgwAdz7"
+  },
+  {
+   "at": "2026-10-31T23:50:00.000Z",
+   "tx": "757789b2a9c9708efa9e4ce7a53b7f728a61d290adb9c4e2abaf4b41aab3997c",
+   "sim": "TRX",
+   "cant": 875950.649856,
+   "v": 308334.62874931196,
+   "a": "TFDH3zE9DtbnFJzBJFLsUMeJo7vWetMnGp"
+  },
+  {
+   "at": "2026-10-31T23:52:24.000Z",
+   "tx": "396f7a9f17d0bcd19856b49ba2cb841193d2abffc77394acd5901f68428b420c",
+   "sim": "TRX",
+   "cant": 290103.211447,
+   "v": 102116.33042934399,
+   "a": "TSRe7AfRjciGZaABj5t5ETH74S7uT6GEEg"
+  },
+  {
+   "at": "2026-10-31T23:55:24.000Z",
+   "tx": "40ea973d7a2ba723e880d73a6bb5b7ef67c9a8228c7e68d3c315832a411d58de",
+   "sim": "TRX",
+   "cant": 627539.512805,
+   "v": 220893.90850735997,
+   "a": "TUoVsNvkSbCQFty1tLViCgvMjNRGGEK6eM"
+  },
+  {
+   "at": "2026-11-01T00:07:45.000Z",
+   "tx": "67014e8db59f926750dbe73946db88eb59e179c724062d59769d4e24db35556b",
+   "sim": "TRX",
+   "cant": 1829153.046385,
+   "v": 643861.8723275199,
+   "a": "TTbBESEPcjawC7j42g7KXH9HCQ1JgmqSTH"
+  },
+  {
+   "at": "2026-11-01T00:26:09.000Z",
+   "tx": "142a09cf24e079be663fb29f809b3036bd3b53d0578a6b2454f169b950499bbe",
+   "sim": "TRX",
+   "cant": 358655.320157,
+   "v": 126246.67269526399,
+   "a": "TBgGdfG7dC3RUFWGEqNtT8RyBjgZhXei72"
+  },
+  {
+   "at": "2026-11-01T00:33:21.000Z",
+   "tx": "28a79914123572cd5348e930109275ffe51b03d3f1d098c87ce0b09825b18ef5",
+   "sim": "TRX",
+   "cant": 559890.67674,
+   "v": 197081.51821248,
+   "a": "TTm1qh55vBhBofBfyjYbLVD85CTNgwAdz7"
+  },
+  {
+   "at": "2026-11-01T00:34:27.000Z",
+   "tx": "263a0381c47917fb316dc4721be7227117e92c37ce4cbb120c09df3d1dd29fc8",
+   "sim": "TRX",
+   "cant": 276042.37691,
+   "v": 97166.91667231999,
+   "a": "TSRe7AfRjciGZaABj5t5ETH74S7uT6GEEg"
+  },
+  {
+   "at": "2026-11-01T00:38:12.000Z",
+   "tx": "f7fb465fa11fd8cc89b671f804aa3083d1e5614900e0aca75f78a464cd84b79d",
+   "sim": "TRX",
+   "cant": 614984.520123,
+   "v": 216474.55108329598,
+   "a": "TUoVsNvkSbCQFty1tLViCgvMjNRGGEK6eM"
+  },
+  {
+   "at": "2026-11-01T00:57:45.000Z",
+   "tx": "8a45623fb63a0bbc401fdad4d0a1842db07ee70fb746561e6f3374441157c065",
+   "sim": "TRX",
+   "cant": 4170321.076357,
+   "v": 1467953.0188776639,
+   "a": "TTvwUJ2k56NVjauF2NteBeN5ytRAxvFb2s"
+  },
+  {
+   "at": "2026-11-01T00:58:18.000Z",
+   "tx": "33581f93bc7205bd7d5dd22e9ce714e99c440c6d21ee014da34daf42b2f4855c",
+   "sim": "TRX",
+   "cant": 292010.332579,
+   "v": 102787.63706780798,
+   "a": "TSRe7AfRjciGZaABj5t5ETH74S7uT6GEEg"
+  },
+  {
+   "at": "2026-11-01T01:00:21.000Z",
+   "tx": "30d220c5d849d7f7a3581478f90075231fb07487364b9b915e452b3090fc4f80",
+   "sim": "TRX",
+   "cant": 656637.588131,
+   "v": 231136.431022112,
+   "a": "TUoVsNvkSbCQFty1tLViCgvMjNRGGEK6eM"
+  },
+  {
+   "at": "2026-11-01T01:01:54.000Z",
+   "tx": "cb497810d4e3f639f61e85821353a9341670b6e308077ddf2bdc46e377279add",
+   "sim": "TRX",
+   "cant": 368128.768126,
+   "v": 129581.326380352,
+   "a": "TQS6QjqBjLU9eGiFEXB2xGKTb3T7qtDSCu"
+  },
+  {
+   "at": "2026-11-01T01:04:51.000Z",
+   "tx": "64238e31b760989bd4b005960fd6e024c4dc600c3f7ee3481c6d0f4e73538fe2",
+   "sim": "TRX",
+   "cant": 1739497.017619,
+   "v": 612302.950201888,
+   "a": "TW9aVZUnmjxMT97w8jsQdXWessZTY2RT2u"
+  },
+  {
+   "at": "2026-11-01T01:08:21.000Z",
+   "tx": "583b3bd83f68ac34958def865527226151c011a41d0538a1dc6c9a28992ec310",
+   "sim": "TRX",
+   "cant": 1545384.707308,
+   "v": 543975.416972416,
+   "a": "TRkAp7BVoksDWGZUKHW5SQr7mKoQ9beH1n"
+  },
+  {
+   "at": "2026-11-01T01:15:03.000Z",
+   "tx": "3ea8cdaa4c7601d7a7c60aadd39abecf110dc6430733da5a9709ac2cfc9588ae",
+   "sim": "TRX",
+   "cant": 1859061.311558,
+   "v": 654389.5816684159,
+   "a": "TBKKMD1fw4gJwmyfXE1seURueGddKT25b7"
+  },
+  {
+   "at": "2026-11-01T01:18:00.000Z",
+   "tx": "c5e1c1dc0394f38a8dcdb7162646ada1b7b076c9ae813b6f6520909b67499357",
+   "sim": "TRX",
+   "cant": 615368.246943,
+   "v": 216609.622923936,
+   "a": "TXSt1DTjju4UQxeNo5s6yxz1cjx7698Rmd"
+  },
+  {
+   "at": "2026-11-01T01:20:39.000Z",
+   "tx": "f2166b4d72be55d1a3adc7f78fcfa735046129e29a25f0cae8a52b8d4af08a08",
+   "sim": "TRX",
+   "cant": 404375.301237,
+   "v": 142340.106035424,
+   "a": "TA4RtA5TRM52jr64HopuZ5DednLeEczhKK"
+  },
+  {
+   "at": "2026-11-01T01:21:06.000Z",
+   "tx": "1a7e2bc3bb96118f8f32b603bcb99a557f98be17c141b78242651a2d2dc7ffc0",
+   "sim": "TRX",
+   "cant": 315767.516951,
+   "v": 111150.165966752,
+   "a": "TSRe7AfRjciGZaABj5t5ETH74S7uT6GEEg"
+  },
+  {
+   "at": "2026-11-01T01:23:03.000Z",
+   "tx": "6882fdf54d297d2cdf35443095a9c536eab9da92088c3166c1cd9042c8bf119d",
+   "sim": "TRX",
+   "cant": 815206.900971,
+   "v": 286952.82914179197,
+   "a": "TXSt1DTjju4UQxeNo5s6yxz1cjx7698Rmd"
+  },
+  {
+   "at": "2026-11-01T01:27:42.000Z",
+   "tx": "e2e3c7530d9dc14366350121502c86782fed217bfa08d383766958d59c2e5f93",
+   "sim": "TRX",
+   "cant": 1658270.160066,
+   "v": 583711.096343232,
+   "a": "TRkAp7BVoksDWGZUKHW5SQr7mKoQ9beH1n"
+  },
+  {
+   "at": "2026-11-01T01:34:39.000Z",
+   "tx": "5cbd54a09321e1fb4d7b4e57ed4e498168e4ac7853e78f48849dc62f6f09fed2",
+   "sim": "TRX",
+   "cant": 743590.806681,
+   "v": 261743.963951712,
+   "a": "TXSt1DTjju4UQxeNo5s6yxz1cjx7698Rmd"
+  },
+  {
+   "at": "2026-11-01T01:35:09.000Z",
+   "tx": "3961af0254466bd7b3f5d71c2044f1a772721b34d6774921387d6eb20c6341f7",
+   "sim": "TRX",
+   "cant": 292704.361873,
+   "v": 103031.93537929599,
+   "a": "TSRe7AfRjciGZaABj5t5ETH74S7uT6GEEg"
+  },
+  {
+   "at": "2026-11-01T01:41:15.000Z",
+   "tx": "ae236d4450c1bf8bd7a42c81f049b83c339f21beae30c4c463cfb35450dbbeca",
+   "sim": "TRX",
+   "cant": 2647152.033531,
+   "v": 931797.515802912,
+   "a": "TRkAp7BVoksDWGZUKHW5SQr7mKoQ9beH1n"
+  },
+  {
+   "at": "2026-11-01T01:41:57.000Z",
+   "tx": "6c5e14c72614758646978937060c6c28f6a6c6ec33e9e788870816debeee0e37",
+   "sim": "TRX",
+   "cant": 618308.914867,
+   "v": 217644.73803318397,
+   "a": "TUoVsNvkSbCQFty1tLViCgvMjNRGGEK6eM"
+  },
+  {
+   "at": "2026-11-01T01:49:03.000Z",
+   "tx": "117c8211d49deeaf1d53c7927b0220f80089c124a9f6851d5f660da2ad8aabe5",
+   "sim": "TRX",
+   "cant": 416964.13004,
+   "v": 146771.37377407998,
+   "a": "TXSt1DTjju4UQxeNo5s6yxz1cjx7698Rmd"
+  },
+  {
+   "at": "2026-11-01T01:51:03.000Z",
+   "tx": "60814dc71100d6e235f048cce9ad1cd6e2842aa5ba7afa23c13b1c227a3e74de",
+   "sim": "TRX",
+   "cant": 331310.254668,
+   "v": 116621.20964313598,
+   "a": "TSRe7AfRjciGZaABj5t5ETH74S7uT6GEEg"
+  },
+  {
+   "at": "2026-11-01T01:51:33.000Z",
+   "tx": "b1619a853cc30a3962306981ad45dde5001ddf3f869ee6240e57d999546491b0",
+   "sim": "TRX",
+   "cant": 378547.063103,
+   "v": 133248.566212256,
+   "a": "TWvmy1h2bkDJu7knrtkjVVHhcUwn3qyEiq"
+  },
+  {
+   "at": "2026-11-01T01:52:24.000Z",
+   "tx": "6e38967573760a5de82de6effe15e64754d27a8dd6644e9bbb8bcab2968c95b0",
+   "sim": "TRX",
+   "cant": 620801.749269,
+   "v": 218522.215742688,
+   "a": "TXSt1DTjju4UQxeNo5s6yxz1cjx7698Rmd"
+  },
+  {
+   "at": "2026-11-01T01:55:24.000Z",
+   "tx": "a235acea4ef6fabfe4bbf919cf9eb04996d993bc34e7fafe4b389c6a240d8d7d",
+   "sim": "TRX",
+   "cant": 615980.984719,
+   "v": 216825.30662108798,
+   "a": "TUoVsNvkSbCQFty1tLViCgvMjNRGGEK6eM"
+  },
+  {
+   "at": "2026-11-01T02:03:45.000Z",
+   "tx": "60993afd62ac0745e766ef2a8f6f87627df49ade590370d45e7ef945c89e2242",
+   "sim": "TRX",
+   "cant": 347356.18115,
+   "v": 122269.3757648,
+   "a": "TSRe7AfRjciGZaABj5t5ETH74S7uT6GEEg"
+  },
+  {
+   "at": "2026-11-01T02:09:06.000Z",
+   "tx": "ffb26814a660b6613f4f625f967fc6e5978adb6e8a5008e72c467ca6f1f9334f",
+   "sim": "TRX",
+   "cant": 355333.313502,
+   "v": 125077.326352704,
+   "a": "THMg4J1sytc6fgFZwqTgiiWJYwyWc3YpYk"
+  },
+  {
+   "at": "2026-11-01T02:09:36.000Z",
+   "tx": "b1d33700e916a507730bb3a5e989e6a82ba3a6e10a8c5523e93a1bcfaeaff25c",
+   "sim": "TRX",
+   "cant": 481897.186078,
+   "v": 169627.809499456,
+   "a": "TXSt1DTjju4UQxeNo5s6yxz1cjx7698Rmd"
+  },
+  {
+   "at": "2026-11-01T02:14:45.000Z",
+   "tx": "37a5a5ffbec82e75d8e2b2fd15bdaebdf2f0f9e4fc4373bab94a6d59421dc5fe",
+   "sim": "TRX",
+   "cant": 518669.079536,
+   "v": 182571.51599667198,
+   "a": "TXSt1DTjju4UQxeNo5s6yxz1cjx7698Rmd"
+  },
+  {
+   "at": "2026-11-01T02:16:09.000Z",
+   "tx": "b2dac0a6fa803374e93563764f318c78e512d8881f28305bdf119aeb90f06b62",
+   "sim": "TRX",
+   "cant": 361952.665534,
+   "v": 127407.338267968,
+   "a": "TSRe7AfRjciGZaABj5t5ETH74S7uT6GEEg"
+  },
+  {
+   "at": "2026-11-01T02:22:27.000Z",
+   "tx": "aca56f0adc4d572b492c03c2343b4cb7fc3a7caf88753ec6ec4281c9056305df",
+   "sim": "TRX",
+   "cant": 216783.622772,
+   "v": 76307.835215744,
+   "a": "THMg4J1sytc6fgFZwqTgiiWJYwyWc3YpYk"
+  },
+  {
+   "at": "2026-11-01T02:26:57.000Z",
+   "tx": "966629e0e5922aef64cb577104ea0cb9b15a281a12889cf915daabc6a45e3f68",
+   "sim": "TRX",
+   "cant": 304014.549861,
+   "v": 107013.12155107199,
+   "a": "THMg4J1sytc6fgFZwqTgiiWJYwyWc3YpYk"
+  },
+  {
+   "at": "2026-11-01T02:29:51.000Z",
+   "tx": "5db710d1099f7c1cba7de2c92ebc8273462fa642e00f4dfcecb743624db77f71",
+   "sim": "TRX",
+   "cant": 376682.778947,
+   "v": 132592.33818934398,
+   "a": "TSRe7AfRjciGZaABj5t5ETH74S7uT6GEEg"
+  },
+  {
+   "at": "2026-11-01T02:30:21.000Z",
+   "tx": "f3b7c58fa3c274e45d732cfff1a2355044d4cf06efdc079ce24a202c30ad9c2e",
+   "sim": "TRX",
+   "cant": 499070.975186,
+   "v": 175672.983265472,
+   "a": "THMg4J1sytc6fgFZwqTgiiWJYwyWc3YpYk"
+  },
+  {
+   "at": "2026-11-01T02:34:33.000Z",
+   "tx": "1bc1a3f6dfea9bc24afb0c4de46cd07e5bfbcda9146e25fbaa25a1f25531dc27",
+   "sim": "TRX",
+   "cant": 961379.181588,
+   "v": 338405.471918976,
+   "a": "TWJkbPhShcy6sp8AahRdj7h1NKFS2yqhLK"
+  },
+  {
+   "at": "2026-11-01T02:37:51.000Z",
+   "tx": "edc5aaad4d3647854ebd46a0a7ffed212747b9e3e758d176616fa11b4037c581",
+   "sim": "TRX",
+   "cant": 961069.434308,
+   "v": 338296.440876416,
+   "a": "TWgvbCdzHhXhWdp6C4vSZW2MQXANS5vbPf"
+  },
+  {
+   "at": "2026-11-01T02:40:36.000Z",
+   "tx": "42954c8cae11ba3b700d8976b1f71728320aad6ddcd1138185bb1f171860e571",
+   "sim": "TRX",
+   "cant": 705568.76918,
+   "v": 248360.20675135998,
+   "a": "THMg4J1sytc6fgFZwqTgiiWJYwyWc3YpYk"
+  },
+  {
+   "at": "2026-11-01T02:41:57.000Z",
+   "tx": "8c7845bdaecebba1d52966dd9da31326e23c5401fad13e7291ba7ab13ff6d41e",
+   "sim": "TRX",
+   "cant": 607417.218093,
+   "v": 213810.860768736,
+   "a": "TUoVsNvkSbCQFty1tLViCgvMjNRGGEK6eM"
+  },
+  {
+   "at": "2026-11-01T02:42:57.000Z",
+   "tx": "095cd45845f2b9284cc2bfa1b2ce8196e0aba71ca75ee189e5f78d7da196e691",
+   "sim": "TRX",
+   "cant": 607417.218093,
+   "v": 213810.860768736,
+   "a": "TUoVsNvkSbCQFty1tLViCgvMjNRGGEK6eM"
+  },
+  {
+   "at": "2026-11-01T02:43:30.000Z",
+   "tx": "b1fca0af459c9662d433edb79a6f3a49c88b3c35cb1d69a942a7f8d41fff7fbd",
+   "sim": "TRX",
+   "cant": 384353.048966,
+   "v": 135292.273236032,
+   "a": "TSRe7AfRjciGZaABj5t5ETH74S7uT6GEEg"
+  },
+  {
+   "at": "2026-11-01T02:47:51.000Z",
+   "tx": "e899da3a7d02f0827b1d17b353dedf66486546adf412ae87db0217f494fc90bc",
+   "sim": "TRX",
+   "cant": 1013217.304378,
+   "v": 356652.49114105594,
+   "a": "TEiTsR59nRxgL5iPiNv1Mu7G3HUYP76Jw9"
+  },
+  {
+   "at": "2026-11-01T02:51:39.000Z",
+   "tx": "692d361fdf7ae7f4fbece6a19db9042b340e9303869cbba156d05a957425f867",
+   "sim": "TRX",
+   "cant": 654343.468318,
+   "v": 230328.90084793596,
+   "a": "TXSt1DTjju4UQxeNo5s6yxz1cjx7698Rmd"
+  },
+  {
+   "at": "2026-11-01T02:52:15.000Z",
+   "tx": "c910799c567f0f488322b0883cef9e3d180fdb520cdad1bbe00ba221559bd53e",
+   "sim": "TRX",
+   "cant": 390504.639812,
+   "v": 137457.63321382398,
+   "a": "TMEoqihirogFYga9WF8QsqKHnHm2dxCVJ8"
+  },
+  {
+   "at": "2026-11-01T02:56:03.000Z",
+   "tx": "720fb57f709d1ffc6c4c24a0b75aa3f833c0f51ee88ece1e9069d36110f780d6",
+   "sim": "TRX",
+   "cant": 399903.732242,
+   "v": 140766.113749184,
+   "a": "TSRe7AfRjciGZaABj5t5ETH74S7uT6GEEg"
+  },
+  {
+   "at": "2026-11-01T02:57:15.000Z",
+   "tx": "137c21d4fbf5cd5b7f83d96583564e755cd17e77d554655fd9a4ac0905a6acb8",
+   "sim": "TRX",
+   "cant": 329930.429456,
+   "v": 116135.51116851199,
+   "a": "TXSt1DTjju4UQxeNo5s6yxz1cjx7698Rmd"
+  },
+  {
+   "at": "2026-11-01T03:00:24.000Z",
+   "tx": "19de68c0c94855c9b1fc5dbe3958f0df5ba51e97399d4b6d0534ede2e6203631",
+   "sim": "TRX",
+   "cant": 1085745.786363,
+   "v": 382182.516799776,
+   "a": "TRkAp7BVoksDWGZUKHW5SQr7mKoQ9beH1n"
+  },
+  {
+   "at": "2026-11-01T03:03:51.000Z",
+   "tx": "56673b4cbe609a105e727b2f2173f14be1ad04825cc0b197bb4df3913d9a38e2",
+   "sim": "TRX",
+   "cant": 702539.540453,
+   "v": 247293.918239456,
+   "a": "TXSt1DTjju4UQxeNo5s6yxz1cjx7698Rmd"
+  },
+  {
+   "at": "2026-11-01T03:08:45.000Z",
+   "tx": "1ee5fa7feb1a2f9b3ad943eede76bf05d09a026ca468c285e2275c10169c8021",
+   "sim": "TRX",
+   "cant": 415486.451612,
+   "v": 146251.230967424,
+   "a": "TSRe7AfRjciGZaABj5t5ETH74S7uT6GEEg"
+  },
+  {
+   "at": "2026-11-01T03:10:15.000Z",
+   "tx": "2ce86c63737a919528544977a5a0382e3dfbec27b00cee842913bca67a6399f7",
+   "sim": "TRX",
+   "cant": 721128.389768,
+   "v": 253837.193198336,
+   "a": "TA4RtA5TRM52jr64HopuZ5DednLeEczhKK"
+  },
+  {
+   "at": "2026-11-01T03:13:15.000Z",
+   "tx": "a9b6cde9fcfa4ad7d1acd13154197a41c3bd07dd78c763a06126b1854df4d137",
+   "sim": "TRX",
+   "cant": 652674.593934,
+   "v": 229741.45706476798,
+   "a": "TXSt1DTjju4UQxeNo5s6yxz1cjx7698Rmd"
+  },
+  {
+   "at": "2026-11-01T03:27:42.000Z",
+   "tx": "68434e1835e59efd415feb9cace0ff29664978c0b45e2f1988e03c4b6cb0e126",
+   "sim": "TRX",
+   "cant": 1011137.717206,
+   "v": 355920.476456512,
+   "a": "TXSt1DTjju4UQxeNo5s6yxz1cjx7698Rmd"
+  },
+  {
+   "at": "2026-11-01T03:29:36.000Z",
+   "tx": "748700267d6c4f590620d5ab2818a5e424aeab25f2c38d6c9b7b6edb56978809",
+   "sim": "TRX",
+   "cant": 404575.825208,
+   "v": 142410.690473216,
+   "a": "TWUUZzbkDSvJUZ8SAmp8zpHgFD1ZkG7b6V"
+  },
+  {
+   "at": "2026-11-01T03:30:12.000Z",
+   "tx": "ba8a1296ec61c5200bde9e0ef5c822a1f6df1203c94ba596c5cc69b2ac1f899a",
+   "sim": "TRX",
+   "cant": 439128.387096,
+   "v": 154573.192257792,
+   "a": "TSRe7AfRjciGZaABj5t5ETH74S7uT6GEEg"
+  },
+  {
+   "at": "2026-11-01T03:30:48.000Z",
+   "tx": "d50403afebf52b2ac87e141e0729605dc156aa9fed97a54dbe4b63f1cc9a58fa",
+   "sim": "TRX",
+   "cant": 2044665.388731,
+   "v": 719722.216833312,
+   "a": "TTvwUJ2k56NVjauF2NteBeN5ytRAxvFb2s"
+  },
+  {
+   "at": "2026-11-01T03:31:24.000Z",
+   "tx": "a318572d79fa6895da3b59ba4bd608e6a1003d2a393554b1e6aed613ba0dac40",
+   "sim": "TRX",
+   "cant": 745831.211622,
+   "v": 262532.58649094397,
+   "a": "TA4RtA5TRM52jr64HopuZ5DednLeEczhKK"
+  },
+  {
+   "at": "2026-11-01T04:22:45.000Z",
+   "tx": "e2d7077ea9f80db666f63da5aae0b50ffae97d8eb8ae2bbff900ff03ac08676f",
+   "sim": "TRX",
+   "cant": 285986.224063,
+   "v": 100667.15087017599,
+   "a": "TYZ98phfoPWmiQhfHrYHvLW6jgnRXGuKpw"
+  },
+  {
+   "at": "2026-11-01T04:23:24.000Z",
+   "tx": "45cfe9c5ff2ca91863672b3d04c94af81c7d217580bf5b9b72ef2f46658b2bcc",
+   "sim": "TRX",
+   "cant": 431784.89826,
+   "v": 151988.28418751998,
+   "a": "TTvwUJ2k56NVjauF2NteBeN5ytRAxvFb2s"
+  },
+  {
+   "at": "2026-11-01T05:06:15.000Z",
+   "tx": "df85b73fcdf0f2b31553e8b77ead7f0047990dcba23e140d29f661ada56d7436",
+   "sim": "TRX",
+   "cant": 437380.815002,
+   "v": 153958.046880704,
+   "a": "TTvwUJ2k56NVjauF2NteBeN5ytRAxvFb2s"
+  },
+  {
+   "at": "2026-11-01T05:33:06.000Z",
+   "tx": "2f05cb0924017bad7be3022b5486a36da1da0932b2e14297d66c447379622cfb",
+   "sim": "TRX",
+   "cant": 2223979.354707,
+   "v": 782840.7328568639,
+   "a": "TNhpfKq83wufEKGjBhQFnT7jnxYmyBzH6F"
+  }
+ ],
+ "todos350": [
+  {
+   "at": 1793441844000,
+   "a": "TAvZoTs5P2AAVFVmQVtW9ap7jyxTkp78Su",
+   "sim": "TRX",
+   "cant": 531748.252586,
+   "v": 187175.384910272,
+   "tx": "1059912001501028509df9633f34fbdab9ffa4440fa13b09c46b5c1103260242"
+  },
+  {
+   "at": 1793441892000,
+   "a": "TXSt1DTjju4UQxeNo5s6yxz1cjx7698Rmd",
+   "sim": "TRX",
+   "cant": 523151.362085,
+   "v": 184149.27945391997,
+   "tx": "4bdc1800908badd1f43ac2139c37445e1af5bef559a03e588444b0756e81c125"
+  },
+  {
+   "at": 1793441955000,
+   "a": "TV1vu51cX8Fmo3iTya9d43D4Ugha1QBLbc",
+   "sim": "TRX",
+   "cant": 748027.77269,
+   "v": 263305.77598688,
+   "tx": "549b647d525ce24ceb867f84145baf9e5cd9f52229edde1abcd618899c28ab0d"
+  },
+  {
+   "at": 1793442045000,
+   "a": "TNpLXWxmBzo5pzwFvE7RfaLErhG1LGe1Cg",
+   "sim": "TRX",
+   "cant": 478655.140778,
+   "v": 168486.609553856,
+   "tx": "87529a0e0b96db42b73a313b519fc095f92484c4ffc1a1c7968d82e04dd3adb8"
+  },
+  {
+   "at": 1793442084000,
+   "a": "TUq3Mut2SKoWpaPT77LbChdDtJr3b1q4Nz",
+   "sim": "TRX",
+   "cant": 249493.094211,
+   "v": 87821.56916227199,
+   "tx": "54593c9505ee939266146d7dea8295b2e9fc8f10863a8cf0578f8c4550db6c66"
+  },
+  {
+   "at": 1793442120000,
+   "a": "TUoVsNvkSbCQFty1tLViCgvMjNRGGEK6eM",
+   "sim": "TRX",
+   "cant": 523619.440883,
+   "v": 184314.04319081598,
+   "tx": "a30a85f45789233a3e8768024b82e00ec1eb55f058ea6ff2ced3e87615b74387"
+  },
+  {
+   "at": 1793442225000,
+   "a": "TPxhvNiL9UzdapjULDdTBmHvcpJXricyBC",
+   "sim": "TRX",
+   "cant": 365033.379648,
+   "v": 128491.74963609599,
+   "tx": "1741a10dfbd8cf11e32237911b0e7078d6f1924747ad5eb72b9d026a1139b530"
+  },
+  {
+   "at": 1793442276000,
+   "a": "TZ9gyo3kys8HXa2shfKgNbSbpmerHwEYfa",
+   "sim": "TRX",
+   "cant": 1068470.161022,
+   "v": 376101.496679744,
+   "tx": "42af541d6dbebffd1316e2534fd8c1590406f7eda5bf06915b438f4ef1767c32"
+  },
+  {
+   "at": 1793442327000,
+   "a": "TLXjpfw1ksE2ab897z9dqp5TiEYiPqwmmS",
+   "sim": "TRX",
+   "cant": 599048.999516,
+   "v": 210865.247829632,
+   "tx": "4daa997f5329d2d4a4b145304146123a6a2fd1c6586d0d9fb4379cb8a002f9c6"
+  },
+  {
+   "at": 1793442528000,
+   "a": "TV1vu51cX8Fmo3iTya9d43D4Ugha1QBLbc",
+   "sim": "TRX",
+   "cant": 613691.336852,
+   "v": 216019.35057190398,
+   "tx": "cb62077e36872e4400ad6b3a43252e9d39f1d68bbb3939ab109424808e37dae7"
+  },
+  {
+   "at": 1793442642000,
+   "a": "TEg5ncDH6jwySRiAJ4sCC7JRJcmrmCmJrm",
+   "sim": "TRX",
+   "cant": 328047.783809,
+   "v": 115472.819900768,
+   "tx": "816f031d56bac3d0a1dbdf2fe7922362886419be911b0ebc8fc07e4fd0b7d662"
+  },
+  {
+   "at": 1793442684000,
+   "a": "TXSt1DTjju4UQxeNo5s6yxz1cjx7698Rmd",
+   "sim": "TRX",
+   "cant": 576764.67451,
+   "v": 203021.16542752,
+   "tx": "8cfbf06e340e0622253cb4eebe99bc969e6f8ce16b030bbb6428252513f2d8ae"
+  },
+  {
+   "at": 1793442933000,
+   "a": "TUieKs2PWdeoLJToJW6wVrWG7SqkBaMfNt",
+   "sim": "TRX",
+   "cant": 411325.443589,
+   "v": 144786.556143328,
+   "tx": "c402b799fc8d82079348cd39293c223ba73b57cb9cd1fe731b812cf62ae13b85"
+  },
+  {
+   "at": 1793443017000,
+   "a": "TAvZoTs5P2AAVFVmQVtW9ap7jyxTkp78Su",
+   "sim": "TRX",
+   "cant": 360328.61267,
+   "v": 126835.67165984,
+   "tx": "6195205c20cf2b89aba1f4599eb55aa08cf8e369ecf1951c9a2691d244d761d3"
+  },
+  {
+   "at": 1793443062000,
+   "a": "THh7ABJJwMuaDrDZ9SHwNsfHUm8ewYgHnb",
+   "sim": "TRX",
+   "cant": 270936.613663,
+   "v": 95369.688009376,
+   "tx": "248d3317a58924f11bb376073140ba5864ca29d77df97926211c82fcba70e619"
+  },
+  {
+   "at": 1793443077000,
+   "a": "TV1vu51cX8Fmo3iTya9d43D4Ugha1QBLbc",
+   "sim": "TRX",
+   "cant": 258254.497001,
+   "v": 90905.582944352,
+   "tx": "ba6ae53cc4375b4e78abad5d8fdbfc6ef25e6fe5bc6552fb1c92f49713d81cf0"
+  },
+  {
+   "at": 1793443200000,
+   "a": "TUoVsNvkSbCQFty1tLViCgvMjNRGGEK6eM",
+   "sim": "TRX",
+   "cant": 546778.540715,
+   "v": 192466.04633168,
+   "tx": "b3d7e58c0a80c44bf77acc3cf432b5f774c53756c7913dfc615491d7aaeaa5da"
+  },
+  {
+   "at": 1793443242000,
+   "a": "TZ9gyo3kys8HXa2shfKgNbSbpmerHwEYfa",
+   "sim": "TRX",
+   "cant": 477946.021799,
+   "v": 168236.99967324798,
+   "tx": "bc183fe23291f784e4e6a02a3f0b57c1343003cb82629a8a78e4b110d3fac75a"
+  },
+  {
+   "at": 1793443302000,
+   "a": "TH9czzgvmroxxd5n5fS1Gd6ZFJeJBaxVkj",
+   "sim": "TRX",
+   "cant": 492958.940044,
+   "v": 173521.546895488,
+   "tx": "624a0ddb55be7dc59a7bdafbac951fe74419351cbb1f4be2056ee7ff10ad7081"
+  },
+  {
+   "at": 1793443377000,
+   "a": "TNh7oqQN9WfdJvYyZDHh8pRk21mfUP8wf1",
+   "sim": "TRX",
+   "cant": 310985.534633,
+   "v": 109466.90819081599,
+   "tx": "b92a6622ab8ac6e4d215e5db21c1fcb26f1c21ceb9847c279f3bc983e688d40d"
+  },
+  {
+   "at": 1793443473000,
+   "a": "TB3viNboTwfjZ5ohzHjSBxwSRr6T6duU5b",
+   "sim": "TRX",
+   "cant": 776976.161186,
+   "v": 273495.608737472,
+   "tx": "f3afbbe8ff19901fd2b9ecc685062137130e5030effe9e751aa1ce0ed3346dbb"
+  },
+  {
+   "at": 1793443584000,
+   "a": "TF2vhjz7NNsNJVGKXUExi5YFTcc9aMPZSL",
+   "sim": "TRX",
+   "cant": 99472.446244,
+   "v": 35014.301077888,
+   "tx": "bc7e14830607fef560741ac564c7e3d48207b6df077dbdb775c9d5e0a7064a02"
+  },
+  {
+   "at": 1793443650000,
+   "a": "TSGCcr6WG372AXecAj48uqj8xxj7UED7W1",
+   "sim": "TRX",
+   "cant": 764491.949902,
+   "v": 269101.166365504,
+   "tx": "9f80d0ed6e4383c7e3e2f4f0425abdef04d07ff06862594b607415043df872d0"
+  },
+  {
+   "at": 1793443812000,
+   "a": "TKTfbEfTRDqMCKzLMpuv8f2wYPSYJvzEXi",
+   "sim": "TRX",
+   "cant": 80320.641166,
+   "v": 28272.865690431998,
+   "tx": "6662a1552c7290c3bcd74e959627e7f28629c188596ac77ea1fa0ed936cb4022"
+  },
+  {
+   "at": 1793443971000,
+   "a": "TXSt1DTjju4UQxeNo5s6yxz1cjx7698Rmd",
+   "sim": "TRX",
+   "cant": 320783.228481,
+   "v": 112915.696425312,
+   "tx": "b146615c26ce7fed79814ff9377fcb82b0a5ffb79a479e2330230f791b963f78"
+  },
+  {
+   "at": 1793444019000,
+   "a": "TA3axSgEfJMKF8CXjhUjtJMQ6QdRtsvPw9",
+   "sim": "TRX",
+   "cant": 17655.416823,
+   "v": 6214.7067216959995,
+   "tx": "daf0fd41d75c08cf4d0c70619aca7510cdfc0830dd47758ed9009ca36a5df075"
+  },
+  {
+   "at": 1793444076000,
+   "a": "THMg4J1sytc6fgFZwqTgiiWJYwyWc3YpYk",
+   "sim": "TRX",
+   "cant": 381473.884077,
+   "v": 134278.807195104,
+   "tx": "33ee5f68e367ba2b0a59fe4d182d5f222616b3b122c1ee29dbe1a4ad7ddeeb45"
+  },
+  {
+   "at": 1793444214000,
+   "a": "TZ9gyo3kys8HXa2shfKgNbSbpmerHwEYfa",
+   "sim": "TRX",
+   "cant": 463669.673235,
+   "v": 163211.72497871998,
+   "tx": "63b8b5ac95f9bd6f1b4cd270338bff8c19b2eab692ce701807b394a41a3326aa"
+  },
+  {
+   "at": 1793444346000,
+   "a": "THMg4J1sytc6fgFZwqTgiiWJYwyWc3YpYk",
+   "sim": "TRX",
+   "cant": 1489939.788013,
+   "v": 524458.8053805759,
+   "tx": "c2d4d33a322b948b84eabfb9f3f374dbe93f8a5224790b9dced4c523004a6ec2"
+  },
+  {
+   "at": 1793444484000,
+   "a": "TB3viNboTwfjZ5ohzHjSBxwSRr6T6duU5b",
+   "sim": "TRX",
+   "cant": 885499.30399,
+   "v": 311695.75500448,
+   "tx": "f620afb31875dfb209fc439919291c756be9a48ff7bb22fd4dc4e053d4757b76"
+  },
+  {
+   "at": 1793444523000,
+   "a": "TV1vu51cX8Fmo3iTya9d43D4Ugha1QBLbc",
+   "sim": "TRX",
+   "cant": 744747.623865,
+   "v": 262151.16360047995,
+   "tx": "e6019388decd358d740d94d63c922caab7cb8b00e6d5245d4a186b91bcb8eb0f"
+  },
+  {
+   "at": 1793444646000,
+   "a": "TAmtGeBHfeuyt4D2xcpQfZyxRojSTRiz5j",
+   "sim": "TRX",
+   "cant": 407908.274294,
+   "v": 143583.712551488,
+   "tx": "b23e51413e0d956b5d45104818cc0bacb87a48a897ee615c64acf9700c29c3a0"
+  },
+  {
+   "at": 1793444799000,
+   "a": "TLXjpfw1ksE2ab897z9dqp5TiEYiPqwmmS",
+   "sim": "TRX",
+   "cant": 595563.365105,
+   "v": 209638.30451696,
+   "tx": "0219714752f7165db0214d1d196e5fd832761243f43eeef4d4c3d8d9f97f8851"
+  },
+  {
+   "at": 1793444847000,
+   "a": "THMg4J1sytc6fgFZwqTgiiWJYwyWc3YpYk",
+   "sim": "TRX",
+   "cant": 1488439.612886,
+   "v": 523930.743735872,
+   "tx": "753bdf3e41aebef12a56c46a5fbe7351b16a331dca570250bbd3df97ba205196"
+  },
+  {
+   "at": 1793444961000,
+   "a": "TQ27LngyGNB8emD6mt5FqjpCvZxo91EHhn",
+   "sim": "TRX",
+   "cant": 691779.909793,
+   "v": 243506.52824713598,
+   "tx": "41f64ec318dfb8656e2319ab8c9b563fe3a8ffde6e94e204ab8604b89a3697f5"
+  },
+  {
+   "at": 1793445240000,
+   "a": "TV1vu51cX8Fmo3iTya9d43D4Ugha1QBLbc",
+   "sim": "TRX",
+   "cant": 537977.195736,
+   "v": 189367.972899072,
+   "tx": "37bcf11b35d8c0f77ea027b011924cf70be3b2c1fbd489aa0b3383c1905ed7e2"
+  },
+  {
+   "at": 1793445396000,
+   "a": "TUoVsNvkSbCQFty1tLViCgvMjNRGGEK6eM",
+   "sim": "TRX",
+   "cant": 554731.243001,
+   "v": 195265.397536352,
+   "tx": "df1544b032acbdb69fd0d1d16e59bcf93d8aeac3ebabfe2e5af4a8a49f8784f5"
+  },
+  {
+   "at": 1793445432000,
+   "a": "TZ9gyo3kys8HXa2shfKgNbSbpmerHwEYfa",
+   "sim": "TRX",
+   "cant": 1329914.871403,
+   "v": 468130.034733856,
+   "tx": "f770513950d31b34adb6d937dabe4c79c8908ff658562d9e6ef219d977c7c091"
+  },
+  {
+   "at": 1793445621000,
+   "a": "TLXjpfw1ksE2ab897z9dqp5TiEYiPqwmmS",
+   "sim": "TRX",
+   "cant": 592115.479682,
+   "v": 208424.64884806398,
+   "tx": "7eb3db8e63e558650d3a16c9c9092e2397783096bbe8c7f3420fd924f6def206"
+  },
+  {
+   "at": 1793445672000,
+   "a": "THMg4J1sytc6fgFZwqTgiiWJYwyWc3YpYk",
+   "sim": "TRX",
+   "cant": 372263.12473,
+   "v": 131036.61990495998,
+   "tx": "dba5674e756cc8d5611081d8f9381f3a4b828a6c679d716b50bb8ca4cfd96828"
+  },
+  {
+   "at": 1793445960000,
+   "a": "TLXjpfw1ksE2ab897z9dqp5TiEYiPqwmmS",
+   "sim": "TRX",
+   "cant": 525962.867695,
+   "v": 185138.92942864,
+   "tx": "526466581a2af803ba2c2cbb3fddcf16676dd8977edc1e0d09260174664a8096"
+  },
+  {
+   "at": 1793446011000,
+   "a": "TV1vu51cX8Fmo3iTya9d43D4Ugha1QBLbc",
+   "sim": "TRX",
+   "cant": 740137.758296,
+   "v": 260528.49092019198,
+   "tx": "f5c6637d24ac0a862a6e16bce531d4338259616857a02b710d8921d04db38ad1"
+  },
+  {
+   "at": 1793446110000,
+   "a": "TGqWKQrWU2Z4GiSdAqyLaFt8SNkSovBKMG",
+   "sim": "TRX",
+   "cant": 58929.763762,
+   "v": 20743.276844224,
+   "tx": "e028c462ebc8f61dfeebcae000e435e35969bdcf1ffaebdfa963954ca18c8a44"
+  },
+  {
+   "at": 1793446146000,
+   "a": "TNWyDsFm3PY41YZnFug6xLTXsC545Z7wh9",
+   "sim": "TRX",
+   "cant": 337998.948965,
+   "v": 118975.63003567999,
+   "tx": "8e97a87914900a627f025ea575e12a5efbc048a40dc7085cd61da985d2204b8a"
+  },
+  {
+   "at": 1793446209000,
+   "a": "TAvZoTs5P2AAVFVmQVtW9ap7jyxTkp78Su",
+   "sim": "TRX",
+   "cant": 441512.437815,
+   "v": 155412.37811088,
+   "tx": "a376b7baa32aa243ac4897093c690778c2df459eafd96a84cd3e4fe81996e523"
+  },
+  {
+   "at": 1793446536000,
+   "a": "THMg4J1sytc6fgFZwqTgiiWJYwyWc3YpYk",
+   "sim": "TRX",
+   "cant": 308453.976121,
+   "v": 108575.799594592,
+   "tx": "86682c437aa3afc4013b321136cb8dc0dfde25f23e4a06dccec73b3c6442f92d"
+  },
+  {
+   "at": 1793446710000,
+   "a": "TEBcj9PcdHpUNGAKv6DN7asqDf5fbJcpDr",
+   "sim": "TRX",
+   "cant": 251192.793834,
+   "v": 88419.863429568,
+   "tx": "35c3ed2dc5c402325e854ac0fb3131c3db13d325f5921d137d4b0adfddf917fe"
+  },
+  {
+   "at": 1793446809000,
+   "a": "TV1vu51cX8Fmo3iTya9d43D4Ugha1QBLbc",
+   "sim": "TRX",
+   "cant": 741139.03179,
+   "v": 260880.93919008,
+   "tx": "54ed8134ad37bef4f8e342f0ac8485a0c62e2fa19a04f0e60344e997eb40eb36"
+  },
+  {
+   "at": 1793446842000,
+   "a": "THMg4J1sytc6fgFZwqTgiiWJYwyWc3YpYk",
+   "sim": "TRX",
+   "cant": 171356.909255,
+   "v": 60317.63205776,
+   "tx": "66e2d8623905d8c48ce35f053185d249f188d656dab4ab79325f86090fae0921"
+  },
+  {
+   "at": 1793446881000,
+   "a": "TAmtGeBHfeuyt4D2xcpQfZyxRojSTRiz5j",
+   "sim": "TRX",
+   "cant": 523469.227839,
+   "v": 184261.16819932798,
+   "tx": "24ef1c4a9e3e19ae9cde743668926adcfc5caa3fc0276e1bd24888584401d9f8"
+  },
+  {
+   "at": 1793446965000,
+   "a": "TA3axSgEfJMKF8CXjhUjtJMQ6QdRtsvPw9",
+   "sim": "TRX",
+   "cant": 17850.096797,
+   "v": 6283.234072543999,
+   "tx": "fc77dd1675ec4951062441451c6d7752730ba2d384282c9fba3a41c96c38983b"
+  },
+  {
+   "at": 1793447010000,
+   "a": "TXSt1DTjju4UQxeNo5s6yxz1cjx7698Rmd",
+   "sim": "TRX",
+   "cant": 473571.590027,
+   "v": 166697.199689504,
+   "tx": "007b98c4524c70c7df5fe6e3c7715cc4c42eb670080d400e8fcaa0b85655e60f"
+  },
+  {
+   "at": 1793447040000,
+   "a": "TB3viNboTwfjZ5ohzHjSBxwSRr6T6duU5b",
+   "sim": "TRX",
+   "cant": 896685.643686,
+   "v": 315633.346577472,
+   "tx": "9b6777fd325b688803635e13e13eed173f881beee62c7ac78c9f12aebe7895b2"
+  },
+  {
+   "at": 1793447121000,
+   "a": "TB3viNboTwfjZ5ohzHjSBxwSRr6T6duU5b",
+   "sim": "TRX",
+   "cant": 155727.600691,
+   "v": 54816.115443231996,
+   "tx": "07da5dbbce5394f1babea7f405ec5c6f1d6e713c981a23f22a8117aaea42ba6f"
+  },
+  {
+   "at": 1793447265000,
+   "a": "TH9czzgvmroxxd5n5fS1Gd6ZFJeJBaxVkj",
+   "sim": "TRX",
+   "cant": 471423.013503,
+   "v": 165940.900753056,
+   "tx": "20615afb4d918cb12ef702f0038db1c975669a834e69ee386563b4165f626010"
+  },
+  {
+   "at": 1793447430000,
+   "a": "TXSt1DTjju4UQxeNo5s6yxz1cjx7698Rmd",
+   "sim": "TRX",
+   "cant": 576018.847238,
+   "v": 202758.634227776,
+   "tx": "5a7bc25d854d8608941f399b6e7609043d63dd8ace30bc4ac915fe77349ac25e"
+  },
+  {
+   "at": 1793447538000,
+   "a": "TV1vu51cX8Fmo3iTya9d43D4Ugha1QBLbc",
+   "sim": "TRX",
+   "cant": 559651.445515,
+   "v": 196997.30882128,
+   "tx": "abcb0719eedfd3933c0292349c1bea2fecfe8da06897161fd706472f9837c4be"
+  },
+  {
+   "at": 1793447574000,
+   "a": "TFyXz53eMBzVSDjor24fRjaTNxsvDRumXu",
+   "sim": "TRX",
+   "cant": 666688.294578,
+   "v": 234674.27969145597,
+   "tx": "ea195214aa0158332b875ec2be3362413022499aca8710187cd7ee2be47dd881"
+  },
+  {
+   "at": 1793447859000,
+   "a": "TUoVsNvkSbCQFty1tLViCgvMjNRGGEK6eM",
+   "sim": "TRX",
+   "cant": 437467.918622,
+   "v": 153988.707354944,
+   "tx": "0ec54b473a32afd97c4d1dbf5ccb12faca5e1fd91f9f68b876b25ff53cf86eae"
+  },
+  {
+   "at": 1793447970000,
+   "a": "TZ9gyo3kys8HXa2shfKgNbSbpmerHwEYfa",
+   "sim": "TRX",
+   "cant": 1011182.132963,
+   "v": 355936.11080297595,
+   "tx": "1e069e3d831f2b6d05de2bf767abb2340768b7785095a9a3f6b8f4a70e8f5289"
+  },
+  {
+   "at": 1793448012000,
+   "a": "THMg4J1sytc6fgFZwqTgiiWJYwyWc3YpYk",
+   "sim": "TRX",
+   "cant": 491374.073417,
+   "v": 172963.673842784,
+   "tx": "c8eb69da01db4afd84ffe567c6e88434e0ac4f53f7605c730a9d3d1ad390a667"
+  },
+  {
+   "at": 1793448054000,
+   "a": "TAdborFTshbbBxpnDqNajAxH65khuKdXHX",
+   "sim": "TRX",
+   "cant": 490395.043475,
+   "v": 172619.0553032,
+   "tx": "829df8f7863a480726c6ebc15493f04cac19f17b13302800fe77166304dfae38"
+  },
+  {
+   "at": 1793448333000,
+   "a": "TNhpfKq83wufEKGjBhQFnT7jnxYmyBzH6F",
+   "sim": "TRX",
+   "cant": 1900034.290227,
+   "v": 668812.070159904,
+   "tx": "bf783c8fc0f67f45f8792d476d3b87b96b99623b1325317f33589c93ace35a61"
+  },
+  {
+   "at": 1793448510000,
+   "a": "TV1vu51cX8Fmo3iTya9d43D4Ugha1QBLbc",
+   "sim": "TRX",
+   "cant": 255862.363393,
+   "v": 90063.551914336,
+   "tx": "f91d2f4c94221eec64b0a907a18a86c832282b42377ffdb68d61b6601098f9d0"
+  },
+  {
+   "at": 1793448615000,
+   "a": "TEBcj9PcdHpUNGAKv6DN7asqDf5fbJcpDr",
+   "sim": "TRX",
+   "cant": 212097.343244,
+   "v": 74658.26482188799,
+   "tx": "7a71d8057742ad3e2dbae86d178317881cc7df1cc9b67c0af1052d849a57a8da"
+  },
+  {
+   "at": 1793448648000,
+   "a": "TQ27LngyGNB8emD6mt5FqjpCvZxo91EHhn",
+   "sim": "TRX",
+   "cant": 733162.625635,
+   "v": 258073.24422351996,
+   "tx": "2b90a837b4d59af3fa9832ebad28a33f24deba07bc895593b1c7dde6f7b880d6"
+  },
+  {
+   "at": 1793448714000,
+   "a": "TFyXz53eMBzVSDjor24fRjaTNxsvDRumXu",
+   "sim": "TRX",
+   "cant": 482782.898866,
+   "v": 169939.580400832,
+   "tx": "1734d439929c2026b55204571069ae8186b8dd646e1152fd6c3d2eac48bc3ecd"
+  },
+  {
+   "at": 1793448747000,
+   "a": "TXSt1DTjju4UQxeNo5s6yxz1cjx7698Rmd",
+   "sim": "TRX",
+   "cant": 316343.603911,
+   "v": 111352.948576672,
+   "tx": "3dd3ff2afc9c6f56ed916e3c08b792bf2b70621de1d3dea82bc70cebae12c61d"
+  },
+  {
+   "at": 1793448963000,
+   "a": "TXSt1DTjju4UQxeNo5s6yxz1cjx7698Rmd",
+   "sim": "TRX",
+   "cant": 395525.713297,
+   "v": 139225.05108054398,
+   "tx": "659f7a22af6addcebba4f5a050539651adb6043c6ffc4b42bb0c8a28ec4a4ef0"
+  },
+  {
+   "at": 1793449008000,
+   "a": "TSiPtxEXrm5BSXeb3VCeUr4mdxAzwVo6gx",
+   "sim": "TRX",
+   "cant": 104226.116558,
+   "v": 36687.593028416,
+   "tx": "0454e3b0eb134d6ef3c4e1f87e9d5fe5c2b6533e609d77e1950252da3bb5a788"
+  },
+  {
+   "at": 1793449041000,
+   "a": "TYZ98phfoPWmiQhfHrYHvLW6jgnRXGuKpw",
+   "sim": "TRX",
+   "cant": 274816.103346,
+   "v": 96735.268377792,
+   "tx": "f67f00eb3a8a122e041b14b8e389e855348d1dd01f498d3b82bc0315acecb9ec"
+  },
+  {
+   "at": 1793449071000,
+   "a": "TGqWKQrWU2Z4GiSdAqyLaFt8SNkSovBKMG",
+   "sim": "TRX",
+   "cant": 90902.853286,
+   "v": 31997.804356671997,
+   "tx": "d9063cb552f4c335a5682f5513877a67bd079f76bb87de25ef5612910cc37693"
+  },
+  {
+   "at": 1793449272000,
+   "a": "TB3viNboTwfjZ5ohzHjSBxwSRr6T6duU5b",
+   "sim": "TRX",
+   "cant": 1115607.471996,
+   "v": 392693.83014259196,
+   "tx": "927a68ef79835b65652f4647e4586e89d21978de9b92d634b468a9c75dc47ee5"
+  },
+  {
+   "at": 1793449305000,
+   "a": "TEg5ncDH6jwySRiAJ4sCC7JRJcmrmCmJrm",
+   "sim": "TRX",
+   "cant": 185142.987835,
+   "v": 65170.33171792,
+   "tx": "5b8c16dc94ec7deb3d535887986a196005fa894a581da4913da4afe32ef71ce1"
+  },
+  {
+   "at": 1793449338000,
+   "a": "TV1vu51cX8Fmo3iTya9d43D4Ugha1QBLbc",
+   "sim": "TRX",
+   "cant": 893328.475373,
+   "v": 314451.62333129597,
+   "tx": "b238ee9702203931618a93e1cc4c8d08be0154ef854ebe9878f6c141c00060ac"
+  },
+  {
+   "at": 1793449371000,
+   "a": "TH9czzgvmroxxd5n5fS1Gd6ZFJeJBaxVkj",
+   "sim": "TRX",
+   "cant": 610953.359814,
+   "v": 215055.58265452797,
+   "tx": "f8af21ccc54e7cb4c22430e9f1722f85c7aa421add53de5f618411ba05937fa4"
+  },
+  {
+   "at": 1793449476000,
+   "a": "TAmtGeBHfeuyt4D2xcpQfZyxRojSTRiz5j",
+   "sim": "TRX",
+   "cant": 219951.438419,
+   "v": 77422.906323488,
+   "tx": "a71994854ddbbffca99576ff5cc59179cf40322a0f934164485fbe25e849101d"
+  },
+  {
+   "at": 1793449563000,
+   "a": "TXSt1DTjju4UQxeNo5s6yxz1cjx7698Rmd",
+   "sim": "TRX",
+   "cant": 486973.106221,
+   "v": 171414.533389792,
+   "tx": "8b65e8b8c056bcb821dd673cb1be6654e6341649b6dc9d484f5282fc318eee19"
+  },
+  {
+   "at": 1793449731000,
+   "a": "TZ9gyo3kys8HXa2shfKgNbSbpmerHwEYfa",
+   "sim": "TRX",
+   "cant": 1016819.582383,
+   "v": 357920.49299881596,
+   "tx": "04f357e1c4bbcd8a2d5a8b453f1e28046e3ce86ed8fa41b1c3c058745ed81938"
+  },
+  {
+   "at": 1793449830000,
+   "a": "TXSt1DTjju4UQxeNo5s6yxz1cjx7698Rmd",
+   "sim": "TRX",
+   "cant": 637451.149922,
+   "v": 224382.80477254398,
+   "tx": "8a112342d4c069aa2ab12caac1a76fe186575cbd76a1a78e9d8c331bc1b0fbc9"
+  },
+  {
+   "at": 1793450163000,
+   "a": "TNhpfKq83wufEKGjBhQFnT7jnxYmyBzH6F",
+   "sim": "TRX",
+   "cant": 2226830.878953,
+   "v": 783844.469391456,
+   "tx": "67145fb00c73328f53ec268a683bcfba9caa2931bbf2fb1ae61b7f68d7afa1ac"
+  },
+  {
+   "at": 1793450451000,
+   "a": "TQKkLTBokGPHNKQQSne7Ucw5GMAc8eaYQf",
+   "sim": "TRX",
+   "cant": 477929.492919,
+   "v": 168231.18150748799,
+   "tx": "6ba2acd9b512534332dedc0755de332c7a61502fd756c168ed0a22a8f7945b3c"
+  },
+  {
+   "at": 1793450523000,
+   "a": "TV1vu51cX8Fmo3iTya9d43D4Ugha1QBLbc",
+   "sim": "TRX",
+   "cant": 747302.113551,
+   "v": 263050.34396995197,
+   "tx": "e1be6bf75c98c34cbee1c6d4bcd4d7729802547b0e24f837723fa01dae1e4c06"
+  },
+  {
+   "at": 1793450985000,
+   "a": "TV1vu51cX8Fmo3iTya9d43D4Ugha1QBLbc",
+   "sim": "TRX",
+   "cant": 583768.259261,
+   "v": 205486.42725987197,
+   "tx": "d5359c719fedafde2f99ebc846c92a567ec7845c5b18b121c968ca285181013a"
+  },
+  {
+   "at": 1793451015000,
+   "a": "TNhpfKq83wufEKGjBhQFnT7jnxYmyBzH6F",
+   "sim": "TRX",
+   "cant": 2371398.069229,
+   "v": 834732.1203686079,
+   "tx": "17655e56a8bd51cd3b74213b181221c99dfa41ecd327c5bef5a8873905053373"
+  },
+  {
+   "at": 1793451117000,
+   "a": "TNh7oqQN9WfdJvYyZDHh8pRk21mfUP8wf1",
+   "sim": "TRX",
+   "cant": 162033.598416,
+   "v": 57035.826642431995,
+   "tx": "e6a5af54d7a18cdff26fe53ffb086558bf8846e8ea96966ff00d6868bab0d3b8"
+  },
+  {
+   "at": 1793451441000,
+   "a": "TVuXrdY6b1ix3RFHmWtCoGAT2GJuJzEk59",
+   "sim": "TRX",
+   "cant": 108002.918813,
+   "v": 38017.027422176,
+   "tx": "4000d0da176c6508ed01ecfa32302f3bb782563a52bca4e5d014736e78afad87"
+  },
+  {
+   "at": 1793451618000,
+   "a": "TNhpfKq83wufEKGjBhQFnT7jnxYmyBzH6F",
+   "sim": "TRX",
+   "cant": 2478123.151014,
+   "v": 872299.349156928,
+   "tx": "924e84aa3835cd7c70e7948103941d70314a39ce23aa82c60bac150293de85ea"
+  },
+  {
+   "at": 1793451675000,
+   "a": "TV1vu51cX8Fmo3iTya9d43D4Ugha1QBLbc",
+   "sim": "TRX",
+   "cant": 744898.060419,
+   "v": 262204.117267488,
+   "tx": "4cd35597486a1dab2154f84c3c5413a1e9b3b3fdb3160e75d677d7094711c038"
+  },
+  {
+   "at": 1793452194000,
+   "a": "TXSt1DTjju4UQxeNo5s6yxz1cjx7698Rmd",
+   "sim": "TRX",
+   "cant": 587915.970004,
+   "v": 206946.421441408,
+   "tx": "15801a17b24db7a593ab93b7bedff2c1c75ad6b685da1582415b6e8f2b3f4bc0"
+  },
+  {
+   "at": 1793452317000,
+   "a": "TXSt1DTjju4UQxeNo5s6yxz1cjx7698Rmd",
+   "sim": "TRX",
+   "cant": 572626.144437,
+   "v": 201564.402841824,
+   "tx": "3e61b54cb82f638d89b39918277bc6ddf239306af84a2c6f831809ea0983c867"
+  },
+  {
+   "at": 1793452500000,
+   "a": "TEg5ncDH6jwySRiAJ4sCC7JRJcmrmCmJrm",
+   "sim": "TRX",
+   "cant": 2621340.636359,
+   "v": 922711.903998368,
+   "tx": "d1c00e5b6266ebd8fefdb778040dd5e53dbbb2dee0cda39ccbbc73922b9762da"
+  },
+  {
+   "at": 1793452653000,
+   "a": "TFyXz53eMBzVSDjor24fRjaTNxsvDRumXu",
+   "sim": "TRX",
+   "cant": 595504.227402,
+   "v": 209617.488045504,
+   "tx": "fa4b554318244f3c7e369ea1a28f28d9452c9e92d5d618409ac0ca785a0c9931"
+  },
+  {
+   "at": 1793452869000,
+   "a": "TQ27LngyGNB8emD6mt5FqjpCvZxo91EHhn",
+   "sim": "TRX",
+   "cant": 777972.798115,
+   "v": 273846.42493648,
+   "tx": "3dc6e194eee6a10f13d3af9202a1dbced6b76379dc2b109a96afcb5430be6c70"
+  },
+  {
+   "at": 1793453172000,
+   "a": "TFyXz53eMBzVSDjor24fRjaTNxsvDRumXu",
+   "sim": "TRX",
+   "cant": 446252.29426,
+   "v": 157080.80757951998,
+   "tx": "5c747a589f7c0879a0ac2ae565140e465cd81a1dd08d9686ad323e4ac065c70f"
+  },
+  {
+   "at": 1793453382000,
+   "a": "TNhpfKq83wufEKGjBhQFnT7jnxYmyBzH6F",
+   "sim": "TRX",
+   "cant": 2766312.173437,
+   "v": 973741.8850498239,
+   "tx": "50769b8fbfe50b488822ec8c1a3db4b5d123f1117928e45c12ac1de521fab797"
+  },
+  {
+   "at": 1793453442000,
+   "a": "THNBexynJqphhAruyUVgSG6K4kPgeBCaeo",
+   "sim": "TRX",
+   "cant": 112709.964888,
+   "v": 39673.907640576,
+   "tx": "e9ef3ae29e48a565b7222e73e87bbf88b83c1d377047763d413d890a821efd2e"
+  },
+  {
+   "at": 1793453520000,
+   "a": "TV1vu51cX8Fmo3iTya9d43D4Ugha1QBLbc",
+   "sim": "TRX",
+   "cant": 334858.414105,
+   "v": 117870.16176495998,
+   "tx": "78653a2a85246d7ed30b17a980f4c3fc6bafb3cf6771a7caaa59f7d289b06c43"
+  },
+  {
+   "at": 1793453619000,
+   "a": "TFyXz53eMBzVSDjor24fRjaTNxsvDRumXu",
+   "sim": "TRX",
+   "cant": 486195.637037,
+   "v": 171140.86423702398,
+   "tx": "d658fe9ba4a206515b12d382c92db1ed80541a30bca5f204a1082e3cb523938d"
+  },
+  {
+   "at": 1793454051000,
+   "a": "TXSt1DTjju4UQxeNo5s6yxz1cjx7698Rmd",
+   "sim": "TRX",
+   "cant": 513366.996522,
+   "v": 180705.182775744,
+   "tx": "5182c012c8b85d75e0ab188eaf85d8a7ccc164d2e51ec9d2ddfa3f5cbfcfaa77"
+  },
+  {
+   "at": 1793454132000,
+   "a": "TNhpfKq83wufEKGjBhQFnT7jnxYmyBzH6F",
+   "sim": "TRX",
+   "cant": 2927933.620862,
+   "v": 1030632.634543424,
+   "tx": "4ce50cf3dc7ee9fce3bfe62dc014219a5bfa8f1a26615ee9ffb7f8b2c422a003"
+  },
+  {
+   "at": 1793454594000,
+   "a": "TNh7oqQN9WfdJvYyZDHh8pRk21mfUP8wf1",
+   "sim": "TRX",
+   "cant": 231128.037073,
+   "v": 81357.069049696,
+   "tx": "eca0a946544a60ffdffba3f8d0ed8629831f5e9bb863505d4e7a07c152b02cdb"
+  },
+  {
+   "at": 1793454798000,
+   "a": "TNhpfKq83wufEKGjBhQFnT7jnxYmyBzH6F",
+   "sim": "TRX",
+   "cant": 3079082.870452,
+   "v": 1083837.1703991038,
+   "tx": "88eb1e6f0e08c6498cdcc72fce81985f85c992b343ee82070598323ac2066a87"
+  },
+  {
+   "at": 1793454963000,
+   "a": "TV1vu51cX8Fmo3iTya9d43D4Ugha1QBLbc",
+   "sim": "TRX",
+   "cant": 745059.786028,
+   "v": 262261.04468185594,
+   "tx": "e3c6ede91e657683d2b2c56373b35d7cde53a5e067ff850c9a1f98c530bd548b"
+  },
+  {
+   "at": 1793455161000,
+   "a": "TQ27LngyGNB8emD6mt5FqjpCvZxo91EHhn",
+   "sim": "TRX",
+   "cant": 820803.443056,
+   "v": 288922.811955712,
+   "tx": "d1edc55db28cfd40bcfdb1ca0684b5141a4b72c67c4c1021c691c926eea0e5b7"
+  },
+  {
+   "at": 1793455194000,
+   "a": "TXSt1DTjju4UQxeNo5s6yxz1cjx7698Rmd",
+   "sim": "TRX",
+   "cant": 364651.247003,
+   "v": 128357.23894505599,
+   "tx": "63373c7410223f01100848d5366a281ca4cfb00d5e5927b65d9043077046f19f"
+  },
+  {
+   "at": 1793455401000,
+   "a": "TXSt1DTjju4UQxeNo5s6yxz1cjx7698Rmd",
+   "sim": "TRX",
+   "cant": 655883.007684,
+   "v": 230870.81870476797,
+   "tx": "94140308a9519c1f1473dd9f2d4f39dc3c13d7e0e3f794ee7d290a4ea2201c57"
+  },
+  {
+   "at": 1793455437000,
+   "a": "TV1vu51cX8Fmo3iTya9d43D4Ugha1QBLbc",
+   "sim": "TRX",
+   "cant": 970945.179584,
+   "v": 341772.70321356796,
+   "tx": "cc2be6781fa572e7ab4ac140ec61a4a28a1e8fc8c71f0d1d7e4588c2181a6229"
+  },
+  {
+   "at": 1793455509000,
+   "a": "TNhpfKq83wufEKGjBhQFnT7jnxYmyBzH6F",
+   "sim": "TRX",
+   "cant": 3268886.655273,
+   "v": 1150648.1026560958,
+   "tx": "6f8b4e1e9816b8c6733528b417613214654cb60482f2eb6931a28f7af3fa7290"
+  },
+  {
+   "at": 1793455707000,
+   "a": "TUoVsNvkSbCQFty1tLViCgvMjNRGGEK6eM",
+   "sim": "TRX",
+   "cant": 366365.051702,
+   "v": 128960.498199104,
+   "tx": "ee5135aa7b8daa6ab07934c9f8e039aefd2391ea4423cb155eacab0cded9a07b"
+  },
+  {
+   "at": 1793455755000,
+   "a": "TNRGtU694p4X3VThaeYsCBVuh4yJFDM2fg",
+   "sim": "TRX",
+   "cant": 597690.38101,
+   "v": 210387.01411552,
+   "tx": "e661b0f9c44145ea8960f78401630d7c06fe48b9add7e4e7db854814469c76bc"
+  },
+  {
+   "at": 1793456052000,
+   "a": "TNpLXWxmBzo5pzwFvE7RfaLErhG1LGe1Cg",
+   "sim": "TRX",
+   "cant": 272760.013937,
+   "v": 96011.524905824,
+   "tx": "c10066beee863870904a337bbfeb9e211fab14056d59291de079ee0981f25c99"
+  },
+  {
+   "at": 1793456112000,
+   "a": "TV1vu51cX8Fmo3iTya9d43D4Ugha1QBLbc",
+   "sim": "TRX",
+   "cant": 807351.552382,
+   "v": 284187.746438464,
+   "tx": "6d7a44b1f422a91327f4af9274ac7c9e01e3a1982882e2a7dec3c5d9d28afe1e"
+  },
+  {
+   "at": 1793456298000,
+   "a": "TNhpfKq83wufEKGjBhQFnT7jnxYmyBzH6F",
+   "sim": "TRX",
+   "cant": 3446914.040067,
+   "v": 1213313.7421035839,
+   "tx": "6d5c66c581265161459ccacf0736f5b88e5820d222283af134651000bafd8086"
+  },
+  {
+   "at": 1793456334000,
+   "a": "TNh7oqQN9WfdJvYyZDHh8pRk21mfUP8wf1",
+   "sim": "TRX",
+   "cant": 100414.649233,
+   "v": 35345.956530015996,
+   "tx": "da53d471c9e49cd39213eebbd25a3bf51858f2d787d401b5c2e01ab72ac7e070"
+  },
+  {
+   "at": 1793456430000,
+   "a": "TXSt1DTjju4UQxeNo5s6yxz1cjx7698Rmd",
+   "sim": "TRX",
+   "cant": 664003.039409,
+   "v": 233729.06987196798,
+   "tx": "21654b6644d4b75d850cb27ef94816f984a3e43b21db8d80d5a2c765f03a5c07"
+  },
+  {
+   "at": 1793456472000,
+   "a": "TR5xn6w2PWhjTyRhTJamjzxGaCGbu7ZFZ7",
+   "sim": "TRX",
+   "cant": 610182.361756,
+   "v": 214784.19133811197,
+   "tx": "168980d437412f852cb5af1d0db30045763285d0b4ab4ee54fa03f4a934ee533"
+  },
+  {
+   "at": 1793456823000,
+   "a": "TV1vu51cX8Fmo3iTya9d43D4Ugha1QBLbc",
+   "sim": "TRX",
+   "cant": 257417.370915,
+   "v": 90610.91456208,
+   "tx": "0f87eb31567c934d5231f88e6dfe7f9543e43479b53e87e38cf8186f30a10ab7"
+  },
+  {
+   "at": 1793456862000,
+   "a": "TNhpfKq83wufEKGjBhQFnT7jnxYmyBzH6F",
+   "sim": "TRX",
+   "cant": 3625881.014088,
+   "v": 1276310.116958976,
+   "tx": "e1d40eeffe507bff9372525e7a47130d9879140b0460e5eca4d8377df91a13c8"
+  },
+  {
+   "at": 1793456997000,
+   "a": "TEL98F1EAFC4NgzWEHmJkTuRC1kY8xMJbi",
+   "sim": "TRX",
+   "cant": 234350.617317,
+   "v": 82491.41729558399,
+   "tx": "3a9ca8e11a08f4947713f31deda59f99a240810c23328b6b94100e226413b745"
+  },
+  {
+   "at": 1793457183000,
+   "a": "TR5xn6w2PWhjTyRhTJamjzxGaCGbu7ZFZ7",
+   "sim": "TRX",
+   "cant": 892133.03298,
+   "v": 314030.82760896,
+   "tx": "3880f5316ce93128cb5a22dd97bd7b0fd70259d0fab1fa375ee67770841b7597"
+  },
+  {
+   "at": 1793457216000,
+   "a": "TV1vu51cX8Fmo3iTya9d43D4Ugha1QBLbc",
+   "sim": "TRX",
+   "cant": 748532.836516,
+   "v": 263483.558453632,
+   "tx": "ebee384010c9d2a153a480421120b6dac095432064cdf3dcadfa3e203df22601"
+  },
+  {
+   "at": 1793457327000,
+   "a": "TXSt1DTjju4UQxeNo5s6yxz1cjx7698Rmd",
+   "sim": "TRX",
+   "cant": 513320.28959,
+   "v": 180688.74193567998,
+   "tx": "d436126da681b418b17e48e46485d2ce74c26b279beee8d89f19bfb7f2f0d47f"
+  },
+  {
+   "at": 1793457465000,
+   "a": "TB3viNboTwfjZ5ohzHjSBxwSRr6T6duU5b",
+   "sim": "TRX",
+   "cant": 3139593.698055,
+   "v": 1105136.98171536,
+   "tx": "478f58d5fec8849e45424513954325e20029b49cea9fd2b8f28a1b2dc25698eb"
+  },
+  {
+   "at": 1793457498000,
+   "a": "TNhpfKq83wufEKGjBhQFnT7jnxYmyBzH6F",
+   "sim": "TRX",
+   "cant": 3821324.732849,
+   "v": 1345106.305962848,
+   "tx": "d3cff15a037ba8fdea02eff8ec6d68dfc2db4ab80f41957afb66b9e2605dd366"
+  },
+  {
+   "at": 1793458260000,
+   "a": "TZEvgE51pq8KZjH8oWZ7XNw9tQp2uu2ziC",
+   "sim": "TRX",
+   "cant": 1447511.065631,
+   "v": 509523.89510211203,
+   "tx": "436b170bc02666cd8edd5a3b1c6f277dc64b606ff90bdaa2893d409a66811944"
+  },
+  {
+   "at": 1793458323000,
+   "a": "TNhpfKq83wufEKGjBhQFnT7jnxYmyBzH6F",
+   "sim": "TRX",
+   "cant": 4023022.875326,
+   "v": 1416104.052114752,
+   "tx": "5ea73827f91ccd8e5a17be7226d434a3cb63ca71ba27ee435f2af06e30141e80"
+  },
+  {
+   "at": 1793458353000,
+   "a": "TV1vu51cX8Fmo3iTya9d43D4Ugha1QBLbc",
+   "sim": "TRX",
+   "cant": 832724.554188,
+   "v": 293119.043074176,
+   "tx": "62548c6c52e2cb89f19d4a9dddb8a94db26276758fc4f85ce02d8d79b1f7ea8f"
+  },
+  {
+   "at": 1793458389000,
+   "a": "TQ27LngyGNB8emD6mt5FqjpCvZxo91EHhn",
+   "sim": "TRX",
+   "cant": 867380.819146,
+   "v": 305318.04833939194,
+   "tx": "d878d7ad180b7aed4c995d51ebcec42393b75a4efda7bcb9f0878f9a94e971b8"
+  },
+  {
+   "at": 1793458428000,
+   "a": "TKd2AepFXECGMf8zMZcNVpt83rpGjTMoNs",
+   "sim": "TRX",
+   "cant": 129852.725634,
+   "v": 45708.159423168,
+   "tx": "4b5e8c7bb73069333b53440a8a201f921d2a6ce9701e7091adae871054945665"
+  },
+  {
+   "at": 1793458536000,
+   "a": "TD2d5KG1inniNzyGXiCy7uxdWX1CRVtLyt",
+   "sim": "TRX",
+   "cant": 1463873.156784,
+   "v": 515283.351187968,
+   "tx": "7f7348b813182f8ac75e1ad4f45a9a2cecaacceab9739db32574060455c21193"
+  },
+  {
+   "at": 1793458788000,
+   "a": "TXSt1DTjju4UQxeNo5s6yxz1cjx7698Rmd",
+   "sim": "TRX",
+   "cant": 596987.153592,
+   "v": 210139.478064384,
+   "tx": "9470a43b297dd33c0ab4d39ed6df942775046cdca8e0783e3521c92ec48eba5b"
+  },
+  {
+   "at": 1793459079000,
+   "a": "TNhpfKq83wufEKGjBhQFnT7jnxYmyBzH6F",
+   "sim": "TRX",
+   "cant": 4246998.925341,
+   "v": 1494943.6217200318,
+   "tx": "33bbacd2a6a9c706ad0418bc25f47e2152d8934eef5d7f4287641eda62d89c4e"
+  },
+  {
+   "at": 1793459118000,
+   "a": "TXSt1DTjju4UQxeNo5s6yxz1cjx7698Rmd",
+   "sim": "TRX",
+   "cant": 378251.621779,
+   "v": 133144.57086620797,
+   "tx": "bf710b9aa5c4163b5ce2024e5fe5b5881a8aa56269f22806f89bbfc7eb704f10"
+  },
+  {
+   "at": 1793459451000,
+   "a": "TV1vu51cX8Fmo3iTya9d43D4Ugha1QBLbc",
+   "sim": "TRX",
+   "cant": 361177.152234,
+   "v": 127134.35758636799,
+   "tx": "bdd11d1b1c1fb7ea64d7121aec4c870ae9f25d2c9e50fbc9e796ae20da7c5b8a"
+  },
+  {
+   "at": 1793459496000,
+   "a": "TXSt1DTjju4UQxeNo5s6yxz1cjx7698Rmd",
+   "sim": "TRX",
+   "cant": 552166.917379,
+   "v": 194362.754917408,
+   "tx": "1c8daee4dfd40a2aac90a77bdd16b7c71fe5512a777538482fa0e8326e6cf7f2"
+  },
+  {
+   "at": 1793459649000,
+   "a": "TNh7oqQN9WfdJvYyZDHh8pRk21mfUP8wf1",
+   "sim": "TRX",
+   "cant": 323318.550748,
+   "v": 113808.12986329598,
+   "tx": "02a229022cb4bd702b5e38b005993b09a68eafa0fa7208db7333df4b1777b2bb"
+  },
+  {
+   "at": 1793459706000,
+   "a": "TBTFih9SzdRBNcsEt17rWNV1fFENooZyk8",
+   "sim": "TRX",
+   "cant": 245178.54383,
+   "v": 86302.84742815999,
+   "tx": "575823b4f0291e39b892e3fd066d43d888e5329d2326f80590e6bc31e495f721"
+  },
+  {
+   "at": 1793459790000,
+   "a": "TXSt1DTjju4UQxeNo5s6yxz1cjx7698Rmd",
+   "sim": "TRX",
+   "cant": 690132.179386,
+   "v": 242926.527143872,
+   "tx": "5236c585823ce98f6d4ad0eae1088ae3ac3302d3e8cb3fa08abe4621ba9d602c"
+  },
+  {
+   "at": 1793459895000,
+   "a": "TV1vu51cX8Fmo3iTya9d43D4Ugha1QBLbc",
+   "sim": "TRX",
+   "cant": 1054103.856523,
+   "v": 371044.55749609595,
+   "tx": "da9ddaef350730eda89cbbbc42dfd573433192c70e4707999538e9f5aaa67a13"
+  },
+  {
+   "at": 1793460264000,
+   "a": "TQ27LngyGNB8emD6mt5FqjpCvZxo91EHhn",
+   "sim": "TRX",
+   "cant": 916400.878542,
+   "v": 322573.10924678395,
+   "tx": "71356dfd20191533e15f0de7044f903fab176a0baf9cff2b1777265452ce981b"
+  },
+  {
+   "at": 1793460363000,
+   "a": "TNhpfKq83wufEKGjBhQFnT7jnxYmyBzH6F",
+   "sim": "TRX",
+   "cant": 4465112.999441,
+   "v": 1571719.7758032319,
+   "tx": "4edb89af82462780d1a7d284079bcfe77c4af47555f21a6ef5acfb8542fa065f"
+  },
+  {
+   "at": 1793460408000,
+   "a": "TV1vu51cX8Fmo3iTya9d43D4Ugha1QBLbc",
+   "sim": "TRX",
+   "cant": 752527.788937,
+   "v": 264889.78170582396,
+   "tx": "39b7501af2ca241078a5cb483e2a2b7671978b1b6f98af469edaab101bd5624a"
+  },
+  {
+   "at": 1793460888000,
+   "a": "TV1vu51cX8Fmo3iTya9d43D4Ugha1QBLbc",
+   "sim": "TRX",
+   "cant": 866408.028659,
+   "v": 304975.62608796795,
+   "tx": "aa597809825d895737941360dd430782826cd22bb7ad23dcceb7b7208c82ddf6"
+  },
+  {
+   "at": 1793461092000,
+   "a": "TXSt1DTjju4UQxeNo5s6yxz1cjx7698Rmd",
+   "sim": "TRX",
+   "cant": 378000.726372,
+   "v": 133056.255682944,
+   "tx": "de7a653091b43a90aca9d5574af83700c43b8cbe34c5a3b5691a3395eec1984f"
+  },
+  {
+   "at": 1793461272000,
+   "a": "TB3viNboTwfjZ5ohzHjSBxwSRr6T6duU5b",
+   "sim": "TRX",
+   "cant": 3306957.718267,
+   "v": 1164049.116829984,
+   "tx": "6f6c6365e3f9e01a5bbdc66aa74e47481e78386950cfcab1d0875286ba03c85b"
+  },
+  {
+   "at": 1793461719000,
+   "a": "TV1vu51cX8Fmo3iTya9d43D4Ugha1QBLbc",
+   "sim": "TRX",
+   "cant": 759088.303718,
+   "v": 267199.08290873596,
+   "tx": "ae4c75329c9836d4316c15cc92fc52cb944bfa68eee879a98064fa1e34b19f23"
+  },
+  {
+   "at": 1793461806000,
+   "a": "TNhpfKq83wufEKGjBhQFnT7jnxYmyBzH6F",
+   "sim": "TRX",
+   "cant": 4713333.929574,
+   "v": 1659093.5432100478,
+   "tx": "c2b07c36795799da2cf672bb91b9a54e4925c5277e1fb83a1f2f2862fe9147b5"
+  },
+  {
+   "at": 1793461890000,
+   "a": "TQ27LngyGNB8emD6mt5FqjpCvZxo91EHhn",
+   "sim": "TRX",
+   "cant": 968221.750722,
+   "v": 340814.056254144,
+   "tx": "905ce5fc9e6077a6abbd56040b3b849f10c16277eee4d3c2a247a13bd910c00b"
+  },
+  {
+   "at": 1793462082000,
+   "a": "TNWyDsFm3PY41YZnFug6xLTXsC545Z7wh9",
+   "sim": "TRX",
+   "cant": 155124.817878,
+   "v": 54603.935893056,
+   "tx": "a58be8d9005779c5d07698a841e0561e6ea85e80550f0eb02a92d8222474a270"
+  },
+  {
+   "at": 1793462298000,
+   "a": "TBfiAPs6Bw5KSNZSL7k7dsdB8eQCt9qonS",
+   "sim": "TRX",
+   "cant": 256807.771154,
+   "v": 90396.33544620799,
+   "tx": "e881f6df3d72b5eb60e5c5873e589015781e0f5a2ec91ffdeed5600676bbdb6c"
+  },
+  {
+   "at": 1793462370000,
+   "a": "TXSt1DTjju4UQxeNo5s6yxz1cjx7698Rmd",
+   "sim": "TRX",
+   "cant": 696841.126216,
+   "v": 245288.07642803196,
+   "tx": "da89ddf6c3ba4d67e685b9500fc3d198e1184d94451ee6521e7030cf6cbd911d"
+  },
+  {
+   "at": 1793462433000,
+   "a": "TV1vu51cX8Fmo3iTya9d43D4Ugha1QBLbc",
+   "sim": "TRX",
+   "cant": 378194.76876,
+   "v": 133124.55860351998,
+   "tx": "b38a7526feeee83e56baad50fa8e12f0f67c633f84609d24ceec6831eebd6071"
+  },
+  {
+   "at": 1793462949000,
+   "a": "TV1vu51cX8Fmo3iTya9d43D4Ugha1QBLbc",
+   "sim": "TRX",
+   "cant": 531891.363022,
+   "v": 187225.75978374397,
+   "tx": "194001000c3d312a8babb925e2312c06f3ebeafea28e56222dc5ca5569897922"
+  },
+  {
+   "at": 1793462991000,
+   "a": "TNhpfKq83wufEKGjBhQFnT7jnxYmyBzH6F",
+   "sim": "TRX",
+   "cant": 4933934.256576,
+   "v": 1736744.8583147519,
+   "tx": "de10fdbc47c6eab75215d5438239b42a09f11ee31b161ff5fe7d3a2c01bfe586"
+  },
+  {
+   "at": 1793463195000,
+   "a": "TK65ThchFGhuQEfT5tUfPGGvD8wKDRDuif",
+   "sim": "TRX",
+   "cant": 1538621.776877,
+   "v": 541594.865460704,
+   "tx": "79f56d3732aea39e21fb0d0d95944bf64f98efe952d3376ec2f1c1c560c29610"
+  },
+  {
+   "at": 1793463231000,
+   "a": "TXSt1DTjju4UQxeNo5s6yxz1cjx7698Rmd",
+   "sim": "TRX",
+   "cant": 718402.375207,
+   "v": 252877.63607286397,
+   "tx": "71782056ac5f44c20835317900fd9ee5f77ceabee7e1335733f8c5f07f6572d0"
+  },
+  {
+   "at": 1793463357000,
+   "a": "TQ27LngyGNB8emD6mt5FqjpCvZxo91EHhn",
+   "sim": "TRX",
+   "cant": 1021090.900316,
+   "v": 359423.99691123195,
+   "tx": "12203ae2cae49c721750b9bfdd5d22dc25b9adeafe5479b4812ade6381b8e76f"
+  },
+  {
+   "at": 1793463609000,
+   "a": "TXSt1DTjju4UQxeNo5s6yxz1cjx7698Rmd",
+   "sim": "TRX",
+   "cant": 600986.588744,
+   "v": 211547.27923788797,
+   "tx": "bb8991f994bedf1479fba2bc97ccaf73aeca5385971dc8dc6c34537ba5b5929f"
+  },
+  {
+   "at": 1793464152000,
+   "a": "TNhpfKq83wufEKGjBhQFnT7jnxYmyBzH6F",
+   "sim": "TRX",
+   "cant": 5199028.032513,
+   "v": 1830057.867444576,
+   "tx": "21fdcf7ac2dd660b6e07ad03f7bd10d5a987839c057eca7405733f8b163e185f"
+  },
+  {
+   "at": 1793465817000,
+   "a": "TNhpfKq83wufEKGjBhQFnT7jnxYmyBzH6F",
+   "sim": "TRX",
+   "cant": 5481190.786513,
+   "v": 1929379.1568525757,
+   "tx": "95f407e3ffefdb7c789bcdefafb53463d71050d8d4e05034a3d847dc11b00fb0"
+  },
+  {
+   "at": 1793465868000,
+   "a": "TXSt1DTjju4UQxeNo5s6yxz1cjx7698Rmd",
+   "sim": "TRX",
+   "cant": 524378.080056,
+   "v": 184581.084179712,
+   "tx": "453cb5ca0ee67989874c1e26971acc79ef005aa83c8211f7c7dd475dcbd4c392"
+  },
+  {
+   "at": 1793465955000,
+   "a": "TV1vu51cX8Fmo3iTya9d43D4Ugha1QBLbc",
+   "sim": "TRX",
+   "cant": 763883.613673,
+   "v": 268887.032012896,
+   "tx": "c72c9d42981faa9d89890afb9b264c9170efdaa5c64947e551be671ebccd2643"
+  },
+  {
+   "at": 1793465997000,
+   "a": "TMnCFtE8cwrVMpH3CZva9CUBjCcVo24ZSN",
+   "sim": "TRX",
+   "cant": 1525753.463996,
+   "v": 537065.2193265919,
+   "tx": "4477684af80d5548bae3cd9c943ab51e4824d9b12d55b1c70e4e78306454704d"
+  },
+  {
+   "at": 1793466126000,
+   "a": "TQ27LngyGNB8emD6mt5FqjpCvZxo91EHhn",
+   "sim": "TRX",
+   "cant": 1078669.204862,
+   "v": 379691.56011142395,
+   "tx": "9f436a984a83e65f71db04bdf9d5a1eb94747590ee2719ce5eb6d8de12c9cd4e"
+  },
+  {
+   "at": 1793466171000,
+   "a": "TU1k3QZMCjGF3cxGDzh8FWEHY2YppX3N2q",
+   "sim": "TRX",
+   "cant": 760694.04748,
+   "v": 267764.30471296,
+   "tx": "037f55df94bc255870298a2b7ef7795184bcc3f77ead906c650401e23c638a9c"
+  },
+  {
+   "at": 1793466207000,
+   "a": "TXSt1DTjju4UQxeNo5s6yxz1cjx7698Rmd",
+   "sim": "TRX",
+   "cant": 776065.535779,
+   "v": 273175.068594208,
+   "tx": "475deef54f4cb33a352acbc097b46b6c390549f70f84c667d4a12cf3690ca5b4"
+  },
+  {
+   "at": 1793466321000,
+   "a": "TV1vu51cX8Fmo3iTya9d43D4Ugha1QBLbc",
+   "sim": "TRX",
+   "cant": 1142298.127188,
+   "v": 402088.94077017595,
+   "tx": "f60e37067a3c6bdff02f6e75673305425225fcafa4d6458bdd2e44a4edbab085"
+  },
+  {
+   "at": 1793466402000,
+   "a": "TD23EVnun4A6qiMakzRDcBXCq7qH4DDThP",
+   "sim": "TRX",
+   "cant": 268878.466537,
+   "v": 94645.22022102398,
+   "tx": "ddf07775dc578bb504990d3277e2ef6d8102627ed0d7babdeb11466d3288b1ac"
+  },
+  {
+   "at": 1793466561000,
+   "a": "TSRe7AfRjciGZaABj5t5ETH74S7uT6GEEg",
+   "sim": "TRX",
+   "cant": 20846.020836,
+   "v": 7337.799334271999,
+   "tx": "c6e92917b8985aaeeea2b7baa6dd079b94402cd5f557495d69ac399aedd351a4"
+  },
+  {
+   "at": 1793466975000,
+   "a": "TQ27LngyGNB8emD6mt5FqjpCvZxo91EHhn",
+   "sim": "TRX",
+   "cant": 632172.902845,
+   "v": 222524.86180144,
+   "tx": "8c7d183108b4952aa5fcdf9bcd72042ec092bfc7b5fcd58a78c3edd6e660e19e"
+  },
+  {
+   "at": 1793467014000,
+   "a": "TXSt1DTjju4UQxeNo5s6yxz1cjx7698Rmd",
+   "sim": "TRX",
+   "cant": 747796.057097,
+   "v": 263224.212098144,
+   "tx": "95e90397197e6ade7ed2942c0d43ea7ade6deecb33e8b0c33aac6bd41b975102"
+  },
+  {
+   "at": 1793467050000,
+   "a": "TNhpfKq83wufEKGjBhQFnT7jnxYmyBzH6F",
+   "sim": "TRX",
+   "cant": 5788793.627201,
+   "v": 2037655.356774752,
+   "tx": "7c9d7347fbbfcd457ecd4bdfcd47347786bd424ca22b09a2feb6fe0a5fbf1059"
+  },
+  {
+   "at": 1793467089000,
+   "a": "TV1vu51cX8Fmo3iTya9d43D4Ugha1QBLbc",
+   "sim": "TRX",
+   "cant": 901324.897806,
+   "v": 317266.36402771197,
+   "tx": "259a85b0a85988912cd068135a8aff9af521bd42a2ad09196e4cc7b1bc975bcf"
+  },
+  {
+   "at": 1793467392000,
+   "a": "TXSt1DTjju4UQxeNo5s6yxz1cjx7698Rmd",
+   "sim": "TRX",
+   "cant": 409191.703965,
+   "v": 144035.47979568,
+   "tx": "0830b6db7214c461fc2f3fb1b720dac6d84cdf77768047f9536c7ef8555bfb39"
+  },
+  {
+   "at": 1793467533000,
+   "a": "TV1vu51cX8Fmo3iTya9d43D4Ugha1QBLbc",
+   "sim": "TRX",
+   "cant": 394226.229118,
+   "v": 138767.632649536,
+   "tx": "a620b472ce6d288dd73123db920c21384de15d6eb4d86081867d0979e9e4d3ec"
+  },
+  {
+   "at": 1793467641000,
+   "a": "TXSt1DTjju4UQxeNo5s6yxz1cjx7698Rmd",
+   "sim": "TRX",
+   "cant": 524650.710704,
+   "v": 184677.050167808,
+   "tx": "7fb99981e7040744de4342f2e612e1c0bf711c5582f53351007d46bd34ebc32b"
+  },
+  {
+   "at": 1793467704000,
+   "a": "TSRe7AfRjciGZaABj5t5ETH74S7uT6GEEg",
+   "sim": "TRX",
+   "cant": 22442.335483,
+   "v": 7899.702090016,
+   "tx": "e8cac22ca9e6f89a62e8bc2a969138b6f240f9caa0bd4c8c9ec0b074364ff6a1"
+  },
+  {
+   "at": 1793467785000,
+   "a": "TQ27LngyGNB8emD6mt5FqjpCvZxo91EHhn",
+   "sim": "TRX",
+   "cant": 1137463.409636,
+   "v": 400387.12019187195,
+   "tx": "fae1463a71c920ee07f4ca33ab2b08dc45bda7eea0ee495b26f2d23285839bcc"
+  },
+  {
+   "at": 1793467992000,
+   "a": "TV1vu51cX8Fmo3iTya9d43D4Ugha1QBLbc",
+   "sim": "TRX",
+   "cant": 765758.013774,
+   "v": 269546.82084844797,
+   "tx": "37fa441641ee499ffb9a47d6d03d1cf63aa93a75189b3437f84cac41612f965d"
+  },
+  {
+   "at": 1793468082000,
+   "a": "TNhpfKq83wufEKGjBhQFnT7jnxYmyBzH6F",
+   "sim": "TRX",
+   "cant": 6093782.003395,
+   "v": 2145011.2651950396,
+   "tx": "94a2d1f0ad8f6d1980dddf14811f3c8514c908fb662726ac4a886ef12fa96b22"
+  },
+  {
+   "at": 1793468451000,
+   "a": "TV1vu51cX8Fmo3iTya9d43D4Ugha1QBLbc",
+   "sim": "TRX",
+   "cant": 929508.817409,
+   "v": 327187.103727968,
+   "tx": "89e25c6749ff041a143007a50d5369e5d560ff1c30a06a85a33234c56e732eb8"
+  },
+  {
+   "at": 1793468673000,
+   "a": "TQ27LngyGNB8emD6mt5FqjpCvZxo91EHhn",
+   "sim": "TRX",
+   "cant": 788005.020896,
+   "v": 277377.767355392,
+   "tx": "c70417d89ba902971df39dd00f3b6d61626c3d2cb63653f1bf75c017a9526500"
+  },
+  {
+   "at": 1793468808000,
+   "a": "TXSt1DTjju4UQxeNo5s6yxz1cjx7698Rmd",
+   "sim": "TRX",
+   "cant": 599462.42046,
+   "v": 211010.77200192,
+   "tx": "3767aa78c6a587c2efba76c2069628b426f06ebe920241492411aae5bc095b3e"
+  },
+  {
+   "at": 1793468853000,
+   "a": "TNQ168QpHom3DcmFKTPHPzhdxyrxja8UqF",
+   "sim": "TRX",
+   "cant": 73221.102854,
+   "v": 25773.828204608,
+   "tx": "c9f581386d485341fdc4865caa464d70c3b2b4d419f77b959c7e016800a5d5b7"
+  },
+  {
+   "at": 1793468913000,
+   "a": "TCtoerwxrRBtodpfdXFADerzDw8jR6qbbu",
+   "sim": "TRX",
+   "cant": 802566.733208,
+   "v": 282503.490089216,
+   "tx": "7bac3ab2603ae7421f9f63e5e2e379293b6d083871169c099cdcb9e3aed5b7a6"
+  },
+  {
+   "at": 1793469102000,
+   "a": "TUPrEdkWXyPKRJTTjB4LTXLp6uqMx4DmBG",
+   "sim": "TRX",
+   "cant": 523748.451369,
+   "v": 184359.454881888,
+   "tx": "9a22eaf7e65558dbb1d9ef170f88513d460c8a14b744373ef71caa02cf703f2d"
+  },
+  {
+   "at": 1793469159000,
+   "a": "TSRe7AfRjciGZaABj5t5ETH74S7uT6GEEg",
+   "sim": "TRX",
+   "cant": 23023.44904,
+   "v": 8104.254062079999,
+   "tx": "d105f3c587c8250d50f9f19e4e339b4a49017bf6bba5a4b466ceb99b1115aa10"
+  },
+  {
+   "at": 1793469366000,
+   "a": "TB3viNboTwfjZ5ohzHjSBxwSRr6T6duU5b",
+   "sim": "TRX",
+   "cant": 3814604.999295,
+   "v": 1342740.95975184,
+   "tx": "c4781260e878007ef47c6b3a94e2d17d1e6a50ca51eaa705403b534aafb5e1cb"
+  },
+  {
+   "at": 1793469450000,
+   "a": "TV1vu51cX8Fmo3iTya9d43D4Ugha1QBLbc",
+   "sim": "TRX",
+   "cant": 304431.261416,
+   "v": 107159.804018432,
+   "tx": "b59aaf26b4a20119ea0e03fa9ed96870d16f7b61e4fce0ae02ea1a546421c4c9"
+  },
+  {
+   "at": 1793469492000,
+   "a": "TNhpfKq83wufEKGjBhQFnT7jnxYmyBzH6F",
+   "sim": "TRX",
+   "cant": 6374251.39219,
+   "v": 2243736.49005088,
+   "tx": "fc6a7ebd362a665a10a65bea7cbc3e23ad3dcb1d0818083c4a0370ebb5c84258"
+  },
+  {
+   "at": 1793469528000,
+   "a": "TQ27LngyGNB8emD6mt5FqjpCvZxo91EHhn",
+   "sim": "TRX",
+   "cant": 1201888.924999,
+   "v": 423064.901599648,
+   "tx": "539ac75e1a7df68ec7d2afeea48fbd83ce1a56d83fa4481b66897293ab94dff3"
+  },
+  {
+   "at": 1793469879000,
+   "a": "TXSt1DTjju4UQxeNo5s6yxz1cjx7698Rmd",
+   "sim": "TRX",
+   "cant": 386483.858548,
+   "v": 136042.318208896,
+   "tx": "ea4835d2fe7f99cf141a60d11224ac43b92168fb2c1ca7f269f5442c3d6b750b"
+  },
+  {
+   "at": 1793470125000,
+   "a": "TV1vu51cX8Fmo3iTya9d43D4Ugha1QBLbc",
+   "sim": "TRX",
+   "cant": 1081673.660232,
+   "v": 380749.12840166397,
+   "tx": "42edb2638ff6fde61720a7744a154a09ef0aa4305062ee79e808be3da9542bb3"
+  },
+  {
+   "at": 1793470431000,
+   "a": "TK5DbNJNCq1tQD4Q3kAqaRXcgYGyh2xUST",
+   "sim": "TRX",
+   "cant": 1050993.82971,
+   "v": 369949.82805792,
+   "tx": "d877eb49c9b92b9de82be7788e039f49886735c5c023d03932a4e56624b5832d"
+  },
+  {
+   "at": 1793470473000,
+   "a": "TQ27LngyGNB8emD6mt5FqjpCvZxo91EHhn",
+   "sim": "TRX",
+   "cant": 830345.414109,
+   "v": 292281.58576636796,
+   "tx": "e0a41e62a411b29e05162ade2d54b735d1ab7ddb856fa4c6f2d37a9e3e6f70a3"
+  },
+  {
+   "at": 1793470611000,
+   "a": "TV1vu51cX8Fmo3iTya9d43D4Ugha1QBLbc",
+   "sim": "TRX",
+   "cant": 1159034.65982,
+   "v": 407980.20025664,
+   "tx": "bd942e30fd0ee9672b408be1b80d703a1005574e0c138fae46ec22232b931b25"
+  },
+  {
+   "at": 1793470899000,
+   "a": "TUEC6tDMnGW1ub1TShJo5qeVjZ8uSm5EC3",
+   "sim": "TRX",
+   "cant": 525732.821905,
+   "v": 185057.95331056,
+   "tx": "cc7ea6c558eb7de027ca7d7916430fb20e0dd97d765fe2e7626a888e122cbc98"
+  },
+  {
+   "at": 1793470950000,
+   "a": "TSRe7AfRjciGZaABj5t5ETH74S7uT6GEEg",
+   "sim": "TRX",
+   "cant": 24113.367907,
+   "v": 8487.905503263999,
+   "tx": "fc56a85431f0a9329e2550435b0f391e0dbe635a01016d09dd958be6f4265a6c"
+  },
+  {
+   "at": 1793471037000,
+   "a": "TXSt1DTjju4UQxeNo5s6yxz1cjx7698Rmd",
+   "sim": "TRX",
+   "cant": 524744.60165,
+   "v": 184710.09978079997,
+   "tx": "0b12ed338b43bfd9407ea69ffb65e9a097ffc63839e4a7a2bf9649eaaaefaec3"
+  },
+  {
+   "at": 1793471079000,
+   "a": "TNhpfKq83wufEKGjBhQFnT7jnxYmyBzH6F",
+   "sim": "TRX",
+   "cant": 6693303.201799,
+   "v": 2356042.7270332477,
+   "tx": "92ec5ca0b1ed3c045495c0c527a188429b689e8732e16e0371c6ea1db5eec071"
+  },
+  {
+   "at": 1793471199000,
+   "a": "TV1vu51cX8Fmo3iTya9d43D4Ugha1QBLbc",
+   "sim": "TRX",
+   "cant": 950297.276024,
+   "v": 334504.64116044797,
+   "tx": "674f22091841ab7eb380362e7de60070dfc8ad47836310b14145268933612285"
+  },
+  {
+   "at": 1793471241000,
+   "a": "TBye5h8DzUaAVE6v5qmmFJRHvJjmK2rZeb",
+   "sim": "TRX",
+   "cant": 1613902.280732,
+   "v": 568093.6028176639,
+   "tx": "680a12f9fe4aa328be5ce9bb14b7125cfb94fb6c9e9cd865ba289fa24af0b286"
+  },
+  {
+   "at": 1793471280000,
+   "a": "TCZRWszLiAa8YPYAmkNWpzyFhHknvrvvt7",
+   "sim": "TRX",
+   "cant": 281719.96903,
+   "v": 99165.42909855998,
+   "tx": "4167117ad4ae5a5a160c3516fd3e05cd748b077d7bd5193d4329a8d0faca5f33"
+  },
+  {
+   "at": 1793471343000,
+   "a": "TXSt1DTjju4UQxeNo5s6yxz1cjx7698Rmd",
+   "sim": "TRX",
+   "cant": 488211.093077,
+   "v": 171850.30476310398,
+   "tx": "f7e71e2004cff505c726d3f92dedd838b29faa2bb545dbd053d1f2f463f33989"
+  },
+  {
+   "at": 1793471673000,
+   "a": "TNQ168QpHom3DcmFKTPHPzhdxyrxja8UqF",
+   "sim": "TRX",
+   "cant": 76300.240493,
+   "v": 26857.684653536002,
+   "tx": "ee518532e1e825894a2c453643029ee4efde8d4231b8f4e847e9bb4c2740475a"
+  },
+  {
+   "at": 1793471736000,
+   "a": "TA3axSgEfJMKF8CXjhUjtJMQ6QdRtsvPw9",
+   "sim": "TRX",
+   "cant": 20978.265619,
+   "v": 7384.349497888,
+   "tx": "8b8549429e001dbe12a211e4c38efa6e5df186c07c591eea4892bdff3b38714b"
+  },
+  {
+   "at": 1793471781000,
+   "a": "TQ27LngyGNB8emD6mt5FqjpCvZxo91EHhn",
+   "sim": "TRX",
+   "cant": 1268444.506616,
+   "v": 446492.46632883203,
+   "tx": "14794f5350d2dd0a572ed39d3cb59bcdb664dc9eb8b0e1454c90209b54fd5ba8"
+  },
+  {
+   "at": 1793471844000,
+   "a": "TV1vu51cX8Fmo3iTya9d43D4Ugha1QBLbc",
+   "sim": "TRX",
+   "cant": 424434.795986,
+   "v": 149401.04818707198,
+   "tx": "55a1c420622923e3a03abc33782c5174913f579605061f90dd757ebdb8c99928"
+  },
+  {
+   "at": 1793472021000,
+   "a": "TNhpfKq83wufEKGjBhQFnT7jnxYmyBzH6F",
+   "sim": "TRX",
+   "cant": 6517057.580691,
+   "v": 2294004.268403232,
+   "tx": "f311b243f19ea6a8bdea76e1a6cc75ef3e644fcb7cf071f1b7fe28ee182a11a9"
+  },
+  {
+   "at": 1793472357000,
+   "a": "TUEC6tDMnGW1ub1TShJo5qeVjZ8uSm5EC3",
+   "sim": "TRX",
+   "cant": 742529.371999,
+   "v": 261370.33894364798,
+   "tx": "7a5bfb3a67cfbf7520cc3a2d7f780956db5ea419d5dd92da261d5f661c909f41"
+  },
+  {
+   "at": 1793472489000,
+   "a": "TV1vu51cX8Fmo3iTya9d43D4Ugha1QBLbc",
+   "sim": "TRX",
+   "cant": 1152687.732911,
+   "v": 405746.081984672,
+   "tx": "2520882ce7daca122756f7559b12832ceb402bd6389c957929cca675cb3cd718"
+  },
+  {
+   "at": 1793472558000,
+   "a": "TXSt1DTjju4UQxeNo5s6yxz1cjx7698Rmd",
+   "sim": "TRX",
+   "cant": 442420.516917,
+   "v": 155732.021954784,
+   "tx": "4235a2b278e130ede13d8fc3f16b2ac43c0fb12cb8d4efda1011209cc20131b5"
+  },
+  {
+   "at": 1793472585000,
+   "a": "TSRe7AfRjciGZaABj5t5ETH74S7uT6GEEg",
+   "sim": "TRX",
+   "cant": 77720.667356,
+   "v": 27357.674909312,
+   "tx": "4a1d2b3ac7906f17203e8f09f15354ae2ba0929a7d5af56427848cfeec0282d9"
+  },
+  {
+   "at": 1793472621000,
+   "a": "TVzJSHmNtfCrLBTH9uq4QfYJJZFaCpGX3i",
+   "sim": "TRX",
+   "cant": 453199.99777,
+   "v": 159526.39921504,
+   "tx": "7d3ec373facdc117c2a176c22dda14e3b24dc78f9586be1324d09143782cb97d"
+  },
+  {
+   "at": 1793472813000,
+   "a": "TXSt1DTjju4UQxeNo5s6yxz1cjx7698Rmd",
+   "sim": "TRX",
+   "cant": 776696.969763,
+   "v": 273397.333356576,
+   "tx": "5954732fc302fc13a56f9de3ede1d436b608048c9e44a83e58792b8b0cd1628f"
+  },
+  {
+   "at": 1793472954000,
+   "a": "TV1vu51cX8Fmo3iTya9d43D4Ugha1QBLbc",
+   "sim": "TRX",
+   "cant": 971430.53349,
+   "v": 341943.54778847995,
+   "tx": "39bd4ae242c80985ec69a1b2c5ba2e0ae726354146a7f8f28fddac104319870b"
+  },
+  {
+   "at": 1793472987000,
+   "a": "TXSt1DTjju4UQxeNo5s6yxz1cjx7698Rmd",
+   "sim": "TRX",
+   "cant": 661615.664689,
+   "v": 232888.71397052798,
+   "tx": "20c9344b52a66f28323e4cca698215199ae7c844fbd90f43c25e11d92a23dc4c"
+  },
+  {
+   "at": 1793473473000,
+   "a": "TNhpfKq83wufEKGjBhQFnT7jnxYmyBzH6F",
+   "sim": "TRX",
+   "cant": 7363237.017993,
+   "v": 2591859.430333536,
+   "tx": "21842228c721e0a04d34ab7ed62a0eee8374255bd6a787074fafa56162a586eb"
+  },
+  {
+   "at": 1793473521000,
+   "a": "TV1vu51cX8Fmo3iTya9d43D4Ugha1QBLbc",
+   "sim": "TRX",
+   "cant": 1230297.245704,
+   "v": 433064.6304878079,
+   "tx": "bea835de21909c2b8ed657050a91423baf3aabdf2cc1338638cc5f8f0c715402"
+  },
+  {
+   "at": 1793473695000,
+   "a": "TXSt1DTjju4UQxeNo5s6yxz1cjx7698Rmd",
+   "sim": "TRX",
+   "cant": 610107.394174,
+   "v": 214757.802749248,
+   "tx": "e435764053324cc69104c7a3a725cf3a324370266cdd5ecc3932c5b51e83e11c"
+  },
+  {
+   "at": 1793473827000,
+   "a": "TSmG1Bjz4zvJBacQZLZvLQ6WzXdSUR5PsT",
+   "sim": "TRX",
+   "cant": 269372.87358,
+   "v": 94819.25150016,
+   "tx": "6e1a811b6bfdc14d2bf6f87b4972a945a182a42db07473f0160905711d43e65a"
+  },
+  {
+   "at": 1793473860000,
+   "a": "TQ27LngyGNB8emD6mt5FqjpCvZxo91EHhn",
+   "sim": "TRX",
+   "cant": 871234.644813,
+   "v": 306674.59497417597,
+   "tx": "9497cad868d1ea5e567268b59f5c6e90382b7543241a30333e341f0617869509"
+  },
+  {
+   "at": 1793474079000,
+   "a": "TXSt1DTjju4UQxeNo5s6yxz1cjx7698Rmd",
+   "sim": "TRX",
+   "cant": 724986.50498,
+   "v": 255195.24975295996,
+   "tx": "995f8c714a92db5d470a530f068fd2baf5e2abe6fbc91d99872eb00040783425"
+  },
+  {
+   "at": 1793474109000,
+   "a": "TV1vu51cX8Fmo3iTya9d43D4Ugha1QBLbc",
+   "sim": "TRX",
+   "cant": 440380.487804,
+   "v": 155013.93170700799,
+   "tx": "999ce7ac1f52cf95e8b53483d18304b0cf396cb08e16ff3428e14c18bbb9a2f3"
+  },
+  {
+   "at": 1793474325000,
+   "a": "TSRe7AfRjciGZaABj5t5ETH74S7uT6GEEg",
+   "sim": "TRX",
+   "cant": 154398.276392,
+   "v": 54348.193289983996,
+   "tx": "69d3d3a0c8da0d278ea5ea2b78e31248984eeaba63293a5f9c1d176d69d86bfe"
+  },
+  {
+   "at": 1793474394000,
+   "a": "TCZRWszLiAa8YPYAmkNWpzyFhHknvrvvt7",
+   "sim": "TRX",
+   "cant": 293379.671443,
+   "v": 103269.644347936,
+   "tx": "c43b81c5db7b8559e902127fa10d3108fa96ededd330a9bd3a4d84e9c11ace54"
+  },
+  {
+   "at": 1793474427000,
+   "a": "TXSt1DTjju4UQxeNo5s6yxz1cjx7698Rmd",
+   "sim": "TRX",
+   "cant": 631405.873725,
+   "v": 222254.86755119998,
+   "tx": "ec514f6afea97c1f4f6d691655ccfa7979ccb3e86a8364e256c01f3315a7b521"
+  },
+  {
+   "at": 1793474577000,
+   "a": "TV1vu51cX8Fmo3iTya9d43D4Ugha1QBLbc",
+   "sim": "TRX",
+   "cant": 1020394.736842,
+   "v": 359178.947368384,
+   "tx": "b814b974664d0a93e3aaf87bab91acbedd8eb4e9c36074a4e587d19ac4f6c566"
+  },
+  {
+   "at": 1793474775000,
+   "a": "TQ27LngyGNB8emD6mt5FqjpCvZxo91EHhn",
+   "sim": "TRX",
+   "cant": 1327072.840103,
+   "v": 467129.63971625594,
+   "tx": "a5dc885b71a6685eb9a852702619abe61b413a4b7b8777a28108bf730902189e"
+  },
+  {
+   "at": 1793475042000,
+   "a": "TNhpfKq83wufEKGjBhQFnT7jnxYmyBzH6F",
+   "sim": "TRX",
+   "cant": 7715717.750702,
+   "v": 2715932.648247104,
+   "tx": "22fb6308dffe3e5a49d68ce2e54ece084b128ce69a8f3938d7f30af8d2735180"
+  },
+  {
+   "at": 1793475072000,
+   "a": "TV1vu51cX8Fmo3iTya9d43D4Ugha1QBLbc",
+   "sim": "TRX",
+   "cant": 1159032.716927,
+   "v": 407979.516358304,
+   "tx": "486ec7768592e5d9a5c2431efc1b5dd7ad4301066c5181738d2b13b73e11cf1c"
+  },
+  {
+   "at": 1793475480000,
+   "a": "TA4RtA5TRM52jr64HopuZ5DednLeEczhKK",
+   "sim": "TRX",
+   "cant": 384574.081585,
+   "v": 135370.07671792,
+   "tx": "fcbc3af5f675077703a4180fcdc4b3ed04a34d5a32a9004027ede6db4c181b02"
+  },
+  {
+   "at": 1793475579000,
+   "a": "TV1vu51cX8Fmo3iTya9d43D4Ugha1QBLbc",
+   "sim": "TRX",
+   "cant": 1161693.139864,
+   "v": 408915.985232128,
+   "tx": "323f8994892a71d18087e02ac26d2a437aa0bd8bcfb75e07f1d04952e690c0da"
+  },
+  {
+   "at": 1793475675000,
+   "a": "TUTG6q5SNdP9t9SQe47swt8tgRQ6Nhwh18",
+   "sim": "TRX",
+   "cant": 369408.643647,
+   "v": 130031.842563744,
+   "tx": "77bff417ad6f82c03aa547a7794dca2ea435375389913a21feeb678058895a77"
+  },
+  {
+   "at": 1793475912000,
+   "a": "TV1vu51cX8Fmo3iTya9d43D4Ugha1QBLbc",
+   "sim": "TRX",
+   "cant": 1042123.748395,
+   "v": 366827.55943504,
+   "tx": "d48ff7b13a467a80050e0b0d3824fc2c98267fc75910afc79059cfa85fd9df07"
+  },
+  {
+   "at": 1793476182000,
+   "a": "TBW7ZquWYziFCRs9VNDLJotGNrc1pPigDm",
+   "sim": "TRX",
+   "cant": 281683.386878,
+   "v": 99152.55218105599,
+   "tx": "8db5f140f9db7de45e3ab363be98fb31dfe0f3cedc0fbd0b1fa702dc9d8f2346"
+  },
+  {
+   "at": 1793476350000,
+   "a": "TV1vu51cX8Fmo3iTya9d43D4Ugha1QBLbc",
+   "sim": "TRX",
+   "cant": 339254.123605,
+   "v": 119417.45150895999,
+   "tx": "721ea5b0f05330a1dbafc3448983b315193550b39336d0817f397dd889fa8b1f"
+  },
+  {
+   "at": 1793476506000,
+   "a": "TRkAp7BVoksDWGZUKHW5SQr7mKoQ9beH1n",
+   "sim": "TRX",
+   "cant": 2587719.676093,
+   "v": 910877.325984736,
+   "tx": "b2ff54c03e0ca1e212462545240b335836f32efffa2521b9e9bfda7b8bbc0da4"
+  },
+  {
+   "at": 1793476659000,
+   "a": "TA4RtA5TRM52jr64HopuZ5DednLeEczhKK",
+   "sim": "TRX",
+   "cant": 802624.180464,
+   "v": 282523.711523328,
+   "tx": "10ad983630dcc7df115c3c16cd2d243cf71b4ce41823d25e9e9e7e7d987f641b"
+  },
+  {
+   "at": 1793476887000,
+   "a": "TNQ168QpHom3DcmFKTPHPzhdxyrxja8UqF",
+   "sim": "TRX",
+   "cant": 82687.025074,
+   "v": 29105.832826048,
+   "tx": "8fe226c564eed7a1c1cd2ad8b3566dfe1512096b355d5d0f30794331b79ae77f"
+  },
+  {
+   "at": 1793477304000,
+   "a": "TQ27LngyGNB8emD6mt5FqjpCvZxo91EHhn",
+   "sim": "TRX",
+   "cant": 910301.817546,
+   "v": 320426.239776192,
+   "tx": "d2152c4bf551211d6fb4dccf0ca99049f86fd7206d019725c6460292bbbf45a2"
+  },
+  {
+   "at": 1793477337000,
+   "a": "TA4RtA5TRM52jr64HopuZ5DednLeEczhKK",
+   "sim": "TRX",
+   "cant": 419052.2019,
+   "v": 147506.3750688,
+   "tx": "75793eee8c00c1a1bd47396d328f58c96cd3c5ed7e1924d0ed78c624bdb17ad3"
+  },
+  {
+   "at": 1793477670000,
+   "a": "TS3antQGW4PWPBixLhxPQb1Qa6ewXmsJ8x",
+   "sim": "TRX",
+   "cant": 304566.630689,
+   "v": 107207.454002528,
+   "tx": "ebd425402c2cfde97eff2739c8ba0b165213e10296d991cf95735b65710a4d51"
+  },
+  {
+   "at": 1793477763000,
+   "a": "TQCGc3KsJgq5kB5vduRXVEkxwvjBPQnUUi",
+   "sim": "TRX",
+   "cant": 1679311.091618,
+   "v": 591117.504249536,
+   "tx": "6550f73d0b403b9fb5c1fc2bdcf6b328b74869d623580d5af18ef0487ed6c2ad"
+  },
+  {
+   "at": 1793477796000,
+   "a": "TA4RtA5TRM52jr64HopuZ5DednLeEczhKK",
+   "sim": "TRX",
+   "cant": 427217.950207,
+   "v": 150380.71847286398,
+   "tx": "02c58a650974132d788c4c6f41e5e1233aea89d110e4ba69b265f96a6df5c69c"
+  },
+  {
+   "at": 1793477856000,
+   "a": "TV1vu51cX8Fmo3iTya9d43D4Ugha1QBLbc",
+   "sim": "TRX",
+   "cant": 1240872.209907,
+   "v": 436787.01788726397,
+   "tx": "96f13af07c5a579e76ae9cf3f05721622ff4680d3a2177009435162e60a04525"
+  },
+  {
+   "at": 1793477883000,
+   "a": "TQ27LngyGNB8emD6mt5FqjpCvZxo91EHhn",
+   "sim": "TRX",
+   "cant": 1395637.810548,
+   "v": 491264.509312896,
+   "tx": "665b55546aa7f8dd59eae728982c2be3705c7ae77fb771e34e1d9b0c8501a50c"
+  },
+  {
+   "at": 1793478138000,
+   "a": "TSRe7AfRjciGZaABj5t5ETH74S7uT6GEEg",
+   "sim": "TRX",
+   "cant": 193691.596811,
+   "v": 68179.44207747199,
+   "tx": "dd2d273b3ada93abd24f77f8484073797503da777f94221c10d72ca6b090d073"
+  },
+  {
+   "at": 1793478231000,
+   "a": "TNhpfKq83wufEKGjBhQFnT7jnxYmyBzH6F",
+   "sim": "TRX",
+   "cant": 8356036.232844,
+   "v": 2941324.7539610877,
+   "tx": "8678528784789e210bca0ad3980e4b614db501f28f902d0c1c142c77018a0732"
+  },
+  {
+   "at": 1793478294000,
+   "a": "TV1vu51cX8Fmo3iTya9d43D4Ugha1QBLbc",
+   "sim": "TRX",
+   "cant": 1076961.595958,
+   "v": 379090.481777216,
+   "tx": "3f7b6b7a433e92a2c79a65149add1e347aab9c2c8de7585b87adc51c185e2fcd"
+  },
+  {
+   "at": 1793478327000,
+   "a": "TA4RtA5TRM52jr64HopuZ5DednLeEczhKK",
+   "sim": "TRX",
+   "cant": 430688.624045,
+   "v": 151602.39566384,
+   "tx": "6387e9f8e464ee7397fcfbe967c5393d1ab7c888364e34652f6332cc0c60d408"
+  },
+  {
+   "at": 1793478360000,
+   "a": "TTvwUJ2k56NVjauF2NteBeN5ytRAxvFb2s",
+   "sim": "TRX",
+   "cant": 3955626.25836,
+   "v": 1392380.44294272,
+   "tx": "a57c50259e667b0dd2b3b5151c953dd8acc9ea2f031581f32d183d25cbbc9d85"
+  },
+  {
+   "at": 1793478627000,
+   "a": "TXSt1DTjju4UQxeNo5s6yxz1cjx7698Rmd",
+   "sim": "TRX",
+   "cant": 761734.540025,
+   "v": 268130.5580888,
+   "tx": "559edb86b37bae142f27a7dc3c05d4b7b2f070933a6de92d9b8352b31c375604"
+  },
+  {
+   "at": 1793478699000,
+   "a": "TA4RtA5TRM52jr64HopuZ5DednLeEczhKK",
+   "sim": "TRX",
+   "cant": 420005.013802,
+   "v": 147841.76485830397,
+   "tx": "e6130dd93f86f149481b96b2c63cff6dc9901d9ff38ae977be7a4ada6ef77b6e"
+  },
+  {
+   "at": 1793478759000,
+   "a": "TYCP4dU6eu5HpQ6B7AAh6ryCBquH58YErt",
+   "sim": "TRX",
+   "cant": 177306.001828,
+   "v": 62411.712643456,
+   "tx": "d26b996877be7c0303c183b91c42efc9d65c4897c014bf1b43394b93ccaf53ee"
+  },
+  {
+   "at": 1793478786000,
+   "a": "TDpPpNAwR3Zsbf4HzBufcxsx1CKbwWzi44",
+   "sim": "TRX",
+   "cant": 1614985.395564,
+   "v": 568474.859238528,
+   "tx": "9ba5effffec956a77c2aa5426a8f7ccbfbb4d8d67144b7ca87fb9abd0619b450"
+  },
+  {
+   "at": 1793478849000,
+   "a": "TV1vu51cX8Fmo3iTya9d43D4Ugha1QBLbc",
+   "sim": "TRX",
+   "cant": 1162083.605486,
+   "v": 409053.42913107196,
+   "tx": "5cf360af409e3626c1338ba39d7aa862f9aebb30db56369425d2f35c75fa8e2d"
+  },
+  {
+   "at": 1793479425000,
+   "a": "TV1vu51cX8Fmo3iTya9d43D4Ugha1QBLbc",
+   "sim": "TRX",
+   "cant": 464598.048646,
+   "v": 163538.51312339198,
+   "tx": "d734209308d85d16c603588aecae1e1dba59463674b64edae8b02dcd936869c0"
+  },
+  {
+   "at": 1793479455000,
+   "a": "TSRe7AfRjciGZaABj5t5ETH74S7uT6GEEg",
+   "sim": "TRX",
+   "cant": 201678.771815,
+   "v": 70990.92767887999,
+   "tx": "43699bd73ed7e381813ccbc3cb04728147106cab6b21698b3eda2e9fadd1f854"
+  },
+  {
+   "at": 1793479554000,
+   "a": "TA4RtA5TRM52jr64HopuZ5DednLeEczhKK",
+   "sim": "TRX",
+   "cant": 471796.528391,
+   "v": 166072.377993632,
+   "tx": "639c97b1b3c63bba3df00b9e2ada7c98ba2821c600dafd308fe343d9c85eebc4"
+  },
+  {
+   "at": 1793479629000,
+   "a": "TXSt1DTjju4UQxeNo5s6yxz1cjx7698Rmd",
+   "sim": "TRX",
+   "cant": 578358.818912,
+   "v": 203582.304257024,
+   "tx": "1cfd7b98762a84e52eb4b3c32a09651287924ef6a4aa51786267c27b8f6d11c3"
+  },
+  {
+   "at": 1793479929000,
+   "a": "TA4RtA5TRM52jr64HopuZ5DednLeEczhKK",
+   "sim": "TRX",
+   "cant": 335528.600908,
+   "v": 118106.067519616,
+   "tx": "e3cce8c069c128954ab9fedd1fd44e01f5ecc27c30cb5f325fb39c746c19b091"
+  },
+  {
+   "at": 1793480709000,
+   "a": "TA4RtA5TRM52jr64HopuZ5DednLeEczhKK",
+   "sim": "TRX",
+   "cant": 337932.191447,
+   "v": 118952.131389344,
+   "tx": "b9b853411b5a515a734a7d246dc1975436d1daae2bdf15e9017cb251465b50f5"
+  },
+  {
+   "at": 1793480775000,
+   "a": "TSRe7AfRjciGZaABj5t5ETH74S7uT6GEEg",
+   "sim": "TRX",
+   "cant": 210030.553589,
+   "v": 73930.754863328,
+   "tx": "3c5e28b88b3a65926534319f9bf031f2ff5e744ce83c12155546f041a1fad6bd"
+  },
+  {
+   "at": 1793480817000,
+   "a": "THLTrmPn17Y3RkffceprXADUPcWcZTvQ4i",
+   "sim": "TRX",
+   "cant": 316846.325923,
+   "v": 111529.90672489599,
+   "tx": "1e296d1d10344cb2b5e7255111b4b3aa03b88eba622ffab8b2ff82f90e93e7d7"
+  },
+  {
+   "at": 1793480997000,
+   "a": "TA4RtA5TRM52jr64HopuZ5DednLeEczhKK",
+   "sim": "TRX",
+   "cant": 338264.674028,
+   "v": 119069.16525785599,
+   "tx": "b4c73e9a2dd4a4b30122d762fb41e49f490eb5700baa8cf2e7beb31e65614465"
+  },
+  {
+   "at": 1793481060000,
+   "a": "TQ27LngyGNB8emD6mt5FqjpCvZxo91EHhn",
+   "sim": "TRX",
+   "cant": 716277.528571,
+   "v": 252129.69005699197,
+   "tx": "d30c36c728a9c2f9a3a9cd4048d7d4d60de7c4a01755161cbeb2a09541a3bf58"
+  },
+  {
+   "at": 1793481093000,
+   "a": "TRkAp7BVoksDWGZUKHW5SQr7mKoQ9beH1n",
+   "sim": "TRX",
+   "cant": 1555905.511811,
+   "v": 547678.740157472,
+   "tx": "d5395d7b6b03c3309a7d1d44121b4059554a096fec69565c31ac3d7042e45dd5"
+  },
+  {
+   "at": 1793481243000,
+   "a": "TA4RtA5TRM52jr64HopuZ5DednLeEczhKK",
+   "sim": "TRX",
+   "cant": 454600.971477,
+   "v": 160019.541959904,
+   "tx": "7d8c848ba6ff0a6fa977514bab9262ab49337859c3947a29c3e94189c5ad52ed"
+  },
+  {
+   "at": 1793481498000,
+   "a": "TA4RtA5TRM52jr64HopuZ5DednLeEczhKK",
+   "sim": "TRX",
+   "cant": 454788.542472,
+   "v": 160085.56695014398,
+   "tx": "056c91f7f50c061365fa2a0e1b7c6b663c352b91be9cbef569b0cda5d07a76a7"
+  },
+  {
+   "at": 1793481531000,
+   "a": "TRkAp7BVoksDWGZUKHW5SQr7mKoQ9beH1n",
+   "sim": "TRX",
+   "cant": 1556174.886033,
+   "v": 547773.5598836159,
+   "tx": "eeb332c6ebc1a33293e866feb52aa0d4c16875553dccffe3a1c9aeaa31aecb1d"
+  },
+  {
+   "at": 1793481720000,
+   "a": "TA4RtA5TRM52jr64HopuZ5DednLeEczhKK",
+   "sim": "TRX",
+   "cant": 478374.997985,
+   "v": 168387.99929072,
+   "tx": "1abc5833f9febc2b714fd9d043f490c7de5c29adf7c300c3d23f5b170e761a84"
+  },
+  {
+   "at": 1793481963000,
+   "a": "TA4RtA5TRM52jr64HopuZ5DednLeEczhKK",
+   "sim": "TRX",
+   "cant": 502137.504775,
+   "v": 176752.4016808,
+   "tx": "e5e2324555445b0a8f6975621880d077b5b4b8879fa7b51d25d863da287d7d04"
+  },
+  {
+   "at": 1793482002000,
+   "a": "TRkAp7BVoksDWGZUKHW5SQr7mKoQ9beH1n",
+   "sim": "TRX",
+   "cant": 1560400.837674,
+   "v": 549261.094861248,
+   "tx": "447415bfa9b933b4a4902121e399488ea5bd3fdbd5089878b234f09420e3e316"
+  },
+  {
+   "at": 1793482110000,
+   "a": "TFiDSKk2pvt9qQo8bRM1KfWuL7npf4Fdnw",
+   "sim": "TRX",
+   "cant": 846320.476932,
+   "v": 297904.807880064,
+   "tx": "7d2e13537c16da63ce660e01ad84c863f0a72991b0943e14dd32c0ea890e7173"
+  },
+  {
+   "at": 1793482215000,
+   "a": "TA4RtA5TRM52jr64HopuZ5DednLeEczhKK",
+   "sim": "TRX",
+   "cant": 501036.940007,
+   "v": 176365.002882464,
+   "tx": "46da82819b0c4cfc7d852b9655ba860bd4c476e8d4fce9f56673c20c921bd80c"
+  },
+  {
+   "at": 1793482278000,
+   "a": "TSRe7AfRjciGZaABj5t5ETH74S7uT6GEEg",
+   "sim": "TRX",
+   "cant": 210791.81171,
+   "v": 74198.71772192,
+   "tx": "222cf6b923d367f6afd9549c7c58aa2e1afb4bcbe6f9571b122c4d2bc459a121"
+  },
+  {
+   "at": 1793482404000,
+   "a": "TXSt1DTjju4UQxeNo5s6yxz1cjx7698Rmd",
+   "sim": "TRX",
+   "cant": 419576.855213,
+   "v": 147691.05303497598,
+   "tx": "76bb28efd73090a82da974159e47d31c59d62e8b32918693fb54d55d2a850b43"
+  },
+  {
+   "at": 1793482434000,
+   "a": "TA4RtA5TRM52jr64HopuZ5DednLeEczhKK",
+   "sim": "TRX",
+   "cant": 514685.753783,
+   "v": 181169.38533161598,
+   "tx": "7746b0d86a15b2a45f88c047e8b45afc361171a12bebed205b8c1d40ca7d90bf"
+  },
+  {
+   "at": 1793482608000,
+   "a": "TNhpfKq83wufEKGjBhQFnT7jnxYmyBzH6F",
+   "sim": "TRX",
+   "cant": 154618.511087,
+   "v": 54425.715902624,
+   "tx": "b2980c63e1b29e8f61ee1bcdf60e64f89866a36af00dab034138f9a240087852"
+  },
+  {
+   "at": 1793482638000,
+   "a": "TA4RtA5TRM52jr64HopuZ5DednLeEczhKK",
+   "sim": "TRX",
+   "cant": 548516.985391,
+   "v": 193077.978857632,
+   "tx": "5b503e216764fabbfba5dbe8db4d0e40819c0f027f759aa5262a6d13adf288ba"
+  },
+  {
+   "at": 1793483037000,
+   "a": "TXSt1DTjju4UQxeNo5s6yxz1cjx7698Rmd",
+   "sim": "TRX",
+   "cant": 739753.823388,
+   "v": 260393.345832576,
+   "tx": "b57c20a2247fb339a3b47e86f3970f0a7a8994b00b037ea2036fb22968ea2ab7"
+  },
+  {
+   "at": 1793483067000,
+   "a": "TNhpfKq83wufEKGjBhQFnT7jnxYmyBzH6F",
+   "sim": "TRX",
+   "cant": 8555522.914434,
+   "v": 3011544.065880768,
+   "tx": "5c4b27eeed17425465be29ffae133c4213402e64438bab59d176bc791c52a224"
+  },
+  {
+   "at": 1793483097000,
+   "a": "TA4RtA5TRM52jr64HopuZ5DednLeEczhKK",
+   "sim": "TRX",
+   "cant": 1095672.899436,
+   "v": 385676.86060147197,
+   "tx": "255fc5bf13dca35433e7584e9ca28468ab0bbaf1fbc1bb87d4323a132d7acc49"
+  },
+  {
+   "at": 1793483271000,
+   "a": "TSRe7AfRjciGZaABj5t5ETH74S7uT6GEEg",
+   "sim": "TRX",
+   "cant": 225565.452976,
+   "v": 79399.039447552,
+   "tx": "84e79d1d5406dacd4058d474ab5119ce0b4fb052c192da9f016dbfc4080d8f47"
+  },
+  {
+   "at": 1793483502000,
+   "a": "TA4RtA5TRM52jr64HopuZ5DednLeEczhKK",
+   "sim": "TRX",
+   "cant": 569120.059608,
+   "v": 200330.26098201599,
+   "tx": "abbd5e38ae6a2b30aa759680dbfd304da716011be8eca4b6b938fcb174c83f2a"
+  },
+  {
+   "at": 1793483532000,
+   "a": "TC1BynpaJgAK1TtPveemdimvzCetA5hL8A",
+   "sim": "TRX",
+   "cant": 326312.221126,
+   "v": 114861.90183635199,
+   "tx": "b744dfb23ab9a052e6c7c4ada76eed794616d5ef6f3c52b55ea850c2e90d7ae7"
+  },
+  {
+   "at": 1793483724000,
+   "a": "TA4RtA5TRM52jr64HopuZ5DednLeEczhKK",
+   "sim": "TRX",
+   "cant": 591626.06318,
+   "v": 208252.37423936,
+   "tx": "e12c5a9ae7f92bdce3735459c74f23f7f9f7d9b958457c982bcf357a3498371c"
+  },
+  {
+   "at": 1793483916000,
+   "a": "TA4RtA5TRM52jr64HopuZ5DednLeEczhKK",
+   "sim": "TRX",
+   "cant": 591387.989111,
+   "v": 208168.57216707198,
+   "tx": "05514330d233042861057a68bc8defbefb8565defb41be04a004bd9621411f0e"
+  },
+  {
+   "at": 1793484039000,
+   "a": "TSRe7AfRjciGZaABj5t5ETH74S7uT6GEEg",
+   "sim": "TRX",
+   "cant": 226310.457063,
+   "v": 79661.280886176,
+   "tx": "94bf7f68d39b9860138f1b967e5275b2e653c91a86a46415ab8f4df32e902f2b"
+  },
+  {
+   "at": 1793484141000,
+   "a": "TA4RtA5TRM52jr64HopuZ5DednLeEczhKK",
+   "sim": "TRX",
+   "cant": 620757.171754,
+   "v": 218506.524457408,
+   "tx": "9ec1b280d69c2c98a7d7e462582d3917a033d309c9d0dba777b1d1ea75d6b032"
+  },
+  {
+   "at": 1793484348000,
+   "a": "TA4RtA5TRM52jr64HopuZ5DednLeEczhKK",
+   "sim": "TRX",
+   "cant": 595173.072187,
+   "v": 209500.92140982396,
+   "tx": "ff9e7de8eb16a9628587a42d178e99eb0195121a05fa2f32d644d44796d76d33"
+  },
+  {
+   "at": 1793484564000,
+   "a": "TA4RtA5TRM52jr64HopuZ5DednLeEczhKK",
+   "sim": "TRX",
+   "cant": 630055.346258,
+   "v": 221779.48188281598,
+   "tx": "02faa44dbd06f2f89f76b200f3773e11afe7232bba5b200de6049e0b2ed208f0"
+  },
+  {
+   "at": 1793484624000,
+   "a": "TYpBVnArsTMPXkPBxQxjLhvD4sNhBrzKTb",
+   "sim": "TRX",
+   "cant": 1762661.798986,
+   "v": 620456.9532430719,
+   "tx": "cd2df8d026f55c6103ae3ea17bddd13c674ee3e1765c10dd6e6a46b444d7366d"
+  },
+  {
+   "at": 1793484813000,
+   "a": "TXSt1DTjju4UQxeNo5s6yxz1cjx7698Rmd",
+   "sim": "TRX",
+   "cant": 433971.352479,
+   "v": 152757.916072608,
+   "tx": "96445a69a6d1fbe90f23a47acfc4ac4086e972d16d317fff7bac6521c8b912be"
+  },
+  {
+   "at": 1793484975000,
+   "a": "TA4RtA5TRM52jr64HopuZ5DednLeEczhKK",
+   "sim": "TRX",
+   "cant": 639422.81171,
+   "v": 225076.82972192,
+   "tx": "3133c23937595a67cf8fcca92449e11e523e6ba76a218c2ae97ae059310dec14"
+  },
+  {
+   "at": 1793485002000,
+   "a": "TSRe7AfRjciGZaABj5t5ETH74S7uT6GEEg",
+   "sim": "TRX",
+   "cant": 243314.384808,
+   "v": 85646.66345241599,
+   "tx": "29f19f9d5fa7ba7a996d1037b8e04ae04963534ec2c8c1654d94c90ae85a76ba"
+  },
+  {
+   "at": 1793485266000,
+   "a": "TA4RtA5TRM52jr64HopuZ5DednLeEczhKK",
+   "sim": "TRX",
+   "cant": 590539.524945,
+   "v": 207869.91278063998,
+   "tx": "6f14ba059ef90ed8b053b4d949ef9ceba847b7109e2856a6c4a9661ce95f200f"
+  },
+  {
+   "at": 1793485857000,
+   "a": "TMRZcihrjRkmWw7cSsRWiA2LMms25Vt1Xp",
+   "sim": "TRX",
+   "cant": 339265.704654,
+   "v": 119421.528038208,
+   "tx": "ff8535887e3fcdfa43c4bd5134baa313a64e0474a8071fd6cb95bacde5585df9"
+  },
+  {
+   "at": 1793486121000,
+   "a": "TSRe7AfRjciGZaABj5t5ETH74S7uT6GEEg",
+   "sim": "TRX",
+   "cant": 243826.09301,
+   "v": 85826.78473952,
+   "tx": "43de264dce176470c4781fa7f33aa853d357c750dca3a6f9c4c91380304e0894"
+  },
+  {
+   "at": 1793486427000,
+   "a": "TXSt1DTjju4UQxeNo5s6yxz1cjx7698Rmd",
+   "sim": "TRX",
+   "cant": 785832.172066,
+   "v": 276612.924567232,
+   "tx": "b640e5140bbe2f51a768827d3a9affa06fa64fc962c9153a2ee8c9f6b2711dc1"
+  },
+  {
+   "at": 1793486541000,
+   "a": "TNhpfKq83wufEKGjBhQFnT7jnxYmyBzH6F",
+   "sim": "TRX",
+   "cant": 309657.578912,
+   "v": 108999.467777024,
+   "tx": "e3c8f7c32b2b2be14678dcb2f84adfdb1586c57b7078406435fb82061346f0b8"
+  },
+  {
+   "at": 1793486877000,
+   "a": "TNhpfKq83wufEKGjBhQFnT7jnxYmyBzH6F",
+   "sim": "TRX",
+   "cant": 8651640.236889,
+   "v": 3045377.3633849276,
+   "tx": "8b16b38a738b0b7511549435242fd90c820cb44c36e847586fa00eae0899826c"
+  },
+  {
+   "at": 1793487357000,
+   "a": "TSRe7AfRjciGZaABj5t5ETH74S7uT6GEEg",
+   "sim": "TRX",
+   "cant": 251771.912402,
+   "v": 88623.71316550398,
+   "tx": "15d219fec3ef3c957ab088c4388847685004a43d404aaa41d4bb1db8d06e4097"
+  },
+  {
+   "at": 1793487513000,
+   "a": "TDrXgP8h6jJk1LZiy7XrCxnnp6egnHcKff",
+   "sim": "TRX",
+   "cant": 838318.564132,
+   "v": 295088.134574464,
+   "tx": "6411cce1d33cf444e7e8bf386b82c2c2f829ac0c25b48b2d5b8b66b31eaa0c74"
+  },
+  {
+   "at": 1793487732000,
+   "a": "TTvwUJ2k56NVjauF2NteBeN5ytRAxvFb2s",
+   "sim": "TRX",
+   "cant": 3600261.045308,
+   "v": 1267291.887948416,
+   "tx": "5e1d890388396344a9750b3ef4e9e9e4f07c9eb8bed6cb78048ab6ba2ae9b2c5"
+  },
+  {
+   "at": 1793488062000,
+   "a": "TSRe7AfRjciGZaABj5t5ETH74S7uT6GEEg",
+   "sim": "TRX",
+   "cant": 258565.124406,
+   "v": 91014.92379091198,
+   "tx": "6dffde7c6eb928d093acf6ccd608a9617b23cb2c4ad0126c8fb5316bdc6346cb"
+  },
+  {
+   "at": 1793488500000,
+   "a": "TDDmSrXi2744DynJ1MPegXJsr7AmcgDN3J",
+   "sim": "TRX",
+   "cant": 351213.415006,
+   "v": 123627.12208211201,
+   "tx": "9aa49ac1cf4ed27a42f2ac631b90e4ccf324565c5195b4226fda88a280e72a72"
+  },
+  {
+   "at": 1793488557000,
+   "a": "TTm1qh55vBhBofBfyjYbLVD85CTNgwAdz7",
+   "sim": "TRX",
+   "cant": 282701.182568,
+   "v": 99510.816263936,
+   "tx": "25e1eea225b43b38d026c0d3827a3f06839d2f28d68985bbbaef09a28704fcdc"
+  },
+  {
+   "at": 1793488911000,
+   "a": "TSRe7AfRjciGZaABj5t5ETH74S7uT6GEEg",
+   "sim": "TRX",
+   "cant": 212015.037593,
+   "v": 74629.29323273599,
+   "tx": "5a66603419e8ac3ad87b2eacfae963ca4d624f2f336a94620b58b6d6594e0a14"
+  },
+  {
+   "at": 1793489274000,
+   "a": "TTm1qh55vBhBofBfyjYbLVD85CTNgwAdz7",
+   "sim": "TRX",
+   "cant": 295009.767474,
+   "v": 103843.43815084799,
+   "tx": "eee27e30dec6deb52d37d09fee1ffec2256792f201e0356d1b619bcf206ed44c"
+  },
+  {
+   "at": 1793489952000,
+   "a": "TSRe7AfRjciGZaABj5t5ETH74S7uT6GEEg",
+   "sim": "TRX",
+   "cant": 219399.918039,
+   "v": 77228.771149728,
+   "tx": "16d6513e9b858a97bfb2877ff4196a90e531592ef2e78e7117990dbf2329d1ea"
+  },
+  {
+   "at": 1793490126000,
+   "a": "TTm1qh55vBhBofBfyjYbLVD85CTNgwAdz7",
+   "sim": "TRX",
+   "cant": 308180.830293,
+   "v": 108479.65226313598,
+   "tx": "523202885bd0e47d9274b611f8838cdf771f9af4f996090c31322830b7306818"
+  },
+  {
+   "at": 1793490507000,
+   "a": "TTm1qh55vBhBofBfyjYbLVD85CTNgwAdz7",
+   "sim": "TRX",
+   "cant": 323247.422357,
+   "v": 113783.092669664,
+   "tx": "a30eaf82a697047504a3e55f22286a39e8030b6d22332fc787aae6209ee77c61"
+  },
+  {
+   "at": 1793490600000,
+   "a": "TFDH3zE9DtbnFJzBJFLsUMeJo7vWetMnGp",
+   "sim": "TRX",
+   "cant": 875950.649856,
+   "v": 308334.62874931196,
+   "tx": "757789b2a9c9708efa9e4ce7a53b7f728a61d290adb9c4e2abaf4b41aab3997c"
+  },
+  {
+   "at": 1793490744000,
+   "a": "TSRe7AfRjciGZaABj5t5ETH74S7uT6GEEg",
+   "sim": "TRX",
+   "cant": 290103.211447,
+   "v": 102116.33042934399,
+   "tx": "396f7a9f17d0bcd19856b49ba2cb841193d2abffc77394acd5901f68428b420c"
+  },
+  {
+   "at": 1793490924000,
+   "a": "TUoVsNvkSbCQFty1tLViCgvMjNRGGEK6eM",
+   "sim": "TRX",
+   "cant": 627539.512805,
+   "v": 220893.90850735997,
+   "tx": "40ea973d7a2ba723e880d73a6bb5b7ef67c9a8228c7e68d3c315832a411d58de"
+  },
+  {
+   "at": 1793491665000,
+   "a": "TTbBESEPcjawC7j42g7KXH9HCQ1JgmqSTH",
+   "sim": "TRX",
+   "cant": 1829153.046385,
+   "v": 643861.8723275199,
+   "tx": "67014e8db59f926750dbe73946db88eb59e179c724062d59769d4e24db35556b"
+  },
+  {
+   "at": 1793492769000,
+   "a": "TBgGdfG7dC3RUFWGEqNtT8RyBjgZhXei72",
+   "sim": "TRX",
+   "cant": 358655.320157,
+   "v": 126246.67269526399,
+   "tx": "142a09cf24e079be663fb29f809b3036bd3b53d0578a6b2454f169b950499bbe"
+  },
+  {
+   "at": 1793493201000,
+   "a": "TTm1qh55vBhBofBfyjYbLVD85CTNgwAdz7",
+   "sim": "TRX",
+   "cant": 559890.67674,
+   "v": 197081.51821248,
+   "tx": "28a79914123572cd5348e930109275ffe51b03d3f1d098c87ce0b09825b18ef5"
+  },
+  {
+   "at": 1793493267000,
+   "a": "TSRe7AfRjciGZaABj5t5ETH74S7uT6GEEg",
+   "sim": "TRX",
+   "cant": 276042.37691,
+   "v": 97166.91667231999,
+   "tx": "263a0381c47917fb316dc4721be7227117e92c37ce4cbb120c09df3d1dd29fc8"
+  },
+  {
+   "at": 1793493492000,
+   "a": "TUoVsNvkSbCQFty1tLViCgvMjNRGGEK6eM",
+   "sim": "TRX",
+   "cant": 614984.520123,
+   "v": 216474.55108329598,
+   "tx": "f7fb465fa11fd8cc89b671f804aa3083d1e5614900e0aca75f78a464cd84b79d"
+  },
+  {
+   "at": 1793494665000,
+   "a": "TTvwUJ2k56NVjauF2NteBeN5ytRAxvFb2s",
+   "sim": "TRX",
+   "cant": 4170321.076357,
+   "v": 1467953.0188776639,
+   "tx": "8a45623fb63a0bbc401fdad4d0a1842db07ee70fb746561e6f3374441157c065"
+  },
+  {
+   "at": 1793494698000,
+   "a": "TSRe7AfRjciGZaABj5t5ETH74S7uT6GEEg",
+   "sim": "TRX",
+   "cant": 292010.332579,
+   "v": 102787.63706780798,
+   "tx": "33581f93bc7205bd7d5dd22e9ce714e99c440c6d21ee014da34daf42b2f4855c"
+  },
+  {
+   "at": 1793494821000,
+   "a": "TUoVsNvkSbCQFty1tLViCgvMjNRGGEK6eM",
+   "sim": "TRX",
+   "cant": 656637.588131,
+   "v": 231136.431022112,
+   "tx": "30d220c5d849d7f7a3581478f90075231fb07487364b9b915e452b3090fc4f80"
+  },
+  {
+   "at": 1793494914000,
+   "a": "TQS6QjqBjLU9eGiFEXB2xGKTb3T7qtDSCu",
+   "sim": "TRX",
+   "cant": 368128.768126,
+   "v": 129581.326380352,
+   "tx": "cb497810d4e3f639f61e85821353a9341670b6e308077ddf2bdc46e377279add"
+  },
+  {
+   "at": 1793495091000,
+   "a": "TW9aVZUnmjxMT97w8jsQdXWessZTY2RT2u",
+   "sim": "TRX",
+   "cant": 1739497.017619,
+   "v": 612302.950201888,
+   "tx": "64238e31b760989bd4b005960fd6e024c4dc600c3f7ee3481c6d0f4e73538fe2"
+  },
+  {
+   "at": 1793495301000,
+   "a": "TRkAp7BVoksDWGZUKHW5SQr7mKoQ9beH1n",
+   "sim": "TRX",
+   "cant": 1545384.707308,
+   "v": 543975.416972416,
+   "tx": "583b3bd83f68ac34958def865527226151c011a41d0538a1dc6c9a28992ec310"
+  },
+  {
+   "at": 1793495703000,
+   "a": "TBKKMD1fw4gJwmyfXE1seURueGddKT25b7",
+   "sim": "TRX",
+   "cant": 1859061.311558,
+   "v": 654389.5816684159,
+   "tx": "3ea8cdaa4c7601d7a7c60aadd39abecf110dc6430733da5a9709ac2cfc9588ae"
+  },
+  {
+   "at": 1793495880000,
+   "a": "TXSt1DTjju4UQxeNo5s6yxz1cjx7698Rmd",
+   "sim": "TRX",
+   "cant": 615368.246943,
+   "v": 216609.622923936,
+   "tx": "c5e1c1dc0394f38a8dcdb7162646ada1b7b076c9ae813b6f6520909b67499357"
+  },
+  {
+   "at": 1793496039000,
+   "a": "TA4RtA5TRM52jr64HopuZ5DednLeEczhKK",
+   "sim": "TRX",
+   "cant": 404375.301237,
+   "v": 142340.106035424,
+   "tx": "f2166b4d72be55d1a3adc7f78fcfa735046129e29a25f0cae8a52b8d4af08a08"
+  },
+  {
+   "at": 1793496066000,
+   "a": "TSRe7AfRjciGZaABj5t5ETH74S7uT6GEEg",
+   "sim": "TRX",
+   "cant": 315767.516951,
+   "v": 111150.165966752,
+   "tx": "1a7e2bc3bb96118f8f32b603bcb99a557f98be17c141b78242651a2d2dc7ffc0"
+  },
+  {
+   "at": 1793496183000,
+   "a": "TXSt1DTjju4UQxeNo5s6yxz1cjx7698Rmd",
+   "sim": "TRX",
+   "cant": 815206.900971,
+   "v": 286952.82914179197,
+   "tx": "6882fdf54d297d2cdf35443095a9c536eab9da92088c3166c1cd9042c8bf119d"
+  },
+  {
+   "at": 1793496462000,
+   "a": "TRkAp7BVoksDWGZUKHW5SQr7mKoQ9beH1n",
+   "sim": "TRX",
+   "cant": 1658270.160066,
+   "v": 583711.096343232,
+   "tx": "e2e3c7530d9dc14366350121502c86782fed217bfa08d383766958d59c2e5f93"
+  },
+  {
+   "at": 1793496879000,
+   "a": "TXSt1DTjju4UQxeNo5s6yxz1cjx7698Rmd",
+   "sim": "TRX",
+   "cant": 743590.806681,
+   "v": 261743.963951712,
+   "tx": "5cbd54a09321e1fb4d7b4e57ed4e498168e4ac7853e78f48849dc62f6f09fed2"
+  },
+  {
+   "at": 1793496909000,
+   "a": "TSRe7AfRjciGZaABj5t5ETH74S7uT6GEEg",
+   "sim": "TRX",
+   "cant": 292704.361873,
+   "v": 103031.93537929599,
+   "tx": "3961af0254466bd7b3f5d71c2044f1a772721b34d6774921387d6eb20c6341f7"
+  },
+  {
+   "at": 1793497275000,
+   "a": "TRkAp7BVoksDWGZUKHW5SQr7mKoQ9beH1n",
+   "sim": "TRX",
+   "cant": 2647152.033531,
+   "v": 931797.515802912,
+   "tx": "ae236d4450c1bf8bd7a42c81f049b83c339f21beae30c4c463cfb35450dbbeca"
+  },
+  {
+   "at": 1793497317000,
+   "a": "TUoVsNvkSbCQFty1tLViCgvMjNRGGEK6eM",
+   "sim": "TRX",
+   "cant": 618308.914867,
+   "v": 217644.73803318397,
+   "tx": "6c5e14c72614758646978937060c6c28f6a6c6ec33e9e788870816debeee0e37"
+  },
+  {
+   "at": 1793497743000,
+   "a": "TXSt1DTjju4UQxeNo5s6yxz1cjx7698Rmd",
+   "sim": "TRX",
+   "cant": 416964.13004,
+   "v": 146771.37377407998,
+   "tx": "117c8211d49deeaf1d53c7927b0220f80089c124a9f6851d5f660da2ad8aabe5"
+  },
+  {
+   "at": 1793497863000,
+   "a": "TSRe7AfRjciGZaABj5t5ETH74S7uT6GEEg",
+   "sim": "TRX",
+   "cant": 331310.254668,
+   "v": 116621.20964313598,
+   "tx": "60814dc71100d6e235f048cce9ad1cd6e2842aa5ba7afa23c13b1c227a3e74de"
+  },
+  {
+   "at": 1793497893000,
+   "a": "TWvmy1h2bkDJu7knrtkjVVHhcUwn3qyEiq",
+   "sim": "TRX",
+   "cant": 378547.063103,
+   "v": 133248.566212256,
+   "tx": "b1619a853cc30a3962306981ad45dde5001ddf3f869ee6240e57d999546491b0"
+  },
+  {
+   "at": 1793497944000,
+   "a": "TXSt1DTjju4UQxeNo5s6yxz1cjx7698Rmd",
+   "sim": "TRX",
+   "cant": 620801.749269,
+   "v": 218522.215742688,
+   "tx": "6e38967573760a5de82de6effe15e64754d27a8dd6644e9bbb8bcab2968c95b0"
+  },
+  {
+   "at": 1793498124000,
+   "a": "TUoVsNvkSbCQFty1tLViCgvMjNRGGEK6eM",
+   "sim": "TRX",
+   "cant": 615980.984719,
+   "v": 216825.30662108798,
+   "tx": "a235acea4ef6fabfe4bbf919cf9eb04996d993bc34e7fafe4b389c6a240d8d7d"
+  },
+  {
+   "at": 1793498586000,
+   "a": "THMg4J1sytc6fgFZwqTgiiWJYwyWc3YpYk",
+   "sim": "TRX",
+   "cant": 7704.923599,
+   "v": 2712.133106848,
+   "tx": "ea209e59c90d006e356f113acce740f42bec5f0a98e6daa5926d546c22a0a2b4"
+  },
+  {
+   "at": 1793498625000,
+   "a": "TSRe7AfRjciGZaABj5t5ETH74S7uT6GEEg",
+   "sim": "TRX",
+   "cant": 347356.18115,
+   "v": 122269.3757648,
+   "tx": "60993afd62ac0745e766ef2a8f6f87627df49ade590370d45e7ef945c89e2242"
+  },
+  {
+   "at": 1793498946000,
+   "a": "THMg4J1sytc6fgFZwqTgiiWJYwyWc3YpYk",
+   "sim": "TRX",
+   "cant": 355333.313502,
+   "v": 125077.326352704,
+   "tx": "ffb26814a660b6613f4f625f967fc6e5978adb6e8a5008e72c467ca6f1f9334f"
+  },
+  {
+   "at": 1793498976000,
+   "a": "TXSt1DTjju4UQxeNo5s6yxz1cjx7698Rmd",
+   "sim": "TRX",
+   "cant": 481897.186078,
+   "v": 169627.809499456,
+   "tx": "b1d33700e916a507730bb3a5e989e6a82ba3a6e10a8c5523e93a1bcfaeaff25c"
+  },
+  {
+   "at": 1793499285000,
+   "a": "TXSt1DTjju4UQxeNo5s6yxz1cjx7698Rmd",
+   "sim": "TRX",
+   "cant": 518669.079536,
+   "v": 182571.51599667198,
+   "tx": "37a5a5ffbec82e75d8e2b2fd15bdaebdf2f0f9e4fc4373bab94a6d59421dc5fe"
+  },
+  {
+   "at": 1793499369000,
+   "a": "TSRe7AfRjciGZaABj5t5ETH74S7uT6GEEg",
+   "sim": "TRX",
+   "cant": 361952.665534,
+   "v": 127407.338267968,
+   "tx": "b2dac0a6fa803374e93563764f318c78e512d8881f28305bdf119aeb90f06b62"
+  },
+  {
+   "at": 1793499747000,
+   "a": "THMg4J1sytc6fgFZwqTgiiWJYwyWc3YpYk",
+   "sim": "TRX",
+   "cant": 216783.622772,
+   "v": 76307.835215744,
+   "tx": "aca56f0adc4d572b492c03c2343b4cb7fc3a7caf88753ec6ec4281c9056305df"
+  },
+  {
+   "at": 1793500017000,
+   "a": "THMg4J1sytc6fgFZwqTgiiWJYwyWc3YpYk",
+   "sim": "TRX",
+   "cant": 304014.549861,
+   "v": 107013.12155107199,
+   "tx": "966629e0e5922aef64cb577104ea0cb9b15a281a12889cf915daabc6a45e3f68"
+  },
+  {
+   "at": 1793500191000,
+   "a": "TSRe7AfRjciGZaABj5t5ETH74S7uT6GEEg",
+   "sim": "TRX",
+   "cant": 376682.778947,
+   "v": 132592.33818934398,
+   "tx": "5db710d1099f7c1cba7de2c92ebc8273462fa642e00f4dfcecb743624db77f71"
+  },
+  {
+   "at": 1793500221000,
+   "a": "THMg4J1sytc6fgFZwqTgiiWJYwyWc3YpYk",
+   "sim": "TRX",
+   "cant": 499070.975186,
+   "v": 175672.983265472,
+   "tx": "f3b7c58fa3c274e45d732cfff1a2355044d4cf06efdc079ce24a202c30ad9c2e"
+  },
+  {
+   "at": 1793500473000,
+   "a": "TWJkbPhShcy6sp8AahRdj7h1NKFS2yqhLK",
+   "sim": "TRX",
+   "cant": 961379.181588,
+   "v": 338405.471918976,
+   "tx": "1bc1a3f6dfea9bc24afb0c4de46cd07e5bfbcda9146e25fbaa25a1f25531dc27"
+  },
+  {
+   "at": 1793500671000,
+   "a": "TWgvbCdzHhXhWdp6C4vSZW2MQXANS5vbPf",
+   "sim": "TRX",
+   "cant": 961069.434308,
+   "v": 338296.440876416,
+   "tx": "edc5aaad4d3647854ebd46a0a7ffed212747b9e3e758d176616fa11b4037c581"
+  },
+  {
+   "at": 1793500836000,
+   "a": "THMg4J1sytc6fgFZwqTgiiWJYwyWc3YpYk",
+   "sim": "TRX",
+   "cant": 705568.76918,
+   "v": 248360.20675135998,
+   "tx": "42954c8cae11ba3b700d8976b1f71728320aad6ddcd1138185bb1f171860e571"
+  },
+  {
+   "at": 1793500917000,
+   "a": "TUoVsNvkSbCQFty1tLViCgvMjNRGGEK6eM",
+   "sim": "TRX",
+   "cant": 607417.218093,
+   "v": 213810.860768736,
+   "tx": "8c7845bdaecebba1d52966dd9da31326e23c5401fad13e7291ba7ab13ff6d41e"
+  },
+  {
+   "at": 1793500977000,
+   "a": "TUoVsNvkSbCQFty1tLViCgvMjNRGGEK6eM",
+   "sim": "TRX",
+   "cant": 607417.218093,
+   "v": 213810.860768736,
+   "tx": "095cd45845f2b9284cc2bfa1b2ce8196e0aba71ca75ee189e5f78d7da196e691"
+  },
+  {
+   "at": 1793501010000,
+   "a": "TSRe7AfRjciGZaABj5t5ETH74S7uT6GEEg",
+   "sim": "TRX",
+   "cant": 384353.048966,
+   "v": 135292.273236032,
+   "tx": "b1fca0af459c9662d433edb79a6f3a49c88b3c35cb1d69a942a7f8d41fff7fbd"
+  },
+  {
+   "at": 1793501271000,
+   "a": "TEiTsR59nRxgL5iPiNv1Mu7G3HUYP76Jw9",
+   "sim": "TRX",
+   "cant": 1013217.304378,
+   "v": 356652.49114105594,
+   "tx": "e899da3a7d02f0827b1d17b353dedf66486546adf412ae87db0217f494fc90bc"
+  },
+  {
+   "at": 1793501499000,
+   "a": "TXSt1DTjju4UQxeNo5s6yxz1cjx7698Rmd",
+   "sim": "TRX",
+   "cant": 654343.468318,
+   "v": 230328.90084793596,
+   "tx": "692d361fdf7ae7f4fbece6a19db9042b340e9303869cbba156d05a957425f867"
+  },
+  {
+   "at": 1793501535000,
+   "a": "TMEoqihirogFYga9WF8QsqKHnHm2dxCVJ8",
+   "sim": "TRX",
+   "cant": 390504.639812,
+   "v": 137457.63321382398,
+   "tx": "c910799c567f0f488322b0883cef9e3d180fdb520cdad1bbe00ba221559bd53e"
+  },
+  {
+   "at": 1793501763000,
+   "a": "TSRe7AfRjciGZaABj5t5ETH74S7uT6GEEg",
+   "sim": "TRX",
+   "cant": 399903.732242,
+   "v": 140766.113749184,
+   "tx": "720fb57f709d1ffc6c4c24a0b75aa3f833c0f51ee88ece1e9069d36110f780d6"
+  },
+  {
+   "at": 1793501799000,
+   "a": "TEg5ncDH6jwySRiAJ4sCC7JRJcmrmCmJrm",
+   "sim": "TRX",
+   "cant": 7470.169912,
+   "v": 2629.499809024,
+   "tx": "aea90e42d176d83d2af7e64ac324dd340e279ca8b46415a3637ed9810a776883"
+  },
+  {
+   "at": 1793501835000,
+   "a": "TXSt1DTjju4UQxeNo5s6yxz1cjx7698Rmd",
+   "sim": "TRX",
+   "cant": 329930.429456,
+   "v": 116135.51116851199,
+   "tx": "137c21d4fbf5cd5b7f83d96583564e755cd17e77d554655fd9a4ac0905a6acb8"
+  },
+  {
+   "at": 1793502024000,
+   "a": "TRkAp7BVoksDWGZUKHW5SQr7mKoQ9beH1n",
+   "sim": "TRX",
+   "cant": 1085745.786363,
+   "v": 382182.516799776,
+   "tx": "19de68c0c94855c9b1fc5dbe3958f0df5ba51e97399d4b6d0534ede2e6203631"
+  },
+  {
+   "at": 1793502231000,
+   "a": "TXSt1DTjju4UQxeNo5s6yxz1cjx7698Rmd",
+   "sim": "TRX",
+   "cant": 702539.540453,
+   "v": 247293.918239456,
+   "tx": "56673b4cbe609a105e727b2f2173f14be1ad04825cc0b197bb4df3913d9a38e2"
+  },
+  {
+   "at": 1793502525000,
+   "a": "TSRe7AfRjciGZaABj5t5ETH74S7uT6GEEg",
+   "sim": "TRX",
+   "cant": 415486.451612,
+   "v": 146251.230967424,
+   "tx": "1ee5fa7feb1a2f9b3ad943eede76bf05d09a026ca468c285e2275c10169c8021"
+  },
+  {
+   "at": 1793502615000,
+   "a": "TA4RtA5TRM52jr64HopuZ5DednLeEczhKK",
+   "sim": "TRX",
+   "cant": 721128.389768,
+   "v": 253837.193198336,
+   "tx": "2ce86c63737a919528544977a5a0382e3dfbec27b00cee842913bca67a6399f7"
+  },
+  {
+   "at": 1793502795000,
+   "a": "TXSt1DTjju4UQxeNo5s6yxz1cjx7698Rmd",
+   "sim": "TRX",
+   "cant": 652674.593934,
+   "v": 229741.45706476798,
+   "tx": "a9b6cde9fcfa4ad7d1acd13154197a41c3bd07dd78c763a06126b1854df4d137"
+  },
+  {
+   "at": 1793503662000,
+   "a": "TXSt1DTjju4UQxeNo5s6yxz1cjx7698Rmd",
+   "sim": "TRX",
+   "cant": 1011137.717206,
+   "v": 355920.476456512,
+   "tx": "68434e1835e59efd415feb9cace0ff29664978c0b45e2f1988e03c4b6cb0e126"
+  },
+  {
+   "at": 1793503776000,
+   "a": "TWUUZzbkDSvJUZ8SAmp8zpHgFD1ZkG7b6V",
+   "sim": "TRX",
+   "cant": 404575.825208,
+   "v": 142410.690473216,
+   "tx": "748700267d6c4f590620d5ab2818a5e424aeab25f2c38d6c9b7b6edb56978809"
+  },
+  {
+   "at": 1793503812000,
+   "a": "TSRe7AfRjciGZaABj5t5ETH74S7uT6GEEg",
+   "sim": "TRX",
+   "cant": 439128.387096,
+   "v": 154573.192257792,
+   "tx": "ba8a1296ec61c5200bde9e0ef5c822a1f6df1203c94ba596c5cc69b2ac1f899a"
+  },
+  {
+   "at": 1793503848000,
+   "a": "TTvwUJ2k56NVjauF2NteBeN5ytRAxvFb2s",
+   "sim": "TRX",
+   "cant": 2044665.388731,
+   "v": 719722.216833312,
+   "tx": "d50403afebf52b2ac87e141e0729605dc156aa9fed97a54dbe4b63f1cc9a58fa"
+  },
+  {
+   "at": 1793503884000,
+   "a": "TA4RtA5TRM52jr64HopuZ5DednLeEczhKK",
+   "sim": "TRX",
+   "cant": 745831.211622,
+   "v": 262532.58649094397,
+   "tx": "a318572d79fa6895da3b59ba4bd608e6a1003d2a393554b1e6aed613ba0dac40"
+  },
+  {
+   "at": 1793506965000,
+   "a": "TYZ98phfoPWmiQhfHrYHvLW6jgnRXGuKpw",
+   "sim": "TRX",
+   "cant": 285986.224063,
+   "v": 100667.15087017599,
+   "tx": "e2d7077ea9f80db666f63da5aae0b50ffae97d8eb8ae2bbff900ff03ac08676f"
+  },
+  {
+   "at": 1793507004000,
+   "a": "TTvwUJ2k56NVjauF2NteBeN5ytRAxvFb2s",
+   "sim": "TRX",
+   "cant": 431784.89826,
+   "v": 151988.28418751998,
+   "tx": "45cfe9c5ff2ca91863672b3d04c94af81c7d217580bf5b9b72ef2f46658b2bcc"
+  },
+  {
+   "at": 1793509575000,
+   "a": "TTvwUJ2k56NVjauF2NteBeN5ytRAxvFb2s",
+   "sim": "TRX",
+   "cant": 437380.815002,
+   "v": 153958.046880704,
+   "tx": "df85b73fcdf0f2b31553e8b77ead7f0047990dcba23e140d29f661ada56d7436"
+  },
+  {
+   "at": 1793511186000,
+   "a": "TNhpfKq83wufEKGjBhQFnT7jnxYmyBzH6F",
+   "sim": "TRX",
+   "cant": 2223979.354707,
+   "v": 782840.7328568639,
+   "tx": "2f05cb0924017bad7be3022b5486a36da1da0932b2e14297d66c447379622cfb"
+  }
+ ]
+}
