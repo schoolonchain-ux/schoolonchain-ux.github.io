@@ -1,0 +1,59 @@
+remitentes sin clasificar: 8
+método de pureza: diluida
+pureza convergida en 74 vueltas
+
+billeteras leídas (sin semillas ni depósitos): 9226 | nivel máximo 42 | lecturas fallidas 0 | parciales 1
+por nivel: {"1":122,"2":799,"3":1630,"4":1002,"5":533,"6":432,"7":614,"8":679,"9":268,"10":221,"11":184,"12":325,"13":258,"14":211,"15":242,"16":254,"17":224,"18":202,"19":428,"20":224,"21":102,"22":30,"23":54,"24":53,"25":51,"26":29,"27":18,"28":11,"29":4,"30":4,"31":4,"32":3,"33":2,"34":1,"35":1,"36":1,"37":1,"38":1,"39":1,"40":1,"41":1,"42":1}
+reparto: envíos 379 por 50,773,217 $ a 122 billeteras | pureza de TRBdWq 1
+
+== Dinero del robo que llega a destinos finales (mezcla proporcional, $)
+   casa                      0
+   nodo             25,161,546
+   prestamo             15,144
+   puente            6,613,843
+   usdd                424,069
+   no_verificada             0
+   retenido en billeteras del recorrido (saldo × pureza): 3,181,753 | neutrales (intercambios): 27,346,940 | siguen a otra billetera (suma de saltos): 192,265,008
+
+== Conciliación: entrada 50,773,217 | destinos finales 32,214,602 | retenido 3,181,753 | polvo 1,425,611 | entra en contratos sin salida resuelta 3,756,270 (bruto 4,725,834, 390 envíos)
+   sin resolver TPuaJ6gnYf MetaRouterGateway           2,967,399 $ en 312 envíos de 133 billeteras
+   sin resolver TMuHynsA5e sin nombre                     91,701 $ en 1 envíos de 1 billeteras
+   sin resolver TTu9T4ff4z BWSwapRouterV1                 70,383 $ en 23 envíos de 11 billeteras
+   sin resolver TW9mM2UDRe sin nombre                     59,533 $ en 1 envíos de 1 billeteras
+   sin resolver TQqgNg13s2 UniversalRouter                58,245 $ en 26 envíos de 13 billeteras
+   sin resolver TF4ey76Yqd sin nombre                     55,398 $ en 1 envíos de 1 billeteras
+   sin resolver TGTmi9bbD4 sin nombre                     52,493 $ en 1 envíos de 1 billeteras
+   sin resolver TNb4Pd2T1J sin nombre                     43,651 $ en 1 envíos de 1 billeteras
+   sin resolver TWs77ieBEQ sin nombre                     43,389 $ en 1 envíos de 1 billeteras
+   sin resolver TRgWKPku4f sin nombre                     41,095 $ en 1 envíos de 1 billeteras
+   sin resolver TFVKim8uXo sin nombre                     37,813 $ en 1 envíos de 1 billeteras
+   sin resolver TArvmoZRUL sin nombre                     37,324 $ en 1 envíos de 1 billeteras
+
+-- casa
+
+-- nodo
+   TM8uyBjRKzFtQdMC7tQLvKeeWieaFvXDyc        12,462,433 $ (bruto 12,944,705) en 1120 envíos de 389 billeteras | 23880 ops | creada 2025-11-27
+   TGSNahJvAdh86aR5pdcxiep1mBWSRK3HHL         2,779,836 $ (bruto 3,722,955) en 174 envíos de  86 billeteras | 8344 ops | creada 2026-10-11
+   TH1YKH9MUuJtDmekPia4x9fZXAcpPrMv8B         2,547,024 $ (bruto 3,327,261) en 159 envíos de  82 billeteras | 8643 ops | creada 2026-10-11
+   THPaGKe6aZkUcNht24hcscZPLwtcJAbpun         2,251,266 $ (bruto 2,966,948) en 101 envíos de  57 billeteras | 9295 ops | creada 2026-10-11
+   TLKfB2goHRY1SykEpVbiGdsesACrkCxCeW         2,019,580 $ (bruto 2,481,390) en 115 envíos de  56 billeteras | 8556 ops | creada 2026-10-11
+   TBAPnuwEht65McDbxDvDYs2XLRSSbYQMUM         1,905,608 $ (bruto 2,568,240) en 125 envíos de  76 billeteras | 8831 ops | creada 2026-10-11
+   TZG47zhb8kcriWQ2rE719yHs1KqgzwMrvF           689,527 $ (bruto 1,211,832) en 140 envíos de  88 billeteras | 317156 ops | creada 2025-12-23
+   TKfz7Pu3jtxWrfHzVeozQjXsb3RfuUHGE2           186,336 $ (bruto 229,418) en  42 envíos de  42 billeteras | 5599480 ops | creada 2022-05-28
+   TX5XiRXdyz7sdFwF5mnhT1QoGCpbkncpke           159,253 $ (bruto 163,834) en   9 envíos de   5 billeteras | 1619805 ops | creada 2025-03-26
+   TCPPRajgXVBkR5Qvpd3RHh4xUvibhzrqSa           105,403 $ (bruto 115,943) en  25 envíos de  25 billeteras | 615040 ops | creada 2023-09-21
+   TYsQqVyppXjpB9HxFLp9PY3GwLkAHDgH7R            39,532 $ (bruto 65,113) en   1 envíos de   1 billeteras | 1581911 ops | creada 2026-07-14
+   TX2Ut1reF59i2WPzsYVoMfA25EkUkavnd5            12,531 $ (bruto 31,876) en   4 envíos de   2 billeteras  
+
+-- prestamo
+   CErc20Delegator                               15,144 $ (bruto 31,846) en 120 envíos de  77 billeteras  
+
+-- puente
+   Chainflip (bóveda de TRON)                 3,490,994 $ (bruto 6,882,089) en  92 envíos de  89 billeteras  
+   UsdtOFT                                    2,609,201 $ (bruto 8,086,285) en  66 envíos de  25 billeteras  
+   Tron_PrefundedAdapter                        275,222 $ (bruto 519,799) en  46 envíos de  37 billeteras  
+   Across (Tron_Executor)                       234,226 $ (bruto 412,728) en  40 envíos de  14 billeteras  
+   BridgersSwap                                   4,199 $ (bruto 8,283) en   2 envíos de   1 billeteras  
+
+-- usdd
+   AuthGemJoin5                                 424,069 $ (bruto 611,549) en  11 envíos de   6 billeteras  

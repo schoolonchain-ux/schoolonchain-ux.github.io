@@ -1,0 +1,77 @@
+{
+ "corte": "2026-10-30T22:40:00.000Z",
+ "generado": "2026-11-03T09:26:57.625Z",
+ "origen": "tramo6-v02",
+ "ficheros": {
+  "symbiosis-llegadas.json": {
+   "antes": 376,
+   "despues": 316,
+   "quitados": 60,
+   "nota": null
+  },
+  "metarouter-resumen.json": {
+   "antes": 376,
+   "despues": 316,
+   "quitados": 60,
+   "nota": null
+  },
+  "metarouter-destino.json": {
+   "antes": 376,
+   "despues": 316,
+   "quitados": 60,
+   "nota": null
+  },
+  "metarouter-decodificado.json": {
+   "antes": 376,
+   "despues": 316,
+   "quitados": 60,
+   "nota": null
+  },
+  "chainflip-llegadas.json": {
+   "antes": 702,
+   "despues": 572,
+   "quitados": 130,
+   "nota": null
+  },
+  "chainflip-destinos.json": {
+   "antes": 702,
+   "despues": 572,
+   "quitados": 130,
+   "nota": "cuenta cambios, no canales"
+  },
+  "across-llegadas.json": {
+   "antes": 55,
+   "despues": 40,
+   "quitados": 15,
+   "nota": null
+  },
+  "relevos-informe.json": {
+   "antes": 215,
+   "despues": 109,
+   "quitados": 106,
+   "nota": "parejas 134→74, sin pareja 81→35 · reembolsos enteros 1 → 0 (el único, el cambio 1990221, es posterior a la foto y ya está en el tramo 5; corregido el 3-nov tras la revisión)"
+  },
+  "llegadas-verificadas.json": {
+   "antes": 486,
+   "despues": 342,
+   "quitados": 144,
+   "nota": "quitadas las que no son llegada de ningún cruce conservado"
+  },
+  "llegadas-eth.json": {
+   "retirado": true,
+   "nota": "se regenera con su script a partir de los ficheros ya filtrados"
+  },
+  "eth-adelante-v2.json": {
+   "retirado": true,
+   "nota": "se regenera con su script a partir de los ficheros ya filtrados"
+  },
+  "metarouter-destino-resumen.json": {
+   "retirado": true,
+   "nota": "resumen antiguo retirado; ningún guion del informe lo lee (se puede regenerar con su script)"
+  },
+  "symbiosis-llegadas-resumen.json": {
+   "retirado": true,
+   "nota": "resumen antiguo retirado; ningún guion del informe lo lee (se puede regenerar con su script)"
+  }
+ }
+}
