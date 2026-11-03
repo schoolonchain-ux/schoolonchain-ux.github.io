@@ -239,5 +239,7 @@
     TABS.forEach((t) => tabsEl.append(el('button', { 'data-id': t.id, role: 'tab', onclick: () => abrirTab(t.id) }, t.titulo)));
     const h = (location.hash || '').replace('#', '');
     abrirTab(q.get('dir') ? 'comprobar' : TABS.some((t) => t.id === h) ? h : 'comprobar');
+    // los enlaces de la barra de novedades cambian de pestaña sin recargar la página
+    window.addEventListener('hashchange', () => { const n = (location.hash || '').replace('#', ''); if (TABS.some((t) => t.id === n)) abrirTab(n); });
   });
 })();

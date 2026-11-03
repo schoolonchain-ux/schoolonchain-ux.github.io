@@ -1,0 +1,21 @@
+/* ===== Barra de novedades (estilo teletipo de noticiero), verde pistacho metalizado =====
+   Dos filas: arriba el comprobador de bloqueos de USDT; debajo las descongelaciones de TRX con fechas. Cada elemento lleva a la herramienta. */
+.ticker{position:relative;z-index:41;display:flex;flex-direction:column;box-shadow:inset 0 -1px 0 rgba(0,0,0,.35);font-size:12.5px;line-height:1}
+.tk-row{display:flex;align-items:stretch;height:26px;min-width:0}
+.tk-a{background:linear-gradient(180deg,#f0fadb 0%,#c8e69a 26%,#9cc858 62%,#6f9d31 100%);box-shadow:inset 0 1px 0 rgba(255,255,255,.75);color:#0d2004}
+.tk-b{background:linear-gradient(180deg,#ffd2ad 0%,#ff9a52 26%,#ef5e0e 64%,#b23f04 100%);box-shadow:inset 0 1px 0 rgba(255,255,255,.6);color:#1a0800}
+.tk-row+.tk-row{border-top:1px solid rgba(0,0,0,.4)}
+.tk-tag{flex:none;display:flex;align-items:center;justify-content:center;min-width:146px;padding:0 12px;font-weight:800;font-size:10.5px;letter-spacing:.09em;text-transform:uppercase;color:#fff;background:linear-gradient(145deg,#7d9fd6 0%,#3a5fa3 30%,#1e3c74 64%,#0d1f48 100%);box-shadow:inset 0 1px 0 rgba(255,255,255,.35),2px 0 6px rgba(0,0,0,.25);text-shadow:0 1px 1px rgba(0,0,0,.5);white-space:nowrap}
+.tk-view{position:relative;flex:1;min-width:0;overflow:hidden;display:flex;align-items:center;-webkit-mask-image:linear-gradient(to right,transparent 0,#000 18px,#000 calc(100% - 18px),transparent 100%);mask-image:linear-gradient(to right,transparent 0,#000 18px,#000 calc(100% - 18px),transparent 100%)}
+.tk-track{display:inline-flex;align-items:center;white-space:nowrap;animation:tk var(--tk-dur,60s) linear infinite;will-change:transform}
+@keyframes tk{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+.tk-view:hover .tk-track,.tk-view:focus-within .tk-track{animation-play-state:paused}
+.tk-it{display:inline-flex;align-items:center;gap:7px;padding:0 4px;color:inherit;text-decoration:none;font-weight:600}
+.tk-it b{font-weight:800}
+.tk-it:hover,.tk-it:focus-visible{text-decoration:underline;outline:none}
+.tk-it:hover{background:rgba(255,255,255,.3)}
+.tk-sep{display:inline-block;margin:0 14px;color:currentColor;opacity:.5;font-size:9px}
+.tk-dato{font-variant-numeric:tabular-nums}
+.tk-hoy{background:rgba(26,8,0,.2);border-radius:4px;padding:2px 6px}
+@media (prefers-reduced-motion:reduce){.tk-track{animation:none}.tk-view{overflow-x:auto;-webkit-mask-image:none;mask-image:none}.tk-copia{display:none}}
+@media (max-width:640px){.ticker{font-size:12px}.tk-tag{padding:0 8px;font-size:9.5px;min-width:122px}}
