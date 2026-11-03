@@ -22,13 +22,13 @@
     const s = Dash.sec('fuentes', 'Fuentes, evidencia y descargas', 'Fuentes', ['De dónde sale cada dato y cómo repetirlo. Todos los datos de este panel se publican en ficheros abiertos; cada dirección y cada transacción enlazan con el explorador público de su cadena.']);
     const hijos = [];
     if (d.fuentes && d.fuentes.length) hijos.push(el('div', { class: 'card' }, el('h3', null, 'Fuentes de datos'), UI.tabla({ pp: 12, buscar: false, rows: d.fuentes, cols: [{ t: 'Id', v: (r) => r.id, o: (r) => r.id }, { t: 'Fuente', v: (r) => r.t, o: (r) => r.t }, { t: 'Corte', v: (r) => (r.corte || '').replace('T', ' ').slice(0, 16), o: (r) => r.corte }] })));
-    hijos.push(el('div', { class: 'card' }, el('h3', null, 'Descargas'), el('div', { class: 'chips2', style: 'flex-direction:column;align-items:flex-start' },
-      el('a', { class: 'btn primary', href: base + 'informe-completo.html' }, 'Informe original completo (HTML, 11 MB)'),
-      el('a', { class: 'btn', href: base + 'perdida-de-rastro.csv' }, 'Rastro perdido (CSV)'),
-      el('a', { class: 'btn', href: base + 'data.json' }, 'Datos del panel (JSON)'),
-      el('a', { class: 'btn', href: base + 'detalle.json' }, 'Tablas de detalle (JSON)'),
-      el('a', { class: 'btn', href: base + 'libro/movs.json' }, 'Libro mayor: movimientos (JSON)'),
-      el('a', { class: 'btn', href: base + 'libro/cuentas.json' }, 'Libro mayor: direcciones (JSON)')), el('p', { class: 'hint' }, 'Los movimientos del libro tienen la forma [hash, de, a, activo, cantidad, usd, hora, tipo, estado, nota]; los índices de «de» y «a» apuntan a la lista de direcciones.')));
+    hijos.push(el('div', { class: 'card' }, el('h3', null, 'Descargas'), Dash.acciones([
+      [el('a', { class: 'btn primary', href: base + 'informe-completo.html' }, 'Informe original completo (HTML, 11 MB)'), 'El informe tal como se escribió, de principio a fin y sin panel.'],
+      [el('a', { class: 'btn', href: base + 'perdida-de-rastro.csv' }, 'Rastro perdido (CSV)'), Dash.descArchivo['perdida-de-rastro.csv']],
+      [el('a', { class: 'btn', href: base + 'data.json' }, 'Datos del panel (JSON)'), Dash.descArchivo['data.json']],
+      [el('a', { class: 'btn', href: base + 'detalle.json' }, 'Tablas de detalle (JSON)'), Dash.descArchivo['detalle.json']],
+      [el('a', { class: 'btn', href: base + 'libro/movs.json' }, 'Libro mayor: movimientos (JSON)'), 'Todos los movimientos del libro mayor (4,6 MB): una fila por transferencia, con hash, origen, destino, importe y estado.'],
+      [el('a', { class: 'btn', href: base + 'libro/cuentas.json' }, 'Libro mayor: direcciones (JSON)'), 'La lista de billeteras del libro (1,6 MB), con sus clases y estados. Los movimientos apuntan a ella por número, así que se descargan juntos.']]), el('p', { class: 'hint' }, 'Los movimientos del libro tienen la forma [hash, de, a, activo, cantidad, usd, hora, tipo, estado, nota]; los índices de «de» y «a» apuntan a la lista de direcciones.')));
     s.append(el('div', { class: 'grid g2' }, hijos));
     s.append(el('div', { class: 'card', style: 'margin-top:14px' }, el('h3', null, 'Glosario'), el('div', { class: 'cs' }, 'Los términos del panel, sin jerga.'), el('dl', { class: 'gloss' }, TXT.glosario.slice(0, 6).map(([t, x]) => [el('dt', null, t), el('dd', null, x)])), el('button', { class: 'tbtn', style: 'margin-top:8px', onclick: () => Dash.glosario() }, 'Ver el glosario completo →')));
   });

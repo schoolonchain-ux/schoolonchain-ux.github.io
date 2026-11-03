@@ -37,3 +37,8 @@ footer.marca .ml{color:var(--soft);font-size:13.5px;margin-top:2px}
 footer.marca .ml2{color:var(--mut);font-size:13px}
 footer.marca .ms{display:flex;flex-wrap:wrap;gap:8px;margin:14px 0 10px}
 footer.marca .av{color:var(--mut);font-size:12px;max-width:820px;margin:8px 0 0}
+/* botones con explicación */
+.acciones{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:12px 16px;margin:10px 0 4px;align-items:start}
+.acc{display:flex;flex-direction:column;align-items:flex-start;gap:6px}
+.acc .btn{align-self:flex-start;max-width:100%}
+.acc .accd{margin:0;color:var(--soft);font-size:12.8px;line-height:1.45}

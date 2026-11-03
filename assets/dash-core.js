@@ -84,6 +84,13 @@
   Dash.abrirPartida = (p, capital, ambito, fase) => UI.abrir(p.nombre, () => Dash.detallePartida(p, capital, ambito, fase), { sub: 'Partida del balance · ' + p.estado, ancho: true });
 
   /* ---------- cabecera ---------- */
+  /* Botones con su explicación debajo: nada de botones mudos. items = [[nodoBoton, 'qué hace']] */
+  Dash.descArchivo = {
+    'perdida-de-rastro.csv': 'La lista, en una hoja de cálculo (abre en Excel), de los puntos donde el dinero deja de poder seguirse y la causa de cada uno.',
+    'data.json': 'Todos los datos que alimentan este panel, en formato abierto (JSON), para que programadores o analistas los reutilicen. No es para leer.',
+    'detalle.json': 'Las tablas completas que hay detrás de los gráficos (cuentas congeladas, destinos, estados…), en formato abierto (JSON).',
+  };
+  Dash.acciones = (items) => el('div', { class: 'acciones' }, items.map(([b, t]) => el('div', { class: 'acc' }, b, el('p', { class: 'accd' }, t))));
   function cabecera() {
     const { d, meta, base, app } = Dash;
     const ult = (d.novedades || []).slice(-1)[0];
@@ -91,12 +98,13 @@
       meta.caso ? el('div', { class: 'caso' }, 'Caso · ' + meta.caso) : null,
       el('h1', null, d.titulo),
       el('div', { class: 'sub' }, 'Datos hasta ', el('b', null, C.utc(new Date(d.corte).getTime())), ' · generado el ', C.utc(new Date(d.generado).getTime()), ult ? ' · versión ' : '', ult ? el('b', null, ult.version) : null),
-      el('div', { class: 'actions' },
-        el('a', { class: 'btn primary', href: base + 'informe-completo.html' }, 'Abrir el informe original completo'),
-        (meta.archivos || []).filter((a) => a.ruta !== 'informe-completo.html').map((a) => el('a', { class: 'btn', href: base + a.ruta }, a.nombre)),
-        el('button', { class: 'btn', onclick: () => Dash.glosario() }, 'Glosario'),
-        el('a', { class: 'btn', href: 'herramientas.html' }, 'Herramientas en vivo'),
-        el('button', { class: 'btn', onclick: () => document.getElementById('metodo').scrollIntoView() }, 'Método y decisiones')),
+      Dash.acciones([
+        [el('a', { class: 'btn primary', href: base + 'informe-completo.html' }, 'Abrir el informe original completo'), 'El informe tal como se escribió (HTML, unos 11 MB): lectura lineal de principio a fin, sin este panel. Tarda en abrir.'],
+        ...(meta.archivos || []).filter((a) => a.ruta !== 'informe-completo.html').map((a) => [el('a', { class: 'btn', href: base + a.ruta }, a.nombre), Dash.descArchivo[a.ruta] || 'Archivo de datos abierto de este informe.']),
+        [el('button', { class: 'btn', onclick: () => Dash.glosario() }, 'Glosario'), 'Explica sin jerga los términos técnicos que aparecen en el panel (stake, puente, pureza…). Se abre aquí mismo.'],
+        [el('a', { class: 'btn', href: 'herramientas.html' }, 'Herramientas en vivo'), 'Otra página: comprobar si una dirección está bloqueada en Tether, ver los últimos bloqueos y el calendario de TRX que se descongela. Lee la cadena en directo.'],
+        [el('button', { class: 'btn', onclick: () => document.getElementById('metodo').scrollIntoView({ behavior: 'smooth' }) }, 'Método y decisiones'), 'Baja a la sección que explica cómo se hizo el informe, por qué se tomó cada decisión y qué no se puede afirmar.'],
+      ]),
       el('div', { class: 'toc', id: 'toc' })));
   }
   function pie() {
