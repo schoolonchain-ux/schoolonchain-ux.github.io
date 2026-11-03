@@ -1,0 +1,341 @@
+{
+ "version": 1,
+ "nota": "Contratos y funciones de bloqueo del USDT/USDT0 por red. Datos públicos. Fuente: tether-blacklist/config/default.json (verificado en vivo el 2026-10-21).",
+ "redes": [
+  {
+   "id": "ethereum",
+   "nombre": "Ethereum",
+   "token": "USDT",
+   "contrato": "0xdAC17F958D2ee523a2206206994597C13D831ec7",
+   "funcion": "isBlackListed(address)",
+   "selector": "e47d6060",
+   "tipo": "evm",
+   "explorador": "https://etherscan.io",
+   "explorerToken": "https://etherscan.io/token/0xdac17f958d2ee523a2206206994597c13d831ec7",
+   "rpc": [
+    "https://ethereum-rpc.publicnode.com",
+    "https://eth.drpc.org"
+   ],
+   "trongrid": null
+  },
+  {
+   "id": "avalanche",
+   "nombre": "Avalanche",
+   "token": "USDT",
+   "contrato": "0x9702230A8Ea53601f5cD2dc00fDBc13d4dF4A8c7",
+   "funcion": "isBlocked(address)",
+   "selector": "fbac3951",
+   "tipo": "evm",
+   "explorador": "https://snowtrace.io",
+   "explorerToken": "https://snowtrace.io/token/0x9702230a8ea53601f5cd2dc00fdbc13d4df4a8c7",
+   "rpc": [
+    "https://api.avax.network/ext/bc/C/rpc",
+    "https://avalanche-c-chain-rpc.publicnode.com"
+   ],
+   "trongrid": null
+  },
+  {
+   "id": "arbitrum",
+   "nombre": "Arbitrum",
+   "token": "USDT0",
+   "contrato": "0xFd086bC7CD5C481DCC9C85ebE478A1C0b69FCbb9",
+   "funcion": "isBlocked(address)",
+   "selector": "fbac3951",
+   "tipo": "evm",
+   "explorador": "https://arbiscan.io",
+   "explorerToken": "https://arbiscan.io/token/0xfd086bc7cd5c481dcc9c85ebe478a1c0b69fcbb9",
+   "rpc": [
+    "https://arb1.arbitrum.io/rpc",
+    "https://arbitrum-one-rpc.publicnode.com"
+   ],
+   "trongrid": null
+  },
+  {
+   "id": "polygon",
+   "nombre": "Polygon",
+   "token": "USDT0",
+   "contrato": "0xc2132D05D31c914a87C6611C10748AEb04B58e8F",
+   "funcion": "isBlocked(address)",
+   "selector": "fbac3951",
+   "tipo": "evm",
+   "explorador": "https://polygonscan.com",
+   "explorerToken": "https://polygonscan.com/token/0xc2132d05d31c914a87c6611c10748aeb04b58e8f",
+   "rpc": [
+    "https://polygon-bor-rpc.publicnode.com",
+    "https://polygon.drpc.org"
+   ],
+   "trongrid": null
+  },
+  {
+   "id": "optimism",
+   "nombre": "Optimism",
+   "token": "USDT0",
+   "contrato": "0x01bFF41798a0BcF287b996046Ca68b395DbC1071",
+   "funcion": "isBlocked(address)",
+   "selector": "fbac3951",
+   "tipo": "evm",
+   "explorador": null,
+   "explorerToken": null,
+   "rpc": [
+    "https://optimism-rpc.publicnode.com",
+    "https://mainnet.optimism.io"
+   ],
+   "trongrid": null
+  },
+  {
+   "id": "mantle",
+   "nombre": "Mantle",
+   "token": "USDT0",
+   "contrato": "0x779Ded0c9e1022225f8E0630b35a9b54bE713736",
+   "funcion": "isBlocked(address)",
+   "selector": "fbac3951",
+   "tipo": "evm",
+   "explorador": null,
+   "explorerToken": null,
+   "rpc": [
+    "https://mantle-rpc.publicnode.com",
+    "https://rpc.mantle.xyz"
+   ],
+   "trongrid": null
+  },
+  {
+   "id": "plasma",
+   "nombre": "Plasma",
+   "token": "USDT0",
+   "contrato": "0xB8CE59FC3717ada4C02eaDF9682A9e934F625ebb",
+   "funcion": "isBlocked(address)",
+   "selector": "fbac3951",
+   "tipo": "evm",
+   "explorador": null,
+   "explorerToken": null,
+   "rpc": [
+    "https://rpc.plasma.to",
+    "https://plasma.drpc.org"
+   ],
+   "trongrid": null
+  },
+  {
+   "id": "berachain",
+   "nombre": "Berachain",
+   "token": "USDT0",
+   "contrato": "0x779Ded0c9e1022225f8E0630b35a9b54bE713736",
+   "funcion": "isBlocked(address)",
+   "selector": "fbac3951",
+   "tipo": "evm",
+   "explorador": null,
+   "explorerToken": null,
+   "rpc": [
+    "https://rpc.berachain.com",
+    "https://berachain-rpc.publicnode.com"
+   ],
+   "trongrid": null
+  },
+  {
+   "id": "unichain",
+   "nombre": "Unichain",
+   "token": "USDT0",
+   "contrato": "0x9151434b16b9763660705744891fA906F660EcC5",
+   "funcion": "isBlocked(address)",
+   "selector": "fbac3951",
+   "tipo": "evm",
+   "explorador": null,
+   "explorerToken": null,
+   "rpc": [
+    "https://mainnet.unichain.org",
+    "https://unichain-rpc.publicnode.com"
+   ],
+   "trongrid": null
+  },
+  {
+   "id": "ink",
+   "nombre": "Ink",
+   "token": "USDT0",
+   "contrato": "0x0200C29006150606B650577BBE7B6248F58470c1",
+   "funcion": "isBlocked(address)",
+   "selector": "fbac3951",
+   "tipo": "evm",
+   "explorador": null,
+   "explorerToken": null,
+   "rpc": [
+    "https://rpc-gel.inkonchain.com",
+    "https://ink-rpc.publicnode.com"
+   ],
+   "trongrid": null
+  },
+  {
+   "id": "sei",
+   "nombre": "Sei",
+   "token": "USDT0",
+   "contrato": "0x9151434b16b9763660705744891fA906F660EcC5",
+   "funcion": "isBlocked(address)",
+   "selector": "fbac3951",
+   "tipo": "evm",
+   "explorador": null,
+   "explorerToken": null,
+   "rpc": [
+    "https://evm-rpc.sei-apis.com",
+    "https://sei-evm-rpc.publicnode.com"
+   ],
+   "trongrid": null
+  },
+  {
+   "id": "xlayer",
+   "nombre": "XLayer",
+   "token": "USDT0",
+   "contrato": "0x779Ded0c9e1022225f8E0630b35a9b54bE713736",
+   "funcion": "isBlocked(address)",
+   "selector": "fbac3951",
+   "tipo": "evm",
+   "explorador": null,
+   "explorerToken": null,
+   "rpc": [
+    "https://rpc.xlayer.tech",
+    "https://xlayer.drpc.org"
+   ],
+   "trongrid": null
+  },
+  {
+   "id": "monad",
+   "nombre": "Monad",
+   "token": "USDT0",
+   "contrato": "0xe7cd86e13AC4309349F30B3435a9d337750fC82D",
+   "funcion": "isBlocked(address)",
+   "selector": "fbac3951",
+   "tipo": "evm",
+   "explorador": null,
+   "explorerToken": null,
+   "rpc": [
+    "https://rpc.monad.xyz",
+    "https://monad-mainnet.api.onfinality.io/public"
+   ],
+   "trongrid": null
+  },
+  {
+   "id": "hyperevm",
+   "nombre": "HyperEVM",
+   "token": "USDT0",
+   "contrato": "0xB8CE59FC3717ada4C02eaDF9682A9e934F625ebb",
+   "funcion": "isBlocked(address)",
+   "selector": "fbac3951",
+   "tipo": "evm",
+   "explorador": null,
+   "explorerToken": null,
+   "rpc": [
+    "https://rpc.hyperliquid.xyz/evm",
+    "https://hyperliquid.drpc.org"
+   ],
+   "trongrid": null
+  },
+  {
+   "id": "flare",
+   "nombre": "Flare",
+   "token": "USDT0",
+   "contrato": "0xe7cd86e13AC4309349F30B3435a9d337750fC82D",
+   "funcion": "isBlocked(address)",
+   "selector": "fbac3951",
+   "tipo": "evm",
+   "explorador": null,
+   "explorerToken": null,
+   "rpc": [
+    "https://flare-api.flare.network/ext/C/rpc",
+    "https://flare.drpc.org"
+   ],
+   "trongrid": null
+  },
+  {
+   "id": "conflux",
+   "nombre": "Conflux eSpace",
+   "token": "USDT0",
+   "contrato": "0xaf37E8B6C9ED7f6318979f56Fc287d76c30847ff",
+   "funcion": "isBlocked(address)",
+   "selector": "fbac3951",
+   "tipo": "evm",
+   "explorador": null,
+   "explorerToken": null,
+   "rpc": [
+    "https://evm.confluxrpc.com",
+    "https://conflux-espace.blockpi.network/v1/rpc/public"
+   ],
+   "trongrid": null
+  },
+  {
+   "id": "morph",
+   "nombre": "Morph",
+   "token": "USDT0",
+   "contrato": "0xe7cd86e13AC4309349F30B3435a9d337750fC82D",
+   "funcion": "isBlocked(address)",
+   "selector": "fbac3951",
+   "tipo": "evm",
+   "explorador": null,
+   "explorerToken": null,
+   "rpc": [
+    "https://rpc.morphl2.io",
+    "https://morph.drpc.org"
+   ],
+   "trongrid": null
+  },
+  {
+   "id": "stable",
+   "nombre": "Stable",
+   "token": "USDT0",
+   "contrato": "0x779Ded0c9e1022225f8E0630b35a9b54bE713736",
+   "funcion": "isBlocked(address)",
+   "selector": "fbac3951",
+   "tipo": "evm",
+   "explorador": null,
+   "explorerToken": null,
+   "rpc": [
+    "https://rpc.stable.xyz",
+    "https://stable.drpc.org"
+   ],
+   "trongrid": null
+  },
+  {
+   "id": "megaeth",
+   "nombre": "MegaETH",
+   "token": "USDT0",
+   "contrato": "0xB8CE59FC3717ada4C02eaDF9682A9e934F625ebb",
+   "funcion": "isBlocked(address)",
+   "selector": "fbac3951",
+   "tipo": "evm",
+   "explorador": null,
+   "explorerToken": null,
+   "rpc": [
+    "https://mainnet.megaeth.com/rpc",
+    "https://megaeth.drpc.org"
+   ],
+   "trongrid": null
+  },
+  {
+   "id": "rootstock",
+   "nombre": "Rootstock",
+   "token": "USDT0",
+   "contrato": "0x779dED0C9e1022225F8e0630b35A9B54Be713736",
+   "funcion": "isBlocked(address)",
+   "selector": "fbac3951",
+   "tipo": "evm",
+   "explorador": null,
+   "explorerToken": null,
+   "rpc": [
+    "https://public-node.rsk.co",
+    "https://rootstock.drpc.org"
+   ],
+   "trongrid": null
+  },
+  {
+   "id": "tron",
+   "nombre": "TRON",
+   "token": "USDT",
+   "contrato": "TR7NHqjeKQxGTCi8q8ZY4pL8otSzgjLj6t",
+   "funcion": "isBlackListed(address)",
+   "selector": "e47d6060",
+   "tipo": "tron",
+   "explorador": "https://tronscan.org/#/token20/TR7NHqjeKQxGTCi8q8ZY4pL8otSzgjLj6t",
+   "explorerToken": "https://tronscan.org/#/token20/TR7NHqjeKQxGTCi8q8ZY4pL8otSzgjLj6t",
+   "rpc": [
+    "https://tron-rpc.publicnode.com/jsonrpc"
+   ],
+   "trongrid": "https://api.trongrid.io"
+  }
+ ]
+}

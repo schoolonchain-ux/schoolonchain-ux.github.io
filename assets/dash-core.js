@@ -95,6 +95,7 @@
         el('a', { class: 'btn primary', href: base + 'informe-completo.html' }, 'Abrir el informe original completo'),
         (meta.archivos || []).filter((a) => a.ruta !== 'informe-completo.html').map((a) => el('a', { class: 'btn', href: base + a.ruta }, a.nombre)),
         el('button', { class: 'btn', onclick: () => Dash.glosario() }, 'Glosario'),
+        el('a', { class: 'btn', href: 'herramientas.html' }, 'Herramientas en vivo'),
         el('button', { class: 'btn', onclick: () => document.getElementById('metodo').scrollIntoView() }, 'Método y decisiones')),
       el('div', { class: 'toc', id: 'toc' })));
   }

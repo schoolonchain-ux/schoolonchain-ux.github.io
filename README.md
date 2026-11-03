@@ -20,7 +20,8 @@ Se lee de arriba abajo en 8 capítulos: lo esencial, cómo leer, el caso, dónde
 |---|---|
 | `index.html`, `report.html`, `assets/` | La web (HTML, CSS y JavaScript sin servidor; gráficos con Chart.js y D3, copias locales en `assets/vendor/`). |
 | `reports/<informe>/` | Datos de cada informe: `data.json` (resumen), `detalle.json` (tablas de detalle), `libro/` (libro mayor completo: direcciones y movimientos) e `informe-completo.html` (el informe original). |
-| `tools/` | Herramientas para generar los datos de un informe nuevo (Node 18 o superior, sin dependencias). |
+| `herramientas.html`, `data/` | Herramientas en vivo: comprobador de bloqueos de USDT en 21 redes, últimos bloqueos de Tether y calendario de descongelaciones de TRX (`data/desbloqueos-trx.json`, lectura de EquipoIA). |
+| `tools/` | Herramientas para generar los datos de un informe nuevo (Node 18 o superior, sin dependencias). `tools/equipoia/` actualiza el calendario de TRX y necesita EquipoIA. |
 | `investigacion/` | El código, los documentos y la evidencia de la investigación, tal como estaban en el repositorio de trabajo. Ver abajo. |
 
 ### `investigacion/`

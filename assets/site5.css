@@ -1,0 +1,29 @@
+/* ===== herramientas ===== */
+.topbar nav a.on{color:var(--fg);background:color-mix(in srgb,var(--acc) 12%,transparent)}
+.tool-in{display:flex;flex-wrap:wrap;gap:10px;margin:8px 0 4px}
+.tool-in input{flex:1 1 340px;min-width:0;border:1px solid var(--line);background:var(--pan);color:var(--fg);border-radius:12px;padding:12px 14px;font:15px var(--mono)}
+.tool-in input:focus{outline:2px solid var(--acc);outline-offset:1px}
+.res-head{display:flex;flex-wrap:wrap;align-items:center;gap:12px;border:1px solid var(--line);border-radius:16px;padding:16px 18px;margin:14px 0 10px;background:var(--pan)}
+.res-head .big{font-size:22px;font-weight:800;letter-spacing:-.01em}
+.res-head.bad{border-color:var(--bad);background:color-mix(in srgb,var(--bad) 9%,var(--pan))}
+.res-head.ok{border-color:var(--ok);background:color-mix(in srgb,var(--ok) 8%,var(--pan))}
+.res-head.warn{border-color:var(--warn)}
+.res-head .sub2{color:var(--soft);font-size:13.5px;flex-basis:100%}
+.netgrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(210px,1fr));gap:8px;margin:8px 0 14px}
+.net{display:flex;flex-direction:column;gap:2px;border:1px solid var(--line);border-radius:12px;padding:9px 12px;background:var(--pan);font-size:13px}
+.net .nn{font-weight:700;display:flex;justify-content:space-between;gap:8px}
+.net .st{font-size:12px}
+.net.bad{border-color:var(--bad);background:color-mix(in srgb,var(--bad) 9%,var(--pan))}
+.net.ok .st{color:var(--ok)}
+.net.bad .st{color:var(--bad);font-weight:700}
+.net.err .st{color:var(--warn)}
+.net .tk{color:var(--mut);font-size:11.5px}
+.kpis2{display:grid;grid-template-columns:repeat(auto-fit,minmax(190px,1fr));gap:10px;margin:12px 0}
+.ex{display:flex;flex-wrap:wrap;gap:8px;margin:6px 0 2px;color:var(--mut);font-size:12.5px;align-items:center}
+.ex button{border:1px solid var(--line);background:var(--pan);color:var(--soft);border-radius:999px;padding:3px 10px;cursor:pointer;font:inherit;font-size:12px}
+.ex button:hover{border-color:var(--acc);color:var(--fg)}
+.pillb{display:inline-block;border-radius:999px;padding:1px 9px;font-size:11.5px;font-weight:700}
+.pillb.bad{background:color-mix(in srgb,var(--bad) 18%,transparent);color:var(--bad)}
+.pillb.ok{background:color-mix(in srgb,var(--ok) 18%,transparent);color:var(--ok)}
+.spin{display:inline-block;width:12px;height:12px;border:2px solid var(--line);border-top-color:var(--acc);border-radius:50%;animation:g .8s linear infinite;vertical-align:-2px;margin-right:6px}
+@keyframes g{to{transform:rotate(360deg)}}

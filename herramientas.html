@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Herramientas on-chain · School On-Chain</title>
+<meta name="description" content="Comprueba en vivo si una dirección está bloqueada por Tether (USDT) en 21 redes, mira los últimos bloqueos y el calendario de descongelaciones de TRX.">
+<meta property="og:title" content="School On-Chain · Herramientas on-chain">
+<meta property="og:description" content="Bloqueos de Tether en vivo y calendario de descongelaciones de TRX.">
+<meta property="og:image" content="https://schoolonchain-ux.github.io/Binancehack/assets/brand/banner.webp">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="stylesheet" href="assets/site.css">
+<link rel="stylesheet" href="assets/site2.css">
+<link rel="stylesheet" href="assets/site4.css">
+<link rel="stylesheet" href="assets/site5.css">
+</head>
+<body>
+<div class="topbar"><div class="wrap">
+  <a class="brand" href="./"><span class="dot"></span>School On-Chain</a>
+  <nav><a href="./">Informes</a><a href="herramientas.html" class="on">Herramientas</a><a href="https://github.com/schoolonchain-ux/Binancehack">Repositorio</a></nav>
+  <button class="theme" id="theme" title="Cambiar tema claro / oscuro">Tema</button>
+</div></div>
+
+<main class="wrap" id="app">
+  <header class="rhead">
+    <span class="caso">Herramientas · en vivo</span>
+    <h1>Bloqueos de Tether y descongelaciones de TRX</h1>
+    <div class="sub">Lo que consultas aquí se lee <b>en directo de la cadena, desde tu propio navegador</b>: no se guarda nada ni se pide ninguna clave. Una dirección no es una persona; estas herramientas solo leen datos públicos.</div>
+  </header>
+  <div class="tabs" id="tabs" role="tablist"></div>
+  <div id="panel"><p class="muted" style="padding:30px 0">Cargando herramientas…</p></div>
+</main>
+
+<div class="tip" id="tip"></div>
+<script src="assets/vendor/chart.umd.min.js"></script>
+<script src="assets/common.js"></script>
+<script src="assets/marca.js"></script>
+<script src="assets/ui.js"></script>
+<script src="assets/herramientas.js"></script>
+</body>
+</html>

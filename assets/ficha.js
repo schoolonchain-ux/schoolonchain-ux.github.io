@@ -41,6 +41,7 @@
     const acciones = el('div', { class: 'chips2' },
       el('button', { class: 'mini', onclick: (e) => UI.copiar(dir, e.target) }, '⧉ Copiar dirección'),
       UI.enlace(UI.urlDir(dir), (evm ? 'Abrir en Etherscan ↗' : 'Abrir en TronScan ↗'), 'mini'),
+      UI.enlace('herramientas.html?dir=' + encodeURIComponent(dir), '🔎 ¿Está bloqueada en USDT? (en vivo)', 'mini'),
       Ficha.alGrafo ? el('button', { class: 'mini', onclick: () => { Ficha.alGrafo(dir, false); } }, '◎ Ver en el grafo') : null,
       Ficha.alGrafo ? el('button', { class: 'mini', onclick: () => { Ficha.alGrafo(dir, true); } }, '⇄ Añadir sus conexiones al grafo') : null);
     raiz.append(el('div', { class: 'chips2' }, tagClase(cl), c && c.nombre ? el('span', { class: 'chipx' }, c.nombre) : null,
