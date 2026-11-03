@@ -42,3 +42,8 @@ footer.marca .av{color:var(--mut);font-size:12px;max-width:820px;margin:8px 0 0}
 .acc{display:flex;flex-direction:column;align-items:flex-start;gap:6px}
 .acc .btn{align-self:flex-start;max-width:100%}
 .acc .accd{margin:0;color:var(--soft);font-size:12.8px;line-height:1.45}
+/* etiquetas de evidencia pulsables */
+.estbtn{display:inline-flex;align-items:center;gap:6px;border:0;background:none;padding:0;margin:0;cursor:pointer;font:inherit;color:inherit;vertical-align:baseline}
+.estbtn:hover .est,.estbtn:focus-visible .est{filter:brightness(1.25);box-shadow:0 0 0 2px color-mix(in srgb,var(--acc) 35%,transparent)}
+.estbtn .estn{font-size:11.5px;color:var(--mut)}
+.estbtn:hover .estn{color:var(--acc)}

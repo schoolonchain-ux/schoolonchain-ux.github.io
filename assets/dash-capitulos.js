@@ -46,7 +46,7 @@
     s.append(el('div', { class: 'grid g2' },
       el('div', { class: 'card' }, el('h3', null, 'Idea 1 · Cada cifra dice cuánto puede fiarse uno de ella'),
         el('p', { class: 'narr' }, 'Verás etiquetas de colores junto a los números. De más a menos sólido:'),
-        el('div', { class: 'narr' }, nivel.map(([k, v]) => el('p', { style: 'margin:7px 0' }, C.est(k), ' ', v)))),
+        el('div', { class: 'narr' }, nivel.map(([k, v]) => Dash.filaNivel(k, v, 'margin:7px 0'))), el('p', { class: 'hint' }, 'Pulsa una etiqueta para ver todo lo que la lleva.')),
       el('div', { class: 'card' }, el('h3', null, 'Ideas 2 a 5 · Cómo funciona el informe'),
         el('ol', { class: 'narr', style: 'margin:6px 0 0 18px;padding:0' }, [
           ['Una dirección no es una persona.', ' Una dirección es un «número de cuenta». El informe sigue dinero entre direcciones; no identifica a nadie.'],

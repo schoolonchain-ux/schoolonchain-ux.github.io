@@ -91,6 +91,36 @@
     'detalle.json': 'Las tablas completas que hay detrás de los gráficos (cuentas congeladas, destinos, estados…), en formato abierto (JSON).',
   };
   Dash.acciones = (items) => el('div', { class: 'acciones' }, items.map(([b, t]) => el('div', { class: 'acc' }, b, el('p', { class: 'accd' }, t))));
+  /* Todo lo que lleva una etiqueta de evidencia: reúne, de los datos del informe, las partidas, elementos de capital, puntos abiertos y filas del rastro perdido con ese nivel. */
+  Dash.itemsNivel = (k) => {
+    const { d, det } = Dash;
+    const ambitos = [['Global', 'global', d.global], ['TRON', 'tron', d.tron], ['Ethereum', 'ethereum', d.ethereum]];
+    const partidas = []; ambitos.forEach(([et, id, o]) => o && (o.partidas || []).forEach((p) => { if (p.estado === k) partidas.push({ et, id, p, capital: o.capital }); }));
+    const capital = ((det && det.capitalItems) || []).filter((x) => x.estado === k);
+    const abiertos = (d.pendientes || []).filter((x) => x.est === k);
+    const perdida = ((det && det.perdida) || []).filter((x) => x.estado === k);
+    return { partidas, capital, abiertos, perdida, total: partidas.length + capital.length + abiertos.length + perdida.length };
+  };
+  Dash.porNivel = function (k) {
+    const { d } = Dash, I = Dash.itemsNivel(k), { el: e2, n: nn, m: mm } = C;
+    UI.abrir('Todo lo que está «' + k + '»', () => {
+      const w = e2('div');
+      w.append(e2('p', { class: 'narr' }, C.est(k), ' ', (d.estados || {})[k] || ''),
+        e2('p', { class: 'narr', html: 'Esta lista reúne, de los datos del informe, <b>' + nn(I.total) + ' elementos</b> con esta etiqueta. Pulsa una fila para ver su ficha o detalle.' }));
+      if (!I.total) w.append(e2('p', { class: 'narr' }, 'Ninguna tabla del informe usa este nivel; aparece solo en el texto.'));
+      const h = (t, c) => e2('h4', { style: 'margin:16px 0 4px' }, t + ' (' + nn(c) + ')');
+      if (I.partidas.length) w.append(h('Partidas del balance', I.partidas.length), UI.tabla({ pp: 10, buscar: false, rows: I.partidas, onRow: (r) => Dash.abrirPartida(r.p, r.capital, r.id), cols: [{ t: 'Ámbito', v: (r) => r.et, o: (r) => r.et }, { t: 'Partida', v: (r) => r.p.nombre, o: (r) => r.p.nombre }, { t: 'Importe', num: 1, v: (r) => mm(r.p.importe), o: (r) => r.p.importe }, { t: 'Fuente', v: (r) => r.p.fuente || '—', o: (r) => r.p.fuente || '' }] }));
+      if (I.capital.length) w.append(h('Elementos del capital robado', I.capital.length), UI.tabla({ pp: 10, buscar: false, rows: I.capital, cols: [{ t: 'Elemento', v: (r) => r.nombre, o: (r) => r.nombre }, { t: 'Cantidad', num: 1, v: (r) => nn(r.cantidad) + ' ' + (r.unidad || ''), o: (r) => r.cantidad }, { t: 'USD', num: 1, v: (r) => mm(r.usd), o: (r) => r.usd }, { t: 'Transacción', v: (r) => (r.tx ? UI.enlace(UI.urlTx(r.tx), UI.corto(r.tx, 6, 4) + ' ↗', 'addr') : '—'), o: (r) => r.tx || '', csv: (r) => r.tx || '' }] }));
+      if (I.abiertos.length) w.append(h('Puntos abiertos del informe', I.abiertos.length), UI.tabla({ pp: 10, buscar: false, rows: I.abiertos, cols: [{ t: 'Punto', v: (r) => e2('b', null, r.t), o: (r) => r.t }, { t: 'Por qué', v: (r) => r.causa || '—' }] }));
+      if (I.perdida.length) w.append(h('Puntos donde se pierde el rastro', I.perdida.length), e2('div', { class: 'cs' }, 'Direcciones o contratos donde el dinero deja de poder seguirse, con la causa. Pulsa una fila para abrir su ficha.'), UI.tabla({ pp: 10, csv: 'nivel-' + k.toLowerCase(), rows: I.perdida, onRow: (r) => r.direccion && Ficha.abrir(r.direccion), cols: [{ t: 'Clase', v: (r) => r.clase || r.grupo, o: (r) => r.clase || r.grupo || '' }, { t: 'Nombre', v: (r) => r.nombre || '—', o: (r) => r.nombre || '' }, { t: 'Dirección', v: (r) => (r.direccion ? e2('a', { class: 'addr', style: 'word-break:break-all', href: UI.urlDir(r.direccion), target: '_blank', rel: 'noopener' }, r.direccion) : '—'), o: (r) => r.direccion || '', csv: (r) => r.direccion || '' }, { t: 'USD atribuido', num: 1, v: (r) => mm(r.atribuido), o: (r) => r.atribuido || 0 }, { t: 'Causa', v: (r) => r.causa || '—' }] }));
+      return w;
+    }, { sub: 'Etiqueta de evidencia', ancho: true });
+  };
+  /* una fila «etiqueta + definición» que se puede pulsar y dice cuántos elementos reúne */
+  Dash.filaNivel = (k, texto, estilo) => {
+    const I = Dash.itemsNivel(k);
+    return C.el('p', { style: estilo || 'margin:8px 0' }, C.el('button', { class: 'estbtn', title: 'Ver todo lo que lleva esta etiqueta', onclick: () => Dash.porNivel(k) }, C.est(k), C.el('span', { class: 'estn' }, I.total ? C.n(I.total) + ' ›' : '›')), ' ', texto);
+  };
   function cabecera() {
     const { d, meta, base, app } = Dash;
     const ult = (d.novedades || []).slice(-1)[0];

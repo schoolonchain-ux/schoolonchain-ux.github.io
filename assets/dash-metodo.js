@@ -8,7 +8,7 @@
       el('div', null, TXT.decisiones.map(([t, que, por], i) => el('details', { style: 'border-top:1px solid var(--line);padding:8px 0' + (i === 0 ? ';border-top:0' : '') }, el('summary', { style: 'cursor:pointer;font-weight:600' }, (i + 1) + '. ' + t), el('p', { class: 'narr' }, el('b', null, 'Qué se hace: '), que), el('p', { class: 'narr' }, el('b', null, 'Por qué: '), por))))));
     s.append(el('div', { class: 'grid g2', style: 'margin-top:14px' },
       el('div', { class: 'card' }, el('h3', null, 'Qué NO se puede afirmar'), el('ul', { class: 'narr', style: 'margin:6px 0 0 18px;padding:0' }, TXT.limites.map((t) => el('li', null, t)))),
-      el('div', { class: 'card' }, el('h3', null, 'Los cinco niveles de evidencia'), el('div', { class: 'narr' }, Object.entries(d.estados || {}).map(([k, v]) => el('p', { style: 'margin:8px 0' }, C.est(k), ' ', v))), el('p', { class: 'hint' }, 'Cada cifra del informe lleva su nivel. Los niveles se leen del dato, no se escriben a mano.'))));
+      el('div', { class: 'card' }, el('h3', null, 'Los cinco niveles de evidencia'), el('div', { class: 'narr' }, Object.entries(d.estados || {}).map(([k, v]) => Dash.filaNivel(k, v))), el('p', { class: 'hint' }, 'Pulsa una etiqueta para ver todo lo que la lleva. Cada cifra del informe lleva su nivel; los niveles se leen del dato, no se escriben a mano.'))));
   });
 
   Dash.add(210, function ({ d }) {
