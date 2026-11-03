@@ -35,7 +35,9 @@ Se lee de arriba abajo en 8 capítulos: lo esencial, cómo leer, el caso, dónde
 **No incluido por tamaño o por ser borrador:** las lecturas en bruto de Etherscan (`resultados/eth-raw`, unos 390 MB), las carpetas de trabajo `tramo4`, `tramo5` y `tramo6` y las copias intermedias v01 y v02. Se pueden volver a leer de la cadena.
 Los scripts guardan rutas absolutas de la máquina donde se ejecutaron (`C:/EquipoIA/...`); hay que ajustarlas para repetirlos en otro equipo.
 
-## Cómo añadir un informe
+## Cómo añadir un informe (para quien mantiene el sitio)
+
+Solo pueden publicar en este repositorio las cuentas con permiso de escritura; cualquiera puede hacer un fork y probarlo en su copia.
 
 ```bash
 node tools/add-report.mjs ruta/al/INFORME.html --slug mi-informe --titulo "Título corto" --resumen "Una frase" --caso "Nombre del caso"

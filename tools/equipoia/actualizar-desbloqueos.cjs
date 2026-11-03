@@ -10,8 +10,10 @@ const { calcular, normalizarCuentas, normalizarSerieStake } = require(ROOT + '/o
 
 const SALIDA = process.argv[2];
 if (!SALIDA) { console.error('Uso: node snapshot-desbloqueos.cjs <salida.json>'); process.exit(1); }
-const K = leerClaves(); const hTS = K.tronscanKey ? { 'TRON-PRO-API-KEY': K.tronscanKey } : {}, hTG = K.tronGridKey ? { 'TRON-PRO-API-KEY': K.tronGridKey } : {};
-console.log('claves: TronScan', !!K.tronscanKey, '· TronGrid', !!K.tronGridKey);
+const K = leerClaves(); const hTS = K.tronscanKey ? { 'TRON-PRO-API-KEY': K.tronscanKey } : {};
+// TronGrid se usa SIN clave a propósito: la clave de EquipoIA la consumen los vigilantes (cuota diaria de 100.000) y, superada, la red la limita a 1 consulta/s. Así no se le quita cuota a los vigilantes.
+const hTG = {};
+console.log('clave de TronScan:', !!K.tronscanKey, '· TronGrid: acceso público sin clave');
 const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
 const LISTA = 'https://apilist.tronscanapi.com/api/account/list?sort=-balance&limit=50&start=', SERIE = 'https://apilist.tronscanapi.com/api/freezeresource', GRID = 'https://api.trongrid.io';
 const DAY = 86400000;
@@ -33,7 +35,7 @@ async function post(url, body, headers) {
     try {
       const r = await fetch(url, { method: 'POST', headers: { accept: 'application/json', 'content-type': 'application/json', ...headers }, body: JSON.stringify(body), signal: AbortSignal.timeout(20000) });
       const txt = await r.text(); let j = null; try { j = JSON.parse(txt); } catch {}
-      if (r.status === 429) { await sleep(5000); continue; }
+      if (r.status === 429) { await sleep(3000 * (i + 1)); continue; }
       if (r.status >= 500) { await sleep(2000); continue; }
       return { status: r.status, json: j };
     } catch { await sleep(1500); }
@@ -69,7 +71,7 @@ async function post(url, body, headers) {
   console.log('cuentas con desbloqueo en curso:', objetivo.length);
   const estados = new Map(), errores = [];
   for (const c of objetivo) {
-    await sleep(110);
+    await sleep(350);
     const r = await post(GRID + '/wallet/getaccount', { address: c.address, visible: true }, hTG);
     if (r.status === 200 && r.json) { const e = resumirCuentaTron(r.json); if (e.activada) { estados.set(c.address, e); continue; } }
     errores.push(c.address);
