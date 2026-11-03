@@ -1,0 +1,50 @@
+{
+ "version": 1,
+ "leidoEn": "2026-11-03T17:05:21.589Z",
+ "fuente": "LayerZero Scan API · GET /v1/messages/tx/{hash} (solo lectura)",
+ "nota": "Reconsulta de los envíos USDT0 que el informe dejó en estado INFLIGHT (en camino).",
+ "envios": [
+  {
+   "tx": "b135ffe83949483d788365c738918aec1096d522e6c3a8c981dd78758749405b",
+   "estadoAhora": "DELIVERED",
+   "mensaje": "Executor transaction confirmed",
+   "destinoEstado": "SUCCEEDED",
+   "llegadaTx": "0x49ed33781d86f2b1775ed9cd5583ea0a18c5c42cf8785d3cdf48245776576b9e",
+   "llegadaT": 1793647739000,
+   "verificadores": [
+    "SUCCEEDED",
+    "SUCCEEDED"
+   ],
+   "guid": "0x90af38b9bd56937e91b262b6afe65dad2ad3fa302135abe8a73c9c3450cbfc1b",
+   "actualizadoApi": "2026-11-02T19:30:08.000Z"
+  },
+  {
+   "tx": "dfda4053e466029007cbbcb5d1c56bbc381bb64b0a51cedb11d954cbe55681ec",
+   "estadoAhora": "INFLIGHT",
+   "mensaje": "Source transaction reached block confirmation threshold",
+   "destinoEstado": "WAITING",
+   "llegadaTx": null,
+   "llegadaT": null,
+   "verificadores": [
+    "WAITING",
+    "WAITING"
+   ],
+   "guid": "0x3e67ad4341c8dade5c3fd3dfcbd306f2b8563c197f526445c349480f67bf8277",
+   "actualizadoApi": "2026-10-30T04:49:52.000Z"
+  },
+  {
+   "tx": "e4b0de534b89485f533d106dc668025fa1fa00a4e6eb6df757f5dafc162dcb55",
+   "estadoAhora": "DELIVERED",
+   "mensaje": "Executor transaction confirmed",
+   "destinoEstado": "SUCCEEDED",
+   "llegadaTx": "0x6c6e2458bafc5bf1da8b88067b0103e6eb1175a21fe265176cf2870549d68f90",
+   "llegadaT": 1793647751000,
+   "verificadores": [
+    "SUCCEEDED",
+    "SUCCEEDED"
+   ],
+   "guid": "0xa6ee0f863854cd14312383b3ca4665fef0046e4fe9cb9bf496ac99aec3bac665",
+   "actualizadoApi": "2026-11-02T19:30:19.000Z"
+  }
+ ]
+}

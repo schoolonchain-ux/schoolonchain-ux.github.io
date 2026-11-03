@@ -29,6 +29,7 @@
     try { [d, det] = await Promise.all([fetch(base + 'data.json').then((r) => r.json()), fetch(base + 'detalle.json').then((r) => r.json()).catch(() => ({}))]); } catch (e) { app.textContent = 'No se pudo cargar ' + base + 'data.json'; return; }
     Object.assign(Dash, { d, det, base, meta, app, q });
     Libro.configurar(base);
+    Dash.reU0 = await fetch(base + 'usdt0-reconsulta.json').then((r) => (r.ok ? r.json() : null)).catch(() => null); // reconsulta fechada de los envíos USDT0 que el informe dejó «en camino»
     Dash.estLibro = await fetch(base + 'libro/estados.json').then((r) => (r.ok ? r.json() : null)).catch(() => null); // recuento por nivel de evidencia de los movimientos del libro (fichero pequeño)
     document.title = meta.titulo + ' · Informes on-chain';
     C.chartDefaults(); if (q.has('static')) window.__sinAnimacion = true; C.chartDefaults();
