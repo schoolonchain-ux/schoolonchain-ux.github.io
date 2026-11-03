@@ -1,0 +1,64 @@
+{
+  "_nota": "Cuentas que vigila el vigilante de salidas (29-oct-2026, investigación Vaneck / Justin Sun). «esperado» son los desbloqueos de stake anunciados en la cadena (fecha en que el TRX queda libre y cuánto). umbralTrx: a partir de cuánto TRX (o unidades de token) un movimiento merece aviso. diasSeguimientoDestinos: cuántos días se sigue a cada billetera nueva que recibe TRX de estas cuentas, para ver si lo pasa a una casa de cambio. Desde el 30-oct también vigila las billeteras con el TRX del robo a Binance (29-oct): cada una lleva su propio umbral («umbralTrx») y «seguirDestinos: false», porque ese dinero se reparte en cientos de billeteras nuevas y seguirlas todas sería inabarcable; el detalle está en docs/INVESTIGACION-BINANCE-0x5227-2026-10-30-TRON.md.",
+  "umbralTrx": 1000000,
+  "diasSeguimientoDestinos": 10,
+  "profundidadMaxima": 2,
+  "horaRecordatorioLocal": 8,
+  "cuentas": [
+    {
+      "direccion": "TCGVFGDd62LSrfZEaz3M3fYifWWdSDHRL8",
+      "nombre": "«Vaneck» (etiqueta de TronScan)",
+      "esperado": [
+        {
+          "fecha": "2026-10-31",
+          "trx": 132700000
+        }
+      ]
+    },
+    {
+      "direccion": "TT2T17KZhoDu47i2E4FWxfG79zdkEWkU9N",
+      "nombre": "Segunda cuenta (atribuida a Justin Sun por terceros; él lo niega)",
+      "esperado": [
+        {
+          "fecha": "2026-11-03",
+          "trx": 305700000
+        }
+      ]
+    },
+    {
+      "direccion": "TRBdWqHnDVSZCVGfgHdKFLQPirQcA2PRki",
+      "nombre": "Robo a Binance · billetera que reparte el TRX (TRBdWq…)",
+      "umbralTrx": 1000000,
+      "seguirDestinos": false,
+      "esperado": []
+    },
+    {
+      "direccion": "TKkH2vH6kyi2QKcMbqym53WMuvdd1xvw6K",
+      "nombre": "Robo a Binance · depósito de 158,2 M TRX (TKkH2v…)",
+      "umbralTrx": 1000000,
+      "seguirDestinos": false,
+      "esperado": []
+    },
+    {
+      "direccion": "TL2F4GhnaFVZBZPncHYjwfYZFW44NcfVwj",
+      "nombre": "Robo a Binance · depósito de 120 M TRX (TL2F4G…)",
+      "umbralTrx": 1000000,
+      "seguirDestinos": false,
+      "esperado": []
+    },
+    {
+      "direccion": "TCBAz7itvtX5CjBzVMPQdrbwQLN63ao1fk",
+      "nombre": "Robo a Binance · depósito de 120 M TRX (TCBAz7…)",
+      "umbralTrx": 1000000,
+      "seguirDestinos": false,
+      "esperado": []
+    },
+    {
+      "direccion": "TJajtPqDqUGh1Sr1j8ugHoSXBVpaFLLHKT",
+      "nombre": "Robo a Binance · depósito de 120 M TRX (TJajtP…)",
+      "umbralTrx": 1000000,
+      "seguirDestinos": false,
+      "esperado": []
+    }
+  ]
+}

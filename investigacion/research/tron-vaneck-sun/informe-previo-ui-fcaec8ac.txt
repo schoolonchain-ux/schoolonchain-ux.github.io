@@ -1,0 +1,122 @@
+=== PAGE 1 ===
+Í
+EQUIPO IA
+S C H O O L  O N - C H A I N
+ANÁLISIS · v1.0
+I N F O R M E  D E  A N Á L I S I S
+Vaneck: vínculo de dos cuentas
+TRON y salida de 440M TRX
+Análisis elaborado con datos guardados y herramientas de
+cálculo verificables.
+FECHA
+29 de octubre de 2026
+REFERENCIA
+ui-fcaec8ac-8654-46a4-
+bc22-45284adbebd2
+PARA
+Propietario
+DATOS VERIFICABLES DECISIONES CON CRITERIO
+=== PAGE 2 ===
+ EQUIPO IA Vaneck: vínculo de dos cuentas TRON y salida de 440M TRX | 29 de octubre de 2026
+Página 2 de 5Equipo IA | School On-chain
+Índice
+1. Conclusión 3
+2. Qué se sabe de cada cuenta 3
+3. ¿Están relacionadas entre sí o con Vaneck? 4
+4. Peso dentro de la red TRON 4
+5. Investigaciones que se pueden hacer 4
+6. Qué tener en cuenta 5
+7. Anexo: de dónde sale cada cifra 5
+=== PAGE 3 ===
+ EQUIPO IA Vaneck: vínculo de dos cuentas TRON y salida de 440M TRX | 29 de octubre de 2026
+Página 3 de 5Equipo IA | School On-chain
+1.Conclusión
+EN RESUMEN
+Las dos cuentas tienen en marcha una retirada de TRX del stake (la "desconexión") que suma
+438,4 M TRX: 132,7 M TRX de Vaneck, disponibles desde el 31-10-2026, y 305,7 M TRX de la
+segunda, disponibles desde el 03-11-2026. No se encontró ninguna prueba de que ambas
+cuentas estén relacionadas entre sí. Tampoco se puede descartar, porque la lectura de la
+segunda cuenta fue incompleta. Desbloquear no es vender: lo que pase después no consta en
+los datos.
+Hay dos cosas que no se pudieron responder: cuánto pesan como aportantes de liquidez en
+SunSwap y qué efecto tendría la salida sobre la red.
+2.Qué se sabe de cada cuenta
+Las fuentes son TronScan y TronGrid, leídas el 29-10-2026.
+Vaneck (TCGVFG…WdSDHRL8) Segunda cuenta (TT2T17…EkU9N)
+Etiqueta pública "Vaneck" en TronScan Ninguna indicada
+Creada 05-09-2021 01-05-2023
+Transacciones 948 5.230
+TRX libres 7.523.698 TRX 586.523.656 TRX
+Otros saldos 19,52 SUNDOG 662.870.070 sTRX, 70.947.607 USDD, 21.515 USDT
+TRX en stake Nada activo, solo lo que se
+descongela
+726.847.609 TRX (706.517.987 delegados a otras
+cuentas)
+TRX descongelándose 132.703.297 TRX, desde el 31-10-
+2026
+305.723.740 TRX, desde el 03-11-2026
+Recompensas sin retirar 2.977 TRX 15.197.484 TRX
+En lista negra de USDT No No
+Incidentes en nuestra
+base
+Ninguno (la base no es completa) Ninguno (la base no es completa)
+Dos detalles de la segunda cuenta:
+Entre el 29-09-2026 y el 29-10-2026 hizo 19 fines de delegación (555.607.584 TRX) y 3 descongelaciones
+(731.835.034 TRX). Son operaciones de stake y no mueven TRX a otra dirección.
+=== PAGE 4 ===
+ EQUIPO IA Vaneck: vínculo de dos cuentas TRON y salida de 440M TRX | 29 de octubre de 2026
+Página 4 de 5Equipo IA | School On-chain
+En ese mismo periodo salieron unos 147.760.865 $ en el primer salto de transferencias y entraron unos
+81.038.457 $. Las rutas siguientes son estimaciones y acaban en contratos sin identificar o en el límite de
+saltos que se siguen.
+Vaneck no tuvo transferencias de entrada o salida de al menos 1.000 $ entre el 29-09-2026 y el 29-10-2026. Eso
+no prueba que no hubiera movimientos.
+3. ¿Están relacionadas entre sí o con Vaneck?
+Vaneck con la segunda: no se encontró ningún vínculo con la evidencia mínima. En la lectura de Vaneck, la
+segunda cuenta apareció como contraparte pero se descartó, porque su actividad es demasiado grande
+para leerla entera. Por tanto, la pregunta queda sin respuesta firme.
+La segunda con Vaneck: que participe en el stake de sTRX y tenga una gran cantidad de tokens no la une
+a Vaneck. La etiqueta de TronScan solo figura en la primera cuenta. Cualquier unión sería, como mucho, un
+vínculo probable (una hipótesis) y hoy no hay ni eso.
+Un vínculo entre direcciones nunca demuestra que sean de la misma persona o entidad.
+4.Peso dentro de la red TRON
+Estas dos cuentas encabezan la lista de desbloqueos de los próximos 14 días. Las tres mayores cuentas
+(estas dos más otra de 32,0 M TRX) suponen el 78 % del total con fecha en ese plazo, que es de 606,8 M
+TRX.
+El stake de toda la red es de 45.177,3 M TRX. En los últimos 30 días bajó 446,4 M TRX (−0,98 %).
+Hay otras cuentas con TRX ya retirables que llevan tiempo sin retirarlos. La mayor tiene 175,9 M TRX, y otra,
+etiquetada HTX-Cold 6, tiene 31,0 M TRX.
+La foto cubre solo las 10.000 cuentas con más saldo.
+5.Investigaciones que se pueden hacer
+1. Seguir el destino tras las fechas clave (31-10-2026 y 03-11-2026). Se vería si retiran y vuelven a poner
+en stake, mueven o dejan quieto. Hoy no consta ninguna venta.
+2. Medir su liquidez en SunSwap. Hace falta la dirección de cada pool donde participan. Con ella se puede
+pedir el riesgo y la liquidez de cada pool. Esa dirección no estaba en la petición.
+3. Ver quién recibe los 706,5 M TRX que la segunda cuenta tiene delegados y con quién comparte votos.
+Es lo que más ayudaría a entender su papel en la red.
+4. Repetir la comprobación de vínculos con una lectura más completa de la segunda cuenta, ya que la
+actual fue parcial.
+5. Revisar los destinos de la ruta de salida (contratos sin identificar y los 4 candidatos sin evidencia
+suficiente en Vaneck).
+=== PAGE 5 ===
+ EQUIPO IA Vaneck: vínculo de dos cuentas TRON y salida de 440M TRX | 29 de octubre de 2026
+Página 5 de 5Equipo IA | School On-chain
+6.Qué tener en cuenta
+Datos de saldo distintos a los de tu lista. Tu tabla indica unos 1.619 M TRX, mientras que la lectura del
+sistema da 586,5 M TRX libres más 726,8 M TRX en stake. No pude conciliarlas y no he verificado tu tabla. El
+resto de cifras (sTRX, USDD) sí coinciden.
+Lectura incompleta. La historia completa de la segunda cuenta no se pudo leer. Además, no se siguieron 3
+transferencias de salida y 6 de entrada en tokens sin precio verificado (USDD, NFT, jUSDT).
+Precio en dólares. Las fuentes de precio de TRX concuerdan entre sí. En capitalización de mercado,
+CoinGecko y CoinPaprika divergen (7,366 % de media), así que las cifras en dólares son orientativas.
+Esto no es una recomendación de compra o venta ni una predicción de precio, ni una prueba legal sobre
+nadie.
+7.Anexo: de dónde sale cada cifra
+La herramienta que calculó cada cifra y el identificador de su ejecución.
+Origen Estado Identificador
+análisis on-chain /desbloqueos success —
+análisis on-chain /cluster success —
+análisis on-chain /expediente success —
+análisis on-chain /expediente success —
+Documento generado por Equipo IA · School On-chain. Las cifras calculadas proceden de herramientas deterministas identificadas en el anexo; el
+texto interpretativo lo redacta un agente. Es un análisis de datos, no asesoramiento financiero.

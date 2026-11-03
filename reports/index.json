@@ -7,14 +7,41 @@
       "titulo": "Robo a Binance (0x5227): trazabilidad en TRON y Ethereum",
       "resumen": "Seguimiento de 628 M$ robados en TRON y de los fondos en Ethereum: qué está congelado, dónde se repartió el resto, por qué puentes salió y cuánto rastro se pierde.",
       "version": "v0.6",
-      "cadenas": ["TRON", "Ethereum", "Chainflip", "Symbiosis"],
+      "cadenas": [
+        "TRON",
+        "Ethereum",
+        "Chainflip",
+        "Symbiosis"
+      ],
       "corte": "2026-11-02T09:23:00Z",
       "generado": "2026-11-03T12:28:19Z",
       "archivos": [
-        { "nombre": "Informe completo (HTML)", "ruta": "informe-completo.html" },
-        { "nombre": "Rastro perdido (CSV)", "ruta": "perdida-de-rastro.csv" },
-        { "nombre": "Datos del panel (JSON)", "ruta": "data.json" }
+        {
+          "nombre": "Informe completo (HTML)",
+          "ruta": "informe-completo.html"
+        },
+        {
+          "nombre": "Rastro perdido (CSV)",
+          "ruta": "perdida-de-rastro.csv"
+        },
+        {
+          "nombre": "Datos del panel (JSON)",
+          "ruta": "data.json"
+        }
       ]
+    },
+    {
+      "slug": "caso-vaneck-sun",
+      "url": "caso-vaneck.html",
+      "caso": "Vaneck / Justin Sun · TRON",
+      "titulo": "Las cuentas «Vaneck» y TT2T17…: qué se sabe y qué no",
+      "resumen": "942 M TRX enviados entre dos cuentas de TRON, verificados por hash; atribuciones de terceros, hipótesis y estado en vivo con seguimiento diario.",
+      "version": "en vivo",
+      "cadenas": [
+        "TRON"
+      ],
+      "corte": null,
+      "archivos": []
     }
   ]
 }

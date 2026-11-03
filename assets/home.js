@@ -6,15 +6,16 @@
   box.textContent = '';
   const { el, m, n, pct } = C;
   for (const r of idx.informes) {
-    const a = C.el('a', { class: 'rcard' + (r.caso ? ' destacada' : ''), href: 'report.html?r=' + encodeURIComponent(r.slug) });
+    const a = C.el('a', { class: 'rcard' + (r.caso ? ' destacada' : ''), href: r.url || 'report.html?r=' + encodeURIComponent(r.slug) });
     a.append(
       r.caso ? el('span', { class: 'caso' }, 'Caso · ' + r.caso) : null,
       el('div', { class: 'chips' }, (r.cadenas || []).map((c) => el('span', { class: 'chip' }, c)), el('span', { class: 'chip ver' }, r.version || '')),
       el('h3', null, r.titulo),
       el('p', null, r.resumen || ''));
     const zona = el('div'); a.append(zona);
-    a.append(el('div', { class: 'foot' }, el('span', null, 'Datos hasta ' + (r.corte || '').replace('T', ' ').slice(0, 16) + ' UTC'), el('span', null, 'Abrir panel →')));
+    a.append(el('div', { class: 'foot' }, el('span', null, r.corte ? 'Datos hasta ' + r.corte.replace('T', ' ').slice(0, 16) + ' UTC' : 'Seguimiento en vivo'), el('span', null, 'Abrir panel →')));
     box.append(a);
+    if (r.url) continue;
     try {
       const d = await (await fetch('reports/' + r.slug + '/data.json')).json();
       const T = d.tron || {}, p = (T.partidas || []).filter((x) => x.importe > 0), tot = p.reduce((s, x) => s + x.importe, 0);

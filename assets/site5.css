@@ -27,3 +27,4 @@
 .pillb.ok{background:color-mix(in srgb,var(--ok) 18%,transparent);color:var(--ok)}
 .spin{display:inline-block;width:12px;height:12px;border:2px solid var(--line);border-top-color:var(--acc);border-radius:50%;animation:g .8s linear infinite;vertical-align:-2px;margin-right:6px}
 @keyframes g{to{transform:rotate(360deg)}}
+.est-ATRIBUCION{color:var(--warn);border-color:var(--warn)}
