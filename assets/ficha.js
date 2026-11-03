@@ -59,16 +59,33 @@
     const nota = [];
     if (c && c.congelada === 1) nota.push('Tether la tiene en su <b>lista negra</b>: el USDT que conserve está bloqueado.');
     if (c && c.pureza != null && c.pureza >= 0) nota.push('El modelo atribuye al robo el <b>' + n(c.pureza * 100, 1) + ' %</b> del dinero que pasa por ella (ver «pureza» en el glosario).');
-    raiz.append(el('p', { class: 'narr', html: 'Entre <b>' + t0 + '</b> y <b>' + t1 + '</b> UTC recibió <b>' + m(f.entra) + '</b> en ' + n(f.nEn) + ' movimientos desde ' + n(f.remitentes.length) + ' direcciones, y envió <b>' + m(f.sale) + '</b> en ' + n(f.nSa) + ' movimientos hacia ' + n(f.receptores.length) + ' direcciones. ' + nota.join(' ') }));
+    // La billetera semilla (salto 0) es donde EMPIEZA el libro: solo recoge lo que sale de ella. Que "recibió 0" sería engañoso: lo que entró está fuera del libro.
+    const semilla = !!(c && c.nivel === 0 && f.nEn === 0 && f.nSa > 0);
+    raiz.append(el('p', { class: 'narr', html: semilla
+      ? 'Entre <b>' + t0 + '</b> y <b>' + t1 + '</b> UTC envió <b>' + m(f.sale) + '</b> en ' + n(f.nSa) + ' movimientos hacia ' + n(f.receptores.length) + ' direcciones. <b>El libro mayor de este panel empieza en esta billetera</b> y solo recoge lo que sale de ella; lo que entró en ella no está en el libro (se muestra más abajo). ' + nota.join(' ')
+      : 'Entre <b>' + t0 + '</b> y <b>' + t1 + '</b> UTC recibió <b>' + m(f.entra) + '</b> en ' + n(f.nEn) + ' movimientos desde ' + n(f.remitentes.length) + ' direcciones, y envió <b>' + m(f.sale) + '</b> en ' + n(f.nSa) + ' movimientos hacia ' + n(f.receptores.length) + ' direcciones. ' + nota.join(' ') }));
     // cifras
     const fk = (l, v, s) => el('div', { class: 'fk' }, el('div', { class: 'kl' }, l), el('div', { class: 'kv' }, v), s ? el('div', { class: 'kn' }, s) : null);
     const saldoOk = c && c.trx != null && c.trx >= 0;
     raiz.append(el('div', { class: 'fkpis' },
-      fk('Recibido', m(f.entra), n(f.nEn) + ' movimientos'), fk('Enviado', m(f.sale), n(f.nSa) + ' movimientos'),
-      fk('Diferencia', m(f.entra - f.sale), 'recibido − enviado'),
+      semilla ? fk('Recibido', 'Fuera del libro', 'ver el cuadro de abajo') : fk('Recibido', m(f.entra), n(f.nEn) + ' movimientos'), fk('Enviado', m(f.sale), n(f.nSa) + ' movimientos'),
+      semilla ? fk('Diferencia', '—', 'no calculable sin las entradas') : fk('Diferencia', m(f.entra - f.sale), 'recibido − enviado'),
       fk('Saldo de hoy', saldoOk ? m(c.trx * Libro.meta.precioTRX + c.usdt) : '—', saldoOk ? n(c.trx) + ' TRX · ' + n(c.usdt) + ' USDT' : evm ? 'no se lee en TRON' : 'no leído'),
       fk('Pureza (modelo)', c && c.pureza != null && c.pureza >= 0 ? n(c.pureza * 100, 1) + ' %' : '—', 'parte atribuida al robo'),
       fk('Creada', c && c.creada ? UI.fecha(c.creada) : '—', 'UTC')));
+    if (semilla) {
+      const caja0 = el('div', { class: 'card', style: 'margin:10px 0' }, el('h3', null, 'Lo que entró en esta billetera (fuera del libro)'), UI.cargando('Leyendo las entradas…'));
+      raiz.append(caja0);
+      const i0 = Libro.idx.get(dir.toLowerCase());
+      const enviadoTrx = Libro.movs.reduce((s, r) => s + (r[1] === i0 && r[3] === 0 ? r[4] : 0), 0);
+      Libro.entradasSemilla(dir).then((s) => {
+        caja0.textContent = ''; caja0.append(el('h3', null, 'Lo que entró en esta billetera (fuera del libro)'));
+        if (!s) { caja0.append(el('p', { class: 'narr' }, 'No hay una lectura de las entradas publicada para esta billetera. Consúltalas en el explorador (botón «Abrir en TronScan»).')); return; }
+        caja0.append(el('p', { class: 'narr', html: 'Recibió <b>' + n(s.totalTrx, 0) + ' TRX</b> en <b>' + s.entradas.length + ' transferencias</b> y envió <b>' + n(enviadoTrx, 0) + ' TRX</b> (libro mayor): la diferencia es de <b>' + n(s.totalTrx - enviadoTrx, 0) + ' TRX</b> (' + n((s.totalTrx - enviadoTrx) / s.totalTrx * 100, 4) + ' %), que puede ser el saldo que le queda, comisiones o envíos menores que el libro no recoge. En otras palabras: <b>reenvió prácticamente todo lo que recibió</b>.' }),
+          el('div', { class: 'cs' }, 'Leído en la cadena el ' + UI.fecha(Date.parse(s.leidoEn)) + ' UTC. Fuente: ' + s.fuente + '. Solo transferencias de 1 M TRX o más.'),
+          UI.tabla({ pp: 10, buscar: false, csv: 'entradas-' + dir.slice(0, 8), rows: s.entradas, cols: [{ t: 'Hora (UTC)', v: (r) => r.t.slice(0, 16).replace('T', ' '), o: (r) => r.t }, { t: 'TRX', num: 1, v: (r) => n(r.trx, 0), o: (r) => r.trx }, { t: 'Desde', v: (r) => el('a', { class: 'addr', href: UI.urlDir(r.de), target: '_blank', rel: 'noopener' }, r.de), o: (r) => r.de, csv: (r) => r.de }, { t: 'Transacción', v: (r) => UI.enlace('https://tronscan.org/#/transaction/' + r.tx, UI.corto(r.tx, 6, 4) + ' ↗', 'addr'), o: (r) => r.tx, csv: (r) => r.tx }] }));
+      });
+    }
     // gráfico de actividad por hora
     if (f.horas.length > 1) {
       const cv = el('canvas'); const caja = el('div', { class: 'card', style: 'margin:8px 0' }, el('h3', null, 'Actividad por hora (USD)'), el('div', { class: 'cs' }, 'Verde: recibido · naranja: enviado. Pulsa una barra para ver los movimientos de esa hora.'), el('div', { class: 'cv', style: 'height:170px' }, cv));

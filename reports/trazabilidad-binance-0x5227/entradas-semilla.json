@@ -1,0 +1,46 @@
+{
+ "version": 1,
+ "direccion": "TRBdWqHnDVSZCVGfgHdKFLQPirQcA2PRki",
+ "leidoEn": "2026-11-03T16:14:16.081Z",
+ "fuente": "TronGrid /v1/accounts/{dirección}/transactions?only_to=true (transferencias de TRX recibidas de 1 M TRX o más; 5 páginas leídas)",
+ "nota": "Entradas anteriores al libro mayor de este panel, que empieza en esta billetera (salto 0) y solo recoge lo que sale de ella.",
+ "entradas": [
+  {
+   "t": "2026-10-30T00:06:09.000Z",
+   "trx": 46383069.129019,
+   "de": "TG5iBMQPrDzJJAUM8GMVBf1hRaJ1wvzsGi",
+   "tx": "6adfc066520a5880df18eebc61bf048d03e8d7a0fca23b04a6b36c9723892736"
+  },
+  {
+   "t": "2026-10-30T10:20:48.000Z",
+   "trx": 120000000,
+   "de": "TAk1xJNWuBYvJHLsUiBFLeuK6xvpQUFYP5",
+   "tx": "0ae2b5a4e1c8849d09e16db5a4dd9d90f7224c3b996a80ccad113bd5b81acd39"
+  },
+  {
+   "t": "2026-10-31T01:01:15.000Z",
+   "trx": 120000000,
+   "de": "TL2F4GhnaFVZBZPncHYjwfYZFW44NcfVwj",
+   "tx": "bb05d43bfde6cb869448ad03bf06969e32cc7cd77252a78d41dd7f7c26dbf0b3"
+  },
+  {
+   "t": "2026-10-31T07:58:48.000Z",
+   "trx": 120000000,
+   "de": "TCBAz7itvtX5CjBzVMPQdrbwQLN63ao1fk",
+   "tx": "d3684f76b615028b350c294c2c774313af2212319de653f5a04ff68bc351d465"
+  },
+  {
+   "t": "2026-10-31T14:50:51.000Z",
+   "trx": 120000000,
+   "de": "TJajtPqDqUGh1Sr1j8ugHoSXBVpaFLLHKT",
+   "tx": "7f799c3c177c40abd0e474872da5bf1667829cf2f29e0bbbeb6afa8b98723a25"
+  },
+  {
+   "t": "2026-10-31T18:44:36.000Z",
+   "trx": 158200902,
+   "de": "TKkH2vH6kyi2QKcMbqym53WMuvdd1xvw6K",
+   "tx": "e8441d628f9395867793e7146398282bd5446afd39ff7bb8d2c9429f6b86a1b6"
+  }
+ ],
+ "totalTrx": 684583971.129019
+}

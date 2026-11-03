@@ -4,6 +4,8 @@
   let base = '';
   // columnas de movimiento: [tx, de, a, activo, cantidad, usd, t(seg), tipo, estado, nota]
   Libro.configurar = (b) => { base = b; };
+  // Entradas de la billetera semilla (salto 0), leídas en la cadena: el libro empieza en ella y no las recoge. Un fichero por informe; si no existe, null.
+  Libro.entradasSemilla = (dir) => (Libro._sem || (Libro._sem = fetch(base + 'entradas-semilla.json').then((r) => (r.ok ? r.json() : null)).catch(() => null))).then((s) => (s && s.direccion === dir ? s : null));
   Libro.cargar = function () {
     if (Libro._p) return Libro._p;
     Libro._p = Promise.all([fetch(base + 'libro/cuentas.json').then((r) => r.json()), fetch(base + 'libro/movs.json').then((r) => r.json())]).then(([c, mv]) => {
