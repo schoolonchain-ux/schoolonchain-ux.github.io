@@ -26,9 +26,14 @@
     const rng = el('input', { type: 'range', min: 0, max: 100, value: 0, style: 'width:110px', oninput: (e) => { const v = +e.target.value; estado.minUsd = v === 0 ? 0 : Math.pow(10, 3 + v * 0.05); lab.textContent = estado.minUsd ? 'envíos ≥ ' + m(estado.minUsd) : 'todos los envíos'; }, onchange: () => dibujar() });
     const lab = el('span', { class: 'muted', style: 'font-size:12px;min-width:110px' }, 'todos los envíos');
     const cuenta = el('span', { class: 'muted', style: 'font-size:12.3px' });
-    tools.append(seg, buscador, res, el('label', null, etq, 'Etiquetas'), el('label', null, 'Mostrar:', rng, lab),
-      el('button', { class: 'mini', onclick: () => { inicial(); estado.ocultas.clear(); dibujar(); leyenda(); } }, '↺ Reiniciar mapa'), cuenta);
+    // Quitar la selección: todos los puntos y enlaces vuelven a su color. Se activa con el botón, con Esc o pulsando en el fondo del mapa.
+    const btnTodo = el('button', { class: 'mini', title: 'Quita la selección: todo el mapa vuelve a verse en color (también: pulsa en el fondo o la tecla Esc)', disabled: true, onclick: () => quitarSeleccion() }, '◎ Ver todo en color');
+    const quitarSeleccion = () => { estado.resaltar = null; if (estado.aplicar) estado.aplicar(null); sincBtn(); };
+    const sincBtn = () => { btnTodo.disabled = !estado.resaltar; };
+    tools.append(seg, buscador, res, el('label', null, etq, 'Etiquetas'), el('label', null, 'Mostrar:', rng, lab), btnTodo,
+      el('button', { class: 'mini', title: 'Vuelve a la vista inicial: quita la selección, los filtros por tipo y las conexiones añadidas', onclick: () => { inicial(); estado.ocultas.clear(); estado.resaltar = null; sincBtn(); dibujar(); leyenda(); } }, '↺ Reiniciar mapa'), cuenta);
     k.c.insertBefore(tools, k.wrap);
+    document.addEventListener('keydown', (ev) => { if (ev.key === 'Escape' && estado.resaltar && !document.querySelector('.drawer.on')) quitarSeleccion(); });
 
     function buscar(q) {
       res.textContent = ''; if (q.trim().length < 3) { res.style.display = 'none'; return; }
@@ -69,12 +74,13 @@
     const defs = svg.append('defs'); defs.append('marker').attr('id', 'ar').attr('viewBox', '0 -4 8 8').attr('refX', 9).attr('refY', 0).attr('markerUnits', 'userSpaceOnUse').attr('markerWidth', 8).attr('markerHeight', 8).attr('orient', 'auto').append('path').attr('d', 'M0,-4L8,0L0,4').attr('fill', C.css('--mut'));
     raiz = svg.append('g'); gEn = raiz.append('g'); gNo = raiz.append('g'); gLb = raiz.append('g').style('pointer-events', 'none');
     zoom = d3.zoom().scaleExtent([0.3, 8]).on('zoom', (ev) => raiz.attr('transform', ev.transform)); svg.call(zoom).on('dblclick.zoom', null);
+    svg.on('click', (ev) => { if (ev.defaultPrevented) return; if (ev.target === svg.node()) quitarSeleccion(); });   // un arrastre del fondo no cuenta (d3-zoom lo suprime)
     k.wrap.append(el('div', { class: 'zoomtools' },
       el('button', { class: 'ibtn', title: 'Acercar', onclick: () => svg.transition().duration(200).call(zoom.scaleBy, 1.5) }, '+'),
       el('button', { class: 'ibtn', title: 'Alejar', onclick: () => svg.transition().duration(200).call(zoom.scaleBy, 1 / 1.5) }, '−'),
       el('button', { class: 'mini', onclick: () => svg.transition().duration(250).call(zoom.transform, d3.zoomIdentity) }, 'Vista inicial')));
     const lg = el('div', { class: 'legend i', style: 'flex-direction:row;flex-wrap:wrap;gap:4px 14px;margin-top:10px' }); k.c.append(lg);
-    k.c.append(el('p', { class: 'hint' }, el('kbd', null, 'Clic'), ' ficha · ', el('kbd', null, 'Doble clic'), ' añadir conexiones · ', el('kbd', null, 'Arrastrar'), ' recolocar · ', el('kbd', null, 'Rueda'), ' zoom · pulsa un tipo de la leyenda para ocultarlo.'));
+    k.c.append(el('p', { class: 'hint' }, el('kbd', null, 'Clic'), ' ficha · ', el('kbd', null, 'Clic en el fondo'), ' o ', el('kbd', null, 'Esc'), ' quitar la selección · ', el('kbd', null, 'Doble clic'), ' añadir conexiones · ', el('kbd', null, 'Arrastrar'), ' recolocar · ', el('kbd', null, 'Rueda'), ' zoom · pulsa un tipo de la leyenda para ocultarlo.'));
     function leyenda() {
       lg.textContent = ''; const clases = [...new Set([...estado.nodos.values()].map((x) => x.clase))];
       clases.forEach((c) => lg.append(el('div', { class: 'li' + (estado.ocultas.has(c) ? ' off' : ''), title: C.claseNombre[c] ? '' : '', onclick: () => { estado.ocultas.has(c) ? estado.ocultas.delete(c) : estado.ocultas.add(c); leyenda(); dibujar(); } }, el('span', { class: 'sw', style: 'background:' + (C.clase[c] || '#64748b') }), el('span', { class: 'ln' }, C.claseNombre[c] || c))));
@@ -99,7 +105,7 @@
         .attr('stroke', (x) => (x.congelada ? '#ef4444' : x.id.toLowerCase() === estado.resaltar ? C.css('--fg') : C.css('--pan'))).attr('stroke-width', (x) => (x.congelada ? 3 : x.id.toLowerCase() === estado.resaltar ? 3 : 1.5)).style('cursor', 'pointer')
         .on('mouseenter', (ev, x) => resalta(x.id.toLowerCase())).on('mouseleave', () => { resalta(estado.resaltar); C.tip(null); })
         .on('mousemove', (ev, x) => C.tip('<b>' + (x.nombre || x.corto) + '</b><br><span class="mono">' + x.id + '</span><br>' + (C.claseNombre[x.clase] || x.clase) + ' · ' + m(x.usd) + ' de volumen' + (x.congelada ? '<br><b>Congelada por Tether</b>' : '') + '<br><i>Clic: ficha · doble clic: conexiones</i>', ev))
-        .on('click', (ev, x) => { if (ev.defaultPrevented) return; estado.resaltar = x.id.toLowerCase(); clearTimeout(estado.tc); estado.tc = setTimeout(() => Ficha.abrir(x.id), 260); })   // se espera por si es un doble clic
+        .on('click', (ev, x) => { if (ev.defaultPrevented) return; estado.resaltar = x.id.toLowerCase(); sincBtn(); clearTimeout(estado.tc); estado.tc = setTimeout(() => Ficha.abrir(x.id), 260); })   // se espera por si es un doble clic
         .on('dblclick', (ev, x) => { ev.stopPropagation(); clearTimeout(estado.tc); anadir(x.id, true, false); })
         .call(d3.drag().on('start', (ev, x) => { if (!ev.active) sim.alphaTarget(0.25).restart(); x.fx = x.x; x.fy = x.y; }).on('drag', (ev, x) => { x.fx = ev.x; x.fy = ev.y; }).on('end', (ev, x) => { if (!ev.active) sim.alphaTarget(0); x.fx = null; x.fy = null; }));
       const lb = gLb.selectAll('text').data(nodos.filter((x) => r(x.usd) > 13 || x.nombre)).join('text').text((x) => Dash.corto(x.nombre || x.corto, 22)).attr('font-size', 10.5).attr('fill', C.css('--fg')).attr('text-anchor', 'middle').attr('paint-order', 'stroke').attr('stroke', C.css('--pan')).attr('stroke-width', 3);
@@ -108,7 +114,7 @@
       const pos = () => { lk.attr('x1', (l) => l.source.x).attr('y1', (l) => l.source.y).attr('x2', (l) => l.target.x).attr('y2', (l) => l.target.y); nd.attr('cx', (x) => x.x).attr('cy', (x) => x.y); lb.attr('x', (x) => x.x).attr('y', (x) => x.y - r(x.usd) - 4); };
       sim.on('tick', pos);
       if (conservar) sim.alpha(0.5).restart(); else { for (let i = 0; i < 260; i++) sim.tick(); pos(); encajar(nodos, r); }
-      leyenda(); resalta(estado.resaltar);
+      leyenda(); estado.aplicar = resalta; resalta(estado.resaltar); sincBtn();
     }
     // ajusta el zoom para que todo el mapa quepa en el recuadro
     function encajar(nodos, r) {
