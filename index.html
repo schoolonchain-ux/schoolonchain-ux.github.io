@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>School On-Chain · Informes on-chain</title>
+<meta name="description" content="Seguimos el dinero y documentamos la evidencia. Informes de trazabilidad on-chain con gráficos, red de direcciones y líneas temporales: caso Binance Hack, 29 de octubre de 2026.">
+<meta property="og:title" content="School On-Chain · The On-Chain Observatory">
+<meta property="og:description" content="Blockchain intelligence. Evidence over speculation. Caso Binance Hack (29-oct-2026): informe de trazabilidad interactivo.">
+<meta property="og:image" content="assets/brand/banner.webp">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="stylesheet" href="assets/site.css">
+<link rel="stylesheet" href="assets/site2.css">
+<link rel="stylesheet" href="assets/site4.css">
+</head>
+<body>
+<div class="topbar"><div class="wrap">
+  <a class="brand" href="./"><span class="dot"></span>School On-Chain</a>
+  <nav><a href="#informes">Informes</a><a href="#como-anadir">Cómo añadir un informe</a><a href="https://github.com/schoolonchain-ux/Binancehack">Repositorio</a></nav>
+  <button class="theme" id="theme" title="Cambiar tema claro / oscuro">Tema</button>
+</div></div>
+
+<main class="wrap">
+  <header class="hero2">
+    <div>
+      <span class="kick">Caso abierto · Binance Hack · 29 oct 2026</span>
+      <h1>Seguimos el dinero.<br><em>Documentamos la evidencia.</em></h1>
+      <p>Informes on-chain para cualquiera, no solo para especialistas: gráficos que se pueden pulsar, una ficha por cada dirección y cada cifra con su nivel de evidencia. Del robo a Binance, qué se congeló, dónde está el resto y cuánto no sabemos.</p>
+      <div class="cta">
+        <a class="btn primary" href="report.html?r=trazabilidad-binance-0x5227">Abrir el informe del hackeo</a>
+        <a class="btn" href="#informes">Ver todos los informes</a>
+      </div>
+      <div class="lema">Blockchain intelligence. Evidence over speculation.<br>Sin hype. Sin señales. Sin conclusiones sin demostrar.</div>
+    </div>
+    <div class="art" role="img" aria-label="Tablón de investigación del caso Binance Hack">
+      <i></i>
+      <div class="cap2"><b>Binance Hack · 29 oct 2026</b>Direcciones · Transacciones · Puentes · Exchanges · Atribución</div>
+    </div>
+  </header>
+
+  <section id="informes">
+    <div class="cards" id="cards"><p class="muted">Cargando informes…</p></div>
+  </section>
+
+  <section class="howto" id="como-anadir">
+    <h2>Cómo añadir un informe nuevo</h2>
+    <p class="muted" style="margin:0">Basta un informe HTML generado con el mismo formato (el que lleva sus datos en <span class="mono">window.DATOS</span>). Una sola orden crea el panel, los datos y la ficha en la portada.</p>
+    <ol>
+      <li>Copia el informe a tu equipo y ejecuta (necesita Node 18 o superior, sin dependencias):</li>
+    </ol>
+    <pre class="code">node tools/add-report.mjs ruta/al/INFORME.html --slug mi-informe --titulo "Título corto" --resumen "Una frase" --caso "Nombre del caso"</pre>
+    <ol start="2">
+      <li>Revisa el resultado abriendo <span class="mono">report.html?r=mi-informe</span> con cualquier servidor estático.</li>
+      <li>Súbelo con <span class="mono">git add . &amp;&amp; git commit &amp;&amp; git push</span>. GitHub Pages lo publica solo.</li>
+    </ol>
+  </section>
+</main>
+
+<div class="tip" id="tip"></div>
+<script src="assets/vendor/chart.umd.min.js"></script>
+<script src="assets/common.js"></script>
+<script src="assets/marca.js"></script>
+<script src="assets/home.js"></script>
+</body>
+</html>

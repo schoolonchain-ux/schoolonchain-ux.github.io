@@ -1,0 +1,27 @@
+/* ===== estructura por capítulos ===== */
+.cap{margin:64px 0 8px;padding:18px 22px;border-left:6px solid var(--acc);background:linear-gradient(90deg,color-mix(in srgb,var(--acc) 12%,var(--pan)),var(--pan) 70%);border-radius:0 16px 16px 0;scroll-margin-top:70px}
+.cap .capn{font-size:12px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--acc)}
+.cap .capt{margin:2px 0 6px;font-size:clamp(24px,3.4vw,32px);line-height:1.15;letter-spacing:-.01em}
+.cap .capl{margin:0;max-width:900px;color:var(--soft);font-size:15.5px}
+.cap .capl b{color:var(--fg)}
+.recap{margin:22px 0 0;padding:16px 20px;border:1px solid var(--line);border-radius:16px;background:var(--pan)}
+.recap .rh{display:block;font-size:12px;letter-spacing:.07em;text-transform:uppercase;color:var(--ok);margin-bottom:4px}
+.recap ul{margin:6px 0 0 18px;padding:0;color:var(--soft)}
+.recap li{margin:5px 0}
+.recap li b{color:var(--fg)}
+.recap .sig{display:flex;flex-wrap:wrap;gap:10px;align-items:center;justify-content:space-between;margin-top:12px;padding-top:12px;border-top:1px dashed var(--line)}
+.recap .sig .muted{font-size:13.5px}
+section.blk{margin-top:26px}
+section.blk>h2{font-size:19px}
+/* guía de lectura en la cabecera */
+.guia{margin:14px 0 0;padding:14px 18px;border:1px solid var(--line);border-radius:16px;background:var(--pan)}
+.guia .guiat{font-size:12px;font-weight:700;letter-spacing:.07em;text-transform:uppercase;color:var(--acc);margin-bottom:6px}
+.guia ol{margin:0;padding:0;list-style:none;display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:2px 24px;counter-reset:c}
+.guia li{counter-increment:c;padding:7px 0;border-bottom:1px solid var(--line)}
+.guia li a{display:block;cursor:pointer;color:inherit;text-decoration:none;position:relative;padding-left:30px}
+.guia li a::before{content:counter(c);position:absolute;left:0;top:1px;width:22px;height:22px;border-radius:50%;background:var(--acc);color:#fff;font-size:12px;font-weight:700;display:grid;place-items:center}
+:root[data-theme="dark"] .guia li a::before{color:#04121c}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) .guia li a::before{color:#04121c}}
+.guia li a b{display:block;font-size:14px}
+.guia li a span{display:block;color:var(--mut);font-size:12.6px}
+.guia li a:hover b{color:var(--acc)}
