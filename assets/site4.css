@@ -60,3 +60,11 @@ footer.marca .av{color:var(--mut);font-size:12px;max-width:820px;margin:8px 0 0}
 .chipx{border:0;background:none;border-radius:0;padding:2px 0;color:var(--soft)}
 .chips2 .chipx+.chipx::before{content:'·';margin:0 8px 0 2px;color:var(--mut)}
 .chipx.bad{color:var(--bad)}.chipx.ok{color:var(--ok)}
+/* barra superior del informe: los capítulos van en una segunda fila (antes quedaban recortados detrás de las redes y el scroll estaba oculto) */
+@supports selector(:has(*)){
+  .topbar .wrap:has(nav a[href^="#cap-"]){flex-wrap:wrap;height:auto;min-height:54px;row-gap:0;padding-top:8px}
+  .topbar .wrap:has(nav a[href^="#cap-"]) .socs{margin-left:auto}
+  .topbar .wrap:has(nav a[href^="#cap-"]) nav{order:9;flex:1 0 100%;border-top:1px solid var(--line);margin-top:8px;padding:5px 0 6px;gap:4px}
+  html:has(.topbar nav a[href^="#cap-"]) section.blk, html:has(.topbar nav a[href^="#cap-"]) .cap{scroll-margin-top:118px}
+}
+@media (max-width:900px){.topbar nav{-webkit-mask-image:linear-gradient(to right,#000 calc(100% - 28px),transparent);mask-image:linear-gradient(to right,#000 calc(100% - 28px),transparent)}}
