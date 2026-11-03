@@ -29,6 +29,22 @@
     montar(); pila.push({ titulo, contenido, sub: o.sub, ancho: o.ancho });
     pintar(); scrim.classList.add('on'); dr.classList.add('on');
   };
+  /* Lista de todo lo que lleva una etiqueta de evidencia en la página actual, agrupado por capítulo, con «Ir allí». El informe la sustituye por la lista de sus datos. */
+  C.alNivel = (k) => {
+    const NOMBRE = { ATRIBUCION: 'ATRIBUCIÓN DE TERCEROS', HIPOTESIS: 'HIPÓTESIS' };
+    const marcas = [...document.querySelectorAll('.est-' + k)].filter((b) => !b.closest('.drawer') && !b.closest('[data-def]') && !b.closest('.guia') && b.offsetParent !== null);
+    const caps = [...document.querySelectorAll('.cap')];
+    const capDe = (b) => { let c = null; for (const x of caps) { if (x.compareDocumentPosition(b) & Node.DOCUMENT_POSITION_FOLLOWING) c = x; } return c ? (c.querySelector('.capt') || {}).textContent || '' : 'Cabecera'; };
+    const contexto = (b) => { const f = b.closest('tr, li, p, .card') || b.parentElement; const t = (f.textContent || '').replace(/s+/g, ' ').replace(b.textContent, '').trim(); const h = f.closest('.card') && f.closest('.card').querySelector('h3'); return (h && h !== f && !f.matches('.card') ? h.textContent + ' — ' : '') + (t.length > 190 ? t.slice(0, 190) + '…' : t); };
+    UI.abrir('Todo lo que lleva «' + (NOMBRE[k] || k) + '» en esta página', () => {
+      const w = el('div'); const g = new Map();
+      marcas.forEach((b) => { const c = capDe(b); (g.get(c) || g.set(c, []).get(c)).push(b); });
+      w.append(el('p', { class: 'narr', html: 'Esta etiqueta aparece <b>' + marcas.length + (marcas.length === 1 ? ' vez' : ' veces') + '</b> en esta página. Pulsa «Ir allí» para verla en su sitio.' }));
+      if (!marcas.length) w.append(el('p', { class: 'narr' }, 'Ahora mismo ningún dato de esta página lleva esta etiqueta.'));
+      g.forEach((bs, c) => w.append(el('h4', { style: 'margin:14px 0 4px' }, c + ' (' + bs.length + ')'), UI.tabla({ pp: 8, buscar: false, rows: bs, cols: [{ t: 'Dónde', v: (b) => contexto(b), o: (b) => contexto(b) }, { t: '', v: (b) => el('button', { class: 'mini', onclick: () => { UI.cerrar(); b.scrollIntoView({ behavior: 'smooth', block: 'center' }); const f = b.closest('tr, li, p, .card') || b; f.classList.add('flash'); setTimeout(() => f.classList.remove('flash'), 1800); } }, 'Ir allí →') }] })));
+      return w;
+    }, { sub: 'Etiqueta de evidencia' });
+  };
   UI.atras = () => { if (pila.length > 1) { pila.pop(); pintar(); } };
   UI.cerrar = () => { if (!dr) return; pila.length = 0; scrim.classList.remove('on'); dr.classList.remove('on'); };
   UI.cargando = (t) => el('div', { class: 'loading' }, t || 'Cargando…');

@@ -107,8 +107,9 @@
     const { d } = Dash, I = Dash.itemsNivel(k), { el: e2, n: nn, m: mm } = C;
     UI.abrir('Todo lo que está «' + k + '»', () => {
       const w = e2('div');
-      w.append(e2('p', { class: 'narr' }, C.est(k), ' ', (d.estados || {})[k] || ''),
+      w.append(e2('p', { class: 'narr' }, C.est(k, true), ' ', (d.estados || {})[k] || ''),
         e2('p', { class: 'narr', html: 'Esta lista reúne <b>' + nn(I.total) + ' elementos</b> con esta etiqueta: las tablas del informe' + (I.libro ? ' y los movimientos del libro mayor' : '') + '. Pulsa una fila para ver su ficha o detalle.' }));
+      if (k === 'HIPOTESIS' && I.libro) w.append(Ficha.explicaHip());
       if (!I.total) w.append(e2('p', { class: 'narr' }, 'Ningún dato del informe ni del libro mayor lleva este nivel a fecha de hoy. La etiqueta existe en el método (investigación todavía abierta), pero ahora mismo no hay nada en esa situación.'));
       const h = (t, c) => e2('h4', { style: 'margin:16px 0 4px' }, t + ' (' + nn(c) + ')');
       if (I.partidas.length) w.append(h('Partidas del balance', I.partidas.length), UI.tabla({ pp: 10, buscar: false, rows: I.partidas, onRow: (r) => Dash.abrirPartida(r.p, r.capital, r.id), cols: [{ t: 'Ámbito', v: (r) => r.et, o: (r) => r.et }, { t: 'Partida', v: (r) => r.p.nombre, o: (r) => r.p.nombre }, { t: 'Importe', num: 1, v: (r) => mm(r.p.importe), o: (r) => r.p.importe }, { t: 'Fuente', v: (r) => r.p.fuente || '—', o: (r) => r.p.fuente || '' }] }));
@@ -116,16 +117,17 @@
       if (I.abiertos.length) w.append(h('Puntos abiertos del informe', I.abiertos.length), UI.tabla({ pp: 10, buscar: false, rows: I.abiertos, cols: [{ t: 'Punto', v: (r) => e2('b', null, r.t), o: (r) => r.t }, { t: 'Por qué', v: (r) => r.causa || '—' }] }));
       if (I.libro) { const cajaL = e2('div', null, UI.cargando('Cargando el libro mayor (unos 6 MB la primera vez)…')); w.append(h('Movimientos del libro mayor', I.libro), e2('div', { class: 'cs' }, 'Cada movimiento del libro lleva su propio nivel. Pulsa una fila para abrir la ficha de la billetera que envía.'), cajaL);
         Libro.cargar().then(() => { const M = Libro.meta, rows = Libro.movs.filter((r) => M.estados[r[8]] === k); const dr = (i) => e2('a', { class: 'addr', style: 'word-break:break-all', href: UI.urlDir(Libro.dir[i]), target: '_blank', rel: 'noopener' }, Libro.dir[i]);
-          cajaL.textContent = ''; cajaL.append(UI.tabla({ pp: 10, csv: 'libro-' + k.toLowerCase(), rows, orden: [0, -1], onRow: (r) => Ficha.abrir(Libro.dir[r[1]]), cols: [{ t: 'Hora (UTC)', v: (r) => UI.fechaS(r[6]), o: (r) => r[6] }, { t: 'De', v: (r) => dr(r[1]), o: (r) => Libro.dir[r[1]], csv: (r) => Libro.dir[r[1]] }, { t: 'A', v: (r) => dr(r[2]), o: (r) => Libro.dir[r[2]], csv: (r) => Libro.dir[r[2]] }, { t: 'Activo', v: (r) => M.activos[r[3]], o: (r) => M.activos[r[3]] }, { t: 'Cantidad', num: 1, v: (r) => nn(r[4], 2), o: (r) => r[4] }, { t: 'USD', num: 1, v: (r) => mm(r[5]), o: (r) => r[5] }, { t: 'Tipo', v: (r) => (Ficha.TIPO[M.tipos[r[7]]] || M.tipos[r[7]]), o: (r) => M.tipos[r[7]] }, { t: 'Nota', v: (r) => r[9] || '—', o: (r) => r[9] || '' }, { t: 'Transacción', v: (r) => UI.enlace(UI.urlTx(r[0]), UI.corto(r[0], 6, 4) + ' ↗', 'addr'), o: (r) => r[0], csv: (r) => r[0] }] }));
+          cajaL.textContent = ''; cajaL.append(UI.tabla({ pp: 10, csv: 'libro-' + k.toLowerCase(), rows, orden: [0, -1], onRow: (r) => Ficha.abrir(Libro.dir[r[1]]), cols: [{ t: 'Hora (UTC)', v: (r) => UI.fechaS(r[6]), o: (r) => r[6] }, { t: 'De', v: (r) => dr(r[1]), o: (r) => Libro.dir[r[1]], csv: (r) => Libro.dir[r[1]] }, { t: 'A', v: (r) => dr(r[2]), o: (r) => Libro.dir[r[2]], csv: (r) => Libro.dir[r[2]] }, { t: 'Activo', v: (r) => M.activos[r[3]], o: (r) => M.activos[r[3]] }, { t: 'Cantidad', num: 1, v: (r) => nn(r[4], 2), o: (r) => r[4] }, { t: 'USD', num: 1, v: (r) => mm(r[5]), o: (r) => r[5] }, { t: 'Tipo', v: (r) => (Ficha.TIPO[M.tipos[r[7]]] || M.tipos[r[7]]), o: (r) => M.tipos[r[7]] }, { t: 'Por qué', v: (r) => Ficha.NOTAS[r[9]] || r[9] || '—', o: (r) => r[9] || '' }, { t: 'Transacción', v: (r) => UI.enlace(UI.urlTx(r[0]), UI.corto(r[0], 6, 4) + ' ↗', 'addr'), o: (r) => r[0], csv: (r) => r[0] }] }));
         }).catch((x) => { cajaL.textContent = 'No se pudo cargar el libro mayor: ' + x; }); }
       if (I.perdida.length) w.append(h('Puntos donde se pierde el rastro', I.perdida.length), e2('div', { class: 'cs' }, 'Direcciones o contratos donde el dinero deja de poder seguirse, con la causa. Pulsa una fila para abrir su ficha.'), UI.tabla({ pp: 10, csv: 'nivel-' + k.toLowerCase(), rows: I.perdida, onRow: (r) => r.direccion && Ficha.abrir(r.direccion), cols: [{ t: 'Clase', v: (r) => r.clase || r.grupo, o: (r) => r.clase || r.grupo || '' }, { t: 'Nombre', v: (r) => r.nombre || '—', o: (r) => r.nombre || '' }, { t: 'Dirección', v: (r) => (r.direccion ? e2('a', { class: 'addr', style: 'word-break:break-all', href: UI.urlDir(r.direccion), target: '_blank', rel: 'noopener' }, r.direccion) : '—'), o: (r) => r.direccion || '', csv: (r) => r.direccion || '' }, { t: 'USD atribuido', num: 1, v: (r) => mm(r.atribuido), o: (r) => r.atribuido || 0 }, { t: 'Causa', v: (r) => r.causa || '—' }] }));
       return w;
     }, { sub: 'Etiqueta de evidencia', ancho: true });
   };
+  C.alNivel = (k) => Dash.porNivel(k); // en el informe, la lista sale de los datos (tablas + libro mayor)
   /* una fila «etiqueta + definición» que se puede pulsar y dice cuántos elementos reúne */
   Dash.filaNivel = (k, texto, estilo) => {
     const I = Dash.itemsNivel(k);
-    return C.el('p', { style: estilo || 'margin:8px 0' }, C.el('button', { class: 'estbtn', title: 'Ver todo lo que lleva esta etiqueta', onclick: () => Dash.porNivel(k) }, C.est(k), C.el('span', { class: 'estn', 'data-niv': k }, I.total ? C.n(I.total) + ' ›' : '0')), ' ', texto);
+    return C.el('p', { style: estilo || 'margin:8px 0' }, C.el('button', { class: 'estbtn', title: 'Ver todo lo que lleva esta etiqueta', onclick: () => Dash.porNivel(k) }, C.est(k, true), C.el('span', { class: 'estn', 'data-niv': k }, I.total ? C.n(I.total) + ' ›' : '0')), ' ', texto);
   };
   function cabecera() {
     const { d, meta, base, app } = Dash;

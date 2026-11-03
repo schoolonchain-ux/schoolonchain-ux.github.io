@@ -19,7 +19,7 @@
   const nom = (a) => (DIR[a] ? DIR[a] + ' · ' + a : a);              // texto plano (CSV / orden): nombre + dirección completa
   const ad = (a, nombre) => el('span', { class: 'adr2' }, nombre || DIR[a] ? el('a', { class: 'lnk', href: TS(a), target: '_blank', rel: 'noopener' }, nombre || DIR[a]) : null, nombre || DIR[a] ? el('br') : null, el('a', { class: 'addr', href: TS(a), target: '_blank', rel: 'noopener', title: 'Comprobar en TronScan' }, a));
   const adCorta = (a) => el('a', { class: 'addr', href: TS(a), target: '_blank', rel: 'noopener', title: 'Comprobar en TronScan' }, a);
-  const est = { V: () => C.est('VERIFICADO'), A: () => el('span', { class: 'est est-ATRIBUCION', title: 'Lo afirman terceros; no es prueba' }, 'ATRIBUCIÓN DE TERCEROS'), H: () => C.est('HIPOTESIS'), D: () => C.est('DESCONOCIDO') };
+  const est = { V: () => C.est('VERIFICADO'), A: () => el('span', { class: 'est est-ATRIBUCION est-click', role: 'button', tabindex: '0', title: 'Lo afirman terceros; no es prueba. Pulsa para ver todo lo que lleva esta etiqueta', onclick: (ev) => { ev.stopPropagation(); C.alNivel('ATRIBUCION'); }, onkeydown: (ev) => { if (ev.key === 'Enter' || ev.key === ' ') { ev.preventDefault(); ev.stopPropagation(); C.alNivel('ATRIBUCION'); } } }, 'ATRIBUCIÓN DE TERCEROS'), H: () => C.est('HIPOTESIS'), D: () => C.est('DESCONOCIDO') };
   const cargar = (u) => fetch(u, { cache: 'no-cache' }).then((r) => (r.ok ? r.json() : null)).catch(() => null);
   const lnk = (h, t) => UI.enlace(h, t || h, 'lnk');
 
@@ -74,7 +74,7 @@
     /* ---------- 2 · Cómo leer ---------- */
     app.append(cap(2));
     app.append(el('div', { class: 'grid g2' },
-      caja('Los cuatro niveles de evidencia de este caso', el('div', { class: 'narr' },
+      caja('Los cuatro niveles de evidencia de este caso', el('div', { class: 'narr', 'data-def': '1' },
         el('p', { style: 'margin:8px 0' }, est.V(), ' Se puede comprobar en la cadena (una transacción, un saldo, una fecha de desbloqueo).'),
         el('p', { style: 'margin:8px 0' }, est.A(), ' Lo afirman medios, analistas o plataformas de datos. Es una pista; la fuente se cita siempre.'),
         el('p', { style: 'margin:8px 0' }, est.H(), ' Una explicación posible. Se dice qué la apoya y qué la tumba.'),

@@ -37,7 +37,8 @@
       const x = Math.min(window.innerWidth - t.offsetWidth - 10, ev.clientX + 14), y = Math.min(window.innerHeight - t.offsetHeight - 10, ev.clientY + 14);
       t.style.left = x + 'px'; t.style.top = y + 'px';
     },
-    est(e) { return C.el('span', { class: 'est est-' + e }, e); },
+    // Etiqueta de evidencia. Siempre pulsable: abre la lista de todo lo que lleva ese nivel (C.alNivel). plano=true solo dentro de un botón que ya hace lo mismo.
+    est(e, plano) { return plano ? C.el('span', { class: 'est est-' + e }, e) : C.el('span', { class: 'est est-' + e + ' est-click', role: 'button', tabindex: '0', title: 'Pulsa para ver todo lo que lleva la etiqueta ' + e, onclick: (ev) => { ev.stopPropagation(); if (C.alNivel) C.alNivel(e); }, onkeydown: (ev) => { if (ev.key === 'Enter' || ev.key === ' ') { ev.preventDefault(); ev.stopPropagation(); if (C.alNivel) C.alNivel(e); } } }, e); },
     explorer(dir) { return /^0x/.test(dir) ? 'https://etherscan.io/address/' + dir : 'https://tronscan.org/#/address/' + dir; },
     chartDefaults() {
       if (!window.Chart) return;

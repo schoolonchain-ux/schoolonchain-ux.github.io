@@ -49,3 +49,7 @@ El informe debe llevar sus datos en `window.DATOS` (el formato que produce `bloc
 ## Aviso
 
 Proyecto independiente. Las marcas de terceros que aparecen (Binance, TRON, Tether…) pertenecen a sus titulares; este sitio no está afiliado a ellas. Nada de lo publicado es consejo de inversión. Una dirección no es una persona: el informe sigue dinero entre direcciones y no identifica a nadie. Las cifras en dólares son estimaciones salvo donde se marcan como VERIFICADO.
+
+## Mantenimiento
+
+Antes de cada commit que cambie algo de `assets/`, ejecuta `node tools/version-assets.mjs`: añade a cada enlace de la web una huella del contenido (`?v=…`) para que nadie vea una versión vieja guardada en su navegador. Es idempotente.

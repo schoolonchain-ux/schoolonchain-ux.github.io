@@ -47,3 +47,16 @@ footer.marca .av{color:var(--mut);font-size:12px;max-width:820px;margin:8px 0 0}
 .estbtn:hover .est,.estbtn:focus-visible .est{filter:brightness(1.25);box-shadow:0 0 0 2px color-mix(in srgb,var(--acc) 35%,transparent)}
 .estbtn .estn{font-size:11.5px;color:var(--mut)}
 .estbtn:hover .estn{color:var(--acc)}
+/* ===== lo que parece pulsable, lo es ===== */
+.est-click{cursor:pointer}
+.est-click:hover,.est-click:focus-visible{filter:brightness(1.3);box-shadow:0 0 0 2px color-mix(in srgb,var(--acc) 38%,transparent);outline:none}
+.flash{animation:flashb 1.8s ease}
+@keyframes flashb{0%,65%{outline:3px solid var(--acc);outline-offset:3px;border-radius:8px}100%{outline:3px solid transparent;outline-offset:3px}}
+/* una tarjeta sin nada pulsable dentro es TEXTO: sin caja, sin sombra, solo un filete a la izquierda */
+@supports selector(:has(*)){
+  .card:not(:has(a[href],button,canvas,tr.clk,[onclick],summary,input,select,details,.est-click)){background:none;border:0;border-left:3px solid var(--line);border-radius:0;box-shadow:none;padding:4px 0 4px 16px}
+}
+/* las etiquetas informativas de la ficha (clase, salto, red) no parecen botones: son texto con separadores */
+.chipx{border:0;background:none;border-radius:0;padding:2px 0;color:var(--soft)}
+.chips2 .chipx+.chipx::before{content:'·';margin:0 8px 0 2px;color:var(--mut)}
+.chipx.bad{color:var(--bad)}.chipx.ok{color:var(--ok)}

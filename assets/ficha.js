@@ -18,6 +18,10 @@
   };
   Ficha.TIPO = TIPO; Ficha.DESC = DESC;
 
+  /* Por qué una fila no es VERIFICADO. La nota viene del libro (columna 9); aquí se traduce a una frase que se entienda. */
+  Ficha.NOTAS = { recolector: 'Salto inferido: se supone que el contrato envió lo depositado a esta dirección (observado en USDT, no demostrado por este depósito).' };
+  Ficha.celdaEstado = (r) => { const t = Ficha.NOTAS[r[9]]; return el('span', null, badge(Libro.meta.estados[r[8]]), t ? el('div', { class: 'muted', style: 'font-size:11.5px;line-height:1.35;max-width:270px;margin-top:3px;white-space:normal' }, t) : null); };
+  Ficha.explicaHip = () => el('div', { class: 'ayuda' }, el('div', { class: 'ai' }, el('b', null, 'Qué es una HIPÓTESIS en esta tabla. '), 'El dinero entra en un contrato recolector o enrutador (esa fila de entrada sí es VERIFICADA) y el informe supone que el contrato lo reenvía a la otra dirección, con el mismo importe y en la misma transacción. Se ha observado que estos contratos barren así lo depositado (en USDT), pero cada salida concreta no consta como transferencia propia en la cadena. Por eso la fila de salida es HIPÓTESIS y no VERIFICADO.'));
   const tagClase = (cl) => el('span', { class: 'tag', style: 'background:' + (C.clase[cl] || '#64748b') }, C.claseNombre[cl] || cl);
   const badge = (e) => C.est(e);
 
@@ -103,6 +107,7 @@
       { t: 'Movs.', num: 1, v: (r) => n(r.n), o: (r) => r.n },
       { t: 'Primero', v: (r) => UI.fechaS(r.p), o: (r) => r.p },
       { t: 'Último', v: (r) => UI.fechaS(r.u), o: (r) => r.u }];
+    const hayHip = f.ids.some((k) => Libro.movs[k][9] === 'recolector');
     const tablaMov = UI.tabla({
       pp: 12, csv: 'movimientos-' + UI.corto(dir, 6, 4), ph: 'Buscar por dirección, hash, activo…', orden: [0, -1],
       filtros: [{ t: 'Tipo', opciones: Object.values(TIPO), fn: (r, op) => TIPO[Libro.meta.tipos[r[7]]] === op }, { t: 'Activo', opciones: Libro.meta.activos, fn: (r, op) => Libro.meta.activos[r[3]] === op }, { t: 'Sentido', opciones: ['Recibido', 'Enviado'], fn: (r, op) => (op === 'Enviado') === (r[1] === f.i) }],
@@ -114,7 +119,7 @@
         { t: 'Activo', v: (r) => Libro.meta.activos[r[3]], o: (r) => r[3] },
         { t: 'Cantidad', num: 1, v: (r) => n(r[4], r[4] < 100 ? 2 : 0), o: (r) => r[4] },
         { t: 'USD', num: 1, v: (r) => (r[5] == null ? '—' : m(r[5])), o: (r) => r[5] || 0 },
-        { t: 'Estado', v: (r) => badge(Libro.meta.estados[r[8]]), o: (r) => r[8], csv: (r) => Libro.meta.estados[r[8]] },
+        { t: 'Estado', v: (r) => Ficha.celdaEstado(r), o: (r) => r[8], csv: (r) => Libro.meta.estados[r[8]] + (Ficha.NOTAS[r[9]] ? ' — ' + Ficha.NOTAS[r[9]] : '') },
         { t: 'Transacción', v: (r) => UI.enlace(UI.urlTx(r[0], evm), UI.corto(r[0], 6, 4) + ' ↗', 'addr'), o: (r) => r[0] },
       ],
       rows: f.ids.map((k) => Libro.movs[k]),
@@ -122,7 +127,7 @@
     const defs = [
       ['rem', 'Quién le envía (' + n(f.remitentes.length) + ')', () => el('div', null, el('p', { class: 'narr' }, 'Direcciones que le enviaron dinero, ordenadas por importe. Pulsa una fila para abrir su ficha y seguir el rastro hacia atrás.'), UI.tabla({ pp: 10, csv: 'remitentes-' + UI.corto(dir, 6, 4), cols: colCP, rows: f.remitentes, onRow: (r) => Ficha.abrir(Libro.dir[r.i]), ph: 'Buscar dirección…' }))],
       ['rec', 'A quién envía (' + n(f.receptores.length) + ')', () => el('div', null, el('p', { class: 'narr' }, 'Direcciones a las que envió dinero, ordenadas por importe. Pulsa una fila para seguir el rastro hacia adelante.'), UI.tabla({ pp: 10, csv: 'receptores-' + UI.corto(dir, 6, 4), cols: colCP, rows: f.receptores, onRow: (r) => Ficha.abrir(Libro.dir[r.i]), ph: 'Buscar dirección…' }))],
-      ['mov', 'Movimientos (' + n(f.ids.length) + ')', () => el('div', null, el('p', { class: 'narr' }, 'Todos los movimientos de esta dirección en el libro mayor. Puedes filtrar por tipo, activo y sentido, ordenar por cualquier columna y descargar el resultado.'), tablaMov)],
+      ['mov', 'Movimientos (' + n(f.ids.length) + ')', () => el('div', null, el('p', { class: 'narr' }, 'Todos los movimientos de esta dirección en el libro mayor. Puedes filtrar por tipo, activo y sentido, ordenar por cualquier columna y descargar el resultado.'), hayHip ? Ficha.explicaHip() : null, tablaMov)],
       ['tec', 'Datos técnicos', () => tecnicos(dir, c, f, evm)],
     ];
     const bs = {};
@@ -172,7 +177,7 @@
         { t: 'Activo', v: (r) => Libro.meta.activos[r[3]], o: (r) => r[3] },
         { t: 'Cantidad', num: 1, v: (r) => n(r[4], r[4] < 100 ? 2 : 0), o: (r) => r[4] },
         { t: 'USD', num: 1, v: (r) => (r[5] == null ? '—' : m(r[5])), o: (r) => r[5] || 0 },
-        { t: 'Estado', v: (r) => badge(Libro.meta.estados[r[8]]), o: (r) => r[8], csv: (r) => Libro.meta.estados[r[8]] },
+        { t: 'Estado', v: (r) => Ficha.celdaEstado(r), o: (r) => r[8], csv: (r) => Libro.meta.estados[r[8]] + (Ficha.NOTAS[r[9]] ? ' — ' + Ficha.NOTAS[r[9]] : '') },
         { t: 'Transacción', v: (r) => UI.enlace(UI.urlTx(r[0], UI.evm(Libro.dir[r[1]])), UI.corto(r[0], 6, 4) + ' ↗', 'addr'), o: (r) => r[0] },
       ],
       rows,
