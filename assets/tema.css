@@ -1,0 +1,71 @@
+/* ===== Tema «azul marino · azul metálico · naranja · pistacho · amarillo» =====
+   Solo cambia el DISEÑO de la web. Los gráficos, mapas y los colores de los DATOS (paletas de JavaScript) no se tocan.
+   Funciones:  azul marino = fondos · azul metálico = acento principal (enlaces, botones, navegación) · naranja metálico = marca y destacados
+               pistacho = bien / verificado · amarillo = avisos y pequeños rótulos. El rojo de los datos (congelada, desconocido) se mantiene. */
+
+/* ---- modo claro ---- */
+:root{
+  --bg:#f1f4fa;--pan:#ffffff;--fg:#0d1526;--soft:#3a4860;--mut:#66738c;--line:#d5deec;
+  --acc:#1f4380;--ok:#4f8a1f;--warn:#9a6900;--bad:#b3261e;--vio:#6b4fbb;--hack:#e4570b;
+  --shadow:0 1px 2px rgba(13,21,38,.07),0 6px 18px rgba(13,21,38,.06);
+  --m-azul:linear-gradient(145deg,#7d9fd6 0%,#3a5fa3 28%,#1e3c74 62%,#0d1f48 100%);
+  --m-naranja:linear-gradient(145deg,#ffc79b 0%,#ff8a3f 26%,#ef5e0e 60%,#a13602 100%);
+  --m-amarillo:linear-gradient(145deg,#fff1b8 0%,#f7d252 34%,#d9a514 68%,#9b730a 100%);
+  --m-pistacho:linear-gradient(145deg,#e6f5cf 0%,#bfe08f 32%,#8fbb4d 66%,#5f8a25 100%);
+  --brillo:inset 0 1px 0 rgba(255,255,255,.55),inset 0 -1px 0 rgba(0,0,0,.18);
+}
+/* ---- modo oscuro (por defecto): azul marino profundo ---- */
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]){
+    --bg:#050a15;--pan:#0b1426;--fg:#e9eef7;--soft:#b4c0d4;--mut:#8b9ab4;--line:#1b2a46;
+    --acc:#8bb4ee;--ok:#a9d884;--warn:#f6cd4d;--bad:#ff6b83;--vio:#b58cff;--hack:#f26a1b;
+    --shadow:0 1px 2px rgba(0,0,0,.5),0 8px 22px rgba(0,0,0,.4);
+    --brillo:inset 0 1px 0 rgba(255,255,255,.38),inset 0 -1px 0 rgba(0,0,0,.35);
+  }
+}
+:root[data-theme="dark"]{
+  --bg:#050a15;--pan:#0b1426;--fg:#e9eef7;--soft:#b4c0d4;--mut:#8b9ab4;--line:#1b2a46;
+  --acc:#8bb4ee;--ok:#a9d884;--warn:#f6cd4d;--bad:#ff6b83;--vio:#b58cff;--hack:#f26a1b;
+  --shadow:0 1px 2px rgba(0,0,0,.5),0 8px 22px rgba(0,0,0,.4);
+  --brillo:inset 0 1px 0 rgba(255,255,255,.38),inset 0 -1px 0 rgba(0,0,0,.35);
+}
+
+/* ---- marca ---- */
+.topbar .brand .dot{background:linear-gradient(135deg,#7d9fd6 0%,#1e3c74 46%,#ff8a3f 54%,#e4570b 100%);box-shadow:var(--brillo)}
+.hero2{background:radial-gradient(900px 420px at 88% -10%,rgba(240,98,15,.30),transparent 60%),radial-gradient(700px 380px at 0% 110%,rgba(40,80,160,.28),transparent 60%),var(--pan)}
+.hero2 .kick::before{box-shadow:0 0 0 4px rgba(240,98,15,.26)}
+.hero2 h1 em{background:linear-gradient(95deg,#1f4380 0%,#c94a08 50%,#e4570b 100%);-webkit-background-clip:text;background-clip:text;color:transparent}   /* claro: marino → butano, con contraste sobre blanco */
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) .hero2 h1 em{background-image:linear-gradient(95deg,#8fb0e8 0%,#ff8a3f 46%,#f0620f 100%)}}
+:root[data-theme="dark"] .hero2 h1 em{background-image:linear-gradient(95deg,#8fb0e8 0%,#ff8a3f 46%,#f0620f 100%)}
+.hero2 .art{border-color:rgba(240,98,15,.6);box-shadow:0 0 0 1px rgba(255,255,255,.04),0 18px 60px rgba(240,98,15,.26)}
+.caso{background:var(--m-naranja);color:#1a0800;box-shadow:var(--brillo);text-shadow:0 1px 0 rgba(255,255,255,.35)}
+.rcard.destacada{border-color:rgba(240,98,15,.6);box-shadow:0 0 0 1px rgba(240,98,15,.16),var(--shadow)}
+
+/* ---- botones y navegación: azul metálico ---- */
+.btn.primary{background:var(--m-azul);border-color:#0d1f48;color:#fff;box-shadow:var(--brillo);text-shadow:0 1px 1px rgba(0,0,0,.45)}
+:root[data-theme="dark"] .btn.primary{color:#fff}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) .btn.primary{color:#fff}}
+.btn.primary:hover{filter:brightness(1.15);border-color:#8bb4ee}
+.btn:hover{border-color:var(--acc)}
+.topbar nav a.on,.topbar nav a:hover{background:color-mix(in srgb,var(--acc) 16%,transparent)}
+/* selector Todas/TRON/Ethereum: marino metalizado con texto blanco (el !important gana a la regla antigua que lo ponía oscuro en modo oscuro) */
+.seg button.on{background:var(--m-azul);color:#fff!important;box-shadow:var(--brillo);text-shadow:0 1px 1px rgba(0,0,0,.4)}
+/* las pestañas (1 · ¿Está bloqueada?…) conservan su estilo de subrayado: texto normal y raya en el color de acento */
+
+/* ---- tarjetas: un filo de luz arriba, como metal pulido ---- */
+.card,.kpi,.rcard{box-shadow:inset 0 1px 0 rgba(255,255,255,.07),var(--shadow)}
+.cap{border-left-color:var(--hack)}
+.cap .capn,.guia .guiat{color:var(--warn)}
+.recap .rh{color:var(--ok)}
+.kick,.sec .eyebrow{color:var(--hack)}
+a{color:var(--acc)}
+
+/* ---- el cuadro de aviso general (antes con el rojo de marca) ---- */
+.res-head.warn{border-color:var(--warn)}
+
+/* ---- velo metálico: un reflejo azul marino en la parte alta de tarjetas y barra ---- */
+:root{--velo:rgba(255,255,255,0)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--velo:rgba(120,160,230,.09)}}
+:root[data-theme="dark"]{--velo:rgba(120,160,230,.09)}
+.card,.rcard,.kpi,.fk{background-image:linear-gradient(180deg,var(--velo),transparent 45%)}
+.topbar{background-image:linear-gradient(180deg,var(--velo),transparent)}
