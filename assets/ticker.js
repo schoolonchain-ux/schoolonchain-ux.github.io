@@ -56,8 +56,9 @@
 
     const barra = el('div', { class: 'ticker', role: 'region', 'aria-label': 'Novedades de las herramientas on-chain' }, f1.raiz, f2.raiz);
     document.body.insertBefore(barra, document.body.firstChild);
-    f1.armar(); f2.armar();
-    let t; window.addEventListener('resize', () => { clearTimeout(t); t = setTimeout(() => { f1.armar(); f2.armar(); }, 250); });
+    const altura = () => document.documentElement.style.setProperty('--tk-h', Math.round(barra.getBoundingClientRect().height) + 'px');
+    f1.armar(); f2.armar(); altura();
+    let t; window.addEventListener('resize', () => { clearTimeout(t); t = setTimeout(() => { f1.armar(); f2.armar(); altura(); }, 250); });
   }
   if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', montar); else montar();
 })();
