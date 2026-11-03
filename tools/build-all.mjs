@@ -73,6 +73,8 @@ export function construirDetalle(D) {
   return out;
 }
 
+// Recuento de movimientos del libro por nivel de evidencia: así las etiquetas del panel cuentan también el libro sin descargarlo entero.
+export function estadosDelLibro(L) { const c = {}; for (const r of L.movs) { const k = L.cuentas.estados[r[8]]; c[k] = (c[k] || 0) + 1; } return { total: L.movs.length, porEstado: c }; }
 export function construirLibro(D) {
   const cuentas = { dir: D.dir, cuentas: D.cuentas, clases: D.clases, tipos: D.tipos, activos: D.activos, estados: D.estadosCod, nombreClase: D.nombreClase, precioTRX: D.precioTRX, precioETH: D.precioETH, saldosFecha: D.saldosFecha };
   // [tx, de, a, activo, cantidad, usd, t(seg), tipo, estado, nota]
@@ -92,5 +94,6 @@ function main() {
   const L = construirLibro(D);
   w('libro/cuentas.json', L.cuentas);
   w('libro/movs.json', L.movs);
+  w('libro/estados.json', estadosDelLibro(L));
 }
 if (process.argv[1] && path.resolve(process.argv[1]) === path.resolve(fileURLToPath(import.meta.url))) main();

@@ -8,7 +8,7 @@ import fs from 'node:fs';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { extraerDatos, construir } from './build-data.mjs';
-import { construirDetalle, construirLibro } from './build-all.mjs';
+import { construirDetalle, construirLibro, estadosDelLibro } from './build-all.mjs';
 
 const raiz = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const args = process.argv.slice(2);
@@ -22,7 +22,7 @@ const salida = path.join(raiz, 'reports', slug);
 fs.mkdirSync(path.join(salida, 'libro'), { recursive: true });
 const w = (f, o) => fs.writeFileSync(path.join(salida, f), JSON.stringify(o));
 w('data.json', construir(D)); w('detalle.json', construirDetalle(D));
-const L = construirLibro(D); w('libro/cuentas.json', L.cuentas); w('libro/movs.json', L.movs);
+const L = construirLibro(D); w('libro/cuentas.json', L.cuentas); w('libro/movs.json', L.movs); w('libro/estados.json', estadosDelLibro(L));
 fs.copyFileSync(entrada, path.join(salida, 'informe-completo.html'));
 const archivos = [{ nombre: 'Informe completo (HTML)', ruta: 'informe-completo.html' }, { nombre: 'Datos del panel (JSON)', ruta: 'data.json' }];
 if (opt('csv') && fs.existsSync(opt('csv'))) { fs.copyFileSync(opt('csv'), path.join(salida, 'tabla.csv')); archivos.splice(1, 0, { nombre: 'Tabla (CSV)', ruta: 'tabla.csv' }); }
