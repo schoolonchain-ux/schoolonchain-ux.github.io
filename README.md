@@ -5,7 +5,7 @@ Sin hype. Sin señales. Sin conclusiones sin demostrar.
 
 Web con informes de trazabilidad on-chain pensados para que los entienda cualquiera: gráficos que se pueden pulsar, una ficha por cada dirección, cada cifra con su nivel de evidencia y todo el método a la vista.
 
-- Web (GitHub Pages): https://schoolonchain-ux.github.io/Binancehack/
+- Web (GitHub Pages): https://schoolonchain-ux.github.io/
 - Telegram: https://t.me/SchoolOnChainIntel
 - X: [@School_On_Chain](https://x.com/School_On_Chain) · [@TRX_TRONSCHOOL](https://x.com/TRX_TRONSCHOOL)
 
