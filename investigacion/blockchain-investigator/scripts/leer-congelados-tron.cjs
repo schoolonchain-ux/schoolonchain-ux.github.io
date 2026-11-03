@@ -1,0 +1,20 @@
+'use strict';
+// Congelación VIGENTE de USDT en TRON: lee de la cadena TODOS los eventos AddedBlackList / RemovedBlackList del contrato de Tether desde el 29-oct, deja el estado de cada dirección
+// y el saldo de USDT que tiene hoy cada bloqueada (lo congelado de verdad). Solo lectura. Salida: research/auditoria-adversarial-2026-10-31/resultados/congelados-tron.json
+const fs = require('node:fs'); const path = require('node:path');
+const { loadTronKeys } = require('../../tether-blacklist/src/adapters/bot.cjs'); const keys = loadTronKeys({ file: path.join(__dirname, '..', '..', 'tether-blacklist', 'config.secret.json') });
+const USDT = 'TR7NHqjeKQxGTCi8q8ZY4pL8otSzgjLj6t'; const DESDE = Date.UTC(2026, 9, 29, 0, 0, 0); const sleep = ms => new Promise(r => setTimeout(r, ms));
+const AL = '123456789ABCDEFGHJKLMNPQRSTUVWXYZabcdefghijkmnopqrstuvwxyz'; const crypto = require('node:crypto');
+const hexA58 = hex => { let h = String(hex).replace(/^0x/, ''); if (h.length === 40) h = '41' + h; const b = Buffer.from(h, 'hex'); const c = crypto.createHash('sha256').update(crypto.createHash('sha256').update(b).digest()).digest().subarray(0, 4); let n = BigInt('0x' + Buffer.concat([b, c]).toString('hex')); let s = ''; while (n > 0n) { s = AL[Number(n % 58n)] + s; n /= 58n; } return s; };
+async function getj(url) { for (let i = 0; i < 8; i++) { try { const r = await fetch(url, { headers: { accept: 'application/json', 'TRON-PRO-API-KEY': keys.tronGridKey }, signal: AbortSignal.timeout(30000) }); if (r.status === 429) { await sleep(3000 * (i + 1)); continue; } if (!r.ok) { await sleep(1500 * (i + 1)); continue; } return await r.json(); } catch { await sleep(1500 * (i + 1)); } } return null; }
+async function eventos(nombre) { const out = []; let url = `https://api.trongrid.io/v1/contracts/${USDT}/events?event_name=${nombre}&only_confirmed=true&limit=200&order_by=block_timestamp,asc&min_block_timestamp=${DESDE}`; let pag = 0; while (url) { const j = await getj(url); if (!j) throw new Error('lectura incompleta de ' + nombre); for (const e of j.data || []) out.push({ evento: nombre, direccion: hexA58((e.result && (e.result._user || e.result[0])) || ''), t: e.block_timestamp, bloque: e.block_number, tx: e.transaction_id }); url = j.meta && j.meta.links && j.meta.links.next; pag++; await sleep(300); if (pag > 100) throw new Error('demasiadas páginas'); } return out; }
+(async () => {
+  const add = await eventos('AddedBlackList'); const rem = await eventos('RemovedBlackList'); const estado = new Map();
+  for (const e of [...add, ...rem].sort((a, b) => a.t - b.t)) estado.set(e.direccion, { bloqueada: e.evento === 'AddedBlackList', desde: e.evento === 'AddedBlackList' ? e.t : null, tx: e.tx, ultimoEvento: e.evento, t: e.t });
+  const vigentes = [...estado.entries()].filter(([, v]) => v.bloqueada); const filas = [];
+  for (const [a, v] of vigentes) { const j = await getj('https://api.trongrid.io/v1/accounts/' + a); const d = j && j.data && j.data[0]; const o = d && (d.trc20 || []).find(x => x[USDT]); filas.push({ direccion: a, bloqueadaEn: v.desde, tx: v.tx, usdt: o ? Number(o[USDT]) / 1e6 : 0, trx: d ? d.balance / 1e6 : 0, leidoEn: new Date().toISOString() }); await sleep(200); }
+  const R = { leidoEn: new Date().toISOString(), desde: new Date(DESDE).toISOString(), eventosAdded: add.length, eventosRemoved: rem.length, direccionesBloqueadasVigentes: filas.length, usdtCongeladoVigente: filas.reduce((s, f) => s + f.usdt, 0), filas: filas.sort((a, b) => b.usdt - a.usdt), eventos: [...add, ...rem] };
+  const dest = 'C:/EquipoIA/research/auditoria-adversarial-2026-10-31/resultados/congelados-tron.json'; fs.writeFileSync(dest, JSON.stringify(R, null, 1));
+  console.log('Added', add.length, 'Removed', rem.length, '| bloqueadas vigentes', filas.length, '| USDT congelado vigente', Math.round(R.usdtCongeladoVigente).toLocaleString('en'));
+  for (const f of R.filas.slice(0, 8)) console.log('  ', f.direccion, Math.round(f.usdt).toLocaleString('en'), 'USDT', new Date(f.bloqueadaEn).toISOString().slice(5, 16));
+})().catch(e => { console.error('ERROR', e.message); process.exit(1); });

@@ -1,0 +1,29 @@
+'use strict';
+// Sigue a las billeteras de Ethereum (y Arbitrum) que, según la API de Symbiosis, recibieron el dinero del robo que cruzó desde TRON: saldo de ETH de hoy, lo que han sacado desde que llegó el primer cruce y adónde.
+// Destinos: contrato o billetera con muchísimo uso (nonce > 3000) se anotan como servicio (cierre del rastreo en ese punto, no recuperación); el resto, como billetera particular.
+// Solo lectura (Etherscan v2 con la clave del bot + RPC público). Uso: node seguir-llegadas-ethereum.cjs <carpeta-del-tramo>  → <tramo>/llegadas-eth.json (reanudable)
+const fs = require('node:fs'); const path = require('node:path');
+const { loadEtherscanKey } = require('../../tether-blacklist/src/adapters/bot.cjs'); const K = loadEtherscanKey({ file: path.join(__dirname, '..', '..', 'tether-blacklist', 'config.secret.json') });
+const dir = process.argv[2]; if (!dir) { console.error('uso: node seguir-llegadas-ethereum.cjs <carpeta-del-tramo>'); process.exit(1); }
+const sleep = ms => new Promise(r => setTimeout(r, ms)); const RPC = { 1: 'https://ethereum-rpc.publicnode.com', 42161: 'https://arbitrum-one-rpc.publicnode.com' };
+async function api(chainid, params) { for (let i = 0; i < 6; i++) { try { const r = await fetch('https://api.etherscan.io/v2/api?' + new URLSearchParams({ chainid, apikey: K.key, ...params }), { signal: AbortSignal.timeout(40000) }); const j = await r.json(); if (j.status === '1' || (j.message === 'No transactions found') || (j.result && j.status === '0' && /No transactions/i.test(j.message))) return j.result; if (/rate limit/i.test(String(j.result))) { await sleep(1200 * (i + 1)); continue; } if (j.message === 'NOTOK') { await sleep(1200 * (i + 1)); continue; } return j.result; } catch { await sleep(1200 * (i + 1)); } } return null; }
+async function rpc(chain, method, params) { for (let i = 0; i < 5; i++) { try { const r = await fetch(RPC[chain], { method: 'POST', headers: { 'content-type': 'application/json' }, body: JSON.stringify({ jsonrpc: '2.0', id: 1, method, params }), signal: AbortSignal.timeout(25000) }); const j = await r.json(); if (j.result !== undefined) return j.result; } catch {} await sleep(800 * (i + 1)); } return null; }
+(async () => {
+  const L = JSON.parse(fs.readFileSync(path.join(dir, 'symbiosis-llegadas.json'), 'utf8')); const receptores = new Map();
+  for (const s of Object.values(L)) { const l = s && s.llegada; if (!l || (l.cadena !== 1 && l.cadena !== 42161) || s.estado !== 'Success') continue; const k = l.cadena + ':' + String(l.receptor).toLowerCase(); const x = receptores.get(k) || { cadena: l.cadena, direccion: String(l.receptor).toLowerCase(), llegadas: 0, eth: 0, primera: l.hora, ultima: l.hora }; x.llegadas++; if (l.activo === 'ETH') x.eth += l.importe; if (l.hora < x.primera) x.primera = l.hora; if (l.hora > x.ultima) x.ultima = l.hora; receptores.set(k, x); }
+  const out = path.join(dir, 'llegadas-eth.json'); let S = {}; try { S = JSON.parse(fs.readFileSync(out, 'utf8')); } catch { /* primera vez */ } const cola = [...receptores.values()].filter(r => !S[r.cadena + ':' + r.direccion]); console.log('receptores', receptores.size, '| por leer', cola.length);
+  const nonces = {}; async function esServicio(chain, a) { const k = chain + ':' + a; if (nonces[k] !== undefined) return nonces[k]; const code = await rpc(chain, 'eth_getCode', [a, 'latest']); const nonce = parseInt(await rpc(chain, 'eth_getTransactionCount', [a, 'latest']) || '0x0', 16); return (nonces[k] = { contrato: !!code && code !== '0x', nonce }); }
+  let n = 0; async function trab() { while (cola.length) { const r = cola.shift(); const k = r.cadena + ':' + r.direccion;
+    const saldo = await api(r.cadena, { module: 'account', action: 'balance', address: r.direccion, tag: 'latest' }); await sleep(210);
+    const tx = await api(r.cadena, { module: 'account', action: 'txlist', address: r.direccion, startblock: 0, endblock: 99999999, page: 1, offset: 200, sort: 'asc' }); await sleep(210);
+    const tk = r.cadena === 1 ? await api(r.cadena, { module: 'account', action: 'tokentx', address: r.direccion, page: 1, offset: 100, sort: 'asc' }) : []; await sleep(210);
+    const salidas = (Array.isArray(tx) ? tx : []).filter(t => t.from.toLowerCase() === r.direccion && t.isError === '0'); const destinos = {}; let ethSale = 0;
+    for (const t of salidas) { const v = Number(t.value) / 1e18; ethSale += v; if (v <= 0) continue; const d = t.to.toLowerCase(); destinos[d] = (destinos[d] || 0) + v; }
+    const top = Object.entries(destinos).sort((a, b) => b[1] - a[1]).slice(0, 4); const info = []; for (const [d, v] of top) { const s = await esServicio(r.cadena, d); info.push({ a: d, eth: +v.toFixed(4), contrato: s.contrato, nonce: s.nonce }); }
+    const tokSale = (Array.isArray(tk) ? tk : []).filter(t => t.from.toLowerCase() === r.direccion).map(t => ({ token: t.tokenSymbol, a: t.to.toLowerCase(), v: Number(t.value) / 10 ** Number(t.tokenDecimal) }));
+    S[k] = { ...r, saldoEth: saldo && /^\d+$/.test(String(saldo)) ? Number(saldo) / 1e18 : null, txSalida: salidas.length, ethSalido: +ethSale.toFixed(4), txTotal: Array.isArray(tx) ? tx.length : null, truncado: Array.isArray(tx) && tx.length >= 200, destinosPrincipales: info, tokensSalidos: tokSale.slice(0, 6), leidoEn: new Date().toISOString() };
+    if (++n % 25 === 0) { fs.writeFileSync(out, JSON.stringify(S)); console.log('  …', n); } } }
+  await Promise.all([trab(), trab()]); fs.writeFileSync(out, JSON.stringify(S));
+  const v = Object.values(S); const quieto = v.filter(x => x.txSalida === 0 && (x.saldoEth || 0) > 0.01); const movio = v.filter(x => x.txSalida > 0);
+  console.log('receptores', v.length, '| quietos con saldo', quieto.length, 'ETH', quieto.reduce((s, x) => s + x.saldoEth, 0).toFixed(1), '| con salidas', movio.length, 'ETH salido', movio.reduce((s, x) => s + x.ethSalido, 0).toFixed(1), '| saldo total hoy', v.reduce((s, x) => s + (x.saldoEth || 0), 0).toFixed(1));
+})();

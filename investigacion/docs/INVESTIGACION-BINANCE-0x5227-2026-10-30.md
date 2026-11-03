@@ -1,0 +1,335 @@
+# La dirección 0x5227…2f8c y el robo a Binance del 29 de octubre de 2026 — informe completado
+
+**Fecha de lectura:** 30 de octubre de 2026, entre las 09:00 y las 09:45 UTC.
+**Completa el informe de EquipoIA** `ui-fb29df2b-dfa6-4ba1-b08a-268f2231020d` (copia en `research/binance-0x5227-2026-10-30/informe-equipoia-original.pdf`) siguiendo las cuatro comprobaciones que pidió el segundo analista: verificar los cuatro hashes, reconstruir los 700 M USDT por saldos reales, analizar los dos receptores de ETH y buscar etiquetas y conexiones.
+**Fuente de datos:** API de Etherscan (Ethereum, Arbitrum, Polygon y Avalanche) leída en vivo, etiquetas de la base local del bot de la blacklist (`tether-blacklist/state/etiquetas.sqlite`), precio del ETH de la bóveda (cierre del 29-10-2026: 2.359,69 $). Los datos en bruto están en `research/binance-0x5227-2026-10-30/raw/`.
+
+Dirección investigada: `0x5227f603C1eE34CE3C06eFe6477003BDfCCB2f8c` (en adelante **la dirección**).
+
+**Segunda pasada (30-oct, 10:00–11:30 UTC), a petición del propietario:** se siguieron las catorce billeteras auxiliares que recibieron gas (apartado 7), se identificó la dirección de Arbitrum (apartado 8), se comprobaron las congelaciones de los otros emisores (apartado 9, con una sorpresa: Circle también congeló 823 millones de USDC que estaban dentro de la dirección) y se montó el vigilante `eth-salidas-watch/` (apartado 14). Las cifras del apartado 1 están actualizadas con todo ello.
+
+---
+
+## 1. Conclusión
+
+**Lo que la cadena demuestra.** La dirección se creó esa misma tarde (su primera operación tiene número 0) y entre las 20:24:23 y las 21:44:11 UTC del 29-10-2026 recibió **directamente de dos billeteras calientes de Binance** (etiquetadas «Binance 14» y «Binance 16» en la base de etiquetas de la comunidad de Etherscan) **1.875,46 millones de USDT, 196.138 ETH y otros 61 tokens**. Las transferencias las firmaron las propias billeteras de Binance. En Arbitrum, Avalanche y Polygon pasó lo mismo con cantidades menores (8.426 ETH y 74,56 millones de ARB en Arbitrum; 8,41 millones de USDt en Avalanche; 6,19 millones de USDT en Polygon).
+
+Esto responde a la duda principal del informe de EquipoIA: **la relación con el incidente de Binance está demostrada en la cadena**, porque el dinero sale de las billeteras de Binance hacia esta dirección. La prensa sitúa el robo exactamente en esa ventana (20:24 a 21:04 UTC) y Binance lo ha confirmado. Lo que la cadena **no** dice es quién controla la dirección ni cómo se consiguió el acceso. Eso sigue siendo terreno de Binance, de Tether y de las autoridades.
+
+**Dónde está el dinero ahora (lectura del 30-10 por la mañana):**
+
+| Qué | Cuánto | Estado |
+|---|---|---|
+| ETH aparcado en **siete** billeteras sin movimiento de salida | **508.854 ETH (≈ 1.201 M$)** | Libre. Nadie puede congelarlo. Vigilado por `eth-salidas-watch` desde el 30-oct. |
+| ETH y ARB aparcados en Arbitrum | 8.426 ETH + 74,56 M ARB | Libre, en `0x…0da0` (apartado 8). |
+| USDT congelado por Tether en Ethereum | 1.380,46 M USDT | Bloqueado en tres direcciones (1.175,46 M en la propia dirección). |
+| USDC congelado por Circle | 823,00 M USDC | Bloqueado dentro de la dirección (apartado 9). |
+| USDT congelado en Avalanche y Polygon | 14,60 M USDT | Bloqueado. |
+| Otros tokens congelados por sus emisores dentro de la dirección | USD1 27,82 M, FDUSD 3,45 M, XAUt 12.574, PAXG 1.907 | Bloqueados (apartado 9). |
+| USDT depositado en Aave como garantía | 60,00 M USDT | Sirvió para pedir prestados 19.762 ETH que ya se movieron. |
+| Tokens sin vender y sin congelar en la dirección | WLFI 48,5 M, SOPH 1.693 M, ZAMA 53,3 M, FUN 580,8 M, ERA 38,6 M, NIL 32,8 M, LA 28,0 M, LSK 9,26 M, RE 3,62 M, PROM 0,91 M, USDe 1,09 M (en una auxiliar) | Sin mover a la hora de lectura. |
+
+El informe de EquipoIA hablaba de «1.193 millones que salieron». Esa cifra era la suma de cuatro transferencias y mezclaba cosas distintas. Lo que de verdad **entró desde Binance** por esta dirección en Ethereum fue bastante más (1.875 M USDT + 823 M USDC + 196.138 ETH + 61 tokens), y lo que quedó **fuera del alcance de los congeladores** son unos 508.854 ETH en Ethereum más 8.426 ETH y 74,56 M ARB en Arbitrum.
+
+---
+
+## 2. Comprobación 1: las cuatro transacciones, verificadas
+
+Las cuatro existen, se ejecutaron bien y los importes del informe eran exactos.
+
+| Hora (UTC) | Qué | Importe exacto | Destino | Hash |
+|---|---|---|---|---|
+| 29-10 20:30:11 | USDT | 500.000.000 | `0x9749292d74fd460982d0912ea9515ea24736c762` | `0x68d7d69d…ad659a` (bloque 26300799) |
+| 29-10 20:33:23 | USDT | 200.000.000 | `0x0ddf0480016e6bcb2c1f5d190d221fba1320697e` | `0x1fc0ef33…fac81c` (bloque 26300815) |
+| 29-10 20:38:47 | ETH | 195.460 | `0x8532fa14acaf483729c449b8458aeddb900543d4` | `0x551d7961…b02c76` (bloque 26300842) |
+| 30-10 05:15:47 | ETH | 17.260 | `0x03b0ee5d82990cff1bda48651ac3e436d1a020ea` | `0x9edf8653…856071` (bloque 26303416) |
+
+Detalle importante: las tres primeras llevan los números de operación 1, 3 y 4 de la dirección (la 0 y la 2 fueron envíos de 0,5 ETH para gas a las dos receptoras de USDT). La cuarta lleva el número **700**: entre medias la dirección hizo casi 700 operaciones, que son la venta de los tokens (apartado 6).
+
+La congelación en Ethereum también está verificada: la transacción `0x7baba482…9d8659` (bloque 26300954, 21:01:35 UTC) la firmó `0xac3b242e…` contra el contrato multifirma de Tether y emitió el evento «AddedBlackList» para la dirección. **Veintiocho minutos después** del primer envío de USDT.
+
+---
+
+## 3. De dónde vino el dinero (lo que faltaba en el informe)
+
+Toda la entrada de fondos a la dirección en Ethereum viene de dos billeteras de Binance. Nombres según la base de etiquetas de la comunidad de Etherscan, cargada en la base local del bot de la blacklist con confianza «baja» (es una lista pública, no una confirmación de Binance).
+
+| Hora (UTC) | Desde | Qué llegó | Transacción |
+|---|---|---|---|
+| 20:24:23 | Binance 14 `0x28c6c06298d514db089934071355e5743bf21d60` | 1.615.409.498,97 USDT + 167.464,25 ETH + 668,13 WETH + 60 tokens más, todo en **una sola transacción** (función `sweep`) | `0x53bd38b8…8e2f3` |
+| 20:24:47 | Binance 16 `0xdfd5293d8e347dfe59e90efd55b2956a1343963d` | 55.739.800,5 USDT, 28.005,6 ETH, y LINK, UNI, ENA, PEPE, WBTC en 8 transacciones | `0xd4e08d3e…6c49c` y otras |
+| 21:04:23 | Binance 14 | 3.917.639,77 USDT + 22 tokens (segundo `sweep`) | `0x31c4c9fe…a91d` |
+| 21:44:11 | Binance 14 | 200.397.771,82 USDT + 13 tokens (tercer `sweep`) | `0x55ba4dab…0556` |
+
+Observaciones:
+
+- El segundo y el tercer barrido llegaron **después** de que Tether congelara la dirección (21:01:35). Una dirección congelada puede recibir USDT pero no enviarlo, así que esos 204,3 millones quedaron atrapados dentro.
+- Tether congeló también **la propia Binance 14** a las 22:06:39 UTC (bloque 26301278). Es un hecho de la cadena. La razón (parar la sangría a petición de Binance, por ejemplo) es una hipótesis que la cadena no confirma.
+- En Arbitrum la dirección recibió 8.426,2 ETH de tres billeteras (`0xf92402bb…`, `0x1b5b4e44…`, `0x3931dab9…`) y 74.559.805 ARB de `0xb38e8c17…` entre las 20:30 y las 20:34 UTC; en Avalanche, 8.409.928 USDt de `0x3bce63c6…` y `0x9f8c163c…` (20:33–20:36); en Polygon, 6.185.900 USDT de `0xe7804c37…` (23:05). Ninguna de esas siete billeteras tiene etiqueta en nuestra base local, así que **no puedo afirmar que sean de Binance**, aunque el patrón y las horas coinciden.
+- Los medios cifran el robo total en unos 6.300 M$ según Binance, con 3.300 M$ saliendo de dos billeteras calientes de Ethereum entre las 20:24 y las 21:04 UTC. Esta dirección explica la mayor parte de ese tramo de Ethereum, pero no he comprobado si hubo otras direcciones receptoras.
+
+---
+
+## 4. Comprobación 2: los 700 M USDT, seguidos por saldos reales
+
+Aquí no hay reparto por orden de llegada. Cada cantidad se ha seguido mirando lo que entró y salió de cada billetera, y las cifras cuadran al dólar. **Todo el movimiento ocurrió en los 49 minutos anteriores a la congelación.**
+
+### 4.1 Rama de 500 M (`0x9749…c762`)
+
+| Hora (UTC) | Movimiento | Resultado |
+|---|---|---|
+| 20:31–20:49 | 325 M USDT cambiados a ETH en 9 operaciones a través de agregadores (aprobaciones a Permit2 y al router de 1inch; una pasa por el contrato de LI.FI; los contratos `0x74edc79f…`, `0x0000…be226`, `0xbeef0296…`, `0x9b1303eb…`, `0xec4fb7e7…` son los pasos intermedios de esos cambios, no «routers a medida») | **122.316 ETH** recibidos por `0x9749` |
+| 20:45:51 | 175 M USDT → `0x811f1585…` | reenviados a las 20:55:03 a `0xaa246bf6…` |
+| 21:14:59 | Tether congela `0xaa246bf6…` | **174.999.872 USDT bloqueados** ahí (solo salieron 127,67 USDT antes) |
+| 21:47:47 | `0x9749` envía **122.310 ETH** a `0xc887af690e0301cd4edbbce8f8d31b4ec65b286a` | esa billetera recibió además 15.292 ETH de `0x7f9dc988…` (ver apartado 6) y hoy tiene **137.602 ETH sin ninguna salida** |
+
+### 4.2 Rama de 200 M (`0x0ddf…697e`)
+
+| Hora (UTC) | Movimiento | Resultado |
+|---|---|---|
+| 20:47:47 | 10 M USDT cambiados a ETH por el router universal de Uniswap | 3.552 ETH |
+| 20:52:59 | 190 M USDT + 3.552 ETH → `0x8d53903625b8e839b9df4bd28b0efb1cd6b8639a` | |
+| 20:57–21:00 | `0x8d53` deposita **60 M USDT en Aave V3** (recibe 60.000.001,7 aEthUSDT) y, con esa garantía, **pide prestados 19.762,41 ETH** (dos préstamos: 3.271,43 y 16.490,99; quedan registrados 19.762 «variableDebtEthWETH» a su nombre) | El informe de EquipoIA lo describía como «60 M a un contrato de Aave». En realidad la garantía sirvió para sacar unos 46,6 M$ en ETH y dejar la deuda. |
+| 21:01:59 / 21:02:35 | 130 M USDT + 23.314,5 ETH (3.552 + 19.762) → `0x77edef23…` | |
+| 21:04–21:05 | `0x77ed` cambia 50 M USDT a ETH (20 M + 30 M, Uniswap) | 18.085 ETH |
+| 21:06:47 / 21:07:11 | 80 M USDT + 41.397,8 ETH → `0x7aa4d302…` | |
+| 21:08–21:09 | `0x7aa4` cambia 50 M USDT a ETH | 16.498 ETH |
+| 21:11:11 / 21:11:59 | 30 M USDT + 57.891,85 ETH → `0xccbef956…` | |
+| 21:16:11 / 21:16:47 | 30 M USDT + 57.891,8 ETH → `0xb171ca86…` | |
+| 21:19:39 | Tether congela `0xb171ca86…` | **30 M USDT bloqueados** (había aprobado KyberSwap y Aave para moverlos, pero la aprobación llegó 20 segundos tarde) |
+| 21:35:59 | `0xb171` envía **57.891,77 ETH** a `0x897c80d1a9729e94460e2bd93178bd5215158df3` | esa billetera recibió además 20.523,5 ETH de `0x42cdf00c…` (ver apartado 6) y hoy tiene **78.415 ETH sin ninguna salida** |
+
+### 4.3 Resumen de los 700 M
+
+| Destino final | USDT | Observación |
+|---|---|---|
+| Cambiados a ETH | 435 M | 325 M (rama 500) + 10 M + 50 M + 50 M (rama 200) → ≈ 160.451 ETH |
+| Congelados por Tether | 205 M | 175 M en `0xaa246bf6…` y 30 M en `0xb171ca86…` |
+| Depositados en Aave como garantía | 60 M | Respaldan una deuda de 19.762 ETH |
+| **Total** | **700 M** | cuadra |
+
+Tether congeló en Ethereum, en este orden: la dirección y `0x9749` (21:01:35), `0x0ddf` (21:01:47), `0x8d53` (21:02:47), `0x7aa4` (21:12:35), `0xaa24` (21:14:59), `0xccbe` (21:16:47), `0xb171` (21:19:39) y Binance 14 (22:06:39). Es la lista completa de eventos «AddedBlackList» del contrato de USDT desde el bloque 26300000. De las nueve, solo tres tenían saldo cuando llegó la congelación; las demás ya estaban vacías.
+
+---
+
+## 5. Comprobación 3: los dos receptores de ETH
+
+| Billetera | Recibió | Saldo hoy | Salidas |
+|---|---|---|---|
+| `0x8532fa14…43d4` | 195.460 ETH (29-10 20:38:47) + 2.000 ETH (30-10 01:14:11), ambos desde la dirección | **197.460,005 ETH** | Ninguna. Solo 71 entradas minúsculas de terceros. |
+| `0x03b0ee5d…20ea` | 0,1 ETH de prueba (05:14:35) y 17.260 ETH (05:15:47), ambos desde la dirección | **17.260,103 ETH** | Ninguna. Entradas de terceros con mensajes pidiendo dinero. |
+
+Las dos conservan todo. No hay movimientos internos (transferencias desde contratos) ni tokens relevantes. Se confirma la hipótesis del segundo analista de mirar aquí primero: es la parte más sólida y más grande del botín, y sigue intacta.
+
+A estas dos hay que añadir las dos billeteras de consolidación del apartado 4, `0xc887af69…` (137.602 ETH) y `0x897c80d1…` (78.415 ETH), y las tres que aparecieron al seguir a las auxiliares del apartado 7: `0x54401f80da97893a15d43566184635b6674bc942` (40.600,7 ETH), `0x79e70d139fc05aa75f75611fdf2680e9952b544a` (34.279,7 ETH) y `0x8d4b8ee62124b7ee140a51ddd07390a56f1c9e19` (3.236,7 ETH). Entre las siete suman **508.854 ETH**, unos 1.201 M$ al cierre del 29-10. Ninguna ha movido nada hasta la hora de lectura (30-oct, 11:30 UTC).
+
+---
+
+## 6. Lo que el informe no veía: la venta de los otros 61 tokens
+
+Entre las 01:00 y las 04:00 UTC del 30-10 la dirección hizo **701 operaciones** (números 0 a 700), casi todas ventas en Uniswap V2 y V3, PancakeSwap V3, SushiSwap y ShibaSwap. Comprobé que los destinos más frecuentes de esas transferencias (`0xce2cc051…`, `0xcaa55dd2…`, `0x8c1c499b…`, `0x2e478444…`) son contratos verificados de pares de Uniswap V2, pozos de Uniswap V3 y PancakeSwap V3: es decir, se vendió directamente en los mercados.
+
+- **40 tokens vendidos del todo** (OGN, RED, RAD, CVX, COTI, IMX, CRV, AXS, CFG, G, GTC, PHA, PLUME, SUPER, SHIB, BNB, NMR, 1INCH, PENDLE, ETHFI, APE, EIGEN, YFI, LDO, FET, QNT, COMP, ENS, SYRUP, USDS, LINK, SKY, UNI, PEPE, AAVE, WBTC, RLUSD, RSR, MORPHO, ONDO, SAND, USDe, WLD, ZRO, BEAM, SNX…). Las ventas dieron a la dirección unos **18.600 ETH** (14.902 por el router 2 de Uniswap V3, 764 por Uniswap V2, 500 por ShibaSwap, 258 por PancakeSwap, 97 por otro router, 4 por SushiSwap) más los 668 WETH desenvueltos.
+- **Dos ayudantes vendieron aparte:** la dirección pasó 29.934 wBETH y 217,5 M ENA a `0x7f9dc988…`, que los vendió en Uniswap V3 y mandó **15.292 ETH** a `0xc887af69…` (30-10 00:59); y `0x42cdf00c…`, que recibió 2 ETH de gas de la dirección, vendió otros tokens y mandó **20.523,5 ETH** a `0x897c80d1…` (22:51 y 23:24). Con eso, los tokens vendidos produjeron en total unos **54.400 ETH** (≈ 128 M$).
+- **Catorce billeteras más recibieron 0,5 ETH de gas** de la dirección entre las 21:29 y las 00:42. Están seguidas una a una en el apartado 7: casi todas vendieron un token cada una y mandaron el ETH a tres billeteras de consolidación nuevas.
+- **Quedan sin vender** en la dirección: 27,82 M USD1, 3,45 M FDUSD, 12.574 XAUt, 1.907 PAXG (estos cuatro ya congelados por sus emisores, apartado 9), 48,5 M WLFI, 1.693 M SOPH, 53,3 M ZAMA, 580,8 M FUN, 38,6 M ERA, 32,8 M NIL, 28,0 M LA, 9,26 M LSK, 3,62 M RE y 0,91 M PROM.
+
+---
+
+## 7. Las catorce billeteras auxiliares, una a una
+
+La dirección repartió tokens a billeteras recién creadas, les dio 0,5 ETH de gas a cada una y ellas vendieron en Uniswap, SushiSwap y PancakeSwap. El ETH obtenido se juntó en tres billeteras nuevas. Lectura del 30-oct, 10:30 UTC.
+
+| Auxiliar | Recibió de la dirección | Qué hizo | ETH enviado | A dónde |
+|---|---|---|---|---|
+| `0x7f9dc988…15e3` | 29.934 wBETH y 217,5 M ENA (21:52–22:02) | vendió todo en Uniswap V3 (21 operaciones) | 15.292 ETH (30-10 00:59) | `0xc887af69…` (Consolidación A) |
+| `0x42cdf00c…7810` | 2 ETH de gas (los tokens no se listaron) | vendió por Uniswap V3 y otros routers (70 cobros de ETH) | 17.584 + 2.939,5 ETH (22:51, 23:24) | `0x897c80d1…` (Consolidación B) |
+| `0x600d6f00…8298` | 7,77 billones de PEPE | 93 ventas en Uniswap V2 | 14.040 + 9,8 ETH (00:35, 05:28) | `0x79e70d13…` (Consolidación D) |
+| `0xcf4ca2bd…23e0` | 2,568 M LINK | 90 ventas en Uniswap V3 y SushiSwap | 11.560,8 ETH (05:31) | `0x79e70d13…` |
+| `0xb3ddec0c…5fdb` | 167,1 WBTC y 9,71 M USDe | vendió el WBTC entero y 8,61 M USDe (pasando por USDC); le quedan 1,09 M USDe y 33.000 USDC | 5.700 + 2.856,9 ETH (23:18, 05:34) | `0x79e70d13…` |
+| `0x06ea1ab3…685f` | 714,9 M FUN | 121 ventas en Uniswap V2 (token con comisión: salió muy poco) | 111,9 ETH (05:35) | `0x79e70d13…` |
+| `0x0084847b…4c81` | 87,85 M ZAMA | vendió 34,5 M (parte vía USDT y USDC) y **devolvió 53,33 M ZAMA** a la dirección | 805,3 + 0,95 ETH (00:52, 01:16) | `0x8d4b8ee6…` (Consolidación E) |
+| `0xb58bf76d…4f08` | 3,38 mil M RSR | vendió todo en Uniswap V3 (13 operaciones) | 1.855,4 ETH (01:16) | `0x54401f80…` (Consolidación C) |
+| `0xf1eadb24…73c4` | 3,60 M ZRO | vendió todo en Uniswap V3 (18 operaciones) | 2.156 ETH (00:53) | `0x8d4b8ee6…` |
+| `0x1291be4c…16b1` | 1,763 M MORPHO | vendió todo en Uniswap V3 (12 operaciones) | 1.546,8 ETH (01:27) | `0x54401f80…` |
+| `0xdd6dbbe6…2296` | 911.985 PROM | solo pudo vender 3.192 (token con comisión); **devolvió 908.793 PROM y 0,54 ETH** a la dirección | — | — |
+| `0x5c23023c…a4fc` | 88,54 M RLUSD (gas de `0x9749`) | lo pasó a `0x008f06f0…` (21:12) → `0xe7024ab8…` (21:20), que lo vendió en pozos de Uniswap V4 y otros entre las 21:29 y las 21:47 | 20.492 + 6.333 ETH (21:48, 22:45) | `0x54401f80…` |
+| `0x3e2bf1ac…32d5` | 0,5 ETH | mandó 0,486 ETH a Arbitrum por un agregador de puentes: es la misma billetera que allí recibió 8.425 ETH y 74,56 M ARB (apartado 8) | — | — |
+| `0x0e772ee6…77d3` | 1 ETH | pruebas: dos envíos pequeños a puentes (Optimism y Arbitrum), un cambio de 457 USDC y un intento fallido por LI.FI | — | — |
+| `0x470b3f37…f0a4` | 20 ETH (de `0x9749`) | devolvió 19,995 ETH: una prueba | — | — |
+
+Además, a la Consolidación C llegaron 2.726,3 ETH de `0x8c7111e9…6aa4` y 7.647 ETH de `0xa97bf783…8d10`, y a la E 274,3 ETH de `0xa3b3dee8…886f`. Esas tres vendedoras no recibieron gas de la dirección y no las he seguido hasta su origen; por el momento y el destino, son del mismo reparto.
+
+**Saldo de las tres consolidaciones nuevas:** C `0x54401f80…` 40.600,7 ETH, D `0x79e70d13…` 34.279,7 ETH, E `0x8d4b8ee6…` 3.236,7 ETH. Ninguna ha sacado nada. Con ellas, los tokens vendidos (apartado 6) produjeron en total unos **135.000 ETH**, no los 54.400 que estimé en la primera pasada.
+
+---
+
+## 8. La dirección rara de Arbitrum: `0x0000000000000000000000000000000000000da0`
+
+Es una **cuenta normal, no un contrato** (no tiene código; las llamadas que le hacen gastan el gas mínimo). No es ninguna dirección del sistema de Arbitrum: las de Arbitrum están entre `0x…0064` y `0x…006d`. Su historial es corto y llamativo:
+
+| Fecha (UTC) | Movimiento |
+|---|---|
+| 21-04-2026 03:35 | recibe **30.765,67 ETH** de `0x5d3919f1…7ccc` |
+| 21-04-2026 03:53 | estafadores le acuñan tokens falsos llamados «Kelp Hacker Shiba» |
+| 15-06-2026 10:18 | envía **30.765,62 ETH** a `0x3b87db6d…6c07` |
+| 30-10-2026 00:18 | recibe **8.425,998 ETH y 74.559.805 ARB** del robo a Binance (desde `0x3e2bf1ac…`) |
+
+Saldo hoy: 8.426,05 ETH y los 74,56 M ARB, sin salidas. El nombre de los tokens falsos sugiere que en abril alguien la asoció públicamente con otro robo (el de Kelp); eso es una pista de los estafadores, **no una prueba**. Lo que sí es un hecho es que una billetera que aparcó 30.766 ETH durante dos meses en primavera vuelve a usarse como aparcamiento para el ETH de este robo. Ninguna de las tres direcciones (`0x…0da0`, `0x5d3919f1…`, `0x3b87db6d…`) tiene etiqueta en nuestra base.
+
+---
+
+## 9. Qué han congelado los otros emisores
+
+Comprobado leyendo los eventos de congelación de cada contrato (cada emisor usa un nombre distinto para el mismo acto):
+
+| Token | Cantidad en la dirección | Emisor | ¿Congelado? | Cuándo (UTC) | Transacción |
+|---|---|---|---|---|---|
+| USDT | 1.175,46 M | Tether | Sí («AddedBlackList») | 29-10 21:01:35 | `0x7baba482…9d8659` |
+| USDC | **823,00 M** | Circle | Sí («Blacklisted») | 29-10 21:04:59 | `0xc954c86f…f4fc5f` |
+| XAUt | 12.574 | Tether Gold | Sí («BlockPlaced») | 29-10 21:11:23 | `0x2d3c3452…78f650` |
+| USD1 | 27,82 M | World Liberty Financial | Sí («Freeze») | 29-10 22:10:35 | `0x171ad455…f9dbc` |
+| PAXG | 1.907 | Paxos | Sí («FreezeAddress») | 29-10 22:30:47 | `0x2ba37ae7…6c699e` |
+| FDUSD | 3,45 M | First Digital | Sí («Freeze») | 30-10 00:46:11 | `0xc3e0477b…fbc6ca` |
+| RLUSD | 88,54 M | Ripple | **No a tiempo** | — | se vendió entero entre las 21:12 y las 21:47 del 29-10 (apartado 7) |
+
+El USDC no estaba en la primera pasada: la dirección recibió 780 M a las 20:41:23 y 43 M a las 20:59:47 desde `0xee7ae85f…4055` (sin etiqueta en nuestra base), y Circle la bloqueó a las 21:04:59, antes de que saliera un solo céntimo. Cuadra con los 823 M$ que la prensa atribuye a Circle.
+
+Resumen: todo lo que quedó dentro de la dirección en monedas estables y oro digital está congelado; lo único que se escapó de un emisor con botón de congelar fue el RLUSD, porque salió de la dirección en 10 minutos y se vendió en media hora. Los tokens que quedan sin congelar (WLFI, SOPH, ZAMA, FUN…) no tienen ese botón o sus emisores no lo han usado; no lo he comprobado uno a uno.
+
+---
+
+## 10. Comprobación 4: etiquetas y conexiones
+
+- **Con etiqueta en nuestra base (comunidad Etherscan, confianza baja):** Binance 14, Binance 16 y el contrato multifirma de Tether `0xc6cde7c3…` (etiquetado como «Bitfinex: MultiSig 2», lo que es coherente: Tether y Bitfinex comparten operadores).
+- **Sin etiqueta en ninguna fuente local:** todas las billeteras de la ruta (`0x9749`, `0x0ddf`, `0x8532`, `0x03b0`, `0x811f`, `0xaa24`, `0x8d53`, `0x77ed`, `0x7aa4`, `0xccbe`, `0xb171`, `0xc887`, `0x897c`, `0x7f9d`, `0x42cd`, `0x3e2b`). Son billeteras nuevas, creadas para esto.
+- **Conexión entre redes:** `0x3e2bf1ac…` recibió 0,5 ETH de gas de la dirección **en Ethereum** (21:29:47), mandó 0,486 ETH a Arbitrum por un agregador de puentes y es la misma que recibió en **Arbitrum** los 8.425 ETH y los 74,56 M ARB (21:36–21:38). Después, en Arbitrum, mandó ambos a `0x0000…0da0` (apartado 8).
+- **Contratos conocidos por los que pasó el dinero** (identificación por conocimiento general, no por etiqueta local): router de agregación de 1inch v6, contrato LI.FI, router universal de Uniswap, gestor de pozos de Uniswap V4, pool y pasarela de Aave V3, router de KyberSwap. Son servicios públicos; su presencia no implica complicidad.
+- **Envenenamiento de direcciones, confirmado:** hay decenas de transferencias de céntimos y de tokens falsos («ЕТΗ», «U⁯S⁯DΤ», «ꓡᎥⲚᏦ», un «ARB» falso en Arbitrum, un «AVAX» falso en Avalanche) desde direcciones que imitan el principio y el final de las reales (`0x9749…c762` falsa `0x97497624…c762`, `0x0ddf…697e` falsa `0x0ddba7c5…697e`, etc.). Es la jugada habitual de estafadores que intentan que el ladrón copie una dirección parecida. La hipótesis del informe de EquipoIA era correcta.
+- **Mensajes dentro de las transacciones:** decenas de terceros escribieron a las billeteras pidiendo dinero, ofreciendo «ayuda» a cambio de 1.000 ETH, o recomendando mezcladores. Son ruido, pero muestran que la ruta era pública en pocas horas.
+- **Base de incidentes propia:** el informe de EquipoIA ya consultó los 295 casos de Ethereum sin coincidencias; esta dirección es nueva (29-10-2026) y aún no está en esa base.
+
+---
+
+## 11. Cronología (UTC, 29 y 30 de octubre de 2026)
+
+| Hora | Hecho |
+|---|---|
+| 20:24:23 | Binance 14 barre 1.615 M USDT, 167.464 ETH, 668 WETH y 60 tokens a la dirección |
+| 20:24:47 | Binance 16 envía 55,7 M USDT, 28.006 ETH y 5 tokens |
+| 20:30:11 | 500 M USDT → `0x9749` |
+| 20:30–20:36 | En Arbitrum y Avalanche llegan 8.426 ETH, 74,56 M ARB y 8,41 M USDt |
+| 20:31–20:49 | `0x9749` cambia 325 M USDT por 122.316 ETH |
+| 20:33:23 | 200 M USDT → `0x0ddf` |
+| 20:38:47 | 195.460 ETH → `0x8532` |
+| 20:41:23 | Llegan 780 M USDC a la dirección (y 43 M más a las 20:59:47) |
+| 20:45:51 | 175 M USDT → `0x811f` → (20:55:03) `0xaa24` |
+| 20:52:59 | 190 M USDT → `0x8d53`; 20:57–21:00 depósito de 60 M en Aave y préstamo de 19.762 ETH |
+| 21:01:35 | **Tether congela la dirección y `0x9749`** |
+| 21:01:47–21:02:47 | Tether congela `0x0ddf` y `0x8d53` |
+| 21:04:59 | **Circle congela la dirección** (823 M USDC dentro) |
+| 21:11:23 | Tether Gold bloquea la dirección (12.574 XAUt) |
+| 21:12–21:47 | 88,54 M RLUSD salen por `0x5c23` → `0x008f` → `0xe702` y se venden |
+| 21:01:59–21:11:59 | 130 M → `0x77ed` → 80 M → `0x7aa4` → 30 M → `0xccbe`; por el camino se cambian 100 M a ETH |
+| 21:04:23 | Binance 14 vuelve a barrer 3,9 M USDT a la dirección ya congelada |
+| 21:12:35–21:19:39 | Tether congela `0x7aa4`, `0xaa24`, `0xccbe` y `0xb171` |
+| 21:35:59 | 57.892 ETH → `0x897c` |
+| 21:36–21:38 | En Arbitrum, 8.425 ETH y 74,56 M ARB → `0x3e2b` |
+| 21:44:11 | Binance 14 barre otros 200,4 M USDT a la dirección congelada |
+| 21:47:47 | 122.310 ETH → `0xc887` |
+| 22:06:39 | **Tether congela Binance 14** |
+| 22:10:35 | World Liberty congela la dirección (27,82 M USD1) |
+| 22:30:47 | Paxos congela la dirección (1.907 PAXG) |
+| 21:50–00:42 | La dirección reparte tokens y 0,5 ETH de gas a catorce auxiliares, que venden (apartado 7) |
+| 22:51–23:24 | `0x42cd` manda 20.523 ETH a `0x897c` |
+| 23:18–05:35 | Las auxiliares mandan el ETH de las ventas a `0x5440`, `0x79e7` y `0x8d4b` |
+| 00:18 | En Arbitrum, 8.426 ETH y 74,56 M ARB → `0x…0da0` |
+| 00:46:11 | First Digital congela la dirección (3,45 M FDUSD) |
+| 23:05 | En Polygon llegan 6,19 M USDT (congelados a las 23:25 según el informe de EquipoIA) |
+| 00:59 | `0x7f9d` manda 15.292 ETH a `0xc887` |
+| 01:00–04:00 | La dirección vende 40 tokens en Uniswap, Sushi, Pancake y Shiba (≈ 18.600 ETH) |
+| 01:14:11 | 2.000 ETH más → `0x8532` |
+| 05:15:47 | 17.260 ETH → `0x03b0` |
+| 09:00–11:30 | Lecturas de este informe: las siete billeteras de ETH siguen sin salidas |
+
+---
+
+## 12. Qué corrige o completa respecto al informe de EquipoIA
+
+1. **Origen.** El informe no tenía el origen de los fondos. Es Binance 14 y Binance 16, firmando ellas mismas.
+2. **Saldo congelado en Ethereum.** El informe decía «no disponible». Es 1.175.464.712,88 USDT (todo lo que entró menos los 700 M que salieron).
+3. **Ruta de los 700 M.** Reconstruida por saldos reales, sin reparto por orden de llegada, y cuadra: 435 M a ETH, 205 M congelados, 60 M en Aave.
+4. **Aave.** No fue un simple depósito: fue garantía para un préstamo de 19.762 ETH que ya se movió.
+5. **Receptores de ETH.** Intactos, y hay dos billeteras más de consolidación (`0xc887` y `0x897c`) que el informe no había encontrado. El botín en ETH libre es de 430.737 ETH, no de 494 M$.
+6. **Congelaciones.** Nueve direcciones congeladas en Ethereum, incluida la propia Binance 14. El informe solo tenía la de la dirección.
+7. **Tokens «sin precio».** Las 652 transferencias sin seguir eran la venta de 40 tokens y el reparto a vendedoras auxiliares; produjeron unos 54.400 ETH.
+8. **Los «routers a medida».** `0x0000…be226`, `0xbeef0296…` y compañía son pasos de agregadores (1inch, LI.FI). La identificación anterior «bot o enrutador a medida (confianza media)» no se sostiene.
+9. **Envenenamiento.** Confirmado con decenas de ejemplos en cuatro redes.
+10. **Importe.** «1.193 M$ salieron» era bruto y mezclaba precios; la cifra útil es la del apartado 1.
+11. **USDC.** Ni el informe ni mi primera pasada vieron que la dirección también recibió 823 M USDC y que Circle la congeló a las 21:04:59.
+12. **Las catorce auxiliares** vendieron trece tokens distintos y juntaron el ETH en tres billeteras más; el botín libre en ETH sube de 430.737 a 508.854 ETH.
+13. **Otros emisores.** USD1, FDUSD, XAUt y PAXG congelaron lo que quedaba; Ripple no llegó a tiempo con los 88,54 M RLUSD.
+
+---
+
+## 13. Límites de esta lectura
+
+- La API de Etherscan devuelve como mucho 2.000 filas por consulta; la dirección tenía 875 transacciones y 794 transferencias de tokens, así que todo cabe. No hay truncado.
+- El valor en dólares usa el cierre diario del 29-10-2026 de la bóveda (2.359,69 $/ETH). El informe de EquipoIA usaba ≈ 2.320 $. Los tokens pequeños no se han valorado uno a uno.
+- Las etiquetas «Binance 14» y «Binance 16» vienen de la lista pública de la comunidad de Etherscan, no de Binance. Las siete billeteras remitentes en Arbitrum, Avalanche y Polygon y la que mandó los 823 M USDC no tienen etiqueta local.
+- No he seguido hasta su origen a las tres vendedoras que no recibieron gas de la dirección (`0x8c7111e9…`, `0xa97bf783…`, `0xa3b3dee8…`), ni he listado qué tokens vendió `0x42cdf00c…`; sus importes de ETH sí están contados.
+- Que `0x…0da0` en Arbitrum tenga que ver con el robo de Kelp de abril es una pista de los nombres de tokens falsos, no una comprobación.
+- La deuda de Aave (19.762 ETH contra 60 M USDT) está cerca de su límite de liquidación a los precios actuales; si se liquida o no es algo que esta lectura no puede predecir.
+- «Sin salidas» significa hasta la hora de lectura. El ETH puede moverse en cualquier momento: para eso está el vigilante del apartado 14.
+
+## 14. Vigilante de salidas de ETH (añadido el 30-oct)
+
+Está montado en `eth-salidas-watch/` (hermano de `tron-salidas-watch/`). Cada 10 minutos, una tarea de Windows («EquipoIA - Vigilante salidas ETH») lee Etherscan y avisa al propietario por el bot de la blacklist si alguna de las siete billeteras de ETH (y la propia dirección) envía o recibe 100 ETH o más, o saca cualquier token; sigue hasta 10 días a cada billetera nueva que reciba ETH de ellas y dice si acaba en una casa de cambio. Las ventas de un mismo token en un ciclo van en un solo aviso. Si no hay movimientos, no manda nada. Detalles, límites y cómo quitarlo: `eth-salidas-watch/README.md`.
+
+## 15. Fuentes externas
+
+- [Euronews — Binance confirma el robo, ~6.300 M$ de impacto y ~3.000 M$ congelados](https://www.euronews.com/2026/10/30/crypto-platform-binance-confirms-major-hack-with-more-than-25bn-frozen)
+- [FinanceFeeds — 3.300 M$ salen de dos billeteras calientes de Binance entre las 20:24 y las 21:04 UTC](https://financefeeds.com/binance-hack-3-3b-hot-wallets-drained-tether-circle-freeze/)
+- [Crypto Briefing — Tether congela más de 1.567 M USDT](https://cryptobriefing.com/tether-freezes-usdt-suspected-binance-hack/)
+- [Crypto Briefing — primera cifra de 971 M USDT congelados](https://cryptobriefing.com/tether-freezes-971m-usdt-binance-hack/)
+- [AMBCrypto — Binance investiga; Tether dice haber congelado 1.567 M](https://ambcrypto.com/binance-investigates-security-reports-as-tether-says-it-froze-over-1-567b-usdt/)
+- [InvestingLive — Binance pausa retiradas; Tether y Circle congelan 2.400 M$](https://investinglive.com/cryptocurrency/binance-pauses-withdrawals-after-suspected-3b-hack-as-tether-circle-freeze-2-4b/)
+
+Las cifras de prensa cambian de hora en hora y ninguna es la fuente oficial; el comunicado de Binance que citan los medios no lo he leído de primera mano.
+
+## 16. Referencias para verificar en Etherscan
+
+Hashes completos de lo esencial (los del informe de EquipoIA siguen siendo válidos):
+
+- Barrido inicial de Binance 14: `0x53bd38b816c23e74134786c29a8c18d792777998a3b9326047b583100e88e2f3`
+- 500 M USDT: `0x68d7d69deaeb9750c38020b4f8d3728146ca8d2267eba1e38cf9b56722ad659a`
+- 200 M USDT: `0x1fc0ef33a767132edad434834a5555b30fcb5a171206c03b86175ef6dafac81c`
+- 195.460 ETH: `0x551d7961652e6d9835b11988908adf86ebe480badb4ce2d7d52193b2b1b02c76`
+- 2.000 ETH: `0x48186565bdd78b13e516cf5deaf8431d839eed211205718aa90cdb44ae64e84a`
+- 17.260 ETH: `0x9edf86533e73658700c5dadb2432dd7bebb628dc0f5fe37991c241f537856071`
+- Congelación de la dirección: `0x7baba482077843514d9c72bac0110ba0916b0814288a72917e2c3bb27a9d8659`
+- Congelación de Binance 14: `0x312e166cb9e602582f426288f755a4b08e1eddb456b7e4bd614adae11080d305`
+- 122.310 ETH → `0xc887`: `0xbd7822f7ee21e577a1ada80f881791071677a6797c4c1d5fa49ac1cfaf8bfa66`
+- 57.891,77 ETH → `0x897c`: `0x2552fea8c4e4e9e9251ef4ec82ea8cfc214feda8c21e77f4ce07779b1d561fb1`
+- Préstamos en Aave: `0x01b3406c2bcf1b9206c38dce48a9a98f9fb988438cc971f374ea5ed982e2d870` y `0xa85ad4807b33ad63ba2b2ffbac63d913285eefe44d7e56495a4856e6374d9d5f`
+- 175 M USDT → `0xaa24`: `0xb6d7d3ffcbdd0465e1ab743a8d943218176cac7b15edefa7b7bcd5e853e4266f`
+- 30 M USDT → `0xb171`: `0x1e6f851d072ae0ad448dca2446552cbb4e76516029b34980d5189e4353aae7a7`
+- 780 M USDC a la dirección: `0xdc102dd89dded5a83f1008906883ffb7c81ff3b7d7965d8c7277d170b5e17481`
+- Congelación de Circle (USDC): `0xc954c86f118e8e410e6a3eb9e3b38ff4a95fbdae9d2d58e13166afb7a1f4fc5f`
+- Bloqueo de Tether Gold (XAUt): `0x2d3c345297a3e8716a36992f2bf742afdb176fd6ceab1397ddc356e8cb78f650`
+- Congelación de World Liberty (USD1): `0x171ad4552ef6e3958bd62febeb0b3ac7567577dfda909a505b6a1a5b9edf9dbc`
+- Congelación de Paxos (PAXG): `0x2ba37ae7e5c74ef650705954fc9d16ce2cdb00b85c14bca6cbc1dce25d6c699e`
+- Congelación de First Digital (FDUSD): `0xc3e0477b85a08abf072ad21af755046d88f33714125fd22786c9806f99fbc6ca`
+- 14.040 ETH (PEPE vendido) → `0x79e7`: `0xa024c760b7fcabe748798b52c4806f4581389f770acff43ebac2938c4961d2e4`
+- 20.492 ETH (RLUSD vendido) → `0x5440`: `0x5c7117134ed0965ef6126f9a60f257e7d553d2f1f57141935bad586bb4c2eeaa`
+- En Arbitrum, 8.426 ETH → `0x…0da0`: `0x410af166c81f9c0f26cc19b4d970c984f526225eeea2aea169179856fd615f70`
+
+Datos en bruto (respuestas completas de la API): `research/binance-0x5227-2026-10-30/raw/`.
+
+---
+
+**Anexo del 30-oct (tarde):** la pata en TRON del mismo robo (Binance-Hot 7 → 612,7 M USDT + 46,4 M TRX; 378,7 M USDT congelados por Tether; ≈ 684,6 M TRX en reparto) está en [INVESTIGACION-BINANCE-0x5227-2026-10-30-TRON.md](INVESTIGACION-BINANCE-0x5227-2026-10-30-TRON.md).
+
+---
+
+**Actualización del 30-oct (22:45, Madrid):** el seguimiento actualizado de Ethereum y toda la parte de TRON están en [INFORME-COMPLETO-ROBO-BINANCE-2026-10-30.md](INFORME-COMPLETO-ROBO-BINANCE-2026-10-30.md). Los datos de Ethereum de este informe siguen vigentes: los 508.854 ETH no se han movido.

@@ -1,0 +1,30 @@
+'use strict';
+// Across (puente): los envíos al ejecutor de Across en TRON (Tron_Executor) se consultan en la API pública de estado de Across con el hash del depósito: cadena de destino, hash de la llegada y estado.
+// Con el hash de la llegada se lee el recibo en el RPC público de la cadena de destino y se decodifica el evento FilledRelay (identificado por el depositId): token y importe entregados y RECEPTOR.
+// Solo lectura. Uso: node across-llegadas.cjs <carpeta-del-tramo>  → <tramo>/across-llegadas.json (reanudable)
+const fs = require('node:fs'); const path = require('node:path');
+const dir = process.argv[2]; if (!dir) { console.error('uso: node across-llegadas.cjs <carpeta-del-tramo>'); process.exit(1); }
+const sleep = ms => new Promise(r => setTimeout(r, ms)); const EJECUTOR = 'TANdmAmc5jyNEFB1gXbEBfaG7Ftj1XNUG1';
+const RPC = { 1: 'https://ethereum-rpc.publicnode.com', 10: 'https://optimism-rpc.publicnode.com', 56: 'https://bsc-rpc.publicnode.com', 137: 'https://polygon-bor-rpc.publicnode.com', 8453: 'https://base-rpc.publicnode.com', 42161: 'https://arbitrum-one-rpc.publicnode.com' };
+const NOMBRE = { 1: 'Ethereum', 10: 'Optimism', 56: 'BNB Chain', 137: 'Polygon', 8453: 'Base', 42161: 'Arbitrum', 130: 'Unichain', 59144: 'Linea', 324: 'zkSync Era', 534352: 'Scroll', 480: 'World Chain', 81457: 'Blast', 34443: 'Mode', 232: 'Lens', 1868: 'Soneium', 41455: 'Aleph Zero', 690: 'Redstone', 7777777: 'Zora', 57073: 'Ink', 34268394551451: 'Solana' };
+async function jget(u) { for (let i = 0; i < 6; i++) { try { const r = await fetch(u, { signal: AbortSignal.timeout(30000) }); if (r.status === 429) { await sleep(2500 * (i + 1)); continue; } if (r.status === 404) return { noEncontrada: true }; return await r.json(); } catch { await sleep(1500 * (i + 1)); } } return null; }
+async function rpc(cadena, method, params) { const u = RPC[cadena]; if (!u) return undefined; for (let i = 0; i < 5; i++) { try { const r = await fetch(u, { method: 'POST', headers: { 'content-type': 'application/json' }, body: JSON.stringify({ jsonrpc: '2.0', id: 1, method, params }), signal: AbortSignal.timeout(30000) }); const j = await r.json(); if (j.result !== undefined) return j.result; } catch {} await sleep(900 * (i + 1)); } return null; }
+const addr = w => '0x' + w.slice(24);
+(async () => {
+  const A = JSON.parse(fs.readFileSync(path.join(dir, fs.readdirSync(dir).find(x => /^tramo\d+-aristas-terminales\.json$/.test(x))), 'utf8')); const envios = A.filter(e => e.tipo === 'puente' && e.a === EJECUTOR);
+  const out = path.join(dir, 'across-llegadas.json'); let S = {}; try { S = JSON.parse(fs.readFileSync(out, 'utf8')); } catch { /* primera vez */ }
+  const cola = envios.filter(e => !S[e.tx] || S[e.tx].error); console.log('envíos al ejecutor de Across', envios.length, '| por consultar', cola.length); let n = 0;
+  for (const e of cola) {
+    const st = await jget('https://app.across.to/api/deposit/status?originChainId=728126428&depositTxnRef=' + e.tx); await sleep(250);
+    if (!st) { S[e.tx] = { error: 'sin lectura' }; continue; } if (st.noEncontrada || !st.status) { S[e.tx] = { noEncontrada: true, de: e.de, v: e.v, tainted: e.tainted }; continue; }
+    const r = { de: e.de, v: e.v, tainted: e.tainted, at: e.at, estado: st.status, cadenaDestino: st.destinationChainId, nombreDestino: NOMBRE[st.destinationChainId] || ('cadena ' + st.destinationChainId), llegadaTx: st.fillTxnRef || st.fillTx || null, reembolsoTx: st.depositRefundTxnRef || null, depositId: st.depositId };
+    if (r.llegadaTx && RPC[r.cadenaDestino]) { const rc = await rpc(r.cadenaDestino, 'eth_getTransactionReceipt', [r.llegadaTx]); await sleep(150); if (rc && rc.logs) { const idHex = BigInt(st.depositId).toString(16).padStart(64, '0'); const lg = rc.logs.find(l => l.topics.some(t => t.slice(2) === idHex)); if (lg) { const w = []; for (let i = 2; i < lg.data.length; i += 64) w.push(lg.data.slice(i, i + 64)); r.evento = { contrato: lg.address, tokenEntrada: addr(w[0]), tokenSalida: addr(w[1]), importeEntrada: Number(BigInt('0x' + w[2])), importeSalida: Number(BigInt('0x' + w[3])), receptor: addr(w[9]), palabras: w.length }; } else r.evento = { noEncontrado: true }; } }
+    S[e.tx] = r; if (++n % 20 === 0) { fs.writeFileSync(out, JSON.stringify(S)); console.log('  …', n); } }
+  // clasificar a los receptores (¿contrato? ¿nombre?) con el RPC público y Etherscan
+  const { loadEtherscanKey } = require('../../tether-blacklist/src/adapters/bot.cjs'); const K = loadEtherscanKey({ file: path.join(__dirname, '..', '..', 'tether-blacklist', 'config.secret.json') }); const rcp = {};
+  for (const x of Object.values(S)) { if (!x.evento || !x.evento.receptor) continue; const k = x.cadenaDestino + ':' + x.evento.receptor; if (rcp[k] || x.cadenaDestino !== 1) continue; const code = await rpc(1, 'eth_getCode', [x.evento.receptor, 'latest']); let nombre = ''; try { const r = await jget('https://api.etherscan.io/v2/api?' + new URLSearchParams({ chainid: 1, module: 'contract', action: 'getsourcecode', address: x.evento.receptor, apikey: K.key })); nombre = (r && r.result && r.result[0] && r.result[0].ContractName) || ''; } catch {} rcp[k] = { esContrato: !!code && code !== '0x', nombre, leidoEn: new Date().toISOString() }; await sleep(250); }
+  fs.writeFileSync(path.join(dir, 'across-receptores.json'), JSON.stringify(rcp));
+  fs.writeFileSync(out, JSON.stringify(S));
+  const v = Object.values(S).filter(x => !x.error); const por = {}; for (const x of v) { if (x.noEncontrada) continue; const k = (x.nombreDestino || '?') + ' · ' + x.estado; const o = por[k] || (por[k] = { n: 0, v: 0 }); o.n++; o.v += x.v; }
+  console.log('consultados', Object.keys(S).length, '| sin dato', Object.values(S).filter(x => x.noEncontrada || x.error).length, '| con evento decodificado', v.filter(x => x.evento && x.evento.receptor).length, '| receptores distintos', new Set(v.filter(x => x.evento && x.evento.receptor).map(x => x.cadenaDestino + x.evento.receptor)).size); console.log(JSON.stringify(por));
+})();

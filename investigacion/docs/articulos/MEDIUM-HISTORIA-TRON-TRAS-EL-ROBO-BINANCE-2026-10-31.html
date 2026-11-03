@@ -1,0 +1,351 @@
+<!doctype html>
+<html lang="es"><head><meta charset="utf-8"><title>Informe para Medium</title>
+<style>body{font-family:Georgia,serif;max-width:740px;margin:40px auto;line-height:1.5;color:#222}pre{background:#f4f4f4;padding:12px;overflow-x:auto;font-size:13px;line-height:1.35}code{background:#f4f4f4;padding:1px 4px}h1{font-size:30px}h2{font-size:24px;margin-top:36px}h3{font-size:19px}</style></head><body>
+<h1>Historia de TRON tras el robo a Binance: qué pasó, adónde fue el dinero y qué se ha comprobado</h1>
+<p><strong>Qué es.</strong> Un solo documento con todo lo ocurrido en TRON desde el robo del 29-oct-2026 hasta la mañana del 31-oct (10:17 UTC, 11:17 en Madrid): el robo, lo que congeló Tether, el reparto del TRX, el blanqueo, las llegadas a casas de cambio, <strong>los puentes hacia otras cadenas (nuevo)</strong>, por qué siguen llegando avisos al bot, y <strong>una auditoría de las cifras contra datos nuevos de TronGrid y TronScan (nuevo)</strong>. Reúne y corrige el <a href="INFORME-COMPLETO-ROBO-BINANCE-2026-10-30.md">informe completo del 30-oct</a> y el <a href="INFORME-TRAZABILIDAD-TRX-ROBO-BINANCE-2026-10-31.md">informe de trazabilidad del 31-oct</a>; las cifras de aquellos informes se mantienen salvo lo que se indica en el apartado 9.</p>
+<p><strong>Horas</strong> en UTC salvo que se diga otra cosa (Madrid va una hora por delante desde el 25-oct). El TRX se valora a 0,352 $ y el USDT a 1 $. «Foto» = las 22:40 UTC del 30-oct, la hora a la que están fijadas las cifras del rastreo.</p>
+<p><strong>Fuentes.</strong> TronGrid y TronScan en vivo; Etherscan v2 (Ethereum y Arbitrum); LayerZero Scan (estado de los envíos por el puente USDT0); los registros de los dos vigilantes. Los datos en bruto están en <code>research/binance-0x5227-2026-10-30/tron/</code>.</p>
+<h2>1. Resumen</h2>
+<ul>
+<li><strong>El robo en TRON:</strong> 612.729.468 USDT y 46.394.098 TRX, sacados de Binance-Hot 7 en tres minutos (29-oct, 20:20 a 20:22).</li>
+<li><strong>Tether congeló 378.719.468 USDT</strong> (61,8 %) de las dos primeras billeteras, 47 minutos después. El resto escapó: 234 M USDT que el ladrón cambió por <strong>638.190.941 TRX</strong>, más los 46,4 M TRX directos. En total <strong>≈ 684,6 M TRX (≈ 241 M$)</strong>.</li>
+<li><strong>Dónde está hoy el TRX escapado:</strong></li>
+<li><strong>278.200.902 TRX (97,9 M$) siguen quietos en dos depósitos</strong>: <code>TKkH2vH6…</code> (158,2 M) y <code>TJajtPqD…</code> (120 M). Ninguno ha emitido una sola transacción.</li>
+<li>Los otros dos depósitos se han vaciado hacia la billetera de reparto <code>TRBdWq…</code>: <code>TL2F4Ghn…</code> el 31-oct a las 01:01 UTC y <code>TCBAz7it…</code> a las 07:58 UTC, 120 M TRX cada uno.</li>
+<li><code>TRBdWq…</code> ha recibido en total 406,4 M TRX, conserva unos <strong>95 M TRX</strong> y <strong>ha repartido el resto</strong>.</li>
+<li><strong>El ritmo se ha duplicado.</strong> Hasta la foto, <code>TRBdWq…</code> repartía <strong>2,5 M$ por hora</strong> (379 envíos, 50,8 M$, 122 billeteras). <strong>Desde la foto, en 11,5 horas, ha hecho 352 envíos por 58,5 M$ (5,1 M$ por hora) a 48 billeteras</strong>, 33 de ellas nuevas. Esas 33 ya las tiene el vigilante (32 de 33), pero <strong>este tramo posterior a la foto no está rastreado con el método del apartado 4</strong>: solo se conoce el primer salto.</li>
+<li><strong>Adónde llegó lo rastreado (a la foto):</strong> el 50 % a nodos de servicio, el 22 % retenido, el 9 % a préstamos (JustLend), el 5 % a puentes, el 1 % a USDD, el 3 % envíos menores; <strong>11 % sin explicar</strong>. <strong>Ninguna billetera de paso envía directamente a una casa de cambio con nombre.</strong></li>
+<li><strong>Puentes (nuevo):</strong> el dinero ha salido de TRON hacia Ethereum y Arbitrum por el puente USDT0 (LayerZero) en <strong>186 envíos por 8,0 M$ brutos</strong>; de ellos <strong>183 llegaron y 3 no</strong> (157.000 $, parados: apartado 6.2). Dentro del recorrido rastreado son <strong>149 envíos, 5,07 M$ brutos, unos 3,9 M$ estimados del robo</strong>. Una parte vuelve a TRON por THORChain (apartado 6.4).</li>
+<li><strong>Auditoría (nuevo, apartado 8):</strong> de 16 transacciones de la cadena de custodia, 15 coinciden en todo con TronGrid y TronScan; <strong>la decimosexta tenía mal la hora en mis informes</strong> (01:01 UTC, no 01:01 de Madrid). De 120 envíos finales al azar coinciden las 120. El reparto de <code>TRBdWq…</code> recalculado desde cero da <strong>exactamente</strong> las cifras del informe. De 70 billeteras al azar, el rastreo no se dejó ninguna transferencia que TronScan sí lista. <strong>Un fallo propio encontrado y corregido:</strong> mi primera descodificación de puentes dejó fuera nueve envíos grandes y puso mal la pureza de ocho (apartado 8.4).</li>
+</ul>
+<h2>2. Cronología</h2>
+<pre>Hora (UTC)           Qué pasó                                      Hash
+-------------------  --------------------------------------------  --------------------------------------------
+29-oct 20:19         Se crea TG5iBMQ…, la primera billetera del
+                     ladrón
+20:20:00             Binance-Hot 7 manda 10.000 TRX de prueba      6f983ab745fbea298ec6376054fb16155f3142ec0d9f
+                                                                   3fec4c053220cafc9644
+20:21:12             46.384.098 TRX                                72f5fbedbc4d6f70113e139312eef09fb28a5fefd49d
+                                                                   321bc1e28b6cea5bab9c
+20:22:45             612.729.468 USDT                              4203af9ca1833d09c05666eafbd70d703a3811c0bdcf
+                                                                   125106685ab75958253e
+20:45:51 y 20:56:09  TG5iBMQ… pasa 100 M y 200 M USDT a TPBkSj…    fd8061aaa787ce89d707184dbfdd436a578c7840d674
+                                                                   505067725de727c06222,
+                                                                   d40f96e23e95b7ace0ebacd3892f0a1f37555a64da69
+                                                                   feedba73443dee4920ee
+20:47 a 21:14        TPBkSj… hace 16 cambios en SunSwap: 234 M
+                     USDT por 638,19 M TRX
+20:56:12             288.330.000 TRX a TSpe5HC3…                   4b329d4495bcdd8df40117cd478f13c5027988147c7d
+                                                                   eb9add5e4aee3b8107c4
+21:09:12             Tether congela TG5iBMQ… (312.729.468 USDT)    71b0ec0fe873fe820c37cc3ecbab4e83087f87e833d1
+                                                                   91012a0a4027d20594e1
+21:16                El ladrón aparta 65.990.000 USDT en TCzBTk…
+21:17:39             Tether congela TPBkSj… (vacía)                bc4e4a76bd262307a4d005d9745e2e8cf3bfe7d38e2a
+                                                                   e4d5fcfaa40376721f40
+21:21:12             Tether congela TCzBTk… (65.990.000 USDT)      176a5783fd70f5abbae9569f60398afe5307eefa9d06
+                                                                   982ae5a9351e2cbc0f13
+21:42:42             349.860.942 TRX a TSpe5HC3…                   fb5089f5ce2ae9be6f8e5e3f78470a5a8d694879ac68
+                                                                   f6c8cfe3d81450fa6149
+21:43:27             9.987 TRX de TCzBTk… a TSpe5HC3…              f4d4e4c665c301159ba35210db65377908f764789480
+                                                                   b5b2a2b371494b42245a
+30-oct 00:06:09      TG5iBMQ… manda los 46,4 M TRX directos a      6adfc066520a5880df18eebc61bf048d03e8d7a0fca2
+                     TRBdWq…                                       3b04a6b36c9723892736
+02:19                TRBdWq… empieza a repartir
+10:15 a 10:20        TSpe5HC3… reparte los 638,2 M TRX en cinco
+                     envíos (apartado 3)
+10:20:48             TAk1xJNW… pasa sus 120 M a TRBdWq…            0ae2b5a4e1c8849d09e16db5a4dd9d90f7224c3b996a
+                                                                   80ccad113bd5b81acd39
+17:00 a 17:30        37 bloqueos de Tether a direcciones sin
+                     relación visible con el recorrido
+22:05 a 22:12        Tether bloquea 6 direcciones más (2 de ellas
+                     ya vigiladas)
+22:40                Foto del rastreo
+31-oct 01:01:15      TL2F4Ghn… manda 120 M TRX a TRBdWq…           bb05d43bfde6cb869448ad03bf06969e32cc7cd77252
+                                                                   a78d41dd7f7c26dbf0b3
+07:58:48             TCBAz7it… manda 120 M TRX a TRBdWq…           d3684f76b615028b350c294c2c774313af2212319de6
+                                                                   53f5a04ff68bc351d465
+10:11                Último envío de TRBdWq… incluido en este
+                     documento</pre>
+<h2>3. El reparto del 30-oct y dónde está hoy</h2>
+<p><code>TSpe5HC3PRD2svJcr1YoGszhHk2mtkyZ8A</code> guardó el TRX toda la noche y entre las 10:15 y las 10:20 UTC lo repartió:</p>
+<pre>Hora (UTC)  A                                   TRX          Hash                                          Estado hoy
+----------  ----------------------------------  -----------  --------------------------------------------  ------------------------------------
+10:15:21    TAk1xJNWuBYvJHLsUiBFLeuK6xvpQUFYP5  120.000.000  9d0904db84e640d37e9fee8badef0883043db77f5bf9  pasó todo a TRBdWq… a las 10:20:48
+                                                             c87ca76e220e0c35c487
+10:18:09    TL2F4GhnaFVZBZPncHYjwfYZFW44NcfVwj  120.000.000  16585e9664a0e7e74d67caeba2ecdc9869ec9a84a287  vaciada el 31-oct 01:01:15 → TRBdWq…
+                                                             dc078a12d34ca078c0d1
+10:18:42    TCBAz7itvtX5CjBzVMPQdrbwQLN63ao1fk  120.000.000  037428516b343a326157ae75495ad3227b43e4a4cb0c  vaciada el 31-oct 07:58:48 → TRBdWq…
+                                                             8c3837e849d7a18d556e
+10:19:24    TJajtPqDqUGh1Sr1j8ugHoSXBVpaFLLHKT  120.000.000  3db47d891cc211c300f9ba1aec264bfca8f9e32fbe22  quieta
+                                                             0c411f30789a31ac8370
+10:20:18    TKkH2vH6kyi2QKcMbqym53WMuvdd1xvw6K  158.200.900  aff887c4be7cd52eb8905899fc9596eaaf9c49dea591  quieta
+                                                             29519ce25d7c69762334</pre>
+<p>Total repartido: 638.200.900 TRX.</p>
+<p><strong>Saldos leídos hoy en las dos fuentes</strong> (coinciden al TRX):</p>
+<pre>Billetera  TRX                                           USDT
+---------  --------------------------------------------  ------------------------
+TKkH2vH6…  158.200.902                                   0
+TJajtPqD…  120.000.000                                   0
+TCBAz7it…  0                                             0
+TL2F4Ghn…  0                                             0
+TRBdWq…    97.213.060 (94.976.173 en una lectura         3
+           posterior)
+TSpe5HC3…  37                                            0
+TG5iBMQ…   0                                             312.729.468 (congelados)
+TCzBTk…    0                                             65.990.000 (congelados)</pre>
+<p><strong>Tether, comprobado en cadena:</strong> <code>TG5iBMQ…</code> y <code>TCzBTk…</code> están bloqueadas y siguen teniendo dentro 312.729.468 y 65.990.000 USDT. Binance-Hot 7 no está bloqueada. El contrato de USDT registra hoy <strong>67 bloqueos de 66 direcciones</strong> desde el 29-oct (el informe del 30-oct contaba 61 de 60: los 6 nuevos son de las 22:05 a las 22:12 del 30-oct). Las 51 direcciones de la «segunda oleada» siguen todas bloqueadas; hoy suman 5,28 M USDT dentro (el informe decía 3,41 M; no sé por qué han subido: un bloqueo impide sacar, no recibir).</p>
+<h2>4. El blanqueo, a la hora de la foto</h2>
+<p><strong>Cómo se midió.</strong> Cada billetera que recibe 10.000 TRX (3.520 $) o más del robo se lee en vivo y se siguen sus salidas, sin tope de saltos, billeteras ni días: <strong>1.347 billeteras en 18 niveles</strong> desde <code>TRBdWq…</code>, y otras 2.898 en el segundo tramo. La parte que es del robo en cada billetera se calcula con la regla de la mezcla proporcional. Los cambios en enrutadores (SunSwap, BWSwap…) no cortan la traza: se descodifica cada cambio para ver adónde va el resultado.</p>
+<p><strong>Dónde acaban los 50,8 M$ que <code>TRBdWq…</code> repartió hasta la foto:</strong></p>
+<pre>Destino                                       Dinero del robo  Parte
+--------------------------------------------  ---------------  -----
+Nodos de servicio (billeteras con miles de    25,3 M$          50 %
+operaciones)
+Retenido en billeteras del recorrido          11,2 M$          22 %
+Préstamos (JustLend)                          4,8 M$           9 %
+Puente de USDT a otras cadenas                2,4 M$           5 %
+Conversión a USDD                             0,3 M$           1 %
+Envíos menores de 10.000 TRX, no seguidos     1,4 M$           3 %
+Sin explicar                                  5,5 M$           11 %
+Casas de cambio, directo desde una billetera  0                0 %
+de paso</pre>
+<p><strong>Los dos puntos por los que pasa la mitad del dinero:</strong></p>
+<ul>
+<li><code>TM8uyBjRKzFtQdMC7tQLvKeeWieaFvXDyc</code>: recibe el resultado de cientos de cambios hechos desde 371 billeteras. <strong>12,16 M$ del robo en 1.069 envíos.</strong> Es un punto de paso: el 93 % de lo que sale va a <code>TZG47zhb8kcriWQ2rE719yHs1KqgzwMrvF</code>, un nodo de 317.000 operaciones, donde el rastreo ya no puede seguir con rigor.</li>
+<li><strong>El grupo de cinco billeteras creadas el 11-oct</strong> entre las 23:35:09 y las 23:36:33 UTC (<code>THPaGKe6aZkUcNht24hcscZPLwtcJAbpun</code>, <code>TGSNahJvAdh86aR5pdcxiep1mBWSRK3HHL</code>, <code>TBAPnuwEht65McDbxDvDYs2XLRSSbYQMUM</code>, <code>TLKfB2goHRY1SykEpVbiGdsesACrkCxCeW</code>, <code>TH1YKH9MUuJtDmekPia4x9fZXAcpPrMv8B</code>): <strong>11,85 M$</strong> en 603 envíos. Parecen infraestructura de este blanqueo, pero es una <strong>hipótesis</strong>: no puedo decir quién las controla.</li>
+</ul>
+<p><strong>Del grupo y de <code>TM8uyBjRKz…</code> a las casas de cambio (segundo tramo, estimación):</strong> 249 envíos a siete casas, unos 12,5 M$ brutos, de los que <strong>≈ 4,15 M$ se estiman del robo</strong>: Bybit 2,21 M$, OKX 0,95, Gate 0,74, KuCoin 0,14, Bitget 0,08, MXC 0,02, Kraken 0,005. Lo envían billeteras de un solo uso, casi con seguridad direcciones de depósito de clientes de cada casa. Los nombres de las siete billeteras calientes están confirmados por la etiqueta pública de TronScan. El mayor destino del segundo tramo es <code>TZG47zhb8k…</code> (11,44 M$ estimados): ahí el rastreo se detiene.</p>
+<p><strong>Lo que ha pasado desde la foto</strong> (22:41 a 10:11 UTC, solo primer salto): 352 envíos, <strong>166,2 M TRX = 58,5 M$</strong>, a 48 billeteras. 15 de ellas ya habían recibido antes (29,0 M$); 33 son nuevas (29,5 M$). Los destinos mayores reciben 6,8 M$, 6,8 M$ y 6,5 M$. <strong>No he seguido adónde van después</strong>; repetir el rastreo con <code>traza.cjs</code> actualizaría el cuadro.</p>
+<h2>5. Los puentes hacia otras cadenas</h2>
+<p>Hasta ahora los informes decían «este rastreo no sigue lo que sale de TRON por el puente». Ahora sí: se descodifica la llamada de cada envío para leer la cadena y la dirección de destino, y se comprueba con el mensaje registrado por LayerZero.</p>
+<h3>5.1 Qué puentes se usan</h3>
+<pre>Puente                                        Envíos  Bruto    Robo estimado                Cómo se lee el destino
+--------------------------------------------  ------  -------  ---------------------------  --------------------------------------------
+USDT0 / LayerZero (UsdtOFT)                   186     8,0 M$   ≈ 3,9 M$ dentro del rastreo  La llamada trae la cadena (código de
+                                                                                            LayerZero), la dirección y el importe: leído
+                                                                                            y confirmado con LayerZero
+Rango (RangoDiamond, etiqueta «TrustWallet»)  25      0,33 M$  0,18 M$                      El destino no está en la llamada: no leído
+Bridgers                                      24      0,17 M$  0,08 M$                      El texto de la llamada trae cadena y
+                                                                                            dirección: leído en 18 de 24
+Tron_PrefundedAdapter                         3       0,14 M$  0                            No descodificado</pre>
+<h3>5.2 USDT0: hacia qué cadenas</h3>
+<pre>Cadena                      Envíos  Bruto
+--------------------------  ------  -------
+Ethereum                    168     7,83 M$
+Arbitrum                    18      0,17 M$
+Otras (Base, Solana, BNB…)  0</pre>
+<p>Las <strong>52 direcciones</strong> de destino en Ethereum y Arbitrum (más una de un solo salto, <code>0x9de7ead3…</code>) se han seguido con Etherscan. <strong>Ninguna de las direcciones del robo en Ethereum (las ocho billeteras de los 508.854 ETH) recibe de este puente.</strong> Las mayores:</p>
+<pre>Dirección en Ethereum                       Envíos  Bruto      Robo estimado  Qué hace después
+------------------------------------------  ------  ---------  -------------  --------------------------------------------
+0x68fbc6f669dd0c7aa3b3307979ee518473717037  3       550.433 $  545.314 $      lo reenvía todo en 10 minutos, sobre todo a
+                                                                              Uniswap
+0x1645dc4b3c9d6fd8ec9d21dcc07099c6924d9f1d  3       490.704 $  485.927 $      lo reenvía todo, sobre todo a Uniswap
+0x8db6f39a49f7e26e2e85de598f9faf18e1c570ad  3       515.797 $  402.322 $      lo reenvía todo, sobre todo a Uniswap
+0xbe6eedf71ae89f9d8517ac35595f08195790b77e  14      392.043 $  286.360 $      THORChain (810.000 $) y contratos; tiene
+                                                                              78.000 USDC dentro
+0x3a793b6ffea212acc8e2d2b9b45a3db7c9c4248d  1       244.103 $  190.400 $      lo reenvía todo en 9 minutos a Uniswap
+0xb8ea8bdf42629587be3b67260cce0d2383b81330  1       243.959 $  190.288 $      lo reenvía todo en menos de un minuto a
+                                                                              Uniswap
+0x9af28eb4506c4dee5edaaf4d0d9e9f2685a800d3  21      239.546 $  174.363 $      THORChain y Permit2
+0x3614504fc81cb09ea6d01514d532bebe8d211b4e  11      210.000 $  150.633 $      THORChain; tiene 105.000 USDT dentro
+0x111c09990a872946128a2acd26af398513d97ce5  1       122.714 $  122.714 $      el envío no llegó (apartado 5.3)</pre>
+<ul>
+<li><strong>Lo que hacen las direcciones:</strong> reenvían casi todo en minutos u horas a contratos de intercambio: Uniswap V3 y V4, THORChain, CoW Protocol (GPv2Settlement), Permit2 y contratos sin verificar. <strong>Solo 6 de las 52 conservan 10.000 $ o más</strong> de stablecoins (552.674 $ en conjunto). Ninguna tiene etiqueta pública conocida.</li>
+<li><strong>Cautela importante.</strong> Estas direcciones reciben 17 M$ en total de stablecoins desde el 30-oct, pero solo 7,8 M$ vienen de TRON: <strong>mezclan dinero ajeno</strong>. Por eso la parte del robo es una estimación (cada envío lleva la pureza de la billetera de origen), no un importe comprobado.</li>
+<li><strong>Lo que no sé:</strong> adónde fue el dinero cuando se cambió en Uniswap, CoW o THORChain por otros activos (ETH, tokens). No he seguido esos activos.</li>
+</ul>
+<h3>5.3 Tres envíos que LayerZero no ha entregado</h3>
+<p>LayerZero Scan marca como <strong>«en camino»</strong> tres envíos, con los dos verificadores del puente (el de USDT0 y el de LayerZero Labs) en espera y con una anulación («nilify») registrada en el destino. <strong>No han llegado a Ethereum.</strong> Suman <strong>157.220 $</strong>:</p>
+<pre>Hora (UTC)    Desde (TRON)                        Destino                                     $        Hash
+------------  ----------------------------------  ------------------------------------------  -------  --------------------------------------------
+30-oct 21:07  TUEVnWHrugeMo3eU7gQxDSLWjF5ZtH6G3a  0x111c09990a872946128a2acd26af398513d97ce5  122.714  b135ffe83949483d788365c738918aec1096d522e6c3
+                                                                                                       a8c981dd78758749405b
+30-oct 03:07  TQXm9qEL64YmGAzZoMspM8qyWPZ3tbqt6X  0xb196981c37cfe105506613d1bd4153b9e63df92e  1.000    dfda4053e466029007cbbcb5d1c56bbc381bb64b0a51
+                                                                                                       cedb11d954cbe55681ec
+31-oct 01:04  TCYwSgYdNJ34i9qi5yNovGJ2p9kr8WrizW  0x1c59fed4188b8c1c11bd9aa0b3264e7c1648a528  33.506   e4b0de534b89485f533d106dc668025fa1fa00a4e6eb
+                                                                                                       6df757f5dafc162dcb55</pre>
+<p><strong>Qué sí sé:</strong> que el destino no ha recibido nada (Etherscan: la dirección <code>0x111c0999…</code> no tiene ni una transferencia de tokens en Ethereum, Arbitrum ni Polygon) y que LayerZero lo registra como no entregado. <strong>Qué no sé:</strong> por qué. Que el verificador de USDT0 esté en espera encaja con un bloqueo deliberado de Tether, pero <strong>es una hipótesis</strong>: el estado público no dice quién ni por qué. Lo que sí queda claro es que el dinero de esos tres envíos <strong>salió de TRON y no ha llegado a su destino</strong>.</p>
+<h3>5.4 El regreso a TRON por THORChain</h3>
+<p>Las direcciones de Ethereum de 5.2 hicieron <strong>1.600 operaciones en THORChain por 11,8 M$</strong> (30-oct 14:53 a 31-oct 10:22). De ellas, <strong>1.580 piden recibir el dinero en TRON</strong> (11 direcciones TRON) y 20 en USDT de TRON (5 direcciones):</p>
+<pre>Dirección TRON de destino           Operaciones  $       Creada
+----------------------------------  -----------  ------  -----------
+TBPJerxz9X35ZNqxuMrK9QmpneGgBgB7Vv  282          2,88 M  30-oct
+TZ274LXvxXBar5ZHqNNEs4YSz5yAwfx7VY  194          1,98 M  17-feb-2023
+TK84SxT4dwmST5vWnPEaBa9wiNEERw1f3G  240          1,46 M  29-oct
+TUNVyMEp5VEuYidTGjt4Z6djSba2N7uPRk  221          1,33 M  29-oct
+TG8gkMdZJDiBH8hbWtH46URyA7AAk3W1RC  141          1,26 M  30-oct
+TYm639gyyUCWsCjMta7x2fUbrGkFsssZpd  197          1,09 M  30-oct
+otras cinco                                      1,8 M</pre>
+<ul>
+<li><strong>Las 11 ya estaban en el árbol del vigilante.</strong> Reenvían la mayor parte del USDT a tres billeteras de paso mayores: <code>TXtEs6t2oUWQsNos7m68gbHdE9Q5n6x2oN</code> (248.640 operaciones, un enrutador), <code>TU3ymitEKCWQFtASkEeHaPb8NfZcJtCHLt</code> (8.492) y <code>TANdmAmc5jyNEFB1gXbEBfaG7Ftj1XNUG1</code> (913), que a su vez reenvían a <code>TYVWGh8X…</code>, <code>TRV3PsTL…</code> y <code>TTbCVPfU…</code>.</li>
+<li><strong>Qué significa:</strong> parte del dinero que salió de TRON por el puente <strong>ha vuelto a TRON</strong> convertido por THORChain. Es otra manera de romper el rastro: el dinero sale, se cambia, y entra por direcciones nuevas.</li>
+<li><strong>Cautela:</strong> los 11,8 M$ de THORChain superan los 7,8 M$ recibidos del puente. Las direcciones mezclan dinero ajeno y <strong>no puedo decir qué parte de esas operaciones es del robo</strong>.</li>
+</ul>
+<h3>5.5 Los puentes pequeños</h3>
+<ul>
+<li><strong>Bridgers (24 envíos, 0,17 M$):</strong> destinos leídos en la llamada: Ethereum 7 envíos (44.435 $, 5 direcciones), USDT en BSC 6 (18.388 $, 3 direcciones), USDT en Ethereum 1 (26.528 $, <code>0xa97291B7E24D4B8ea2293AffBcA0904cb448519d</code>), USDC 1 (23.100 $, <code>0x7B410B379c4A09Af917A57BfC8D58D21F58186f8</code>), <strong>Solana 2 (8.317 $)</strong> y <strong>Bitcoin 1 (4.637 $, la llamada no incluye la dirección)</strong>. Seis envíos (42.118 $) no traen texto legible. No los he seguido más allá de la dirección.</li>
+<li><strong>Rango (25 envíos):</strong> la llamada solo lleva la etiqueta «TrustWallet»; el destino no se puede leer sin la API del puente.</li>
+</ul>
+<h2>6. Por qué siguen llegando avisos al bot</h2>
+<p>El bot <code>@blacklistusdtbot</code> recibe avisos de <strong>dos vigilantes</strong>:</p>
+<pre>Vigilante                     Avisos totales  Desde el 30-oct 21:00 UTC  Qué son
+----------------------------  --------------  -------------------------  --------------------------------------------
+TRON (tron-salidas-watch)     197             46 (de 2 a 7 por hora)     «salto» (una billetera seguida manda 10.000
+                                                                         TRX o más), «salto en lote», resúmenes, 2
+                                                                         entradas, 2 salidas, 1 fallo, 1 recordatorio
+Ethereum (eth-salidas-watch)  12              9                          «salida de tokens» de 0x5227f603…, la
+                                                                         billetera del ladrón en Ethereum</pre>
+<ul>
+<li><strong>Los avisos de TRON son el reflejo del apartado 4:</strong> <code>TRBdWq…</code> sigue repartiendo y cada billetera nueva que recibe 10.000 TRX o más se vigila. Hay <strong>11.534 billeteras seguidas, 6.564 abiertas</strong>.</li>
+<li><strong>Los avisos de Ethereum no son ETH.</strong> Entre las 04:29 y las 07:39 UTC del 31-oct, <code>0x5227f603…</code> ha movido nueve tokens menores (PROM, ZAMA, SOPH, NIL, LSK, FUN, RE, ZKP y BLUR). <strong>Los 508.854,45 ETH siguen en las ocho billeteras, sin tocar</strong> (mismas cifras que a las 21:00 del 30-oct). No he valorado esos tokens.</li>
+<li><strong>El vigilante de TRON va con retraso y cada vez más.</strong> Los ciclos de cada 30 minutos leen entre 1.000 y 1.300 billeteras, pero las pendientes crecieron de <strong>4.482 (07:45) a 5.516 (10:15)</strong>. Los avisos llegan tarde. El último ciclo tuvo 12 errores de lectura. Mejoras posibles, <strong>no aplicadas</strong>: reconocer los nodos de servicio para no abrir sus ramas (la mitad del dinero termina en ellos), y subir la velocidad. Si quieres que las haga, dilo.</li>
+</ul>
+<h2>7. Lo que no se puede decir</h2>
+<ul>
+<li><strong>Quién es el ladrón</strong> ni quién controla los nodos de servicio y el grupo del 11-oct. El informe da direcciones, importes y hashes; la identidad solo la conocen las casas de cambio.</li>
+<li><strong>Qué parte de lo que entra en un nodo, en una dirección de Ethereum o en THORChain es del robo y cuál de otros clientes.</strong> Todas las cifras con «estimado» usan la mezcla proporcional; no son importes comprobados uno a uno.</li>
+<li><strong>Adónde va el dinero después del primer salto en Ethereum</strong> (qué activos y a quién), después de Bridgers y Rango, y dentro de las casas de cambio.</li>
+<li><strong>El tramo posterior a la foto</strong> (58,5 M$): solo primer salto.</li>
+<li><strong>El 11 % sin explicar</strong> del apartado 4.</li>
+<li><strong>Por qué hay tres envíos del puente parados</strong> (hipótesis en 5.3).</li>
+</ul>
+<h2>8. Auditoría: ¿coinciden los datos de TronGrid y TronScan con el análisis?</h2>
+<p><strong>Qué se hizo.</strong> Se volvió a pedir a TronGrid y a TronScan el dato en bruto de lo que afirman los informes y se comparó con (a) el informe y (b) la otra fuente. Las dos fuentes leen la misma cadena, así que <strong>no son independientes en lo que respecta a la cadena</strong>; sí lo son en cómo la presentan (formatos, etiquetas). Scripts: <code>auditoria-fuentes.cjs</code>, <code>auditoria-lector.cjs</code>, <code>auditoria-puentes.cjs</code>, <code>lz-estado.cjs</code>; resultados en <code>tron/auditoria-*.json</code> y <code>tron/lz-estado.json</code>.</p>
+<h3>8.1 Resultados</h3>
+<pre>Comprobación                                  Resultado
+--------------------------------------------  --------------------------------------------
+16 transacciones de la cadena de custodia     15 coinciden en todo, en las dos fuentes y
+(origen, cambios, cinco envíos, entradas a    con el informe. La decimosexta (bb05d43b…)
+TRBdWq…), en TronGrid y en TronScan:          coincide en importe y direcciones, pero la
+remitente, destinatario, importe, hora,       hora real es 01:01:15 UTC, no «01:01
+éxito                                         Madrid»: error de etiqueta mío. Corregido
+TSpe5HC3…: entradas y salidas                 Salen 638.200.900 TRX en cinco envíos.
+                                              Entran 638.200.942: los tres grandes suman
+                                              638.200.929 (la cifra del informe) y hay 18
+                                              entradas de 13,7 TRX en total (polvo y
+                                              mensajes). Balance 37 TRX = entradas −
+                                              salidas − comisiones. Cuadra
+Los cuatro depósitos «sin una sola            TronGrid y TronScan: TKkH2vH6… y TJajtPqD…
+transacción propia»                           tienen 0 salientes. TL2F4Ghn… y TCBAz7it…
+                                              tienen 1 (el envío a TRBdWq…). Era cierto
+                                              cuando se escribió; ya no
+Saldos de ocho billeteras, TronGrid frente a  8 de 8 idénticos en TRX y en USDT. Frente al
+TronScan                                      informe (04:15 Madrid): iguales en
+                                              TKkH2vH6…, TJajtPqD…, TL2F4Ghn… y TSpe5HC3…;
+                                              han cambiado TCBAz7it… (vaciada) y TRBdWq…
+                                              (93,0 M → 97,2 M), con movimientos
+                                              posteriores que constan
+Bloqueos de Tether (llamada isBlackListed y   TG5iBMQ… y TCzBTk… bloqueadas, con
+eventos AddedBlackList)                       312.729.468 y 65.990.000 USDT; Hot 7 libre
+                                              (control). 61 de 61 eventos del informe
+                                              siguen; 6 nuevos. 51 de 51 direcciones de la
+                                              segunda oleada siguen bloqueadas
+Aristas finales: 60 al azar del primer tramo  120 de 120 coinciden en importe, destino y
+(de 2.020) y 60 del segundo (de 2.585),       hora. 29 son cambios en los que el USDT
+contra las dos fuentes                        llega desde el contrato de intercambio y no
+                                              desde la billetera que pagó: ahí se
+                                              comprueba que el destino recibe ese importe
+                                              en esa transacción y que la billetera
+                                              participa en ella (no que lo que pagó sea
+                                              exactamente lo que se cambió)
+Tablas 5.3 y 7 del informe de trazabilidad    Coinciden todas: TM8uyBjRKz… 12,16
+recalculadas desde los CSV de aristas         M$/1.069/371; grupo del 11-oct 11,85 M$/603;
+finales                                       TZG47zhb8k… 0,91 M$ y 11,44 M$; JustLend
+                                              4,75 M$/117/74; puente 2,35 M$/30/19; USDD
+                                              0,33 M$; casas 4,15 M$ (Bybit 87 envíos 2,21
+                                              M$…)
+El reparto de TRBdWq… recalculado desde cero  379 envíos de 350 $ o más (377 de 10.000 TRX
+con TronScan                                  o más), 50.773.217 $, 122 billeteras: igual
+                                              que el informe y que la lectura guardada,
+                                              envío por envío. Un primer intento dio 356
+                                              envíos: la lectura de TronScan salió
+                                              incompleta (lo marcó mi propia
+                                              comprobación), se repitió completa y es la
+                                              que cuenta
+Lector del rastreo: 70 billeteras al azar     De 565 transferencias de 350 $ o más hasta
+(45 del primer tramo, 25 del segundo),        la foto que lista TronScan, las 565 están en
+lectura guardada frente a lectura nueva de    la lectura guardada, con la misma
+TronScan                                      transacción, remitente, destinatario e
+                                              importe (0 omisiones, 0 importes distintos).
+                                              La lectura guardada trae además 13
+                                              movimientos de TRX (2,2 %) dentro de
+                                              llamadas a contratos que la lista simple de
+                                              TronScan no incluye. Las 13 transacciones
+                                              existen, tuvieron éxito y contienen
+                                              transferencias internas de TRX; no he vuelto
+                                              a comprobar el importe exacto de cada una y
+                                              en cuatro no es evidente que cuadre
+Nombres de las siete casas de cambio          7 de 7 coinciden con la etiqueta pública de
+                                              TronScan (Bybit, OKX Hot Wallet 8, Gate,
+                                              Kucoin 4, Bitget 9, MXC, Kraken Hot Wallet)</pre>
+<h3>8.2 Puentes</h3>
+<pre>Comprobación                                  Resultado
+--------------------------------------------  --------------------------------------------
+40 envíos de puente al azar contra TronScan   40 de 40
+(quién paga, importe, contrato, hora)
+Mi lectura de la llamada frente al mensaje    Cadena de destino 185 de 186; dirección 185
+que LayerZero registró para cada uno de los   de 186; importe dentro del rango
+186 envíos                                    enviado–mínimo 185 de 186. La excepción es
+                                              un envío de 229.980 USDT (eca8ece90b06…)
+                                              cuya llamada tiene otro formato y que mi
+                                              descodificador leyó mal; con el mensaje de
+                                              LayerZero queda corregido: Ethereum,
+                                              0x9de7ead321892c1f12b1a5e8b5dc21cf540795e5,
+                                              entregado, y la dirección reenvía el importe
+                                              un minuto después a 0x067cb62f4d…
+¿Llegó el dinero? Los 40 envíos mayores       39 de 40 aparecen en destino con el mismo
+contra Etherscan                              importe. El que falta es el de 122.714 $ que
+                                              LayerZero marca como no entregado
+Estado de los 186 envíos en LayerZero Scan    183 entregados (7,85 M$ brutos); 3 en camino
+                                              y anulados (157.220 $)
+Totales frente al informe                     Puente UsdtOFT primer tramo: 30 envíos,
+                                              2,349 M$ del robo, 19 billeteras, idéntico a
+                                              la tabla 5.3 (hay 3 envíos menores de 3.520
+                                              $ más, que el método no sigue); segundo
+                                              tramo: 86 envíos, 1,60 M$, idéntico a 7.2</pre>
+<h3>8.3 Lo que esta auditoría no demuestra</h3>
+<ul>
+<li>Que el <strong>método de la mezcla proporcional</strong> sea el correcto: es un modelo, no un dato de la cadena, y TronGrid/TronScan no lo pueden confirmar. Lo que confirman es que <strong>los importes, las direcciones y las horas de cada salto son los que dice la cadena</strong>.</li>
+<li>Que no haya movimientos que el rastreo no vio: se ha comprobado una <strong>muestra</strong> (70 billeteras de 1.347 y 2.898; 120 aristas de 4.605), no todo. En la muestra no hubo ninguna omisión.</li>
+<li>El <strong>11 % sin explicar</strong>.</li>
+<li>Las comprobaciones de Ethereum se hicieron sobre los 40 mayores envíos, no sobre los 186.</li>
+</ul>
+<h3>8.4 Fallos míos encontrados durante la auditoría</h3>
+<ol>
+<li><strong>Hora mal etiquetada</strong> en el informe de trazabilidad (apartado 9) y en mi memoria: «01:01 Madrid» era 01:01 UTC. Corregido en el informe.</li>
+<li><strong>Mi primera descodificación de puentes trató mal nueve envíos del segundo tramo</strong> (1,38 M$ brutos, 0,92 M$ del robo, entre ellos cinco de 168.000 a 244.000 USDT del 30-oct por la mañana): <strong>uno faltaba del todo y ocho tenían el tramo o la pureza equivocados</strong>, porque solo miraba las lecturas guardadas de cada billetera y no los «saltos virtuales» de los cambios. La comparación con los CSV de aristas finales lo detectó; ahora los 136 envíos a puentes de los CSV están todos, con su tramo y su pureza, y se volvió a seguir el destino. Las cifras de los apartados 1 y 5 son las corregidas.</li>
+<li><strong>Un envío de 229.980 USDT</strong> leído con la cadena equivocada (arriba).</li>
+<li><strong>Una lectura incompleta de TronScan</strong> dio un 356 donde son 379; la comprobación la marcó y se repitió. Lo anoto porque es el tipo de fallo que, sin esa marca, habría parecido una discrepancia real.</li>
+</ol>
+<h2>9. Qué cambia respecto a los informes anteriores</h2>
+<pre>Dónde                               Decía                                         Ahora
+----------------------------------  --------------------------------------------  --------------------------------------------
+Trazabilidad, apartado 9 y resumen  «31-oct, 01:01:15 (Madrid)»                   01:01:15 UTC (02:01 Madrid)
+Trazabilidad, apartados 1, 9        «Quedan 398,2 M TRX sin tocar en tres         278,2 M TRX en dos depósitos: TCBAz7it… se
+                                    depósitos»                                    vació el 31-oct a las 07:58:48 UTC
+Trazabilidad, apartado 6.4          «No he decodificado la cadena de destino»     Decodificada: Ethereum 168 envíos y Arbitrum
+                                    del puente                                    18 (apartado 5)
+Trazabilidad, apartado 8 (punto 2)  «Desde TRBdWq… salen 2,5 M$ por hora»         Era cierto hasta la foto; desde la foto, 5,1
+                                                                                  M$ por hora
+Completo del 30-oct, apartado 7     Puente: «unos 3,3 M USDT… no he decodificado  186 envíos, 8,0 M$ brutos, 183 entregados y
+                                    el destino»                                   3 parados
+Completo del 30-oct, apartado 8     61 bloqueos de 60 direcciones                 67 de 66 (6 más a las 22:05–22:12 del
+                                                                                  30-oct)</pre>
+<p><strong>Lo que no cambia:</strong> la cadena de custodia, lo congelado por Tether (378,7 M USDT), la billetera de reparto, el reparto del 30-oct, las tablas 5.3 y 7 del informe de trazabilidad, y que <strong>ninguna billetera de paso envía directamente a una casa de cambio con nombre</strong>.</p>
+<h2>10. Cómo repetirlo</h2>
+<p>Desde <code>research/binance-0x5227-2026-10-30/</code>, con el Node del sistema (fuera del PATH):</p>
+<p>``<code> node traza.cjs ... traza-post.cjs     rastreo completo (ver el informe de trazabilidad) node puentes.cjs                      descodifica los envíos a puentes node puentes-seguir.cjs               sigue las direcciones de destino en Ethereum y Arbitrum node lz-estado.cjs                    estado de cada envío USDT0 en LayerZero Scan node thorchain.cjs / thorchain-tron.cjs   operaciones de THORChain y sus direcciones TRON node sumideros-y-bridgers.cjs         sumideros del regreso a TRON y destinos de Bridgers node auditoria-fuentes.cjs            auditoría contra TronGrid y TronScan (partes A B C D G H) node auditoria-lector.cjs             recálculo del reparto de TRBdWq y muestra del lector node auditoria-puentes.cjs            auditoría de puentes (partes P Q X) </code>``</p>
+<p>Ficheros principales en <code>tron/</code>: <code>puentes-decodificados.json</code>, <code>puentes-destinos.json</code>, <code>puentes-seguimiento.json</code>, <code>lz-estado.json</code>, <code>thorchain-decodificado.json</code>, <code>thorchain-destinos-tron.json</code>, <code>bridgers-destinos.json</code>, <code>sumideros-thorchain.json</code>, <code>trb-posfoto-envios.json</code>, <code>auditoria-fuentes.json</code>, <code>auditoria-lector.json</code>, <code>auditoria-puentes.json</code>.</p>
+<h2>Anexo — Direcciones nuevas citadas</h2>
+<pre>Dirección                                   Papel
+------------------------------------------  --------------------------------------------
+TUEVnWHrugeMo3eU7gQxDSLWjF5ZtH6G3a          envió el puente de 122.714 $ que no llegó
+0x111c09990a872946128a2acd26af398513d97ce5  destino en Ethereum de ese envío (sin
+                                            movimientos)
+0x9de7ead321892c1f12b1a5e8b5dc21cf540795e5  destino del envío de 229.980 $ (reenvía en
+                                            un minuto)
+TBPJerxz9X35ZNqxuMrK9QmpneGgBgB7Vv          mayor receptor TRON de THORChain
+TXtEs6t2oUWQsNos7m68gbHdE9Q5n6x2oN          enrutador (248.640 operaciones) al que
+                                            reenvían los receptores de THORChain
+TFG4wBaDQ8sHWWP1ACeSGnoNR6RRzevLPt          contrato del puente USDT0 (UsdtOFT) en TRON</pre>
+</body></html>
