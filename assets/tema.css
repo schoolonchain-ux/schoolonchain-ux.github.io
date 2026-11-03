@@ -31,7 +31,8 @@
 }
 
 /* ---- marca ---- */
-.topbar .brand .dot{background:linear-gradient(135deg,#7d9fd6 0%,#1e3c74 46%,#ff8a3f 54%,#e4570b 100%);box-shadow:var(--brillo)}
+/* logo: la calavera (con ojos y halo naranjas y capucha azul) en lugar del cuadrado */
+.topbar .brand .dot{width:36px;height:40px;border-radius:0;background:url(brand/calavera-icono.webp) center/contain no-repeat;box-shadow:none;flex:none}
 .hero2{background:radial-gradient(900px 420px at 88% -10%,rgba(240,98,15,.30),transparent 60%),radial-gradient(700px 380px at 0% 110%,rgba(40,80,160,.28),transparent 60%),var(--pan)}
 .hero2 .kick::before{box-shadow:0 0 0 4px rgba(240,98,15,.26)}
 .hero2 h1 em{background:linear-gradient(95deg,#1f4380 0%,#c94a08 50%,#e4570b 100%);-webkit-background-clip:text;background-clip:text;color:transparent}   /* claro: marino → butano, con contraste sobre blanco */
