@@ -14,11 +14,13 @@ Precio usado para los dólares: 0,322 $ por TRX (CoinGecko, 4 de noviembre).
 ## 1. En cuatro líneas
 
 1. **«Vaneck» no ha movido nada.** Sus 132,7 millones de TRX (42,7 M$) llevan desde el 31 de octubre listos para retirar y nadie los ha retirado. Ni una transacción desde el 29 de octubre.
-2. **La segunda cuenta retiró los 305,7 millones de TRX el 3 de noviembre, cuatro horas después de quedar libres, y los guarda.** Hoy tiene 1.628,8 millones de TRX libres (524 M$). No ha enviado TRX a ninguna dirección desde el 29 de octubre.
+2. **La segunda cuenta retiró los 305,7 millones de TRX el 3 de noviembre, cuatro horas después de quedar libres, y los guarda.** Hoy tiene 1.628,8 millones de TRX libres (524 M$). Hasta las 10:40 UTC de hoy no había enviado TRX a ninguna dirección desde el 29 de octubre.
 3. **Ha dejado de dar energía a Binance.** El 1 de noviembre retiró la energía que tenía delegada a nueve billeteras calientes de Binance (519 millones de TRX, 167 M$) y la puso a descongelar. Quedará libre el 15 de noviembre.
 4. **Lo que sí salió fueron 140 millones de USDT**, el 2 de noviembre, por dos billeteras creadas ese mismo día hacia la «proveedora de TRON Inc.» del artículo, que los pasó por otra billetera nueva a **Binance-Hot 12**, una billetera caliente que Binance creó el 31 de octubre. El 3 de noviembre la proveedora devolvió 110 millones de USDT a la segunda cuenta.
 
-El artículo del 29 decía que, si seguían el patrón de 2025-2026, el TRX desbloqueado saldría «por una billetera nueva hacia HTX 4 o hacia la proveedora de TRON Inc.». La ruta fue esa, la proveedora; el dinero no.
+5. **Añadido a mediodía:** a las 10:40 UTC la segunda cuenta envió **150 millones de TRX** por una billetera de un día a la proveedora de TRON Inc., y esta los pasó a la cuenta que da energía a las billeteras nuevas de Binance (apartado 7).
+
+El artículo del 29 decía que, si seguían el patrón de 2025-2026, el TRX desbloqueado saldría «por una billetera nueva hacia HTX 4 o hacia la proveedora de TRON Inc.». La ruta fue esa, la proveedora; por la mañana con USDT, a mediodía ya con TRX.
 
 ## 2. «Vaneck»: nada que contar
 
@@ -31,7 +33,7 @@ El 3 de noviembre a las 16:04 UTC retiró al saldo los 305.723.740 TRX que habí
 - Retirada:
   [68d8ba6cb3c24be2047433f8139e79c28aca9a14fab9e83b43b34b238a7de532](https://tronscan.org/#/transaction/68d8ba6cb3c24be2047433f8139e79c28aca9a14fab9e83b43b34b238a7de532)
 
-El vigilante avisó por Telegram a las 16:35. Desde entonces, ese TRX no ha salido: la cuenta tiene hoy **1.628.758.973 TRX libres**, 207,8 millones en stake y 187,5 millones delegados a terceros. En toda la ventana desde el 29 de octubre no hay ni una transferencia de TRX de 1 millón o más a otra dirección. Las únicas transferencias de TRX que aparecen son siete envíos de 0 TRX que le mandan desconocidos (publicidad).
+El vigilante avisó por Telegram a las 16:35. Desde entonces, ese TRX no ha salido: la cuenta tiene hoy **1.628.758.973 TRX libres**, 207,8 millones en stake y 187,5 millones delegados a terceros. En toda la ventana desde el 29 de octubre hasta esta mañana no hay ni una transferencia de TRX de 1 millón o más a otra dirección (la primera es la de las 10:40 de hoy, apartado 7). Las únicas transferencias de TRX que aparecen son siete envíos de 0 TRX que le mandan desconocidos (publicidad).
 
 ## 4. El 1 de noviembre dejó de dar energía a Binance
 
@@ -131,7 +133,49 @@ Entre el 2 de noviembre a las 06:00 y el 4 a las 08:47 UTC la proveedora recibi�
 
 Es decir: la proveedora está conectada con Binance en los dos sentidos, recibe de sus billeteras calientes por una intermediaria y les envía por otra. Es un hecho de la cadena; la naturaleza del acuerdo entre quien opera la proveedora y Binance no se ve en la cadena.
 
-## 7. SunSwap: ha reducido la liquidez que puso el 29
+## 7. Añadido a mediodía: 150 millones de TRX salen hacia la cuenta que da energía a Binance
+
+Esta nota estaba escrita por la mañana. A las 10:40 UTC la segunda cuenta hizo su primer envío de TRX desde el 29 de octubre, y el vigilante avisó a las 11:05. El recorrido, en tres pasos y quince minutos:
+
+| Hora (UTC) | Tramo | TRX | Transacción |
+|---|---|---|---|
+| 10:40 | Segunda cuenta → billetera puente D (TQRBxpS5V1KZW8g3oJ1YNLqtj1j733Mc33, creada hoy) | 150.000.000 | 190ea8594f856a8632ed2ecc157daed87ee6788a3bb637f6f65d3ef945d46317 |
+| 10:41 | Puente D → proveedora de TRON Inc. | 150.000.000 | 00420f709b20bde4f1bb809ae99684a1f8d7d0cd290e7f643e05b2a58f0b7a5b |
+| 10:55 | Proveedora → cuenta de energía | 149.999.999 | db113f1bec479bcae2911f76de19b9248d291b7091265f62f86afbd60b28a42d |
+
+Es el patrón de «billetera de un día» del artículo del 29, esta vez con TRX, y la ruta que el artículo señalaba como probable: la proveedora de TRON Inc. El destino final es nuevo en este caso:
+
+- Cuenta de energía (sin etiqueta; creada el 30-10-2025 con 100 millones de TRX que venían de HTX 4):
+  [TEF9ZVUxhmGGffvkf59e2vdLfAG1QCMb7B](https://tronscan.org/#/address/TEF9ZVUxhmGGffvkf59e2vdLfAG1QCMb7B)
+
+### Qué es esa cuenta
+
+Tiene 1.528 millones de TRX en stake y delegados como energía a 81 cuentas. Leído hoy en TronGrid, delegación por delegación, los mayores receptores son:
+
+| Receptor | Etiqueta de TronScan | TRX delegados |
+|---|---|---|
+| TFNX7TKYCm1kUYDECjkrogBwYZvt69XQNy | GasFree Service Provider | 339.063.000 |
+| TU3rMHyWHzeEJBReWLzHko728hbz6MtfNg | sin etiqueta (creada 9-8-2024) | 206.680.000 |
+| TJTKCzQpsG19CSMYF9TPtxz6wSHPSyeKfa | Binance-Hot 12 (creada 31-10-2026) | 103.653.000 |
+| TU4vEruvZwLLkSfV9bNw12EJTPvNr7Pvaa | Bybit | 100.000.000 |
+| Binance-Hot 13, 16, 17, 18, 19, 20 y 21 (creadas el 31-10-2026) | Binance | 78.899.300 cada una (552.295.100) |
+| Binance-Hot 14 y 15 (creadas el 31-10-2026) | Binance | 37.014.300 cada una (74.028.600) |
+
+Es decir: unos **730 millones de TRX de energía van a las billeteras calientes que Binance creó dos días después del robo**. Y su historial de la última semana cuenta cómo se recompuso ese servicio:
+
+- **31 de octubre, 16:56-17:15 UTC.** Retira la energía que daba a las billeteras viejas de Binance (Hot 3, 5, 6, 8, 9, 10, 11 y Binance 2; por ejemplo 21,33 millones a Binance-Hot 3: `a50e1f606704b2885e47177942a6130dc3750d046307425c4e7f373668e4d0e0`, y 39,5 millones a Binance 2: `0f826b73aa2cb79b3d527cabd44e88e0fa157a134f20022634418f2d7e38b5ff`). Son las mismas billeteras a las que la segunda cuenta retiró su energía el 1 de noviembre (apartado 4).
+- **1 de noviembre, 01:29 UTC.** Delega 164,2 millones a Binance-Hot 12 (`ee21197f51708623439f171332dba641d986032358b34aeaff111cc62ed5e2d6`) y, de 08:41 a 10:52, a las demás billeteras nuevas de Binance.
+- **2 de noviembre, 09:59 UTC.** Recibe **500 millones de TRX** de la proveedora de TRON Inc. (`b02dee0924cd91dbbcbed513dbfa76bc022daa9f555f4114827feb04df5081f7`). La proveedora los había recibido cuatro minutos antes de otra billetera de un día, TJHKNV4Jwmk7YQht2LFrkQZd9pzvSuN543 (`7748d9416c2ccc454081cd2ff04326db5fab942013fa08f1b23a53daf727072b`), y esa de [TYL7z7VSVRShLoJ6YRQMA4t9pSECt9ZLmz](https://tronscan.org/#/address/TYL7z7VSVRShLoJ6YRQMA4t9pSECt9ZLmz) (`01feb12789b0f8ca87d8f11e36fc6a941692d91cefa063d008c4efd5050afb0f`), una cuenta de 2022 que se financió con **971 millones de TRX desde TPyjyZfsYaXStgz2NmAraF1uZcMtkgNan5** (`9ba3c646db271c262c1fa4761c97feccc4132f6a6fe39c18c32ccdf351055839`, 25-6-2022): la misma cuenta que financió a «Vaneck» en 2021 y que OKLink etiqueta como Justin Sun.
+- **3 de noviembre, 09:33 UTC.** Congela 490.145.000 TRX para energía (`d6111ff0cff42c3d8d119f1486ec132959837dc52226cc3f4b60baf36ab14e1d`).
+- **4 de noviembre, 10:55 UTC.** Recibe los 150 millones de la segunda cuenta. Al cerrar esta nota siguen libres en la cuenta, sin congelar.
+
+### Lectura (hipótesis del autor)
+
+Tras el robo, Binance abandonó sus billeteras calientes y abrió otras el 31 de octubre. El entorno que atribuyen a Justin Sun retiró la energía de las viejas (desde la segunda cuenta y desde esta cuenta de energía) y la dio a las nuevas desde una sola cuenta, que está llenando con TRX de la segunda cuenta y de la financiadora de «Vaneck»: 500 millones el 2 de noviembre y 150 hoy. Encaja con la tesis del artículo (el entorno funciona como una tesorería que presta y provee) y explica para qué servía descongelar 519 millones de TRX, que quedan libres el 15 de noviembre.
+
+Lo que no se puede afirmar: quién opera la cuenta de energía (ninguna etiqueta pública; GasFree y Bybit son clientes, no dueños), ni que Binance pague por esa energía o la reciba gratis, ni que Sun en persona esté detrás. Y, otra vez, nada une estas cuentas con el robo: dan energía a Binance, no al ladrón.
+
+## 8. SunSwap: ha reducido la liquidez que puso el 29
 
 La nota del 30 contaba que la segunda cuenta había puesto 222 millones de TRX a hacer de mercado en SunSwap. El 2 de noviembre retiró dos posiciones de la piscina USDT/TRX de SunSwap V3 y recibió 113,5 millones de TRX y 38,9 millones de USDT:
 
@@ -142,14 +186,14 @@ La nota del 30 contaba que la segunda cuenta había puesto 222 millones de TRX a
 
 Ese USDT lo convirtió en USDD por el PSM y lo usó, con el resto, para devolver el préstamo.
 
-## 8. Qué significa y qué no
+## 9. Qué significa y qué no
 
-- **La tesis del artículo se mantiene:** la segunda cuenta no vende TRX. En seis días ha retirado 305,7 millones de TRX del stake, ha recuperado 1.202 millones de una garantía y ha sacado 113,5 millones de SunSwap, y todo está hoy libre en la cuenta: 1.629 millones de TRX, el 1,7 % de todo el TRX que existe. Lo que mueve fuera es USDT, y lo mueve por billeteras de un día.
+- **La tesis del artículo se mantiene:** la segunda cuenta no vende TRX: lo que ha sacado hoy va a una cuenta de energía del mismo entorno. En seis días ha retirado 305,7 millones de TRX del stake, ha recuperado 1.202 millones de una garantía y ha sacado 113,5 millones de SunSwap, y todo está hoy libre en la cuenta: 1.629 millones de TRX, el 1,7 % de todo el TRX que existe. Lo que mueve fuera es USDT, y lo mueve por billeteras de un día.
 - **Nuevo:** la salida de 140 millones de USDT es la primera vez que, en este caso, seguimos dinero de la segunda cuenta hasta una billetera caliente de Binance, y además de las nuevas, creadas tras el robo. También es nuevo que la cuenta haya dejado de dar energía a Binance por completo.
 - **Lo que no se puede afirmar:** quién opera la proveedora de TRON Inc. y su pareja (Protos dice que abastece a TRON Inc.; no hay etiqueta pública), qué acuerdo hay entre ellas y Binance, que las cuentas sean de Justin Sun en persona, ni que el TRX libre vaya a venderse. Y seguimos sin afirmar nada que una a estas cuentas con el robo: el único vínculo visible es que daban energía a las billeteras de Binance, y lo han dejado de hacer después.
 - **Próximo hito:** el 15 de noviembre a las 07:37 UTC quedan libres los 519 millones de TRX. Si la cuenta sigue el patrón, los retirará y se quedarán en ella; si salen, saldrán por una billetera nueva.
 
-## 9. Qué he corregido y qué cambia en el seguimiento
+## 10. Qué he corregido y qué cambia en el seguimiento
 
 - La página del caso decía «sin retirar» en la tarjeta de la segunda cuenta cuando ya se había retirado: corregida el 4 de noviembre. Ahora la tarjeta se calcula con los datos y el fichero diario de seguimiento guarda el importe de cada retirada.
 - El vigilante de salidas solo seguía las billeteras que recibían **TRX** de estas dos cuentas; las dos billeteras puente de los 140 millones de USDT no se siguieron, y este recorrido se hizo a mano. Desde el 4 de noviembre sigue también las que reciben USDT, con el mismo plazo y la misma profundidad que para el TRX.

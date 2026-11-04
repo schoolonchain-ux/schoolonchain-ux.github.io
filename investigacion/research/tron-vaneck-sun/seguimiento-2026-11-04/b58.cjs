@@ -1,0 +1,2 @@
+const crypto=require('node:crypto');const AL='123456789ABCDEFGHJKLMNPQRSTUVWXYZabcdefghijkmnopqrstuvwxyz';
+module.exports=hex=>{if(!hex)return '';if(/^T[1-9A-Za-z]{33}$/.test(hex))return hex;const b=Buffer.from(hex,'hex');const c=crypto.createHash('sha256').update(crypto.createHash('sha256').update(b).digest()).digest().subarray(0,4);let n=BigInt('0x'+Buffer.concat([b,c]).toString('hex')),s='';while(n>0n){s=AL[Number(n%58n)]+s;n/=58n}return s};
