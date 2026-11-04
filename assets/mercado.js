@@ -163,7 +163,13 @@ async function stablecoin(symbol) {
 }
 
 
-const assetsById = {BTC:'bitcoin', ETH:'ethereum', TRX:'tron'};
+const assetsById = {
+  BTC:'bitcoin', ETH:'ethereum', TRX:'tron',
+  ADA:'cardano', AVAX:'avalanche-2', BCH:'bitcoin-cash', BNB:'binancecoin',
+  DOGE:'dogecoin', DOT:'polkadot', HYPE:'hyperliquid', LINK:'chainlink',
+  LTC:'litecoin', PAXG:'pax-gold', SOL:'solana', SUI:'sui',
+  TON:'the-open-network', XMR:'monero', XRP:'ripple'
+};
 const dailyCache = new Map();
 const daySeconds = 86400;
 
@@ -210,7 +216,8 @@ async function historicalSample(assets) {
   const add = get('add-position');
   const result = get('risk-result');
   const error = get('risk-error');
-  const assets = ['BTC', 'ETH', 'TRX'];
+  const assets = Object.keys(assetsById);
+  get('risk-asset-count').textContent = assets.length;
   const money = new Intl.NumberFormat('es-ES', {style:'currency',currency:'USD',maximumFractionDigits:2});
   let nextId = 0;
 
