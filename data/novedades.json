@@ -1,0 +1,11 @@
+{
+  "_nota": "Registro de actualizaciones del sitio. Cada vez que se publica o amplía un informe, una nota o una página, se añade una entrada aquí (la más reciente primero). La portada y las páginas de caso lo leen en vivo: lo que no esté aquí no aparece como novedad. Campos: fecha (UTC, ISO), caso (slug de reports/index.json), titulo (una línea), url (relativa al sitio).",
+  "novedades": [
+    { "fecha": "2026-11-04T11:35:00Z", "caso": "caso-vaneck-sun", "titulo": "Nota del 4-nov ampliada: la segunda cuenta envía 150 M TRX a la cuenta que da energía a las billeteras nuevas de Binance; 500 M más el 2-nov con origen en la financiadora de «Vaneck»", "url": "doc.html?f=investigacion/docs/articulos/NOTA-SEGUIMIENTO-VANECK-SUN-2026-11-04.md#7-anadido-a-mediodia-150-millones-de-trx-salen-hacia-la-cuenta-que-da-energia-a-binance" },
+    { "fecha": "2026-11-04T09:04:00Z", "caso": "caso-vaneck-sun", "titulo": "Nota de seguimiento del 4-nov: el TRX desbloqueado se retiró y sigue en la cuenta; 140 M USDT salieron por billeteras de un día y acabaron en Binance-Hot 12", "url": "doc.html?f=investigacion/docs/articulos/NOTA-SEGUIMIENTO-VANECK-SUN-2026-11-04.md" },
+    { "fecha": "2026-11-04T08:52:00Z", "caso": "caso-vaneck-sun", "titulo": "Corrección: la tarjeta de la segunda cuenta decía «sin retirar» y los 305,7 M TRX ya se habían retirado el 3-nov", "url": "caso-vaneck.html" },
+    { "fecha": "2026-11-03T17:39:00Z", "caso": "trazabilidad-binance-0x5227", "titulo": "Informe del robo a Binance, versión v0.7: trazabilidad en TRON y Ethereum con datos hasta el 2-nov", "url": "report.html?r=trazabilidad-binance-0x5227" },
+    { "fecha": "2026-10-30T12:00:00Z", "caso": "caso-vaneck-sun", "titulo": "Nota de seguimiento del 30-oct: la segunda cuenta hace de banco de liquidez en SunSwap; la billetera de Binance a la que daba energía es la que vaciaron en el robo", "url": "doc.html?f=investigacion/docs/articulos/NOTA-SEGUIMIENTO-VANECK-SUN-2026-10-30.md" },
+    { "fecha": "2026-10-29T13:30:00Z", "caso": "caso-vaneck-sun", "titulo": "Investigación: las cuentas «Vaneck» y TT2T17… están unidas por 942 M TRX; la etiqueta «Vaneck» es probablemente engañosa", "url": "doc.html?f=investigacion/docs/INVESTIGACION-VANECK-SUN-TRX-2026-10-29.md" }
+  ]
+}

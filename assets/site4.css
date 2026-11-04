@@ -68,3 +68,20 @@ footer.marca .av{color:var(--mut);font-size:12px;max-width:820px;margin:8px 0 0}
   html:has(.topbar nav a[href^="#cap-"]) section.blk, html:has(.topbar nav a[href^="#cap-"]) .cap{scroll-margin-top:118px}
 }
 @media (max-width:900px){.topbar nav{-webkit-mask-image:linear-gradient(to right,#000 calc(100% - 28px),transparent);mask-image:linear-gradient(to right,#000 calc(100% - 28px),transparent)}}
+/* Novedades (data/novedades.json): lista en la portada y en cada caso, y línea «Actualizado …» en las tarjetas. */
+.novedades{background:var(--pan);border:1px solid var(--line);border-radius:16px;padding:16px 18px;margin:18px 0 6px;box-shadow:var(--shadow)}
+.novedades h2{margin:0 0 10px;font-size:15px;letter-spacing:.06em;text-transform:uppercase;color:var(--mut)}
+.nov-item{display:grid;grid-template-columns:150px minmax(0,1fr);gap:6px 14px;padding:8px 0;border-top:1px solid var(--line);font-size:14px;line-height:1.45}
+.nov-item:first-of-type{border-top:0}
+.nov-cuando{display:flex;flex-wrap:wrap;align-items:center;gap:6px;color:var(--soft)}
+.nov-cuando b{color:var(--fg)}
+.nov-hora{color:var(--mut);font-size:12px}
+.nov-caso{display:inline-block;font-size:11px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:var(--acc);margin-right:8px}
+.nov-que a{color:var(--fg);text-decoration:none}.nov-que a:hover{color:var(--acc);text-decoration:underline}
+.nov-nuevo{display:inline-block;font-size:10.5px;font-weight:800;letter-spacing:.08em;padding:1px 7px;border-radius:999px;background:#ff3b57;color:#fff}
+.nov-linea{display:flex;flex-wrap:wrap;align-items:center;gap:6px 8px;font-size:13px;line-height:1.4;padding:8px 10px;border-radius:10px;background:color-mix(in srgb,var(--acc) 8%,transparent);border:1px solid color-mix(in srgb,var(--acc) 30%,transparent)}
+.nov-linea .nov-fecha{color:var(--soft);font-weight:600;white-space:nowrap}
+.nov-linea .nov-t{color:var(--fg);text-decoration:none;flex:1 1 220px}
+.nov-linea a.nov-t:hover{color:var(--acc);text-decoration:underline}
+.rcard .nov-linea{margin-top:2px}
+@media (max-width:640px){.nov-item{grid-template-columns:1fr;gap:2px}}

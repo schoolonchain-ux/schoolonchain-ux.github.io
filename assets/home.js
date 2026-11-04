@@ -5,6 +5,11 @@
   try { idx = await (await fetch('reports/index.json', { cache: 'no-cache' })).json(); } catch (e) { box.textContent = 'No se pudo cargar reports/index.json'; return; }
   box.textContent = '';
   const { el, m, n, pct } = C;
+  // Novedades (data/novedades.json): la lista general va encima de las tarjetas; cada tarjeta lleva su última actualización.
+  const NOV = window.NOVEDADES ? await window.NOVEDADES.cargar() : [];
+  const nombres = Object.fromEntries(idx.informes.map((r) => [r.slug, r.caso || r.titulo]));
+  const listaNov = window.NOVEDADES && NOV.length ? window.NOVEDADES.lista(NOV, { limite: 6, titulo: 'Novedades · últimas actualizaciones', nombres }) : null;
+  if (listaNov) box.parentNode.insertBefore(listaNov, box);
   for (const r of idx.informes) {
     const a = C.el('a', { class: 'rcard' + (r.caso ? ' destacada' : ''), href: r.url || 'report.html?r=' + encodeURIComponent(r.slug) });
     a.append(
@@ -13,6 +18,7 @@
       el('h3', null, r.titulo),
       el('p', null, r.resumen || ''));
     const zona = el('div'); a.append(zona);
+    const ultima = NOV.find((x) => x.caso === r.slug); if (ultima && window.NOVEDADES) a.append(window.NOVEDADES.linea(ultima, { enlace: false }));
     a.append(el('div', { class: 'foot' }, el('span', null, r.corte ? 'Datos hasta ' + r.corte.replace('T', ' ').slice(0, 16) + ' UTC' : 'Seguimiento en vivo'), el('span', null, 'Abrir panel →')));
     box.append(a);
     if (r.url) continue;

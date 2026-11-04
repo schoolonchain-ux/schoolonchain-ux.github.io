@@ -53,3 +53,7 @@ Proyecto independiente. Las marcas de terceros que aparecen (Binance, TRON, Teth
 ## Mantenimiento
 
 Antes de cada commit que cambie algo de `assets/`, ejecuta `node tools/version-assets.mjs`: añade a cada enlace de la web una huella del contenido (`?v=…`) para que nadie vea una versión vieja guardada en su navegador. Es idempotente.
+
+## Novedades (desde el 4-nov-2026)
+
+Cada vez que se publica o amplía un informe, una nota o una página, se añade una entrada en `data/novedades.json` (la más reciente primero: fecha UTC, caso, título de una línea y enlace). La portada muestra la lista general y la última actualización de cada caso; cada página de caso muestra las suyas. Lo que no esté en ese fichero no aparece como novedad.
