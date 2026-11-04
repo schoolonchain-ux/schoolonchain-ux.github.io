@@ -1,6 +1,7 @@
 {
   "_nota": "Registro de actualizaciones del sitio. Cada vez que se publica o amplía un informe, una nota o una página, se añade una entrada aquí (la más reciente primero). La portada y las páginas de caso lo leen en vivo: lo que no esté aquí no aparece como novedad. Campos: fecha (UTC, ISO), caso (slug de reports/index.json), titulo (una línea), url (relativa al sitio).",
   "novedades": [
+    { "fecha": "2026-11-04T13:48:00Z", "caso": "herramientas", "titulo": "Nueva intro en la portada: texto general y partes automáticas (casos abiertos, última actualización y última novedad)", "url": "./" },
     { "fecha": "2026-11-04T13:40:00Z", "caso": "trazabilidad-binance-0x5227", "titulo": "Nueva imagen en la intro de la portada", "url": "./" },
     { "fecha": "2026-11-04T13:28:00Z", "caso": "caso-vaneck-sun", "titulo": "La tarjeta del caso Vaneck / Justin Sun lleva ahora su imagen de cabecera en la portada", "url": "./#informes" },
     { "fecha": "2026-11-04T13:18:00Z", "caso": "trazabilidad-binance-0x5227", "titulo": "La tarjeta del informe del robo a Binance lleva ahora imagen de cabecera; cualquier informe puede llevar la suya", "url": "./#informes" },

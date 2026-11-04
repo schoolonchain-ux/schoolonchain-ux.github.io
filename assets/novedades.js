@@ -29,5 +29,5 @@
       el('div', { class: 'nov-que' }, !caso && nombres[n.caso] ? el('span', { class: 'nov-caso' }, nombres[n.caso]) : null, n.url ? el('a', { href: n.url }, n.titulo) : el('span', null, n.titulo))));
     return box;
   }
-  window.NOVEDADES = { cargar, linea, lista, fecha, reciente };
+  window.NOVEDADES = { cargar, linea, lista, fecha, hora, reciente };
 })();
