@@ -22,7 +22,7 @@
 .hero2 .lema{font-size:13px;color:var(--mut);margin-top:14px;border-left:3px solid var(--hack);padding-left:10px}
 .hero2 .cta{display:flex;flex-wrap:wrap;gap:10px}
 .hero2 .art{position:relative;aspect-ratio:1.18/1;border-radius:18px;overflow:hidden;border:1px solid rgba(255,59,87,.45);box-shadow:0 0 0 1px rgba(255,255,255,.03),0 18px 60px rgba(255,59,87,.18)}
-.hero2 .art i{position:absolute;inset:0;background:url(brand/banner.webp) no-repeat;background-size:auto 197%;background-position:0% 25%}
+.hero2 .art i{position:absolute;inset:0;background:url(img/portada/intro.webp) center/cover no-repeat}
 .hero2 .art::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,transparent 55%,rgba(8,10,16,.85))}
 .hero2 .art .cap2{position:absolute;left:14px;right:14px;bottom:12px;z-index:2;color:#fff;font-size:12.5px;letter-spacing:.02em}
 .hero2 .art .cap2 b{display:block;font-size:15px}
