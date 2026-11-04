@@ -33,3 +33,67 @@
 .dirs{margin:10px 0 2px;border:1px solid var(--line);border-radius:12px;padding:6px 12px;background:var(--pan)}
 .dirs>summary{cursor:pointer;font-weight:600;color:var(--soft);padding:4px 0}
 .dirs[open]>summary{margin-bottom:6px}
+
+/* ===== herramientas: portada de tarjetas con imagen, buscador protagonista, explicaciones plegadas (4-nov-2026) ===== */
+.hero-h{margin:26px 0 14px}
+.hero-h h1{font-size:34px;line-height:1.15;margin:6px 0 8px}
+.hero-h p{color:var(--soft);font-size:16px;max-width:760px;margin:0}
+.tools{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px;margin:18px 0 22px}
+.tool{position:relative;background:var(--pan);border:1px solid var(--line);border-radius:16px;padding:0;overflow:hidden;box-shadow:var(--shadow);text-align:left;color:var(--fg);display:flex;flex-direction:column;cursor:pointer;font:inherit;transition:transform .15s,border-color .15s}
+.tool:hover{transform:translateY(-2px);border-color:var(--acc)}
+.tool.on{border-color:var(--acc);box-shadow:0 0 0 1px var(--acc),var(--shadow)}
+.tool-img{position:relative;aspect-ratio:16/10;background:#0b0e13}
+.tool-img img{width:100%;height:100%;object-fit:cover;display:block}
+.tool-img::after{content:'';position:absolute;inset:auto 0 0 0;height:45%;background:linear-gradient(to bottom,transparent,var(--pan))}
+.tool .vivo{position:absolute;top:12px;right:12px;font-size:10.5px;font-weight:800;letter-spacing:.08em;color:#fff;background:rgba(0,0,0,.55);border:1px solid rgba(255,255,255,.25);border-radius:999px;padding:3px 9px;backdrop-filter:blur(4px)}
+.tool .vivo::before{content:'';display:inline-block;width:6px;height:6px;border-radius:50%;background:var(--ok);margin-right:5px;vertical-align:1px}
+.tool-body{padding:12px 16px 14px;display:flex;flex-direction:column;gap:6px;flex:1}
+.tool h3{margin:0;font-size:17px}
+.tool p{margin:0;color:var(--soft);font-size:13.5px;line-height:1.45}
+.tool .kv{margin-top:auto;padding-top:10px;border-top:1px solid var(--line);display:flex;align-items:baseline;gap:8px;flex-wrap:wrap}
+.tool .kv b{font-size:21px;font-variant-numeric:tabular-nums}
+.tool .kv span{color:var(--mut);font-size:12px}
+.buscar{background:linear-gradient(135deg,color-mix(in srgb,var(--acc) 10%,var(--pan)),var(--pan));border:1px solid var(--line);border-radius:18px;padding:22px;box-shadow:var(--shadow);margin:0 0 14px}
+.buscar h2{margin:0 0 4px;font-size:20px}
+.buscar .sub{color:var(--soft);font-size:13.5px;margin:0 0 14px}
+.sbox input{font-size:16px;padding:15px 16px;background:var(--bg)}
+.sbox .btn.primary{padding:0 22px;font-size:15px;font-weight:700;border-radius:12px}
+details.como{margin:14px 0;color:var(--soft);font-size:13.5px;border:1px solid var(--line);border-radius:12px;padding:8px 14px;background:var(--pan)}
+details.como summary{cursor:pointer;color:var(--acc);font-weight:600;padding:4px 0}
+details.como p{margin:8px 0}
+.netgrid{grid-template-columns:repeat(auto-fill,minmax(160px,1fr))}
+.net{flex-direction:row;align-items:center;gap:8px;padding:8px 10px;border-radius:10px}
+.net .nn{flex:1;font-weight:600;font-size:13px}
+.net .st{white-space:nowrap}
+@media (max-width:900px){.tools{grid-template-columns:1fr}.hero-h h1{font-size:26px}.tool-img{aspect-ratio:16/7}}
+
+/* ===== herramientas: paneles de la maqueta (calendario de barras, listas, semáforo de redes) ===== */
+.dos{display:grid;grid-template-columns:1.1fr .9fr;gap:14px;margin:14px 0 18px}
+.panel{background:var(--pan);border:1px solid var(--line);border-radius:16px;padding:18px;box-shadow:var(--shadow);min-width:0}
+.panel h2{margin:0 0 2px;font-size:18px}
+.panel .sub{color:var(--mut);font-size:12.5px;margin:0 0 12px}
+.cal{display:grid;grid-template-columns:repeat(14,1fr);gap:5px;align-items:end;height:150px;padding:6px 0 0}
+.cal .d{display:flex;flex-direction:column;align-items:center;gap:4px;height:100%;justify-content:flex-end;font-size:10px;color:var(--mut);text-align:center;min-width:0}
+.cal .d i{display:block;width:100%;border-radius:6px 6px 2px 2px;background:var(--acc);opacity:.85;min-height:3px}
+.cal .d.hoy i{background:var(--warn)}.cal .d.top i{background:var(--bad)}
+.cal .d b{color:var(--fg);font-size:10.5px;white-space:nowrap}
+.lista{list-style:none;margin:12px 0 0;padding:0;display:flex;flex-direction:column;gap:8px}
+.lista li{display:grid;grid-template-columns:auto minmax(0,1fr) auto;gap:10px;align-items:center;padding:9px 11px;border:1px solid var(--line);border-radius:10px;background:var(--bg);font-size:13px}
+.lista li.clic{cursor:pointer}.lista li.clic:hover{border-color:var(--acc)}
+.lista .when{color:var(--mut);font-size:12px;white-space:nowrap}
+.lista .who{font-family:var(--mono);font-size:12px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.lista .who b{font-family:inherit;color:var(--fg)}
+.lista .who .addr{text-decoration:none}
+.lista .amt{font-weight:700;font-variant-numeric:tabular-nums;white-space:nowrap}
+.lista .net{display:inline-block;font-size:10.5px;font-weight:700;letter-spacing:.06em;padding:1px 7px;border-radius:999px;border:1px solid var(--line);color:var(--soft);margin-right:6px}
+.panel-acc{display:flex;align-items:center;gap:12px;flex-wrap:wrap;margin-top:12px}
+.foot-p{color:var(--mut);font-size:12px}
+.hueco{margin:0 0 18px}
+.netgrid{grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:8px}
+.net{flex-direction:row;align-items:center;gap:8px;padding:8px 10px;border-radius:10px;background:var(--bg)}
+.net::before{content:'';width:10px;height:10px;border-radius:50%;background:var(--mut);flex:none}
+.net.ok::before{background:var(--ok)}.net.bad::before{background:var(--bad)}.net.err::before{background:var(--warn)}
+.net .nn{flex:1;font-weight:600;font-size:13px;justify-content:flex-start}
+.net .nn .tk{display:none}
+.net .st{font-size:11px;white-space:nowrap;margin-left:auto}
+@media (max-width:900px){.dos{grid-template-columns:1fr}.cal{grid-template-columns:repeat(7,1fr)}.cal .d:nth-child(n+8){display:none}.lista li{grid-template-columns:auto minmax(0,1fr)}.lista .amt{grid-column:2}}

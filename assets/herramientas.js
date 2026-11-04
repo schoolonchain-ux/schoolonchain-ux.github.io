@@ -62,17 +62,17 @@
 
   /* ---------- estructura ---------- */
   const tabsEl = document.getElementById('tabs'), panel = document.getElementById('panel');
-  const TABS = []; let redes = null, activo = null;
-  const montado = {};
+  const TABS = []; let redes = null;
+  const montado = {}, huecos = {};   // huecos[id]: contenedor de ancho completo donde se monta la herramienta completa
   function abrirTab(id) {
-    activo = id; [...tabsEl.children].forEach((b) => b.classList.toggle('on', b.dataset.id === id));
-    panel.textContent = '';
-    const t = TABS.find((x) => x.id === id); if (!montado[id]) { montado[id] = el('div'); t.render(montado[id]); }
-    panel.append(montado[id]);
+    const t = TABS.find((x) => x.id === id); if (!t) return;
+    if (!montado[id]) { montado[id] = el('div'); t.render(montado[id]); huecos[id].replaceChildren(montado[id]); huecos[id].hidden = false; }
+    [...tabsEl.children].forEach((b) => b.classList.toggle('on', b.dataset.id === id));
+    (id === 'comprobar' ? huecos.comprobar : huecos[id]).scrollIntoView({ behavior: 'smooth', block: 'start' });
     try { history.replaceState(null, '', '#' + id); } catch (e) { /* sin historial */ }
   }
   const caja = (titulo, ...k) => el('div', { class: 'card', style: 'margin:12px 0' }, titulo ? el('h3', null, titulo) : null, ...k);
-  const llano = (...t) => el('div', { class: 'resumen-llano' }, el('b', { class: 'h' }, 'En pocas palabras'), ...t.map((x) => el('p', { html: x })));
+  const llano = (...t) => el('details', { class: 'como' }, el('summary', null, 'En pocas palabras: ¿qué es esto y cómo funciona?'), ...t.map((x) => el('p', { html: x })));
 
   /* =============== 1 · ¿Está bloqueada? =============== */
   TABS.push({ id: 'comprobar', titulo: '1 · ¿Está bloqueada?', render(root) {
@@ -82,11 +82,10 @@
     inp.addEventListener('keydown', (e) => { if (e.key === 'Enter') ir(inp.value.trim()); });
     const ejemplos = el('div', { class: 'ex' }, 'Ejemplos reales del caso Binance Hack:', [['Bloqueada en TRON', 'TG5iBMQPrDzJJAUM8GMVBf1hRaJ1wvzsGi'], ['Dirección principal en Ethereum', '0x5227f603c1ee34ce3c06efe6477003bdfccb2f8c']].map(([t, a]) => el('button', { onclick: () => { inp.value = a; ir(a); } }, t)));
     root.append(
+      el('div', { class: 'buscar' }, el('h2', null, '¿Está bloqueada esta dirección?'), el('p', { class: 'sub' }, 'Una dirección 0x… se mira en las 20 redes compatibles con Ethereum (es la misma en todas); una dirección T… se mira en TRON.'), el('div', { class: 'tool-in sbox' }, inp, btn), ejemplos, el('p', { class: 'hint' }, 'No pegues claves privadas ni frases semilla: no hace falta y no se procesan. La consulta sale de tu navegador a nodos públicos; no se guarda nada.')),
+      out,
       llano('Tether (USDT) puede <b>bloquear direcciones</b>: lo que tengan queda congelado y no se puede mover. Aquí pegas una dirección y se le pregunta <b>en directo</b> al contrato de USDT en <b>' + redes.length + ' redes</b> si está en su lista negra.',
         'Una dirección <b>0x…</b> se mira en las 20 redes compatibles con Ethereum (es la misma dirección en todas); una dirección <b>T…</b> se mira en TRON.'),
-      caja('Comprobar una dirección', el('div', { class: 'tool-in' }, inp, btn), ejemplos,
-        el('p', { class: 'hint' }, 'No pegues claves privadas ni frases semilla: no hace falta y no se procesan. La consulta sale directamente de tu navegador a nodos públicos; no se guarda nada.')),
-      out,
       el('div', { class: 'ayuda' }, [
         { k: 'Cómo leerlo', l: ['<b>EN BLACKLIST</b>: el contrato de USDT de esa red tiene la dirección bloqueada. Si tiene saldo, está congelado.', '<b>NO ESTÁ EN BLACKLIST</b>: ahora mismo no figura bloqueada en esa red.', '<b>NO SE PUDO COMPROBAR</b>: los nodos públicos no respondieron; no significa que esté limpia.'] },
         { k: 'Qué NO dice', v: 'Que una dirección no esté bloqueada hoy no significa que sea «segura» ni que sea de nadie en concreto. En las redes que no son Ethereum ni TRON el token es <b>USDT0</b> (la versión multicadena de Tether). Una congelación de USDT no es el bloqueo completo de una billetera: no afecta a otros activos.' },
@@ -233,13 +232,76 @@
     }).catch((e) => { cuerpo.textContent = ''; cuerpo.append(el('div', { class: 'res-head warn' }, el('div', { class: 'big' }, 'Todavía no hay calendario publicado'), el('div', { class: 'sub2' }, 'No se pudo cargar data/desbloqueos-trx.json (' + String(e.message).slice(0, 40) + '). La consulta de una dirección sigue disponible abajo.'))); });
   } });
 
+  /* ---------- fichas de arriba (imagen + cifra viva) ---------- */
+  const mt = (x) => (x >= 1e6 ? n(x / 1e6, 1) + ' M TRX' : n(x) + ' TRX');
+  const hace = (t) => { const h = (ahoraMs() - t) / 3600000; return h < 1 ? 'hace ' + n(Math.max(1, Math.round(h * 60))) + ' min' : h < 48 ? 'hace ' + n(Math.round(h)) + ' h' : 'hace ' + n(Math.round(h / 24)) + ' días'; };
+  const DIAS = ['dom', 'lun', 'mar', 'mié', 'jue', 'vie', 'sáb'];
+  const fdia = (t) => { const d = new Date(t); return DIAS[d.getUTCDay()] + ' ' + String(d.getUTCDate()).padStart(2, '0') + '/' + String(d.getUTCMonth() + 1).padStart(2, '0'); };
+  const fhora = (t) => { const d = new Date(t), hoy = new Date().toISOString().slice(0, 10), ayer = new Date(ahoraMs() - 86400000).toISOString().slice(0, 10), dd = d.toISOString().slice(0, 10); return (dd === hoy ? 'hoy' : dd === ayer ? 'ayer' : dd.slice(8) + '/' + dd.slice(5, 7)) + ' ' + d.toISOString().slice(11, 16); };
+  function kvSet(id, v, s) { const k = tabsEl.querySelector('[data-kv="' + id + '"]'); if (!k) return; k.querySelector('b').textContent = v; k.querySelector('span').textContent = s; }
+  const TARJETAS = [
+    { id: 'comprobar', vivo: 'EN VIVO', titulo: '¿Está bloqueada por Tether?', texto: 'Pega una dirección y pregunta en directo al contrato de USDT en 21 redes.', alt: 'Moneda de Tether vista a través de una lupa, con el símbolo tachado en rojo' },
+    { id: 'recientes', vivo: 'EN VIVO', titulo: 'Últimos bloqueos de Tether', texto: 'Las direcciones que Tether ha congelado en las últimas horas, con su saldo.', alt: 'Monedas de Tether en una cinta; las últimas, selladas en rojo con un candado' },
+    { id: 'desbloqueos', vivo: 'CADA DÍA', titulo: 'Descongelaciones de TRX', texto: 'Cuánto TRX sale del stake cada día y quién puede retirarlo ya.', alt: 'Moneda de TRON dentro de un bloque de hielo que se derrite, con un calendario detrás' },
+  ];
+  function fichas() {
+    for (const c of TARJETAS) tabsEl.append(el('button', { class: 'tool', 'data-id': c.id, role: 'tab', onclick: () => (c.id === 'comprobar' ? huecos.comprobar : document.getElementById('sec-' + c.id)).scrollIntoView({ behavior: 'smooth', block: 'start' }) },
+      el('div', { class: 'tool-img' }, el('img', { src: 'assets/img/herramientas/' + c.id + '.webp', alt: c.alt, width: '900', height: '560' }), el('span', { class: 'vivo' }, c.vivo)),
+      el('div', { class: 'tool-body' }, el('h3', null, c.titulo), el('p', null, c.texto.replace('21 redes', redes.length + ' redes')), el('div', { class: 'kv', 'data-kv': c.id }, el('b', null, '…'), el('span', null, 'leyendo…')))));
+    kvSet('comprobar', n(redes.length), 'redes consultadas · respuesta en segundos');
+  }
+
+  /* ---------- panel compacto: descongelaciones (calendario de barras + las mayores) ---------- */
+  function panelDesbloqueos(cont) {
+    const sub = el('p', { class: 'sub' }, 'Cargando el calendario…'); const cal = el('div', { class: 'cal' }); const lista = el('ul', { class: 'lista' });
+    cont.append(el('h2', null, 'Descongelaciones de TRX · próximos 14 días'), sub, cal, lista,
+      el('div', { class: 'panel-acc' }, el('button', { class: 'btn', onclick: () => abrirTab('desbloqueos') }, 'Ver el calendario completo y consultar una dirección ↓'), el('span', { class: 'foot-p' }, 'Descongelar no es vender.')));
+    json('data/desbloqueos-trx.json?v=' + Math.floor(ahoraMs() / 600000), {}, 15000).then((D) => {
+      const K = D.calendario, base = Date.parse(D.leidoEn), edad = (ahoraMs() - base) / 3600000;
+      kvSet('desbloqueos', mt(K.yaDisponible.trx), 'ya retirables · ' + n(K.yaDisponible.cuentas) + ' cuentas · ' + mt(K.proximos14.trx) + ' en 14 días');
+      sub.textContent = 'TRX que sale del stake y queda libre para retirar. Leído ' + fh(base) + (edad > 48 ? ' (datos anticuados: la consulta de dirección sí es en vivo)' : '') + ' de las 10.000 mayores cuentas.';
+      const dias = []; for (let i = 0; i <= Math.min(D.diasDemora, 13); i++) dias.push(new Date(base + i * 86400000).toISOString().slice(0, 10));
+      const por = Object.fromEntries(dias.map((d) => [d, 0])); for (const e of D.eventos) { if (!e.e || e.e <= base) continue; const d = new Date(e.e).toISOString().slice(0, 10); if (d in por) por[d] += e.x; }
+      const max = Math.max(1, ...Object.values(por)), hoy = new Date().toISOString().slice(0, 10);
+      dias.forEach((d) => { const v = por[d]; cal.append(el('div', { class: 'd' + (d === hoy ? ' hoy' : '') + (v === max ? ' top' : ''), title: n(v) + ' TRX el ' + d }, el('b', null, v >= 1e8 ? n(v / 1e6, 0) + ' M' : v >= 1e6 ? n(v / 1e6, 1) + ' M' : v >= 1e3 ? n(v / 1e3, 0) + ' k' : n(v)), el('i', { style: 'height:' + Math.max(3, Math.round(v / max * 100)) + 'px' }), el('span', null, fdia(Date.parse(d))))); });
+      const filas = [];
+      for (const p of (D.principales || []).slice(0, 3)) filas.push({ cuando: p.primera ? fdia(p.primera) : '—', a: p.address, t: p.tag, x: p.trx });
+      for (const s of (D.sinRetirar || []).slice(0, 2)) filas.push({ cuando: 'ya retirable', a: s.address, t: s.tag, x: s.trx });
+      for (const f of filas) lista.append(el('li', null, el('span', { class: 'when' }, f.cuando), el('span', { class: 'who' }, el('b', null, f.t || 'sin etiqueta'), ' · ', el('a', { class: 'addr', href: 'https://tronscan.org/#/address/' + f.a, target: '_blank', rel: 'noopener' }, f.a)), el('span', { class: 'amt' }, mt(f.x))));
+    }).catch((e) => { sub.textContent = 'No se pudo cargar el calendario (' + String(e.message).slice(0, 40) + ').'; kvSet('desbloqueos', '—', 'calendario no disponible ahora'); });
+  }
+
+  /* ---------- panel compacto: últimos bloqueos (TRON en directo; Ethereum en la herramienta completa) ---------- */
+  function panelRecientes(cont) {
+    const sub = el('p', { class: 'sub' }, 'Leyendo los últimos bloqueos en TRON…'); const lista = el('ul', { class: 'lista' });
+    cont.append(el('h2', null, 'Últimos bloqueos de Tether'), sub, lista,
+      el('div', { class: 'panel-acc' }, el('button', { class: 'btn', onclick: () => abrirTab('recientes') }, 'Ver todos, con Ethereum y el gráfico por día ↓'), el('span', { class: 'foot-p' }, 'Tether bloquea direcciones, no monedas.')));
+    jsonReintento(GRID + '/v1/contracts/' + TRON_USDT + '/events?event_name=AddedBlackList&only_confirmed=true&limit=50&order_by=block_timestamp,desc', {}, 9000, 2).then(async (r) => {
+      const ev = (r.data || []).filter((d) => d.result && (d.result._user || d.result['0'])).map((d) => ({ t: d.block_timestamp, hex: d.result._user || d.result['0'], tx: d.transaction_id }));
+      const d24 = ev.filter((x) => ahoraMs() - x.t < 86400000).length;
+      kvSet('recientes', n(d24), 'bloqueos en TRON en 24 h' + (ev[0] ? ' · el último ' + hace(ev[0].t) : ''));
+      sub.textContent = 'Leídos en directo del contrato de USDT en TRON (eventos de bloqueo). Hora UTC. Pulsa una fila para comprobar la dirección.';
+      for (const x of ev.slice(0, 6)) {
+        x.dir = await hex20ATron(x.hex); let saldo = null; for (let i = 0; i < 3 && saldo == null; i++) { try { saldo = aNum(await tronCall('balanceOf(address)', x.hex)); } catch (e) { await dormir(900 * (i + 1)); } } await dormir(350);
+        lista.append(el('li', { class: 'clic', onclick: () => { abrirTab('comprobar'); montado.comprobar.irA(x.dir); } }, el('span', { class: 'when' }, fhora(x.t)), el('span', { class: 'who' }, el('span', { class: 'net' }, 'TRON'), x.dir), el('span', { class: 'amt' }, saldo != null ? n(saldo, 0) + ' USDT' : '—')));
+      }
+      if (!ev.length) sub.textContent = 'TRON no devolvió eventos ahora mismo.';
+    }).catch((e) => { sub.textContent = 'No se pudo leer TRON ahora (' + String(e.message).slice(0, 40) + '). Prueba en la herramienta completa.'; kvSet('recientes', '—', 'TRON no responde ahora'); });
+  }
+
   /* ---------- arranque ---------- */
   document.addEventListener('DOMContentLoaded', async () => {
     try { redes = (await json('data/redes-usdt.json', {}, 15000)).redes; } catch (e) { panel.textContent = 'No se pudo cargar la lista de redes: ' + e.message; return; }
-    TABS.forEach((t) => tabsEl.append(el('button', { 'data-id': t.id, role: 'tab', onclick: () => abrirTab(t.id) }, t.titulo)));
+    fichas();
+    panel.textContent = '';
+    huecos.comprobar = el('section', { id: 'sec-comprobar' }); montado.comprobar = el('div'); TABS[0].render(montado.comprobar); huecos.comprobar.append(montado.comprobar);
+    { const det = montado.comprobar.querySelector('details.como'), ay = montado.comprobar.querySelector('.ayuda'); if (det && ay) det.append(ay); }
+    const pDes = el('section', { class: 'panel', id: 'sec-desbloqueos' }), pRec = el('section', { class: 'panel', id: 'sec-recientes' });
+    huecos.desbloqueos = el('section', { class: 'hueco', hidden: true }); huecos.recientes = el('section', { class: 'hueco', hidden: true });
+    panel.append(huecos.comprobar, el('div', { class: 'dos' }, pDes, pRec), huecos.desbloqueos, huecos.recientes);
+    panelDesbloqueos(pDes); panelRecientes(pRec);
     const h = (location.hash || '').replace('#', '');
-    abrirTab(q.get('dir') ? 'comprobar' : TABS.some((t) => t.id === h) ? h : 'comprobar');
-    // los enlaces de la barra de novedades cambian de pestaña sin recargar la página
-    window.addEventListener('hashchange', () => { const n = (location.hash || '').replace('#', ''); if (TABS.some((t) => t.id === n)) abrirTab(n); });
+    if (TABS.some((t) => t.id === h) && h !== 'comprobar') abrirTab(h);
+    window.addEventListener('hashchange', () => { const x = (location.hash || '').replace('#', ''); if (TABS.some((t) => t.id === x)) abrirTab(x); });
   });
 })();
