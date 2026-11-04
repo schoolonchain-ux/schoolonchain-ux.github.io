@@ -12,6 +12,7 @@
   if (listaNov) box.parentNode.insertBefore(listaNov, box);
   for (const r of idx.informes) {
     const a = C.el('a', { class: 'rcard' + (r.caso ? ' destacada' : ''), href: r.url || 'report.html?r=' + encodeURIComponent(r.slug) });
+    if (r.imagen) a.append(el('div', { class: 'rcard-img' }, el('img', { src: r.imagen, alt: r.imagenAlt || r.titulo, loading: 'lazy', width: '900', height: '560' })));   // imagen de cabecera (opcional, reports/index.json)
     a.append(
       r.caso ? el('span', { class: 'caso' }, 'Caso · ' + r.caso) : null,
       el('div', { class: 'chips' }, (r.cadenas || []).map((c) => el('span', { class: 'chip' }, c)), el('span', { class: 'chip ver' }, r.version || '')),
