@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Herramientas on-chain · School On-Chain</title>
+<title>Herramientas on-chain y de mercado · School On-Chain</title>
 <meta name="description" content="Comprueba en vivo si una dirección está bloqueada por Tether (USDT) en 21 redes, mira los últimos bloqueos y el calendario de descongelaciones de TRX.">
 <meta property="og:title" content="School On-Chain · Herramientas on-chain">
 <meta property="og:description" content="Bloqueos de Tether en vivo y calendario de descongelaciones de TRX.">
@@ -21,6 +21,7 @@
 <link rel="stylesheet" href="assets/site5.css?v=64bd62d2">
 <link rel="stylesheet" href="assets/tema.css?v=43fe5cb5">
 <link rel="stylesheet" href="assets/ticker.css?v=040b25a2">
+<link rel="stylesheet" href="assets/mercado.css?v=1781fcfb">
 </head>
 <body>
 <div class="topbar"><div class="wrap">
@@ -32,11 +33,69 @@
 <main class="wrap" id="app">
   <header class="hero-h">
     <span class="kick">Herramientas · en vivo · desde tu navegador</span>
-    <h1>Tres cosas que puedes comprobar ahora mismo</h1>
-    <p>Se leen en directo de la cadena, sin guardar nada ni pedir claves. Una dirección no es una persona: solo datos públicos.</p>
+    <h1>Herramientas on-chain y de mercado</h1>
+    <p>Comprueba datos de la cadena, calcula el riesgo de tus posiciones y consulta el mercado desde tu navegador.</p>
   </header>
   <div class="tools" id="tabs" role="tablist"></div>
+  <nav class="tools" id="herramientas-mercado" aria-label="Herramientas de mercado">
+    <a class="tool" href="#riesgo-mercado">
+      <div class="tool-img"><img src="assets/img/herramientas/var.webp" alt="" width="900" height="560"><span class="vivo">HISTÓRICO REAL</span></div>
+      <div class="tool-body"><h3>¿Cuánto podría perder en un día?</h3><p>Escribe cuánto vale tu posición. Calcula el VaR y la pérdida media en días extremos para una moneda o varias juntas.</p><div class="kv"><b>99 %</b><span>VaR a un día · BTC, ETH y TRX</span></div></div>
+    </a>
+    <a class="tool" href="#liquidez-venta">
+      <div class="tool-img"><img src="assets/img/herramientas/liquidez.webp" alt="" width="900" height="560"><span class="vivo">LIBROS EN VIVO</span></div>
+      <div class="tool-body"><h3>¿Cuánto recibiría si vendo?</h3><p>Indica cuántas monedas quieres vender y compara cuánto cubriría cada exchange y a qué precio medio.</p><div class="kv"><b>Por exchange</b><span>Precio, importe y cantidad pendiente</span></div></div>
+    </a>
+    <a class="tool" href="#paridad-stablecoins">
+      <div class="tool-img"><img src="assets/img/herramientas/paridad.webp" alt="" width="900" height="560"><span class="vivo">PRECIO HORARIO</span></div>
+      <div class="tool-body"><h3>¿Sigue cerca de 1 USD?</h3><p>Consulta cuánto se aparta una stablecoin de 1 USD, cuánto dura la desviación y cuántas unidades hay en circulación.</p><div class="kv"><b>1 USD</b><span>Referencia para medir la paridad</span></div></div>
+    </a>
+  </nav>
   <div id="panel"><p class="muted" style="padding:30px 0">Cargando herramientas…</p></div>
+<section id="riesgo-mercado" class="preview-target" aria-label="Riesgo de mercado">
+<header class="var-intro"><span class="kick">Herramientas · Riesgo de mercado</span><h1>¿Cuánto podría perder en un día?</h1><p>Elige una moneda y escribe cuánto vale hoy tu posición en dólares. Si tienes más monedas, añade una fila por cada una.</p><p><strong>Datos históricos reales.</strong> Precios diarios de DefiLlama. Método de cálculo de EquipoIA.</p></header>
+<form id="risk-form" class="panel var-form" novalidate>
+<h2>Tus posiciones</h2><p class="sub">Escribe el valor total en USD. Si tienes 5.000 dólares en BTC, introduce 5000.</p>
+<div id="positions" class="var-rows"></div>
+<div class="var-actions"><button type="button" id="add-position" class="btn">＋ Añadir otro activo</button><button type="submit" class="btn primary">Calcular riesgo</button></div>
+<p id="risk-error" class="var-error" role="alert" hidden></p>
+</form>
+<section id="risk-result" class="panel var-result" aria-live="polite" hidden>
+<h2>Riesgo estimado a un día</h2><p id="risk-basis" class="sub"></p>
+<div class="var-metrics">
+<div class="var-metric"><span>VaR 99 % · Umbral de pérdida</span><strong id="var-value"></strong><p id="var-reading"></p></div>
+<div class="var-metric"><span>ES · Pérdida media en los días extremos</span><strong id="es-value"></strong><p id="es-reading"></p></div>
+</div>
+<p id="risk-sample" class="sub"></p>
+<p class="sub">El cálculo aplica los importes actuales a los movimientos del pasado. La estimación depende de la muestra elegida.</p>
+</section>
+
+</section>
+<div class="dos" style="margin-top:14px">
+<section class="panel preview-target" id="liquidez-venta">
+<h2>¿Cuánto recibiría si vendo?</h2>
+<p class="sub">Escribe el símbolo y cuántas monedas quieres vender. Comparamos esa misma cantidad con las órdenes de compra disponibles en cada exchange.</p>
+<form id="sale-form" class="market-form">
+<label>Activo<input name="asset" placeholder="Ej. TRX" maxlength="12" required></label>
+<label>Cantidad de monedas<input name="units" placeholder="Ej. 300000" inputmode="decimal" required></label>
+<button class="btn primary">Comparar exchanges</button>
+</form>
+<div id="sale-result" class="market-result" aria-live="polite"></div>
+<p class="hint">Introduce la cantidad sin separador de miles. La estimación usa el libro visible al consultar, antes de comisiones.</p>
+</section>
+<section class="panel preview-target" id="paridad-stablecoins">
+<h2>¿Sigue cerca de 1 USD?</h2>
+<p class="sub">Elige una stablecoin. Verás su último precio horario, la diferencia frente a 1 USD y cuánto tiempo lleva fuera de la banda del 0,5 %, si aplica.</p>
+<form id="peg-form" class="market-form">
+<label>Stablecoin<select name="asset"><option>USDT</option><option>USDC</option><option>DAI</option><option>USDE</option><option>FDUSD</option><option>PYUSD</option><option>TUSD</option><option>USDD</option><option>FRAX</option><option>USDS</option></select></label>
+<button class="btn primary">Consultar paridad</button>
+</form>
+<div id="peg-result" class="market-result" aria-live="polite"></div>
+<p class="hint">Fuente: DefiLlama. La circulación y el precio proceden de series distintas.</p>
+</section>
+</div>
+
+
 </main>
 
 <div class="tip" id="tip"></div>
@@ -44,7 +103,8 @@
 <script src="assets/common.js?v=a7b1254f"></script>
 <script src="assets/marca.js?v=2e97cb64"></script>
 <script src="assets/ui.js?v=5c721148"></script>
-<script src="assets/herramientas.js?v=ae323370"></script>
+<script src="assets/herramientas.js?v=d24004d0"></script>
 <script src="assets/ticker.js?v=62a3607d"></script>
+<script src="assets/mercado.js?v=371b0876"></script>
 </body>
 </html>

@@ -84,12 +84,13 @@
     root.append(
       el('div', { class: 'buscar' }, el('h2', null, '¿Está bloqueada esta dirección?'), el('p', { class: 'sub' }, 'Una dirección 0x… se mira en las 20 redes compatibles con Ethereum (es la misma en todas); una dirección T… se mira en TRON.'), el('div', { class: 'tool-in sbox' }, inp, btn), ejemplos, el('p', { class: 'hint' }, 'No pegues claves privadas ni frases semilla: no hace falta y no se procesan. La consulta sale de tu navegador a nodos públicos; no se guarda nada.')),
       out,
-      llano('Tether (USDT) puede <b>bloquear direcciones</b>: lo que tengan queda congelado y no se puede mover. Aquí pegas una dirección y se le pregunta <b>en directo</b> al contrato de USDT en <b>' + redes.length + ' redes</b> si está en su lista negra.',
-        'Una dirección <b>0x…</b> se mira en las 20 redes compatibles con Ethereum (es la misma dirección en todas); una dirección <b>T…</b> se mira en TRON.'),
-      el('div', { class: 'ayuda' }, [
-        { k: 'Cómo leerlo', l: ['<b>EN BLACKLIST</b>: el contrato de USDT de esa red tiene la dirección bloqueada. Si tiene saldo, está congelado.', '<b>NO ESTÁ EN BLACKLIST</b>: ahora mismo no figura bloqueada en esa red.', '<b>NO SE PUDO COMPROBAR</b>: los nodos públicos no respondieron; no significa que esté limpia.'] },
-        { k: 'Qué NO dice', v: 'Que una dirección no esté bloqueada hoy no significa que sea «segura» ni que sea de nadie en concreto. En las redes que no son Ethereum ni TRON el token es <b>USDT0</b> (la versión multicadena de Tether). Una congelación de USDT no es el bloqueo completo de una billetera: no afecta a otros activos.' },
-        { k: 'Cómo se comprueba', v: 'Con una llamada de solo lectura al contrato de cada red (<span class="mono">isBlackListed</span> en Ethereum y TRON, <span class="mono">isBlocked</span> en el resto), con dos nodos públicos de respaldo por red. Los contratos y nodos están en <a href="data/redes-usdt.json">data/redes-usdt.json</a>.' }].map((i) => el('div', { class: 'ai' }, el('b', null, i.k + '. '), i.v ? el('span', { html: i.v }) : null, i.l ? el('ul', null, i.l.map((x) => el('li', { html: x }))) : null))));
+      el('details', { class: 'como' },
+        el('summary', null, 'Bloqueos de USDT · Cómo comprobar una dirección y leer el resultado'),
+        el('p', { html: '<b>Qué pegar.</b> Copia la dirección de la billetera y pulsa <b>Comprobar</b>. Si empieza por <code>0x</code>, verás un resultado por cada red compatible con Ethereum del listado. Si empieza por <code>T</code>, se consulta TRON.' }),
+        el('div', { class: 'ayuda' },
+          el('div', { class: 'ai', html: '<b>Cómo leer cada resultado.</b><ul><li><b>En blacklist.</b> El contrato de esa red tiene bloqueada la dirección. Si hay saldo de ese token, queda inmovilizado.</li><li><b>No está en blacklist.</b> El contrato consultado indica que la dirección no figura bloqueada en esa red en ese momento.</li><li><b>No se pudo comprobar.</b> La consulta falló y el estado queda sin confirmar.</li></ul>' }),
+          el('div', { class: 'ai', html: '<b>Qué abarca.</b> El resultado se refiere al contrato de USDT o USDT0 de cada red. Los demás activos de la billetera quedan fuera de la consulta. El resultado por sí solo tampoco permite evaluar la seguridad de la dirección ni identificar a su titular.' }),
+          el('div', { class: 'ai', html: '<b>De dónde sale.</b> La web lee el estado del contrato en nodos públicos. Consulta <code>isBlackListed</code> en Ethereum y TRON y <code>isBlocked</code> en las demás redes del listado. <a href="data/redes-usdt.json">Ver los contratos y nodos por red</a>.' }))));
 
     let ronda = 0;
     async function ir(dir) {
@@ -295,7 +296,6 @@
     fichas();
     panel.textContent = '';
     huecos.comprobar = el('section', { id: 'sec-comprobar' }); montado.comprobar = el('div'); TABS[0].render(montado.comprobar); huecos.comprobar.append(montado.comprobar);
-    { const det = montado.comprobar.querySelector('details.como'), ay = montado.comprobar.querySelector('.ayuda'); if (det && ay) det.append(ay); }
     const pDes = el('section', { class: 'panel', id: 'sec-desbloqueos' }), pRec = el('section', { class: 'panel', id: 'sec-recientes' });
     huecos.desbloqueos = el('section', { class: 'hueco', hidden: true }); huecos.recientes = el('section', { class: 'hueco', hidden: true });
     panel.append(huecos.comprobar, el('div', { class: 'dos' }, pDes, pRec), huecos.desbloqueos, huecos.recientes);
