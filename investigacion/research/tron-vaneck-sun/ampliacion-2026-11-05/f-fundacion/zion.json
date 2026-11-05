@@ -1,0 +1,123 @@
+{
+ "cuenta": "TLLM21wteSPs4hKjbxgmH1L6poyMjeTbHm",
+ "tx_leidas": 813,
+ "truncada": false,
+ "primera": "2018-10-12T02:05:42Z",
+ "ultima": "2026-08-26T01:00:18Z",
+ "tipos": {
+  "TransferAsset": 287,
+  "FreezeBalance": 4,
+  "Transfer": 207,
+  "UnfreezeBalance": 5,
+  "TriggerSmart": 143,
+  "VoteWitness": 2,
+  "WithdrawBalance": 1,
+  "DelegateResource": 3,
+  "UnDelegateResource": 3
+ },
+ "transferencias_salientes": 9,
+ "trx_saliente_total": 1858369568.44,
+ "transferencias_entrantes": 198,
+ "trx_entrante_total": 788.72,
+ "importes_mas_repetidos": [
+  [
+   "39499992",
+   1
+  ],
+  [
+   "70000000",
+   1
+  ],
+  [
+   "80109793",
+   1
+  ],
+  [
+   "89857066",
+   1
+  ],
+  [
+   "110000000",
+   1
+  ],
+  [
+   "268971097",
+   1
+  ],
+  [
+   "297587740",
+   1
+  ],
+  [
+   "429754123",
+   1
+  ]
+ ],
+ "por_mes": {
+  "2018-10": {
+   "n": 1,
+   "trx": 472589756.96
+  },
+  "2018-12": {
+   "n": 2,
+   "trx": 180000000
+  },
+  "2019-01": {
+   "n": 1,
+   "trx": 297587740.48
+  },
+  "2019-02": {
+   "n": 1,
+   "trx": 39499992
+  },
+  "2019-04": {
+   "n": 1,
+   "trx": 89857066
+  },
+  "2019-08": {
+   "n": 1,
+   "trx": 80109793
+  },
+  "2023-05": {
+   "n": 1,
+   "trx": 268971097
+  },
+  "2023-08": {
+   "n": 1,
+   "trx": 429754123
+  }
+ },
+ "mayores_destinos": [
+  {
+   "cuenta": "TAUN6FwrnwwmaEqYcckffC7wYmbaS6cBiX",
+   "n": 3,
+   "trx": 850287290.44,
+   "primera": "2018-10-24T09:44:45Z"
+  },
+  {
+   "cuenta": "TWpMnUh9pZS1Mf8yyw9WPiS82WYevKzQo2",
+   "n": 1,
+   "trx": 429754123,
+   "primera": "2023-08-03T09:09:51Z"
+  },
+  {
+   "cuenta": "TV95LSA54nBULaQhx3HXPh9GJZq8GxMM1D",
+   "n": 3,
+   "trx": 269857066,
+   "primera": "2018-12-20T04:21:57Z"
+  },
+  {
+   "cuenta": "TVxiBzCRT5Sv4PriMbHbyhTwjTkaJLHyTV",
+   "n": 1,
+   "trx": 268971097,
+   "primera": "2023-05-30T02:52:39Z"
+  },
+  {
+   "cuenta": "TM4vf1V5kFh33BP8EaZ7j6E98BGfnsdvzD",
+   "n": 1,
+   "trx": 39499992,
+   "primera": "2019-02-20T00:59:27Z"
+  }
+ ],
+ "destinos_distintos": 5
+}

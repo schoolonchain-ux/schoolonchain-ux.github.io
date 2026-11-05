@@ -1,0 +1,96 @@
+{
+ "eventos_de_stake": [
+  {
+   "t": "2021-11-08T15:34:39Z",
+   "tipo": "FreezeBalance",
+   "a": null,
+   "trx": 970000000,
+   "recurso": null,
+   "votos": null,
+   "tx": "df231c7a9ca469139fcdd476680701fcb77eed33e768955617503b018a72d7ec"
+  },
+  {
+   "t": "2023-05-13T08:37:54Z",
+   "tipo": "UnfreezeBalance",
+   "a": null,
+   "trx": null,
+   "recurso": null,
+   "votos": null,
+   "tx": "57cfed6a1bf3abefc109ff3c28178d30329cb6c4fc429b6e8e4fcb04792f285f"
+  },
+  {
+   "t": "2023-07-13T22:36:48Z",
+   "tipo": "DelegateResource",
+   "a": "TM3sTVyahiGWYktKg8G6miHpTzRurKDt7b",
+   "trx": 4,
+   "recurso": "ENERGY",
+   "votos": null,
+   "tx": "de4157be6171accc4bbc56b4fde6383ea6411af83daeec90a04115173565eea5"
+  },
+  {
+   "t": "2023-07-15T11:42:24Z",
+   "tipo": "FreezeBalanceV2",
+   "a": null,
+   "trx": 1170992987,
+   "recurso": "BANDWIDTH",
+   "votos": null,
+   "tx": "4873de9796498cca6a332d04125a2a0b6f44b7fea5929168e840af7eef3d5b2d"
+  },
+  {
+   "t": "2023-07-16T22:45:06Z",
+   "tipo": "UnDelegateResource",
+   "a": "TM3sTVyahiGWYktKg8G6miHpTzRurKDt7b",
+   "trx": 4,
+   "recurso": "ENERGY",
+   "votos": null,
+   "tx": "7dbc4e73afab4e8e077efce1989209fd873351a900ff964f94d41fa8b7ef8407"
+  },
+  {
+   "t": "2024-08-26T04:06:33Z",
+   "tipo": "DelegateResource",
+   "a": "TM3sTVyahiGWYktKg8G6miHpTzRurKDt7b",
+   "trx": 5783,
+   "recurso": "ENERGY",
+   "votos": null,
+   "tx": "239977603aaab0dc4192262324c705ba8f99b47855c10569ce0be59417875d49"
+  },
+  {
+   "t": "2024-08-26T04:16:39Z",
+   "tipo": "UnDelegateResource",
+   "a": "TM3sTVyahiGWYktKg8G6miHpTzRurKDt7b",
+   "trx": 5783,
+   "recurso": "ENERGY",
+   "votos": null,
+   "tx": "f04b1bc034c0a3399b010b2b256f49f189985a7c16308ef05db63a038cab525b"
+  },
+  {
+   "t": "2025-04-27T05:48:27Z",
+   "tipo": "DelegateResource",
+   "a": "TM3sTVyahiGWYktKg8G6miHpTzRurKDt7b",
+   "trx": 1,
+   "recurso": "ENERGY",
+   "votos": null,
+   "tx": "6a520b02adb316895463f3ee5abe3d5dcf08ffae46d4eae521398e24a7f53758"
+  },
+  {
+   "t": "2026-07-20T14:55:33Z",
+   "tipo": "DelegateResource",
+   "a": "TM3sTVyahiGWYktKg8G6miHpTzRurKDt7b",
+   "trx": 6850.38042,
+   "recurso": "ENERGY",
+   "votos": null,
+   "tx": "e66bc156a1bacaedb8db1f381c03717b0df1646f76f7898da8d1d3e058f115b9"
+  },
+  {
+   "t": "2026-07-20T15:05:36Z",
+   "tipo": "UnDelegateResource",
+   "a": "TM3sTVyahiGWYktKg8G6miHpTzRurKDt7b",
+   "trx": 6850.38042,
+   "recurso": "ENERGY",
+   "votos": null,
+   "tx": "9735810054576bb47ad924e2ad3d2cb9952266f266abf3446e08185918352b46"
+  }
+ ],
+ "cobros_de_recompensa": 9,
+ "cambios_de_votos": 10
+}

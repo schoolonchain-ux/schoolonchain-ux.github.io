@@ -1,0 +1,93 @@
+[
+ {
+  "muestra": "2023-12-15 12:00-13:00 UTC",
+  "filas_transacciones": 168,
+  "paginas_tx": 1,
+  "ms_tx": 850,
+  "filas_trc20": 137,
+  "paginas_trc20": 1,
+  "ms_trc20": 715,
+  "tipos_tx": {
+   "Transfer": 99,
+   "TransferAsset": 1,
+   "TriggerSmart": 68
+  }
+ },
+ {
+  "muestra": "2024-06-15 12:00-13:00 UTC",
+  "filas_transacciones": 59,
+  "paginas_tx": 1,
+  "ms_tx": 569,
+  "filas_trc20": 47,
+  "paginas_trc20": 1,
+  "ms_trc20": 432,
+  "tipos_tx": {
+   "Transfer": 33,
+   "TriggerSmart": 26
+  }
+ },
+ {
+  "muestra": "2025-01-15 12:00-13:00 UTC",
+  "filas_transacciones": 54,
+  "paginas_tx": 1,
+  "ms_tx": 508,
+  "filas_trc20": 108,
+  "paginas_trc20": 1,
+  "ms_trc20": 479,
+  "tipos_tx": {
+   "Transfer": 21,
+   "TriggerSmart": 33
+  }
+ },
+ {
+  "muestra": "2025-09-15 12:00-13:00 UTC",
+  "filas_transacciones": 73,
+  "paginas_tx": 1,
+  "ms_tx": 512,
+  "filas_trc20": 86,
+  "paginas_trc20": 1,
+  "ms_trc20": 582,
+  "tipos_tx": {
+   "TriggerSmart": 56,
+   "Transfer": 17
+  }
+ },
+ {
+  "muestra": "2026-03-15 12:00-13:00 UTC",
+  "filas_transacciones": 18,
+  "paginas_tx": 1,
+  "ms_tx": 451,
+  "filas_trc20": 23,
+  "paginas_trc20": 1,
+  "ms_trc20": 423,
+  "tipos_tx": {
+   "TriggerSmart": 15,
+   "Transfer": 3
+  }
+ },
+ {
+  "muestra": "2026-10-15 12:00-13:00 UTC",
+  "filas_transacciones": 43,
+  "paginas_tx": 1,
+  "ms_tx": 453,
+  "filas_trc20": 62,
+  "paginas_trc20": 1,
+  "ms_trc20": 445,
+  "tipos_tx": {
+   "TriggerSmart": 39,
+   "Transfer": 4
+  }
+ },
+ {
+  "muestra": "2026-11-03 12:00-13:00 UTC",
+  "filas_transacciones": 2,
+  "paginas_tx": 1,
+  "ms_tx": 420,
+  "filas_trc20": 16,
+  "paginas_trc20": 1,
+  "ms_trc20": 444,
+  "tipos_tx": {
+   "Transfer": 2
+  }
+ }
+]

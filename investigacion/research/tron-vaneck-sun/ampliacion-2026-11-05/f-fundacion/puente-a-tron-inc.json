@@ -1,0 +1,162 @@
+{
+ "THxg4UEz": {
+  "cuenta": "THxg4UEzbnqXMiyEwMQ5XPgkdLnPrkHHcb",
+  "total": 19,
+  "leidas": 19,
+  "de_1M_o_mas": [
+   {
+    "t": "2025-06-28T11:10:33Z",
+    "de": "TWpMnUh9pZS1Mf8yyw9WPiS82WYevKzQo2",
+    "a": "THxg4UEzbnqXMiyEwMQ5XPgkdLnPrkHHcb",
+    "trx": 365096751,
+    "tx": "defc57b9dd920b508c4fd2446b9be7ad1c1ff33867fbed8820dce5e1b5fcc72e"
+   },
+   {
+    "t": "2025-06-28T11:14:30Z",
+    "de": "THxg4UEzbnqXMiyEwMQ5XPgkdLnPrkHHcb",
+    "a": "TFTWNgDBkQ5wQoP8RXpRznnHvAVV8x5jLu",
+    "trx": 365096751,
+    "tx": "88ec56db0fd09e739034c8f0a0ede9a04d90fbf037334a08e742663462f0a8b2"
+   },
+   {
+    "t": "2025-08-28T06:05:06Z",
+    "de": "TPyjyZfsYaXStgz2NmAraF1uZcMtkgNan5",
+    "a": "THxg4UEzbnqXMiyEwMQ5XPgkdLnPrkHHcb",
+    "trx": 321500100,
+    "tx": "aebecfbae1811b828ef262a7b63a8bb8caa1208aa1cb1bc49ed904873858bb99"
+   },
+   {
+    "t": "2025-08-28T06:06:33Z",
+    "de": "THxg4UEzbnqXMiyEwMQ5XPgkdLnPrkHHcb",
+    "a": "TFTWNgDBkQ5wQoP8RXpRznnHvAVV8x5jLu",
+    "trx": 321500100,
+    "tx": "8b87d8c1e6209daad62dcb582709c77825bf1cceb7439e1671b6c398546c5334"
+   }
+  ]
+ },
+ "TFZZx3HX": {
+  "cuenta": "TFZZx3HXBEGqA1hJnYmRvscjS48gihWXY6",
+  "total": 37,
+  "leidas": 37,
+  "de_1M_o_mas": [
+   {
+    "t": "2025-06-28T11:16:54Z",
+    "de": "TFTWNgDBkQ5wQoP8RXpRznnHvAVV8x5jLu",
+    "a": "TFZZx3HXBEGqA1hJnYmRvscjS48gihWXY6",
+    "trx": 365096750,
+    "tx": "cc25898ec883cc94d8ee5f29fdd7e9c0591845b83917ab822a40ac5a4df20022"
+   },
+   {
+    "t": "2025-06-28T11:19:06Z",
+    "de": "TFZZx3HXBEGqA1hJnYmRvscjS48gihWXY6",
+    "a": "TEySEZLJf6rs2mCujGpDEsgoMVWKLAk9mT",
+    "trx": 365096845,
+    "tx": "2f1914a26d8ba821f941000139b95c0eb4894a30bbaba09fc304682f47f0d742"
+   },
+   {
+    "t": "2025-08-28T06:12:36Z",
+    "de": "TFTWNgDBkQ5wQoP8RXpRznnHvAVV8x5jLu",
+    "a": "TFZZx3HXBEGqA1hJnYmRvscjS48gihWXY6",
+    "trx": 312500100,
+    "tx": "f00d3f89df8e35a7b037998adaa9102922682fb5f95f2bdde3ac4e10cbc09906"
+   },
+   {
+    "t": "2025-08-28T06:27:39Z",
+    "de": "TFZZx3HXBEGqA1hJnYmRvscjS48gihWXY6",
+    "a": "TEySEZLJf6rs2mCujGpDEsgoMVWKLAk9mT",
+    "trx": 312500100,
+    "tx": "1dd30e296f93aab2a6cb613da2f511bc7757135a51e33e34a081b12ad9574ea2"
+   }
+  ]
+ },
+ "HTX4": [
+  {
+   "entrada_a_HTX4": {
+    "t": "2025-06-28T11:14:30Z",
+    "trx": 365096751,
+    "tx": "88ec56db0fd09e739034c8f0a0ede9a04d90fbf037334a08e742663462f0a8b2"
+   },
+   "llegada_a_TFZZx3HX_de_1M_o_mas": [
+    {
+     "t": "2025-06-28T11:16:54Z",
+     "de": "TFTWNgDBkQ5wQoP8RXpRznnHvAVV8x5jLu",
+     "trx": 365096750,
+     "tx": "cc25898ec883cc94d8ee5f29fdd7e9c0591845b83917ab822a40ac5a4df20022"
+    }
+   ]
+  },
+  {
+   "entrada_a_HTX4": {
+    "t": "2025-08-28T06:06:33Z",
+    "trx": 321500100,
+    "tx": "8b87d8c1e6209daad62dcb582709c77825bf1cceb7439e1671b6c398546c5334"
+   },
+   "llegada_a_TFZZx3HX_de_1M_o_mas": [
+    {
+     "t": "2025-08-28T06:12:36Z",
+     "de": "TFTWNgDBkQ5wQoP8RXpRznnHvAVV8x5jLu",
+     "trx": 312500100,
+     "tx": "f00d3f89df8e35a7b037998adaa9102922682fb5f95f2bdde3ac4e10cbc09906"
+    }
+   ]
+  }
+ ],
+ "claves": {
+  "Zion": "sin permiso explícito (clave propia)",
+  "TWpMnUh9": {
+   "umbral": 1,
+   "n_claves": 1,
+   "solo_la_propia": true,
+   "activos": [
+    {
+     "umbral": 1,
+     "n_claves": 1
+    }
+   ]
+  },
+  "THxg4UEz": {
+   "umbral": 1,
+   "n_claves": 1,
+   "solo_la_propia": true,
+   "activos": [
+    {
+     "umbral": 1,
+     "n_claves": 1
+    }
+   ]
+  },
+  "TFZZx3HX": {
+   "umbral": 1,
+   "n_claves": 1,
+   "solo_la_propia": true,
+   "activos": [
+    {
+     "umbral": 1,
+     "n_claves": 1
+    }
+   ]
+  },
+  "TEySEZLJ": {
+   "umbral": 1,
+   "n_claves": 1,
+   "solo_la_propia": true,
+   "activos": [
+    {
+     "umbral": 1,
+     "n_claves": 1
+    }
+   ]
+  },
+  "HTX4": {
+   "umbral": 1,
+   "n_claves": 1,
+   "solo_la_propia": true,
+   "activos": [
+    {
+     "umbral": 1,
+     "n_claves": 1
+    }
+   ]
+  }
+ }
+}

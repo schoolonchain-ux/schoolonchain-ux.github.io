@@ -1,0 +1,699 @@
+[
+ {
+  "direccion": "TFEARS7ezTQoFFnwNoqF5TaE5QEC9gRBoZ",
+  "es_contrato": false,
+  "nombre_contrato": null,
+  "etiqueta": null,
+  "creada": "2026-07-31",
+  "n_tx_tronscan": 7,
+  "trx_libre": 7,
+  "congelado_v2": [
+   {
+    "tipo": "BANDWIDTH",
+    "trx": 0
+   },
+   {
+    "tipo": "ENERGY",
+    "trx": 0
+   },
+   {
+    "tipo": "TRON_POWER",
+    "trx": 0
+   }
+  ],
+  "delega_a_n_cuentas": 0,
+  "delegado_energia_trx": 0,
+  "propietario": {
+   "umbral": 1,
+   "firmantes": [
+    "TFEARS7ezTQoFFnwNoqF5TaE5QEC9gRBoZ"
+   ]
+  },
+  "primeras_transacciones": [
+   {
+    "t": "2026-07-31T12:53:12Z",
+    "tipo": "Transfer",
+    "de": "TCwkDDZDaSV5qJpStHE5W9Qi2yjozLXZW2",
+    "a": "TFEARS7ezTQoFFnwNoqF5TaE5QEC9gRBoZ",
+    "trx": 10
+   },
+   {
+    "t": "2026-07-31T12:53:18Z",
+    "tipo": "TransferAsset",
+    "de": "TDKyqgEvMnHYUEgHKZqFdMUQitCKuhP8Gy",
+    "a": "TFEARS7ezTQoFFnwNoqF5TaE5QEC9gRBoZ",
+    "trx": null
+   },
+   {
+    "t": "2026-07-31T12:53:30Z",
+    "tipo": "Transfer",
+    "de": "TW3cpPpBgC4msYn3sskF3DprdQYLHj7ZW2",
+    "a": "TFEARS7ezTQoFFnwNoqF5TaE5QEC9gRBoZ",
+    "trx": 0.000001
+   },
+   {
+    "t": "2026-07-31T12:53:33Z",
+    "tipo": "Transfer",
+    "de": "TKqdPuUUMAqmjRBT4bRSDLVEGZGsYx1ZW2",
+    "a": "TFEARS7ezTQoFFnwNoqF5TaE5QEC9gRBoZ",
+    "trx": 0.000006
+   },
+   {
+    "t": "2026-07-31T12:54:39Z",
+    "tipo": "TriggerSmart",
+    "de": "TFEARS7ezTQoFFnwNoqF5TaE5QEC9gRBoZ",
+    "a": "TQHj5QZA8PaHBcAGkYdi8QxdtuNabuVx5r",
+    "trx": null
+   }
+  ],
+  "primera_entrada_de_TRX": {
+   "tx": "ca8f1ab6196271db5aa7723f47f097b2ef419a0e93febda4b01c3846be270a6f",
+   "t": 1785502392000,
+   "ok": true,
+   "tipo": "Transfer",
+   "de": "TCwkDDZDaSV5qJpStHE5W9Qi2yjozLXZW2",
+   "a": "TFEARS7ezTQoFFnwNoqF5TaE5QEC9gRBoZ",
+   "trx": 10
+  },
+  "lectura_parcial": false,
+  "administra": [
+   "operator() de LaunchPad (TQHj5QZA)"
+  ]
+ },
+ {
+  "direccion": "TM3sTVyahiGWYktKg8G6miHpTzRurKDt7b",
+  "es_contrato": false,
+  "nombre_contrato": null,
+  "etiqueta": null,
+  "creada": "2021-11-08",
+  "n_tx_tronscan": 930,
+  "trx_libre": 88952319.37,
+  "congelado_v2": [
+   {
+    "tipo": "BANDWIDTH",
+    "trx": 1170992987
+   },
+   {
+    "tipo": "ENERGY",
+    "trx": 0
+   },
+   {
+    "tipo": "TRON_POWER",
+    "trx": 0
+   }
+  ],
+  "delega_a_n_cuentas": 0,
+  "delegado_energia_trx": 0,
+  "propietario": {
+   "umbral": 1,
+   "firmantes": [
+    "TM3sTVyahiGWYktKg8G6miHpTzRurKDt7b"
+   ]
+  },
+  "primeras_transacciones": [
+   {
+    "t": "2021-11-08T15:33:18Z",
+    "tipo": "Transfer",
+    "de": "TTXeVETaU1wSV9cYutUgyg7x1gtrfCiDiW",
+    "a": "TM3sTVyahiGWYktKg8G6miHpTzRurKDt7b",
+    "trx": 970001999
+   },
+   {
+    "t": "2021-11-08T15:34:39Z",
+    "tipo": "FreezeBalance",
+    "de": "TM3sTVyahiGWYktKg8G6miHpTzRurKDt7b",
+    "a": null,
+    "trx": null
+   },
+   {
+    "t": "2021-11-08T15:37:24Z",
+    "tipo": "VoteWitness",
+    "de": "TM3sTVyahiGWYktKg8G6miHpTzRurKDt7b",
+    "a": null,
+    "trx": null
+   },
+   {
+    "t": "2021-11-09T18:18:48Z",
+    "tipo": "Transfer",
+    "de": "TTcYhypP8m4phDhN6oRexz2174zAerjEWP",
+    "a": "TM3sTVyahiGWYktKg8G6miHpTzRurKDt7b",
+    "trx": 5165.875755
+   },
+   {
+    "t": "2021-11-10T18:18:12Z",
+    "tipo": "Transfer",
+    "de": "TTcYhypP8m4phDhN6oRexz2174zAerjEWP",
+    "a": "TM3sTVyahiGWYktKg8G6miHpTzRurKDt7b",
+    "trx": 5165.060837
+   }
+  ],
+  "primera_entrada_de_TRX": {
+   "tx": "f83af97139097d007de7556f9a2a8bc521afe735fef1815a45314be408ae83e9",
+   "t": 1636385598000,
+   "ok": true,
+   "tipo": "Transfer",
+   "de": "TTXeVETaU1wSV9cYutUgyg7x1gtrfCiDiW",
+   "a": "TM3sTVyahiGWYktKg8G6miHpTzRurKDt7b",
+   "trx": 970001999
+  },
+  "lectura_parcial": true,
+  "administra": [
+   "owner() de LaunchPadProxy (TTfvyrAz)",
+   "owner() de SafeVault (TG9nDZMU)"
+  ]
+ },
+ {
+  "direccion": "TKYQmYdssV2UVjr7UmNNt4jti1mmm7ZWnX",
+  "es_contrato": true,
+  "nombre_contrato": "LaunchPad",
+  "etiqueta": null,
+  "creada": null,
+  "n_tx_tronscan": 25,
+  "trx_libre": 0,
+  "congelado_v2": [
+   {
+    "tipo": "BANDWIDTH",
+    "trx": 0
+   },
+   {
+    "tipo": "ENERGY",
+    "trx": 0
+   },
+   {
+    "tipo": "TRON_POWER",
+    "trx": 0
+   }
+  ],
+  "delega_a_n_cuentas": 0,
+  "delegado_energia_trx": 0,
+  "propietario": null,
+  "primeras_transacciones": [
+   {
+    "t": "2024-09-26T07:57:42Z",
+    "tipo": "CreateSmart",
+    "de": "TCXrf8SwGjcmQYY1FcFnV3LUXSQpqod3bi",
+    "a": null,
+    "trx": null
+   },
+   {
+    "t": "2024-09-27T04:32:03Z",
+    "tipo": "TriggerSmart",
+    "de": "TM3sTVyahiGWYktKg8G6miHpTzRurKDt7b",
+    "a": "TKYQmYdssV2UVjr7UmNNt4jti1mmm7ZWnX",
+    "trx": null
+   },
+   {
+    "t": "2024-09-28T06:14:27Z",
+    "tipo": "TriggerSmart",
+    "de": "TLw4Sn4nRxX68ncbWV9CRBdJV9CuojxrJK",
+    "a": "TKYQmYdssV2UVjr7UmNNt4jti1mmm7ZWnX",
+    "trx": 1
+   },
+   {
+    "t": "2024-09-30T05:11:24Z",
+    "tipo": "TriggerSmart",
+    "de": "THCzuasBQdBdKCkRBaPKU7dRNEQGD2FQZh",
+    "a": "TKYQmYdssV2UVjr7UmNNt4jti1mmm7ZWnX",
+    "trx": null
+   },
+   {
+    "t": "2024-10-02T13:02:33Z",
+    "tipo": "TriggerSmart",
+    "de": "TUiEtbs6J3dKWtiGSnE9iyi21JQ7Boicau",
+    "a": "TKYQmYdssV2UVjr7UmNNt4jti1mmm7ZWnX",
+    "trx": null
+   }
+  ],
+  "primera_entrada_de_TRX": {},
+  "lectura_parcial": false,
+  "administra": [
+   "implementation() de LaunchPadProxy (TTfvyrAz)"
+  ]
+ },
+ {
+  "direccion": "TKV6xsHSxiCY24nudkJGZQFveqzA6wjayu",
+  "es_contrato": false,
+  "nombre_contrato": null,
+  "etiqueta": null,
+  "creada": "2024-09-21",
+  "n_tx_tronscan": 17,
+  "trx_libre": 19.77,
+  "congelado_v2": [
+   {
+    "tipo": "BANDWIDTH",
+    "trx": 0
+   },
+   {
+    "tipo": "ENERGY",
+    "trx": 0
+   },
+   {
+    "tipo": "TRON_POWER",
+    "trx": 0
+   }
+  ],
+  "delega_a_n_cuentas": 0,
+  "delegado_energia_trx": 0,
+  "propietario": {
+   "umbral": 1,
+   "firmantes": [
+    "TKV6xsHSxiCY24nudkJGZQFveqzA6wjayu"
+   ]
+  },
+  "primeras_transacciones": [
+   {
+    "t": "2024-09-21T14:00:30Z",
+    "tipo": "Transfer",
+    "de": "TSykN2Zc7JRF7kj9eAY767FNdf5W3swDLS",
+    "a": "TKV6xsHSxiCY24nudkJGZQFveqzA6wjayu",
+    "trx": 2000
+   },
+   {
+    "t": "2024-09-21T14:00:48Z",
+    "tipo": "Transfer",
+    "de": "TJatXxW9qsgrr2yoCRDgrU2XcEMrDa3DLS",
+    "a": "TKV6xsHSxiCY24nudkJGZQFveqzA6wjayu",
+    "trx": 0.000009
+   },
+   {
+    "t": "2024-09-21T14:01:42Z",
+    "tipo": "Transfer",
+    "de": "TMssUA3D9A9gTL85SoBacJrUtYgmJb1DLS",
+    "a": "TKV6xsHSxiCY24nudkJGZQFveqzA6wjayu",
+    "trx": 0.000003
+   },
+   {
+    "t": "2024-09-21T14:02:24Z",
+    "tipo": "CreateSmart",
+    "de": "TKV6xsHSxiCY24nudkJGZQFveqzA6wjayu",
+    "a": null,
+    "trx": null
+   },
+   {
+    "t": "2024-09-21T14:13:39Z",
+    "tipo": "UpdateSetting",
+    "de": "TKV6xsHSxiCY24nudkJGZQFveqzA6wjayu",
+    "a": null,
+    "trx": null
+   }
+  ],
+  "primera_entrada_de_TRX": {
+   "tx": "cb49d2624f55a55636249a1a6aa956624769ec89eb224011ebef3ba7d155b73f",
+   "t": 1726927230000,
+   "ok": true,
+   "tipo": "Transfer",
+   "de": "TSykN2Zc7JRF7kj9eAY767FNdf5W3swDLS",
+   "a": "TKV6xsHSxiCY24nudkJGZQFveqzA6wjayu",
+   "trx": 2000
+  },
+  "lectura_parcial": false,
+  "administra": [
+   "owner() de MintFactory (TDo38LcX)",
+   "owner() de MintProxy (TVjnWgsW)"
+  ]
+ },
+ {
+  "direccion": "TPh1hzUCZ7vGk4sELFLfFKKKoBKUvB931C",
+  "es_contrato": false,
+  "nombre_contrato": null,
+  "etiqueta": null,
+  "creada": "2024-08-27",
+  "n_tx_tronscan": 3688,
+  "trx_libre": 9845.13,
+  "congelado_v2": [
+   {
+    "tipo": "BANDWIDTH",
+    "trx": 0
+   },
+   {
+    "tipo": "ENERGY",
+    "trx": 0
+   },
+   {
+    "tipo": "TRON_POWER",
+    "trx": 0
+   }
+  ],
+  "delega_a_n_cuentas": 0,
+  "delegado_energia_trx": 0,
+  "propietario": {
+   "umbral": 1,
+   "firmantes": [
+    "TPh1hzUCZ7vGk4sELFLfFKKKoBKUvB931C"
+   ]
+  },
+  "primeras_transacciones": [
+   {
+    "t": "2024-08-27T13:35:27Z",
+    "tipo": "Transfer",
+    "de": "TFTWNgDBkQ5wQoP8RXpRznnHvAVV8x5jLu",
+    "a": "TPh1hzUCZ7vGk4sELFLfFKKKoBKUvB931C",
+    "trx": 1238
+   },
+   {
+    "t": "2024-10-09T08:01:27Z",
+    "tipo": "Transfer",
+    "de": "TPh1hzUCZ7vGk4sELFLfFKKKoBKUvB931C",
+    "a": "TCNhUYQbXrGJr8gvtwGHT2Tw21V4xJc3hu",
+    "trx": 1238
+   },
+   {
+    "t": "2024-10-09T08:02:36Z",
+    "tipo": "Transfer",
+    "de": "TUbd66arVWnKWp3Z3dGV7gvh3vqFGZi8hu",
+    "a": "TPh1hzUCZ7vGk4sELFLfFKKKoBKUvB931C",
+    "trx": 0.000001
+   },
+   {
+    "t": "2025-02-21T08:59:30Z",
+    "tipo": "Transfer",
+    "de": "TWcsYWGas6CSrgdFiQgZQ97LTrxiWMb1My",
+    "a": "TPh1hzUCZ7vGk4sELFLfFKKKoBKUvB931C",
+    "trx": 8.8
+   },
+   {
+    "t": "2025-03-20T17:29:03Z",
+    "tipo": "TriggerSmart",
+    "de": "TPh1hzUCZ7vGk4sELFLfFKKKoBKUvB931C",
+    "a": "TZFs5ch1R1C4mmjwrrmZqeqbUgGpxY1yWB",
+    "trx": 8
+   }
+  ],
+  "primera_entrada_de_TRX": {
+   "tx": "0dbb42821be1fe2c77e08c99e2ef6353ac67d5cf2fdb45e366266a06d0753d07",
+   "t": 1724765727000,
+   "ok": true,
+   "tipo": "Transfer",
+   "de": "TFTWNgDBkQ5wQoP8RXpRznnHvAVV8x5jLu",
+   "a": "TPh1hzUCZ7vGk4sELFLfFKKKoBKUvB931C",
+   "trx": 1238
+  },
+  "lectura_parcial": true,
+  "administra": [
+   "operator() de TokenCreator (TRYeDrXw)"
+  ]
+ },
+ {
+  "direccion": "TJW8L56KJgA9JLM5pWSMQT6jWN9omc7KfV",
+  "es_contrato": true,
+  "nombre_contrato": "LaunchPad",
+  "etiqueta": null,
+  "creada": null,
+  "n_tx_tronscan": 2,
+  "trx_libre": 0,
+  "congelado_v2": [
+   {
+    "tipo": "BANDWIDTH",
+    "trx": 0
+   },
+   {
+    "tipo": "ENERGY",
+    "trx": 0
+   },
+   {
+    "tipo": "TRON_POWER",
+    "trx": 0
+   }
+  ],
+  "delega_a_n_cuentas": 0,
+  "delegado_energia_trx": 0,
+  "propietario": null,
+  "primeras_transacciones": [
+   {
+    "t": "2025-02-21T09:43:39Z",
+    "tipo": "CreateSmart",
+    "de": "TU3rMHyWHzeEJBReWLzHko728hbz6MtfNg",
+    "a": null,
+    "trx": null
+   },
+   {
+    "t": "2026-11-03T11:26:09Z",
+    "tipo": "UpdateSetting",
+    "de": "TU3rMHyWHzeEJBReWLzHko728hbz6MtfNg",
+    "a": null,
+    "trx": null
+   }
+  ],
+  "primera_entrada_de_TRX": {},
+  "lectura_parcial": false,
+  "administra": [
+   "implementation() de LaunchPadProxy (TEPcBKJB)"
+  ]
+ },
+ {
+  "direccion": "TXdNiR1AcSDCNh1hQJX8e9raD9FxxcBDix",
+  "es_contrato": false,
+  "nombre_contrato": null,
+  "etiqueta": null,
+  "creada": "2025-02-19",
+  "n_tx_tronscan": 56,
+  "trx_libre": 667.39,
+  "congelado_v2": [
+   {
+    "tipo": "BANDWIDTH",
+    "trx": 0
+   },
+   {
+    "tipo": "ENERGY",
+    "trx": 0
+   },
+   {
+    "tipo": "TRON_POWER",
+    "trx": 0
+   }
+  ],
+  "delega_a_n_cuentas": 0,
+  "delegado_energia_trx": 0,
+  "propietario": {
+   "umbral": 1,
+   "firmantes": [
+    "TXdNiR1AcSDCNh1hQJX8e9raD9FxxcBDix"
+   ]
+  },
+  "primeras_transacciones": [
+   {
+    "t": "2025-02-19T06:11:18Z",
+    "tipo": "Transfer",
+    "de": "TPLmeaAZkdJP99MXCaeK4xgt6kTrvTW4Vd",
+    "a": "TXdNiR1AcSDCNh1hQJX8e9raD9FxxcBDix",
+    "trx": 10
+   },
+   {
+    "t": "2025-02-19T06:14:54Z",
+    "tipo": "Transfer",
+    "de": "TPLmeaAZkdJP99MXCaeK4xgt6kTrvTW4Vd",
+    "a": "TXdNiR1AcSDCNh1hQJX8e9raD9FxxcBDix",
+    "trx": 90
+   },
+   {
+    "t": "2025-02-19T09:25:57Z",
+    "tipo": "TriggerSmart",
+    "de": "TXdNiR1AcSDCNh1hQJX8e9raD9FxxcBDix",
+    "a": "TAzMbBopTs53tJ3SJLvdi4e6mpc2MEkMCs",
+    "trx": null
+   },
+   {
+    "t": "2025-02-19T09:30:12Z",
+    "tipo": "TriggerSmart",
+    "de": "TXdNiR1AcSDCNh1hQJX8e9raD9FxxcBDix",
+    "a": "TMWYtDyB1rFohyRB4vsAtD16Qsg7BL55ip",
+    "trx": null
+   },
+   {
+    "t": "2025-02-19T09:41:24Z",
+    "tipo": "TriggerSmart",
+    "de": "TXdNiR1AcSDCNh1hQJX8e9raD9FxxcBDix",
+    "a": "TAzMbBopTs53tJ3SJLvdi4e6mpc2MEkMCs",
+    "trx": null
+   }
+  ],
+  "primera_entrada_de_TRX": {
+   "tx": "122429246ac0ff7a71e23fdb5da551468e1d9e1c667100bbe99ca6509f04d5a3",
+   "t": 1739945478000,
+   "ok": true,
+   "tipo": "Transfer",
+   "de": "TPLmeaAZkdJP99MXCaeK4xgt6kTrvTW4Vd",
+   "a": "TXdNiR1AcSDCNh1hQJX8e9raD9FxxcBDix",
+   "trx": 10
+  },
+  "lectura_parcial": false,
+  "administra": [
+   "operator() de LaunchPadProxy (TEPcBKJB)"
+  ]
+ },
+ {
+  "direccion": "TLntW9Z59LYY5KEi9cmwk3PKjQga828ird",
+  "es_contrato": false,
+  "nombre_contrato": null,
+  "etiqueta": null,
+  "creada": "2022-04-29",
+  "n_tx_tronscan": 3486,
+  "trx_libre": 895867622.69,
+  "congelado_v2": [
+   {
+    "tipo": "BANDWIDTH",
+    "trx": 0
+   },
+   {
+    "tipo": "ENERGY",
+    "trx": 0
+   },
+   {
+    "tipo": "TRON_POWER",
+    "trx": 0
+   }
+  ],
+  "delega_a_n_cuentas": 0,
+  "delegado_energia_trx": 0,
+  "propietario": {
+   "umbral": 1,
+   "firmantes": [
+    "TLntW9Z59LYY5KEi9cmwk3PKjQga828ird"
+   ]
+  },
+  "primeras_transacciones": [
+   {
+    "t": "2022-04-29T17:17:24Z",
+    "tipo": "Transfer",
+    "de": "TV6MuMXfmLbBqPZvBHdwFsDnQeVfnmiuSi",
+    "a": "TLntW9Z59LYY5KEi9cmwk3PKjQga828ird",
+    "trx": 200
+   },
+   {
+    "t": "2022-04-29T17:17:30Z",
+    "tipo": "TriggerSmart",
+    "de": "TDwuuvymtEFkbqx6yiK5ubDXJoR6S9Zggg",
+    "a": "TPy8v4JkfMfoARycAJm7T1UJNbyJrVTqXh",
+    "trx": null
+   },
+   {
+    "t": "2022-05-01T06:25:30Z",
+    "tipo": "Transfer",
+    "de": "TJDENsfBJs4RFETt1X1W8wMDc8M5XnJhCe",
+    "a": "TLntW9Z59LYY5KEi9cmwk3PKjQga828ird",
+    "trx": 200
+   },
+   {
+    "t": "2022-05-01T07:04:45Z",
+    "tipo": "TriggerSmart",
+    "de": "TLntW9Z59LYY5KEi9cmwk3PKjQga828ird",
+    "a": "TTsASxQhMk4t3S5vZMVVJ7nR2GQjDXNRnq",
+    "trx": null
+   },
+   {
+    "t": "2022-05-01T07:16:09Z",
+    "tipo": "TriggerSmart",
+    "de": "TLntW9Z59LYY5KEi9cmwk3PKjQga828ird",
+    "a": "TTsASxQhMk4t3S5vZMVVJ7nR2GQjDXNRnq",
+    "trx": null
+   }
+  ],
+  "primera_entrada_de_TRX": {
+   "tx": "0b70237f25646c8dc3b4b779e0ecec07eb42998896698f12dcc40464ed96dfcd",
+   "t": 1651252644000,
+   "ok": true,
+   "tipo": "Transfer",
+   "de": "TV6MuMXfmLbBqPZvBHdwFsDnQeVfnmiuSi",
+   "a": "TLntW9Z59LYY5KEi9cmwk3PKjQga828ird",
+   "trx": 200
+  },
+  "lectura_parcial": true,
+  "administra": [
+   "owner() de PoolManager (TVjuTE3V)",
+   "owner() de ProtocolFeeController (TEays9Uf)",
+   "owner() de CLPositionDescriptorOffChain (TVx4x5TB)",
+   "owner() de CLDynamicFeeHook (TJd9Sf8Y)",
+   "owner() de SwapInfoManager (TFsBPBR6)",
+   "owner() de SafeVault (TXxav4qy)",
+   "owner() de UniversalRouter (TSJEtPuq)",
+   "owner() de SmartExchangeRouter (TGnC7LMj)",
+   "owner() de SmartExchangeRouter (TWH7FMNj)",
+   "owner() de UniversalRouter (TQqgNg13)",
+   "owner() de ReferalVault (TVfkpvew)"
+  ]
+ },
+ {
+  "direccion": "TDaLWx5kjw4vVajSjdGt4zhygQd1KEdEPT",
+  "es_contrato": false,
+  "nombre_contrato": null,
+  "etiqueta": null,
+  "creada": "2026-07-03",
+  "n_tx_tronscan": 46,
+  "trx_libre": 861.97,
+  "congelado_v2": [
+   {
+    "tipo": "BANDWIDTH",
+    "trx": 0
+   },
+   {
+    "tipo": "ENERGY",
+    "trx": 0
+   },
+   {
+    "tipo": "TRON_POWER",
+    "trx": 0
+   }
+  ],
+  "delega_a_n_cuentas": 0,
+  "delegado_energia_trx": 0,
+  "propietario": {
+   "umbral": 1,
+   "firmantes": [
+    "TDaLWx5kjw4vVajSjdGt4zhygQd1KEdEPT"
+   ]
+  },
+  "primeras_transacciones": [
+   {
+    "t": "2026-07-03T10:20:18Z",
+    "tipo": "Transfer",
+    "de": "TCXrf8SwGjcmQYY1FcFnV3LUXSQpqod3bi",
+    "a": "TDaLWx5kjw4vVajSjdGt4zhygQd1KEdEPT",
+    "trx": 1000
+   },
+   {
+    "t": "2026-07-03T10:20:21Z",
+    "tipo": "Transfer",
+    "de": "TCnZqibjQ7HDLRqhi3GRyBianTA5wVqdrz",
+    "a": "TDaLWx5kjw4vVajSjdGt4zhygQd1KEdEPT",
+    "trx": 0.000001
+   },
+   {
+    "t": "2026-07-03T10:20:24Z",
+    "tipo": "TransferAsset",
+    "de": "TVd46owXkJMvGTGgZSkoQsNtPJgbVTPy3Z",
+    "a": "TDaLWx5kjw4vVajSjdGt4zhygQd1KEdEPT",
+    "trx": null
+   },
+   {
+    "t": "2026-07-03T10:20:27Z",
+    "tipo": "Transfer",
+    "de": "TExZNacsuF8chhyAcffzojaXtM8NL8Nibi",
+    "a": "TDaLWx5kjw4vVajSjdGt4zhygQd1KEdEPT",
+    "trx": 0.000003
+   },
+   {
+    "t": "2026-07-03T10:20:39Z",
+    "tipo": "Transfer",
+    "de": "TKoZF1m9FmWnoEyBiL5knhQHyHue5c13bi",
+    "a": "TDaLWx5kjw4vVajSjdGt4zhygQd1KEdEPT",
+    "trx": 0.000008
+   }
+  ],
+  "primera_entrada_de_TRX": {
+   "tx": "5bad1f545ebff6708238782878cfde981836df51ea62e0a849dc648b0a682086",
+   "t": 1783074018000,
+   "ok": true,
+   "tipo": "Transfer",
+   "de": "TCXrf8SwGjcmQYY1FcFnV3LUXSQpqod3bi",
+   "a": "TDaLWx5kjw4vVajSjdGt4zhygQd1KEdEPT",
+   "trx": 1000
+  },
+  "lectura_parcial": false,
+  "administra": [
+   "operator() de SwapInfoManager (TFsBPBR6)",
+   "admin() de SmartExchangeRouter (TGnC7LMj)",
+   "admin() de SmartExchangeRouter (TWH7FMNj)",
+   "operator() de ReferalVault (TVfkpvew)"
+  ]
+ }
+]

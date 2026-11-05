@@ -1,0 +1,404 @@
+{
+ "TCFfQYygyfTTYE8So6wQbpNk7BEMomJH9J": {
+  "corto": "TCFfQYygyf",
+  "operaciones_trc20": 2,
+  "operaciones_tx": 8,
+  "filas": [
+   {
+    "t": "2026-11-02T06:16:39Z",
+    "sentido": "entra de",
+    "otra": "TT2T17KZhoDu47i2E4FWxfG79zdkEWkU9N",
+    "etiqueta": null,
+    "moneda": "USDT",
+    "cantidad": 60000000,
+    "tx": "0c71948ab797ec5d1eec37906a8abf352b6fce5c69b9cc7f3d5287bd75e8b5fe"
+   },
+   {
+    "t": "2026-11-02T06:17:39Z",
+    "sentido": "recibe Transfer",
+    "otra": "TWhDfwC8QE6pQyiYy248dNor3uphPEw5M2",
+    "etiqueta": null,
+    "moneda": "TRX",
+    "cantidad": 0,
+    "ok": true,
+    "tx": "231afb85675461baf99768c27d555c96e402bb5d0e974df936d18c18082676f8"
+   },
+   {
+    "t": "2026-11-02T06:19:00Z",
+    "sentido": "recibe DelegateResource",
+    "otra": "TNQKXEB7ExvxGXoE2gue2w42q2bscTGwGH",
+    "etiqueta": null,
+    "moneda": "TRX",
+    "cantidad": 8346,
+    "ok": true,
+    "tx": "af34bc93955a15f39c0d5c00ae3605b72a6b158b99dd0f3e5cc1517cf81ca5f9"
+   },
+   {
+    "t": "2026-11-02T06:19:42Z",
+    "sentido": "sale a",
+    "otra": "TWhDfwC8QE6pQyiYy248dNor3uphPEw5M2",
+    "etiqueta": null,
+    "moneda": "USDT",
+    "cantidad": 60000000,
+    "tx": "51f24dd762a2ac4f07c5879a729e10961872823dddc877f1199b2b572ad7c49d"
+   },
+   {
+    "t": "2026-11-02T06:19:42Z",
+    "sentido": "ejecuta TriggerSmart",
+    "otra": "TR7NHqjeKQxGTCi8q8ZY4pL8otSzgjLj6t",
+    "etiqueta": null,
+    "moneda": "TRX",
+    "cantidad": 0,
+    "ok": true,
+    "tx": "51f24dd762a2ac4f07c5879a729e10961872823dddc877f1199b2b572ad7c49d"
+   },
+   {
+    "t": "2026-11-02T06:19:48Z",
+    "sentido": "recibe TransferAsset",
+    "otra": "TD645BWBeCLKBJetZHBEcWFCWpMvRq1TM2",
+    "etiqueta": null,
+    "moneda": "TRX",
+    "cantidad": null,
+    "ok": true,
+    "tx": "f48a264945d410a2843745273db7eaee49a4432597a505fdae0ce6b52a4f1c4e"
+   },
+   {
+    "t": "2026-11-02T06:22:00Z",
+    "sentido": "recibe UnDelegateResource",
+    "otra": "TNQKXEB7ExvxGXoE2gue2w42q2bscTGwGH",
+    "etiqueta": null,
+    "moneda": "TRX",
+    "cantidad": 8346,
+    "ok": true,
+    "tx": "a1dcde9f069a879ace32caf16502beb0e43aaf290407b90d76ddffd1b1e4d424"
+   },
+   {
+    "t": "2026-11-02T07:07:00Z",
+    "sentido": "recibe TransferAsset",
+    "otra": "TP24FQMGK4sttaAfJC7d1V87htSd2XAuhb",
+    "etiqueta": null,
+    "moneda": "TRX",
+    "cantidad": null,
+    "ok": true,
+    "tx": "414e2a365456b264445d6779e89b7454ada43f44e74597934d6be2b7df2e876b"
+   },
+   {
+    "t": "2026-11-03T00:52:06Z",
+    "sentido": "recibe TransferAsset",
+    "otra": "TEMP3bwsUtZB4pmYosLNbd3b7qG5TRXcom",
+    "etiqueta": null,
+    "moneda": "TRX",
+    "cantidad": null,
+    "ok": true,
+    "tx": "53c7fb14acab41c44570c54209aaa19e6c2e4ae40c386c07b600f399586689a2"
+   },
+   {
+    "t": "2026-11-03T23:10:30Z",
+    "sentido": "recibe TransferAsset",
+    "otra": "TTTn3kf9Kxgj3QgTzp4KMpnHMwNWK7LDVc",
+    "etiqueta": null,
+    "moneda": "TRX",
+    "cantidad": null,
+    "ok": true,
+    "tx": "2513601014dfce277af845b20d81b083130e10d533333a0d0b40b69aefeecd5f"
+   }
+  ]
+ },
+ "TKV6xqB7VPTThF3Ru8VrNh7QQLVReTNvuV": {
+  "corto": "TKV6xqB7VP",
+  "operaciones_trc20": 2,
+  "operaciones_tx": 10,
+  "filas": [
+   {
+    "t": "2026-11-02T09:30:57Z",
+    "sentido": "entra de",
+    "otra": "TT2T17KZhoDu47i2E4FWxfG79zdkEWkU9N",
+    "etiqueta": null,
+    "moneda": "USDT",
+    "cantidad": 80000000,
+    "tx": "22a780af1a10286c9c7ea7679e56271ee2aa96453527905d9048c51d5b7b5d70"
+   },
+   {
+    "t": "2026-11-02T09:31:57Z",
+    "sentido": "recibe Transfer",
+    "otra": "TWhDfwC8QE6pQyiYy248dNor3uphPEw5M2",
+    "etiqueta": null,
+    "moneda": "TRX",
+    "cantidad": 0,
+    "ok": true,
+    "tx": "9a79e01d129212b590883ad9404c2c4a7b7f999a03fd89695a62e2a968ac9b7d"
+   },
+   {
+    "t": "2026-11-02T09:33:24Z",
+    "sentido": "recibe DelegateResource",
+    "otra": "TNQKXEB7ExvxGXoE2gue2w42q2bscTGwGH",
+    "etiqueta": null,
+    "moneda": "TRX",
+    "cantidad": 8350,
+    "ok": true,
+    "tx": "ba40144769e1216e297f205a050860d8ab1cefc7b7bef871b09231303f7cf973"
+   },
+   {
+    "t": "2026-11-02T09:34:00Z",
+    "sentido": "sale a",
+    "otra": "TWhDfwC8QE6pQyiYy248dNor3uphPEw5M2",
+    "etiqueta": null,
+    "moneda": "USDT",
+    "cantidad": 80000000,
+    "tx": "4b431a4387a30d9c0761d4d5514e5d96cd18061065a75eeb68f0101f6197d03a"
+   },
+   {
+    "t": "2026-11-02T09:34:00Z",
+    "sentido": "ejecuta TriggerSmart",
+    "otra": "TR7NHqjeKQxGTCi8q8ZY4pL8otSzgjLj6t",
+    "etiqueta": null,
+    "moneda": "TRX",
+    "cantidad": 0,
+    "ok": true,
+    "tx": "4b431a4387a30d9c0761d4d5514e5d96cd18061065a75eeb68f0101f6197d03a"
+   },
+   {
+    "t": "2026-11-02T09:34:06Z",
+    "sentido": "recibe TransferAsset",
+    "otra": "TQgvWUEQiFMFpSVM7oL2BXF9eh12k9dz32",
+    "etiqueta": null,
+    "moneda": "TRX",
+    "cantidad": null,
+    "ok": true,
+    "tx": "5c8579a02962508750e8d6cac218f3c7c7c9e546bb9374fda32f7247d1b0495e"
+   },
+   {
+    "t": "2026-11-02T09:34:06Z",
+    "sentido": "recibe TransferAsset",
+    "otra": "TUJHtfmLTJcNhhD4KCZsjzepSMTHsE5u8s",
+    "etiqueta": null,
+    "moneda": "TRX",
+    "cantidad": null,
+    "ok": true,
+    "tx": "00fb8b784606276a6d3f54dc0e17678d8b5aad8b20ed78633275dcd9d94db22e"
+   },
+   {
+    "t": "2026-11-02T09:36:27Z",
+    "sentido": "recibe UnDelegateResource",
+    "otra": "TNQKXEB7ExvxGXoE2gue2w42q2bscTGwGH",
+    "etiqueta": null,
+    "moneda": "TRX",
+    "cantidad": 8350,
+    "ok": true,
+    "tx": "943393159c0d021f89d82ef8d598cc4a2d35272de12f0e0b9def3f3acddc27f8"
+   },
+   {
+    "t": "2026-11-02T14:30:45Z",
+    "sentido": "recibe TransferAsset",
+    "otra": "TQfPvsGB2Qn72Vopi82V1H6EpBp5TRXcom",
+    "etiqueta": null,
+    "moneda": "TRX",
+    "cantidad": null,
+    "ok": true,
+    "tx": "07a08f34027b86d85da7642b027e119b34314db00e46b87cff83d818e782ccfb"
+   },
+   {
+    "t": "2026-11-03T23:20:42Z",
+    "sentido": "recibe TransferAsset",
+    "otra": "TGefS8wBQ3E4TEubWbvTBNTWaAAqxVaaC3",
+    "etiqueta": null,
+    "moneda": "TRX",
+    "cantidad": null,
+    "ok": true,
+    "tx": "a2b954c57136a29af64ae2d0eb22b31645ed28a7eb4a7355cedba93a91a8b348"
+   },
+   {
+    "t": "2026-11-04T11:16:09Z",
+    "sentido": "recibe TransferAsset",
+    "otra": "TWhPxCXUC2jUeKow6n9swCgNvQCjgE1m4A",
+    "etiqueta": null,
+    "moneda": "TRX",
+    "cantidad": null,
+    "ok": true,
+    "tx": "2378437e42b3d4c73ca31a877e6359546de5f882e84448a7ce488ad3f8e2775e"
+   },
+   {
+    "t": "2026-11-05T02:58:24Z",
+    "sentido": "recibe TransferAsset",
+    "otra": "TZHkWM2DjSYqggfA7P8Q9Q9un2D5TRXcom",
+    "etiqueta": null,
+    "moneda": "TRX",
+    "cantidad": null,
+    "ok": true,
+    "tx": "f5a8bbf018de14447d857eca3367d10093ad01dc113b1283a0a79ebfb0d1bca7"
+   }
+  ]
+ },
+ "TVpNiLp3HhhDJHc7eBsqXeZFvqWdPfzCEt": {
+  "corto": "TVpNiLp3Hh",
+  "operaciones_trc20": 5,
+  "operaciones_tx": 12,
+  "filas": [
+   {
+    "t": "2026-11-02T06:18:48Z",
+    "sentido": "recibe Transfer",
+    "otra": "TWhDfwC8QE6pQyiYy248dNor3uphPEw5M2",
+    "etiqueta": null,
+    "moneda": "TRX",
+    "cantidad": 99,
+    "ok": true,
+    "tx": "1663c0c6b338339aeda84437cc1cd0654dd2e822b6a866ad57a4f3aff85027e6"
+   },
+   {
+    "t": "2026-11-02T06:19:45Z",
+    "sentido": "ejecuta FreezeBalanceV2",
+    "otra": null,
+    "etiqueta": null,
+    "moneda": "TRX",
+    "cantidad": 10,
+    "ok": true,
+    "tx": "f6d801fe4b9b8f16377d54b63726e7dd219e4ce92f2277a9d67c32d83f250d6f"
+   },
+   {
+    "t": "2026-11-02T06:20:54Z",
+    "sentido": "entra de",
+    "otra": "TWhDfwC8QE6pQyiYy248dNor3uphPEw5M2",
+    "etiqueta": null,
+    "moneda": "USDT",
+    "cantidad": 59999998.8,
+    "tx": "a6b97b1e6527583f954020421cebf4b583ac5d6233fd2f0c2b56061ee05483d1"
+   },
+   {
+    "t": "2026-11-02T06:21:03Z",
+    "sentido": "recibe TransferAsset",
+    "otra": "TELr2L91rhzu5zKYUYT3cpBu9EthgAVepc",
+    "etiqueta": null,
+    "moneda": "TRX",
+    "cantidad": null,
+    "ok": true,
+    "tx": "5bd27ad983ec377c545e6f7bf8ae6b70b93d0a4068b0be0dc76f6bcb23f4717c"
+   },
+   {
+    "t": "2026-11-02T06:22:54Z",
+    "sentido": "recibe TransferAsset",
+    "otra": "TYNMtW1eEGkDdRNjPFxz9iABShJc3yGwzR",
+    "etiqueta": null,
+    "moneda": "TRX",
+    "cantidad": null,
+    "ok": true,
+    "tx": "57c1fc4a7bfefdca58ba8817ef373aff2caff79a943ff9b3e36dd57674b52fdc"
+   },
+   {
+    "t": "2026-11-02T06:45:18Z",
+    "sentido": "sale a",
+    "otra": "TJTKCzQpsG19CSMYF9TPtxz6wSHPSyeKfa",
+    "etiqueta": "Binance (lista conocida)",
+    "moneda": "USDT",
+    "cantidad": 100,
+    "tx": "ed263c6d38fb5a24d71ffa8e94b450daa596a4f52397a684fd0afbf61ae9a467"
+   },
+   {
+    "t": "2026-11-02T06:45:18Z",
+    "sentido": "ejecuta TriggerSmart",
+    "otra": "TR7NHqjeKQxGTCi8q8ZY4pL8otSzgjLj6t",
+    "etiqueta": null,
+    "moneda": "TRX",
+    "cantidad": 0,
+    "ok": true,
+    "tx": "ed263c6d38fb5a24d71ffa8e94b450daa596a4f52397a684fd0afbf61ae9a467"
+   },
+   {
+    "t": "2026-11-02T06:45:24Z",
+    "sentido": "recibe TransferAsset",
+    "otra": "TEqrGtivKpZPpbJ1WuE6F13dc2LiSSmPRa",
+    "etiqueta": null,
+    "moneda": "TRX",
+    "cantidad": null,
+    "ok": true,
+    "tx": "04d984833601d3f83cf64bda9993d766280c34e8805ed11b92f3fef2225f5882"
+   },
+   {
+    "t": "2026-11-02T06:45:30Z",
+    "sentido": "recibe Transfer",
+    "otra": "TGKRU5pZXicUuR4hsSckM1hrSh7gieVnkS",
+    "etiqueta": null,
+    "moneda": "TRX",
+    "cantidad": 0,
+    "ok": true,
+    "tx": "4b392bf9b591b0bcd961e3e0d110883fcdfd3ff4cefc24c22bb3fc6448555d0a"
+   },
+   {
+    "t": "2026-11-02T06:58:06Z",
+    "sentido": "sale a",
+    "otra": "TJTKCzQpsG19CSMYF9TPtxz6wSHPSyeKfa",
+    "etiqueta": "Binance (lista conocida)",
+    "moneda": "USDT",
+    "cantidad": 59999898.8,
+    "tx": "8a805aa48cb91ebc49b87fa894bc78180acfe7e482e1e97d6cd0b02ddd2e56e4"
+   },
+   {
+    "t": "2026-11-02T06:58:06Z",
+    "sentido": "ejecuta TriggerSmart",
+    "otra": "TR7NHqjeKQxGTCi8q8ZY4pL8otSzgjLj6t",
+    "etiqueta": null,
+    "moneda": "TRX",
+    "cantidad": 0,
+    "ok": true,
+    "tx": "8a805aa48cb91ebc49b87fa894bc78180acfe7e482e1e97d6cd0b02ddd2e56e4"
+   },
+   {
+    "t": "2026-11-02T07:33:00Z",
+    "sentido": "recibe TransferAsset",
+    "otra": "TPeWaKut5xjSjtvwXkdT4atX1sCpYufxkw",
+    "etiqueta": null,
+    "moneda": "TRX",
+    "cantidad": null,
+    "ok": true,
+    "tx": "ac06ed84fe4539e801759397c73409cd18558a3e0cc07705eda7a86d6a95fabc"
+   },
+   {
+    "t": "2026-11-02T09:34:09Z",
+    "sentido": "entra de",
+    "otra": "TWhDfwC8QE6pQyiYy248dNor3uphPEw5M2",
+    "etiqueta": null,
+    "moneda": "USDT",
+    "cantidad": 78000000.8,
+    "tx": "9d1dc094d8f26057f1d203f5383f67ed6c8f0989ab76a73b19f6f42407dee268"
+   },
+   {
+    "t": "2026-11-02T09:45:36Z",
+    "sentido": "sale a",
+    "otra": "TJTKCzQpsG19CSMYF9TPtxz6wSHPSyeKfa",
+    "etiqueta": "Binance (lista conocida)",
+    "moneda": "USDT",
+    "cantidad": 78000000,
+    "tx": "9031b969d617e4f3a686d7e5610a81ad3245ad1a204279b5530b3a815ab337d1"
+   },
+   {
+    "t": "2026-11-02T09:45:36Z",
+    "sentido": "ejecuta TriggerSmart",
+    "otra": "TR7NHqjeKQxGTCi8q8ZY4pL8otSzgjLj6t",
+    "etiqueta": null,
+    "moneda": "TRX",
+    "cantidad": 0,
+    "ok": true,
+    "tx": "9031b969d617e4f3a686d7e5610a81ad3245ad1a204279b5530b3a815ab337d1"
+   },
+   {
+    "t": "2026-11-03T01:18:03Z",
+    "sentido": "recibe TransferAsset",
+    "otra": "TGFvNsL5CSLuRakBU4rRRBzAvUU5TRXcom",
+    "etiqueta": null,
+    "moneda": "TRX",
+    "cantidad": null,
+    "ok": true,
+    "tx": "969a71e8862aad81219454fb0e617e0351a9268b6624907875724582c9992e97"
+   },
+   {
+    "t": "2026-11-03T23:00:12Z",
+    "sentido": "recibe TransferAsset",
+    "otra": "TUycU19VFAUsrejP3rBD1xMCvRZmTgbXZn",
+    "etiqueta": null,
+    "moneda": "TRX",
+    "cantidad": null,
+    "ok": true,
+    "tx": "31d40b0a61c73215c46af7998e7a432ec1059c03669701ef541d3808e710a347"
+   }
+  ]
+ }
+}

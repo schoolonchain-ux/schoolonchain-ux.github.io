@@ -1,0 +1,32 @@
+'use strict';
+// FASE E · E1 — Cruce con el robo a Binance. ¿Las billeteras del rastreo del robo tocan (contacto DIRECTO) a la proveedora, a la cuenta de energía, a la segunda cuenta o al resto de las cuentas leídas en esta investigación?
+// Conjunto del robo (TRON), solo las billeteras que el propio rastreo señala como del robo: nodos.json (grupo del 11-oct, receptor de cambios, mayor destino final, nodos del tramo 2),
+// las 5 cuentas del robo del vigilante pausado, y las 69 direcciones del control de congelaciones de Tether. NO se incluyen las casas de cambio (nada se atribuye al robo por pasar por un nodo grande).
+// Método: busca contactos directos en (a) el historial COMPLETO de la proveedora y (b) todas las páginas de historiales de cuentas guardadas en raw/ (cuentas, TRC-20). Un contacto directo NO prueba relación: solo dónde mirar.
+// SOLO LECTURA de ficheros locales. Reproducible: node e1-cruce-con-el-robo.cjs
+const fs = require('node:fs'), path = require('node:path'), readline = require('node:readline'); const L = require('./lib.cjs'); const C = require('./cadena.cjs');
+const RAIZ = path.join(__dirname, '..', '..', '..'); const R = path.join(RAIZ, 'research', 'auditoria-adversarial-2026-10-31', 'resultados'); const D = path.join(__dirname, 'b-proveedora'); const OUT = path.join(__dirname, 'e-cruce'); fs.mkdirSync(OUT, { recursive: true });
+const M = x => Math.round(x * 100) / 100; const iso = C.iso; const PROV = 'TWhDfwC8QE6pQyiYy248dNor3uphPEw5M2';
+const T = {}; const poner = (a, rol) => { if (/^T[1-9A-HJ-NP-Za-km-z]{33}$/.test(a) && !T[a]) T[a] = rol; };
+for (const [a, v] of Object.entries(JSON.parse(fs.readFileSync(path.join(R, 'nodos.json'), 'utf8')))) poner(a, 'rastreo: ' + v.rol);
+for (const c of JSON.parse(fs.readFileSync(path.join(RAIZ, 'tron-salidas-watch', 'config', 'cuentas.binance-pausadas.json'), 'utf8')).cuentas) poner(c.direccion, 'robo (vigilante pausado): ' + c.nombre);
+/* v2 (revisión externa): también las direcciones de la cadena de custodia que Tether NO tiene bloqueadas hoy, salvo las casas de cambio (Binance-Hot 7 sale por la lista A0) */
+const BINA = new Set(JSON.parse(fs.readFileSync(path.join(__dirname, 'a0-binance', 'lista-binance.json'), 'utf8')).direcciones); const conocidas = JSON.parse(fs.readFileSync(path.join(RAIZ, 'vigilante-energia-binance', 'config', 'conocidas.json'), 'utf8')).nombres; const esCasa = a => /binance|bybit|htx|huobi|okx|poloniex|bitfinex|kucoin|gate|coins.ph/i.test(typeof conocidas[a] === 'string' ? conocidas[a] : JSON.stringify(conocidas[a] || ''));
+for (const f of JSON.parse(fs.readFileSync(path.join(R, 'congelados-tron.json'), 'utf8')).filas) if (!esCasa(f.direccion) && !BINA.has(f.direccion)) poner(f.direccion, f.bloqueadaHoy ? 'bloqueada por Tether hoy (congelaciones del robo)' : 'cadena de custodia del robo (no bloqueada hoy)');
+const ROLES = Object.keys(T).length;
+(async () => {
+  const hallazgos = []; const add = (donde, cuenta, ladoRobo, otro, sentido, valor, unidad, t) => hallazgos.push({ donde, cuenta, billetera_del_robo: ladoRobo, rol: T[ladoRobo], sentido, valor: M(valor), unidad, fecha: iso(t), }) ;
+  // (a) proveedora (historial completo)
+  let nProv = 0; for (const f of ['tx', 'trc20']) { const rl = readline.createInterface({ input: fs.createReadStream(path.join(D, 'datos', f + '.jsonl')), crlfDelay: Infinity }); for await (const l of rl) { if (!l) continue; const r = JSON.parse(l); nProv++; const otro = r.a === PROV ? r.de : r.a; if (T[otro]) add('historial completo de la proveedora', PROV, otro, otro, r.a === PROV ? 'envía a la proveedora' : 'la proveedora envía', f === 'tx' ? r.sun / 1e6 : Number(r.v) / Math.pow(10, Number(r.d) || 0), f === 'tx' ? 'TRX' : r.s, r.t); } }
+  // (b) raw: páginas de historiales de cuentas y TRC-20
+  const RAW = path.join(__dirname, 'raw'); let paginas = 0, cuentasMiradas = new Set();
+  for (const s of fs.readdirSync(RAW).sort()) for (const fn of fs.readdirSync(path.join(RAW, s))) { const txt = fs.readFileSync(path.join(RAW, s, fn), 'utf8'); const e = JSON.parse(txt); const u = new URL(e.pedido.url); const m = u.pathname.match(/^\/v1\/accounts\/(T[A-Za-z0-9]{33})\/transactions(\/trc20)?$/); if (!m || !e.respuesta || !e.respuesta.data) continue; paginas++; cuentasMiradas.add(m[1]); const cta = m[1];
+    for (const t of e.respuesta.data) { if (m[2]) { const o = t.from === cta ? t.to : t.from; if (T[o]) add('raw/' + s, cta, o, o, t.from === cta ? 'la cuenta envía' : 'la cuenta recibe', Number(t.value) / Math.pow(10, (t.token_info && t.token_info.decimals) || 0), (t.token_info && t.token_info.symbol) || '?', t.block_timestamp); }
+      else { const f = C.decodificar(t); const o = f.de === cta ? f.a : f.de; if (o && T[o]) add('raw/' + s, cta, o, o, f.de === cta ? 'la cuenta envía' : 'la cuenta recibe', f.trx || 0, f.tipo, f.t); } } }
+  // agrupar
+  const g = {}; for (const h of hallazgos) { const k = [h.cuenta, h.billetera_del_robo, h.sentido, h.unidad].join('|'); const o = g[k] = g[k] || { cuenta: h.cuenta, billetera_del_robo: h.billetera_del_robo, rol: h.rol, sentido: h.sentido, unidad: h.unidad, n: 0, total: 0, primera: h.fecha, ultima: h.fecha, fuentes: new Set() }; o.n++; o.total += h.valor; o.primera = h.fecha < o.primera ? h.fecha : o.primera; o.ultima = h.fecha > o.ultima ? h.fecha : o.ultima; o.fuentes.add(h.donde); }
+  const lista = Object.values(g).map(o => ({ ...o, total: M(o.total), fuentes: [...o.fuentes].slice(0, 3) })).sort((a, b) => b.total - a.total);
+  const res = { billeteras_del_robo_consideradas: ROLES, filas_de_la_proveedora_revisadas: nProv, paginas_de_historiales_revisadas: paginas, cuentas_con_historial_revisado: cuentasMiradas.size, contactos_directos: lista, nota: 'Un contacto directo solo dice dónde mirar. Las casas de cambio no se incluyen en el conjunto del robo. No se revisan aquí las cuentas cuyo historial no se leyó en esta investigación.' };
+  const h = L.guardar(path.join(OUT, 'cruce-con-el-robo.json'), res);
+  console.log('billeteras del robo:', ROLES, '| filas de la proveedora:', nProv, '| páginas revisadas:', paginas, '| cuentas con historial:', cuentasMiradas.size, '| contactos directos (agrupados):', lista.length); for (const x of lista.slice(0, 25)) console.log('  ', x.cuenta.slice(0, 8), x.sentido.padEnd(24), x.billetera_del_robo.slice(0, 8), (x.rol || '').slice(0, 40).padEnd(40), x.unidad, x.total, 'n', x.n, x.primera.slice(0, 10), '→', x.ultima.slice(0, 10)); console.log(h);
+})().catch(e => { console.error('ERROR', e.message, (e.stack || '').split('\n')[1]); process.exit(1); });

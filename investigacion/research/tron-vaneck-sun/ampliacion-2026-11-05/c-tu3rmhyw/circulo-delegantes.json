@@ -1,0 +1,1356 @@
+{
+ "serie": {
+  "maximo_simultaneo_trx": 11610011964,
+  "fecha_del_maximo": "2024-08-23T06:41:33Z",
+  "eventos_que_dejan_un_neto_negativo": 0,
+  "nota": "Si el máximo es absurdo, el modelo de suma por pares no sirve y la serie mensual de c4 NO debe usarse.",
+  "mayores_altas": [
+   {
+    "t": "2024-08-13T08:20:42Z",
+    "tipo": "DelegateResource",
+    "de": "TT2T17KZho",
+    "trx": 50152485,
+    "tx": "6dda652cf7"
+   },
+   {
+    "t": "2024-08-16T05:04:54Z",
+    "tipo": "DelegateResource",
+    "de": "TT2T17KZho",
+    "trx": 80592982,
+    "tx": "c650eb3a8e"
+   },
+   {
+    "t": "2024-08-16T10:29:03Z",
+    "tipo": "DelegateResource",
+    "de": "TT2T17KZho",
+    "trx": 99814630,
+    "tx": "26c63bdeeb"
+   },
+   {
+    "t": "2024-08-17T03:35:36Z",
+    "tipo": "DelegateResource",
+    "de": "TT2T17KZho",
+    "trx": 100455240,
+    "tx": "0f112c482a"
+   },
+   {
+    "t": "2024-08-17T06:01:15Z",
+    "tipo": "DelegateResource",
+    "de": "TT2T17KZho",
+    "trx": 199539268,
+    "tx": "e91360b71f"
+   },
+   {
+    "t": "2024-08-17T13:39:03Z",
+    "tipo": "DelegateResource",
+    "de": "TT2T17KZho",
+    "trx": 110277411,
+    "tx": "5be8316f14"
+   },
+   {
+    "t": "2024-08-17T15:51:48Z",
+    "tipo": "DelegateResource",
+    "de": "TPyjyZfsYa",
+    "trx": 239699245,
+    "tx": "2f0d74085f"
+   },
+   {
+    "t": "2024-08-19T11:01:30Z",
+    "tipo": "DelegateResource",
+    "de": "TWpMnUh9pZ",
+    "trx": 199799215,
+    "tx": "1a76312943"
+   },
+   {
+    "t": "2024-08-19T13:32:54Z",
+    "tipo": "DelegateResource",
+    "de": "TWpMnUh9pZ",
+    "trx": 300098038,
+    "tx": "5739d06647"
+   },
+   {
+    "t": "2024-08-19T16:06:57Z",
+    "tipo": "DelegateResource",
+    "de": "TWpMnUh9pZ",
+    "trx": 240151108,
+    "tx": "5311bc8364"
+   },
+   {
+    "t": "2024-08-19T16:36:03Z",
+    "tipo": "DelegateResource",
+    "de": "TPyjyZfsYa",
+    "trx": 169139995,
+    "tx": "ed125f1d5a"
+   },
+   {
+    "t": "2024-08-19T18:21:45Z",
+    "tipo": "DelegateResource",
+    "de": "TT2T17KZho",
+    "trx": 352019765,
+    "tx": "afbbb482cd"
+   }
+  ]
+ },
+ "delegantes": [
+  {
+   "direccion": "TT2T17KZhoDu47i2E4FWxfG79zdkEWkU9N",
+   "es_contrato": false,
+   "nombre_contrato": null,
+   "etiqueta": null,
+   "creada": "2023-05-01",
+   "n_tx_tronscan": 5292,
+   "trx_libre": 1478760593.91,
+   "congelado_v2": [
+    {
+     "tipo": "BANDWIDTH",
+     "trx": 20329621.67
+    },
+    {
+     "tipo": "ENERGY",
+     "trx": 0
+    },
+    {
+     "tipo": "TRON_POWER",
+     "trx": 0
+    }
+   ],
+   "delega_a_n_cuentas": 1,
+   "delegado_energia_trx": 187482220.55,
+   "propietario": {
+    "umbral": 1,
+    "firmantes": [
+     "TT2T17KZhoDu47i2E4FWxfG79zdkEWkU9N"
+    ]
+   },
+   "primeras_transacciones": [
+    {
+     "t": "2023-05-01T12:09:57Z",
+     "tipo": "Transfer",
+     "de": "TJDENsfBJs4RFETt1X1W8wMDc8M5XnJhCe",
+     "a": "TT2T17KZhoDu47i2E4FWxfG79zdkEWkU9N",
+     "trx": 1999
+    },
+    {
+     "t": "2023-05-01T12:10:00Z",
+     "tipo": "Transfer",
+     "de": "TEnCkdtXc6YFDK88gStf5mFtmeqeKnvWYZ",
+     "a": "TT2T17KZhoDu47i2E4FWxfG79zdkEWkU9N",
+     "trx": 0.000001
+    },
+    {
+     "t": "2023-05-01T12:10:06Z",
+     "tipo": "Transfer",
+     "de": "TZA6JAYvGDPd82TRmGsWRMM4yr8FUChxwo",
+     "a": "TT2T17KZhoDu47i2E4FWxfG79zdkEWkU9N",
+     "trx": 0.000001
+    },
+    {
+     "t": "2023-05-01T12:11:36Z",
+     "tipo": "Transfer",
+     "de": "TN5hjgTTgTN7kukYFd4YzgaM7ygJRuepZG",
+     "a": "TT2T17KZhoDu47i2E4FWxfG79zdkEWkU9N",
+     "trx": 0.000001
+    },
+    {
+     "t": "2023-05-01T13:56:00Z",
+     "tipo": "Transfer",
+     "de": "TUDuin1qMMG2EkE2NJmMGXKQAcsAoWUyrj",
+     "a": "TT2T17KZhoDu47i2E4FWxfG79zdkEWkU9N",
+     "trx": 0.000001
+    }
+   ],
+   "primera_entrada_de_TRX": {
+    "tx": "7ac17a7906f5a6068a9141a44a3c306918738840cfb19b8af97371dc4d0d2376",
+    "t": 1682942997000,
+    "ok": true,
+    "tipo": "Transfer",
+    "de": "TJDENsfBJs4RFETt1X1W8wMDc8M5XnJhCe",
+    "a": "TT2T17KZhoDu47i2E4FWxfG79zdkEWkU9N",
+    "trx": 1999
+   },
+   "lectura_parcial": true,
+   "relacion_con_X": {
+    "altas": 27,
+    "bajas": 38,
+    "primera": "2024-08-11T16:47:00Z",
+    "ultima": "2026-05-07T12:40:36Z"
+   }
+  },
+  {
+   "direccion": "TPyjyZfsYaXStgz2NmAraF1uZcMtkgNan5",
+   "es_contrato": false,
+   "nombre_contrato": null,
+   "etiqueta": null,
+   "creada": "2021-05-27",
+   "n_tx_tronscan": 7607,
+   "trx_libre": 1875965534.56,
+   "congelado_v2": [
+    {
+     "tipo": "BANDWIDTH",
+     "trx": 0
+    },
+    {
+     "tipo": "ENERGY",
+     "trx": 0
+    },
+    {
+     "tipo": "TRON_POWER",
+     "trx": 0
+    }
+   ],
+   "delega_a_n_cuentas": 0,
+   "delegado_energia_trx": 0,
+   "propietario": {
+    "umbral": 1,
+    "firmantes": [
+     "TPyjyZfsYaXStgz2NmAraF1uZcMtkgNan5"
+    ]
+   },
+   "primeras_transacciones": [
+    {
+     "t": "2021-05-27T13:48:27Z",
+     "tipo": "Transfer",
+     "de": "TNCmcTdyrYKMtmE1KU2itzeCX76jGm5Not",
+     "a": "TPyjyZfsYaXStgz2NmAraF1uZcMtkgNan5",
+     "trx": 9999.99
+    },
+    {
+     "t": "2021-05-27T13:48:30Z",
+     "tipo": "TransferAsset",
+     "de": "TMhCvUKJqQkqbVWDhCQN9QAq6y9RGX88v9",
+     "a": "TPyjyZfsYaXStgz2NmAraF1uZcMtkgNan5",
+     "trx": null
+    },
+    {
+     "t": "2021-05-27T13:48:30Z",
+     "tipo": "TransferAsset",
+     "de": "TDwfKLCSkCwZBr22mM3mYUGFq2YYDtGJEB",
+     "a": "TPyjyZfsYaXStgz2NmAraF1uZcMtkgNan5",
+     "trx": null
+    },
+    {
+     "t": "2021-05-27T13:48:30Z",
+     "tipo": "Transfer",
+     "de": "TPJ31fHhocNnjjg3DcMcWarEvWiodSXYwC",
+     "a": "TPyjyZfsYaXStgz2NmAraF1uZcMtkgNan5",
+     "trx": 0.000001
+    },
+    {
+     "t": "2021-05-27T13:48:36Z",
+     "tipo": "Transfer",
+     "de": "TWzNhscr7WZpCFcaf5XThE7pMFwyj5RypM",
+     "a": "TPyjyZfsYaXStgz2NmAraF1uZcMtkgNan5",
+     "trx": 0.000001
+    }
+   ],
+   "primera_entrada_de_TRX": {
+    "tx": "932c86d07489c12b6fa1939cdef37e9e818c848c7b6b2efe519317e72a81cc08",
+    "t": 1622123307000,
+    "ok": true,
+    "tipo": "Transfer",
+    "de": "TNCmcTdyrYKMtmE1KU2itzeCX76jGm5Not",
+    "a": "TPyjyZfsYaXStgz2NmAraF1uZcMtkgNan5",
+    "trx": 9999.99
+   },
+   "lectura_parcial": true,
+   "relacion_con_X": {
+    "altas": 5,
+    "bajas": 5,
+    "primera": "2024-08-17T15:51:48Z",
+    "ultima": "2026-03-02T14:34:45Z"
+   }
+  },
+  {
+   "direccion": "TWpMnUh9pZS1Mf8yyw9WPiS82WYevKzQo2",
+   "es_contrato": false,
+   "nombre_contrato": null,
+   "etiqueta": null,
+   "creada": "2023-07-15",
+   "n_tx_tronscan": 847,
+   "trx_libre": 27.08,
+   "congelado_v2": [
+    {
+     "tipo": "BANDWIDTH",
+     "trx": 0
+    },
+    {
+     "tipo": "ENERGY",
+     "trx": 0
+    },
+    {
+     "tipo": "TRON_POWER",
+     "trx": 0
+    }
+   ],
+   "delega_a_n_cuentas": 0,
+   "delegado_energia_trx": 0,
+   "propietario": {
+    "umbral": 1,
+    "firmantes": [
+     "TWpMnUh9pZS1Mf8yyw9WPiS82WYevKzQo2"
+    ]
+   },
+   "primeras_transacciones": [
+    {
+     "t": "2023-07-15T11:55:36Z",
+     "tipo": "Transfer",
+     "de": "TVJVQtD1rPC2igEM82AfnPZTYdJFGAFQbw",
+     "a": "TWpMnUh9pZS1Mf8yyw9WPiS82WYevKzQo2",
+     "trx": 1000
+    },
+    {
+     "t": "2023-07-15T11:55:48Z",
+     "tipo": "Transfer",
+     "de": "TLb2MkLBNLG421A4WD38EuTaW54qNArQbw",
+     "a": "TWpMnUh9pZS1Mf8yyw9WPiS82WYevKzQo2",
+     "trx": 0.000005
+    },
+    {
+     "t": "2023-07-15T11:56:57Z",
+     "tipo": "FreezeBalanceV2",
+     "de": "TWpMnUh9pZS1Mf8yyw9WPiS82WYevKzQo2",
+     "a": null,
+     "trx": 1000
+    },
+    {
+     "t": "2023-07-15T11:58:00Z",
+     "tipo": "Transfer",
+     "de": "TVJVQtD1rPC2igEM82AfnPZTYdJFGAFQbw",
+     "a": "TWpMnUh9pZS1Mf8yyw9WPiS82WYevKzQo2",
+     "trx": 370000000
+    },
+    {
+     "t": "2023-07-15T11:58:45Z",
+     "tipo": "FreezeBalanceV2",
+     "de": "TWpMnUh9pZS1Mf8yyw9WPiS82WYevKzQo2",
+     "a": null,
+     "trx": 365000000
+    }
+   ],
+   "primera_entrada_de_TRX": {
+    "tx": "b31a71a91fec36c84f1d2b2fc4499806f9bb075ef40a9089ef11263017c261e9",
+    "t": 1689422136000,
+    "ok": true,
+    "tipo": "Transfer",
+    "de": "TVJVQtD1rPC2igEM82AfnPZTYdJFGAFQbw",
+    "a": "TWpMnUh9pZS1Mf8yyw9WPiS82WYevKzQo2",
+    "trx": 1000
+   },
+   "lectura_parcial": true,
+   "relacion_con_X": {
+    "altas": 3,
+    "bajas": 2,
+    "primera": "2024-08-19T11:01:30Z",
+    "ultima": "2024-09-07T16:44:51Z"
+   }
+  },
+  {
+   "direccion": "TPhGmczy3wkUGafFT8QMXPLN2rzdxeChME",
+   "es_contrato": false,
+   "nombre_contrato": null,
+   "etiqueta": null,
+   "creada": "2021-11-08",
+   "n_tx_tronscan": 240,
+   "trx_libre": 263738121.5,
+   "congelado_v2": [
+    {
+     "tipo": "BANDWIDTH",
+     "trx": 0
+    },
+    {
+     "tipo": "ENERGY",
+     "trx": 0
+    },
+    {
+     "tipo": "TRON_POWER",
+     "trx": 0
+    }
+   ],
+   "delega_a_n_cuentas": 0,
+   "delegado_energia_trx": 0,
+   "propietario": {
+    "umbral": 1,
+    "firmantes": [
+     "TPhGmczy3wkUGafFT8QMXPLN2rzdxeChME"
+    ]
+   },
+   "primeras_transacciones": [
+    {
+     "t": "2021-11-08T15:14:12Z",
+     "tipo": "Transfer",
+     "de": "TTXeVETaU1wSV9cYutUgyg7x1gtrfCiDiW",
+     "a": "TPhGmczy3wkUGafFT8QMXPLN2rzdxeChME",
+     "trx": 960003000
+    },
+    {
+     "t": "2021-11-08T15:14:18Z",
+     "tipo": "Transfer",
+     "de": "THLCThmqaZwpZzH3xLCh6PSCQ9WTQDJJ1z",
+     "a": "TPhGmczy3wkUGafFT8QMXPLN2rzdxeChME",
+     "trx": 0.000001
+    },
+    {
+     "t": "2021-11-08T15:15:21Z",
+     "tipo": "FreezeBalance",
+     "de": "TPhGmczy3wkUGafFT8QMXPLN2rzdxeChME",
+     "a": null,
+     "trx": null
+    },
+    {
+     "t": "2021-11-08T15:15:45Z",
+     "tipo": "Transfer",
+     "de": "TVPFLBm1W44axUPvDvU6qHCk6fAPtvKrTL",
+     "a": "TPhGmczy3wkUGafFT8QMXPLN2rzdxeChME",
+     "trx": 0.000001
+    },
+    {
+     "t": "2021-11-08T15:15:48Z",
+     "tipo": "Transfer",
+     "de": "TBvdwqCBkgfKNuNukQnFu7Lf346fCWN45R",
+     "a": "TPhGmczy3wkUGafFT8QMXPLN2rzdxeChME",
+     "trx": 0.000001
+    }
+   ],
+   "primera_entrada_de_TRX": {
+    "tx": "055627776e141c2fe726f8f29023d9471f398f640cb02f739f5f8e6199928827",
+    "t": 1636384452000,
+    "ok": true,
+    "tipo": "Transfer",
+    "de": "TTXeVETaU1wSV9cYutUgyg7x1gtrfCiDiW",
+    "a": "TPhGmczy3wkUGafFT8QMXPLN2rzdxeChME",
+    "trx": 960003000
+   },
+   "lectura_parcial": false,
+   "relacion_con_X": {
+    "altas": 1,
+    "bajas": 1,
+    "primera": "2024-08-20T13:00:18Z",
+    "ultima": "2024-09-11T06:53:24Z"
+   }
+  },
+  {
+   "direccion": "TU32XvjDNkxEkqxCgQQWEKmoMxTz8NECUV",
+   "es_contrato": false,
+   "nombre_contrato": null,
+   "etiqueta": null,
+   "creada": "2021-11-08",
+   "n_tx_tronscan": 1132,
+   "trx_libre": 807734437.45,
+   "congelado_v2": [
+    {
+     "tipo": "BANDWIDTH",
+     "trx": 0
+    },
+    {
+     "tipo": "ENERGY",
+     "trx": 0
+    },
+    {
+     "tipo": "TRON_POWER",
+     "trx": 0
+    }
+   ],
+   "delega_a_n_cuentas": 0,
+   "delegado_energia_trx": 0,
+   "propietario": {
+    "umbral": 1,
+    "firmantes": [
+     "TU32XvjDNkxEkqxCgQQWEKmoMxTz8NECUV"
+    ]
+   },
+   "primeras_transacciones": [
+    {
+     "t": "2021-11-08T15:46:06Z",
+     "tipo": "Transfer",
+     "de": "TTXeVETaU1wSV9cYutUgyg7x1gtrfCiDiW",
+     "a": "TU32XvjDNkxEkqxCgQQWEKmoMxTz8NECUV",
+     "trx": 950000999
+    },
+    {
+     "t": "2021-11-08T15:47:21Z",
+     "tipo": "FreezeBalance",
+     "de": "TU32XvjDNkxEkqxCgQQWEKmoMxTz8NECUV",
+     "a": null,
+     "trx": null
+    },
+    {
+     "t": "2021-11-08T15:49:15Z",
+     "tipo": "VoteWitness",
+     "de": "TU32XvjDNkxEkqxCgQQWEKmoMxTz8NECUV",
+     "a": null,
+     "trx": null
+    },
+    {
+     "t": "2021-11-12T03:42:27Z",
+     "tipo": "TriggerSmart",
+     "de": "TTGyhRZxZRcDz4M1bBwrsiKkZNS2GRYfWn",
+     "a": "TFczxzPhnThNSqr5by8tvxsdCFRRz6cPNq",
+     "trx": null
+    },
+    {
+     "t": "2021-12-12T09:52:42Z",
+     "tipo": "TriggerSmart",
+     "de": "TTGyhRZxZRcDz4M1bBwrsiKkZNS2GRYfWn",
+     "a": "TFczxzPhnThNSqr5by8tvxsdCFRRz6cPNq",
+     "trx": null
+    }
+   ],
+   "primera_entrada_de_TRX": {
+    "tx": "c0a1fc0fed1ef4b537ab8082df6d4515505b2d699ed1e384ef95a71cfed1ba91",
+    "t": 1636386366000,
+    "ok": true,
+    "tipo": "Transfer",
+    "de": "TTXeVETaU1wSV9cYutUgyg7x1gtrfCiDiW",
+    "a": "TU32XvjDNkxEkqxCgQQWEKmoMxTz8NECUV",
+    "trx": 950000999
+   },
+   "lectura_parcial": true,
+   "relacion_con_X": {
+    "altas": 2,
+    "bajas": 4,
+    "primera": "2024-08-20T13:04:48Z",
+    "ultima": "2025-03-21T17:11:12Z"
+   }
+  },
+  {
+   "direccion": "TJNtFduS4oebw3jgGKCYmgSpTdyPieb6Ha",
+   "es_contrato": false,
+   "nombre_contrato": null,
+   "etiqueta": null,
+   "creada": "2021-11-08",
+   "n_tx_tronscan": 2047,
+   "trx_libre": 1403867649.61,
+   "congelado_v2": [
+    {
+     "tipo": "BANDWIDTH",
+     "trx": 0
+    },
+    {
+     "tipo": "ENERGY",
+     "trx": 0
+    },
+    {
+     "tipo": "TRON_POWER",
+     "trx": 0
+    }
+   ],
+   "delega_a_n_cuentas": 0,
+   "delegado_energia_trx": 0,
+   "propietario": {
+    "umbral": 1,
+    "firmantes": [
+     "TJNtFduS4oebw3jgGKCYmgSpTdyPieb6Ha"
+    ]
+   },
+   "primeras_transacciones": [
+    {
+     "t": "2021-11-08T15:57:00Z",
+     "tipo": "Transfer",
+     "de": "TTXeVETaU1wSV9cYutUgyg7x1gtrfCiDiW",
+     "a": "TJNtFduS4oebw3jgGKCYmgSpTdyPieb6Ha",
+     "trx": 629002000
+    },
+    {
+     "t": "2021-11-08T16:10:39Z",
+     "tipo": "FreezeBalance",
+     "de": "TJNtFduS4oebw3jgGKCYmgSpTdyPieb6Ha",
+     "a": null,
+     "trx": null
+    },
+    {
+     "t": "2021-11-08T16:14:00Z",
+     "tipo": "VoteWitness",
+     "de": "TJNtFduS4oebw3jgGKCYmgSpTdyPieb6Ha",
+     "a": null,
+     "trx": null
+    },
+    {
+     "t": "2021-11-08T16:23:33Z",
+     "tipo": "Transfer",
+     "de": "TNCmcTdyrYKMtmE1KU2itzeCX76jGm5Not",
+     "a": "TJNtFduS4oebw3jgGKCYmgSpTdyPieb6Ha",
+     "trx": 299999999.99
+    },
+    {
+     "t": "2021-11-08T16:23:39Z",
+     "tipo": "Transfer",
+     "de": "TKxLNWSvF6f9XmDibVgFSuxcEhx6otKZqm",
+     "a": "TJNtFduS4oebw3jgGKCYmgSpTdyPieb6Ha",
+     "trx": 0.000001
+    }
+   ],
+   "primera_entrada_de_TRX": {
+    "tx": "fde9475b620b03f7582367627db96a89d9ed12d5569b83dc7bec8732110dd497",
+    "t": 1636387020000,
+    "ok": true,
+    "tipo": "Transfer",
+    "de": "TTXeVETaU1wSV9cYutUgyg7x1gtrfCiDiW",
+    "a": "TJNtFduS4oebw3jgGKCYmgSpTdyPieb6Ha",
+    "trx": 629002000
+   },
+   "lectura_parcial": true,
+   "relacion_con_X": {
+    "altas": 2,
+    "bajas": 2,
+    "primera": "2024-08-20T15:52:12Z",
+    "ultima": "2024-09-07T16:47:48Z"
+   }
+  },
+  {
+   "direccion": "TRzQrtxrEJbSbQNwAsgAHkBMxTX47yNmjo",
+   "es_contrato": false,
+   "nombre_contrato": null,
+   "etiqueta": null,
+   "creada": "2021-11-08",
+   "n_tx_tronscan": 1388,
+   "trx_libre": 1700079993.07,
+   "congelado_v2": [
+    {
+     "tipo": "BANDWIDTH",
+     "trx": 0
+    },
+    {
+     "tipo": "ENERGY",
+     "trx": 0
+    },
+    {
+     "tipo": "TRON_POWER",
+     "trx": 0
+    }
+   ],
+   "delega_a_n_cuentas": 0,
+   "delegado_energia_trx": 0,
+   "propietario": {
+    "umbral": 1,
+    "firmantes": [
+     "TRzQrtxrEJbSbQNwAsgAHkBMxTX47yNmjo"
+    ]
+   },
+   "primeras_transacciones": [
+    {
+     "t": "2021-11-08T17:13:15Z",
+     "tipo": "Transfer",
+     "de": "TNCmcTdyrYKMtmE1KU2itzeCX76jGm5Not",
+     "a": "TRzQrtxrEJbSbQNwAsgAHkBMxTX47yNmjo",
+     "trx": 399999999.99
+    },
+    {
+     "t": "2021-11-08T17:13:21Z",
+     "tipo": "Transfer",
+     "de": "TFvgoZDmSq6NsPmdgD9qDGHv1vBZKitVor",
+     "a": "TRzQrtxrEJbSbQNwAsgAHkBMxTX47yNmjo",
+     "trx": 0.000001
+    },
+    {
+     "t": "2021-11-08T17:19:36Z",
+     "tipo": "FreezeBalance",
+     "de": "TRzQrtxrEJbSbQNwAsgAHkBMxTX47yNmjo",
+     "a": null,
+     "trx": null
+    },
+    {
+     "t": "2021-11-08T17:20:51Z",
+     "tipo": "VoteWitness",
+     "de": "TRzQrtxrEJbSbQNwAsgAHkBMxTX47yNmjo",
+     "a": null,
+     "trx": null
+    },
+    {
+     "t": "2021-11-12T03:42:27Z",
+     "tipo": "TriggerSmart",
+     "de": "TTGyhRZxZRcDz4M1bBwrsiKkZNS2GRYfWn",
+     "a": "TFczxzPhnThNSqr5by8tvxsdCFRRz6cPNq",
+     "trx": null
+    }
+   ],
+   "primera_entrada_de_TRX": {
+    "tx": "788c910f35f8420a3479be779c0e3d2fa6256b86325b440f37ad5262557e3ce1",
+    "t": 1636391595000,
+    "ok": true,
+    "tipo": "Transfer",
+    "de": "TNCmcTdyrYKMtmE1KU2itzeCX76jGm5Not",
+    "a": "TRzQrtxrEJbSbQNwAsgAHkBMxTX47yNmjo",
+    "trx": 399999999.99
+   },
+   "lectura_parcial": true,
+   "relacion_con_X": {
+    "altas": 2,
+    "bajas": 2,
+    "primera": "2024-08-20T16:35:09Z",
+    "ultima": "2024-09-18T06:12:06Z"
+   }
+  },
+  {
+   "direccion": "TXjbXLdJ5LHYd23rYhddoZXffi3PJUtw5R",
+   "es_contrato": false,
+   "nombre_contrato": null,
+   "etiqueta": null,
+   "creada": "2022-03-11",
+   "n_tx_tronscan": 967,
+   "trx_libre": 538598303.72,
+   "congelado_v2": [
+    {
+     "tipo": "BANDWIDTH",
+     "trx": 0
+    },
+    {
+     "tipo": "ENERGY",
+     "trx": 0
+    },
+    {
+     "tipo": "TRON_POWER",
+     "trx": 0
+    }
+   ],
+   "delega_a_n_cuentas": 0,
+   "delegado_energia_trx": 0,
+   "propietario": {
+    "umbral": 1,
+    "firmantes": [
+     "TXjbXLdJ5LHYd23rYhddoZXffi3PJUtw5R"
+    ]
+   },
+   "primeras_transacciones": [
+    {
+     "t": "2022-03-11T15:13:36Z",
+     "tipo": "Transfer",
+     "de": "TNXoiAJ3dct8Fjg4M9fkLFh9S2v9TXc32G",
+     "a": "TXjbXLdJ5LHYd23rYhddoZXffi3PJUtw5R",
+     "trx": 999
+    },
+    {
+     "t": "2022-03-11T15:13:39Z",
+     "tipo": "Transfer",
+     "de": "THsvU5YdT7D2ec5uZPxKDAp2MsgC8wr4T7",
+     "a": "TXjbXLdJ5LHYd23rYhddoZXffi3PJUtw5R",
+     "trx": 0.000001
+    },
+    {
+     "t": "2022-03-11T15:41:36Z",
+     "tipo": "FreezeBalance",
+     "de": "TXjbXLdJ5LHYd23rYhddoZXffi3PJUtw5R",
+     "a": null,
+     "trx": null
+    },
+    {
+     "t": "2022-03-11T16:02:42Z",
+     "tipo": "Transfer",
+     "de": "TV6MuMXfmLbBqPZvBHdwFsDnQeVfnmiuSi",
+     "a": "TXjbXLdJ5LHYd23rYhddoZXffi3PJUtw5R",
+     "trx": 299999998
+    },
+    {
+     "t": "2022-03-19T11:38:36Z",
+     "tipo": "TriggerSmart",
+     "de": "TQcLUTf5UA37GhyK2Ri7Dpw1pogcv1TJce",
+     "a": "TJWMdjM15YUGuAD6suo2KeARkdoEXjnxDi",
+     "trx": null
+    }
+   ],
+   "primera_entrada_de_TRX": {
+    "tx": "89625778c42e010fc41933df76767d44b2adddad6b4e4aba2745566c74e6e429",
+    "t": 1647011616000,
+    "ok": true,
+    "tipo": "Transfer",
+    "de": "TNXoiAJ3dct8Fjg4M9fkLFh9S2v9TXc32G",
+    "a": "TXjbXLdJ5LHYd23rYhddoZXffi3PJUtw5R",
+    "trx": 999
+   },
+   "lectura_parcial": true,
+   "relacion_con_X": {
+    "altas": 1,
+    "bajas": 1,
+    "primera": "2024-08-20T18:24:09Z",
+    "ultima": "2024-09-02T09:20:39Z"
+   }
+  },
+  {
+   "direccion": "TKpiitwGUuW5WgsBMg5w5QWUpC6nUTroqa",
+   "es_contrato": false,
+   "nombre_contrato": null,
+   "etiqueta": null,
+   "creada": "2024-08-20",
+   "n_tx_tronscan": 57,
+   "trx_libre": 10000,
+   "congelado_v2": [
+    {
+     "tipo": "BANDWIDTH",
+     "trx": 0
+    },
+    {
+     "tipo": "ENERGY",
+     "trx": 0
+    },
+    {
+     "tipo": "TRON_POWER",
+     "trx": 0
+    }
+   ],
+   "delega_a_n_cuentas": 0,
+   "delegado_energia_trx": 0,
+   "propietario": {
+    "umbral": 1,
+    "firmantes": [
+     "TKpiitwGUuW5WgsBMg5w5QWUpC6nUTroqa"
+    ]
+   },
+   "primeras_transacciones": [
+    {
+     "t": "2024-08-20T18:11:48Z",
+     "tipo": "Transfer",
+     "de": "TDqMwZVTSPLTCZQC55Db3J69eXY7HLCmfs",
+     "a": "TKpiitwGUuW5WgsBMg5w5QWUpC6nUTroqa",
+     "trx": 10
+    },
+    {
+     "t": "2024-08-20T18:12:12Z",
+     "tipo": "Transfer",
+     "de": "TD5sNsEhdQ6hQ48omNLRTZXw6WBgVS1mfs",
+     "a": "TKpiitwGUuW5WgsBMg5w5QWUpC6nUTroqa",
+     "trx": 0.000007
+    },
+    {
+     "t": "2024-08-20T18:13:27Z",
+     "tipo": "Transfer",
+     "de": "TDqMwZVTSPLTCZQC55Db3J69eXY7HLCmfs",
+     "a": "TKpiitwGUuW5WgsBMg5w5QWUpC6nUTroqa",
+     "trx": 141810000
+    },
+    {
+     "t": "2024-08-20T18:13:51Z",
+     "tipo": "Transfer",
+     "de": "TDN5edjmh1ywgSEZJuqGQKE56EJDd49mfs",
+     "a": "TKpiitwGUuW5WgsBMg5w5QWUpC6nUTroqa",
+     "trx": 0.000003
+    },
+    {
+     "t": "2024-08-20T18:40:15Z",
+     "tipo": "Transfer",
+     "de": "TQwh1ZDBdqMKDtGWEeDdrRUUbtgaVL1Se2",
+     "a": "TKpiitwGUuW5WgsBMg5w5QWUpC6nUTroqa",
+     "trx": 1471079000
+    }
+   ],
+   "primera_entrada_de_TRX": {
+    "tx": "482a8be2f6e7500237c729800f80577c9f59b481a205c9c62b3472c867a40ac0",
+    "t": 1724177508000,
+    "ok": true,
+    "tipo": "Transfer",
+    "de": "TDqMwZVTSPLTCZQC55Db3J69eXY7HLCmfs",
+    "a": "TKpiitwGUuW5WgsBMg5w5QWUpC6nUTroqa",
+    "trx": 10
+   },
+   "lectura_parcial": false,
+   "relacion_con_X": {
+    "altas": 1,
+    "bajas": 1,
+    "primera": "2024-08-20T18:48:45Z",
+    "ultima": "2024-09-02T09:18:18Z"
+   }
+  },
+  {
+   "direccion": "TYL7z7VSVRShLoJ6YRQMA4t9pSECt9ZLmz",
+   "es_contrato": false,
+   "nombre_contrato": null,
+   "etiqueta": null,
+   "creada": "2022-06-25",
+   "n_tx_tronscan": 116,
+   "trx_libre": 950029975.95,
+   "congelado_v2": [
+    {
+     "tipo": "BANDWIDTH",
+     "trx": 0
+    },
+    {
+     "tipo": "ENERGY",
+     "trx": 0
+    },
+    {
+     "tipo": "TRON_POWER",
+     "trx": 0
+    }
+   ],
+   "delega_a_n_cuentas": 0,
+   "delegado_energia_trx": 0,
+   "propietario": {
+    "umbral": 1,
+    "firmantes": [
+     "TYL7z7VSVRShLoJ6YRQMA4t9pSECt9ZLmz"
+    ]
+   },
+   "primeras_transacciones": [
+    {
+     "t": "2022-06-25T05:44:48Z",
+     "tipo": "Transfer",
+     "de": "TPyjyZfsYaXStgz2NmAraF1uZcMtkgNan5",
+     "a": "TYL7z7VSVRShLoJ6YRQMA4t9pSECt9ZLmz",
+     "trx": 971000000
+    },
+    {
+     "t": "2022-06-25T05:44:51Z",
+     "tipo": "Transfer",
+     "de": "TAKdffYQkFe46bhaMpZbWyBgN6tD2YEybb",
+     "a": "TYL7z7VSVRShLoJ6YRQMA4t9pSECt9ZLmz",
+     "trx": 0.000123
+    },
+    {
+     "t": "2022-06-25T05:44:51Z",
+     "tipo": "Transfer",
+     "de": "TXmwxqir51ohLmtMahMiqJ6PfGdAufXa42",
+     "a": "TYL7z7VSVRShLoJ6YRQMA4t9pSECt9ZLmz",
+     "trx": 0.000123
+    },
+    {
+     "t": "2022-06-25T05:44:54Z",
+     "tipo": "Transfer",
+     "de": "TKeVrYg5Uu4BdpJXQVyyKkAxVc9SRq6fiz",
+     "a": "TYL7z7VSVRShLoJ6YRQMA4t9pSECt9ZLmz",
+     "trx": 0.000001
+    },
+    {
+     "t": "2022-06-25T05:45:48Z",
+     "tipo": "Transfer",
+     "de": "TXFgdSSgsMn4bZ7b1H1oErkPcogBHSvTTT",
+     "a": "TYL7z7VSVRShLoJ6YRQMA4t9pSECt9ZLmz",
+     "trx": 0.000001
+    }
+   ],
+   "primera_entrada_de_TRX": {
+    "tx": "9ba3c646db271c262c1fa4761c97feccc4132f6a6fe39c18c32ccdf351055839",
+    "t": 1656135888000,
+    "ok": true,
+    "tipo": "Transfer",
+    "de": "TPyjyZfsYaXStgz2NmAraF1uZcMtkgNan5",
+    "a": "TYL7z7VSVRShLoJ6YRQMA4t9pSECt9ZLmz",
+    "trx": 971000000
+   },
+   "lectura_parcial": false,
+   "relacion_con_X": {
+    "altas": 1,
+    "bajas": 1,
+    "primera": "2024-08-21T09:49:45Z",
+    "ultima": "2024-09-02T09:16:12Z"
+   }
+  },
+  {
+   "direccion": "TLbkcH7QLcULY8dpPAbD9EYGLUWKbeRxuB",
+   "es_contrato": false,
+   "nombre_contrato": null,
+   "etiqueta": null,
+   "creada": "2022-06-16",
+   "n_tx_tronscan": 106,
+   "trx_libre": 1063309520.49,
+   "congelado_v2": [
+    {
+     "tipo": "BANDWIDTH",
+     "trx": 0
+    },
+    {
+     "tipo": "ENERGY",
+     "trx": 0
+    },
+    {
+     "tipo": "TRON_POWER",
+     "trx": 0
+    }
+   ],
+   "delega_a_n_cuentas": 0,
+   "delegado_energia_trx": 0,
+   "propietario": {
+    "umbral": 1,
+    "firmantes": [
+     "TLbkcH7QLcULY8dpPAbD9EYGLUWKbeRxuB"
+    ]
+   },
+   "primeras_transacciones": [
+    {
+     "t": "2022-06-16T12:18:24Z",
+     "tipo": "Transfer",
+     "de": "TPyjyZfsYaXStgz2NmAraF1uZcMtkgNan5",
+     "a": "TLbkcH7QLcULY8dpPAbD9EYGLUWKbeRxuB",
+     "trx": 970000000
+    },
+    {
+     "t": "2022-06-16T12:18:27Z",
+     "tipo": "Transfer",
+     "de": "TBEa69bERuoBELWkkmGnihh1CQDi2mkPGM",
+     "a": "TLbkcH7QLcULY8dpPAbD9EYGLUWKbeRxuB",
+     "trx": 0.000001
+    },
+    {
+     "t": "2022-06-16T12:18:42Z",
+     "tipo": "Transfer",
+     "de": "TEZTCnXEvB9xERs14vxNpQwN7AFKAD2222",
+     "a": "TLbkcH7QLcULY8dpPAbD9EYGLUWKbeRxuB",
+     "trx": 0.000018
+    },
+    {
+     "t": "2022-06-16T12:18:45Z",
+     "tipo": "Transfer",
+     "de": "TMBzQzx8nMo3ZhJ5XEE1ajK7NWDHj47ttt",
+     "a": "TLbkcH7QLcULY8dpPAbD9EYGLUWKbeRxuB",
+     "trx": 0.000001
+    },
+    {
+     "t": "2022-06-21T08:38:39Z",
+     "tipo": "TriggerSmart",
+     "de": "TMnhv22Yj1AwbSRRzHSMtyvZkvjAo59Qpt",
+     "a": "TLGpmtJf6C7ek3XdAKZXTKdTgYtdswoVai",
+     "trx": null
+    }
+   ],
+   "primera_entrada_de_TRX": {
+    "tx": "58d1c0606cfe483590a092e70b0bf0821da8e32e3541e2366c10c5f03d77c804",
+    "t": 1655381904000,
+    "ok": true,
+    "tipo": "Transfer",
+    "de": "TPyjyZfsYaXStgz2NmAraF1uZcMtkgNan5",
+    "a": "TLbkcH7QLcULY8dpPAbD9EYGLUWKbeRxuB",
+    "trx": 970000000
+   },
+   "lectura_parcial": false,
+   "relacion_con_X": {
+    "altas": 1,
+    "bajas": 1,
+    "primera": "2024-08-21T13:45:06Z",
+    "ultima": "2024-09-02T09:13:21Z"
+   }
+  },
+  {
+   "direccion": "TFKSWmnRJkzCfWUr56DQ1zqGCxZLW9dKSv",
+   "es_contrato": false,
+   "nombre_contrato": null,
+   "etiqueta": null,
+   "creada": "2022-06-16",
+   "n_tx_tronscan": 93,
+   "trx_libre": 1062603802.7,
+   "congelado_v2": [
+    {
+     "tipo": "BANDWIDTH",
+     "trx": 0
+    },
+    {
+     "tipo": "ENERGY",
+     "trx": 800
+    },
+    {
+     "tipo": "TRON_POWER",
+     "trx": 0
+    }
+   ],
+   "delega_a_n_cuentas": 0,
+   "delegado_energia_trx": 0,
+   "propietario": {
+    "umbral": 1,
+    "firmantes": [
+     "TFKSWmnRJkzCfWUr56DQ1zqGCxZLW9dKSv"
+    ]
+   },
+   "primeras_transacciones": [
+    {
+     "t": "2022-06-16T12:22:30Z",
+     "tipo": "Transfer",
+     "de": "TPyjyZfsYaXStgz2NmAraF1uZcMtkgNan5",
+     "a": "TFKSWmnRJkzCfWUr56DQ1zqGCxZLW9dKSv",
+     "trx": 970000000
+    },
+    {
+     "t": "2022-06-16T12:22:36Z",
+     "tipo": "Transfer",
+     "de": "TEZudD4pQR6B1GXR6CSMfuVqNsFroGcP6x",
+     "a": "TFKSWmnRJkzCfWUr56DQ1zqGCxZLW9dKSv",
+     "trx": 0.000001
+    },
+    {
+     "t": "2022-06-16T12:22:45Z",
+     "tipo": "Transfer",
+     "de": "TXfsNMyRERxYVdF5r6DQasVZhM7pdm7BBB",
+     "a": "TFKSWmnRJkzCfWUr56DQ1zqGCxZLW9dKSv",
+     "trx": 0.000001
+    },
+    {
+     "t": "2022-06-25T14:24:45Z",
+     "tipo": "FreezeBalance",
+     "de": "TFKSWmnRJkzCfWUr56DQ1zqGCxZLW9dKSv",
+     "a": null,
+     "trx": null
+    },
+    {
+     "t": "2022-06-25T14:25:33Z",
+     "tipo": "VoteWitness",
+     "de": "TFKSWmnRJkzCfWUr56DQ1zqGCxZLW9dKSv",
+     "a": null,
+     "trx": null
+    }
+   ],
+   "primera_entrada_de_TRX": {
+    "tx": "6a5cca164e51537ef2228419c12055bf5fb3b37cf39631a1b711e685485faea7",
+    "t": 1655382150000,
+    "ok": true,
+    "tipo": "Transfer",
+    "de": "TPyjyZfsYaXStgz2NmAraF1uZcMtkgNan5",
+    "a": "TFKSWmnRJkzCfWUr56DQ1zqGCxZLW9dKSv",
+    "trx": 970000000
+   },
+   "lectura_parcial": false,
+   "relacion_con_X": {
+    "altas": 1,
+    "bajas": 1,
+    "primera": "2024-08-21T14:22:51Z",
+    "ultima": "2024-09-02T09:10:18Z"
+   }
+  },
+  {
+   "direccion": "TU4hymfSVr4CkFQzyaoeuZ9zCZ9kQcUMTW",
+   "es_contrato": false,
+   "nombre_contrato": null,
+   "etiqueta": null,
+   "creada": "2023-07-07",
+   "n_tx_tronscan": 1390186,
+   "trx_libre": 16010.16,
+   "congelado_v2": [
+    {
+     "tipo": "BANDWIDTH",
+     "trx": 131132.68
+    },
+    {
+     "tipo": "ENERGY",
+     "trx": 780007
+    },
+    {
+     "tipo": "TRON_POWER",
+     "trx": 0
+    }
+   ],
+   "delega_a_n_cuentas": 64,
+   "delegado_energia_trx": 624593,
+   "propietario": {
+    "umbral": 1,
+    "firmantes": [
+     "TU4hymfSVr4CkFQzyaoeuZ9zCZ9kQcUMTW"
+    ]
+   },
+   "primeras_transacciones": [
+    {
+     "t": "2023-07-07T05:32:21Z",
+     "tipo": "Transfer",
+     "de": "TXFdSXknrRUFqPZJ8sfy8GRfZpsaf88888",
+     "a": "TU4hymfSVr4CkFQzyaoeuZ9zCZ9kQcUMTW",
+     "trx": 50
+    },
+    {
+     "t": "2023-07-07T10:46:24Z",
+     "tipo": "Transfer",
+     "de": "TU4hymfSVr4CkFQzyaoeuZ9zCZ9kQcUMTW",
+     "a": "TTFX25cQKg6RCVkqajUz4D3AHx3G5dtZ5w",
+     "trx": 7
+    },
+    {
+     "t": "2023-07-07T13:04:54Z",
+     "tipo": "Transfer",
+     "de": "TU4hymfSVr4CkFQzyaoeuZ9zCZ9kQcUMTW",
+     "a": "TTFX25cQKg6RCVkqajUz4D3AHx3G5dtZ5w",
+     "trx": 7
+    },
+    {
+     "t": "2023-07-08T16:39:06Z",
+     "tipo": "Transfer",
+     "de": "TU4hymfSVr4CkFQzyaoeuZ9zCZ9kQcUMTW",
+     "a": "TPrLC5L3qTVXmKS14ht9UrJX8MCZ19Zgmf",
+     "trx": 32
+    },
+    {
+     "t": "2023-07-08T16:39:30Z",
+     "tipo": "Transfer",
+     "de": "TM8kcgmEDEfUvJ2XHuVTbkAX1EC67TXfbn",
+     "a": "TU4hymfSVr4CkFQzyaoeuZ9zCZ9kQcUMTW",
+     "trx": 0.000001
+    }
+   ],
+   "primera_entrada_de_TRX": {
+    "tx": "fa1c427b99aa900d148ab381e6948585edb6f5e21a441fb12b244e7af964d01b",
+    "t": 1688707941000,
+    "ok": true,
+    "tipo": "Transfer",
+    "de": "TXFdSXknrRUFqPZJ8sfy8GRfZpsaf88888",
+    "a": "TU4hymfSVr4CkFQzyaoeuZ9zCZ9kQcUMTW",
+    "trx": 50
+   },
+   "lectura_parcial": true,
+   "relacion_con_X": {
+    "altas": 1,
+    "bajas": 1,
+    "primera": "2024-08-23T06:41:33Z",
+    "ultima": "2024-08-23T06:41:51Z"
+   }
+  },
+  {
+   "direccion": "TFrT3EMHdroQ6YSwLZtSLuWxFEbMbLibnE",
+   "es_contrato": false,
+   "nombre_contrato": null,
+   "etiqueta": null,
+   "creada": "2023-07-21",
+   "n_tx_tronscan": 13170752,
+   "trx_libre": 2.11,
+   "congelado_v2": [
+    {
+     "tipo": "BANDWIDTH",
+     "trx": 349
+    },
+    {
+     "tipo": "ENERGY",
+     "trx": 0
+    },
+    {
+     "tipo": "TRON_POWER",
+     "trx": 0
+    }
+   ],
+   "delega_a_n_cuentas": 1,
+   "delegado_energia_trx": 5501077,
+   "propietario": {
+    "umbral": 1,
+    "firmantes": [
+     "TFrT3EMHdroQ6YSwLZtSLuWxFEbMbLibnE"
+    ]
+   },
+   "primeras_transacciones": [
+    {
+     "t": "2023-07-21T04:49:15Z",
+     "tipo": "Transfer",
+     "de": "TZFQt962hcvBJ6jRdctkUNu7fJeVTvkn9K",
+     "a": "TFrT3EMHdroQ6YSwLZtSLuWxFEbMbLibnE",
+     "trx": 100
+    },
+    {
+     "t": "2023-07-21T04:49:18Z",
+     "tipo": "Transfer",
+     "de": "THLQwRtPzC4rY9UGiASCBoseYkcdJYNMxz",
+     "a": "TFrT3EMHdroQ6YSwLZtSLuWxFEbMbLibnE",
+     "trx": 0.000001
+    },
+    {
+     "t": "2023-07-21T04:51:09Z",
+     "tipo": "Transfer",
+     "de": "TFrT3EMHdroQ6YSwLZtSLuWxFEbMbLibnE",
+     "a": "TZFQt962hcvBJ6jRdctkUNu7fJeVTvkn9K",
+     "trx": 10
+    },
+    {
+     "t": "2023-07-21T04:51:33Z",
+     "tipo": "Transfer",
+     "de": "TCH8tZPptW9docVpcRfetrwQ2Tnzx6idiA",
+     "a": "TFrT3EMHdroQ6YSwLZtSLuWxFEbMbLibnE",
+     "trx": 0.000001
+    },
+    {
+     "t": "2023-07-21T04:53:36Z",
+     "tipo": "Transfer",
+     "de": "TZFQt962hcvBJ6jRdctkUNu7fJeVTvkn9K",
+     "a": "TFrT3EMHdroQ6YSwLZtSLuWxFEbMbLibnE",
+     "trx": 5000000
+    }
+   ],
+   "primera_entrada_de_TRX": {
+    "tx": "0624d13297d5a4064c90c1e0652edd39f7974b63070ffc9d5d3b4ee4b328ef26",
+    "t": 1689914955000,
+    "ok": true,
+    "tipo": "Transfer",
+    "de": "TZFQt962hcvBJ6jRdctkUNu7fJeVTvkn9K",
+    "a": "TFrT3EMHdroQ6YSwLZtSLuWxFEbMbLibnE",
+    "trx": 100
+   },
+   "lectura_parcial": true,
+   "relacion_con_X": {
+    "altas": 1,
+    "bajas": 1,
+    "primera": "2024-08-29T14:21:27Z",
+    "ultima": "2024-08-29T15:22:30Z"
+   }
+  },
+  {
+   "direccion": "TAibbFBAkcNioexXTFWKbp65mgLp7JiqHD",
+   "es_contrato": false,
+   "nombre_contrato": null,
+   "etiqueta": null,
+   "creada": "2023-11-14",
+   "n_tx_tronscan": 28547017,
+   "trx_libre": 61967.86,
+   "congelado_v2": [
+    {
+     "tipo": "BANDWIDTH",
+     "trx": 0
+    },
+    {
+     "tipo": "ENERGY",
+     "trx": 724582.28
+    },
+    {
+     "tipo": "TRON_POWER",
+     "trx": 0
+    }
+   ],
+   "delega_a_n_cuentas": 1,
+   "delegado_energia_trx": 529280,
+   "propietario": {
+    "umbral": 1,
+    "firmantes": [
+     "TAibbFBAkcNioexXTFWKbp65mgLp7JiqHD"
+    ]
+   },
+   "primeras_transacciones": [
+    {
+     "t": "2023-11-14T18:12:15Z",
+     "tipo": "Transfer",
+     "de": "TFTZRnVC2ngggggBkNdP7P4YErWEKDw7f5",
+     "a": "TAibbFBAkcNioexXTFWKbp65mgLp7JiqHD",
+     "trx": 101
+    },
+    {
+     "t": "2023-11-14T18:12:24Z",
+     "tipo": "Transfer",
+     "de": "TMJGNFLvjaNg7XUFaTH7hShpZgE1TA87f5",
+     "a": "TAibbFBAkcNioexXTFWKbp65mgLp7JiqHD",
+     "trx": 0.000005
+    },
+    {
+     "t": "2023-11-14T18:12:30Z",
+     "tipo": "Transfer",
+     "de": "THCqHuVhXBpw24PcBDoKbhwBc4YhBF17f5",
+     "a": "TAibbFBAkcNioexXTFWKbp65mgLp7JiqHD",
+     "trx": 0.000003
+    },
+    {
+     "t": "2023-11-14T18:15:30Z",
+     "tipo": "AccountPermissionUpdate",
+     "de": "TAibbFBAkcNioexXTFWKbp65mgLp7JiqHD",
+     "a": null,
+     "trx": null
+    },
+    {
+     "t": "2023-11-14T18:26:09Z",
+     "tipo": "Transfer",
+     "de": "TM1zzNDZD2DPASbKcgdVoTYhfmYgtfwx9R",
+     "a": "TAibbFBAkcNioexXTFWKbp65mgLp7JiqHD",
+     "trx": 4999.2
+    }
+   ],
+   "primera_entrada_de_TRX": {
+    "tx": "1440e7fe4741a73f851cccb50ae1766863c1ad402f24bb5edd415f84ae18ce73",
+    "t": 1699985535000,
+    "ok": true,
+    "tipo": "Transfer",
+    "de": "TFTZRnVC2ngggggBkNdP7P4YErWEKDw7f5",
+    "a": "TAibbFBAkcNioexXTFWKbp65mgLp7JiqHD",
+    "trx": 101
+   },
+   "lectura_parcial": true,
+   "relacion_con_X": {
+    "altas": 1,
+    "bajas": 1,
+    "primera": "2024-08-29T14:29:24Z",
+    "ultima": "2024-08-29T15:29:27Z"
+   }
+  }
+ ]
+}

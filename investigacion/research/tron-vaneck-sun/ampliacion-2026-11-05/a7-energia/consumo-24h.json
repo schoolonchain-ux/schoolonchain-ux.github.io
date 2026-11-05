@@ -1,0 +1,523 @@
+[
+ {
+  "receptor": "TFNX7TKYCm1kUYDECjkrogBwYZvt69XQNy",
+  "familia": "GasFree",
+  "lectura": {
+   "tx_leidas_en_pagina": 36415,
+   "paginas": 183,
+   "parcial_por_limite_de_paginas": false,
+   "ventana": [
+    "2026-11-04T09:18:48.000Z",
+    "2026-11-05T09:18:48.000Z"
+   ]
+  },
+  "transacciones_propias_ok": 36415,
+  "fallidas": 0,
+  "llamadas_a_contratos": 36415,
+  "energia_total_consumida": 6768751209,
+  "energia_cubierta_por_stake": 6768751209,
+  "energia_pagada_quemando_trx": 0,
+  "trx_quemados_por_energia": 0,
+  "trx_quemados_por_ancho_de_banda": 0,
+  "por_transaccion": {
+   "n": 36415,
+   "minimo": 48885,
+   "mediana": 154896,
+   "p90": 220896,
+   "maximo": 377187
+  },
+  "contratos_llamados": [
+   {
+    "contrato": "TFFAMQLZybALaLb4uxHA9RBE7pxhUAjF3U",
+    "n": 36415,
+    "energia_media": 185878
+   }
+  ],
+  "trx_que_habria_pagado_sin_ninguna_delegacion": 676875.12,
+  "trx_ahorrados_por_energia_cubierta_por_stake": 676875.12,
+  "parte_de_TEF9ZV_en_la_energia_recibida": 0.64,
+  "trx_ahorrados_atribuibles_a_TEF9ZV_MODELO": 433200.08
+ },
+ {
+  "receptor": "TU3rMHyWHzeEJBReWLzHko728hbz6MtfNg",
+  "familia": "Sin etiqueta",
+  "lectura": {
+   "tx_leidas_en_pagina": 0,
+   "paginas": 1,
+   "parcial_por_limite_de_paginas": false,
+   "ventana": [
+    "2026-11-04T09:18:48.000Z",
+    "2026-11-05T09:18:48.000Z"
+   ]
+  },
+  "transacciones_propias_ok": 0,
+  "fallidas": 0,
+  "llamadas_a_contratos": 0,
+  "energia_total_consumida": 0,
+  "energia_cubierta_por_stake": 0,
+  "energia_pagada_quemando_trx": 0,
+  "trx_quemados_por_energia": 0,
+  "trx_quemados_por_ancho_de_banda": 0,
+  "por_transaccion": {
+   "n": 0,
+   "minimo": null,
+   "mediana": null,
+   "p90": null,
+   "maximo": null
+  },
+  "contratos_llamados": [],
+  "trx_que_habria_pagado_sin_ninguna_delegacion": 0,
+  "trx_ahorrados_por_energia_cubierta_por_stake": 0,
+  "parte_de_TEF9ZV_en_la_energia_recibida": 1,
+  "trx_ahorrados_atribuibles_a_TEF9ZV_MODELO": 0
+ },
+ {
+  "receptor": "TJTKCzQpsG19CSMYF9TPtxz6wSHPSyeKfa",
+  "familia": "Binance — billeteras nuevas (creadas tras el robo)",
+  "lectura": {
+   "tx_leidas_en_pagina": 25737,
+   "paginas": 129,
+   "parcial_por_limite_de_paginas": false,
+   "ventana": [
+    "2026-11-04T09:18:48.000Z",
+    "2026-11-05T09:18:48.000Z"
+   ]
+  },
+  "transacciones_propias_ok": 17754,
+  "fallidas": 0,
+  "llamadas_a_contratos": 16812,
+  "energia_total_consumida": 1556548656,
+  "energia_cubierta_por_stake": 1530826170,
+  "energia_pagada_quemando_trx": 25722486,
+  "trx_quemados_por_energia": 2572.23,
+  "trx_quemados_por_ancho_de_banda": 1142.69,
+  "por_transaccion": {
+   "n": 16812,
+   "minimo": 28903,
+   "mediana": 64285,
+   "p90": 130285,
+   "maximo": 130285
+  },
+  "contratos_llamados": [
+   {
+    "contrato": "TR7NHqjeKQxGTCi8q8ZY4pL8otSzgjLj6t",
+    "n": 16810,
+    "energia_media": 92593
+   },
+   {
+    "contrato": "TUpMhErZL2fhh4sVNULAbNKLokS4GjC1F4",
+    "n": 2,
+    "energia_media": 28903
+   }
+  ],
+  "trx_que_habria_pagado_sin_ninguna_delegacion": 155654.87,
+  "trx_ahorrados_por_energia_cubierta_por_stake": 153082.62,
+  "parte_de_TEF9ZV_en_la_energia_recibida": 1,
+  "trx_ahorrados_atribuibles_a_TEF9ZV_MODELO": 153082.62
+ },
+ {
+  "receptor": "TU4vEruvZwLLkSfV9bNw12EJTPvNr7Pvaa",
+  "familia": "Bybit",
+  "lectura": {
+   "tx_leidas_en_pagina": 52368,
+   "paginas": 262,
+   "parcial_por_limite_de_paginas": false,
+   "ventana": [
+    "2026-11-04T09:18:48.000Z",
+    "2026-11-05T09:18:48.000Z"
+   ]
+  },
+  "transacciones_propias_ok": 50892,
+  "fallidas": 0,
+  "llamadas_a_contratos": 50892,
+  "energia_total_consumida": 4792791918,
+  "energia_cubierta_por_stake": 4615369076,
+  "energia_pagada_quemando_trx": 177422842,
+  "trx_quemados_por_energia": 17742.23,
+  "trx_quemados_por_ancho_de_banda": 0,
+  "por_transaccion": {
+   "n": 50892,
+   "minimo": 13051,
+   "mediana": 64285,
+   "p90": 130285,
+   "maximo": 130285
+  },
+  "contratos_llamados": [
+   {
+    "contrato": "TR7NHqjeKQxGTCi8q8ZY4pL8otSzgjLj6t",
+    "n": 50847,
+    "energia_media": 94239
+   },
+   {
+    "contrato": "TAFjULxiVgT4qWk6UZwjqwZXTSaGaqnVp4",
+    "n": 24,
+    "energia_media": 22003
+   },
+   {
+    "contrato": "TFczxzPhnThNSqr5by8tvxsdCFRRz6cPNq",
+    "n": 9,
+    "energia_media": 25976
+   },
+   {
+    "contrato": "TSSMHYeV2uE9qYH95DqyoCuNCzEL1NvU3S",
+    "n": 7,
+    "energia_media": 23765
+   }
+  ],
+  "trx_que_habria_pagado_sin_ninguna_delegacion": 479279.19,
+  "trx_ahorrados_por_energia_cubierta_por_stake": 461536.91,
+  "parte_de_TEF9ZV_en_la_energia_recibida": 0.35,
+  "trx_ahorrados_atribuibles_a_TEF9ZV_MODELO": 161537.92
+ },
+ {
+  "receptor": "TYLRgzUKgLHw5wCYox2xRUkCQaWo9koP6K",
+  "familia": "Binance — billeteras nuevas (creadas tras el robo)",
+  "lectura": {
+   "tx_leidas_en_pagina": 5839,
+   "paginas": 30,
+   "parcial_por_limite_de_paginas": false,
+   "ventana": [
+    "2026-11-04T09:18:48.000Z",
+    "2026-11-05T09:18:48.000Z"
+   ]
+  },
+  "transacciones_propias_ok": 5825,
+  "fallidas": 2,
+  "llamadas_a_contratos": 4451,
+  "energia_total_consumida": 415690535,
+  "energia_cubierta_por_stake": 415690461,
+  "energia_pagada_quemando_trx": 74,
+  "trx_quemados_por_energia": 0,
+  "trx_quemados_por_ancho_de_banda": 0,
+  "por_transaccion": {
+   "n": 4451,
+   "minimo": 64285,
+   "mediana": 64285,
+   "p90": 130285,
+   "maximo": 130285
+  },
+  "contratos_llamados": [
+   {
+    "contrato": "TR7NHqjeKQxGTCi8q8ZY4pL8otSzgjLj6t",
+    "n": 4451,
+    "energia_media": 93393
+   }
+  ],
+  "trx_que_habria_pagado_sin_ninguna_delegacion": 41569.05,
+  "trx_ahorrados_por_energia_cubierta_por_stake": 41569.05,
+  "parte_de_TEF9ZV_en_la_energia_recibida": 1,
+  "trx_ahorrados_atribuibles_a_TEF9ZV_MODELO": 41569.05
+ },
+ {
+  "receptor": "TE4mtETxcuHHbprQmQkyVSaCC48Q5yk21i",
+  "familia": "Binance — billeteras nuevas (creadas tras el robo)",
+  "lectura": {
+   "tx_leidas_en_pagina": 17100,
+   "paginas": 86,
+   "parcial_por_limite_de_paginas": false,
+   "ventana": [
+    "2026-11-04T09:18:48.000Z",
+    "2026-11-05T09:18:48.000Z"
+   ]
+  },
+  "transacciones_propias_ok": 17085,
+  "fallidas": 1,
+  "llamadas_a_contratos": 15909,
+  "energia_total_consumida": 1479562065,
+  "energia_cubierta_por_stake": 1290022251,
+  "energia_pagada_quemando_trx": 189539814,
+  "trx_quemados_por_energia": 18953.96,
+  "trx_quemados_por_ancho_de_banda": 1581.56,
+  "por_transaccion": {
+   "n": 15909,
+   "minimo": 64285,
+   "mediana": 64285,
+   "p90": 130285,
+   "maximo": 130285
+  },
+  "contratos_llamados": [
+   {
+    "contrato": "TR7NHqjeKQxGTCi8q8ZY4pL8otSzgjLj6t",
+    "n": 15909,
+    "energia_media": 93002
+   }
+  ],
+  "trx_que_habria_pagado_sin_ninguna_delegacion": 147956.21,
+  "trx_ahorrados_por_energia_cubierta_por_stake": 129002.23,
+  "parte_de_TEF9ZV_en_la_energia_recibida": 1,
+  "trx_ahorrados_atribuibles_a_TEF9ZV_MODELO": 129002.23
+ },
+ {
+  "receptor": "TGpTXS67vXyPERWMC2iQSG27TosfD13HLZ",
+  "familia": "Binance — billeteras nuevas (creadas tras el robo)",
+  "lectura": {
+   "tx_leidas_en_pagina": 16985,
+   "paginas": 85,
+   "parcial_por_limite_de_paginas": false,
+   "ventana": [
+    "2026-11-04T09:18:48.000Z",
+    "2026-11-05T09:18:48.000Z"
+   ]
+  },
+  "transacciones_propias_ok": 16971,
+  "fallidas": 0,
+  "llamadas_a_contratos": 15552,
+  "energia_total_consumida": 1440772320,
+  "energia_cubierta_por_stake": 1161696067,
+  "energia_pagada_quemando_trx": 279076253,
+  "trx_quemados_por_energia": 27907.61,
+  "trx_quemados_por_ancho_de_banda": 2076.31,
+  "por_transaccion": {
+   "n": 15552,
+   "minimo": 64285,
+   "mediana": 64285,
+   "p90": 130285,
+   "maximo": 130285
+  },
+  "contratos_llamados": [
+   {
+    "contrato": "TR7NHqjeKQxGTCi8q8ZY4pL8otSzgjLj6t",
+    "n": 15552,
+    "energia_media": 92642
+   }
+  ],
+  "trx_que_habria_pagado_sin_ninguna_delegacion": 144077.23,
+  "trx_ahorrados_por_energia_cubierta_por_stake": 116169.61,
+  "parte_de_TEF9ZV_en_la_energia_recibida": 1,
+  "trx_ahorrados_atribuibles_a_TEF9ZV_MODELO": 116169.61
+ },
+ {
+  "receptor": "TADfh7Q4KA9LD6WfjjjcPMNra33gNRrCkb",
+  "familia": "Binance — billeteras nuevas (creadas tras el robo)",
+  "lectura": {
+   "tx_leidas_en_pagina": 4775,
+   "paginas": 24,
+   "parcial_por_limite_de_paginas": false,
+   "ventana": [
+    "2026-11-04T09:18:48.000Z",
+    "2026-11-05T09:18:48.000Z"
+   ]
+  },
+  "transacciones_propias_ok": 4764,
+  "fallidas": 1,
+  "llamadas_a_contratos": 3515,
+  "energia_total_consumida": 327535775,
+  "energia_cubierta_por_stake": 327535723,
+  "energia_pagada_quemando_trx": 52,
+  "trx_quemados_por_energia": 0,
+  "trx_quemados_por_ancho_de_banda": 0,
+  "por_transaccion": {
+   "n": 3515,
+   "minimo": 64285,
+   "mediana": 64285,
+   "p90": 130285,
+   "maximo": 130285
+  },
+  "contratos_llamados": [
+   {
+    "contrato": "TR7NHqjeKQxGTCi8q8ZY4pL8otSzgjLj6t",
+    "n": 3515,
+    "energia_media": 93182
+   }
+  ],
+  "trx_que_habria_pagado_sin_ninguna_delegacion": 32753.58,
+  "trx_ahorrados_por_energia_cubierta_por_stake": 32753.57,
+  "parte_de_TEF9ZV_en_la_energia_recibida": 1,
+  "trx_ahorrados_atribuibles_a_TEF9ZV_MODELO": 32753.57
+ },
+ {
+  "receptor": "TDB1RpAHPQdGqfb1qi8J2jLY2oGe2jSy8A",
+  "familia": "Binance — billeteras nuevas (creadas tras el robo)",
+  "lectura": {
+   "tx_leidas_en_pagina": 5953,
+   "paginas": 30,
+   "parcial_por_limite_de_paginas": false,
+   "ventana": [
+    "2026-11-04T09:18:48.000Z",
+    "2026-11-05T09:18:48.000Z"
+   ]
+  },
+  "transacciones_propias_ok": 5940,
+  "fallidas": 0,
+  "llamadas_a_contratos": 4552,
+  "energia_total_consumida": 421457320,
+  "energia_cubierta_por_stake": 421457264,
+  "energia_pagada_quemando_trx": 56,
+  "trx_quemados_por_energia": 0,
+  "trx_quemados_por_ancho_de_banda": 0,
+  "por_transaccion": {
+   "n": 4552,
+   "minimo": 64285,
+   "mediana": 64285,
+   "p90": 130285,
+   "maximo": 130285
+  },
+  "contratos_llamados": [
+   {
+    "contrato": "TR7NHqjeKQxGTCi8q8ZY4pL8otSzgjLj6t",
+    "n": 4552,
+    "energia_media": 92587
+   }
+  ],
+  "trx_que_habria_pagado_sin_ninguna_delegacion": 42145.73,
+  "trx_ahorrados_por_energia_cubierta_por_stake": 42145.73,
+  "parte_de_TEF9ZV_en_la_energia_recibida": 1,
+  "trx_ahorrados_atribuibles_a_TEF9ZV_MODELO": 42145.73
+ },
+ {
+  "receptor": "TGnBDu95RaJEaw7dJpqzHt8Sy7faayBGvj",
+  "familia": "Binance — billeteras nuevas (creadas tras el robo)",
+  "lectura": {
+   "tx_leidas_en_pagina": 17168,
+   "paginas": 86,
+   "parcial_por_limite_de_paginas": false,
+   "ventana": [
+    "2026-11-04T09:18:48.000Z",
+    "2026-11-05T09:18:48.000Z"
+   ]
+  },
+  "transacciones_propias_ok": 17153,
+  "fallidas": 0,
+  "llamadas_a_contratos": 15782,
+  "energia_total_consumida": 1462949870,
+  "energia_cubierta_por_stake": 1185641815,
+  "energia_pagada_quemando_trx": 277308055,
+  "trx_quemados_por_energia": 27730.78,
+  "trx_quemados_por_ancho_de_banda": 1996.4,
+  "por_transaccion": {
+   "n": 15782,
+   "minimo": 64285,
+   "mediana": 64285,
+   "p90": 130285,
+   "maximo": 130285
+  },
+  "contratos_llamados": [
+   {
+    "contrato": "TR7NHqjeKQxGTCi8q8ZY4pL8otSzgjLj6t",
+    "n": 15782,
+    "energia_media": 92697
+   }
+  ],
+  "trx_que_habria_pagado_sin_ninguna_delegacion": 146294.99,
+  "trx_ahorrados_por_energia_cubierta_por_stake": 118564.18,
+  "parte_de_TEF9ZV_en_la_energia_recibida": 1,
+  "trx_ahorrados_atribuibles_a_TEF9ZV_MODELO": 118564.18
+ },
+ {
+  "receptor": "TNiXZSD38dwRjZ5fXKn1im8crWkfqzskvH",
+  "familia": "Binance — billeteras nuevas (creadas tras el robo)",
+  "lectura": {
+   "tx_leidas_en_pagina": 17270,
+   "paginas": 87,
+   "parcial_por_limite_de_paginas": false,
+   "ventana": [
+    "2026-11-04T09:18:48.000Z",
+    "2026-11-05T09:18:48.000Z"
+   ]
+  },
+  "transacciones_propias_ok": 17255,
+  "fallidas": 0,
+  "llamadas_a_contratos": 15894,
+  "energia_total_consumida": 1473119790,
+  "energia_cubierta_por_stake": 1176936024,
+  "energia_pagada_quemando_trx": 296183766,
+  "trx_quemados_por_energia": 29618.36,
+  "trx_quemados_por_ancho_de_banda": 2092.42,
+  "por_transaccion": {
+   "n": 15894,
+   "minimo": 64285,
+   "mediana": 64285,
+   "p90": 130285,
+   "maximo": 130285
+  },
+  "contratos_llamados": [
+   {
+    "contrato": "TR7NHqjeKQxGTCi8q8ZY4pL8otSzgjLj6t",
+    "n": 15894,
+    "energia_media": 92684
+   }
+  ],
+  "trx_que_habria_pagado_sin_ninguna_delegacion": 147311.98,
+  "trx_ahorrados_por_energia_cubierta_por_stake": 117693.6,
+  "parte_de_TEF9ZV_en_la_energia_recibida": 1,
+  "trx_ahorrados_atribuibles_a_TEF9ZV_MODELO": 117693.6
+ },
+ {
+  "receptor": "TCQ8X6x9GiK4khydWVKfLJvm8H6WK3RE8B",
+  "familia": "Binance — billeteras nuevas (creadas tras el robo)",
+  "lectura": {
+   "tx_leidas_en_pagina": 6191,
+   "paginas": 31,
+   "parcial_por_limite_de_paginas": false,
+   "ventana": [
+    "2026-11-04T09:18:48.000Z",
+    "2026-11-05T09:18:48.000Z"
+   ]
+  },
+  "transacciones_propias_ok": 6179,
+  "fallidas": 0,
+  "llamadas_a_contratos": 4966,
+  "energia_total_consumida": 467673310,
+  "energia_cubierta_por_stake": 467673236,
+  "energia_pagada_quemando_trx": 74,
+  "trx_quemados_por_energia": 0,
+  "trx_quemados_por_ancho_de_banda": 0,
+  "por_transaccion": {
+   "n": 4966,
+   "minimo": 64285,
+   "mediana": 64285,
+   "p90": 130285,
+   "maximo": 130285
+  },
+  "contratos_llamados": [
+   {
+    "contrato": "TR7NHqjeKQxGTCi8q8ZY4pL8otSzgjLj6t",
+    "n": 4966,
+    "energia_media": 94175
+   }
+  ],
+  "trx_que_habria_pagado_sin_ninguna_delegacion": 46767.33,
+  "trx_ahorrados_por_energia_cubierta_por_stake": 46767.32,
+  "parte_de_TEF9ZV_en_la_energia_recibida": 0.37,
+  "trx_ahorrados_atribuibles_a_TEF9ZV_MODELO": 17303.91
+ },
+ {
+  "receptor": "TTU4bhRuPEtaSWPXvvRQ7CVnyHs6cGu24e",
+  "familia": "Binance — billeteras nuevas (creadas tras el robo)",
+  "lectura": {
+   "tx_leidas_en_pagina": 17406,
+   "paginas": 88,
+   "parcial_por_limite_de_paginas": false,
+   "ventana": [
+    "2026-11-04T09:18:48.000Z",
+    "2026-11-05T09:18:48.000Z"
+   ]
+  },
+  "transacciones_propias_ok": 17392,
+  "fallidas": 0,
+  "llamadas_a_contratos": 16003,
+  "energia_total_consumida": 1489960855,
+  "energia_cubierta_por_stake": 1266601536,
+  "energia_pagada_quemando_trx": 223359319,
+  "trx_quemados_por_energia": 22335.91,
+  "trx_quemados_por_ancho_de_banda": 2241.6,
+  "por_transaccion": {
+   "n": 16003,
+   "minimo": 64285,
+   "mediana": 64285,
+   "p90": 130285,
+   "maximo": 130285
+  },
+  "contratos_llamados": [
+   {
+    "contrato": "TR7NHqjeKQxGTCi8q8ZY4pL8otSzgjLj6t",
+    "n": 16003,
+    "energia_media": 93105
+   }
+  ],
+  "trx_que_habria_pagado_sin_ninguna_delegacion": 148996.09,
+  "trx_ahorrados_por_energia_cubierta_por_stake": 126660.15,
+  "parte_de_TEF9ZV_en_la_energia_recibida": 0.42,
+  "trx_ahorrados_atribuibles_a_TEF9ZV_MODELO": 53197.26
+ }
+]

@@ -1,0 +1,1270 @@
+[
+ {
+  "nombre": "Vaneck",
+  "direccion": "TCGVFGDd62LSrfZEaz3M3fYifWWdSDHRL8",
+  "existe": true,
+  "creada": "2021-09-05",
+  "trx_libre": 7523697.544997,
+  "bloqueado_v2": {
+   "BANDWIDTH": 0,
+   "ENERGY": 0,
+   "TRON_POWER": 0
+  },
+  "descongelando": [
+   {
+    "tipo": "BANDWIDTH",
+    "trx": 132703297,
+    "libre_el": "2026-10-31T15:20:45.000Z"
+   }
+  ],
+  "delegado_a_otros": {
+   "energia": 0,
+   "ancho_banda": 0
+  },
+  "recibido_en_delegacion": {
+   "energia": 1,
+   "ancho_banda": 0
+  },
+  "votos": [],
+  "permiso_propietario": {
+   "nombre": "owner",
+   "umbral": 1,
+   "claves": [
+    {
+     "direccion": "TCGVFGDd62LSrfZEaz3M3fYifWWdSDHRL8",
+     "peso": 1
+    }
+   ]
+  },
+  "permisos_activos": [
+   {
+    "nombre": "active",
+    "umbral": 1,
+    "claves": [
+     {
+      "direccion": "TCGVFGDd62LSrfZEaz3M3fYifWWdSDHRL8",
+      "peso": 1
+     }
+    ]
+   }
+  ],
+  "energia": {
+   "limite": 9,
+   "usada": 0,
+   "limite_total_red": 180000000000,
+   "peso_total_red": 18644550830
+  },
+  "tronscan": {
+   "etiqueta_publica": "Vaneck",
+   "etiqueta": "Vaneck",
+   "tipo": 0,
+   "es_contrato": false
+  },
+  "direccion_consultada": "TCGVFGDd62LSrfZEaz3M3fYifWWdSDHRL8"
+ },
+ {
+  "nombre": "Segunda cuenta (TT2T17)",
+  "direccion": "TT2T17KZhoDu47i2E4FWxfG79zdkEWkU9N",
+  "existe": true,
+  "creada": "2023-05-01",
+  "trx_libre": 1478760593.913976,
+  "bloqueado_v2": {
+   "BANDWIDTH": 20329621.666876,
+   "ENERGY": 0,
+   "TRON_POWER": 0
+  },
+  "descongelando": [
+   {
+    "tipo": "ENERGY",
+    "trx": 519035766.469722,
+    "libre_el": "2026-11-15T07:37:39.000Z"
+   }
+  ],
+  "delegado_a_otros": {
+   "energia": 187482220.552002,
+   "ancho_banda": 0
+  },
+  "recibido_en_delegacion": {
+   "energia": 3.533404,
+   "ancho_banda": 0
+  },
+  "votos": [
+   {
+    "para": "TBsyKdNsCKNXLgvneeUJ3rbXgWSgk6paTM",
+    "votos": 576179
+   },
+   {
+    "para": "TNeEwWHXLLUgEtfzTnYN8wtVenGxuMzZCE",
+    "votos": 62667480
+   },
+   {
+    "para": "TSMC4YzUSfySfqKuFnJbYyU3W6PBebBk2E",
+    "votos": 32468309
+   },
+   {
+    "para": "TVFKwzE8qeETLaZEHMx2tjEsdnujAgAWaA",
+    "votos": 32468309
+   },
+   {
+    "para": "TQ4bh4nQknQp33vuf1mUAKu5M5TWW8cTAD",
+    "votos": 18374825
+   },
+   {
+    "para": "TNajWcLPBuxKmCVT8DZh7Xs4X9Bkme9poG",
+    "votos": 51468535
+   },
+   {
+    "para": "TFXHSwdMruwXk18r8s5LpJuMiiPxUn2XMV",
+    "votos": 9788202
+   }
+  ],
+  "permiso_propietario": {
+   "nombre": "owner",
+   "umbral": 1,
+   "claves": [
+    {
+     "direccion": "TT2T17KZhoDu47i2E4FWxfG79zdkEWkU9N",
+     "peso": 1
+    }
+   ]
+  },
+  "permisos_activos": [
+   {
+    "nombre": "active",
+    "umbral": 1,
+    "claves": [
+     {
+      "direccion": "TT2T17KZhoDu47i2E4FWxfG79zdkEWkU9N",
+      "peso": 1
+     }
+    ]
+   }
+  ],
+  "energia": {
+   "limite": 34,
+   "usada": 0,
+   "limite_total_red": 180000000000,
+   "peso_total_red": 18644550830
+  },
+  "tronscan": {
+   "etiqueta_publica": null,
+   "etiqueta": null,
+   "tipo": 0,
+   "es_contrato": false
+  },
+  "direccion_consultada": "TT2T17KZhoDu47i2E4FWxfG79zdkEWkU9N"
+ },
+ {
+  "nombre": "Financiadora 1 (TPyjyZ)",
+  "direccion": "TPyjyZfsYaXStgz2NmAraF1uZcMtkgNan5",
+  "existe": true,
+  "creada": "2021-05-27",
+  "trx_libre": 1875965534.561589,
+  "bloqueado_v2": {
+   "BANDWIDTH": 0,
+   "ENERGY": 0,
+   "TRON_POWER": 0
+  },
+  "descongelando": [],
+  "delegado_a_otros": {
+   "energia": 0,
+   "ancho_banda": 0
+  },
+  "recibido_en_delegacion": {
+   "energia": 1,
+   "ancho_banda": 0
+  },
+  "votos": [],
+  "permiso_propietario": {
+   "nombre": "owner",
+   "umbral": 1,
+   "claves": [
+    {
+     "direccion": "TPyjyZfsYaXStgz2NmAraF1uZcMtkgNan5",
+     "peso": 1
+    }
+   ]
+  },
+  "permisos_activos": [
+   {
+    "nombre": "active",
+    "umbral": 1,
+    "claves": [
+     {
+      "direccion": "TPyjyZfsYaXStgz2NmAraF1uZcMtkgNan5",
+      "peso": 1
+     }
+    ]
+   }
+  ],
+  "energia": {
+   "limite": 9,
+   "usada": 0,
+   "limite_total_red": 180000000000,
+   "peso_total_red": 18644550830
+  },
+  "tronscan": {
+   "etiqueta_publica": null,
+   "etiqueta": null,
+   "tipo": 0,
+   "es_contrato": false
+  },
+  "direccion_consultada": "TPyjyZfsYaXStgz2NmAraF1uZcMtkgNan5"
+ },
+ {
+  "nombre": "Financiadora 2 (TUTtLt)",
+  "direccion": "TUTtLtGjXWqkTAow7jj7oMhTGLe9XB9YMA",
+  "existe": true,
+  "creada": "2020-05-15",
+  "trx_libre": 9327878.584307,
+  "bloqueado_v2": {
+   "BANDWIDTH": 0,
+   "ENERGY": 0,
+   "TRON_POWER": 0
+  },
+  "descongelando": [],
+  "delegado_a_otros": {
+   "energia": 0,
+   "ancho_banda": 0
+  },
+  "recibido_en_delegacion": {
+   "energia": 0,
+   "ancho_banda": 0
+  },
+  "votos": [],
+  "permiso_propietario": {
+   "nombre": "owner",
+   "umbral": 1,
+   "claves": [
+    {
+     "direccion": "TUTtLtGjXWqkTAow7jj7oMhTGLe9XB9YMA",
+     "peso": 1
+    }
+   ]
+  },
+  "permisos_activos": [
+   {
+    "nombre": "active",
+    "umbral": 1,
+    "claves": [
+     {
+      "direccion": "TUTtLtGjXWqkTAow7jj7oMhTGLe9XB9YMA",
+      "peso": 1
+     }
+    ]
+   }
+  ],
+  "energia": {
+   "limite": 0,
+   "usada": 0,
+   "limite_total_red": 180000000000,
+   "peso_total_red": 18644550830
+  },
+  "tronscan": {
+   "etiqueta_publica": null,
+   "etiqueta": null,
+   "tipo": 0,
+   "es_contrato": false
+  },
+  "direccion_consultada": "TUTtLtGjXWqkTAow7jj7oMhTGLe9XB9YMA"
+ },
+ {
+  "nombre": "Cuenta de energia (TEF9ZV)",
+  "direccion": "TEF9ZVUxhmGGffvkf59e2vdLfAG1QCMb7B",
+  "existe": true,
+  "creada": "2025-10-30",
+  "trx_libre": 356.177869,
+  "bloqueado_v2": {
+   "BANDWIDTH": 18500,
+   "ENERGY": 149083059,
+   "TRON_POWER": 0
+  },
+  "descongelando": [],
+  "delegado_a_otros": {
+   "energia": 1500502141,
+   "ancho_banda": 28839600
+  },
+  "recibido_en_delegacion": {
+   "energia": 0,
+   "ancho_banda": 0
+  },
+  "votos": [
+   {
+    "para": "TJvaAeFb8Lykt9RQcVyyTFN2iDvGMuyD4M",
+    "votos": 1678443300
+   }
+  ],
+  "permiso_propietario": {
+   "nombre": "owner",
+   "umbral": 1,
+   "claves": [
+    {
+     "direccion": "TEF9ZVUxhmGGffvkf59e2vdLfAG1QCMb7B",
+     "peso": 1
+    }
+   ]
+  },
+  "permisos_activos": [
+   {
+    "nombre": "active",
+    "umbral": 1,
+    "claves": [
+     {
+      "direccion": "TEF9ZVUxhmGGffvkf59e2vdLfAG1QCMb7B",
+      "peso": 1
+     }
+    ]
+   },
+   {
+    "nombre": "Resource Delegation I",
+    "umbral": 3,
+    "claves": [
+     {
+      "direccion": "TA5VbP6ijuFmYcjoCcUN3zALx8YjX8bKXB",
+      "peso": 1
+     },
+     {
+      "direccion": "TVVnUBMbj56ceFFE3RDqxmRRAPMjffAfv1",
+      "peso": 1
+     },
+     {
+      "direccion": "TEpH4V3GWLMS631SjxZzpZmatZSKrnzUSj",
+      "peso": 2
+     },
+     {
+      "direccion": "TU14wz7Qka2TTHVXBwVeY8bPjoj1STV4Yt",
+      "peso": 2
+     }
+    ]
+   }
+  ],
+  "energia": {
+   "limite": 1439289178,
+   "usada": 0,
+   "limite_total_red": 180000000000,
+   "peso_total_red": 18644585830
+  },
+  "tronscan": {
+   "etiqueta_publica": null,
+   "etiqueta": null,
+   "tipo": 0,
+   "es_contrato": false
+  },
+  "direccion_consultada": "TEF9ZVUxhmGGffvkf59e2vdLfAG1QCMb7B"
+ },
+ {
+  "nombre": "Proveedora TRON Inc (TWhDfwC8)",
+  "direccion": "TWhDfwC8QE6pQyiYy248dNor3uphPEw5M2",
+  "existe": true,
+  "creada": "2023-11-28",
+  "trx_libre": 452116.084312,
+  "bloqueado_v2": {
+   "BANDWIDTH": 0,
+   "ENERGY": 0,
+   "TRON_POWER": 0
+  },
+  "descongelando": [],
+  "delegado_a_otros": {
+   "energia": 0,
+   "ancho_banda": 0
+  },
+  "recibido_en_delegacion": {
+   "energia": 8314808.067111,
+   "ancho_banda": 2995513
+  },
+  "votos": [],
+  "permiso_propietario": {
+   "nombre": "owner",
+   "umbral": 1,
+   "claves": [
+    {
+     "direccion": "TWhDfwC8QE6pQyiYy248dNor3uphPEw5M2",
+     "peso": 1
+    }
+   ]
+  },
+  "permisos_activos": [
+   {
+    "nombre": "active",
+    "umbral": 1,
+    "claves": [
+     {
+      "direccion": "TWhDfwC8QE6pQyiYy248dNor3uphPEw5M2",
+      "peso": 1
+     }
+    ]
+   }
+  ],
+  "energia": {
+   "limite": 80273461,
+   "usada": 20859638,
+   "limite_total_red": 180000000000,
+   "peso_total_red": 18644585830
+  },
+  "tronscan": {
+   "etiqueta_publica": null,
+   "etiqueta": null,
+   "tipo": 0,
+   "es_contrato": false
+  },
+  "direccion_consultada": "TWhDfwC8QE6pQyiYy248dNor3uphPEw5M2"
+ },
+ {
+  "nombre": "Pareja de la proveedora (TSzSgxRi)",
+  "direccion": "TSzSgxRisS5VBXXDcAezTDvnPGi9CbsXvJ",
+  "existe": true,
+  "creada": "2023-11-29",
+  "trx_libre": 3919903.036987,
+  "bloqueado_v2": {
+   "BANDWIDTH": 0,
+   "ENERGY": 0,
+   "TRON_POWER": 0
+  },
+  "descongelando": [],
+  "delegado_a_otros": {
+   "energia": 0,
+   "ancho_banda": 0
+  },
+  "recibido_en_delegacion": {
+   "energia": 0,
+   "ancho_banda": 0
+  },
+  "votos": [],
+  "permiso_propietario": {
+   "nombre": "owner",
+   "umbral": 3,
+   "claves": [
+    {
+     "direccion": "TShAfXbh4kUzmkJ9Ckdo5J6ujWi1M5NLE2",
+     "peso": 1
+    },
+    {
+     "direccion": "TUgSgCQL6pMSy9zByn4sgxqrJa95sZExBG",
+     "peso": 1
+    },
+    {
+     "direccion": "TVnGY8vuJhxDX5b7mTpwaJ9vNDtmjdBxMm",
+     "peso": 1
+    },
+    {
+     "direccion": "TV7WmJXhYyd4rqRjbWg62eX8e5DoPbyiA3",
+     "peso": 1
+    },
+    {
+     "direccion": "TDAuHDXYNTrtY1k6GNibek44yHEqyQfVkC",
+     "peso": 1
+    }
+   ]
+  },
+  "permisos_activos": [
+   {
+    "nombre": "active",
+    "umbral": 3,
+    "claves": [
+     {
+      "direccion": "TShAfXbh4kUzmkJ9Ckdo5J6ujWi1M5NLE2",
+      "peso": 1
+     },
+     {
+      "direccion": "TUgSgCQL6pMSy9zByn4sgxqrJa95sZExBG",
+      "peso": 1
+     },
+     {
+      "direccion": "TVnGY8vuJhxDX5b7mTpwaJ9vNDtmjdBxMm",
+      "peso": 1
+     },
+     {
+      "direccion": "TV7WmJXhYyd4rqRjbWg62eX8e5DoPbyiA3",
+      "peso": 1
+     },
+     {
+      "direccion": "TDAuHDXYNTrtY1k6GNibek44yHEqyQfVkC",
+      "peso": 1
+     }
+    ]
+   }
+  ],
+  "energia": {
+   "limite": 0,
+   "usada": 0,
+   "limite_total_red": 180000000000,
+   "peso_total_red": 18644585830
+  },
+  "tronscan": {
+   "etiqueta_publica": null,
+   "etiqueta": null,
+   "tipo": 0,
+   "es_contrato": false
+  },
+  "direccion_consultada": "TSzSgxRisS5VBXXDcAezTDvnPGi9CbsXvJ"
+ },
+ {
+  "nombre": "Recolectora (TFSd14UQ)",
+  "direccion": "TFSd14UQUp6HPamdMGJsWBxfWKMrLYxRmp",
+  "existe": true,
+  "creada": "2026-08-06",
+  "trx_libre": 21.953267,
+  "bloqueado_v2": {
+   "BANDWIDTH": 0,
+   "ENERGY": 0,
+   "TRON_POWER": 0
+  },
+  "descongelando": [],
+  "delegado_a_otros": {
+   "energia": 0,
+   "ancho_banda": 0
+  },
+  "recibido_en_delegacion": {
+   "energia": 0,
+   "ancho_banda": 0
+  },
+  "votos": [],
+  "permiso_propietario": {
+   "nombre": "owner",
+   "umbral": 1,
+   "claves": [
+    {
+     "direccion": "TFSd14UQUp6HPamdMGJsWBxfWKMrLYxRmp",
+     "peso": 1
+    }
+   ]
+  },
+  "permisos_activos": [
+   {
+    "nombre": "active",
+    "umbral": 1,
+    "claves": [
+     {
+      "direccion": "TFSd14UQUp6HPamdMGJsWBxfWKMrLYxRmp",
+      "peso": 1
+     }
+    ]
+   }
+  ],
+  "energia": {
+   "limite": 0,
+   "usada": 0,
+   "limite_total_red": 180000000000,
+   "peso_total_red": 18644585830
+  },
+  "tronscan": {
+   "etiqueta_publica": null,
+   "etiqueta": null,
+   "tipo": 0,
+   "es_contrato": false
+  },
+  "direccion_consultada": "TFSd14UQUp6HPamdMGJsWBxfWKMrLYxRmp"
+ },
+ {
+  "nombre": "HTX 4",
+  "direccion": "TFTWNgDBkQ5wQoP8RXpRznnHvAVV8x5jLu",
+  "existe": true,
+  "creada": "2023-11-24",
+  "trx_libre": 72.200005,
+  "bloqueado_v2": {
+   "BANDWIDTH": 0,
+   "ENERGY": 0,
+   "TRON_POWER": 0
+  },
+  "descongelando": [],
+  "delegado_a_otros": {
+   "energia": 0,
+   "ancho_banda": 0
+  },
+  "recibido_en_delegacion": {
+   "energia": 12740897,
+   "ancho_banda": 0
+  },
+  "votos": [],
+  "permiso_propietario": {
+   "nombre": "owner",
+   "umbral": 1,
+   "claves": [
+    {
+     "direccion": "TFTWNgDBkQ5wQoP8RXpRznnHvAVV8x5jLu",
+     "peso": 1
+    }
+   ]
+  },
+  "permisos_activos": [
+   {
+    "nombre": "active",
+    "umbral": 1,
+    "claves": [
+     {
+      "direccion": "TFTWNgDBkQ5wQoP8RXpRznnHvAVV8x5jLu",
+      "peso": 1
+     }
+    ]
+   }
+  ],
+  "energia": {
+   "limite": 123004382,
+   "usada": 0,
+   "limite_total_red": 180000000000,
+   "peso_total_red": 18644550830
+  },
+  "tronscan": {
+   "etiqueta_publica": null,
+   "etiqueta": null,
+   "tipo": 0,
+   "es_contrato": false
+  },
+  "direccion_consultada": "TFTWNgDBkQ5wQoP8RXpRznnHvAVV8x5jLu"
+ },
+ {
+  "nombre": "HTX-Cold 6",
+  "direccion": "TAuUCiH4JVNBZmDnEDZkXEUXDARdGpXTmX",
+  "existe": true,
+  "creada": "2022-04-21",
+  "trx_libre": 755759959.026665,
+  "bloqueado_v2": {
+   "BANDWIDTH": 0,
+   "ENERGY": 0,
+   "TRON_POWER": 0
+  },
+  "descongelando": [
+   {
+    "tipo": "ENERGY",
+    "trx": 30000000,
+    "libre_el": "2026-05-21T12:45:15.000Z"
+   },
+   {
+    "tipo": "BANDWIDTH",
+    "trx": 1000000,
+    "libre_el": "2026-05-21T12:45:27.000Z"
+   }
+  ],
+  "delegado_a_otros": {
+   "energia": 0,
+   "ancho_banda": 0
+  },
+  "recibido_en_delegacion": {
+   "energia": 1,
+   "ancho_banda": 0
+  },
+  "votos": [],
+  "permiso_propietario": {
+   "nombre": "owner",
+   "umbral": 1,
+   "claves": [
+    {
+     "direccion": "TAuUCiH4JVNBZmDnEDZkXEUXDARdGpXTmX",
+     "peso": 1
+    }
+   ]
+  },
+  "permisos_activos": [
+   {
+    "nombre": "active",
+    "umbral": 1,
+    "claves": [
+     {
+      "direccion": "TAuUCiH4JVNBZmDnEDZkXEUXDARdGpXTmX",
+      "peso": 1
+     }
+    ]
+   }
+  ],
+  "energia": {
+   "limite": 9,
+   "usada": 0,
+   "limite_total_red": 180000000000,
+   "peso_total_red": 18644585830
+  },
+  "tronscan": {
+   "etiqueta_publica": null,
+   "etiqueta": null,
+   "tipo": 0,
+   "es_contrato": false
+  },
+  "direccion_consultada": "TAuUCiH4JVNBZmDnEDZkXEUXDARdGpXTmX"
+ },
+ {
+  "nombre": "HTX 3",
+  "direccion": "TU1ZA8T2g8PvLK8BfM7N94xpmSSpyfxZoK",
+  "existe": true,
+  "creada": "2023-09-24",
+  "trx_libre": 284.927702,
+  "bloqueado_v2": {
+   "BANDWIDTH": 0,
+   "ENERGY": 0,
+   "TRON_POWER": 0
+  },
+  "descongelando": [],
+  "delegado_a_otros": {
+   "energia": 0,
+   "ancho_banda": 0
+  },
+  "recibido_en_delegacion": {
+   "energia": 0,
+   "ancho_banda": 0
+  },
+  "votos": [],
+  "permiso_propietario": {
+   "nombre": "owner",
+   "umbral": 1,
+   "claves": [
+    {
+     "direccion": "TU1ZA8T2g8PvLK8BfM7N94xpmSSpyfxZoK",
+     "peso": 1
+    }
+   ]
+  },
+  "permisos_activos": [
+   {
+    "nombre": "active",
+    "umbral": 1,
+    "claves": [
+     {
+      "direccion": "TU1ZA8T2g8PvLK8BfM7N94xpmSSpyfxZoK",
+      "peso": 1
+     }
+    ]
+   }
+  ],
+  "energia": {
+   "limite": 0,
+   "usada": 0,
+   "limite_total_red": 180000000000,
+   "peso_total_red": 18644550830
+  },
+  "tronscan": {
+   "etiqueta_publica": null,
+   "etiqueta": null,
+   "tipo": 0,
+   "es_contrato": false
+  },
+  "direccion_consultada": "TU1ZA8T2g8PvLK8BfM7N94xpmSSpyfxZoK"
+ },
+ {
+  "nombre": "TYL7z7VS (2022)",
+  "direccion": "TYL7z7VSVRShLoJ6YRQMA4t9pSECt9ZLmz",
+  "existe": true,
+  "creada": "2022-06-25",
+  "trx_libre": 950029975.951602,
+  "bloqueado_v2": {
+   "BANDWIDTH": 0,
+   "ENERGY": 0,
+   "TRON_POWER": 0
+  },
+  "descongelando": [],
+  "delegado_a_otros": {
+   "energia": 0,
+   "ancho_banda": 0
+  },
+  "recibido_en_delegacion": {
+   "energia": 1,
+   "ancho_banda": 0
+  },
+  "votos": [],
+  "permiso_propietario": {
+   "nombre": "owner",
+   "umbral": 1,
+   "claves": [
+    {
+     "direccion": "TYL7z7VSVRShLoJ6YRQMA4t9pSECt9ZLmz",
+     "peso": 1
+    }
+   ]
+  },
+  "permisos_activos": [
+   {
+    "nombre": "active",
+    "umbral": 1,
+    "claves": [
+     {
+      "direccion": "TYL7z7VSVRShLoJ6YRQMA4t9pSECt9ZLmz",
+      "peso": 1
+     }
+    ]
+   }
+  ],
+  "energia": {
+   "limite": 9,
+   "usada": 0,
+   "limite_total_red": 180000000000,
+   "peso_total_red": 18644550830
+  },
+  "tronscan": {
+   "etiqueta_publica": null,
+   "etiqueta": null,
+   "tipo": 0,
+   "es_contrato": false
+  },
+  "direccion_consultada": "TYL7z7VSVRShLoJ6YRQMA4t9pSECt9ZLmz"
+ },
+ {
+  "nombre": "Multifirma 2 USDD",
+  "direccion": "TPcnRbpuB89eKKkfH2E7iJooAqeEZPpdGb",
+  "existe": true,
+  "creada": "2022-04-29",
+  "trx_libre": 1641181502.771102,
+  "bloqueado_v2": {
+   "BANDWIDTH": 0,
+   "ENERGY": 1000,
+   "TRON_POWER": 0
+  },
+  "descongelando": [],
+  "delegado_a_otros": {
+   "energia": 0,
+   "ancho_banda": 0
+  },
+  "recibido_en_delegacion": {
+   "energia": 1,
+   "ancho_banda": 0
+  },
+  "votos": [],
+  "permiso_propietario": {
+   "nombre": "owner",
+   "umbral": 1,
+   "claves": [
+    {
+     "direccion": "TPcnRbpuB89eKKkfH2E7iJooAqeEZPpdGb",
+     "peso": 1
+    }
+   ]
+  },
+  "permisos_activos": [
+   {
+    "nombre": "active",
+    "umbral": 1,
+    "claves": [
+     {
+      "direccion": "TPcnRbpuB89eKKkfH2E7iJooAqeEZPpdGb",
+      "peso": 1
+     }
+    ]
+   }
+  ],
+  "energia": {
+   "limite": 9663,
+   "usada": 0,
+   "limite_total_red": 180000000000,
+   "peso_total_red": 18644550830
+  },
+  "tronscan": {
+   "etiqueta_publica": null,
+   "etiqueta": null,
+   "tipo": 0,
+   "es_contrato": false
+  },
+  "direccion_consultada": "TPcnRbpuB89eKKkfH2E7iJooAqeEZPpdGb"
+ },
+ {
+  "nombre": "Contrato auxiliar (TLLEN)",
+  "direccion": "TLLENiMpZvGZD2C1ZQ2FzBinrYevmGco6p",
+  "existe": true,
+  "creada": null,
+  "trx_libre": 0.0005,
+  "bloqueado_v2": {
+   "BANDWIDTH": 0,
+   "ENERGY": 0,
+   "TRON_POWER": 0
+  },
+  "descongelando": [],
+  "delegado_a_otros": {
+   "energia": 0,
+   "ancho_banda": 0
+  },
+  "recibido_en_delegacion": {
+   "energia": 0,
+   "ancho_banda": 0
+  },
+  "votos": [],
+  "permiso_propietario": null,
+  "permisos_activos": [],
+  "energia": {
+   "limite": 0,
+   "usada": 0,
+   "limite_total_red": 180000000000,
+   "peso_total_red": 18644550830
+  },
+  "tronscan": {
+   "etiqueta_publica": null,
+   "etiqueta": null,
+   "tipo": 2,
+   "es_contrato": false
+  },
+  "direccion_consultada": "TLLENiMpZvGZD2C1ZQ2FzBinrYevmGco6p"
+ },
+ {
+  "nombre": "Contrato grande (TNUC9)",
+  "direccion": "TNUC9Qb1rRpS5CbWLmNMxXBjyFoydXjWFR",
+  "existe": true,
+  "creada": null,
+  "trx_libre": 3573809621.278247,
+  "bloqueado_v2": {
+   "BANDWIDTH": 0,
+   "ENERGY": 0,
+   "TRON_POWER": 0
+  },
+  "descongelando": [],
+  "delegado_a_otros": {
+   "energia": 0,
+   "ancho_banda": 0
+  },
+  "recibido_en_delegacion": {
+   "energia": 0,
+   "ancho_banda": 0
+  },
+  "votos": [],
+  "permiso_propietario": null,
+  "permisos_activos": [],
+  "energia": {
+   "limite": 0,
+   "usada": 0,
+   "limite_total_red": 180000000000,
+   "peso_total_red": 18644550830
+  },
+  "tronscan": {
+   "etiqueta_publica": null,
+   "etiqueta": null,
+   "tipo": 2,
+   "es_contrato": false
+  },
+  "direccion_consultada": "TNUC9Qb1rRpS5CbWLmNMxXBjyFoydXjWFR"
+ },
+ {
+  "nombre": "Billetera puente D",
+  "direccion": "TQRBxpS5V1KZW8g3oJ1YNLqtj1j733Mc33",
+  "existe": true,
+  "creada": "2026-11-04",
+  "trx_libre": 0.000004,
+  "bloqueado_v2": {
+   "BANDWIDTH": 0,
+   "ENERGY": 0,
+   "TRON_POWER": 0
+  },
+  "descongelando": [],
+  "delegado_a_otros": {
+   "energia": 0,
+   "ancho_banda": 0
+  },
+  "recibido_en_delegacion": {
+   "energia": 0,
+   "ancho_banda": 0
+  },
+  "votos": [],
+  "permiso_propietario": {
+   "nombre": "owner",
+   "umbral": 1,
+   "claves": [
+    {
+     "direccion": "TQRBxpS5V1KZW8g3oJ1YNLqtj1j733Mc33",
+     "peso": 1
+    }
+   ]
+  },
+  "permisos_activos": [
+   {
+    "nombre": "active",
+    "umbral": 1,
+    "claves": [
+     {
+      "direccion": "TQRBxpS5V1KZW8g3oJ1YNLqtj1j733Mc33",
+      "peso": 1
+     }
+    ]
+   }
+  ],
+  "energia": {
+   "limite": 0,
+   "usada": 0,
+   "limite_total_red": 180000000000,
+   "peso_total_red": 18644550830
+  },
+  "tronscan": {
+   "etiqueta_publica": null,
+   "etiqueta": null,
+   "tipo": 0,
+   "es_contrato": false
+  },
+  "direccion_consultada": "TQRBxpS5V1KZW8g3oJ1YNLqtj1j733Mc33"
+ },
+ {
+  "nombre": "Binance-Hot 12",
+  "direccion": "TJTKCzQpsG19CSMYF9TPtxz6wSHPSyeKfa",
+  "existe": true,
+  "creada": "2026-10-31",
+  "trx_libre": 7334481.053306,
+  "bloqueado_v2": {
+   "BANDWIDTH": 0,
+   "ENERGY": 0,
+   "TRON_POWER": 0
+  },
+  "descongelando": [],
+  "delegado_a_otros": {
+   "energia": 0,
+   "ancho_banda": 0
+  },
+  "recibido_en_delegacion": {
+   "energia": 101805000,
+   "ancho_banda": 1848000
+  },
+  "votos": [],
+  "permiso_propietario": {
+   "nombre": "owner",
+   "umbral": 1,
+   "claves": [
+    {
+     "direccion": "TJTKCzQpsG19CSMYF9TPtxz6wSHPSyeKfa",
+     "peso": 1
+    }
+   ]
+  },
+  "permisos_activos": [
+   {
+    "nombre": "active",
+    "umbral": 1,
+    "claves": [
+     {
+      "direccion": "TJTKCzQpsG19CSMYF9TPtxz6wSHPSyeKfa",
+      "peso": 1
+     }
+    ]
+   }
+  ],
+  "energia": {
+   "limite": 982853690,
+   "usada": 594302120,
+   "limite_total_red": 180000000000,
+   "peso_total_red": 18644585830
+  },
+  "tronscan": {
+   "etiqueta_publica": "Binance-Hot 12",
+   "etiqueta": "Binance-Hot 12",
+   "tipo": 0,
+   "es_contrato": false
+  },
+  "direccion_consultada": "TJTKCzQpsG19CSMYF9TPtxz6wSHPSyeKfa"
+ },
+ {
+  "nombre": "Receptor sin identificar (TU3rMHyW)",
+  "direccion": "TU3rMHyWHzeEJBReWLzHko728hbz6MtfNg",
+  "existe": true,
+  "creada": "2024-08-09",
+  "trx_libre": 118.747241,
+  "bloqueado_v2": {
+   "BANDWIDTH": 0,
+   "ENERGY": 0,
+   "TRON_POWER": 0
+  },
+  "descongelando": [],
+  "delegado_a_otros": {
+   "energia": 0,
+   "ancho_banda": 0
+  },
+  "recibido_en_delegacion": {
+   "energia": 206680000,
+   "ancho_banda": 0
+  },
+  "votos": [],
+  "permiso_propietario": {
+   "nombre": "owner",
+   "umbral": 1,
+   "claves": [
+    {
+     "direccion": "TM3sTVyahiGWYktKg8G6miHpTzRurKDt7b",
+     "peso": 1
+    }
+   ]
+  },
+  "permisos_activos": [
+   {
+    "nombre": "active",
+    "umbral": 1,
+    "claves": [
+     {
+      "direccion": "TCXrf8SwGjcmQYY1FcFnV3LUXSQpqod3bi",
+      "peso": 1
+     }
+    ]
+   }
+  ],
+  "energia": {
+   "limite": 1995346013,
+   "usada": 997581946,
+   "limite_total_red": 180000000000,
+   "peso_total_red": 18644585830
+  },
+  "tronscan": {
+   "etiqueta_publica": null,
+   "etiqueta": null,
+   "tipo": 0,
+   "es_contrato": false
+  },
+  "direccion_consultada": "TU3rMHyWHzeEJBReWLzHko728hbz6MtfNg"
+ },
+ {
+  "nombre": "GasFree",
+  "direccion": "TFNX7TKYCm1kUYDECjkrogBwYZvt69XQNy",
+  "existe": true,
+  "creada": "2025-02-26",
+  "trx_libre": 41531.423626,
+  "bloqueado_v2": {
+   "BANDWIDTH": 0,
+   "ENERGY": 0,
+   "TRON_POWER": 0
+  },
+  "descongelando": [],
+  "delegado_a_otros": {
+   "energia": 0,
+   "ancho_banda": 0
+  },
+  "recibido_en_delegacion": {
+   "energia": 515372220.552002,
+   "ancho_banda": 11173000
+  },
+  "votos": [],
+  "permiso_propietario": {
+   "nombre": "owner",
+   "umbral": 1,
+   "claves": [
+    {
+     "direccion": "TUfohTaS6nh2pAaupqdEHxnQzRV8BFkZER",
+     "peso": 1
+    }
+   ]
+  },
+  "permisos_activos": [
+   {
+    "nombre": "active",
+    "umbral": 1,
+    "claves": [
+     {
+      "direccion": "TUfohTaS6nh2pAaupqdEHxnQzRV8BFkZER",
+      "peso": 1
+     }
+    ]
+   }
+  ],
+  "energia": {
+   "limite": 4975546281,
+   "usada": 2693083811,
+   "limite_total_red": 180000000000,
+   "peso_total_red": 18644585830
+  },
+  "tronscan": {
+   "etiqueta_publica": "GasFree Service Provider",
+   "etiqueta": "GasFree Service Provider",
+   "tipo": 0,
+   "es_contrato": false
+  },
+  "direccion_consultada": "TFNX7TKYCm1kUYDECjkrogBwYZvt69XQNy"
+ },
+ {
+  "nombre": "Bybit",
+  "direccion": "TU4vEruvZwLLkSfV9bNw12EJTPvNr7Pvaa",
+  "existe": true,
+  "creada": "2021-08-06",
+  "trx_libre": 7781069.158673,
+  "bloqueado_v2": {
+   "BANDWIDTH": 0,
+   "ENERGY": 0,
+   "TRON_POWER": 0
+  },
+  "descongelando": [],
+  "delegado_a_otros": {
+   "energia": 0,
+   "ancho_banda": 0
+  },
+  "recibido_en_delegacion": {
+   "energia": 282893654.796647,
+   "ancho_banda": 11999210
+  },
+  "votos": [],
+  "permiso_propietario": {
+   "nombre": "owner",
+   "umbral": 1,
+   "claves": [
+    {
+     "direccion": "TU4vEruvZwLLkSfV9bNw12EJTPvNr7Pvaa",
+     "peso": 1
+    }
+   ]
+  },
+  "permisos_activos": [
+   {
+    "nombre": "active",
+    "umbral": 1,
+    "claves": [
+     {
+      "direccion": "TU4vEruvZwLLkSfV9bNw12EJTPvNr7Pvaa",
+      "peso": 1
+     }
+    ]
+   }
+  ],
+  "energia": {
+   "limite": 2731133763,
+   "usada": 1869042773,
+   "limite_total_red": 180000000000,
+   "peso_total_red": 18644585830
+  },
+  "tronscan": {
+   "etiqueta_publica": "Bybit",
+   "etiqueta": "Bybit",
+   "tipo": 0,
+   "es_contrato": false
+  },
+  "direccion_consultada": "TU4vEruvZwLLkSfV9bNw12EJTPvNr7Pvaa"
+ },
+ {
+  "nombre": "TRON Inc (segun Protos)",
+  "direccion": "TEySEZLJf6rs2mCujGpDEsgoMVWKLAk9mT",
+  "existe": true,
+  "creada": "2025-06-28",
+  "trx_libre": 2740240.849137,
+  "bloqueado_v2": {
+   "BANDWIDTH": 0,
+   "ENERGY": 0,
+   "TRON_POWER": 0
+  },
+  "descongelando": [],
+  "delegado_a_otros": {
+   "energia": 0,
+   "ancho_banda": 0
+  },
+  "recibido_en_delegacion": {
+   "energia": 0,
+   "ancho_banda": 0
+  },
+  "votos": [],
+  "permiso_propietario": {
+   "nombre": "owner",
+   "umbral": 1,
+   "claves": [
+    {
+     "direccion": "TEySEZLJf6rs2mCujGpDEsgoMVWKLAk9mT",
+     "peso": 1
+    }
+   ]
+  },
+  "permisos_activos": [
+   {
+    "nombre": "active",
+    "umbral": 1,
+    "claves": [
+     {
+      "direccion": "TEySEZLJf6rs2mCujGpDEsgoMVWKLAk9mT",
+      "peso": 1
+     }
+    ]
+   }
+  ],
+  "energia": {
+   "limite": 0,
+   "usada": 0,
+   "limite_total_red": 180000000000,
+   "peso_total_red": 18644550830
+  },
+  "tronscan": {
+   "etiqueta_publica": null,
+   "etiqueta": null,
+   "tipo": 0,
+   "es_contrato": false
+  },
+  "direccion_consultada": "TEySEZLJf6rs2mCujGpDEsgoMVWKLAk9mT"
+ }
+]

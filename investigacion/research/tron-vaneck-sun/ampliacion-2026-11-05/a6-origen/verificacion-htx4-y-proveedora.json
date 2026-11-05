@@ -1,0 +1,131 @@
+{
+ "htx4": [
+  {
+   "dia": "2025-10-30",
+   "entradas_a_TEF9ZV": [
+    {
+     "t": "2025-10-30T10:46:42Z",
+     "trx": 49999999,
+     "tx": "55d91dcf218060dd6a72f25abb0e05abbc78ee40f2eec04279947365bea39260"
+    },
+    {
+     "t": "2025-10-30T10:48:36Z",
+     "trx": 49999999,
+     "tx": "cbdc04b28806ad77e929dd350d15d3c5e8f07a10bbf92a75cfdb3f2f7923419f"
+    }
+   ],
+   "tx_leidas_HTX4": 4541,
+   "entra_en_HTX4_ge10M": [
+    {
+     "t": "2025-10-30T10:42:48Z",
+     "de": "TGStnGYqGVEYwAQtJeqtoGL7KxorYS1GPH",
+     "trx": 100000000,
+     "tx": "dd41a4a488b86dbb72741f8aa1370736a1774a2f3b57cb03aaeac9876ea57d85"
+    }
+   ],
+   "sale_de_HTX4_ge10M": [
+    {
+     "t": "2025-10-30T10:46:42Z",
+     "a": "TEF9ZVUxhmGGffvkf59e2vdLfAG1QCMb7B",
+     "trx": 49999999,
+     "tx": "55d91dcf218060dd6a72f25abb0e05abbc78ee40f2eec04279947365bea39260"
+    },
+    {
+     "t": "2025-10-30T10:48:36Z",
+     "a": "TEF9ZVUxhmGGffvkf59e2vdLfAG1QCMb7B",
+     "trx": 49999999,
+     "tx": "cbdc04b28806ad77e929dd350d15d3c5e8f07a10bbf92a75cfdb3f2f7923419f"
+    }
+   ]
+  },
+  {
+   "dia": "2025-11-12",
+   "entradas_a_TEF9ZV": [
+    {
+     "t": "2025-11-12T16:20:03Z",
+     "trx": 63999999,
+     "tx": "d86d5dff9f15a204ec0877c1d0227c02810f19148985f0387bfb6d134f57c4fc"
+    }
+   ],
+   "tx_leidas_HTX4": 4338,
+   "entra_en_HTX4_ge10M": [
+    {
+     "t": "2025-11-12T16:18:39Z",
+     "de": "TB1LbnUG14S6i2tWgf1pRtwXt6WHTtcSVL",
+     "trx": 64000000.000006,
+     "tx": "d2eaa658eb5a7beada20e62b1f690a250de3613f047cfc6247a73fa9dbbf7422"
+    }
+   ],
+   "sale_de_HTX4_ge10M": [
+    {
+     "t": "2025-11-12T16:20:03Z",
+     "a": "TEF9ZVUxhmGGffvkf59e2vdLfAG1QCMb7B",
+     "trx": 63999999,
+     "tx": "d86d5dff9f15a204ec0877c1d0227c02810f19148985f0387bfb6d134f57c4fc"
+    }
+   ]
+  },
+  {
+   "dia": "2026-03-21",
+   "entradas_a_TEF9ZV": [
+    {
+     "t": "2026-03-21T13:49:09Z",
+     "trx": 99999999,
+     "tx": "c185f866bba4b70d3b73393918c4ca20fe1ea64c7263593623bd750ebf890ebc"
+    },
+    {
+     "t": "2026-03-21T13:49:27Z",
+     "trx": 99999999,
+     "tx": "15a4608d893b9d12130aad954a50791d6e6b26829cbe39a213d2cfebdfa1eb94"
+    }
+   ],
+   "tx_leidas_HTX4": 3633,
+   "entra_en_HTX4_ge10M": [
+    {
+     "t": "2026-03-21T13:47:00Z",
+     "de": "TM5h24Au2G5gUSro8QrB31PjgqZZw77N1Q",
+     "trx": 200000000.000001,
+     "tx": "c38731616324b0fae75916f8379c051d9d871d00caeee50c29de2e876e3737cd"
+    }
+   ],
+   "sale_de_HTX4_ge10M": [
+    {
+     "t": "2026-03-21T13:49:09Z",
+     "a": "TEF9ZVUxhmGGffvkf59e2vdLfAG1QCMb7B",
+     "trx": 99999999,
+     "tx": "c185f866bba4b70d3b73393918c4ca20fe1ea64c7263593623bd750ebf890ebc"
+    },
+    {
+     "t": "2026-03-21T13:49:27Z",
+     "a": "TEF9ZVUxhmGGffvkf59e2vdLfAG1QCMb7B",
+     "trx": 99999999,
+     "tx": "15a4608d893b9d12130aad954a50791d6e6b26829cbe39a213d2cfebdfa1eb94"
+    }
+   ]
+  }
+ ],
+ "proveedora_20oct": {
+  "entrada_a_TEF9ZV": {
+   "t": "2026-10-20T12:03:15Z",
+   "trx": 99999999,
+   "tx": "ec9520b9f44162ca4ce398e6c2bac376072587e5673a335e3449b960e671065b"
+  },
+  "tx_leidas_proveedora": 118,
+  "entra_ge10M": [
+   {
+    "t": "2026-10-20T11:59:27Z",
+    "de": "TFaboiG8EBqZUoiSTz4ZcwkpJUE7f5YMWx",
+    "trx": 100000000.000007,
+    "tx": "cafba3f96222b507b3603412475e32282fdb94f2fdee94d08622b5282889cb88"
+   }
+  ],
+  "sale_ge10M": [
+   {
+    "t": "2026-10-20T12:03:15Z",
+    "a": "TEF9ZVUxhmGGffvkf59e2vdLfAG1QCMb7B",
+    "trx": 99999999,
+    "tx": "ec9520b9f44162ca4ce398e6c2bac376072587e5673a335e3449b960e671065b"
+   }
+  ]
+ }
+}

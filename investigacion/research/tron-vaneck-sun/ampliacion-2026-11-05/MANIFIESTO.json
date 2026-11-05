@@ -1,0 +1,419 @@
+{
+ "generado": "sin fecha para que el fichero sea reproducible",
+ "programas": {
+  "a0-lista-binance.cjs": "3ecfa8cb2b59475f8908300aeef6de725051c7393b26cd948e1f84f81a49fa71",
+  "a1-historial-tef9zv.cjs": "8563564d48a8712a3129e9391dae60aa3781aa3152a8eef86b3f7d31afa68b63",
+  "a2-a4-a5-receptores-relevo-permisos.cjs": "a51a6b208d870ef2b6a216498c0fe60bd90397bdc750364f6979294683194c89",
+  "a3-0-recompensas.cjs": "22f8a393dc542e9a4da6861a3682d64ff4ceb62172b38fcf81536cf26ba43996",
+  "a3-libro-y-origen.cjs": "6fd54b4739d81e5434c0db8ba77d997759d184715a3a5ece2ed1507233e32718",
+  "a6-origen-y-claves.cjs": "11509b2199791c0c253124cbf8bd919c6b011ae455f91c3d120e003cf57cca82",
+  "a6c-verificar-y-un-salto-mas.cjs": "c498abbfc2735514bb34088abd9336f1918cef1ab27cc38735fddbba637d587b",
+  "a7-energia.cjs": "7ad18997c6de19829f7ca27f64f2878ac11feef8face7c08d8c0225d483a345c",
+  "a7b-otros-delegantes.cjs": "08c201715aca5d6f1b19740722759f7818b0e03653aae7721439d48f429e3cad",
+  "b-permisos-historia.cjs": "405806f8548f2eadbb468ccb89fcf309754fcb0c7374bc13d18d9a77490e9f61",
+  "b1-leer-proveedora.cjs": "4d57954ff23e86f850860ec5f9b65270d985f67400672a973e55be48aeab64b8",
+  "b2-analisis-proveedora.cjs": "bb992ea9403ddfbea09d51fe4f5e18216c71261f2c6652037e69c867205752a3",
+  "b3-flujos-clave.cjs": "ba1a69307f79310393ddac1b41df095fa6473e814440707c3514146b4a79e0b6",
+  "b4-vecinas-de-la-proveedora.cjs": "4b8f556d1095d1fa5d52fe5f1a34f677aeceacf87f1969262855b45718835323",
+  "b4b-cadena-138m.cjs": "13f76f3511bbb2fc4f757daf2ddf4748ef69d52962bc286cc5226ecc6b5c5522",
+  "b4c-hot12-y-devolucion.cjs": "e255ad9976b810437e8b1feb92d93eb25093df3659d8510836235c0012648736",
+  "b5-tron-inc.cjs": "4dc00143b7cfe779f3f09abc563230300ba0a7c03fddb50ca1ab4b3fcfd8b682",
+  "b58.cjs": "32490e3ddf407e7cbdb87b9bef34b283f2a08058a0c6580ea15f93c0a8c84ed6",
+  "b5b-tron-inc-wtrx.cjs": "be10d75411ab194a83835a9defca1e0a67103f5d4460b4890ac510f405cdd191",
+  "b5c-tron-inc-strx.cjs": "c3122ce1d62695e2b1392e39f592d83d34999519e0d5187f3610e8b53dc384b1",
+  "c-tu3rmhyw.cjs": "2368b8e8ce6e0e4d019658770c7c1e1149e3747efb93d01234e743d61232b538",
+  "c2-contratos-de-tu3rmhyw.cjs": "a3cf4bea9a2dd677da57c858f306b1cb3c5a4e97cd44dae374a33f9c0ff56a25",
+  "c3-etiquetas.cjs": "3af8eb37dfb4e0edc6ad6ca922c9eb6caa8b3425f1d0ea20f892bc984c84d7d4",
+  "c4-expediente-tu3rmhyw.cjs": "9146d4f575b02654d4db70d05968a6ed6e4db3680c0c7e667b2e0a46ce6486bd",
+  "c5-circulo-tu3rmhyw.cjs": "dc9ef08f519b5425b4865b4da9664827f7df2877fd5c16f7f291b97611f1baf7",
+  "c6-hermanas-y-origen.cjs": "22674d7ec282959e92366d637dd415866e0e5520ce021b14772cd8be1115cd13",
+  "c7-tqwh1zdb.cjs": "71e15035658ec28ef81a97f90337e1d15adde53f2c53913c4f180c86c29912d3",
+  "c8-entradas-de-tt2t17.cjs": "722b4472446d82d210e9c1379f30be4ee38460c0df624c01f359ea6876419bb9",
+  "cadena.cjs": "a8a3680e29a5d13d6f8a9eb2733fb2af81680741e9a7fecb7dd037fc26f7db02",
+  "d-matriz-confianza.cjs": "c5a7f613ccd5af10cb49be9128ffee6fbd5f912bc9a6c04fa7c053947f53e015",
+  "d1-flujos-y-huellas.cjs": "923a1fb699bf14b2a2d0dea273f00bfb99d5c35bb3716285426c43336609fa08",
+  "d4-contraste-de-terceros.cjs": "acaa0b07b7232ac1f357a2abed2db59f182f2d618b062224743ea993644530ef",
+  "d5-conclusion-por-pareja.cjs": "7d3008b93319589a7cc712695fcaa3469afd2458023356f6ac2e9fdc8dd03372",
+  "e-registro-calidad.cjs": "6611c8ecf463e643d566537a977fd563b0ff2754b58b91c7205e44d59b4f7778",
+  "e1-cruce-con-el-robo.cjs": "3b9f95e3fe26c536a76274e402beae533f37ac4c15d15244a829271ed615ec0f",
+  "f0-1-linea-base.cjs": "0a9f7ccaafdefd0e8bd469f94725c17513921f822aab1a296b36ff916f658285",
+  "f0-3-verificar-pistas.cjs": "091e0c5425b2fc68c1d8d345e8bed1826ab3aaac3f6f2d265239a03258c154bf",
+  "f0-4-medir-lectura.cjs": "7b110f3bc1d19d252a9f9e20334f92a8281c4209dcf407f33b5867435714273b",
+  "f1-genesis-zion.cjs": "a5a87a98dad146d5b50380a2c4b89739e1462c86068b915be929812a80ea2864",
+  "f1b-zion-tronscan.cjs": "72980d68e7de3d387a14b8f41e820b295bcde97b62f6f8f68c6f0ca9f9ae27c5",
+  "f2-nivel1-y-las-mil.cjs": "8f61a1899c845571c37c753184f656d501df8149dd92c9953fcc5c83aaefa61f",
+  "f2b-lista-oficial-vs-cadena.cjs": "05b4e7dfe1233e0890a6e43bb6486f15e01d39918958a1f3feafe458163c75cf",
+  "f3-destino-de-las-mil.cjs": "94d1acd5e92cc8a513d2ef057059227a6bc4a86fc1e9913f8be45918ce106236",
+  "f3b-puntos-de-reunion.cjs": "255ea0f6a94465fa3f5cd735170b45bf90f122b29d0db627bda6c65a51101133",
+  "f4-segundo-nivel.cjs": "2613b50ad83c984553482aa8ec0a1d2ce4e5048d381e732b1514dd181dfcecb9",
+  "f5-de-zion-a-tron-inc.cjs": "e1a5ba70608626a408dc2d4403c3f70639dffd285d182ce2976c97a0da702db2",
+  "f6-puente-a-tron-inc.cjs": "77fbcd1f7456b3e9eec88d9c9314aac57080f3afa5733001e4a7bd71a25c41b2",
+  "f7-origen-en-twpmnuh9.cjs": "176dd7c08e7ad0ee2362eb1c0a7672c21a63d9fbc65e762f8f69d431fb0d24b6",
+  "f8-de-las-mil-al-circulo.cjs": "0e19a5005227eebaf96e79e019d8da4c1bdd8f17fd211eedf5466ca8b3a4bde3",
+  "f9-hub-poloniex-2021.cjs": "e3eaef0da1e1d8190a303d8b58ce6a16aade0f40e349c45dbe46de7243fdd173",
+  "g1-claves-casas-de-cambio.cjs": "0287c0d165b7f904a58d32727ea650d931e6bf6633cf58d70ad0eafe05d8521e",
+  "g2-proveedora-y-poloniex.cjs": "faaa5d44c73aca0833b4a0de5e0b371332a7eb66222989fc303ba87104728b0d",
+  "h1-datos-para-la-web.cjs": "fca43e4d312c80569d1a24f05b70417e4c18809c192e8fea9c1a0dd21f35ce6c",
+  "h2-comprobar-la-web.cjs": "e746934159793c26e386a4d1b707f4b3456c66cf84307f6e808d86a33b0de04b",
+  "keccak.cjs": "c4c7c97d8f1434c7dff4cb17e355c3caa15c5f8c6f65a8e9fb954b1de447447a",
+  "l1-tllen-codigo-y-llamadas.cjs": "35df9fedb3b398ccc5e59765e80abfec609bcd090567f3f13b4473cbd1f33336",
+  "l2-tllen-libro.cjs": "31fad8f498b21efd831811875de9a774a11e47893abd3be8b87b4f5a1cd24095",
+  "l3-boveda-estado-y-usdd.cjs": "480dc307d49940e32f8babd53228c9dcd939450b3200e5c24af3839eadbd4255",
+  "l4-piezas-del-circuito.cjs": "756ecfd8903736dc6e91bc6256a47812e5b9a3b8bfb03a91b1dafb27f583d258",
+  "lib.cjs": "939410e5e862a43aa0ce947bb6456e2bd06a749226e888a11ce863223ab30ade",
+  "manifiesto.cjs": "e76e5925bc461d731d660cdb6779e3d6c8f304d49848f2b5261172f9650f6e70",
+  "o1-dueno-proveedora.cjs": "2db557e8b21eb6dfa68fc96699872695542b607ced7ba44dff90d75b43f7ad02",
+  "o2-claves-y-origen-usdt.cjs": "4c74cd098f0fea67412ab7f717bb43a2cf59c352022298a8e955f4c9e62021fb",
+  "o3-ciclo-con-binance.cjs": "679092071f84cb08a54181da621702ab0ef3392b9c12971458f0b855b4a89911",
+  "recuperar-firmante.cjs": "c40c334d8c9c52ccdb78da95f73d5d9e469d6046d7b283a48e393de8f922a28b"
+ },
+ "resultados": {
+  "b-proveedora/analisis-proveedora.json": "6b5477f1e03cd2a5eaabf43be7d3ba71e4d465b7b659013836891af9c91a7114",
+  "b-proveedora/cadena-138m.json": "5ee344613209322734310419226da5831d3ec6af4d3f09a32644996be98b1d27",
+  "b-proveedora/ciclo-con-binance.json": "cb55991d89cc2d7dfc905ad22c24bb2f208aa52db2a242c3d23340e53701d037",
+  "b-proveedora/claves-y-origen-usdt.json": "ce79e0d8dd43582b5baaa9cb2b1f4bef2291cb0e83652b43746f7d112caa2ce0",
+  "b-proveedora/dueno-proveedora.json": "3a450d20b8d738cdb8e19132d6ee4f4d7d631299a2194706b8acf6e4af61e0b4",
+  "b-proveedora/estado.json": "ba3ae1727c4114f55469deaed2241904edfea3d880b8a30fdd6f18d8a54f9e6b",
+  "b-proveedora/flujos-clave.json": "0291b8ca7adebb818c89c5e61b9dfafa237209d8308afee53ee8f722edb0e1f6",
+  "b-proveedora/hot12-y-devolucion.json": "5ea819ee5d29877db6113bed20126d13372a8f8edc21b47b9c91ffc525711b31",
+  "b-proveedora/pages.jsonl": "5ff64d40ed9c98c388c512f14a2423999b88a79852f7819f8c7090931df944ed",
+  "b-proveedora/tron-inc-strx.json": "43ec7e9380d8856c928102a64c4fa072ee9e7d7dbb0de2097bba10d70081e933",
+  "b-proveedora/tron-inc-wtrx.json": "8d8ab2fbaf292f0cbc84e1bf564b2b6c8c4d016d2b358f4285f662a99a11567c",
+  "b-proveedora/tron-inc.json": "f5fdc2a560ce856470557e799eb932b4e2567f29ad5c960ea605705d05621b18",
+  "b-proveedora/vecinas-proveedora.json": "8a730d75a4eb4945f9c9a6b21b682a3dba49d648c77544cfdfc3a1a1cd55f288",
+  "b-proveedora/datos/trc20.jsonl": "2580d4860310fa95d4a4765c63dca72ed04c2fdd60e74924554efc561c66e5ff",
+  "b-proveedora/datos/tx.jsonl": "a0d869a38de68ecb8ddc80ce22d55b880b7aec64ab6da9e5e4584055eb7a90ed",
+  "linea-base/anclas.json": "095c9319e892a70880de82dc7d94528769a1100b490c9b8f2d9d345bcdd197e8",
+  "linea-base/contratos.json": "8cc1003d7029a5caefdcb12551e3c252ae3679347b6490b7bf84370d2311fa20",
+  "linea-base/cuentas.json": "5c1e6e697daa9f68fb62dc78df12e6f708de10f07339cab7fe127fac457418c5",
+  "linea-base/delegaciones.json": "cf9ef50023b1b2d1a0ff58d39027f84bd8f2e1f888985dc2de8f2b7622796c79",
+  "linea-base/parametros-red.json": "0841fc7085aeb882297210cdc443052e07e19ef22a8f3399ddffe01f231da5ae",
+  "a1-tef9zv/eventos.json": "527574b9b90e6570b1019cdc36fa95b57b46c8101d15c6eac3857892d4223e30",
+  "a1-tef9zv/resumen-y-cierre.json": "a128c9a8ddb7b6db7700e62d5667d93d55cce4e10dd797d23ece106cd7399b99",
+  "a1-tef9zv/serie-delegaciones.json": "0e5c04a037e2d2215e8d84f0b502f03918f4c229ed948d2e172adf123fcadc44",
+  "f0-3-pistas/cruce-por-dia.json": "f0e0764038369b8229100229255a53e3d9848c069c596f3cd1bcbdedf64e9693",
+  "f0-3-pistas/entradas-tef9zv.json": "83fb920f6f708c28590c7fa6502ee4d323fcd798697e50aa56631b29482bd7fa",
+  "f0-3-pistas/envios-tt2t17-y-primer-reenvio.json": "29d0054be16e4fd9980f64c8ef476e1ab52bdaaa9f722d796973f6ad8d5a3b5d",
+  "f0-4-medicion/estimacion-y-tolerancia.json": "f9857fd10306cec2ac03d0bde269296ca1c6dd716090980320e36b0e752bac6a",
+  "f0-4-medicion/muestras.json": "5a0b246e359a7ec932f1394bcb183cea32c7a0dc2b5c30f919456c1cfc466d72",
+  "a2-a4-a5/eventos-del-relevo-31oct-2nov.json": "4cfce95f908da39a3049ddaf3577a403369d649b8a5965f410ea95bea9e4c781",
+  "a2-a4-a5/familias-hoy.json": "7c1ed33528750b339889173086d3e51537a4ffad3dae5712b33dea9bc9017154",
+  "a2-a4-a5/permisos-y-claves.json": "216258108108e22e69e3a88b3bcdaf927b4be8352222a11e40b896ddda02e4b5",
+  "a2-a4-a5/receptores-81.json": "7ff54b75d820f0f45a08b94f632e145961e444b24d9437333d1bf7301009eb8b",
+  "a2-a4-a5/relevo-por-fecha.json": "c642f8de9a5d254463a3d78042b59e07a3077ff7a4d1365ac5a567f54ae662ad",
+  "a6-origen/claves.json": "61c5070617fe5b6d484b055bd8d2d179e1f2db218ed17101fc4b5f0dc784f5ac",
+  "a6-origen/depositantes-un-salto-atras.json": "8a74cec3cc7f4f5022ee437a52898591f8253c36000cb53c80849a6932988b8e",
+  "a6-origen/origen-entradas-sin-pareja.json": "7ee9a1d5cf6211b00a0432ee420017f8f9cee4d3cb4d0977c23cb533e7cb47d8",
+  "a6-origen/verificacion-htx4-y-proveedora.json": "1b17e5f8f5a9cc871030550436bda0d621404797fb78b5d867a841313d0cc4f6",
+  "a3-libro/entradas-con-origen.json": "39a2768f94acc3f5a62d666c8adbb7b31b4cb1da39b91e16fb775bbdc1c68544",
+  "a3-libro/libro-por-fechas.json": "053586a46f5dc613b3aa5c1a96a88e0ad225110460f71c53c09b7255ff89061c",
+  "a3-libro/origen-de-lo-delegado.json": "88879df44e3ca5290a6dcdc30c936b400d5c53c69d66c079f5e9560dd6f0455b",
+  "a3-libro/recompensas.json": "590cd1770e732b893c9c2df5e301814194180b361d18a6b1bf4bfb760a547479",
+  "a7-energia/consumo-24h.json": "205011c4f5957b0224c5244bae70b20569f435a20d7792428290ca5d10104eba",
+  "a7-energia/delegantes-de-binance-bybit-gasfree.json": "5fed2390af9d7608520b023614b3a2260e734e85c37a87827f8f8779be2bd777",
+  "a7-energia/por-receptor-81.json": "4c5b000140961b98301b6d0cd472690c9a62508fa37fd0d27794bb63a9ef4488",
+  "a7-energia/resumen.json": "fb3a7a599e3239431b0444d03098cf87bf4514a9715a4bdd1267ef740c97d0bf",
+  "b-permisos/firmantes.json": "b0baf6f01a5cca2801b17e794ed41ee2727817c1ce9608f87cb7b875d298ee96",
+  "b-permisos/permisos-por-cuenta.json": "d102a8caadc9580c72e8325a16a70259d257206e52ad80cbac0c6b5cc031b99a",
+  "c-tu3rmhyw/TM3sTVya-y-TTXeVETa-hoy.json": "34ae81aaa2242e4dd7a06bde2f56503e3b1b0f512d9caa094d3567160c03cc9f",
+  "c-tu3rmhyw/TQwh1ZDB-y-cabos.json": "04effa380bfa08abf77ce9f9eb17cdad67d9563e872a981270c737c42c4f034b",
+  "c-tu3rmhyw/administradores-de-los-contratos.json": "1d4a770dda116147f2fdd7b11f60d72bf718ecb7b0454fe6fe0c62fbb38ef414",
+  "c-tu3rmhyw/administradores-perfil.json": "58ed88d8ab98073540019f37a138dbd1acb80ccd36d978bdd4ea1450eb34c7ef",
+  "c-tu3rmhyw/ajustes-de-subvencion.json": "f6a4b03334e22a046008b3df83f79a239ab491cf1ad62e8b2a35c490e94ece0e",
+  "c-tu3rmhyw/circulo-delegantes.json": "c75fdf14ca3905e50992123209fbbeca2a4934a310fa20599ce4beaa397057c9",
+  "c-tu3rmhyw/contratos-y-llamadores.json": "c0ece18015f9fb55892098aa1d2b31a06340d0202b921c9c65f5cff907c485ac",
+  "c-tu3rmhyw/controlador-TM3sTVya-stake.json": "00b636b53d353019d2d9a7e7f07b301b76d954a12ad6f30203ba165c00651481",
+  "c-tu3rmhyw/delegaciones-y-conexiones.json": "7c8648c0390e63414f497c829495942c908775ba2985b1b535eada821b021e99",
+  "c-tu3rmhyw/entradas-de-TT2T17.json": "09ede2eaeb32a556a449b4a13b21e87f3aa2e90022419a82897470519c9745f6",
+  "c-tu3rmhyw/etiquetas-contratos-y-contrapartes.json": "90fd03eb480f140587ed5de9828a5fe3edcee6dca598153ff1e1f2435669855f",
+  "c-tu3rmhyw/hermanas-y-origen.json": "3703dcc07bdd65e26566a64fbf20f13de356dbc78b85ec4d342f74f0e850c2d4",
+  "c-tu3rmhyw/historia-de-la-energia-recibida.json": "f918d9f8559ae0b7b4dd5d2e315dd146a38335eadf6425083f8333292722c44a",
+  "c-tu3rmhyw/mayores-llamadores.json": "d5e2d9ad42274a69958c3f7c5e5a35fae4a81c294f415f7142a777d5bf0ff3f8",
+  "c-tu3rmhyw/perfil-TM3sTVya.json": "c954a790e78ef77649c10d68b0c868426d2a9a9d469b067f4a5cfb5798ecf72e",
+  "c-tu3rmhyw/perfil-TU3rMHyW.json": "54a99e08008a61f86fee6ed6a3b12890d5417da7705220a84bae796fefe17a69",
+  "l-contrato/piezas-del-circuito.json": "ef0e316b45fb32333fd59c488a307d91eabbde12622e2985795e934bc1e61c09",
+  "l-contrato/tllen-codigo-y-llamadas.json": "a30c8e4cd599179bab881f1def49c8d53501559fc075d0e9aab7c1b7360a0667",
+  "l-contrato/tllen-funciones-y-boveda.json": "ae98fec4702ba8c4345b94d0025312d6c6dbde9de07066d674d835e4fae4c1ed",
+  "l-contrato/tllen-libro-de-llamadas.json": "c0daa43a73eedc519e16f0f42e7ac43de77bee23ca5faf8b62d4e05a236d8bdc",
+  "d-matriz/matriz-confianza.json": "36d361e058abc9140d7cc3bf23ce2e392e29f5ef0e699adb55cee9e88dde3187",
+  "d-matriz/matriz-confianza.md": "6bd79913fc63be764438e1d0bddfcf213534e4ed29e2c185ff20d941dacff1a5",
+  "d-historia/conclusion-por-pareja.json": "3105be580e1a6db2d445da298c169c13bca2a2ca51b8d74aaa24b76a3224a89e",
+  "d-historia/contraste-de-terceros.json": "a556ffc8f73763879e0e16705a5d9bf98a8318f5812ddda9eb6e2472a496cbf5",
+  "d-historia/flujos-y-huellas.json": "beb6862a1755d0a8f42b522e15b5f5685a3bca3030d5691388cbb177088b98e9",
+  "e-cruce/cruce-con-el-robo.json": "8bd66bfc63d112b49e759367ec243a2d9f94fa71985e751bf3000a81a2989b31",
+  "a0-binance/lista-binance.json": "96a2b4d498127621a07a0ac9a6ce631d87fe3229a8053b62ec61940a70209edd",
+  "f-fundacion/de-las-mil-al-circulo.json": "bf5b4d760657f1c3117e55a395a9576c16a88e821e8cd77f360296efc532c6b0",
+  "f-fundacion/destino-de-las-mil.json": "fe9cac3547109590ff114eb0df711ebb6f63520000ca7f6cb7692cc7ac8158a3",
+  "f-fundacion/hub-poloniex-2021.json": "442f7ed3e2e180a086f6afb432f9a61d6606854ceadac0a2a141d24e258fa6d0",
+  "f-fundacion/las-mil-estado.json": "07331c5db3733fe15f958e38076448d9996c3d9f9cd41c8cd4314f4a5b0c25cb",
+  "f-fundacion/las-mil-filas.jsonl": "ed552f75009dab50c8b8196b87db70cf404350ea6403dc6ea7dba1ae686b4616",
+  "f-fundacion/libro-twpmnuh9.json": "0d35fb3f6b624b58a6689facc6d8480553fdb0d09d7084b576b428e77cb8c2a1",
+  "f-fundacion/lista-oficial-vs-cadena.json": "eda500ba522de5bd8ebd0aa180256dfce92c018d9c72024a8c541fb397146324",
+  "f-fundacion/nivel1-y-las-mil.json": "97dd8c6cb7717a52c0ee453e14525e22340aec1a2e4971b398e3ffb4b578132c",
+  "f-fundacion/puente-a-tron-inc.json": "7e663e6b46daf768ef88570da02f59d42a5d3c4541a512b9beee11895123a5ba",
+  "f-fundacion/segundo-nivel.json": "690d019285454c1a781a32b2addeddb7b8ac08f25fd853f4d85d66784d1b269c",
+  "f-fundacion/zion-a-tron-inc.json": "6411dfbc497482ca8c385f58385e40a5c5953f987c9c220bac0be68def16c57e",
+  "f-fundacion/zion-tronscan.json": "a57501b6f5bbb57dc9749194d07d77ed5dc9f917393ca5f3055412a17074574c",
+  "f-fundacion/zion.json": "1ca640ddd8a0577f47934b3725c3bc5aab599d834cfaf5a4951f845c7d66f48b",
+  "g-vinculos/claves-casas-de-cambio.json": "c2a1e63bd89a16f642f59f397919763546b996cdf14ba6794949f5e9b09f0d15",
+  "g-vinculos/proveedora-y-poloniex.json": "937410e4225beeaa59f3dd95b64f4752f31c215c68209f21d8be74dfa33c2eb1",
+  "h-publicacion/energia.json": "884f61b3e9be42c6e58a1036ec806337abcec13eeb7bbb519d045f4fa03df53a",
+  "e-calidad/api-por-sesion.json": "54bb537fa391c307263564ccb32969122ac6e41485c44ff973267deed15b93ea",
+  "e-calidad/diferencias-entre-proveedores.json": "9af77d96a5526bd6b71a02fa2cc221bfb05e451ab9da0924bf73d330aad2c04b",
+  "e-calidad/historiales-leidos.json": "588e848c8bf43ff3e2472815dab9ef50de7205781915993cfa09c73435acfb75",
+  "e-calidad/no-leido.json": "b1da144f443602dc5ed6f52eb55bc278e7fbb77ed144c85c05988f1a5b274939",
+  "e-calidad/proveedora-lectura.json": "5efa049add7bd652f3c61d2348983548fd9989befa1eaf929a425994435bda18"
+ },
+ "raw": {
+  "a1-2026-11-05": {
+   "ficheros": 3,
+   "bytes": 583793,
+   "huella": "1ac1535adc7abbe06eeba17850ae6d0ea589da5efff60f9e843938351e5b3bb7"
+  },
+  "a2-2026-11-05": {
+   "ficheros": 283,
+   "bytes": 11605766,
+   "huella": "8d535a34c34701747f164a9abf37efa68ed21de662f7c053103d4db7b6b27817"
+  },
+  "a3-2026-11-05": {
+   "ficheros": 1,
+   "bytes": 518,
+   "huella": "15fcb557ba363f160939146da6225d1d4c74601c90faa793218b63ba13909e62"
+  },
+  "a6-2026-11-05": {
+   "ficheros": 148,
+   "bytes": 35995223,
+   "huella": "e2773896c470f872b14f98460385791525900f0c3dd9ceb79a6a53dc0e808067"
+  },
+  "a6c-2026-11-05": {
+   "ficheros": 101,
+   "bytes": 18107076,
+   "huella": "e6875e27cb5dd4b28e821660d3d763b49092337544fa7373a251e92ed72049e4"
+  },
+  "a7-2026-11-05": {
+   "ficheros": 1284,
+   "bytes": 474831418,
+   "huella": "97440f714f07b7b36462807d19d7cf31d301e3d288dc764e3202f8a5b0b5b795"
+  },
+  "a7b-2026-11-05": {
+   "ficheros": 64,
+   "bytes": 116479,
+   "huella": "44f0ee377f672906cb796da7b4b26b65107aee0bd0d028dc0542f5d4791b0b89"
+  },
+  "b-2026-11-05": {
+   "ficheros": 554,
+   "bytes": 218047920,
+   "huella": "9ea444fc012a0bcd5efb96bc2cc362de0d376c7c52f2b97b396742cab54b3c09"
+  },
+  "b2-2026-11-05": {
+   "ficheros": 115,
+   "bytes": 563226,
+   "huella": "7ff70816606e6658573265ea8caeb745f922fe8b2262d1bc5cef06eea01a74af"
+  },
+  "b3-2026-11-05": {
+   "ficheros": 0,
+   "bytes": 0,
+   "huella": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "b4-2026-11-05": {
+   "ficheros": 66,
+   "bytes": 1270618,
+   "huella": "e5a25bd8e1f66a7ef03cd85277c9145e60b685125dd70e72567e615f9ec2a4f3"
+  },
+  "b4b-2026-11-05": {
+   "ficheros": 42,
+   "bytes": 288091,
+   "huella": "d9ef6569b1eb236eca0f60c722be02ce2f07c9f43bb8e240c3d19cd1b54eb4e4"
+  },
+  "b4c-2026-11-05": {
+   "ficheros": 1191,
+   "bytes": 82485391,
+   "huella": "5220c12177959cc98aa67d82d6cd442fa9a55aae5567fc78b2ed60cb91e20a06"
+  },
+  "b5-2026-11-05": {
+   "ficheros": 71,
+   "bytes": 17288456,
+   "huella": "88ef8b9321d2713752c1717ae6005e0097d875f9e29447234a84abbf4f0d9033"
+  },
+  "b5b-2026-11-05": {
+   "ficheros": 4,
+   "bytes": 8319,
+   "huella": "231634f89853a908360fa482ed586d9b870a53fdc2f010159c451a5b5ef706a6"
+  },
+  "b5c-2026-11-05": {
+   "ficheros": 7,
+   "bytes": 14687,
+   "huella": "417f826f831c928b38575f224e8f43de5c1c004739e43fc9b290eb07ce9d5966"
+  },
+  "c-2026-11-05": {
+   "ficheros": 27,
+   "bytes": 7011216,
+   "huella": "9ebf94dd828624359274c7691624dbe0e30178bc3fab05e2bf1caa91494e3307"
+  },
+  "c2-2026-11-05": {
+   "ficheros": 195,
+   "bytes": 136811090,
+   "huella": "e2784c7c216242d16519fc91c4ea3bd80035072d0a1a238becd5030947addaae"
+  },
+  "c3-2026-11-05": {
+   "ficheros": 106,
+   "bytes": 404136,
+   "huella": "003b740fa9b7b7626a20a1186f9ce84ee79e0943946f9d0cb9b4c342614e3bc3"
+  },
+  "c4-2026-11-05": {
+   "ficheros": 335,
+   "bytes": 749115,
+   "huella": "15cf94c83d05edf5f43b667d10de7bcba07445ca9c892e67cf1c39726e6cc766"
+  },
+  "c5-2026-11-05": {
+   "ficheros": 144,
+   "bytes": 11574850,
+   "huella": "62ebb8f9d8c91c995c69694c4c5fa10a90d74b5f1abdd0dafd287a41175fdc0b"
+  },
+  "c6-2026-11-05": {
+   "ficheros": 47,
+   "bytes": 6911629,
+   "huella": "337001a90a4ac9b2c8e236fd9d867cacebaac3695116ba5da2f02eb67f1a0916"
+  },
+  "c7-2026-11-05": {
+   "ficheros": 66,
+   "bytes": 6158567,
+   "huella": "f01551b8db8d81d6ed9f48bc05fdc168859ead043130c57708714b1816daf174"
+  },
+  "c8-2026-11-05": {
+   "ficheros": 44,
+   "bytes": 428107,
+   "huella": "03ef10e3739d42737b97d1de2b8a3cca5d77d89ffef6816865c4cf9cb475d582"
+  },
+  "d0-2026-11-05": {
+   "ficheros": 21,
+   "bytes": 211135,
+   "huella": "a94cb7dc0e56bf87b7d1b327aa16ea7e871d1c67f518999fe91bf2e24988d516"
+  },
+  "d1-2026-11-05": {
+   "ficheros": 203,
+   "bytes": 48590232,
+   "huella": "a6f1136a2175ed79bd7fd36881ea29277f33d9c2e9485d86d629a2a7f511759b"
+  },
+  "d4-2026-11-05": {
+   "ficheros": 182,
+   "bytes": 27073163,
+   "huella": "1f71e0672f7f9237b60fb0945b7bc62bbd9027d1b78b9ecf48e3833fe78b9497"
+  },
+  "d5-2026-11-05": {
+   "ficheros": 171,
+   "bytes": 47354409,
+   "huella": "f1995a0e5f85076bc5895ca48e5103134f5a22abbc62bedabbf3414d61fef5aa"
+  },
+  "f0-3-2026-11-05": {
+   "ficheros": 17,
+   "bytes": 2083847,
+   "huella": "67482b1116f6445a213337b1a2d2144633490d6e80ca4c405e4e008422d23eba"
+  },
+  "f0-4-2026-11-05": {
+   "ficheros": 44,
+   "bytes": 788421,
+   "huella": "ae2cc7235ebc093faccfa46c2abe64f2b6c325a632be169e35c40516a2682b0f"
+  },
+  "f1-2026-11-05": {
+   "ficheros": 11,
+   "bytes": 1299615,
+   "huella": "40e1b8db64302bfb7d62681f01bb617096283cd960d32d05420c3712a8bea2a5"
+  },
+  "f1b-2026-11-05": {
+   "ficheros": 14,
+   "bytes": 461100,
+   "huella": "4a249e899038006f0b98f823d05267cf1f496ee44ca9985f17f65e6831f281c7"
+  },
+  "f2-2026-11-05": {
+   "ficheros": 51,
+   "bytes": 1042136,
+   "huella": "7cccd35ed091abe4f081862d891eac8340e06ce0d652593432d11d034ce408a7"
+  },
+  "f3-2026-11-05": {
+   "ficheros": 2925,
+   "bytes": 88157358,
+   "huella": "3cacd17c3c8aca24c4cd8f1082ae5d902fd4f016a0c198cfe92bceb6e82b807e"
+  },
+  "f3b-2026-11-05": {
+   "ficheros": 15,
+   "bytes": 123148,
+   "huella": "905b7b06a993b4c05703099c096660a27a595076e6a6cfb316b24bfbc9732235"
+  },
+  "f4-2026-11-05": {
+   "ficheros": 149,
+   "bytes": 4412086,
+   "huella": "1f5543e3b575513deb55cb01fac4b7c2037778d37ad2382ab0ef029c9697f1cd"
+  },
+  "f5-2026-11-05": {
+   "ficheros": 48,
+   "bytes": 941742,
+   "huella": "df67af887b56b457fd7c177cc99034c91a1354f49d531bb39bf6436e7e0592c3"
+  },
+  "f6-2026-11-05": {
+   "ficheros": 8,
+   "bytes": 66693,
+   "huella": "c2afb5a08abfc7c0d4ce112e8f9e2cdbc5ad338f04ab41f5f599b2cd63fcfd98"
+  },
+  "f7-2026-11-05": {
+   "ficheros": 41,
+   "bytes": 1038673,
+   "huella": "64cf760f8d4c209e5cdb022d36dfb41f81a8cebe586da0cfc1e2effcabbbfa17"
+  },
+  "f8-2026-11-05": {
+   "ficheros": 723,
+   "bytes": 65121290,
+   "huella": "b197488625ef8a75bb8ded19485b26271c76a9efb82c04941607498305a35fe5"
+  },
+  "f9-2026-11-05": {
+   "ficheros": 199,
+   "bytes": 6359067,
+   "huella": "ad3b1ef947a51405a60d8df410fde20399d10b87b090af690bc738d585a782f2"
+  },
+  "g1-2026-11-05": {
+   "ficheros": 117,
+   "bytes": 2515236,
+   "huella": "185284182ec6cead2018d6d10d200facafc28d0c8119b427b55e1e2b166042c9"
+  },
+  "g2-2026-11-05": {
+   "ficheros": 507,
+   "bytes": 80767710,
+   "huella": "f0bfaabc82e4e4ee4d28df966aef5b49cfc69f0a1c0fb99b6011e0da10be659b"
+  },
+  "l1-2026-11-05": {
+   "ficheros": 4,
+   "bytes": 222021,
+   "huella": "f2481cf9b8379e9f7e297668a7c890f10ec15388dea0a45584c8499a87bc3c5d"
+  },
+  "l2-2026-11-05": {
+   "ficheros": 62,
+   "bytes": 462308,
+   "huella": "424186a2146d05b28a9c2e995b099a1ce0a647882d6c9e2a570da223ad45a2db"
+  },
+  "l3-2026-11-05": {
+   "ficheros": 29,
+   "bytes": 92282,
+   "huella": "950f3b8d7c8a199d488c47df2bc7bb602b5e7cde4861f6a68fa2b2237aa4f93a"
+  },
+  "l4-2026-11-05": {
+   "ficheros": 103,
+   "bytes": 223319,
+   "huella": "9e7558d4c5896c693ee2edabee68eb99dc7e5594100f7795095dc7bb405ff607"
+  },
+  "linea-base-2026-11-05": {
+   "ficheros": 212,
+   "bytes": 1148899,
+   "huella": "33c36fdd2b9046c6bfaee90e58a407acdc9a2dc568b7a1fa064a68991b1e5c8f"
+  },
+  "o1-2026-11-05": {
+   "ficheros": 144,
+   "bytes": 12326010,
+   "huella": "3e617e2a7c19a6006486fa4d1418a18349472c90eae452009b1cb1cd92fe00aa"
+  },
+  "o2-2026-11-05": {
+   "ficheros": 54,
+   "bytes": 644135,
+   "huella": "1b0de4aa23a671206bd29ef4c83747a54a70bfe6823c3070c2b4c27c78465b62"
+  }
+ }
+}

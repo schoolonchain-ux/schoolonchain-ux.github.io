@@ -1,0 +1,10 @@
+'use strict';
+// MEJORA C (3.ª parte) — ¿Qué son los contratos de TU3rMHyW y quiénes son las contrapartes grandes de su controlador TM3sTVya? Etiquetas públicas de TronScan y datos básicos.
+// Una etiqueta pública es una ATRIBUCIÓN DE TERCEROS (TronScan), no una prueba. SOLO LECTURA. Reproducible: REPRODUCIR=1 node c3-etiquetas.cjs
+const fs = require('node:fs'), path = require('node:path'); const L = require('./lib.cjs'); L.usar('c3-2026-11-05'); const OUT = path.join(__dirname, 'c-tu3rmhyw');
+const TG = 'https://api.trongrid.io', TS = 'https://apilist.tronscanapi.com/api'; const rd = (...p) => JSON.parse(fs.readFileSync(path.join(__dirname, ...p), 'utf8')); const cc = rd('c-tu3rmhyw', 'contratos-y-llamadores.json'); const pk = rd('c-tu3rmhyw', 'perfil-TM3sTVya.json');
+(async () => {
+  const dirs = [...cc.contratos.map(c => ['contrato', c.direccion, c.nombre]), ...pk.contrapartes_trx.slice(0, 12).map(c => ['contraparte de TM3sTVya', c.cuenta, null])]; const filas = [];
+  for (const [rol, d, nombre] of dirs) { const t = await L.get(TS + '/accountv2?address=' + d).catch(() => ({})); const a = await L.post(TG + '/wallet/getaccount', { address: d, visible: true }); filas.push({ rol, direccion: d, nombre_en_contrato: nombre, etiqueta_publica: t.publicTag || t.addressTag || null, creada: a.create_time ? new Date(a.create_time).toISOString().slice(0, 10) : null, n_tx_tronscan: t.totalTransactionCount || null, trx: Math.round((a.balance || 0) / 1e6), es_contrato: !!(t.contractInfo || t.accountType === 2) }); }
+  const h = L.guardar(path.join(OUT, 'etiquetas-contratos-y-contrapartes.json'), filas); for (const f of filas) console.log(f.rol.slice(0, 12).padEnd(12), f.direccion.slice(0, 10), '|', (f.nombre_en_contrato || '').padEnd(22), '| etiqueta:', f.etiqueta_publica, '| creada', f.creada, '| tx', f.n_tx_tronscan, '| TRX', f.trx.toLocaleString('es-ES')); console.log(h, 'llamadas', L.metricas.llamadas, 'red', L.metricas.red);
+})().catch(e => { console.error('ERROR', e.message); process.exit(1); });

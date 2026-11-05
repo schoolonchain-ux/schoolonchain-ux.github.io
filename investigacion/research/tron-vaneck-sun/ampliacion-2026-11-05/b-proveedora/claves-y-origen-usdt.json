@@ -1,0 +1,349 @@
+{
+ "recolectora_TFSd14UQ": {
+  "entradas_n": 461,
+  "salidas_n": 456,
+  "origenes_con_etiqueta_Binance": 20,
+  "origenes_sin_etiqueta_Binance": 2,
+  "transferencias_usdt_leidas": 917,
+  "entra_total": 886157263.22,
+  "sale_total": 886157263.22,
+  "origenes_distintos": 22,
+  "de_cuentas_con_etiqueta_Binance_entre_las_40_mayores": 886157254,
+  "resto": 9.22,
+  "mayores_origenes": [
+   {
+    "cuenta": "TNXoiAJ3dct8Fjg4M9fkLFh9S2v9TXc32G",
+    "etiqueta": "Binance-Hot 4",
+    "usdt": 91604000,
+    "n": 38,
+    "primera": "2026-08-11T08:33:54Z",
+    "ultima": "2026-10-29T10:10:48Z"
+   },
+   {
+    "cuenta": "TJqwA7SoZnERE4zW5uDEiPkbz4B66h9TFj",
+    "etiqueta": "Binance-Hot 11",
+    "usdt": 84437006,
+    "n": 39,
+    "primera": "2026-08-06T08:06:54Z",
+    "ultima": "2026-10-29T15:12:48Z"
+   },
+   {
+    "cuenta": "TJ5usJLLwjwn7Pw3TPbdzreG7dvgKzfQ5y",
+    "etiqueta": "Binance-Hot 9",
+    "usdt": 81965006,
+    "n": 50,
+    "primera": "2026-08-06T07:02:48Z",
+    "ultima": "2026-10-28T19:59:48Z"
+   },
+   {
+    "cuenta": "TDqSquXBgUCLYvYC4XZgrprLK589dkhSCf",
+    "etiqueta": "Binance-Hot 7",
+    "usdt": 80918024,
+    "n": 42,
+    "primera": "2026-08-18T11:49:54Z",
+    "ultima": "2026-10-28T12:24:48Z"
+   },
+   {
+    "cuenta": "TCLgK89AnXbC9rewvhNb9UgXCc2qJJpBXh",
+    "etiqueta": "Binance-Hot 10",
+    "usdt": 78435012,
+    "n": 47,
+    "primera": "2026-08-06T08:31:03Z",
+    "ultima": "2026-10-29T16:05:48Z"
+   },
+   {
+    "cuenta": "TYASr5UV6HEcXatwdFQfmLVUqQQQMUxHLS",
+    "etiqueta": "Binance-Hot 3",
+    "usdt": 74430006,
+    "n": 37,
+    "primera": "2026-08-18T10:54:54Z",
+    "ultima": "2026-10-28T09:54:48Z"
+   },
+   {
+    "cuenta": "TJDENsfBJs4RFETt1X1W8wMDc8M5XnJhCe",
+    "etiqueta": "Binance-Hot 6",
+    "usdt": 55158000,
+    "n": 45,
+    "primera": "2026-08-25T16:53:06Z",
+    "ultima": "2026-10-28T19:20:48Z"
+   },
+   {
+    "cuenta": "TQrY8tryqsYVCYS3MFbtffiPp2ccyn4STm",
+    "etiqueta": "Binance 2",
+    "usdt": 49620000,
+    "n": 41,
+    "primera": "2026-08-11T09:41:00Z",
+    "ultima": "2026-10-29T02:46:48Z"
+   },
+   {
+    "cuenta": "TK4ykR48cQQoyFcZ5N4xZCbsBaHcg6n3gJ",
+    "etiqueta": "Binance-Hot 8",
+    "usdt": 48140000,
+    "n": 36,
+    "primera": "2026-08-24T12:09:06Z",
+    "ultima": "2026-10-27T17:36:48Z"
+   },
+   {
+    "cuenta": "TAzsQ9Gx8eqFNFSKbeXrbi45CuVPHzA8wr",
+    "etiqueta": "Binance-Hot 5",
+    "usdt": 46070000,
+    "n": 33,
+    "primera": "2026-08-11T11:49:57Z",
+    "ultima": "2026-10-29T03:39:48Z"
+   },
+   {
+    "cuenta": "TDB1RpAHPQdGqfb1qi8J2jLY2oGe2jSy8A",
+    "etiqueta": "Binance-Hot 19",
+    "usdt": 45000050,
+    "n": 10,
+    "primera": "2026-11-02T05:40:54Z",
+    "ultima": "2026-11-04T06:45:54Z"
+   },
+   {
+    "cuenta": "TJTKCzQpsG19CSMYF9TPtxz6wSHPSyeKfa",
+    "etiqueta": "Binance-Hot 12",
+    "usdt": 45000000,
+    "n": 9,
+    "primera": "2026-11-02T02:47:48Z",
+    "ultima": "2026-11-03T17:14:57Z"
+   },
+   {
+    "cuenta": "TYLRgzUKgLHw5wCYox2xRUkCQaWo9koP6K",
+    "etiqueta": "Binance-Hot 13",
+    "usdt": 22370000,
+    "n": 8,
+    "primera": "2026-11-01T16:18:51Z",
+    "ultima": "2026-11-05T05:07:54Z"
+   },
+   {
+    "cuenta": "TTU4bhRuPEtaSWPXvvRQ7CVnyHs6cGu24e",
+    "etiqueta": "Binance-Hot 15",
+    "usdt": 18000000,
+    "n": 4,
+    "primera": "2026-11-02T18:36:48Z",
+    "ultima": "2026-11-03T17:05:54Z"
+   },
+   {
+    "cuenta": "TGnBDu95RaJEaw7dJpqzHt8Sy7faayBGvj",
+    "etiqueta": "Binance-Hot 20",
+    "usdt": 15010000,
+    "n": 4,
+    "primera": "2026-11-01T16:01:54Z",
+    "ultima": "2026-11-03T16:11:51Z"
+   },
+   {
+    "cuenta": "TGpTXS67vXyPERWMC2iQSG27TosfD13HLZ",
+    "etiqueta": "Binance-Hot 17",
+    "usdt": 15000000,
+    "n": 3,
+    "primera": "2026-11-03T07:06:57Z",
+    "ultima": "2026-11-03T15:54:57Z"
+   },
+   {
+    "cuenta": "TADfh7Q4KA9LD6WfjjjcPMNra33gNRrCkb",
+    "etiqueta": "Binance-Hot 18",
+    "usdt": 15000000,
+    "n": 3,
+    "primera": "2026-11-03T08:56:57Z",
+    "ultima": "2026-11-05T04:03:54Z"
+   },
+   {
+    "cuenta": "TNiXZSD38dwRjZ5fXKn1im8crWkfqzskvH",
+    "etiqueta": "Binance-Hot 21",
+    "usdt": 15000000,
+    "n": 3,
+    "primera": "2026-11-03T15:49:57Z",
+    "ultima": "2026-11-03T17:03:57Z"
+   },
+   {
+    "cuenta": "TCQ8X6x9GiK4khydWVKfLJvm8H6WK3RE8B",
+    "etiqueta": "Binance-Hot 14",
+    "usdt": 5000100,
+    "n": 2,
+    "primera": "2026-11-01T15:51:00Z",
+    "ultima": "2026-11-03T07:29:57Z"
+   },
+   {
+    "cuenta": "TE4mtETxcuHHbprQmQkyVSaCC48Q5yk21i",
+    "etiqueta": "Binance-Hot 16",
+    "usdt": 50,
+    "n": 1,
+    "primera": "2026-11-02T16:53:48Z",
+    "ultima": "2026-11-02T16:53:48Z"
+   },
+   {
+    "cuenta": "TYpHnA7Tc92CKA3owNuTWRheEBNcMEw5M2",
+    "etiqueta": null,
+    "usdt": 4.61,
+    "n": 3,
+    "primera": "2026-09-01T15:29:42Z",
+    "ultima": "2026-09-01T17:51:39Z"
+   },
+   {
+    "cuenta": "TWhDfDUbymKwvPLGHriND9VuYaKyPEw5M2",
+    "etiqueta": null,
+    "usdt": 4.61,
+    "n": 3,
+    "primera": "2026-09-01T15:30:12Z",
+    "ultima": "2026-09-01T17:52:06Z"
+   }
+  ]
+ },
+ "llaves_de_los_multifirma": [
+  {
+   "clave": "TShAfXbh4kUzmkJ9Ckdo5J6ujWi1M5NLE2",
+   "etiqueta": null,
+   "creada": null,
+   "operaciones": 0,
+   "balance_trx": 0,
+   "existe_en_cadena": false,
+   "aparece_en_el_historial_de_la_proveedora": 0
+  },
+  {
+   "clave": "TUgSgCQL6pMSy9zByn4sgxqrJa95sZExBG",
+   "etiqueta": "Poloniex 2",
+   "creada": "2022-08-21T09:14:42Z",
+   "operaciones": 1088,
+   "balance_trx": 6874567.59,
+   "existe_en_cadena": true,
+   "aparece_en_el_historial_de_la_proveedora": 175
+  },
+  {
+   "clave": "TVnGY8vuJhxDX5b7mTpwaJ9vNDtmjdBxMm",
+   "etiqueta": null,
+   "creada": "2025-04-08T07:49:39Z",
+   "operaciones": 3,
+   "balance_trx": 48.9,
+   "existe_en_cadena": true,
+   "aparece_en_el_historial_de_la_proveedora": 0
+  },
+  {
+   "clave": "TV7WmJXhYyd4rqRjbWg62eX8e5DoPbyiA3",
+   "etiqueta": null,
+   "creada": "2023-11-29T15:45:21Z",
+   "operaciones": 3,
+   "balance_trx": 50,
+   "existe_en_cadena": true,
+   "aparece_en_el_historial_de_la_proveedora": 0
+  },
+  {
+   "clave": "TDAuHDXYNTrtY1k6GNibek44yHEqyQfVkC",
+   "etiqueta": null,
+   "creada": "2023-11-29T15:38:57Z",
+   "operaciones": 3,
+   "balance_trx": 50,
+   "existe_en_cadena": true,
+   "aparece_en_el_historial_de_la_proveedora": 0
+  },
+  {
+   "clave": "TEdzuiQcwJudNR83UomxHJGhsMWYibdM7o",
+   "etiqueta": null,
+   "creada": null,
+   "operaciones": 0,
+   "balance_trx": 0,
+   "existe_en_cadena": false,
+   "aparece_en_el_historial_de_la_proveedora": 0
+  },
+  {
+   "clave": "TUcbM2MwtjsNGtY2CVjFpjbW7Nc76XySmD",
+   "etiqueta": null,
+   "creada": null,
+   "operaciones": 0,
+   "balance_trx": 0,
+   "existe_en_cadena": false,
+   "aparece_en_el_historial_de_la_proveedora": 0
+  },
+  {
+   "clave": "TUdbhFMsZTc14xG2CxkUREp1qWT6TGi1tL",
+   "etiqueta": null,
+   "creada": null,
+   "operaciones": 0,
+   "balance_trx": 0,
+   "existe_en_cadena": false,
+   "aparece_en_el_historial_de_la_proveedora": 0
+  },
+  {
+   "clave": "TMiDbtDSRMFcae5kZPq1tXc6q9217Tg26d",
+   "etiqueta": null,
+   "creada": "2026-07-28T06:28:36Z",
+   "operaciones": 10,
+   "balance_trx": 0,
+   "existe_en_cadena": true,
+   "aparece_en_el_historial_de_la_proveedora": 0
+  }
+ ],
+ "activacion_de_la_proveedora": [
+  {
+   "cuenta": "TLaeRVedMLANJzVnZD8jkJAiQL3XwirQdS",
+   "etiqueta": null,
+   "creada": "2021-12-09T01:47:48Z",
+   "operaciones": 110,
+   "balance_trx": 53.28
+  },
+  {
+   "cuenta": "TQ8CEdBYYtATdyedFbwLgz3xMKskNuN5J4",
+   "etiqueta": null,
+   "creada": "2023-11-28T12:40:21Z",
+   "operaciones": 8,
+   "balance_trx": 0
+  }
+ ],
+ "grandes_origenes_de_la_pareja": [
+  {
+   "cuenta": "TWhDfwC8QE6pQyiYy248dNor3uphPEw5M2",
+   "etiqueta": null,
+   "creada": "2023-11-28T13:56:54Z",
+   "operaciones": 1251241,
+   "balance_trx": 487101.78
+  },
+  {
+   "cuenta": "TU8QSUgBHeZ8QeKMfMaqiYbcTZqd9wQnFa",
+   "etiqueta": null,
+   "creada": "2026-07-07T02:55:45Z",
+   "operaciones": 41,
+   "balance_trx": 13.1
+  },
+  {
+   "cuenta": "TEQPqZYaykGqdXpuFMAZZ1wgo5eUPaihnU",
+   "etiqueta": null,
+   "creada": "2026-07-08T16:00:45Z",
+   "operaciones": 44,
+   "balance_trx": 6.8
+  },
+  {
+   "cuenta": "TUgSgCQL6pMSy9zByn4sgxqrJa95sZExBG",
+   "etiqueta": "Poloniex 2",
+   "creada": "2022-08-21T09:14:42Z",
+   "operaciones": 1088,
+   "balance_trx": 6874567.59
+  },
+  {
+   "cuenta": "TXJgMdjVX5dKiQaUi9QobwNxtSQaFqccvd",
+   "etiqueta": null,
+   "creada": null,
+   "operaciones": 481015,
+   "balance_trx": 81.3
+  },
+  {
+   "cuenta": "TWhDfGto1FNWSCQR2nM9Gz5y8BSCPEw5M2",
+   "etiqueta": null,
+   "creada": "2025-08-28T13:07:51Z",
+   "operaciones": 98,
+   "balance_trx": 0.02
+  },
+  {
+   "cuenta": "TWhDxeBMqXhdJ36VPwJUm4AjHTr9PEw5M2",
+   "etiqueta": null,
+   "creada": "2024-01-10T13:17:54Z",
+   "operaciones": 4104,
+   "balance_trx": 0
+  },
+  {
+   "cuenta": "TWhDf3az7NBwoHJmAmWYTy4ejqwYHEw5M2",
+   "etiqueta": null,
+   "creada": "2024-04-06T01:14:39Z",
+   "operaciones": 314,
+   "balance_trx": 0
+  }
+ ]
+}

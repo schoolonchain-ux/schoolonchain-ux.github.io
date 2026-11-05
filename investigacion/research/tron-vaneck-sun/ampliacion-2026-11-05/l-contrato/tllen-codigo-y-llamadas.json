@@ -1,0 +1,234 @@
+{
+ "contrato": "TLLENiMpZvGZD2C1ZQ2FzBinrYevmGco6p",
+ "getcontract": {
+  "nombre": null,
+  "creador": "TGKJKQY9Bh5yVjW1WL5NbfmcGXD2z9Jj4q",
+  "tiene_bytecode_en_getcontract": false,
+  "consume_user_resource_percent": 100
+ },
+ "getcontractinfo": {
+  "bytes_runtime": 2772,
+  "huella_runtime": "2d24b9572b21e4513c7a6ad56811ecf892eee346c48abe79cce727e8bb623b99",
+  "claves_del_resultado": [
+   "smart_contract",
+   "runtimecode",
+   "contract_state"
+  ]
+ },
+ "tronscan": {
+  "etiqueta": null,
+  "n_tx": 18,
+  "creada_segun_tronscan": "(TronScan no da fecha: 0)"
+ },
+ "selectores_de_DSProxy_presentes_en_el_codigo": [
+  "execute(address,bytes)",
+  "execute(bytes,bytes)",
+  "setOwner(address)",
+  "setAuthority(address)",
+  "owner()",
+  "authority()"
+ ],
+ "llamadas": {
+  "total": 16,
+  "paginas": 1,
+  "primera": "2025-01-23T17:34:18.000Z",
+  "ultima": "2026-11-03T16:01:24.000Z",
+  "por_funcion": {
+   "1cff79cd execute(address,bytes)": {
+    "n": 16,
+    "ok": 15,
+    "trx": 1203000000
+   }
+  },
+  "por_llamador": {
+   "TT2T17KZhoDu47i2E4FWxfG79zdkEWkU9N": 15,
+   "TPs32B6yHJXnZnioFZHikxrhE5P7U5JSJr": 1
+  },
+  "por_mes": {
+   "2025-01": 5,
+   "2025-02": 1,
+   "2026-01": 2,
+   "2026-07": 1,
+   "2026-11": 7
+  },
+  "fallidas": 1
+ },
+ "detalle": [
+  {
+   "t": "2025-01-23T17:34:18.000Z",
+   "tx": "1ae8660eaa6cb853e613211648d1415626959bf127d60603a386c127446c8edd",
+   "ok": true,
+   "de": "TT2T17KZhoDu47i2E4FWxfG79zdkEWkU9N",
+   "trx_adjunto": 1000000,
+   "datos": "1cff79cd",
+   "tam_datos": 324,
+   "energia_total": 555644,
+   "tipo": "TriggerSmart"
+  },
+  {
+   "t": "2025-01-23T17:38:03.000Z",
+   "tx": "58af6ee17716a00f10864285259e49be6a23e4f17704a1fc24bffe3f0f1098bf",
+   "ok": true,
+   "de": "TT2T17KZhoDu47i2E4FWxfG79zdkEWkU9N",
+   "trx_adjunto": 120000000,
+   "datos": "1cff79cd",
+   "tam_datos": 324,
+   "energia_total": 259720,
+   "tipo": "TriggerSmart"
+  },
+  {
+   "t": "2025-01-23T17:40:24.000Z",
+   "tx": "c1835b7968e4b633cb7cf1f6f4110241dbec9cf508f3322b4cdac3f369e56849",
+   "ok": true,
+   "de": "TT2T17KZhoDu47i2E4FWxfG79zdkEWkU9N",
+   "trx_adjunto": 1000000,
+   "datos": "1cff79cd",
+   "tam_datos": 324,
+   "energia_total": 523869,
+   "tipo": "TriggerSmart"
+  },
+  {
+   "t": "2025-01-23T17:45:21.000Z",
+   "tx": "bf9ae9db4c9e238f7418e84c4704722d81ed01a649346ee72527d1ccdaaa2e28",
+   "ok": true,
+   "de": "TT2T17KZhoDu47i2E4FWxfG79zdkEWkU9N",
+   "trx_adjunto": 1000000,
+   "datos": "1cff79cd",
+   "tam_datos": 324,
+   "energia_total": 509095,
+   "tipo": "TriggerSmart"
+  },
+  {
+   "t": "2025-01-23T17:47:51.000Z",
+   "tx": "914beecf1343f397cdd6ec8dbfcd1a3c75919bee45d4f94ccba489deaa6221cd",
+   "ok": true,
+   "de": "TT2T17KZhoDu47i2E4FWxfG79zdkEWkU9N",
+   "trx_adjunto": 0,
+   "datos": "1cff79cd",
+   "tam_datos": 388,
+   "energia_total": 856962,
+   "tipo": "TriggerSmart"
+  },
+  {
+   "t": "2025-02-03T06:49:18.000Z",
+   "tx": "42ed37b88f20919a815c872e54a9507d5dd14351a96af27c284834652c31b5c9",
+   "ok": true,
+   "de": "TT2T17KZhoDu47i2E4FWxfG79zdkEWkU9N",
+   "trx_adjunto": 50000000,
+   "datos": "1cff79cd",
+   "tam_datos": 260,
+   "energia_total": 168920,
+   "tipo": "TriggerSmart"
+  },
+  {
+   "t": "2026-01-17T12:41:45.000Z",
+   "tx": "f3885926c6804452b95dbf30a1f06ecd87977f7a9f826937ec2419639f572dc2",
+   "ok": true,
+   "de": "TT2T17KZhoDu47i2E4FWxfG79zdkEWkU9N",
+   "trx_adjunto": 150000000,
+   "datos": "1cff79cd",
+   "tam_datos": 324,
+   "energia_total": 261225,
+   "tipo": "TriggerSmart"
+  },
+  {
+   "t": "2026-01-17T12:45:57.000Z",
+   "tx": "54b25d0893d76ebf87487f5adc3878432a4b330764fe4f5fb3de0c07abcb40f9",
+   "ok": true,
+   "de": "TT2T17KZhoDu47i2E4FWxfG79zdkEWkU9N",
+   "trx_adjunto": 300000000,
+   "datos": "1cff79cd",
+   "tam_datos": 324,
+   "energia_total": 261900,
+   "tipo": "TriggerSmart"
+  },
+  {
+   "t": "2026-07-30T11:18:09.000Z",
+   "tx": "0a63b77d094fa5554b74f0e0eaf57cc7590c469050c25c807fb5572415582272",
+   "ok": false,
+   "de": "TPs32B6yHJXnZnioFZHikxrhE5P7U5JSJr",
+   "trx_adjunto": 0,
+   "datos": "1cff79cd",
+   "tam_datos": 100,
+   "energia_total": 0,
+   "tipo": "TriggerSmart"
+  },
+  {
+   "t": "2026-11-02T09:21:18.000Z",
+   "tx": "cb1ab6bebd3ae46c1f3593cc5bf595fa725f669dd0e03dd91958dd596d26916b",
+   "ok": true,
+   "de": "TT2T17KZhoDu47i2E4FWxfG79zdkEWkU9N",
+   "trx_adjunto": 300000000,
+   "datos": "1cff79cd",
+   "tam_datos": 324,
+   "energia_total": 261910,
+   "tipo": "TriggerSmart"
+  },
+  {
+   "t": "2026-11-02T09:27:51.000Z",
+   "tx": "4547bb06705db5280d277b9ad294ebca41d4e003845b2a1c3ccbf1bc17e3f079",
+   "ok": true,
+   "de": "TT2T17KZhoDu47i2E4FWxfG79zdkEWkU9N",
+   "trx_adjunto": 280000000,
+   "datos": "1cff79cd",
+   "tam_datos": 324,
+   "energia_total": 259888,
+   "tipo": "TriggerSmart"
+  },
+  {
+   "t": "2026-11-03T06:19:15.000Z",
+   "tx": "3ae0bfde2336231822bd4d3ff1c4f6780d9706f1099d827c7eb3d16e810ce267",
+   "ok": true,
+   "de": "TT2T17KZhoDu47i2E4FWxfG79zdkEWkU9N",
+   "trx_adjunto": 0,
+   "datos": "1cff79cd",
+   "tam_datos": 324,
+   "energia_total": 275023,
+   "tipo": "TriggerSmart"
+  },
+  {
+   "t": "2026-11-03T15:49:30.000Z",
+   "tx": "15234c2733b7066181658a0f9009788ad26bb5f2b6e9bc57cf8232ecb5a18f60",
+   "ok": true,
+   "de": "TT2T17KZhoDu47i2E4FWxfG79zdkEWkU9N",
+   "trx_adjunto": 0,
+   "datos": "1cff79cd",
+   "tam_datos": 324,
+   "energia_total": 275023,
+   "tipo": "TriggerSmart"
+  },
+  {
+   "t": "2026-11-03T15:54:15.000Z",
+   "tx": "3f075befcb17c70143b3aabee370aeeb82d59578b8b9669b09bdaa35dccde766",
+   "ok": true,
+   "de": "TT2T17KZhoDu47i2E4FWxfG79zdkEWkU9N",
+   "trx_adjunto": 0,
+   "datos": "1cff79cd",
+   "tam_datos": 292,
+   "energia_total": 275321,
+   "tipo": "TriggerSmart"
+  },
+  {
+   "t": "2026-11-03T15:56:36.000Z",
+   "tx": "36ccb2e82d2e91191de0fdf0626572345ddbd49bf324fec14e7880d53374661b",
+   "ok": true,
+   "de": "TT2T17KZhoDu47i2E4FWxfG79zdkEWkU9N",
+   "trx_adjunto": 0,
+   "datos": "1cff79cd",
+   "tam_datos": 292,
+   "energia_total": 275321,
+   "tipo": "TriggerSmart"
+  },
+  {
+   "t": "2026-11-03T16:01:24.000Z",
+   "tx": "02906bb2ed867d6ebb5a8d75477b6141e4ef549a1eb8ae6a3e9d339eae371ee1",
+   "ok": true,
+   "de": "TT2T17KZhoDu47i2E4FWxfG79zdkEWkU9N",
+   "trx_adjunto": 0,
+   "datos": "1cff79cd",
+   "tam_datos": 292,
+   "energia_total": 275321,
+   "tipo": "TriggerSmart"
+  }
+ ]
+}

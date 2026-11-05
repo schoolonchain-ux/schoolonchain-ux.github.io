@@ -1,0 +1,320 @@
+{
+ "resumen_de_valores_devueltos": {
+  "owner() = (cero)": 2,
+  "implementation() = (cero)": 3,
+  "operator() = TFEARS7ezTQoFFnwNoqF5TaE5QEC9gRBoZ": 1,
+  "owner() = TM3sTVyahiGWYktKg8G6miHpTzRurKDt7b": 2,
+  "implementation() = TKYQmYdssV2UVjr7UmNNt4jti1mmm7ZWnX": 1,
+  "operator() = TU3rMHyWHzeEJBReWLzHko728hbz6MtfNg": 4,
+  "owner() = TU3rMHyWHzeEJBReWLzHko728hbz6MtfNg": 10,
+  "admin() = TU3rMHyWHzeEJBReWLzHko728hbz6MtfNg": 3,
+  "owner() = TKV6xsHSxiCY24nudkJGZQFveqzA6wjayu": 2,
+  "operator() = TPh1hzUCZ7vGk4sELFLfFKKKoBKUvB931C": 1,
+  "operator() = (cero)": 1,
+  "implementation() = TJW8L56KJgA9JLM5pWSMQT6jWN9omc7KfV": 1,
+  "operator() = TXdNiR1AcSDCNh1hQJX8e9raD9FxxcBDix": 1,
+  "owner() = TLntW9Z59LYY5KEi9cmwk3PKjQga828ird": 11,
+  "operator() = TDaLWx5kjw4vVajSjdGt4zhygQd1KEdEPT": 2,
+  "admin() = TDaLWx5kjw4vVajSjdGt4zhygQd1KEdEPT": 2
+ },
+ "contratos": [
+  {
+   "contrato": "TQHj5QZA8PaHBcAGkYdi8QxdtuNabuVx5r",
+   "nombre": "LaunchPad",
+   "creado": "2024-08-09T10:53:09Z",
+   "llamadas_24h": 0,
+   "owner()": "(cero)",
+   "implementation()": "(cero)",
+   "operator()": "TFEARS7ezTQoFFnwNoqF5TaE5QEC9gRBoZ"
+  },
+  {
+   "contrato": "TTfvyrAz86hbZk5iDpKD78pqLGgi8C7AAw",
+   "nombre": "LaunchPadProxy",
+   "creado": "2024-08-09T10:53:09Z",
+   "llamadas_24h": 14,
+   "owner()": "TM3sTVyahiGWYktKg8G6miHpTzRurKDt7b",
+   "implementation()": "TKYQmYdssV2UVjr7UmNNt4jti1mmm7ZWnX",
+   "operator()": "TU3rMHyWHzeEJBReWLzHko728hbz6MtfNg"
+  },
+  {
+   "contrato": "TG9nDZMUtC4LBmrWSdNXNi8xrKzXTMMSKT",
+   "nombre": "SafeVault",
+   "creado": "2024-08-09T10:53:09Z",
+   "llamadas_24h": 0,
+   "owner()": "TM3sTVyahiGWYktKg8G6miHpTzRurKDt7b",
+   "implementation()": "(cero)"
+  },
+  {
+   "contrato": "TZFs5ch1R1C4mmjwrrmZqeqbUgGpxY1yWB",
+   "nombre": "PumpswapRouter",
+   "creado": "2024-08-12T08:40:21Z",
+   "llamadas_24h": 2,
+   "owner()": "TU3rMHyWHzeEJBReWLzHko728hbz6MtfNg",
+   "operator()": "TU3rMHyWHzeEJBReWLzHko728hbz6MtfNg"
+  },
+  {
+   "contrato": "TSiiYf1b1PV1fpT9T7V4wy11btsNVajw1g",
+   "nombre": "PumpSmartExchangeRouter",
+   "creado": "2024-08-12T12:26:51Z",
+   "llamadas_24h": 0,
+   "owner()": "TU3rMHyWHzeEJBReWLzHko728hbz6MtfNg",
+   "operator()": "TU3rMHyWHzeEJBReWLzHko728hbz6MtfNg"
+  },
+  {
+   "contrato": "TRs4TG1vizrtkVXAM1CsuWvxtXat3J7nTu",
+   "nombre": "LauncherProxy",
+   "creado": "2024-08-19T14:34:42Z",
+   "llamadas_24h": 0,
+   "owner()": "TU3rMHyWHzeEJBReWLzHko728hbz6MtfNg"
+  },
+  {
+   "contrato": "TXF1xDbVGdxFGbovmmmXvBGu8ZiE3Lq4mR",
+   "nombre": "UniswapV2Router02",
+   "creado": "2024-09-06T09:20:45Z",
+   "llamadas_24h": 22
+  },
+  {
+   "contrato": "TJ4NNy8xZEqsowCBhLvZ45LCqPdGjkET5j",
+   "nombre": "SmartExchangeRouter",
+   "creado": "2024-09-17T06:29:18Z",
+   "llamadas_24h": 18,
+   "owner()": "TU3rMHyWHzeEJBReWLzHko728hbz6MtfNg",
+   "admin()": "TU3rMHyWHzeEJBReWLzHko728hbz6MtfNg"
+  },
+  {
+   "contrato": "TDo38LcXWjbq6ffSwnsPw3GPdXFnygL6jR",
+   "nombre": "MintFactory",
+   "creado": "2024-09-23T11:00:57Z",
+   "llamadas_24h": 0,
+   "owner()": "TKV6xsHSxiCY24nudkJGZQFveqzA6wjayu",
+   "paused()": "no"
+  },
+  {
+   "contrato": "TVjnWgsW9VggDWh8cigTx4ZSXxuk5oXuVG",
+   "nombre": "MintProxy",
+   "creado": "2024-09-23T11:07:48Z",
+   "llamadas_24h": 0,
+   "owner()": "TKV6xsHSxiCY24nudkJGZQFveqzA6wjayu",
+   "paused()": "no"
+  },
+  {
+   "contrato": "TFqwpvHwonR3XMyCTcLUPK77f6giMQATgG",
+   "nombre": "RebateRelationship",
+   "creado": "2024-10-30T10:23:45Z",
+   "llamadas_24h": 0
+  },
+  {
+   "contrato": "TCFNp179Lg46D16zKoumd4Poa2WFFdtqYj",
+   "nombre": "SmartExchangeRouter",
+   "creado": "2025-01-24T07:46:33Z",
+   "llamadas_24h": 115,
+   "owner()": "TU3rMHyWHzeEJBReWLzHko728hbz6MtfNg",
+   "admin()": "TU3rMHyWHzeEJBReWLzHko728hbz6MtfNg"
+  },
+  {
+   "contrato": "TRYeDrXweRdBorzH9XE8KWMq3TinW4fmjd",
+   "nombre": "TokenCreator",
+   "creado": "2025-01-24T07:53:21Z",
+   "llamadas_24h": 1,
+   "owner()": "TU3rMHyWHzeEJBReWLzHko728hbz6MtfNg",
+   "operator()": "TPh1hzUCZ7vGk4sELFLfFKKKoBKUvB931C"
+  },
+  {
+   "contrato": "TJW8L56KJgA9JLM5pWSMQT6jWN9omc7KfV",
+   "nombre": "LaunchPad",
+   "creado": "2025-02-21T09:43:39Z",
+   "llamadas_24h": 0,
+   "owner()": "(cero)",
+   "implementation()": "(cero)",
+   "operator()": "(cero)"
+  },
+  {
+   "contrato": "TEPcBKJB7N6rF9xKQKPVeSrscsRTfsVFVi",
+   "nombre": "LaunchPadProxy",
+   "creado": "2025-02-21T09:46:39Z",
+   "llamadas_24h": 0,
+   "owner()": "TU3rMHyWHzeEJBReWLzHko728hbz6MtfNg",
+   "implementation()": "TJW8L56KJgA9JLM5pWSMQT6jWN9omc7KfV",
+   "operator()": "TXdNiR1AcSDCNh1hQJX8e9raD9FxxcBDix"
+  },
+  {
+   "contrato": "TVjuTE3V5bMVdpfNhid8kD2v35T2k1u1Br",
+   "nombre": "PoolManager",
+   "creado": "2025-12-28T02:23:06Z",
+   "llamadas_24h": 0,
+   "owner()": "TLntW9Z59LYY5KEi9cmwk3PKjQga828ird",
+   "paused()": "no"
+  },
+  {
+   "contrato": "TEays9UfJn2EqKjkN7hWUWewBGpGxTzWEv",
+   "nombre": "ProtocolFeeController",
+   "creado": "2025-12-28T02:30:06Z",
+   "llamadas_24h": 0,
+   "owner()": "TLntW9Z59LYY5KEi9cmwk3PKjQga828ird"
+  },
+  {
+   "contrato": "TTJxU3P8rHycAyFY4kVtGNfmnMH4ezcuM9",
+   "nombre": "Permit2",
+   "creado": "2025-12-28T02:48:48Z",
+   "llamadas_24h": 889
+  },
+  {
+   "contrato": "TGpNVNHq3cZ3xX859UppBgHMVDPevVx6zv",
+   "nombre": "Permit2Helper",
+   "creado": "2025-12-28T02:50:51Z",
+   "llamadas_24h": 0
+  },
+  {
+   "contrato": "TVx4x5TBTD5tq8Qz8ssF4jMsFu5c65i3Br",
+   "nombre": "CLPositionDescriptorOffChain",
+   "creado": "2025-12-28T03:21:21Z",
+   "llamadas_24h": 0,
+   "owner()": "TLntW9Z59LYY5KEi9cmwk3PKjQga828ird"
+  },
+  {
+   "contrato": "TC8xQzPHfn5KceZV6s6GmZkBCFWWUoPXs1",
+   "nombre": "CLPositionManager",
+   "creado": "2025-12-28T03:23:54Z",
+   "llamadas_24h": 9
+  },
+  {
+   "contrato": "TSupQTJWWoVpUqA7KGVYb8dB97n3civwiJ",
+   "nombre": "CLQuoter",
+   "creado": "2025-12-28T03:27:24Z",
+   "llamadas_24h": 0
+  },
+  {
+   "contrato": "TTuDCMoRaAKGL4V1gmJpmRKpDQz2ZCRQZL",
+   "nombre": "TickLens",
+   "creado": "2025-12-28T03:27:51Z",
+   "llamadas_24h": 0
+  },
+  {
+   "contrato": "TN673trKGEALTAYB6n17SBGpzPwXrDqUKp",
+   "nombre": "CLLPFeesHelper",
+   "creado": "2025-12-28T03:28:00Z",
+   "llamadas_24h": 0
+  },
+  {
+   "contrato": "TJd9Sf8YnDgYKuLZFR6puxsxQUejXGz7MH",
+   "nombre": "CLDynamicFeeHook",
+   "creado": "2025-12-28T03:46:33Z",
+   "llamadas_24h": 0,
+   "owner()": "TLntW9Z59LYY5KEi9cmwk3PKjQga828ird"
+  },
+  {
+   "contrato": "TFsBPBR6FroyLcrkWsrPht1La2rBEG9WVM",
+   "nombre": "SwapInfoManager",
+   "creado": "2025-12-28T04:03:30Z",
+   "llamadas_24h": 0,
+   "owner()": "TLntW9Z59LYY5KEi9cmwk3PKjQga828ird",
+   "operator()": "TDaLWx5kjw4vVajSjdGt4zhygQd1KEdEPT"
+  },
+  {
+   "contrato": "TL2zn49u5ntkU9FvisxLHwoE7yCW1kpRzu",
+   "nombre": "SafeVault",
+   "creado": "2025-12-28T04:16:42Z",
+   "llamadas_24h": 0,
+   "owner()": "TU3rMHyWHzeEJBReWLzHko728hbz6MtfNg"
+  },
+  {
+   "contrato": "TXxav4qyfLUVgLfxUp4xLoAUjoBEjNqgbZ",
+   "nombre": "SafeVault",
+   "creado": "2025-12-28T04:24:48Z",
+   "llamadas_24h": 0,
+   "owner()": "TLntW9Z59LYY5KEi9cmwk3PKjQga828ird"
+  },
+  {
+   "contrato": "TSJEtPuqHpvSaVnSwvCsngaeBxrGUzp95Q",
+   "nombre": "UniversalRouter",
+   "creado": "2025-12-28T04:28:57Z",
+   "llamadas_24h": 2,
+   "owner()": "TLntW9Z59LYY5KEi9cmwk3PKjQga828ird",
+   "paused()": "no"
+  },
+  {
+   "contrato": "TMmRKgwC1hx4azzkXoPzujgQThzF48Actq",
+   "nombre": "UniswapV2Router02",
+   "creado": "2025-12-28T04:41:48Z",
+   "llamadas_24h": 8
+  },
+  {
+   "contrato": "TGnC7LMji8hBpyvZt1TTEJhVpAZ5HFyJ3r",
+   "nombre": "SmartExchangeRouter",
+   "creado": "2025-12-28T04:43:33Z",
+   "llamadas_24h": 499,
+   "owner()": "TLntW9Z59LYY5KEi9cmwk3PKjQga828ird",
+   "admin()": "TDaLWx5kjw4vVajSjdGt4zhygQd1KEdEPT"
+  },
+  {
+   "contrato": "TNJVzGqKBWkJxJB5XYSqGAwUTV15U24pPq",
+   "nombre": "UniswapV2Router02",
+   "creado": "2026-01-06T11:17:33Z",
+   "llamadas_24h": 2008
+  },
+  {
+   "contrato": "TKAPSHZg8Z5fUn4ydY1nytkqjKx6EqUCqP",
+   "nombre": "Permit2Helper",
+   "creado": "2026-02-03T04:18:06Z",
+   "llamadas_24h": 0
+  },
+  {
+   "contrato": "TBc4z7389sAtM2nZRgWwHSJnHrWeUrZ3rL",
+   "nombre": "Permit2Helper",
+   "creado": "2026-02-03T04:20:18Z",
+   "llamadas_24h": 0
+  },
+  {
+   "contrato": "TWH7FMNjaLUfx5XnCzs1wybzA6jV5DXWsG",
+   "nombre": "SmartExchangeRouter",
+   "creado": "2026-02-03T04:54:00Z",
+   "llamadas_24h": 0,
+   "owner()": "TLntW9Z59LYY5KEi9cmwk3PKjQga828ird",
+   "admin()": "TDaLWx5kjw4vVajSjdGt4zhygQd1KEdEPT"
+  },
+  {
+   "contrato": "TJ8QPGPEyEVE8rumE1vr3uscbhvTdXv9sf",
+   "nombre": "SwapInfoManager",
+   "creado": "2026-02-03T11:48:09Z",
+   "llamadas_24h": 0,
+   "owner()": "TU3rMHyWHzeEJBReWLzHko728hbz6MtfNg",
+   "operator()": "TU3rMHyWHzeEJBReWLzHko728hbz6MtfNg"
+  },
+  {
+   "contrato": "TDKRCJgbrsKfxSc2SW8cCvM8c7cFPsjyXT",
+   "nombre": "PaymentPermit",
+   "creado": "2026-02-04T11:36:21Z",
+   "llamadas_24h": 0
+  },
+  {
+   "contrato": "TYWGPC53cD44MQW54tH11kNYxLW5eu5zGy",
+   "nombre": "PaymentPermit",
+   "creado": "2026-02-04T12:58:39Z",
+   "llamadas_24h": 0
+  },
+  {
+   "contrato": "TQLPR2HE3QTvFbjeUpMbEdZJGYNgz5AU3W",
+   "nombre": "SmartExchangeRouter",
+   "creado": "2026-02-09T06:08:24Z",
+   "llamadas_24h": 0,
+   "owner()": "TU3rMHyWHzeEJBReWLzHko728hbz6MtfNg",
+   "admin()": "TU3rMHyWHzeEJBReWLzHko728hbz6MtfNg"
+  },
+  {
+   "contrato": "TQqgNg13s2DjvXhW1ky4v6TsR8wZGvb7Y4",
+   "nombre": "UniversalRouter",
+   "creado": "2026-05-08T09:36:27Z",
+   "llamadas_24h": 6636,
+   "owner()": "TLntW9Z59LYY5KEi9cmwk3PKjQga828ird",
+   "paused()": "no"
+  },
+  {
+   "contrato": "TVfkpvewpDohw5Ju6Dm68Cbj2TgByhVsEL",
+   "nombre": "ReferalVault",
+   "creado": "2026-05-08T09:37:27Z",
+   "llamadas_24h": 0,
+   "owner()": "TLntW9Z59LYY5KEi9cmwk3PKjQga828ird",
+   "operator()": "TDaLWx5kjw4vVajSjdGt4zhygQd1KEdEPT"
+  }
+ ]
+}

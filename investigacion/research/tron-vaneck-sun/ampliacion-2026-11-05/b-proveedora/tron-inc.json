@@ -1,0 +1,360 @@
+{
+ "TRON_Inc": {
+  "perfil": {
+   "direccion": "TEySEZLJf6rs2mCujGpDEsgoMVWKLAk9mT",
+   "etiqueta": null,
+   "creada": "2025-06-28",
+   "n_tx_tronscan": 511,
+   "trx_libre": 2740240.85,
+   "congelado_v2": 0,
+   "delegado_a_otros": 0
+  },
+  "lectura": {
+   "filas": 511,
+   "paginas": 3,
+   "parcial": false
+  },
+  "entradas": [
+   {
+    "cuenta": "TFZZx3HXBEGqA1hJnYmRvscjS48gihWXY6",
+    "trx": 677596945,
+    "n": 2,
+    "primera": "2025-06-28",
+    "ultima": "2025-08-28",
+    "nombre": null
+   },
+   {
+    "cuenta": "TWhDfwC8QE6pQyiYy248dNor3uphPEw5M2",
+    "trx": 22247668.02,
+    "n": 148,
+    "primera": "2026-06-11",
+    "ultima": "2026-11-05",
+    "nombre": "proveedora TWhDfwC8"
+   },
+   {
+    "cuenta": "TFTWNgDBkQ5wQoP8RXpRznnHvAVV8x5jLu",
+    "trx": 20475874.99,
+    "n": 128,
+    "primera": "2026-01-23",
+    "ultima": "2026-05-29",
+    "nombre": "HTX 4"
+   },
+   {
+    "cuenta": "TYyriWzf7AW75hwiVB4oDBrJGThidZuRTd",
+    "trx": 872669.37,
+    "n": 6,
+    "primera": "2026-05-30",
+    "ultima": "2026-06-04",
+    "nombre": "TYyr (según Protos)"
+   },
+   {
+    "cuenta": "THLHKBV16Lqw5oV7iAQ5xLSJ4si7etPhxU",
+    "trx": 155647.54,
+    "n": 1,
+    "primera": "2026-06-07",
+    "ultima": "2026-06-07",
+    "nombre": null
+   },
+   {
+    "cuenta": "TXv2noQhqSZCpkUpBpv7jTzoBhgMPMf1Rj",
+    "trx": 154542.67,
+    "n": 1,
+    "primera": "2026-06-10",
+    "ultima": "2026-06-10",
+    "nombre": null
+   },
+   {
+    "cuenta": "TVJvAe1iUN3w2eopearDW2U9Q5661VwjFg",
+    "trx": 154281.27,
+    "n": 1,
+    "primera": "2026-06-06",
+    "ultima": "2026-06-06",
+    "nombre": null
+   },
+   {
+    "cuenta": "TMaTUGmXzeSGGSvLEfFxK5s18ziUFeRNxL",
+    "trx": 152820.57,
+    "n": 1,
+    "primera": "2026-06-09",
+    "ultima": "2026-06-09",
+    "nombre": null
+   },
+   {
+    "cuenta": "TNkgo1Skts7FzFKRGCFdFjX1BnrUZuMRQi",
+    "trx": 152332.73,
+    "n": 1,
+    "primera": "2026-06-08",
+    "ultima": "2026-06-08",
+    "nombre": null
+   },
+   {
+    "cuenta": "TXiwuZTYR8Q98SZiYagwuCsKvYcbiFQaqt",
+    "trx": 151344.56,
+    "n": 1,
+    "primera": "2026-06-05",
+    "ultima": "2026-06-05",
+    "nombre": null
+   },
+   {
+    "cuenta": "TG5kB9CRVaHkVoESe24C4ixq4A4fCNGj3J",
+    "trx": 4.53,
+    "n": 3,
+    "primera": "2026-05-07",
+    "ultima": "2026-05-24",
+    "nombre": null
+   },
+   {
+    "cuenta": "TFbB6Tud9AWQCkTPQF7VP3PQ1VV7QBR7p4",
+    "trx": 3.52,
+    "n": 4,
+    "primera": "2026-07-10",
+    "ultima": "2026-10-03",
+    "nombre": null
+   }
+  ],
+  "salidas": [
+   {
+    "cuenta": "TDvJnsRZEN1zXCohueQys4tZYhqprXULhS",
+    "trx": 2.63,
+    "n": 2,
+    "primera": "2025-07-22",
+    "ultima": "2026-01-08",
+    "nombre": null
+   }
+  ],
+  "total_entradas": 722114140.22,
+  "total_salidas": 2.63
+ },
+ "TYyr": {
+  "perfil": {
+   "direccion": "TYyriWzf7AW75hwiVB4oDBrJGThidZuRTd",
+   "etiqueta": null,
+   "creada": "2026-05-29",
+   "n_tx_tronscan": 120401,
+   "trx_libre": 1.5,
+   "congelado_v2": 0,
+   "delegado_a_otros": 0
+  },
+  "lectura": {
+   "filas": 12000,
+   "paginas": 60,
+   "parcial": true
+  },
+  "entradas": [
+   {
+    "cuenta": "TFTWNgDBkQ5wQoP8RXpRznnHvAVV8x5jLu",
+    "trx": 1170696.45,
+    "n": 36,
+    "primera": "2026-05-29",
+    "ultima": "2026-05-29",
+    "nombre": "HTX 4"
+   },
+   {
+    "cuenta": "TNs9FUibp8gZUgpRbTUkaRyxrHtGB3nhqC",
+    "trx": 319.67,
+    "n": 1,
+    "primera": "2026-05-29",
+    "ultima": "2026-05-29",
+    "nombre": null
+   },
+   {
+    "cuenta": "TXy1J1LT7RYh2sDDdm8mbMnCu8EDh3Wo2A",
+    "trx": 0,
+    "n": 1,
+    "primera": "2026-05-29",
+    "ultima": "2026-05-29",
+    "nombre": null
+   },
+   {
+    "cuenta": "TR9kzr7W1sFbszkcqnNdfD2nHxheThL8Hs",
+    "trx": 0,
+    "n": 1,
+    "primera": "2026-05-29",
+    "ultima": "2026-05-29",
+    "nombre": null
+   },
+   {
+    "cuenta": "TYG6uh3TLeiK6fQVjRVpeo7zePS4DuMK91",
+    "trx": 0,
+    "n": 1,
+    "primera": "2026-05-30",
+    "ultima": "2026-05-30",
+    "nombre": null
+   },
+   {
+    "cuenta": "TZ9VfHSrsmMYWDRNUvtJX7xmzk8XVyaiX1",
+    "trx": 0,
+    "n": 1,
+    "primera": "2026-05-29",
+    "ultima": "2026-05-29",
+    "nombre": null
+   },
+   {
+    "cuenta": "TGeJo3KMKoYsCkJ1yJC5AAMWYNtgcrVQ5r",
+    "trx": 0,
+    "n": 1,
+    "primera": "2026-05-29",
+    "ultima": "2026-05-29",
+    "nombre": null
+   },
+   {
+    "cuenta": "TWcDqGHaPvRoBWFzPTFCC9k7ETdefVHj47",
+    "trx": 0,
+    "n": 1,
+    "primera": "2026-05-29",
+    "ultima": "2026-05-29",
+    "nombre": null
+   },
+   {
+    "cuenta": "TPVtfu5aaqSAWh2V6gNQHPBDykFEwKH2Fm",
+    "trx": 0,
+    "n": 1,
+    "primera": "2026-05-30",
+    "ultima": "2026-05-30",
+    "nombre": null
+   },
+   {
+    "cuenta": "THUtzK4chNbKs4PLx1Mi2yPfbNwTWRN4pQ",
+    "trx": 0,
+    "n": 1,
+    "primera": "2026-05-30",
+    "ultima": "2026-05-30",
+    "nombre": null
+   },
+   {
+    "cuenta": "TY3bZvMwpFw9rkMgieiQQuWHebPKxbwiii",
+    "trx": 0,
+    "n": 1,
+    "primera": "2026-05-29",
+    "ultima": "2026-05-29",
+    "nombre": null
+   },
+   {
+    "cuenta": "TQ14GnKndDANBxj6JkPaAQW4qp9gmzwa2Y",
+    "trx": 0,
+    "n": 1,
+    "primera": "2026-05-30",
+    "ultima": "2026-05-30",
+    "nombre": null
+   }
+  ],
+  "salidas": [
+   {
+    "cuenta": "TEySEZLJf6rs2mCujGpDEsgoMVWKLAk9mT",
+    "trx": 144770.69,
+    "n": 1,
+    "primera": "2026-05-30",
+    "ultima": "2026-05-30",
+    "nombre": "TRON Inc. (según Protos)"
+   },
+   {
+    "cuenta": "TJN6mVh8abmRUcVgvbbTHUZYMZpuabyFSd",
+    "trx": 109605.81,
+    "n": 2,
+    "primera": "2026-05-29",
+    "ultima": "2026-05-29",
+    "nombre": null
+   },
+   {
+    "cuenta": "TTnLdRihxmfE1Htz84yaEjPBj9kcjfM5Xc",
+    "trx": 103586.74,
+    "n": 1,
+    "primera": "2026-05-29",
+    "ultima": "2026-05-29",
+    "nombre": null
+   },
+   {
+    "cuenta": "TUUcpLU329TMP5xdXsmBEdquwB4vwPoDZh",
+    "trx": 101905,
+    "n": 5,
+    "primera": "2026-05-29",
+    "ultima": "2026-05-29",
+    "nombre": null
+   },
+   {
+    "cuenta": "TVRStnVCYSwtzicVmruU8ZeHjtivZD48Jt",
+    "trx": 83009.39,
+    "n": 1,
+    "primera": "2026-05-29",
+    "ultima": "2026-05-29",
+    "nombre": null
+   },
+   {
+    "cuenta": "TKTAnUdPdPvLvskWMR64WmmsZTs1ykTb81",
+    "trx": 66577.63,
+    "n": 1,
+    "primera": "2026-05-29",
+    "ultima": "2026-05-29",
+    "nombre": null
+   },
+   {
+    "cuenta": "TB2t6BW5ydx39Adibzm9sEyAA5dDwHJZ34",
+    "trx": 62999,
+    "n": 1,
+    "primera": "2026-05-30",
+    "ultima": "2026-05-30",
+    "nombre": null
+   },
+   {
+    "cuenta": "TMDTrHHsbKZgaRdeW326AE3fpnX3MP8Qm4",
+    "trx": 35255.33,
+    "n": 2,
+    "primera": "2026-05-30",
+    "ultima": "2026-05-30",
+    "nombre": null
+   },
+   {
+    "cuenta": "TXto1m2VuWDtP3j2a8wqk2qUFJ984tfDba",
+    "trx": 31575,
+    "n": 2,
+    "primera": "2026-05-29",
+    "ultima": "2026-05-29",
+    "nombre": null
+   },
+   {
+    "cuenta": "TK71BKsAuvfxkH6deHqfDi8LU7M59NxsS5",
+    "trx": 20305.48,
+    "n": 1,
+    "primera": "2026-05-29",
+    "ultima": "2026-05-29",
+    "nombre": null
+   },
+   {
+    "cuenta": "THxiQo8NiPMMCK2CeXiJLEyXsV2su5HSFU",
+    "trx": 19988.02,
+    "n": 1,
+    "primera": "2026-05-29",
+    "ultima": "2026-05-29",
+    "nombre": null
+   },
+   {
+    "cuenta": "TMPiWojn6AwEdTHZaJUegJXks9GSnGHifK",
+    "trx": 16705.28,
+    "n": 1,
+    "primera": "2026-05-29",
+    "ultima": "2026-05-29",
+    "nombre": null
+   }
+  ],
+  "total_entradas": 1171016.13,
+  "total_salidas": 1038976.41
+ },
+ "HTX5": {
+  "direccion": "TK86Qm97uM848dMk8G7xNbJB7zG1uW3h1n",
+  "etiqueta": null,
+  "creada": "2023-11-25",
+  "n_tx_tronscan": 81983,
+  "trx_libre": 31797830.38,
+  "congelado_v2": 0,
+  "delegado_a_otros": 0
+ },
+ "HTX4": {
+  "direccion": "TFTWNgDBkQ5wQoP8RXpRznnHvAVV8x5jLu",
+  "etiqueta": null,
+  "creada": "2023-11-24",
+  "n_tx_tronscan": 20789371,
+  "trx_libre": 72.2,
+  "congelado_v2": 0,
+  "delegado_a_otros": 0
+ }
+}

@@ -1,0 +1,17 @@
+{
+ "estimacion": {
+  "metodo": "filas por hora medidas a las 12:00 UTC de 7 fechas, interpoladas linealmente y multiplicadas por 24; NO es un recuento",
+  "filas_tx_estimadas": 1523568,
+  "filas_trc20_estimadas": 1840620,
+  "paginas_estimadas": 16821,
+  "ms_por_pagina_medido": 162,
+  "pausa_ms": 350,
+  "horas_estimadas_lectura_completa": 2.4
+ },
+ "tolerancia": {
+  "llamadas": 30,
+  "pausa_ms": 60,
+  "reintentos_provocados": 0,
+  "ms_totales": 3454
+ }
+}

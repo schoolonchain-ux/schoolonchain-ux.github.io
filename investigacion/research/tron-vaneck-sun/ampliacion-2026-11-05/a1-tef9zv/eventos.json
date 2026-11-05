@@ -1,0 +1,4847 @@
+[
+ {
+  "tx": "64c2b5849a644e6be84183d11767a54d7763125bbfd7c3291b9ebdc437f8e94e",
+  "t": 1761818727000,
+  "ok": true,
+  "tipo": "Transfer",
+  "de": "TFTWNgDBkQ5wQoP8RXpRznnHvAVV8x5jLu",
+  "a": "TEF9ZVUxhmGGffvkf59e2vdLfAG1QCMb7B",
+  "trx": 999
+ },
+ {
+  "tx": "8e51e82408fd90aeec25df273ddfb1a53f3af6f8e0ba7a8bd5bbfaf7f5390178",
+  "t": 1761818730000,
+  "ok": true,
+  "tipo": "Transfer",
+  "de": "TCfv2fSe9TPDNpzE4nRQqbJCa3VM5sUXgX",
+  "a": "TEF9ZVUxhmGGffvkf59e2vdLfAG1QCMb7B",
+  "trx": 0.000001
+ },
+ {
+  "tx": "ab4519ac745a0b957bae3c9b51311a9d5531700065670645008c2e101b70f4ac",
+  "t": 1761818982000,
+  "ok": true,
+  "tipo": "AccountPermissionUpdate",
+  "de": "TEF9ZVUxhmGGffvkf59e2vdLfAG1QCMb7B",
+  "permisos": {
+   "propietario": {
+    "keys": [
+     {
+      "address": "412ee4494988b2b42459d65d653e7dbd237cbf9481",
+      "weight": 1
+     }
+    ],
+    "threshold": 1,
+    "permission_name": "owner"
+   },
+   "activos": [
+    {
+     "operations": "7fff1fc0033ec30f000000000000000000000000000000000000000000000000",
+     "keys": [
+      {
+       "address": "412ee4494988b2b42459d65d653e7dbd237cbf9481",
+       "weight": 1
+      }
+     ],
+     "threshold": 1,
+     "id": 2,
+     "type": "Active",
+     "permission_name": "active"
+    },
+    {
+     "operations": "100000000000c00f000000000000000000000000000000000000000000000000",
+     "keys": [
+      {
+       "address": "410130588befbb1a332bad9751940fb9d82b0a838a",
+       "weight": 1
+      },
+      {
+       "address": "41d632ce5b8f831fdec2770c7b8206035875b5b440",
+       "weight": 1
+      },
+      {
+       "address": "413528460a222f86e2627a48c254b0c16aa59217ff",
+       "weight": 2
+      },
+      {
+       "address": "41c5cc5facf121c7dd316e8e96f32ec1817509d738",
+       "weight": 2
+      }
+     ],
+     "threshold": 3,
+     "type": "Active",
+     "permission_name": "Resource Delegation I"
+    }
+   ]
+  }
+ },
+ {
+  "tx": "43587fe963477ccf92c66449908a39e2930ba2a591a9ee38e63599e2ae800437",
+  "t": 1761819918000,
+  "ok": true,
+  "tipo": "FreezeBalanceV2",
+  "de": "TEF9ZVUxhmGGffvkf59e2vdLfAG1QCMb7B",
+  "trx": 100,
+  "recurso": "BANDWIDTH"
+ },
+ {
+  "tx": "d87f2260270980b2c460e13064c8517ac0d95b167d9e7134f826e0dbd8941e02",
+  "t": 1761820026000,
+  "ok": true,
+  "tipo": "FreezeBalanceV2",
+  "de": "TEF9ZVUxhmGGffvkf59e2vdLfAG1QCMb7B",
+  "trx": 200,
+  "recurso": "ENERGY"
+ },
+ {
+  "tx": "ceccd2e1ef9bf7f2174b952db9b52fb9e0d9cadfb400d5ec8b6faefda501d417",
+  "t": 1761820125000,
+  "ok": true,
+  "tipo": "UnfreezeBalanceV2",
+  "de": "TEF9ZVUxhmGGffvkf59e2vdLfAG1QCMb7B",
+  "trx": 50,
+  "recurso": "BANDWIDTH"
+ },
+ {
+  "tx": "7f77ede8040b8bb7d008d08db039aa29636caae1850462a76a4b6e7cb4c277e7",
+  "t": 1761820227000,
+  "ok": true,
+  "tipo": "CancelAllUnfreezeV2",
+  "de": "TEF9ZVUxhmGGffvkf59e2vdLfAG1QCMb7B",
+  "valor": {
+   "owner_address": "412ee4494988b2b42459d65d653e7dbd237cbf9481"
+  }
+ },
+ {
+  "tx": "55d91dcf218060dd6a72f25abb0e05abbc78ee40f2eec04279947365bea39260",
+  "t": 1761821202000,
+  "ok": true,
+  "tipo": "Transfer",
+  "de": "TFTWNgDBkQ5wQoP8RXpRznnHvAVV8x5jLu",
+  "a": "TEF9ZVUxhmGGffvkf59e2vdLfAG1QCMb7B",
+  "trx": 49999999
+ },
+ {
+  "tx": "cbdc04b28806ad77e929dd350d15d3c5e8f07a10bbf92a75cfdb3f2f7923419f",
+  "t": 1761821316000,
+  "ok": true,
+  "tipo": "Transfer",
+  "de": "TFTWNgDBkQ5wQoP8RXpRznnHvAVV8x5jLu",
+  "a": "TEF9ZVUxhmGGffvkf59e2vdLfAG1QCMb7B",
+  "trx": 49999999
+ },
+ {
+  "tx": "3f912aa9e3248ae3990363289ab4c22aa7e3a82bc2e4cae96a8f39115ccbb52e",
+  "t": 1761910509000,
+  "ok": true,
+  "tipo": "FreezeBalanceV2",
+  "de": "TEF9ZVUxhmGGffvkf59e2vdLfAG1QCMb7B",
+  "trx": 2000000,
+  "recurso": "BANDWIDTH"
+ },
+ {
+  "tx": "98315257396dbae0d9df814ccfcc03c4019c08b2f15ab772d19e8d27abc43c46",
+  "t": 1761910548000,
+  "ok": true,
+  "tipo": "FreezeBalanceV2",
+  "de": "TEF9ZVUxhmGGffvkf59e2vdLfAG1QCMb7B",
+  "trx": 90000000,
+  "recurso": "ENERGY"
+ },
+ {
+  "tx": "5418c1e2fe5d869932de385964974f8b6e2fe14887f0c1e634607fd2c82bbb2c",
+  "t": 1761913917000,
+  "ok": true,
+  "tipo": "VoteWitness",
+  "de": "TEF9ZVUxhmGGffvkf59e2vdLfAG1QCMb7B",
+  "votos": [
+   {
+    "para": "TJvaAeFb8Lykt9RQcVyyTFN2iDvGMuyD4M",
+    "n": 92000300
+   }
+  ]
+ },
+ {
+  "tx": "90baa4e93ccf1a637a5b784c3de7341b6aca6b2d5a168649e11f1ea661486d8a",
+  "t": 1761986415000,
+  "ok": true,
+  "tipo": "DelegateResource",
+  "de": "TEF9ZVUxhmGGffvkf59e2vdLfAG1QCMb7B",
+  "a": "TZHPiv9dNUZ9s8XLn5ihVvYc8GHFbwEAeM",
+  "trx": 6200000,
+  "recurso": "ENERGY",
+  "bloqueo": false
+ },
+ {
+  "tx": "cc8ee64c94ceb36dd77f68ab01e94d5bce7267dae74fb3ab7369bac218877a8a",
+  "t": 1761986466000,
+  "ok": true,
+  "tipo": "DelegateResource",
+  "de": "TEF9ZVUxhmGGffvkf59e2vdLfAG1QCMb7B",
+  "a": "TZC3x1ESpWU3K1kmGXM3zvZnkZGvv8oRWk",
+  "trx": 40000,
+  "recurso": "BANDWIDTH",
+  "bloqueo": false
+ },
+ {
+  "tx": "f9700ad7bc0f53be403b08a3b1f33c65f14952f75a526d0516340f0b611a6b70",
+  "t": 1761986487000,
+  "ok": true,
+  "tipo": "DelegateResource",
+  "de": "TEF9ZVUxhmGGffvkf59e2vdLfAG1QCMb7B",
+  "a": "TZC3x1ESpWU3K1kmGXM3zvZnkZGvv8oRWk",
+  "trx": 200000,
+  "recurso": "ENERGY",
+  "bloqueo": false
+ },
+ {
+  "tx": "be30da50de9fa042e93e3ec8f08b7a388aa6fd433199558f36631354d10193f6",
+  "t": 1761986508000,
+  "ok": true,
+  "tipo": "DelegateResource",
+  "de": "TEF9ZVUxhmGGffvkf59e2vdLfAG1QCMb7B",
+  "a": "TLoVbjSXcySQxPZ1743Ao3cHZJMuHUD2VT",
+  "trx": 52000,
+  "recurso": "BANDWIDTH",
+  "bloqueo": false
+ },
+ {
+  "tx": "127a3ee38fe3f219e6526881223d400565936345a5581d6dc446eacf66f1f6da",
+  "t": 1761986559000,
+  "ok": true,
+  "tipo": "DelegateResource",
+  "de": "TEF9ZVUxhmGGffvkf59e2vdLfAG1QCMb7B",
+  "a": "TLoVbjSXcySQxPZ1743Ao3cHZJMuHUD2VT",
+  "trx": 250000,
+  "recurso": "ENERGY",
+  "bloqueo": false
+ },
+ {
+  "tx": "23bea87e2b353fe5f12723b195a6be40ecd9b4e4ccb061377b7258a6ac6a1b8f",
+  "t": 1761986592000,
+  "ok": true,
+  "tipo": "DelegateResource",
+  "de": "TEF9ZVUxhmGGffvkf59e2vdLfAG1QCMb7B",
+  "a": "TBWgTyJc9PxDobmL9Ps2m6SLVLEG4UWqRZ",
+  "trx": 52000,
+  "recurso": "BANDWIDTH",
+  "bloqueo": false
+ },
+ {
+  "tx": "90e8ddb4a17b8c0c67572338770a7aea6965a69f03bbea6cba05ebc5d18871a6",
+  "t": 1761986616000,
+  "ok": true,
+  "tipo": "DelegateResource",
+  "de": "TEF9ZVUxhmGGffvkf59e2vdLfAG1QCMb7B",
+  "a": "TBWgTyJc9PxDobmL9Ps2m6SLVLEG4UWqRZ",
+  "trx": 200000,
+  "recurso": "ENERGY",
+  "bloqueo": false
+ },
+ {
+  "tx": "6e8037a5567afcfc1a2c5f93ce5f7f6b1f053acc6d429906af4bc37e01487f92",
+  "t": 1761986676000,
+  "ok": true,
+  "tipo": "DelegateResource",
+  "de": "TEF9ZVUxhmGGffvkf59e2vdLfAG1QCMb7B",
+  "a": "TXHDjs83UhE2MeSfy3TGMobdzR1KEFPySR",
+  "trx": 5200000,
+  "recurso": "ENERGY",
+  "bloqueo": false
+ },
+ {
+  "tx": "906673367352f547f04b1cf413d4a7be1796db269c5e69c2e5b8aafd2510d2d4",
+  "t": 1761986703000,
+  "ok": true,
+  "tipo": "DelegateResource",
+  "de": "TEF9ZVUxhmGGffvkf59e2vdLfAG1QCMb7B",
+  "a": "TFaMigvo5HoESfDjFvyzdGnhdEkdMSwdfV",
+  "trx": 100000,
+  "recurso": "ENERGY",
+  "bloqueo": false
+ },
+ {
+  "tx": "ceee8b84969b4d5f49eefbb0bd6fb9c7285cb7307b397df91d1812cf3c46818d",
+  "t": 1761986727000,
+  "ok": true,
+  "tipo": "DelegateResource",
+  "de": "TEF9ZVUxhmGGffvkf59e2vdLfAG1QCMb7B",
+  "a": "TXoLvJHgffFipMGn1RdREejRKtTcAVpQRv",
+  "trx": 5000,
+  "recurso": "BANDWIDTH",
+  "bloqueo": false
+ },
+ {
+  "tx": "473c566bcff85179409564b50d20322cc3b15c398ab4f21ea0602a540ef909f1",
+  "t": 1761986751000,
+  "ok": true,
+  "tipo": "DelegateResource",
+  "de": "TEF9ZVUxhmGGffvkf59e2vdLfAG1QCMb7B",
+  "a": "TXoLvJHgffFipMGn1RdREejRKtTcAVpQRv",
+  "trx": 200000,
+  "recurso": "ENERGY",
+  "bloqueo": false
+ },
+ {
+  "tx": "d109fc53310037580ed01c2e9c3c181d07844838f6f6f2fde422d22c4b2acecc",
+  "t": 1762172001000,
+  "ok": true,
+  "tipo": "DelegateResource",
+  "de": "TEF9ZVUxhmGGffvkf59e2vdLfAG1QCMb7B",
+  "a": "TTPr6LHna8ZFn1zS1CgDrhStscEByjnKFD",
+  "trx": 30000000,
+  "recurso": "ENERGY",
+  "bloqueo": false
+ },
+ {
+  "tx": "097a12c823f1590c36d154b6defda7a2923385e43fb9ce6eba7c9c415c4990bc",
+  "t": 1762851777000,
+  "ok": true,
+  "tipo": "DelegateResource",
+  "de": "TEF9ZVUxhmGGffvkf59e2vdLfAG1QCMb7B",
+  "a": "TYASr5UV6HEcXatwdFQfmLVUqQQQMUxHLS",
+  "trx": 21330000,
+  "recurso": "ENERGY",
+  "bloqueo": false
+ },
+ {
+  "tx": "cc3b06c655a826a44031987547a4085ace0964478dd0fb106b3e3e70bf7bdd6e",
+  "t": 1762851837000,
+  "ok": true,
+  "tipo": "DelegateResource",
+  "de": "TEF9ZVUxhmGGffvkf59e2vdLfAG1QCMb7B",
+  "a": "TCLgK89AnXbC9rewvhNb9UgXCc2qJJpBXh",
+  "trx": 13650000,
+  "recurso": "ENERGY",
+  "bloqueo": false
+ },
+ {
+  "tx": "100c43966ef28ee0208b7a81b7a7648e94b0f9206375b410edc0a03f71606c03",
+  "t": 1762851951000,
+  "ok": true,
+  "tipo": "DelegateResource",
+  "de": "TEF9ZVUxhmGGffvkf59e2vdLfAG1QCMb7B",
+  "a": "TJDENsfBJs4RFETt1X1W8wMDc8M5XnJhCe",
+  "trx": 4030000,
+  "recurso": "ENERGY",
+  "bloqueo": false
+ },
+ {
+  "tx": "8ce6487b70c3e271e1c3e325a2952ceecb0de2962cf3dfc396b414b23d09b158",
+  "t": 1762851981000,
+  "ok": true,
+  "tipo": "DelegateResource",
+  "de": "TEF9ZVUxhmGGffvkf59e2vdLfAG1QCMb7B",
+  "a": "TJqwA7SoZnERE4zW5uDEiPkbz4B66h9TFj",
+  "trx": 5030000,
+  "recurso": "ENERGY",
+  "bloqueo": false
+ },
+ {
+  "tx": "d86d5dff9f15a204ec0877c1d0227c02810f19148985f0387bfb6d134f57c4fc",
+  "t": 1762964403000,
+  "ok": true,
+  "tipo": "Transfer",
+  "de": "TFTWNgDBkQ5wQoP8RXpRznnHvAVV8x5jLu",
+  "a": "TEF9ZVUxhmGGffvkf59e2vdLfAG1QCMb7B",
+  "trx": 63999999
+ },
+ {
+  "tx": "200e7b2e27dbb954155e2d541766577ccaa6ff61a553ee4939385fd067a5a77d",
+  "t": 1762964406000,
+  "ok": true,
+  "tipo": "Transfer",
+  "de": "TPRfruA4kp94KP7Kv8FJ4De16DjcGFWEva",
+  "a": "TEF9ZVUxhmGGffvkf59e2vdLfAG1QCMb7B",
+  "trx": 0.000001
+ },
+ {
+  "tx": "d6f31a7162715fd5a62613fe98fa19c596dc386bbbeb0f3d6a44d94d70608093",
+  "t": 1763001807000,
+  "ok": true,
+  "tipo": "FreezeBalanceV2",
+  "de": "TEF9ZVUxhmGGffvkf59e2vdLfAG1QCMb7B",
+  "trx": 70000000,
+  "recurso": "ENERGY"
+ },
+ {
+  "tx": "5af9673051b4b69660cd0600df2fd37376976e8b1ef7c3a42776ec4038e08888",
+  "t": 1763004807000,
+  "ok": true,
+  "tipo": "VoteWitness",
+  "de": "TEF9ZVUxhmGGffvkf59e2vdLfAG1QCMb7B",
+  "votos": [
+   {
+    "para": "TJvaAeFb8Lykt9RQcVyyTFN2iDvGMuyD4M",
+    "n": 162000300
+   }
+  ]
+ },
+ {
+  "tx": "7c3d59c3110252baa590c5ae313a189b7fbc465c95d248ea3e1486adbc2b686f",
+  "t": 1763006775000,
+  "ok": true,
+  "tipo": "DelegateResource",
+  "de": "TEF9ZVUxhmGGffvkf59e2vdLfAG1QCMb7B",
+  "a": "TJ5usJLLwjwn7Pw3TPbdzreG7dvgKzfQ5y",
+  "trx": 2060000,
+  "recurso": "ENERGY",
+  "bloqueo": false
+ },
+ {
+  "tx": "88061c153027f59580cafcf65bb5a7afbee19dfb22a6c6d4d6d7781fa4cf5115",
+  "t": 1763018604000,
+  "ok": true,
+  "tipo": "DelegateResource",
+  "de": "TEF9ZVUxhmGGffvkf59e2vdLfAG1QCMb7B",
+  "a": "TXFBqBbqJommqZf7BV8NNYzePh97UmJodJ",
+  "trx": 2700000,
+  "recurso": "ENERGY",
+  "bloqueo": false
+ },
+ {
+  "tx": "9ca895cea26079aa74f9cc60c9f9b79e06c678a1dd783ca987b8239ac5f2e276",
+  "t": 1763018658000,
+  "ok": true,
+  "tipo": "DelegateResource",
+  "de": "TEF9ZVUxhmGGffvkf59e2vdLfAG1QCMb7B",
+  "a": "TRHQmybCizoiMCA3ev4pNTb5PLJmgpSztQ",
+  "trx": 520000,
+  "recurso": "ENERGY",
+  "bloqueo": false
+ },
+ {
+  "tx": "da17002efd014f75a6fc7209f09fbb206d1f9a7ce0d85a4814ac75c9fd11aec3",
+  "t": 1763018706000,
+  "ok": true,
+  "tipo": "DelegateResource",
+  "de": "TEF9ZVUxhmGGffvkf59e2vdLfAG1QCMb7B",
+  "a": "TK4ykR48cQQoyFcZ5N4xZCbsBaHcg6n3gJ",
+  "trx": 13390000,
+  "recurso": "ENERGY",
+  "bloqueo": false
+ },
+ {
+  "tx": "ce297ea6d7eccd259d57d1ca1055030ec312bd115617178b3854b19421af9d9f",
+  "t": 1763018727000,
+  "ok": true,
+  "tipo": "DelegateResource",
+  "de": "TEF9ZVUxhmGGffvkf59e2vdLfAG1QCMb7B",
+  "a": "TUwQkNyMSpzCaUFGAinfWCxPPBLAauteqZ",
+  "trx": 1530000,
+  "recurso": "ENERGY",
+  "bloqueo": false
+ },
+ {
+  "tx": "9e878480c7904381a292f743685013d4b31e381d199d25b043d3001d835d9c29",
+  "t": 1763024064000,
+  "ok": true,
+  "tipo": "DelegateResource",
+  "de": "TEF9ZVUxhmGGffvkf59e2vdLfAG1QCMb7B",
+  "a": "TTWeTSTP2oYzYHe3eibY1KnuYpGCE9VpKr",
+  "trx": 386000,
+  "recurso": "ENERGY",
+  "bloqueo": false
+ },
+ {
+  "tx": "09087060e702820cf1ae87082cf8c762cdfbe6d6b8b3d450f10b2dfcff9f6128",
+  "t": 1763024088000,
+  "ok": true,
+  "tipo": "DelegateResource",
+  "de": "TEF9ZVUxhmGGffvkf59e2vdLfAG1QCMb7B",
+  "a": "TTWeTSTP2oYzYHe3eibY1KnuYpGCE9VpKr",
+  "trx": 68000,
+  "recurso": "BANDWIDTH",
+  "bloqueo": false
+ },
+ {
+  "tx": "97dc59c39652503ae6056410f53c6575c6e7036ac84846639f9d291479608dcc",
+  "t": 1763024121000,
+  "ok": true,
+  "tipo": "DelegateResource",
+  "de": "TEF9ZVUxhmGGffvkf59e2vdLfAG1QCMb7B",
+  "a": "TT87GRkF31ABhXjkmPc4KRLaePMjgcHA5Z",
+  "trx": 672000,
+  "recurso": "ENERGY",
+  "bloqueo": false
+ },
+ {
+  "tx": "428fe53c01958e2fd2f8715ed6520f6abea0e30d4baf84b6a183314193774a40",
+  "t": 1763024142000,
+  "ok": true,
+  "tipo": "DelegateResource",
+  "de": "TEF9ZVUxhmGGffvkf59e2vdLfAG1QCMb7B",
+  "a": "TT87GRkF31ABhXjkmPc4KRLaePMjgcHA5Z",
+  "trx": 68000,
+  "recurso": "BANDWIDTH",
+  "bloqueo": false
+ },
+ {
+  "tx": "340f32cf0c9d178333688477d7e14ac52c728f049126d715a7a25b4b8fce7173",
+  "t": 1763024166000,
+  "ok": true,
+  "tipo": "DelegateResource",
+  "de": "TEF9ZVUxhmGGffvkf59e2vdLfAG1QCMb7B",
+  "a": "TGUTXF9ZeEZtYBzEsodfjk6UsfWSbzsWfF",
+  "trx": 672000,
+  "recurso": "ENERGY",
+  "bloqueo": false
+ },
+ {
+  "tx": "a964e02da824b0dfee1fa7793d9b33194f06638c710580ceae7ec0027a1e1972",
+  "t": 1763024190000,
+  "ok": true,
+  "tipo": "DelegateResource",
+  "de": "TEF9ZVUxhmGGffvkf59e2vdLfAG1QCMb7B",
+  "a": "TGUTXF9ZeEZtYBzEsodfjk6UsfWSbzsWfF",
+  "trx": 68000,
+  "recurso": "BANDWIDTH",
+  "bloqueo": false
+ },
+ {
+  "tx": "4ef187cc15152cacef095f9d46c3276f557e1203216936ab8870a166250d951a",
+  "t": 1763024553000,
+  "ok": true,
+  "tipo": "DelegateResource",
+  "de": "TEF9ZVUxhmGGffvkf59e2vdLfAG1QCMb7B",
+  "a": "TSWstUyvEqJvryHbbkwPxQNuyhfuGdmRpv",
+  "trx": 459000,
+  "recurso": "ENERGY",
+  "bloqueo": false
+ },
+ {
+  "tx": "7023292782b774d4cca228d17af0c20c7f253f2d35dc58e43c9372d726c8d07b",
+  "t": 1763024577000,
+  "ok": true,
+  "tipo": "DelegateResource",
+  "de": "TEF9ZVUxhmGGffvkf59e2vdLfAG1QCMb7B",
+  "a": "TSWstUyvEqJvryHbbkwPxQNuyhfuGdmRpv",
+  "trx": 68000,
+  "recurso": "BANDWIDTH",
+  "bloqueo": false
+ },
+ {
+  "tx": "8ad7d7a4e66245ce4ebd30fd0fb688db4dcdea78a72f41d50225163c1b2ad571",
+  "t": 1763025102000,
+  "ok": true,
+  "tipo": "DelegateResource",
+  "de": "TEF9ZVUxhmGGffvkf59e2vdLfAG1QCMb7B",
+  "a": "TE4Vvqgp2iJgQTNQ1LAp5i5pYU8TJd7Wit",
+  "trx": 941000,
+  "recurso": "ENERGY",
+  "bloqueo": false
+ },
+ {
+  "tx": "f972ff18af975d3e2fe8b694ae37515a3a91ce546437d0364ccd36d1dba340ed",
+  "t": 1763025123000,
+  "ok": true,
+  "tipo": "DelegateResource",
+  "de": "TEF9ZVUxhmGGffvkf59e2vdLfAG1QCMb7B",
+  "a": "TE4Vvqgp2iJgQTNQ1LAp5i5pYU8TJd7Wit",
+  "trx": 68000,
+  "recurso": "BANDWIDTH",
+  "bloqueo": false
+ },
+ {
+  "tx": "b3267cecd8f8b4a8af4996d326b7b51d67bb9ce4257328a3051d7a2cfb03809b",
+  "t": 1763025147000,
+  "ok": true,
+  "tipo": "DelegateResource",
+  "de": "TEF9ZVUxhmGGffvkf59e2vdLfAG1QCMb7B",
+  "a": "TBHZ4bTzekUXnqGRVhDunnf1HgKxHMwxqk",
+  "trx": 941000,
+  "recurso": "ENERGY",
+  "bloqueo": false
+ },
+ {
+  "tx": "3189f3e1aeea2069e009b43eef8dd2974a9323b03e9051365b421546ff509005",
+  "t": 1763025168000,
+  "ok": true,
+  "tipo": "DelegateResource",
+  "de": "TEF9ZVUxhmGGffvkf59e2vdLfAG1QCMb7B",
+  "a": "TBHZ4bTzekUXnqGRVhDunnf1HgKxHMwxqk",
+  "trx": 68000,
+  "recurso": "BANDWIDTH",
+  "bloqueo": false
+ },
+ {
+  "tx": "8a866c45ae4870f970bbf8fb82c6720a7b5c32bb85dc59964d655da53584a4b1",
+  "t": 1763025192000,
+  "ok": true,
+  "tipo": "DelegateResource",
+  "de": "TEF9ZVUxhmGGffvkf59e2vdLfAG1QCMb7B",
+  "a": "TVDZxLYTRXxJxLD1woGrA9u5PQPv3Ciyva",
+  "trx": 941000,
+  "recurso": "ENERGY",
+  "bloqueo": false
+ },
+ {
+  "tx": "7806e9a97a39b50b54b2901010d2296c837b9d0e642254106ff927ceb0461c4f",
+  "t": 1763025213000,
+  "ok": true,
+  "tipo": "DelegateResource",
+  "de": "TEF9ZVUxhmGGffvkf59e2vdLfAG1QCMb7B",
+  "a": "TVDZxLYTRXxJxLD1woGrA9u5PQPv3Ciyva",
+  "trx": 68000,
+  "recurso": "BANDWIDTH",
+  "bloqueo": false
+ },
+ {
+  "tx": "a4e69bb80ee52b5e61fc0d7548c2775270e24b83b2a4f2adff1f152599a89e4d",
+  "t": 1763026263000,
+  "ok": true,
+  "tipo": "DelegateResource",
+  "de": "TEF9ZVUxhmGGffvkf59e2vdLfAG1QCMb7B",
+  "a": "TBwSyiL9tJMbSJX5JGyRDMVMNqmRy6dc41",
+  "trx": 941000,
+  "recurso": "ENERGY",
+  "bloqueo": false
+ },
+ {
+  "tx": "8386430b07ed34cc6de8c10c5fafeb34a0beef05251a74fa74854788fd05d290",
+  "t": 1763026284000,
+  "ok": true,
+  "tipo": "DelegateResource",
+  "de": "TEF9ZVUxhmGGffvkf59e2vdLfAG1QCMb7B",
+  "a": "TBwSyiL9tJMbSJX5JGyRDMVMNqmRy6dc41",
+  "trx": 68000,
+  "recurso": "BANDWIDTH",
+  "bloqueo": false
+ },
+ {
+  "tx": "ddc10d9ca923109723783c042f6b99ee2e49e0e5e165d108016bfd4cc20e1832",
+  "t": 1763026305000,
+  "ok": true,
+  "tipo": "DelegateResource",
+  "de": "TEF9ZVUxhmGGffvkf59e2vdLfAG1QCMb7B",
+  "a": "TBty5mgmutx1qhVWasaeEnYHJu9cWeVnyx",
+  "trx": 941000,
+  "recurso": "ENERGY",
+  "bloqueo": false
+ },
+ {
+  "tx": "36a157c732d0cb0825267dd032262a5bf08fde4efb76a82e06deb99200af7c1e",
+  "t": 1763026326000,
+  "ok": true,
+  "tipo": "DelegateResource",
+  "de": "TEF9ZVUxhmGGffvkf59e2vdLfAG1QCMb7B",
+  "a": "TBty5mgmutx1qhVWasaeEnYHJu9cWeVnyx",
+  "trx": 68000,
+  "recurso": "BANDWIDTH",
+  "bloqueo": false
+ },
+ {
+  "tx": "917b5dea1e33d0b0343e63f9d136eda8f5257d708dc6c542d22e249bb684ed62",
+  "t": 1763026347000,
+  "ok": true,
+  "tipo": "DelegateResource",
+  "de": "TEF9ZVUxhmGGffvkf59e2vdLfAG1QCMb7B",
+  "a": "TCeu4bnLX1Jhy5EgSPQMUrhHEgLjqg6SDR",
+  "trx": 538000,
+  "recurso": "ENERGY",
+  "bloqueo": false
+ },
+ {
+  "tx": "726d40a74613c023e162572060f5671ebe6d690e844577368ab5a8a9af26118f",
+  "t": 1763026383000,
+  "ok": true,
+  "tipo": "DelegateResource",
+  "de": "TEF9ZVUxhmGGffvkf59e2vdLfAG1QCMb7B",
+  "a": "TCeu4bnLX1Jhy5EgSPQMUrhHEgLjqg6SDR",
+  "trx": 68000,
+  "recurso": "BANDWIDTH",
+  "bloqueo": false
+ },
+ {
+  "tx": "5d50b3b6c2aa9e3042eae50f69416cdd831d9f24365778c4183a4d20d69b5de6",
+  "t": 1763291472000,
+  "ok": true,
+  "tipo": "DelegateResource",
+  "de": "TEF9ZVUxhmGGffvkf59e2vdLfAG1QCMb7B",
+  "a": "TAh9BWQoqhHpg9aMDdQeS9QXy1h8NMLUhN",
+  "trx": 63000,
+  "recurso": "ENERGY",
+  "bloqueo": false
+ },
+ {
+  "tx": "4fd7adb759ea1974eefcc2524925027654d3bbf6e659229c5cdc80e4880b7d15",
+  "t": 1763291520000,
+  "ok": true,
+  "tipo": "DelegateResource",
+  "de": "TEF9ZVUxhmGGffvkf59e2vdLfAG1QCMb7B",
+  "a": "TMjcbmRqfwY2WM8h4uNGAkzwgJdDJoxC8R",
+  "trx": 63000,
+  "recurso": "ENERGY",
+  "bloqueo": false
+ },
+ {
+  "tx": "676a6bda97cf0beb6098350ebd71709b9918b83614cd249151faf4047489dd01",
+  "t": 1763291574000,
+  "ok": true,
+  "tipo": "DelegateResource",
+  "de": "TEF9ZVUxhmGGffvkf59e2vdLfAG1QCMb7B",
+  "a": "TKU6Xypkwkz7Dwh92YU5fWW9BaYHA8LWTs",
+  "trx": 63000,
+  "recurso": "ENERGY",
+  "bloqueo": false
+ },
+ {
+  "tx": "c2caeadc622800763884987ba9cb06926dfa7b787855ca1ff84fa260aaf8027b",
+  "t": 1763291604000,
+  "ok": true,
+  "tipo": "DelegateResource",
+  "de": "TEF9ZVUxhmGGffvkf59e2vdLfAG1QCMb7B",
+  "a": "TGxk9DTiXaw5drN4d7CEYHUCW4ND82Hdup",
+  "trx": 63000,
+  "recurso": "ENERGY",
+  "bloqueo": false
+ },
+ {
+  "tx": "31757c9c6aefd27670fe3400f2d963bd9bed2f848692c06b0984100b43059e94",
+  "t": 1763291646000,
+  "ok": true,
+  "tipo": "DelegateResource",
+  "de": "TEF9ZVUxhmGGffvkf59e2vdLfAG1QCMb7B",
+  "a": "TKRteU689HDNfpfdpt4Me6Gx3rkFwMNYvM",
+  "trx": 63000,
+  "recurso": "ENERGY",
+  "bloqueo": false
+ },
+ {
+  "tx": "4fbc90afd93ef0011f54d9aff2336af3522c2466c08f415cfaecbea1af5f2125",
+  "t": 1763291706000,
+  "ok": true,
+  "tipo": "DelegateResource",
+  "de": "TEF9ZVUxhmGGffvkf59e2vdLfAG1QCMb7B",
+  "a": "TVmPEzoHsyjbKgjH9bkxRdKHtevkXs9eCg",
+  "trx": 63000,
+  "recurso": "ENERGY",
+  "bloqueo": false
+ },
+ {
+  "tx": "f933d415054cba45fd82613b2f1d9abeca71f9b905e6ceff0dfde889e305c5f9",
+  "t": 1763291733000,
+  "ok": true,
+  "tipo": "DelegateResource",
+  "de": "TEF9ZVUxhmGGffvkf59e2vdLfAG1QCMb7B",
+  "a": "TRy36UQWFrCF9xCSJVzKPck4kyApmPWHjK",
+  "trx": 63000,
+  "recurso": "ENERGY",
+  "bloqueo": false
+ },
+ {
+  "tx": "f10eb08acad6570b1e972be017c2a5911086f5fa47589ad0d7d8d0bcc5529f9e",
+  "t": 1763291760000,
+  "ok": true,
+  "tipo": "DelegateResource",
+  "de": "TEF9ZVUxhmGGffvkf59e2vdLfAG1QCMb7B",
+  "a": "TPXhKNfbJKot2nYgfUQn6g8fQfWg2f7qXF",
+  "trx": 63000,
+  "recurso": "ENERGY",
+  "bloqueo": false
+ },
+ {
+  "tx": "d5bc20935928eac9a497c9b8cdbda02388e6146ec0e1e90ebfec088bedcfd0d8",
+  "t": 1763291781000,
+  "ok": true,
+  "tipo": "DelegateResource",
+  "de": "TEF9ZVUxhmGGffvkf59e2vdLfAG1QCMb7B",
+  "a": "TDYZUuPAfxtK81ZjnkHoWKcoauF22ftMGv",
+  "trx": 63000,
+  "recurso": "ENERGY",
+  "bloqueo": false
+ },
+ {
+  "tx": "b1e31cd0018fb7d4536a560c2cb1382dc2de985924371d1d85edc68309bb924e",
+  "t": 1763291898000,
+  "ok": true,
+  "tipo": "DelegateResource",
+  "de": "TEF9ZVUxhmGGffvkf59e2vdLfAG1QCMb7B",
+  "a": "TSAfr88wnYy873hC8h1WkjkgS3kE4k4mYn",
+  "trx": 63000,
+  "recurso": "ENERGY",
+  "bloqueo": false
+ },
+ {
+  "tx": "d03ca392f64856a10ab03966f3049a640eb6562fea95a03b138c8d463b2a14fa",
+  "t": 1763364186000,
+  "ok": true,
+  "tipo": "DelegateResource",
+  "de": "TEF9ZVUxhmGGffvkf59e2vdLfAG1QCMb7B",
+  "a": "TUwQkNyMSpzCaUFGAinfWCxPPBLAauteqZ",
+  "trx": 49000,
+  "recurso": "BANDWIDTH",
+  "bloqueo": false
+ },
+ {
+  "tx": "180991e93b46bda18dd919a624227ebf6c59f08a31f7e84ac0b61d7036e8346a",
+  "t": 1763364225000,
+  "ok": true,
+  "tipo": "DelegateResource",
+  "de": "TEF9ZVUxhmGGffvkf59e2vdLfAG1QCMb7B",
+  "a": "TRHQmybCizoiMCA3ev4pNTb5PLJmgpSztQ",
+  "trx": 19000,
+  "recurso": "BANDWIDTH",
+  "bloqueo": false
+ },
+ {
+  "tx": "a1ee131abbfb9613efbadf75fb929c16eb2cc4cd833a9a8bec3049e1cff53b18",
+  "t": 1763393667000,
+  "ok": true,
+  "tipo": "DelegateResource",
+  "de": "TEF9ZVUxhmGGffvkf59e2vdLfAG1QCMb7B",
+  "a": "TMv5piEwQPhDJQHjrLR65z4f4S3wSLdz83",
+  "trx": 10350000,
+  "recurso": "ENERGY",
+  "bloqueo": false
+ },
+ {
+  "tx": "5e078e8008dbe44ec38879cced6a8f893caeeeb3789018279e2dac315cb6261d",
+  "t": 1763393706000,
+  "ok": true,
+  "tipo": "DelegateResource",
+  "de": "TEF9ZVUxhmGGffvkf59e2vdLfAG1QCMb7B",
+  "a": "TMv5piEwQPhDJQHjrLR65z4f4S3wSLdz83",
+  "trx": 34950000,
+  "recurso": "ENERGY",
+  "bloqueo": false
+ },
+ {
+  "tx": "7c00007f236fd932cd2de96bdf9b9c39b1503c809bed94b3004bb1f4492bba0f",
+  "t": 1763393739000,
+  "ok": true,
+  "tipo": "UnDelegateResource",
+  "de": "TEF9ZVUxhmGGffvkf59e2vdLfAG1QCMb7B",
+  "a": "TTPr6LHna8ZFn1zS1CgDrhStscEByjnKFD",
+  "trx": 20000000,
+  "recurso": "ENERGY"
+ },
+ {
+  "tx": "ab299d20d2b9e4b1a0fca74f700063f73bdb7532d520ac1d582b3d5baa66e283",
+  "t": 1763632749000,
+  "ok": true,
+  "tipo": "UnDelegateResource",
+  "de": "TEF9ZVUxhmGGffvkf59e2vdLfAG1QCMb7B",
+  "a": "TMv5piEwQPhDJQHjrLR65z4f4S3wSLdz83",
+  "trx": 45300000,
+  "recurso": "ENERGY"
+ },
+ {
+  "tx": "7ff4130f12ce8e048321707d1868a1d55fcd6776d0efd8cb821e57103f536b3d",
+  "t": 1763720925000,
+  "ok": true,
+  "tipo": "DelegateResource",
+  "de": "TEF9ZVUxhmGGffvkf59e2vdLfAG1QCMb7B",
+  "a": "TMv5piEwQPhDJQHjrLR65z4f4S3wSLdz83",
+  "trx": 10310000,
+  "recurso": "ENERGY",
+  "bloqueo": false
+ },
+ {
+  "tx": "68ac05554f3838d8b5bda32a33d489c1c0969f0ece9e87395e5191c63a722cd0",
+  "t": 1764316887000,
+  "ok": true,
+  "tipo": "UnDelegateResource",
+  "de": "TEF9ZVUxhmGGffvkf59e2vdLfAG1QCMb7B",
+  "a": "TMv5piEwQPhDJQHjrLR65z4f4S3wSLdz83",
+  "trx": 10310000,
+  "recurso": "ENERGY"
+ },
+ {
+  "tx": "3003e00e9e12e437843902465348bbd866b4c2a22020451c47e44659f81400d1",
+  "t": 1764316956000,
+  "ok": true,
+  "tipo": "UnDelegateResource",
+  "de": "TEF9ZVUxhmGGffvkf59e2vdLfAG1QCMb7B",
+  "a": "TAh9BWQoqhHpg9aMDdQeS9QXy1h8NMLUhN",
+  "trx": 63000,
+  "recurso": "ENERGY"
+ },
+ {
+  "tx": "d5c4230c02b6441aa9ca3b04c1690a741345ea52d60e533d697df0cba0a550f5",
+  "t": 1764316980000,
+  "ok": true,
+  "tipo": "UnDelegateResource",
+  "de": "TEF9ZVUxhmGGffvkf59e2vdLfAG1QCMb7B",
+  "a": "TMjcbmRqfwY2WM8h4uNGAkzwgJdDJoxC8R",
+  "trx": 63000,
+  "recurso": "ENERGY"
+ },
+ {
+  "tx": "f1da685670034840d9b4552b5caff7e5499c06f4afdc865fab4a6a658d52b2d8",
+  "t": 1764317007000,
+  "ok": true,
+  "tipo": "UnDelegateResource",
+  "de": "TEF9ZVUxhmGGffvkf59e2vdLfAG1QCMb7B",
+  "a": "TKU6Xypkwkz7Dwh92YU5fWW9BaYHA8LWTs",
+  "trx": 63000,
+  "recurso": "ENERGY"
+ },
+ {
+  "tx": "b5b9ae6d8e06d7259bef6f48a88df05a91e2585a66a4d2e5605e573f54764a29",
+  "t": 1764317031000,
+  "ok": true,
+  "tipo": "UnDelegateResource",
+  "de": "TEF9ZVUxhmGGffvkf59e2vdLfAG1QCMb7B",
+  "a": "TGxk9DTiXaw5drN4d7CEYHUCW4ND82Hdup",
+  "trx": 63000,
+  "recurso": "ENERGY"
+ },
+ {
+  "tx": "214eaf304a67df68175736ff43928ca5b916dfdd50db35a35aeff80caf518b14",
+  "t": 1764317976000,
+  "ok": true,
+  "tipo": "UnDelegateResource",
+  "de": "TEF9ZVUxhmGGffvkf59e2vdLfAG1QCMb7B",
+  "a": "TKRteU689HDNfpfdpt4Me6Gx3rkFwMNYvM",
+  "trx": 63000,
+  "recurso": "ENERGY"
+ },
+ {
+  "tx": "d5f8f547a93d4c8b5a5a8a2c5a17085a368a66b85b9faf194f70aab2ad001bea",
+  "t": 1764317997000,
+  "ok": true,
+  "tipo": "UnDelegateResource",
+  "de": "TEF9ZVUxhmGGffvkf59e2vdLfAG1QCMb7B",
+  "a": "TSAfr88wnYy873hC8h1WkjkgS3kE4k4mYn",
+  "trx": 63000,
+  "recurso": "ENERGY"
+ },
+ {
+  "tx": "a4ca3a2b4b77f725581bb9fc0780ab79b3ceb032d47554c299e4d07026956153",
+  "t": 1764318024000,
+  "ok": true,
+  "tipo": "UnDelegateResource",
+  "de": "TEF9ZVUxhmGGffvkf59e2vdLfAG1QCMb7B",
+  "a": "TVmPEzoHsyjbKgjH9bkxRdKHtevkXs9eCg",
+  "trx": 63000,
+  "recurso": "ENERGY"
+ },
+ {
+  "tx": "1d901c55d2e0cd8db07cc6840ac38cd51f0e5f0d60eb01523566ec25c50573a4",
+  "t": 1764318045000,
+  "ok": true,
+  "tipo": "UnDelegateResource",
+  "de": "TEF9ZVUxhmGGffvkf59e2vdLfAG1QCMb7B",
+  "a": "TRy36UQWFrCF9xCSJVzKPck4kyApmPWHjK",
+  "trx": 63000,
+  "recurso": "ENERGY"
+ },
+ {
+  "tx": "0e2915a7c6c6c6302d8e7a7bb6064287f688918bceb1ce1690082bf948e46582",
+  "t": 1764318066000,
+  "ok": true,
+  "tipo": "UnDelegateResource",
+  "de": "TEF9ZVUxhmGGffvkf59e2vdLfAG1QCMb7B",
+  "a": "TPXhKNfbJKot2nYgfUQn6g8fQfWg2f7qXF",
+  "trx": 63000,
+  "recurso": "ENERGY"
+ },
+ {
+  "tx": "15d784c13248c8739e30c35b3a6290be577e098a85ac1ad64387ce4e14d78d44",
+  "t": 1764318093000,
+  "ok": true,
+  "tipo": "UnDelegateResource",
+  "de": "TEF9ZVUxhmGGffvkf59e2vdLfAG1QCMb7B",
+  "a": "TDYZUuPAfxtK81ZjnkHoWKcoauF22ftMGv",
+  "trx": 63000,
+  "recurso": "ENERGY"
+ },
+ {
+  "tx": "e199a26699f0c2b5ab92ac71bbf557e829080cccf5cdda3da9d3eefab6863b28",
+  "t": 1764562716000,
+  "ok": true,
+  "tipo": "DelegateResource",
+  "de": "TEF9ZVUxhmGGffvkf59e2vdLfAG1QCMb7B",
+  "a": "TFNX7TKYCm1kUYDECjkrogBwYZvt69XQNy",
+  "trx": 432000,
+  "recurso": "BANDWIDTH",
+  "bloqueo": false
+ },
+ {
+  "tx": "262524df807a640a1808a85b798dd750b167a9ca7c36bf289ca33c8afe3ba102",
+  "t": 1764562752000,
+  "ok": true,
+  "tipo": "UnDelegateResource",
+  "de": "TEF9ZVUxhmGGffvkf59e2vdLfAG1QCMb7B",
+  "a": "TTPr6LHna8ZFn1zS1CgDrhStscEByjnKFD",
+  "trx": 10000000,
+  "recurso": "ENERGY"
+ },
+ {
+  "tx": "62b65b7e7463366bbb7eb1063b6134dda846fac7046254e808ee0f9bc2119b4d",
+  "t": 1764657957000,
+  "ok": true,
+  "tipo": "DelegateResource",
+  "de": "TEF9ZVUxhmGGffvkf59e2vdLfAG1QCMb7B",
+  "a": "TFNX7TKYCm1kUYDECjkrogBwYZvt69XQNy",
+  "trx": 9450000,
+  "recurso": "ENERGY",
+  "bloqueo": false
+ },
+ {
+  "tx": "5ab35b498f828e63e86822f43934600d0f058bbe1cb25b6b196fa295ff9bd437",
+  "t": 1764657978000,
+  "ok": true,
+  "tipo": "DelegateResource",
+  "de": "TEF9ZVUxhmGGffvkf59e2vdLfAG1QCMb7B",
+  "a": "TFNX7TKYCm1kUYDECjkrogBwYZvt69XQNy",
+  "trx": 616000,
+  "recurso": "BANDWIDTH",
+  "bloqueo": false
+ },
+ {
+  "tx": "61e966377054c2545d140a8276cd7524a4698944aac6fed58b611bc709f81b99",
+  "t": 1765897053000,
+  "ok": true,
+  "tipo": "FreezeBalanceV2",
+  "de": "TEF9ZVUxhmGGffvkf59e2vdLfAG1QCMb7B",
+  "trx": 1500000,
+  "recurso": "BANDWIDTH"
+ },
+ {
+  "tx": "05c0d6f3a2b8dd65f4d0f03fa6f445cf0269d028a2deaaae040f1b9b13127e47",
+  "t": 1765897083000,
+  "ok": true,
+  "tipo": "DelegateResource",
+  "de": "TEF9ZVUxhmGGffvkf59e2vdLfAG1QCMb7B",
+  "a": "TUJMek9erMZ3MKyM2NTm8iENEPgpqdZm6g",
+  "trx": 6000000,
+  "recurso": "ENERGY",
+  "bloqueo": false
+ },
+ {
+  "tx": "c658c80bd0b9b7b3c3421239f44891e7ee6fd5991ddae4294b634786ca5fb28f",
+  "t": 1765937916000,
+  "ok": true,
+  "tipo": "DelegateResource",
+  "de": "TEF9ZVUxhmGGffvkf59e2vdLfAG1QCMb7B",
+  "a": "TUJMek9erMZ3MKyM2NTm8iENEPgpqdZm6g",
+  "trx": 1400000,
+  "recurso": "BANDWIDTH",
+  "bloqueo": false
+ },
+ {
+  "tx": "f2dde8bed163afb6e924c16c9dc33f33c839bf03bebfa255de50a6e017e1e381",
+  "t": 1765941267000,
+  "ok": true,
+  "tipo": "VoteWitness",
+  "de": "TEF9ZVUxhmGGffvkf59e2vdLfAG1QCMb7B",
+  "votos": [
+   {
+    "para": "TJvaAeFb8Lykt9RQcVyyTFN2iDvGMuyD4M",
+    "n": 163500300
+   }
+  ]
+ },
+ {
+  "tx": "0ccefd8eb975f7a5aafaa4bf6958911ec1ceccfb710dd2e93db527069d1f8ee9",
+  "t": 1768290966000,
+  "ok": true,
+  "tipo": "DelegateResource",
+  "de": "TEF9ZVUxhmGGffvkf59e2vdLfAG1QCMb7B",
+  "a": "TTpcSY3dUxUmQ1S1TtotKqRsYutE1PyHRV",
+  "trx": 204000,
+  "recurso": "ENERGY",
+  "bloqueo": false
+ },
+ {
+  "tx": "7df8ebf0bd079114fb77dd5309884486893d792fe6ee02119d06b288f2ee98cc",
+  "t": 1768291011000,
+  "ok": true,
+  "tipo": "DelegateResource",
+  "de": "TEF9ZVUxhmGGffvkf59e2vdLfAG1QCMb7B",
+  "a": "TTpcSY3dUxUmQ1S1TtotKqRsYutE1PyHRV",
+  "trx": 5000,
+  "recurso": "BANDWIDTH",
+  "bloqueo": false
+ },
+ {
+  "tx": "69e1c590a39758ef387e410e412f4b1c45c365181a92e7802bddc354d8d5e2e4",
+  "t": 1768295169000,
+  "ok": true,
+  "tipo": "DelegateResource",
+  "de": "TEF9ZVUxhmGGffvkf59e2vdLfAG1QCMb7B",
+  "a": "TKSWb4hqrpGXJy72guufXS9EtoEbYSdss4",
+  "trx": 211000,
+  "recurso": "ENERGY",
+  "bloqueo": false
+ },
+ {
+  "tx": "0d882cb1f6974dc3595f7b095a4e9b2989718daa9580d49d3018aceacff9004a",
+  "t": 1768295190000,
+  "ok": true,
+  "tipo": "DelegateResource",
+  "de": "TEF9ZVUxhmGGffvkf59e2vdLfAG1QCMb7B",
+  "a": "TKSWb4hqrpGXJy72guufXS9EtoEbYSdss4",
+  "trx": 6000,
+  "recurso": "BANDWIDTH",
+  "bloqueo": false
+ },
+ {
+  "tx": "63f2eaa1f611f7dfd9b002c760aaf5b50a8bc6218b751d9f0047642b23ea62e5",
+  "t": 1768295214000,
+  "ok": true,
+  "tipo": "DelegateResource",
+  "de": "TEF9ZVUxhmGGffvkf59e2vdLfAG1QCMb7B",
+  "a": "TW6EkjXg8iGRZbZkqDTrjGkxLDBby58ZVi",
+  "trx": 213000,
+  "recurso": "ENERGY",
+  "bloqueo": false
+ },
+ {
+  "tx": "4e90dd8979c245b383965126426a28b46bb2b0a2bec84d0d72dc935e160a668e",
+  "t": 1768295241000,
+  "ok": true,
+  "tipo": "DelegateResource",
+  "de": "TEF9ZVUxhmGGffvkf59e2vdLfAG1QCMb7B",
+  "a": "TW6EkjXg8iGRZbZkqDTrjGkxLDBby58ZVi",
+  "trx": 6000,
+  "recurso": "BANDWIDTH",
+  "bloqueo": false
+ },
+ {
+  "tx": "f2c0222ed9f9347b70c53ab578cfb151e8e49a9b232edb8fcc90fbbdcb2d7222",
+  "t": 1768295265000,
+  "ok": true,
+  "tipo": "DelegateResource",
+  "de": "TEF9ZVUxhmGGffvkf59e2vdLfAG1QCMb7B",
+  "a": "TUaASPt6XHP6tJbwbofdP2kcqPEa2MGooy",
+  "trx": 210000,
+  "recurso": "ENERGY",
+  "bloqueo": false
+ },
+ {
+  "tx": "8fe5c0a457e9516d02873293f60a51b7967ada60900feecdea05aa0c1c6e8cb6",
+  "t": 1768295286000,
+  "ok": true,
+  "tipo": "DelegateResource",
+  "de": "TEF9ZVUxhmGGffvkf59e2vdLfAG1QCMb7B",
+  "a": "TUaASPt6XHP6tJbwbofdP2kcqPEa2MGooy",
+  "trx": 6000,
+  "recurso": "BANDWIDTH",
+  "bloqueo": false
+ },
+ {
+  "tx": "3ecd867fd71f0d4f78b95ea20acef8186614c1069cdfec817dedcc0cfd828621",
+  "t": 1768295316000,
+  "ok": true,
+  "tipo": "DelegateResource",
+  "de": "TEF9ZVUxhmGGffvkf59e2vdLfAG1QCMb7B",
+  "a": "TNGePRK6b3s4TG5SVQX12SkNHMw242MT5b",
+  "trx": 210000,
+  "recurso": "ENERGY",
+  "bloqueo": false
+ },
+ {
+  "tx": "bb770f19d4186772b9982e9998bb320c85786d169da620a524ef286a1f7aa7b3",
+  "t": 1768295394000,
+  "ok": true,
+  "tipo": "DelegateResource",
+  "de": "TEF9ZVUxhmGGffvkf59e2vdLfAG1QCMb7B",
+  "a": "TNGePRK6b3s4TG5SVQX12SkNHMw242MT5b",
+  "trx": 6000,
+  "recurso": "BANDWIDTH",
+  "bloqueo": false
+ },
+ {
+  "tx": "7b4968cc52396f977bf7eddb529d8614ad00b7262151d670a4557a0b0cbdcfbd",
+  "t": 1768295418000,
+  "ok": true,
+  "tipo": "DelegateResource",
+  "de": "TEF9ZVUxhmGGffvkf59e2vdLfAG1QCMb7B",
+  "a": "TQHhDQrcCcQmJezead5MK4tWycxbW2NWkK",
+  "trx": 211000,
+  "recurso": "ENERGY",
+  "bloqueo": false
+ },
+ {
+  "tx": "da80449d22c5e378e30e37b05fd8554a55b379a2d8b35344887ea5f0f7d8759e",
+  "t": 1768295445000,
+  "ok": true,
+  "tipo": "DelegateResource",
+  "de": "TEF9ZVUxhmGGffvkf59e2vdLfAG1QCMb7B",
+  "a": "TQHhDQrcCcQmJezead5MK4tWycxbW2NWkK",
+  "trx": 6000,
+  "recurso": "BANDWIDTH",
+  "bloqueo": false
+ },
+ {
+  "tx": "96e9256f2f9b076484f6ae49aaab1a6641a4604fb2e4532a078ca4a0dcfa6195",
+  "t": 1768295475000,
+  "ok": true,
+  "tipo": "DelegateResource",
+  "de": "TEF9ZVUxhmGGffvkf59e2vdLfAG1QCMb7B",
+  "a": "TVoTgU4jqhG26uaNy3oZu75wWC7W59YzsB",
+  "trx": 234000,
+  "recurso": "ENERGY",
+  "bloqueo": false
+ },
+ {
+  "tx": "a54980357e47c5ecf74736e75f3d8316b43dcdc4c62af6f7c4220f047b69d617",
+  "t": 1768295499000,
+  "ok": true,
+  "tipo": "DelegateResource",
+  "de": "TEF9ZVUxhmGGffvkf59e2vdLfAG1QCMb7B",
+  "a": "TVoTgU4jqhG26uaNy3oZu75wWC7W59YzsB",
+  "trx": 6000,
+  "recurso": "BANDWIDTH",
+  "bloqueo": false
+ },
+ {
+  "tx": "3ad1cb0d8e185ed2e4dceee90c158de186ddbb810aaa64abe2e55f9aa2534b7c",
+  "t": 1769613132000,
+  "ok": true,
+  "tipo": "DelegateResource",
+  "de": "TEF9ZVUxhmGGffvkf59e2vdLfAG1QCMb7B",
+  "a": "TFNX7TKYCm1kUYDECjkrogBwYZvt69XQNy",
+  "trx": 10000000,
+  "recurso": "ENERGY",
+  "bloqueo": false
+ },
+ {
+  "tx": "67308ff91b3deaee06927bfdbb217bf6a055d32870e60de85e54730da5fd7817",
+  "t": 1769613138000,
+  "ok": true,
+  "tipo": "TransferAsset",
+  "de": "TH4RijLenLGKBAsvHzLKLQuK8J28Fs7sTX",
+  "a": "TEF9ZVUxhmGGffvkf59e2vdLfAG1QCMb7B",
+  "activo": "1004989",
+  "cantidad": 1111111
+ },
+ {
+  "tx": "9846beec6a55b6656b9ed23bd7991106874286a531151cc21b6083848869477f",
+  "t": 1769681031000,
+  "ok": true,
+  "tipo": "FreezeBalanceV2",
+  "de": "TEF9ZVUxhmGGffvkf59e2vdLfAG1QCMb7B",
+  "trx": 500000,
+  "recurso": "BANDWIDTH"
+ },
+ {
+  "tx": "b5f57feffefca6b24288d6dbc364c26a2b2433cae2b1ac280f3c651fd82f18c0",
+  "t": 1769704389000,
+  "ok": true,
+  "tipo": "DelegateResource",
+  "de": "TEF9ZVUxhmGGffvkf59e2vdLfAG1QCMb7B",
+  "a": "TFNX7TKYCm1kUYDECjkrogBwYZvt69XQNy",
+  "trx": 10000000,
+  "recurso": "ENERGY",
+  "bloqueo": false
+ },
+ {
+  "tx": "c91073ba5b11072a67f4e37465ac97c2892fc6d43fb64b60b8b47d696a9eb03a",
+  "t": 1769736831000,
+  "ok": true,
+  "tipo": "DelegateResource",
+  "de": "TEF9ZVUxhmGGffvkf59e2vdLfAG1QCMb7B",
+  "a": "TFNX7TKYCm1kUYDECjkrogBwYZvt69XQNy",
+  "trx": 21000000,
+  "recurso": "ENERGY",
+  "bloqueo": false
+ },
+ {
+  "tx": "13160f8b3d209d37cb73ef921219f1a9d6b4014220c64af230b3c541ff839a52",
+  "t": 1769736852000,
+  "ok": true,
+  "tipo": "DelegateResource",
+  "de": "TEF9ZVUxhmGGffvkf59e2vdLfAG1QCMb7B",
+  "a": "TFNX7TKYCm1kUYDECjkrogBwYZvt69XQNy",
+  "trx": 558000,
+  "recurso": "BANDWIDTH",
+  "bloqueo": false
+ },
+ {
+  "tx": "0a4600714c1e40ac1c7560da471da2145c64d76b73e57f716baec84b69046269",
+  "t": 1770031455000,
+  "ok": true,
+  "tipo": "Transfer",
+  "de": "TFTWNgDBkQ5wQoP8RXpRznnHvAVV8x5jLu",
+  "a": "TEF9ZVUxhmGGffvkf59e2vdLfAG1QCMb7B",
+  "trx": 99999999
+ },
+ {
+  "tx": "f2d5374116769e9ecf7b039fe82463b7158e04c1a9b97d3dc19fc185d36e5247",
+  "t": 1770116241000,
+  "ok": true,
+  "tipo": "FreezeBalanceV2",
+  "de": "TEF9ZVUxhmGGffvkf59e2vdLfAG1QCMb7B",
+  "trx": 80000000,
+  "recurso": "ENERGY"
+ },
+ {
+  "tx": "25e96acde69e4b8b50ccd439511596b3c394fb62f344660b3d7858408eeef1a6",
+  "t": 1770116271000,
+  "ok": true,
+  "tipo": "FreezeBalanceV2",
+  "de": "TEF9ZVUxhmGGffvkf59e2vdLfAG1QCMb7B",
+  "trx": 5000000,
+  "recurso": "BANDWIDTH"
+ },
+ {
+  "tx": "affac227195caca03c3beb5fee4d7dbd18968d43ee7bf0019280c0375cad0b01",
+  "t": 1770117645000,
+  "ok": true,
+  "tipo": "DelegateResource",
+  "de": "TEF9ZVUxhmGGffvkf59e2vdLfAG1QCMb7B",
+  "a": "TFNX7TKYCm1kUYDECjkrogBwYZvt69XQNy",
+  "trx": 10000000,
+  "recurso": "ENERGY",
+  "bloqueo": false
+ },
+ {
+  "tx": "f2744f6bc96e23c1897e66097b8115edeeb677d7d61142c9b686ddeddc54e02e",
+  "t": 1770117669000,
+  "ok": true,
+  "tipo": "DelegateResource",
+  "de": "TEF9ZVUxhmGGffvkf59e2vdLfAG1QCMb7B",
+  "a": "TFNX7TKYCm1kUYDECjkrogBwYZvt69XQNy",
+  "trx": 622000,
+  "recurso": "BANDWIDTH",
+  "bloqueo": false
+ },
+ {
+  "tx": "9e1d828780972fc7af98c26eec7892a8f6cc5b593f23bcdf478596fbb0cd4f74",
+  "t": 1770117795000,
+  "ok": true,
+  "tipo": "VoteWitness",
+  "de": "TEF9ZVUxhmGGffvkf59e2vdLfAG1QCMb7B",
+  "votos": [
+   {
+    "para": "TJvaAeFb8Lykt9RQcVyyTFN2iDvGMuyD4M",
+    "n": 249000300
+   }
+  ]
+ },
+ {
+  "tx": "233366802aaf783612d31049d7bdbb38933d3f7a88e5e807ea5540a7f7c3eaa5",
+  "t": 1770352056000,
+  "ok": true,
+  "tipo": "DelegateResource",
+  "de": "TEF9ZVUxhmGGffvkf59e2vdLfAG1QCMb7B",
+  "a": "TTpcSY3dUxUmQ1S1TtotKqRsYutE1PyHRV",
+  "trx": 117000,
+  "recurso": "ENERGY",
+  "bloqueo": false
+ },
+ {
+  "tx": "39eef0c7fa544e11079457bec3965c74dcada405a831c54a371014d65342a822",
+  "t": 1770352077000,
+  "ok": true,
+  "tipo": "DelegateResource",
+  "de": "TEF9ZVUxhmGGffvkf59e2vdLfAG1QCMb7B",
+  "a": "TKSWb4hqrpGXJy72guufXS9EtoEbYSdss4",
+  "trx": 115000,
+  "recurso": "ENERGY",
+  "bloqueo": false
+ },
+ {
+  "tx": "91fe77626b48c4f00daceaa9dffc9865d5d65e7b0d277b195363ee874be6ca74",
+  "t": 1770352104000,
+  "ok": true,
+  "tipo": "DelegateResource",
+  "de": "TEF9ZVUxhmGGffvkf59e2vdLfAG1QCMb7B",
+  "a": "TW6EkjXg8iGRZbZkqDTrjGkxLDBby58ZVi",
+  "trx": 90000,
+  "recurso": "ENERGY",
+  "bloqueo": false
+ },
+ {
+  "tx": "33bbce778b2002ac6d71495cd49223f6f8ecd2e98cd9e48ef4d7abde1216634d",
+  "t": 1770352155000,
+  "ok": true,
+  "tipo": "DelegateResource",
+  "de": "TEF9ZVUxhmGGffvkf59e2vdLfAG1QCMb7B",
+  "a": "TUaASPt6XHP6tJbwbofdP2kcqPEa2MGooy",
+  "trx": 79000,
+  "recurso": "ENERGY",
+  "bloqueo": false
+ },
+ {
+  "tx": "a4fa776e42e667bd05d37e925f8b96b567501766496375dc34a9709efdbbaa23",
+  "t": 1770357351000,
+  "ok": true,
+  "tipo": "DelegateResource",
+  "de": "TEF9ZVUxhmGGffvkf59e2vdLfAG1QCMb7B",
+  "a": "TQHhDQrcCcQmJezead5MK4tWycxbW2NWkK",
+  "trx": 108000,
+  "recurso": "ENERGY",
+  "bloqueo": false
+ },
+ {
+  "tx": "ad48bf81c9ff06fb89a5dc55cb43033feefcf938e4ad3bf86981199a81073b07",
+  "t": 1770357369000,
+  "ok": true,
+  "tipo": "DelegateResource",
+  "de": "TEF9ZVUxhmGGffvkf59e2vdLfAG1QCMb7B",
+  "a": "TNGePRK6b3s4TG5SVQX12SkNHMw242MT5b",
+  "trx": 93000,
+  "recurso": "ENERGY",
+  "bloqueo": false
+ },
+ {
+  "tx": "61e77ac06c6c9b65f99eab323ed185f40aabcacb88b67ecf2fab7e332f7001eb",
+  "t": 1770357390000,
+  "ok": true,
+  "tipo": "DelegateResource",
+  "de": "TEF9ZVUxhmGGffvkf59e2vdLfAG1QCMb7B",
+  "a": "TVoTgU4jqhG26uaNy3oZu75wWC7W59YzsB",
+  "trx": 93000,
+  "recurso": "ENERGY",
+  "bloqueo": false
+ },
+ {
+  "tx": "46ab9325f5bc7005679ee7f848adc433fd7f4df86bb2f3b662105a8b98c342f1",
+  "t": 1770472548000,
+  "ok": true,
+  "tipo": "DelegateResource",
+  "de": "TEF9ZVUxhmGGffvkf59e2vdLfAG1QCMb7B",
+  "a": "TKNnggcU5Ph18hSdK1U8xeLAG7YrqKwoUu",
+  "trx": 6780000,
+  "recurso": "ENERGY",
+  "bloqueo": false
+ },
+ {
+  "tx": "1c1131e3107f34ecb3476f8a540194f1046059e107e417263a77de8f7a1fd436",
+  "t": 1770472569000,
+  "ok": true,
+  "tipo": "DelegateResource",
+  "de": "TEF9ZVUxhmGGffvkf59e2vdLfAG1QCMb7B",
+  "a": "TKNnggcU5Ph18hSdK1U8xeLAG7YrqKwoUu",
+  "trx": 440000,
+  "recurso": "BANDWIDTH",
+  "bloqueo": false
+ },
+ {
+  "tx": "1f5346737fd34f32c951a1f497fe23303efdd4b7820af18e04bf48193c003a54",
+  "t": 1770694575000,
+  "ok": true,
+  "tipo": "DelegateResource",
+  "de": "TEF9ZVUxhmGGffvkf59e2vdLfAG1QCMb7B",
+  "a": "TZCzCAiBGhFf3L7wW94TepYFeJg3oCuzdR",
+  "trx": 680000,
+  "recurso": "ENERGY",
+  "bloqueo": false
+ },
+ {
+  "tx": "31b7ac07fc338eb81e901102c6decbf4ab768975704a49b502298360bd3c163a",
+  "t": 1770694593000,
+  "ok": true,
+  "tipo": "DelegateResource",
+  "de": "TEF9ZVUxhmGGffvkf59e2vdLfAG1QCMb7B",
+  "a": "TZCzCAiBGhFf3L7wW94TepYFeJg3oCuzdR",
+  "trx": 22000,
+  "recurso": "BANDWIDTH",
+  "bloqueo": false
+ },
+ {
+  "tx": "16297e982ca2d99a3b47ed28ae1423a6ca64dcf35d9fe33fbad93ed80cd6de47",
+  "t": 1770694617000,
+  "ok": true,
+  "tipo": "DelegateResource",
+  "de": "TEF9ZVUxhmGGffvkf59e2vdLfAG1QCMb7B",
+  "a": "TSAyT73m3WzzAdRkKEfed4YDRKoVtCQGjq",
+  "trx": 68000,
+  "recurso": "ENERGY",
+  "bloqueo": false
+ },
+ {
+  "tx": "fc81be20bf4e27e370deb51884aa46ccb36b14180dfb116d9fe8f85e274d1406",
+  "t": 1770694632000,
+  "ok": true,
+  "tipo": "DelegateResource",
+  "de": "TEF9ZVUxhmGGffvkf59e2vdLfAG1QCMb7B",
+  "a": "TSAyT73m3WzzAdRkKEfed4YDRKoVtCQGjq",
+  "trx": 2500,
+  "recurso": "BANDWIDTH",
+  "bloqueo": false
+ },
+ {
+  "tx": "bcb8bba9c6b242ebdc9a1b73da83e24c96344a0035b1f59806977fc0a546e545",
+  "t": 1770694662000,
+  "ok": true,
+  "tipo": "DelegateResource",
+  "de": "TEF9ZVUxhmGGffvkf59e2vdLfAG1QCMb7B",
+  "a": "THkACNWEzcmQKotSkEKYvNETEWeavsjWpK",
+  "trx": 270000,
+  "recurso": "ENERGY",
+  "bloqueo": false
+ },
+ {
+  "tx": "3d5b1a21fd9e4883b2635dea48d36d754163de4acedf765fd97b995a47d3ad94",
+  "t": 1770694680000,
+  "ok": true,
+  "tipo": "DelegateResource",
+  "de": "TEF9ZVUxhmGGffvkf59e2vdLfAG1QCMb7B",
+  "a": "THkACNWEzcmQKotSkEKYvNETEWeavsjWpK",
+  "trx": 9000,
+  "recurso": "BANDWIDTH",
+  "bloqueo": false
+ },
+ {
+  "tx": "2d75491125c90ec551eee6b91d091c26b849cfb83be92568516d656e41c34c85",
+  "t": 1770694698000,
+  "ok": true,
+  "tipo": "DelegateResource",
+  "de": "TEF9ZVUxhmGGffvkf59e2vdLfAG1QCMb7B",
+  "a": "TVuXAUewdeLEC6wfqFgRyGyp4e4XPXVcLw",
+  "trx": 270000,
+  "recurso": "ENERGY",
+  "bloqueo": false
+ },
+ {
+  "tx": "e5d8ae29ca0079cd9ecb3991e473dcd3116c42ef5ebc432a7917f143d6db6a1b",
+  "t": 1770694713000,
+  "ok": true,
+  "tipo": "DelegateResource",
+  "de": "TEF9ZVUxhmGGffvkf59e2vdLfAG1QCMb7B",
+  "a": "TVuXAUewdeLEC6wfqFgRyGyp4e4XPXVcLw",
+  "trx": 9000,
+  "recurso": "BANDWIDTH",
+  "bloqueo": false
+ },
+ {
+  "tx": "cd78e718eb5909b0020604e0cb83b27e2f9f1f51b81de408fa29e3079a08a56c",
+  "t": 1770698703000,
+  "ok": true,
+  "tipo": "DelegateResource",
+  "de": "TEF9ZVUxhmGGffvkf59e2vdLfAG1QCMb7B",
+  "a": "TKLA6TSgaanq1vwnHmSvk74orGk8Zatuhf",
+  "trx": 680000,
+  "recurso": "ENERGY",
+  "bloqueo": false
+ },
+ {
+  "tx": "66c8a379349ea3be3244c9b33179381306b8b03f9e71ef11eb0fcf8986c73f62",
+  "t": 1770698730000,
+  "ok": true,
+  "tipo": "DelegateResource",
+  "de": "TEF9ZVUxhmGGffvkf59e2vdLfAG1QCMb7B",
+  "a": "TKLA6TSgaanq1vwnHmSvk74orGk8Zatuhf",
+  "trx": 22000,
+  "recurso": "BANDWIDTH",
+  "bloqueo": false
+ },
+ {
+  "tx": "6744d1052492cf5fab15a6256cdf60c95f9ae76980b06459dced1d5c901f5163",
+  "t": 1771051677000,
+  "ok": true,
+  "tipo": "DelegateResource",
+  "de": "TEF9ZVUxhmGGffvkf59e2vdLfAG1QCMb7B",
+  "a": "TQrY8tryqsYVCYS3MFbtffiPp2ccyn4STm",
+  "trx": 21800000,
+  "recurso": "ENERGY",
+  "bloqueo": false
+ },
+ {
+  "tx": "e0318c73935d510c02e224e7b37d1bc8c9ba84cf2dce41f71dff3ca7c1e1442e",
+  "t": 1771051683000,
+  "ok": true,
+  "tipo": "TransferAsset",
+  "de": "TUdtNVz2eUnyFxwMV5ATr3pGheuTmofcEx",
+  "a": "TEF9ZVUxhmGGffvkf59e2vdLfAG1QCMb7B",
+  "activo": "1004989",
+  "cantidad": 1111111
+ },
+ {
+  "tx": "760f33d1d39719ae1987bdd0fba9c327d98ac85d3e0aeaa5b00eb73e15921408",
+  "t": 1772183637000,
+  "ok": true,
+  "tipo": "FreezeBalanceV2",
+  "de": "TEF9ZVUxhmGGffvkf59e2vdLfAG1QCMb7B",
+  "trx": 12000000,
+  "recurso": "ENERGY"
+ },
+ {
+  "tx": "ea82d8ebec75d7346e21c6d813bc8f05110ea02b624bda5dee6105affc16654f",
+  "t": 1772185485000,
+  "ok": true,
+  "tipo": "VoteWitness",
+  "de": "TEF9ZVUxhmGGffvkf59e2vdLfAG1QCMb7B",
+  "votos": [
+   {
+    "para": "TJvaAeFb8Lykt9RQcVyyTFN2iDvGMuyD4M",
+    "n": 261000300
+   }
+  ]
+ },
+ {
+  "tx": "3002c92ccde7f318b329bac9583a40e907f7fd862bb4a978e8569af468e562c6",
+  "t": 1772192037000,
+  "ok": true,
+  "tipo": "DelegateResource",
+  "de": "TEF9ZVUxhmGGffvkf59e2vdLfAG1QCMb7B",
+  "a": "TCxK2F5fitQJn8Z51RZCyEFMiLKjZtkvEz",
+  "trx": 12000000,
+  "recurso": "ENERGY",
+  "bloqueo": false
+ },
+ {
+  "tx": "282b76fdbff18c6fd57a8a5176d770e522d936c611e6e59b8f07096a862225e9",
+  "t": 1772463345000,
+  "ok": true,
+  "tipo": "Transfer",
+  "de": "TEF9ZVUxhmGGffvkf59e2vdLfAG1QCMb7B",
+  "a": "TUZjvWSSbQMwjb1ndnsdeyQg7cW1yxTKhd",
+  "trx": 100
+ },
+ {
+  "tx": "5be366f12fbb6b384bec9bdd6066866654b88598db360419faf6c184a3faf902",
+  "t": 1772463360000,
+  "ok": true,
+  "tipo": "Transfer",
+  "de": "TU97V3prTumz91zM4Q4m9gDtBweL4rpshd",
+  "a": "TEF9ZVUxhmGGffvkf59e2vdLfAG1QCMb7B",
+  "trx": 0.000002
+ },
+ {
+  "tx": "7fc455e912f72dd0d3c8da442a76f7fa10f55ec460cf71b7bb623085d65fa8b6",
+  "t": 1772463372000,
+  "ok": true,
+  "tipo": "Transfer",
+  "de": "TBTBHg25H2QqXh3DvC5MHVcANdhsKHYKhd",
+  "a": "TEF9ZVUxhmGGffvkf59e2vdLfAG1QCMb7B",
+  "trx": 0.000001
+ },
+ {
+  "tx": "99950554ad0f62812b68ba7480ab4961b111f6cb92c5e90099935182572098c8",
+  "t": 1772463666000,
+  "ok": true,
+  "tipo": "Transfer",
+  "de": "TFTWNgDBkQ5wQoP8RXpRznnHvAVV8x5jLu",
+  "a": "TEF9ZVUxhmGGffvkf59e2vdLfAG1QCMb7B",
+  "trx": 99999999
+ },
+ {
+  "tx": "7d33ce62f30baca47328bfa09e4902bd02ca285b45f1cc239949f34ac7b185ed",
+  "t": 1772463669000,
+  "ok": true,
+  "tipo": "Transfer",
+  "de": "TLGUeKMDVfyeTo98W6eQyzL6e2o1hMhL8L",
+  "a": "TEF9ZVUxhmGGffvkf59e2vdLfAG1QCMb7B",
+  "trx": 0.000001
+ },
+ {
+  "tx": "70ad44fa663e779914d16dddcbd66d9177636e87d3d11323fd325c4156bea28f",
+  "t": 1772467269000,
+  "ok": true,
+  "tipo": "FreezeBalanceV2",
+  "de": "TEF9ZVUxhmGGffvkf59e2vdLfAG1QCMb7B",
+  "trx": 80000000,
+  "recurso": "ENERGY"
+ },
+ {
+  "tx": "fac2bd99c67d6b3d893425b9892d2a0b0709f3013bfd923824ec527823e197b9",
+  "t": 1772467848000,
+  "ok": true,
+  "tipo": "DelegateResource",
+  "de": "TEF9ZVUxhmGGffvkf59e2vdLfAG1QCMb7B",
+  "a": "TU3rMHyWHzeEJBReWLzHko728hbz6MtfNg",
+  "trx": 80000000,
+  "recurso": "ENERGY",
+  "bloqueo": false
+ },
+ {
+  "tx": "42e87aeb8d07e4d9dd7abc851c0a11be28a603a4c1a1e6b9c7ce9ce2124290a5",
+  "t": 1772467923000,
+  "ok": true,
+  "tipo": "VoteWitness",
+  "de": "TEF9ZVUxhmGGffvkf59e2vdLfAG1QCMb7B",
+  "votos": [
+   {
+    "para": "TJvaAeFb8Lykt9RQcVyyTFN2iDvGMuyD4M",
+    "n": 341000300
+   }
+  ]
+ },
+ {
+  "tx": "236164e8ed445a52429155783098e553c46fe8c4eec86b234c4a7c746d79a391",
+  "t": 1772696709000,
+  "ok": true,
+  "tipo": "DelegateResource",
+  "de": "TEF9ZVUxhmGGffvkf59e2vdLfAG1QCMb7B",
+  "a": "TU3rMHyWHzeEJBReWLzHko728hbz6MtfNg",
+  "trx": 31500000,
+  "recurso": "ENERGY",
+  "bloqueo": false
+ },
+ {
+  "tx": "b6646b2ffe28cd314938d2eeabbe657ba41a9c659dd93e95e140d42665b52421",
+  "t": 1773646548000,
+  "ok": true,
+  "tipo": "Transfer",
+  "de": "TCGX17y9Xdqy4r8KbPMuVuE1AC9YZoqqdT",
+  "a": "TEF9ZVUxhmGGffvkf59e2vdLfAG1QCMb7B",
+  "trx": 43.642761
+ },
+ {
+  "tx": "8ad538f9d872c47d5d8bd2b8300ec0055b8d8a7df0ed6b9fe95f7c012f82942e",
+  "t": 1773672858000,
+  "ok": true,
+  "tipo": "DelegateResource",
+  "de": "TEF9ZVUxhmGGffvkf59e2vdLfAG1QCMb7B",
+  "a": "TU3rMHyWHzeEJBReWLzHko728hbz6MtfNg",
+  "trx": 10000000,
+  "recurso": "ENERGY",
+  "bloqueo": false
+ },
+ {
+  "tx": "1cd16065b4fa5ffaa2760843e9cb5227d89ab06ddb884cd37de2e3085eff4083",
+  "t": 1773727854000,
+  "ok": true,
+  "tipo": "Transfer",
+  "de": "TCGX17y9Xdqy4r8KbPMuVuE1AC9YZoqqdT",
+  "a": "TEF9ZVUxhmGGffvkf59e2vdLfAG1QCMb7B",
+  "trx": 150
+ },
+ {
+  "tx": "7d424e0d83f61aeb571abec56b2794e7943c5819393708a8c9d94d11f118a941",
+  "t": 1773727857000,
+  "ok": true,
+  "tipo": "Transfer",
+  "de": "TVv3NxJwXxrnJWNJbpSjNTSBMQE79PshEa",
+  "a": "TEF9ZVUxhmGGffvkf59e2vdLfAG1QCMb7B",
+  "trx": 0.000001
+ },
+ {
+  "tx": "112809ede2f07c767bf76e4d824714770ff0a36551bfb0a8807a4472ca411144",
+  "t": 1773751632000,
+  "ok": true,
+  "tipo": "DelegateResource",
+  "de": "TEF9ZVUxhmGGffvkf59e2vdLfAG1QCMb7B",
+  "a": "TN9p15iYS8m5mNqzRb7wXTYF1tknDZQwXg",
+  "trx": 2640000,
+  "recurso": "ENERGY",
+  "bloqueo": false
+ },
+ {
+  "tx": "46f293bc8e5357e9a847c1b0ac765151f4c9fc85cfec342bc8c0abf9e01db1d8",
+  "t": 1773820425000,
+  "ok": true,
+  "tipo": "FreezeBalanceV2",
+  "de": "TEF9ZVUxhmGGffvkf59e2vdLfAG1QCMb7B",
+  "trx": 23000000,
+  "recurso": "ENERGY"
+ },
+ {
+  "tx": "61e2e577e90c332e128a3704d048903785ae17059a71107c96c1cab0d9d187d8",
+  "t": 1773822429000,
+  "ok": true,
+  "tipo": "DelegateResource",
+  "de": "TEF9ZVUxhmGGffvkf59e2vdLfAG1QCMb7B",
+  "a": "TFNX7TKYCm1kUYDECjkrogBwYZvt69XQNy",
+  "trx": 15800000,
+  "recurso": "ENERGY",
+  "bloqueo": false
+ },
+ {
+  "tx": "a9c53822d29f8c1e18036953d42d49090798c2eb2df7256fc8362928d5231a6f",
+  "t": 1773822453000,
+  "ok": true,
+  "tipo": "DelegateResource",
+  "de": "TEF9ZVUxhmGGffvkf59e2vdLfAG1QCMb7B",
+  "a": "TFNX7TKYCm1kUYDECjkrogBwYZvt69XQNy",
+  "trx": 340000,
+  "recurso": "BANDWIDTH",
+  "bloqueo": false
+ },
+ {
+  "tx": "c9cf18e65d3a245a18085a6180eb86694530b4bc04f62a1edf8ea9cf7b9abf7f",
+  "t": 1773827862000,
+  "ok": true,
+  "tipo": "VoteWitness",
+  "de": "TEF9ZVUxhmGGffvkf59e2vdLfAG1QCMb7B",
+  "votos": [
+   {
+    "para": "TJvaAeFb8Lykt9RQcVyyTFN2iDvGMuyD4M",
+    "n": 364000300
+   }
+  ]
+ },
+ {
+  "tx": "a0ffec1ae44cd8e886e9f763b6cc9dd81b45563ebe338f75decc3f500e0fb6f2",
+  "t": 1773840846000,
+  "ok": true,
+  "tipo": "DelegateResource",
+  "de": "TEF9ZVUxhmGGffvkf59e2vdLfAG1QCMb7B",
+  "a": "TKLA6TSgaanq1vwnHmSvk74orGk8Zatuhf",
+  "trx": 10000000,
+  "recurso": "ENERGY",
+  "bloqueo": false
+ },
+ {
+  "tx": "65468b0d92d4ea975823c1f61f3d8d06a0291c62b575367215ce8c121149de9f",
+  "t": 1773840873000,
+  "ok": true,
+  "tipo": "DelegateResource",
+  "de": "TEF9ZVUxhmGGffvkf59e2vdLfAG1QCMb7B",
+  "a": "TKLA6TSgaanq1vwnHmSvk74orGk8Zatuhf",
+  "trx": 930000,
+  "recurso": "BANDWIDTH",
+  "bloqueo": false
+ },
+ {
+  "tx": "c185f866bba4b70d3b73393918c4ca20fe1ea64c7263593623bd750ebf890ebc",
+  "t": 1774100949000,
+  "ok": true,
+  "tipo": "Transfer",
+  "de": "TFTWNgDBkQ5wQoP8RXpRznnHvAVV8x5jLu",
+  "a": "TEF9ZVUxhmGGffvkf59e2vdLfAG1QCMb7B",
+  "trx": 99999999
+ },
+ {
+  "tx": "a47f1f760d123af5c315859e83984384d63fba232e0181cde3238eca6ccaaf2d",
+  "t": 1774100952000,
+  "ok": true,
+  "tipo": "Transfer",
+  "de": "TSVkuVzNfgWcmbGsaeLyJkan5a41kSi4cu",
+  "a": "TEF9ZVUxhmGGffvkf59e2vdLfAG1QCMb7B",
+  "trx": 0.000001
+ },
+ {
+  "tx": "15a4608d893b9d12130aad954a50791d6e6b26829cbe39a213d2cfebdfa1eb94",
+  "t": 1774100967000,
+  "ok": true,
+  "tipo": "Transfer",
+  "de": "TFTWNgDBkQ5wQoP8RXpRznnHvAVV8x5jLu",
+  "a": "TEF9ZVUxhmGGffvkf59e2vdLfAG1QCMb7B",
+  "trx": 99999999
+ },
+ {
+  "tx": "a2e12dcf92a7c87cd58b55e1e172e670c8d67f0f16e9c5b6d0f96fb4585b6ddc",
+  "t": 1774162107000,
+  "ok": true,
+  "tipo": "DelegateResource",
+  "de": "TLUd7JuJbZuqxkn1itHGurXUknygmRuiSj",
+  "a": "TEF9ZVUxhmGGffvkf59e2vdLfAG1QCMb7B",
+  "trx": 6934.658533,
+  "recurso": "ENERGY",
+  "bloqueo": false
+ },
+ {
+  "tx": "85fab300ef4d378e24799b860559ab25de807b3b4a7fbb718b7ab8a0778ea940",
+  "t": 1774162710000,
+  "ok": true,
+  "tipo": "UnDelegateResource",
+  "de": "TLUd7JuJbZuqxkn1itHGurXUknygmRuiSj",
+  "a": "TEF9ZVUxhmGGffvkf59e2vdLfAG1QCMb7B",
+  "trx": 6934.658533,
+  "recurso": "ENERGY"
+ },
+ {
+  "tx": "bbb9129d1036e32d854ef46eca1032a0a7dbadfed80a67047e59f83d77eeab3a",
+  "t": 1774277367000,
+  "ok": true,
+  "tipo": "Transfer",
+  "de": "TCGX17y9Xdqy4r8KbPMuVuE1AC9YZoqqdT",
+  "a": "TEF9ZVUxhmGGffvkf59e2vdLfAG1QCMb7B",
+  "trx": 1
+ },
+ {
+  "tx": "677261e5ca5b5cbdf3ab614520af9eb3e2fbbf5b1e31fb35c7023835d267591b",
+  "t": 1774277370000,
+  "ok": true,
+  "tipo": "Transfer",
+  "de": "TZGfFLAoCmHfNPU3Km1ipuVL34buuSHqdT",
+  "a": "TEF9ZVUxhmGGffvkf59e2vdLfAG1QCMb7B",
+  "trx": 0.000005
+ },
+ {
+  "tx": "45fe3d4cb737c33768cad3a1033765397c9fc5877286ce16c4b0e481b2a3179e",
+  "t": 1774405026000,
+  "ok": true,
+  "tipo": "FreezeBalanceV2",
+  "de": "TEF9ZVUxhmGGffvkf59e2vdLfAG1QCMb7B",
+  "trx": 50000000,
+  "recurso": "ENERGY"
+ },
+ {
+  "tx": "b3217c70a1cb9e0cfd284574e948199429c660db9c8e2c6f279fe4a34ca33d0f",
+  "t": 1774406319000,
+  "ok": true,
+  "tipo": "DelegateResource",
+  "de": "TEF9ZVUxhmGGffvkf59e2vdLfAG1QCMb7B",
+  "a": "TAzsQ9Gx8eqFNFSKbeXrbi45CuVPHzA8wr",
+  "trx": 30700000,
+  "recurso": "ENERGY",
+  "bloqueo": false
+ },
+ {
+  "tx": "a4ed6edcf2e1ffd058431bb4f23062b42b41f2193892bca4ff9d6f4f3556c585",
+  "t": 1774406349000,
+  "ok": true,
+  "tipo": "DelegateResource",
+  "de": "TEF9ZVUxhmGGffvkf59e2vdLfAG1QCMb7B",
+  "a": "TQrY8tryqsYVCYS3MFbtffiPp2ccyn4STm",
+  "trx": 17700000,
+  "recurso": "ENERGY",
+  "bloqueo": false
+ },
+ {
+  "tx": "9c3c4e60e2da73e3e55b0cbc1da0ef6f13ec558b490e1dabaab95dc1f963e5f7",
+  "t": 1774406391000,
+  "ok": true,
+  "tipo": "VoteWitness",
+  "de": "TEF9ZVUxhmGGffvkf59e2vdLfAG1QCMb7B",
+  "votos": [
+   {
+    "para": "TJvaAeFb8Lykt9RQcVyyTFN2iDvGMuyD4M",
+    "n": 414000300
+   }
+  ]
+ },
+ {
+  "tx": "62e2b886ad051ab44e341244a67ed8e7c2b08a3affaa75cd6f4eec2ea5e437f2",
+  "t": 1774507857000,
+  "ok": true,
+  "tipo": "FreezeBalanceV2",
+  "de": "TEF9ZVUxhmGGffvkf59e2vdLfAG1QCMb7B",
+  "trx": 100000000,
+  "recurso": "ENERGY"
+ },
+ {
+  "tx": "811874a7af7ff2f85f296bfe9f7b5257dcd160125a5f9052c25b0cf214da247c",
+  "t": 1774509150000,
+  "ok": true,
+  "tipo": "DelegateResource",
+  "de": "TEF9ZVUxhmGGffvkf59e2vdLfAG1QCMb7B",
+  "a": "TKLA6TSgaanq1vwnHmSvk74orGk8Zatuhf",
+  "trx": 564000,
+  "recurso": "BANDWIDTH",
+  "bloqueo": false
+ },
+ {
+  "tx": "5d5c0daeffee225b75870a08198ee14731ee8f05c832b498c4cd3b1cc291fe29",
+  "t": 1774509201000,
+  "ok": true,
+  "tipo": "DelegateResource",
+  "de": "TEF9ZVUxhmGGffvkf59e2vdLfAG1QCMb7B",
+  "a": "TKLA6TSgaanq1vwnHmSvk74orGk8Zatuhf",
+  "trx": 10400000,
+  "recurso": "ENERGY",
+  "bloqueo": false
+ },
+ {
+  "tx": "a9b2c6d6bf3a75bc9fbe618a259df9e5ed5bba1d412a58e8f19219d1d7449946",
+  "t": 1774511628000,
+  "ok": true,
+  "tipo": "DelegateResource",
+  "de": "TEF9ZVUxhmGGffvkf59e2vdLfAG1QCMb7B",
+  "a": "TU3rMHyWHzeEJBReWLzHko728hbz6MtfNg",
+  "trx": 64300000,
+  "recurso": "ENERGY",
+  "bloqueo": false
+ },
+ {
+  "tx": "829065676efa012da4b6a96778fc993e2ec76ed832c0937e2b1a36eee2303f5d",
+  "t": 1774512417000,
+  "ok": true,
+  "tipo": "VoteWitness",
+  "de": "TEF9ZVUxhmGGffvkf59e2vdLfAG1QCMb7B",
+  "votos": [
+   {
+    "para": "TJvaAeFb8Lykt9RQcVyyTFN2iDvGMuyD4M",
+    "n": 514000300
+   }
+  ]
+ },
+ {
+  "tx": "329163b75f490f23d1bd85b04f71904c3b9e714c6b40191fdfd5eab2059a911c",
+  "t": 1774512690000,
+  "ok": true,
+  "tipo": "TransferAsset",
+  "de": "TR23xkgRT8UQ1puPvV5Z5mJYJvfsKrARx1",
+  "a": "TEF9ZVUxhmGGffvkf59e2vdLfAG1QCMb7B",
+  "activo": "1004989",
+  "cantidad": 1111111
+ },
+ {
+  "tx": "696492b7c248f37afcec1010525365a5587718d6e96bda9e86f9f503876e3fae",
+  "t": 1774600002000,
+  "ok": true,
+  "tipo": "UnDelegateResource",
+  "de": "TEF9ZVUxhmGGffvkf59e2vdLfAG1QCMb7B",
+  "a": "TKLA6TSgaanq1vwnHmSvk74orGk8Zatuhf",
+  "trx": 20400000,
+  "recurso": "ENERGY"
+ },
+ {
+  "tx": "7e466756fe7feb3bbd67206f9ef8000f70c44db5b1816ebd3f2fe5c226be199d",
+  "t": 1774600032000,
+  "ok": true,
+  "tipo": "UnDelegateResource",
+  "de": "TEF9ZVUxhmGGffvkf59e2vdLfAG1QCMb7B",
+  "a": "TKLA6TSgaanq1vwnHmSvk74orGk8Zatuhf",
+  "trx": 1494000,
+  "recurso": "BANDWIDTH"
+ },
+ {
+  "tx": "07fe819d8074356de08cd15cd107de9b33c66744bf80010375e4123d498a67b8",
+  "t": 1774837563000,
+  "ok": true,
+  "tipo": "DelegateResource",
+  "de": "TEF9ZVUxhmGGffvkf59e2vdLfAG1QCMb7B",
+  "a": "TFNX7TKYCm1kUYDECjkrogBwYZvt69XQNy",
+  "trx": 23200000,
+  "recurso": "ENERGY",
+  "bloqueo": false
+ },
+ {
+  "tx": "a1ab68d08e8dab665e1505b97115e1dae9e92d3c5b599543a71cfb2f37761aaf",
+  "t": 1774837590000,
+  "ok": true,
+  "tipo": "DelegateResource",
+  "de": "TEF9ZVUxhmGGffvkf59e2vdLfAG1QCMb7B",
+  "a": "TFNX7TKYCm1kUYDECjkrogBwYZvt69XQNy",
+  "trx": 533000,
+  "recurso": "BANDWIDTH",
+  "bloqueo": false
+ },
+ {
+  "tx": "431cfce2f2940e32fc5dfbf25aa636481a9a2563d798e73dd3964bec0e3c254d",
+  "t": 1775466126000,
+  "ok": true,
+  "tipo": "FreezeBalanceV2",
+  "de": "TEF9ZVUxhmGGffvkf59e2vdLfAG1QCMb7B",
+  "trx": 40000000,
+  "recurso": "ENERGY"
+ },
+ {
+  "tx": "0a43a23127219633fcf49ef58286f5feba65cfefc7202461a9fc657927127289",
+  "t": 1775468724000,
+  "ok": true,
+  "tipo": "DelegateResource",
+  "de": "TEF9ZVUxhmGGffvkf59e2vdLfAG1QCMb7B",
+  "a": "TFNX7TKYCm1kUYDECjkrogBwYZvt69XQNy",
+  "trx": 10300000,
+  "recurso": "ENERGY",
+  "bloqueo": false
+ },
+ {
+  "tx": "b08c5133d6fff938545d0f0d2165913ab29efc22ac55174f599bbf027bc47274",
+  "t": 1775471040000,
+  "ok": true,
+  "tipo": "DelegateResource",
+  "de": "TEF9ZVUxhmGGffvkf59e2vdLfAG1QCMb7B",
+  "a": "THujb9fnC9v7DiNZMGxzXBZ5P5oVS1bid9",
+  "trx": 1640000,
+  "recurso": "ENERGY",
+  "bloqueo": false
+ },
+ {
+  "tx": "f63821e51d1b22cd8adbee21799c6ef6d1ada5d854093d47c43d8c3e5f7993eb",
+  "t": 1775483463000,
+  "ok": true,
+  "tipo": "DelegateResource",
+  "de": "TEF9ZVUxhmGGffvkf59e2vdLfAG1QCMb7B",
+  "a": "THujb9fnC9v7DiNZMGxzXBZ5P5oVS1bid9",
+  "trx": 52000,
+  "recurso": "BANDWIDTH",
+  "bloqueo": false
+ },
+ {
+  "tx": "0e9e35756fb768564fe98b2358891f42165c0918930cb3a3f3e1f5a6a0171809",
+  "t": 1775483490000,
+  "ok": true,
+  "tipo": "DelegateResource",
+  "de": "TEF9ZVUxhmGGffvkf59e2vdLfAG1QCMb7B",
+  "a": "TAv4yG9zFTjyyRJGzeGW3GgBBWz9QE2hHG",
+  "trx": 230000,
+  "recurso": "ENERGY",
+  "bloqueo": false
+ },
+ {
+  "tx": "12b35e7a66985048e0c9914b0a13e83aaa40d591f775bda20aa743fb6665c367",
+  "t": 1775483514000,
+  "ok": true,
+  "tipo": "DelegateResource",
+  "de": "TEF9ZVUxhmGGffvkf59e2vdLfAG1QCMb7B",
+  "a": "TAv4yG9zFTjyyRJGzeGW3GgBBWz9QE2hHG",
+  "trx": 45000,
+  "recurso": "BANDWIDTH",
+  "bloqueo": false
+ },
+ {
+  "tx": "cf88904bfca30167e7864a45eb2b4fdc656ab1743b92600d077d9e9f4ecab871",
+  "t": 1775483538000,
+  "ok": true,
+  "tipo": "DelegateResource",
+  "de": "TEF9ZVUxhmGGffvkf59e2vdLfAG1QCMb7B",
+  "a": "TTPr6LHna8ZFn1zS1CgDrhStscEByjnKFD",
+  "trx": 3000000,
+  "recurso": "ENERGY",
+  "bloqueo": false
+ },
+ {
+  "tx": "7a6f24341a1ea515d6b04b91d844c37155f2f391843067641cdf61066ddea59e",
+  "t": 1775625540000,
+  "ok": true,
+  "tipo": "DelegateResource",
+  "de": "TEF9ZVUxhmGGffvkf59e2vdLfAG1QCMb7B",
+  "a": "TFNX7TKYCm1kUYDECjkrogBwYZvt69XQNy",
+  "trx": 10700000,
+  "recurso": "ENERGY",
+  "bloqueo": false
+ },
+ {
+  "tx": "9dc2e3be01e43a3fee4e1d14e99c42ce754cff62164c29586dad6a49ddb8335c",
+  "t": 1775651631000,
+  "ok": true,
+  "tipo": "DelegateResource",
+  "de": "TEF9ZVUxhmGGffvkf59e2vdLfAG1QCMb7B",
+  "a": "TFNX7TKYCm1kUYDECjkrogBwYZvt69XQNy",
+  "trx": 120000,
+  "recurso": "BANDWIDTH",
+  "bloqueo": false
+ },
+ {
+  "tx": "11b626d63ca2a09570fc0dac00737356e0070f47deaa2d0b87cccb99e59bd312",
+  "t": 1775790822000,
+  "ok": true,
+  "tipo": "DelegateResource",
+  "de": "TEF9ZVUxhmGGffvkf59e2vdLfAG1QCMb7B",
+  "a": "TZCzCAiBGhFf3L7wW94TepYFeJg3oCuzdR",
+  "trx": 1630000,
+  "recurso": "ENERGY",
+  "bloqueo": false
+ },
+ {
+  "tx": "1c85dda0494d8e6dac390e67a45e59fbe3e52802fc1b7da5de008b644d2ccdfd",
+  "t": 1775790849000,
+  "ok": true,
+  "tipo": "DelegateResource",
+  "de": "TEF9ZVUxhmGGffvkf59e2vdLfAG1QCMb7B",
+  "a": "TZCzCAiBGhFf3L7wW94TepYFeJg3oCuzdR",
+  "trx": 13000,
+  "recurso": "BANDWIDTH",
+  "bloqueo": false
+ },
+ {
+  "tx": "b96339a233a628f111ef73fefe4849146bd0f70c0554399f8054384ea73ddee7",
+  "t": 1775810142000,
+  "ok": true,
+  "tipo": "UnDelegateResource",
+  "de": "TEF9ZVUxhmGGffvkf59e2vdLfAG1QCMb7B",
+  "a": "THujb9fnC9v7DiNZMGxzXBZ5P5oVS1bid9",
+  "trx": 1640000,
+  "recurso": "ENERGY"
+ },
+ {
+  "tx": "aed512dbcf9b47dd2009d218cc91b08a98000080680512202225637f19c85191",
+  "t": 1775810166000,
+  "ok": true,
+  "tipo": "UnDelegateResource",
+  "de": "TEF9ZVUxhmGGffvkf59e2vdLfAG1QCMb7B",
+  "a": "THujb9fnC9v7DiNZMGxzXBZ5P5oVS1bid9",
+  "trx": 52000,
+  "recurso": "BANDWIDTH"
+ },
+ {
+  "tx": "f9b9064afb88db15c237be0b6d5063d2fda9e019f5442e242877f49ad4bfa1ae",
+  "t": 1776841392000,
+  "ok": true,
+  "tipo": "FreezeBalanceV2",
+  "de": "TEF9ZVUxhmGGffvkf59e2vdLfAG1QCMb7B",
+  "trx": 10000000,
+  "recurso": "ENERGY"
+ },
+ {
+  "tx": "73806d6e69de03e5a721e92fa88cf212ce32a81d9d37d1a5760c9cad3a7d9136",
+  "t": 1776845337000,
+  "ok": true,
+  "tipo": "VoteWitness",
+  "de": "TEF9ZVUxhmGGffvkf59e2vdLfAG1QCMb7B",
+  "votos": [
+   {
+    "para": "TJvaAeFb8Lykt9RQcVyyTFN2iDvGMuyD4M",
+    "n": 524000300
+   }
+  ]
+ },
+ {
+  "tx": "3d3095840f44f66f66ac0e3f16ffc5784cb987a73880fa9bab2e656502e57652",
+  "t": 1777053438000,
+  "ok": true,
+  "tipo": "DelegateResource",
+  "de": "TEF9ZVUxhmGGffvkf59e2vdLfAG1QCMb7B",
+  "a": "TFzWDDwa9ePH3qGj1bnKtPyw9riKDtDKbZ",
+  "trx": 10880000,
+  "recurso": "ENERGY",
+  "bloqueo": false
+ },
+ {
+  "tx": "d3731e285304d80639ee32b861ec99cb1f4f3cbb6b3ba7d80fb628f392574491",
+  "t": 1777079457000,
+  "ok": true,
+  "tipo": "DelegateResource",
+  "de": "TLUd7JuJbZuqxkn1itHGurXUknygmRuiSj",
+  "a": "TEF9ZVUxhmGGffvkf59e2vdLfAG1QCMb7B",
+  "trx": 7073.132684,
+  "recurso": "ENERGY",
+  "bloqueo": false
+ },
+ {
+  "tx": "9654707a2dd90436f88639bd6f85c2c242ac58c483caf7d712feeba8cc12701b",
+  "t": 1777080060000,
+  "ok": true,
+  "tipo": "UnDelegateResource",
+  "de": "TLUd7JuJbZuqxkn1itHGurXUknygmRuiSj",
+  "a": "TEF9ZVUxhmGGffvkf59e2vdLfAG1QCMb7B",
+  "trx": 7073.132684,
+  "recurso": "ENERGY"
+ },
+ {
+  "tx": "3c7eb75eef7fa1495d8ab9bb0ffda97788d09aad9350f1be846ef36c2b2ea674",
+  "t": 1777343718000,
+  "ok": true,
+  "tipo": "DelegateResource",
+  "de": "TEF9ZVUxhmGGffvkf59e2vdLfAG1QCMb7B",
+  "a": "TZCzCAiBGhFf3L7wW94TepYFeJg3oCuzdR",
+  "trx": 2650000,
+  "recurso": "ENERGY",
+  "bloqueo": false
+ },
+ {
+  "tx": "14df9ccaa2cf0104419fea34873a13a307fea8393dcfd174636acc6dce77e555",
+  "t": 1777343742000,
+  "ok": true,
+  "tipo": "DelegateResource",
+  "de": "TEF9ZVUxhmGGffvkf59e2vdLfAG1QCMb7B",
+  "a": "TZCzCAiBGhFf3L7wW94TepYFeJg3oCuzdR",
+  "trx": 50000,
+  "recurso": "BANDWIDTH",
+  "bloqueo": false
+ },
+ {
+  "tx": "abb18407eadf0d6393d1a4e2f5c183a8f3399c7956e490cddcc1b5a0a79a0380",
+  "t": 1777390077000,
+  "ok": true,
+  "tipo": "DelegateResource",
+  "de": "TEF9ZVUxhmGGffvkf59e2vdLfAG1QCMb7B",
+  "a": "TFNX7TKYCm1kUYDECjkrogBwYZvt69XQNy",
+  "trx": 36000000,
+  "recurso": "ENERGY",
+  "bloqueo": false
+ },
+ {
+  "tx": "3b5975f238ded53e9d9b1fb28f74d6c40f4419802163de00bc6d47bbdd00a618",
+  "t": 1777390140000,
+  "ok": true,
+  "tipo": "DelegateResource",
+  "de": "TEF9ZVUxhmGGffvkf59e2vdLfAG1QCMb7B",
+  "a": "TFNX7TKYCm1kUYDECjkrogBwYZvt69XQNy",
+  "trx": 622000,
+  "recurso": "BANDWIDTH",
+  "bloqueo": false
+ },
+ {
+  "tx": "0272f693befb4280dce25deb22e27ebefd234eb4c7bdb7157bbbdfd9e6d6cd07",
+  "t": 1777431168000,
+  "ok": true,
+  "tipo": "VoteWitness",
+  "de": "TEF9ZVUxhmGGffvkf59e2vdLfAG1QCMb7B",
+  "votos": [
+   {
+    "para": "TJvaAeFb8Lykt9RQcVyyTFN2iDvGMuyD4M",
+    "n": 564000300
+   }
+  ]
+ },
+ {
+  "tx": "c9587968377b0beb3e6353fbd5a5e3da154d15672dbb12b20d4c52dfb728033e",
+  "t": 1777995819000,
+  "ok": true,
+  "tipo": "DelegateResource",
+  "de": "TEF9ZVUxhmGGffvkf59e2vdLfAG1QCMb7B",
+  "a": "TFNX7TKYCm1kUYDECjkrogBwYZvt69XQNy",
+  "trx": 700000,
+  "recurso": "BANDWIDTH",
+  "bloqueo": false
+ },
+ {
+  "tx": "1369b03f6e3573b8a0058c7425558cac321d43efd9dd0200de4d63de42e8bcc7",
+  "t": 1777995849000,
+  "ok": true,
+  "tipo": "UnDelegateResource",
+  "de": "TEF9ZVUxhmGGffvkf59e2vdLfAG1QCMb7B",
+  "a": "TZCzCAiBGhFf3L7wW94TepYFeJg3oCuzdR",
+  "trx": 2650000,
+  "recurso": "ENERGY"
+ },
+ {
+  "tx": "a96e6fc506905e32ae2fb5f5190973655fe7ed6076a8f151bc12954f502ebb05",
+  "t": 1777995873000,
+  "ok": true,
+  "tipo": "UnDelegateResource",
+  "de": "TEF9ZVUxhmGGffvkf59e2vdLfAG1QCMb7B",
+  "a": "TTPr6LHna8ZFn1zS1CgDrhStscEByjnKFD",
+  "trx": 3000000,
+  "recurso": "ENERGY"
+ },
+ {
+  "tx": "9af9b42c5673c43cc15f2a4827d0311e6707f04b4c4514f552a4dba2b02d0649",
+  "t": 1777996200000,
+  "ok": true,
+  "tipo": "DelegateResource",
+  "de": "TEF9ZVUxhmGGffvkf59e2vdLfAG1QCMb7B",
+  "a": "TFNX7TKYCm1kUYDECjkrogBwYZvt69XQNy",
+  "trx": 10800000,
+  "recurso": "ENERGY",
+  "bloqueo": false
+ },
+ {
+  "tx": "fbe677efbe1fa492c60c814118cf5dcdf1257a0fc9928cbfdd139dabacf0d093",
+  "t": 1778001069000,
+  "ok": true,
+  "tipo": "TransferAsset",
+  "de": "TXc4YmMECXsw3Kb9FWKsNJCiEDbo67KrBM",
+  "a": "TEF9ZVUxhmGGffvkf59e2vdLfAG1QCMb7B",
+  "activo": "1005141",
+  "cantidad": 970000
+ },
+ {
+  "tx": "45b31684d48880f93e70443d499982739237dd2a364067e8b80518763dc67fbc",
+  "t": 1778156454000,
+  "ok": true,
+  "tipo": "Transfer",
+  "de": "TFTWNgDBkQ5wQoP8RXpRznnHvAVV8x5jLu",
+  "a": "TEF9ZVUxhmGGffvkf59e2vdLfAG1QCMb7B",
+  "trx": 99999999
+ },
+ {
+  "tx": "0573703d8f99cac21478f56a3d8fcdcc252f537e56ba58274af5528c1effe12d",
+  "t": 1778156457000,
+  "ok": true,
+  "tipo": "Transfer",
+  "de": "TGq1rTdzDK4ZHx1kNFEEeaLAjt7YxH9u7S",
+  "a": "TEF9ZVUxhmGGffvkf59e2vdLfAG1QCMb7B",
+  "trx": 0.000001
+ },
+ {
+  "tx": "0d33217c4d8976ca8473fe23fabbc171f8a5a4aff7ae0be8404e0f10f5ac530d",
+  "t": 1778156667000,
+  "ok": true,
+  "tipo": "Transfer",
+  "de": "TFTWNgDBkQ5wQoP8RXpRznnHvAVV8x5jLu",
+  "a": "TEF9ZVUxhmGGffvkf59e2vdLfAG1QCMb7B",
+  "trx": 79999999
+ },
+ {
+  "tx": "4b4a130a43744469cfc26401c64d82661e7c7e5cbc23b21a7ec51980a2aa2a37",
+  "t": 1778157279000,
+  "ok": true,
+  "tipo": "WithdrawBalance",
+  "de": "TEF9ZVUxhmGGffvkf59e2vdLfAG1QCMb7B",
+  "valor": {
+   "owner_address": "412ee4494988b2b42459d65d653e7dbd237cbf9481"
+  }
+ },
+ {
+  "tx": "442ae337b99a2d07a311121c88159dff376a18492598063fb5385f178cb230a9",
+  "t": 1778158407000,
+  "ok": true,
+  "tipo": "Transfer",
+  "de": "TFTWNgDBkQ5wQoP8RXpRznnHvAVV8x5jLu",
+  "a": "TEF9ZVUxhmGGffvkf59e2vdLfAG1QCMb7B",
+  "trx": 99999999
+ },
+ {
+  "tx": "8d84c9f89eac1a82146f073da0e9762244eab6b2021be5081c5ec4450c7cfa24",
+  "t": 1778158476000,
+  "ok": true,
+  "tipo": "Transfer",
+  "de": "TFTWNgDBkQ5wQoP8RXpRznnHvAVV8x5jLu",
+  "a": "TEF9ZVUxhmGGffvkf59e2vdLfAG1QCMb7B",
+  "trx": 79999999
+ },
+ {
+  "tx": "53fc4f0c891f5d910c9c37b4a06281cc64978f9d37f3da4e7a54964cb445d7da",
+  "t": 1778162271000,
+  "ok": true,
+  "tipo": "FreezeBalanceV2",
+  "de": "TEF9ZVUxhmGGffvkf59e2vdLfAG1QCMb7B",
+  "trx": 100000000,
+  "recurso": "ENERGY"
+ },
+ {
+  "tx": "7bfa687a584d87899a4a6203549e17da17e041ea653b0619e880be2306dbd62d",
+  "t": 1778162682000,
+  "ok": true,
+  "tipo": "DelegateResource",
+  "de": "TEF9ZVUxhmGGffvkf59e2vdLfAG1QCMb7B",
+  "a": "TMv5piEwQPhDJQHjrLR65z4f4S3wSLdz83",
+  "trx": 40000000,
+  "recurso": "ENERGY",
+  "bloqueo": false
+ },
+ {
+  "tx": "fb3940745d030ea2cf649249560e2d0a91504a526b7ed78fcfaf8fbf749a8d55",
+  "t": 1778172102000,
+  "ok": true,
+  "tipo": "DelegateResource",
+  "de": "TEF9ZVUxhmGGffvkf59e2vdLfAG1QCMb7B",
+  "a": "TFNX7TKYCm1kUYDECjkrogBwYZvt69XQNy",
+  "trx": 54000000,
+  "recurso": "ENERGY",
+  "bloqueo": false
+ },
+ {
+  "tx": "fc923f6c56c76960a7ff67fe2b4f0fe164afba979b8ee2d3d68e741d0f6d1dac",
+  "t": 1778172132000,
+  "ok": true,
+  "tipo": "DelegateResource",
+  "de": "TEF9ZVUxhmGGffvkf59e2vdLfAG1QCMb7B",
+  "a": "TFNX7TKYCm1kUYDECjkrogBwYZvt69XQNy",
+  "trx": 1240000,
+  "recurso": "BANDWIDTH",
+  "bloqueo": false
+ },
+ {
+  "tx": "1c95a47ad48b1e77e9c9d380c60eed8cbfd3d43d9c39653e6a4d10734a2d058c",
+  "t": 1778207712000,
+  "ok": true,
+  "tipo": "FreezeBalanceV2",
+  "de": "TEF9ZVUxhmGGffvkf59e2vdLfAG1QCMb7B",
+  "trx": 5000000,
+  "recurso": "BANDWIDTH"
+ },
+ {
+  "tx": "0df5cef334ac60e0d0c379e7d72e74ca06310ad49ba5717972baf297346ef2c6",
+  "t": 1778209728000,
+  "ok": true,
+  "tipo": "DelegateResource",
+  "de": "TEF9ZVUxhmGGffvkf59e2vdLfAG1QCMb7B",
+  "a": "TFNX7TKYCm1kUYDECjkrogBwYZvt69XQNy",
+  "trx": 4400000,
+  "recurso": "BANDWIDTH",
+  "bloqueo": false
+ },
+ {
+  "tx": "3a1c82a26a2ad29f52c300d996ab6814e642204ee0796fe443f07e95619a8b42",
+  "t": 1778225349000,
+  "ok": true,
+  "tipo": "DelegateResource",
+  "de": "TEF9ZVUxhmGGffvkf59e2vdLfAG1QCMb7B",
+  "a": "TTPr6LHna8ZFn1zS1CgDrhStscEByjnKFD",
+  "trx": 3000000,
+  "recurso": "ENERGY",
+  "bloqueo": false
+ },
+ {
+  "tx": "9f327658bc58c2917e04cabca711bd48ce355f6877238f2a93aed53b322d6170",
+  "t": 1778390250000,
+  "ok": true,
+  "tipo": "FreezeBalanceV2",
+  "de": "TEF9ZVUxhmGGffvkf59e2vdLfAG1QCMb7B",
+  "trx": 200000000,
+  "recurso": "ENERGY"
+ },
+ {
+  "tx": "7a5da4e85bdd3f8123cfc270b00bc51d825c72ea0428a5464832b691de2682c7",
+  "t": 1778390931000,
+  "ok": true,
+  "tipo": "DelegateResource",
+  "de": "TEF9ZVUxhmGGffvkf59e2vdLfAG1QCMb7B",
+  "a": "TMv5piEwQPhDJQHjrLR65z4f4S3wSLdz83",
+  "trx": 10800000,
+  "recurso": "ENERGY",
+  "bloqueo": false
+ },
+ {
+  "tx": "ac2b0a630c1745d38875b57b108839b24de63c14d2e06d3c06734df43d6c669c",
+  "t": 1778662632000,
+  "ok": true,
+  "tipo": "DelegateResource",
+  "de": "TEF9ZVUxhmGGffvkf59e2vdLfAG1QCMb7B",
+  "a": "THujb9fnC9v7DiNZMGxzXBZ5P5oVS1bid9",
+  "trx": 820000,
+  "recurso": "ENERGY",
+  "bloqueo": false
+ },
+ {
+  "tx": "fe514f0f4713d0ab4e8137e6319f6710015c46af20074b9b89529ffc1e454c4e",
+  "t": 1778662659000,
+  "ok": true,
+  "tipo": "DelegateResource",
+  "de": "TEF9ZVUxhmGGffvkf59e2vdLfAG1QCMb7B",
+  "a": "THujb9fnC9v7DiNZMGxzXBZ5P5oVS1bid9",
+  "trx": 30000,
+  "recurso": "BANDWIDTH",
+  "bloqueo": false
+ },
+ {
+  "tx": "684d609c736175bc940490f0350374671f8302e642fdff928c07db0f01a00dd9",
+  "t": 1778667444000,
+  "ok": true,
+  "tipo": "DelegateResource",
+  "de": "TEF9ZVUxhmGGffvkf59e2vdLfAG1QCMb7B",
+  "a": "TH46mnDEM78hFBh26np3hDLjFy7WxFKSVV",
+  "trx": 372000,
+  "recurso": "BANDWIDTH",
+  "bloqueo": false
+ },
+ {
+  "tx": "33f28bd23eac9961432c540d31e8c897824bd30e28d25006d3eb6098d4f761e0",
+  "t": 1779037176000,
+  "ok": true,
+  "tipo": "DelegateResource",
+  "de": "TEF9ZVUxhmGGffvkf59e2vdLfAG1QCMb7B",
+  "a": "TMv5piEwQPhDJQHjrLR65z4f4S3wSLdz83",
+  "trx": 10691119,
+  "recurso": "ENERGY",
+  "bloqueo": false
+ },
+ {
+  "tx": "cffdd7d814c87c45d60b2321eb69034566f2d4f521670cfd6812bb7ccf81d133",
+  "t": 1779077580000,
+  "ok": true,
+  "tipo": "DelegateResource",
+  "de": "TEF9ZVUxhmGGffvkf59e2vdLfAG1QCMb7B",
+  "a": "TMv5piEwQPhDJQHjrLR65z4f4S3wSLdz83",
+  "trx": 10700000,
+  "recurso": "ENERGY",
+  "bloqueo": false
+ },
+ {
+  "tx": "47a39542283f9bc0804f83c91d0028e0469926d6fd0ab2df6ec4f5814b80d918",
+  "t": 1779085869000,
+  "ok": true,
+  "tipo": "DelegateResource",
+  "de": "TEF9ZVUxhmGGffvkf59e2vdLfAG1QCMb7B",
+  "a": "TMv5piEwQPhDJQHjrLR65z4f4S3wSLdz83",
+  "trx": 24800000,
+  "recurso": "ENERGY",
+  "bloqueo": false
+ },
+ {
+  "tx": "c8c96cbc6611407a85f8c0524cd91a0ce55017390a44d1a3bdc56a5599a5e912",
+  "t": 1779261456000,
+  "ok": true,
+  "tipo": "DelegateResource",
+  "de": "TEF9ZVUxhmGGffvkf59e2vdLfAG1QCMb7B",
+  "a": "TBPtNVdgkB8QPRHAJeZok6D9pqsFdALv9w",
+  "trx": 50000,
+  "recurso": "BANDWIDTH",
+  "bloqueo": false
+ },
+ {
+  "tx": "92e6622a9f8c9126eb6e41ba6565c3325288fa10340e68d4a77014c38bc743c5",
+  "t": 1779961290000,
+  "ok": true,
+  "tipo": "DelegateResource",
+  "de": "TEF9ZVUxhmGGffvkf59e2vdLfAG1QCMb7B",
+  "a": "TZCzCAiBGhFf3L7wW94TepYFeJg3oCuzdR",
+  "trx": 2910000,
+  "recurso": "ENERGY",
+  "bloqueo": false
+ },
+ {
+  "tx": "749a8edb8a8ac121844745381d4eb1351bfbb864f1416dfb4038866f487a03cd",
+  "t": 1780033920000,
+  "ok": true,
+  "tipo": "FreezeBalanceV2",
+  "de": "TEF9ZVUxhmGGffvkf59e2vdLfAG1QCMb7B",
+  "trx": 54440000,
+  "recurso": "ENERGY"
+ },
+ {
+  "tx": "607f10221e437ab5982418d6b4a2fe375b7a859b78fed9dab2acdcb5f4c10159",
+  "t": 1780033962000,
+  "ok": true,
+  "tipo": "FreezeBalanceV2",
+  "de": "TEF9ZVUxhmGGffvkf59e2vdLfAG1QCMb7B",
+  "trx": 5000000,
+  "recurso": "BANDWIDTH"
+ },
+ {
+  "tx": "b59ca6a388f8f71cde6074807591470709d68961e6e2fb0d0a9bb77b54cc7988",
+  "t": 1780035540000,
+  "ok": true,
+  "tipo": "VoteWitness",
+  "de": "TEF9ZVUxhmGGffvkf59e2vdLfAG1QCMb7B",
+  "votos": [
+   {
+    "para": "TJvaAeFb8Lykt9RQcVyyTFN2iDvGMuyD4M",
+    "n": 928440300
+   }
+  ]
+ },
+ {
+  "tx": "79f0e67cf9c2da85b553296d8c2116ab9d661c24964d412cfa10b7a2c4eb3c22",
+  "t": 1780053225000,
+  "ok": true,
+  "tipo": "DelegateResource",
+  "de": "TEF9ZVUxhmGGffvkf59e2vdLfAG1QCMb7B",
+  "a": "TYyriWzf7AW75hwiVB4oDBrJGThidZuRTd",
+  "trx": 125000000,
+  "recurso": "ENERGY",
+  "bloqueo": false
+ },
+ {
+  "tx": "758a7ce5a7b78b34cf81918c5c43ff3f1f6785f7dea0726138827b2135d62a9d",
+  "t": 1780053264000,
+  "ok": true,
+  "tipo": "DelegateResource",
+  "de": "TEF9ZVUxhmGGffvkf59e2vdLfAG1QCMb7B",
+  "a": "TYyriWzf7AW75hwiVB4oDBrJGThidZuRTd",
+  "trx": 5000000,
+  "recurso": "BANDWIDTH",
+  "bloqueo": false
+ },
+ {
+  "tx": "3e4c788341a59c7dcecebc2d065d805c97bd73b6d8edd36402cdeaa86abfe612",
+  "t": 1780553289000,
+  "ok": true,
+  "tipo": "DelegateResource",
+  "de": "TEF9ZVUxhmGGffvkf59e2vdLfAG1QCMb7B",
+  "a": "TMv5piEwQPhDJQHjrLR65z4f4S3wSLdz83",
+  "trx": 10849854,
+  "recurso": "ENERGY",
+  "bloqueo": false
+ },
+ {
+  "tx": "bc5e6e7fc24675f0944137fc809ecc9771b253fdff900e5f8daf7e311f8782ca",
+  "t": 1780559874000,
+  "ok": true,
+  "tipo": "DelegateResource",
+  "de": "TEF9ZVUxhmGGffvkf59e2vdLfAG1QCMb7B",
+  "a": "TW6EkjXg8iGRZbZkqDTrjGkxLDBby58ZVi",
+  "trx": 165000,
+  "recurso": "ENERGY",
+  "bloqueo": false
+ },
+ {
+  "tx": "76ea91c306265ff7313a4fa80d15219dded5f2871ac208e513a7465e03553832",
+  "t": 1780559895000,
+  "ok": true,
+  "tipo": "DelegateResource",
+  "de": "TEF9ZVUxhmGGffvkf59e2vdLfAG1QCMb7B",
+  "a": "TW6EkjXg8iGRZbZkqDTrjGkxLDBby58ZVi",
+  "trx": 4500,
+  "recurso": "BANDWIDTH",
+  "bloqueo": false
+ },
+ {
+  "tx": "33da90600458be175685caf78ff85d54ca9848d605f47353496c5ab86932db86",
+  "t": 1780570995000,
+  "ok": true,
+  "tipo": "DelegateResource",
+  "de": "TEF9ZVUxhmGGffvkf59e2vdLfAG1QCMb7B",
+  "a": "TMv5piEwQPhDJQHjrLR65z4f4S3wSLdz83",
+  "trx": 33000000,
+  "recurso": "ENERGY",
+  "bloqueo": false
+ },
+ {
+  "tx": "0e8837d70461a34abede1619e55a5b1869e5fec01f79d1bf9eda03b8d0e5d2a0",
+  "t": 1780571517000,
+  "ok": true,
+  "tipo": "DelegateResource",
+  "de": "TEF9ZVUxhmGGffvkf59e2vdLfAG1QCMb7B",
+  "a": "TUaASPt6XHP6tJbwbofdP2kcqPEa2MGooy",
+  "trx": 245000,
+  "recurso": "ENERGY",
+  "bloqueo": false
+ },
+ {
+  "tx": "5410c0fdafffbeaed1d99ecf6ddf0248acb19828039f91a9af4c05a9cfe4f80e",
+  "t": 1780571541000,
+  "ok": true,
+  "tipo": "DelegateResource",
+  "de": "TEF9ZVUxhmGGffvkf59e2vdLfAG1QCMb7B",
+  "a": "TUaASPt6XHP6tJbwbofdP2kcqPEa2MGooy",
+  "trx": 6000,
+  "recurso": "BANDWIDTH",
+  "bloqueo": false
+ },
+ {
+  "tx": "c7eb10bc7916a02746ba9720bd1a45d52ae6ea7a92ac489d032835944fde0db7",
+  "t": 1780571565000,
+  "ok": true,
+  "tipo": "DelegateResource",
+  "de": "TEF9ZVUxhmGGffvkf59e2vdLfAG1QCMb7B",
+  "a": "TNGePRK6b3s4TG5SVQX12SkNHMw242MT5b",
+  "trx": 165000,
+  "recurso": "ENERGY",
+  "bloqueo": false
+ },
+ {
+  "tx": "b79326c022fb5cb06d99dc3b9731c58ca6c2c0ce5284b2dc371f7e7d59eaade1",
+  "t": 1780571592000,
+  "ok": true,
+  "tipo": "DelegateResource",
+  "de": "TEF9ZVUxhmGGffvkf59e2vdLfAG1QCMb7B",
+  "a": "TNGePRK6b3s4TG5SVQX12SkNHMw242MT5b",
+  "trx": 4500,
+  "recurso": "BANDWIDTH",
+  "bloqueo": false
+ },
+ {
+  "tx": "5d040816eb4a3a2d672b733da7dbca0aa524bd984f4feb253a6dcd0bd85f5f3b",
+  "t": 1780631457000,
+  "ok": true,
+  "tipo": "DelegateResource",
+  "de": "TEF9ZVUxhmGGffvkf59e2vdLfAG1QCMb7B",
+  "a": "TFGziEard5FBtv9affSXrpRkiDkT5PRBnL",
+  "trx": 482000,
+  "recurso": "ENERGY",
+  "bloqueo": false
+ },
+ {
+  "tx": "5a4a796b126cd8212c635423c28d405fc083f6f3b26c66c164035bca585d81f8",
+  "t": 1780631484000,
+  "ok": true,
+  "tipo": "DelegateResource",
+  "de": "TEF9ZVUxhmGGffvkf59e2vdLfAG1QCMb7B",
+  "a": "TFGziEard5FBtv9affSXrpRkiDkT5PRBnL",
+  "trx": 9000,
+  "recurso": "BANDWIDTH",
+  "bloqueo": false
+ },
+ {
+  "tx": "376423155b593944c3495c8a9a59e4ce4a7753caa12ebbc3bb3414ce9c53da00",
+  "t": 1780631508000,
+  "ok": true,
+  "tipo": "DelegateResource",
+  "de": "TEF9ZVUxhmGGffvkf59e2vdLfAG1QCMb7B",
+  "a": "TUqfSMstUFnCn1KWbcK6857AdHJRV9bduK",
+  "trx": 601000,
+  "recurso": "ENERGY",
+  "bloqueo": false
+ },
+ {
+  "tx": "32af85d8411267a6a361d1b3d8d677fdc9714b1a3e771d6bb139c432973769bf",
+  "t": 1780631529000,
+  "ok": true,
+  "tipo": "DelegateResource",
+  "de": "TEF9ZVUxhmGGffvkf59e2vdLfAG1QCMb7B",
+  "a": "TUqfSMstUFnCn1KWbcK6857AdHJRV9bduK",
+  "trx": 11000,
+  "recurso": "BANDWIDTH",
+  "bloqueo": false
+ },
+ {
+  "tx": "6ee3663e30a0c598ab75ff6844e75a28ed201805cecac28e8332305405720e5d",
+  "t": 1780631550000,
+  "ok": true,
+  "tipo": "DelegateResource",
+  "de": "TEF9ZVUxhmGGffvkf59e2vdLfAG1QCMb7B",
+  "a": "TFm8zsJWupMKbeXhFFAWKwc41igiFJ9nHb",
+  "trx": 997000,
+  "recurso": "ENERGY",
+  "bloqueo": false
+ },
+ {
+  "tx": "ef3f02ef9b05c5470402cad02d61ed0fb8e200b8336aa27e72cfe72dc55a50b5",
+  "t": 1781099928000,
+  "ok": true,
+  "tipo": "UnDelegateResource",
+  "de": "TEF9ZVUxhmGGffvkf59e2vdLfAG1QCMb7B",
+  "a": "TYyriWzf7AW75hwiVB4oDBrJGThidZuRTd",
+  "trx": 30000000,
+  "recurso": "ENERGY"
+ },
+ {
+  "tx": "970ad40ee1e68c5e83e4fbd15c995b1f92e7268fe19779a536601d6ce6ed31fc",
+  "t": 1781099949000,
+  "ok": true,
+  "tipo": "UnDelegateResource",
+  "de": "TEF9ZVUxhmGGffvkf59e2vdLfAG1QCMb7B",
+  "a": "TYyriWzf7AW75hwiVB4oDBrJGThidZuRTd",
+  "trx": 2000000,
+  "recurso": "BANDWIDTH"
+ },
+ {
+  "tx": "2776633210d5d84226abc17d83e3aba08bc69ae67864cc9486f980179aa1b0e1",
+  "t": 1781107113000,
+  "ok": true,
+  "tipo": "DelegateResource",
+  "de": "TEF9ZVUxhmGGffvkf59e2vdLfAG1QCMb7B",
+  "a": "TREnSaSMQxxsa7Cr8GWN2QuLmYqfF1vDtJ",
+  "trx": 30000000,
+  "recurso": "ENERGY",
+  "bloqueo": false
+ },
+ {
+  "tx": "a7148e2a818be8e2baa84685a31c3728028e7209eb4ad4d38e4db4e414a801b3",
+  "t": 1781107134000,
+  "ok": true,
+  "tipo": "DelegateResource",
+  "de": "TEF9ZVUxhmGGffvkf59e2vdLfAG1QCMb7B",
+  "a": "TREnSaSMQxxsa7Cr8GWN2QuLmYqfF1vDtJ",
+  "trx": 2000000,
+  "recurso": "BANDWIDTH",
+  "bloqueo": false
+ },
+ {
+  "tx": "10724916839a4d5a98163835aba907299249fc13b8806bade640f755bbf04546",
+  "t": 1781238642000,
+  "ok": true,
+  "tipo": "UnDelegateResource",
+  "de": "TEF9ZVUxhmGGffvkf59e2vdLfAG1QCMb7B",
+  "a": "TYyriWzf7AW75hwiVB4oDBrJGThidZuRTd",
+  "trx": 95000000,
+  "recurso": "ENERGY"
+ },
+ {
+  "tx": "f0cc7ca0a292b3c7f42429dfc3996251bbf4aa767b4416c32772707e359af0f4",
+  "t": 1781238669000,
+  "ok": true,
+  "tipo": "UnDelegateResource",
+  "de": "TEF9ZVUxhmGGffvkf59e2vdLfAG1QCMb7B",
+  "a": "TYyriWzf7AW75hwiVB4oDBrJGThidZuRTd",
+  "trx": 3000000,
+  "recurso": "BANDWIDTH"
+ },
+ {
+  "tx": "183b4bce739881ae7b0eadfdce90cbc3b94496a70b762943f8aa7b3b4fee4bfd",
+  "t": 1781238741000,
+  "ok": true,
+  "tipo": "UnDelegateResource",
+  "de": "TEF9ZVUxhmGGffvkf59e2vdLfAG1QCMb7B",
+  "a": "TREnSaSMQxxsa7Cr8GWN2QuLmYqfF1vDtJ",
+  "trx": 29200000,
+  "recurso": "ENERGY"
+ },
+ {
+  "tx": "a836e4ba7d0783c0fe9eb11546e85ea2d7248de57a83e086fc4b29659c124795",
+  "t": 1781238768000,
+  "ok": true,
+  "tipo": "UnDelegateResource",
+  "de": "TEF9ZVUxhmGGffvkf59e2vdLfAG1QCMb7B",
+  "a": "TREnSaSMQxxsa7Cr8GWN2QuLmYqfF1vDtJ",
+  "trx": 1800000,
+  "recurso": "BANDWIDTH"
+ },
+ {
+  "tx": "ee970a6f1cd569d92e7c45abdb144536e46d8432c3d674de7764e9ef2de96c59",
+  "t": 1782116325000,
+  "ok": true,
+  "tipo": "DelegateResource",
+  "de": "TEF9ZVUxhmGGffvkf59e2vdLfAG1QCMb7B",
+  "a": "TZCzCAiBGhFf3L7wW94TepYFeJg3oCuzdR",
+  "trx": 10000000,
+  "recurso": "ENERGY",
+  "bloqueo": false
+ },
+ {
+  "tx": "e5e03cd810bab72f9e830793ed053e7895129320555472ff9c31a74cfc4f1fe1",
+  "t": 1782116358000,
+  "ok": true,
+  "tipo": "DelegateResource",
+  "de": "TEF9ZVUxhmGGffvkf59e2vdLfAG1QCMb7B",
+  "a": "TZCzCAiBGhFf3L7wW94TepYFeJg3oCuzdR",
+  "trx": 250000,
+  "recurso": "BANDWIDTH",
+  "bloqueo": false
+ },
+ {
+  "tx": "53e3b0c944adaff0cd26879f7908032f9a537bab3c2c282fdad25d2f79a8acb9",
+  "t": 1782211626000,
+  "ok": true,
+  "tipo": "UnDelegateResource",
+  "de": "TEF9ZVUxhmGGffvkf59e2vdLfAG1QCMb7B",
+  "a": "TMv5piEwQPhDJQHjrLR65z4f4S3wSLdz83",
+  "trx": 58000000,
+  "recurso": "ENERGY"
+ },
+ {
+  "tx": "35f328f5e43036388e0c9dea17c08e81dfe256914080419ff3f277eb24905940",
+  "t": 1782353064000,
+  "ok": true,
+  "tipo": "UnDelegateResource",
+  "de": "TEF9ZVUxhmGGffvkf59e2vdLfAG1QCMb7B",
+  "a": "TZCzCAiBGhFf3L7wW94TepYFeJg3oCuzdR",
+  "trx": 10000000,
+  "recurso": "ENERGY"
+ },
+ {
+  "tx": "7a2ad6eb341ed25422a413d6e3b82720d76c1b97810bd1e62bb6a611ff75987b",
+  "t": 1782353085000,
+  "ok": true,
+  "tipo": "UnDelegateResource",
+  "de": "TEF9ZVUxhmGGffvkf59e2vdLfAG1QCMb7B",
+  "a": "TZCzCAiBGhFf3L7wW94TepYFeJg3oCuzdR",
+  "trx": 250000,
+  "recurso": "BANDWIDTH"
+ },
+ {
+  "tx": "9047754f700ee01842661e5783af4cf21cb356d94a343ac4f2a43e3f62f1ff4d",
+  "t": 1782382098000,
+  "ok": true,
+  "tipo": "DelegateResource",
+  "de": "TEF9ZVUxhmGGffvkf59e2vdLfAG1QCMb7B",
+  "a": "TFzWDDwa9ePH3qGj1bnKtPyw9riKDtDKbZ",
+  "trx": 31700000,
+  "recurso": "ENERGY",
+  "bloqueo": false
+ },
+ {
+  "tx": "b8902ab3a9ad62fba14a9c6bb2b83285035fd3740d882452d8f71a9af0b6b284",
+  "t": 1783078155000,
+  "ok": true,
+  "tipo": "DelegateResource",
+  "de": "TEF9ZVUxhmGGffvkf59e2vdLfAG1QCMb7B",
+  "a": "TDyP7gbiJKr7Aqw1GvJgf5EZjeKxGWau6Y",
+  "trx": 500000,
+  "recurso": "ENERGY",
+  "bloqueo": false
+ },
+ {
+  "tx": "5300f17a778e1bc051ba94a3fd0baaa6f72b6d22f747b891783703bec6d93c07",
+  "t": 1783078173000,
+  "ok": true,
+  "tipo": "DelegateResource",
+  "de": "TEF9ZVUxhmGGffvkf59e2vdLfAG1QCMb7B",
+  "a": "TDyP7gbiJKr7Aqw1GvJgf5EZjeKxGWau6Y",
+  "trx": 8000,
+  "recurso": "BANDWIDTH",
+  "bloqueo": false
+ },
+ {
+  "tx": "cf172bf5497cb1c55d0aa7bf70befe9da11bba59adbeabfa52094a5abe7afcc6",
+  "t": 1783078188000,
+  "ok": true,
+  "tipo": "DelegateResource",
+  "de": "TEF9ZVUxhmGGffvkf59e2vdLfAG1QCMb7B",
+  "a": "THkACNWEzcmQKotSkEKYvNETEWeavsjWpK",
+  "trx": 130000,
+  "recurso": "ENERGY",
+  "bloqueo": false
+ },
+ {
+  "tx": "cf985b1ca8d728c39b33bdbbb5844e285b0ef25c6c3d4c724c3192ddc9efdcec",
+  "t": 1783309116000,
+  "ok": true,
+  "tipo": "DelegateResource",
+  "de": "TEF9ZVUxhmGGffvkf59e2vdLfAG1QCMb7B",
+  "a": "TTPr6LHna8ZFn1zS1CgDrhStscEByjnKFD",
+  "trx": 5500000,
+  "recurso": "ENERGY",
+  "bloqueo": false
+ },
+ {
+  "tx": "afc08a312c1022ad445c910a90035bf5c45c6aa5d3044d19437cc141c4ea6954",
+  "t": 1783343073000,
+  "ok": true,
+  "tipo": "DelegateResource",
+  "de": "TEF9ZVUxhmGGffvkf59e2vdLfAG1QCMb7B",
+  "a": "TMv5piEwQPhDJQHjrLR65z4f4S3wSLdz83",
+  "trx": 10649968,
+  "recurso": "ENERGY",
+  "bloqueo": false
+ },
+ {
+  "tx": "4c847f521602d0facbeec4d7f387755dd9dcc217a79a884e0394944a084c91a7",
+  "t": 1783500204000,
+  "ok": true,
+  "tipo": "DelegateResource",
+  "de": "TEF9ZVUxhmGGffvkf59e2vdLfAG1QCMb7B",
+  "a": "THkACNWEzcmQKotSkEKYvNETEWeavsjWpK",
+  "trx": 340000,
+  "recurso": "ENERGY",
+  "bloqueo": false
+ },
+ {
+  "tx": "355ae5e72b1ecc2dc5a4e492983ca6dc5d4333bb17cfde328d377666179e649c",
+  "t": 1783500225000,
+  "ok": true,
+  "tipo": "DelegateResource",
+  "de": "TEF9ZVUxhmGGffvkf59e2vdLfAG1QCMb7B",
+  "a": "THkACNWEzcmQKotSkEKYvNETEWeavsjWpK",
+  "trx": 3000,
+  "recurso": "BANDWIDTH",
+  "bloqueo": false
+ },
+ {
+  "tx": "8e2b1d94186cb0dfb2396f6bf77f124ed29f852f127aa03f31c333c572a9baf1",
+  "t": 1783576302000,
+  "ok": true,
+  "tipo": "DelegateResource",
+  "de": "TEF9ZVUxhmGGffvkf59e2vdLfAG1QCMb7B",
+  "a": "TTPr6LHna8ZFn1zS1CgDrhStscEByjnKFD",
+  "trx": 10500000,
+  "recurso": "ENERGY",
+  "bloqueo": false
+ },
+ {
+  "tx": "dbfa716dd67bab308788247137362af2e166b514ca7fb80f198a6efb4c196446",
+  "t": 1783665321000,
+  "ok": true,
+  "tipo": "DelegateResource",
+  "de": "TG6KYdVbEc97hkdHVeiWiRtHPyiAYdhpCM",
+  "a": "TEF9ZVUxhmGGffvkf59e2vdLfAG1QCMb7B",
+  "trx": 6842.68802,
+  "recurso": "ENERGY",
+  "bloqueo": false
+ },
+ {
+  "tx": "144b4d14538656e5dfbcac645493ce561aaa7d914f4f27341adbe96f365db73e",
+  "t": 1783665924000,
+  "ok": true,
+  "tipo": "UnDelegateResource",
+  "de": "TG6KYdVbEc97hkdHVeiWiRtHPyiAYdhpCM",
+  "a": "TEF9ZVUxhmGGffvkf59e2vdLfAG1QCMb7B",
+  "trx": 6842.68802,
+  "recurso": "ENERGY"
+ },
+ {
+  "tx": "d9ed8692700a14f5b67c27d6ff169c07be6b7484f257eef12f67715a46eb8e94",
+  "t": 1784130276000,
+  "ok": true,
+  "tipo": "DelegateResource",
+  "de": "TEF9ZVUxhmGGffvkf59e2vdLfAG1QCMb7B",
+  "a": "TTmWtSB8FtzmiD5p2ejP5NRf4VLCo1ms9H",
+  "trx": 320000,
+  "recurso": "ENERGY",
+  "bloqueo": false
+ },
+ {
+  "tx": "a0a7d2021a022d81a4ad088cc2f5201ba60ccb68181d6add8632ad1be2804c89",
+  "t": 1784130297000,
+  "ok": true,
+  "tipo": "DelegateResource",
+  "de": "TEF9ZVUxhmGGffvkf59e2vdLfAG1QCMb7B",
+  "a": "TTmWtSB8FtzmiD5p2ejP5NRf4VLCo1ms9H",
+  "trx": 10000,
+  "recurso": "BANDWIDTH",
+  "bloqueo": false
+ },
+ {
+  "tx": "0ff04160e651126250348a558d744e7e81ce01be99c47bde84444eb489a8acfb",
+  "t": 1784707107000,
+  "ok": true,
+  "tipo": "UnDelegateResource",
+  "de": "TEF9ZVUxhmGGffvkf59e2vdLfAG1QCMb7B",
+  "a": "TH46mnDEM78hFBh26np3hDLjFy7WxFKSVV",
+  "trx": 372000,
+  "recurso": "BANDWIDTH"
+ },
+ {
+  "tx": "d6f24d8f54ae3f69d8c28005636fc4e908e363b73543eb5da96e37719eac1ec4",
+  "t": 1785137127000,
+  "ok": true,
+  "tipo": "UnDelegateResource",
+  "de": "TEF9ZVUxhmGGffvkf59e2vdLfAG1QCMb7B",
+  "a": "TTmWtSB8FtzmiD5p2ejP5NRf4VLCo1ms9H",
+  "trx": 320000,
+  "recurso": "ENERGY"
+ },
+ {
+  "tx": "9110973cce2e700f0d84ca5ffc26430339d01acc78f57aae52ae14353bc3b4e7",
+  "t": 1785137148000,
+  "ok": true,
+  "tipo": "UnDelegateResource",
+  "de": "TEF9ZVUxhmGGffvkf59e2vdLfAG1QCMb7B",
+  "a": "TTmWtSB8FtzmiD5p2ejP5NRf4VLCo1ms9H",
+  "trx": 10000,
+  "recurso": "BANDWIDTH"
+ },
+ {
+  "tx": "99cdaea077d4c8cf95242e8cd110388385428c4c60c02341fc7667a6ba9e7953",
+  "t": 1785145494000,
+  "ok": true,
+  "tipo": "DelegateResource",
+  "de": "TEF9ZVUxhmGGffvkf59e2vdLfAG1QCMb7B",
+  "a": "TAMVp6dsw7P3R8zd3PhVowEhVLczRWwPQE",
+  "trx": 50100000,
+  "recurso": "ENERGY",
+  "bloqueo": false
+ },
+ {
+  "tx": "caef03c9dd93f17d39bdf0dc4021c5760373b86f155a0c20c5ce25a69b59483a",
+  "t": 1785145515000,
+  "ok": true,
+  "tipo": "DelegateResource",
+  "de": "TEF9ZVUxhmGGffvkf59e2vdLfAG1QCMb7B",
+  "a": "TAMVp6dsw7P3R8zd3PhVowEhVLczRWwPQE",
+  "trx": 1866000,
+  "recurso": "BANDWIDTH",
+  "bloqueo": false
+ },
+ {
+  "tx": "51e8bd76eafa8f8570addfa955552c57815545026f821f65e11498d134166a28",
+  "t": 1785166926000,
+  "ok": true,
+  "tipo": "UnDelegateResource",
+  "de": "TEF9ZVUxhmGGffvkf59e2vdLfAG1QCMb7B",
+  "a": "TREnSaSMQxxsa7Cr8GWN2QuLmYqfF1vDtJ",
+  "trx": 800000,
+  "recurso": "ENERGY"
+ },
+ {
+  "tx": "0b579310700cabe6d124c4b7bee839bdb58a8e57befcae72dd1dd44e781a46c6",
+  "t": 1785166944000,
+  "ok": true,
+  "tipo": "UnDelegateResource",
+  "de": "TEF9ZVUxhmGGffvkf59e2vdLfAG1QCMb7B",
+  "a": "TREnSaSMQxxsa7Cr8GWN2QuLmYqfF1vDtJ",
+  "trx": 200000,
+  "recurso": "BANDWIDTH"
+ },
+ {
+  "tx": "998a968cdeb33b219b170560cc19e201341cdfb71092585c0bfc946f11850a18",
+  "t": 1785166974000,
+  "ok": true,
+  "tipo": "UnDelegateResource",
+  "de": "TEF9ZVUxhmGGffvkf59e2vdLfAG1QCMb7B",
+  "a": "TTPr6LHna8ZFn1zS1CgDrhStscEByjnKFD",
+  "trx": 10420000,
+  "recurso": "ENERGY"
+ },
+ {
+  "tx": "be419f53b7a09240a0065ad62ce1530429ea0e9c0828852d21399690c439ee7a",
+  "t": 1785393984000,
+  "ok": true,
+  "tipo": "UnDelegateResource",
+  "de": "TEF9ZVUxhmGGffvkf59e2vdLfAG1QCMb7B",
+  "a": "TAMVp6dsw7P3R8zd3PhVowEhVLczRWwPQE",
+  "trx": 50100000,
+  "recurso": "ENERGY"
+ },
+ {
+  "tx": "47529a5edbe700433a16cb5efb0a77f64b3c63b7e8078fdf10309302ef8e9f6b",
+  "t": 1785394002000,
+  "ok": true,
+  "tipo": "UnDelegateResource",
+  "de": "TEF9ZVUxhmGGffvkf59e2vdLfAG1QCMb7B",
+  "a": "TAMVp6dsw7P3R8zd3PhVowEhVLczRWwPQE",
+  "trx": 1866000,
+  "recurso": "BANDWIDTH"
+ },
+ {
+  "tx": "6995f543f91b8f5b4c79942b910b4bdb35a416ead28c166a770f46de23e3dfa6",
+  "t": 1785750600000,
+  "ok": true,
+  "tipo": "DelegateResource",
+  "de": "TEF9ZVUxhmGGffvkf59e2vdLfAG1QCMb7B",
+  "a": "TWPpxPd5PpU5FQk6F6F3HMN5VdufxnVA8K",
+  "trx": 320000,
+  "recurso": "ENERGY",
+  "bloqueo": false
+ },
+ {
+  "tx": "8f0fed9b4b324d0a6a8730dd04a105d1ae98a0bb09bcf570e696a85b2900b9bd",
+  "t": 1785750627000,
+  "ok": true,
+  "tipo": "DelegateResource",
+  "de": "TEF9ZVUxhmGGffvkf59e2vdLfAG1QCMb7B",
+  "a": "TWPpxPd5PpU5FQk6F6F3HMN5VdufxnVA8K",
+  "trx": 50000,
+  "recurso": "BANDWIDTH",
+  "bloqueo": false
+ },
+ {
+  "tx": "8fb7f58ca9166cae91e4deffa97bbc234817401e22c159ce21c947e53ad2d077",
+  "t": 1786190616000,
+  "ok": true,
+  "tipo": "DelegateResource",
+  "de": "TEF9ZVUxhmGGffvkf59e2vdLfAG1QCMb7B",
+  "a": "TCmgBFCSTnbpv8exWfZnQAg7UnyFSSJyJp",
+  "trx": 1640000,
+  "recurso": "ENERGY",
+  "bloqueo": false
+ },
+ {
+  "tx": "210f9fdf645a2a04a67d86edec4b710034e5afb0a4bc389f014222fccae9f7c9",
+  "t": 1787632221000,
+  "ok": true,
+  "tipo": "DelegateResource",
+  "de": "TEF9ZVUxhmGGffvkf59e2vdLfAG1QCMb7B",
+  "a": "TMv5piEwQPhDJQHjrLR65z4f4S3wSLdz83",
+  "trx": 10400000,
+  "recurso": "ENERGY",
+  "bloqueo": false
+ },
+ {
+  "tx": "f795b5ab9a2867234d4de56f3b95ff7a38916e2d56facf956179ad1ffc7ceeb3",
+  "t": 1787639424000,
+  "ok": true,
+  "tipo": "DelegateResource",
+  "de": "TEF9ZVUxhmGGffvkf59e2vdLfAG1QCMb7B",
+  "a": "TMv5piEwQPhDJQHjrLR65z4f4S3wSLdz83",
+  "trx": 41720000,
+  "recurso": "ENERGY",
+  "bloqueo": false
+ },
+ {
+  "tx": "8f2e68f5e2b1efc114b3900d0e88e77e4650d43c693d3eabf01619f55371cb1e",
+  "t": 1787798907000,
+  "ok": true,
+  "tipo": "UnDelegateResource",
+  "de": "TEF9ZVUxhmGGffvkf59e2vdLfAG1QCMb7B",
+  "a": "TMv5piEwQPhDJQHjrLR65z4f4S3wSLdz83",
+  "trx": 52120000,
+  "recurso": "ENERGY"
+ },
+ {
+  "tx": "b613ff1577846d1cfeec3f3c918c7a25ef008536f5ddf23c56f9bacaa8b48007",
+  "t": 1787839707000,
+  "ok": true,
+  "tipo": "DelegateResource",
+  "de": "TEF9ZVUxhmGGffvkf59e2vdLfAG1QCMb7B",
+  "a": "TU3rMHyWHzeEJBReWLzHko728hbz6MtfNg",
+  "trx": 10440000,
+  "recurso": "ENERGY",
+  "bloqueo": false
+ },
+ {
+  "tx": "704027a711b472a8af1bcd865f03cc1ac3e79c8868b7dfacc8b91679538bb491",
+  "t": 1788187842000,
+  "ok": true,
+  "tipo": "DelegateResource",
+  "de": "TEF9ZVUxhmGGffvkf59e2vdLfAG1QCMb7B",
+  "a": "TU3rMHyWHzeEJBReWLzHko728hbz6MtfNg",
+  "trx": 10440000,
+  "recurso": "ENERGY",
+  "bloqueo": false
+ },
+ {
+  "tx": "8140b18363790b34226546a589196ee99027854c5162a6d12d7bfb54e5735d62",
+  "t": 1788260175000,
+  "ok": true,
+  "tipo": "DelegateResource",
+  "de": "TEF9ZVUxhmGGffvkf59e2vdLfAG1QCMb7B",
+  "a": "TCXrf8SwGjcmQYY1FcFnV3LUXSQpqod3bi",
+  "trx": 105000,
+  "recurso": "ENERGY",
+  "bloqueo": false
+ },
+ {
+  "tx": "c0cc88cba68244ee4f309b62d705dc5f457b7acd2893daff737ec7c20ae03586",
+  "t": 1788260199000,
+  "ok": true,
+  "tipo": "DelegateResource",
+  "de": "TEF9ZVUxhmGGffvkf59e2vdLfAG1QCMb7B",
+  "a": "TCXrf8SwGjcmQYY1FcFnV3LUXSQpqod3bi",
+  "trx": 7000,
+  "recurso": "BANDWIDTH",
+  "bloqueo": false
+ },
+ {
+  "tx": "fff86e2fda6c03feca54357b9a9d12187ff345befccdce77ec8fe9e350aa1aa0",
+  "t": 1788260229000,
+  "ok": true,
+  "tipo": "UnDelegateResource",
+  "de": "TEF9ZVUxhmGGffvkf59e2vdLfAG1QCMb7B",
+  "a": "TCxK2F5fitQJn8Z51RZCyEFMiLKjZtkvEz",
+  "trx": 11790000,
+  "recurso": "ENERGY"
+ },
+ {
+  "tx": "9c0e92f54627cda8671b35ee479a71a0cbf8bfd5ecbd469cf42e0ffcf6116f05",
+  "t": 1788325854000,
+  "ok": true,
+  "tipo": "UnDelegateResource",
+  "de": "TEF9ZVUxhmGGffvkf59e2vdLfAG1QCMb7B",
+  "a": "TFGziEard5FBtv9affSXrpRkiDkT5PRBnL",
+  "trx": 377000,
+  "recurso": "ENERGY"
+ },
+ {
+  "tx": "5f58eaf5474af7f960b7e566076a120da7c9614b3e37018864aa6783c07e4c64",
+  "t": 1788325881000,
+  "ok": true,
+  "tipo": "UnDelegateResource",
+  "de": "TEF9ZVUxhmGGffvkf59e2vdLfAG1QCMb7B",
+  "a": "TUqfSMstUFnCn1KWbcK6857AdHJRV9bduK",
+  "trx": 496000,
+  "recurso": "ENERGY"
+ },
+ {
+  "tx": "82a50ba3a655912e0f1efaf9f366b8de370f6fb2138d3baf98dd0796dc6c74da",
+  "t": 1788325914000,
+  "ok": true,
+  "tipo": "UnDelegateResource",
+  "de": "TEF9ZVUxhmGGffvkf59e2vdLfAG1QCMb7B",
+  "a": "TFm8zsJWupMKbeXhFFAWKwc41igiFJ9nHb",
+  "trx": 893000,
+  "recurso": "ENERGY"
+ },
+ {
+  "tx": "ee4440b585b99960830ec31cdbb90ed623adeef6a0e11d1c2613848c4df5bf2a",
+  "t": 1788325956000,
+  "ok": true,
+  "tipo": "UnDelegateResource",
+  "de": "TEF9ZVUxhmGGffvkf59e2vdLfAG1QCMb7B",
+  "a": "TKNnggcU5Ph18hSdK1U8xeLAG7YrqKwoUu",
+  "trx": 6775000,
+  "recurso": "ENERGY"
+ },
+ {
+  "tx": "796abdb0bf1b6180a3ab7722a6b896333b7f6be81b27c12e634e4bd7acc8593d",
+  "t": 1788326085000,
+  "ok": true,
+  "tipo": "UnDelegateResource",
+  "de": "TEF9ZVUxhmGGffvkf59e2vdLfAG1QCMb7B",
+  "a": "TKNnggcU5Ph18hSdK1U8xeLAG7YrqKwoUu",
+  "trx": 40000,
+  "recurso": "BANDWIDTH"
+ },
+ {
+  "tx": "2b740a1ebe6679f189c9ddc16577db610a649d3240d5876e69d45a012cba8879",
+  "t": 1788335097000,
+  "ok": true,
+  "tipo": "DelegateResource",
+  "de": "TEF9ZVUxhmGGffvkf59e2vdLfAG1QCMb7B",
+  "a": "TFNX7TKYCm1kUYDECjkrogBwYZvt69XQNy",
+  "trx": 10420000,
+  "recurso": "ENERGY",
+  "bloqueo": false
+ },
+ {
+  "tx": "52360b8a32e3fb93aff77fdb0331e09d6a808088638b61bc6d95ecd7985c0e25",
+  "t": 1788421212000,
+  "ok": true,
+  "tipo": "DelegateResource",
+  "de": "TEF9ZVUxhmGGffvkf59e2vdLfAG1QCMb7B",
+  "a": "TXQqiXg77zS5vj6fYYpw8Y1sUJ4fuUG8HM",
+  "trx": 1640000,
+  "recurso": "ENERGY",
+  "bloqueo": false
+ },
+ {
+  "tx": "78bbb8ef6f38fb01203ee4f182e7f7b589ff52d512c606233f8cd2297d1a56a3",
+  "t": 1788421236000,
+  "ok": true,
+  "tipo": "UnDelegateResource",
+  "de": "TEF9ZVUxhmGGffvkf59e2vdLfAG1QCMb7B",
+  "a": "TCmgBFCSTnbpv8exWfZnQAg7UnyFSSJyJp",
+  "trx": 1640000,
+  "recurso": "ENERGY"
+ },
+ {
+  "tx": "d1a52e5613d326c7210631fa3c852cc3f2542bd150a730a292f7cb2520bea05c",
+  "t": 1789030587000,
+  "ok": true,
+  "tipo": "DelegateResource",
+  "de": "TEF9ZVUxhmGGffvkf59e2vdLfAG1QCMb7B",
+  "a": "TW3gc2omYjk3hazrRq6hRWjJaiHfxPV59j",
+  "trx": 32000,
+  "recurso": "ENERGY",
+  "bloqueo": false
+ },
+ {
+  "tx": "f7584be47335dad0ec15ed3040860ff6113439edf311ca7c81bca241e97afd55",
+  "t": 1789030605000,
+  "ok": true,
+  "tipo": "DelegateResource",
+  "de": "TEF9ZVUxhmGGffvkf59e2vdLfAG1QCMb7B",
+  "a": "TW3gc2omYjk3hazrRq6hRWjJaiHfxPV59j",
+  "trx": 2000,
+  "recurso": "BANDWIDTH",
+  "bloqueo": false
+ },
+ {
+  "tx": "1b1088ac02cced0bc65aebd05ed243d0f4ef33798c8256f7185a78cf9da6cfb5",
+  "t": 1789030635000,
+  "ok": true,
+  "tipo": "DelegateResource",
+  "de": "TEF9ZVUxhmGGffvkf59e2vdLfAG1QCMb7B",
+  "a": "TYMrVuU8rXK5Cs3Hxz6gJGroCFAyFyGHZ1",
+  "trx": 32000,
+  "recurso": "ENERGY",
+  "bloqueo": false
+ },
+ {
+  "tx": "0995ea1ae226c87e5b735dfb74f9772adb6f7e83b089210bcaef45b83448874a",
+  "t": 1789030665000,
+  "ok": true,
+  "tipo": "DelegateResource",
+  "de": "TEF9ZVUxhmGGffvkf59e2vdLfAG1QCMb7B",
+  "a": "TYMrVuU8rXK5Cs3Hxz6gJGroCFAyFyGHZ1",
+  "trx": 2000,
+  "recurso": "BANDWIDTH",
+  "bloqueo": false
+ },
+ {
+  "tx": "3df4814610239067170fe7be599b315cc5c4db3a48e91e84350d3d3b0eefbc21",
+  "t": 1789031517000,
+  "ok": true,
+  "tipo": "DelegateResource",
+  "de": "TEF9ZVUxhmGGffvkf59e2vdLfAG1QCMb7B",
+  "a": "TBfAnqSQpFdwRbMTo2JgQZLMXi76wYgggB",
+  "trx": 32000,
+  "recurso": "ENERGY",
+  "bloqueo": false
+ },
+ {
+  "tx": "e5bec7ad29281c283f795c049c035232b8314eaecee11f789e4b46425c63bafb",
+  "t": 1789031580000,
+  "ok": true,
+  "tipo": "DelegateResource",
+  "de": "TEF9ZVUxhmGGffvkf59e2vdLfAG1QCMb7B",
+  "a": "TXxoKoA8ZHnVq5fjtCapXvxmiDPKhGNWSN",
+  "trx": 32000,
+  "recurso": "ENERGY",
+  "bloqueo": false
+ },
+ {
+  "tx": "1a22862c0470cd2d25b917904b8da49e12992c64b49ef48c490216ae56f6e276",
+  "t": 1789031604000,
+  "ok": true,
+  "tipo": "DelegateResource",
+  "de": "TEF9ZVUxhmGGffvkf59e2vdLfAG1QCMb7B",
+  "a": "TXxoKoA8ZHnVq5fjtCapXvxmiDPKhGNWSN",
+  "trx": 2000,
+  "recurso": "BANDWIDTH",
+  "bloqueo": false
+ },
+ {
+  "tx": "24e877f81114645b0572b216e7c6769c0087ab24cf4a3683a775db69da0b9388",
+  "t": 1789031676000,
+  "ok": true,
+  "tipo": "DelegateResource",
+  "de": "TEF9ZVUxhmGGffvkf59e2vdLfAG1QCMb7B",
+  "a": "TRCZGydLtU8S3XFt2DUFaoLpkwCH1tCa8B",
+  "trx": 32000,
+  "recurso": "ENERGY",
+  "bloqueo": false
+ },
+ {
+  "tx": "73374ff9a580a777fd43a9e5bf8c012198ea21f6a3754ee7efe7181a01ec9771",
+  "t": 1789031697000,
+  "ok": true,
+  "tipo": "DelegateResource",
+  "de": "TEF9ZVUxhmGGffvkf59e2vdLfAG1QCMb7B",
+  "a": "TRCZGydLtU8S3XFt2DUFaoLpkwCH1tCa8B",
+  "trx": 2000,
+  "recurso": "BANDWIDTH",
+  "bloqueo": false
+ },
+ {
+  "tx": "300e688d4a0e12e75ec3746805b445a60649600b769124b8880503c890e4fa35",
+  "t": 1789034397000,
+  "ok": true,
+  "tipo": "DelegateResource",
+  "de": "TEF9ZVUxhmGGffvkf59e2vdLfAG1QCMb7B",
+  "a": "TBfAnqSQpFdwRbMTo2JgQZLMXi76wYgggB",
+  "trx": 2000,
+  "recurso": "BANDWIDTH",
+  "bloqueo": false
+ },
+ {
+  "tx": "b0a939802ac1283f2d8f525954693433d876a8d4f3a238c6108a68c1ebb4553e",
+  "t": 1789034523000,
+  "ok": true,
+  "tipo": "DelegateResource",
+  "de": "TEF9ZVUxhmGGffvkf59e2vdLfAG1QCMb7B",
+  "a": "TKNnggcU5Ph18hSdK1U8xeLAG7YrqKwoUu",
+  "trx": 104000,
+  "recurso": "ENERGY",
+  "bloqueo": false
+ },
+ {
+  "tx": "751ba6a7f8b7810fe1ef2411e07be1c66f0c2215289cc800045a810ceb8ecd75",
+  "t": 1789373766000,
+  "ok": true,
+  "tipo": "DelegateResource",
+  "de": "TEF9ZVUxhmGGffvkf59e2vdLfAG1QCMb7B",
+  "a": "TBgGFBnqZuDeGkf4nyiaEo7mj3NodxYJBL",
+  "trx": 84000,
+  "recurso": "ENERGY",
+  "bloqueo": false
+ },
+ {
+  "tx": "0fb76f20991fce9363423f8a6cbb007c4fda192e93c660c5a44bc9b8f691e085",
+  "t": 1789373784000,
+  "ok": true,
+  "tipo": "DelegateResource",
+  "de": "TEF9ZVUxhmGGffvkf59e2vdLfAG1QCMb7B",
+  "a": "TBgGFBnqZuDeGkf4nyiaEo7mj3NodxYJBL",
+  "trx": 1000,
+  "recurso": "BANDWIDTH",
+  "bloqueo": false
+ },
+ {
+  "tx": "9657def1e52d930bfbca7d3461b443b20f0a3c5c7e2d22eeb41b41cde3f0e6b8",
+  "t": 1789373805000,
+  "ok": true,
+  "tipo": "DelegateResource",
+  "de": "TEF9ZVUxhmGGffvkf59e2vdLfAG1QCMb7B",
+  "a": "THYznBdDPQLLunwGwrVyCWLhNL3nhMjAPC",
+  "trx": 420000,
+  "recurso": "ENERGY",
+  "bloqueo": false
+ },
+ {
+  "tx": "75ed33c518c2378af211276939da138b2a8b08029f2d27f7c0f5374818143e4d",
+  "t": 1789373820000,
+  "ok": true,
+  "tipo": "DelegateResource",
+  "de": "TEF9ZVUxhmGGffvkf59e2vdLfAG1QCMb7B",
+  "a": "THYznBdDPQLLunwGwrVyCWLhNL3nhMjAPC",
+  "trx": 7000,
+  "recurso": "BANDWIDTH",
+  "bloqueo": false
+ },
+ {
+  "tx": "8b25a2e94b259ec54ceb84251f1c07c8c3c98242b6eb2de286711fe26cd680a5",
+  "t": 1789455432000,
+  "ok": true,
+  "tipo": "DelegateResource",
+  "de": "TEF9ZVUxhmGGffvkf59e2vdLfAG1QCMb7B",
+  "a": "TFTGcq8nsmeib2PGNA2VKM2hx94ygkcZnq",
+  "trx": 3150000,
+  "recurso": "ENERGY",
+  "bloqueo": false
+ },
+ {
+  "tx": "b0cd27dcfb569abb35009e2e4f947e8e6d3a0ddb9f334fffce5264db3801e801",
+  "t": 1789455510000,
+  "ok": true,
+  "tipo": "DelegateResource",
+  "de": "TEF9ZVUxhmGGffvkf59e2vdLfAG1QCMb7B",
+  "a": "TFTGcq8nsmeib2PGNA2VKM2hx94ygkcZnq",
+  "trx": 623000,
+  "recurso": "BANDWIDTH",
+  "bloqueo": false
+ },
+ {
+  "tx": "df4a9aa8a60f604ec1dda205d4963b1a1abf52237986423f0dced4d9202e797a",
+  "t": 1789455582000,
+  "ok": true,
+  "tipo": "DelegateResource",
+  "de": "TEF9ZVUxhmGGffvkf59e2vdLfAG1QCMb7B",
+  "a": "TYZ5ekizCPH4QdsnMfqQUFXBLtsuTuUKjJ",
+  "trx": 1574000,
+  "recurso": "ENERGY",
+  "bloqueo": false
+ },
+ {
+  "tx": "99bada6a1dd46d2f373e00d36c19a6afc929d5257c8a25e532cc752c9adf15a7",
+  "t": 1789455621000,
+  "ok": true,
+  "tipo": "DelegateResource",
+  "de": "TEF9ZVUxhmGGffvkf59e2vdLfAG1QCMb7B",
+  "a": "TSTVTRuiznZDL2Hbvysx4nEXRg1UHnSUVv",
+  "trx": 13640000,
+  "recurso": "ENERGY",
+  "bloqueo": false
+ },
+ {
+  "tx": "3ac65fe9ff02ad8961d574338b4c3508e8bc984368ef6e435e5a394ff3f137c3",
+  "t": 1789455657000,
+  "ok": true,
+  "tipo": "DelegateResource",
+  "de": "TEF9ZVUxhmGGffvkf59e2vdLfAG1QCMb7B",
+  "a": "TAfpoKQJfPiLa9AAkEk8CogM9GBTLBeoqH",
+  "trx": 5771000,
+  "recurso": "ENERGY",
+  "bloqueo": false
+ },
+ {
+  "tx": "222b771426c56faa18ac5df26c179bbcdd8726a3595ebc56b67e315a0259a431",
+  "t": 1789484235000,
+  "ok": true,
+  "tipo": "DelegateResource",
+  "de": "TEF9ZVUxhmGGffvkf59e2vdLfAG1QCMb7B",
+  "a": "TFTGcq8nsmeib2PGNA2VKM2hx94ygkcZnq",
+  "trx": 31480000,
+  "recurso": "ENERGY",
+  "bloqueo": false
+ },
+ {
+  "tx": "5fdccfbeb71cb9dcd85bd882174faebd56e2748fcfc4200eef0933155be59153",
+  "t": 1789549788000,
+  "ok": true,
+  "tipo": "UnDelegateResource",
+  "de": "TEF9ZVUxhmGGffvkf59e2vdLfAG1QCMb7B",
+  "a": "TFTGcq8nsmeib2PGNA2VKM2hx94ygkcZnq",
+  "trx": 623000,
+  "recurso": "BANDWIDTH"
+ },
+ {
+  "tx": "99140a800d38c77eed3e724b5f4a30aef98887cc32a1e42019e0648c34350727",
+  "t": 1789549797000,
+  "ok": true,
+  "tipo": "UnDelegateResource",
+  "de": "TEF9ZVUxhmGGffvkf59e2vdLfAG1QCMb7B",
+  "a": "TFTGcq8nsmeib2PGNA2VKM2hx94ygkcZnq",
+  "trx": 34630000,
+  "recurso": "ENERGY"
+ },
+ {
+  "tx": "3f55b4ae2184bdae857a35a41cdde6acca33247d2600392510eca45ee2128570",
+  "t": 1790149233000,
+  "ok": true,
+  "tipo": "DelegateResource",
+  "de": "TEF9ZVUxhmGGffvkf59e2vdLfAG1QCMb7B",
+  "a": "TW7igRFaUUFWNuwsuVw1xiMQcDf4pf7SWe",
+  "trx": 158000,
+  "recurso": "ENERGY",
+  "bloqueo": false
+ },
+ {
+  "tx": "ef4eac36f01aeec833f8b1f92babc1bdeffa24f8e46d7a4de262de3f33facd22",
+  "t": 1790149257000,
+  "ok": true,
+  "tipo": "DelegateResource",
+  "de": "TEF9ZVUxhmGGffvkf59e2vdLfAG1QCMb7B",
+  "a": "TW7igRFaUUFWNuwsuVw1xiMQcDf4pf7SWe",
+  "trx": 8000,
+  "recurso": "BANDWIDTH",
+  "bloqueo": false
+ },
+ {
+  "tx": "a0a96949d9d4b4827622f97654145be390c2e47622c72d3fa105cd51a984d4a0",
+  "t": 1790149296000,
+  "ok": true,
+  "tipo": "DelegateResource",
+  "de": "TEF9ZVUxhmGGffvkf59e2vdLfAG1QCMb7B",
+  "a": "TXo8GVA3aopDpmQ6c28ZABBaApDzs4QRPB",
+  "trx": 158000,
+  "recurso": "ENERGY",
+  "bloqueo": false
+ },
+ {
+  "tx": "ce6ec99dac360368274054c4b25094a49609b17d11566a183b92da73f619d393",
+  "t": 1790149326000,
+  "ok": true,
+  "tipo": "DelegateResource",
+  "de": "TEF9ZVUxhmGGffvkf59e2vdLfAG1QCMb7B",
+  "a": "TXo8GVA3aopDpmQ6c28ZABBaApDzs4QRPB",
+  "trx": 8000,
+  "recurso": "BANDWIDTH",
+  "bloqueo": false
+ },
+ {
+  "tx": "0396c15ed649bcb4d178b5161385e8d6e2d5dd72e19bc873b89487447e64655d",
+  "t": 1790149368000,
+  "ok": true,
+  "tipo": "DelegateResource",
+  "de": "TEF9ZVUxhmGGffvkf59e2vdLfAG1QCMb7B",
+  "a": "TJeQNZYuCBZCUvQam56Y6UPpuoLt8G35SM",
+  "trx": 158000,
+  "recurso": "ENERGY",
+  "bloqueo": false
+ },
+ {
+  "tx": "e3140003c79b344f7f0fd21a91814ba50a47b24a5e6c31623d26b96e11dab736",
+  "t": 1790149944000,
+  "ok": true,
+  "tipo": "DelegateResource",
+  "de": "TEF9ZVUxhmGGffvkf59e2vdLfAG1QCMb7B",
+  "a": "TJeQNZYuCBZCUvQam56Y6UPpuoLt8G35SM",
+  "trx": 8000,
+  "recurso": "BANDWIDTH",
+  "bloqueo": false
+ },
+ {
+  "tx": "ad0d5fece222e40101a8d365e52b027e8a2b83fd61123fad7691b47c3e423613",
+  "t": 1790150058000,
+  "ok": true,
+  "tipo": "DelegateResource",
+  "de": "TEF9ZVUxhmGGffvkf59e2vdLfAG1QCMb7B",
+  "a": "TSycnpzevrkH49bhym3pcmLngCaNpBBrMv",
+  "trx": 158000,
+  "recurso": "ENERGY",
+  "bloqueo": false
+ },
+ {
+  "tx": "f4d37518a1a4756ca552d34321daf7a835e75299b506caa51a79803acebe4c9f",
+  "t": 1790150163000,
+  "ok": true,
+  "tipo": "DelegateResource",
+  "de": "TEF9ZVUxhmGGffvkf59e2vdLfAG1QCMb7B",
+  "a": "TSycnpzevrkH49bhym3pcmLngCaNpBBrMv",
+  "trx": 8000,
+  "recurso": "BANDWIDTH",
+  "bloqueo": false
+ },
+ {
+  "tx": "3387a96fa9ed20b96762869638fa8414bdc724bba222ab37a6eb9ad0c20224a2",
+  "t": 1790150430000,
+  "ok": true,
+  "tipo": "DelegateResource",
+  "de": "TEF9ZVUxhmGGffvkf59e2vdLfAG1QCMb7B",
+  "a": "TD3t2GwHu4LjRq34diUfBx7tXnhMCo5215",
+  "trx": 158000,
+  "recurso": "ENERGY",
+  "bloqueo": false
+ },
+ {
+  "tx": "418bd51263289152e457bcc3ad70545e2747bc4e67d627367cc4ffde36cd2153",
+  "t": 1790151486000,
+  "ok": true,
+  "tipo": "DelegateResource",
+  "de": "TEF9ZVUxhmGGffvkf59e2vdLfAG1QCMb7B",
+  "a": "TD3t2GwHu4LjRq34diUfBx7tXnhMCo5215",
+  "trx": 8000,
+  "recurso": "BANDWIDTH",
+  "bloqueo": false
+ },
+ {
+  "tx": "cdd4f50ec5772b1a043264a7c34d1a8fac332cdec4246e77be4fe5e97e433ba2",
+  "t": 1790152773000,
+  "ok": true,
+  "tipo": "DelegateResource",
+  "de": "TEF9ZVUxhmGGffvkf59e2vdLfAG1QCMb7B",
+  "a": "TZ5AJ56bdtp9py9NqCoLyHANiXZATU6qHF",
+  "trx": 158000,
+  "recurso": "ENERGY",
+  "bloqueo": false
+ },
+ {
+  "tx": "f7d969f689c5488524f3cde6bda0933936fa182dd9f864f77504eb3458039b98",
+  "t": 1790152854000,
+  "ok": true,
+  "tipo": "DelegateResource",
+  "de": "TEF9ZVUxhmGGffvkf59e2vdLfAG1QCMb7B",
+  "a": "TZ5AJ56bdtp9py9NqCoLyHANiXZATU6qHF",
+  "trx": 8000,
+  "recurso": "BANDWIDTH",
+  "bloqueo": false
+ },
+ {
+  "tx": "a548a58dbcf01cc3e268ebd563f89de7a2870010fa8bb1ce3fb43584a46bfb96",
+  "t": 1790160954000,
+  "ok": true,
+  "tipo": "DelegateResource",
+  "de": "TEF9ZVUxhmGGffvkf59e2vdLfAG1QCMb7B",
+  "a": "TYJqgb2h9jz7xQsDErp7x1dBSt3cGbqSHs",
+  "trx": 105000,
+  "recurso": "ENERGY",
+  "bloqueo": false
+ },
+ {
+  "tx": "b717bb0c4d88ff603807e5ef4060a6c72a35bdec19c9cd96108f65507bcba9bb",
+  "t": 1790160972000,
+  "ok": true,
+  "tipo": "DelegateResource",
+  "de": "TEF9ZVUxhmGGffvkf59e2vdLfAG1QCMb7B",
+  "a": "TYJqgb2h9jz7xQsDErp7x1dBSt3cGbqSHs",
+  "trx": 6200,
+  "recurso": "BANDWIDTH",
+  "bloqueo": false
+ },
+ {
+  "tx": "d1bcd6876686b93c3f46ed153d7cd0fd22ea48ad06ce5a21d86b3ab5140fe279",
+  "t": 1790160999000,
+  "ok": true,
+  "tipo": "DelegateResource",
+  "de": "TEF9ZVUxhmGGffvkf59e2vdLfAG1QCMb7B",
+  "a": "TGx9dARVCNhQLdDk6oLohU4tDi2UpqRFsz",
+  "trx": 105000,
+  "recurso": "ENERGY",
+  "bloqueo": false
+ },
+ {
+  "tx": "5ee0ae58af7d2e4bffb72f58040c47048fe52d660d19a67290009c243f81e087",
+  "t": 1790161017000,
+  "ok": true,
+  "tipo": "DelegateResource",
+  "de": "TEF9ZVUxhmGGffvkf59e2vdLfAG1QCMb7B",
+  "a": "TGx9dARVCNhQLdDk6oLohU4tDi2UpqRFsz",
+  "trx": 6200,
+  "recurso": "BANDWIDTH",
+  "bloqueo": false
+ },
+ {
+  "tx": "8a0200b65074a61afb422ba5052a3f65b64021f12da53194ab36d523f26cec71",
+  "t": 1790218368000,
+  "ok": true,
+  "tipo": "DelegateResource",
+  "de": "TEF9ZVUxhmGGffvkf59e2vdLfAG1QCMb7B",
+  "a": "TZ3A8QfTnstgKyiZnkGmtx41qu3CphSCxJ",
+  "trx": 105000,
+  "recurso": "ENERGY",
+  "bloqueo": false
+ },
+ {
+  "tx": "0cff92a0909d56b695e9c524e132a53862dab3dd25666545b7e3fcf3bfcdb67c",
+  "t": 1790218392000,
+  "ok": true,
+  "tipo": "DelegateResource",
+  "de": "TEF9ZVUxhmGGffvkf59e2vdLfAG1QCMb7B",
+  "a": "TZ3A8QfTnstgKyiZnkGmtx41qu3CphSCxJ",
+  "trx": 6200,
+  "recurso": "BANDWIDTH",
+  "bloqueo": false
+ },
+ {
+  "tx": "de6e8e42388fab38a93c2be2187211262c730936c9a8464982e9190b48504102",
+  "t": 1791195126000,
+  "ok": true,
+  "tipo": "DelegateResource",
+  "de": "TEF9ZVUxhmGGffvkf59e2vdLfAG1QCMb7B",
+  "a": "TFNX7TKYCm1kUYDECjkrogBwYZvt69XQNy",
+  "trx": 46220000,
+  "recurso": "ENERGY",
+  "bloqueo": false
+ },
+ {
+  "tx": "90cb06c66beabb7266b17b3e938b89a49d87f5f4828b922ad381a90578901767",
+  "t": 1791195141000,
+  "ok": true,
+  "tipo": "DelegateResource",
+  "de": "TEF9ZVUxhmGGffvkf59e2vdLfAG1QCMb7B",
+  "a": "TFNX7TKYCm1kUYDECjkrogBwYZvt69XQNy",
+  "trx": 990000,
+  "recurso": "BANDWIDTH",
+  "bloqueo": false
+ },
+ {
+  "tx": "ec9520b9f44162ca4ce398e6c2bac376072587e5673a335e3449b960e671065b",
+  "t": 1792497795000,
+  "ok": true,
+  "tipo": "Transfer",
+  "de": "TWhDfwC8QE6pQyiYy248dNor3uphPEw5M2",
+  "a": "TEF9ZVUxhmGGffvkf59e2vdLfAG1QCMb7B",
+  "trx": 99999999
+ },
+ {
+  "tx": "f1ad83569db526db2b1aa1609f39c2c259807831b1b07b26d5a87bc0758f382e",
+  "t": 1792497813000,
+  "ok": true,
+  "tipo": "Transfer",
+  "de": "TYRvZE7UPnoRJz5wHMu8kLkHhHeHBYPR3g",
+  "a": "TEF9ZVUxhmGGffvkf59e2vdLfAG1QCMb7B",
+  "trx": 0.000001
+ },
+ {
+  "tx": "b74a7b90f16064cc5bdfe8edede07fd2c0eb226d2bd6ba09fa2c4c33a22509a7",
+  "t": 1792515354000,
+  "ok": true,
+  "tipo": "FreezeBalanceV2",
+  "de": "TEF9ZVUxhmGGffvkf59e2vdLfAG1QCMb7B",
+  "trx": 100000000,
+  "recurso": "ENERGY"
+ },
+ {
+  "tx": "e3159c1bf42b9025e597ef4f980c6e89326ed761bd97d59b604b23b334bdc7cc",
+  "t": 1792550526000,
+  "ok": true,
+  "tipo": "VoteWitness",
+  "de": "TEF9ZVUxhmGGffvkf59e2vdLfAG1QCMb7B",
+  "votos": [
+   {
+    "para": "TJvaAeFb8Lykt9RQcVyyTFN2iDvGMuyD4M",
+    "n": 100000000
+   }
+  ]
+ },
+ {
+  "tx": "8e468d746bc43b2e17e94c938863bb28302264748de431f9526b504ced54952c",
+  "t": 1792550538000,
+  "ok": true,
+  "tipo": "DelegateResource",
+  "de": "TEF9ZVUxhmGGffvkf59e2vdLfAG1QCMb7B",
+  "a": "TU4vEruvZwLLkSfV9bNw12EJTPvNr7Pvaa",
+  "trx": 100000000,
+  "recurso": "ENERGY",
+  "bloqueo": false
+ },
+ {
+  "tx": "95069f28343a32df0fcdb45d99e543583f4c1a2795b7d1805c96e6aaa9dca683",
+  "t": 1792587489000,
+  "ok": true,
+  "tipo": "TransferAsset",
+  "de": "TQ5TAwCgirTF6VS1jqSURxZtt8rLMBTdh8",
+  "a": "TEF9ZVUxhmGGffvkf59e2vdLfAG1QCMb7B",
+  "activo": "1005074",
+  "cantidad": 222222
+ },
+ {
+  "tx": "7ccda0b9a1a9046833987edf8d7213c278fc011330c3828cbceece32888f7a9a",
+  "t": 1792622607000,
+  "ok": true,
+  "tipo": "TransferAsset",
+  "de": "TXZFaCZ9S7QvhePdnpfsEWYg28hdsngRLM",
+  "a": "TEF9ZVUxhmGGffvkf59e2vdLfAG1QCMb7B",
+  "activo": "1005114",
+  "cantidad": 8888
+ },
+ {
+  "tx": "9b5b3152552dbfa8fabd19450b2b7d8938f7fcd28393529efb0deec47b08bb5a",
+  "t": 1792724577000,
+  "ok": true,
+  "tipo": "DelegateResource",
+  "de": "TEF9ZVUxhmGGffvkf59e2vdLfAG1QCMb7B",
+  "a": "TFm8zsJWupMKbeXhFFAWKwc41igiFJ9nHb",
+  "trx": 110000,
+  "recurso": "ENERGY",
+  "bloqueo": false
+ },
+ {
+  "tx": "9bdda2b0843a5d26e8586702ba2751353f6206d203358a91f362e87d238a2cbc",
+  "t": 1792724658000,
+  "ok": true,
+  "tipo": "VoteWitness",
+  "de": "TEF9ZVUxhmGGffvkf59e2vdLfAG1QCMb7B",
+  "votos": [
+   {
+    "para": "TJvaAeFb8Lykt9RQcVyyTFN2iDvGMuyD4M",
+    "n": 1028440300
+   }
+  ]
+ },
+ {
+  "tx": "f3b446cd88421fc19ab1385a1a6ff9266be0b1929a24f83d83aff5123fa51361",
+  "t": 1793081865000,
+  "ok": true,
+  "tipo": "DelegateResource",
+  "de": "TEF9ZVUxhmGGffvkf59e2vdLfAG1QCMb7B",
+  "a": "TFNX7TKYCm1kUYDECjkrogBwYZvt69XQNy",
+  "trx": 50000000,
+  "recurso": "ENERGY",
+  "bloqueo": false
+ },
+ {
+  "tx": "db4c8c82c4dc94c49e7265911156c1773b979c86913de7d997cf438913216c32",
+  "t": 1793203599000,
+  "ok": true,
+  "tipo": "TransferAsset",
+  "de": "TMXYxFbywwZTT3BUr25DtmgyfkyMuLJC3G",
+  "a": "TEF9ZVUxhmGGffvkf59e2vdLfAG1QCMb7B",
+  "activo": "1005127",
+  "cantidad": 88888888
+ },
+ {
+  "tx": "7d145106c0dcb7788fe20acae90d80868fbaec75882519724063ea4822401e46",
+  "t": 1793325945000,
+  "ok": true,
+  "tipo": "UnDelegateResource",
+  "de": "TEF9ZVUxhmGGffvkf59e2vdLfAG1QCMb7B",
+  "a": "TDyP7gbiJKr7Aqw1GvJgf5EZjeKxGWau6Y",
+  "trx": 400000,
+  "recurso": "ENERGY"
+ },
+ {
+  "tx": "5340843a19cd07d61709ca3d6fcfdc22bcef0e5c3e091ff1f2f77a46149a13e8",
+  "t": 1793325969000,
+  "ok": true,
+  "tipo": "UnDelegateResource",
+  "de": "TEF9ZVUxhmGGffvkf59e2vdLfAG1QCMb7B",
+  "a": "TDyP7gbiJKr7Aqw1GvJgf5EZjeKxGWau6Y",
+  "trx": 6400,
+  "recurso": "BANDWIDTH"
+ },
+ {
+  "tx": "d38fb08de6d40fc684dbc4edd6a4bc3963fff16353f8e7dc00d0c034daa9fe34",
+  "t": 1793326008000,
+  "ok": true,
+  "tipo": "UnDelegateResource",
+  "de": "TEF9ZVUxhmGGffvkf59e2vdLfAG1QCMb7B",
+  "a": "THkACNWEzcmQKotSkEKYvNETEWeavsjWpK",
+  "trx": 444000,
+  "recurso": "ENERGY"
+ },
+ {
+  "tx": "ad6dc457d9d5bb05b7a7e659c6b61c4844be3bfc4d5d5433233119ff6ea6066d",
+  "t": 1793326029000,
+  "ok": true,
+  "tipo": "UnDelegateResource",
+  "de": "TEF9ZVUxhmGGffvkf59e2vdLfAG1QCMb7B",
+  "a": "THkACNWEzcmQKotSkEKYvNETEWeavsjWpK",
+  "trx": 7200,
+  "recurso": "BANDWIDTH"
+ },
+ {
+  "tx": "8a9f80c1d772b870f7e5533769756e0deb8bd0820430f8e6180964ee20eb1f6d",
+  "t": 1793326062000,
+  "ok": true,
+  "tipo": "TransferAsset",
+  "de": "TGpxkZSKj3fxyWbbdSUqDjJC7bbPZAPZEE",
+  "a": "TEF9ZVUxhmGGffvkf59e2vdLfAG1QCMb7B",
+  "activo": "1005212",
+  "cantidad": 8880000
+ },
+ {
+  "tx": "f00ace82acd26b0cbd480fb136d839883d22d5424883c678167f829b65d99184",
+  "t": 1793346165000,
+  "ok": true,
+  "tipo": "UnDelegateResource",
+  "de": "TEF9ZVUxhmGGffvkf59e2vdLfAG1QCMb7B",
+  "a": "TKLA6TSgaanq1vwnHmSvk74orGk8Zatuhf",
+  "trx": 476000,
+  "recurso": "ENERGY"
+ },
+ {
+  "tx": "05e979482c92b63110ecb5f8911c42873d51e38ab6cbb9dae91c682f3f9c8a17",
+  "t": 1793346189000,
+  "ok": true,
+  "tipo": "UnDelegateResource",
+  "de": "TEF9ZVUxhmGGffvkf59e2vdLfAG1QCMb7B",
+  "a": "TKLA6TSgaanq1vwnHmSvk74orGk8Zatuhf",
+  "trx": 17600,
+  "recurso": "BANDWIDTH"
+ },
+ {
+  "tx": "b0fd06c8bf165ac22856e8d3c00a7f939b94edeb099b9021ed50d66e1c6c6825",
+  "t": 1793346225000,
+  "ok": true,
+  "tipo": "UnDelegateResource",
+  "de": "TEF9ZVUxhmGGffvkf59e2vdLfAG1QCMb7B",
+  "a": "TSAyT73m3WzzAdRkKEfed4YDRKoVtCQGjq",
+  "trx": 68000,
+  "recurso": "ENERGY"
+ },
+ {
+  "tx": "6b3469d7661eed0957e74e19d8002565868a68494d3238d70e98796d387457ea",
+  "t": 1793346252000,
+  "ok": true,
+  "tipo": "UnDelegateResource",
+  "de": "TEF9ZVUxhmGGffvkf59e2vdLfAG1QCMb7B",
+  "a": "TSAyT73m3WzzAdRkKEfed4YDRKoVtCQGjq",
+  "trx": 1000,
+  "recurso": "BANDWIDTH"
+ },
+ {
+  "tx": "36341052f722e18129f19bf401bde91b8592d61d9cb414d499a28e986df6b276",
+  "t": 1793346306000,
+  "ok": true,
+  "tipo": "UnDelegateResource",
+  "de": "TEF9ZVUxhmGGffvkf59e2vdLfAG1QCMb7B",
+  "a": "TVuXAUewdeLEC6wfqFgRyGyp4e4XPXVcLw",
+  "trx": 216000,
+  "recurso": "ENERGY"
+ },
+ {
+  "tx": "7f872c3c973512a86e0a922a124b231c9802c1dd9074e8f5a7f78deafb1a1305",
+  "t": 1793346330000,
+  "ok": true,
+  "tipo": "UnDelegateResource",
+  "de": "TEF9ZVUxhmGGffvkf59e2vdLfAG1QCMb7B",
+  "a": "TVuXAUewdeLEC6wfqFgRyGyp4e4XPXVcLw",
+  "trx": 6300,
+  "recurso": "BANDWIDTH"
+ },
+ {
+  "tx": "545605af54386c0dbb9cdb27348ab01408a488570ea8aff4abd33b118ce5c711",
+  "t": 1793346366000,
+  "ok": true,
+  "tipo": "UnDelegateResource",
+  "de": "TEF9ZVUxhmGGffvkf59e2vdLfAG1QCMb7B",
+  "a": "TKNnggcU5Ph18hSdK1U8xeLAG7YrqKwoUu",
+  "trx": 54500,
+  "recurso": "ENERGY"
+ },
+ {
+  "tx": "387c6a0870d8de02832c14c0ea47c48559ec867f7ce19626b08ec4a87b0b597f",
+  "t": 1793346576000,
+  "ok": true,
+  "tipo": "UnDelegateResource",
+  "de": "TEF9ZVUxhmGGffvkf59e2vdLfAG1QCMb7B",
+  "a": "TKNnggcU5Ph18hSdK1U8xeLAG7YrqKwoUu",
+  "trx": 200000,
+  "recurso": "BANDWIDTH"
+ },
+ {
+  "tx": "038d432af89de54edf99bcb5b32f8c17daf140d1a1576289bbf278463f51c675",
+  "t": 1793348244000,
+  "ok": true,
+  "tipo": "UnDelegateResource",
+  "de": "TEF9ZVUxhmGGffvkf59e2vdLfAG1QCMb7B",
+  "a": "TTPr6LHna8ZFn1zS1CgDrhStscEByjnKFD",
+  "trx": 4290000,
+  "recurso": "ENERGY"
+ },
+ {
+  "tx": "40103a764681bbe2b9f526368edbe6b42ccb0c2d76283f6492a0a8f99e9a4993",
+  "t": 1793348448000,
+  "ok": true,
+  "tipo": "UnDelegateResource",
+  "de": "TEF9ZVUxhmGGffvkf59e2vdLfAG1QCMb7B",
+  "a": "TMv5piEwQPhDJQHjrLR65z4f4S3wSLdz83",
+  "trx": 41522000,
+  "recurso": "ENERGY"
+ },
+ {
+  "tx": "ff8992da8ed20cbb3ab4ed2a2e424272bf154a5699eb0bedece0af1234e6a29a",
+  "t": 1793348484000,
+  "ok": true,
+  "tipo": "UnDelegateResource",
+  "de": "TEF9ZVUxhmGGffvkf59e2vdLfAG1QCMb7B",
+  "a": "TSTVTRuiznZDL2Hbvysx4nEXRg1UHnSUVv",
+  "trx": 13270000,
+  "recurso": "ENERGY"
+ },
+ {
+  "tx": "8ce8dc62efc6e35847dfd5d481e9bca5c170a26ace0cfa62a3f5c3b4be199056",
+  "t": 1793348505000,
+  "ok": true,
+  "tipo": "UnDelegateResource",
+  "de": "TEF9ZVUxhmGGffvkf59e2vdLfAG1QCMb7B",
+  "a": "TN9p15iYS8m5mNqzRb7wXTYF1tknDZQwXg",
+  "trx": 506000,
+  "recurso": "ENERGY"
+ },
+ {
+  "tx": "dc2980751b3b565437961d84b967ff54225d27ab256efb2a396dcc02b4cbd7c3",
+  "t": 1793348535000,
+  "ok": true,
+  "tipo": "DelegateResource",
+  "de": "TEF9ZVUxhmGGffvkf59e2vdLfAG1QCMb7B",
+  "a": "TFGziEard5FBtv9affSXrpRkiDkT5PRBnL",
+  "trx": 310000,
+  "recurso": "ENERGY",
+  "bloqueo": false
+ },
+ {
+  "tx": "6b025136ed4e44ef5b0ac0ff8e813ae1a714259d04d2c7733ac19993700b274f",
+  "t": 1793351037000,
+  "ok": true,
+  "tipo": "UnDelegateResource",
+  "de": "TEF9ZVUxhmGGffvkf59e2vdLfAG1QCMb7B",
+  "a": "TZCzCAiBGhFf3L7wW94TepYFeJg3oCuzdR",
+  "trx": 4220000,
+  "recurso": "ENERGY"
+ },
+ {
+  "tx": "7b2b669b4e4152658a8a82ca7ede2e3ce40aff7a79a3a70a9f8a73674fc80429",
+  "t": 1793351061000,
+  "ok": true,
+  "tipo": "UnDelegateResource",
+  "de": "TEF9ZVUxhmGGffvkf59e2vdLfAG1QCMb7B",
+  "a": "TZCzCAiBGhFf3L7wW94TepYFeJg3oCuzdR",
+  "trx": 65000,
+  "recurso": "BANDWIDTH"
+ },
+ {
+  "tx": "5a7ecef445d1eeff43a963c23d60194791199dec73207f69d48101b75d06db01",
+  "t": 1793465784000,
+  "ok": true,
+  "tipo": "UnDelegateResource",
+  "de": "TEF9ZVUxhmGGffvkf59e2vdLfAG1QCMb7B",
+  "a": "TCLgK89AnXbC9rewvhNb9UgXCc2qJJpBXh",
+  "trx": 13650000,
+  "recurso": "ENERGY"
+ },
+ {
+  "tx": "2a2f229beda79e2eada6d3c362f8ff05affa1b867d9ad607dee9ce9ebf7e0b30",
+  "t": 1793466102000,
+  "ok": true,
+  "tipo": "UnDelegateResource",
+  "de": "TEF9ZVUxhmGGffvkf59e2vdLfAG1QCMb7B",
+  "a": "TJqwA7SoZnERE4zW5uDEiPkbz4B66h9TFj",
+  "trx": 5030000,
+  "recurso": "ENERGY"
+ },
+ {
+  "tx": "a50e1f606704b2885e47177942a6130dc3750d046307425c4e7f373668e4d0e0",
+  "t": 1793466165000,
+  "ok": true,
+  "tipo": "UnDelegateResource",
+  "de": "TEF9ZVUxhmGGffvkf59e2vdLfAG1QCMb7B",
+  "a": "TYASr5UV6HEcXatwdFQfmLVUqQQQMUxHLS",
+  "trx": 21330000,
+  "recurso": "ENERGY"
+ },
+ {
+  "tx": "1fb59627a82eb32cf37da1df3b8e2a2e3581698f840b38f4a865c2b23c111cc4",
+  "t": 1793466285000,
+  "ok": true,
+  "tipo": "UnDelegateResource",
+  "de": "TEF9ZVUxhmGGffvkf59e2vdLfAG1QCMb7B",
+  "a": "TAzsQ9Gx8eqFNFSKbeXrbi45CuVPHzA8wr",
+  "trx": 30700000,
+  "recurso": "ENERGY"
+ },
+ {
+  "tx": "10d5ebfd2206a6a77df6769d2b06a946f21df78a85e7a885ba56eb6424be7cdf",
+  "t": 1793466858000,
+  "ok": true,
+  "tipo": "UnDelegateResource",
+  "de": "TEF9ZVUxhmGGffvkf59e2vdLfAG1QCMb7B",
+  "a": "TJDENsfBJs4RFETt1X1W8wMDc8M5XnJhCe",
+  "trx": 4030000,
+  "recurso": "ENERGY"
+ },
+ {
+  "tx": "e508fc408fc7cd47900b4f0635810280e49791caabb56c70a2381285eb3ee3e7",
+  "t": 1793466897000,
+  "ok": true,
+  "tipo": "UnDelegateResource",
+  "de": "TEF9ZVUxhmGGffvkf59e2vdLfAG1QCMb7B",
+  "a": "TK4ykR48cQQoyFcZ5N4xZCbsBaHcg6n3gJ",
+  "trx": 13390000,
+  "recurso": "ENERGY"
+ },
+ {
+  "tx": "13b646cf1bdee14c4cf11a525dda1e49aa95fb064ca3cb7195e87957afa29b87",
+  "t": 1793466921000,
+  "ok": true,
+  "tipo": "UnDelegateResource",
+  "de": "TEF9ZVUxhmGGffvkf59e2vdLfAG1QCMb7B",
+  "a": "TJ5usJLLwjwn7Pw3TPbdzreG7dvgKzfQ5y",
+  "trx": 2060000,
+  "recurso": "ENERGY"
+ },
+ {
+  "tx": "0f826b73aa2cb79b3d527cabd44e88e0fa157a134f20022634418f2d7e38b5ff",
+  "t": 1793466942000,
+  "ok": true,
+  "tipo": "UnDelegateResource",
+  "de": "TEF9ZVUxhmGGffvkf59e2vdLfAG1QCMb7B",
+  "a": "TQrY8tryqsYVCYS3MFbtffiPp2ccyn4STm",
+  "trx": 39500000,
+  "recurso": "ENERGY"
+ },
+ {
+  "tx": "ee21197f51708623439f171332dba641d986032358b34aeaff111cc62ed5e2d6",
+  "t": 1793496543000,
+  "ok": true,
+  "tipo": "DelegateResource",
+  "de": "TEF9ZVUxhmGGffvkf59e2vdLfAG1QCMb7B",
+  "a": "TJTKCzQpsG19CSMYF9TPtxz6wSHPSyeKfa",
+  "trx": 164220000,
+  "recurso": "ENERGY",
+  "bloqueo": false
+ },
+ {
+  "tx": "17fa172706ca217108d6d7988e891caea68aa75db3679db148b240f7383075f9",
+  "t": 1793496597000,
+  "ok": true,
+  "tipo": "DelegateResource",
+  "de": "TEF9ZVUxhmGGffvkf59e2vdLfAG1QCMb7B",
+  "a": "TJTKCzQpsG19CSMYF9TPtxz6wSHPSyeKfa",
+  "trx": 3080000,
+  "recurso": "BANDWIDTH",
+  "bloqueo": false
+ },
+ {
+  "tx": "60d1026b81ac50acab92374a6d3c8a3ac11316c0d6a5f60dfe31531e18094476",
+  "t": 1793522487000,
+  "ok": true,
+  "tipo": "DelegateResource",
+  "de": "TEF9ZVUxhmGGffvkf59e2vdLfAG1QCMb7B",
+  "a": "TCQ8X6x9GiK4khydWVKfLJvm8H6WK3RE8B",
+  "trx": 6760000,
+  "recurso": "ENERGY",
+  "bloqueo": false
+ },
+ {
+  "tx": "95ee30275f8e21ace79471f1f75386a1c186a2e629a939a25a1a31fa0d8c2284",
+  "t": 1793522523000,
+  "ok": true,
+  "tipo": "DelegateResource",
+  "de": "TEF9ZVUxhmGGffvkf59e2vdLfAG1QCMb7B",
+  "a": "TCQ8X6x9GiK4khydWVKfLJvm8H6WK3RE8B",
+  "trx": 204000,
+  "recurso": "BANDWIDTH",
+  "bloqueo": false
+ },
+ {
+  "tx": "a8df827022d8b2f59a724a2599055aa6d3eb80cb3e4deff13af3b896f5c1753f",
+  "t": 1793522547000,
+  "ok": true,
+  "tipo": "DelegateResource",
+  "de": "TEF9ZVUxhmGGffvkf59e2vdLfAG1QCMb7B",
+  "a": "TYLRgzUKgLHw5wCYox2xRUkCQaWo9koP6K",
+  "trx": 6760000,
+  "recurso": "ENERGY",
+  "bloqueo": false
+ },
+ {
+  "tx": "590ab40603ba4f8bcb0586561d1b29f29092b2dbf8b867a68dfbc76b972daf7b",
+  "t": 1793522571000,
+  "ok": true,
+  "tipo": "DelegateResource",
+  "de": "TEF9ZVUxhmGGffvkf59e2vdLfAG1QCMb7B",
+  "a": "TYLRgzUKgLHw5wCYox2xRUkCQaWo9koP6K",
+  "trx": 204000,
+  "recurso": "BANDWIDTH",
+  "bloqueo": false
+ },
+ {
+  "tx": "cf6a5efe9fe90366a4ffa5835d273dbf27c47b8df96199003a089b06e5afcbe0",
+  "t": 1793522613000,
+  "ok": true,
+  "tipo": "DelegateResource",
+  "de": "TEF9ZVUxhmGGffvkf59e2vdLfAG1QCMb7B",
+  "a": "TTU4bhRuPEtaSWPXvvRQ7CVnyHs6cGu24e",
+  "trx": 6760000,
+  "recurso": "ENERGY",
+  "bloqueo": false
+ },
+ {
+  "tx": "104a22df4ad9e3d7faeee488d427e582221a0e5686891a58bc0913cf99d1fac5",
+  "t": 1793522628000,
+  "ok": true,
+  "tipo": "DelegateResource",
+  "de": "TEF9ZVUxhmGGffvkf59e2vdLfAG1QCMb7B",
+  "a": "TTU4bhRuPEtaSWPXvvRQ7CVnyHs6cGu24e",
+  "trx": 204000,
+  "recurso": "BANDWIDTH",
+  "bloqueo": false
+ },
+ {
+  "tx": "f78d77fb490ee51583cb68b5c25e8c6d809d1db531b8fdb13ff8c2c2ecfbecd6",
+  "t": 1793522661000,
+  "ok": true,
+  "tipo": "DelegateResource",
+  "de": "TEF9ZVUxhmGGffvkf59e2vdLfAG1QCMb7B",
+  "a": "TE4mtETxcuHHbprQmQkyVSaCC48Q5yk21i",
+  "trx": 6760000,
+  "recurso": "ENERGY",
+  "bloqueo": false
+ },
+ {
+  "tx": "3ac6e07bb266c1184c514d681b79c471d5f4eb518fdbd28a84eb45904ff08aba",
+  "t": 1793522676000,
+  "ok": true,
+  "tipo": "DelegateResource",
+  "de": "TEF9ZVUxhmGGffvkf59e2vdLfAG1QCMb7B",
+  "a": "TE4mtETxcuHHbprQmQkyVSaCC48Q5yk21i",
+  "trx": 204000,
+  "recurso": "BANDWIDTH",
+  "bloqueo": false
+ },
+ {
+  "tx": "ad5bf9b3da609099933e69a2047aa44dad5e399acaeaec284eb5d2890ff84948",
+  "t": 1793522715000,
+  "ok": true,
+  "tipo": "DelegateResource",
+  "de": "TEF9ZVUxhmGGffvkf59e2vdLfAG1QCMb7B",
+  "a": "TGpTXS67vXyPERWMC2iQSG27TosfD13HLZ",
+  "trx": 6760000,
+  "recurso": "ENERGY",
+  "bloqueo": false
+ },
+ {
+  "tx": "d505c567505b62c8070f792d212193e6b56b4df24869c9ee76c6761298234e3f",
+  "t": 1793522772000,
+  "ok": true,
+  "tipo": "DelegateResource",
+  "de": "TEF9ZVUxhmGGffvkf59e2vdLfAG1QCMb7B",
+  "a": "TGpTXS67vXyPERWMC2iQSG27TosfD13HLZ",
+  "trx": 204000,
+  "recurso": "BANDWIDTH",
+  "bloqueo": false
+ },
+ {
+  "tx": "c2e2ddf32b1b3be79d7a062e9ad2a862c3b6473f57fd668e369568b8ca056d73",
+  "t": 1793522802000,
+  "ok": true,
+  "tipo": "DelegateResource",
+  "de": "TEF9ZVUxhmGGffvkf59e2vdLfAG1QCMb7B",
+  "a": "TADfh7Q4KA9LD6WfjjjcPMNra33gNRrCkb",
+  "trx": 6760000,
+  "recurso": "ENERGY",
+  "bloqueo": false
+ },
+ {
+  "tx": "3a68a72ebc5cee702fa5cd73135c087540ff95202813b757caad1738d13bb4c9",
+  "t": 1793522814000,
+  "ok": true,
+  "tipo": "DelegateResource",
+  "de": "TEF9ZVUxhmGGffvkf59e2vdLfAG1QCMb7B",
+  "a": "TADfh7Q4KA9LD6WfjjjcPMNra33gNRrCkb",
+  "trx": 204000,
+  "recurso": "BANDWIDTH",
+  "bloqueo": false
+ },
+ {
+  "tx": "c4cfeccf0bb9ff420b01dc9d3ba971596c3deca0f35709636ee870cf3b11283b",
+  "t": 1793522844000,
+  "ok": true,
+  "tipo": "DelegateResource",
+  "de": "TEF9ZVUxhmGGffvkf59e2vdLfAG1QCMb7B",
+  "a": "TDB1RpAHPQdGqfb1qi8J2jLY2oGe2jSy8A",
+  "trx": 6760000,
+  "recurso": "ENERGY",
+  "bloqueo": false
+ },
+ {
+  "tx": "c57b95407ab5322c4cf00f7f01a39ccf45cf9f68a1f250d836a7387dd83b8c12",
+  "t": 1793522862000,
+  "ok": true,
+  "tipo": "DelegateResource",
+  "de": "TEF9ZVUxhmGGffvkf59e2vdLfAG1QCMb7B",
+  "a": "TDB1RpAHPQdGqfb1qi8J2jLY2oGe2jSy8A",
+  "trx": 204000,
+  "recurso": "BANDWIDTH",
+  "bloqueo": false
+ },
+ {
+  "tx": "b0de99a1c5f46fbbc51ae18fda03d6c95979184a02f27253642bc5a3faddeecc",
+  "t": 1793522889000,
+  "ok": true,
+  "tipo": "DelegateResource",
+  "de": "TEF9ZVUxhmGGffvkf59e2vdLfAG1QCMb7B",
+  "a": "TGnBDu95RaJEaw7dJpqzHt8Sy7faayBGvj",
+  "trx": 6760000,
+  "recurso": "ENERGY",
+  "bloqueo": false
+ },
+ {
+  "tx": "32fefc6de8b95f3f980760fd1419bd47690a253dd3bf0b6f005a112429ac026a",
+  "t": 1793522898000,
+  "ok": true,
+  "tipo": "DelegateResource",
+  "de": "TEF9ZVUxhmGGffvkf59e2vdLfAG1QCMb7B",
+  "a": "TGnBDu95RaJEaw7dJpqzHt8Sy7faayBGvj",
+  "trx": 204000,
+  "recurso": "BANDWIDTH",
+  "bloqueo": false
+ },
+ {
+  "tx": "ee882ef48d948002145ceee9843b11d33955e8093d0931eecdf4ffecceeeba7a",
+  "t": 1793522925000,
+  "ok": true,
+  "tipo": "DelegateResource",
+  "de": "TEF9ZVUxhmGGffvkf59e2vdLfAG1QCMb7B",
+  "a": "TNiXZSD38dwRjZ5fXKn1im8crWkfqzskvH",
+  "trx": 6760000,
+  "recurso": "ENERGY",
+  "bloqueo": false
+ },
+ {
+  "tx": "ca9cd74ba1abd5ef2d14b96dcaebf189da3449ca17ca5781225d392b764873da",
+  "t": 1793522937000,
+  "ok": true,
+  "tipo": "DelegateResource",
+  "de": "TEF9ZVUxhmGGffvkf59e2vdLfAG1QCMb7B",
+  "a": "TNiXZSD38dwRjZ5fXKn1im8crWkfqzskvH",
+  "trx": 204000,
+  "recurso": "BANDWIDTH",
+  "bloqueo": false
+ },
+ {
+  "tx": "952ad3663c4e239babee413f7d4649ebe24142801e683dbb689bc85d49b6ea47",
+  "t": 1793527305000,
+  "ok": true,
+  "tipo": "UnDelegateResource",
+  "de": "TEF9ZVUxhmGGffvkf59e2vdLfAG1QCMb7B",
+  "a": "TJTKCzQpsG19CSMYF9TPtxz6wSHPSyeKfa",
+  "trx": 82110000,
+  "recurso": "ENERGY"
+ },
+ {
+  "tx": "bd6a26328865734a42b12f7b01c05f05134f29421fcc9376c05ebd2267cfe771",
+  "t": 1793530092000,
+  "ok": true,
+  "tipo": "DelegateResource",
+  "de": "TEF9ZVUxhmGGffvkf59e2vdLfAG1QCMb7B",
+  "a": "TYLRgzUKgLHw5wCYox2xRUkCQaWo9koP6K",
+  "trx": 9123300,
+  "recurso": "ENERGY",
+  "bloqueo": false
+ },
+ {
+  "tx": "5585930934ff8a33d20a1110ad05b665a3c3d37e3d1845fcc234d88be8643074",
+  "t": 1793530119000,
+  "ok": true,
+  "tipo": "DelegateResource",
+  "de": "TEF9ZVUxhmGGffvkf59e2vdLfAG1QCMb7B",
+  "a": "TCQ8X6x9GiK4khydWVKfLJvm8H6WK3RE8B",
+  "trx": 9123300,
+  "recurso": "ENERGY",
+  "bloqueo": false
+ },
+ {
+  "tx": "2af55b0b31d8713a4273835c0f2f8bfba501361165ec5e5f5179fba9a310ae98",
+  "t": 1793530149000,
+  "ok": true,
+  "tipo": "DelegateResource",
+  "de": "TEF9ZVUxhmGGffvkf59e2vdLfAG1QCMb7B",
+  "a": "TTU4bhRuPEtaSWPXvvRQ7CVnyHs6cGu24e",
+  "trx": 9123300,
+  "recurso": "ENERGY",
+  "bloqueo": false
+ },
+ {
+  "tx": "30a54f1b756f0f8a8100667f3116bc18c2ec91d25bd0ac255c9e82bc300ed9fa",
+  "t": 1793530170000,
+  "ok": true,
+  "tipo": "DelegateResource",
+  "de": "TEF9ZVUxhmGGffvkf59e2vdLfAG1QCMb7B",
+  "a": "TE4mtETxcuHHbprQmQkyVSaCC48Q5yk21i",
+  "trx": 9123300,
+  "recurso": "ENERGY",
+  "bloqueo": false
+ },
+ {
+  "tx": "237f465d49033a73651f83ada2e3f265f9ba723a27b25800a8e84fc80f36a579",
+  "t": 1793530188000,
+  "ok": true,
+  "tipo": "DelegateResource",
+  "de": "TEF9ZVUxhmGGffvkf59e2vdLfAG1QCMb7B",
+  "a": "TGpTXS67vXyPERWMC2iQSG27TosfD13HLZ",
+  "trx": 9123300,
+  "recurso": "ENERGY",
+  "bloqueo": false
+ },
+ {
+  "tx": "6ca0d5588dd315396d33c6c594aa374d9ec68f081a0742acbfce4043420957ae",
+  "t": 1793530221000,
+  "ok": true,
+  "tipo": "DelegateResource",
+  "de": "TEF9ZVUxhmGGffvkf59e2vdLfAG1QCMb7B",
+  "a": "TADfh7Q4KA9LD6WfjjjcPMNra33gNRrCkb",
+  "trx": 9123300,
+  "recurso": "ENERGY",
+  "bloqueo": false
+ },
+ {
+  "tx": "8ed5c3ea7023ecb754a089f659514d44a8d9d1c12cb4e67027fcf9bca117213f",
+  "t": 1793530248000,
+  "ok": true,
+  "tipo": "DelegateResource",
+  "de": "TEF9ZVUxhmGGffvkf59e2vdLfAG1QCMb7B",
+  "a": "TDB1RpAHPQdGqfb1qi8J2jLY2oGe2jSy8A",
+  "trx": 9123300,
+  "recurso": "ENERGY",
+  "bloqueo": false
+ },
+ {
+  "tx": "a7aa28f1fd531561038c3eb5ccc14726eb2dddedeb2883f0cdc70d69793785e1",
+  "t": 1793530335000,
+  "ok": true,
+  "tipo": "DelegateResource",
+  "de": "TEF9ZVUxhmGGffvkf59e2vdLfAG1QCMb7B",
+  "a": "TGnBDu95RaJEaw7dJpqzHt8Sy7faayBGvj",
+  "trx": 9123300,
+  "recurso": "ENERGY",
+  "bloqueo": false
+ },
+ {
+  "tx": "42964baae2dc698d88c6aeb4859525204ade0aa4014badc916fbc0ee943c7c22",
+  "t": 1793530362000,
+  "ok": true,
+  "tipo": "DelegateResource",
+  "de": "TEF9ZVUxhmGGffvkf59e2vdLfAG1QCMb7B",
+  "a": "TNiXZSD38dwRjZ5fXKn1im8crWkfqzskvH",
+  "trx": 9123300,
+  "recurso": "ENERGY",
+  "bloqueo": false
+ },
+ {
+  "tx": "b02dee0924cd91dbbcbed513dbfa76bc022daa9f555f4114827feb04df5081f7",
+  "t": 1793613567000,
+  "ok": true,
+  "tipo": "Transfer",
+  "de": "TWhDfwC8QE6pQyiYy248dNor3uphPEw5M2",
+  "a": "TEF9ZVUxhmGGffvkf59e2vdLfAG1QCMb7B",
+  "trx": 499999999
+ },
+ {
+  "tx": "9f2d3f653230e3bfc9cba89773fa48a89762380f92789e717305da98c22041d7",
+  "t": 1793613573000,
+  "ok": true,
+  "tipo": "Transfer",
+  "de": "TKEigzeZNy9VmxzDNKZc3ukmWowH18sRgG",
+  "a": "TEF9ZVUxhmGGffvkf59e2vdLfAG1QCMb7B",
+  "trx": 0.000001
+ },
+ {
+  "tx": "e03d693b74872daaa046a4dd5be7c9d32699d21ce3a7fcca2cb72f74014c1c80",
+  "t": 1793613582000,
+  "ok": true,
+  "tipo": "Transfer",
+  "de": "TC34XnuzJF85bi1pc9yQYF13i8AJqtpfN4",
+  "a": "TEF9ZVUxhmGGffvkf59e2vdLfAG1QCMb7B",
+  "trx": 0.000001
+ },
+ {
+  "tx": "d7e1453da8a8f8e40486053f66affee42615dc4a818849b29bada7aa83a4325a",
+  "t": 1793613810000,
+  "ok": true,
+  "tipo": "Transfer",
+  "de": "TAMaAMiztYjHCj26avcrS6VrTVSyeSFfN4",
+  "a": "TEF9ZVUxhmGGffvkf59e2vdLfAG1QCMb7B",
+  "trx": 0.000002
+ },
+ {
+  "tx": "dfdfc89888da46975d6fd2e38de491c38e0211ac475388d1d13a7518a9673f93",
+  "t": 1793691174000,
+  "ok": true,
+  "tipo": "UnDelegateResource",
+  "de": "TEF9ZVUxhmGGffvkf59e2vdLfAG1QCMb7B",
+  "a": "TJTKCzQpsG19CSMYF9TPtxz6wSHPSyeKfa",
+  "trx": 1232000,
+  "recurso": "BANDWIDTH"
+ },
+ {
+  "tx": "d6111ff0cff42c3d8d119f1486ec132959837dc52226cc3f4b60baf36ab14e1d",
+  "t": 1793698431000,
+  "ok": true,
+  "tipo": "FreezeBalanceV2",
+  "de": "TEF9ZVUxhmGGffvkf59e2vdLfAG1QCMb7B",
+  "trx": 490145000,
+  "recurso": "ENERGY"
+ },
+ {
+  "tx": "765d4cf9f2c3fa78dfcf637ef16e9dbfa395691e66a2e90eba957bbaa309969e",
+  "t": 1793698458000,
+  "ok": true,
+  "tipo": "FreezeBalanceV2",
+  "de": "TEF9ZVUxhmGGffvkf59e2vdLfAG1QCMb7B",
+  "trx": 9858000,
+  "recurso": "BANDWIDTH"
+ },
+ {
+  "tx": "bc524690a0728f364181193b972b81484bbb27624edea3b23b177702a239ea3a",
+  "t": 1793705025000,
+  "ok": true,
+  "tipo": "DelegateResource",
+  "de": "TEF9ZVUxhmGGffvkf59e2vdLfAG1QCMb7B",
+  "a": "TYLRgzUKgLHw5wCYox2xRUkCQaWo9koP6K",
+  "trx": 61580000,
+  "recurso": "ENERGY",
+  "bloqueo": false
+ },
+ {
+  "tx": "8439192c7e0ee873c766bc175af0ba3aa033c6ad33a391f918d58df822d4ab05",
+  "t": 1793705046000,
+  "ok": true,
+  "tipo": "DelegateResource",
+  "de": "TEF9ZVUxhmGGffvkf59e2vdLfAG1QCMb7B",
+  "a": "TYLRgzUKgLHw5wCYox2xRUkCQaWo9koP6K",
+  "trx": 1232000,
+  "recurso": "BANDWIDTH",
+  "bloqueo": false
+ },
+ {
+  "tx": "c238cb7c9099679e7bfbd7951bddc34e49cb5e6b695a9ecf1290783c612a17c4",
+  "t": 1793705076000,
+  "ok": true,
+  "tipo": "DelegateResource",
+  "de": "TEF9ZVUxhmGGffvkf59e2vdLfAG1QCMb7B",
+  "a": "TE4mtETxcuHHbprQmQkyVSaCC48Q5yk21i",
+  "trx": 61580000,
+  "recurso": "ENERGY",
+  "bloqueo": false
+ },
+ {
+  "tx": "4c8e39bc8df1ed5293e20fef25cfa7ff28ad9566bf8ee72ce4ed5d1ff3eb9408",
+  "t": 1793705115000,
+  "ok": true,
+  "tipo": "DelegateResource",
+  "de": "TEF9ZVUxhmGGffvkf59e2vdLfAG1QCMb7B",
+  "a": "TE4mtETxcuHHbprQmQkyVSaCC48Q5yk21i",
+  "trx": 1232000,
+  "recurso": "BANDWIDTH",
+  "bloqueo": false
+ },
+ {
+  "tx": "30c649da81350b9b76d6f11170f60f56a40a01d1e1df93cf8451f22c5adc7e2d",
+  "t": 1793705145000,
+  "ok": true,
+  "tipo": "DelegateResource",
+  "de": "TEF9ZVUxhmGGffvkf59e2vdLfAG1QCMb7B",
+  "a": "TGpTXS67vXyPERWMC2iQSG27TosfD13HLZ",
+  "trx": 61580000,
+  "recurso": "ENERGY",
+  "bloqueo": false
+ },
+ {
+  "tx": "ff9790e5514e9428b1d70a02e64bce7ba31bae605150a49c62a6d590883feab9",
+  "t": 1793705187000,
+  "ok": true,
+  "tipo": "DelegateResource",
+  "de": "TEF9ZVUxhmGGffvkf59e2vdLfAG1QCMb7B",
+  "a": "TGpTXS67vXyPERWMC2iQSG27TosfD13HLZ",
+  "trx": 1232000,
+  "recurso": "BANDWIDTH",
+  "bloqueo": false
+ },
+ {
+  "tx": "a90f1a62733f50707db97c650111d61bef0fb15f87e22f281daa2eb312514f7d",
+  "t": 1793712933000,
+  "ok": true,
+  "tipo": "DelegateResource",
+  "de": "TEF9ZVUxhmGGffvkf59e2vdLfAG1QCMb7B",
+  "a": "TADfh7Q4KA9LD6WfjjjcPMNra33gNRrCkb",
+  "trx": 61580000,
+  "recurso": "ENERGY",
+  "bloqueo": false
+ },
+ {
+  "tx": "e3cb83a4278d1d7b8d9a9dfe13cf99caa060fdf0cf80ab58ac0ab8f3833aee82",
+  "t": 1793712987000,
+  "ok": true,
+  "tipo": "DelegateResource",
+  "de": "TEF9ZVUxhmGGffvkf59e2vdLfAG1QCMb7B",
+  "a": "TADfh7Q4KA9LD6WfjjjcPMNra33gNRrCkb",
+  "trx": 1232000,
+  "recurso": "BANDWIDTH",
+  "bloqueo": false
+ },
+ {
+  "tx": "397b79231211b75c24cec6679275f08c6e06296472b5cbca054faf8e221cc30a",
+  "t": 1793713374000,
+  "ok": true,
+  "tipo": "DelegateResource",
+  "de": "TEF9ZVUxhmGGffvkf59e2vdLfAG1QCMb7B",
+  "a": "TDB1RpAHPQdGqfb1qi8J2jLY2oGe2jSy8A",
+  "trx": 61580000,
+  "recurso": "ENERGY",
+  "bloqueo": false
+ },
+ {
+  "tx": "2bb9bf046146ca919da6580c4db9c4689a1e336c41c5ff9728646369aa25f17e",
+  "t": 1793714013000,
+  "ok": true,
+  "tipo": "DelegateResource",
+  "de": "TEF9ZVUxhmGGffvkf59e2vdLfAG1QCMb7B",
+  "a": "TDB1RpAHPQdGqfb1qi8J2jLY2oGe2jSy8A",
+  "trx": 1232000,
+  "recurso": "BANDWIDTH",
+  "bloqueo": false
+ },
+ {
+  "tx": "32e12986b781fa0de8db7a38af338ac901fdd0321e10b8e407b74a718edce263",
+  "t": 1793714040000,
+  "ok": true,
+  "tipo": "DelegateResource",
+  "de": "TEF9ZVUxhmGGffvkf59e2vdLfAG1QCMb7B",
+  "a": "TGnBDu95RaJEaw7dJpqzHt8Sy7faayBGvj",
+  "trx": 61580000,
+  "recurso": "ENERGY",
+  "bloqueo": false
+ },
+ {
+  "tx": "e2bc81498e845c05258777c9a74c8a0eb575d5355a0408d6a8971b62c0ad05c4",
+  "t": 1793714055000,
+  "ok": true,
+  "tipo": "DelegateResource",
+  "de": "TEF9ZVUxhmGGffvkf59e2vdLfAG1QCMb7B",
+  "a": "TGnBDu95RaJEaw7dJpqzHt8Sy7faayBGvj",
+  "trx": 1232000,
+  "recurso": "BANDWIDTH",
+  "bloqueo": false
+ },
+ {
+  "tx": "ceaa0b69fcd7c66f1f873304cc809c548bfd3173c5afe26d88cc2ba4d970d9f1",
+  "t": 1793714082000,
+  "ok": true,
+  "tipo": "DelegateResource",
+  "de": "TEF9ZVUxhmGGffvkf59e2vdLfAG1QCMb7B",
+  "a": "TNiXZSD38dwRjZ5fXKn1im8crWkfqzskvH",
+  "trx": 61580000,
+  "recurso": "ENERGY",
+  "bloqueo": false
+ },
+ {
+  "tx": "8dcc90062656db55d62b6cba1cf0477d27bc6dfc37a7a60dadab63b7e39b8c63",
+  "t": 1793714100000,
+  "ok": true,
+  "tipo": "DelegateResource",
+  "de": "TEF9ZVUxhmGGffvkf59e2vdLfAG1QCMb7B",
+  "a": "TNiXZSD38dwRjZ5fXKn1im8crWkfqzskvH",
+  "trx": 1232000,
+  "recurso": "BANDWIDTH",
+  "bloqueo": false
+ },
+ {
+  "tx": "875a0d0f465dedd001056658e34e7dc760666156e27a0d2b2654d6101d11aeb1",
+  "t": 1793714127000,
+  "ok": true,
+  "tipo": "DelegateResource",
+  "de": "TEF9ZVUxhmGGffvkf59e2vdLfAG1QCMb7B",
+  "a": "TCQ8X6x9GiK4khydWVKfLJvm8H6WK3RE8B",
+  "trx": 19695000,
+  "recurso": "ENERGY",
+  "bloqueo": false
+ },
+ {
+  "tx": "6c7d9635dda2966cecea283a9a1831444fa4a73ff6dea0548ef79a166bc1b3c4",
+  "t": 1793714145000,
+  "ok": true,
+  "tipo": "DelegateResource",
+  "de": "TEF9ZVUxhmGGffvkf59e2vdLfAG1QCMb7B",
+  "a": "TCQ8X6x9GiK4khydWVKfLJvm8H6WK3RE8B",
+  "trx": 1232000,
+  "recurso": "BANDWIDTH",
+  "bloqueo": false
+ },
+ {
+  "tx": "64507c14bb764162d3d43bd6c4ea157d01f416c61a28907e77fd32b37bab3575",
+  "t": 1793714172000,
+  "ok": true,
+  "tipo": "DelegateResource",
+  "de": "TEF9ZVUxhmGGffvkf59e2vdLfAG1QCMb7B",
+  "a": "TTU4bhRuPEtaSWPXvvRQ7CVnyHs6cGu24e",
+  "trx": 19695000,
+  "recurso": "ENERGY",
+  "bloqueo": false
+ },
+ {
+  "tx": "fe427eea7c273b6375b4f5f94892025e3426e8c58e2fe0f3bb7e213be2fe5758",
+  "t": 1793714265000,
+  "ok": true,
+  "tipo": "DelegateResource",
+  "de": "TEF9ZVUxhmGGffvkf59e2vdLfAG1QCMb7B",
+  "a": "TJTKCzQpsG19CSMYF9TPtxz6wSHPSyeKfa",
+  "trx": 19695000,
+  "recurso": "ENERGY",
+  "bloqueo": false
+ },
+ {
+  "tx": "4ecbc9ad2e7db15e2fb34e20f1d96e7fc107ed7288894df06f8fb576104b2269",
+  "t": 1793719161000,
+  "ok": true,
+  "tipo": "DelegateResource",
+  "de": "TEF9ZVUxhmGGffvkf59e2vdLfAG1QCMb7B",
+  "a": "TTU4bhRuPEtaSWPXvvRQ7CVnyHs6cGu24e",
+  "trx": 1000000,
+  "recurso": "BANDWIDTH",
+  "bloqueo": false
+ },
+ {
+  "tx": "299af96da94a4a6ddaf63943a6b198ddf9d1163adca2e180ad047482e831ec21",
+  "t": 1793758464000,
+  "ok": true,
+  "tipo": "DelegateResource",
+  "de": "TEF9ZVUxhmGGffvkf59e2vdLfAG1QCMb7B",
+  "a": "TTU4bhRuPEtaSWPXvvRQ7CVnyHs6cGu24e",
+  "trx": 232000,
+  "recurso": "BANDWIDTH",
+  "bloqueo": false
+ },
+ {
+  "tx": "db113f1bec479bcae2911f76de19b9248d291b7091265f62f86afbd60b28a42d",
+  "t": 1793789739000,
+  "ok": true,
+  "tipo": "Transfer",
+  "de": "TWhDfwC8QE6pQyiYy248dNor3uphPEw5M2",
+  "a": "TEF9ZVUxhmGGffvkf59e2vdLfAG1QCMb7B",
+  "trx": 149999999
+ },
+ {
+  "tx": "e020e3af03581e392eb8ced7cfde83519b33a1144c6b37601514f9525ec45b01",
+  "t": 1793795982000,
+  "ok": true,
+  "tipo": "FreezeBalanceV2",
+  "de": "TEF9ZVUxhmGGffvkf59e2vdLfAG1QCMb7B",
+  "trx": 150000000,
+  "recurso": "ENERGY"
+ },
+ {
+  "tx": "ef750616e0603209d6a57067048d2e53ca0be87724490651d1623afd09163425",
+  "t": 1793797659000,
+  "ok": true,
+  "tipo": "VoteWitness",
+  "de": "TEF9ZVUxhmGGffvkf59e2vdLfAG1QCMb7B",
+  "votos": [
+   {
+    "para": "TJvaAeFb8Lykt9RQcVyyTFN2iDvGMuyD4M",
+    "n": 1678443300
+   }
+  ]
+ },
+ {
+  "tx": "afcf52777dd6ebf000677c7ee9868e2b4dcae9cd9a73cd8ab41fbd05ed9cdb5b",
+  "t": 1793869164000,
+  "ok": true,
+  "tipo": "DelegateResource",
+  "de": "TEF9ZVUxhmGGffvkf59e2vdLfAG1QCMb7B",
+  "a": "THkACNWEzcmQKotSkEKYvNETEWeavsjWpK",
+  "trx": 1050000,
+  "recurso": "ENERGY",
+  "bloqueo": false
+ },
+ {
+  "tx": "f82588c46a1ff1c07975268bb28a890b449167605ef7429024856afcecc07353",
+  "t": 1793869179000,
+  "ok": true,
+  "tipo": "DelegateResource",
+  "de": "TEF9ZVUxhmGGffvkf59e2vdLfAG1QCMb7B",
+  "a": "THkACNWEzcmQKotSkEKYvNETEWeavsjWpK",
+  "trx": 20000,
+  "recurso": "BANDWIDTH",
+  "bloqueo": false
+ }
+]

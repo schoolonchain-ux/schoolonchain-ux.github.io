@@ -1,0 +1,771 @@
+{
+ "selectores_de_DssProxyActions": {
+  "ba727a95": "cdpAllow(address,uint256,address,uint256)",
+  "9f6f3d5b": "draw(address,address,address,uint256,uint256)",
+  "eb0b9a85": "enter(address,address,uint256)",
+  "42dd11bb": "exitGem(address,address,uint256,uint256)",
+  "3aef12e2": "exitTRX(address,address,uint256,uint256)",
+  "1558b048": "flux(address,uint256,address,uint256)",
+  "6ab6a491": "freeGem(address,address,uint256,uint256)",
+  "24d5fd01": "freeTRX(address,address,uint256,uint256)",
+  "96e8d72c": "frob(address,uint256,int256,int256)",
+  "7df2eb25": "gemJoin_join(address,address,uint256,bool)",
+  "1d10f231": "give(address,uint256,address)",
+  "493c2049": "giveToProxy(address,address,uint256,address)",
+  "b50a5869": "hope(address,address)",
+  "3e29e565": "lockGem(address,address,uint256,uint256,bool)",
+  "cbd4be3f": "lockGemAndDraw(address,address,address,address,uint256,uint256,uint256,bool)",
+  "5c8c687c": "lockTRX(address,address,uint256)",
+  "df662762": "lockTRXAndDraw(address,address,address,address,uint256,uint256)",
+  "25cf37d0": "move(address,uint256,address,uint256)",
+  "9f887fde": "nope(address,address)",
+  "6aa3ee11": "open(address,bytes32,address)",
+  "db802a32": "openLockGemAndDraw(address,address,address,address,bytes32,uint256,uint256,bool)",
+  "c266bb2f": "openLockTRXAndDraw(address,address,address,address,bytes32,uint256)",
+  "4592aca7": "quit(address,uint256,address)",
+  "ead64729": "safeLockGem(address,address,uint256,uint256,bool,address)",
+  "929e6fc0": "safeLockTRX(address,address,uint256,address)",
+  "2958f8a5": "safeWipe(address,address,uint256,uint256,address)",
+  "0aee8dec": "safeWipeAll(address,address,uint256,address)",
+  "7bc3bd53": "shift(address,uint256,uint256)",
+  "beabacc8": "transfer(address,address,uint256)",
+  "7537ef2d": "trxJoin_join(address,address)",
+  "5f6ef447": "urnAllow(address,address,uint256)",
+  "0208f21f": "usddJoin_join(address,address,uint256)",
+  "4b666199": "wipe(address,address,uint256,uint256)",
+  "036a2395": "wipeAll(address,address,uint256)",
+  "bcd6deec": "wipeAllAndFreeGem(address,address,address,uint256,uint256)",
+  "ced50f87": "wipeAllAndFreeTRX(address,address,address,uint256,uint256)",
+  "a6add011": "wipeAndFreeGem(address,address,address,uint256,uint256,uint256)",
+  "de945a11": "wipeAndFreeTRX(address,address,address,uint256,uint256,uint256)"
+ },
+ "llamadas": [
+  {
+   "t": "2025-01-23T17:34:18.000Z",
+   "tx": "1ae8660eaa6cb853e613211648d1415626959bf127d60603a386c127446c8edd",
+   "ok": true,
+   "llamador": "TT2T17KZhoDu47i2E4FWxfG79zdkEWkU9N",
+   "funcion": "openLockTRXAndDraw(address,address,address,address,bytes32,uint256)",
+   "trx_depositado_en_WTRX": 1000000,
+   "trx_retirado_de_WTRX": 0,
+   "transferencias_de_tokens": [
+    {
+     "contrato": "TXDk8mbtRbXeYuMNS83CfKPaYYT8XWv9Hz",
+     "de": "0x0000000000000000000000000000000000000000",
+     "a": "0xbb1712d44d09feee51d071219b4c5d9792b76b29",
+     "valor_bruto": "120000000000000000000000",
+     "claves": [
+      "0",
+      "1",
+      "2",
+      "dst",
+      "src",
+      "wad"
+     ]
+    },
+    {
+     "contrato": "TNUC9Qb1rRpS5CbWLmNMxXBjyFoydXjWFR",
+     "de": "0x71ab23b393abe3a1bedd2b2f139e0130f7365163",
+     "a": "0x4690d029d3281455689af070b305c84af5b461de",
+     "valor_bruto": "undefined",
+     "claves": [
+      "0",
+      "1",
+      "2",
+      "dst",
+      "src",
+      "sad"
+     ]
+    }
+   ]
+  },
+  {
+   "t": "2025-01-23T17:38:03.000Z",
+   "tx": "58af6ee17716a00f10864285259e49be6a23e4f17704a1fc24bffe3f0f1098bf",
+   "ok": true,
+   "llamador": "TT2T17KZhoDu47i2E4FWxfG79zdkEWkU9N",
+   "funcion": "lockTRXAndDraw(address,address,address,address,uint256,uint256)",
+   "trx_depositado_en_WTRX": 120000000,
+   "trx_retirado_de_WTRX": 0,
+   "transferencias_de_tokens": [
+    {
+     "contrato": "TXDk8mbtRbXeYuMNS83CfKPaYYT8XWv9Hz",
+     "de": "0x0000000000000000000000000000000000000000",
+     "a": "0xbb1712d44d09feee51d071219b4c5d9792b76b29",
+     "valor_bruto": "15000000000000000000000000",
+     "claves": [
+      "0",
+      "1",
+      "2",
+      "dst",
+      "src",
+      "wad"
+     ]
+    },
+    {
+     "contrato": "TNUC9Qb1rRpS5CbWLmNMxXBjyFoydXjWFR",
+     "de": "0x71ab23b393abe3a1bedd2b2f139e0130f7365163",
+     "a": "0x4690d029d3281455689af070b305c84af5b461de",
+     "valor_bruto": "undefined",
+     "claves": [
+      "0",
+      "1",
+      "2",
+      "dst",
+      "src",
+      "sad"
+     ]
+    }
+   ]
+  },
+  {
+   "t": "2025-01-23T17:40:24.000Z",
+   "tx": "c1835b7968e4b633cb7cf1f6f4110241dbec9cf508f3322b4cdac3f369e56849",
+   "ok": true,
+   "llamador": "TT2T17KZhoDu47i2E4FWxfG79zdkEWkU9N",
+   "funcion": "openLockTRXAndDraw(address,address,address,address,bytes32,uint256)",
+   "trx_depositado_en_WTRX": 1000000,
+   "trx_retirado_de_WTRX": 0,
+   "transferencias_de_tokens": [
+    {
+     "contrato": "TXDk8mbtRbXeYuMNS83CfKPaYYT8XWv9Hz",
+     "de": "0x0000000000000000000000000000000000000000",
+     "a": "0xbb1712d44d09feee51d071219b4c5d9792b76b29",
+     "valor_bruto": "100000000000000000000000",
+     "claves": [
+      "0",
+      "1",
+      "2",
+      "dst",
+      "src",
+      "wad"
+     ]
+    },
+    {
+     "contrato": "TNUC9Qb1rRpS5CbWLmNMxXBjyFoydXjWFR",
+     "de": "0x71ab23b393abe3a1bedd2b2f139e0130f7365163",
+     "a": "0x582f9dd634e144f63882eb32f2b876ef7ec7ea80",
+     "valor_bruto": "undefined",
+     "claves": [
+      "0",
+      "1",
+      "2",
+      "dst",
+      "src",
+      "sad"
+     ]
+    }
+   ]
+  },
+  {
+   "t": "2025-01-23T17:45:21.000Z",
+   "tx": "bf9ae9db4c9e238f7418e84c4704722d81ed01a649346ee72527d1ccdaaa2e28",
+   "ok": true,
+   "llamador": "TT2T17KZhoDu47i2E4FWxfG79zdkEWkU9N",
+   "funcion": "openLockTRXAndDraw(address,address,address,address,bytes32,uint256)",
+   "trx_depositado_en_WTRX": 1000000,
+   "trx_retirado_de_WTRX": 0,
+   "transferencias_de_tokens": [
+    {
+     "contrato": "TXDk8mbtRbXeYuMNS83CfKPaYYT8XWv9Hz",
+     "de": "0x0000000000000000000000000000000000000000",
+     "a": "0xbb1712d44d09feee51d071219b4c5d9792b76b29",
+     "valor_bruto": "90000000000000000000000",
+     "claves": [
+      "0",
+      "1",
+      "2",
+      "dst",
+      "src",
+      "wad"
+     ]
+    },
+    {
+     "contrato": "TNUC9Qb1rRpS5CbWLmNMxXBjyFoydXjWFR",
+     "de": "0x71ab23b393abe3a1bedd2b2f139e0130f7365163",
+     "a": "0x941e5dc4c75022682eee50d763e5660655309bdd",
+     "valor_bruto": "undefined",
+     "claves": [
+      "0",
+      "1",
+      "2",
+      "dst",
+      "src",
+      "sad"
+     ]
+    }
+   ]
+  },
+  {
+   "t": "2025-01-23T17:47:51.000Z",
+   "tx": "914beecf1343f397cdd6ec8dbfcd1a3c75919bee45d4f94ccba489deaa6221cd",
+   "ok": true,
+   "llamador": "TT2T17KZhoDu47i2E4FWxfG79zdkEWkU9N",
+   "funcion": "openLockGemAndDraw(address,address,address,address,bytes32,uint256,uint256,bool)",
+   "trx_depositado_en_WTRX": 0,
+   "trx_retirado_de_WTRX": 0,
+   "transferencias_de_tokens": [
+    {
+     "contrato": "TXDk8mbtRbXeYuMNS83CfKPaYYT8XWv9Hz",
+     "de": "0x0000000000000000000000000000000000000000",
+     "a": "0xbb1712d44d09feee51d071219b4c5d9792b76b29",
+     "valor_bruto": "400000000000000000000000",
+     "claves": [
+      "0",
+      "1",
+      "2",
+      "dst",
+      "src",
+      "wad"
+     ]
+    },
+    {
+     "contrato": "TR7NHqjeKQxGTCi8q8ZY4pL8otSzgjLj6t",
+     "de": "0x71ab23b393abe3a1bedd2b2f139e0130f7365163",
+     "a": "0x267ea81381305e2cc07692da4e139b8d27f5c2b2",
+     "valor_bruto": "500000000000",
+     "claves": [
+      "0",
+      "1",
+      "2",
+      "from",
+      "to",
+      "value"
+     ]
+    },
+    {
+     "contrato": "TR7NHqjeKQxGTCi8q8ZY4pL8otSzgjLj6t",
+     "de": "0xbb1712d44d09feee51d071219b4c5d9792b76b29",
+     "a": "0x71ab23b393abe3a1bedd2b2f139e0130f7365163",
+     "valor_bruto": "500000000000",
+     "claves": [
+      "0",
+      "1",
+      "2",
+      "from",
+      "to",
+      "value"
+     ]
+    }
+   ]
+  },
+  {
+   "t": "2025-02-03T06:49:18.000Z",
+   "tx": "42ed37b88f20919a815c872e54a9507d5dd14351a96af27c284834652c31b5c9",
+   "ok": true,
+   "llamador": "TT2T17KZhoDu47i2E4FWxfG79zdkEWkU9N",
+   "funcion": "safeLockTRX(address,address,uint256,address)",
+   "trx_depositado_en_WTRX": 50000000,
+   "trx_retirado_de_WTRX": 0,
+   "transferencias_de_tokens": [
+    {
+     "contrato": "TNUC9Qb1rRpS5CbWLmNMxXBjyFoydXjWFR",
+     "de": "0x71ab23b393abe3a1bedd2b2f139e0130f7365163",
+     "a": "0x4690d029d3281455689af070b305c84af5b461de",
+     "valor_bruto": "undefined",
+     "claves": [
+      "0",
+      "1",
+      "2",
+      "dst",
+      "src",
+      "sad"
+     ]
+    }
+   ]
+  },
+  {
+   "t": "2026-01-17T12:41:45.000Z",
+   "tx": "f3885926c6804452b95dbf30a1f06ecd87977f7a9f826937ec2419639f572dc2",
+   "ok": true,
+   "llamador": "TT2T17KZhoDu47i2E4FWxfG79zdkEWkU9N",
+   "funcion": "lockTRXAndDraw(address,address,address,address,uint256,uint256)",
+   "trx_depositado_en_WTRX": 150000000,
+   "trx_retirado_de_WTRX": 0,
+   "transferencias_de_tokens": [
+    {
+     "contrato": "TXDk8mbtRbXeYuMNS83CfKPaYYT8XWv9Hz",
+     "de": "0x0000000000000000000000000000000000000000",
+     "a": "0xbb1712d44d09feee51d071219b4c5d9792b76b29",
+     "valor_bruto": "20000000000000000000000000",
+     "claves": [
+      "0",
+      "1",
+      "2",
+      "dst",
+      "src",
+      "wad"
+     ]
+    },
+    {
+     "contrato": "TNUC9Qb1rRpS5CbWLmNMxXBjyFoydXjWFR",
+     "de": "0x71ab23b393abe3a1bedd2b2f139e0130f7365163",
+     "a": "0x4690d029d3281455689af070b305c84af5b461de",
+     "valor_bruto": "undefined",
+     "claves": [
+      "0",
+      "1",
+      "2",
+      "dst",
+      "src",
+      "sad"
+     ]
+    }
+   ]
+  },
+  {
+   "t": "2026-01-17T12:45:57.000Z",
+   "tx": "54b25d0893d76ebf87487f5adc3878432a4b330764fe4f5fb3de0c07abcb40f9",
+   "ok": true,
+   "llamador": "TT2T17KZhoDu47i2E4FWxfG79zdkEWkU9N",
+   "funcion": "lockTRXAndDraw(address,address,address,address,uint256,uint256)",
+   "trx_depositado_en_WTRX": 300000000,
+   "trx_retirado_de_WTRX": 0,
+   "transferencias_de_tokens": [
+    {
+     "contrato": "TXDk8mbtRbXeYuMNS83CfKPaYYT8XWv9Hz",
+     "de": "0x0000000000000000000000000000000000000000",
+     "a": "0xbb1712d44d09feee51d071219b4c5d9792b76b29",
+     "valor_bruto": "40000000000000000000000000",
+     "claves": [
+      "0",
+      "1",
+      "2",
+      "dst",
+      "src",
+      "wad"
+     ]
+    },
+    {
+     "contrato": "TNUC9Qb1rRpS5CbWLmNMxXBjyFoydXjWFR",
+     "de": "0x71ab23b393abe3a1bedd2b2f139e0130f7365163",
+     "a": "0x582f9dd634e144f63882eb32f2b876ef7ec7ea80",
+     "valor_bruto": "undefined",
+     "claves": [
+      "0",
+      "1",
+      "2",
+      "dst",
+      "src",
+      "sad"
+     ]
+    }
+   ]
+  },
+  {
+   "t": "2026-07-30T11:18:09.000Z",
+   "tx": "0a63b77d094fa5554b74f0e0eaf57cc7590c469050c25c807fb5572415582272",
+   "ok": false,
+   "llamador": "TPs32B6yHJXnZnioFZHikxrhE5P7U5JSJr",
+   "funcion": "(sin datos: llamada fallida)",
+   "trx_depositado_en_WTRX": 0,
+   "trx_retirado_de_WTRX": 0,
+   "transferencias_de_tokens": []
+  },
+  {
+   "t": "2026-11-02T09:21:18.000Z",
+   "tx": "cb1ab6bebd3ae46c1f3593cc5bf595fa725f669dd0e03dd91958dd596d26916b",
+   "ok": true,
+   "llamador": "TT2T17KZhoDu47i2E4FWxfG79zdkEWkU9N",
+   "funcion": "lockTRXAndDraw(address,address,address,address,uint256,uint256)",
+   "trx_depositado_en_WTRX": 300000000,
+   "trx_retirado_de_WTRX": 0,
+   "transferencias_de_tokens": [
+    {
+     "contrato": "TXDk8mbtRbXeYuMNS83CfKPaYYT8XWv9Hz",
+     "de": "0x0000000000000000000000000000000000000000",
+     "a": "0xbb1712d44d09feee51d071219b4c5d9792b76b29",
+     "valor_bruto": "30000000000000000000000000",
+     "claves": [
+      "0",
+      "1",
+      "2",
+      "dst",
+      "src",
+      "wad"
+     ]
+    },
+    {
+     "contrato": "TNUC9Qb1rRpS5CbWLmNMxXBjyFoydXjWFR",
+     "de": "0x71ab23b393abe3a1bedd2b2f139e0130f7365163",
+     "a": "0x582f9dd634e144f63882eb32f2b876ef7ec7ea80",
+     "valor_bruto": "undefined",
+     "claves": [
+      "0",
+      "1",
+      "2",
+      "dst",
+      "src",
+      "sad"
+     ]
+    }
+   ]
+  },
+  {
+   "t": "2026-11-02T09:27:51.000Z",
+   "tx": "4547bb06705db5280d277b9ad294ebca41d4e003845b2a1c3ccbf1bc17e3f079",
+   "ok": true,
+   "llamador": "TT2T17KZhoDu47i2E4FWxfG79zdkEWkU9N",
+   "funcion": "lockTRXAndDraw(address,address,address,address,uint256,uint256)",
+   "trx_depositado_en_WTRX": 280000000,
+   "trx_retirado_de_WTRX": 0,
+   "transferencias_de_tokens": [
+    {
+     "contrato": "TXDk8mbtRbXeYuMNS83CfKPaYYT8XWv9Hz",
+     "de": "0x0000000000000000000000000000000000000000",
+     "a": "0xbb1712d44d09feee51d071219b4c5d9792b76b29",
+     "valor_bruto": "30000000000000000000000000",
+     "claves": [
+      "0",
+      "1",
+      "2",
+      "dst",
+      "src",
+      "wad"
+     ]
+    },
+    {
+     "contrato": "TNUC9Qb1rRpS5CbWLmNMxXBjyFoydXjWFR",
+     "de": "0x71ab23b393abe3a1bedd2b2f139e0130f7365163",
+     "a": "0x582f9dd634e144f63882eb32f2b876ef7ec7ea80",
+     "valor_bruto": "undefined",
+     "claves": [
+      "0",
+      "1",
+      "2",
+      "dst",
+      "src",
+      "sad"
+     ]
+    }
+   ]
+  },
+  {
+   "t": "2026-11-03T06:19:15.000Z",
+   "tx": "3ae0bfde2336231822bd4d3ff1c4f6780d9706f1099d827c7eb3d16e810ce267",
+   "ok": true,
+   "llamador": "TT2T17KZhoDu47i2E4FWxfG79zdkEWkU9N",
+   "funcion": "wipeAndFreeTRX(address,address,address,uint256,uint256,uint256)",
+   "trx_depositado_en_WTRX": 0,
+   "trx_retirado_de_WTRX": 400000000,
+   "transferencias_de_tokens": [
+    {
+     "contrato": "TNUC9Qb1rRpS5CbWLmNMxXBjyFoydXjWFR",
+     "de": "0x582f9dd634e144f63882eb32f2b876ef7ec7ea80",
+     "a": "0x71ab23b393abe3a1bedd2b2f139e0130f7365163",
+     "valor_bruto": "undefined",
+     "claves": [
+      "0",
+      "1",
+      "2",
+      "dst",
+      "src",
+      "sad"
+     ]
+    },
+    {
+     "contrato": "TXDk8mbtRbXeYuMNS83CfKPaYYT8XWv9Hz",
+     "de": "0x71ab23b393abe3a1bedd2b2f139e0130f7365163",
+     "a": "0x0000000000000000000000000000000000000000",
+     "valor_bruto": "39000000000000000000000000",
+     "claves": [
+      "0",
+      "1",
+      "2",
+      "dst",
+      "src",
+      "wad"
+     ]
+    },
+    {
+     "contrato": "TXDk8mbtRbXeYuMNS83CfKPaYYT8XWv9Hz",
+     "de": "0xbb1712d44d09feee51d071219b4c5d9792b76b29",
+     "a": "0x71ab23b393abe3a1bedd2b2f139e0130f7365163",
+     "valor_bruto": "39000000000000000000000000",
+     "claves": [
+      "0",
+      "1",
+      "2",
+      "dst",
+      "src",
+      "wad"
+     ]
+    }
+   ]
+  },
+  {
+   "t": "2026-11-03T15:49:30.000Z",
+   "tx": "15234c2733b7066181658a0f9009788ad26bb5f2b6e9bc57cf8232ecb5a18f60",
+   "ok": true,
+   "llamador": "TT2T17KZhoDu47i2E4FWxfG79zdkEWkU9N",
+   "funcion": "wipeAndFreeTRX(address,address,address,uint256,uint256,uint256)",
+   "trx_depositado_en_WTRX": 0,
+   "trx_retirado_de_WTRX": 400000000,
+   "transferencias_de_tokens": [
+    {
+     "contrato": "TNUC9Qb1rRpS5CbWLmNMxXBjyFoydXjWFR",
+     "de": "0x582f9dd634e144f63882eb32f2b876ef7ec7ea80",
+     "a": "0x71ab23b393abe3a1bedd2b2f139e0130f7365163",
+     "valor_bruto": "undefined",
+     "claves": [
+      "0",
+      "1",
+      "2",
+      "dst",
+      "src",
+      "sad"
+     ]
+    },
+    {
+     "contrato": "TXDk8mbtRbXeYuMNS83CfKPaYYT8XWv9Hz",
+     "de": "0x71ab23b393abe3a1bedd2b2f139e0130f7365163",
+     "a": "0x0000000000000000000000000000000000000000",
+     "valor_bruto": "50000000000000000000000000",
+     "claves": [
+      "0",
+      "1",
+      "2",
+      "dst",
+      "src",
+      "wad"
+     ]
+    },
+    {
+     "contrato": "TXDk8mbtRbXeYuMNS83CfKPaYYT8XWv9Hz",
+     "de": "0xbb1712d44d09feee51d071219b4c5d9792b76b29",
+     "a": "0x71ab23b393abe3a1bedd2b2f139e0130f7365163",
+     "valor_bruto": "50000000000000000000000000",
+     "claves": [
+      "0",
+      "1",
+      "2",
+      "dst",
+      "src",
+      "wad"
+     ]
+    }
+   ]
+  },
+  {
+   "t": "2026-11-03T15:54:15.000Z",
+   "tx": "3f075befcb17c70143b3aabee370aeeb82d59578b8b9669b09bdaa35dccde766",
+   "ok": true,
+   "llamador": "TT2T17KZhoDu47i2E4FWxfG79zdkEWkU9N",
+   "funcion": "wipeAllAndFreeTRX(address,address,address,uint256,uint256)",
+   "trx_depositado_en_WTRX": 0,
+   "trx_retirado_de_WTRX": 81000000,
+   "transferencias_de_tokens": [
+    {
+     "contrato": "TNUC9Qb1rRpS5CbWLmNMxXBjyFoydXjWFR",
+     "de": "0x582f9dd634e144f63882eb32f2b876ef7ec7ea80",
+     "a": "0x71ab23b393abe3a1bedd2b2f139e0130f7365163",
+     "valor_bruto": "undefined",
+     "claves": [
+      "0",
+      "1",
+      "2",
+      "dst",
+      "src",
+      "sad"
+     ]
+    },
+    {
+     "contrato": "TXDk8mbtRbXeYuMNS83CfKPaYYT8XWv9Hz",
+     "de": "0x71ab23b393abe3a1bedd2b2f139e0130f7365163",
+     "a": "0x0000000000000000000000000000000000000000",
+     "valor_bruto": "11261351951496863647105809",
+     "claves": [
+      "0",
+      "1",
+      "2",
+      "dst",
+      "src",
+      "wad"
+     ]
+    },
+    {
+     "contrato": "TXDk8mbtRbXeYuMNS83CfKPaYYT8XWv9Hz",
+     "de": "0xbb1712d44d09feee51d071219b4c5d9792b76b29",
+     "a": "0x71ab23b393abe3a1bedd2b2f139e0130f7365163",
+     "valor_bruto": "11261351951496863647105809",
+     "claves": [
+      "0",
+      "1",
+      "2",
+      "dst",
+      "src",
+      "wad"
+     ]
+    }
+   ]
+  },
+  {
+   "t": "2026-11-03T15:56:36.000Z",
+   "tx": "36ccb2e82d2e91191de0fdf0626572345ddbd49bf324fec14e7880d53374661b",
+   "ok": true,
+   "llamador": "TT2T17KZhoDu47i2E4FWxfG79zdkEWkU9N",
+   "funcion": "wipeAllAndFreeTRX(address,address,address,uint256,uint256)",
+   "trx_depositado_en_WTRX": 0,
+   "trx_retirado_de_WTRX": 1000000,
+   "transferencias_de_tokens": [
+    {
+     "contrato": "TNUC9Qb1rRpS5CbWLmNMxXBjyFoydXjWFR",
+     "de": "0x941e5dc4c75022682eee50d763e5660655309bdd",
+     "a": "0x71ab23b393abe3a1bedd2b2f139e0130f7365163",
+     "valor_bruto": "undefined",
+     "claves": [
+      "0",
+      "1",
+      "2",
+      "dst",
+      "src",
+      "sad"
+     ]
+    },
+    {
+     "contrato": "TXDk8mbtRbXeYuMNS83CfKPaYYT8XWv9Hz",
+     "de": "0x71ab23b393abe3a1bedd2b2f139e0130f7365163",
+     "a": "0x0000000000000000000000000000000000000000",
+     "valor_bruto": "91286352118900387249428",
+     "claves": [
+      "0",
+      "1",
+      "2",
+      "dst",
+      "src",
+      "wad"
+     ]
+    },
+    {
+     "contrato": "TXDk8mbtRbXeYuMNS83CfKPaYYT8XWv9Hz",
+     "de": "0xbb1712d44d09feee51d071219b4c5d9792b76b29",
+     "a": "0x71ab23b393abe3a1bedd2b2f139e0130f7365163",
+     "valor_bruto": "91286352118900387249428",
+     "claves": [
+      "0",
+      "1",
+      "2",
+      "dst",
+      "src",
+      "wad"
+     ]
+    }
+   ]
+  },
+  {
+   "t": "2026-11-03T16:01:24.000Z",
+   "tx": "02906bb2ed867d6ebb5a8d75477b6141e4ef549a1eb8ae6a3e9d339eae371ee1",
+   "ok": true,
+   "llamador": "TT2T17KZhoDu47i2E4FWxfG79zdkEWkU9N",
+   "funcion": "wipeAllAndFreeTRX(address,address,address,uint256,uint256)",
+   "trx_depositado_en_WTRX": 0,
+   "trx_retirado_de_WTRX": 321000000,
+   "transferencias_de_tokens": [
+    {
+     "contrato": "TNUC9Qb1rRpS5CbWLmNMxXBjyFoydXjWFR",
+     "de": "0x4690d029d3281455689af070b305c84af5b461de",
+     "a": "0x71ab23b393abe3a1bedd2b2f139e0130f7365163",
+     "valor_bruto": "undefined",
+     "claves": [
+      "0",
+      "1",
+      "2",
+      "dst",
+      "src",
+      "sad"
+     ]
+    },
+    {
+     "contrato": "TXDk8mbtRbXeYuMNS83CfKPaYYT8XWv9Hz",
+     "de": "0x71ab23b393abe3a1bedd2b2f139e0130f7365163",
+     "a": "0x0000000000000000000000000000000000000000",
+     "valor_bruto": "35543242225589008290252426",
+     "claves": [
+      "0",
+      "1",
+      "2",
+      "dst",
+      "src",
+      "wad"
+     ]
+    },
+    {
+     "contrato": "TXDk8mbtRbXeYuMNS83CfKPaYYT8XWv9Hz",
+     "de": "0xbb1712d44d09feee51d071219b4c5d9792b76b29",
+     "a": "0x71ab23b393abe3a1bedd2b2f139e0130f7365163",
+     "valor_bruto": "35543242225589008290252426",
+     "claves": [
+      "0",
+      "1",
+      "2",
+      "dst",
+      "src",
+      "wad"
+     ]
+    }
+   ]
+  }
+ ],
+ "estado_actual": {
+  "gestor": "TDDWjmQaquEtUn1Pa8wCd8dfWFPdQLGPYL",
+  "vat": "TH5dhX7o39afSbfDT2e3c9k4itWjNKD4D9",
+  "n_boveda": 4,
+  "primera_boveda": 11,
+  "ultima_boveda": 14,
+  "first_bov": 11,
+  "bovedas": [
+   {
+    "id": 11,
+    "urn": "TAtRR2Qhx4NnX9mM5FkKLCg9LS5AdU83yk",
+    "dueno": "TLLENiMpZvGZD2C1ZQ2FzBinrYevmGco6p",
+    "tipo_de_colateral": "TRX-B",
+    "ilk_hex": "5452582d42000000000000000000000000000000000000000000000000000000",
+    "colateral_bloqueado": 0,
+    "deuda_normalizada_art": 0,
+    "rate": 1.0234747416925059,
+    "deuda_USDD": 0,
+    "limite_de_deuda_global_del_tipo": 300000000
+   },
+   {
+    "id": 12,
+    "urn": "TNQLkGAKhsTsPzuvqBWnN3jrjAP1bkhS3P",
+    "dueno": "TLLENiMpZvGZD2C1ZQ2FzBinrYevmGco6p",
+    "tipo_de_colateral": "TRX-A",
+    "ilk_hex": "5452582d41000000000000000000000000000000000000000000000000000000",
+    "colateral_bloqueado": 0,
+    "deuda_normalizada_art": 0,
+    "rate": 1.0191196432678065,
+    "deuda_USDD": 0,
+    "limite_de_deuda_global_del_tipo": 400000000
+   },
+   {
+    "id": 13,
+    "urn": "TKc5J1Ww5EumY9c2MeggmpKg7wGcp1aPbo",
+    "dueno": "TLLENiMpZvGZD2C1ZQ2FzBinrYevmGco6p",
+    "tipo_de_colateral": "TRX-C",
+    "ilk_hex": "5452582d43000000000000000000000000000000000000000000000000000000",
+    "colateral_bloqueado": 0,
+    "deuda_normalizada_art": 0,
+    "rate": 1.0146274715973624,
+    "deuda_USDD": 0,
+    "limite_de_deuda_global_del_tipo": 400000000
+   },
+   {
+    "id": 14,
+    "urn": "TKys6ufsLXb6N3hxtH9MhbYg3FycfEJw1K",
+    "dueno": "TLLENiMpZvGZD2C1ZQ2FzBinrYevmGco6p",
+    "tipo_de_colateral": "USDT-A",
+    "ilk_hex": "555344542d410000000000000000000000000000000000000000000000000000",
+    "colateral_bloqueado": 500000,
+    "deuda_normalizada_art": 399961.70024432376,
+    "rate": 1.0178729800531434,
+    "deuda_USDD": 407110.2077348119,
+    "limite_de_deuda_global_del_tipo": 200000000
+   }
+  ]
+ },
+ "totales": {
+  "depositado_trx": 1203000000,
+  "retirado_trx": 1203000000
+ }
+}

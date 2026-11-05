@@ -1,0 +1,386 @@
+{
+ "ancla": "2026-11-05T09:18:48.000Z",
+ "paginas_leidas": 3,
+ "transacciones_hasta_ancla": 452,
+ "transacciones_posteriores_al_ancla": 0,
+ "por_tipo": {
+  "Transfer": 32,
+  "AccountPermissionUpdate": 1,
+  "FreezeBalanceV2": 25,
+  "UnfreezeBalanceV2": 1,
+  "CancelAllUnfreezeV2": 1,
+  "VoteWitness": 15,
+  "DelegateResource": 290,
+  "UnDelegateResource": 78,
+  "TransferAsset": 8,
+  "WithdrawBalance": 1
+ },
+ "fallidas": 0,
+ "CIERRE": {
+  "total_replay_trx": 1529341741,
+  "total_cadena_trx": 1529341741,
+  "diferencia_trx": 0,
+  "receptores_con_diferencia": 0,
+  "cuadra": true,
+  "diferencias": []
+ },
+ "entradas_trx": [
+  {
+   "t": "2025-10-30T10:05:27Z",
+   "tx": "64c2b5849a644e6be84183d11767a54d7763125bbfd7c3291b9ebdc437f8e94e",
+   "de": "TFTWNgDBkQ5wQoP8RXpRznnHvAVV8x5jLu",
+   "trx": 999
+  },
+  {
+   "t": "2025-10-30T10:05:30Z",
+   "tx": "8e51e82408fd90aeec25df273ddfb1a53f3af6f8e0ba7a8bd5bbfaf7f5390178",
+   "de": "TCfv2fSe9TPDNpzE4nRQqbJCa3VM5sUXgX",
+   "trx": 0.000001
+  },
+  {
+   "t": "2025-10-30T10:46:42Z",
+   "tx": "55d91dcf218060dd6a72f25abb0e05abbc78ee40f2eec04279947365bea39260",
+   "de": "TFTWNgDBkQ5wQoP8RXpRznnHvAVV8x5jLu",
+   "trx": 49999999
+  },
+  {
+   "t": "2025-10-30T10:48:36Z",
+   "tx": "cbdc04b28806ad77e929dd350d15d3c5e8f07a10bbf92a75cfdb3f2f7923419f",
+   "de": "TFTWNgDBkQ5wQoP8RXpRznnHvAVV8x5jLu",
+   "trx": 49999999
+  },
+  {
+   "t": "2025-11-12T16:20:03Z",
+   "tx": "d86d5dff9f15a204ec0877c1d0227c02810f19148985f0387bfb6d134f57c4fc",
+   "de": "TFTWNgDBkQ5wQoP8RXpRznnHvAVV8x5jLu",
+   "trx": 63999999
+  },
+  {
+   "t": "2025-11-12T16:20:06Z",
+   "tx": "200e7b2e27dbb954155e2d541766577ccaa6ff61a553ee4939385fd067a5a77d",
+   "de": "TPRfruA4kp94KP7Kv8FJ4De16DjcGFWEva",
+   "trx": 0.000001
+  },
+  {
+   "t": "2026-02-02T11:24:15Z",
+   "tx": "0a4600714c1e40ac1c7560da471da2145c64d76b73e57f716baec84b69046269",
+   "de": "TFTWNgDBkQ5wQoP8RXpRznnHvAVV8x5jLu",
+   "trx": 99999999
+  },
+  {
+   "t": "2026-03-02T14:56:00Z",
+   "tx": "5be366f12fbb6b384bec9bdd6066866654b88598db360419faf6c184a3faf902",
+   "de": "TU97V3prTumz91zM4Q4m9gDtBweL4rpshd",
+   "trx": 0.000002
+  },
+  {
+   "t": "2026-03-02T14:56:12Z",
+   "tx": "7fc455e912f72dd0d3c8da442a76f7fa10f55ec460cf71b7bb623085d65fa8b6",
+   "de": "TBTBHg25H2QqXh3DvC5MHVcANdhsKHYKhd",
+   "trx": 0.000001
+  },
+  {
+   "t": "2026-03-02T15:01:06Z",
+   "tx": "99950554ad0f62812b68ba7480ab4961b111f6cb92c5e90099935182572098c8",
+   "de": "TFTWNgDBkQ5wQoP8RXpRznnHvAVV8x5jLu",
+   "trx": 99999999
+  },
+  {
+   "t": "2026-03-02T15:01:09Z",
+   "tx": "7d33ce62f30baca47328bfa09e4902bd02ca285b45f1cc239949f34ac7b185ed",
+   "de": "TLGUeKMDVfyeTo98W6eQyzL6e2o1hMhL8L",
+   "trx": 0.000001
+  },
+  {
+   "t": "2026-03-16T07:35:48Z",
+   "tx": "b6646b2ffe28cd314938d2eeabbe657ba41a9c659dd93e95e140d42665b52421",
+   "de": "TCGX17y9Xdqy4r8KbPMuVuE1AC9YZoqqdT",
+   "trx": 43.642761
+  },
+  {
+   "t": "2026-03-17T06:10:54Z",
+   "tx": "1cd16065b4fa5ffaa2760843e9cb5227d89ab06ddb884cd37de2e3085eff4083",
+   "de": "TCGX17y9Xdqy4r8KbPMuVuE1AC9YZoqqdT",
+   "trx": 150
+  },
+  {
+   "t": "2026-03-17T06:10:57Z",
+   "tx": "7d424e0d83f61aeb571abec56b2794e7943c5819393708a8c9d94d11f118a941",
+   "de": "TVv3NxJwXxrnJWNJbpSjNTSBMQE79PshEa",
+   "trx": 0.000001
+  },
+  {
+   "t": "2026-03-21T13:49:09Z",
+   "tx": "c185f866bba4b70d3b73393918c4ca20fe1ea64c7263593623bd750ebf890ebc",
+   "de": "TFTWNgDBkQ5wQoP8RXpRznnHvAVV8x5jLu",
+   "trx": 99999999
+  },
+  {
+   "t": "2026-03-21T13:49:12Z",
+   "tx": "a47f1f760d123af5c315859e83984384d63fba232e0181cde3238eca6ccaaf2d",
+   "de": "TSVkuVzNfgWcmbGsaeLyJkan5a41kSi4cu",
+   "trx": 0.000001
+  },
+  {
+   "t": "2026-03-21T13:49:27Z",
+   "tx": "15a4608d893b9d12130aad954a50791d6e6b26829cbe39a213d2cfebdfa1eb94",
+   "de": "TFTWNgDBkQ5wQoP8RXpRznnHvAVV8x5jLu",
+   "trx": 99999999
+  },
+  {
+   "t": "2026-03-23T14:49:27Z",
+   "tx": "bbb9129d1036e32d854ef46eca1032a0a7dbadfed80a67047e59f83d77eeab3a",
+   "de": "TCGX17y9Xdqy4r8KbPMuVuE1AC9YZoqqdT",
+   "trx": 1
+  },
+  {
+   "t": "2026-03-23T14:49:30Z",
+   "tx": "677261e5ca5b5cbdf3ab614520af9eb3e2fbbf5b1e31fb35c7023835d267591b",
+   "de": "TZGfFLAoCmHfNPU3Km1ipuVL34buuSHqdT",
+   "trx": 0.000005
+  },
+  {
+   "t": "2026-05-07T12:20:54Z",
+   "tx": "45b31684d48880f93e70443d499982739237dd2a364067e8b80518763dc67fbc",
+   "de": "TFTWNgDBkQ5wQoP8RXpRznnHvAVV8x5jLu",
+   "trx": 99999999
+  },
+  {
+   "t": "2026-05-07T12:20:57Z",
+   "tx": "0573703d8f99cac21478f56a3d8fcdcc252f537e56ba58274af5528c1effe12d",
+   "de": "TGq1rTdzDK4ZHx1kNFEEeaLAjt7YxH9u7S",
+   "trx": 0.000001
+  },
+  {
+   "t": "2026-05-07T12:24:27Z",
+   "tx": "0d33217c4d8976ca8473fe23fabbc171f8a5a4aff7ae0be8404e0f10f5ac530d",
+   "de": "TFTWNgDBkQ5wQoP8RXpRznnHvAVV8x5jLu",
+   "trx": 79999999
+  },
+  {
+   "t": "2026-05-07T12:53:27Z",
+   "tx": "442ae337b99a2d07a311121c88159dff376a18492598063fb5385f178cb230a9",
+   "de": "TFTWNgDBkQ5wQoP8RXpRznnHvAVV8x5jLu",
+   "trx": 99999999
+  },
+  {
+   "t": "2026-05-07T12:54:36Z",
+   "tx": "8d84c9f89eac1a82146f073da0e9762244eab6b2021be5081c5ec4450c7cfa24",
+   "de": "TFTWNgDBkQ5wQoP8RXpRznnHvAVV8x5jLu",
+   "trx": 79999999
+  },
+  {
+   "t": "2026-10-20T12:03:15Z",
+   "tx": "ec9520b9f44162ca4ce398e6c2bac376072587e5673a335e3449b960e671065b",
+   "de": "TWhDfwC8QE6pQyiYy248dNor3uphPEw5M2",
+   "trx": 99999999
+  },
+  {
+   "t": "2026-10-20T12:03:33Z",
+   "tx": "f1ad83569db526db2b1aa1609f39c2c259807831b1b07b26d5a87bc0758f382e",
+   "de": "TYRvZE7UPnoRJz5wHMu8kLkHhHeHBYPR3g",
+   "trx": 0.000001
+  },
+  {
+   "t": "2026-11-02T09:59:27Z",
+   "tx": "b02dee0924cd91dbbcbed513dbfa76bc022daa9f555f4114827feb04df5081f7",
+   "de": "TWhDfwC8QE6pQyiYy248dNor3uphPEw5M2",
+   "trx": 499999999
+  },
+  {
+   "t": "2026-11-02T09:59:33Z",
+   "tx": "9f2d3f653230e3bfc9cba89773fa48a89762380f92789e717305da98c22041d7",
+   "de": "TKEigzeZNy9VmxzDNKZc3ukmWowH18sRgG",
+   "trx": 0.000001
+  },
+  {
+   "t": "2026-11-02T09:59:42Z",
+   "tx": "e03d693b74872daaa046a4dd5be7c9d32699d21ce3a7fcca2cb72f74014c1c80",
+   "de": "TC34XnuzJF85bi1pc9yQYF13i8AJqtpfN4",
+   "trx": 0.000001
+  },
+  {
+   "t": "2026-11-02T10:03:30Z",
+   "tx": "d7e1453da8a8f8e40486053f66affee42615dc4a818849b29bada7aa83a4325a",
+   "de": "TAMaAMiztYjHCj26avcrS6VrTVSyeSFfN4",
+   "trx": 0.000002
+  },
+  {
+   "t": "2026-11-04T10:55:39Z",
+   "tx": "db113f1bec479bcae2911f76de19b9248d291b7091265f62f86afbd60b28a42d",
+   "de": "TWhDfwC8QE6pQyiYy248dNor3uphPEw5M2",
+   "trx": 149999999
+  }
+ ],
+ "salidas_trx": [
+  {
+   "t": "2026-03-02T14:55:45Z",
+   "tx": "282b76fdbff18c6fd57a8a5176d770e522d936c611e6e59b8f07096a862225e9",
+   "a": "TUZjvWSSbQMwjb1ndnsdeyQg7cW1yxTKhd",
+   "trx": 100
+  }
+ ],
+ "total_entradas_trx": 1674001179.6427798,
+ "total_salidas_trx": 100,
+ "congelaciones": [
+  {
+   "t": "2025-10-30T10:25:18Z",
+   "tx": "43587fe963477ccf92c66449908a39e2930ba2a591a9ee38e63599e2ae800437",
+   "trx": 100,
+   "recurso": "BANDWIDTH"
+  },
+  {
+   "t": "2025-10-30T10:27:06Z",
+   "tx": "d87f2260270980b2c460e13064c8517ac0d95b167d9e7134f826e0dbd8941e02",
+   "trx": 200,
+   "recurso": "ENERGY"
+  },
+  {
+   "t": "2025-10-31T11:35:09Z",
+   "tx": "3f912aa9e3248ae3990363289ab4c22aa7e3a82bc2e4cae96a8f39115ccbb52e",
+   "trx": 2000000,
+   "recurso": "BANDWIDTH"
+  },
+  {
+   "t": "2025-10-31T11:35:48Z",
+   "tx": "98315257396dbae0d9df814ccfcc03c4019c08b2f15ab772d19e8d27abc43c46",
+   "trx": 90000000,
+   "recurso": "ENERGY"
+  },
+  {
+   "t": "2025-11-13T02:43:27Z",
+   "tx": "d6f31a7162715fd5a62613fe98fa19c596dc386bbbeb0f3d6a44d94d70608093",
+   "trx": 70000000,
+   "recurso": "ENERGY"
+  },
+  {
+   "t": "2025-12-16T14:57:33Z",
+   "tx": "61e966377054c2545d140a8276cd7524a4698944aac6fed58b611bc709f81b99",
+   "trx": 1500000,
+   "recurso": "BANDWIDTH"
+  },
+  {
+   "t": "2026-01-29T10:03:51Z",
+   "tx": "9846beec6a55b6656b9ed23bd7991106874286a531151cc21b6083848869477f",
+   "trx": 500000,
+   "recurso": "BANDWIDTH"
+  },
+  {
+   "t": "2026-02-03T10:57:21Z",
+   "tx": "f2d5374116769e9ecf7b039fe82463b7158e04c1a9b97d3dc19fc185d36e5247",
+   "trx": 80000000,
+   "recurso": "ENERGY"
+  },
+  {
+   "t": "2026-02-03T10:57:51Z",
+   "tx": "25e96acde69e4b8b50ccd439511596b3c394fb62f344660b3d7858408eeef1a6",
+   "trx": 5000000,
+   "recurso": "BANDWIDTH"
+  },
+  {
+   "t": "2026-02-27T09:13:57Z",
+   "tx": "760f33d1d39719ae1987bdd0fba9c327d98ac85d3e0aeaa5b00eb73e15921408",
+   "trx": 12000000,
+   "recurso": "ENERGY"
+  },
+  {
+   "t": "2026-03-02T16:01:09Z",
+   "tx": "70ad44fa663e779914d16dddcbd66d9177636e87d3d11323fd325c4156bea28f",
+   "trx": 80000000,
+   "recurso": "ENERGY"
+  },
+  {
+   "t": "2026-03-18T07:53:45Z",
+   "tx": "46f293bc8e5357e9a847c1b0ac765151f4c9fc85cfec342bc8c0abf9e01db1d8",
+   "trx": 23000000,
+   "recurso": "ENERGY"
+  },
+  {
+   "t": "2026-03-25T02:17:06Z",
+   "tx": "45fe3d4cb737c33768cad3a1033765397c9fc5877286ce16c4b0e481b2a3179e",
+   "trx": 50000000,
+   "recurso": "ENERGY"
+  },
+  {
+   "t": "2026-03-26T06:50:57Z",
+   "tx": "62e2b886ad051ab44e341244a67ed8e7c2b08a3affaa75cd6f4eec2ea5e437f2",
+   "trx": 100000000,
+   "recurso": "ENERGY"
+  },
+  {
+   "t": "2026-04-06T09:02:06Z",
+   "tx": "431cfce2f2940e32fc5dfbf25aa636481a9a2563d798e73dd3964bec0e3c254d",
+   "trx": 40000000,
+   "recurso": "ENERGY"
+  },
+  {
+   "t": "2026-04-22T07:03:12Z",
+   "tx": "f9b9064afb88db15c237be0b6d5063d2fda9e019f5442e242877f49ad4bfa1ae",
+   "trx": 10000000,
+   "recurso": "ENERGY"
+  },
+  {
+   "t": "2026-05-07T13:57:51Z",
+   "tx": "53fc4f0c891f5d910c9c37b4a06281cc64978f9d37f3da4e7a54964cb445d7da",
+   "trx": 100000000,
+   "recurso": "ENERGY"
+  },
+  {
+   "t": "2026-05-08T02:35:12Z",
+   "tx": "1c95a47ad48b1e77e9c9d380c60eed8cbfd3d43d9c39653e6a4d10734a2d058c",
+   "trx": 5000000,
+   "recurso": "BANDWIDTH"
+  },
+  {
+   "t": "2026-05-10T05:17:30Z",
+   "tx": "9f327658bc58c2917e04cabca711bd48ce355f6877238f2a93aed53b322d6170",
+   "trx": 200000000,
+   "recurso": "ENERGY"
+  },
+  {
+   "t": "2026-05-29T05:52:00Z",
+   "tx": "749a8edb8a8ac121844745381d4eb1351bfbb864f1416dfb4038866f487a03cd",
+   "trx": 54440000,
+   "recurso": "ENERGY"
+  },
+  {
+   "t": "2026-05-29T05:52:42Z",
+   "tx": "607f10221e437ab5982418d6b4a2fe375b7a859b78fed9dab2acdcb5f4c10159",
+   "trx": 5000000,
+   "recurso": "BANDWIDTH"
+  },
+  {
+   "t": "2026-10-20T16:55:54Z",
+   "tx": "b74a7b90f16064cc5bdfe8edede07fd2c0eb226d2bd6ba09fa2c4c33a22509a7",
+   "trx": 100000000,
+   "recurso": "ENERGY"
+  },
+  {
+   "t": "2026-11-03T09:33:51Z",
+   "tx": "d6111ff0cff42c3d8d119f1486ec132959837dc52226cc3f4b60baf36ab14e1d",
+   "trx": 490145000,
+   "recurso": "ENERGY"
+  },
+  {
+   "t": "2026-11-03T09:34:18Z",
+   "tx": "765d4cf9f2c3fa78dfcf637ef16e9dbfa395691e66a2e90eba957bbaa309969e",
+   "trx": 9858000,
+   "recurso": "BANDWIDTH"
+  },
+  {
+   "t": "2026-11-04T12:39:42Z",
+   "tx": "e020e3af03581e392eb8ced7cfde83519b33a1144c6b37601514f9525ec45b01",
+   "trx": 150000000,
+   "recurso": "ENERGY"
+  }
+ ],
+ "descongelaciones": [
+  {
+   "t": "2025-10-30T10:28:45Z",
+   "tx": "ceccd2e1ef9bf7f2174b952db9b52fb9e0d9cadfb400d5ec8b6faefda501d417",
+   "trx": 50,
+   "recurso": "BANDWIDTH",
+   "ok": true
+  }
+ ]
+}

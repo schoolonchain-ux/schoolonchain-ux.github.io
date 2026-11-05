@@ -1,0 +1,624 @@
+{
+ "nota": "TNCmcTdy… = cuenta etiquetada «Poloniex» por TronScan (atribución de terceros; la propiedad real de la cuenta no se ha verificado). Permisos actuales leídos en la ejecución.",
+ "permiso_actual_de_NC_leido_en_g1": "ver g1: owner_permission y active_permission con una única clave: la proveedora (peso 3, umbral 3)",
+ "cambios_de_permiso_de_NC": [
+  {
+   "t": "2023-11-11T17:13:30Z",
+   "tx": "470ce1a9355ddbb0e3b32ebdf0e252649b29eff12a39de15733b22ac4e087dc0",
+   "ok": true,
+   "n_firmas": 1,
+   "permission_id_usado": 0,
+   "propietario": {
+    "nombre": "owner",
+    "umbral": 3,
+    "claves": [
+     {
+      "clave": "TUgSgCQL6pMSy9zByn4sgxqrJa95sZExBG",
+      "peso": 3
+     }
+    ]
+   },
+   "activos": [
+    {
+     "nombre": "active0",
+     "umbral": 3,
+     "claves": [
+      {
+       "clave": "TUgSgCQL6pMSy9zByn4sgxqrJa95sZExBG",
+       "peso": 3
+      }
+     ]
+    }
+   ],
+   "firmante_recuperado_de_la_firma": "TNCmcTdyrYKMtmE1KU2itzeCX76jGm5Not"
+  },
+  {
+   "t": "2024-01-08T16:29:27Z",
+   "tx": "090464d0e5c3facd89305c0de9fe85e5f2d3ec3b8459cc892901a78d39aee847",
+   "ok": true,
+   "n_firmas": 1,
+   "permission_id_usado": 0,
+   "propietario": {
+    "nombre": "owner",
+    "umbral": 3,
+    "claves": [
+     {
+      "clave": "TUgSgCQL6pMSy9zByn4sgxqrJa95sZExBG",
+      "peso": 3
+     }
+    ]
+   },
+   "activos": [
+    {
+     "nombre": "active0",
+     "umbral": 3,
+     "claves": [
+      {
+       "clave": "TUgSgCQL6pMSy9zByn4sgxqrJa95sZExBG",
+       "peso": 3
+      }
+     ]
+    }
+   ],
+   "firmante_recuperado_de_la_firma": "TUgSgCQL6pMSy9zByn4sgxqrJa95sZExBG"
+  },
+  {
+   "t": "2024-01-08T16:33:30Z",
+   "tx": "4e8368adf4c5a1c2b25f7d150e6b3abde5a4402351d1fb394473674c69d0e526",
+   "ok": true,
+   "n_firmas": 1,
+   "permission_id_usado": 0,
+   "propietario": {
+    "nombre": "owner",
+    "umbral": 3,
+    "claves": [
+     {
+      "clave": "TWhDfwC8QE6pQyiYy248dNor3uphPEw5M2",
+      "peso": 3
+     }
+    ]
+   },
+   "activos": [
+    {
+     "nombre": "active0",
+     "umbral": 3,
+     "claves": [
+      {
+       "clave": "TWhDfwC8QE6pQyiYy248dNor3uphPEw5M2",
+       "peso": 3
+      }
+     ]
+    }
+   ],
+   "firmante_recuperado_de_la_firma": "TUgSgCQL6pMSy9zByn4sgxqrJa95sZExBG"
+  }
+ ],
+ "comprobacion_de_firmas": {
+  "metodo": "dirección recuperada de la firma ECDSA secp256k1 de cada transacción (recuperar-firmante.cjs); control = cuentas de una sola clave propia",
+  "control": {
+   "UG": {
+    "cuenta": "TUgSgCQL6pMSy9zByn4sgxqrJa95sZExBG",
+    "muestras": [
+     {
+      "t": "2022-09-30T03:15:39Z",
+      "tipo": "TriggerSmart",
+      "tx": "4947b523cb3ac7a4ab7db91f3379b0efe08b0cb6f70d3b09e84865bd70419bd8",
+      "firmante": "TUgSgCQL6pMSy9zByn4sgxqrJa95sZExBG"
+     },
+     {
+      "t": "2023-12-04T08:13:21Z",
+      "tipo": "DelegateResource",
+      "tx": "974183f7999e2b4e31354d59672bc17a5876f65dcd46055295861afbc8abe5be",
+      "firmante": "TUgSgCQL6pMSy9zByn4sgxqrJa95sZExBG"
+     },
+     {
+      "t": "2024-02-22T16:34:45Z",
+      "tipo": "TriggerSmart",
+      "tx": "16bc82ca75150f658e9db9a2f99db4a4c9559b43b9073d798e3398f81e709f23",
+      "firmante": "TUgSgCQL6pMSy9zByn4sgxqrJa95sZExBG"
+     },
+     {
+      "t": "2024-04-18T15:49:42Z",
+      "tipo": "TriggerSmart",
+      "tx": "28e29c2d7f1d8e24b7c8bb9926a56dffe9c6b6c84f29277a85c847dcde320e42",
+      "firmante": "TUgSgCQL6pMSy9zByn4sgxqrJa95sZExBG"
+     },
+     {
+      "t": "2024-08-05T04:45:45Z",
+      "tipo": "TriggerSmart",
+      "tx": "a1032940dd5052dce5d4282272a7541692a70b94107632db134dca6dfa745c75",
+      "firmante": "TUgSgCQL6pMSy9zByn4sgxqrJa95sZExBG"
+     },
+     {
+      "t": "2024-10-30T06:38:57Z",
+      "tipo": "TriggerSmart",
+      "tx": "3131f046834565430abf7b6faa16d82edf936cc210be4d5df6e443921f057b8b",
+      "firmante": "TUgSgCQL6pMSy9zByn4sgxqrJa95sZExBG"
+     },
+     {
+      "t": "2025-02-25T13:18:09Z",
+      "tipo": "TriggerSmart",
+      "tx": "9a46b507b364364dcb05e93d97f72a8dfba53674bdd4603d394b656d61d5ce2f",
+      "firmante": "TUgSgCQL6pMSy9zByn4sgxqrJa95sZExBG"
+     },
+     {
+      "t": "2026-10-28T06:36:03Z",
+      "tipo": "TriggerSmart",
+      "tx": "35705e2eaa1f0f4d2f6e5dd89a34de902a8ed2bb9fc6b75620d9262c1125049d",
+      "firmante": "TUgSgCQL6pMSy9zByn4sgxqrJa95sZExBG"
+     }
+    ],
+    "coinciden": 8,
+    "total": 8
+   },
+   "proveedora": {
+    "cuenta": "TWhDfwC8QE6pQyiYy248dNor3uphPEw5M2",
+    "muestras": [
+     {
+      "t": "2023-11-28T14:01:54Z",
+      "tipo": "Transfer",
+      "tx": "3fd51c7263511780626efcea9f0ec4fe68727fe326d7622437d094e48fc51e43",
+      "firmante": "TWhDfwC8QE6pQyiYy248dNor3uphPEw5M2"
+     },
+     {
+      "t": "2023-11-30T02:08:18Z",
+      "tipo": "Transfer",
+      "tx": "f9bad96fe4165c52a980a63774ceccd6dc40ff4163f412d8375f9efea2d01dbd",
+      "firmante": "TWhDfwC8QE6pQyiYy248dNor3uphPEw5M2"
+     },
+     {
+      "t": "2023-11-30T02:47:51Z",
+      "tipo": "Transfer",
+      "tx": "235aece6b857b02370b6431610f6bde729498911d7c1b213d531487c56153faa",
+      "firmante": "TWhDfwC8QE6pQyiYy248dNor3uphPEw5M2"
+     },
+     {
+      "t": "2023-11-30T02:54:24Z",
+      "tipo": "Transfer",
+      "tx": "795c63b7e3cb96ff60e177aa498e732aa672d7f9e5a5cb79ae8bee8ae5151d1a",
+      "firmante": "TWhDfwC8QE6pQyiYy248dNor3uphPEw5M2"
+     },
+     {
+      "t": "2023-11-30T03:01:42Z",
+      "tipo": "Transfer",
+      "tx": "38bdeb2207f7b0fd46774c607ae6f46b834e2fdfdfa5b089a4a0cac2d22dc1bc",
+      "firmante": "TWhDfwC8QE6pQyiYy248dNor3uphPEw5M2"
+     },
+     {
+      "t": "2023-11-30T03:11:24Z",
+      "tipo": "Transfer",
+      "tx": "edc3fe958e860a0b9e0973cab0588724300cd8605ca35c679db0340072f0bcde",
+      "firmante": "TWhDfwC8QE6pQyiYy248dNor3uphPEw5M2"
+     },
+     {
+      "t": "2023-11-30T03:28:00Z",
+      "tipo": "Transfer",
+      "tx": "351f79f5fcd1f22b665c5536c8b50b1e40ec1888e31c005834770bd6810e5dc3",
+      "firmante": "TWhDfwC8QE6pQyiYy248dNor3uphPEw5M2"
+     },
+     {
+      "t": "2023-11-30T03:49:42Z",
+      "tipo": "Transfer",
+      "tx": "4fbd711df7940f6340826cdeb6f18153cc96b1150f0369cdca2b63ff7d9a1995",
+      "firmante": "TWhDfwC8QE6pQyiYy248dNor3uphPEw5M2"
+     }
+    ],
+    "coinciden": 8,
+    "total": 8
+   }
+  },
+  "firmantes_de_NC_por_periodo": {
+   "antes del 11-nov-2023 17:13": {
+    "transacciones_enviadas_leidas": 59748,
+    "muestras": [
+     {
+      "t": "2023-11-11T14:56:06Z",
+      "tipo": "Transfer",
+      "tx": "d2aa66f275876753f2fef051e6f2950099102522d160cf02ec3322f0f5905c0d",
+      "firmante": "TNCmcTdyrYKMtmE1KU2itzeCX76jGm5Not"
+     },
+     {
+      "t": "2023-11-09T06:31:06Z",
+      "tipo": "TriggerSmart",
+      "tx": "8a08b612082b5b5b192862057e744b55ca2accc76be8d7bff1cdcaeee40396b8",
+      "firmante": "TNCmcTdyrYKMtmE1KU2itzeCX76jGm5Not"
+     },
+     {
+      "t": "2023-11-08T04:22:06Z",
+      "tipo": "TriggerSmart",
+      "tx": "b1d0583040216a94a4e5d42e8d7325e88698101fed65fc443a10b582f83ed4d1",
+      "firmante": "TNCmcTdyrYKMtmE1KU2itzeCX76jGm5Not"
+     },
+     {
+      "t": "2023-11-06T18:40:00Z",
+      "tipo": "DelegateResource",
+      "tx": "3d509f3a3341d75dd1be731ae110811bedea92572d47b7b57d5860ca1d41d049",
+      "firmante": "TNCmcTdyrYKMtmE1KU2itzeCX76jGm5Not"
+     },
+     {
+      "t": "2023-11-05T09:46:24Z",
+      "tipo": "TriggerSmart",
+      "tx": "f0052c3ea9f819e3901dbbee76e533d8f721b0db862537d005fd43b4dea99a2c",
+      "firmante": "TNCmcTdyrYKMtmE1KU2itzeCX76jGm5Not"
+     },
+     {
+      "t": "2023-11-03T17:29:45Z",
+      "tipo": "TriggerSmart",
+      "tx": "6f47b5c276ebb005654940188ebd9f0177d2d19dd9ca0f33df4dba381ecbbce3",
+      "firmante": "TNCmcTdyrYKMtmE1KU2itzeCX76jGm5Not"
+     },
+     {
+      "t": "2023-11-02T10:13:09Z",
+      "tipo": "DelegateResource",
+      "tx": "edec15a35ddb151dbbe80f93bd85e13051585bcab07099ff65b331633fdeed80",
+      "firmante": "TNCmcTdyrYKMtmE1KU2itzeCX76jGm5Not"
+     },
+     {
+      "t": "2023-10-31T19:23:27Z",
+      "tipo": "UnDelegateResource",
+      "tx": "a57a9ed4428b6017513d408683aefc4a43d011d261781514b047eb267d8e9c55",
+      "firmante": "TNCmcTdyrYKMtmE1KU2itzeCX76jGm5Not"
+     }
+    ],
+    "firmantes_distintos": {
+     "TNCmcTdyrYKMtmE1KU2itzeCX76jGm5Not": 8
+    }
+   },
+   "entre el 11-nov-2023 y el 8-ene-2024 16:33": {
+    "transacciones_enviadas_leidas": 3,
+    "muestras": [
+     {
+      "t": "2023-11-28T14:36:09Z",
+      "tipo": "WithdrawExpireUnfreeze",
+      "tx": "553f288ee788961f21541924fc42ae8cdb72eb90c60055fb4caed74211162b90",
+      "firmante": "TUgSgCQL6pMSy9zByn4sgxqrJa95sZExBG"
+     },
+     {
+      "t": "2023-11-28T14:39:33Z",
+      "tipo": "Transfer",
+      "tx": "52694cc663e14cf421f04950906b1edddcbe38d1a69b840ccea8f2242b33efaf",
+      "firmante": "TUgSgCQL6pMSy9zByn4sgxqrJa95sZExBG"
+     },
+     {
+      "t": "2023-11-28T14:40:03Z",
+      "tipo": "TriggerSmart",
+      "tx": "0e8c2fd223aa9b0fc32df0af38872f9668d46deb65ce6b5a598512636b07834d",
+      "firmante": "TUgSgCQL6pMSy9zByn4sgxqrJa95sZExBG"
+     }
+    ],
+    "firmantes_distintos": {
+     "TUgSgCQL6pMSy9zByn4sgxqrJa95sZExBG": 3
+    }
+   },
+   "desde el 8-ene-2024 16:33": {
+    "transacciones_enviadas_leidas": 1028,
+    "muestras": [
+     {
+      "t": "2024-01-08T18:00:09Z",
+      "tipo": "TriggerSmart",
+      "tx": "af768bc33390f45e7bd10af4c661535e9d4bc9fb2513eb046b1aafa4b07e47c8",
+      "firmante": "TWhDfwC8QE6pQyiYy248dNor3uphPEw5M2"
+     },
+     {
+      "t": "2024-01-28T23:56:15Z",
+      "tipo": "TriggerSmart",
+      "tx": "9b636e6eed9f8f99435f2d253fc33f037ceb80e370ed7306be482cca7d98af37",
+      "firmante": "TWhDfwC8QE6pQyiYy248dNor3uphPEw5M2"
+     },
+     {
+      "t": "2024-02-13T08:34:57Z",
+      "tipo": "TriggerSmart",
+      "tx": "4316b0b3cb7406aae33b4f208573e8ead186777407b2661265e5568574c91c7e",
+      "firmante": "TWhDfwC8QE6pQyiYy248dNor3uphPEw5M2"
+     },
+     {
+      "t": "2024-06-12T07:16:36Z",
+      "tipo": "TriggerSmart",
+      "tx": "7bc5080f5188ac09f5ce156ead5664a168e932a64446db92ae14bd83495cdf64",
+      "firmante": "TWhDfwC8QE6pQyiYy248dNor3uphPEw5M2"
+     },
+     {
+      "t": "2024-06-28T08:28:15Z",
+      "tipo": "TriggerSmart",
+      "tx": "dbaef635b12c04b8960c64defecb5f54ecde5a0cf7a13feea50170bb7bdb6e40",
+      "firmante": "TWhDfwC8QE6pQyiYy248dNor3uphPEw5M2"
+     },
+     {
+      "t": "2024-06-28T08:43:18Z",
+      "tipo": "TriggerSmart",
+      "tx": "fa8b7edf2d98cb62d97a3656076272794b00e6ca2f5285ce2c1328d94b924dfb",
+      "firmante": "TWhDfwC8QE6pQyiYy248dNor3uphPEw5M2"
+     },
+     {
+      "t": "2024-10-30T20:10:36Z",
+      "tipo": "TriggerSmart",
+      "tx": "e407f8052807cc8d20cd35596b90d08ce881f3fedff21f2ab480e83aeaf22aa6",
+      "firmante": "TWhDfwC8QE6pQyiYy248dNor3uphPEw5M2"
+     },
+     {
+      "t": "2026-10-09T08:20:06Z",
+      "tipo": "TriggerSmart",
+      "tx": "2eee9aca74bf8fceaf81545a4f456573156250c1d0e8798f9b26bee16d4456bc",
+      "firmante": "TWhDfwC8QE6pQyiYy248dNor3uphPEw5M2"
+     }
+    ],
+    "firmantes_distintos": {
+     "TWhDfwC8QE6pQyiYy248dNor3uphPEw5M2": 8
+    }
+   }
+  }
+ },
+ "lectura": {
+  "enviadas_desde_la_creacion_de_la_proveedora": 1114,
+  "paginas": 6,
+  "tipos_de_operacion_enviadas_desde_entonces": {
+   "WithdrawExpireUnfreeze": 2,
+   "Transfer": 12,
+   "TriggerSmart": 1071,
+   "AccountPermissionUpdate": 2,
+   "WithdrawBalance": 1,
+   "UnDelegateResource": 24,
+   "UnfreezeBalanceV2": 2
+  },
+  "enviadas_anteriores_leidas": 60000,
+  "paginas_anteriores": 300,
+  "anteriores_truncadas": true,
+  "cobertura_anterior_desde": "2023-10-31T19:23:27Z",
+  "nota_cobertura": "Hacia atrás solo se leyó hasta la fecha indicada (tope de páginas): pueden existir cambios de permiso anteriores no leídos"
+ },
+ "flujos_NC_proveedora": {
+  "TRX": {
+   "NC_a_proveedora": {
+    "n": 10,
+    "total": 93907.51
+   },
+   "proveedora_a_NC": {
+    "n": 161,
+    "total": 2441.09
+   }
+  },
+  "USDT": {
+   "NC_a_proveedora": {
+    "n": 160,
+    "total": 1152501.44
+   },
+   "proveedora_a_NC": {
+    "n": 0,
+    "total": 0
+   }
+  },
+  "primera": "2024-01-08T18:01:18Z",
+  "ultima": "2026-10-09T09:03:03Z",
+  "por_mes": {
+   "2024-01": {
+    "TRX": 9036.08,
+    "USDT": 391397.25,
+    "n": 82
+   },
+   "2024-02": {
+    "TRX": 0,
+    "USDT": 32161.37,
+    "n": 44
+   },
+   "2024-03": {
+    "TRX": 24109.53,
+    "USDT": 6716.88,
+    "n": 14
+   },
+   "2024-06": {
+    "TRX": 60393.5,
+    "USDT": 349254.61,
+    "n": 11
+   },
+   "2024-07": {
+    "TRX": 84.88,
+    "USDT": 88776.91,
+    "n": 5
+   },
+   "2024-08": {
+    "TRX": 167.48,
+    "USDT": 10549.83,
+    "n": 12
+   },
+   "2024-09": {
+    "TRX": 243.7,
+    "USDT": 0,
+    "n": 17
+   },
+   "2024-10": {
+    "TRX": 290.33,
+    "USDT": 71952.5,
+    "n": 20
+   },
+   "2024-11": {
+    "TRX": 162.1,
+    "USDT": 25303.24,
+    "n": 10
+   },
+   "2024-12": {
+    "TRX": 177.62,
+    "USDT": 0,
+    "n": 13
+   },
+   "2025-01": {
+    "TRX": 87.53,
+    "USDT": 3929.42,
+    "n": 8
+   },
+   "2025-02": {
+    "TRX": 169.69,
+    "USDT": 1758.61,
+    "n": 12
+   },
+   "2025-03": {
+    "TRX": 81.86,
+    "USDT": 0,
+    "n": 6
+   },
+   "2025-04": {
+    "TRX": 109.84,
+    "USDT": 0,
+    "n": 8
+   },
+   "2025-05": {
+    "TRX": 95.9,
+    "USDT": 30152.85,
+    "n": 6
+   },
+   "2025-06": {
+    "TRX": 54.55,
+    "USDT": 0,
+    "n": 4
+   },
+   "2025-07": {
+    "TRX": 109.63,
+    "USDT": 72901.22,
+    "n": 8
+   },
+   "2025-08": {
+    "TRX": 120.53,
+    "USDT": 26846,
+    "n": 7
+   },
+   "2025-09": {
+    "TRX": 75.85,
+    "USDT": 36050.2,
+    "n": 7
+   },
+   "2025-10": {
+    "TRX": 32.51,
+    "USDT": 1085.7,
+    "n": 3
+   },
+   "2025-11": {
+    "TRX": 30,
+    "USDT": 0,
+    "n": 1
+   },
+   "2026-01": {
+    "TRX": 534.21,
+    "USDT": 0,
+    "n": 16
+   },
+   "2026-02": {
+    "TRX": 30,
+    "USDT": 0,
+    "n": 1
+   },
+   "2026-03": {
+    "TRX": 30.4,
+    "USDT": 3091.94,
+    "n": 6
+   },
+   "2026-04": {
+    "TRX": 54.41,
+    "USDT": 572.91,
+    "n": 7
+   },
+   "2026-05": {
+    "TRX": 30,
+    "USDT": 0,
+    "n": 1
+   },
+   "2026-10": {
+    "TRX": 36.5,
+    "USDT": 0,
+    "n": 2
+   }
+  },
+  "mayores_de_1M": [],
+  "n_movimientos_de_1M_o_mas": 0
+ },
+ "la_proveedora_como_clave": {
+  "contrapartes_examinadas": 197,
+  "proveedora_es_clave_de": [
+   {
+    "cuenta": "TNCmcTdyrYKMtmE1KU2itzeCX76jGm5Not",
+    "existe": true,
+    "permiso_explicito": true,
+    "claves_ajenas": [
+     "TWhDfwC8QE6pQyiYy248dNor3uphPEw5M2"
+    ],
+    "umbral_propietario": 3,
+    "creada": "2019-04-22T15:14:03Z",
+    "movimientos_con_la_proveedora": {
+     "n": 348,
+     "trx": 96348.6,
+     "usdt": 1152501.44
+    }
+   }
+  ],
+  "cuentas_con_multifirma_entre_las_examinadas": [
+   {
+    "cuenta": "TBgGFBnqZuDeGkf4nyiaEo7mj3NodxYJBL",
+    "n_claves_ajenas": 5,
+    "incluye_la_proveedora": false,
+    "incluye_poloniex_2": false,
+    "umbral_propietario": 3
+   },
+   {
+    "cuenta": "TEB2oo4JLQqjE1TitLmRUDpFP3DSGGkzXm",
+    "n_claves_ajenas": 2,
+    "incluye_la_proveedora": false,
+    "incluye_poloniex_2": false,
+    "umbral_propietario": 2
+   },
+   {
+    "cuenta": "TEF9ZVUxhmGGffvkf59e2vdLfAG1QCMb7B",
+    "n_claves_ajenas": 4,
+    "incluye_la_proveedora": false,
+    "incluye_poloniex_2": false,
+    "umbral_propietario": 1
+   },
+   {
+    "cuenta": "TGfWhPbk4L2WzJuavSU2fdypGSaVsoUa1L",
+    "n_claves_ajenas": 3,
+    "incluye_la_proveedora": false,
+    "incluye_poloniex_2": false,
+    "umbral_propietario": 2
+   },
+   {
+    "cuenta": "TH46mnDEM78hFBh26np3hDLjFy7WxFKSVV",
+    "n_claves_ajenas": 5,
+    "incluye_la_proveedora": false,
+    "incluye_poloniex_2": false,
+    "umbral_propietario": 1
+   },
+   {
+    "cuenta": "TLZXe1w751dcmu2B4t3KhhRca27dJhema4",
+    "n_claves_ajenas": 5,
+    "incluye_la_proveedora": false,
+    "incluye_poloniex_2": false,
+    "umbral_propietario": 1
+   },
+   {
+    "cuenta": "TNCmcTdyrYKMtmE1KU2itzeCX76jGm5Not",
+    "n_claves_ajenas": 1,
+    "incluye_la_proveedora": true,
+    "incluye_poloniex_2": false,
+    "umbral_propietario": 3
+   },
+   {
+    "cuenta": "TSzSgxRisS5VBXXDcAezTDvnPGi9CbsXvJ",
+    "n_claves_ajenas": 5,
+    "incluye_la_proveedora": false,
+    "incluye_poloniex_2": true,
+    "umbral_propietario": 3
+   },
+   {
+    "cuenta": "TWPpxPd5PpU5FQk6F6F3HMN5VdufxnVA8K",
+    "n_claves_ajenas": 5,
+    "incluye_la_proveedora": false,
+    "incluye_poloniex_2": true,
+    "umbral_propietario": 3
+   },
+   {
+    "cuenta": "TXu42Fz4MYu5mtUyNoQyz4zoeGDHsM7eKz",
+    "n_claves_ajenas": 3,
+    "incluye_la_proveedora": false,
+    "incluye_poloniex_2": false,
+    "umbral_propietario": 2
+   }
+  ]
+ }
+}

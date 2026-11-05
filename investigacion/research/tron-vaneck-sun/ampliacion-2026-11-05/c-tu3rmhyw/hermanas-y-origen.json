@@ -1,0 +1,795 @@
+{
+ "TKpiitwG": {
+  "etiqueta": null,
+  "n_tx": 57,
+  "creada": "2024-08-20",
+  "lectura": {
+   "filas": 57,
+   "paginas": 1,
+   "parcial": false
+  },
+  "grandes": [
+   {
+    "t": "2024-08-20T18:13:27Z",
+    "de": "TDqMwZVTSPLTCZQC55Db3J69eXY7HLCmfs",
+    "a": "TKpiitwGUuW5WgsBMg5w5QWUpC6nUTroqa",
+    "trx": 141810000,
+    "tx": "be3f0fb6e65c845ff53e9db2ce2b64b34ce8af62704e025058865141070b0bd2"
+   },
+   {
+    "t": "2024-08-20T18:40:15Z",
+    "de": "TQwh1ZDBdqMKDtGWEeDdrRUUbtgaVL1Se2",
+    "a": "TKpiitwGUuW5WgsBMg5w5QWUpC6nUTroqa",
+    "trx": 1471079000,
+    "tx": "f4b59d18fb8d4488612064ccf0f7a54086e4244ac06b15f63d6689c514acb04c"
+   },
+   {
+    "t": "2024-08-20T18:54:51Z",
+    "de": "TKpiitwGUuW5WgsBMg5w5QWUpC6nUTroqa",
+    "a": "TT2T17KZhoDu47i2E4FWxfG79zdkEWkU9N",
+    "trx": 600000000,
+    "tx": "6d98e0e89a54e4a79cac42f67b9731b638545a741dc4bcdc23fc4d145fa90d3b"
+   },
+   {
+    "t": "2024-08-21T09:14:51Z",
+    "de": "TQGqKkt7Z8Y6aRJcwnEpK6FtvTf9stA397",
+    "a": "TKpiitwGUuW5WgsBMg5w5QWUpC6nUTroqa",
+    "trx": 31502700,
+    "tx": "222dd412163644c4f4f2ee5da4b992ab9bae48687c25f42db028553178a68cb3"
+   },
+   {
+    "t": "2024-08-21T09:27:45Z",
+    "de": "TERLhS5VxDNbFkxj1FnzeTa3KYRpXNVWKx",
+    "a": "TKpiitwGUuW5WgsBMg5w5QWUpC6nUTroqa",
+    "trx": 103672001.87,
+    "tx": "92dbe4cf4674214bc837d72c2a8462724bd85d0620d4f6f99f28443878c44632"
+   },
+   {
+    "t": "2024-08-21T09:42:45Z",
+    "de": "TQiRJYa1F2hWr5BVQh76ndHYpyDFkNVsJZ",
+    "a": "TKpiitwGUuW5WgsBMg5w5QWUpC6nUTroqa",
+    "trx": 35270002.04,
+    "tx": "d2d9dd39262a638e9ee81242b99d60d6ba03fbd833e93a1c6b5b28f12e1b1ed5"
+   },
+   {
+    "t": "2026-02-02T11:17:51Z",
+    "de": "TKpiitwGUuW5WgsBMg5w5QWUpC6nUTroqa",
+    "a": "TRziP5Ls8fPP71pXZPD7Q2zrmVBjRhJoFV",
+    "trx": 100000000,
+    "tx": "b06458627f07f91032dda54731e6314d2d39c6682087c527b9961d66b63db668"
+   },
+   {
+    "t": "2026-05-23T11:13:39Z",
+    "de": "TKpiitwGUuW5WgsBMg5w5QWUpC6nUTroqa",
+    "a": "TTU5VgwDcbWhK9ybdB21po84RQ8SBbdqkM",
+    "trx": 40000000,
+    "tx": "0644f81983192b14a0286eff86f53281f234e7ec1778c871a85b356284c9544e"
+   },
+   {
+    "t": "2026-06-08T13:10:00Z",
+    "de": "TKpiitwGUuW5WgsBMg5w5QWUpC6nUTroqa",
+    "a": "THsd9w1M9N8JgfdXugsGhzdKwYrQ7c2zAM",
+    "trx": 344360105.27,
+    "tx": "fab6d4169ef446ce369218fc0cfe7ec28848bf0d1581fb9e0e8d1a7b44d2bee5"
+   }
+  ],
+  "permisos": 0,
+  "tipos": {
+   "Transfer": 37,
+   "FreezeBalanceV2": 1,
+   "DelegateResource": 2,
+   "TransferAsset": 8,
+   "UnDelegateResource": 2,
+   "UnfreezeBalanceV2": 1,
+   "WithdrawExpireUnfreeze": 1,
+   "TriggerSmart": 5
+  }
+ },
+ "TWpMnUh9": {
+  "etiqueta": null,
+  "n_tx": 847,
+  "creada": "2023-07-15",
+  "lectura": {
+   "filas": 847,
+   "paginas": 5,
+   "parcial": false
+  },
+  "grandes": [
+   {
+    "t": "2023-07-15T11:58:00Z",
+    "de": "TVJVQtD1rPC2igEM82AfnPZTYdJFGAFQbw",
+    "a": "TWpMnUh9pZS1Mf8yyw9WPiS82WYevKzQo2",
+    "trx": 370000000,
+    "tx": "5a21d6f67a027fc8e4e6b1e138e6aa7413b33aeb680087423bebe8edda2c9850"
+   },
+   {
+    "t": "2023-07-15T12:01:30Z",
+    "de": "TTXojNiH2hFL3mUC8yTGMwCQ17pmNFxvzE",
+    "a": "TWpMnUh9pZS1Mf8yyw9WPiS82WYevKzQo2",
+    "trx": 387000000,
+    "tx": "b0a9e56a7f9a5e5581be008191976d4caa3ce960cc1e366801dcbfb653e70237"
+   },
+   {
+    "t": "2023-07-15T12:03:21Z",
+    "de": "TQwh1ZDBdqMKDtGWEeDdrRUUbtgaVL1Se2",
+    "a": "TWpMnUh9pZS1Mf8yyw9WPiS82WYevKzQo2",
+    "trx": 625000000,
+    "tx": "ea303a679762dceac03b2259e280dd59f337b57d99b1bcd2a8209b59adf3c68a"
+   },
+   {
+    "t": "2023-08-03T09:09:51Z",
+    "de": "TLLM21wteSPs4hKjbxgmH1L6poyMjeTbHm",
+    "a": "TWpMnUh9pZS1Mf8yyw9WPiS82WYevKzQo2",
+    "trx": 429754123,
+    "tx": "e075c3191245d60fab000066c5747419e2aa74dc0c717e31e4b8eccea5fdf3f9"
+   },
+   {
+    "t": "2023-08-25T07:54:42Z",
+    "de": "TWpMnUh9pZS1Mf8yyw9WPiS82WYevKzQo2",
+    "a": "TBjzKDbv5gyMDbShFP9bgwwR2h6ucdydHR",
+    "trx": 13516807,
+    "tx": "6b7c6f360f09e3313129195850208ef1c61cc1d490eb575f9f1b9c09b6d2f1f7"
+   },
+   {
+    "t": "2023-11-26T09:40:09Z",
+    "de": "TFLYd2Bk7CtsfQFpLnm2fKp2CsSwTDGmx2",
+    "a": "TWpMnUh9pZS1Mf8yyw9WPiS82WYevKzQo2",
+    "trx": 1040000,
+    "tx": "1c93df658698c8a8d2c2ff7b6d7021cfefe782aa4bace26e701bf4974c796e92"
+   },
+   {
+    "t": "2023-12-21T09:14:54Z",
+    "de": "TDToUxX8sH4z6moQpK3ZLAN24eupu2ivA4",
+    "a": "TWpMnUh9pZS1Mf8yyw9WPiS82WYevKzQo2",
+    "trx": 32609910.48,
+    "tx": "b16baed24b20f577726c1ed4dbf24f7b4e9f688255ccdf2da9dafd078c0d5923"
+   },
+   {
+    "t": "2024-06-24T17:32:06Z",
+    "de": "TWpMnUh9pZS1Mf8yyw9WPiS82WYevKzQo2",
+    "a": "TFojJgnRBiKu8eiFyzSBQk6tGcZj44gYvF",
+    "trx": 149999900,
+    "tx": "eeb965c669ecd2c8f0810456f4715bbf2745f29e8ef31ba53a89f985db43145f"
+   },
+   {
+    "t": "2024-07-13T15:43:48Z",
+    "de": "TDirN49rpXgs2RXJUudbcRskhoyD29c66U",
+    "a": "TWpMnUh9pZS1Mf8yyw9WPiS82WYevKzQo2",
+    "trx": 374226000,
+    "tx": "e5609ccc11043e5c8c15b1ee1e83a15ac310a065de32ae5e107a21dba8a2c810"
+   },
+   {
+    "t": "2025-01-11T10:12:36Z",
+    "de": "TWpMnUh9pZS1Mf8yyw9WPiS82WYevKzQo2",
+    "a": "TXKpG8sLYn8NhPqTWKJd88egx69duvggG5",
+    "trx": 52999950,
+    "tx": "f056d0aa2206af7d5dee3d3f105ebcf91611430166090e7710554a33e74debb6"
+   },
+   {
+    "t": "2025-01-11T10:42:36Z",
+    "de": "TCVvHUqZC6uezrxhCgAXqC45XHt35mNJyy",
+    "a": "TWpMnUh9pZS1Mf8yyw9WPiS82WYevKzQo2",
+    "trx": 52999950,
+    "tx": "960e0f3c9b9291a6294dbbc294584d42249a6a696da710f57f0000e0e823765a"
+   },
+   {
+    "t": "2025-01-11T10:43:51Z",
+    "de": "TWpMnUh9pZS1Mf8yyw9WPiS82WYevKzQo2",
+    "a": "TXKpG8sLYn8NhPqTWKJd88egx69duvggG5",
+    "trx": 52999950,
+    "tx": "9d05383c26f1e1be22943c40b5bfb2b0615c5bdecea785b321d0418184079f4f"
+   },
+   {
+    "t": "2025-01-13T09:12:24Z",
+    "de": "TT2T17KZhoDu47i2E4FWxfG79zdkEWkU9N",
+    "a": "TWpMnUh9pZS1Mf8yyw9WPiS82WYevKzQo2",
+    "trx": 112000000,
+    "tx": "7d037b84b37ed28cd75d5b7af13e5de5bb57e315f50d7b5e5bff7faca17e57da"
+   },
+   {
+    "t": "2025-01-13T09:13:03Z",
+    "de": "TWpMnUh9pZS1Mf8yyw9WPiS82WYevKzQo2",
+    "a": "TXKpG8sLYn8NhPqTWKJd88egx69duvggG5",
+    "trx": 56000000,
+    "tx": "184307667f85c17ad05cbca65c0d32d50fed9362e662730b74c6f635dc306b2b"
+   },
+   {
+    "t": "2025-01-13T09:23:21Z",
+    "de": "TWpMnUh9pZS1Mf8yyw9WPiS82WYevKzQo2",
+    "a": "TXKpG8sLYn8NhPqTWKJd88egx69duvggG5",
+    "trx": 56000000,
+    "tx": "0b2a2ada5940094a2797730454334df9f7895641882f3002af6b0f5e69f0060f"
+   },
+   {
+    "t": "2025-01-15T10:11:06Z",
+    "de": "TT2T17KZhoDu47i2E4FWxfG79zdkEWkU9N",
+    "a": "TWpMnUh9pZS1Mf8yyw9WPiS82WYevKzQo2",
+    "trx": 198000000,
+    "tx": "870b1e714c65c80b32d696b72ac652153efe94c4045280cc045f6d1ca8a3e622"
+   },
+   {
+    "t": "2025-01-15T10:12:21Z",
+    "de": "TWpMnUh9pZS1Mf8yyw9WPiS82WYevKzQo2",
+    "a": "TXKpG8sLYn8NhPqTWKJd88egx69duvggG5",
+    "trx": 66000000,
+    "tx": "034419056ad85c7d537f71fddbcc5440e003c833e883a6ed13c1b0d50f630edc"
+   },
+   {
+    "t": "2025-01-15T10:22:51Z",
+    "de": "TWpMnUh9pZS1Mf8yyw9WPiS82WYevKzQo2",
+    "a": "TXKpG8sLYn8NhPqTWKJd88egx69duvggG5",
+    "trx": 66000000,
+    "tx": "9e8f35855068f5e32537b52fbec6981ecbec17107aa890b94925b5919f9a4ab0"
+   },
+   {
+    "t": "2025-01-15T10:31:36Z",
+    "de": "TWpMnUh9pZS1Mf8yyw9WPiS82WYevKzQo2",
+    "a": "TXKpG8sLYn8NhPqTWKJd88egx69duvggG5",
+    "trx": 66000000,
+    "tx": "36deb6fb8fd617198b942e72952a0fe807402e248c63f54add4189de516421ba"
+   },
+   {
+    "t": "2025-03-13T08:59:30Z",
+    "de": "TWpMnUh9pZS1Mf8yyw9WPiS82WYevKzQo2",
+    "a": "TXKpG8sLYn8NhPqTWKJd88egx69duvggG5",
+    "trx": 52499900,
+    "tx": "3ab2c80dfd85f7eca8887fdf1f0e1e44e3697c12e705cb65d2b9ff821409e59d"
+   },
+   {
+    "t": "2025-03-13T09:09:03Z",
+    "de": "TWpMnUh9pZS1Mf8yyw9WPiS82WYevKzQo2",
+    "a": "TXKpG8sLYn8NhPqTWKJd88egx69duvggG5",
+    "trx": 52500000,
+    "tx": "367b5edf13bec2d1b5b201aa42f8f887911ba6ce4fac898ed82b2b4a90489c7f"
+   },
+   {
+    "t": "2025-03-13T10:01:06Z",
+    "de": "TDqSquXBgUCLYvYC4XZgrprLK589dkhSCf",
+    "a": "TWpMnUh9pZS1Mf8yyw9WPiS82WYevKzQo2",
+    "trx": 9999996,
+    "tx": "15d094d92a2741792c3d4ea60ae5051f3f33b22b0fadd7b05f556e1259f05a29"
+   },
+   {
+    "t": "2025-03-13T11:33:45Z",
+    "de": "TDqSquXBgUCLYvYC4XZgrprLK589dkhSCf",
+    "a": "TWpMnUh9pZS1Mf8yyw9WPiS82WYevKzQo2",
+    "trx": 57999999,
+    "tx": "b28f734ea1963a51eedf56933fbe9810720f51ab7b1ea46d2c0a067dfe8af90b"
+   },
+   {
+    "t": "2025-03-13T13:34:30Z",
+    "de": "TDqSquXBgUCLYvYC4XZgrprLK589dkhSCf",
+    "a": "TWpMnUh9pZS1Mf8yyw9WPiS82WYevKzQo2",
+    "trx": 69999999,
+    "tx": "3f402f4a0bcab722d139bf0022208b886ed18ee3a78d6591a103a322378ab434"
+   },
+   {
+    "t": "2025-03-15T09:09:48Z",
+    "de": "TWpMnUh9pZS1Mf8yyw9WPiS82WYevKzQo2",
+    "a": "TXKpG8sLYn8NhPqTWKJd88egx69duvggG5",
+    "trx": 52500000,
+    "tx": "272a8b19a1720dd49fd790eab14351d7730a190d634d0b2be6dbc05fbadcafd9"
+   },
+   {
+    "t": "2025-03-15T09:12:42Z",
+    "de": "TDqSquXBgUCLYvYC4XZgrprLK589dkhSCf",
+    "a": "TWpMnUh9pZS1Mf8yyw9WPiS82WYevKzQo2",
+    "trx": 29999999,
+    "tx": "9eb3bc6194ad9fd596e97ec4ed89d07dbcb0d79b0a3a9cf170a6c8293a74b3a7"
+   },
+   {
+    "t": "2025-03-15T09:18:39Z",
+    "de": "TWpMnUh9pZS1Mf8yyw9WPiS82WYevKzQo2",
+    "a": "TXKpG8sLYn8NhPqTWKJd88egx69duvggG5",
+    "trx": 52500000,
+    "tx": "f673e1f85f84214ed4ec28a4e445e883f57e460cb04b1d7b99c15f8263545d7c"
+   },
+   {
+    "t": "2025-03-17T09:02:45Z",
+    "de": "TWpMnUh9pZS1Mf8yyw9WPiS82WYevKzQo2",
+    "a": "TXKpG8sLYn8NhPqTWKJd88egx69duvggG5",
+    "trx": 70000000,
+    "tx": "b3262f8490bfebf9b72d6ce05476d7628b66355e3e736ed8bf2076409f69538c"
+   },
+   {
+    "t": "2025-03-17T09:11:33Z",
+    "de": "TWpMnUh9pZS1Mf8yyw9WPiS82WYevKzQo2",
+    "a": "TXKpG8sLYn8NhPqTWKJd88egx69duvggG5",
+    "trx": 70000000,
+    "tx": "341ac649efc578f5197fc3d66575ba8ee11b28e24d2bad157998654649a70f67"
+   },
+   {
+    "t": "2025-03-17T16:47:18Z",
+    "de": "TDqSquXBgUCLYvYC4XZgrprLK589dkhSCf",
+    "a": "TWpMnUh9pZS1Mf8yyw9WPiS82WYevKzQo2",
+    "trx": 59999999,
+    "tx": "319a1fefda330163d851b445cae7ac6d415a52441dc0716a46bbf3353f6eb4a3"
+   },
+   {
+    "t": "2025-03-17T16:48:54Z",
+    "de": "TDqSquXBgUCLYvYC4XZgrprLK589dkhSCf",
+    "a": "TWpMnUh9pZS1Mf8yyw9WPiS82WYevKzQo2",
+    "trx": 48792117.98,
+    "tx": "9ec44679ce892d0eaceafc9eabc5a45f953e0dd3908e655abc5a602398c63ecc"
+   },
+   {
+    "t": "2025-03-20T16:20:27Z",
+    "de": "TWpMnUh9pZS1Mf8yyw9WPiS82WYevKzQo2",
+    "a": "TA1FNwAaekqAULEZvkhAKzxvKVSL9fuQfZ",
+    "trx": 50000000,
+    "tx": "99051692d734625a914433e6979be53dcf5733428a1ce71fccfa154194cc51f9"
+   },
+   {
+    "t": "2025-03-30T16:14:42Z",
+    "de": "TWpMnUh9pZS1Mf8yyw9WPiS82WYevKzQo2",
+    "a": "TNXc41gaBocUoEHkkt2DJvihkm3TUvxjso",
+    "trx": 8356605,
+    "tx": "00b2775fe9da58613b480080c9645b5049a2e2cec31f75b52c86374ce03de10b"
+   },
+   {
+    "t": "2025-03-30T16:25:09Z",
+    "de": "TWpMnUh9pZS1Mf8yyw9WPiS82WYevKzQo2",
+    "a": "TQV5WYZ2B6N3Mvz68s1eSu3AS6ci7sf43v",
+    "trx": 45000000,
+    "tx": "54af7d5aae416aa3db7be8e93d38ed6e5cca58fa7afc73c65c31b441217b03e3"
+   },
+   {
+    "t": "2025-04-19T09:00:54Z",
+    "de": "TWpMnUh9pZS1Mf8yyw9WPiS82WYevKzQo2",
+    "a": "TXKpG8sLYn8NhPqTWKJd88egx69duvggG5",
+    "trx": 64999900,
+    "tx": "e0150885e15b6e417430b6ef56f0579ab85b35fcfc0d9a9731f5847d881c07c8"
+   },
+   {
+    "t": "2025-04-19T09:09:21Z",
+    "de": "TWpMnUh9pZS1Mf8yyw9WPiS82WYevKzQo2",
+    "a": "TXKpG8sLYn8NhPqTWKJd88egx69duvggG5",
+    "trx": 65000000,
+    "tx": "02a406fe0f3e4fba02ced7bba8565fb9d35cbef78a3f1fe6ceaa15b0a649ac58"
+   },
+   {
+    "t": "2025-04-26T09:06:33Z",
+    "de": "TWpMnUh9pZS1Mf8yyw9WPiS82WYevKzQo2",
+    "a": "TXKpG8sLYn8NhPqTWKJd88egx69duvggG5",
+    "trx": 65000000,
+    "tx": "7b757ad4f536613273119457454a2f9e470a978d18332fababb6edb04d8173dd"
+   },
+   {
+    "t": "2025-04-26T09:14:09Z",
+    "de": "TWpMnUh9pZS1Mf8yyw9WPiS82WYevKzQo2",
+    "a": "TXKpG8sLYn8NhPqTWKJd88egx69duvggG5",
+    "trx": 65000000,
+    "tx": "7bc24b3b47d3d366723c65d214c03f05da47c7bc936b2e92b1e6d1cfea207ef3"
+   },
+   {
+    "t": "2025-05-05T08:57:03Z",
+    "de": "TWQg69zHB5G1bDtk5vmai6mEX2tXgkXGSM",
+    "a": "TWpMnUh9pZS1Mf8yyw9WPiS82WYevKzQo2",
+    "trx": 46574165,
+    "tx": "1b34154bb75457f96d6eb9cd1ea0ba70c82341dab230a18b2768ad08ea898052"
+   },
+   {
+    "t": "2025-05-05T09:05:00Z",
+    "de": "TWxuySF3mQfsfxrq1wmCBrqq7k8Ny325R5",
+    "a": "TWpMnUh9pZS1Mf8yyw9WPiS82WYevKzQo2",
+    "trx": 42019523,
+    "tx": "375a5b29fb7836677f3020a3b375c9ad953d4f70c014a82a53d1b0f0701bc49c"
+   },
+   {
+    "t": "2025-05-05T09:13:45Z",
+    "de": "TUVdGXz8rYoLBLtf2BuCvyyHzM8JzeozFe",
+    "a": "TWpMnUh9pZS1Mf8yyw9WPiS82WYevKzQo2",
+    "trx": 43901362.74,
+    "tx": "5715d3428d36eff19374c2a4a632bb4ee3e30c0feba0d11c23b4c78aa427fffe"
+   },
+   {
+    "t": "2025-05-05T09:20:27Z",
+    "de": "TJuq1J8oiPPqRfeePeGAv2LugwAbnyKeno",
+    "a": "TWpMnUh9pZS1Mf8yyw9WPiS82WYevKzQo2",
+    "trx": 39535135,
+    "tx": "2b181fe669bfb18d99d844fe4ea5561770814e0519fbc71dd645beda05f816b2"
+   },
+   {
+    "t": "2025-05-05T09:27:06Z",
+    "de": "TLHQ9dyzv3TWDMhDC4EFvNHTA1DaYTKz6v",
+    "a": "TWpMnUh9pZS1Mf8yyw9WPiS82WYevKzQo2",
+    "trx": 39937977.45,
+    "tx": "112dfc49a073129a91e4b45cf19e8a1b0854a635f5704e61e50e78ba2d131f7c"
+   },
+   {
+    "t": "2025-05-05T09:34:30Z",
+    "de": "TJ7EWbihe5c7dKYmhKKjHdPBPksNELVKzt",
+    "a": "TWpMnUh9pZS1Mf8yyw9WPiS82WYevKzQo2",
+    "trx": 37456149.61,
+    "tx": "a11a4c3c38da25975ad8430b1a2aaf3508e175f2f7959b25278f70edb7069428"
+   },
+   {
+    "t": "2025-05-05T09:39:27Z",
+    "de": "TB56NBjwfoKL6j12KjWUZ3v9mrmj3jJSTj",
+    "a": "TWpMnUh9pZS1Mf8yyw9WPiS82WYevKzQo2",
+    "trx": 22319099.68,
+    "tx": "3dff80eca167579822080b6653114865c3aac18a4bba409ca73262eee6f71976"
+   },
+   {
+    "t": "2025-06-14T07:16:42Z",
+    "de": "TWpMnUh9pZS1Mf8yyw9WPiS82WYevKzQo2",
+    "a": "TXKpG8sLYn8NhPqTWKJd88egx69duvggG5",
+    "trx": 64999900,
+    "tx": "1d864b07ef5c9c2be2d88a67de2f02b5c2af262391841bb23bebb8eac17e8c2b"
+   },
+   {
+    "t": "2025-06-14T07:30:57Z",
+    "de": "TWpMnUh9pZS1Mf8yyw9WPiS82WYevKzQo2",
+    "a": "TXKpG8sLYn8NhPqTWKJd88egx69duvggG5",
+    "trx": 65000000,
+    "tx": "ebb9c9561bdf24218a54f80ecdb7bb2e31b0f96de21aff686d21f11373db7973"
+   },
+   {
+    "t": "2025-06-28T11:10:33Z",
+    "de": "TWpMnUh9pZS1Mf8yyw9WPiS82WYevKzQo2",
+    "a": "THxg4UEzbnqXMiyEwMQ5XPgkdLnPrkHHcb",
+    "trx": 365096751,
+    "tx": "defc57b9dd920b508c4fd2446b9be7ad1c1ff33867fbed8820dce5e1b5fcc72e"
+   },
+   {
+    "t": "2025-07-19T15:19:33Z",
+    "de": "TWpMnUh9pZS1Mf8yyw9WPiS82WYevKzQo2",
+    "a": "TF7TSz7qicaMydtP3RakYMxjzbnB5vuNhr",
+    "trx": 150000000,
+    "tx": "b1b234a233d904b05d3a7d3bc9085863bfe7d6d46096dd382bb9560861876d61"
+   },
+   {
+    "t": "2025-07-29T17:11:39Z",
+    "de": "TWpMnUh9pZS1Mf8yyw9WPiS82WYevKzQo2",
+    "a": "TT2T17KZhoDu47i2E4FWxfG79zdkEWkU9N",
+    "trx": 500000000,
+    "tx": "f2dfcadd34d443b0de4544a80b7eceb2507f8be7ea1598aece9a2ccd876ada54"
+   },
+   {
+    "t": "2025-08-11T02:18:39Z",
+    "de": "TWpMnUh9pZS1Mf8yyw9WPiS82WYevKzQo2",
+    "a": "TL3hjC8TVicYCWjtDHcnVUN7NY8JD46tPn",
+    "trx": 99999900,
+    "tx": "a4ebdb3cb707b0d8d72ffec9077a8d52bb66d99d11d6a6250dcd1351a9094754"
+   },
+   {
+    "t": "2025-08-11T18:51:30Z",
+    "de": "TWpMnUh9pZS1Mf8yyw9WPiS82WYevKzQo2",
+    "a": "TMBPqMxCpz2JNtKyQqiENr5CSdgQY4nt6x",
+    "trx": 16874811.2,
+    "tx": "dde8753c398913173066522fd40abb516aa7fc1036848297d25f373559a79b51"
+   },
+   {
+    "t": "2025-08-24T15:53:54Z",
+    "de": "TWpMnUh9pZS1Mf8yyw9WPiS82WYevKzQo2",
+    "a": "TSoZaR33RXFsGMgpdN3N2JnTLfMN1JYM27",
+    "trx": 250000000,
+    "tx": "df30b09cf57a14a6bacedc9a3f5da1dc2a67540db54bc1991bb669725aa319c3"
+   },
+   {
+    "t": "2025-08-28T06:46:48Z",
+    "de": "TFTWNgDBkQ5wQoP8RXpRznnHvAVV8x5jLu",
+    "a": "TWpMnUh9pZS1Mf8yyw9WPiS82WYevKzQo2",
+    "trx": 39999999,
+    "tx": "f065fdc49dd2b210de97565fbdcf8715b45c93ef50a8277345becc3f119a9ea2"
+   },
+   {
+    "t": "2025-09-12T13:32:39Z",
+    "de": "TWpMnUh9pZS1Mf8yyw9WPiS82WYevKzQo2",
+    "a": "TN8MR8XRpyMH6stRXqKiK5FRi5CYyBZwP6",
+    "trx": 200000000,
+    "tx": "2907b0cb3584e2f49ade874fa940f8861b7d254c2822ced0b986dc659903f4e1"
+   },
+   {
+    "t": "2026-02-02T11:16:00Z",
+    "de": "TWpMnUh9pZS1Mf8yyw9WPiS82WYevKzQo2",
+    "a": "TF1qQ4XqDpXE2DLCLnnUzahuyh4aL92UWF",
+    "trx": 17583600,
+    "tx": "1ee7788744d0cf8aa39c5f1f76285a1fc6d0e8180d2454935165b6753412008d"
+   }
+  ],
+  "permisos": 0,
+  "tipos": {
+   "Transfer": 738,
+   "FreezeBalanceV2": 6,
+   "VoteWitness": 3,
+   "TransferAsset": 35,
+   "TriggerSmart": 31,
+   "WithdrawBalance": 2,
+   "DelegateResource": 14,
+   "UnfreezeBalanceV2": 3,
+   "UnDelegateResource": 12,
+   "WithdrawExpireUnfreeze": 3
+  }
+ },
+ "TNCmcTdy": {
+  "etiqueta": "Poloniex",
+  "n_tx": 5752021,
+  "creada": "2019-04-22"
+ },
+ "TTXeVETa": {
+  "etiqueta": null,
+  "n_tx": 1137,
+  "creada": "2020-07-15",
+  "lectura": {
+   "filas": 1137,
+   "paginas": 6,
+   "parcial": false
+  },
+  "grandes": [
+   {
+    "t": "2020-07-16T10:08:51Z",
+    "de": "TNCmcTdyrYKMtmE1KU2itzeCX76jGm5Not",
+    "a": "TTXeVETaU1wSV9cYutUgyg7x1gtrfCiDiW",
+    "trx": 1089324517.99,
+    "tx": "c394eb0d445b00e648efd0c283fe4e4e935d906977e85dc2e8654525d65ac644"
+   },
+   {
+    "t": "2020-09-03T18:54:27Z",
+    "de": "TTXeVETaU1wSV9cYutUgyg7x1gtrfCiDiW",
+    "a": "TDjBZRvb1kUjvKt2ZEo67isg9vZm55DYWG",
+    "trx": 89900000,
+    "tx": "c8859236b8751cc72385828a4dd868152a63d1f34559bc8f3fa6cd2705709975"
+   },
+   {
+    "t": "2020-09-03T19:01:06Z",
+    "de": "TTXeVETaU1wSV9cYutUgyg7x1gtrfCiDiW",
+    "a": "TDjBZRvb1kUjvKt2ZEo67isg9vZm55DYWG",
+    "trx": 79999000,
+    "tx": "a9464b22cf73e273b5a22ecefd43599aa2ac7dc0cb0f2e070be1930652a6fda3"
+   },
+   {
+    "t": "2020-09-03T19:12:45Z",
+    "de": "TTXeVETaU1wSV9cYutUgyg7x1gtrfCiDiW",
+    "a": "TDjBZRvb1kUjvKt2ZEo67isg9vZm55DYWG",
+    "trx": 84990000,
+    "tx": "25c9196ab5cc04fad8815a38d6f37bb30634eb5e096a4e91066524497351c7be"
+   },
+   {
+    "t": "2020-09-03T19:25:45Z",
+    "de": "TTXeVETaU1wSV9cYutUgyg7x1gtrfCiDiW",
+    "a": "TDjBZRvb1kUjvKt2ZEo67isg9vZm55DYWG",
+    "trx": 94999000,
+    "tx": "42a46924020124af59db41d65fb36b200ee7758de921c689318e4f9b201f8302"
+   },
+   {
+    "t": "2020-09-04T07:41:36Z",
+    "de": "TTXeVETaU1wSV9cYutUgyg7x1gtrfCiDiW",
+    "a": "TLcZj2gjj6cWca2LJcVfCYSo5tNJk1PBRt",
+    "trx": 94900000,
+    "tx": "6df7bad53af9c107e6d7d6365c96d4b4dfb12a146fcc6fcd3c06e6b827c7e26f"
+   },
+   {
+    "t": "2020-09-04T08:51:00Z",
+    "de": "TTXeVETaU1wSV9cYutUgyg7x1gtrfCiDiW",
+    "a": "TLcZj2gjj6cWca2LJcVfCYSo5tNJk1PBRt",
+    "trx": 84999000,
+    "tx": "98af7dcfc08970d4b6c79989962eee4c5e839b629d54c86dc4ed642e960c28c6"
+   },
+   {
+    "t": "2020-11-08T16:45:39Z",
+    "de": "TNCmcTdyrYKMtmE1KU2itzeCX76jGm5Not",
+    "a": "TTXeVETaU1wSV9cYutUgyg7x1gtrfCiDiW",
+    "trx": 499999999.99,
+    "tx": "9b6b1f9436215e2509fd3ae366e64e7a958539b33c18c3627a338dbea6326045"
+   },
+   {
+    "t": "2020-11-12T16:50:27Z",
+    "de": "TNCmcTdyrYKMtmE1KU2itzeCX76jGm5Not",
+    "a": "TTXeVETaU1wSV9cYutUgyg7x1gtrfCiDiW",
+    "trx": 499999999.99,
+    "tx": "61f63935e4d04fe0417c6cac50dd3f1e957b5249928b4d1a2f47503a288f37d8"
+   },
+   {
+    "t": "2020-11-14T07:01:15Z",
+    "de": "TNCmcTdyrYKMtmE1KU2itzeCX76jGm5Not",
+    "a": "TTXeVETaU1wSV9cYutUgyg7x1gtrfCiDiW",
+    "trx": 499999999.99,
+    "tx": "6a42526695fd92c72db17fbe142eb65d3029cf95a060b73f3a8db8c8e51361fa"
+   },
+   {
+    "t": "2020-11-14T07:18:54Z",
+    "de": "TNCmcTdyrYKMtmE1KU2itzeCX76jGm5Not",
+    "a": "TTXeVETaU1wSV9cYutUgyg7x1gtrfCiDiW",
+    "trx": 999999999.99,
+    "tx": "ca661e9583ef00bec1848356c6e7e451852c9cd24b3383fd5163975ec50c9b3f"
+   },
+   {
+    "t": "2020-12-13T13:10:27Z",
+    "de": "TNCmcTdyrYKMtmE1KU2itzeCX76jGm5Not",
+    "a": "TTXeVETaU1wSV9cYutUgyg7x1gtrfCiDiW",
+    "trx": 2199999999.99,
+    "tx": "34a7b4196d840a877b05810945852498859912ff1b17611d6f61a9782d6714d7"
+   },
+   {
+    "t": "2021-03-14T06:09:51Z",
+    "de": "TTXeVETaU1wSV9cYutUgyg7x1gtrfCiDiW",
+    "a": "TV6qo5vZ9t118WfkqqhFPLTRMxgPRXVr7t",
+    "trx": 88105124,
+    "tx": "42250027d9d378caa00dd669e02d98b8d6f68fa00835175989a70da4d23c757b"
+   },
+   {
+    "t": "2021-11-08T13:49:33Z",
+    "de": "TTXeVETaU1wSV9cYutUgyg7x1gtrfCiDiW",
+    "a": "TPyjyZfsYaXStgz2NmAraF1uZcMtkgNan5",
+    "trx": 197882000,
+    "tx": "cf140d8203792015c6bdb2d2c02a35b26c57edb8dcd7d99407d9edb5cd150901"
+   },
+   {
+    "t": "2021-11-08T14:50:57Z",
+    "de": "TTXeVETaU1wSV9cYutUgyg7x1gtrfCiDiW",
+    "a": "TPyjyZfsYaXStgz2NmAraF1uZcMtkgNan5",
+    "trx": 600000000,
+    "tx": "571bfdda995f441c3a90b6a416f6763e3f8d4eec2c0dd744b91073f6eac09132"
+   },
+   {
+    "t": "2021-11-08T14:58:21Z",
+    "de": "TTXeVETaU1wSV9cYutUgyg7x1gtrfCiDiW",
+    "a": "TPyjyZfsYaXStgz2NmAraF1uZcMtkgNan5",
+    "trx": 200000000,
+    "tx": "5e9b848dabc2e828e097af77c16245c5696292f93a756690f4c6500959a569a2"
+   },
+   {
+    "t": "2021-11-08T15:04:03Z",
+    "de": "TTXeVETaU1wSV9cYutUgyg7x1gtrfCiDiW",
+    "a": "TScVwVTjqoqPEJ6atnvGCtErWnCyNbzmUL",
+    "trx": 950000000,
+    "tx": "bce7cf5210435dc22636b343abe843f1e530a9a035d127b3e614a2065ab211dd"
+   },
+   {
+    "t": "2021-11-08T15:14:12Z",
+    "de": "TTXeVETaU1wSV9cYutUgyg7x1gtrfCiDiW",
+    "a": "TPhGmczy3wkUGafFT8QMXPLN2rzdxeChME",
+    "trx": 960003000,
+    "tx": "055627776e141c2fe726f8f29023d9471f398f640cb02f739f5f8e6199928827"
+   },
+   {
+    "t": "2021-11-08T15:33:18Z",
+    "de": "TTXeVETaU1wSV9cYutUgyg7x1gtrfCiDiW",
+    "a": "TM3sTVyahiGWYktKg8G6miHpTzRurKDt7b",
+    "trx": 970001999,
+    "tx": "f83af97139097d007de7556f9a2a8bc521afe735fef1815a45314be408ae83e9"
+   },
+   {
+    "t": "2021-11-08T15:46:06Z",
+    "de": "TTXeVETaU1wSV9cYutUgyg7x1gtrfCiDiW",
+    "a": "TU32XvjDNkxEkqxCgQQWEKmoMxTz8NECUV",
+    "trx": 950000999,
+    "tx": "c0a1fc0fed1ef4b537ab8082df6d4515505b2d699ed1e384ef95a71cfed1ba91"
+   },
+   {
+    "t": "2021-11-08T15:57:00Z",
+    "de": "TTXeVETaU1wSV9cYutUgyg7x1gtrfCiDiW",
+    "a": "TJNtFduS4oebw3jgGKCYmgSpTdyPieb6Ha",
+    "trx": 629002000,
+    "tx": "fde9475b620b03f7582367627db96a89d9ed12d5569b83dc7bec8732110dd497"
+   }
+  ],
+  "permisos": 0,
+  "tipos": {
+   "Transfer": 769,
+   "TransferAsset": 256,
+   "TriggerSmart": 64,
+   "FreezeBalance": 7,
+   "VoteWitness": 36,
+   "WithdrawBalance": 4,
+   "UnfreezeBalance": 1
+  }
+ },
+ "reparto_8nov2021": {
+  "desde": "2021-11-08T13:49:33Z",
+  "hasta": "2021-11-08T15:57:00Z",
+  "total_trx": 5456889998,
+  "receptoras": [
+   {
+    "cuenta": "TPyjyZfsYaXStgz2NmAraF1uZcMtkgNan5",
+    "recibio_el_8nov2021": 997882000,
+    "etiqueta": null,
+    "creada": "2021-05-27",
+    "n_tx": 7607,
+    "trx_libre_hoy": 1875965534.56,
+    "congelado_hoy": 0
+   },
+   {
+    "cuenta": "TScVwVTjqoqPEJ6atnvGCtErWnCyNbzmUL",
+    "recibio_el_8nov2021": 950000000,
+    "etiqueta": null,
+    "creada": "2021-11-08",
+    "n_tx": 312,
+    "trx_libre_hoy": 421932357.88,
+    "congelado_hoy": 0
+   },
+   {
+    "cuenta": "TPhGmczy3wkUGafFT8QMXPLN2rzdxeChME",
+    "recibio_el_8nov2021": 960003000,
+    "etiqueta": null,
+    "creada": "2021-11-08",
+    "n_tx": 240,
+    "trx_libre_hoy": 263738121.5,
+    "congelado_hoy": 0
+   },
+   {
+    "cuenta": "TM3sTVyahiGWYktKg8G6miHpTzRurKDt7b",
+    "recibio_el_8nov2021": 970001999,
+    "etiqueta": null,
+    "creada": "2021-11-08",
+    "n_tx": 930,
+    "trx_libre_hoy": 88952319.37,
+    "congelado_hoy": 1170992987
+   },
+   {
+    "cuenta": "TU32XvjDNkxEkqxCgQQWEKmoMxTz8NECUV",
+    "recibio_el_8nov2021": 950000999,
+    "etiqueta": null,
+    "creada": "2021-11-08",
+    "n_tx": 1132,
+    "trx_libre_hoy": 807734437.45,
+    "congelado_hoy": 0
+   },
+   {
+    "cuenta": "TJNtFduS4oebw3jgGKCYmgSpTdyPieb6Ha",
+    "recibio_el_8nov2021": 629002000,
+    "etiqueta": null,
+    "creada": "2021-11-08",
+    "n_tx": 2047,
+    "trx_libre_hoy": 1403867649.61,
+    "congelado_hoy": 0
+   }
+  ]
+ },
+ "TLntW9Z5": {
+  "etiqueta": null,
+  "n_tx": 3486,
+  "creada": "2022-04-29",
+  "lectura": {
+   "filas": 3486,
+   "paginas": 18,
+   "parcial": false
+  },
+  "grandes": [
+   {
+    "t": "2025-10-19T13:29:42Z",
+    "de": "TLntW9Z59LYY5KEi9cmwk3PKjQga828ird",
+    "a": "TSW6YcK8fnBYrCirwdP4LyfCZ9Mp1R4TTV",
+    "trx": 200000000,
+    "tx": "794870f34b942e8203e19949c5132f5e1dff4aeb6be5f3f0270ea42bb804e712"
+   },
+   {
+    "t": "2026-01-14T12:10:51Z",
+    "de": "TLntW9Z59LYY5KEi9cmwk3PKjQga828ird",
+    "a": "TZJVQuU3CJqBScwoxhRtkxQ7JjsNNrpEag",
+    "trx": 34000000,
+    "tx": "72fde85d8946a9cb92749c9d9ff7ef78ee696dc4f318058bdddccba5438d8776"
+   },
+   {
+    "t": "2026-04-15T11:59:03Z",
+    "de": "TLntW9Z59LYY5KEi9cmwk3PKjQga828ird",
+    "a": "TZJVQuU3CJqBScwoxhRtkxQ7JjsNNrpEag",
+    "trx": 33564650,
+    "tx": "98aace9b00cda6321a2fe8719aeb9827a34b0daaf1d2693410ec05be2a1875a2"
+   },
+   {
+    "t": "2026-07-17T07:53:18Z",
+    "de": "TLntW9Z59LYY5KEi9cmwk3PKjQga828ird",
+    "a": "TZJVQuU3CJqBScwoxhRtkxQ7JjsNNrpEag",
+    "trx": 32169716,
+    "tx": "681865d27f8a0629a96c7100b78d21ba05ae3d288167cf9054d7574d1baa95bb"
+   },
+   {
+    "t": "2026-10-16T13:31:03Z",
+    "de": "TLntW9Z59LYY5KEi9cmwk3PKjQga828ird",
+    "a": "TZJVQuU3CJqBScwoxhRtkxQ7JjsNNrpEag",
+    "trx": 26478927,
+    "tx": "8f69bd6609246a44906eb84e266526710ac65006073e27664f8fdbba3051518f"
+   }
+  ],
+  "permisos": 0,
+  "tipos": {
+   "Transfer": 1422,
+   "TriggerSmart": 167,
+   "TransferAsset": 1895,
+   "DelegateResource": 1,
+   "UnDelegateResource": 1
+  }
+ }
+}

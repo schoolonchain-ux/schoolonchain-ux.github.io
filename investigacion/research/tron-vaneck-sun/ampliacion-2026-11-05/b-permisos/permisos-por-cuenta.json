@@ -1,0 +1,5188 @@
+[
+ {
+  "direccion": "TCGVFGDd62LSrfZEaz3M3fYifWWdSDHRL8",
+  "nombre": "Vaneck",
+  "creada": "2021-09-05",
+  "actual": {
+   "propietario": {
+    "nombre": "owner",
+    "umbral": 1,
+    "firmantes": [
+     {
+      "direccion": "TCGVFGDd62LSrfZEaz3M3fYifWWdSDHRL8",
+      "peso": 1
+     }
+    ],
+    "operaciones": null
+   },
+   "activos": [
+    {
+     "nombre": "active",
+     "umbral": 1,
+     "firmantes": [
+      {
+       "direccion": "TCGVFGDd62LSrfZEaz3M3fYifWWdSDHRL8",
+       "peso": 1
+      }
+     ],
+     "operaciones": [
+      "tipo 0",
+      "Transfer",
+      "TransferAsset",
+      "tipo 3",
+      "VoteWitness",
+      "tipo 5",
+      "tipo 6",
+      "tipo 8",
+      "tipo 9",
+      "tipo 10",
+      "FreezeBalance(v1)",
+      "UnfreezeBalance(v1)",
+      "WithdrawBalance(recompensa)",
+      "tipo 14",
+      "tipo 15",
+      "tipo 16",
+      "tipo 17",
+      "tipo 18",
+      "tipo 19",
+      "tipo 20",
+      "tipo 30",
+      "TriggerSmartContract",
+      "tipo 32",
+      "tipo 33",
+      "tipo 41",
+      "tipo 42",
+      "tipo 43",
+      "tipo 44",
+      "tipo 45",
+      "tipo 48",
+      "tipo 49"
+     ]
+    }
+   ]
+  },
+  "lectura": {
+   "estado": "COMPLETO según TronGrid",
+   "filas_leidas": 948,
+   "paginas": 5,
+   "tx_tronscan": 948,
+   "coincide_con_tronscan": true
+  },
+  "n_cambios_de_permisos": 0,
+  "historial": [],
+  "cierre": "sin cambios: permisos por defecto (solo ella misma)"
+ },
+ {
+  "direccion": "TT2T17KZhoDu47i2E4FWxfG79zdkEWkU9N",
+  "nombre": "Segunda cuenta (TT2T17)",
+  "creada": "2023-05-01",
+  "actual": {
+   "propietario": {
+    "nombre": "owner",
+    "umbral": 1,
+    "firmantes": [
+     {
+      "direccion": "TT2T17KZhoDu47i2E4FWxfG79zdkEWkU9N",
+      "peso": 1
+     }
+    ],
+    "operaciones": null
+   },
+   "activos": [
+    {
+     "nombre": "active",
+     "umbral": 1,
+     "firmantes": [
+      {
+       "direccion": "TT2T17KZhoDu47i2E4FWxfG79zdkEWkU9N",
+       "peso": 1
+      }
+     ],
+     "operaciones": [
+      "tipo 0",
+      "Transfer",
+      "TransferAsset",
+      "tipo 3",
+      "VoteWitness",
+      "tipo 5",
+      "tipo 6",
+      "tipo 8",
+      "tipo 9",
+      "tipo 10",
+      "FreezeBalance(v1)",
+      "UnfreezeBalance(v1)",
+      "WithdrawBalance(recompensa)",
+      "tipo 14",
+      "tipo 15",
+      "tipo 16",
+      "tipo 17",
+      "tipo 18",
+      "tipo 19",
+      "tipo 20",
+      "tipo 30",
+      "TriggerSmartContract",
+      "tipo 32",
+      "tipo 33",
+      "tipo 41",
+      "tipo 42",
+      "tipo 43",
+      "tipo 44",
+      "tipo 45",
+      "tipo 48",
+      "tipo 49",
+      "FreezeBalanceV2",
+      "UnfreezeBalanceV2",
+      "WithdrawExpireUnfreeze",
+      "DelegateResource",
+      "UnDelegateResource"
+     ]
+    }
+   ]
+  },
+  "lectura": {
+   "estado": "COMPLETO según TronGrid",
+   "filas_leidas": 5292,
+   "paginas": 27,
+   "tx_tronscan": 5292,
+   "coincide_con_tronscan": true
+  },
+  "n_cambios_de_permisos": 0,
+  "historial": [],
+  "cierre": "sin cambios: permisos por defecto (solo ella misma)"
+ },
+ {
+  "direccion": "TPyjyZfsYaXStgz2NmAraF1uZcMtkgNan5",
+  "nombre": "Financiadora 1 (TPyjyZ)",
+  "creada": "2021-05-27",
+  "actual": {
+   "propietario": {
+    "nombre": "owner",
+    "umbral": 1,
+    "firmantes": [
+     {
+      "direccion": "TPyjyZfsYaXStgz2NmAraF1uZcMtkgNan5",
+      "peso": 1
+     }
+    ],
+    "operaciones": null
+   },
+   "activos": [
+    {
+     "nombre": "active",
+     "umbral": 1,
+     "firmantes": [
+      {
+       "direccion": "TPyjyZfsYaXStgz2NmAraF1uZcMtkgNan5",
+       "peso": 1
+      }
+     ],
+     "operaciones": [
+      "tipo 0",
+      "Transfer",
+      "TransferAsset",
+      "tipo 3",
+      "VoteWitness",
+      "tipo 5",
+      "tipo 6",
+      "tipo 8",
+      "tipo 9",
+      "tipo 10",
+      "FreezeBalance(v1)",
+      "UnfreezeBalance(v1)",
+      "WithdrawBalance(recompensa)",
+      "tipo 14",
+      "tipo 15",
+      "tipo 16",
+      "tipo 17",
+      "tipo 18",
+      "tipo 19",
+      "tipo 20",
+      "tipo 30",
+      "TriggerSmartContract",
+      "tipo 32",
+      "tipo 33",
+      "tipo 41",
+      "tipo 42",
+      "tipo 43",
+      "tipo 44",
+      "tipo 45",
+      "tipo 48",
+      "tipo 49"
+     ]
+    }
+   ]
+  },
+  "lectura": {
+   "estado": "COMPLETO según TronGrid",
+   "filas_leidas": 7607,
+   "paginas": 39,
+   "tx_tronscan": 7607,
+   "coincide_con_tronscan": true
+  },
+  "n_cambios_de_permisos": 0,
+  "historial": [],
+  "cierre": "sin cambios: permisos por defecto (solo ella misma)"
+ },
+ {
+  "direccion": "TUTtLtGjXWqkTAow7jj7oMhTGLe9XB9YMA",
+  "nombre": "Financiadora 2 (TUTtLt)",
+  "creada": "2020-05-15",
+  "actual": {
+   "propietario": {
+    "nombre": "owner",
+    "umbral": 1,
+    "firmantes": [
+     {
+      "direccion": "TUTtLtGjXWqkTAow7jj7oMhTGLe9XB9YMA",
+      "peso": 1
+     }
+    ],
+    "operaciones": null
+   },
+   "activos": [
+    {
+     "nombre": "active",
+     "umbral": 1,
+     "firmantes": [
+      {
+       "direccion": "TUTtLtGjXWqkTAow7jj7oMhTGLe9XB9YMA",
+       "peso": 1
+      }
+     ],
+     "operaciones": [
+      "tipo 0",
+      "Transfer",
+      "TransferAsset",
+      "tipo 3",
+      "VoteWitness",
+      "tipo 5",
+      "tipo 6",
+      "tipo 8",
+      "tipo 9",
+      "tipo 10",
+      "FreezeBalance(v1)",
+      "UnfreezeBalance(v1)",
+      "WithdrawBalance(recompensa)",
+      "tipo 14",
+      "tipo 15",
+      "tipo 16",
+      "tipo 17",
+      "tipo 18",
+      "tipo 19",
+      "tipo 20",
+      "tipo 30",
+      "TriggerSmartContract",
+      "tipo 32",
+      "tipo 33",
+      "tipo 41",
+      "tipo 42",
+      "tipo 43",
+      "tipo 44",
+      "tipo 45",
+      "tipo 48",
+      "tipo 49"
+     ]
+    }
+   ]
+  },
+  "lectura": {
+   "estado": "COMPLETO según TronGrid",
+   "filas_leidas": 1274,
+   "paginas": 7,
+   "tx_tronscan": 1274,
+   "coincide_con_tronscan": true
+  },
+  "n_cambios_de_permisos": 0,
+  "historial": [],
+  "cierre": "sin cambios: permisos por defecto (solo ella misma)"
+ },
+ {
+  "direccion": "TEF9ZVUxhmGGffvkf59e2vdLfAG1QCMb7B",
+  "nombre": "Cuenta de energia (TEF9ZV)",
+  "creada": "2025-10-30",
+  "actual": {
+   "propietario": {
+    "nombre": "owner",
+    "umbral": 1,
+    "firmantes": [
+     {
+      "direccion": "TEF9ZVUxhmGGffvkf59e2vdLfAG1QCMb7B",
+      "peso": 1
+     }
+    ],
+    "operaciones": null
+   },
+   "activos": [
+    {
+     "nombre": "active",
+     "umbral": 1,
+     "firmantes": [
+      {
+       "direccion": "TEF9ZVUxhmGGffvkf59e2vdLfAG1QCMb7B",
+       "peso": 1
+      }
+     ],
+     "operaciones": [
+      "tipo 0",
+      "Transfer",
+      "TransferAsset",
+      "tipo 3",
+      "VoteWitness",
+      "tipo 5",
+      "tipo 6",
+      "tipo 8",
+      "tipo 9",
+      "tipo 10",
+      "FreezeBalance(v1)",
+      "UnfreezeBalance(v1)",
+      "WithdrawBalance(recompensa)",
+      "tipo 14",
+      "tipo 15",
+      "tipo 16",
+      "tipo 17",
+      "tipo 18",
+      "tipo 19",
+      "tipo 20",
+      "tipo 30",
+      "TriggerSmartContract",
+      "tipo 32",
+      "tipo 33",
+      "tipo 41",
+      "tipo 42",
+      "tipo 43",
+      "tipo 44",
+      "tipo 45",
+      "tipo 48",
+      "tipo 49",
+      "FreezeBalanceV2",
+      "UnfreezeBalanceV2",
+      "WithdrawExpireUnfreeze",
+      "DelegateResource",
+      "UnDelegateResource",
+      "CancelAllUnfreezeV2"
+     ]
+    },
+    {
+     "nombre": "Resource Delegation I",
+     "umbral": 3,
+     "firmantes": [
+      {
+       "direccion": "TA5VbP6ijuFmYcjoCcUN3zALx8YjX8bKXB",
+       "peso": 1
+      },
+      {
+       "direccion": "TEpH4V3GWLMS631SjxZzpZmatZSKrnzUSj",
+       "peso": 2
+      },
+      {
+       "direccion": "TU14wz7Qka2TTHVXBwVeY8bPjoj1STV4Yt",
+       "peso": 2
+      },
+      {
+       "direccion": "TVVnUBMbj56ceFFE3RDqxmRRAPMjffAfv1",
+       "peso": 1
+      }
+     ],
+     "operaciones": [
+      "VoteWitness",
+      "FreezeBalanceV2",
+      "UnfreezeBalanceV2",
+      "WithdrawExpireUnfreeze",
+      "DelegateResource",
+      "UnDelegateResource",
+      "CancelAllUnfreezeV2"
+     ]
+    }
+   ]
+  },
+  "lectura": {
+   "estado": "COMPLETO según TronGrid",
+   "filas_leidas": 452,
+   "paginas": 3,
+   "tx_tronscan": 454,
+   "coincide_con_tronscan": true
+  },
+  "n_cambios_de_permisos": 1,
+  "historial": [
+   {
+    "t": "2025-10-30T10:09:42Z",
+    "tx": "ab4519ac745a0b957bae3c9b51311a9d5531700065670645008c2e101b70f4ac",
+    "ok": true,
+    "propietario": {
+     "nombre": "owner",
+     "umbral": 1,
+     "firmantes": [
+      {
+       "direccion": "TEF9ZVUxhmGGffvkf59e2vdLfAG1QCMb7B",
+       "peso": 1
+      }
+     ],
+     "operaciones": null
+    },
+    "activos": [
+     {
+      "nombre": "active",
+      "umbral": 1,
+      "firmantes": [
+       {
+        "direccion": "TEF9ZVUxhmGGffvkf59e2vdLfAG1QCMb7B",
+        "peso": 1
+       }
+      ],
+      "operaciones": [
+       "tipo 0",
+       "Transfer",
+       "TransferAsset",
+       "tipo 3",
+       "VoteWitness",
+       "tipo 5",
+       "tipo 6",
+       "tipo 8",
+       "tipo 9",
+       "tipo 10",
+       "FreezeBalance(v1)",
+       "UnfreezeBalance(v1)",
+       "WithdrawBalance(recompensa)",
+       "tipo 14",
+       "tipo 15",
+       "tipo 16",
+       "tipo 17",
+       "tipo 18",
+       "tipo 19",
+       "tipo 20",
+       "tipo 30",
+       "TriggerSmartContract",
+       "tipo 32",
+       "tipo 33",
+       "tipo 41",
+       "tipo 42",
+       "tipo 43",
+       "tipo 44",
+       "tipo 45",
+       "tipo 48",
+       "tipo 49",
+       "FreezeBalanceV2",
+       "UnfreezeBalanceV2",
+       "WithdrawExpireUnfreeze",
+       "DelegateResource",
+       "UnDelegateResource",
+       "CancelAllUnfreezeV2"
+      ]
+     },
+     {
+      "nombre": "Resource Delegation I",
+      "umbral": 3,
+      "firmantes": [
+       {
+        "direccion": "TA5VbP6ijuFmYcjoCcUN3zALx8YjX8bKXB",
+        "peso": 1
+       },
+       {
+        "direccion": "TEpH4V3GWLMS631SjxZzpZmatZSKrnzUSj",
+        "peso": 2
+       },
+       {
+        "direccion": "TU14wz7Qka2TTHVXBwVeY8bPjoj1STV4Yt",
+        "peso": 2
+       },
+       {
+        "direccion": "TVVnUBMbj56ceFFE3RDqxmRRAPMjffAfv1",
+        "peso": 1
+       }
+      ],
+      "operaciones": [
+       "VoteWitness",
+       "FreezeBalanceV2",
+       "UnfreezeBalanceV2",
+       "WithdrawExpireUnfreeze",
+       "DelegateResource",
+       "UnDelegateResource",
+       "CancelAllUnfreezeV2"
+      ]
+     }
+    ]
+   }
+  ],
+  "cierre": "cuadra con el último cambio"
+ },
+ {
+  "direccion": "TSzSgxRisS5VBXXDcAezTDvnPGi9CbsXvJ",
+  "nombre": "Pareja de la proveedora (TSzSgxRi)",
+  "creada": "2023-11-29",
+  "actual": {
+   "propietario": {
+    "nombre": "owner",
+    "umbral": 3,
+    "firmantes": [
+     {
+      "direccion": "TDAuHDXYNTrtY1k6GNibek44yHEqyQfVkC",
+      "peso": 1
+     },
+     {
+      "direccion": "TShAfXbh4kUzmkJ9Ckdo5J6ujWi1M5NLE2",
+      "peso": 1
+     },
+     {
+      "direccion": "TUgSgCQL6pMSy9zByn4sgxqrJa95sZExBG",
+      "peso": 1
+     },
+     {
+      "direccion": "TV7WmJXhYyd4rqRjbWg62eX8e5DoPbyiA3",
+      "peso": 1
+     },
+     {
+      "direccion": "TVnGY8vuJhxDX5b7mTpwaJ9vNDtmjdBxMm",
+      "peso": 1
+     }
+    ],
+    "operaciones": null
+   },
+   "activos": [
+    {
+     "nombre": "active",
+     "umbral": 3,
+     "firmantes": [
+      {
+       "direccion": "TDAuHDXYNTrtY1k6GNibek44yHEqyQfVkC",
+       "peso": 1
+      },
+      {
+       "direccion": "TShAfXbh4kUzmkJ9Ckdo5J6ujWi1M5NLE2",
+       "peso": 1
+      },
+      {
+       "direccion": "TUgSgCQL6pMSy9zByn4sgxqrJa95sZExBG",
+       "peso": 1
+      },
+      {
+       "direccion": "TV7WmJXhYyd4rqRjbWg62eX8e5DoPbyiA3",
+       "peso": 1
+      },
+      {
+       "direccion": "TVnGY8vuJhxDX5b7mTpwaJ9vNDtmjdBxMm",
+       "peso": 1
+      }
+     ],
+     "operaciones": [
+      "tipo 0",
+      "Transfer",
+      "TransferAsset",
+      "tipo 3",
+      "VoteWitness",
+      "tipo 5",
+      "tipo 6",
+      "tipo 8",
+      "tipo 9",
+      "tipo 10",
+      "FreezeBalance(v1)",
+      "UnfreezeBalance(v1)",
+      "WithdrawBalance(recompensa)",
+      "tipo 14",
+      "tipo 15",
+      "tipo 16",
+      "tipo 17",
+      "tipo 18",
+      "tipo 19",
+      "tipo 20",
+      "tipo 30",
+      "TriggerSmartContract",
+      "tipo 32",
+      "tipo 33",
+      "tipo 41",
+      "tipo 42",
+      "tipo 43",
+      "tipo 44",
+      "tipo 45",
+      "tipo 48",
+      "tipo 49",
+      "FreezeBalanceV2",
+      "UnfreezeBalanceV2",
+      "WithdrawExpireUnfreeze",
+      "DelegateResource",
+      "UnDelegateResource",
+      "CancelAllUnfreezeV2"
+     ]
+    }
+   ]
+  },
+  "lectura": {
+   "estado": "COMPLETO según TronGrid",
+   "filas_leidas": 9459,
+   "paginas": 48,
+   "tx_tronscan": 9459,
+   "coincide_con_tronscan": true
+  },
+  "n_cambios_de_permisos": 10,
+  "historial": [
+   {
+    "t": "2023-11-29T08:58:39Z",
+    "tx": "4790b31ab06b470d34e9a9d2eebb460a8328207760a12a650d803a6857f8c51e",
+    "ok": true,
+    "propietario": {
+     "nombre": "owner",
+     "umbral": 2,
+     "firmantes": [
+      {
+       "direccion": "TCivcVLpw715Uh9gbwv7Xwap1AqYD4E5ma",
+       "peso": 1
+      },
+      {
+       "direccion": "TDAuHDXYNTrtY1k6GNibek44yHEqyQfVkC",
+       "peso": 1
+      },
+      {
+       "direccion": "TGAT4rWEoxBrcpF6P5BVRAXnBvm7dxXGWk",
+       "peso": 1
+      },
+      {
+       "direccion": "TSmgqvsfx95ZpjFRGA2eHhzUFHDhGVzusq",
+       "peso": 1
+      },
+      {
+       "direccion": "TV7WmJXhYyd4rqRjbWg62eX8e5DoPbyiA3",
+       "peso": 1
+      }
+     ],
+     "operaciones": null
+    },
+    "activos": [
+     {
+      "nombre": "active",
+      "umbral": 2,
+      "firmantes": [
+       {
+        "direccion": "TCivcVLpw715Uh9gbwv7Xwap1AqYD4E5ma",
+        "peso": 1
+       },
+       {
+        "direccion": "TDAuHDXYNTrtY1k6GNibek44yHEqyQfVkC",
+        "peso": 1
+       },
+       {
+        "direccion": "TGAT4rWEoxBrcpF6P5BVRAXnBvm7dxXGWk",
+        "peso": 1
+       },
+       {
+        "direccion": "TSmgqvsfx95ZpjFRGA2eHhzUFHDhGVzusq",
+        "peso": 1
+       },
+       {
+        "direccion": "TV7WmJXhYyd4rqRjbWg62eX8e5DoPbyiA3",
+        "peso": 1
+       }
+      ],
+      "operaciones": [
+       "tipo 0",
+       "Transfer",
+       "TransferAsset",
+       "tipo 3",
+       "VoteWitness",
+       "tipo 5",
+       "tipo 6",
+       "tipo 8",
+       "tipo 9",
+       "tipo 10",
+       "FreezeBalance(v1)",
+       "UnfreezeBalance(v1)",
+       "WithdrawBalance(recompensa)",
+       "tipo 14",
+       "tipo 15",
+       "tipo 16",
+       "tipo 17",
+       "tipo 18",
+       "tipo 19",
+       "tipo 20",
+       "tipo 30",
+       "TriggerSmartContract",
+       "tipo 32",
+       "tipo 33",
+       "tipo 41",
+       "tipo 42",
+       "tipo 43",
+       "tipo 44",
+       "tipo 45",
+       "tipo 48",
+       "tipo 49",
+       "FreezeBalanceV2",
+       "UnfreezeBalanceV2",
+       "WithdrawExpireUnfreeze",
+       "DelegateResource",
+       "UnDelegateResource",
+       "CancelAllUnfreezeV2"
+      ]
+     }
+    ]
+   },
+   {
+    "t": "2023-12-22T09:23:36Z",
+    "tx": "f93497d219587c8bb4888a744655fb369910b880a877a6908d678574cf4a30a5",
+    "ok": true,
+    "propietario": {
+     "nombre": "owner",
+     "umbral": 2,
+     "firmantes": [
+      {
+       "direccion": "TCivcVLpw715Uh9gbwv7Xwap1AqYD4E5ma",
+       "peso": 1
+      },
+      {
+       "direccion": "TGAT4rWEoxBrcpF6P5BVRAXnBvm7dxXGWk",
+       "peso": 1
+      },
+      {
+       "direccion": "TL5Te8PpaACtN9teUwMQa7EmyqYaifSxwU",
+       "peso": 1
+      },
+      {
+       "direccion": "TSmgqvsfx95ZpjFRGA2eHhzUFHDhGVzusq",
+       "peso": 1
+      },
+      {
+       "direccion": "TV7WmJXhYyd4rqRjbWg62eX8e5DoPbyiA3",
+       "peso": 1
+      }
+     ],
+     "operaciones": null
+    },
+    "activos": [
+     {
+      "nombre": "active",
+      "umbral": 2,
+      "firmantes": [
+       {
+        "direccion": "TCivcVLpw715Uh9gbwv7Xwap1AqYD4E5ma",
+        "peso": 1
+       },
+       {
+        "direccion": "TGAT4rWEoxBrcpF6P5BVRAXnBvm7dxXGWk",
+        "peso": 1
+       },
+       {
+        "direccion": "TL5Te8PpaACtN9teUwMQa7EmyqYaifSxwU",
+        "peso": 1
+       },
+       {
+        "direccion": "TSmgqvsfx95ZpjFRGA2eHhzUFHDhGVzusq",
+        "peso": 1
+       },
+       {
+        "direccion": "TV7WmJXhYyd4rqRjbWg62eX8e5DoPbyiA3",
+        "peso": 1
+       }
+      ],
+      "operaciones": [
+       "tipo 0",
+       "Transfer",
+       "TransferAsset",
+       "tipo 3",
+       "VoteWitness",
+       "tipo 5",
+       "tipo 6",
+       "tipo 8",
+       "tipo 9",
+       "tipo 10",
+       "FreezeBalance(v1)",
+       "UnfreezeBalance(v1)",
+       "WithdrawBalance(recompensa)",
+       "tipo 14",
+       "tipo 15",
+       "tipo 16",
+       "tipo 17",
+       "tipo 18",
+       "tipo 19",
+       "tipo 20",
+       "tipo 30",
+       "TriggerSmartContract",
+       "tipo 32",
+       "tipo 33",
+       "tipo 41",
+       "tipo 42",
+       "tipo 43",
+       "tipo 44",
+       "tipo 45",
+       "tipo 48",
+       "tipo 49",
+       "FreezeBalanceV2",
+       "UnfreezeBalanceV2",
+       "WithdrawExpireUnfreeze",
+       "DelegateResource",
+       "UnDelegateResource",
+       "CancelAllUnfreezeV2"
+      ]
+     }
+    ]
+   },
+   {
+    "t": "2024-01-02T09:19:03Z",
+    "tx": "15c72da9b0582bdf394c480e087145a31f692b79c39cb9eab294a317061909c0",
+    "ok": true,
+    "propietario": {
+     "nombre": "owner",
+     "umbral": 3,
+     "firmantes": [
+      {
+       "direccion": "TCivcVLpw715Uh9gbwv7Xwap1AqYD4E5ma",
+       "peso": 1
+      },
+      {
+       "direccion": "TGAT4rWEoxBrcpF6P5BVRAXnBvm7dxXGWk",
+       "peso": 1
+      },
+      {
+       "direccion": "TL5Te8PpaACtN9teUwMQa7EmyqYaifSxwU",
+       "peso": 1
+      },
+      {
+       "direccion": "TSmgqvsfx95ZpjFRGA2eHhzUFHDhGVzusq",
+       "peso": 1
+      },
+      {
+       "direccion": "TV7WmJXhYyd4rqRjbWg62eX8e5DoPbyiA3",
+       "peso": 1
+      }
+     ],
+     "operaciones": null
+    },
+    "activos": [
+     {
+      "nombre": "active",
+      "umbral": 3,
+      "firmantes": [
+       {
+        "direccion": "TCivcVLpw715Uh9gbwv7Xwap1AqYD4E5ma",
+        "peso": 1
+       },
+       {
+        "direccion": "TGAT4rWEoxBrcpF6P5BVRAXnBvm7dxXGWk",
+        "peso": 1
+       },
+       {
+        "direccion": "TL5Te8PpaACtN9teUwMQa7EmyqYaifSxwU",
+        "peso": 1
+       },
+       {
+        "direccion": "TSmgqvsfx95ZpjFRGA2eHhzUFHDhGVzusq",
+        "peso": 1
+       },
+       {
+        "direccion": "TV7WmJXhYyd4rqRjbWg62eX8e5DoPbyiA3",
+        "peso": 1
+       }
+      ],
+      "operaciones": [
+       "tipo 0",
+       "Transfer",
+       "TransferAsset",
+       "tipo 3",
+       "VoteWitness",
+       "tipo 5",
+       "tipo 6",
+       "tipo 8",
+       "tipo 9",
+       "tipo 10",
+       "FreezeBalance(v1)",
+       "UnfreezeBalance(v1)",
+       "WithdrawBalance(recompensa)",
+       "tipo 14",
+       "tipo 15",
+       "tipo 16",
+       "tipo 17",
+       "tipo 18",
+       "tipo 19",
+       "tipo 20",
+       "tipo 30",
+       "TriggerSmartContract",
+       "tipo 32",
+       "tipo 33",
+       "tipo 41",
+       "tipo 42",
+       "tipo 43",
+       "tipo 44",
+       "tipo 45",
+       "tipo 48",
+       "tipo 49",
+       "FreezeBalanceV2",
+       "UnfreezeBalanceV2",
+       "WithdrawExpireUnfreeze",
+       "DelegateResource",
+       "UnDelegateResource",
+       "CancelAllUnfreezeV2"
+      ]
+     }
+    ]
+   },
+   {
+    "t": "2024-04-09T07:54:12Z",
+    "tx": "3263d24600f6ea3248ac25eceae8ccafdcceaeece66d7908c2ef6a68830a1912",
+    "ok": true,
+    "propietario": {
+     "nombre": "owner",
+     "umbral": 3,
+     "firmantes": [
+      {
+       "direccion": "TCivcVLpw715Uh9gbwv7Xwap1AqYD4E5ma",
+       "peso": 1
+      },
+      {
+       "direccion": "TECmrmwPAjr2RpDGPd4Axq6JYKCESJEhc5",
+       "peso": 1
+      },
+      {
+       "direccion": "TGAT4rWEoxBrcpF6P5BVRAXnBvm7dxXGWk",
+       "peso": 1
+      },
+      {
+       "direccion": "TSmgqvsfx95ZpjFRGA2eHhzUFHDhGVzusq",
+       "peso": 1
+      },
+      {
+       "direccion": "TV7WmJXhYyd4rqRjbWg62eX8e5DoPbyiA3",
+       "peso": 1
+      }
+     ],
+     "operaciones": null
+    },
+    "activos": [
+     {
+      "nombre": "active",
+      "umbral": 3,
+      "firmantes": [
+       {
+        "direccion": "TCivcVLpw715Uh9gbwv7Xwap1AqYD4E5ma",
+        "peso": 1
+       },
+       {
+        "direccion": "TECmrmwPAjr2RpDGPd4Axq6JYKCESJEhc5",
+        "peso": 1
+       },
+       {
+        "direccion": "TGAT4rWEoxBrcpF6P5BVRAXnBvm7dxXGWk",
+        "peso": 1
+       },
+       {
+        "direccion": "TSmgqvsfx95ZpjFRGA2eHhzUFHDhGVzusq",
+        "peso": 1
+       },
+       {
+        "direccion": "TV7WmJXhYyd4rqRjbWg62eX8e5DoPbyiA3",
+        "peso": 1
+       }
+      ],
+      "operaciones": [
+       "tipo 0",
+       "Transfer",
+       "TransferAsset",
+       "tipo 3",
+       "VoteWitness",
+       "tipo 5",
+       "tipo 6",
+       "tipo 8",
+       "tipo 9",
+       "tipo 10",
+       "FreezeBalance(v1)",
+       "UnfreezeBalance(v1)",
+       "WithdrawBalance(recompensa)",
+       "tipo 14",
+       "tipo 15",
+       "tipo 16",
+       "tipo 17",
+       "tipo 18",
+       "tipo 19",
+       "tipo 20",
+       "tipo 30",
+       "TriggerSmartContract",
+       "tipo 32",
+       "tipo 33",
+       "tipo 41",
+       "tipo 42",
+       "tipo 43",
+       "tipo 44",
+       "tipo 45",
+       "tipo 48",
+       "tipo 49",
+       "FreezeBalanceV2",
+       "UnfreezeBalanceV2",
+       "WithdrawExpireUnfreeze",
+       "DelegateResource",
+       "UnDelegateResource",
+       "CancelAllUnfreezeV2"
+      ]
+     }
+    ]
+   },
+   {
+    "t": "2024-04-30T04:15:24Z",
+    "tx": "8a8dfe911927362288fef3fa1ebd49fd4b9c2171610e764d8f335c85dd9f5320",
+    "ok": true,
+    "propietario": {
+     "nombre": "owner",
+     "umbral": 3,
+     "firmantes": [
+      {
+       "direccion": "TCivcVLpw715Uh9gbwv7Xwap1AqYD4E5ma",
+       "peso": 1
+      },
+      {
+       "direccion": "TECmrmwPAjr2RpDGPd4Axq6JYKCESJEhc5",
+       "peso": 1
+      },
+      {
+       "direccion": "TSmgqvsfx95ZpjFRGA2eHhzUFHDhGVzusq",
+       "peso": 1
+      },
+      {
+       "direccion": "TV7WmJXhYyd4rqRjbWg62eX8e5DoPbyiA3",
+       "peso": 1
+      },
+      {
+       "direccion": "TVNPqyt6h3DV3Pd8N5PmskC96vtbAp863B",
+       "peso": 1
+      }
+     ],
+     "operaciones": null
+    },
+    "activos": [
+     {
+      "nombre": "active",
+      "umbral": 3,
+      "firmantes": [
+       {
+        "direccion": "TCivcVLpw715Uh9gbwv7Xwap1AqYD4E5ma",
+        "peso": 1
+       },
+       {
+        "direccion": "TECmrmwPAjr2RpDGPd4Axq6JYKCESJEhc5",
+        "peso": 1
+       },
+       {
+        "direccion": "TSmgqvsfx95ZpjFRGA2eHhzUFHDhGVzusq",
+        "peso": 1
+       },
+       {
+        "direccion": "TV7WmJXhYyd4rqRjbWg62eX8e5DoPbyiA3",
+        "peso": 1
+       },
+       {
+        "direccion": "TVNPqyt6h3DV3Pd8N5PmskC96vtbAp863B",
+        "peso": 1
+       }
+      ],
+      "operaciones": [
+       "tipo 0",
+       "Transfer",
+       "TransferAsset",
+       "tipo 3",
+       "VoteWitness",
+       "tipo 5",
+       "tipo 6",
+       "tipo 8",
+       "tipo 9",
+       "tipo 10",
+       "FreezeBalance(v1)",
+       "UnfreezeBalance(v1)",
+       "WithdrawBalance(recompensa)",
+       "tipo 14",
+       "tipo 15",
+       "tipo 16",
+       "tipo 17",
+       "tipo 18",
+       "tipo 19",
+       "tipo 20",
+       "tipo 30",
+       "TriggerSmartContract",
+       "tipo 32",
+       "tipo 33",
+       "tipo 41",
+       "tipo 42",
+       "tipo 43",
+       "tipo 44",
+       "tipo 45",
+       "tipo 48",
+       "tipo 49",
+       "FreezeBalanceV2",
+       "UnfreezeBalanceV2",
+       "WithdrawExpireUnfreeze",
+       "DelegateResource",
+       "UnDelegateResource",
+       "CancelAllUnfreezeV2"
+      ]
+     }
+    ]
+   },
+   {
+    "t": "2024-07-30T10:25:39Z",
+    "tx": "c4b06eaf27282e5195bcac4cea94ad65bdbf7e511089e2503defbaec93006b3e",
+    "ok": true,
+    "propietario": {
+     "nombre": "owner",
+     "umbral": 3,
+     "firmantes": [
+      {
+       "direccion": "TECmrmwPAjr2RpDGPd4Axq6JYKCESJEhc5",
+       "peso": 1
+      },
+      {
+       "direccion": "TSmgqvsfx95ZpjFRGA2eHhzUFHDhGVzusq",
+       "peso": 1
+      },
+      {
+       "direccion": "TV7WmJXhYyd4rqRjbWg62eX8e5DoPbyiA3",
+       "peso": 1
+      },
+      {
+       "direccion": "TVNPqyt6h3DV3Pd8N5PmskC96vtbAp863B",
+       "peso": 1
+      }
+     ],
+     "operaciones": null
+    },
+    "activos": [
+     {
+      "nombre": "active",
+      "umbral": 3,
+      "firmantes": [
+       {
+        "direccion": "TECmrmwPAjr2RpDGPd4Axq6JYKCESJEhc5",
+        "peso": 1
+       },
+       {
+        "direccion": "TSmgqvsfx95ZpjFRGA2eHhzUFHDhGVzusq",
+        "peso": 1
+       },
+       {
+        "direccion": "TV7WmJXhYyd4rqRjbWg62eX8e5DoPbyiA3",
+        "peso": 1
+       },
+       {
+        "direccion": "TVNPqyt6h3DV3Pd8N5PmskC96vtbAp863B",
+        "peso": 1
+       }
+      ],
+      "operaciones": [
+       "tipo 0",
+       "Transfer",
+       "TransferAsset",
+       "tipo 3",
+       "VoteWitness",
+       "tipo 5",
+       "tipo 6",
+       "tipo 8",
+       "tipo 9",
+       "tipo 10",
+       "FreezeBalance(v1)",
+       "UnfreezeBalance(v1)",
+       "WithdrawBalance(recompensa)",
+       "tipo 14",
+       "tipo 15",
+       "tipo 16",
+       "tipo 17",
+       "tipo 18",
+       "tipo 19",
+       "tipo 20",
+       "tipo 30",
+       "TriggerSmartContract",
+       "tipo 32",
+       "tipo 33",
+       "tipo 41",
+       "tipo 42",
+       "tipo 43",
+       "tipo 44",
+       "tipo 45",
+       "tipo 48",
+       "tipo 49",
+       "FreezeBalanceV2",
+       "UnfreezeBalanceV2",
+       "WithdrawExpireUnfreeze",
+       "DelegateResource",
+       "UnDelegateResource",
+       "CancelAllUnfreezeV2"
+      ]
+     }
+    ]
+   },
+   {
+    "t": "2024-08-20T08:19:33Z",
+    "tx": "bb117e1815e1c9c5036567a858316a1b6bfdf2571b07ceefad994f49c8b43fd7",
+    "ok": true,
+    "propietario": {
+     "nombre": "owner",
+     "umbral": 3,
+     "firmantes": [
+      {
+       "direccion": "TDAuHDXYNTrtY1k6GNibek44yHEqyQfVkC",
+       "peso": 1
+      },
+      {
+       "direccion": "TECmrmwPAjr2RpDGPd4Axq6JYKCESJEhc5",
+       "peso": 1
+      },
+      {
+       "direccion": "TSmgqvsfx95ZpjFRGA2eHhzUFHDhGVzusq",
+       "peso": 1
+      },
+      {
+       "direccion": "TV7WmJXhYyd4rqRjbWg62eX8e5DoPbyiA3",
+       "peso": 1
+      },
+      {
+       "direccion": "TVNPqyt6h3DV3Pd8N5PmskC96vtbAp863B",
+       "peso": 1
+      }
+     ],
+     "operaciones": null
+    },
+    "activos": [
+     {
+      "nombre": "active",
+      "umbral": 3,
+      "firmantes": [
+       {
+        "direccion": "TDAuHDXYNTrtY1k6GNibek44yHEqyQfVkC",
+        "peso": 1
+       },
+       {
+        "direccion": "TECmrmwPAjr2RpDGPd4Axq6JYKCESJEhc5",
+        "peso": 1
+       },
+       {
+        "direccion": "TSmgqvsfx95ZpjFRGA2eHhzUFHDhGVzusq",
+        "peso": 1
+       },
+       {
+        "direccion": "TV7WmJXhYyd4rqRjbWg62eX8e5DoPbyiA3",
+        "peso": 1
+       },
+       {
+        "direccion": "TVNPqyt6h3DV3Pd8N5PmskC96vtbAp863B",
+        "peso": 1
+       }
+      ],
+      "operaciones": [
+       "tipo 0",
+       "Transfer",
+       "TransferAsset",
+       "tipo 3",
+       "VoteWitness",
+       "tipo 5",
+       "tipo 6",
+       "tipo 8",
+       "tipo 9",
+       "tipo 10",
+       "FreezeBalance(v1)",
+       "UnfreezeBalance(v1)",
+       "WithdrawBalance(recompensa)",
+       "tipo 14",
+       "tipo 15",
+       "tipo 16",
+       "tipo 17",
+       "tipo 18",
+       "tipo 19",
+       "tipo 20",
+       "tipo 30",
+       "TriggerSmartContract",
+       "tipo 32",
+       "tipo 33",
+       "tipo 41",
+       "tipo 42",
+       "tipo 43",
+       "tipo 44",
+       "tipo 45",
+       "tipo 48",
+       "tipo 49",
+       "FreezeBalanceV2",
+       "UnfreezeBalanceV2",
+       "WithdrawExpireUnfreeze",
+       "DelegateResource",
+       "UnDelegateResource",
+       "CancelAllUnfreezeV2"
+      ]
+     }
+    ]
+   },
+   {
+    "t": "2024-08-29T09:08:06Z",
+    "tx": "92edc15ce32b58797b0dbb166d67b88e9ca536925d471ff34081bc12e5300d24",
+    "ok": true,
+    "propietario": {
+     "nombre": "owner",
+     "umbral": 3,
+     "firmantes": [
+      {
+       "direccion": "TDAuHDXYNTrtY1k6GNibek44yHEqyQfVkC",
+       "peso": 1
+      },
+      {
+       "direccion": "TECmrmwPAjr2RpDGPd4Axq6JYKCESJEhc5",
+       "peso": 1
+      },
+      {
+       "direccion": "TSmgqvsfx95ZpjFRGA2eHhzUFHDhGVzusq",
+       "peso": 1
+      },
+      {
+       "direccion": "TUgSgCQL6pMSy9zByn4sgxqrJa95sZExBG",
+       "peso": 1
+      },
+      {
+       "direccion": "TV7WmJXhYyd4rqRjbWg62eX8e5DoPbyiA3",
+       "peso": 1
+      }
+     ],
+     "operaciones": null
+    },
+    "activos": [
+     {
+      "nombre": "active",
+      "umbral": 3,
+      "firmantes": [
+       {
+        "direccion": "TDAuHDXYNTrtY1k6GNibek44yHEqyQfVkC",
+        "peso": 1
+       },
+       {
+        "direccion": "TECmrmwPAjr2RpDGPd4Axq6JYKCESJEhc5",
+        "peso": 1
+       },
+       {
+        "direccion": "TSmgqvsfx95ZpjFRGA2eHhzUFHDhGVzusq",
+        "peso": 1
+       },
+       {
+        "direccion": "TUgSgCQL6pMSy9zByn4sgxqrJa95sZExBG",
+        "peso": 1
+       },
+       {
+        "direccion": "TV7WmJXhYyd4rqRjbWg62eX8e5DoPbyiA3",
+        "peso": 1
+       }
+      ],
+      "operaciones": [
+       "tipo 0",
+       "Transfer",
+       "TransferAsset",
+       "tipo 3",
+       "VoteWitness",
+       "tipo 5",
+       "tipo 6",
+       "tipo 8",
+       "tipo 9",
+       "tipo 10",
+       "FreezeBalance(v1)",
+       "UnfreezeBalance(v1)",
+       "WithdrawBalance(recompensa)",
+       "tipo 14",
+       "tipo 15",
+       "tipo 16",
+       "tipo 17",
+       "tipo 18",
+       "tipo 19",
+       "tipo 20",
+       "tipo 30",
+       "TriggerSmartContract",
+       "tipo 32",
+       "tipo 33",
+       "tipo 41",
+       "tipo 42",
+       "tipo 43",
+       "tipo 44",
+       "tipo 45",
+       "tipo 48",
+       "tipo 49",
+       "FreezeBalanceV2",
+       "UnfreezeBalanceV2",
+       "WithdrawExpireUnfreeze",
+       "DelegateResource",
+       "UnDelegateResource",
+       "CancelAllUnfreezeV2"
+      ]
+     }
+    ]
+   },
+   {
+    "t": "2025-04-07T04:20:18Z",
+    "tx": "73eeb208b137304a4aa32c352c7b556d8ced8ede1075f97d95c0f03c3c13eba7",
+    "ok": true,
+    "propietario": {
+     "nombre": "owner",
+     "umbral": 3,
+     "firmantes": [
+      {
+       "direccion": "TDAuHDXYNTrtY1k6GNibek44yHEqyQfVkC",
+       "peso": 1
+      },
+      {
+       "direccion": "TECmrmwPAjr2RpDGPd4Axq6JYKCESJEhc5",
+       "peso": 1
+      },
+      {
+       "direccion": "TUgSgCQL6pMSy9zByn4sgxqrJa95sZExBG",
+       "peso": 1
+      },
+      {
+       "direccion": "TV7WmJXhYyd4rqRjbWg62eX8e5DoPbyiA3",
+       "peso": 1
+      },
+      {
+       "direccion": "TVnGY8vuJhxDX5b7mTpwaJ9vNDtmjdBxMm",
+       "peso": 1
+      }
+     ],
+     "operaciones": null
+    },
+    "activos": [
+     {
+      "nombre": "active",
+      "umbral": 3,
+      "firmantes": [
+       {
+        "direccion": "TDAuHDXYNTrtY1k6GNibek44yHEqyQfVkC",
+        "peso": 1
+       },
+       {
+        "direccion": "TECmrmwPAjr2RpDGPd4Axq6JYKCESJEhc5",
+        "peso": 1
+       },
+       {
+        "direccion": "TUgSgCQL6pMSy9zByn4sgxqrJa95sZExBG",
+        "peso": 1
+       },
+       {
+        "direccion": "TV7WmJXhYyd4rqRjbWg62eX8e5DoPbyiA3",
+        "peso": 1
+       },
+       {
+        "direccion": "TVnGY8vuJhxDX5b7mTpwaJ9vNDtmjdBxMm",
+        "peso": 1
+       }
+      ],
+      "operaciones": [
+       "tipo 0",
+       "Transfer",
+       "TransferAsset",
+       "tipo 3",
+       "VoteWitness",
+       "tipo 5",
+       "tipo 6",
+       "tipo 8",
+       "tipo 9",
+       "tipo 10",
+       "FreezeBalance(v1)",
+       "UnfreezeBalance(v1)",
+       "WithdrawBalance(recompensa)",
+       "tipo 14",
+       "tipo 15",
+       "tipo 16",
+       "tipo 17",
+       "tipo 18",
+       "tipo 19",
+       "tipo 20",
+       "tipo 30",
+       "TriggerSmartContract",
+       "tipo 32",
+       "tipo 33",
+       "tipo 41",
+       "tipo 42",
+       "tipo 43",
+       "tipo 44",
+       "tipo 45",
+       "tipo 48",
+       "tipo 49",
+       "FreezeBalanceV2",
+       "UnfreezeBalanceV2",
+       "WithdrawExpireUnfreeze",
+       "DelegateResource",
+       "UnDelegateResource",
+       "CancelAllUnfreezeV2"
+      ]
+     }
+    ]
+   },
+   {
+    "t": "2026-04-15T10:19:33Z",
+    "tx": "a5688eccd6f71aaadcff5b65c4a9e5b043dc099b6dc01e079a2c71c2adddc368",
+    "ok": true,
+    "propietario": {
+     "nombre": "owner",
+     "umbral": 3,
+     "firmantes": [
+      {
+       "direccion": "TDAuHDXYNTrtY1k6GNibek44yHEqyQfVkC",
+       "peso": 1
+      },
+      {
+       "direccion": "TShAfXbh4kUzmkJ9Ckdo5J6ujWi1M5NLE2",
+       "peso": 1
+      },
+      {
+       "direccion": "TUgSgCQL6pMSy9zByn4sgxqrJa95sZExBG",
+       "peso": 1
+      },
+      {
+       "direccion": "TV7WmJXhYyd4rqRjbWg62eX8e5DoPbyiA3",
+       "peso": 1
+      },
+      {
+       "direccion": "TVnGY8vuJhxDX5b7mTpwaJ9vNDtmjdBxMm",
+       "peso": 1
+      }
+     ],
+     "operaciones": null
+    },
+    "activos": [
+     {
+      "nombre": "active",
+      "umbral": 3,
+      "firmantes": [
+       {
+        "direccion": "TDAuHDXYNTrtY1k6GNibek44yHEqyQfVkC",
+        "peso": 1
+       },
+       {
+        "direccion": "TShAfXbh4kUzmkJ9Ckdo5J6ujWi1M5NLE2",
+        "peso": 1
+       },
+       {
+        "direccion": "TUgSgCQL6pMSy9zByn4sgxqrJa95sZExBG",
+        "peso": 1
+       },
+       {
+        "direccion": "TV7WmJXhYyd4rqRjbWg62eX8e5DoPbyiA3",
+        "peso": 1
+       },
+       {
+        "direccion": "TVnGY8vuJhxDX5b7mTpwaJ9vNDtmjdBxMm",
+        "peso": 1
+       }
+      ],
+      "operaciones": [
+       "tipo 0",
+       "Transfer",
+       "TransferAsset",
+       "tipo 3",
+       "VoteWitness",
+       "tipo 5",
+       "tipo 6",
+       "tipo 8",
+       "tipo 9",
+       "tipo 10",
+       "FreezeBalance(v1)",
+       "UnfreezeBalance(v1)",
+       "WithdrawBalance(recompensa)",
+       "tipo 14",
+       "tipo 15",
+       "tipo 16",
+       "tipo 17",
+       "tipo 18",
+       "tipo 19",
+       "tipo 20",
+       "tipo 30",
+       "TriggerSmartContract",
+       "tipo 32",
+       "tipo 33",
+       "tipo 41",
+       "tipo 42",
+       "tipo 43",
+       "tipo 44",
+       "tipo 45",
+       "tipo 48",
+       "tipo 49",
+       "FreezeBalanceV2",
+       "UnfreezeBalanceV2",
+       "WithdrawExpireUnfreeze",
+       "DelegateResource",
+       "UnDelegateResource",
+       "CancelAllUnfreezeV2"
+      ]
+     }
+    ]
+   }
+  ],
+  "cierre": "cuadra con el último cambio"
+ },
+ {
+  "direccion": "TFSd14UQUp6HPamdMGJsWBxfWKMrLYxRmp",
+  "nombre": "Recolectora (TFSd14UQ)",
+  "creada": "2026-08-06",
+  "actual": {
+   "propietario": {
+    "nombre": "owner",
+    "umbral": 1,
+    "firmantes": [
+     {
+      "direccion": "TFSd14UQUp6HPamdMGJsWBxfWKMrLYxRmp",
+      "peso": 1
+     }
+    ],
+    "operaciones": null
+   },
+   "activos": [
+    {
+     "nombre": "active",
+     "umbral": 1,
+     "firmantes": [
+      {
+       "direccion": "TFSd14UQUp6HPamdMGJsWBxfWKMrLYxRmp",
+       "peso": 1
+      }
+     ],
+     "operaciones": [
+      "tipo 0",
+      "Transfer",
+      "TransferAsset",
+      "tipo 3",
+      "VoteWitness",
+      "tipo 5",
+      "tipo 6",
+      "tipo 8",
+      "tipo 9",
+      "tipo 10",
+      "FreezeBalance(v1)",
+      "UnfreezeBalance(v1)",
+      "WithdrawBalance(recompensa)",
+      "tipo 14",
+      "tipo 15",
+      "tipo 16",
+      "tipo 17",
+      "tipo 18",
+      "tipo 19",
+      "tipo 20",
+      "tipo 30",
+      "TriggerSmartContract",
+      "tipo 32",
+      "tipo 33",
+      "tipo 41",
+      "tipo 42",
+      "tipo 43",
+      "tipo 44",
+      "tipo 45",
+      "tipo 48",
+      "tipo 49",
+      "FreezeBalanceV2",
+      "UnfreezeBalanceV2",
+      "WithdrawExpireUnfreeze",
+      "DelegateResource",
+      "UnDelegateResource",
+      "CancelAllUnfreezeV2"
+     ]
+    }
+   ]
+  },
+  "lectura": {
+   "estado": "COMPLETO según TronGrid",
+   "filas_leidas": 2815,
+   "paginas": 15,
+   "tx_tronscan": 2815,
+   "coincide_con_tronscan": true
+  },
+  "n_cambios_de_permisos": 0,
+  "historial": [],
+  "cierre": "sin cambios: permisos por defecto (solo ella misma)"
+ },
+ {
+  "direccion": "TFTWNgDBkQ5wQoP8RXpRznnHvAVV8x5jLu",
+  "nombre": "HTX 4",
+  "creada": "2023-11-24",
+  "actual": {
+   "propietario": {
+    "nombre": "owner",
+    "umbral": 1,
+    "firmantes": [
+     {
+      "direccion": "TFTWNgDBkQ5wQoP8RXpRznnHvAVV8x5jLu",
+      "peso": 1
+     }
+    ],
+    "operaciones": null
+   },
+   "activos": [
+    {
+     "nombre": "active",
+     "umbral": 1,
+     "firmantes": [
+      {
+       "direccion": "TFTWNgDBkQ5wQoP8RXpRznnHvAVV8x5jLu",
+       "peso": 1
+      }
+     ],
+     "operaciones": [
+      "tipo 0",
+      "Transfer",
+      "TransferAsset",
+      "tipo 3",
+      "VoteWitness",
+      "tipo 5",
+      "tipo 6",
+      "tipo 8",
+      "tipo 9",
+      "tipo 10",
+      "FreezeBalance(v1)",
+      "UnfreezeBalance(v1)",
+      "WithdrawBalance(recompensa)",
+      "tipo 14",
+      "tipo 15",
+      "tipo 16",
+      "tipo 17",
+      "tipo 18",
+      "tipo 19",
+      "tipo 20",
+      "tipo 30",
+      "TriggerSmartContract",
+      "tipo 32",
+      "tipo 33",
+      "tipo 41",
+      "tipo 42",
+      "tipo 43",
+      "tipo 44",
+      "tipo 45",
+      "tipo 48",
+      "tipo 49",
+      "FreezeBalanceV2",
+      "UnfreezeBalanceV2",
+      "WithdrawExpireUnfreeze",
+      "DelegateResource",
+      "UnDelegateResource",
+      "CancelAllUnfreezeV2"
+     ]
+    }
+   ]
+  },
+  "lectura": {
+   "estado": "NO LEÍDO",
+   "motivo": "más de 60.000 transacciones según TronScan (20789371): se conserva solo el estado actual",
+   "tx_tronscan": 20789371
+  },
+  "n_cambios_de_permisos": 0,
+  "historial": [],
+  "cierre": "no comprobable"
+ },
+ {
+  "direccion": "TAuUCiH4JVNBZmDnEDZkXEUXDARdGpXTmX",
+  "nombre": "HTX-Cold 6",
+  "creada": "2022-04-21",
+  "actual": {
+   "propietario": {
+    "nombre": "owner",
+    "umbral": 1,
+    "firmantes": [
+     {
+      "direccion": "TAuUCiH4JVNBZmDnEDZkXEUXDARdGpXTmX",
+      "peso": 1
+     }
+    ],
+    "operaciones": null
+   },
+   "activos": [
+    {
+     "nombre": "active",
+     "umbral": 1,
+     "firmantes": [
+      {
+       "direccion": "TAuUCiH4JVNBZmDnEDZkXEUXDARdGpXTmX",
+       "peso": 1
+      }
+     ],
+     "operaciones": [
+      "tipo 0",
+      "Transfer",
+      "TransferAsset",
+      "tipo 3",
+      "VoteWitness",
+      "tipo 5",
+      "tipo 6",
+      "tipo 8",
+      "tipo 9",
+      "tipo 10",
+      "FreezeBalance(v1)",
+      "UnfreezeBalance(v1)",
+      "WithdrawBalance(recompensa)",
+      "tipo 14",
+      "tipo 15",
+      "tipo 16",
+      "tipo 17",
+      "tipo 18",
+      "tipo 19",
+      "tipo 20",
+      "tipo 30",
+      "TriggerSmartContract",
+      "tipo 32",
+      "tipo 33",
+      "tipo 41",
+      "tipo 42",
+      "tipo 43",
+      "tipo 44",
+      "tipo 45",
+      "tipo 48",
+      "tipo 49"
+     ]
+    }
+   ]
+  },
+  "lectura": {
+   "estado": "COMPLETO según TronGrid",
+   "filas_leidas": 1672,
+   "paginas": 9,
+   "tx_tronscan": 1672,
+   "coincide_con_tronscan": true
+  },
+  "n_cambios_de_permisos": 0,
+  "historial": [],
+  "cierre": "sin cambios: permisos por defecto (solo ella misma)"
+ },
+ {
+  "direccion": "TU1ZA8T2g8PvLK8BfM7N94xpmSSpyfxZoK",
+  "nombre": "HTX 3",
+  "creada": "2023-09-24",
+  "actual": {
+   "propietario": {
+    "nombre": "owner",
+    "umbral": 1,
+    "firmantes": [
+     {
+      "direccion": "TU1ZA8T2g8PvLK8BfM7N94xpmSSpyfxZoK",
+      "peso": 1
+     }
+    ],
+    "operaciones": null
+   },
+   "activos": [
+    {
+     "nombre": "active",
+     "umbral": 1,
+     "firmantes": [
+      {
+       "direccion": "TU1ZA8T2g8PvLK8BfM7N94xpmSSpyfxZoK",
+       "peso": 1
+      }
+     ],
+     "operaciones": [
+      "tipo 0",
+      "Transfer",
+      "TransferAsset",
+      "tipo 3",
+      "VoteWitness",
+      "tipo 5",
+      "tipo 6",
+      "tipo 8",
+      "tipo 9",
+      "tipo 10",
+      "FreezeBalance(v1)",
+      "UnfreezeBalance(v1)",
+      "WithdrawBalance(recompensa)",
+      "tipo 14",
+      "tipo 15",
+      "tipo 16",
+      "tipo 17",
+      "tipo 18",
+      "tipo 19",
+      "tipo 20",
+      "tipo 30",
+      "TriggerSmartContract",
+      "tipo 32",
+      "tipo 33",
+      "tipo 41",
+      "tipo 42",
+      "tipo 43",
+      "tipo 44",
+      "tipo 45",
+      "tipo 48",
+      "tipo 49",
+      "FreezeBalanceV2",
+      "UnfreezeBalanceV2",
+      "WithdrawExpireUnfreeze",
+      "DelegateResource",
+      "UnDelegateResource",
+      "CancelAllUnfreezeV2"
+     ]
+    }
+   ]
+  },
+  "lectura": {
+   "estado": "NO LEÍDO",
+   "motivo": "más de 60.000 transacciones según TronScan (844624): se conserva solo el estado actual",
+   "tx_tronscan": 844624
+  },
+  "n_cambios_de_permisos": 0,
+  "historial": [],
+  "cierre": "no comprobable"
+ },
+ {
+  "direccion": "TYL7z7VSVRShLoJ6YRQMA4t9pSECt9ZLmz",
+  "nombre": "TYL7z7VS (2022)",
+  "creada": "2022-06-25",
+  "actual": {
+   "propietario": {
+    "nombre": "owner",
+    "umbral": 1,
+    "firmantes": [
+     {
+      "direccion": "TYL7z7VSVRShLoJ6YRQMA4t9pSECt9ZLmz",
+      "peso": 1
+     }
+    ],
+    "operaciones": null
+   },
+   "activos": [
+    {
+     "nombre": "active",
+     "umbral": 1,
+     "firmantes": [
+      {
+       "direccion": "TYL7z7VSVRShLoJ6YRQMA4t9pSECt9ZLmz",
+       "peso": 1
+      }
+     ],
+     "operaciones": [
+      "tipo 0",
+      "Transfer",
+      "TransferAsset",
+      "tipo 3",
+      "VoteWitness",
+      "tipo 5",
+      "tipo 6",
+      "tipo 8",
+      "tipo 9",
+      "tipo 10",
+      "FreezeBalance(v1)",
+      "UnfreezeBalance(v1)",
+      "WithdrawBalance(recompensa)",
+      "tipo 14",
+      "tipo 15",
+      "tipo 16",
+      "tipo 17",
+      "tipo 18",
+      "tipo 19",
+      "tipo 20",
+      "tipo 30",
+      "TriggerSmartContract",
+      "tipo 32",
+      "tipo 33",
+      "tipo 41",
+      "tipo 42",
+      "tipo 43",
+      "tipo 44",
+      "tipo 45",
+      "tipo 48",
+      "tipo 49"
+     ]
+    }
+   ]
+  },
+  "lectura": {
+   "estado": "COMPLETO según TronGrid",
+   "filas_leidas": 116,
+   "paginas": 1,
+   "tx_tronscan": 116,
+   "coincide_con_tronscan": true
+  },
+  "n_cambios_de_permisos": 0,
+  "historial": [],
+  "cierre": "sin cambios: permisos por defecto (solo ella misma)"
+ },
+ {
+  "direccion": "TPcnRbpuB89eKKkfH2E7iJooAqeEZPpdGb",
+  "nombre": "Multifirma 2 USDD",
+  "creada": "2022-04-29",
+  "actual": {
+   "propietario": {
+    "nombre": "owner",
+    "umbral": 1,
+    "firmantes": [
+     {
+      "direccion": "TPcnRbpuB89eKKkfH2E7iJooAqeEZPpdGb",
+      "peso": 1
+     }
+    ],
+    "operaciones": null
+   },
+   "activos": [
+    {
+     "nombre": "active",
+     "umbral": 1,
+     "firmantes": [
+      {
+       "direccion": "TPcnRbpuB89eKKkfH2E7iJooAqeEZPpdGb",
+       "peso": 1
+      }
+     ],
+     "operaciones": [
+      "tipo 0",
+      "Transfer",
+      "TransferAsset",
+      "tipo 3",
+      "VoteWitness",
+      "tipo 5",
+      "tipo 6",
+      "tipo 8",
+      "tipo 9",
+      "tipo 10",
+      "FreezeBalance(v1)",
+      "UnfreezeBalance(v1)",
+      "WithdrawBalance(recompensa)",
+      "tipo 14",
+      "tipo 15",
+      "tipo 16",
+      "tipo 17",
+      "tipo 18",
+      "tipo 19",
+      "tipo 20",
+      "tipo 30",
+      "TriggerSmartContract",
+      "tipo 32",
+      "tipo 33",
+      "tipo 41",
+      "tipo 42",
+      "tipo 43",
+      "tipo 44",
+      "tipo 45",
+      "tipo 48",
+      "tipo 49"
+     ]
+    }
+   ]
+  },
+  "lectura": {
+   "estado": "COMPLETO según TronGrid",
+   "filas_leidas": 137,
+   "paginas": 1,
+   "tx_tronscan": 137,
+   "coincide_con_tronscan": true
+  },
+  "n_cambios_de_permisos": 0,
+  "historial": [],
+  "cierre": "sin cambios: permisos por defecto (solo ella misma)"
+ },
+ {
+  "direccion": "TQRBxpS5V1KZW8g3oJ1YNLqtj1j733Mc33",
+  "nombre": "Billetera puente D",
+  "creada": "2026-11-04",
+  "actual": {
+   "propietario": {
+    "nombre": "owner",
+    "umbral": 1,
+    "firmantes": [
+     {
+      "direccion": "TQRBxpS5V1KZW8g3oJ1YNLqtj1j733Mc33",
+      "peso": 1
+     }
+    ],
+    "operaciones": null
+   },
+   "activos": [
+    {
+     "nombre": "active",
+     "umbral": 1,
+     "firmantes": [
+      {
+       "direccion": "TQRBxpS5V1KZW8g3oJ1YNLqtj1j733Mc33",
+       "peso": 1
+      }
+     ],
+     "operaciones": [
+      "tipo 0",
+      "Transfer",
+      "TransferAsset",
+      "tipo 3",
+      "VoteWitness",
+      "tipo 5",
+      "tipo 6",
+      "tipo 8",
+      "tipo 9",
+      "tipo 10",
+      "FreezeBalance(v1)",
+      "UnfreezeBalance(v1)",
+      "WithdrawBalance(recompensa)",
+      "tipo 14",
+      "tipo 15",
+      "tipo 16",
+      "tipo 17",
+      "tipo 18",
+      "tipo 19",
+      "tipo 20",
+      "tipo 30",
+      "TriggerSmartContract",
+      "tipo 32",
+      "tipo 33",
+      "tipo 41",
+      "tipo 42",
+      "tipo 43",
+      "tipo 44",
+      "tipo 45",
+      "tipo 48",
+      "tipo 49",
+      "FreezeBalanceV2",
+      "UnfreezeBalanceV2",
+      "WithdrawExpireUnfreeze",
+      "DelegateResource",
+      "UnDelegateResource",
+      "CancelAllUnfreezeV2"
+     ]
+    }
+   ]
+  },
+  "lectura": {
+   "estado": "COMPLETO según TronGrid",
+   "filas_leidas": 6,
+   "paginas": 1,
+   "tx_tronscan": 6,
+   "coincide_con_tronscan": true
+  },
+  "n_cambios_de_permisos": 0,
+  "historial": [],
+  "cierre": "sin cambios: permisos por defecto (solo ella misma)"
+ },
+ {
+  "direccion": "TJTKCzQpsG19CSMYF9TPtxz6wSHPSyeKfa",
+  "nombre": "Binance-Hot 12",
+  "creada": "2026-10-31",
+  "actual": {
+   "propietario": {
+    "nombre": "owner",
+    "umbral": 1,
+    "firmantes": [
+     {
+      "direccion": "TJTKCzQpsG19CSMYF9TPtxz6wSHPSyeKfa",
+      "peso": 1
+     }
+    ],
+    "operaciones": null
+   },
+   "activos": [
+    {
+     "nombre": "active",
+     "umbral": 1,
+     "firmantes": [
+      {
+       "direccion": "TJTKCzQpsG19CSMYF9TPtxz6wSHPSyeKfa",
+       "peso": 1
+      }
+     ],
+     "operaciones": [
+      "tipo 0",
+      "Transfer",
+      "TransferAsset",
+      "tipo 3",
+      "VoteWitness",
+      "tipo 5",
+      "tipo 6",
+      "tipo 8",
+      "tipo 9",
+      "tipo 10",
+      "FreezeBalance(v1)",
+      "UnfreezeBalance(v1)",
+      "WithdrawBalance(recompensa)",
+      "tipo 14",
+      "tipo 15",
+      "tipo 16",
+      "tipo 17",
+      "tipo 18",
+      "tipo 19",
+      "tipo 20",
+      "tipo 30",
+      "TriggerSmartContract",
+      "tipo 32",
+      "tipo 33",
+      "tipo 41",
+      "tipo 42",
+      "tipo 43",
+      "tipo 44",
+      "tipo 45",
+      "tipo 48",
+      "tipo 49",
+      "FreezeBalanceV2",
+      "UnfreezeBalanceV2",
+      "WithdrawExpireUnfreeze",
+      "DelegateResource",
+      "UnDelegateResource",
+      "CancelAllUnfreezeV2"
+     ]
+    }
+   ]
+  },
+  "lectura": {
+   "estado": "NO LEÍDO",
+   "motivo": "más de 60.000 transacciones según TronScan (86825): se conserva solo el estado actual",
+   "tx_tronscan": 86825
+  },
+  "n_cambios_de_permisos": 0,
+  "historial": [],
+  "cierre": "no comprobable"
+ },
+ {
+  "direccion": "TU3rMHyWHzeEJBReWLzHko728hbz6MtfNg",
+  "nombre": "Receptor sin identificar (TU3rMHyW)",
+  "creada": "2024-08-09",
+  "actual": {
+   "propietario": {
+    "nombre": "owner",
+    "umbral": 1,
+    "firmantes": [
+     {
+      "direccion": "TM3sTVyahiGWYktKg8G6miHpTzRurKDt7b",
+      "peso": 1
+     }
+    ],
+    "operaciones": null
+   },
+   "activos": [
+    {
+     "nombre": "active",
+     "umbral": 1,
+     "firmantes": [
+      {
+       "direccion": "TCXrf8SwGjcmQYY1FcFnV3LUXSQpqod3bi",
+       "peso": 1
+      }
+     ],
+     "operaciones": [
+      "tipo 33",
+      "tipo 45"
+     ]
+    }
+   ]
+  },
+  "lectura": {
+   "estado": "COMPLETO según TronGrid",
+   "filas_leidas": 2786,
+   "paginas": 14,
+   "tx_tronscan": 2786,
+   "coincide_con_tronscan": true
+  },
+  "n_cambios_de_permisos": 16,
+  "historial": [
+   {
+    "t": "2024-08-22T17:46:42Z",
+    "tx": "fd823c69d8e1fa7cb6595748698bd73e3c2f50206c49d4ed2c7a891f1f5baa4b",
+    "ok": true,
+    "propietario": {
+     "nombre": "owner",
+     "umbral": 1,
+     "firmantes": [
+      {
+       "direccion": "TM3sTVyahiGWYktKg8G6miHpTzRurKDt7b",
+       "peso": 1
+      },
+      {
+       "direccion": "TU3rMHyWHzeEJBReWLzHko728hbz6MtfNg",
+       "peso": 1
+      }
+     ],
+     "operaciones": null
+    },
+    "activos": [
+     {
+      "nombre": "active",
+      "umbral": 1,
+      "firmantes": [
+       {
+        "direccion": "TM3sTVyahiGWYktKg8G6miHpTzRurKDt7b",
+        "peso": 1
+       },
+       {
+        "direccion": "TU3rMHyWHzeEJBReWLzHko728hbz6MtfNg",
+        "peso": 1
+       }
+      ],
+      "operaciones": [
+       "tipo 0",
+       "Transfer",
+       "TransferAsset",
+       "tipo 3",
+       "VoteWitness",
+       "tipo 5",
+       "tipo 6",
+       "tipo 8",
+       "tipo 9",
+       "tipo 10",
+       "FreezeBalance(v1)",
+       "UnfreezeBalance(v1)",
+       "WithdrawBalance(recompensa)",
+       "tipo 14",
+       "tipo 15",
+       "tipo 16",
+       "tipo 17",
+       "tipo 18",
+       "tipo 19",
+       "tipo 20",
+       "tipo 30",
+       "TriggerSmartContract",
+       "tipo 32",
+       "tipo 33",
+       "tipo 41",
+       "tipo 42",
+       "tipo 43",
+       "tipo 44",
+       "tipo 45",
+       "tipo 48",
+       "tipo 49",
+       "FreezeBalanceV2",
+       "UnfreezeBalanceV2",
+       "WithdrawExpireUnfreeze",
+       "DelegateResource",
+       "UnDelegateResource",
+       "CancelAllUnfreezeV2"
+      ]
+     }
+    ]
+   },
+   {
+    "t": "2024-08-23T16:02:27Z",
+    "tx": "d6ae03659817dfa9cd954a4967de453a62a29d30c787704ac1dcfc0287830dc3",
+    "ok": true,
+    "propietario": {
+     "nombre": "owner",
+     "umbral": 1,
+     "firmantes": [
+      {
+       "direccion": "TM3sTVyahiGWYktKg8G6miHpTzRurKDt7b",
+       "peso": 1
+      }
+     ],
+     "operaciones": null
+    },
+    "activos": [
+     {
+      "nombre": "active",
+      "umbral": 1,
+      "firmantes": [
+       {
+        "direccion": "TU3rMHyWHzeEJBReWLzHko728hbz6MtfNg",
+        "peso": 1
+       }
+      ],
+      "operaciones": [
+       "tipo 33"
+      ]
+     }
+    ]
+   },
+   {
+    "t": "2024-09-06T09:16:30Z",
+    "tx": "870f9c361dd848d37ba15c5ce03b5efc18b1ff0656f36cd0693067704bbe08f7",
+    "ok": true,
+    "propietario": {
+     "nombre": "owner",
+     "umbral": 1,
+     "firmantes": [
+      {
+       "direccion": "TM3sTVyahiGWYktKg8G6miHpTzRurKDt7b",
+       "peso": 1
+      }
+     ],
+     "operaciones": null
+    },
+    "activos": [
+     {
+      "nombre": "active",
+      "umbral": 1,
+      "firmantes": [
+       {
+        "direccion": "TU3rMHyWHzeEJBReWLzHko728hbz6MtfNg",
+        "peso": 1
+       }
+      ],
+      "operaciones": [
+       "tipo 30",
+       "tipo 33"
+      ]
+     }
+    ]
+   },
+   {
+    "t": "2024-09-06T13:50:12Z",
+    "tx": "292be9e0b247d23f917899dd1fafe94437ec8a4e8a6d7b1e0c3da826606d3864",
+    "ok": true,
+    "propietario": {
+     "nombre": "owner",
+     "umbral": 1,
+     "firmantes": [
+      {
+       "direccion": "TM3sTVyahiGWYktKg8G6miHpTzRurKDt7b",
+       "peso": 1
+      }
+     ],
+     "operaciones": null
+    },
+    "activos": [
+     {
+      "nombre": "active",
+      "umbral": 1,
+      "firmantes": [
+       {
+        "direccion": "TU3rMHyWHzeEJBReWLzHko728hbz6MtfNg",
+        "peso": 1
+       }
+      ],
+      "operaciones": [
+       "tipo 33"
+      ]
+     }
+    ]
+   },
+   {
+    "t": "2024-09-17T06:27:24Z",
+    "tx": "92c5be362511fa619f68e6b0696ce55fbd9d4df956390c9b4d867a59dda81be3",
+    "ok": true,
+    "propietario": {
+     "nombre": "owner",
+     "umbral": 1,
+     "firmantes": [
+      {
+       "direccion": "TM3sTVyahiGWYktKg8G6miHpTzRurKDt7b",
+       "peso": 1
+      }
+     ],
+     "operaciones": null
+    },
+    "activos": [
+     {
+      "nombre": "active",
+      "umbral": 1,
+      "firmantes": [
+       {
+        "direccion": "TU3rMHyWHzeEJBReWLzHko728hbz6MtfNg",
+        "peso": 1
+       }
+      ],
+      "operaciones": [
+       "tipo 30",
+       "TriggerSmartContract",
+       "tipo 33"
+      ]
+     }
+    ]
+   },
+   {
+    "t": "2024-09-17T10:23:27Z",
+    "tx": "cdec90880bab5613a9f20368168d479583c293009e00d6c06aca17639629738c",
+    "ok": true,
+    "propietario": {
+     "nombre": "owner",
+     "umbral": 1,
+     "firmantes": [
+      {
+       "direccion": "TM3sTVyahiGWYktKg8G6miHpTzRurKDt7b",
+       "peso": 1
+      }
+     ],
+     "operaciones": null
+    },
+    "activos": [
+     {
+      "nombre": "active",
+      "umbral": 1,
+      "firmantes": [
+       {
+        "direccion": "TU3rMHyWHzeEJBReWLzHko728hbz6MtfNg",
+        "peso": 1
+       }
+      ],
+      "operaciones": [
+       "tipo 33"
+      ]
+     }
+    ]
+   },
+   {
+    "t": "2024-09-23T10:53:54Z",
+    "tx": "60dbe82298f04b3b9328e92bbe4fda8a8705d3495e6e6d41e9f77fa6c2524d4a",
+    "ok": true,
+    "propietario": {
+     "nombre": "owner",
+     "umbral": 1,
+     "firmantes": [
+      {
+       "direccion": "TM3sTVyahiGWYktKg8G6miHpTzRurKDt7b",
+       "peso": 1
+      }
+     ],
+     "operaciones": null
+    },
+    "activos": [
+     {
+      "nombre": "active",
+      "umbral": 1,
+      "firmantes": [
+       {
+        "direccion": "TU3rMHyWHzeEJBReWLzHko728hbz6MtfNg",
+        "peso": 1
+       }
+      ],
+      "operaciones": [
+       "tipo 30",
+       "tipo 33"
+      ]
+     }
+    ]
+   },
+   {
+    "t": "2024-09-23T14:00:03Z",
+    "tx": "4e437ccc6b1c00a648ed5104e74c7470f992a5b68ac78860baa15f78d2b03be1",
+    "ok": true,
+    "propietario": {
+     "nombre": "owner",
+     "umbral": 1,
+     "firmantes": [
+      {
+       "direccion": "TM3sTVyahiGWYktKg8G6miHpTzRurKDt7b",
+       "peso": 1
+      }
+     ],
+     "operaciones": null
+    },
+    "activos": [
+     {
+      "nombre": "active",
+      "umbral": 1,
+      "firmantes": [
+       {
+        "direccion": "TU3rMHyWHzeEJBReWLzHko728hbz6MtfNg",
+        "peso": 1
+       }
+      ],
+      "operaciones": [
+       "tipo 33"
+      ]
+     }
+    ]
+   },
+   {
+    "t": "2024-10-30T10:19:39Z",
+    "tx": "c4344bbbcec4e5d722b5f268200ccffe4d17b459bbfca245e65d5d192b583cc0",
+    "ok": true,
+    "propietario": {
+     "nombre": "owner",
+     "umbral": 1,
+     "firmantes": [
+      {
+       "direccion": "TM3sTVyahiGWYktKg8G6miHpTzRurKDt7b",
+       "peso": 1
+      }
+     ],
+     "operaciones": null
+    },
+    "activos": [
+     {
+      "nombre": "active",
+      "umbral": 1,
+      "firmantes": [
+       {
+        "direccion": "TU3rMHyWHzeEJBReWLzHko728hbz6MtfNg",
+        "peso": 1
+       }
+      ],
+      "operaciones": [
+       "tipo 30",
+       "tipo 33"
+      ]
+     }
+    ]
+   },
+   {
+    "t": "2024-10-30T12:05:51Z",
+    "tx": "7ce98121d34d24fa13fa6139ce4aabd40b167ce87ef00f82d35ec5b576b30895",
+    "ok": true,
+    "propietario": {
+     "nombre": "owner",
+     "umbral": 1,
+     "firmantes": [
+      {
+       "direccion": "TM3sTVyahiGWYktKg8G6miHpTzRurKDt7b",
+       "peso": 1
+      }
+     ],
+     "operaciones": null
+    },
+    "activos": [
+     {
+      "nombre": "active",
+      "umbral": 1,
+      "firmantes": [
+       {
+        "direccion": "TU3rMHyWHzeEJBReWLzHko728hbz6MtfNg",
+        "peso": 1
+       }
+      ],
+      "operaciones": [
+       "tipo 33"
+      ]
+     }
+    ]
+   },
+   {
+    "t": "2025-01-23T18:25:21Z",
+    "tx": "6a14cd05496c4600df2967286db1ca032d2dacb744a4654c913bb1c1d9315515",
+    "ok": true,
+    "propietario": {
+     "nombre": "owner",
+     "umbral": 1,
+     "firmantes": [
+      {
+       "direccion": "TM3sTVyahiGWYktKg8G6miHpTzRurKDt7b",
+       "peso": 1
+      }
+     ],
+     "operaciones": null
+    },
+    "activos": [
+     {
+      "nombre": "active",
+      "umbral": 1,
+      "firmantes": [
+       {
+        "direccion": "TCXrf8SwGjcmQYY1FcFnV3LUXSQpqod3bi",
+        "peso": 1
+       }
+      ],
+      "operaciones": [
+       "tipo 30",
+       "TriggerSmartContract",
+       "tipo 33",
+       "tipo 45"
+      ]
+     }
+    ]
+   },
+   {
+    "t": "2025-03-02T15:43:30Z",
+    "tx": "c7892b9d7b42fcf82dc03208901638cff9ed6be2e037c3b3765eb61f06277169",
+    "ok": true,
+    "propietario": {
+     "nombre": "owner",
+     "umbral": 1,
+     "firmantes": [
+      {
+       "direccion": "TM3sTVyahiGWYktKg8G6miHpTzRurKDt7b",
+       "peso": 1
+      }
+     ],
+     "operaciones": null
+    },
+    "activos": [
+     {
+      "nombre": "active",
+      "umbral": 1,
+      "firmantes": [
+       {
+        "direccion": "TCXrf8SwGjcmQYY1FcFnV3LUXSQpqod3bi",
+        "peso": 1
+       }
+      ],
+      "operaciones": [
+       "tipo 33",
+       "tipo 45"
+      ]
+     }
+    ]
+   },
+   {
+    "t": "2025-12-27T00:37:12Z",
+    "tx": "592111b80fc49f7e5ba41e7f5843775ebcae78f5126d6c401b926a3e7b0a59db",
+    "ok": true,
+    "propietario": {
+     "nombre": "owner",
+     "umbral": 1,
+     "firmantes": [
+      {
+       "direccion": "TM3sTVyahiGWYktKg8G6miHpTzRurKDt7b",
+       "peso": 1
+      }
+     ],
+     "operaciones": null
+    },
+    "activos": [
+     {
+      "nombre": "active",
+      "umbral": 1,
+      "firmantes": [
+       {
+        "direccion": "TCXrf8SwGjcmQYY1FcFnV3LUXSQpqod3bi",
+        "peso": 1
+       }
+      ],
+      "operaciones": [
+       "tipo 30",
+       "TriggerSmartContract",
+       "tipo 33",
+       "tipo 45"
+      ]
+     }
+    ]
+   },
+   {
+    "t": "2026-03-01T13:00:36Z",
+    "tx": "f1a090f98a7390d1a8c314b3ba86d0b5b8624ff02c825cf687e02f5af5b33d8d",
+    "ok": true,
+    "propietario": {
+     "nombre": "owner",
+     "umbral": 1,
+     "firmantes": [
+      {
+       "direccion": "TM3sTVyahiGWYktKg8G6miHpTzRurKDt7b",
+       "peso": 1
+      }
+     ],
+     "operaciones": null
+    },
+    "activos": [
+     {
+      "nombre": "active",
+      "umbral": 1,
+      "firmantes": [
+       {
+        "direccion": "TCXrf8SwGjcmQYY1FcFnV3LUXSQpqod3bi",
+        "peso": 1
+       }
+      ],
+      "operaciones": [
+       "tipo 33",
+       "tipo 45"
+      ]
+     }
+    ]
+   },
+   {
+    "t": "2026-05-02T09:35:00Z",
+    "tx": "dc21609ba54f45c825cb45d0ada7d1e4a179f1fecf1b32c34ef180ca5f6833a2",
+    "ok": true,
+    "propietario": {
+     "nombre": "owner",
+     "umbral": 1,
+     "firmantes": [
+      {
+       "direccion": "TM3sTVyahiGWYktKg8G6miHpTzRurKDt7b",
+       "peso": 1
+      }
+     ],
+     "operaciones": null
+    },
+    "activos": [
+     {
+      "nombre": "active",
+      "umbral": 1,
+      "firmantes": [
+       {
+        "direccion": "TCXrf8SwGjcmQYY1FcFnV3LUXSQpqod3bi",
+        "peso": 1
+       }
+      ],
+      "operaciones": [
+       "tipo 30",
+       "TriggerSmartContract",
+       "tipo 33",
+       "tipo 45"
+      ]
+     }
+    ]
+   },
+   {
+    "t": "2026-05-19T06:12:21Z",
+    "tx": "371af31e37d7341e08f79afaf7033f5079fb10c02f3a36ee17f171e308d9e6e9",
+    "ok": true,
+    "propietario": {
+     "nombre": "owner",
+     "umbral": 1,
+     "firmantes": [
+      {
+       "direccion": "TM3sTVyahiGWYktKg8G6miHpTzRurKDt7b",
+       "peso": 1
+      }
+     ],
+     "operaciones": null
+    },
+    "activos": [
+     {
+      "nombre": "active",
+      "umbral": 1,
+      "firmantes": [
+       {
+        "direccion": "TCXrf8SwGjcmQYY1FcFnV3LUXSQpqod3bi",
+        "peso": 1
+       }
+      ],
+      "operaciones": [
+       "tipo 33",
+       "tipo 45"
+      ]
+     }
+    ]
+   }
+  ],
+  "cierre": "cuadra con el último cambio"
+ },
+ {
+  "direccion": "TFNX7TKYCm1kUYDECjkrogBwYZvt69XQNy",
+  "nombre": "GasFree",
+  "creada": "2025-02-26",
+  "actual": {
+   "propietario": {
+    "nombre": "owner",
+    "umbral": 1,
+    "firmantes": [
+     {
+      "direccion": "TUfohTaS6nh2pAaupqdEHxnQzRV8BFkZER",
+      "peso": 1
+     }
+    ],
+    "operaciones": null
+   },
+   "activos": [
+    {
+     "nombre": "active",
+     "umbral": 1,
+     "firmantes": [
+      {
+       "direccion": "TUfohTaS6nh2pAaupqdEHxnQzRV8BFkZER",
+       "peso": 1
+      }
+     ],
+     "operaciones": [
+      "tipo 0",
+      "Transfer",
+      "TransferAsset",
+      "tipo 3",
+      "VoteWitness",
+      "tipo 5",
+      "tipo 6",
+      "tipo 8",
+      "tipo 9",
+      "tipo 10",
+      "FreezeBalance(v1)",
+      "UnfreezeBalance(v1)",
+      "WithdrawBalance(recompensa)",
+      "tipo 14",
+      "tipo 15",
+      "tipo 16",
+      "tipo 17",
+      "tipo 18",
+      "tipo 19",
+      "tipo 20",
+      "tipo 30",
+      "TriggerSmartContract",
+      "tipo 32",
+      "tipo 33",
+      "tipo 41",
+      "tipo 42",
+      "tipo 43",
+      "tipo 44",
+      "tipo 45",
+      "tipo 48",
+      "tipo 49",
+      "FreezeBalanceV2",
+      "UnfreezeBalanceV2",
+      "WithdrawExpireUnfreeze",
+      "DelegateResource",
+      "UnDelegateResource",
+      "CancelAllUnfreezeV2"
+     ]
+    }
+   ]
+  },
+  "lectura": {
+   "estado": "NO LEÍDO",
+   "motivo": "más de 60.000 transacciones según TronScan (9753594): se conserva solo el estado actual",
+   "tx_tronscan": 9753594
+  },
+  "n_cambios_de_permisos": 0,
+  "historial": [],
+  "cierre": "no comprobable"
+ },
+ {
+  "direccion": "TU4vEruvZwLLkSfV9bNw12EJTPvNr7Pvaa",
+  "nombre": "Bybit",
+  "creada": "2021-08-06",
+  "actual": {
+   "propietario": {
+    "nombre": "owner",
+    "umbral": 1,
+    "firmantes": [
+     {
+      "direccion": "TU4vEruvZwLLkSfV9bNw12EJTPvNr7Pvaa",
+      "peso": 1
+     }
+    ],
+    "operaciones": null
+   },
+   "activos": [
+    {
+     "nombre": "active",
+     "umbral": 1,
+     "firmantes": [
+      {
+       "direccion": "TU4vEruvZwLLkSfV9bNw12EJTPvNr7Pvaa",
+       "peso": 1
+      }
+     ],
+     "operaciones": [
+      "tipo 0",
+      "Transfer",
+      "TransferAsset",
+      "tipo 3",
+      "VoteWitness",
+      "tipo 5",
+      "tipo 6",
+      "tipo 8",
+      "tipo 9",
+      "tipo 10",
+      "FreezeBalance(v1)",
+      "UnfreezeBalance(v1)",
+      "WithdrawBalance(recompensa)",
+      "tipo 14",
+      "tipo 15",
+      "tipo 16",
+      "tipo 17",
+      "tipo 18",
+      "tipo 19",
+      "tipo 20",
+      "tipo 30",
+      "TriggerSmartContract",
+      "tipo 32",
+      "tipo 33",
+      "tipo 41",
+      "tipo 42",
+      "tipo 43",
+      "tipo 44",
+      "tipo 45",
+      "tipo 48",
+      "tipo 49"
+     ]
+    }
+   ]
+  },
+  "lectura": {
+   "estado": "NO LEÍDO",
+   "motivo": "más de 60.000 transacciones según TronScan (82584687): se conserva solo el estado actual",
+   "tx_tronscan": 82584687
+  },
+  "n_cambios_de_permisos": 0,
+  "historial": [],
+  "cierre": "no comprobable"
+ },
+ {
+  "direccion": "TEySEZLJf6rs2mCujGpDEsgoMVWKLAk9mT",
+  "nombre": "TRON Inc (segun Protos)",
+  "creada": "2025-06-28",
+  "actual": {
+   "propietario": {
+    "nombre": "owner",
+    "umbral": 1,
+    "firmantes": [
+     {
+      "direccion": "TEySEZLJf6rs2mCujGpDEsgoMVWKLAk9mT",
+      "peso": 1
+     }
+    ],
+    "operaciones": null
+   },
+   "activos": [
+    {
+     "nombre": "active",
+     "umbral": 1,
+     "firmantes": [
+      {
+       "direccion": "TEySEZLJf6rs2mCujGpDEsgoMVWKLAk9mT",
+       "peso": 1
+      }
+     ],
+     "operaciones": [
+      "tipo 0",
+      "Transfer",
+      "TransferAsset",
+      "tipo 3",
+      "VoteWitness",
+      "tipo 5",
+      "tipo 6",
+      "tipo 8",
+      "tipo 9",
+      "tipo 10",
+      "FreezeBalance(v1)",
+      "UnfreezeBalance(v1)",
+      "WithdrawBalance(recompensa)",
+      "tipo 14",
+      "tipo 15",
+      "tipo 16",
+      "tipo 17",
+      "tipo 18",
+      "tipo 19",
+      "tipo 20",
+      "tipo 30",
+      "TriggerSmartContract",
+      "tipo 32",
+      "tipo 33",
+      "tipo 41",
+      "tipo 42",
+      "tipo 43",
+      "tipo 44",
+      "tipo 45",
+      "tipo 48",
+      "tipo 49",
+      "FreezeBalanceV2",
+      "UnfreezeBalanceV2",
+      "WithdrawExpireUnfreeze",
+      "DelegateResource",
+      "UnDelegateResource",
+      "CancelAllUnfreezeV2"
+     ]
+    }
+   ]
+  },
+  "lectura": {
+   "estado": "COMPLETO según TronGrid",
+   "filas_leidas": 511,
+   "paginas": 3,
+   "tx_tronscan": 511,
+   "coincide_con_tronscan": true
+  },
+  "n_cambios_de_permisos": 0,
+  "historial": [],
+  "cierre": "sin cambios: permisos por defecto (solo ella misma)"
+ },
+ {
+  "direccion": "TXHDjs83UhE2MeSfy3TGMobdzR1KEFPySR",
+  "nombre": "Receptor de TEF9ZV controlado por otra clave (Sin etiqueta)",
+  "creada": "2025-01-20",
+  "actual": {
+   "propietario": {
+    "nombre": "owner",
+    "umbral": 1,
+    "firmantes": [
+     {
+      "direccion": "TSF2rqLdrrZG7PZkDxtvu6B2PTpofidMAX",
+      "peso": 1
+     }
+    ],
+    "operaciones": null
+   },
+   "activos": [
+    {
+     "nombre": "active",
+     "umbral": 1,
+     "firmantes": [
+      {
+       "direccion": "TSF2rqLdrrZG7PZkDxtvu6B2PTpofidMAX",
+       "peso": 1
+      }
+     ],
+     "operaciones": [
+      "tipo 0",
+      "Transfer",
+      "TransferAsset",
+      "tipo 3",
+      "VoteWitness",
+      "tipo 5",
+      "tipo 6",
+      "tipo 8",
+      "tipo 9",
+      "tipo 10",
+      "FreezeBalance(v1)",
+      "UnfreezeBalance(v1)",
+      "WithdrawBalance(recompensa)",
+      "tipo 14",
+      "tipo 15",
+      "tipo 16",
+      "tipo 17",
+      "tipo 18",
+      "tipo 19",
+      "tipo 20",
+      "tipo 30",
+      "TriggerSmartContract",
+      "tipo 32",
+      "tipo 33",
+      "tipo 41",
+      "tipo 42",
+      "tipo 43",
+      "tipo 44",
+      "tipo 45",
+      "tipo 48",
+      "tipo 49",
+      "FreezeBalanceV2",
+      "UnfreezeBalanceV2",
+      "WithdrawExpireUnfreeze",
+      "DelegateResource",
+      "UnDelegateResource",
+      "CancelAllUnfreezeV2"
+     ]
+    }
+   ]
+  },
+  "lectura": {
+   "estado": "COMPLETO según TronGrid",
+   "filas_leidas": 622,
+   "paginas": 4,
+   "tx_tronscan": 622,
+   "coincide_con_tronscan": true
+  },
+  "n_cambios_de_permisos": 1,
+  "historial": [
+   {
+    "t": "2025-09-02T04:26:27Z",
+    "tx": "813676b017c55e2e36a53146b76332e3902dbe75dbb54da96501a83cbbea54d9",
+    "ok": true,
+    "propietario": {
+     "nombre": "owner",
+     "umbral": 1,
+     "firmantes": [
+      {
+       "direccion": "TSF2rqLdrrZG7PZkDxtvu6B2PTpofidMAX",
+       "peso": 1
+      }
+     ],
+     "operaciones": null
+    },
+    "activos": [
+     {
+      "nombre": "active",
+      "umbral": 1,
+      "firmantes": [
+       {
+        "direccion": "TSF2rqLdrrZG7PZkDxtvu6B2PTpofidMAX",
+        "peso": 1
+       }
+      ],
+      "operaciones": [
+       "tipo 0",
+       "Transfer",
+       "TransferAsset",
+       "tipo 3",
+       "VoteWitness",
+       "tipo 5",
+       "tipo 6",
+       "tipo 8",
+       "tipo 9",
+       "tipo 10",
+       "FreezeBalance(v1)",
+       "UnfreezeBalance(v1)",
+       "WithdrawBalance(recompensa)",
+       "tipo 14",
+       "tipo 15",
+       "tipo 16",
+       "tipo 17",
+       "tipo 18",
+       "tipo 19",
+       "tipo 20",
+       "tipo 30",
+       "TriggerSmartContract",
+       "tipo 32",
+       "tipo 33",
+       "tipo 41",
+       "tipo 42",
+       "tipo 43",
+       "tipo 44",
+       "tipo 45",
+       "tipo 48",
+       "tipo 49",
+       "FreezeBalanceV2",
+       "UnfreezeBalanceV2",
+       "WithdrawExpireUnfreeze",
+       "DelegateResource",
+       "UnDelegateResource",
+       "CancelAllUnfreezeV2"
+      ]
+     }
+    ]
+   }
+  ],
+  "cierre": "cuadra con el último cambio"
+ },
+ {
+  "direccion": "TTPr6LHna8ZFn1zS1CgDrhStscEByjnKFD",
+  "nombre": "Receptor de TEF9ZV controlado por otra clave (Sin etiqueta)",
+  "creada": "2025-08-25",
+  "actual": {
+   "propietario": {
+    "nombre": "owner",
+    "umbral": 1,
+    "firmantes": [
+     {
+      "direccion": "TK41wGU4WUYyymqkAKrwURkw6uiYXA6VLj",
+      "peso": 1
+     }
+    ],
+    "operaciones": null
+   },
+   "activos": [
+    {
+     "nombre": "active",
+     "umbral": 3,
+     "firmantes": [
+      {
+       "direccion": "TK41wGU4WUYyymqkAKrwURkw6uiYXA6VLj",
+       "peso": 1
+      },
+      {
+       "direccion": "TQq82tRLa7GGBxR7VUWQyP7VZUyzC9Xkm6",
+       "peso": 1
+      },
+      {
+       "direccion": "TTPr6LHna8ZFn1zS1CgDrhStscEByjnKFD",
+       "peso": 1
+      }
+     ],
+     "operaciones": [
+      "tipo 0",
+      "Transfer",
+      "TransferAsset",
+      "tipo 3",
+      "VoteWitness",
+      "tipo 5",
+      "tipo 6",
+      "tipo 8",
+      "tipo 9",
+      "tipo 10",
+      "FreezeBalance(v1)",
+      "UnfreezeBalance(v1)",
+      "WithdrawBalance(recompensa)",
+      "tipo 14",
+      "tipo 15",
+      "tipo 16",
+      "tipo 17",
+      "tipo 18",
+      "tipo 19",
+      "tipo 20",
+      "tipo 30",
+      "TriggerSmartContract",
+      "tipo 32",
+      "tipo 33",
+      "tipo 41",
+      "tipo 42",
+      "tipo 43",
+      "tipo 44",
+      "tipo 45",
+      "tipo 48",
+      "tipo 49",
+      "FreezeBalanceV2",
+      "UnfreezeBalanceV2",
+      "WithdrawExpireUnfreeze",
+      "DelegateResource",
+      "UnDelegateResource",
+      "CancelAllUnfreezeV2"
+     ]
+    },
+    {
+     "nombre": "ContractUpdater",
+     "umbral": 1,
+     "firmantes": [
+      {
+       "direccion": "TWEnogxttXzWhC5FU6YM4k8ntjfTnLtUic",
+       "peso": 1
+      }
+     ],
+     "operaciones": [
+      "tipo 33",
+      "tipo 45"
+     ]
+    }
+   ]
+  },
+  "lectura": {
+   "estado": "COMPLETO según TronGrid",
+   "filas_leidas": 63,
+   "paginas": 1,
+   "tx_tronscan": 63,
+   "coincide_con_tronscan": true
+  },
+  "n_cambios_de_permisos": 2,
+  "historial": [
+   {
+    "t": "2025-09-09T04:14:21Z",
+    "tx": "e5fda86a6bf0c5bc57d3db76832024f84bd3ac8de8c2c2f627886ee3433af917",
+    "ok": true,
+    "propietario": {
+     "nombre": "owner",
+     "umbral": 1,
+     "firmantes": [
+      {
+       "direccion": "TK41wGU4WUYyymqkAKrwURkw6uiYXA6VLj",
+       "peso": 1
+      }
+     ],
+     "operaciones": null
+    },
+    "activos": [
+     {
+      "nombre": "active",
+      "umbral": 3,
+      "firmantes": [
+       {
+        "direccion": "TK41wGU4WUYyymqkAKrwURkw6uiYXA6VLj",
+        "peso": 1
+       },
+       {
+        "direccion": "TQq82tRLa7GGBxR7VUWQyP7VZUyzC9Xkm6",
+        "peso": 1
+       },
+       {
+        "direccion": "TTPr6LHna8ZFn1zS1CgDrhStscEByjnKFD",
+        "peso": 1
+       }
+      ],
+      "operaciones": [
+       "tipo 0",
+       "Transfer",
+       "TransferAsset",
+       "tipo 3",
+       "VoteWitness",
+       "tipo 5",
+       "tipo 6",
+       "tipo 8",
+       "tipo 9",
+       "tipo 10",
+       "FreezeBalance(v1)",
+       "UnfreezeBalance(v1)",
+       "WithdrawBalance(recompensa)",
+       "tipo 14",
+       "tipo 15",
+       "tipo 16",
+       "tipo 17",
+       "tipo 18",
+       "tipo 19",
+       "tipo 20",
+       "tipo 30",
+       "TriggerSmartContract",
+       "tipo 32",
+       "tipo 33",
+       "tipo 41",
+       "tipo 42",
+       "tipo 43",
+       "tipo 44",
+       "tipo 45",
+       "tipo 48",
+       "tipo 49",
+       "FreezeBalanceV2",
+       "UnfreezeBalanceV2",
+       "WithdrawExpireUnfreeze",
+       "DelegateResource",
+       "UnDelegateResource",
+       "CancelAllUnfreezeV2"
+      ]
+     }
+    ]
+   },
+   {
+    "t": "2025-11-11T08:37:21Z",
+    "tx": "e2cb8a78a7e18f43414218d2853010670b8f5eb363b6e25b5e70c196e958d312",
+    "ok": true,
+    "propietario": {
+     "nombre": "owner",
+     "umbral": 1,
+     "firmantes": [
+      {
+       "direccion": "TK41wGU4WUYyymqkAKrwURkw6uiYXA6VLj",
+       "peso": 1
+      }
+     ],
+     "operaciones": null
+    },
+    "activos": [
+     {
+      "nombre": "active",
+      "umbral": 3,
+      "firmantes": [
+       {
+        "direccion": "TK41wGU4WUYyymqkAKrwURkw6uiYXA6VLj",
+        "peso": 1
+       },
+       {
+        "direccion": "TQq82tRLa7GGBxR7VUWQyP7VZUyzC9Xkm6",
+        "peso": 1
+       },
+       {
+        "direccion": "TTPr6LHna8ZFn1zS1CgDrhStscEByjnKFD",
+        "peso": 1
+       }
+      ],
+      "operaciones": [
+       "tipo 0",
+       "Transfer",
+       "TransferAsset",
+       "tipo 3",
+       "VoteWitness",
+       "tipo 5",
+       "tipo 6",
+       "tipo 8",
+       "tipo 9",
+       "tipo 10",
+       "FreezeBalance(v1)",
+       "UnfreezeBalance(v1)",
+       "WithdrawBalance(recompensa)",
+       "tipo 14",
+       "tipo 15",
+       "tipo 16",
+       "tipo 17",
+       "tipo 18",
+       "tipo 19",
+       "tipo 20",
+       "tipo 30",
+       "TriggerSmartContract",
+       "tipo 32",
+       "tipo 33",
+       "tipo 41",
+       "tipo 42",
+       "tipo 43",
+       "tipo 44",
+       "tipo 45",
+       "tipo 48",
+       "tipo 49",
+       "FreezeBalanceV2",
+       "UnfreezeBalanceV2",
+       "WithdrawExpireUnfreeze",
+       "DelegateResource",
+       "UnDelegateResource",
+       "CancelAllUnfreezeV2"
+      ]
+     },
+     {
+      "nombre": "ContractUpdater",
+      "umbral": 1,
+      "firmantes": [
+       {
+        "direccion": "TWEnogxttXzWhC5FU6YM4k8ntjfTnLtUic",
+        "peso": 1
+       }
+      ],
+      "operaciones": [
+       "tipo 33",
+       "tipo 45"
+      ]
+     }
+    ]
+   }
+  ],
+  "cierre": "cuadra con el último cambio"
+ },
+ {
+  "direccion": "TUaASPt6XHP6tJbwbofdP2kcqPEa2MGooy",
+  "nombre": "Receptor de TEF9ZV controlado por otra clave (Sin etiqueta)",
+  "creada": "2025-06-12",
+  "actual": {
+   "propietario": {
+    "nombre": "owner",
+    "umbral": 1,
+    "firmantes": [
+     {
+      "direccion": "TBAGyoR2XznMwrPYULydrVmES3kHV6jvmN",
+      "peso": 1
+     }
+    ],
+    "operaciones": null
+   },
+   "activos": [
+    {
+     "nombre": "active",
+     "umbral": 1,
+     "firmantes": [
+      {
+       "direccion": "TFkSDFTvavypmKQN4nS4xMPzyjdwbrfmxs",
+       "peso": 1
+      }
+     ],
+     "operaciones": [
+      "TriggerSmartContract"
+     ]
+    }
+   ]
+  },
+  "lectura": {
+   "estado": "COMPLETO según TronGrid",
+   "filas_leidas": 5253,
+   "paginas": 27,
+   "tx_tronscan": 5253,
+   "coincide_con_tronscan": true
+  },
+  "n_cambios_de_permisos": 1,
+  "historial": [
+   {
+    "t": "2025-09-28T09:12:36Z",
+    "tx": "3f1110b638ca6c80024f251bee70b3cffc2906b9af867e7f3261b9c12be680db",
+    "ok": true,
+    "propietario": {
+     "nombre": "owner",
+     "umbral": 1,
+     "firmantes": [
+      {
+       "direccion": "TBAGyoR2XznMwrPYULydrVmES3kHV6jvmN",
+       "peso": 1
+      }
+     ],
+     "operaciones": null
+    },
+    "activos": [
+     {
+      "nombre": "active",
+      "umbral": 1,
+      "firmantes": [
+       {
+        "direccion": "TFkSDFTvavypmKQN4nS4xMPzyjdwbrfmxs",
+        "peso": 1
+       }
+      ],
+      "operaciones": [
+       "TriggerSmartContract"
+      ]
+     }
+    ]
+   }
+  ],
+  "cierre": "cuadra con el último cambio"
+ },
+ {
+  "direccion": "TW6EkjXg8iGRZbZkqDTrjGkxLDBby58ZVi",
+  "nombre": "Receptor de TEF9ZV controlado por otra clave (Sin etiqueta)",
+  "creada": "2025-06-12",
+  "actual": {
+   "propietario": {
+    "nombre": "owner",
+    "umbral": 1,
+    "firmantes": [
+     {
+      "direccion": "TCiyg684ZjsFcQzzjVqYPy7WMRYGej75GP",
+      "peso": 1
+     }
+    ],
+    "operaciones": null
+   },
+   "activos": [
+    {
+     "nombre": "active",
+     "umbral": 1,
+     "firmantes": [
+      {
+       "direccion": "TP4dH2xpzAr9DPcmNyEZTP2YoFX4vgkVL9",
+       "peso": 1
+      }
+     ],
+     "operaciones": [
+      "TriggerSmartContract"
+     ]
+    }
+   ]
+  },
+  "lectura": {
+   "estado": "COMPLETO según TronGrid",
+   "filas_leidas": 5276,
+   "paginas": 27,
+   "tx_tronscan": 5276,
+   "coincide_con_tronscan": true
+  },
+  "n_cambios_de_permisos": 1,
+  "historial": [
+   {
+    "t": "2025-09-28T09:11:51Z",
+    "tx": "66cbc3778d0960a609ab0ba968f73f80083098c2034e28cc3bf43c2d70e02e05",
+    "ok": true,
+    "propietario": {
+     "nombre": "owner",
+     "umbral": 1,
+     "firmantes": [
+      {
+       "direccion": "TCiyg684ZjsFcQzzjVqYPy7WMRYGej75GP",
+       "peso": 1
+      }
+     ],
+     "operaciones": null
+    },
+    "activos": [
+     {
+      "nombre": "active",
+      "umbral": 1,
+      "firmantes": [
+       {
+        "direccion": "TP4dH2xpzAr9DPcmNyEZTP2YoFX4vgkVL9",
+        "peso": 1
+       }
+      ],
+      "operaciones": [
+       "TriggerSmartContract"
+      ]
+     }
+    ]
+   }
+  ],
+  "cierre": "cuadra con el último cambio"
+ },
+ {
+  "direccion": "TNGePRK6b3s4TG5SVQX12SkNHMw242MT5b",
+  "nombre": "Receptor de TEF9ZV controlado por otra clave (Sin etiqueta)",
+  "creada": "2025-06-12",
+  "actual": {
+   "propietario": {
+    "nombre": "owner",
+    "umbral": 1,
+    "firmantes": [
+     {
+      "direccion": "TP58k9Gp6GUoUS3rJQJ2wCob3cZZd33KWd",
+      "peso": 1
+     }
+    ],
+    "operaciones": null
+   },
+   "activos": [
+    {
+     "nombre": "active",
+     "umbral": 1,
+     "firmantes": [
+      {
+       "direccion": "TB5KgjayQdfDEffNkUZyGBUYnkoWkTPGUP",
+       "peso": 1
+      }
+     ],
+     "operaciones": [
+      "TriggerSmartContract"
+     ]
+    }
+   ]
+  },
+  "lectura": {
+   "estado": "COMPLETO según TronGrid",
+   "filas_leidas": 5192,
+   "paginas": 26,
+   "tx_tronscan": 5192,
+   "coincide_con_tronscan": true
+  },
+  "n_cambios_de_permisos": 1,
+  "historial": [
+   {
+    "t": "2025-09-28T09:13:27Z",
+    "tx": "cc2ca31aa5aa618c2c1c1eb786b1daa0f73493aad8883b1f8d984f2285e31f9c",
+    "ok": true,
+    "propietario": {
+     "nombre": "owner",
+     "umbral": 1,
+     "firmantes": [
+      {
+       "direccion": "TP58k9Gp6GUoUS3rJQJ2wCob3cZZd33KWd",
+       "peso": 1
+      }
+     ],
+     "operaciones": null
+    },
+    "activos": [
+     {
+      "nombre": "active",
+      "umbral": 1,
+      "firmantes": [
+       {
+        "direccion": "TB5KgjayQdfDEffNkUZyGBUYnkoWkTPGUP",
+        "peso": 1
+       }
+      ],
+      "operaciones": [
+       "TriggerSmartContract"
+      ]
+     }
+    ]
+   }
+  ],
+  "cierre": "cuadra con el último cambio"
+ },
+ {
+  "direccion": "THYznBdDPQLLunwGwrVyCWLhNL3nhMjAPC",
+  "nombre": "Receptor de TEF9ZV controlado por otra clave (Sin etiqueta)",
+  "creada": "2026-09-13",
+  "actual": {
+   "propietario": {
+    "nombre": "owner",
+    "umbral": 3,
+    "firmantes": [
+     {
+      "direccion": "TAbcZfVgqe8x49LN4i2iFudcXBhab5FS7h",
+      "peso": 1
+     },
+     {
+      "direccion": "TCEeN8qQjN654d9aFtPYYLEXpALa6uMA5m",
+      "peso": 1
+     },
+     {
+      "direccion": "TMSejtCCXGnHHAnRKMQPPw5iNjuDuhTKfu",
+      "peso": 1
+     },
+     {
+      "direccion": "TQF14mhtEpD5VXbDLKSb6X1jc8VCGw5Fge",
+      "peso": 1
+     },
+     {
+      "direccion": "TVfGs8yrzWn2BXP8te8rDAmL7ixSSJD3YT",
+      "peso": 1
+     }
+    ],
+    "operaciones": null
+   },
+   "activos": [
+    {
+     "nombre": "active",
+     "umbral": 3,
+     "firmantes": [
+      {
+       "direccion": "TAbcZfVgqe8x49LN4i2iFudcXBhab5FS7h",
+       "peso": 1
+      },
+      {
+       "direccion": "TCEeN8qQjN654d9aFtPYYLEXpALa6uMA5m",
+       "peso": 1
+      },
+      {
+       "direccion": "TMSejtCCXGnHHAnRKMQPPw5iNjuDuhTKfu",
+       "peso": 1
+      },
+      {
+       "direccion": "TQF14mhtEpD5VXbDLKSb6X1jc8VCGw5Fge",
+       "peso": 1
+      },
+      {
+       "direccion": "TVfGs8yrzWn2BXP8te8rDAmL7ixSSJD3YT",
+       "peso": 1
+      }
+     ],
+     "operaciones": [
+      "tipo 0",
+      "Transfer",
+      "TransferAsset",
+      "tipo 3",
+      "VoteWitness",
+      "tipo 5",
+      "tipo 6",
+      "tipo 8",
+      "tipo 9",
+      "tipo 10",
+      "FreezeBalance(v1)",
+      "UnfreezeBalance(v1)",
+      "WithdrawBalance(recompensa)",
+      "tipo 14",
+      "tipo 15",
+      "tipo 16",
+      "tipo 17",
+      "tipo 18",
+      "tipo 19",
+      "tipo 20",
+      "tipo 30",
+      "TriggerSmartContract",
+      "tipo 32",
+      "tipo 33",
+      "tipo 41",
+      "tipo 42",
+      "tipo 43",
+      "tipo 44",
+      "tipo 45",
+      "tipo 48",
+      "tipo 49",
+      "FreezeBalanceV2",
+      "UnfreezeBalanceV2",
+      "WithdrawExpireUnfreeze",
+      "DelegateResource",
+      "UnDelegateResource",
+      "CancelAllUnfreezeV2"
+     ]
+    }
+   ]
+  },
+  "lectura": {
+   "estado": "COMPLETO según TronGrid",
+   "filas_leidas": 15,
+   "paginas": 1,
+   "tx_tronscan": 15,
+   "coincide_con_tronscan": true
+  },
+  "n_cambios_de_permisos": 1,
+  "historial": [
+   {
+    "t": "2026-09-13T10:27:45Z",
+    "tx": "185c2a99ec48ca592dd03b5c6d770dbfc8361620db6a9b0d1050631110b3776e",
+    "ok": true,
+    "propietario": {
+     "nombre": "owner",
+     "umbral": 3,
+     "firmantes": [
+      {
+       "direccion": "TAbcZfVgqe8x49LN4i2iFudcXBhab5FS7h",
+       "peso": 1
+      },
+      {
+       "direccion": "TCEeN8qQjN654d9aFtPYYLEXpALa6uMA5m",
+       "peso": 1
+      },
+      {
+       "direccion": "TMSejtCCXGnHHAnRKMQPPw5iNjuDuhTKfu",
+       "peso": 1
+      },
+      {
+       "direccion": "TQF14mhtEpD5VXbDLKSb6X1jc8VCGw5Fge",
+       "peso": 1
+      },
+      {
+       "direccion": "TVfGs8yrzWn2BXP8te8rDAmL7ixSSJD3YT",
+       "peso": 1
+      }
+     ],
+     "operaciones": null
+    },
+    "activos": [
+     {
+      "nombre": "active",
+      "umbral": 3,
+      "firmantes": [
+       {
+        "direccion": "TAbcZfVgqe8x49LN4i2iFudcXBhab5FS7h",
+        "peso": 1
+       },
+       {
+        "direccion": "TCEeN8qQjN654d9aFtPYYLEXpALa6uMA5m",
+        "peso": 1
+       },
+       {
+        "direccion": "TMSejtCCXGnHHAnRKMQPPw5iNjuDuhTKfu",
+        "peso": 1
+       },
+       {
+        "direccion": "TQF14mhtEpD5VXbDLKSb6X1jc8VCGw5Fge",
+        "peso": 1
+       },
+       {
+        "direccion": "TVfGs8yrzWn2BXP8te8rDAmL7ixSSJD3YT",
+        "peso": 1
+       }
+      ],
+      "operaciones": [
+       "tipo 0",
+       "Transfer",
+       "TransferAsset",
+       "tipo 3",
+       "VoteWitness",
+       "tipo 5",
+       "tipo 6",
+       "tipo 8",
+       "tipo 9",
+       "tipo 10",
+       "FreezeBalance(v1)",
+       "UnfreezeBalance(v1)",
+       "WithdrawBalance(recompensa)",
+       "tipo 14",
+       "tipo 15",
+       "tipo 16",
+       "tipo 17",
+       "tipo 18",
+       "tipo 19",
+       "tipo 20",
+       "tipo 30",
+       "TriggerSmartContract",
+       "tipo 32",
+       "tipo 33",
+       "tipo 41",
+       "tipo 42",
+       "tipo 43",
+       "tipo 44",
+       "tipo 45",
+       "tipo 48",
+       "tipo 49",
+       "FreezeBalanceV2",
+       "UnfreezeBalanceV2",
+       "WithdrawExpireUnfreeze",
+       "DelegateResource",
+       "UnDelegateResource",
+       "CancelAllUnfreezeV2"
+      ]
+     }
+    ]
+   }
+  ],
+  "cierre": "cuadra con el último cambio"
+ },
+ {
+  "direccion": "TVoTgU4jqhG26uaNy3oZu75wWC7W59YzsB",
+  "nombre": "Receptor de TEF9ZV controlado por otra clave (Sin etiqueta)",
+  "creada": "2025-06-12",
+  "actual": {
+   "propietario": {
+    "nombre": "owner",
+    "umbral": 1,
+    "firmantes": [
+     {
+      "direccion": "TVa58riLnABbCDMhN9FztAjMsfkQFxxjAM",
+      "peso": 1
+     }
+    ],
+    "operaciones": null
+   },
+   "activos": [
+    {
+     "nombre": "active",
+     "umbral": 1,
+     "firmantes": [
+      {
+       "direccion": "TGXhNBVok6pFxZsMysU4m2gVafuQbqT18i",
+       "peso": 1
+      }
+     ],
+     "operaciones": [
+      "TriggerSmartContract"
+     ]
+    }
+   ]
+  },
+  "lectura": {
+   "estado": "COMPLETO según TronGrid",
+   "filas_leidas": 5335,
+   "paginas": 27,
+   "tx_tronscan": 5335,
+   "coincide_con_tronscan": true
+  },
+  "n_cambios_de_permisos": 1,
+  "historial": [
+   {
+    "t": "2025-09-28T09:14:36Z",
+    "tx": "9a2b4b2411b6eaac277d64f39deaf3280a4ef054aec164dfaaf04426c3c232c9",
+    "ok": true,
+    "propietario": {
+     "nombre": "owner",
+     "umbral": 1,
+     "firmantes": [
+      {
+       "direccion": "TVa58riLnABbCDMhN9FztAjMsfkQFxxjAM",
+       "peso": 1
+      }
+     ],
+     "operaciones": null
+    },
+    "activos": [
+     {
+      "nombre": "active",
+      "umbral": 1,
+      "firmantes": [
+       {
+        "direccion": "TGXhNBVok6pFxZsMysU4m2gVafuQbqT18i",
+        "peso": 1
+       }
+      ],
+      "operaciones": [
+       "TriggerSmartContract"
+      ]
+     }
+    ]
+   }
+  ],
+  "cierre": "cuadra con el último cambio"
+ },
+ {
+  "direccion": "TKSWb4hqrpGXJy72guufXS9EtoEbYSdss4",
+  "nombre": "Receptor de TEF9ZV controlado por otra clave (Sin etiqueta)",
+  "creada": "2025-06-12",
+  "actual": {
+   "propietario": {
+    "nombre": "owner",
+    "umbral": 1,
+    "firmantes": [
+     {
+      "direccion": "TPSwVVJWGTJ6UF23cZ4nz4BCx55rEunSgk",
+      "peso": 1
+     }
+    ],
+    "operaciones": null
+   },
+   "activos": [
+    {
+     "nombre": "active",
+     "umbral": 1,
+     "firmantes": [
+      {
+       "direccion": "TJYnqYh2WCpaWbqyF95Q21pHahgaLmfoGF",
+       "peso": 1
+      }
+     ],
+     "operaciones": [
+      "TriggerSmartContract"
+     ]
+    }
+   ]
+  },
+  "lectura": {
+   "estado": "COMPLETO según TronGrid",
+   "filas_leidas": 5272,
+   "paginas": 27,
+   "tx_tronscan": 5272,
+   "coincide_con_tronscan": true
+  },
+  "n_cambios_de_permisos": 1,
+  "historial": [
+   {
+    "t": "2025-09-28T09:11:06Z",
+    "tx": "9c23ce5fd09b75aaeb18266893ec1fffbd9f0c508dc2047458d7fa798a61a8ef",
+    "ok": true,
+    "propietario": {
+     "nombre": "owner",
+     "umbral": 1,
+     "firmantes": [
+      {
+       "direccion": "TPSwVVJWGTJ6UF23cZ4nz4BCx55rEunSgk",
+       "peso": 1
+      }
+     ],
+     "operaciones": null
+    },
+    "activos": [
+     {
+      "nombre": "active",
+      "umbral": 1,
+      "firmantes": [
+       {
+        "direccion": "TJYnqYh2WCpaWbqyF95Q21pHahgaLmfoGF",
+        "peso": 1
+       }
+      ],
+      "operaciones": [
+       "TriggerSmartContract"
+      ]
+     }
+    ]
+   }
+  ],
+  "cierre": "cuadra con el último cambio"
+ },
+ {
+  "direccion": "TTpcSY3dUxUmQ1S1TtotKqRsYutE1PyHRV",
+  "nombre": "Receptor de TEF9ZV controlado por otra clave (Sin etiqueta)",
+  "creada": "2025-06-12",
+  "actual": {
+   "propietario": {
+    "nombre": "owner",
+    "umbral": 1,
+    "firmantes": [
+     {
+      "direccion": "TBCXHnmoC5T8MVGrY6LFRULZgyc2mU7rJC",
+      "peso": 1
+     }
+    ],
+    "operaciones": null
+   },
+   "activos": [
+    {
+     "nombre": "active",
+     "umbral": 1,
+     "firmantes": [
+      {
+       "direccion": "TM9FQGZdFM6rsewcUXT1MgR3BKhjVrUCW6",
+       "peso": 1
+      }
+     ],
+     "operaciones": [
+      "TriggerSmartContract"
+     ]
+    }
+   ]
+  },
+  "lectura": {
+   "estado": "COMPLETO según TronGrid",
+   "filas_leidas": 5204,
+   "paginas": 27,
+   "tx_tronscan": 5204,
+   "coincide_con_tronscan": true
+  },
+  "n_cambios_de_permisos": 1,
+  "historial": [
+   {
+    "t": "2025-09-28T09:10:09Z",
+    "tx": "a26939cf075eedc0e72b9230a21acefb5759299323ec85dde6e874296278541a",
+    "ok": true,
+    "propietario": {
+     "nombre": "owner",
+     "umbral": 1,
+     "firmantes": [
+      {
+       "direccion": "TBCXHnmoC5T8MVGrY6LFRULZgyc2mU7rJC",
+       "peso": 1
+      }
+     ],
+     "operaciones": null
+    },
+    "activos": [
+     {
+      "nombre": "active",
+      "umbral": 1,
+      "firmantes": [
+       {
+        "direccion": "TM9FQGZdFM6rsewcUXT1MgR3BKhjVrUCW6",
+        "peso": 1
+       }
+      ],
+      "operaciones": [
+       "TriggerSmartContract"
+      ]
+     }
+    ]
+   }
+  ],
+  "cierre": "cuadra con el último cambio"
+ },
+ {
+  "direccion": "TWPpxPd5PpU5FQk6F6F3HMN5VdufxnVA8K",
+  "nombre": "Receptor de TEF9ZV controlado por otra clave (Sin etiqueta)",
+  "creada": "2026-07-28",
+  "actual": {
+   "propietario": {
+    "nombre": "owner",
+    "umbral": 3,
+    "firmantes": [
+     {
+      "direccion": "TEdzuiQcwJudNR83UomxHJGhsMWYibdM7o",
+      "peso": 1
+     },
+     {
+      "direccion": "TMiDbtDSRMFcae5kZPq1tXc6q9217Tg26d",
+      "peso": 1
+     },
+     {
+      "direccion": "TUcbM2MwtjsNGtY2CVjFpjbW7Nc76XySmD",
+      "peso": 1
+     },
+     {
+      "direccion": "TUdbhFMsZTc14xG2CxkUREp1qWT6TGi1tL",
+      "peso": 1
+     },
+     {
+      "direccion": "TUgSgCQL6pMSy9zByn4sgxqrJa95sZExBG",
+      "peso": 1
+     }
+    ],
+    "operaciones": null
+   },
+   "activos": [
+    {
+     "nombre": "active",
+     "umbral": 3,
+     "firmantes": [
+      {
+       "direccion": "TEdzuiQcwJudNR83UomxHJGhsMWYibdM7o",
+       "peso": 1
+      },
+      {
+       "direccion": "TMiDbtDSRMFcae5kZPq1tXc6q9217Tg26d",
+       "peso": 1
+      },
+      {
+       "direccion": "TUcbM2MwtjsNGtY2CVjFpjbW7Nc76XySmD",
+       "peso": 1
+      },
+      {
+       "direccion": "TUdbhFMsZTc14xG2CxkUREp1qWT6TGi1tL",
+       "peso": 1
+      },
+      {
+       "direccion": "TUgSgCQL6pMSy9zByn4sgxqrJa95sZExBG",
+       "peso": 1
+      }
+     ],
+     "operaciones": [
+      "tipo 0",
+      "Transfer",
+      "TransferAsset",
+      "tipo 3",
+      "VoteWitness",
+      "tipo 5",
+      "tipo 6",
+      "tipo 8",
+      "tipo 9",
+      "tipo 10",
+      "FreezeBalance(v1)",
+      "UnfreezeBalance(v1)",
+      "WithdrawBalance(recompensa)",
+      "tipo 14",
+      "tipo 15",
+      "tipo 16",
+      "tipo 17",
+      "tipo 18",
+      "tipo 19",
+      "tipo 20",
+      "tipo 30",
+      "TriggerSmartContract",
+      "tipo 32",
+      "tipo 33",
+      "tipo 41",
+      "tipo 42",
+      "tipo 43",
+      "tipo 44",
+      "tipo 45",
+      "tipo 48",
+      "tipo 49",
+      "FreezeBalanceV2",
+      "UnfreezeBalanceV2",
+      "WithdrawExpireUnfreeze",
+      "DelegateResource",
+      "UnDelegateResource",
+      "CancelAllUnfreezeV2"
+     ]
+    }
+   ]
+  },
+  "lectura": {
+   "estado": "COMPLETO según TronGrid",
+   "filas_leidas": 256,
+   "paginas": 2,
+   "tx_tronscan": 256,
+   "coincide_con_tronscan": true
+  },
+  "n_cambios_de_permisos": 1,
+  "historial": [
+   {
+    "t": "2026-07-28T06:11:30Z",
+    "tx": "de5089c07dc67d87eb003c1b5db4a7dca886e8284c9ecbb528075890507b56ae",
+    "ok": true,
+    "propietario": {
+     "nombre": "owner",
+     "umbral": 3,
+     "firmantes": [
+      {
+       "direccion": "TEdzuiQcwJudNR83UomxHJGhsMWYibdM7o",
+       "peso": 1
+      },
+      {
+       "direccion": "TMiDbtDSRMFcae5kZPq1tXc6q9217Tg26d",
+       "peso": 1
+      },
+      {
+       "direccion": "TUcbM2MwtjsNGtY2CVjFpjbW7Nc76XySmD",
+       "peso": 1
+      },
+      {
+       "direccion": "TUdbhFMsZTc14xG2CxkUREp1qWT6TGi1tL",
+       "peso": 1
+      },
+      {
+       "direccion": "TUgSgCQL6pMSy9zByn4sgxqrJa95sZExBG",
+       "peso": 1
+      }
+     ],
+     "operaciones": null
+    },
+    "activos": [
+     {
+      "nombre": "active",
+      "umbral": 3,
+      "firmantes": [
+       {
+        "direccion": "TEdzuiQcwJudNR83UomxHJGhsMWYibdM7o",
+        "peso": 1
+       },
+       {
+        "direccion": "TMiDbtDSRMFcae5kZPq1tXc6q9217Tg26d",
+        "peso": 1
+       },
+       {
+        "direccion": "TUcbM2MwtjsNGtY2CVjFpjbW7Nc76XySmD",
+        "peso": 1
+       },
+       {
+        "direccion": "TUdbhFMsZTc14xG2CxkUREp1qWT6TGi1tL",
+        "peso": 1
+       },
+       {
+        "direccion": "TUgSgCQL6pMSy9zByn4sgxqrJa95sZExBG",
+        "peso": 1
+       }
+      ],
+      "operaciones": [
+       "tipo 0",
+       "Transfer",
+       "TransferAsset",
+       "tipo 3",
+       "VoteWitness",
+       "tipo 5",
+       "tipo 6",
+       "tipo 8",
+       "tipo 9",
+       "tipo 10",
+       "FreezeBalance(v1)",
+       "UnfreezeBalance(v1)",
+       "WithdrawBalance(recompensa)",
+       "tipo 14",
+       "tipo 15",
+       "tipo 16",
+       "tipo 17",
+       "tipo 18",
+       "tipo 19",
+       "tipo 20",
+       "tipo 30",
+       "TriggerSmartContract",
+       "tipo 32",
+       "tipo 33",
+       "tipo 41",
+       "tipo 42",
+       "tipo 43",
+       "tipo 44",
+       "tipo 45",
+       "tipo 48",
+       "tipo 49",
+       "FreezeBalanceV2",
+       "UnfreezeBalanceV2",
+       "WithdrawExpireUnfreeze",
+       "DelegateResource",
+       "UnDelegateResource",
+       "CancelAllUnfreezeV2"
+      ]
+     }
+    ]
+   }
+  ],
+  "cierre": "cuadra con el último cambio"
+ },
+ {
+  "direccion": "TQHhDQrcCcQmJezead5MK4tWycxbW2NWkK",
+  "nombre": "Receptor de TEF9ZV controlado por otra clave (Sin etiqueta)",
+  "creada": "2025-06-12",
+  "actual": {
+   "propietario": {
+    "nombre": "owner",
+    "umbral": 1,
+    "firmantes": [
+     {
+      "direccion": "TW8gXYqFT3bqpnHQEJ5DHRvSXz4rpmn7Be",
+      "peso": 1
+     }
+    ],
+    "operaciones": null
+   },
+   "activos": [
+    {
+     "nombre": "active",
+     "umbral": 1,
+     "firmantes": [
+      {
+       "direccion": "TUPF6Ew8zmuNRKNvpquCEM8m1Jnu1VFbVX",
+       "peso": 1
+      }
+     ],
+     "operaciones": [
+      "TriggerSmartContract"
+     ]
+    }
+   ]
+  },
+  "lectura": {
+   "estado": "COMPLETO según TronGrid",
+   "filas_leidas": 5241,
+   "paginas": 27,
+   "tx_tronscan": 5241,
+   "coincide_con_tronscan": true
+  },
+  "n_cambios_de_permisos": 1,
+  "historial": [
+   {
+    "t": "2025-09-28T09:14:06Z",
+    "tx": "768b896809293cd1187fd90c0170a0fd29821924d51063587c563c8c4fb8cfa0",
+    "ok": true,
+    "propietario": {
+     "nombre": "owner",
+     "umbral": 1,
+     "firmantes": [
+      {
+       "direccion": "TW8gXYqFT3bqpnHQEJ5DHRvSXz4rpmn7Be",
+       "peso": 1
+      }
+     ],
+     "operaciones": null
+    },
+    "activos": [
+     {
+      "nombre": "active",
+      "umbral": 1,
+      "firmantes": [
+       {
+        "direccion": "TUPF6Ew8zmuNRKNvpquCEM8m1Jnu1VFbVX",
+        "peso": 1
+       }
+      ],
+      "operaciones": [
+       "TriggerSmartContract"
+      ]
+     }
+    ]
+   }
+  ],
+  "cierre": "cuadra con el último cambio"
+ },
+ {
+  "direccion": "TCxK2F5fitQJn8Z51RZCyEFMiLKjZtkvEz",
+  "nombre": "Receptor de TEF9ZV controlado por otra clave (Sin etiqueta)",
+  "creada": "2026-02-25",
+  "actual": {
+   "propietario": {
+    "nombre": "owner",
+    "umbral": 1,
+    "firmantes": [
+     {
+      "direccion": "TYRmcmmKvjL1SFQbvPQtJU1YcaXEnH8dvT",
+      "peso": 1
+     }
+    ],
+    "operaciones": null
+   },
+   "activos": [
+    {
+     "nombre": "active",
+     "umbral": 3,
+     "firmantes": [
+      {
+       "direccion": "TCxK2F5fitQJn8Z51RZCyEFMiLKjZtkvEz",
+       "peso": 1
+      },
+      {
+       "direccion": "TTAHYGUuTvhPopReVrvPDL2VharymzWweL",
+       "peso": 1
+      },
+      {
+       "direccion": "TYRmcmmKvjL1SFQbvPQtJU1YcaXEnH8dvT",
+       "peso": 1
+      }
+     ],
+     "operaciones": [
+      "tipo 0",
+      "Transfer",
+      "TransferAsset",
+      "tipo 3",
+      "VoteWitness",
+      "tipo 5",
+      "tipo 6",
+      "tipo 8",
+      "tipo 9",
+      "tipo 10",
+      "FreezeBalance(v1)",
+      "UnfreezeBalance(v1)",
+      "WithdrawBalance(recompensa)",
+      "tipo 14",
+      "tipo 15",
+      "tipo 16",
+      "tipo 17",
+      "tipo 18",
+      "tipo 19",
+      "tipo 20",
+      "tipo 30",
+      "TriggerSmartContract",
+      "tipo 32",
+      "tipo 33",
+      "tipo 41",
+      "tipo 42",
+      "tipo 43",
+      "tipo 44",
+      "tipo 45",
+      "tipo 48",
+      "tipo 49",
+      "FreezeBalanceV2",
+      "UnfreezeBalanceV2",
+      "WithdrawExpireUnfreeze",
+      "DelegateResource",
+      "UnDelegateResource",
+      "CancelAllUnfreezeV2"
+     ]
+    }
+   ]
+  },
+  "lectura": {
+   "estado": "COMPLETO según TronGrid",
+   "filas_leidas": 16,
+   "paginas": 1,
+   "tx_tronscan": 16,
+   "coincide_con_tronscan": true
+  },
+  "n_cambios_de_permisos": 1,
+  "historial": [
+   {
+    "t": "2026-02-27T03:31:30Z",
+    "tx": "29b32898f65d10dddb67baab42aac6bf20f2d9a33d573c8eaa67dcacc2fed211",
+    "ok": true,
+    "propietario": {
+     "nombre": "owner",
+     "umbral": 1,
+     "firmantes": [
+      {
+       "direccion": "TYRmcmmKvjL1SFQbvPQtJU1YcaXEnH8dvT",
+       "peso": 1
+      }
+     ],
+     "operaciones": null
+    },
+    "activos": [
+     {
+      "nombre": "active",
+      "umbral": 3,
+      "firmantes": [
+       {
+        "direccion": "TCxK2F5fitQJn8Z51RZCyEFMiLKjZtkvEz",
+        "peso": 1
+       },
+       {
+        "direccion": "TTAHYGUuTvhPopReVrvPDL2VharymzWweL",
+        "peso": 1
+       },
+       {
+        "direccion": "TYRmcmmKvjL1SFQbvPQtJU1YcaXEnH8dvT",
+        "peso": 1
+       }
+      ],
+      "operaciones": [
+       "tipo 0",
+       "Transfer",
+       "TransferAsset",
+       "tipo 3",
+       "VoteWitness",
+       "tipo 5",
+       "tipo 6",
+       "tipo 8",
+       "tipo 9",
+       "tipo 10",
+       "FreezeBalance(v1)",
+       "UnfreezeBalance(v1)",
+       "WithdrawBalance(recompensa)",
+       "tipo 14",
+       "tipo 15",
+       "tipo 16",
+       "tipo 17",
+       "tipo 18",
+       "tipo 19",
+       "tipo 20",
+       "tipo 30",
+       "TriggerSmartContract",
+       "tipo 32",
+       "tipo 33",
+       "tipo 41",
+       "tipo 42",
+       "tipo 43",
+       "tipo 44",
+       "tipo 45",
+       "tipo 48",
+       "tipo 49",
+       "FreezeBalanceV2",
+       "UnfreezeBalanceV2",
+       "WithdrawExpireUnfreeze",
+       "DelegateResource",
+       "UnDelegateResource",
+       "CancelAllUnfreezeV2"
+      ]
+     }
+    ]
+   }
+  ],
+  "cierre": "cuadra con el último cambio"
+ },
+ {
+  "direccion": "TBgGFBnqZuDeGkf4nyiaEo7mj3NodxYJBL",
+  "nombre": "Receptor de TEF9ZV controlado por otra clave (Sin etiqueta)",
+  "creada": "2026-09-09",
+  "actual": {
+   "propietario": {
+    "nombre": "owner",
+    "umbral": 3,
+    "firmantes": [
+     {
+      "direccion": "TAbcZfVgqe8x49LN4i2iFudcXBhab5FS7h",
+      "peso": 1
+     },
+     {
+      "direccion": "TJn68C67mGZJheFn4PrQm6HpFA9YqjaH43",
+      "peso": 1
+     },
+     {
+      "direccion": "TKay5VDu4o2ZMj5AQWj86K3i8CrFwM1rQr",
+      "peso": 1
+     },
+     {
+      "direccion": "TM8tzsvtj4Mfz23h37dtwztezbsjMV5fGQ",
+      "peso": 1
+     },
+     {
+      "direccion": "TVdR36PXH415bwXnhKuYRnNV8TYJbJktTW",
+      "peso": 1
+     }
+    ],
+    "operaciones": null
+   },
+   "activos": [
+    {
+     "nombre": "active",
+     "umbral": 3,
+     "firmantes": [
+      {
+       "direccion": "TAbcZfVgqe8x49LN4i2iFudcXBhab5FS7h",
+       "peso": 1
+      },
+      {
+       "direccion": "TJn68C67mGZJheFn4PrQm6HpFA9YqjaH43",
+       "peso": 1
+      },
+      {
+       "direccion": "TKay5VDu4o2ZMj5AQWj86K3i8CrFwM1rQr",
+       "peso": 1
+      },
+      {
+       "direccion": "TM8tzsvtj4Mfz23h37dtwztezbsjMV5fGQ",
+       "peso": 1
+      },
+      {
+       "direccion": "TVdR36PXH415bwXnhKuYRnNV8TYJbJktTW",
+       "peso": 1
+      }
+     ],
+     "operaciones": [
+      "tipo 0",
+      "Transfer",
+      "TransferAsset",
+      "tipo 3",
+      "VoteWitness",
+      "tipo 5",
+      "tipo 6",
+      "tipo 8",
+      "tipo 9",
+      "tipo 10",
+      "FreezeBalance(v1)",
+      "UnfreezeBalance(v1)",
+      "WithdrawBalance(recompensa)",
+      "tipo 14",
+      "tipo 15",
+      "tipo 16",
+      "tipo 17",
+      "tipo 18",
+      "tipo 19",
+      "tipo 20",
+      "tipo 30",
+      "TriggerSmartContract",
+      "tipo 32",
+      "tipo 33",
+      "tipo 41",
+      "tipo 42",
+      "tipo 43",
+      "tipo 44",
+      "tipo 45",
+      "tipo 48",
+      "tipo 49",
+      "FreezeBalanceV2",
+      "UnfreezeBalanceV2",
+      "WithdrawExpireUnfreeze",
+      "DelegateResource",
+      "UnDelegateResource",
+      "CancelAllUnfreezeV2"
+     ]
+    }
+   ]
+  },
+  "lectura": {
+   "estado": "COMPLETO según TronGrid",
+   "filas_leidas": 44,
+   "paginas": 1,
+   "tx_tronscan": 44,
+   "coincide_con_tronscan": true
+  },
+  "n_cambios_de_permisos": 2,
+  "historial": [
+   {
+    "t": "2026-09-09T09:24:18Z",
+    "tx": "f78393c9d0da13385fab97049d004640c31a806c5eb7efd16215b9973f73014e",
+    "ok": true,
+    "propietario": {
+     "nombre": "owner",
+     "umbral": 3,
+     "firmantes": [
+      {
+       "direccion": "TCkiSseNXfqJ3CcUGFH1q74oSHevigWSrw",
+       "peso": 1
+      },
+      {
+       "direccion": "TJn68C67mGZJheFn4PrQm6HpFA9YqjaH43",
+       "peso": 1
+      },
+      {
+       "direccion": "TKay5VDu4o2ZMj5AQWj86K3i8CrFwM1rQr",
+       "peso": 1
+      },
+      {
+       "direccion": "TM8tzsvtj4Mfz23h37dtwztezbsjMV5fGQ",
+       "peso": 1
+      },
+      {
+       "direccion": "TVdR36PXH415bwXnhKuYRnNV8TYJbJktTW",
+       "peso": 1
+      }
+     ],
+     "operaciones": null
+    },
+    "activos": [
+     {
+      "nombre": "active",
+      "umbral": 3,
+      "firmantes": [
+       {
+        "direccion": "TCkiSseNXfqJ3CcUGFH1q74oSHevigWSrw",
+        "peso": 1
+       },
+       {
+        "direccion": "TJn68C67mGZJheFn4PrQm6HpFA9YqjaH43",
+        "peso": 1
+       },
+       {
+        "direccion": "TKay5VDu4o2ZMj5AQWj86K3i8CrFwM1rQr",
+        "peso": 1
+       },
+       {
+        "direccion": "TM8tzsvtj4Mfz23h37dtwztezbsjMV5fGQ",
+        "peso": 1
+       },
+       {
+        "direccion": "TVdR36PXH415bwXnhKuYRnNV8TYJbJktTW",
+        "peso": 1
+       }
+      ],
+      "operaciones": [
+       "tipo 0",
+       "Transfer",
+       "TransferAsset",
+       "tipo 3",
+       "VoteWitness",
+       "tipo 5",
+       "tipo 6",
+       "tipo 8",
+       "tipo 9",
+       "tipo 10",
+       "FreezeBalance(v1)",
+       "UnfreezeBalance(v1)",
+       "WithdrawBalance(recompensa)",
+       "tipo 14",
+       "tipo 15",
+       "tipo 16",
+       "tipo 17",
+       "tipo 18",
+       "tipo 19",
+       "tipo 20",
+       "tipo 30",
+       "TriggerSmartContract",
+       "tipo 32",
+       "tipo 33",
+       "tipo 41",
+       "tipo 42",
+       "tipo 43",
+       "tipo 44",
+       "tipo 45",
+       "tipo 48",
+       "tipo 49",
+       "FreezeBalanceV2",
+       "UnfreezeBalanceV2",
+       "WithdrawExpireUnfreeze",
+       "DelegateResource",
+       "UnDelegateResource",
+       "CancelAllUnfreezeV2"
+      ]
+     }
+    ]
+   },
+   {
+    "t": "2026-09-13T09:42:27Z",
+    "tx": "3ea861c4a4d2ad644b57e354a1d40c9223acad04ec4478d9300bbd5b0b1f3635",
+    "ok": true,
+    "propietario": {
+     "nombre": "owner",
+     "umbral": 3,
+     "firmantes": [
+      {
+       "direccion": "TAbcZfVgqe8x49LN4i2iFudcXBhab5FS7h",
+       "peso": 1
+      },
+      {
+       "direccion": "TJn68C67mGZJheFn4PrQm6HpFA9YqjaH43",
+       "peso": 1
+      },
+      {
+       "direccion": "TKay5VDu4o2ZMj5AQWj86K3i8CrFwM1rQr",
+       "peso": 1
+      },
+      {
+       "direccion": "TM8tzsvtj4Mfz23h37dtwztezbsjMV5fGQ",
+       "peso": 1
+      },
+      {
+       "direccion": "TVdR36PXH415bwXnhKuYRnNV8TYJbJktTW",
+       "peso": 1
+      }
+     ],
+     "operaciones": null
+    },
+    "activos": [
+     {
+      "nombre": "active",
+      "umbral": 3,
+      "firmantes": [
+       {
+        "direccion": "TAbcZfVgqe8x49LN4i2iFudcXBhab5FS7h",
+        "peso": 1
+       },
+       {
+        "direccion": "TJn68C67mGZJheFn4PrQm6HpFA9YqjaH43",
+        "peso": 1
+       },
+       {
+        "direccion": "TKay5VDu4o2ZMj5AQWj86K3i8CrFwM1rQr",
+        "peso": 1
+       },
+       {
+        "direccion": "TM8tzsvtj4Mfz23h37dtwztezbsjMV5fGQ",
+        "peso": 1
+       },
+       {
+        "direccion": "TVdR36PXH415bwXnhKuYRnNV8TYJbJktTW",
+        "peso": 1
+       }
+      ],
+      "operaciones": [
+       "tipo 0",
+       "Transfer",
+       "TransferAsset",
+       "tipo 3",
+       "VoteWitness",
+       "tipo 5",
+       "tipo 6",
+       "tipo 8",
+       "tipo 9",
+       "tipo 10",
+       "FreezeBalance(v1)",
+       "UnfreezeBalance(v1)",
+       "WithdrawBalance(recompensa)",
+       "tipo 14",
+       "tipo 15",
+       "tipo 16",
+       "tipo 17",
+       "tipo 18",
+       "tipo 19",
+       "tipo 20",
+       "tipo 30",
+       "TriggerSmartContract",
+       "tipo 32",
+       "tipo 33",
+       "tipo 41",
+       "tipo 42",
+       "tipo 43",
+       "tipo 44",
+       "tipo 45",
+       "tipo 48",
+       "tipo 49",
+       "FreezeBalanceV2",
+       "UnfreezeBalanceV2",
+       "WithdrawExpireUnfreeze",
+       "DelegateResource",
+       "UnDelegateResource",
+       "CancelAllUnfreezeV2"
+      ]
+     }
+    ]
+   }
+  ],
+  "cierre": "cuadra con el último cambio"
+ },
+ {
+  "direccion": "TM3sTVyahiGWYktKg8G6miHpTzRurKDt7b",
+  "nombre": "Clave/cuenta relacionada",
+  "creada": "2021-11-08",
+  "actual": {
+   "propietario": {
+    "nombre": "owner",
+    "umbral": 1,
+    "firmantes": [
+     {
+      "direccion": "TM3sTVyahiGWYktKg8G6miHpTzRurKDt7b",
+      "peso": 1
+     }
+    ],
+    "operaciones": null
+   },
+   "activos": [
+    {
+     "nombre": "active",
+     "umbral": 1,
+     "firmantes": [
+      {
+       "direccion": "TM3sTVyahiGWYktKg8G6miHpTzRurKDt7b",
+       "peso": 1
+      }
+     ],
+     "operaciones": [
+      "tipo 0",
+      "Transfer",
+      "TransferAsset",
+      "tipo 3",
+      "VoteWitness",
+      "tipo 5",
+      "tipo 6",
+      "tipo 8",
+      "tipo 9",
+      "tipo 10",
+      "FreezeBalance(v1)",
+      "UnfreezeBalance(v1)",
+      "WithdrawBalance(recompensa)",
+      "tipo 14",
+      "tipo 15",
+      "tipo 16",
+      "tipo 17",
+      "tipo 18",
+      "tipo 19",
+      "tipo 20",
+      "tipo 30",
+      "TriggerSmartContract",
+      "tipo 32",
+      "tipo 33",
+      "tipo 41",
+      "tipo 42",
+      "tipo 43",
+      "tipo 44",
+      "tipo 45",
+      "tipo 48",
+      "tipo 49"
+     ]
+    }
+   ]
+  },
+  "lectura": {
+   "estado": "COMPLETO según TronGrid",
+   "filas_leidas": 930,
+   "paginas": 5,
+   "tx_tronscan": 930,
+   "coincide_con_tronscan": true
+  },
+  "n_cambios_de_permisos": 0,
+  "historial": [],
+  "cierre": "sin cambios: permisos por defecto (solo ella misma)"
+ },
+ {
+  "direccion": "TCXrf8SwGjcmQYY1FcFnV3LUXSQpqod3bi",
+  "nombre": "Clave/cuenta relacionada",
+  "creada": "2023-02-10",
+  "actual": {
+   "propietario": {
+    "nombre": "owner",
+    "umbral": 1,
+    "firmantes": [
+     {
+      "direccion": "TCXrf8SwGjcmQYY1FcFnV3LUXSQpqod3bi",
+      "peso": 1
+     }
+    ],
+    "operaciones": null
+   },
+   "activos": [
+    {
+     "nombre": "active",
+     "umbral": 1,
+     "firmantes": [
+      {
+       "direccion": "TCXrf8SwGjcmQYY1FcFnV3LUXSQpqod3bi",
+       "peso": 1
+      },
+      {
+       "direccion": "TDMZVtpYLEfeTuFxXKNLCZF3vMScMNPVE1",
+       "peso": 1
+      }
+     ],
+     "operaciones": [
+      "tipo 30",
+      "TriggerSmartContract",
+      "tipo 33",
+      "tipo 45",
+      "tipo 48"
+     ]
+    }
+   ]
+  },
+  "lectura": {
+   "estado": "COMPLETO según TronGrid",
+   "filas_leidas": 2153,
+   "paginas": 11,
+   "tx_tronscan": 2153,
+   "coincide_con_tronscan": true
+  },
+  "n_cambios_de_permisos": 1,
+  "historial": [
+   {
+    "t": "2025-12-02T04:41:42Z",
+    "tx": "bfece4763a211f398289ef88974b5da860f595d1f1893a2207028507eacec0e0",
+    "ok": true,
+    "propietario": {
+     "nombre": "owner",
+     "umbral": 1,
+     "firmantes": [
+      {
+       "direccion": "TCXrf8SwGjcmQYY1FcFnV3LUXSQpqod3bi",
+       "peso": 1
+      }
+     ],
+     "operaciones": null
+    },
+    "activos": [
+     {
+      "nombre": "active",
+      "umbral": 1,
+      "firmantes": [
+       {
+        "direccion": "TCXrf8SwGjcmQYY1FcFnV3LUXSQpqod3bi",
+        "peso": 1
+       },
+       {
+        "direccion": "TDMZVtpYLEfeTuFxXKNLCZF3vMScMNPVE1",
+        "peso": 1
+       }
+      ],
+      "operaciones": [
+       "tipo 30",
+       "TriggerSmartContract",
+       "tipo 33",
+       "tipo 45",
+       "tipo 48"
+      ]
+     }
+    ]
+   }
+  ],
+  "cierre": "cuadra con el último cambio"
+ },
+ {
+  "direccion": "TDMZVtpYLEfeTuFxXKNLCZF3vMScMNPVE1",
+  "nombre": "Clave/cuenta relacionada",
+  "creada": "2025-12-02",
+  "actual": {
+   "propietario": {
+    "nombre": "owner",
+    "umbral": 1,
+    "firmantes": [
+     {
+      "direccion": "TDMZVtpYLEfeTuFxXKNLCZF3vMScMNPVE1",
+      "peso": 1
+     }
+    ],
+    "operaciones": null
+   },
+   "activos": [
+    {
+     "nombre": "active",
+     "umbral": 1,
+     "firmantes": [
+      {
+       "direccion": "TDMZVtpYLEfeTuFxXKNLCZF3vMScMNPVE1",
+       "peso": 1
+      }
+     ],
+     "operaciones": [
+      "tipo 0",
+      "Transfer",
+      "TransferAsset",
+      "tipo 3",
+      "VoteWitness",
+      "tipo 5",
+      "tipo 6",
+      "tipo 8",
+      "tipo 9",
+      "tipo 10",
+      "FreezeBalance(v1)",
+      "UnfreezeBalance(v1)",
+      "WithdrawBalance(recompensa)",
+      "tipo 14",
+      "tipo 15",
+      "tipo 16",
+      "tipo 17",
+      "tipo 18",
+      "tipo 19",
+      "tipo 20",
+      "tipo 30",
+      "TriggerSmartContract",
+      "tipo 32",
+      "tipo 33",
+      "tipo 41",
+      "tipo 42",
+      "tipo 43",
+      "tipo 44",
+      "tipo 45",
+      "tipo 48",
+      "tipo 49",
+      "FreezeBalanceV2",
+      "UnfreezeBalanceV2",
+      "WithdrawExpireUnfreeze",
+      "DelegateResource",
+      "UnDelegateResource",
+      "CancelAllUnfreezeV2"
+     ]
+    }
+   ]
+  },
+  "lectura": {
+   "estado": "COMPLETO según TronGrid",
+   "filas_leidas": 2,
+   "paginas": 1,
+   "tx_tronscan": 2,
+   "coincide_con_tronscan": true
+  },
+  "n_cambios_de_permisos": 0,
+  "historial": [],
+  "cierre": "sin cambios: permisos por defecto (solo ella misma)"
+ },
+ {
+  "direccion": "TUgSgCQL6pMSy9zByn4sgxqrJa95sZExBG",
+  "nombre": "Clave/cuenta relacionada",
+  "creada": "2022-08-21",
+  "actual": {
+   "propietario": {
+    "nombre": "owner",
+    "umbral": 1,
+    "firmantes": [
+     {
+      "direccion": "TUgSgCQL6pMSy9zByn4sgxqrJa95sZExBG",
+      "peso": 1
+     }
+    ],
+    "operaciones": null
+   },
+   "activos": [
+    {
+     "nombre": "active",
+     "umbral": 1,
+     "firmantes": [
+      {
+       "direccion": "TUgSgCQL6pMSy9zByn4sgxqrJa95sZExBG",
+       "peso": 1
+      }
+     ],
+     "operaciones": [
+      "tipo 0",
+      "Transfer",
+      "TransferAsset",
+      "tipo 3",
+      "VoteWitness",
+      "tipo 5",
+      "tipo 6",
+      "tipo 8",
+      "tipo 9",
+      "tipo 10",
+      "FreezeBalance(v1)",
+      "UnfreezeBalance(v1)",
+      "WithdrawBalance(recompensa)",
+      "tipo 14",
+      "tipo 15",
+      "tipo 16",
+      "tipo 17",
+      "tipo 18",
+      "tipo 19",
+      "tipo 20",
+      "tipo 30",
+      "TriggerSmartContract",
+      "tipo 32",
+      "tipo 33",
+      "tipo 41",
+      "tipo 42",
+      "tipo 43",
+      "tipo 44",
+      "tipo 45",
+      "tipo 48",
+      "tipo 49"
+     ]
+    }
+   ]
+  },
+  "lectura": {
+   "estado": "COMPLETO según TronGrid",
+   "filas_leidas": 1088,
+   "paginas": 6,
+   "tx_tronscan": 1088,
+   "coincide_con_tronscan": true
+  },
+  "n_cambios_de_permisos": 0,
+  "historial": [],
+  "cierre": "sin cambios: permisos por defecto (solo ella misma)"
+ }
+]

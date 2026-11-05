@@ -1,0 +1,113 @@
+{
+ "Contrato auxiliar (TLLEN)": {
+  "direccion": "TLLENiMpZvGZD2C1ZQ2FzBinrYevmGco6p",
+  "nombre_en_cadena": null,
+  "creador": "TGKJKQY9Bh5yVjW1WL5NbfmcGXD2z9Jj4q",
+  "tiene_codigo": false,
+  "bytes_codigo": 0,
+  "huella_codigo_sha256": null,
+  "funciones_abi": [],
+  "creacion": null,
+  "consultas": {
+   "owner()": {
+    "resultado": "TT2T17KZhoDu47i2E4FWxfG79zdkEWkU9N",
+    "hex": "000000000000000000000000bb1712d44d09feee51d071219b4c5d9792b76b29",
+    "estado": "ok"
+   },
+   "name()": {
+    "resultado": null,
+    "hex": null,
+    "estado": "ok"
+   },
+   "symbol()": {
+    "resultado": null,
+    "hex": null,
+    "estado": "ok"
+   },
+   "decimals()": {
+    "resultado": null,
+    "hex": null,
+    "estado": "ok"
+   },
+   "authority()": {
+    "resultado": "T9yD14Nj9j7xAB4dbGeiX9h8unkKHxuWwb",
+    "hex": "0000000000000000000000000000000000000000000000000000000000000000",
+    "estado": "ok"
+   },
+   "cache()": {
+    "resultado": "TM8Zpv6badmQnw6uo3jLhnRtYD5zoNY4Cj",
+    "hex": "0000000000000000000000007a6e82df1c6569baff0fbb712ec55580c96b359c",
+    "estado": "ok"
+   },
+   "totalSupply()": {
+    "resultado": null,
+    "hex": null,
+    "estado": "ok"
+   }
+  }
+ },
+ "Contrato grande (TNUC9)": {
+  "direccion": "TNUC9Qb1rRpS5CbWLmNMxXBjyFoydXjWFR",
+  "nombre_en_cadena": "WTRX",
+  "creador": "TG6jUMfwpwR9QNFsSwCGtLaV2TR2gV8yru",
+  "tiene_codigo": true,
+  "bytes_codigo": 2715,
+  "huella_codigo_sha256": "829f8060fe55823ff74313764e249d7a33961d0248d1e9b4961bf0223396443c",
+  "funciones_abi": [
+   "name",
+   "approve",
+   "totalSupply",
+   "transferFrom",
+   "withdraw",
+   "decimals",
+   "balanceOf",
+   "symbol",
+   "transfer",
+   "deposit",
+   "approve",
+   "allowance",
+   "Approval",
+   "Transfer",
+   "Deposit",
+   "Withdrawal"
+  ],
+  "creacion": null,
+  "consultas": {
+   "owner()": {
+    "resultado": null,
+    "hex": null,
+    "estado": "ok"
+   },
+   "name()": {
+    "resultado": "Wrapped TRX",
+    "hex": "0000000000000000000000000000000000000000000000000000000000000020000000000000000000000000000000000000000000000000000000000000000b5772617070656420545258000000000000000000000000000000000000000000",
+    "estado": "ok"
+   },
+   "symbol()": {
+    "resultado": "WTRX",
+    "hex": "000000000000000000000000000000000000000000000000000000000000002000000000000000000000000000000000000000000000000000000000000000045754525800000000000000000000000000000000000000000000000000000000",
+    "estado": "ok"
+   },
+   "decimals()": {
+    "resultado": "6",
+    "hex": "0000000000000000000000000000000000000000000000000000000000000006",
+    "estado": "ok"
+   },
+   "authority()": {
+    "resultado": null,
+    "hex": null,
+    "estado": "ok"
+   },
+   "cache()": {
+    "resultado": null,
+    "hex": null,
+    "estado": "ok"
+   },
+   "totalSupply()": {
+    "resultado": "cb24f40fc9b8e",
+    "hex": "000000000000000000000000000000000000000000000000000cb24f40fc9b8e",
+    "estado": "ok"
+   }
+  }
+ }
+}

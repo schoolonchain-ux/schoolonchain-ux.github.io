@@ -1,0 +1,549 @@
+{
+ "cuentas_del_caso": [
+  {
+   "nombre": "Vaneck",
+   "direccion": "TCGVFGDd62LSrfZEaz3M3fYifWWdSDHRL8",
+   "clave_propietaria": [
+    "TCGVFGDd62LSrfZEaz3M3fYifWWdSDHRL8"
+   ],
+   "umbral": 1,
+   "activos": [
+    {
+     "nombre": "active",
+     "umbral": 1,
+     "claves": [
+      "TCGVFGDd62LSrfZEaz3M3fYifWWdSDHRL8"
+     ]
+    }
+   ]
+  },
+  {
+   "nombre": "Segunda cuenta (TT2T17)",
+   "direccion": "TT2T17KZhoDu47i2E4FWxfG79zdkEWkU9N",
+   "clave_propietaria": [
+    "TT2T17KZhoDu47i2E4FWxfG79zdkEWkU9N"
+   ],
+   "umbral": 1,
+   "activos": [
+    {
+     "nombre": "active",
+     "umbral": 1,
+     "claves": [
+      "TT2T17KZhoDu47i2E4FWxfG79zdkEWkU9N"
+     ]
+    }
+   ]
+  },
+  {
+   "nombre": "Financiadora 1 (TPyjyZ)",
+   "direccion": "TPyjyZfsYaXStgz2NmAraF1uZcMtkgNan5",
+   "clave_propietaria": [
+    "TPyjyZfsYaXStgz2NmAraF1uZcMtkgNan5"
+   ],
+   "umbral": 1,
+   "activos": [
+    {
+     "nombre": "active",
+     "umbral": 1,
+     "claves": [
+      "TPyjyZfsYaXStgz2NmAraF1uZcMtkgNan5"
+     ]
+    }
+   ]
+  },
+  {
+   "nombre": "Financiadora 2 (TUTtLt)",
+   "direccion": "TUTtLtGjXWqkTAow7jj7oMhTGLe9XB9YMA",
+   "clave_propietaria": [
+    "TUTtLtGjXWqkTAow7jj7oMhTGLe9XB9YMA"
+   ],
+   "umbral": 1,
+   "activos": [
+    {
+     "nombre": "active",
+     "umbral": 1,
+     "claves": [
+      "TUTtLtGjXWqkTAow7jj7oMhTGLe9XB9YMA"
+     ]
+    }
+   ]
+  },
+  {
+   "nombre": "Cuenta de energia (TEF9ZV)",
+   "direccion": "TEF9ZVUxhmGGffvkf59e2vdLfAG1QCMb7B",
+   "clave_propietaria": [
+    "TEF9ZVUxhmGGffvkf59e2vdLfAG1QCMb7B"
+   ],
+   "umbral": 1,
+   "activos": [
+    {
+     "nombre": "active",
+     "umbral": 1,
+     "claves": [
+      "TEF9ZVUxhmGGffvkf59e2vdLfAG1QCMb7B"
+     ]
+    },
+    {
+     "nombre": "Resource Delegation I",
+     "umbral": 3,
+     "claves": [
+      "TA5VbP6ijuFmYcjoCcUN3zALx8YjX8bKXB",
+      "TVVnUBMbj56ceFFE3RDqxmRRAPMjffAfv1",
+      "TEpH4V3GWLMS631SjxZzpZmatZSKrnzUSj",
+      "TU14wz7Qka2TTHVXBwVeY8bPjoj1STV4Yt"
+     ]
+    }
+   ]
+  },
+  {
+   "nombre": "Proveedora TRON Inc (TWhDfwC8)",
+   "direccion": "TWhDfwC8QE6pQyiYy248dNor3uphPEw5M2",
+   "clave_propietaria": [
+    "TWhDfwC8QE6pQyiYy248dNor3uphPEw5M2"
+   ],
+   "umbral": 1,
+   "activos": [
+    {
+     "nombre": "active",
+     "umbral": 1,
+     "claves": [
+      "TWhDfwC8QE6pQyiYy248dNor3uphPEw5M2"
+     ]
+    }
+   ]
+  },
+  {
+   "nombre": "Pareja de la proveedora (TSzSgxRi)",
+   "direccion": "TSzSgxRisS5VBXXDcAezTDvnPGi9CbsXvJ",
+   "clave_propietaria": [
+    "TShAfXbh4kUzmkJ9Ckdo5J6ujWi1M5NLE2",
+    "TUgSgCQL6pMSy9zByn4sgxqrJa95sZExBG",
+    "TVnGY8vuJhxDX5b7mTpwaJ9vNDtmjdBxMm",
+    "TV7WmJXhYyd4rqRjbWg62eX8e5DoPbyiA3",
+    "TDAuHDXYNTrtY1k6GNibek44yHEqyQfVkC"
+   ],
+   "umbral": 3,
+   "activos": [
+    {
+     "nombre": "active",
+     "umbral": 3,
+     "claves": [
+      "TShAfXbh4kUzmkJ9Ckdo5J6ujWi1M5NLE2",
+      "TUgSgCQL6pMSy9zByn4sgxqrJa95sZExBG",
+      "TVnGY8vuJhxDX5b7mTpwaJ9vNDtmjdBxMm",
+      "TV7WmJXhYyd4rqRjbWg62eX8e5DoPbyiA3",
+      "TDAuHDXYNTrtY1k6GNibek44yHEqyQfVkC"
+     ]
+    }
+   ]
+  },
+  {
+   "nombre": "Recolectora (TFSd14UQ)",
+   "direccion": "TFSd14UQUp6HPamdMGJsWBxfWKMrLYxRmp",
+   "clave_propietaria": [
+    "TFSd14UQUp6HPamdMGJsWBxfWKMrLYxRmp"
+   ],
+   "umbral": 1,
+   "activos": [
+    {
+     "nombre": "active",
+     "umbral": 1,
+     "claves": [
+      "TFSd14UQUp6HPamdMGJsWBxfWKMrLYxRmp"
+     ]
+    }
+   ]
+  },
+  {
+   "nombre": "HTX 4",
+   "direccion": "TFTWNgDBkQ5wQoP8RXpRznnHvAVV8x5jLu",
+   "clave_propietaria": [
+    "TFTWNgDBkQ5wQoP8RXpRznnHvAVV8x5jLu"
+   ],
+   "umbral": 1,
+   "activos": [
+    {
+     "nombre": "active",
+     "umbral": 1,
+     "claves": [
+      "TFTWNgDBkQ5wQoP8RXpRznnHvAVV8x5jLu"
+     ]
+    }
+   ]
+  },
+  {
+   "nombre": "HTX-Cold 6",
+   "direccion": "TAuUCiH4JVNBZmDnEDZkXEUXDARdGpXTmX",
+   "clave_propietaria": [
+    "TAuUCiH4JVNBZmDnEDZkXEUXDARdGpXTmX"
+   ],
+   "umbral": 1,
+   "activos": [
+    {
+     "nombre": "active",
+     "umbral": 1,
+     "claves": [
+      "TAuUCiH4JVNBZmDnEDZkXEUXDARdGpXTmX"
+     ]
+    }
+   ]
+  },
+  {
+   "nombre": "HTX 3",
+   "direccion": "TU1ZA8T2g8PvLK8BfM7N94xpmSSpyfxZoK",
+   "clave_propietaria": [
+    "TU1ZA8T2g8PvLK8BfM7N94xpmSSpyfxZoK"
+   ],
+   "umbral": 1,
+   "activos": [
+    {
+     "nombre": "active",
+     "umbral": 1,
+     "claves": [
+      "TU1ZA8T2g8PvLK8BfM7N94xpmSSpyfxZoK"
+     ]
+    }
+   ]
+  },
+  {
+   "nombre": "TYL7z7VS (2022)",
+   "direccion": "TYL7z7VSVRShLoJ6YRQMA4t9pSECt9ZLmz",
+   "clave_propietaria": [
+    "TYL7z7VSVRShLoJ6YRQMA4t9pSECt9ZLmz"
+   ],
+   "umbral": 1,
+   "activos": [
+    {
+     "nombre": "active",
+     "umbral": 1,
+     "claves": [
+      "TYL7z7VSVRShLoJ6YRQMA4t9pSECt9ZLmz"
+     ]
+    }
+   ]
+  },
+  {
+   "nombre": "Multifirma 2 USDD",
+   "direccion": "TPcnRbpuB89eKKkfH2E7iJooAqeEZPpdGb",
+   "clave_propietaria": [
+    "TPcnRbpuB89eKKkfH2E7iJooAqeEZPpdGb"
+   ],
+   "umbral": 1,
+   "activos": [
+    {
+     "nombre": "active",
+     "umbral": 1,
+     "claves": [
+      "TPcnRbpuB89eKKkfH2E7iJooAqeEZPpdGb"
+     ]
+    }
+   ]
+  },
+  {
+   "nombre": "Contrato auxiliar (TLLEN)",
+   "direccion": "TLLENiMpZvGZD2C1ZQ2FzBinrYevmGco6p",
+   "clave_propietaria": [],
+   "umbral": null,
+   "activos": []
+  },
+  {
+   "nombre": "Contrato grande (TNUC9)",
+   "direccion": "TNUC9Qb1rRpS5CbWLmNMxXBjyFoydXjWFR",
+   "clave_propietaria": [],
+   "umbral": null,
+   "activos": []
+  },
+  {
+   "nombre": "Billetera puente D",
+   "direccion": "TQRBxpS5V1KZW8g3oJ1YNLqtj1j733Mc33",
+   "clave_propietaria": [
+    "TQRBxpS5V1KZW8g3oJ1YNLqtj1j733Mc33"
+   ],
+   "umbral": 1,
+   "activos": [
+    {
+     "nombre": "active",
+     "umbral": 1,
+     "claves": [
+      "TQRBxpS5V1KZW8g3oJ1YNLqtj1j733Mc33"
+     ]
+    }
+   ]
+  },
+  {
+   "nombre": "Binance-Hot 12",
+   "direccion": "TJTKCzQpsG19CSMYF9TPtxz6wSHPSyeKfa",
+   "clave_propietaria": [
+    "TJTKCzQpsG19CSMYF9TPtxz6wSHPSyeKfa"
+   ],
+   "umbral": 1,
+   "activos": [
+    {
+     "nombre": "active",
+     "umbral": 1,
+     "claves": [
+      "TJTKCzQpsG19CSMYF9TPtxz6wSHPSyeKfa"
+     ]
+    }
+   ]
+  },
+  {
+   "nombre": "Receptor sin identificar (TU3rMHyW)",
+   "direccion": "TU3rMHyWHzeEJBReWLzHko728hbz6MtfNg",
+   "clave_propietaria": [
+    "TM3sTVyahiGWYktKg8G6miHpTzRurKDt7b"
+   ],
+   "umbral": 1,
+   "activos": [
+    {
+     "nombre": "active",
+     "umbral": 1,
+     "claves": [
+      "TCXrf8SwGjcmQYY1FcFnV3LUXSQpqod3bi"
+     ]
+    }
+   ]
+  },
+  {
+   "nombre": "GasFree",
+   "direccion": "TFNX7TKYCm1kUYDECjkrogBwYZvt69XQNy",
+   "clave_propietaria": [
+    "TUfohTaS6nh2pAaupqdEHxnQzRV8BFkZER"
+   ],
+   "umbral": 1,
+   "activos": [
+    {
+     "nombre": "active",
+     "umbral": 1,
+     "claves": [
+      "TUfohTaS6nh2pAaupqdEHxnQzRV8BFkZER"
+     ]
+    }
+   ]
+  },
+  {
+   "nombre": "Bybit",
+   "direccion": "TU4vEruvZwLLkSfV9bNw12EJTPvNr7Pvaa",
+   "clave_propietaria": [
+    "TU4vEruvZwLLkSfV9bNw12EJTPvNr7Pvaa"
+   ],
+   "umbral": 1,
+   "activos": [
+    {
+     "nombre": "active",
+     "umbral": 1,
+     "claves": [
+      "TU4vEruvZwLLkSfV9bNw12EJTPvNr7Pvaa"
+     ]
+    }
+   ]
+  },
+  {
+   "nombre": "TRON Inc (segun Protos)",
+   "direccion": "TEySEZLJf6rs2mCujGpDEsgoMVWKLAk9mT",
+   "clave_propietaria": [
+    "TEySEZLJf6rs2mCujGpDEsgoMVWKLAk9mT"
+   ],
+   "umbral": 1,
+   "activos": [
+    {
+     "nombre": "active",
+     "umbral": 1,
+     "claves": [
+      "TEySEZLJf6rs2mCujGpDEsgoMVWKLAk9mT"
+     ]
+    }
+   ]
+  }
+ ],
+ "claves_compartidas_entre_cuentas": [
+  {
+   "clave": "TUgSgCQL6pMSy9zByn4sgxqrJa95sZExBG",
+   "cuentas": [
+    "TSzSgxRisS5VBXXDcAezTDvnPGi9CbsXvJ",
+    "TWPpxPd5PpU5FQk6F6F3HMN5VdufxnVA8K"
+   ]
+  },
+  {
+   "clave": "TCXrf8SwGjcmQYY1FcFnV3LUXSQpqod3bi",
+   "cuentas": [
+    "TU3rMHyWHzeEJBReWLzHko728hbz6MtfNg",
+    "TCXrf8SwGjcmQYY1FcFnV3LUXSQpqod3bi"
+   ]
+  },
+  {
+   "clave": "TAbcZfVgqe8x49LN4i2iFudcXBhab5FS7h",
+   "cuentas": [
+    "THYznBdDPQLLunwGwrVyCWLhNL3nhMjAPC",
+    "TBgGFBnqZuDeGkf4nyiaEo7mj3NodxYJBL"
+   ]
+  }
+ ],
+ "receptores_controlados_por_otra_clave": [
+  {
+   "receptor": "TFNX7TKYCm1kUYDECjkrogBwYZvt69XQNy",
+   "familia": "GasFree",
+   "total_recibido": 339063000,
+   "clave_propietaria": [
+    "TUfohTaS6nh2pAaupqdEHxnQzRV8BFkZER"
+   ]
+  },
+  {
+   "receptor": "TU3rMHyWHzeEJBReWLzHko728hbz6MtfNg",
+   "familia": "Sin etiqueta",
+   "total_recibido": 206680000,
+   "clave_propietaria": [
+    "TM3sTVyahiGWYktKg8G6miHpTzRurKDt7b"
+   ]
+  },
+  {
+   "receptor": "TXHDjs83UhE2MeSfy3TGMobdzR1KEFPySR",
+   "familia": "Sin etiqueta",
+   "total_recibido": 5200000,
+   "clave_propietaria": [
+    "TSF2rqLdrrZG7PZkDxtvu6B2PTpofidMAX"
+   ]
+  },
+  {
+   "receptor": "TTPr6LHna8ZFn1zS1CgDrhStscEByjnKFD",
+   "familia": "Sin etiqueta",
+   "total_recibido": 4290000,
+   "clave_propietaria": [
+    "TK41wGU4WUYyymqkAKrwURkw6uiYXA6VLj"
+   ]
+  },
+  {
+   "receptor": "TUaASPt6XHP6tJbwbofdP2kcqPEa2MGooy",
+   "familia": "Sin etiqueta",
+   "total_recibido": 546000,
+   "clave_propietaria": [
+    "TBAGyoR2XznMwrPYULydrVmES3kHV6jvmN"
+   ]
+  },
+  {
+   "receptor": "TW6EkjXg8iGRZbZkqDTrjGkxLDBby58ZVi",
+   "familia": "Sin etiqueta",
+   "total_recibido": 478500,
+   "clave_propietaria": [
+    "TCiyg684ZjsFcQzzjVqYPy7WMRYGej75GP"
+   ]
+  },
+  {
+   "receptor": "TNGePRK6b3s4TG5SVQX12SkNHMw242MT5b",
+   "familia": "Sin etiqueta",
+   "total_recibido": 478500,
+   "clave_propietaria": [
+    "TP58k9Gp6GUoUS3rJQJ2wCob3cZZd33KWd"
+   ]
+  },
+  {
+   "receptor": "THYznBdDPQLLunwGwrVyCWLhNL3nhMjAPC",
+   "familia": "Sin etiqueta",
+   "total_recibido": 427000,
+   "clave_propietaria": [
+    "TQF14mhtEpD5VXbDLKSb6X1jc8VCGw5Fge",
+    "TMSejtCCXGnHHAnRKMQPPw5iNjuDuhTKfu",
+    "TCEeN8qQjN654d9aFtPYYLEXpALa6uMA5m",
+    "TVfGs8yrzWn2BXP8te8rDAmL7ixSSJD3YT",
+    "TAbcZfVgqe8x49LN4i2iFudcXBhab5FS7h"
+   ]
+  },
+  {
+   "receptor": "TVoTgU4jqhG26uaNy3oZu75wWC7W59YzsB",
+   "familia": "Sin etiqueta",
+   "total_recibido": 333000,
+   "clave_propietaria": [
+    "TVa58riLnABbCDMhN9FztAjMsfkQFxxjAM"
+   ]
+  },
+  {
+   "receptor": "TKSWb4hqrpGXJy72guufXS9EtoEbYSdss4",
+   "familia": "Sin etiqueta",
+   "total_recibido": 332000,
+   "clave_propietaria": [
+    "TPSwVVJWGTJ6UF23cZ4nz4BCx55rEunSgk"
+   ]
+  },
+  {
+   "receptor": "TTpcSY3dUxUmQ1S1TtotKqRsYutE1PyHRV",
+   "familia": "Sin etiqueta",
+   "total_recibido": 326000,
+   "clave_propietaria": [
+    "TBCXHnmoC5T8MVGrY6LFRULZgyc2mU7rJC"
+   ]
+  },
+  {
+   "receptor": "TWPpxPd5PpU5FQk6F6F3HMN5VdufxnVA8K",
+   "familia": "Sin etiqueta",
+   "total_recibido": 370000,
+   "clave_propietaria": [
+    "TEdzuiQcwJudNR83UomxHJGhsMWYibdM7o",
+    "TUcbM2MwtjsNGtY2CVjFpjbW7Nc76XySmD",
+    "TUdbhFMsZTc14xG2CxkUREp1qWT6TGi1tL",
+    "TMiDbtDSRMFcae5kZPq1tXc6q9217Tg26d",
+    "TUgSgCQL6pMSy9zByn4sgxqrJa95sZExBG"
+   ]
+  },
+  {
+   "receptor": "TQHhDQrcCcQmJezead5MK4tWycxbW2NWkK",
+   "familia": "Sin etiqueta",
+   "total_recibido": 325000,
+   "clave_propietaria": [
+    "TW8gXYqFT3bqpnHQEJ5DHRvSXz4rpmn7Be"
+   ]
+  },
+  {
+   "receptor": "TCxK2F5fitQJn8Z51RZCyEFMiLKjZtkvEz",
+   "familia": "Sin etiqueta",
+   "total_recibido": 210000,
+   "clave_propietaria": [
+    "TYRmcmmKvjL1SFQbvPQtJU1YcaXEnH8dvT"
+   ]
+  },
+  {
+   "receptor": "TBgGFBnqZuDeGkf4nyiaEo7mj3NodxYJBL",
+   "familia": "Sin etiqueta",
+   "total_recibido": 85000,
+   "clave_propietaria": [
+    "TJn68C67mGZJheFn4PrQm6HpFA9YqjaH43",
+    "TVdR36PXH415bwXnhKuYRnNV8TYJbJktTW",
+    "TM8tzsvtj4Mfz23h37dtwztezbsjMV5fGQ",
+    "TKay5VDu4o2ZMj5AQWj86K3i8CrFwM1rQr",
+    "TAbcZfVgqe8x49LN4i2iFudcXBhab5FS7h"
+   ]
+  }
+ ],
+ "multifirmas": [
+  {
+   "nombre": "Pareja de la proveedora (TSzSgxRi)",
+   "direccion": "TSzSgxRisS5VBXXDcAezTDvnPGi9CbsXvJ",
+   "umbral": 3,
+   "claves": [
+    "TShAfXbh4kUzmkJ9Ckdo5J6ujWi1M5NLE2",
+    "TUgSgCQL6pMSy9zByn4sgxqrJa95sZExBG",
+    "TVnGY8vuJhxDX5b7mTpwaJ9vNDtmjdBxMm",
+    "TV7WmJXhYyd4rqRjbWg62eX8e5DoPbyiA3",
+    "TDAuHDXYNTrtY1k6GNibek44yHEqyQfVkC"
+   ]
+  }
+ ],
+ "permisos_activos_TEF9ZV": [
+  {
+   "nombre": "active",
+   "umbral": 1,
+   "claves": [
+    "TEF9ZVUxhmGGffvkf59e2vdLfAG1QCMb7B"
+   ]
+  },
+  {
+   "nombre": "Resource Delegation I",
+   "umbral": 3,
+   "claves": [
+    "TA5VbP6ijuFmYcjoCcUN3zALx8YjX8bKXB",
+    "TVVnUBMbj56ceFFE3RDqxmRRAPMjffAfv1",
+    "TEpH4V3GWLMS631SjxZzpZmatZSKrnzUSj",
+    "TU14wz7Qka2TTHVXBwVeY8bPjoj1STV4Yt"
+   ]
+  }
+ ]
+}

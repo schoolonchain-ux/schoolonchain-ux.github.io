@@ -1,0 +1,32 @@
+{
+ "cuenta": "TWhDfwC8QE6pQyiYy248dNor3uphPEw5M2",
+ "ancla": "2026-11-05T09:18:48Z",
+ "transacciones": {
+  "paginas_leidas": 6256,
+  "paginas_con_huella": 6256,
+  "filas_de_cualquier_tipo": 1251159,
+  "filas_de_transferencia_de_TRX_guardadas": 592582,
+  "duplicados_entre_las_guardadas": 0,
+  "la_API_termino_sola": true
+ },
+ "trc20": {
+  "paginas_leidas": 6226,
+  "paginas_con_huella": 6226,
+  "filas": 1245011,
+  "filas_guardadas": 1245011,
+  "duplicados": 0,
+  "la_API_termino_sola": true
+ },
+ "primera_fila": "2023-11-28T13:56:57Z",
+ "ultima_fila": "2026-11-05T09:18:21Z",
+ "creada_segun_tronscan": "2023-11-28T13:56:54Z",
+ "cruce_con_tronscan": {
+  "tronscan_totalTransactionCount": 1251159,
+  "nuestras_transacciones": 1251159,
+  "diferencia": 0,
+  "coincide": true,
+  "fecha_de_lectura_de_tronscan": "2026-11-05T09:19:01.827Z"
+ },
+ "estado": "COMPLETO y VERIFICADO (cuadra exacto con TronScan y empieza en la creación)",
+ "limite_declarado": "Las páginas en bruto NO se archivaron (≈ 4 GB); quedan las filas compactas (datos/) y la huella SHA-256 de cada página (pages.jsonl). b1 no se puede rehacer sin internet; b2, b3 y b4 sí."
+}

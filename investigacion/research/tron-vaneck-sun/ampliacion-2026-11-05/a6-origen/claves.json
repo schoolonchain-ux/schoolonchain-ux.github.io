@@ -1,0 +1,112 @@
+{
+ "permiso_resource_delegation_I": {
+  "nombre": "Resource Delegation I",
+  "umbral": 3,
+  "claves": [
+   {
+    "direccion": "TA5VbP6ijuFmYcjoCcUN3zALx8YjX8bKXB",
+    "peso": 1
+   },
+   {
+    "direccion": "TVVnUBMbj56ceFFE3RDqxmRRAPMjffAfv1",
+    "peso": 1
+   },
+   {
+    "direccion": "TEpH4V3GWLMS631SjxZzpZmatZSKrnzUSj",
+    "peso": 2
+   },
+   {
+    "direccion": "TU14wz7Qka2TTHVXBwVeY8bPjoj1STV4Yt",
+    "peso": 2
+   }
+  ]
+ },
+ "claves": [
+  {
+   "direccion": "TA5VbP6ijuFmYcjoCcUN3zALx8YjX8bKXB",
+   "existe_en_cadena": false,
+   "etiqueta": null,
+   "creada": null,
+   "n_tx_tronscan": null,
+   "clave_propietaria": [],
+   "trx_libre": 0,
+   "rol": "clave del permiso «Resource Delegation I» de TEF9ZV"
+  },
+  {
+   "direccion": "TVVnUBMbj56ceFFE3RDqxmRRAPMjffAfv1",
+   "existe_en_cadena": false,
+   "etiqueta": null,
+   "creada": null,
+   "n_tx_tronscan": null,
+   "clave_propietaria": [],
+   "trx_libre": 0,
+   "rol": "clave del permiso «Resource Delegation I» de TEF9ZV"
+  },
+  {
+   "direccion": "TEpH4V3GWLMS631SjxZzpZmatZSKrnzUSj",
+   "existe_en_cadena": false,
+   "etiqueta": null,
+   "creada": null,
+   "n_tx_tronscan": null,
+   "clave_propietaria": [],
+   "trx_libre": 0,
+   "rol": "clave del permiso «Resource Delegation I» de TEF9ZV"
+  },
+  {
+   "direccion": "TU14wz7Qka2TTHVXBwVeY8bPjoj1STV4Yt",
+   "existe_en_cadena": false,
+   "etiqueta": null,
+   "creada": null,
+   "n_tx_tronscan": null,
+   "clave_propietaria": [],
+   "trx_libre": 0,
+   "rol": "clave del permiso «Resource Delegation I» de TEF9ZV"
+  },
+  {
+   "direccion": "TM3sTVyahiGWYktKg8G6miHpTzRurKDt7b",
+   "existe_en_cadena": true,
+   "etiqueta": null,
+   "creada": "2021-11-08",
+   "n_tx_tronscan": 930,
+   "clave_propietaria": [
+    "TM3sTVyahiGWYktKg8G6miHpTzRurKDt7b"
+   ],
+   "trx_libre": 88952319.366263,
+   "rol": "clave compartida / de un receptor"
+  },
+  {
+   "direccion": "TUgSgCQL6pMSy9zByn4sgxqrJa95sZExBG",
+   "existe_en_cadena": true,
+   "etiqueta": "Poloniex 2",
+   "creada": "2022-08-21",
+   "n_tx_tronscan": 1088,
+   "clave_propietaria": [
+    "TUgSgCQL6pMSy9zByn4sgxqrJa95sZExBG"
+   ],
+   "trx_libre": 6874567.590976,
+   "rol": "clave compartida / de un receptor"
+  },
+  {
+   "direccion": "TAbcZfVgqe8x49LN4i2iFudcXBhab5FS7h",
+   "existe_en_cadena": false,
+   "etiqueta": null,
+   "creada": null,
+   "n_tx_tronscan": null,
+   "clave_propietaria": [],
+   "trx_libre": 0,
+   "rol": "clave compartida / de un receptor"
+  },
+  {
+   "direccion": "TDMZVtpYLEfeTuFxXKNLCZF3vMScMNPVE1",
+   "existe_en_cadena": true,
+   "etiqueta": null,
+   "creada": "2025-12-02",
+   "n_tx_tronscan": 2,
+   "clave_propietaria": [
+    "TDMZVtpYLEfeTuFxXKNLCZF3vMScMNPVE1"
+   ],
+   "trx_libre": 49.9315,
+   "rol": "clave compartida / de un receptor"
+  }
+ ]
+}

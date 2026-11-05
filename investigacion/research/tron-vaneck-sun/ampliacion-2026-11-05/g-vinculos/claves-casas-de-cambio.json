@@ -1,0 +1,2616 @@
+{
+ "nota": "Claves y permisos ACTUALES (TronGrid, leídos en la ejecución) de las cuentas examinadas; etiquetas = TronScan (atribución de terceros). Solo se comparan las cuentas examinadas: la cadena no ofrece un índice «¿qué cuentas tienen esta clave?», así que la ausencia de coincidencias NO prueba que no existan fuera de este conjunto.",
+ "grupos": {
+  "POLONIEX": [
+   "TAA7UjjZYC7QjjTDwmbtAWciPQUFRfK8QA",
+   "TNCmcTdyrYKMtmE1KU2itzeCX76jGm5Not",
+   "TUgSgCQL6pMSy9zByn4sgxqrJa95sZExBG"
+  ],
+  "HTX": [
+   "TAuUCiH4JVNBZmDnEDZkXEUXDARdGpXTmX",
+   "TFTWNgDBkQ5wQoP8RXpRznnHvAVV8x5jLu",
+   "TU1ZA8T2g8PvLK8BfM7N94xpmSSpyfxZoK"
+  ],
+  "OKX": [
+   "TCz47XgC9TjCeF4UzfB6qZbM9LTF9s1tG7",
+   "TJbHp48Shg4tTD5x6fKkU7PodggL5mjcJP",
+   "TLaGjwhvA8XQYSxFAcAXy7Dvuue9eGYitv",
+   "TM1zzNDZD2DPASbKcgdVoTYhfmYgtfwx9R",
+   "TSaRZDiBPD8Rd5vrvX8a4zgunHczM9mj8S",
+   "TWGZbjofbTLY3UCjCV4yiLkRg89zLqwRgi"
+  ],
+  "BINANCE": [
+   "TADfh7Q4KA9LD6WfjjjcPMNra33gNRrCkb",
+   "TAUN6FwrnwwmaEqYcckffC7wYmbaS6cBiX",
+   "TAzsQ9Gx8eqFNFSKbeXrbi45CuVPHzA8wr",
+   "TCLgK89AnXbC9rewvhNb9UgXCc2qJJpBXh",
+   "TCQ8X6x9GiK4khydWVKfLJvm8H6WK3RE8B",
+   "TDB1RpAHPQdGqfb1qi8J2jLY2oGe2jSy8A",
+   "TDqSquXBgUCLYvYC4XZgrprLK589dkhSCf",
+   "TE4mtETxcuHHbprQmQkyVSaCC48Q5yk21i",
+   "TGnBDu95RaJEaw7dJpqzHt8Sy7faayBGvj",
+   "TGpTXS67vXyPERWMC2iQSG27TosfD13HLZ",
+   "TJ5usJLLwjwn7Pw3TPbdzreG7dvgKzfQ5y",
+   "TJCo98saj6WND61g1uuKwJ9GMWMT9WkJFo",
+   "TJDENsfBJs4RFETt1X1W8wMDc8M5XnJhCe",
+   "TJTKCzQpsG19CSMYF9TPtxz6wSHPSyeKfa",
+   "TJqwA7SoZnERE4zW5uDEiPkbz4B66h9TFj",
+   "TK4ykR48cQQoyFcZ5N4xZCbsBaHcg6n3gJ",
+   "TNXoiAJ3dct8Fjg4M9fkLFh9S2v9TXc32G",
+   "TNiXZSD38dwRjZ5fXKn1im8crWkfqzskvH",
+   "TQ3cCsoxMxLYGLSMijP8EgpRKJcGUrJDMj",
+   "TQrY8tryqsYVCYS3MFbtffiPp2ccyn4STm",
+   "TTU4bhRuPEtaSWPXvvRQ7CVnyHs6cGu24e",
+   "TV6MuMXfmLbBqPZvBHdwFsDnQeVfnmiuSi",
+   "TWd4WrZ9wn84f5x1hZhL4DHvk738ns5jwb",
+   "TYASr5UV6HEcXatwdFQfmLVUqQQQMUxHLS",
+   "TYLRgzUKgLHw5wCYox2xRUkCQaWo9koP6K"
+  ],
+  "CASO": [
+   "TCGVFGDd62LSrfZEaz3M3fYifWWdSDHRL8",
+   "TEF9ZVUxhmGGffvkf59e2vdLfAG1QCMb7B",
+   "TEySEZLJf6rs2mCujGpDEsgoMVWKLAk9mT",
+   "TFKSWmnRJkzCfWUr56DQ1zqGCxZLW9dKSv",
+   "TFSd14UQUp6HPamdMGJsWBxfWKMrLYxRmp",
+   "TFZZx3HXBEGqA1hJnYmRvscjS48gihWXY6",
+   "THxg4UEzbnqXMiyEwMQ5XPgkdLnPrkHHcb",
+   "TJNtFduS4oebw3jgGKCYmgSpTdyPieb6Ha",
+   "TKpiitwGUuW5WgsBMg5w5QWUpC6nUTroqa",
+   "TLLM21wteSPs4hKjbxgmH1L6poyMjeTbHm",
+   "TLbkcH7QLcULY8dpPAbD9EYGLUWKbeRxuB",
+   "TM3sTVyahiGWYktKg8G6miHpTzRurKDt7b",
+   "TPhGmczy3wkUGafFT8QMXPLN2rzdxeChME",
+   "TPyjyZfsYaXStgz2NmAraF1uZcMtkgNan5",
+   "TQwh1ZDBdqMKDtGWEeDdrRUUbtgaVL1Se2",
+   "TRzQrtxrEJbSbQNwAsgAHkBMxTX47yNmjo",
+   "TScVwVTjqoqPEJ6atnvGCtErWnCyNbzmUL",
+   "TSzSgxRisS5VBXXDcAezTDvnPGi9CbsXvJ",
+   "TT2T17KZhoDu47i2E4FWxfG79zdkEWkU9N",
+   "TU32XvjDNkxEkqxCgQQWEKmoMxTz8NECUV",
+   "TU3rMHyWHzeEJBReWLzHko728hbz6MtfNg",
+   "TUTtLtGjXWqkTAow7jj7oMhTGLe9XB9YMA",
+   "TWPpxPd5PpU5FQk6F6F3HMN5VdufxnVA8K",
+   "TWhDfwC8QE6pQyiYy248dNor3uphPEw5M2",
+   "TWpMnUh9pZS1Mf8yyw9WPiS82WYevKzQo2",
+   "TYL7z7VSVRShLoJ6YRQMA4t9pSECt9ZLmz"
+  ],
+  "FUNDACION_REUNION": [
+   "TAA7UjjZYC7QjjTDwmbtAWciPQUFRfK8QA",
+   "TAKNpgbqxUYCbKojacSdNrEaVBJNF162WD",
+   "TDirN49rpXgs2RXJUudbcRskhoyD29c66U",
+   "TFDeweDKdJToPwiXUxbCVpNLi9wKGdi8pK",
+   "TJ5GHePdhY7y52ugyu7omwL38xm7ahosr9",
+   "TJkgTCg91dEfsT9to74VDXi7uUxRDqF2ft",
+   "TKHS9Wb1GH7YmEZrrPzEqCZ96uPBDJ7J2A",
+   "TMUsySjQJKfwR2btidkk5yAUJYcrvKdTwx",
+   "TNzhS9jbtssBaNBMTm3L54A1VMfmxxC1x6",
+   "TTXojNiH2hFL3mUC8yTGMwCQ17pmNFxvzE",
+   "TV6qo5vZ9t118WfkqqhFPLTRMxgPRXVr7t",
+   "TVJVQtD1rPC2igEM82AfnPZTYdJFGAFQbw",
+   "TWn3P22ujD4BGJfeM6YDDWydbZoAWkwPjZ",
+   "TYSZXcgPar7Xj1b17Hj3WVVoJ1UGCe8xgd"
+  ]
+ },
+ "resumen_por_grupo": {
+  "POLONIEX": {
+   "cuentas": 3,
+   "existen": 3,
+   "con_permiso_explicito_distinto_del_normal": 1,
+   "con_solo_su_propia_clave": 2
+  },
+  "HTX": {
+   "cuentas": 3,
+   "existen": 3,
+   "con_permiso_explicito_distinto_del_normal": 0,
+   "con_solo_su_propia_clave": 3
+  },
+  "OKX": {
+   "cuentas": 6,
+   "existen": 6,
+   "con_permiso_explicito_distinto_del_normal": 0,
+   "con_solo_su_propia_clave": 6
+  },
+  "BINANCE": {
+   "cuentas": 25,
+   "existen": 25,
+   "con_permiso_explicito_distinto_del_normal": 0,
+   "con_solo_su_propia_clave": 25
+  },
+  "CASO": {
+   "cuentas": 26,
+   "existen": 26,
+   "con_permiso_explicito_distinto_del_normal": 4,
+   "con_solo_su_propia_clave": 22
+  },
+  "FUNDACION_REUNION": {
+   "cuentas": 14,
+   "existen": 14,
+   "con_permiso_explicito_distinto_del_normal": 0,
+   "con_solo_su_propia_clave": 14
+  }
+ },
+ "cuentas": {
+  "TAA7UjjZYC7QjjTDwmbtAWciPQUFRfK8QA": {
+   "grupos": [
+    "FUNDACION_REUNION",
+    "POLONIEX"
+   ],
+   "etiqueta_tronscan": "Poloniex cold wallet",
+   "existe": true,
+   "permiso_explicito": true,
+   "incluye_la_propia": true,
+   "claves_ajenas": [],
+   "permisos": [
+    {
+     "tipo": "owner",
+     "umbral": 1,
+     "n_claves": 1
+    },
+    {
+     "tipo": "active",
+     "umbral": 1,
+     "n_claves": 1
+    }
+   ]
+  },
+  "TADfh7Q4KA9LD6WfjjjcPMNra33gNRrCkb": {
+   "grupos": [
+    "BINANCE"
+   ],
+   "etiqueta_tronscan": "Binance-Hot 18",
+   "existe": true,
+   "permiso_explicito": true,
+   "incluye_la_propia": true,
+   "claves_ajenas": [],
+   "permisos": [
+    {
+     "tipo": "owner",
+     "umbral": 1,
+     "n_claves": 1
+    },
+    {
+     "tipo": "active",
+     "umbral": 1,
+     "n_claves": 1
+    }
+   ]
+  },
+  "TAKNpgbqxUYCbKojacSdNrEaVBJNF162WD": {
+   "grupos": [
+    "FUNDACION_REUNION"
+   ],
+   "etiqueta_tronscan": null,
+   "existe": true,
+   "permiso_explicito": true,
+   "incluye_la_propia": true,
+   "claves_ajenas": [],
+   "permisos": [
+    {
+     "tipo": "owner",
+     "umbral": 1,
+     "n_claves": 1
+    },
+    {
+     "tipo": "active",
+     "umbral": 1,
+     "n_claves": 1
+    }
+   ]
+  },
+  "TAUN6FwrnwwmaEqYcckffC7wYmbaS6cBiX": {
+   "grupos": [
+    "BINANCE"
+   ],
+   "etiqueta_tronscan": "Binance-Hot 1",
+   "existe": true,
+   "permiso_explicito": false,
+   "incluye_la_propia": true,
+   "claves_ajenas": [],
+   "permisos": []
+  },
+  "TAuUCiH4JVNBZmDnEDZkXEUXDARdGpXTmX": {
+   "grupos": [
+    "HTX"
+   ],
+   "etiqueta_tronscan": null,
+   "existe": true,
+   "permiso_explicito": true,
+   "incluye_la_propia": true,
+   "claves_ajenas": [],
+   "permisos": [
+    {
+     "tipo": "owner",
+     "umbral": 1,
+     "n_claves": 1
+    },
+    {
+     "tipo": "active",
+     "umbral": 1,
+     "n_claves": 1
+    }
+   ]
+  },
+  "TAzsQ9Gx8eqFNFSKbeXrbi45CuVPHzA8wr": {
+   "grupos": [
+    "BINANCE"
+   ],
+   "etiqueta_tronscan": "Binance-Hot 5",
+   "existe": true,
+   "permiso_explicito": true,
+   "incluye_la_propia": true,
+   "claves_ajenas": [],
+   "permisos": [
+    {
+     "tipo": "owner",
+     "umbral": 1,
+     "n_claves": 1
+    },
+    {
+     "tipo": "active",
+     "umbral": 1,
+     "n_claves": 1
+    }
+   ]
+  },
+  "TCGVFGDd62LSrfZEaz3M3fYifWWdSDHRL8": {
+   "grupos": [
+    "CASO"
+   ],
+   "etiqueta_tronscan": "Vaneck",
+   "existe": true,
+   "permiso_explicito": true,
+   "incluye_la_propia": true,
+   "claves_ajenas": [],
+   "permisos": [
+    {
+     "tipo": "owner",
+     "umbral": 1,
+     "n_claves": 1
+    },
+    {
+     "tipo": "active",
+     "umbral": 1,
+     "n_claves": 1
+    }
+   ]
+  },
+  "TCLgK89AnXbC9rewvhNb9UgXCc2qJJpBXh": {
+   "grupos": [
+    "BINANCE"
+   ],
+   "etiqueta_tronscan": "Binance-Hot 10",
+   "existe": true,
+   "permiso_explicito": true,
+   "incluye_la_propia": true,
+   "claves_ajenas": [],
+   "permisos": [
+    {
+     "tipo": "owner",
+     "umbral": 1,
+     "n_claves": 1
+    },
+    {
+     "tipo": "active",
+     "umbral": 1,
+     "n_claves": 1
+    }
+   ]
+  },
+  "TCQ8X6x9GiK4khydWVKfLJvm8H6WK3RE8B": {
+   "grupos": [
+    "BINANCE"
+   ],
+   "etiqueta_tronscan": "Binance-Hot 14",
+   "existe": true,
+   "permiso_explicito": true,
+   "incluye_la_propia": true,
+   "claves_ajenas": [],
+   "permisos": [
+    {
+     "tipo": "owner",
+     "umbral": 1,
+     "n_claves": 1
+    },
+    {
+     "tipo": "active",
+     "umbral": 1,
+     "n_claves": 1
+    }
+   ]
+  },
+  "TCz47XgC9TjCeF4UzfB6qZbM9LTF9s1tG7": {
+   "grupos": [
+    "OKX"
+   ],
+   "etiqueta_tronscan": "Okex 4",
+   "existe": true,
+   "permiso_explicito": true,
+   "incluye_la_propia": true,
+   "claves_ajenas": [],
+   "permisos": [
+    {
+     "tipo": "owner",
+     "umbral": 1,
+     "n_claves": 1
+    },
+    {
+     "tipo": "active",
+     "umbral": 1,
+     "n_claves": 1
+    }
+   ]
+  },
+  "TDB1RpAHPQdGqfb1qi8J2jLY2oGe2jSy8A": {
+   "grupos": [
+    "BINANCE"
+   ],
+   "etiqueta_tronscan": "Binance-Hot 19",
+   "existe": true,
+   "permiso_explicito": true,
+   "incluye_la_propia": true,
+   "claves_ajenas": [],
+   "permisos": [
+    {
+     "tipo": "owner",
+     "umbral": 1,
+     "n_claves": 1
+    },
+    {
+     "tipo": "active",
+     "umbral": 1,
+     "n_claves": 1
+    }
+   ]
+  },
+  "TDirN49rpXgs2RXJUudbcRskhoyD29c66U": {
+   "grupos": [
+    "FUNDACION_REUNION"
+   ],
+   "etiqueta_tronscan": null,
+   "existe": true,
+   "permiso_explicito": true,
+   "incluye_la_propia": true,
+   "claves_ajenas": [],
+   "permisos": [
+    {
+     "tipo": "owner",
+     "umbral": 1,
+     "n_claves": 1
+    },
+    {
+     "tipo": "active",
+     "umbral": 1,
+     "n_claves": 1
+    }
+   ]
+  },
+  "TDqSquXBgUCLYvYC4XZgrprLK589dkhSCf": {
+   "grupos": [
+    "BINANCE"
+   ],
+   "etiqueta_tronscan": "Binance-Hot 7",
+   "existe": true,
+   "permiso_explicito": true,
+   "incluye_la_propia": true,
+   "claves_ajenas": [],
+   "permisos": [
+    {
+     "tipo": "owner",
+     "umbral": 1,
+     "n_claves": 1
+    },
+    {
+     "tipo": "active",
+     "umbral": 1,
+     "n_claves": 1
+    }
+   ]
+  },
+  "TE4mtETxcuHHbprQmQkyVSaCC48Q5yk21i": {
+   "grupos": [
+    "BINANCE"
+   ],
+   "etiqueta_tronscan": "Binance-Hot 16",
+   "existe": true,
+   "permiso_explicito": true,
+   "incluye_la_propia": true,
+   "claves_ajenas": [],
+   "permisos": [
+    {
+     "tipo": "owner",
+     "umbral": 1,
+     "n_claves": 1
+    },
+    {
+     "tipo": "active",
+     "umbral": 1,
+     "n_claves": 1
+    }
+   ]
+  },
+  "TEF9ZVUxhmGGffvkf59e2vdLfAG1QCMb7B": {
+   "grupos": [
+    "CASO"
+   ],
+   "etiqueta_tronscan": null,
+   "existe": true,
+   "permiso_explicito": true,
+   "incluye_la_propia": true,
+   "claves_ajenas": [
+    "TA5VbP6ijuFmYcjoCcUN3zALx8YjX8bKXB",
+    "TEpH4V3GWLMS631SjxZzpZmatZSKrnzUSj",
+    "TU14wz7Qka2TTHVXBwVeY8bPjoj1STV4Yt",
+    "TVVnUBMbj56ceFFE3RDqxmRRAPMjffAfv1"
+   ],
+   "permisos": [
+    {
+     "tipo": "owner",
+     "umbral": 1,
+     "n_claves": 1
+    },
+    {
+     "tipo": "active",
+     "umbral": 1,
+     "n_claves": 1
+    },
+    {
+     "tipo": "active",
+     "umbral": 3,
+     "n_claves": 4
+    }
+   ]
+  },
+  "TEySEZLJf6rs2mCujGpDEsgoMVWKLAk9mT": {
+   "grupos": [
+    "CASO"
+   ],
+   "etiqueta_tronscan": null,
+   "existe": true,
+   "permiso_explicito": true,
+   "incluye_la_propia": true,
+   "claves_ajenas": [],
+   "permisos": [
+    {
+     "tipo": "owner",
+     "umbral": 1,
+     "n_claves": 1
+    },
+    {
+     "tipo": "active",
+     "umbral": 1,
+     "n_claves": 1
+    }
+   ]
+  },
+  "TFDeweDKdJToPwiXUxbCVpNLi9wKGdi8pK": {
+   "grupos": [
+    "FUNDACION_REUNION"
+   ],
+   "etiqueta_tronscan": null,
+   "existe": true,
+   "permiso_explicito": true,
+   "incluye_la_propia": true,
+   "claves_ajenas": [],
+   "permisos": [
+    {
+     "tipo": "owner",
+     "umbral": 1,
+     "n_claves": 1
+    },
+    {
+     "tipo": "active",
+     "umbral": 1,
+     "n_claves": 1
+    }
+   ]
+  },
+  "TFKSWmnRJkzCfWUr56DQ1zqGCxZLW9dKSv": {
+   "grupos": [
+    "CASO"
+   ],
+   "etiqueta_tronscan": null,
+   "existe": true,
+   "permiso_explicito": true,
+   "incluye_la_propia": true,
+   "claves_ajenas": [],
+   "permisos": [
+    {
+     "tipo": "owner",
+     "umbral": 1,
+     "n_claves": 1
+    },
+    {
+     "tipo": "active",
+     "umbral": 1,
+     "n_claves": 1
+    }
+   ]
+  },
+  "TFSd14UQUp6HPamdMGJsWBxfWKMrLYxRmp": {
+   "grupos": [
+    "CASO"
+   ],
+   "etiqueta_tronscan": null,
+   "existe": true,
+   "permiso_explicito": true,
+   "incluye_la_propia": true,
+   "claves_ajenas": [],
+   "permisos": [
+    {
+     "tipo": "owner",
+     "umbral": 1,
+     "n_claves": 1
+    },
+    {
+     "tipo": "active",
+     "umbral": 1,
+     "n_claves": 1
+    }
+   ]
+  },
+  "TFTWNgDBkQ5wQoP8RXpRznnHvAVV8x5jLu": {
+   "grupos": [
+    "HTX"
+   ],
+   "etiqueta_tronscan": null,
+   "existe": true,
+   "permiso_explicito": true,
+   "incluye_la_propia": true,
+   "claves_ajenas": [],
+   "permisos": [
+    {
+     "tipo": "owner",
+     "umbral": 1,
+     "n_claves": 1
+    },
+    {
+     "tipo": "active",
+     "umbral": 1,
+     "n_claves": 1
+    }
+   ]
+  },
+  "TFZZx3HXBEGqA1hJnYmRvscjS48gihWXY6": {
+   "grupos": [
+    "CASO"
+   ],
+   "etiqueta_tronscan": null,
+   "existe": true,
+   "permiso_explicito": true,
+   "incluye_la_propia": true,
+   "claves_ajenas": [],
+   "permisos": [
+    {
+     "tipo": "owner",
+     "umbral": 1,
+     "n_claves": 1
+    },
+    {
+     "tipo": "active",
+     "umbral": 1,
+     "n_claves": 1
+    }
+   ]
+  },
+  "TGnBDu95RaJEaw7dJpqzHt8Sy7faayBGvj": {
+   "grupos": [
+    "BINANCE"
+   ],
+   "etiqueta_tronscan": "Binance-Hot 20",
+   "existe": true,
+   "permiso_explicito": true,
+   "incluye_la_propia": true,
+   "claves_ajenas": [],
+   "permisos": [
+    {
+     "tipo": "owner",
+     "umbral": 1,
+     "n_claves": 1
+    },
+    {
+     "tipo": "active",
+     "umbral": 1,
+     "n_claves": 1
+    }
+   ]
+  },
+  "TGpTXS67vXyPERWMC2iQSG27TosfD13HLZ": {
+   "grupos": [
+    "BINANCE"
+   ],
+   "etiqueta_tronscan": "Binance-Hot 17",
+   "existe": true,
+   "permiso_explicito": true,
+   "incluye_la_propia": true,
+   "claves_ajenas": [],
+   "permisos": [
+    {
+     "tipo": "owner",
+     "umbral": 1,
+     "n_claves": 1
+    },
+    {
+     "tipo": "active",
+     "umbral": 1,
+     "n_claves": 1
+    }
+   ]
+  },
+  "THxg4UEzbnqXMiyEwMQ5XPgkdLnPrkHHcb": {
+   "grupos": [
+    "CASO"
+   ],
+   "etiqueta_tronscan": null,
+   "existe": true,
+   "permiso_explicito": true,
+   "incluye_la_propia": true,
+   "claves_ajenas": [],
+   "permisos": [
+    {
+     "tipo": "owner",
+     "umbral": 1,
+     "n_claves": 1
+    },
+    {
+     "tipo": "active",
+     "umbral": 1,
+     "n_claves": 1
+    }
+   ]
+  },
+  "TJ5GHePdhY7y52ugyu7omwL38xm7ahosr9": {
+   "grupos": [
+    "FUNDACION_REUNION"
+   ],
+   "etiqueta_tronscan": null,
+   "existe": true,
+   "permiso_explicito": true,
+   "incluye_la_propia": true,
+   "claves_ajenas": [],
+   "permisos": [
+    {
+     "tipo": "owner",
+     "umbral": 1,
+     "n_claves": 1
+    },
+    {
+     "tipo": "active",
+     "umbral": 1,
+     "n_claves": 1
+    }
+   ]
+  },
+  "TJ5usJLLwjwn7Pw3TPbdzreG7dvgKzfQ5y": {
+   "grupos": [
+    "BINANCE"
+   ],
+   "etiqueta_tronscan": "Binance-Hot 9",
+   "existe": true,
+   "permiso_explicito": true,
+   "incluye_la_propia": true,
+   "claves_ajenas": [],
+   "permisos": [
+    {
+     "tipo": "owner",
+     "umbral": 1,
+     "n_claves": 1
+    },
+    {
+     "tipo": "active",
+     "umbral": 1,
+     "n_claves": 1
+    }
+   ]
+  },
+  "TJCo98saj6WND61g1uuKwJ9GMWMT9WkJFo": {
+   "grupos": [
+    "BINANCE"
+   ],
+   "etiqueta_tronscan": "Binance 3",
+   "existe": true,
+   "permiso_explicito": true,
+   "incluye_la_propia": true,
+   "claves_ajenas": [],
+   "permisos": [
+    {
+     "tipo": "owner",
+     "umbral": 1,
+     "n_claves": 1
+    },
+    {
+     "tipo": "active",
+     "umbral": 1,
+     "n_claves": 1
+    }
+   ]
+  },
+  "TJDENsfBJs4RFETt1X1W8wMDc8M5XnJhCe": {
+   "grupos": [
+    "BINANCE"
+   ],
+   "etiqueta_tronscan": "Binance-Hot 6",
+   "existe": true,
+   "permiso_explicito": true,
+   "incluye_la_propia": true,
+   "claves_ajenas": [],
+   "permisos": [
+    {
+     "tipo": "owner",
+     "umbral": 1,
+     "n_claves": 1
+    },
+    {
+     "tipo": "active",
+     "umbral": 1,
+     "n_claves": 1
+    }
+   ]
+  },
+  "TJNtFduS4oebw3jgGKCYmgSpTdyPieb6Ha": {
+   "grupos": [
+    "CASO"
+   ],
+   "etiqueta_tronscan": null,
+   "existe": true,
+   "permiso_explicito": true,
+   "incluye_la_propia": true,
+   "claves_ajenas": [],
+   "permisos": [
+    {
+     "tipo": "owner",
+     "umbral": 1,
+     "n_claves": 1
+    },
+    {
+     "tipo": "active",
+     "umbral": 1,
+     "n_claves": 1
+    }
+   ]
+  },
+  "TJTKCzQpsG19CSMYF9TPtxz6wSHPSyeKfa": {
+   "grupos": [
+    "BINANCE"
+   ],
+   "etiqueta_tronscan": "Binance-Hot 12",
+   "existe": true,
+   "permiso_explicito": true,
+   "incluye_la_propia": true,
+   "claves_ajenas": [],
+   "permisos": [
+    {
+     "tipo": "owner",
+     "umbral": 1,
+     "n_claves": 1
+    },
+    {
+     "tipo": "active",
+     "umbral": 1,
+     "n_claves": 1
+    }
+   ]
+  },
+  "TJbHp48Shg4tTD5x6fKkU7PodggL5mjcJP": {
+   "grupos": [
+    "OKX"
+   ],
+   "etiqueta_tronscan": "Okex 6",
+   "existe": true,
+   "permiso_explicito": true,
+   "incluye_la_propia": true,
+   "claves_ajenas": [],
+   "permisos": [
+    {
+     "tipo": "owner",
+     "umbral": 1,
+     "n_claves": 1
+    },
+    {
+     "tipo": "active",
+     "umbral": 1,
+     "n_claves": 1
+    }
+   ]
+  },
+  "TJkgTCg91dEfsT9to74VDXi7uUxRDqF2ft": {
+   "grupos": [
+    "FUNDACION_REUNION"
+   ],
+   "etiqueta_tronscan": null,
+   "existe": true,
+   "permiso_explicito": false,
+   "incluye_la_propia": true,
+   "claves_ajenas": [],
+   "permisos": []
+  },
+  "TJqwA7SoZnERE4zW5uDEiPkbz4B66h9TFj": {
+   "grupos": [
+    "BINANCE"
+   ],
+   "etiqueta_tronscan": "Binance-Hot 11",
+   "existe": true,
+   "permiso_explicito": true,
+   "incluye_la_propia": true,
+   "claves_ajenas": [],
+   "permisos": [
+    {
+     "tipo": "owner",
+     "umbral": 1,
+     "n_claves": 1
+    },
+    {
+     "tipo": "active",
+     "umbral": 1,
+     "n_claves": 1
+    }
+   ]
+  },
+  "TK4ykR48cQQoyFcZ5N4xZCbsBaHcg6n3gJ": {
+   "grupos": [
+    "BINANCE"
+   ],
+   "etiqueta_tronscan": "Binance-Hot 8",
+   "existe": true,
+   "permiso_explicito": true,
+   "incluye_la_propia": true,
+   "claves_ajenas": [],
+   "permisos": [
+    {
+     "tipo": "owner",
+     "umbral": 1,
+     "n_claves": 1
+    },
+    {
+     "tipo": "active",
+     "umbral": 1,
+     "n_claves": 1
+    }
+   ]
+  },
+  "TKHS9Wb1GH7YmEZrrPzEqCZ96uPBDJ7J2A": {
+   "grupos": [
+    "FUNDACION_REUNION"
+   ],
+   "etiqueta_tronscan": null,
+   "existe": true,
+   "permiso_explicito": true,
+   "incluye_la_propia": true,
+   "claves_ajenas": [],
+   "permisos": [
+    {
+     "tipo": "owner",
+     "umbral": 1,
+     "n_claves": 1
+    },
+    {
+     "tipo": "active",
+     "umbral": 1,
+     "n_claves": 1
+    }
+   ]
+  },
+  "TKpiitwGUuW5WgsBMg5w5QWUpC6nUTroqa": {
+   "grupos": [
+    "CASO"
+   ],
+   "etiqueta_tronscan": null,
+   "existe": true,
+   "permiso_explicito": true,
+   "incluye_la_propia": true,
+   "claves_ajenas": [],
+   "permisos": [
+    {
+     "tipo": "owner",
+     "umbral": 1,
+     "n_claves": 1
+    },
+    {
+     "tipo": "active",
+     "umbral": 1,
+     "n_claves": 1
+    }
+   ]
+  },
+  "TLLM21wteSPs4hKjbxgmH1L6poyMjeTbHm": {
+   "grupos": [
+    "CASO"
+   ],
+   "etiqueta_tronscan": null,
+   "existe": true,
+   "permiso_explicito": false,
+   "incluye_la_propia": true,
+   "claves_ajenas": [],
+   "permisos": []
+  },
+  "TLaGjwhvA8XQYSxFAcAXy7Dvuue9eGYitv": {
+   "grupos": [
+    "OKX"
+   ],
+   "etiqueta_tronscan": "OKX Hot Wallet 8",
+   "existe": true,
+   "permiso_explicito": true,
+   "incluye_la_propia": true,
+   "claves_ajenas": [],
+   "permisos": [
+    {
+     "tipo": "owner",
+     "umbral": 1,
+     "n_claves": 1
+    },
+    {
+     "tipo": "active",
+     "umbral": 1,
+     "n_claves": 1
+    }
+   ]
+  },
+  "TLbkcH7QLcULY8dpPAbD9EYGLUWKbeRxuB": {
+   "grupos": [
+    "CASO"
+   ],
+   "etiqueta_tronscan": null,
+   "existe": true,
+   "permiso_explicito": true,
+   "incluye_la_propia": true,
+   "claves_ajenas": [],
+   "permisos": [
+    {
+     "tipo": "owner",
+     "umbral": 1,
+     "n_claves": 1
+    },
+    {
+     "tipo": "active",
+     "umbral": 1,
+     "n_claves": 1
+    }
+   ]
+  },
+  "TM1zzNDZD2DPASbKcgdVoTYhfmYgtfwx9R": {
+   "grupos": [
+    "OKX"
+   ],
+   "etiqueta_tronscan": "Okex 1",
+   "existe": true,
+   "permiso_explicito": false,
+   "incluye_la_propia": true,
+   "claves_ajenas": [],
+   "permisos": []
+  },
+  "TM3sTVyahiGWYktKg8G6miHpTzRurKDt7b": {
+   "grupos": [
+    "CASO"
+   ],
+   "etiqueta_tronscan": null,
+   "existe": true,
+   "permiso_explicito": true,
+   "incluye_la_propia": true,
+   "claves_ajenas": [],
+   "permisos": [
+    {
+     "tipo": "owner",
+     "umbral": 1,
+     "n_claves": 1
+    },
+    {
+     "tipo": "active",
+     "umbral": 1,
+     "n_claves": 1
+    }
+   ]
+  },
+  "TMUsySjQJKfwR2btidkk5yAUJYcrvKdTwx": {
+   "grupos": [
+    "FUNDACION_REUNION"
+   ],
+   "etiqueta_tronscan": null,
+   "existe": true,
+   "permiso_explicito": true,
+   "incluye_la_propia": true,
+   "claves_ajenas": [],
+   "permisos": [
+    {
+     "tipo": "owner",
+     "umbral": 1,
+     "n_claves": 1
+    },
+    {
+     "tipo": "active",
+     "umbral": 1,
+     "n_claves": 1
+    }
+   ]
+  },
+  "TNCmcTdyrYKMtmE1KU2itzeCX76jGm5Not": {
+   "grupos": [
+    "POLONIEX"
+   ],
+   "etiqueta_tronscan": "Poloniex",
+   "existe": true,
+   "permiso_explicito": true,
+   "incluye_la_propia": false,
+   "claves_ajenas": [
+    "TWhDfwC8QE6pQyiYy248dNor3uphPEw5M2"
+   ],
+   "permisos": [
+    {
+     "tipo": "owner",
+     "umbral": 3,
+     "n_claves": 1
+    },
+    {
+     "tipo": "active",
+     "umbral": 3,
+     "n_claves": 1
+    }
+   ]
+  },
+  "TNXoiAJ3dct8Fjg4M9fkLFh9S2v9TXc32G": {
+   "grupos": [
+    "BINANCE"
+   ],
+   "etiqueta_tronscan": "Binance-Hot 4",
+   "existe": true,
+   "permiso_explicito": true,
+   "incluye_la_propia": true,
+   "claves_ajenas": [],
+   "permisos": [
+    {
+     "tipo": "owner",
+     "umbral": 1,
+     "n_claves": 1
+    },
+    {
+     "tipo": "active",
+     "umbral": 1,
+     "n_claves": 1
+    }
+   ]
+  },
+  "TNiXZSD38dwRjZ5fXKn1im8crWkfqzskvH": {
+   "grupos": [
+    "BINANCE"
+   ],
+   "etiqueta_tronscan": "Binance-Hot 21",
+   "existe": true,
+   "permiso_explicito": true,
+   "incluye_la_propia": true,
+   "claves_ajenas": [],
+   "permisos": [
+    {
+     "tipo": "owner",
+     "umbral": 1,
+     "n_claves": 1
+    },
+    {
+     "tipo": "active",
+     "umbral": 1,
+     "n_claves": 1
+    }
+   ]
+  },
+  "TNzhS9jbtssBaNBMTm3L54A1VMfmxxC1x6": {
+   "grupos": [
+    "FUNDACION_REUNION"
+   ],
+   "etiqueta_tronscan": null,
+   "existe": true,
+   "permiso_explicito": true,
+   "incluye_la_propia": true,
+   "claves_ajenas": [],
+   "permisos": [
+    {
+     "tipo": "owner",
+     "umbral": 1,
+     "n_claves": 1
+    },
+    {
+     "tipo": "active",
+     "umbral": 1,
+     "n_claves": 1
+    }
+   ]
+  },
+  "TPhGmczy3wkUGafFT8QMXPLN2rzdxeChME": {
+   "grupos": [
+    "CASO"
+   ],
+   "etiqueta_tronscan": null,
+   "existe": true,
+   "permiso_explicito": true,
+   "incluye_la_propia": true,
+   "claves_ajenas": [],
+   "permisos": [
+    {
+     "tipo": "owner",
+     "umbral": 1,
+     "n_claves": 1
+    },
+    {
+     "tipo": "active",
+     "umbral": 1,
+     "n_claves": 1
+    }
+   ]
+  },
+  "TPyjyZfsYaXStgz2NmAraF1uZcMtkgNan5": {
+   "grupos": [
+    "CASO"
+   ],
+   "etiqueta_tronscan": null,
+   "existe": true,
+   "permiso_explicito": true,
+   "incluye_la_propia": true,
+   "claves_ajenas": [],
+   "permisos": [
+    {
+     "tipo": "owner",
+     "umbral": 1,
+     "n_claves": 1
+    },
+    {
+     "tipo": "active",
+     "umbral": 1,
+     "n_claves": 1
+    }
+   ]
+  },
+  "TQ3cCsoxMxLYGLSMijP8EgpRKJcGUrJDMj": {
+   "grupos": [
+    "BINANCE"
+   ],
+   "etiqueta_tronscan": "Binance Alpha",
+   "existe": true,
+   "permiso_explicito": true,
+   "incluye_la_propia": true,
+   "claves_ajenas": [],
+   "permisos": [
+    {
+     "tipo": "owner",
+     "umbral": 1,
+     "n_claves": 1
+    },
+    {
+     "tipo": "active",
+     "umbral": 1,
+     "n_claves": 1
+    }
+   ]
+  },
+  "TQrY8tryqsYVCYS3MFbtffiPp2ccyn4STm": {
+   "grupos": [
+    "BINANCE"
+   ],
+   "etiqueta_tronscan": "Binance 2",
+   "existe": true,
+   "permiso_explicito": true,
+   "incluye_la_propia": true,
+   "claves_ajenas": [],
+   "permisos": [
+    {
+     "tipo": "owner",
+     "umbral": 1,
+     "n_claves": 1
+    },
+    {
+     "tipo": "active",
+     "umbral": 1,
+     "n_claves": 1
+    }
+   ]
+  },
+  "TQwh1ZDBdqMKDtGWEeDdrRUUbtgaVL1Se2": {
+   "grupos": [
+    "CASO"
+   ],
+   "etiqueta_tronscan": null,
+   "existe": true,
+   "permiso_explicito": true,
+   "incluye_la_propia": true,
+   "claves_ajenas": [],
+   "permisos": [
+    {
+     "tipo": "owner",
+     "umbral": 1,
+     "n_claves": 1
+    },
+    {
+     "tipo": "active",
+     "umbral": 1,
+     "n_claves": 1
+    }
+   ]
+  },
+  "TRzQrtxrEJbSbQNwAsgAHkBMxTX47yNmjo": {
+   "grupos": [
+    "CASO"
+   ],
+   "etiqueta_tronscan": null,
+   "existe": true,
+   "permiso_explicito": true,
+   "incluye_la_propia": true,
+   "claves_ajenas": [],
+   "permisos": [
+    {
+     "tipo": "owner",
+     "umbral": 1,
+     "n_claves": 1
+    },
+    {
+     "tipo": "active",
+     "umbral": 1,
+     "n_claves": 1
+    }
+   ]
+  },
+  "TSaRZDiBPD8Rd5vrvX8a4zgunHczM9mj8S": {
+   "grupos": [
+    "OKX"
+   ],
+   "etiqueta_tronscan": "Okex 7",
+   "existe": true,
+   "permiso_explicito": true,
+   "incluye_la_propia": true,
+   "claves_ajenas": [],
+   "permisos": [
+    {
+     "tipo": "owner",
+     "umbral": 1,
+     "n_claves": 1
+    },
+    {
+     "tipo": "active",
+     "umbral": 1,
+     "n_claves": 1
+    }
+   ]
+  },
+  "TScVwVTjqoqPEJ6atnvGCtErWnCyNbzmUL": {
+   "grupos": [
+    "CASO"
+   ],
+   "etiqueta_tronscan": null,
+   "existe": true,
+   "permiso_explicito": true,
+   "incluye_la_propia": true,
+   "claves_ajenas": [],
+   "permisos": [
+    {
+     "tipo": "owner",
+     "umbral": 1,
+     "n_claves": 1
+    },
+    {
+     "tipo": "active",
+     "umbral": 1,
+     "n_claves": 1
+    }
+   ]
+  },
+  "TSzSgxRisS5VBXXDcAezTDvnPGi9CbsXvJ": {
+   "grupos": [
+    "CASO"
+   ],
+   "etiqueta_tronscan": null,
+   "existe": true,
+   "permiso_explicito": true,
+   "incluye_la_propia": false,
+   "claves_ajenas": [
+    "TDAuHDXYNTrtY1k6GNibek44yHEqyQfVkC",
+    "TShAfXbh4kUzmkJ9Ckdo5J6ujWi1M5NLE2",
+    "TUgSgCQL6pMSy9zByn4sgxqrJa95sZExBG",
+    "TV7WmJXhYyd4rqRjbWg62eX8e5DoPbyiA3",
+    "TVnGY8vuJhxDX5b7mTpwaJ9vNDtmjdBxMm"
+   ],
+   "permisos": [
+    {
+     "tipo": "owner",
+     "umbral": 3,
+     "n_claves": 5
+    },
+    {
+     "tipo": "active",
+     "umbral": 3,
+     "n_claves": 5
+    }
+   ]
+  },
+  "TT2T17KZhoDu47i2E4FWxfG79zdkEWkU9N": {
+   "grupos": [
+    "CASO"
+   ],
+   "etiqueta_tronscan": null,
+   "existe": true,
+   "permiso_explicito": true,
+   "incluye_la_propia": true,
+   "claves_ajenas": [],
+   "permisos": [
+    {
+     "tipo": "owner",
+     "umbral": 1,
+     "n_claves": 1
+    },
+    {
+     "tipo": "active",
+     "umbral": 1,
+     "n_claves": 1
+    }
+   ]
+  },
+  "TTU4bhRuPEtaSWPXvvRQ7CVnyHs6cGu24e": {
+   "grupos": [
+    "BINANCE"
+   ],
+   "etiqueta_tronscan": "Binance-Hot 15",
+   "existe": true,
+   "permiso_explicito": true,
+   "incluye_la_propia": true,
+   "claves_ajenas": [],
+   "permisos": [
+    {
+     "tipo": "owner",
+     "umbral": 1,
+     "n_claves": 1
+    },
+    {
+     "tipo": "active",
+     "umbral": 1,
+     "n_claves": 1
+    }
+   ]
+  },
+  "TTXojNiH2hFL3mUC8yTGMwCQ17pmNFxvzE": {
+   "grupos": [
+    "FUNDACION_REUNION"
+   ],
+   "etiqueta_tronscan": null,
+   "existe": true,
+   "permiso_explicito": true,
+   "incluye_la_propia": true,
+   "claves_ajenas": [],
+   "permisos": [
+    {
+     "tipo": "owner",
+     "umbral": 1,
+     "n_claves": 1
+    },
+    {
+     "tipo": "active",
+     "umbral": 1,
+     "n_claves": 1
+    }
+   ]
+  },
+  "TU1ZA8T2g8PvLK8BfM7N94xpmSSpyfxZoK": {
+   "grupos": [
+    "HTX"
+   ],
+   "etiqueta_tronscan": null,
+   "existe": true,
+   "permiso_explicito": true,
+   "incluye_la_propia": true,
+   "claves_ajenas": [],
+   "permisos": [
+    {
+     "tipo": "owner",
+     "umbral": 1,
+     "n_claves": 1
+    },
+    {
+     "tipo": "active",
+     "umbral": 1,
+     "n_claves": 1
+    }
+   ]
+  },
+  "TU32XvjDNkxEkqxCgQQWEKmoMxTz8NECUV": {
+   "grupos": [
+    "CASO"
+   ],
+   "etiqueta_tronscan": null,
+   "existe": true,
+   "permiso_explicito": true,
+   "incluye_la_propia": true,
+   "claves_ajenas": [],
+   "permisos": [
+    {
+     "tipo": "owner",
+     "umbral": 1,
+     "n_claves": 1
+    },
+    {
+     "tipo": "active",
+     "umbral": 1,
+     "n_claves": 1
+    }
+   ]
+  },
+  "TU3rMHyWHzeEJBReWLzHko728hbz6MtfNg": {
+   "grupos": [
+    "CASO"
+   ],
+   "etiqueta_tronscan": null,
+   "existe": true,
+   "permiso_explicito": true,
+   "incluye_la_propia": false,
+   "claves_ajenas": [
+    "TCXrf8SwGjcmQYY1FcFnV3LUXSQpqod3bi",
+    "TM3sTVyahiGWYktKg8G6miHpTzRurKDt7b"
+   ],
+   "permisos": [
+    {
+     "tipo": "owner",
+     "umbral": 1,
+     "n_claves": 1
+    },
+    {
+     "tipo": "active",
+     "umbral": 1,
+     "n_claves": 1
+    }
+   ]
+  },
+  "TUTtLtGjXWqkTAow7jj7oMhTGLe9XB9YMA": {
+   "grupos": [
+    "CASO"
+   ],
+   "etiqueta_tronscan": null,
+   "existe": true,
+   "permiso_explicito": true,
+   "incluye_la_propia": true,
+   "claves_ajenas": [],
+   "permisos": [
+    {
+     "tipo": "owner",
+     "umbral": 1,
+     "n_claves": 1
+    },
+    {
+     "tipo": "active",
+     "umbral": 1,
+     "n_claves": 1
+    }
+   ]
+  },
+  "TUgSgCQL6pMSy9zByn4sgxqrJa95sZExBG": {
+   "grupos": [
+    "POLONIEX"
+   ],
+   "etiqueta_tronscan": "Poloniex 2",
+   "existe": true,
+   "permiso_explicito": true,
+   "incluye_la_propia": true,
+   "claves_ajenas": [],
+   "permisos": [
+    {
+     "tipo": "owner",
+     "umbral": 1,
+     "n_claves": 1
+    },
+    {
+     "tipo": "active",
+     "umbral": 1,
+     "n_claves": 1
+    }
+   ]
+  },
+  "TV6MuMXfmLbBqPZvBHdwFsDnQeVfnmiuSi": {
+   "grupos": [
+    "BINANCE"
+   ],
+   "etiqueta_tronscan": "Binance-Hot 2",
+   "existe": true,
+   "permiso_explicito": true,
+   "incluye_la_propia": true,
+   "claves_ajenas": [],
+   "permisos": [
+    {
+     "tipo": "owner",
+     "umbral": 1,
+     "n_claves": 1
+    },
+    {
+     "tipo": "active",
+     "umbral": 1,
+     "n_claves": 1
+    }
+   ]
+  },
+  "TV6qo5vZ9t118WfkqqhFPLTRMxgPRXVr7t": {
+   "grupos": [
+    "FUNDACION_REUNION"
+   ],
+   "etiqueta_tronscan": null,
+   "existe": true,
+   "permiso_explicito": true,
+   "incluye_la_propia": true,
+   "claves_ajenas": [],
+   "permisos": [
+    {
+     "tipo": "owner",
+     "umbral": 1,
+     "n_claves": 1
+    },
+    {
+     "tipo": "active",
+     "umbral": 1,
+     "n_claves": 1
+    }
+   ]
+  },
+  "TVJVQtD1rPC2igEM82AfnPZTYdJFGAFQbw": {
+   "grupos": [
+    "FUNDACION_REUNION"
+   ],
+   "etiqueta_tronscan": null,
+   "existe": true,
+   "permiso_explicito": true,
+   "incluye_la_propia": true,
+   "claves_ajenas": [],
+   "permisos": [
+    {
+     "tipo": "owner",
+     "umbral": 1,
+     "n_claves": 1
+    },
+    {
+     "tipo": "active",
+     "umbral": 1,
+     "n_claves": 1
+    }
+   ]
+  },
+  "TWGZbjofbTLY3UCjCV4yiLkRg89zLqwRgi": {
+   "grupos": [
+    "OKX"
+   ],
+   "etiqueta_tronscan": "Okex 5",
+   "existe": true,
+   "permiso_explicito": true,
+   "incluye_la_propia": true,
+   "claves_ajenas": [],
+   "permisos": [
+    {
+     "tipo": "owner",
+     "umbral": 1,
+     "n_claves": 1
+    },
+    {
+     "tipo": "active",
+     "umbral": 1,
+     "n_claves": 1
+    }
+   ]
+  },
+  "TWPpxPd5PpU5FQk6F6F3HMN5VdufxnVA8K": {
+   "grupos": [
+    "CASO"
+   ],
+   "etiqueta_tronscan": null,
+   "existe": true,
+   "permiso_explicito": true,
+   "incluye_la_propia": false,
+   "claves_ajenas": [
+    "TEdzuiQcwJudNR83UomxHJGhsMWYibdM7o",
+    "TMiDbtDSRMFcae5kZPq1tXc6q9217Tg26d",
+    "TUcbM2MwtjsNGtY2CVjFpjbW7Nc76XySmD",
+    "TUdbhFMsZTc14xG2CxkUREp1qWT6TGi1tL",
+    "TUgSgCQL6pMSy9zByn4sgxqrJa95sZExBG"
+   ],
+   "permisos": [
+    {
+     "tipo": "owner",
+     "umbral": 3,
+     "n_claves": 5
+    },
+    {
+     "tipo": "active",
+     "umbral": 3,
+     "n_claves": 5
+    }
+   ]
+  },
+  "TWd4WrZ9wn84f5x1hZhL4DHvk738ns5jwb": {
+   "grupos": [
+    "BINANCE"
+   ],
+   "etiqueta_tronscan": "Binance-Cold 2",
+   "existe": true,
+   "permiso_explicito": false,
+   "incluye_la_propia": true,
+   "claves_ajenas": [],
+   "permisos": []
+  },
+  "TWhDfwC8QE6pQyiYy248dNor3uphPEw5M2": {
+   "grupos": [
+    "CASO"
+   ],
+   "etiqueta_tronscan": null,
+   "existe": true,
+   "permiso_explicito": true,
+   "incluye_la_propia": true,
+   "claves_ajenas": [],
+   "permisos": [
+    {
+     "tipo": "owner",
+     "umbral": 1,
+     "n_claves": 1
+    },
+    {
+     "tipo": "active",
+     "umbral": 1,
+     "n_claves": 1
+    }
+   ]
+  },
+  "TWn3P22ujD4BGJfeM6YDDWydbZoAWkwPjZ": {
+   "grupos": [
+    "FUNDACION_REUNION"
+   ],
+   "etiqueta_tronscan": null,
+   "existe": true,
+   "permiso_explicito": true,
+   "incluye_la_propia": true,
+   "claves_ajenas": [],
+   "permisos": [
+    {
+     "tipo": "owner",
+     "umbral": 1,
+     "n_claves": 1
+    },
+    {
+     "tipo": "active",
+     "umbral": 1,
+     "n_claves": 1
+    }
+   ]
+  },
+  "TWpMnUh9pZS1Mf8yyw9WPiS82WYevKzQo2": {
+   "grupos": [
+    "CASO"
+   ],
+   "etiqueta_tronscan": null,
+   "existe": true,
+   "permiso_explicito": true,
+   "incluye_la_propia": true,
+   "claves_ajenas": [],
+   "permisos": [
+    {
+     "tipo": "owner",
+     "umbral": 1,
+     "n_claves": 1
+    },
+    {
+     "tipo": "active",
+     "umbral": 1,
+     "n_claves": 1
+    }
+   ]
+  },
+  "TYASr5UV6HEcXatwdFQfmLVUqQQQMUxHLS": {
+   "grupos": [
+    "BINANCE"
+   ],
+   "etiqueta_tronscan": "Binance-Hot 3",
+   "existe": true,
+   "permiso_explicito": true,
+   "incluye_la_propia": true,
+   "claves_ajenas": [],
+   "permisos": [
+    {
+     "tipo": "owner",
+     "umbral": 1,
+     "n_claves": 1
+    },
+    {
+     "tipo": "active",
+     "umbral": 1,
+     "n_claves": 1
+    }
+   ]
+  },
+  "TYL7z7VSVRShLoJ6YRQMA4t9pSECt9ZLmz": {
+   "grupos": [
+    "CASO"
+   ],
+   "etiqueta_tronscan": null,
+   "existe": true,
+   "permiso_explicito": true,
+   "incluye_la_propia": true,
+   "claves_ajenas": [],
+   "permisos": [
+    {
+     "tipo": "owner",
+     "umbral": 1,
+     "n_claves": 1
+    },
+    {
+     "tipo": "active",
+     "umbral": 1,
+     "n_claves": 1
+    }
+   ]
+  },
+  "TYLRgzUKgLHw5wCYox2xRUkCQaWo9koP6K": {
+   "grupos": [
+    "BINANCE"
+   ],
+   "etiqueta_tronscan": "Binance-Hot 13",
+   "existe": true,
+   "permiso_explicito": true,
+   "incluye_la_propia": true,
+   "claves_ajenas": [],
+   "permisos": [
+    {
+     "tipo": "owner",
+     "umbral": 1,
+     "n_claves": 1
+    },
+    {
+     "tipo": "active",
+     "umbral": 1,
+     "n_claves": 1
+    }
+   ]
+  },
+  "TYSZXcgPar7Xj1b17Hj3WVVoJ1UGCe8xgd": {
+   "grupos": [
+    "FUNDACION_REUNION"
+   ],
+   "etiqueta_tronscan": null,
+   "existe": true,
+   "permiso_explicito": true,
+   "incluye_la_propia": true,
+   "claves_ajenas": [],
+   "permisos": [
+    {
+     "tipo": "owner",
+     "umbral": 1,
+     "n_claves": 1
+    },
+    {
+     "tipo": "active",
+     "umbral": 1,
+     "n_claves": 1
+    }
+   ]
+  }
+ },
+ "claves_compartidas_por_2_o_mas_cuentas": [
+  {
+   "clave": "TUgSgCQL6pMSy9zByn4sgxqrJa95sZExBG",
+   "etiqueta_de_la_clave": "Poloniex 2",
+   "en_cuentas": [
+    {
+     "cuenta": "TSzSgxRisS5VBXXDcAezTDvnPGi9CbsXvJ",
+     "grupos": [
+      "CASO"
+     ],
+     "etiqueta": null
+    },
+    {
+     "cuenta": "TWPpxPd5PpU5FQk6F6F3HMN5VdufxnVA8K",
+     "grupos": [
+      "CASO"
+     ],
+     "etiqueta": null
+    }
+   ],
+   "grupos_implicados": [
+    "CASO"
+   ]
+  }
+ ],
+ "cruce_exchange_con_caso": [],
+ "cruce_entre_exchanges": [],
+ "clave_que_es_cuenta_examinada": [
+  {
+   "clave": "TM3sTVyahiGWYktKg8G6miHpTzRurKDt7b",
+   "grupos_de_la_clave": [
+    "CASO"
+   ],
+   "etiqueta": null,
+   "firma_en": [
+    {
+     "cuenta": "TU3rMHyWHzeEJBReWLzHko728hbz6MtfNg",
+     "grupos": [
+      "CASO"
+     ]
+    }
+   ]
+  },
+  {
+   "clave": "TUgSgCQL6pMSy9zByn4sgxqrJa95sZExBG",
+   "grupos_de_la_clave": [
+    "POLONIEX"
+   ],
+   "etiqueta": "Poloniex 2",
+   "firma_en": [
+    {
+     "cuenta": "TSzSgxRisS5VBXXDcAezTDvnPGi9CbsXvJ",
+     "grupos": [
+      "CASO"
+     ]
+    },
+    {
+     "cuenta": "TWPpxPd5PpU5FQk6F6F3HMN5VdufxnVA8K",
+     "grupos": [
+      "CASO"
+     ]
+    }
+   ]
+  },
+  {
+   "clave": "TWhDfwC8QE6pQyiYy248dNor3uphPEw5M2",
+   "grupos_de_la_clave": [
+    "CASO"
+   ],
+   "etiqueta": null,
+   "firma_en": [
+    {
+     "cuenta": "TNCmcTdyrYKMtmE1KU2itzeCX76jGm5Not",
+     "grupos": [
+      "POLONIEX"
+     ]
+    }
+   ]
+  }
+ ],
+ "poloniex_2": {
+  "cuenta": "TUgSgCQL6pMSy9zByn4sgxqrJa95sZExBG",
+  "etiqueta_tronscan": "Poloniex 2",
+  "etiqueta_leida_en": "raw/o2-2026-11-05",
+  "fichas_tronscan": {
+   "TUgSgCQL6pMSy9zByn4sgxqrJa95sZExBG": {
+    "addressTag": "Poloniex 2",
+    "addressTagLogo": "https://coin.top/production/upload/logo/Poloniex.png",
+    "publicTag": "Poloniex 2",
+    "accountType": 0,
+    "date_created": 1661073282000,
+    "latest_operation_time": 1793589627000,
+    "totalTransactionCount": 1088,
+    "transactions_in": 1177,
+    "transactions_out": 376,
+    "creada": "2022-08-21T09:14:42Z"
+   },
+   "TSzSgxRisS5VBXXDcAezTDvnPGi9CbsXvJ": {
+    "accountType": 0,
+    "date_created": 1701247947000,
+    "latest_operation_time": 1793901798000,
+    "totalTransactionCount": 9468,
+    "transactions_in": 7347,
+    "transactions_out": 5451,
+    "creada": "2023-11-29T08:52:27Z"
+   },
+   "TWPpxPd5PpU5FQk6F6F3HMN5VdufxnVA8K": {
+    "accountType": 0,
+    "date_created": 1785210189000,
+    "latest_operation_time": 1793795820000,
+    "totalTransactionCount": 256,
+    "transactions_in": 190,
+    "transactions_out": 68,
+    "creada": "2026-07-28T03:43:09Z"
+   },
+   "TNCmcTdyrYKMtmE1KU2itzeCX76jGm5Not": {
+    "addressTag": "Poloniex",
+    "addressTagLogo": "https://coin.top/production/upload/logo/Poloniex.png",
+    "publicTag": "Poloniex",
+    "accountType": 0,
+    "date_created": 1555946043000,
+    "latest_operation_time": 1791655110000,
+    "totalTransactionCount": 5752021,
+    "transactions_in": 2243212,
+    "transactions_out": 3005229,
+    "creada": "2019-04-22T15:14:03Z"
+   },
+   "TFTWNgDBkQ5wQoP8RXpRznnHvAVV8x5jLu": {
+    "addressTagLogo": "https://coin.top/production/upload/logo/Huobi.png",
+    "accountType": 0,
+    "date_created": 1700817153000,
+    "latest_operation_time": 1793629005000,
+    "totalTransactionCount": 20789371,
+    "transactions_in": 10421015,
+    "transactions_out": 19202131,
+    "creada": "2023-11-24T09:12:33Z"
+   }
+  },
+  "historial": {
+   "tx_leidas": 1088,
+   "paginas_tx": 6,
+   "trc20_leidas": 782,
+   "tipos_de_operacion": {
+    "TriggerSmart": 290,
+    "Transfer": 738,
+    "TransferAsset": 38,
+    "FreezeBalanceV2": 6,
+    "DelegateResource": 7,
+    "VoteWitness": 3,
+    "WithdrawBalance": 1,
+    "UnfreezeBalanceV2": 2,
+    "UnDelegateResource": 2,
+    "WithdrawExpireUnfreeze": 1
+   },
+   "primera": "2022-08-21T09:14:45Z",
+   "ultima": "2026-10-30T11:38:27Z",
+   "primeros_movimientos": [
+    {
+     "t": "2022-08-21T09:14:45Z",
+     "sentido": "entra",
+     "otra": "TUjx6w55Nx9G4GjjRNEB4e7w5BUH3WmJTZ",
+     "activo": "TRX",
+     "cantidad": 5000,
+     "tx": "f2b5590e69396791906b7f6b563e849a3aad3e49b23bb57b18dd56ebcd663d3a",
+     "grupos_de_la_otra": []
+    },
+    {
+     "t": "2022-08-21T09:14:51Z",
+     "sentido": "entra",
+     "otra": "TTY9rp3FeVmXkYraHoP64deh5Pj9CpFnnL",
+     "activo": "TRX",
+     "cantidad": 0.000001,
+     "tx": "e33ad324b2fff236ab4aef874cee3704a5d53a53522ae511af1f62ef9f1755d4",
+     "grupos_de_la_otra": []
+    },
+    {
+     "t": "2022-08-21T09:15:48Z",
+     "sentido": "entra",
+     "otra": "TUzN63RkxiFyb4r6GJh2irYLPTvUERqggg",
+     "activo": "TRX",
+     "cantidad": 0.000028,
+     "tx": "88a83b0e89af352171961266b05f1592fc79c4236544bc9d57303bd7dfd68923",
+     "grupos_de_la_otra": []
+    },
+    {
+     "t": "2023-04-29T02:17:36Z",
+     "sentido": "entra",
+     "otra": "TRpvvre5s2JVDJBmLKqktik2zDezqBqoQg",
+     "activo": "TRX",
+     "cantidad": 130307974,
+     "tx": "21ab5b61bb074820225ecfbe46db03bedc2eb39ce60b784e294fd21cf586f3d1",
+     "grupos_de_la_otra": []
+    },
+    {
+     "t": "2023-04-29T02:17:39Z",
+     "sentido": "entra",
+     "otra": "TNuWqTrYzLXzSDm9priWFogDTJafi5Cb5N",
+     "activo": "TRX",
+     "cantidad": 0.000001,
+     "tx": "0de1a6b85fae5d3b979cf75875f76947bd7bce9147c7e509ae8e00947a9e6158",
+     "grupos_de_la_otra": []
+    },
+    {
+     "t": "2023-04-29T02:17:42Z",
+     "sentido": "entra",
+     "otra": "TNGPqGnhj5pNzmsZiPX6e6zN52L5ir4oQg",
+     "activo": "TRX",
+     "cantidad": 0.000005,
+     "tx": "73ff493088084dfae7c75b8f5f7e9aebf5411861acaa97c0f861747bd53d87c8",
+     "grupos_de_la_otra": []
+    },
+    {
+     "t": "2023-04-29T02:17:45Z",
+     "sentido": "entra",
+     "otra": "TByg43EzSmqTjndLKpNH7nASgaKDvygfiQ",
+     "activo": "TRX",
+     "cantidad": 0.000001,
+     "tx": "ac707927cc745754540f18f71e27e277154fb0e53f610ef3dce6f97dc0f0e4f8",
+     "grupos_de_la_otra": []
+    },
+    {
+     "t": "2023-04-29T02:18:21Z",
+     "sentido": "entra",
+     "otra": "TQW5SsNA4KfFnSQM84PeQv6fYi6esw31nr",
+     "activo": "TRX",
+     "cantidad": 0.000001,
+     "tx": "43b00c6d49b1f8d0e6c53fbff34ac0e02e3a28ea9920e5913b0305b4ad92e772",
+     "grupos_de_la_otra": []
+    },
+    {
+     "t": "2023-04-29T02:18:21Z",
+     "sentido": "entra",
+     "otra": "TH4KEV4bcwwR5fyCozZE1ZPJ3k7LJBFCUs",
+     "activo": "TRX",
+     "cantidad": 0.000001,
+     "tx": "4d980cab78b13b71a1d65d546f05e192290a396544efaad17459b2a85da031af",
+     "grupos_de_la_otra": []
+    },
+    {
+     "t": "2023-05-09T19:57:57Z",
+     "sentido": "entra",
+     "otra": "TXqdgF8fSHxP4rGbtt9cXXpUwkyDonMYe7",
+     "activo": "TRX",
+     "cantidad": 1,
+     "tx": "3046d43e12e8b6c730a9129960de4869d5291c8ef1fd8067a41a9661ff223ce5",
+     "grupos_de_la_otra": []
+    }
+   ]
+  },
+  "mayores_contrapartes": [
+   {
+    "cuenta": "TXJgMdjVX5dKiQaUi9QobwNxtSQaFqccvd",
+    "trx_in": 0,
+    "trx_out": 0,
+    "usdt_in": 170994550.7,
+    "usdt_out": 1.157920892373162e+71,
+    "otros_tokens": 63,
+    "n": 127,
+    "grupos": [],
+    "etiqueta_tronscan": null,
+    "ficha_tronscan": {
+     "accountType": 2,
+     "date_created": 0,
+     "latest_operation_time": 1793901252000,
+     "totalTransactionCount": 481069,
+     "transactions_in": 332180,
+     "transactions_out": 304787
+    }
+   },
+   {
+    "cuenta": "TSzSgxRisS5VBXXDcAezTDvnPGi9CbsXvJ",
+    "trx_in": 149000000,
+    "trx_out": 117201000,
+    "usdt_in": 146250000,
+    "usdt_out": 238750000.74,
+    "otros_tokens": 112,
+    "n": 259,
+    "grupos": [
+     "CASO"
+    ],
+    "etiqueta_tronscan": null,
+    "ficha_tronscan": {
+     "accountType": 0,
+     "date_created": 1701247947000,
+     "latest_operation_time": 1793901798000,
+     "totalTransactionCount": 9468,
+     "transactions_in": 7347,
+     "transactions_out": 5451,
+     "creada": "2023-11-29T08:52:27Z"
+    }
+   },
+   {
+    "cuenta": "TWhDfwC8QE6pQyiYy248dNor3uphPEw5M2",
+    "trx_in": 15499996,
+    "trx_out": 132311000,
+    "usdt_in": 87492000,
+    "usdt_out": 0,
+    "otros_tokens": 64,
+    "n": 175,
+    "grupos": [
+     "CASO"
+    ],
+    "etiqueta_tronscan": null,
+    "ficha_tronscan": {
+     "accountType": 0,
+     "date_created": 1701179814000,
+     "latest_operation_time": 1793901786000,
+     "totalTransactionCount": 1251430,
+     "transactions_in": 797915,
+     "transactions_out": 1048815,
+     "creada": "2023-11-28T13:56:54Z"
+    }
+   },
+   {
+    "cuenta": "TRpvvre5s2JVDJBmLKqktik2zDezqBqoQg",
+    "trx_in": 130307974,
+    "trx_out": 0,
+    "usdt_in": 0,
+    "usdt_out": 0,
+    "otros_tokens": 0,
+    "n": 1,
+    "grupos": [],
+    "etiqueta_tronscan": null,
+    "ficha_tronscan": {
+     "accountType": 0,
+     "date_created": 1589560860000,
+     "latest_operation_time": 1726051170000,
+     "totalTransactionCount": 1508,
+     "transactions_in": 1482,
+     "transactions_out": 31,
+     "creada": "2020-05-15T16:41:00Z"
+    }
+   },
+   {
+    "cuenta": "TNCmcTdyrYKMtmE1KU2itzeCX76jGm5Not",
+    "trx_in": 40050000,
+    "trx_out": 16400000,
+    "usdt_in": 0,
+    "usdt_out": 0,
+    "otros_tokens": 9,
+    "n": 13,
+    "grupos": [
+     "POLONIEX"
+    ],
+    "etiqueta_tronscan": "Poloniex",
+    "ficha_tronscan": {
+     "addressTag": "Poloniex",
+     "addressTagLogo": "https://coin.top/production/upload/logo/Poloniex.png",
+     "publicTag": "Poloniex",
+     "accountType": 0,
+     "date_created": 1555946043000,
+     "latest_operation_time": 1791655110000,
+     "totalTransactionCount": 5752021,
+     "transactions_in": 2243212,
+     "transactions_out": 3005229,
+     "creada": "2019-04-22T15:14:03Z"
+    }
+   },
+   {
+    "cuenta": "TT2T17KZhoDu47i2E4FWxfG79zdkEWkU9N",
+    "trx_in": 17455545.62,
+    "trx_out": 0,
+    "usdt_in": 21736156.69,
+    "usdt_out": 0,
+    "otros_tokens": 13,
+    "n": 17,
+    "grupos": [
+     "CASO"
+    ],
+    "etiqueta_tronscan": null,
+    "ficha_tronscan": {
+     "accountType": 0,
+     "date_created": 1682942994000,
+     "latest_operation_time": 1793793297000,
+     "totalTransactionCount": 5292,
+     "transactions_in": 5101,
+     "transactions_out": 1829,
+     "creada": "2023-05-01T12:09:54Z"
+    }
+   },
+   {
+    "cuenta": "TA1EfKwbXCy9JPEWhPBg6hvdcsN1mrj62T",
+    "trx_in": 0,
+    "trx_out": 0,
+    "usdt_in": 0,
+    "usdt_out": 30000000,
+    "otros_tokens": 0,
+    "n": 1,
+    "grupos": [],
+    "etiqueta_tronscan": null,
+    "ficha_tronscan": {
+     "accountType": 0,
+     "date_created": 1732450629000,
+     "latest_operation_time": 1732450956000,
+     "totalTransactionCount": 5,
+     "transactions_in": 3,
+     "transactions_out": 1,
+     "creada": "2024-11-24T12:17:09Z"
+    }
+   },
+   {
+    "cuenta": "TDirN49rpXgs2RXJUudbcRskhoyD29c66U",
+    "trx_in": 0,
+    "trx_out": 0,
+    "usdt_in": 9237542,
+    "usdt_out": 0,
+    "otros_tokens": 0,
+    "n": 1,
+    "grupos": [
+     "FUNDACION_REUNION"
+    ],
+    "etiqueta_tronscan": null,
+    "ficha_tronscan": {
+     "accountType": 0,
+     "date_created": 1582057710000,
+     "latest_operation_time": 1726051161000,
+     "totalTransactionCount": 2141,
+     "transactions_in": 2138,
+     "transactions_out": 17,
+     "creada": "2020-02-18T20:28:30Z"
+    }
+   },
+   {
+    "cuenta": "TK86Qm97uM848dMk8G7xNbJB7zG1uW3h1n",
+    "trx_in": 0,
+    "trx_out": 0,
+    "usdt_in": 5000000,
+    "usdt_out": 0,
+    "otros_tokens": 3,
+    "n": 4,
+    "grupos": [],
+    "etiqueta_tronscan": null,
+    "ficha_tronscan": {
+     "addressTagLogo": "https://coin.top/production/upload/logo/Huobi.png",
+     "accountType": 0,
+     "date_created": 1700901150000,
+     "latest_operation_time": 1793897976000,
+     "totalTransactionCount": 81985,
+     "transactions_in": 525195,
+     "transactions_out": 26351,
+     "creada": "2023-11-25T08:32:30Z"
+    }
+   },
+   {
+    "cuenta": "TSUYvQ5tdd3DijCD1uGunGLpftHuSZ12sQ",
+    "trx_in": 0,
+    "trx_out": 0,
+    "usdt_in": 0,
+    "usdt_out": 2860360.55,
+    "otros_tokens": 0,
+    "n": 2,
+    "grupos": [],
+    "etiqueta_tronscan": null,
+    "ficha_tronscan": {
+     "accountType": 2,
+     "date_created": 0,
+     "latest_operation_time": 1793901612000,
+     "totalTransactionCount": 2465,
+     "transactions_in": 164338,
+     "transactions_out": 145983
+    }
+   },
+   {
+    "cuenta": "TAgAf4CNmfDn14BnvFTdGpifUxq9qsBTsp",
+    "trx_in": 6925.21,
+    "trx_out": 0,
+    "usdt_in": 0,
+    "usdt_out": 0,
+    "otros_tokens": 0,
+    "n": 11,
+    "grupos": [],
+    "etiqueta_tronscan": null,
+    "ficha_tronscan": {
+     "accountType": 0,
+     "date_created": 1658797737000,
+     "latest_operation_time": 1710308928000,
+     "totalTransactionCount": 1212,
+     "transactions_in": 986,
+     "transactions_out": 226,
+     "creada": "2022-07-26T01:08:57Z"
+    }
+   },
+   {
+    "cuenta": "TUjx6w55Nx9G4GjjRNEB4e7w5BUH3WmJTZ",
+    "trx_in": 5000,
+    "trx_out": 0,
+    "usdt_in": 0,
+    "usdt_out": 0,
+    "otros_tokens": 1,
+    "n": 2,
+    "grupos": [],
+    "etiqueta_tronscan": null,
+    "ficha_tronscan": {
+     "accountType": 0,
+     "date_created": 1646665860000,
+     "latest_operation_time": 1781144607000,
+     "totalTransactionCount": 2586,
+     "transactions_in": 2556,
+     "transactions_out": 86,
+     "creada": "2022-03-07T15:11:00Z"
+    }
+   }
+  ],
+  "contactos_con_grupos": {
+   "BINANCE": {
+    "cuentas": [
+     "TAzsQ9Gx8eqFNFSKbeXrbi45CuVPHzA8wr",
+     "TQrY8tryqsYVCYS3MFbtffiPp2ccyn4STm"
+    ],
+    "trx_in": 84.56,
+    "trx_out": 0,
+    "usdt_in": 0,
+    "usdt_out": 0
+   },
+   "FUNDACION_REUNION": {
+    "cuentas": [
+     "TDirN49rpXgs2RXJUudbcRskhoyD29c66U"
+    ],
+    "trx_in": 0,
+    "trx_out": 0,
+    "usdt_in": 9237542,
+    "usdt_out": 0
+   },
+   "POLONIEX": {
+    "cuentas": [
+     "TNCmcTdyrYKMtmE1KU2itzeCX76jGm5Not"
+    ],
+    "trx_in": 40050000,
+    "trx_out": 16400000,
+    "usdt_in": 0,
+    "usdt_out": 0
+   },
+   "CASO": {
+    "cuentas": [
+     "TPyjyZfsYaXStgz2NmAraF1uZcMtkgNan5",
+     "TSzSgxRisS5VBXXDcAezTDvnPGi9CbsXvJ",
+     "TT2T17KZhoDu47i2E4FWxfG79zdkEWkU9N",
+     "TWhDfwC8QE6pQyiYy248dNor3uphPEw5M2"
+    ],
+    "trx_in": 181955541.62,
+    "trx_out": 249512000,
+    "usdt_in": 255478156.69,
+    "usdt_out": 238750000.74
+   }
+  },
+  "contactos_directos_con_el_caso": {
+   "con_PAR": true,
+   "con_WP": false,
+   "con_proveedora": true,
+   "con_NC_Poloniex": true,
+   "con_HTX4": false
+  },
+  "firma_en": [
+   {
+    "cuenta": "TSzSgxRisS5VBXXDcAezTDvnPGi9CbsXvJ",
+    "nombre": "Pareja de la proveedora (TSzSgxRi)",
+    "creada": "2023-11-29",
+    "primera_vez_que_aparece": {
+     "t": "2024-08-29T09:08:06Z",
+     "tx": "92edc15ce32b58797b0dbb166d67b88e9ca536925d471ff34081bc12e5300d24",
+     "umbral": 3,
+     "n_firmantes": 5
+    },
+    "firma_ahora": true,
+    "umbral_actual": 3,
+    "n_firmantes_actual": 5,
+    "cambios_de_permisos_total": 10
+   },
+   {
+    "cuenta": "TWPpxPd5PpU5FQk6F6F3HMN5VdufxnVA8K",
+    "nombre": "Receptor de TEF9ZV controlado por otra clave (Sin etiqueta)",
+    "creada": "2026-07-28",
+    "primera_vez_que_aparece": {
+     "t": "2026-07-28T06:11:30Z",
+     "tx": "de5089c07dc67d87eb003c1b5db4a7dca886e8284c9ecbb528075890507b56ae",
+     "umbral": 3,
+     "n_firmantes": 5
+    },
+    "firma_ahora": true,
+    "umbral_actual": 3,
+    "n_firmantes_actual": 5,
+    "cambios_de_permisos_total": 1
+   },
+   {
+    "cuenta": "TUgSgCQL6pMSy9zByn4sgxqrJa95sZExBG",
+    "nombre": "Clave/cuenta relacionada",
+    "creada": "2022-08-21",
+    "primera_vez_que_aparece": null,
+    "firma_ahora": true,
+    "umbral_actual": 1,
+    "n_firmantes_actual": 1,
+    "cambios_de_permisos_total": 0
+   }
+  ],
+  "firmantes_actuales_de_las_dos_multifirmas": {
+   "TSzSgxRisS5VBXXDcAezTDvnPGi9CbsXvJ": [
+    "TDAuHDXYNTrtY1k6GNibek44yHEqyQfVkC",
+    "TShAfXbh4kUzmkJ9Ckdo5J6ujWi1M5NLE2",
+    "TUgSgCQL6pMSy9zByn4sgxqrJa95sZExBG",
+    "TV7WmJXhYyd4rqRjbWg62eX8e5DoPbyiA3",
+    "TVnGY8vuJhxDX5b7mTpwaJ9vNDtmjdBxMm"
+   ],
+   "TWPpxPd5PpU5FQk6F6F3HMN5VdufxnVA8K": [
+    "TEdzuiQcwJudNR83UomxHJGhsMWYibdM7o",
+    "TMiDbtDSRMFcae5kZPq1tXc6q9217Tg26d",
+    "TUcbM2MwtjsNGtY2CVjFpjbW7Nc76XySmD",
+    "TUdbhFMsZTc14xG2CxkUREp1qWT6TGi1tL",
+    "TUgSgCQL6pMSy9zByn4sgxqrJa95sZExBG"
+   ]
+  },
+  "otros_firmantes": {
+   "TDAuHDXYNTrtY1k6GNibek44yHEqyQfVkC": {
+    "grupos": [],
+    "etiqueta_tronscan": null,
+    "firma_en": [
+     "TSzSgxRisS5VBXXDcAezTDvnPGi9CbsXvJ"
+    ],
+    "existe": true,
+    "permiso_explicito": true,
+    "incluye_la_propia": true,
+    "claves_ajenas": [],
+    "permisos": [
+     {
+      "tipo": "owner",
+      "umbral": 1,
+      "n_claves": 1
+     },
+     {
+      "tipo": "active",
+      "umbral": 1,
+      "n_claves": 1
+     }
+    ],
+    "ficha_tronscan": {
+     "accountType": 0,
+     "date_created": 1701272337000,
+     "latest_operation_time": 1793293650000,
+     "totalTransactionCount": 3,
+     "transactions_in": 3,
+     "transactions_out": 0,
+     "creada": "2023-11-29T15:38:57Z"
+    }
+   },
+   "TShAfXbh4kUzmkJ9Ckdo5J6ujWi1M5NLE2": {
+    "grupos": [],
+    "etiqueta_tronscan": null,
+    "firma_en": [
+     "TSzSgxRisS5VBXXDcAezTDvnPGi9CbsXvJ"
+    ],
+    "existe": false,
+    "ficha_tronscan": {
+     "accountType": 0,
+     "date_created": 0,
+     "latest_operation_time": 0,
+     "totalTransactionCount": 0,
+     "transactions_in": 0,
+     "transactions_out": 0
+    }
+   },
+   "TV7WmJXhYyd4rqRjbWg62eX8e5DoPbyiA3": {
+    "grupos": [],
+    "etiqueta_tronscan": null,
+    "firma_en": [
+     "TSzSgxRisS5VBXXDcAezTDvnPGi9CbsXvJ"
+    ],
+    "existe": true,
+    "permiso_explicito": true,
+    "incluye_la_propia": true,
+    "claves_ajenas": [],
+    "permisos": [
+     {
+      "tipo": "owner",
+      "umbral": 1,
+      "n_claves": 1
+     },
+     {
+      "tipo": "active",
+      "umbral": 1,
+      "n_claves": 1
+     }
+    ],
+    "ficha_tronscan": {
+     "accountType": 0,
+     "date_created": 1701272721000,
+     "latest_operation_time": 1793293650000,
+     "totalTransactionCount": 3,
+     "transactions_in": 3,
+     "transactions_out": 0,
+     "creada": "2023-11-29T15:45:21Z"
+    }
+   },
+   "TVnGY8vuJhxDX5b7mTpwaJ9vNDtmjdBxMm": {
+    "grupos": [],
+    "etiqueta_tronscan": null,
+    "firma_en": [
+     "TSzSgxRisS5VBXXDcAezTDvnPGi9CbsXvJ"
+    ],
+    "existe": true,
+    "permiso_explicito": true,
+    "incluye_la_propia": true,
+    "claves_ajenas": [],
+    "permisos": [
+     {
+      "tipo": "owner",
+      "umbral": 1,
+      "n_claves": 1
+     },
+     {
+      "tipo": "active",
+      "umbral": 1,
+      "n_claves": 1
+     }
+    ],
+    "ficha_tronscan": {
+     "accountType": 0,
+     "date_created": 1744098579000,
+     "latest_operation_time": 1793293650000,
+     "totalTransactionCount": 3,
+     "transactions_in": 3,
+     "transactions_out": 0,
+     "creada": "2025-04-08T07:49:39Z"
+    }
+   },
+   "TEdzuiQcwJudNR83UomxHJGhsMWYibdM7o": {
+    "grupos": [],
+    "etiqueta_tronscan": null,
+    "firma_en": [
+     "TWPpxPd5PpU5FQk6F6F3HMN5VdufxnVA8K"
+    ],
+    "existe": false,
+    "ficha_tronscan": {
+     "accountType": 0,
+     "date_created": 0,
+     "latest_operation_time": 0,
+     "totalTransactionCount": 0,
+     "transactions_in": 0,
+     "transactions_out": 0
+    }
+   },
+   "TMiDbtDSRMFcae5kZPq1tXc6q9217Tg26d": {
+    "grupos": [],
+    "etiqueta_tronscan": null,
+    "firma_en": [
+     "TWPpxPd5PpU5FQk6F6F3HMN5VdufxnVA8K"
+    ],
+    "existe": true,
+    "permiso_explicito": true,
+    "incluye_la_propia": true,
+    "claves_ajenas": [],
+    "permisos": [
+     {
+      "tipo": "owner",
+      "umbral": 1,
+      "n_claves": 1
+     },
+     {
+      "tipo": "active",
+      "umbral": 1,
+      "n_claves": 1
+     }
+    ],
+    "ficha_tronscan": {
+     "accountType": 0,
+     "date_created": 1785220116000,
+     "latest_operation_time": 1793294154000,
+     "totalTransactionCount": 10,
+     "transactions_in": 9,
+     "transactions_out": 1,
+     "creada": "2026-07-28T06:28:36Z"
+    }
+   },
+   "TUcbM2MwtjsNGtY2CVjFpjbW7Nc76XySmD": {
+    "grupos": [],
+    "etiqueta_tronscan": null,
+    "firma_en": [
+     "TWPpxPd5PpU5FQk6F6F3HMN5VdufxnVA8K"
+    ],
+    "existe": false,
+    "ficha_tronscan": {
+     "accountType": 0,
+     "date_created": 0,
+     "latest_operation_time": 0,
+     "totalTransactionCount": 0,
+     "transactions_in": 0,
+     "transactions_out": 0
+    }
+   },
+   "TUdbhFMsZTc14xG2CxkUREp1qWT6TGi1tL": {
+    "grupos": [],
+    "etiqueta_tronscan": null,
+    "firma_en": [
+     "TWPpxPd5PpU5FQk6F6F3HMN5VdufxnVA8K"
+    ],
+    "existe": false,
+    "ficha_tronscan": {
+     "accountType": 0,
+     "date_created": 0,
+     "latest_operation_time": 0,
+     "totalTransactionCount": 0,
+     "transactions_in": 0,
+     "transactions_out": 0
+    }
+   }
+  },
+  "TWPpxPd5_como_receptora_de_energia_de_TEF9ZV": {
+   "receptor": "TWPpxPd5PpU5FQk6F6F3HMN5VdufxnVA8K",
+   "energia": 320000,
+   "ancho_banda": 50000,
+   "total": 370000,
+   "familia": "Sin etiqueta",
+   "etiqueta": null,
+   "creada": "2026-07-28",
+   "trx_libre": 282.89,
+   "n_transacciones": 256,
+   "clave_propietaria": [
+    "TEdzuiQcwJudNR83UomxHJGhsMWYibdM7o",
+    "TUcbM2MwtjsNGtY2CVjFpjbW7Nc76XySmD",
+    "TUdbhFMsZTc14xG2CxkUREp1qWT6TGi1tL",
+    "TMiDbtDSRMFcae5kZPq1tXc6q9217Tg26d",
+    "TUgSgCQL6pMSy9zByn4sgxqrJa95sZExBG"
+   ],
+   "controlada_por_otra_clave": true,
+   "claves_activas": [
+    {
+     "nombre": "active",
+     "umbral": 3,
+     "claves": [
+      "TEdzuiQcwJudNR83UomxHJGhsMWYibdM7o",
+      "TUcbM2MwtjsNGtY2CVjFpjbW7Nc76XySmD",
+      "TUdbhFMsZTc14xG2CxkUREp1qWT6TGi1tL",
+      "TMiDbtDSRMFcae5kZPq1tXc6q9217Tg26d",
+      "TUgSgCQL6pMSy9zByn4sgxqrJa95sZExBG"
+     ]
+    }
+   ]
+  }
+ }
+}

@@ -1,0 +1,81 @@
+{
+ "libro": [
+  {
+   "corte": "2026-10-28T23:59:59Z",
+   "etiqueta": "víspera del robo",
+   "entradas_acumuladas": 1028444264.46,
+   "salidas_acumuladas": 100,
+   "congelado_total": 1028440250,
+   "delegado_total": 993445041,
+   "congelado_sin_delegar": 34995209,
+   "libre_calculado": 3914.46
+  },
+  {
+   "corte": "2026-10-31T23:59:59Z",
+   "etiqueta": "31-oct",
+   "entradas_acumuladas": 1028444264.46,
+   "salidas_acumuladas": 100,
+   "congelado_total": 1028440250,
+   "delegado_total": 798295041,
+   "congelado_sin_delegar": 230145209,
+   "libre_calculado": 3914.46
+  },
+  {
+   "corte": "2026-11-01T12:00:00Z",
+   "etiqueta": "1-nov mediodía",
+   "entradas_acumuladas": 1028444264.46,
+   "salidas_acumuladas": 100,
+   "congelado_total": 1028440250,
+   "delegado_total": 1028270741,
+   "congelado_sin_delegar": 169509,
+   "libre_calculado": 3914.46
+  },
+  {
+   "corte": "2026-11-02T23:59:59Z",
+   "etiqueta": "fin del 2-nov",
+   "entradas_acumuladas": 1528444263.46,
+   "salidas_acumuladas": 100,
+   "congelado_total": 1028440250,
+   "delegado_total": 1028270741,
+   "congelado_sin_delegar": 169509,
+   "libre_calculado": 500003913.46
+  },
+  {
+   "corte": "2026-11-03T23:59:59Z",
+   "etiqueta": "fin del 3-nov",
+   "entradas_acumuladas": 1528444263.46,
+   "salidas_acumuladas": 100,
+   "congelado_total": 1528443250,
+   "delegado_total": 1528039741,
+   "congelado_sin_delegar": 403509,
+   "libre_calculado": 913.46
+  },
+  {
+   "corte": "2026-11-05T09:18:48.000Z",
+   "etiqueta": "línea base (5-nov)",
+   "entradas_acumuladas": 1678444262.46,
+   "salidas_acumuladas": 100,
+   "congelado_total": 1678443250,
+   "delegado_total": 1529341741,
+   "congelado_sin_delegar": 149101509,
+   "libre_calculado": 912.46
+  }
+ ],
+ "cierre_con_la_cadena": {
+  "libre": {
+   "calculado": 912.46,
+   "cadena": 356.18,
+   "dif": 556.28
+  },
+  "congelado_sin_delegar": {
+   "calculado": 149101509,
+   "cadena": 149101559,
+   "dif": -50
+  },
+  "delegado": {
+   "calculado": 1529341741,
+   "cadena": 1529341741,
+   "dif": 0
+  }
+ }
+}

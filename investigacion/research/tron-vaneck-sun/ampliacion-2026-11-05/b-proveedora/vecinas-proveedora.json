@@ -1,0 +1,870 @@
+{
+ "nota": "La muestra son los últimos 200 envíos de USDT de cada vecina (límite de una página de TronGrid), no su historial completo.",
+ "cuentas": [
+  {
+   "cuenta": "TSzSgxRisS5VBXXDcAezTDvnPGi9CbsXvJ",
+   "etiqueta": null,
+   "creada": "2023-11-29T08:52:27Z",
+   "operaciones_tronscan": 9461,
+   "es_contrato": false,
+   "con_la_proveedora": {
+    "usdt_que_la_proveedora_le_manda": 1726274000,
+    "usdt_que_la_proveedora_recibe_de_ella": 2653018288.07
+   },
+   "muestra_ultimos_envios": {
+    "eventos_con_valor_absurdo_no_contados": [],
+    "n": 200,
+    "desde": "2026-10-12T11:28:15Z",
+    "hasta": "2026-11-05T10:31:30Z",
+    "usdt": 669630002,
+    "hacia_binance_conocidas": 0,
+    "mayores_destinos": [
+     {
+      "cuenta": "TWhDfwC8QE6pQyiYy248dNor3uphPEw5M2",
+      "etiqueta": null,
+      "creada": "2023-11-28T13:56:54Z",
+      "operaciones_tronscan": 1251231,
+      "n": 184,
+      "usdt": 424630002,
+      "a_proveedora": true
+     },
+     {
+      "cuenta": "TXJgMdjVX5dKiQaUi9QobwNxtSQaFqccvd",
+      "etiqueta": null,
+      "creada": null,
+      "operaciones_tronscan": 481014,
+      "n": 16,
+      "usdt": 245000000,
+      "a_proveedora": false
+     }
+    ]
+   }
+  },
+  {
+   "cuenta": "TNXpb7aBoxow5X9drTskkjSo1mgKpNFnD1",
+   "etiqueta": null,
+   "creada": "2026-06-15T10:34:21Z",
+   "operaciones_tronscan": 1192,
+   "es_contrato": false,
+   "con_la_proveedora": {
+    "usdt_que_la_proveedora_le_manda": 1505127001,
+    "usdt_que_la_proveedora_recibe_de_ella": 0
+   },
+   "muestra_ultimos_envios": {
+    "eventos_con_valor_absurdo_no_contados": [],
+    "n": 200,
+    "desde": "2026-10-10T12:00:54Z",
+    "hasta": "2026-11-05T10:35:57Z",
+    "usdt": 223752074.65,
+    "hacia_binance_conocidas": 0,
+    "mayores_destinos": [
+     {
+      "cuenta": "TUJY8zw5hVsANkZfbkYYBRhrDnoJhrf8Nn",
+      "etiqueta": null,
+      "creada": "2026-09-15T01:11:18Z",
+      "operaciones_tronscan": 1821,
+      "n": 4,
+      "usdt": 7400004.7,
+      "a_proveedora": false
+     },
+     {
+      "cuenta": "TC3LoHA3gQMoMdaB9K8Dn32DYQuoaJGgAj",
+      "etiqueta": null,
+      "creada": "2026-09-15T01:11:21Z",
+      "operaciones_tronscan": 1189,
+      "n": 5,
+      "usdt": 5472501.29,
+      "a_proveedora": false
+     },
+     {
+      "cuenta": "TMwuqc5Wa7YiEzp9FTLwtfdv2bufcVeaFg",
+      "etiqueta": null,
+      "creada": "2026-09-15T01:07:36Z",
+      "operaciones_tronscan": 2293,
+      "n": 1,
+      "usdt": 4787892.84,
+      "a_proveedora": false
+     },
+     {
+      "cuenta": "TXKArmgY6R5nUcS8RYPNhFdpQkrezK5wcY",
+      "etiqueta": null,
+      "creada": "2026-09-15T01:11:18Z",
+      "operaciones_tronscan": 2202,
+      "n": 4,
+      "usdt": 4726814.86,
+      "a_proveedora": false
+     },
+     {
+      "cuenta": "TCQLVdVnRNwjPViZRV3CrrQr1FPvtDmJX5",
+      "etiqueta": null,
+      "creada": "2026-09-15T01:11:54Z",
+      "operaciones_tronscan": 1652,
+      "n": 1,
+      "usdt": 4722000,
+      "a_proveedora": false
+     }
+    ]
+   }
+  },
+  {
+   "cuenta": "TFSd14UQUp6HPamdMGJsWBxfWKMrLYxRmp",
+   "etiqueta": null,
+   "creada": "2026-08-06T07:03:51Z",
+   "operaciones_tronscan": 2815,
+   "es_contrato": false,
+   "con_la_proveedora": {
+    "usdt_que_la_proveedora_le_manda": 0,
+    "usdt_que_la_proveedora_recibe_de_ella": 886157263.22
+   },
+   "muestra_ultimos_envios": {
+    "eventos_con_valor_absurdo_no_contados": [],
+    "n": 200,
+    "desde": "2026-10-10T14:58:30Z",
+    "hasta": "2026-11-05T05:09:54Z",
+    "usdt": 545183206,
+    "hacia_binance_conocidas": 0,
+    "mayores_destinos": [
+     {
+      "cuenta": "TWhDfwC8QE6pQyiYy248dNor3uphPEw5M2",
+      "etiqueta": null,
+      "creada": "2023-11-28T13:56:54Z",
+      "operaciones_tronscan": 1251231,
+      "n": 200,
+      "usdt": 545183206,
+      "a_proveedora": true
+     }
+    ]
+   }
+  },
+  {
+   "cuenta": "TE1vdYwKg8aZu2sxMDWcb9ch5jFnn8EVfo",
+   "etiqueta": null,
+   "creada": "2023-12-05T16:10:36Z",
+   "operaciones_tronscan": 45291,
+   "es_contrato": false,
+   "con_la_proveedora": {
+    "usdt_que_la_proveedora_le_manda": 0,
+    "usdt_que_la_proveedora_recibe_de_ella": 655554829.99
+   },
+   "muestra_ultimos_envios": {
+    "eventos_con_valor_absurdo_no_contados": [],
+    "n": 200,
+    "desde": "2026-04-09T13:02:57Z",
+    "hasta": "2026-05-29T09:35:33Z",
+    "usdt": 18667160.38,
+    "hacia_binance_conocidas": 0,
+    "mayores_destinos": [
+     {
+      "cuenta": "TWhDfwC8QE6pQyiYy248dNor3uphPEw5M2",
+      "etiqueta": null,
+      "creada": "2023-11-28T13:56:54Z",
+      "operaciones_tronscan": 1251231,
+      "n": 200,
+      "usdt": 18667160.38,
+      "a_proveedora": true
+     }
+    ]
+   }
+  },
+  {
+   "cuenta": "TS639Y6J54TQmQiK9BKdZoihnirqhJobwu",
+   "etiqueta": null,
+   "creada": "2026-06-05T17:37:36Z",
+   "operaciones_tronscan": 489,
+   "es_contrato": false,
+   "con_la_proveedora": {
+    "usdt_que_la_proveedora_le_manda": 0,
+    "usdt_que_la_proveedora_recibe_de_ella": 246578000
+   },
+   "muestra_ultimos_envios": {
+    "eventos_con_valor_absurdo_no_contados": [],
+    "n": 87,
+    "desde": "2026-06-05T17:39:39Z",
+    "hasta": "2026-11-05T11:19:57Z",
+    "usdt": 247636000,
+    "hacia_binance_conocidas": 0,
+    "mayores_destinos": [
+     {
+      "cuenta": "TWhDfwC8QE6pQyiYy248dNor3uphPEw5M2",
+      "etiqueta": null,
+      "creada": "2023-11-28T13:56:54Z",
+      "operaciones_tronscan": 1251231,
+      "n": 87,
+      "usdt": 247636000,
+      "a_proveedora": true
+     }
+    ]
+   }
+  },
+  {
+   "cuenta": "TWPpxPd5PpU5FQk6F6F3HMN5VdufxnVA8K",
+   "etiqueta": null,
+   "creada": "2026-07-28T03:43:09Z",
+   "operaciones_tronscan": 256,
+   "es_contrato": false,
+   "con_la_proveedora": {
+    "usdt_que_la_proveedora_le_manda": 245000094,
+    "usdt_que_la_proveedora_recibe_de_ella": 0
+   },
+   "muestra_ultimos_envios": {
+    "eventos_con_valor_absurdo_no_contados": [],
+    "n": 57,
+    "desde": "2026-07-31T10:48:00Z",
+    "hasta": "2026-11-04T12:37:00Z",
+    "usdt": 950166388.14,
+    "hacia_binance_conocidas": 0,
+    "mayores_destinos": [
+     {
+      "cuenta": "TXJgMdjVX5dKiQaUi9QobwNxtSQaFqccvd",
+      "etiqueta": null,
+      "creada": null,
+      "operaciones_tronscan": 481014,
+      "n": 26,
+      "usdt": 500166387.14,
+      "a_proveedora": false
+     },
+     {
+      "cuenta": "TBJQzdwg3bFM5kjrFeYwQLzGAG9RvF7MBh",
+      "etiqueta": null,
+      "creada": null,
+      "operaciones_tronscan": 115,
+      "n": 23,
+      "usdt": 290000001,
+      "a_proveedora": false
+     },
+     {
+      "cuenta": "TBVT8uV5YEF74yACph42KSLVGFaFnESTCE",
+      "etiqueta": null,
+      "creada": "2026-08-22T10:54:18Z",
+      "operaciones_tronscan": 48,
+      "n": 8,
+      "usdt": 160000000,
+      "a_proveedora": false
+     }
+    ]
+   }
+  },
+  {
+   "cuenta": "TUzZ7ybR3Vwto88a7yzJCu4p6CuoLiAgqa",
+   "etiqueta": null,
+   "creada": "2026-06-11T07:22:39Z",
+   "operaciones_tronscan": 976,
+   "es_contrato": false,
+   "con_la_proveedora": {
+    "usdt_que_la_proveedora_le_manda": 0,
+    "usdt_que_la_proveedora_recibe_de_ella": 190847025.97
+   },
+   "muestra_ultimos_envios": {
+    "eventos_con_valor_absurdo_no_contados": [],
+    "n": 97,
+    "desde": "2026-06-11T07:24:45Z",
+    "hasta": "2026-11-03T07:55:30Z",
+    "usdt": 190847025.97,
+    "hacia_binance_conocidas": 0,
+    "mayores_destinos": [
+     {
+      "cuenta": "TWhDfwC8QE6pQyiYy248dNor3uphPEw5M2",
+      "etiqueta": null,
+      "creada": "2023-11-28T13:56:54Z",
+      "operaciones_tronscan": 1251231,
+      "n": 97,
+      "usdt": 190847025.97,
+      "a_proveedora": true
+     }
+    ]
+   }
+  },
+  {
+   "cuenta": "TF9Eo7qRYECeAYcBf8YqF5SkGPXCEB1BbU",
+   "etiqueta": null,
+   "creada": "2024-01-23T09:51:12Z",
+   "operaciones_tronscan": 838,
+   "es_contrato": false,
+   "con_la_proveedora": {
+    "usdt_que_la_proveedora_le_manda": 0,
+    "usdt_que_la_proveedora_recibe_de_ella": 189614590.08
+   },
+   "muestra_ultimos_envios": {
+    "eventos_con_valor_absurdo_no_contados": [],
+    "n": 200,
+    "desde": "2024-03-14T07:56:57Z",
+    "hasta": "2026-05-26T10:26:00Z",
+    "usdt": 185508517.28,
+    "hacia_binance_conocidas": 0,
+    "mayores_destinos": [
+     {
+      "cuenta": "TWhDfwC8QE6pQyiYy248dNor3uphPEw5M2",
+      "etiqueta": null,
+      "creada": "2023-11-28T13:56:54Z",
+      "operaciones_tronscan": 1251231,
+      "n": 196,
+      "usdt": 185508517.28,
+      "a_proveedora": true
+     },
+     {
+      "cuenta": "TWhDKxPxNuXTpWrR3f4B7cPM47YdiEw5M2",
+      "etiqueta": null,
+      "creada": "2023-12-04T09:13:03Z",
+      "operaciones_tronscan": 1292,
+      "n": 2,
+      "usdt": 0,
+      "a_proveedora": false
+     },
+     {
+      "cuenta": "TWhpszdncb4u7aACMw7vWW6937NptEw5M2",
+      "etiqueta": null,
+      "creada": "2023-12-03T09:17:03Z",
+      "operaciones_tronscan": 10,
+      "n": 2,
+      "usdt": 0,
+      "a_proveedora": false
+     }
+    ]
+   }
+  },
+  {
+   "cuenta": "TFvgoqKbv4fu2RBp7215AR2eDupMhCdxkH",
+   "etiqueta": null,
+   "creada": "2026-08-06T02:26:09Z",
+   "operaciones_tronscan": 133,
+   "es_contrato": false,
+   "con_la_proveedora": {
+    "usdt_que_la_proveedora_le_manda": 170001623,
+    "usdt_que_la_proveedora_recibe_de_ella": 0
+   },
+   "muestra_ultimos_envios": {
+    "eventos_con_valor_absurdo_no_contados": [],
+    "n": 29,
+    "desde": "2026-08-06T02:36:09Z",
+    "hasta": "2026-10-28T12:53:18Z",
+    "usdt": 170001613,
+    "hacia_binance_conocidas": 170001613,
+    "mayores_destinos": [
+     {
+      "cuenta": "TDqSquXBgUCLYvYC4XZgrprLK589dkhSCf",
+      "etiqueta": "Binance (lista conocida)",
+      "creada": "2023-10-18T07:50:00Z",
+      "operaciones_tronscan": 52916691,
+      "n": 29,
+      "usdt": 170001613,
+      "a_proveedora": false
+     }
+    ]
+   }
+  },
+  {
+   "cuenta": "TPEfWM9ZJGjCrVA5La5KdwjHfxWR8ncHEE",
+   "etiqueta": null,
+   "creada": "2023-08-29T16:26:00Z",
+   "operaciones_tronscan": 68201,
+   "es_contrato": false,
+   "con_la_proveedora": {
+    "usdt_que_la_proveedora_le_manda": 162740154.52,
+    "usdt_que_la_proveedora_recibe_de_ella": 0
+   },
+   "muestra_ultimos_envios": {
+    "eventos_con_valor_absurdo_no_contados": [],
+    "n": 200,
+    "desde": "2026-10-02T21:36:03Z",
+    "hasta": "2026-11-02T23:33:00Z",
+    "usdt": 92083327,
+    "hacia_binance_conocidas": 92083327,
+    "mayores_destinos": [
+     {
+      "cuenta": "TDqSquXBgUCLYvYC4XZgrprLK589dkhSCf",
+      "etiqueta": "Binance (lista conocida)",
+      "creada": "2023-10-18T07:50:00Z",
+      "operaciones_tronscan": 52916691,
+      "n": 199,
+      "usdt": 91849673,
+      "a_proveedora": false
+     },
+     {
+      "cuenta": "TJTKCzQpsG19CSMYF9TPtxz6wSHPSyeKfa",
+      "etiqueta": "Binance (lista conocida)",
+      "creada": "2026-10-31T13:33:27Z",
+      "operaciones_tronscan": 90316,
+      "n": 1,
+      "usdt": 233654,
+      "a_proveedora": false
+     }
+    ]
+   }
+  },
+  {
+   "cuenta": "TBVT8uV5YEF74yACph42KSLVGFaFnESTCE",
+   "etiqueta": null,
+   "creada": "2026-08-22T10:54:18Z",
+   "operaciones_tronscan": 48,
+   "es_contrato": false,
+   "con_la_proveedora": {
+    "usdt_que_la_proveedora_le_manda": 0,
+    "usdt_que_la_proveedora_recibe_de_ella": 160000000
+   },
+   "muestra_ultimos_envios": {
+    "eventos_con_valor_absurdo_no_contados": [],
+    "n": 8,
+    "desde": "2026-08-22T10:56:21Z",
+    "hasta": "2026-10-11T07:32:48Z",
+    "usdt": 160000000,
+    "hacia_binance_conocidas": 0,
+    "mayores_destinos": [
+     {
+      "cuenta": "TWhDfwC8QE6pQyiYy248dNor3uphPEw5M2",
+      "etiqueta": null,
+      "creada": "2023-11-28T13:56:54Z",
+      "operaciones_tronscan": 1251231,
+      "n": 8,
+      "usdt": 160000000,
+      "a_proveedora": true
+     }
+    ]
+   }
+  },
+  {
+   "cuenta": "TKVnVyJiTzyCDgTkZRYc5LM4q8B7xXEbh5",
+   "etiqueta": null,
+   "creada": "2025-06-21T09:01:06Z",
+   "operaciones_tronscan": 319,
+   "es_contrato": false,
+   "con_la_proveedora": {
+    "usdt_que_la_proveedora_le_manda": 159999995.6,
+    "usdt_que_la_proveedora_recibe_de_ella": 0
+   },
+   "muestra_ultimos_envios": {
+    "eventos_con_valor_absurdo_no_contados": [
+     {
+      "tx": "aa4a8200df57575f56d261d834c8599bce84bfa5530cf5e7b53e78f465600020",
+      "a": "TXJgMdjVX5dKiQaUi9QobwNxtSQaFqccvd",
+      "t": "2025-06-22T08:52:42Z"
+     }
+    ],
+    "n": 60,
+    "desde": "2025-06-22T08:53:00Z",
+    "hasta": "2026-11-04T11:34:36Z",
+    "usdt": 3183734508.08,
+    "hacia_binance_conocidas": 0,
+    "mayores_destinos": [
+     {
+      "cuenta": "TDToUxX8sH4z6moQpK3ZLAN24eupu2ivA4",
+      "etiqueta": null,
+      "creada": "2022-10-11T15:15:42Z",
+      "operaciones_tronscan": 19926,
+      "n": 5,
+      "usdt": 880000000,
+      "a_proveedora": false
+     },
+     {
+      "cuenta": "TXJgMdjVX5dKiQaUi9QobwNxtSQaFqccvd",
+      "etiqueta": null,
+      "creada": null,
+      "operaciones_tronscan": 481014,
+      "n": 18,
+      "usdt": 840000005.11,
+      "a_proveedora": false
+     },
+     {
+      "cuenta": "TBJQzdwg3bFM5kjrFeYwQLzGAG9RvF7MBh",
+      "etiqueta": null,
+      "creada": null,
+      "operaciones_tronscan": 115,
+      "n": 24,
+      "usdt": 620651412.4,
+      "a_proveedora": false
+     },
+     {
+      "cuenta": "TEQPqZYaykGqdXpuFMAZZ1wgo5eUPaihnU",
+      "etiqueta": null,
+      "creada": "2026-07-08T16:00:45Z",
+      "operaciones_tronscan": 44,
+      "n": 2,
+      "usdt": 275000000,
+      "a_proveedora": false
+     },
+     {
+      "cuenta": "TWPpxPd5PpU5FQk6F6F3HMN5VdufxnVA8K",
+      "etiqueta": null,
+      "creada": "2026-07-28T03:43:09Z",
+      "operaciones_tronscan": 256,
+      "n": 7,
+      "usdt": 265083090.57,
+      "a_proveedora": false
+     }
+    ]
+   }
+  },
+  {
+   "cuenta": "TT2T17KZhoDu47i2E4FWxfG79zdkEWkU9N",
+   "etiqueta": null,
+   "creada": "2023-05-01T12:09:54Z",
+   "operaciones_tronscan": 5292,
+   "es_contrato": false,
+   "con_la_proveedora": {
+    "usdt_que_la_proveedora_le_manda": 151830078.49,
+    "usdt_que_la_proveedora_recibe_de_ella": 0
+   },
+   "muestra_ultimos_envios": {
+    "eventos_con_valor_absurdo_no_contados": [
+     {
+      "tx": "d5ea04159ef071d4ee79cee67ef73db0c57e51bf676e74056acd3abf09848199",
+      "a": "TXejU9jmd1ooQyY3Zmpo15yN7MjSFYUESg",
+      "t": "2026-06-15T09:43:21Z"
+     },
+     {
+      "tx": "21aaba46990ca93f3a0d261c56493ff1c63bcd79e20fbf1437e0b286fab8eca5",
+      "a": "TTJxU3P8rHycAyFY4kVtGNfmnMH4ezcuM9",
+      "t": "2026-02-02T10:01:33Z"
+     },
+     {
+      "tx": "12ce10493729e237c5090291f63efe32016a4534ee701808cd3d9b3bed36408a",
+      "a": "TXF1xDbVGdxFGbovmmmXvBGu8ZiE3Lq4mR",
+      "t": "2025-11-16T07:05:48Z"
+     }
+    ],
+    "n": 197,
+    "desde": "2025-04-27T16:41:15Z",
+    "hasta": "2026-11-03T16:03:57Z",
+    "usdt": 2586858251.38,
+    "hacia_binance_conocidas": 0,
+    "mayores_destinos": [
+     {
+      "cuenta": "TSUUVjysXV8YqHytSNjfkNXnnB49QDvZpx",
+      "etiqueta": null,
+      "creada": null,
+      "operaciones_tronscan": 6100,
+      "n": 15,
+      "usdt": 637073450.95,
+      "a_proveedora": false
+     },
+     {
+      "cuenta": "TSUYvQ5tdd3DijCD1uGunGLpftHuSZ12sQ",
+      "etiqueta": null,
+      "creada": null,
+      "operaciones_tronscan": 2465,
+      "n": 42,
+      "usdt": 563472154.07,
+      "a_proveedora": false
+     },
+     {
+      "cuenta": "TXJgMdjVX5dKiQaUi9QobwNxtSQaFqccvd",
+      "etiqueta": null,
+      "creada": null,
+      "operaciones_tronscan": 481014,
+      "n": 18,
+      "usdt": 469744875.01,
+      "a_proveedora": false
+     },
+     {
+      "cuenta": "TVKLHbFfdHfVjVamvMRDch6YdSN14wimqM",
+      "etiqueta": null,
+      "creada": "2025-08-15T09:40:15Z",
+      "operaciones_tronscan": 8,
+      "n": 1,
+      "usdt": 160000000,
+      "a_proveedora": false
+     },
+     {
+      "cuenta": "TVjuTE3V5bMVdpfNhid8kD2v35T2k1u1Br",
+      "etiqueta": null,
+      "creada": null,
+      "operaciones_tronscan": 1945,
+      "n": 10,
+      "usdt": 86391841.61,
+      "a_proveedora": false
+     }
+    ]
+   }
+  },
+  {
+   "cuenta": "TVpNiLp3HhhDJHc7eBsqXeZFvqWdPfzCEt",
+   "etiqueta": null,
+   "creada": "2026-11-02T06:18:45Z",
+   "operaciones_tronscan": 12,
+   "es_contrato": false,
+   "con_la_proveedora": {
+    "usdt_que_la_proveedora_le_manda": 137999999.6,
+    "usdt_que_la_proveedora_recibe_de_ella": 0
+   },
+   "muestra_ultimos_envios": {
+    "eventos_con_valor_absurdo_no_contados": [],
+    "n": 3,
+    "desde": "2026-11-02T06:45:18Z",
+    "hasta": "2026-11-02T09:45:36Z",
+    "usdt": 137999998.8,
+    "hacia_binance_conocidas": 137999998.8,
+    "mayores_destinos": [
+     {
+      "cuenta": "TJTKCzQpsG19CSMYF9TPtxz6wSHPSyeKfa",
+      "etiqueta": "Binance (lista conocida)",
+      "creada": "2026-10-31T13:33:27Z",
+      "operaciones_tronscan": 90316,
+      "n": 3,
+      "usdt": 137999998.8,
+      "a_proveedora": false
+     }
+    ]
+   }
+  },
+  {
+   "cuenta": "TUgSgCQL6pMSy9zByn4sgxqrJa95sZExBG",
+   "etiqueta": "Poloniex 2",
+   "creada": "2022-08-21T09:14:42Z",
+   "operaciones_tronscan": 1088,
+   "es_contrato": false,
+   "con_la_proveedora": {
+    "usdt_que_la_proveedora_le_manda": 87492000,
+    "usdt_que_la_proveedora_recibe_de_ella": 0
+   },
+   "muestra_ultimos_envios": {
+    "eventos_con_valor_absurdo_no_contados": [
+     {
+      "tx": "9ab8d9840d4c424550c5cefe7e3c14a602f87ac5bced823f6f9d38f14bfdaf0b",
+      "a": "TXJgMdjVX5dKiQaUi9QobwNxtSQaFqccvd",
+      "t": "2024-04-13T06:29:15Z"
+     }
+    ],
+    "n": 153,
+    "desde": "2023-12-04T06:54:33Z",
+    "hasta": "2026-10-28T06:36:03Z",
+    "usdt": 442140712.75,
+    "hacia_binance_conocidas": 0,
+    "mayores_destinos": [
+     {
+      "cuenta": "TSzSgxRisS5VBXXDcAezTDvnPGi9CbsXvJ",
+      "etiqueta": null,
+      "creada": "2023-11-29T08:52:27Z",
+      "operaciones_tronscan": 9461,
+      "n": 88,
+      "usdt": 238750000.74,
+      "a_proveedora": false
+     },
+     {
+      "cuenta": "TXJgMdjVX5dKiQaUi9QobwNxtSQaFqccvd",
+      "etiqueta": null,
+      "creada": null,
+      "operaciones_tronscan": 481014,
+      "n": 17,
+      "usdt": 170530351.46,
+      "a_proveedora": false
+     },
+     {
+      "cuenta": "TA1EfKwbXCy9JPEWhPBg6hvdcsN1mrj62T",
+      "etiqueta": null,
+      "creada": "2024-11-24T12:17:09Z",
+      "operaciones_tronscan": 5,
+      "n": 1,
+      "usdt": 30000000,
+      "a_proveedora": false
+     },
+     {
+      "cuenta": "TSUYvQ5tdd3DijCD1uGunGLpftHuSZ12sQ",
+      "etiqueta": null,
+      "creada": null,
+      "operaciones_tronscan": 2465,
+      "n": 2,
+      "usdt": 2860360.55,
+      "a_proveedora": false
+     },
+     {
+      "cuenta": "TS7eAGtUjkt3ogD1BxJrdZfdf5P9CbsXvJ",
+      "etiqueta": null,
+      "creada": "2024-10-09T01:57:36Z",
+      "operaciones_tronscan": 1,
+      "n": 1,
+      "usdt": 0,
+      "a_proveedora": false
+     }
+    ]
+   }
+  },
+  {
+   "cuenta": "TSQn2AZVBGBmm7Sk2rcb8PvyzF2RZg68Yn",
+   "etiqueta": null,
+   "creada": "2023-05-18T10:02:30Z",
+   "operaciones_tronscan": 4342,
+   "es_contrato": false,
+   "con_la_proveedora": {
+    "usdt_que_la_proveedora_le_manda": 86498387.66,
+    "usdt_que_la_proveedora_recibe_de_ella": 0
+   },
+   "muestra_ultimos_envios": {
+    "eventos_con_valor_absurdo_no_contados": [],
+    "n": 200,
+    "desde": "2025-12-12T03:27:24Z",
+    "hasta": "2026-05-26T10:02:18Z",
+    "usdt": 211361728.92,
+    "hacia_binance_conocidas": 0,
+    "mayores_destinos": [
+     {
+      "cuenta": "TFTWNgDBkQ5wQoP8RXpRznnHvAVV8x5jLu",
+      "etiqueta": null,
+      "creada": "2023-11-24T09:12:33Z",
+      "operaciones_tronscan": 20789371,
+      "n": 200,
+      "usdt": 211361728.92,
+      "a_proveedora": false
+     }
+    ]
+   }
+  },
+  {
+   "cuenta": "TDpweRtCrnTAqmLBj1fhZaXEmAh81QtP8p",
+   "etiqueta": null,
+   "creada": "2023-12-06T15:31:27Z",
+   "operaciones_tronscan": 33408,
+   "es_contrato": false,
+   "con_la_proveedora": {
+    "usdt_que_la_proveedora_le_manda": 0,
+    "usdt_que_la_proveedora_recibe_de_ella": 86093096.72
+   },
+   "muestra_ultimos_envios": {
+    "eventos_con_valor_absurdo_no_contados": [],
+    "n": 200,
+    "desde": "2026-06-30T12:21:00Z",
+    "hasta": "2026-07-25T14:44:21Z",
+    "usdt": 2784439.61,
+    "hacia_binance_conocidas": 0,
+    "mayores_destinos": [
+     {
+      "cuenta": "TWhDfwC8QE6pQyiYy248dNor3uphPEw5M2",
+      "etiqueta": null,
+      "creada": "2023-11-28T13:56:54Z",
+      "operaciones_tronscan": 1251231,
+      "n": 200,
+      "usdt": 2784439.61,
+      "a_proveedora": true
+     }
+    ]
+   }
+  },
+  {
+   "cuenta": "TEVD7K98xyDHJv2zEtJMKV3B1TjCFUA4pb",
+   "etiqueta": null,
+   "creada": "2026-06-11T08:18:33Z",
+   "operaciones_tronscan": 794,
+   "es_contrato": false,
+   "con_la_proveedora": {
+    "usdt_que_la_proveedora_le_manda": 81599076.52,
+    "usdt_que_la_proveedora_recibe_de_ella": 0
+   },
+   "muestra_ultimos_envios": {
+    "eventos_con_valor_absurdo_no_contados": [],
+    "n": 122,
+    "desde": "2026-06-11T08:36:33Z",
+    "hasta": "2026-11-03T03:36:03Z",
+    "usdt": 81599076.52,
+    "hacia_binance_conocidas": 81599076.52,
+    "mayores_destinos": [
+     {
+      "cuenta": "TDqSquXBgUCLYvYC4XZgrprLK589dkhSCf",
+      "etiqueta": "Binance (lista conocida)",
+      "creada": "2023-10-18T07:50:00Z",
+      "operaciones_tronscan": 52916691,
+      "n": 121,
+      "usdt": 81094693.85,
+      "a_proveedora": false
+     },
+     {
+      "cuenta": "TJTKCzQpsG19CSMYF9TPtxz6wSHPSyeKfa",
+      "etiqueta": "Binance (lista conocida)",
+      "creada": "2026-10-31T13:33:27Z",
+      "operaciones_tronscan": 90316,
+      "n": 1,
+      "usdt": 504382.66,
+      "a_proveedora": false
+     }
+    ]
+   }
+  },
+  {
+   "cuenta": "TKV6xqB7VPTThF3Ru8VrNh7QQLVReTNvuV",
+   "etiqueta": null,
+   "creada": "2026-11-02T09:31:54Z",
+   "operaciones_tronscan": 10,
+   "es_contrato": false,
+   "con_la_proveedora": {
+    "usdt_que_la_proveedora_le_manda": 0,
+    "usdt_que_la_proveedora_recibe_de_ella": 80000000
+   },
+   "muestra_ultimos_envios": {
+    "eventos_con_valor_absurdo_no_contados": [],
+    "n": 1,
+    "desde": "2026-11-02T09:34:00Z",
+    "hasta": "2026-11-02T09:34:00Z",
+    "usdt": 80000000,
+    "hacia_binance_conocidas": 0,
+    "mayores_destinos": [
+     {
+      "cuenta": "TWhDfwC8QE6pQyiYy248dNor3uphPEw5M2",
+      "etiqueta": null,
+      "creada": "2023-11-28T13:56:54Z",
+      "operaciones_tronscan": 1251231,
+      "n": 1,
+      "usdt": 80000000,
+      "a_proveedora": true
+     }
+    ]
+   }
+  },
+  {
+   "cuenta": "TH2XiJgqzSpyPrNg9xupnLcV2VYtCNZoG6",
+   "etiqueta": null,
+   "creada": "2024-02-26T16:21:57Z",
+   "operaciones_tronscan": 3848,
+   "es_contrato": false,
+   "con_la_proveedora": {
+    "usdt_que_la_proveedora_le_manda": 0,
+    "usdt_que_la_proveedora_recibe_de_ella": 72624446.61
+   },
+   "muestra_ultimos_envios": {
+    "eventos_con_valor_absurdo_no_contados": [],
+    "n": 200,
+    "desde": "2026-07-24T08:22:39Z",
+    "hasta": "2026-11-05T07:07:39Z",
+    "usdt": 17027512.78,
+    "hacia_binance_conocidas": 0,
+    "mayores_destinos": [
+     {
+      "cuenta": "TWhDfwC8QE6pQyiYy248dNor3uphPEw5M2",
+      "etiqueta": null,
+      "creada": "2023-11-28T13:56:54Z",
+      "operaciones_tronscan": 1251231,
+      "n": 200,
+      "usdt": 17027512.78,
+      "a_proveedora": true
+     }
+    ]
+   }
+  },
+  {
+   "cuenta": "TCFfQYygyfTTYE8So6wQbpNk7BEMomJH9J",
+   "etiqueta": null,
+   "creada": "2026-11-02T06:17:36Z",
+   "operaciones_tronscan": 8,
+   "es_contrato": false,
+   "con_la_proveedora": {
+    "usdt_que_la_proveedora_le_manda": null,
+    "usdt_que_la_proveedora_recibe_de_ella": null
+   },
+   "muestra_ultimos_envios": {
+    "eventos_con_valor_absurdo_no_contados": [],
+    "n": 1,
+    "desde": "2026-11-02T06:19:42Z",
+    "hasta": "2026-11-02T06:19:42Z",
+    "usdt": 60000000,
+    "hacia_binance_conocidas": 0,
+    "mayores_destinos": [
+     {
+      "cuenta": "TWhDfwC8QE6pQyiYy248dNor3uphPEw5M2",
+      "etiqueta": null,
+      "creada": "2023-11-28T13:56:54Z",
+      "operaciones_tronscan": 1251231,
+      "n": 1,
+      "usdt": 60000000,
+      "a_proveedora": true
+     }
+    ]
+   }
+  }
+ ]
+}

@@ -1,0 +1,213 @@
+{
+ "cuenta": "TWpMnUh9pZS1Mf8yyw9WPiS82WYevKzQo2",
+ "version": 2,
+ "tx_leidas": 847,
+ "truncada": false,
+ "entradas_de_TRX_M": 3171.63,
+ "salidas_de_TRX_M": 3022.94,
+ "aparcado_en_staking_y_contratos_M": 3956.35,
+ "devuelto_por_staking_y_contratos_M": 3756.53,
+ "recompensas_M": 51.12,
+ "sin_origen_visible_total_M": {
+  "fifo": 0,
+  "lifo": 0,
+  "proporcional": 0
+ },
+ "en_cartera_al_corte_M": 0,
+ "parqueado_al_corte_M": {
+  "staking": 0,
+  "contrato TU3kjFuh": 200,
+  "contrato TE2RzoSV": 0
+ },
+ "avisos": [],
+ "entradas_de_100M_o_mas": [
+  {
+   "t": "2023-07-15T11:58:00Z",
+   "de": "TVJVQtD1rPC2igEM82AfnPZTYdJFGAFQbw",
+   "trx_M": 370,
+   "tx": "5a21d6f67a027fc8e4e6b1e138e6aa7413b33aeb680087423bebe8edda2c9850"
+  },
+  {
+   "t": "2023-07-15T12:01:30Z",
+   "de": "TTXojNiH2hFL3mUC8yTGMwCQ17pmNFxvzE",
+   "trx_M": 387,
+   "tx": "b0a9e56a7f9a5e5581be008191976d4caa3ce960cc1e366801dcbfb653e70237"
+  },
+  {
+   "t": "2023-07-15T12:03:21Z",
+   "de": "TQwh1ZDBdqMKDtGWEeDdrRUUbtgaVL1Se2",
+   "trx_M": 625,
+   "tx": "ea303a679762dceac03b2259e280dd59f337b57d99b1bcd2a8209b59adf3c68a"
+  },
+  {
+   "t": "2023-08-03T09:09:51Z",
+   "de": "Zion (génesis)",
+   "trx_M": 429.75,
+   "tx": "e075c3191245d60fab000066c5747419e2aa74dc0c717e31e4b8eccea5fdf3f9"
+  },
+  {
+   "t": "2024-07-13T15:43:48Z",
+   "de": "TDirN49rpXgs2RXJUudbcRskhoyD29c66U",
+   "trx_M": 374.23,
+   "tx": "e5609ccc11043e5c8c15b1ee1e83a15ac310a065de32ae5e107a21dba8a2c810"
+  },
+  {
+   "t": "2025-01-13T09:12:24Z",
+   "de": "TT2T17KZhoDu47i2E4FWxfG79zdkEWkU9N",
+   "trx_M": 112,
+   "tx": "7d037b84b37ed28cd75d5b7af13e5de5bb57e315f50d7b5e5bff7faca17e57da"
+  },
+  {
+   "t": "2025-01-15T10:11:06Z",
+   "de": "TT2T17KZhoDu47i2E4FWxfG79zdkEWkU9N",
+   "trx_M": 198,
+   "tx": "870b1e714c65c80b32d696b72ac652153efe94c4045280cc045f6d1ca8a3e622"
+  }
+ ],
+ "salidas_de_100M_o_mas": [
+  {
+   "t": "2024-06-24T17:32:06Z",
+   "a": "TFojJgnRBiKu8eiFyzSBQk6tGcZj44gYvF",
+   "trx_M": 150,
+   "tx": "eeb965c669ecd2c8f0810456f4715bbf2745f29e8ef31ba53a89f985db43145f",
+   "fifo": {
+    "zion_M": 0,
+    "porcentaje": 0,
+    "sin_origen_visible_M": 0,
+    "rendimiento_M": 0
+   },
+   "lifo": {
+    "zion_M": 91.48,
+    "porcentaje": 60.99,
+    "sin_origen_visible_M": 0,
+    "rendimiento_M": 24.83
+   },
+   "proporcional": {
+    "zion_M": 91.24,
+    "porcentaje": 60.83,
+    "sin_origen_visible_M": 0,
+    "rendimiento_M": 5.38
+   }
+  },
+  {
+   "t": "2025-06-28T11:10:33Z",
+   "a": "THxg4UEzbnqXMiyEwMQ5XPgkdLnPrkHHcb",
+   "trx_M": 365.1,
+   "tx": "defc57b9dd920b508c4fd2446b9be7ad1c1ff33867fbed8820dce5e1b5fcc72e",
+   "fifo": {
+    "zion_M": 0,
+    "porcentaje": 0,
+    "sin_origen_visible_M": 0,
+    "rendimiento_M": 0
+   },
+   "lifo": {
+    "zion_M": 0,
+    "porcentaje": 0,
+    "sin_origen_visible_M": 0,
+    "rendimiento_M": 26.29
+   },
+   "proporcional": {
+    "zion_M": 42.47,
+    "porcentaje": 11.63,
+    "sin_origen_visible_M": 0,
+    "rendimiento_M": 5.28
+   }
+  },
+  {
+   "t": "2025-07-19T15:19:33Z",
+   "a": "TF7TSz7qicaMydtP3RakYMxjzbnB5vuNhr",
+   "trx_M": 150,
+   "tx": "b1b234a233d904b05d3a7d3bc9085863bfe7d6d46096dd382bb9560861876d61",
+   "fifo": {
+    "zion_M": 135.24,
+    "porcentaje": 90.16,
+    "sin_origen_visible_M": 0,
+    "rendimiento_M": 0
+   },
+   "lifo": {
+    "zion_M": 0,
+    "porcentaje": 0,
+    "sin_origen_visible_M": 0,
+    "rendimiento_M": 0
+   },
+   "proporcional": {
+    "zion_M": 17.45,
+    "porcentaje": 11.63,
+    "sin_origen_visible_M": 0,
+    "rendimiento_M": 2.17
+   }
+  },
+  {
+   "t": "2025-07-29T17:11:39Z",
+   "a": "TT2T17KZhoDu47i2E4FWxfG79zdkEWkU9N",
+   "trx_M": 500,
+   "tx": "f2dfcadd34d443b0de4544a80b7eceb2507f8be7ea1598aece9a2ccd876ada54",
+   "fifo": {
+    "zion_M": 144.27,
+    "porcentaje": 28.85,
+    "sin_origen_visible_M": 0,
+    "rendimiento_M": 0
+   },
+   "lifo": {
+    "zion_M": 0,
+    "porcentaje": 0,
+    "sin_origen_visible_M": 0,
+    "rendimiento_M": 0
+   },
+   "proporcional": {
+    "zion_M": 58.17,
+    "porcentaje": 11.63,
+    "sin_origen_visible_M": 0,
+    "rendimiento_M": 7.23
+   }
+  },
+  {
+   "t": "2025-08-24T15:53:54Z",
+   "a": "TSoZaR33RXFsGMgpdN3N2JnTLfMN1JYM27",
+   "trx_M": 250,
+   "tx": "df30b09cf57a14a6bacedc9a3f5da1dc2a67540db54bc1991bb669725aa319c3",
+   "fifo": {
+    "zion_M": 150.25,
+    "porcentaje": 60.1,
+    "sin_origen_visible_M": 0,
+    "rendimiento_M": 0
+   },
+   "lifo": {
+    "zion_M": 0,
+    "porcentaje": 0,
+    "sin_origen_visible_M": 0,
+    "rendimiento_M": 0
+   },
+   "proporcional": {
+    "zion_M": 29.08,
+    "porcentaje": 11.63,
+    "sin_origen_visible_M": 0,
+    "rendimiento_M": 3.61
+   }
+  },
+  {
+   "t": "2025-09-12T13:32:39Z",
+   "a": "TN8MR8XRpyMH6stRXqKiK5FRi5CYyBZwP6",
+   "trx_M": 200,
+   "tx": "2907b0cb3584e2f49ade874fa940f8861b7d254c2822ced0b986dc659903f4e1",
+   "fifo": {
+    "zion_M": 0,
+    "porcentaje": 0,
+    "sin_origen_visible_M": 0,
+    "rendimiento_M": 0.19
+   },
+   "lifo": {
+    "zion_M": 0,
+    "porcentaje": 0,
+    "sin_origen_visible_M": 0,
+    "rendimiento_M": 0
+   },
+   "proporcional": {
+    "zion_M": 18.99,
+    "porcentaje": 9.49,
+    "sin_origen_visible_M": 0,
+    "rendimiento_M": 2.36
+   }
+  }
+ ]
+}

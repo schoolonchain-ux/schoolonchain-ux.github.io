@@ -1,0 +1,179 @@
+{
+ "metodos": "FIFO = el TRX que llegó antes es el primero en usarse; LIFO = el último en llegar es el primero en usarse; proporcional = cada familia tiene la misma mezcla de orígenes que todo el TRX recibido. Son modelos.",
+ "faltante_FIFO": 0,
+ "faltante_LIFO": 0,
+ "rango_para_billeteras_nuevas_de_Binance": {
+  "TT2T17": {
+   "FIFO": 167677684.82,
+   "LIFO": 152991561.18,
+   "proporcional": 345320913.17,
+   "minimo": 152991561.18,
+   "maximo": 345320913.17
+  },
+  "Desconocido (TKpiitwG…)": {
+   "FIFO": 22571400,
+   "LIFO": 41846400,
+   "proporcional": 43491298.95,
+   "minimo": 22571400,
+   "maximo": 43491298.95
+  },
+  "TPyjyZ (directo)": {
+   "FIFO": 13017495,
+   "LIFO": 0,
+   "proporcional": 43491298.95,
+   "minimo": 0,
+   "maximo": 43491298.95
+  },
+  "Recompensa de votos": {
+   "FIFO": 4443082.82,
+   "LIFO": 1666707.82,
+   "proporcional": 1932354.45,
+   "minimo": 1666707.82,
+   "maximo": 4443082.82
+  },
+  "HTX-Cold 6": {
+   "FIFO": 22438367.18,
+   "LIFO": 33472032,
+   "proporcional": 78284338.02,
+   "minimo": 22438367.18,
+   "maximo": 78284338.02
+  },
+  "TYL7z7VS (2022)": {
+   "FIFO": 499828670.18,
+   "LIFO": 499999999,
+   "proporcional": 217456496.47,
+   "minimo": 217456496.47,
+   "maximo": 499999999
+  },
+  "sin origen en el modelo": {
+   "FIFO": 0,
+   "LIFO": 0,
+   "proporcional": 0,
+   "minimo": 0,
+   "maximo": 0
+  }
+ },
+ "FIFO": {
+  "Sin etiqueta": {
+   "TT2T17": 197318012.181911,
+   "HTX-Cold 6": 27687000,
+   "Desconocido (TKpiitwG…)": 70934196,
+   "TYL7z7VS (2022)": 171328.81808900833,
+   "TPyjyZ (directo)": 59912504
+  },
+  "Otra con etiqueta: Bitfinex": {
+   "TT2T17": 2700000
+  },
+  "Otra con etiqueta: coins.ph": {
+   "TT2T17": 1579000
+  },
+  "GasFree": {
+   "TT2T17": 260731997,
+   "TPyjyZ (directo)": 27070000,
+   "Desconocido (TKpiitwG…)": 6494403,
+   "HTX-Cold 6": 44766600
+  },
+  "receptor fuera de la lista actual": {
+   "TT2T17": 7.450580596923828e-9
+  },
+  "Bybit": {
+   "HTX-Cold 6": 85108030.818089,
+   "TT2T17": 14891969.181911007
+  },
+  "Binance — billeteras nuevas (creadas tras el robo)": {
+   "TT2T17": 167677684.818089,
+   "Desconocido (TKpiitwG…)": 22571400,
+   "TPyjyZ (directo)": 13017495,
+   "TYL7z7VS (2022)": 499828670.181911,
+   "Recompensa de votos": 4443082.818089,
+   "HTX-Cold 6": 22438367.181911007
+  }
+ },
+ "LIFO": {
+  "Sin etiqueta": {
+   "TT2T17": 140317600,
+   "HTX-Cold 6": 86887966,
+   "Recompensa de votos": 2776375.0000000075,
+   "Desconocido (TKpiitwG…)": 26041101,
+   "TPyjyZ (directo)": 99999999
+  },
+  "Otra con etiqueta: Bitfinex": {
+   "TT2T17": 2700000
+  },
+  "Otra con etiqueta: coins.ph": {
+   "TT2T17": 1579000
+  },
+  "GasFree": {
+   "TT2T17": 247310502.00000003,
+   "Desconocido (TKpiitwG…)": 32112498,
+   "HTX-Cold 6": 59640000
+  },
+  "receptor fuera de la lista actual": {
+   "HTX-Cold 6": 7.450580596923828e-9
+  },
+  "Bybit": {
+   "TT2T17": 100000000
+  },
+  "Binance — billeteras nuevas (creadas tras el robo)": {
+   "HTX-Cold 6": 33472032,
+   "Recompensa de votos": 1666707.8180889925,
+   "TT2T17": 152991561.181911,
+   "TYL7z7VS (2022)": 499999999,
+   "Desconocido (TKpiitwG…)": 41846400
+  }
+ },
+ "proporcional": {
+  "GasFree": {
+   "TT2T17": 160396276.73401347,
+   "Desconocido (TKpiitwG…)": 20201042.436794017,
+   "TPyjyZ (directo)": 20201042.436794017,
+   "Recompensa de votos": 897549.0545595529,
+   "HTX-Cold 6": 36361876.34582715,
+   "TYL7z7VS (2022)": 101005212.9920118
+  },
+  "Sin etiqueta": {
+   "TT2T17": 168419350.4095729,
+   "Desconocido (TKpiitwG…)": 21211505.11768449,
+   "TPyjyZ (directo)": 21211505.11768449,
+   "Recompensa de votos": 942444.748766356,
+   "HTX-Cold 6": 38180709.169409074,
+   "TYL7z7VS (2022)": 106057526.43688266
+  },
+  "Binance — billeteras nuevas (creadas tras el robo)": {
+   "TT2T17": 345320913.1712452,
+   "Desconocido (TKpiitwG…)": 43491298.94612758,
+   "TPyjyZ (directo)": 43491298.94612758,
+   "Recompensa de votos": 1932354.4501626613,
+   "HTX-Cold 6": 78284338.01604705,
+   "TYL7z7VS (2022)": 217456496.4702899
+  },
+  "Bybit": {
+   "TT2T17": 47305744.576675564,
+   "Desconocido (TKpiitwG…)": 5957902.347585557,
+   "TPyjyZ (directo)": 5957902.347585557,
+   "Recompensa de votos": 264714.5381712404,
+   "HTX-Cold 6": 10724224.213738197,
+   "TYL7z7VS (2022)": 29789511.976243883
+  },
+  "Otra con etiqueta: Bitfinex": {
+   "TT2T17": 1277255.10357024,
+   "Desconocido (TKpiitwG…)": 160863.36338481004,
+   "TPyjyZ (directo)": 160863.36338481004,
+   "Recompensa de votos": 7147.292530623492,
+   "HTX-Cold 6": 289554.0537709314,
+   "TYL7z7VS (2022)": 804316.8233585848
+  },
+  "Otra con etiqueta: coins.ph": {
+   "TT2T17": 746957.7068657072,
+   "Desconocido (TKpiitwG…)": 94075.27806837595,
+   "TPyjyZ (directo)": 94075.27806837595,
+   "Recompensa de votos": 4179.842557723887,
+   "HTX-Cold 6": 169335.50033492615,
+   "TYL7z7VS (2022)": 470376.3941048909
+  }
+ },
+ "aumento_posterior_al_2nov": {
+  "hacia_billeteras_nuevas_de_Binance": 500001000,
+  "todas_las_familias": 501071000
+ }
+}

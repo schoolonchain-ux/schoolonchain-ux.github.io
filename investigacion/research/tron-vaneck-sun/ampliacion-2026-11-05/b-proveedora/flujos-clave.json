@@ -1,0 +1,1294 @@
+{
+ "tt2t17": {
+  "operaciones": 89,
+  "por_token_y_sentido": [
+   {
+    "token": "USDT",
+    "sentido": "proveedora → TT2T17",
+    "n": 65,
+    "cantidad": 151830078.49,
+    "primera": "2024-01-13T16:01:12Z",
+    "ultima": "2026-11-03T15:46:06Z"
+   },
+   {
+    "token": "NFT",
+    "sentido": "proveedora → TT2T17",
+    "n": 3,
+    "cantidad": 683977232320.01,
+    "primera": "2024-01-13T15:52:30Z",
+    "ultima": "2024-06-08T16:30:09Z"
+   },
+   {
+    "token": "USDCOLD",
+    "sentido": "proveedora → TT2T17",
+    "n": 3,
+    "cantidad": 314550.03,
+    "primera": "2024-02-07T08:37:42Z",
+    "ultima": "2024-03-13T08:20:42Z"
+   },
+   {
+    "token": "HTX",
+    "sentido": "proveedora → TT2T17",
+    "n": 2,
+    "cantidad": 1999997701164,
+    "primera": "2024-01-29T07:12:36Z",
+    "ultima": "2024-01-29T07:17:24Z"
+   },
+   {
+    "token": "WIN",
+    "sentido": "proveedora → TT2T17",
+    "n": 2,
+    "cantidad": 6562799756.45,
+    "primera": "2024-03-13T07:58:39Z",
+    "ultima": "2024-06-08T16:32:06Z"
+   },
+   {
+    "token": "BTT",
+    "sentido": "proveedora → TT2T17",
+    "n": 2,
+    "cantidad": 556591368161.34,
+    "primera": "2024-03-13T08:10:27Z",
+    "ultima": "2024-06-08T16:14:06Z"
+   },
+   {
+    "token": "SUN",
+    "sentido": "proveedora → TT2T17",
+    "n": 2,
+    "cantidad": 76964438.72,
+    "primera": "2024-03-13T08:24:12Z",
+    "ultima": "2024-06-08T16:12:09Z"
+   },
+   {
+    "token": "JST",
+    "sentido": "proveedora → TT2T17",
+    "n": 2,
+    "cantidad": 2548292.2,
+    "primera": "2024-03-13T08:43:24Z",
+    "ultima": "2024-06-08T16:52:06Z"
+   },
+   {
+    "token": "TUSD",
+    "sentido": "proveedora → TT2T17",
+    "n": 2,
+    "cantidad": 99360.06,
+    "primera": "2024-06-08T16:02:06Z",
+    "ultima": "2024-06-09T07:45:00Z"
+   },
+   {
+    "token": "USDJ",
+    "sentido": "proveedora → TT2T17",
+    "n": 2,
+    "cantidad": 75042.88,
+    "primera": "2024-06-08T16:24:06Z",
+    "ultima": "2024-06-09T08:03:15Z"
+   },
+   {
+    "token": "USDDOLD",
+    "sentido": "proveedora → TT2T17",
+    "n": 2,
+    "cantidad": 55207.14,
+    "primera": "2024-06-08T16:59:48Z",
+    "ultima": "2024-06-09T07:42:39Z"
+   },
+   {
+    "token": "TRX",
+    "sentido": "proveedora → TT2T17",
+    "n": 2,
+    "cantidad": 1413003.11,
+    "primera": "2024-03-13T08:28:09Z",
+    "ultima": "2024-06-08T17:03:03Z"
+   }
+  ],
+  "usdt_por_anio": {
+   "2024 sale": 8777674.71,
+   "2025 sale": 29361474.5,
+   "2026 sale": 113690929.27
+  }
+ },
+ "dias_de_paso_masivo_trx": [
+  {
+   "dia": "2026-06-03",
+   "trx_in": 260412808.63,
+   "trx_out": 260264973.5,
+   "cuentas": [
+    {
+     "cuenta": "TSzSgxRisS5VBXXDcAezTDvnPGi9CbsXvJ",
+     "in": 0,
+     "out": 130000000
+    },
+    {
+     "cuenta": "TUgSgCQL6pMSy9zByn4sgxqrJa95sZExBG",
+     "in": 130000000,
+     "out": 0
+    },
+    {
+     "cuenta": "TLZXe1w751dcmu2B4t3KhhRca27dJhema4",
+     "in": 0,
+     "out": 129999899
+    },
+    {
+     "cuenta": "TPMAyrgsnvzfwFs4mhBzaEcYjpYPnN6oow",
+     "in": 70000000,
+     "out": 0
+    },
+    {
+     "cuenta": "TJjgkd7bXygKBEEw5FB8MSZYJTUPiwvFXu",
+     "in": 60000000,
+     "out": 0
+    }
+   ]
+  },
+  {
+   "dia": "2026-06-08",
+   "trx_in": 1144388865.33,
+   "trx_out": 1144375677.17,
+   "cuentas": [
+    {
+     "cuenta": "THsd9w1M9N8JgfdXugsGhzdKwYrQ7c2zAM",
+     "in": 1144360105.27,
+     "out": 0
+    },
+    {
+     "cuenta": "TH46mnDEM78hFBh26np3hDLjFy7WxFKSVV",
+     "in": 0,
+     "out": 1064000100
+    },
+    {
+     "cuenta": "TZ1SsapyhKNWaVLca6P2qgVzkHTdk6nkXa",
+     "in": 0,
+     "out": 80360000
+    }
+   ]
+  },
+  {
+   "dia": "2026-06-25",
+   "trx_in": 61876748.36,
+   "trx_out": 61885880.73,
+   "cuentas": [
+    {
+     "cuenta": "TUzZ7ybR3Vwto88a7yzJCu4p6CuoLiAgqa",
+     "in": 59999996,
+     "out": 0
+    },
+    {
+     "cuenta": "TEVD7K98xyDHJv2zEtJMKV3B1TjCFUA4pb",
+     "in": 0,
+     "out": 59999994
+    }
+   ]
+  },
+  {
+   "dia": "2026-10-01",
+   "trx_in": 200524403.83,
+   "trx_out": 200514156.76,
+   "cuentas": [
+    {
+     "cuenta": "TSzSgxRisS5VBXXDcAezTDvnPGi9CbsXvJ",
+     "in": 100400000,
+     "out": 99900000
+    },
+    {
+     "cuenta": "TUVw5u9yCG1CdE9aYrt6tzAoJciZ6hFgxa",
+     "in": 99999999,
+     "out": 0
+    },
+    {
+     "cuenta": "TEVD7K98xyDHJv2zEtJMKV3B1TjCFUA4pb",
+     "in": 0,
+     "out": 99999999
+    }
+   ]
+  },
+  {
+   "dia": "2026-10-17",
+   "trx_in": 60459353.94,
+   "trx_out": 60672515.26,
+   "cuentas": [
+    {
+     "cuenta": "TSzSgxRisS5VBXXDcAezTDvnPGi9CbsXvJ",
+     "in": 30200000,
+     "out": 30000000
+    },
+    {
+     "cuenta": "TSfNM5h3PdDLXT841ide6TDcVYBKRGN5vm",
+     "in": 30000023.57,
+     "out": 0
+    },
+    {
+     "cuenta": "TEVD7K98xyDHJv2zEtJMKV3B1TjCFUA4pb",
+     "in": 0,
+     "out": 30000000
+    }
+   ]
+  },
+  {
+   "dia": "2026-10-18",
+   "trx_in": 70324757.38,
+   "trx_out": 70352734.7,
+   "cuentas": [
+    {
+     "cuenta": "TSfNM5h3PdDLXT841ide6TDcVYBKRGN5vm",
+     "in": 70000000,
+     "out": 0
+    },
+    {
+     "cuenta": "TEVD7K98xyDHJv2zEtJMKV3B1TjCFUA4pb",
+     "in": 0,
+     "out": 70000000
+    }
+   ]
+  },
+  {
+   "dia": "2026-10-20",
+   "trx_in": 100200777.82,
+   "trx_out": 100213879.26,
+   "cuentas": [
+    {
+     "cuenta": "TFaboiG8EBqZUoiSTz4ZcwkpJUE7f5YMWx",
+     "in": 100000000,
+     "out": 0
+    },
+    {
+     "cuenta": "TEF9ZVUxhmGGffvkf59e2vdLfAG1QCMb7B",
+     "in": 0,
+     "out": 99999999
+    }
+   ]
+  },
+  {
+   "dia": "2026-11-02",
+   "trx_in": 501132097.69,
+   "trx_out": 501277421.68,
+   "cuentas": [
+    {
+     "cuenta": "TJHKNV4Jwmk7YQht2LFrkQZd9pzvSuN543",
+     "in": 500000000,
+     "out": 0
+    },
+    {
+     "cuenta": "TEF9ZVUxhmGGffvkf59e2vdLfAG1QCMb7B",
+     "in": 0,
+     "out": 499999999
+    }
+   ]
+  },
+  {
+   "dia": "2026-11-04",
+   "trx_in": 150320611.84,
+   "trx_out": 150186943.85,
+   "cuentas": [
+    {
+     "cuenta": "TQRBxpS5V1KZW8g3oJ1YNLqtj1j733Mc33",
+     "in": 150000000,
+     "out": 0
+    },
+    {
+     "cuenta": "TEF9ZVUxhmGGffvkf59e2vdLfAG1QCMb7B",
+     "in": 0,
+     "out": 149999999
+    }
+   ]
+  }
+ ],
+ "saltos_recientes": [
+  {
+   "t": "2026-06-03T15:30:09Z",
+   "tx": "de7c4c2428a3287f4ed73bb0e402725ed64b7e3aa60953c9ce546fe555492cad",
+   "sentido": "sale a",
+   "cuenta": "TLZXe1w751dcmu2B4t3KhhRca27dJhema4",
+   "trx": 129999899
+  },
+  {
+   "t": "2026-06-08T13:11:00Z",
+   "tx": "2555077811295f1fc86c45508e50fe8f4df64a471451be63ba5b9ed8df2c3bdc",
+   "sentido": "entra de",
+   "cuenta": "THsd9w1M9N8JgfdXugsGhzdKwYrQ7c2zAM",
+   "trx": 344360105.27
+  },
+  {
+   "t": "2026-06-08T13:13:30Z",
+   "tx": "6172ad9b2858b813dbf08f30083cda4d7bf2a83dc53cad2ee3cf241bbdbc1068",
+   "sentido": "entra de",
+   "cuenta": "THsd9w1M9N8JgfdXugsGhzdKwYrQ7c2zAM",
+   "trx": 800000000
+  },
+  {
+   "t": "2026-06-08T13:15:48Z",
+   "tx": "09642626d547c194f0c9e91c254d9b462c6b0a726f5fcc332d2e93d1c5e72467",
+   "sentido": "sale a",
+   "cuenta": "TH46mnDEM78hFBh26np3hDLjFy7WxFKSVV",
+   "trx": 1064000100
+  },
+  {
+   "t": "2026-10-20T12:03:15Z",
+   "tx": "ec9520b9f44162ca4ce398e6c2bac376072587e5673a335e3449b960e671065b",
+   "sentido": "sale a",
+   "cuenta": "TEF9ZVUxhmGGffvkf59e2vdLfAG1QCMb7B",
+   "trx": 99999999
+  },
+  {
+   "t": "2026-11-02T09:55:48Z",
+   "tx": "7748d9416c2ccc454081cd2ff04326db5fab942013fa08f1b23a53daf727072b",
+   "sentido": "entra de",
+   "cuenta": "TJHKNV4Jwmk7YQht2LFrkQZd9pzvSuN543",
+   "trx": 500000000
+  },
+  {
+   "t": "2026-11-02T09:59:27Z",
+   "tx": "b02dee0924cd91dbbcbed513dbfa76bc022daa9f555f4114827feb04df5081f7",
+   "sentido": "sale a",
+   "cuenta": "TEF9ZVUxhmGGffvkf59e2vdLfAG1QCMb7B",
+   "trx": 499999999
+  },
+  {
+   "t": "2026-11-04T10:41:06Z",
+   "tx": "00420f709b20bde4f1bb809ae99684a1f8d7d0cd290e7f643e05b2a58f0b7a5b",
+   "sentido": "entra de",
+   "cuenta": "TQRBxpS5V1KZW8g3oJ1YNLqtj1j733Mc33",
+   "trx": 150000000
+  },
+  {
+   "t": "2026-11-04T10:55:39Z",
+   "tx": "db113f1bec479bcae2911f76de19b9248d291b7091265f62f86afbd60b28a42d",
+   "sentido": "sale a",
+   "cuenta": "TEF9ZVUxhmGGffvkf59e2vdLfAG1QCMb7B",
+   "trx": 149999999
+  }
+ ],
+ "usdt_de_5M_o_mas_desde_15_oct": [
+  {
+   "t": "2026-10-15T01:48:24Z",
+   "sentido": "entra de",
+   "cuenta": "TUzZ7ybR3Vwto88a7yzJCu4p6CuoLiAgqa",
+   "usdt": 19999998.5,
+   "tx": "81f72f16a9f90b225d7dbc7bda78944c2cc50eb4fac0df6977ccb357adf4a607"
+  },
+  {
+   "t": "2026-10-15T01:56:30Z",
+   "sentido": "entra de",
+   "cuenta": "TUzZ7ybR3Vwto88a7yzJCu4p6CuoLiAgqa",
+   "usdt": 13340051.94,
+   "tx": "1aae399d9acd0c41bffbb05afff3d6501b626b0d01c58a34d31f7507e709810b"
+  },
+  {
+   "t": "2026-10-15T03:03:45Z",
+   "sentido": "sale a",
+   "cuenta": "TSzSgxRisS5VBXXDcAezTDvnPGi9CbsXvJ",
+   "usdt": 36800000,
+   "tx": "118c290698494eb99ecd3f266504454921499cbdf7e6eae3b6deb4ff4c66dac8"
+  },
+  {
+   "t": "2026-10-15T12:30:42Z",
+   "sentido": "entra de",
+   "cuenta": "TSzSgxRisS5VBXXDcAezTDvnPGi9CbsXvJ",
+   "usdt": 10200000,
+   "tx": "ee74de9bb14749210045f664ac4c33cbadd4e5b667d85f2d4b7260944936501c"
+  },
+  {
+   "t": "2026-10-15T12:32:09Z",
+   "sentido": "sale a",
+   "cuenta": "TFvgoqKbv4fu2RBp7215AR2eDupMhCdxkH",
+   "usdt": 10000000,
+   "tx": "b294eb1b7dd37bf29ecb15b9ce8b5c478588b5db11c2be21c2751b12b9862590"
+  },
+  {
+   "t": "2026-10-16T03:32:03Z",
+   "sentido": "entra de",
+   "cuenta": "TSzSgxRisS5VBXXDcAezTDvnPGi9CbsXvJ",
+   "usdt": 10200000,
+   "tx": "f57f91ceb9ceb377533264ee68c705d109afb81850f0f7b2f81937967f458377"
+  },
+  {
+   "t": "2026-10-16T03:34:06Z",
+   "sentido": "sale a",
+   "cuenta": "TFvgoqKbv4fu2RBp7215AR2eDupMhCdxkH",
+   "usdt": 10000000,
+   "tx": "75ea444c27a17329b63b9aa92177a80660bdf410c7408c48ff1e445abe6e766b"
+  },
+  {
+   "t": "2026-10-16T07:19:42Z",
+   "sentido": "entra de",
+   "cuenta": "TSzSgxRisS5VBXXDcAezTDvnPGi9CbsXvJ",
+   "usdt": 7000000,
+   "tx": "876501d90b633662a6d498c3c208d5dc45eb4b7f6da397c7137800720b60e9de"
+  },
+  {
+   "t": "2026-10-16T07:20:06Z",
+   "sentido": "sale a",
+   "cuenta": "TFvgoqKbv4fu2RBp7215AR2eDupMhCdxkH",
+   "usdt": 8000000,
+   "tx": "9df6d4fa77310b15a7579553f0d89c610d8b6565d28064a2178569dd9574f24f"
+  },
+  {
+   "t": "2026-10-17T11:08:03Z",
+   "sentido": "entra de",
+   "cuenta": "TFSd14UQUp6HPamdMGJsWBxfWKMrLYxRmp",
+   "usdt": 9000000,
+   "tx": "d6708caf4c802e5a0d72f88dd54b813354a6be04f9cbe7f37696af1842035a8f"
+  },
+  {
+   "t": "2026-10-17T11:14:21Z",
+   "sentido": "sale a",
+   "cuenta": "TSzSgxRisS5VBXXDcAezTDvnPGi9CbsXvJ",
+   "usdt": 10300000,
+   "tx": "d6837f6a1e795f73ef475c94c93e2924835a1fea1b4e9f476a3e9ffd51aa0d8d"
+  },
+  {
+   "t": "2026-10-17T17:58:36Z",
+   "sentido": "entra de",
+   "cuenta": "TFSd14UQUp6HPamdMGJsWBxfWKMrLYxRmp",
+   "usdt": 5000000,
+   "tx": "55719d0499804b9547496f3d5450985f9ecd67f38c42ee7cc70aa6e17a1a8b99"
+  },
+  {
+   "t": "2026-10-17T18:04:03Z",
+   "sentido": "sale a",
+   "cuenta": "TSzSgxRisS5VBXXDcAezTDvnPGi9CbsXvJ",
+   "usdt": 5630000,
+   "tx": "83e12e7b10c14155edee3f1113e32a11b05bbff4a4897cbf7eaae495efc71f4e"
+  },
+  {
+   "t": "2026-10-20T12:58:48Z",
+   "sentido": "entra de",
+   "cuenta": "TFSd14UQUp6HPamdMGJsWBxfWKMrLYxRmp",
+   "usdt": 5000000,
+   "tx": "58f44d4ef2a037a2981401c11c6b25992b60ab3f6c7f98863fd68e557457b398"
+  },
+  {
+   "t": "2026-10-20T14:15:45Z",
+   "sentido": "sale a",
+   "cuenta": "TSzSgxRisS5VBXXDcAezTDvnPGi9CbsXvJ",
+   "usdt": 6630000,
+   "tx": "23963a426ef73b881b4b0622364282632e91bcc02800d2dbb53820f8fa148be8"
+  },
+  {
+   "t": "2026-10-20T16:00:48Z",
+   "sentido": "entra de",
+   "cuenta": "TFSd14UQUp6HPamdMGJsWBxfWKMrLYxRmp",
+   "usdt": 10000000,
+   "tx": "2adc9e4fd26c06e9f92b98042ddc77507f23ba25f18ec87d7874476fcd1f4d76"
+  },
+  {
+   "t": "2026-10-20T16:02:06Z",
+   "sentido": "sale a",
+   "cuenta": "TWPpxPd5PpU5FQk6F6F3HMN5VdufxnVA8K",
+   "usdt": 9999990,
+   "tx": "181b2d0881a4898c0b575256a01287af538519ccc9983bae1abf548c4284a19a"
+  },
+  {
+   "t": "2026-10-25T12:34:48Z",
+   "sentido": "entra de",
+   "cuenta": "TFSd14UQUp6HPamdMGJsWBxfWKMrLYxRmp",
+   "usdt": 6000000,
+   "tx": "924f0e9fa10b2ba994c2629ddcafec8d403324094232bf49960d3aaa6e54bea6"
+  },
+  {
+   "t": "2026-10-25T12:49:54Z",
+   "sentido": "sale a",
+   "cuenta": "TSzSgxRisS5VBXXDcAezTDvnPGi9CbsXvJ",
+   "usdt": 10500000,
+   "tx": "69e09eb2047aec8b1715c2cb1ffdbc6749c83366eefdf8310c2130b50440fe2a"
+  },
+  {
+   "t": "2026-10-27T15:36:48Z",
+   "sentido": "entra de",
+   "cuenta": "TFSd14UQUp6HPamdMGJsWBxfWKMrLYxRmp",
+   "usdt": 7000000,
+   "tx": "e26831d07c717c10384d4b3fb657363872b7a248d7ad650cd7fffb953e4fd8a1"
+  },
+  {
+   "t": "2026-10-27T16:32:00Z",
+   "sentido": "sale a",
+   "cuenta": "TNXpb7aBoxow5X9drTskkjSo1mgKpNFnD1",
+   "usdt": 5000000,
+   "tx": "0e1b02247def10a555511bbddb5c8bcba0bc8d75d0b6062893ac554c319563d3"
+  },
+  {
+   "t": "2026-10-27T16:40:48Z",
+   "sentido": "entra de",
+   "cuenta": "TFSd14UQUp6HPamdMGJsWBxfWKMrLYxRmp",
+   "usdt": 10000000,
+   "tx": "c44aedf49bfd31e86837e76fde3a291d800179b0311aa634f8c7dca23de78174"
+  },
+  {
+   "t": "2026-10-27T17:10:06Z",
+   "sentido": "sale a",
+   "cuenta": "TWPpxPd5PpU5FQk6F6F3HMN5VdufxnVA8K",
+   "usdt": 14999990,
+   "tx": "838b4f6819e0d958581702bed16b09899f5ba3ca82d88034a090e1e20a34fa6d"
+  },
+  {
+   "t": "2026-10-27T22:19:48Z",
+   "sentido": "entra de",
+   "cuenta": "TFSd14UQUp6HPamdMGJsWBxfWKMrLYxRmp",
+   "usdt": 10000000,
+   "tx": "c4bd5c7f0fbc41be65634aca358a7ff58bad2b27806e26bde847fc8fde83bb6b"
+  },
+  {
+   "t": "2026-10-27T22:44:48Z",
+   "sentido": "entra de",
+   "cuenta": "TFSd14UQUp6HPamdMGJsWBxfWKMrLYxRmp",
+   "usdt": 10000000,
+   "tx": "8c3f66a9db631ff31850940ef26a289543844eb96b16ee696c01d3b740882a73"
+  },
+  {
+   "t": "2026-10-28T00:06:06Z",
+   "sentido": "sale a",
+   "cuenta": "TSzSgxRisS5VBXXDcAezTDvnPGi9CbsXvJ",
+   "usdt": 20200000,
+   "tx": "bf04888cbe07a6ecf1159676e91a46d23e17599f4e55651838996439344fa7b2"
+  },
+  {
+   "t": "2026-10-28T00:45:09Z",
+   "sentido": "entra de",
+   "cuenta": "TSzSgxRisS5VBXXDcAezTDvnPGi9CbsXvJ",
+   "usdt": 20300000,
+   "tx": "eeb0954c1aedbfd21e14db711b1fce51a57751d015e256cb30ca37c15ca5bcd6"
+  },
+  {
+   "t": "2026-10-28T00:46:06Z",
+   "sentido": "sale a",
+   "cuenta": "TWPpxPd5PpU5FQk6F6F3HMN5VdufxnVA8K",
+   "usdt": 19999990,
+   "tx": "9d519ae841343cc2d8c317dcb157979e3480b1f60b2bbbefc502867b7d1badd5"
+  },
+  {
+   "t": "2026-10-28T07:42:45Z",
+   "sentido": "entra de",
+   "cuenta": "TFSd14UQUp6HPamdMGJsWBxfWKMrLYxRmp",
+   "usdt": 10000000,
+   "tx": "d18fbebc0dd14369d02b2d49951229d2552fe3e36ecc619642fe73b35a21a58c"
+  },
+  {
+   "t": "2026-10-28T07:46:30Z",
+   "sentido": "entra de",
+   "cuenta": "TUzZ7ybR3Vwto88a7yzJCu4p6CuoLiAgqa",
+   "usdt": 9999998.5,
+   "tx": "2599f91fbffa273149734b84b92b788edf2c039412bf1a8daa2e13ba075121ea"
+  },
+  {
+   "t": "2026-10-28T07:55:42Z",
+   "sentido": "entra de",
+   "cuenta": "TUzZ7ybR3Vwto88a7yzJCu4p6CuoLiAgqa",
+   "usdt": 9999998.5,
+   "tx": "57e9b1193456127df79ed0b079f83dd9a63cb79afc80967ba8ec7c34744604a8"
+  },
+  {
+   "t": "2026-10-28T07:56:48Z",
+   "sentido": "entra de",
+   "cuenta": "TFSd14UQUp6HPamdMGJsWBxfWKMrLYxRmp",
+   "usdt": 10000000,
+   "tx": "145d9c880b5307cb2f1b1f972338d810fa421ac2cdd3e259d3e43be6367c1a7c"
+  },
+  {
+   "t": "2026-10-28T08:17:48Z",
+   "sentido": "entra de",
+   "cuenta": "TFSd14UQUp6HPamdMGJsWBxfWKMrLYxRmp",
+   "usdt": 10000000,
+   "tx": "5847b93ec29e9101de8505c1e3be9567921066f9cee16acd9b816cec2478e4ad"
+  },
+  {
+   "t": "2026-10-28T08:19:51Z",
+   "sentido": "entra de",
+   "cuenta": "TFSd14UQUp6HPamdMGJsWBxfWKMrLYxRmp",
+   "usdt": 10000000,
+   "tx": "be5e10bb6325d7c05ad9f3d7fc08b4cf3586b982cb0c8bc457899400c0563b17"
+  },
+  {
+   "t": "2026-10-28T08:20:21Z",
+   "sentido": "sale a",
+   "cuenta": "TWPpxPd5PpU5FQk6F6F3HMN5VdufxnVA8K",
+   "usdt": 29999990,
+   "tx": "4ea6ff1d529ea6bf68b6a1f1fe28f911ec52a739bf69c3995dc13fb407b0ce06"
+  },
+  {
+   "t": "2026-10-28T08:42:45Z",
+   "sentido": "entra de",
+   "cuenta": "TFSd14UQUp6HPamdMGJsWBxfWKMrLYxRmp",
+   "usdt": 10000000,
+   "tx": "9b6e7f6f9ffc4a5e68960516c266bc60fe5c58c103db384d219d57e6517686aa"
+  },
+  {
+   "t": "2026-10-28T08:53:21Z",
+   "sentido": "entra de",
+   "cuenta": "TUzZ7ybR3Vwto88a7yzJCu4p6CuoLiAgqa",
+   "usdt": 9999998.5,
+   "tx": "808cddcf3222990c91f8d9d165c65649a939562ec71f591bbefffa03c17122be"
+  },
+  {
+   "t": "2026-10-28T09:03:48Z",
+   "sentido": "entra de",
+   "cuenta": "TFSd14UQUp6HPamdMGJsWBxfWKMrLYxRmp",
+   "usdt": 10000000,
+   "tx": "fe76084f5d6aa06ace54dcbcbd57f1e7a771f41109c8f5725eeea0f260441a11"
+  },
+  {
+   "t": "2026-10-28T09:09:36Z",
+   "sentido": "sale a",
+   "cuenta": "TWPpxPd5PpU5FQk6F6F3HMN5VdufxnVA8K",
+   "usdt": 30000000,
+   "tx": "571d390687e97bf7bbf1f3653ea7c2b5b0328740b697e5942a10ea9d38bfe8ea"
+  },
+  {
+   "t": "2026-10-28T09:21:48Z",
+   "sentido": "entra de",
+   "cuenta": "TFSd14UQUp6HPamdMGJsWBxfWKMrLYxRmp",
+   "usdt": 10000000,
+   "tx": "3b7fd5d12885f6e63bd4e7dde6635c6fe402637597a9eb3ca6db09d84f1e3f99"
+  },
+  {
+   "t": "2026-10-28T09:24:30Z",
+   "sentido": "sale a",
+   "cuenta": "TKVnVyJiTzyCDgTkZRYc5LM4q8B7xXEbh5",
+   "usdt": 30000000,
+   "tx": "28da089504f6cde2c7af56da2819d49184f2beab9333714e25437dff09baca6d"
+  },
+  {
+   "t": "2026-10-28T09:56:48Z",
+   "sentido": "entra de",
+   "cuenta": "TFSd14UQUp6HPamdMGJsWBxfWKMrLYxRmp",
+   "usdt": 10000000,
+   "tx": "bf65508a5cc7cd49b52fb8273a8fa2858991a2fbed82c44ac2feb06881ad21e9"
+  },
+  {
+   "t": "2026-10-28T10:03:21Z",
+   "sentido": "entra de",
+   "cuenta": "TUzZ7ybR3Vwto88a7yzJCu4p6CuoLiAgqa",
+   "usdt": 9999998.5,
+   "tx": "ae5e3823719ae478a7289cbf57d2e93f98180dc4f928e87bcbaa33cf438628d7"
+  },
+  {
+   "t": "2026-10-28T10:27:03Z",
+   "sentido": "entra de",
+   "cuenta": "TUzZ7ybR3Vwto88a7yzJCu4p6CuoLiAgqa",
+   "usdt": 10054035.14,
+   "tx": "14ba8cd73470b2eac66f777f026bf96017bc10bdb72153e98bb311a4c8a4365f"
+  },
+  {
+   "t": "2026-10-28T10:36:48Z",
+   "sentido": "entra de",
+   "cuenta": "TFSd14UQUp6HPamdMGJsWBxfWKMrLYxRmp",
+   "usdt": 8000000,
+   "tx": "f259c003f5e8c0037d81cfd74b04850f55890d74485acf086ef381cdbd3c3f1e"
+  },
+  {
+   "t": "2026-10-28T11:04:51Z",
+   "sentido": "sale a",
+   "cuenta": "TKVnVyJiTzyCDgTkZRYc5LM4q8B7xXEbh5",
+   "usdt": 20000000,
+   "tx": "3ffe3b541c024478e096beaf7f2ea3d6f8287822a1d35014ab13709d2fd6fcbc"
+  },
+  {
+   "t": "2026-10-28T11:48:06Z",
+   "sentido": "sale a",
+   "cuenta": "TSzSgxRisS5VBXXDcAezTDvnPGi9CbsXvJ",
+   "usdt": 23900000,
+   "tx": "ce53336f3f484a04b6a848180f9f408810608c57dec5687fa13d3f1c00d497f8"
+  },
+  {
+   "t": "2026-10-28T12:26:48Z",
+   "sentido": "entra de",
+   "cuenta": "TFSd14UQUp6HPamdMGJsWBxfWKMrLYxRmp",
+   "usdt": 10000000,
+   "tx": "d9d49d95fb4662212f814cf114eb5c3ab12a6e7f710063272cfd7a586bc8bd2f"
+  },
+  {
+   "t": "2026-10-28T12:40:51Z",
+   "sentido": "entra de",
+   "cuenta": "TFSd14UQUp6HPamdMGJsWBxfWKMrLYxRmp",
+   "usdt": 10000000,
+   "tx": "5b3d865025cef1c1554921f505548ec6a9c1930c5b1f656106a30bc86555723c"
+  },
+  {
+   "t": "2026-10-28T12:57:51Z",
+   "sentido": "entra de",
+   "cuenta": "TFSd14UQUp6HPamdMGJsWBxfWKMrLYxRmp",
+   "usdt": 5000000,
+   "tx": "d7643a4e4f87fed2fe33e0805b79d54b8a70020fea21414f428646ae7908403c"
+  },
+  {
+   "t": "2026-10-28T13:05:24Z",
+   "sentido": "entra de",
+   "cuenta": "TSzSgxRisS5VBXXDcAezTDvnPGi9CbsXvJ",
+   "usdt": 10000000,
+   "tx": "e362d44b82417828797cd836359ad1f897d2a0ae7af50cda1cbd2a1bedf3f507"
+  },
+  {
+   "t": "2026-10-28T13:06:06Z",
+   "sentido": "sale a",
+   "cuenta": "TWPpxPd5PpU5FQk6F6F3HMN5VdufxnVA8K",
+   "usdt": 29999990,
+   "tx": "2ab41fc08455855b740c7e54c670a333df5c59ea597d02261f59256ebfdd77ae"
+  },
+  {
+   "t": "2026-10-28T19:22:48Z",
+   "sentido": "entra de",
+   "cuenta": "TFSd14UQUp6HPamdMGJsWBxfWKMrLYxRmp",
+   "usdt": 10000000,
+   "tx": "22af4f6c45f10295042fcbed745a927a74fff7b712bb0aa55c81233de04bee73"
+  },
+  {
+   "t": "2026-10-28T19:33:48Z",
+   "sentido": "entra de",
+   "cuenta": "TFSd14UQUp6HPamdMGJsWBxfWKMrLYxRmp",
+   "usdt": 10000000,
+   "tx": "19625b4bafd0a2b07dba582ccca2e103bd1f47ee08e7227dc32262dc77251a4d"
+  },
+  {
+   "t": "2026-10-28T19:59:48Z",
+   "sentido": "entra de",
+   "cuenta": "TFSd14UQUp6HPamdMGJsWBxfWKMrLYxRmp",
+   "usdt": 10000000,
+   "tx": "006b033a9046deef1d3765e5175a0c81e77e2ea6461a9f83fc8f223568b20a8e"
+  },
+  {
+   "t": "2026-10-28T20:01:48Z",
+   "sentido": "entra de",
+   "cuenta": "TFSd14UQUp6HPamdMGJsWBxfWKMrLYxRmp",
+   "usdt": 10000000,
+   "tx": "5fdea843dfb64cc8f9e217de27bb90d53e55a73cc998bd58aff4aec4038ad0ca"
+  },
+  {
+   "t": "2026-10-28T20:24:06Z",
+   "sentido": "sale a",
+   "cuenta": "TSzSgxRisS5VBXXDcAezTDvnPGi9CbsXvJ",
+   "usdt": 37100000,
+   "tx": "b126f4749d88f2934736ae0a7c13c9d2b76cabae9510a57e05c137551fcd8c3a"
+  },
+  {
+   "t": "2026-10-29T02:31:45Z",
+   "sentido": "entra de",
+   "cuenta": "TSzSgxRisS5VBXXDcAezTDvnPGi9CbsXvJ",
+   "usdt": 40200000,
+   "tx": "7b67f885593e27566bfc0b7d131d99fdf8638af2e12bd58d4419ee5c97aba532"
+  },
+  {
+   "t": "2026-10-29T02:32:06Z",
+   "sentido": "sale a",
+   "cuenta": "TWPpxPd5PpU5FQk6F6F3HMN5VdufxnVA8K",
+   "usdt": 39999990,
+   "tx": "d34e9804aadcdc3b3cb0009fa7f73ae15e90504d1f11e56e1abfb3b3bc2d86cb"
+  },
+  {
+   "t": "2026-10-29T07:51:57Z",
+   "sentido": "entra de",
+   "cuenta": "TSzSgxRisS5VBXXDcAezTDvnPGi9CbsXvJ",
+   "usdt": 5710000,
+   "tx": "cd25cd260f7f27bf1d67844e98d75a7f38f7f6545407871b2886c74f995516d3"
+  },
+  {
+   "t": "2026-10-29T07:52:06Z",
+   "sentido": "sale a",
+   "cuenta": "TNXpb7aBoxow5X9drTskkjSo1mgKpNFnD1",
+   "usdt": 5500000,
+   "tx": "335520c423cea9617d23f5c98f058123775ca8b5cc4da4af7bee97d73a2164aa"
+  },
+  {
+   "t": "2026-10-29T09:02:21Z",
+   "sentido": "entra de",
+   "cuenta": "TS639Y6J54TQmQiK9BKdZoihnirqhJobwu",
+   "usdt": 5350000,
+   "tx": "7dc6ae229e3cc2c086f286e70467fbd76177eb516f151376437a5d27035a4836"
+  },
+  {
+   "t": "2026-10-29T10:06:06Z",
+   "sentido": "sale a",
+   "cuenta": "TSzSgxRisS5VBXXDcAezTDvnPGi9CbsXvJ",
+   "usdt": 7700000,
+   "tx": "fd27e737d34327a5d064ffe54a7ac1fcf79f57c67ad2b2442fc84ff9d4f6b4e6"
+  },
+  {
+   "t": "2026-10-29T10:12:48Z",
+   "sentido": "entra de",
+   "cuenta": "TFSd14UQUp6HPamdMGJsWBxfWKMrLYxRmp",
+   "usdt": 10000000,
+   "tx": "cfe2f7f19e48657f8e3282bc888b12780c3c417f7bc18323d2050c531a1cef91"
+  },
+  {
+   "t": "2026-10-29T11:54:06Z",
+   "sentido": "sale a",
+   "cuenta": "TSzSgxRisS5VBXXDcAezTDvnPGi9CbsXvJ",
+   "usdt": 10500000,
+   "tx": "9e0b6e68f4df50173a2d8e0f7a0b0685ba0d14feac11c0dcb9ac70667e415f31"
+  },
+  {
+   "t": "2026-11-02T02:49:48Z",
+   "sentido": "entra de",
+   "cuenta": "TFSd14UQUp6HPamdMGJsWBxfWKMrLYxRmp",
+   "usdt": 5000000,
+   "tx": "bc8252aa036ede16b35802cc55caad423cde3bb524d6409f74bd1d5005f84793"
+  },
+  {
+   "t": "2026-11-02T06:19:42Z",
+   "sentido": "entra de",
+   "cuenta": "TCFfQYygyfTTYE8So6wQbpNk7BEMomJH9J",
+   "usdt": 60000000,
+   "tx": "51f24dd762a2ac4f07c5879a729e10961872823dddc877f1199b2b572ad7c49d"
+  },
+  {
+   "t": "2026-11-02T06:20:54Z",
+   "sentido": "sale a",
+   "cuenta": "TVpNiLp3HhhDJHc7eBsqXeZFvqWdPfzCEt",
+   "usdt": 59999998.8,
+   "tx": "a6b97b1e6527583f954020421cebf4b583ac5d6233fd2f0c2b56061ee05483d1"
+  },
+  {
+   "t": "2026-11-02T09:34:00Z",
+   "sentido": "entra de",
+   "cuenta": "TKV6xqB7VPTThF3Ru8VrNh7QQLVReTNvuV",
+   "usdt": 80000000,
+   "tx": "4b431a4387a30d9c0761d4d5514e5d96cd18061065a75eeb68f0101f6197d03a"
+  },
+  {
+   "t": "2026-11-02T09:34:09Z",
+   "sentido": "sale a",
+   "cuenta": "TVpNiLp3HhhDJHc7eBsqXeZFvqWdPfzCEt",
+   "usdt": 78000000.8,
+   "tx": "9d1dc094d8f26057f1d203f5383f67ed6c8f0989ab76a73b19f6f42407dee268"
+  },
+  {
+   "t": "2026-11-02T17:00:51Z",
+   "sentido": "entra de",
+   "cuenta": "TFSd14UQUp6HPamdMGJsWBxfWKMrLYxRmp",
+   "usdt": 5000000,
+   "tx": "7e0c2c99bab7f8fc687f2164a954fee24ec2cf0af929c898ef32c327b58907cb"
+  },
+  {
+   "t": "2026-11-02T18:05:54Z",
+   "sentido": "entra de",
+   "cuenta": "TFSd14UQUp6HPamdMGJsWBxfWKMrLYxRmp",
+   "usdt": 5000000,
+   "tx": "c45f079eee6c8d55f97ecb6fe1c8cf75d3decf43bed25674443c29c6f5c04923"
+  },
+  {
+   "t": "2026-11-02T18:32:51Z",
+   "sentido": "sale a",
+   "cuenta": "TWPpxPd5PpU5FQk6F6F3HMN5VdufxnVA8K",
+   "usdt": 14499987,
+   "tx": "098ad669da4a0aa25f8e224d5a23f026875250d8000f96eb9f197f45c047c09a"
+  },
+  {
+   "t": "2026-11-03T04:33:51Z",
+   "sentido": "entra de",
+   "cuenta": "TFSd14UQUp6HPamdMGJsWBxfWKMrLYxRmp",
+   "usdt": 5000000,
+   "tx": "e30da71a50bb8d5666a645a0bf3047e6bf2646388e1c56adbcf202ec41ce6b8c"
+  },
+  {
+   "t": "2026-11-03T06:40:57Z",
+   "sentido": "entra de",
+   "cuenta": "TFSd14UQUp6HPamdMGJsWBxfWKMrLYxRmp",
+   "usdt": 5000000,
+   "tx": "fc4229a6d0212c30471939ebd22766857b379a3addcb87a03125acb0dbc4d27a"
+  },
+  {
+   "t": "2026-11-03T07:09:00Z",
+   "sentido": "entra de",
+   "cuenta": "TFSd14UQUp6HPamdMGJsWBxfWKMrLYxRmp",
+   "usdt": 5000000,
+   "tx": "7f05a620824d4ff259b7547ff18c42d5c184374bf8248cf27bb79fa1b47559f8"
+  },
+  {
+   "t": "2026-11-03T07:31:57Z",
+   "sentido": "entra de",
+   "cuenta": "TFSd14UQUp6HPamdMGJsWBxfWKMrLYxRmp",
+   "usdt": 5000000,
+   "tx": "9b2c95e657d6b881b046d083e2b590cdf5928bb4b90ab8cb7fa6c42e0222ab70"
+  },
+  {
+   "t": "2026-11-03T08:06:57Z",
+   "sentido": "entra de",
+   "cuenta": "TFSd14UQUp6HPamdMGJsWBxfWKMrLYxRmp",
+   "usdt": 5000000,
+   "tx": "6498daf147e1a1bd53716ff12913fff27bf43918829d7834bc7ef45bbd40ae22"
+  },
+  {
+   "t": "2026-11-03T08:12:06Z",
+   "sentido": "sale a",
+   "cuenta": "TSzSgxRisS5VBXXDcAezTDvnPGi9CbsXvJ",
+   "usdt": 17700000,
+   "tx": "019331735ea13d22b2f3f8a151f339492dcfd9f35f5052bd307855d23c24eae5"
+  },
+  {
+   "t": "2026-11-03T08:25:54Z",
+   "sentido": "entra de",
+   "cuenta": "TFSd14UQUp6HPamdMGJsWBxfWKMrLYxRmp",
+   "usdt": 5000000,
+   "tx": "6a812ac4b45be525a936f6acc899a6c5b7d8c9f032f179b2fbadcd26e105d8d8"
+  },
+  {
+   "t": "2026-11-03T08:58:57Z",
+   "sentido": "entra de",
+   "cuenta": "TFSd14UQUp6HPamdMGJsWBxfWKMrLYxRmp",
+   "usdt": 5000000,
+   "tx": "94032fcdc5dab7626dcfe0a4124a6bfbd55dad95fa23492fd1726efbca3b16ec"
+  },
+  {
+   "t": "2026-11-03T09:26:54Z",
+   "sentido": "entra de",
+   "cuenta": "TFSd14UQUp6HPamdMGJsWBxfWKMrLYxRmp",
+   "usdt": 5000000,
+   "tx": "ca74c3850d5d3a71d084972ac95705172dd92af347653372ace0bd5f17e6125e"
+  },
+  {
+   "t": "2026-11-03T09:47:54Z",
+   "sentido": "entra de",
+   "cuenta": "TFSd14UQUp6HPamdMGJsWBxfWKMrLYxRmp",
+   "usdt": 5000000,
+   "tx": "b6941c336f208fdb8f01f258f5cb7e68c1222e26974df56c2dee265c87bb2670"
+  },
+  {
+   "t": "2026-11-03T09:50:00Z",
+   "sentido": "entra de",
+   "cuenta": "TFSd14UQUp6HPamdMGJsWBxfWKMrLYxRmp",
+   "usdt": 5000000,
+   "tx": "c0495da6a85c016bd760da7a72874d204f3787f0983a2ae9374b1329fd87cc54"
+  },
+  {
+   "t": "2026-11-03T10:01:57Z",
+   "sentido": "entra de",
+   "cuenta": "TFSd14UQUp6HPamdMGJsWBxfWKMrLYxRmp",
+   "usdt": 5000000,
+   "tx": "17eb9112a92b59a41da3657ea367c36aa4a88f7049118bca3d374a63ae242379"
+  },
+  {
+   "t": "2026-11-03T10:09:09Z",
+   "sentido": "sale a",
+   "cuenta": "TSzSgxRisS5VBXXDcAezTDvnPGi9CbsXvJ",
+   "usdt": 29000000,
+   "tx": "4970a639173845e336a70537ecca4ed56b053622d8389e269cf40695aabe74ac"
+  },
+  {
+   "t": "2026-11-03T10:33:03Z",
+   "sentido": "entra de",
+   "cuenta": "TFSd14UQUp6HPamdMGJsWBxfWKMrLYxRmp",
+   "usdt": 5000000,
+   "tx": "e3ca596f90a9ea8ceeb9edd6cdae4981bbd3fff4c538643ebe78f9a1be48a932"
+  },
+  {
+   "t": "2026-11-03T11:07:57Z",
+   "sentido": "entra de",
+   "cuenta": "TFSd14UQUp6HPamdMGJsWBxfWKMrLYxRmp",
+   "usdt": 5000000,
+   "tx": "4154cb0a554e94a480047ba7fc2e172ab51b4623b944d98245f0a21ca0c3de07"
+  },
+  {
+   "t": "2026-11-03T11:16:57Z",
+   "sentido": "entra de",
+   "cuenta": "TFSd14UQUp6HPamdMGJsWBxfWKMrLYxRmp",
+   "usdt": 10000000,
+   "tx": "c69f05fdbc3cf5520fe6fd6da9030c5f667854d16db8b64259061545da20261e"
+  },
+  {
+   "t": "2026-11-03T13:37:24Z",
+   "sentido": "entra de",
+   "cuenta": "TFSd14UQUp6HPamdMGJsWBxfWKMrLYxRmp",
+   "usdt": 5000000,
+   "tx": "9355ef32741a5a5759191618b2cf743597773f8db9f9dae126fc36c02d2d4acc"
+  },
+  {
+   "t": "2026-11-03T13:48:06Z",
+   "sentido": "sale a",
+   "cuenta": "TSzSgxRisS5VBXXDcAezTDvnPGi9CbsXvJ",
+   "usdt": 30000000,
+   "tx": "d689dd57560518911efb9b403a5045ccbedf4ddb9dce37e9da0465bf2c7b36b1"
+  },
+  {
+   "t": "2026-11-03T14:01:24Z",
+   "sentido": "entra de",
+   "cuenta": "TFSd14UQUp6HPamdMGJsWBxfWKMrLYxRmp",
+   "usdt": 5000000,
+   "tx": "4b92077cc08262f5ef61a832cdc76ae3926d1c1f35529dc53e341d2645e29a83"
+  },
+  {
+   "t": "2026-11-03T14:10:24Z",
+   "sentido": "entra de",
+   "cuenta": "TFSd14UQUp6HPamdMGJsWBxfWKMrLYxRmp",
+   "usdt": 5000000,
+   "tx": "ebe893539b8e0d76103a47502b5b38f2e9d65896c96276301106e7a74bb50482"
+  },
+  {
+   "t": "2026-11-03T14:23:27Z",
+   "sentido": "entra de",
+   "cuenta": "TFSd14UQUp6HPamdMGJsWBxfWKMrLYxRmp",
+   "usdt": 5000000,
+   "tx": "95d69f2b9d4b1994875775393554c943ca666e3a05fef7893f2d2b04e06843df"
+  },
+  {
+   "t": "2026-11-03T14:37:15Z",
+   "sentido": "entra de",
+   "cuenta": "TFSd14UQUp6HPamdMGJsWBxfWKMrLYxRmp",
+   "usdt": 5000000,
+   "tx": "8744e690f2b391b56d595689b5462797f212fe7239be498ea455f5a027879a69"
+  },
+  {
+   "t": "2026-11-03T14:45:06Z",
+   "sentido": "sale a",
+   "cuenta": "TSzSgxRisS5VBXXDcAezTDvnPGi9CbsXvJ",
+   "usdt": 20000000,
+   "tx": "afdd3edc7d1c09a1fe911b3054ceb8ad23adad1e7b99c2f4c1f5c49c20fa350e"
+  },
+  {
+   "t": "2026-11-03T14:52:57Z",
+   "sentido": "entra de",
+   "cuenta": "TFSd14UQUp6HPamdMGJsWBxfWKMrLYxRmp",
+   "usdt": 5000000,
+   "tx": "6565c9df65fd04327014a6f6e715e0908c58a431cd14586f76771a3e8e6c8072"
+  },
+  {
+   "t": "2026-11-03T15:01:57Z",
+   "sentido": "entra de",
+   "cuenta": "TFSd14UQUp6HPamdMGJsWBxfWKMrLYxRmp",
+   "usdt": 5000000,
+   "tx": "96df04bf0166fa83edbab15aaa96049d43a99a108012d6bf61eec064b3873078"
+  },
+  {
+   "t": "2026-11-03T15:25:57Z",
+   "sentido": "entra de",
+   "cuenta": "TFSd14UQUp6HPamdMGJsWBxfWKMrLYxRmp",
+   "usdt": 5000000,
+   "tx": "f1ee339d79bb60fad334e236888ebca49aaf9d780ba366ecaa6f71615e7ccc45"
+  },
+  {
+   "t": "2026-11-03T15:45:06Z",
+   "sentido": "entra de",
+   "cuenta": "TSzSgxRisS5VBXXDcAezTDvnPGi9CbsXvJ",
+   "usdt": 97000000,
+   "tx": "c4aa2f2c4e573f53820a8f2292c4e44081018a730b437c6587b44671e944e981"
+  },
+  {
+   "t": "2026-11-03T15:46:06Z",
+   "sentido": "sale a",
+   "cuenta": "TT2T17KZhoDu47i2E4FWxfG79zdkEWkU9N",
+   "usdt": 59999998.8,
+   "tx": "a3f47a91034c56c90fe0857bf808935cba433877bd914a330bbc56bd1d3f104a"
+  },
+  {
+   "t": "2026-11-03T15:46:06Z",
+   "sentido": "sale a",
+   "cuenta": "TT2T17KZhoDu47i2E4FWxfG79zdkEWkU9N",
+   "usdt": 49999998.8,
+   "tx": "b29548bbbd0835a3761a1ccf3e8a31b6de62208540f8873429e9e6b7d95c77f1"
+  },
+  {
+   "t": "2026-11-03T15:48:57Z",
+   "sentido": "entra de",
+   "cuenta": "TFSd14UQUp6HPamdMGJsWBxfWKMrLYxRmp",
+   "usdt": 5000000,
+   "tx": "289777842b020b66d1671d9d32a8e40c6e5a8a2e4bb95e9038582a0e928a8838"
+  },
+  {
+   "t": "2026-11-03T15:54:00Z",
+   "sentido": "entra de",
+   "cuenta": "TFSd14UQUp6HPamdMGJsWBxfWKMrLYxRmp",
+   "usdt": 5000000,
+   "tx": "97189867151d8df3a1e6c5d50887b9de1d82a734cc15e4ddcfc1fdf65ac194ca"
+  },
+  {
+   "t": "2026-11-03T16:00:00Z",
+   "sentido": "entra de",
+   "cuenta": "TFSd14UQUp6HPamdMGJsWBxfWKMrLYxRmp",
+   "usdt": 5000000,
+   "tx": "60d11cdb773e63e6e82f505b543ff3e711805668477787c4578206ed7a07e84e"
+  },
+  {
+   "t": "2026-11-03T16:13:51Z",
+   "sentido": "entra de",
+   "cuenta": "TFSd14UQUp6HPamdMGJsWBxfWKMrLYxRmp",
+   "usdt": 5000000,
+   "tx": "7e859da453e87cba17b915f8eedd739f384eaa5a2576894b8228737963b9b8d6"
+  },
+  {
+   "t": "2026-11-03T16:18:06Z",
+   "sentido": "sale a",
+   "cuenta": "TSzSgxRisS5VBXXDcAezTDvnPGi9CbsXvJ",
+   "usdt": 14900000,
+   "tx": "c299aa23d3c845a20f5fd10bc9659ff962d3ba1034d4d873e62f4c4a60844adf"
+  },
+  {
+   "t": "2026-11-03T16:19:57Z",
+   "sentido": "entra de",
+   "cuenta": "TFSd14UQUp6HPamdMGJsWBxfWKMrLYxRmp",
+   "usdt": 5000000,
+   "tx": "bb16c61f7ba59e7b0975c3067c4068452073defe74203162c6e80af45e8d00c0"
+  },
+  {
+   "t": "2026-11-03T16:44:54Z",
+   "sentido": "entra de",
+   "cuenta": "TFSd14UQUp6HPamdMGJsWBxfWKMrLYxRmp",
+   "usdt": 5000000,
+   "tx": "8242086ec033f532b855dd7635b227a128e5f3b24e37d0c725f7107c00a4e73c"
+  },
+  {
+   "t": "2026-11-03T17:05:57Z",
+   "sentido": "entra de",
+   "cuenta": "TFSd14UQUp6HPamdMGJsWBxfWKMrLYxRmp",
+   "usdt": 5000000,
+   "tx": "ba1b00d9784e5e93c72c45ba148dbfdd76797ad18eaa808916a68ef70683d4e3"
+  },
+  {
+   "t": "2026-11-03T17:07:54Z",
+   "sentido": "entra de",
+   "cuenta": "TFSd14UQUp6HPamdMGJsWBxfWKMrLYxRmp",
+   "usdt": 5000000,
+   "tx": "0e2632f86681b5907b8828334981c6e32c3897039ba1da52013bfc56b19ca29a"
+  },
+  {
+   "t": "2026-11-03T17:16:57Z",
+   "sentido": "entra de",
+   "cuenta": "TFSd14UQUp6HPamdMGJsWBxfWKMrLYxRmp",
+   "usdt": 5000000,
+   "tx": "0a44bd348bf05dc6d7e5f2e0c6a9d6adc25e928935319a442631857794dc0ac5"
+  },
+  {
+   "t": "2026-11-03T17:24:06Z",
+   "sentido": "sale a",
+   "cuenta": "TSzSgxRisS5VBXXDcAezTDvnPGi9CbsXvJ",
+   "usdt": 30100000,
+   "tx": "662de13a0df787007e57b68d6d550645270282c4f134a779f94ad28e93c78371"
+  },
+  {
+   "t": "2026-11-04T06:47:54Z",
+   "sentido": "entra de",
+   "cuenta": "TFSd14UQUp6HPamdMGJsWBxfWKMrLYxRmp",
+   "usdt": 5000000,
+   "tx": "c7a645184489d0c0156fe3b54eaaf222a13d4b80724cc56f753846bb9dfa8180"
+  },
+  {
+   "t": "2026-11-04T07:10:48Z",
+   "sentido": "entra de",
+   "cuenta": "TSzSgxRisS5VBXXDcAezTDvnPGi9CbsXvJ",
+   "usdt": 5710000,
+   "tx": "cb642cd9ae4135a61489a69b076a617d0b41d7396a39c8c34489baae04ae9aa1"
+  },
+  {
+   "t": "2026-11-04T07:12:06Z",
+   "sentido": "sale a",
+   "cuenta": "TWPpxPd5PpU5FQk6F6F3HMN5VdufxnVA8K",
+   "usdt": 5499997,
+   "tx": "eefe0a57778c1ad7eed1a466f82eb7867ff7d97e91bd69fccce7e8d049e7ec39"
+  },
+  {
+   "t": "2026-11-04T08:21:06Z",
+   "sentido": "sale a",
+   "cuenta": "TSzSgxRisS5VBXXDcAezTDvnPGi9CbsXvJ",
+   "usdt": 5110000,
+   "tx": "cdc2d1728ddbb6bafca7e223362a530f2943f9ec8af76ccbee9ec97a42deb9d8"
+  },
+  {
+   "t": "2026-11-05T04:05:54Z",
+   "sentido": "entra de",
+   "cuenta": "TFSd14UQUp6HPamdMGJsWBxfWKMrLYxRmp",
+   "usdt": 5000000,
+   "tx": "4452773dc90cef2d015c36493cb1f80ceaaf99cb596c607e7857537e85cdeeeb"
+  },
+  {
+   "t": "2026-11-05T05:45:09Z",
+   "sentido": "sale a",
+   "cuenta": "TSzSgxRisS5VBXXDcAezTDvnPGi9CbsXvJ",
+   "usdt": 7150000,
+   "tx": "bfc3f603fda461540f39c8b79cfe95efd094265e2597f4617bfb0f8f073e327d"
+  }
+ ],
+ "contacto_con_billeteras_de_binance_conocidas": {
+  "cuentas_de_binance_en_la_lista": 25,
+  "con_contacto": {
+   "TJDENsfBJs4RFETt1X1W8wMDc8M5XnJhCe": {
+    "n": 9
+   },
+   "TJqwA7SoZnERE4zW5uDEiPkbz4B66h9TFj": {
+    "n": 3
+   },
+   "TCLgK89AnXbC9rewvhNb9UgXCc2qJJpBXh": {
+    "n": 6
+   },
+   "TNXoiAJ3dct8Fjg4M9fkLFh9S2v9TXc32G": {
+    "n": 5
+   },
+   "TK4ykR48cQQoyFcZ5N4xZCbsBaHcg6n3gJ": {
+    "n": 9
+   },
+   "TDqSquXBgUCLYvYC4XZgrprLK589dkhSCf": {
+    "n": 7
+   },
+   "TAzsQ9Gx8eqFNFSKbeXrbi45CuVPHzA8wr": {
+    "n": 9
+   },
+   "TJ5usJLLwjwn7Pw3TPbdzreG7dvgKzfQ5y": {
+    "n": 7
+   },
+   "TYASr5UV6HEcXatwdFQfmLVUqQQQMUxHLS": {
+    "n": 6
+   },
+   "TQrY8tryqsYVCYS3MFbtffiPp2ccyn4STm": {
+    "n": 3
+   }
+  }
+ },
+ "contacto_con_las_81_receptoras": {
+  "receptoras_en_la_lista": 81,
+  "con_contacto": {
+   "TVuXAUewdeLEC6wfqFgRyGyp4e4XPXVcLw": {
+    "n": 1,
+    "sentido": {
+     "sale": 1
+    }
+   },
+   "TWPpxPd5PpU5FQk6F6F3HMN5VdufxnVA8K": {
+    "n": 24,
+    "sentido": {
+     "sale": 24
+    }
+   },
+   "TBgGFBnqZuDeGkf4nyiaEo7mj3NodxYJBL": {
+    "n": 2,
+    "sentido": {
+     "sale": 2
+    }
+   },
+   "THkACNWEzcmQKotSkEKYvNETEWeavsjWpK": {
+    "n": 12,
+    "sentido": {
+     "sale": 12
+    }
+   },
+   "TZCzCAiBGhFf3L7wW94TepYFeJg3oCuzdR": {
+    "n": 5,
+    "sentido": {
+     "sale": 5
+    }
+   },
+   "TU4vEruvZwLLkSfV9bNw12EJTPvNr7Pvaa": {
+    "n": 2,
+    "sentido": {
+     "entra": 1,
+     "sale": 1
+    }
+   },
+   "TBPtNVdgkB8QPRHAJeZok6D9pqsFdALv9w": {
+    "n": 3,
+    "sentido": {
+     "sale": 3
+    }
+   },
+   "TDyP7gbiJKr7Aqw1GvJgf5EZjeKxGWau6Y": {
+    "n": 1,
+    "sentido": {
+     "sale": 1
+    }
+   },
+   "THYznBdDPQLLunwGwrVyCWLhNL3nhMjAPC": {
+    "n": 1,
+    "sentido": {
+     "sale": 1
+    }
+   },
+   "TSAyT73m3WzzAdRkKEfed4YDRKoVtCQGjq": {
+    "n": 1,
+    "sentido": {
+     "sale": 1
+    }
+   }
+  }
+ }
+}

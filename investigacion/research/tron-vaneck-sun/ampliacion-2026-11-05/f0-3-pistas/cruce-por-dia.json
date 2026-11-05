@@ -1,0 +1,341 @@
+{
+ "totales": {
+  "entradas_totales_TEF9ZV": 1673999986,
+  "por_remitente": {
+   "HTX 4": 923999989,
+   "proveedora TWhDfwC8": 749999997
+  },
+  "entradas_menores_de_1M_ignoradas_como_polvo": {
+   "n": 17,
+   "trx": 1193.64
+  },
+  "envios_TT2T17_ge10M_desde_2025_10": 12,
+  "paginas_TT2T17": 5
+ },
+ "tabla": [
+  {
+   "dia": "2025-10-30",
+   "minutos_desde_el_reenvio_hasta_la_1a_entrada_en_TEF9ZV": 3.9,
+   "entra_en_TEF9ZV": 99999998,
+   "de_quien": "HTX 4",
+   "TT2T17_mando_a_HTX4_o_proveedora_ese_dia": 100000000,
+   "diferencia": -2,
+   "detalle": {
+    "entradas_TEF": [
+     {
+      "t": "2025-10-30T10:46:42Z",
+      "de": "HTX 4",
+      "trx": 49999999,
+      "tx": "55d91dcf218060dd6a72f25abb0e05abbc78ee40f2eec04279947365bea39260"
+     },
+     {
+      "t": "2025-10-30T10:48:36Z",
+      "de": "HTX 4",
+      "trx": 49999999,
+      "tx": "cbdc04b28806ad77e929dd350d15d3c5e8f07a10bbf92a75cfdb3f2f7923419f"
+     }
+    ],
+    "envios_TT2T17": [
+     {
+      "t": "2025-10-30T10:40:51Z",
+      "a_puente": "TGStnGYqGVEYwAQtJeqtoGL7KxorYS1GPH",
+      "trx": 100000000,
+      "tx_envio": "2e226bf92ff5c671e566fc2719cf200ae121256a0c826e2e4128a36e32053b96",
+      "destino_final_1er_salto": "HTX 4",
+      "tx_reenvio": "dd41a4a488b86dbb72741f8aa1370736a1774a2f3b57cb03aaeac9876ea57d85",
+      "t_reenvio": "2025-10-30T10:42:48Z"
+     }
+    ]
+   }
+  },
+  {
+   "dia": "2025-11-12",
+   "minutos_desde_el_reenvio_hasta_la_1a_entrada_en_TEF9ZV": 1.4,
+   "entra_en_TEF9ZV": 63999999,
+   "de_quien": "HTX 4",
+   "TT2T17_mando_a_HTX4_o_proveedora_ese_dia": 64000000,
+   "diferencia": -1,
+   "detalle": {
+    "entradas_TEF": [
+     {
+      "t": "2025-11-12T16:20:03Z",
+      "de": "HTX 4",
+      "trx": 63999999,
+      "tx": "d86d5dff9f15a204ec0877c1d0227c02810f19148985f0387bfb6d134f57c4fc"
+     }
+    ],
+    "envios_TT2T17": [
+     {
+      "t": "2025-11-12T16:16:06Z",
+      "a_puente": "TB1LbnUG14S6i2tWgf1pRtwXt6WHTtcSVL",
+      "trx": 64000000,
+      "tx_envio": "32c6d9d48286e9f9b35662d298e524e8379824ecb3ed4f37a30a595e424795f2",
+      "destino_final_1er_salto": "HTX 4",
+      "tx_reenvio": "d2eaa658eb5a7beada20e62b1f690a250de3613f047cfc6247a73fa9dbbf7422",
+      "t_reenvio": "2025-11-12T16:18:39Z"
+     }
+    ]
+   }
+  },
+  {
+   "dia": "2025-11-16",
+   "minutos_desde_el_reenvio_hasta_la_1a_entrada_en_TEF9ZV": null,
+   "entra_en_TEF9ZV": 0,
+   "de_quien": "",
+   "TT2T17_mando_a_HTX4_o_proveedora_ese_dia": 134197954,
+   "diferencia": -134197954,
+   "detalle": {
+    "entradas_TEF": [],
+    "envios_TT2T17": [
+     {
+      "t": "2025-11-16T11:03:42Z",
+      "a_puente": "TELL9LfBZbHYqZXvnx79EtBJEViU5dGTXc",
+      "trx": 134197954,
+      "tx_envio": "26b9c1ca09b50aebb66042acb53c8698d179a036c04c91a802aa45c107a3a6c0",
+      "destino_final_1er_salto": "HTX 4",
+      "tx_reenvio": "ee739747ef6e3f371966d19024ae367f367214d8119adf28ed278cc790f4270c",
+      "t_reenvio": "2025-11-16T11:05:36Z"
+     }
+    ]
+   }
+  },
+  {
+   "dia": "2026-02-02",
+   "minutos_desde_el_reenvio_hasta_la_1a_entrada_en_TEF9ZV": null,
+   "entra_en_TEF9ZV": 99999999,
+   "de_quien": "HTX 4",
+   "TT2T17_mando_a_HTX4_o_proveedora_ese_dia": 0,
+   "diferencia": 99999999,
+   "detalle": {
+    "entradas_TEF": [
+     {
+      "t": "2026-02-02T11:24:15Z",
+      "de": "HTX 4",
+      "trx": 99999999,
+      "tx": "0a4600714c1e40ac1c7560da471da2145c64d76b73e57f716baec84b69046269"
+     }
+    ],
+    "envios_TT2T17": []
+   }
+  },
+  {
+   "dia": "2026-03-02",
+   "minutos_desde_el_reenvio_hasta_la_1a_entrada_en_TEF9ZV": 30.3,
+   "entra_en_TEF9ZV": 99999999,
+   "de_quien": "HTX 4",
+   "TT2T17_mando_a_HTX4_o_proveedora_ese_dia": 25000000,
+   "diferencia": 74999999,
+   "detalle": {
+    "entradas_TEF": [
+     {
+      "t": "2026-03-02T15:01:06Z",
+      "de": "HTX 4",
+      "trx": 99999999,
+      "tx": "99950554ad0f62812b68ba7480ab4961b111f6cb92c5e90099935182572098c8"
+     }
+    ],
+    "envios_TT2T17": [
+     {
+      "t": "2026-03-02T14:28:27Z",
+      "a_puente": "TRXttocg4mhE18wGfPtk9JtTYLkmdZcsU4",
+      "trx": 25000000,
+      "tx_envio": "df7ab30a3e6fc0441b098779152f0957588d29ba5ef85b335fc917b5eff73196",
+      "destino_final_1er_salto": "HTX 4",
+      "tx_reenvio": "8c2b84f0cfb1b96f1c2585cb7f866b3fe9b17409cd2dfe6b97d5960b9fdf4fda",
+      "t_reenvio": "2026-03-02T14:30:48Z"
+     }
+    ]
+   }
+  },
+  {
+   "dia": "2026-03-21",
+   "minutos_desde_el_reenvio_hasta_la_1a_entrada_en_TEF9ZV": 2.15,
+   "entra_en_TEF9ZV": 199999998,
+   "de_quien": "HTX 4",
+   "TT2T17_mando_a_HTX4_o_proveedora_ese_dia": 200000000,
+   "diferencia": -2,
+   "detalle": {
+    "entradas_TEF": [
+     {
+      "t": "2026-03-21T13:49:09Z",
+      "de": "HTX 4",
+      "trx": 99999999,
+      "tx": "c185f866bba4b70d3b73393918c4ca20fe1ea64c7263593623bd750ebf890ebc"
+     },
+     {
+      "t": "2026-03-21T13:49:27Z",
+      "de": "HTX 4",
+      "trx": 99999999,
+      "tx": "15a4608d893b9d12130aad954a50791d6e6b26829cbe39a213d2cfebdfa1eb94"
+     }
+    ],
+    "envios_TT2T17": [
+     {
+      "t": "2026-03-21T13:45:18Z",
+      "a_puente": "TM5h24Au2G5gUSro8QrB31PjgqZZw77N1Q",
+      "trx": 200000000,
+      "tx_envio": "5a64e381a5be8b55420491f1888c515a63bd7267f764fa1414e1bd5eeab83d9d",
+      "destino_final_1er_salto": "HTX 4",
+      "tx_reenvio": "c38731616324b0fae75916f8379c051d9d871d00caeee50c29de2e876e3737cd",
+      "t_reenvio": "2026-03-21T13:47:00Z"
+     }
+    ]
+   }
+  },
+  {
+   "dia": "2026-05-07",
+   "minutos_desde_el_reenvio_hasta_la_1a_entrada_en_TEF9ZV": 214.75,
+   "entra_en_TEF9ZV": 359999996,
+   "de_quien": "HTX 4",
+   "TT2T17_mando_a_HTX4_o_proveedora_ese_dia": 280000000,
+   "diferencia": 79999996,
+   "detalle": {
+    "entradas_TEF": [
+     {
+      "t": "2026-05-07T12:20:54Z",
+      "de": "HTX 4",
+      "trx": 99999999,
+      "tx": "45b31684d48880f93e70443d499982739237dd2a364067e8b80518763dc67fbc"
+     },
+     {
+      "t": "2026-05-07T12:24:27Z",
+      "de": "HTX 4",
+      "trx": 79999999,
+      "tx": "0d33217c4d8976ca8473fe23fabbc171f8a5a4aff7ae0be8404e0f10f5ac530d"
+     },
+     {
+      "t": "2026-05-07T12:53:27Z",
+      "de": "HTX 4",
+      "trx": 99999999,
+      "tx": "442ae337b99a2d07a311121c88159dff376a18492598063fb5385f178cb230a9"
+     },
+     {
+      "t": "2026-05-07T12:54:36Z",
+      "de": "HTX 4",
+      "trx": 79999999,
+      "tx": "8d84c9f89eac1a82146f073da0e9762244eab6b2021be5081c5ec4450c7cfa24"
+     }
+    ],
+    "envios_TT2T17": [
+     {
+      "t": "2026-05-07T08:44:06Z",
+      "a_puente": "TEgMTsmbVbjGK9bSeEjkZmcE8EFW8iJ8RT",
+      "trx": 100000000,
+      "tx_envio": "4fd72cadeb5c78244995a61c50880f9a0b6ec8e49c1bcb22d30c6978dcc6b61f",
+      "destino_final_1er_salto": "HTX 4",
+      "tx_reenvio": "85bc0b7532c947765d77608e95ac876604cb28e8f3ef4b3a83ca1985ddf4f7ea",
+      "t_reenvio": "2026-05-07T08:46:09Z"
+     },
+     {
+      "t": "2026-05-07T12:14:12Z",
+      "a_puente": "TBRoa9xabNSTXTSK6iQAMPQQ7CNo2j2yuF",
+      "trx": 180000000,
+      "tx_envio": "035426ba6839c8510a0552c3ecce0ae41ceae1fd7913d486ef32d8468cb8f888",
+      "destino_final_1er_salto": "HTX 4",
+      "tx_reenvio": "2aa94a36d10ec4895cf6fbc4acc7a3c27420bd195f518ed0ad37c312e09fcff0",
+      "t_reenvio": "2026-05-07T12:15:54Z"
+     }
+    ]
+   }
+  },
+  {
+   "dia": "2026-10-01",
+   "minutos_desde_el_reenvio_hasta_la_1a_entrada_en_TEF9ZV": null,
+   "entra_en_TEF9ZV": 0,
+   "de_quien": "",
+   "TT2T17_mando_a_HTX4_o_proveedora_ese_dia": 99999999,
+   "diferencia": -99999999,
+   "detalle": {
+    "entradas_TEF": [],
+    "envios_TT2T17": [
+     {
+      "t": "2026-10-01T07:40:45Z",
+      "a_puente": "TUVw5u9yCG1CdE9aYrt6tzAoJciZ6hFgxa",
+      "trx": 99999999,
+      "tx_envio": "1bb453dc024f6227fa98a274ef64d950ecbc5df75b480f4767eacf8edb402232",
+      "destino_final_1er_salto": "proveedora TWhDfwC8",
+      "tx_reenvio": "baa1907c503466e1458ae82acf547691491f6807706a58e4d6f3352bed80ed90",
+      "t_reenvio": "2026-10-01T07:41:45Z"
+     }
+    ]
+   }
+  },
+  {
+   "dia": "2026-10-20",
+   "minutos_desde_el_reenvio_hasta_la_1a_entrada_en_TEF9ZV": 3.8,
+   "entra_en_TEF9ZV": 99999999,
+   "de_quien": "proveedora TWhDfwC8",
+   "TT2T17_mando_a_HTX4_o_proveedora_ese_dia": 100000000,
+   "diferencia": -1,
+   "detalle": {
+    "entradas_TEF": [
+     {
+      "t": "2026-10-20T12:03:15Z",
+      "de": "proveedora TWhDfwC8",
+      "trx": 99999999,
+      "tx": "ec9520b9f44162ca4ce398e6c2bac376072587e5673a335e3449b960e671065b"
+     }
+    ],
+    "envios_TT2T17": [
+     {
+      "t": "2026-10-20T11:58:27Z",
+      "a_puente": "TFaboiG8EBqZUoiSTz4ZcwkpJUE7f5YMWx",
+      "trx": 100000000,
+      "tx_envio": "366216d06eabea0fad6a7bedea5ce67aa20f6a3985ca01a10a443b34065efc7b",
+      "destino_final_1er_salto": "proveedora TWhDfwC8",
+      "tx_reenvio": "cafba3f96222b507b3603412475e32282fdb94f2fdee94d08622b5282889cb88",
+      "t_reenvio": "2026-10-20T11:59:27Z"
+     }
+    ]
+   }
+  },
+  {
+   "dia": "2026-11-02",
+   "minutos_desde_el_reenvio_hasta_la_1a_entrada_en_TEF9ZV": null,
+   "entra_en_TEF9ZV": 499999999,
+   "de_quien": "proveedora TWhDfwC8",
+   "TT2T17_mando_a_HTX4_o_proveedora_ese_dia": 0,
+   "diferencia": 499999999,
+   "detalle": {
+    "entradas_TEF": [
+     {
+      "t": "2026-11-02T09:59:27Z",
+      "de": "proveedora TWhDfwC8",
+      "trx": 499999999,
+      "tx": "b02dee0924cd91dbbcbed513dbfa76bc022daa9f555f4114827feb04df5081f7"
+     }
+    ],
+    "envios_TT2T17": []
+   }
+  },
+  {
+   "dia": "2026-11-04",
+   "minutos_desde_el_reenvio_hasta_la_1a_entrada_en_TEF9ZV": 14.55,
+   "entra_en_TEF9ZV": 149999999,
+   "de_quien": "proveedora TWhDfwC8",
+   "TT2T17_mando_a_HTX4_o_proveedora_ese_dia": 150000000,
+   "diferencia": -1,
+   "detalle": {
+    "entradas_TEF": [
+     {
+      "t": "2026-11-04T10:55:39Z",
+      "de": "proveedora TWhDfwC8",
+      "trx": 149999999,
+      "tx": "db113f1bec479bcae2911f76de19b9248d291b7091265f62f86afbd60b28a42d"
+     }
+    ],
+    "envios_TT2T17": [
+     {
+      "t": "2026-11-04T10:40:06Z",
+      "a_puente": "TQRBxpS5V1KZW8g3oJ1YNLqtj1j733Mc33",
+      "trx": 150000000,
+      "tx_envio": "190ea8594f856a8632ed2ecc157daed87ee6788a3bb637f6f65d3ef945d46317",
+      "destino_final_1er_salto": "proveedora TWhDfwC8",
+      "tx_reenvio": "00420f709b20bde4f1bb809ae99684a1f8d7d0cd290e7f643e05b2a58f0b7a5b",
+      "t_reenvio": "2026-11-04T10:41:06Z"
+     }
+    ]
+   }
+  }
+ ]
+}

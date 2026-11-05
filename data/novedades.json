@@ -1,6 +1,7 @@
 {
   "_nota": "Registro de actualizaciones del sitio. Cada vez que se publica o amplía un informe, una nota o una página, se añade una entrada aquí (la más reciente primero). La portada y las páginas de caso lo leen en vivo: lo que no esté aquí no aparece como novedad. Campos: fecha (UTC, ISO), caso (slug de reports/index.json), titulo (una línea), url (relativa al sitio).",
   "novedades": [
+    { "fecha": "2026-11-05T22:43:00Z", "caso": "caso-vaneck-sun", "titulo": "Ampliación del 5-nov: la proveedora no es «de TRON Inc.» sino una cuenta de paso, el TRX de las 1.000 direcciones de la antigua TRON Foundation y quién controla la cuenta etiquetada «Poloniex» (3 capítulos nuevos)", "url": "caso-vaneck.html?cap=9" },
     { "fecha": "2026-11-04T17:05:31Z", "caso": "herramientas", "titulo": "El calculador de VaR y pérdida media en cola amplía su cobertura a 18 activos", "url": "herramientas.html#riesgo-mercado" },
     { "fecha": "2026-11-04T16:03:54Z", "caso": "herramientas", "titulo": "Tres herramientas de mercado: VaR y pérdida media en cola, liquidez de venta y paridad de stablecoins", "url": "herramientas.html" },
     { "fecha": "2026-11-04T13:48:00Z", "caso": "herramientas", "titulo": "Nueva intro en la portada: texto general y partes automáticas (casos abiertos, última actualización y última novedad)", "url": "./" },

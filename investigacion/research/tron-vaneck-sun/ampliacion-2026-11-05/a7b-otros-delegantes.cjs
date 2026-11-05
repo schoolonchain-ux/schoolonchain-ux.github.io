@@ -1,0 +1,18 @@
+'use strict';
+// A7b — ¿Quién más da energía a las billeteras nuevas de Binance, a Bybit y a GasFree además de TEF9ZV? (La energía disponible de algunas no sale solo de TEF9ZV.)
+// SOLO LECTURA. Reproducible: REPRODUCIR=1 node a7b-otros-delegantes.cjs (usa raw/a7b-2026-11-05/).
+const fs = require('node:fs'), path = require('node:path'); const L = require('./lib.cjs'); L.usar('a7b-2026-11-05'); const OUT = path.join(__dirname, 'a7-energia'); const TG = 'https://api.trongrid.io', TS = 'https://apilist.tronscanapi.com/api'; const M = x => Math.round(x * 100) / 100;
+const rec = JSON.parse(fs.readFileSync(path.join(__dirname, 'a2-a4-a5', 'receptores-81.json'), 'utf8')); const TEF = 'TEF9ZVUxhmGGffvkf59e2vdLfAG1QCMb7B';
+(async () => {
+  const obj = rec.filter(r => /Binance — billeteras nuevas|Bybit|GasFree/.test(r.familia)); const tags = {}; const filas = [];
+  for (const r of obj) {
+    const idx = await L.post(TG + '/wallet/getdelegatedresourceaccountindexv2', { value: r.receptor, visible: true }); const ds = [];
+    for (const d of idx.fromAccounts || []) { const x = await L.post(TG + '/wallet/getdelegatedresourcev2', { fromAddress: d, toAddress: r.receptor, visible: true }); const e = ((x.delegatedResource || []).reduce((s, y) => s + (y.frozen_balance_for_energy || 0), 0)) / 1e6; if (!(d in tags)) { const t = await L.get(TS + '/accountv2?address=' + d).catch(() => ({})); tags[d] = t.publicTag || t.addressTag || null; } ds.push({ delegante: d, etiqueta: tags[d], energia_trx: M(e) }); }
+    const a = await L.post(TG + '/wallet/getaccount', { address: r.receptor, visible: true }); const propio = ((a.frozenV2 || []).filter(f => f.type === 'ENERGY').reduce((s, f) => s + (f.amount || 0), 0)) / 1e6;
+    filas.push({ receptor: r.receptor, familia: r.familia, energia_propia_trx: M(propio), delegantes: ds.sort((p, q) => q.energia_trx - p.energia_trx), total_energia_recibida_trx: M(ds.reduce((s, d) => s + d.energia_trx, 0) + propio), parte_de_TEF9ZV: M(ds.filter(d => d.delegante === TEF).reduce((s, d) => s + d.energia_trx, 0) / Math.max(1, ds.reduce((s, d) => s + d.energia_trx, 0) + propio)) });
+  }
+  const otros = [...new Set(filas.flatMap(f => f.delegantes.map(d => d.delegante)))].filter(d => d !== TEF && d !== 'TT2T17KZhoDu47i2E4FWxfG79zdkEWkU9N'); const perfilOtros = [];
+  for (const d of otros) { const a = await L.post(TG + '/wallet/getaccount', { address: d, visible: true }); const t = await L.get(TS + '/accountv2?address=' + d).catch(() => ({})); const idx = await L.post(TG + '/wallet/getdelegatedresourceaccountindexv2', { value: d, visible: true }); const own = a.owner_permission; perfilOtros.push({ delegante: d, etiqueta: t.publicTag || t.addressTag || null, creada: a.create_time ? new Date(a.create_time).toISOString().slice(0, 10) : null, n_tx_tronscan: t.totalTransactionCount || null, trx_libre: M((a.balance || 0) / 1e6), delega_a_n_cuentas: (idx.toAccounts || []).length, clave_propietaria: own ? (own.keys || []).map(k => k.address) : [], umbral: own && own.threshold }); }
+  console.log('Otros delegantes:', JSON.stringify(perfilOtros));
+  const h = L.guardar(path.join(OUT, 'delegantes-de-binance-bybit-gasfree.json'), { receptores: filas, otros_delegantes_perfil: perfilOtros }); for (const f of filas) console.log(f.receptor.slice(0, 8), f.familia.slice(0, 14).padEnd(14), 'recibe', M(f.total_energia_recibida_trx / 1e6) + 'M | propia', M(f.energia_propia_trx / 1e6) + 'M | TEF', f.parte_de_TEF9ZV, '|', f.delegantes.map(d => d.delegante.slice(0, 8) + (d.etiqueta ? '(' + d.etiqueta + ')' : '') + ' ' + M(d.energia_trx / 1e6) + 'M').join(' ; ')); console.log(h);
+})().catch(e => { console.error('ERROR', e.message); process.exit(1); });

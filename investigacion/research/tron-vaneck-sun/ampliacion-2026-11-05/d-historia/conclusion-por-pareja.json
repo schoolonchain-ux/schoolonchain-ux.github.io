@@ -1,0 +1,901 @@
+{
+ "regla": "Plan sección 2. Las huellas (hora, votos, forma de alta, 1 TRX menos) no suben de escalón.",
+ "parejas_con_algun_flujo_de_1M_o_mas": 36,
+ "control_por_claves_entre_cuentas_del_caso": [
+  {
+   "controlada": "TU3rMHyW",
+   "clave_de": "TM3sTVya"
+  }
+ ],
+ "resumen": {
+  "CONTROL COMÚN": 1,
+  "DINERO SIMPLE": 33,
+  "RELACIÓN DE TRABAJO": 2
+ },
+ "parejas": [
+  {
+   "pareja": "TM3sTVya ↔ TU3rMHyW",
+   "clase": "CONTROL COMÚN (una es clave de la otra)",
+   "flujos": [],
+   "exclusividad": [],
+   "control": [
+    {
+     "controlada": "TU3rMHyW",
+     "clave_de": "TM3sTVya"
+    }
+   ],
+   "que_falta_para_subir": "—"
+  },
+  {
+   "pareja": "TPhGmczy ↔ TU3rMHyW",
+   "clase": "DINERO SIMPLE",
+   "flujos": [
+    {
+     "tipo": "energia_delegada_TRX",
+     "sentido": "TPhGmczy→TU3rMHyW",
+     "total": 190000151,
+     "n": 1,
+     "primera": "2024-08-20",
+     "ultima": "2024-08-20"
+    }
+   ],
+   "exclusividad": [
+    {
+     "tipo": "energia_delegada_TRX",
+     "sentido": "TPhGmczy→TU3rMHyW",
+     "porcentaje_de_lo_que_recibio_la_receptora": 1.23
+    }
+   ],
+   "control": [],
+   "que_falta_para_subir": "recurrencia y exclusividad, y después una clave o contrato en común"
+  },
+  {
+   "pareja": "TEF9ZV ↔ TU3rMHyW",
+   "clase": "DINERO SIMPLE",
+   "flujos": [
+    {
+     "tipo": "energia_delegada_TRX",
+     "sentido": "TEF9ZV→TU3rMHyW",
+     "total": 206680000,
+     "n": 6,
+     "primera": "2026-03-02",
+     "ultima": "2026-08-31"
+    }
+   ],
+   "exclusividad": [
+    {
+     "tipo": "energia_delegada_TRX",
+     "sentido": "TEF9ZV→TU3rMHyW",
+     "porcentaje_de_lo_que_recibio_la_receptora": 1.34
+    }
+   ],
+   "control": [],
+   "que_falta_para_subir": "recurrencia y exclusividad, y después una clave o contrato en común"
+  },
+  {
+   "pareja": "TU3rMHyW ↔ TWpMnUh9",
+   "clase": "DINERO SIMPLE",
+   "flujos": [
+    {
+     "tipo": "energia_delegada_TRX",
+     "sentido": "TWpMnUh9→TU3rMHyW",
+     "total": 740048361,
+     "n": 3,
+     "primera": "2024-08-19",
+     "ultima": "2024-08-19"
+    }
+   ],
+   "exclusividad": [
+    {
+     "tipo": "energia_delegada_TRX",
+     "sentido": "TWpMnUh9→TU3rMHyW",
+     "porcentaje_de_lo_que_recibio_la_receptora": 4.8
+    }
+   ],
+   "control": [],
+   "que_falta_para_subir": "recurrencia y exclusividad, y después una clave o contrato en común"
+  },
+  {
+   "pareja": "TKpiitwG ↔ TU3rMHyW",
+   "clase": "DINERO SIMPLE",
+   "flujos": [
+    {
+     "tipo": "energia_delegada_TRX",
+     "sentido": "TKpiitwG→TU3rMHyW",
+     "total": 999998004,
+     "n": 1,
+     "primera": "2024-08-20",
+     "ultima": "2024-08-20"
+    }
+   ],
+   "exclusividad": [
+    {
+     "tipo": "energia_delegada_TRX",
+     "sentido": "TKpiitwG→TU3rMHyW",
+     "porcentaje_de_lo_que_recibio_la_receptora": 6.49
+    }
+   ],
+   "control": [],
+   "que_falta_para_subir": "recurrencia y exclusividad, y después una clave o contrato en común"
+  },
+  {
+   "pareja": "TJNtFduS ↔ TU3rMHyW",
+   "clase": "DINERO SIMPLE",
+   "flujos": [
+    {
+     "tipo": "energia_delegada_TRX",
+     "sentido": "TJNtFduS→TU3rMHyW",
+     "total": 1055019483,
+     "n": 2,
+     "primera": "2024-08-20",
+     "ultima": "2024-08-20"
+    }
+   ],
+   "exclusividad": [
+    {
+     "tipo": "energia_delegada_TRX",
+     "sentido": "TJNtFduS→TU3rMHyW",
+     "porcentaje_de_lo_que_recibio_la_receptora": 6.85
+    }
+   ],
+   "control": [],
+   "que_falta_para_subir": "recurrencia y exclusividad, y después una clave o contrato en común"
+  },
+  {
+   "pareja": "TU3rMHyW ↔ TYL7z7VS",
+   "clase": "DINERO SIMPLE",
+   "flujos": [
+    {
+     "tipo": "energia_delegada_TRX",
+     "sentido": "TYL7z7VS→TU3rMHyW",
+     "total": 1060105555,
+     "n": 1,
+     "primera": "2024-08-21",
+     "ultima": "2024-08-21"
+    }
+   ],
+   "exclusividad": [
+    {
+     "tipo": "energia_delegada_TRX",
+     "sentido": "TYL7z7VS→TU3rMHyW",
+     "porcentaje_de_lo_que_recibio_la_receptora": 6.88
+    }
+   ],
+   "control": [],
+   "que_falta_para_subir": "recurrencia y exclusividad, y después una clave o contrato en común"
+  },
+  {
+   "pareja": "TLbkcH7Q ↔ TU3rMHyW",
+   "clase": "DINERO SIMPLE",
+   "flujos": [
+    {
+     "tipo": "energia_delegada_TRX",
+     "sentido": "TLbkcH7Q→TU3rMHyW",
+     "total": 1061600171,
+     "n": 1,
+     "primera": "2024-08-21",
+     "ultima": "2024-08-21"
+    }
+   ],
+   "exclusividad": [
+    {
+     "tipo": "energia_delegada_TRX",
+     "sentido": "TLbkcH7Q→TU3rMHyW",
+     "porcentaje_de_lo_que_recibio_la_receptora": 6.89
+    }
+   ],
+   "control": [],
+   "que_falta_para_subir": "recurrencia y exclusividad, y después una clave o contrato en común"
+  },
+  {
+   "pareja": "TFKSWmnR ↔ TU3rMHyW",
+   "clase": "DINERO SIMPLE",
+   "flujos": [
+    {
+     "tipo": "energia_delegada_TRX",
+     "sentido": "TFKSWmnR→TU3rMHyW",
+     "total": 1062390855,
+     "n": 1,
+     "primera": "2024-08-21",
+     "ultima": "2024-08-21"
+    }
+   ],
+   "exclusividad": [
+    {
+     "tipo": "energia_delegada_TRX",
+     "sentido": "TFKSWmnR→TU3rMHyW",
+     "porcentaje_de_lo_que_recibio_la_receptora": 6.89
+    }
+   ],
+   "control": [],
+   "que_falta_para_subir": "recurrencia y exclusividad, y después una clave o contrato en común"
+  },
+  {
+   "pareja": "TRzQrtxr ↔ TU3rMHyW",
+   "clase": "DINERO SIMPLE",
+   "flujos": [
+    {
+     "tipo": "energia_delegada_TRX",
+     "sentido": "TRzQrtxr→TU3rMHyW",
+     "total": 1072921176,
+     "n": 2,
+     "primera": "2024-08-20",
+     "ultima": "2024-08-20"
+    }
+   ],
+   "exclusividad": [
+    {
+     "tipo": "energia_delegada_TRX",
+     "sentido": "TRzQrtxr→TU3rMHyW",
+     "porcentaje_de_lo_que_recibio_la_receptora": 6.96
+    }
+   ],
+   "control": [],
+   "que_falta_para_subir": "recurrencia y exclusividad, y después una clave o contrato en común"
+  },
+  {
+   "pareja": "TU32XvjD ↔ TU3rMHyW",
+   "clase": "DINERO SIMPLE",
+   "flujos": [
+    {
+     "tipo": "energia_delegada_TRX",
+     "sentido": "TU32XvjD→TU3rMHyW",
+     "total": 1076396359,
+     "n": 2,
+     "primera": "2024-08-20",
+     "ultima": "2024-08-20"
+    }
+   ],
+   "exclusividad": [
+    {
+     "tipo": "energia_delegada_TRX",
+     "sentido": "TU32XvjD→TU3rMHyW",
+     "porcentaje_de_lo_que_recibio_la_receptora": 6.99
+    }
+   ],
+   "control": [],
+   "que_falta_para_subir": "recurrencia y exclusividad, y después una clave o contrato en común"
+  },
+  {
+   "pareja": "TPyjyZ ↔ TU3rMHyW",
+   "clase": "DINERO SIMPLE",
+   "flujos": [
+    {
+     "tipo": "energia_delegada_TRX",
+     "sentido": "TPyjyZ→TU3rMHyW",
+     "total": 2156096529.1,
+     "n": 5,
+     "primera": "2024-08-17",
+     "ultima": "2025-07-13"
+    }
+   ],
+   "exclusividad": [
+    {
+     "tipo": "energia_delegada_TRX",
+     "sentido": "TPyjyZ→TU3rMHyW",
+     "porcentaje_de_lo_que_recibio_la_receptora": 13.99
+    }
+   ],
+   "control": [],
+   "que_falta_para_subir": "recurrencia y exclusividad, y después una clave o contrato en común"
+  },
+  {
+   "pareja": "TT2T17 ↔ TU3rMHyW",
+   "clase": "DINERO SIMPLE",
+   "flujos": [
+    {
+     "tipo": "energia_delegada_TRX",
+     "sentido": "TT2T17→TU3rMHyW",
+     "total": 3346742016.1,
+     "n": 27,
+     "primera": "2024-08-11",
+     "ultima": "2025-10-09"
+    }
+   ],
+   "exclusividad": [
+    {
+     "tipo": "energia_delegada_TRX",
+     "sentido": "TT2T17→TU3rMHyW",
+     "porcentaje_de_lo_que_recibio_la_receptora": 21.72
+    }
+   ],
+   "control": [],
+   "que_falta_para_subir": "recurrencia y exclusividad, y después una clave o contrato en común"
+  },
+  {
+   "pareja": "PROVEEDORA ↔ TT2T17",
+   "clase": "DINERO SIMPLE",
+   "flujos": [
+    {
+     "tipo": "TRX",
+     "sentido": "PROVEEDORA→TT2T17",
+     "total": 1413003.11,
+     "n": 2,
+     "primera": "2024-03-13",
+     "ultima": "2024-06-08"
+    },
+    {
+     "tipo": "USDT",
+     "sentido": "PROVEEDORA→TT2T17",
+     "total": 151830078.49,
+     "n": 65,
+     "primera": "2024-01-13",
+     "ultima": "2026-11-03"
+    }
+   ],
+   "exclusividad": [
+    {
+     "tipo": "TRX",
+     "sentido": "PROVEEDORA→TT2T17",
+     "porcentaje_de_lo_que_recibio_la_receptora": 0.02
+    }
+   ],
+   "control": [],
+   "que_falta_para_subir": "recurrencia y exclusividad, y después una clave o contrato en común"
+  },
+  {
+   "pareja": "TQwh1ZDB ↔ TT2T17",
+   "clase": "DINERO SIMPLE",
+   "flujos": [
+    {
+     "tipo": "TRX",
+     "sentido": "TQwh1ZDB→TT2T17",
+     "total": 91315561,
+     "n": 2,
+     "primera": "2023-10-16",
+     "ultima": "2023-10-16"
+    }
+   ],
+   "exclusividad": [
+    {
+     "tipo": "TRX",
+     "sentido": "TQwh1ZDB→TT2T17",
+     "porcentaje_de_lo_que_recibio_la_receptora": 1.14
+    }
+   ],
+   "control": [],
+   "que_falta_para_subir": "recurrencia y exclusividad, y después una clave o contrato en común"
+  },
+  {
+   "pareja": "TCGVFGDd ↔ TUTtLtGj",
+   "clase": "DINERO SIMPLE",
+   "flujos": [
+    {
+     "tipo": "TRX",
+     "sentido": "TUTtLtGj→TCGVFGDd",
+     "total": 269000000,
+     "n": 1,
+     "primera": "2021-10-02",
+     "ultima": "2021-10-02"
+    }
+   ],
+   "exclusividad": [
+    {
+     "tipo": "TRX",
+     "sentido": "TUTtLtGj→TCGVFGDd",
+     "porcentaje_de_lo_que_recibio_la_receptora": 26.44
+    }
+   ],
+   "control": [],
+   "que_falta_para_subir": "recurrencia y exclusividad, y después una clave o contrato en común"
+  },
+  {
+   "pareja": "TPyjyZ ↔ TUTtLtGj",
+   "clase": "DINERO SIMPLE",
+   "flujos": [
+    {
+     "tipo": "TRX",
+     "sentido": "TPyjyZ→TUTtLtGj",
+     "total": 269000000,
+     "n": 1,
+     "primera": "2021-10-04",
+     "ultima": "2021-10-04"
+    }
+   ],
+   "exclusividad": [
+    {
+     "tipo": "TRX",
+     "sentido": "TPyjyZ→TUTtLtGj",
+     "porcentaje_de_lo_que_recibio_la_receptora": 13.32
+    }
+   ],
+   "control": [],
+   "que_falta_para_subir": "recurrencia y exclusividad, y después una clave o contrato en común"
+  },
+  {
+   "pareja": "TPhGmczy ↔ TT2T17",
+   "clase": "DINERO SIMPLE",
+   "flujos": [
+    {
+     "tipo": "TRX",
+     "sentido": "TPhGmczy→TT2T17",
+     "total": 300000000,
+     "n": 1,
+     "primera": "2024-08-19",
+     "ultima": "2024-08-19"
+    }
+   ],
+   "exclusividad": [
+    {
+     "tipo": "TRX",
+     "sentido": "TPhGmczy→TT2T17",
+     "porcentaje_de_lo_que_recibio_la_receptora": 3.76
+    }
+   ],
+   "control": [],
+   "que_falta_para_subir": "recurrencia y exclusividad, y después una clave o contrato en común"
+  },
+  {
+   "pareja": "TPhGmczy ↔ TPyjyZ",
+   "clase": "DINERO SIMPLE",
+   "flujos": [
+    {
+     "tipo": "TRX",
+     "sentido": "TPhGmczy→TPyjyZ",
+     "total": 300000000,
+     "n": 1,
+     "primera": "2022-08-11",
+     "ultima": "2022-08-11"
+    }
+   ],
+   "exclusividad": [
+    {
+     "tipo": "TRX",
+     "sentido": "TPhGmczy→TPyjyZ",
+     "porcentaje_de_lo_que_recibio_la_receptora": 2.79
+    }
+   ],
+   "control": [],
+   "que_falta_para_subir": "recurrencia y exclusividad, y después una clave o contrato en común"
+  },
+  {
+   "pareja": "TM3sTVya ↔ TPyjyZ",
+   "clase": "DINERO SIMPLE",
+   "flujos": [
+    {
+     "tipo": "TRX",
+     "sentido": "TPyjyZ→TM3sTVya",
+     "total": 399999999,
+     "n": 1,
+     "primera": "2023-05-29",
+     "ultima": "2023-05-29"
+    }
+   ],
+   "exclusividad": [
+    {
+     "tipo": "TRX",
+     "sentido": "TPyjyZ→TM3sTVya",
+     "porcentaje_de_lo_que_recibio_la_receptora": 27.19
+    }
+   ],
+   "control": [],
+   "que_falta_para_subir": "recurrencia y exclusividad, y después una clave o contrato en común"
+  },
+  {
+   "pareja": "TT2T17 ↔ TWpMnUh9",
+   "clase": "DINERO SIMPLE",
+   "flujos": [
+    {
+     "tipo": "TRX",
+     "sentido": "TWpMnUh9→TT2T17",
+     "total": 500000000,
+     "n": 1,
+     "primera": "2025-07-29",
+     "ultima": "2025-07-29"
+    },
+    {
+     "tipo": "TRX",
+     "sentido": "TT2T17→TWpMnUh9",
+     "total": 310000000,
+     "n": 2,
+     "primera": "2025-01-13",
+     "ultima": "2025-01-15"
+    },
+    {
+     "tipo": "USDT",
+     "sentido": "TWpMnUh9→TT2T17",
+     "total": 34253373.89,
+     "n": 2,
+     "primera": "2025-06-26",
+     "ultima": "2026-01-10"
+    },
+    {
+     "tipo": "USDT",
+     "sentido": "TT2T17→TWpMnUh9",
+     "total": 10000010,
+     "n": 2,
+     "primera": "2025-03-30",
+     "ultima": "2025-03-30"
+    }
+   ],
+   "exclusividad": [
+    {
+     "tipo": "TRX",
+     "sentido": "TWpMnUh9→TT2T17",
+     "porcentaje_de_lo_que_recibio_la_receptora": 6.26
+    },
+    {
+     "tipo": "TRX",
+     "sentido": "TT2T17→TWpMnUh9",
+     "porcentaje_de_lo_que_recibio_la_receptora": 9.77
+    }
+   ],
+   "control": [],
+   "que_falta_para_subir": "recurrencia y exclusividad, y después una clave o contrato en común"
+  },
+  {
+   "pareja": "TJNtFduS ↔ TT2T17",
+   "clase": "DINERO SIMPLE",
+   "flujos": [
+    {
+     "tipo": "TRX",
+     "sentido": "TT2T17→TJNtFduS",
+     "total": 500000000,
+     "n": 1,
+     "primera": "2025-02-17",
+     "ultima": "2025-02-17"
+    }
+   ],
+   "exclusividad": [
+    {
+     "tipo": "TRX",
+     "sentido": "TT2T17→TJNtFduS",
+     "porcentaje_de_lo_que_recibio_la_receptora": 34.71
+    }
+   ],
+   "control": [],
+   "que_falta_para_subir": "recurrencia y exclusividad, y después una clave o contrato en común"
+  },
+  {
+   "pareja": "TKpiitwG ↔ TT2T17",
+   "clase": "DINERO SIMPLE",
+   "flujos": [
+    {
+     "tipo": "TRX",
+     "sentido": "TKpiitwG→TT2T17",
+     "total": 600000000,
+     "n": 1,
+     "primera": "2024-08-20",
+     "ultima": "2024-08-20"
+    }
+   ],
+   "exclusividad": [
+    {
+     "tipo": "TRX",
+     "sentido": "TKpiitwG→TT2T17",
+     "porcentaje_de_lo_que_recibio_la_receptora": 7.52
+    }
+   ],
+   "control": [],
+   "que_falta_para_subir": "recurrencia y exclusividad, y después una clave o contrato en común"
+  },
+  {
+   "pareja": "TQwh1ZDB ↔ TWpMnUh9",
+   "clase": "DINERO SIMPLE",
+   "flujos": [
+    {
+     "tipo": "TRX",
+     "sentido": "TQwh1ZDB→TWpMnUh9",
+     "total": 625000000,
+     "n": 1,
+     "primera": "2023-07-15",
+     "ultima": "2023-07-15"
+    }
+   ],
+   "exclusividad": [
+    {
+     "tipo": "TRX",
+     "sentido": "TQwh1ZDB→TWpMnUh9",
+     "porcentaje_de_lo_que_recibio_la_receptora": 19.71
+    }
+   ],
+   "control": [],
+   "que_falta_para_subir": "recurrencia y exclusividad, y después una clave o contrato en común"
+  },
+  {
+   "pareja": "TQwh1ZDB ↔ TRzQrtxr",
+   "clase": "DINERO SIMPLE",
+   "flujos": [
+    {
+     "tipo": "TRX",
+     "sentido": "TQwh1ZDB→TRzQrtxr",
+     "total": 900000000,
+     "n": 1,
+     "primera": "2024-12-04",
+     "ultima": "2024-12-04"
+    }
+   ],
+   "exclusividad": [
+    {
+     "tipo": "TRX",
+     "sentido": "TQwh1ZDB→TRzQrtxr",
+     "porcentaje_de_lo_que_recibio_la_receptora": 33.96
+    }
+   ],
+   "control": [],
+   "que_falta_para_subir": "recurrencia y exclusividad, y después una clave o contrato en común"
+  },
+  {
+   "pareja": "TPyjyZ ↔ TT2T17",
+   "clase": "DINERO SIMPLE",
+   "flujos": [
+    {
+     "tipo": "TRX",
+     "sentido": "TPyjyZ→TT2T17",
+     "total": 900000000,
+     "n": 1,
+     "primera": "2024-12-04",
+     "ultima": "2024-12-04"
+    },
+    {
+     "tipo": "USDT",
+     "sentido": "TPyjyZ→TT2T17",
+     "total": 3746697.18,
+     "n": 1,
+     "primera": "2025-01-19",
+     "ultima": "2025-01-19"
+    },
+    {
+     "tipo": "USDT",
+     "sentido": "TT2T17→TPyjyZ",
+     "total": 2500000,
+     "n": 1,
+     "primera": "2025-07-29",
+     "ultima": "2025-07-29"
+    }
+   ],
+   "exclusividad": [
+    {
+     "tipo": "TRX",
+     "sentido": "TPyjyZ→TT2T17",
+     "porcentaje_de_lo_que_recibio_la_receptora": 11.28
+    }
+   ],
+   "control": [],
+   "que_falta_para_subir": "recurrencia y exclusividad, y después una clave o contrato en común"
+  },
+  {
+   "pareja": "TCGVFGDd ↔ TT2T17",
+   "clase": "DINERO SIMPLE",
+   "flujos": [
+    {
+     "tipo": "TRX",
+     "sentido": "TCGVFGDd→TT2T17",
+     "total": 942294681,
+     "n": 2,
+     "primera": "2023-06-10",
+     "ultima": "2025-04-14"
+    }
+   ],
+   "exclusividad": [
+    {
+     "tipo": "TRX",
+     "sentido": "TCGVFGDd→TT2T17",
+     "porcentaje_de_lo_que_recibio_la_receptora": 11.81
+    }
+   ],
+   "control": [],
+   "que_falta_para_subir": "recurrencia y exclusividad, y después una clave o contrato en común"
+  },
+  {
+   "pareja": "TQwh1ZDB ↔ TYL7z7VS",
+   "clase": "DINERO SIMPLE",
+   "flujos": [
+    {
+     "tipo": "TRX",
+     "sentido": "TQwh1ZDB→TYL7z7VS",
+     "total": 950000000,
+     "n": 1,
+     "primera": "2024-12-04",
+     "ultima": "2024-12-04"
+    }
+   ],
+   "exclusividad": [
+    {
+     "tipo": "TRX",
+     "sentido": "TQwh1ZDB→TYL7z7VS",
+     "porcentaje_de_lo_que_recibio_la_receptora": 49.45
+    }
+   ],
+   "control": [],
+   "que_falta_para_subir": "recurrencia y exclusividad, y después una clave o contrato en común"
+  },
+  {
+   "pareja": "TFKSWmnR ↔ TPyjyZ",
+   "clase": "DINERO SIMPLE",
+   "flujos": [
+    {
+     "tipo": "TRX",
+     "sentido": "TPyjyZ→TFKSWmnR",
+     "total": 970000000,
+     "n": 1,
+     "primera": "2022-06-16",
+     "ultima": "2022-06-16"
+    }
+   ],
+   "exclusividad": [
+    {
+     "tipo": "TRX",
+     "sentido": "TPyjyZ→TFKSWmnR",
+     "porcentaje_de_lo_que_recibio_la_receptora": 100
+    }
+   ],
+   "control": [],
+   "que_falta_para_subir": "recurrencia y exclusividad, y después una clave o contrato en común"
+  },
+  {
+   "pareja": "TLbkcH7Q ↔ TPyjyZ",
+   "clase": "DINERO SIMPLE",
+   "flujos": [
+    {
+     "tipo": "TRX",
+     "sentido": "TPyjyZ→TLbkcH7Q",
+     "total": 970000000,
+     "n": 1,
+     "primera": "2022-06-16",
+     "ultima": "2022-06-16"
+    }
+   ],
+   "exclusividad": [
+    {
+     "tipo": "TRX",
+     "sentido": "TPyjyZ→TLbkcH7Q",
+     "porcentaje_de_lo_que_recibio_la_receptora": 100
+    }
+   ],
+   "control": [],
+   "que_falta_para_subir": "recurrencia y exclusividad, y después una clave o contrato en común"
+  },
+  {
+   "pareja": "TPyjyZ ↔ TYL7z7VS",
+   "clase": "DINERO SIMPLE",
+   "flujos": [
+    {
+     "tipo": "TRX",
+     "sentido": "TPyjyZ→TYL7z7VS",
+     "total": 971000000,
+     "n": 1,
+     "primera": "2022-06-25",
+     "ultima": "2022-06-25"
+    }
+   ],
+   "exclusividad": [
+    {
+     "tipo": "TRX",
+     "sentido": "TPyjyZ→TYL7z7VS",
+     "porcentaje_de_lo_que_recibio_la_receptora": 50.55
+    }
+   ],
+   "control": [],
+   "que_falta_para_subir": "recurrencia y exclusividad, y después una clave o contrato en común"
+  },
+  {
+   "pareja": "TPyjyZ ↔ TQwh1ZDB",
+   "clase": "DINERO SIMPLE",
+   "flujos": [
+    {
+     "tipo": "TRX",
+     "sentido": "TQwh1ZDB→TPyjyZ",
+     "total": 1074560000,
+     "n": 3,
+     "primera": "2021-09-07",
+     "ultima": "2022-05-25"
+    }
+   ],
+   "exclusividad": [
+    {
+     "tipo": "TRX",
+     "sentido": "TQwh1ZDB→TPyjyZ",
+     "porcentaje_de_lo_que_recibio_la_receptora": 9.98
+    }
+   ],
+   "control": [],
+   "que_falta_para_subir": "recurrencia y exclusividad, y después una clave o contrato en común"
+  },
+  {
+   "pareja": "TScVwVTj ↔ TT2T17",
+   "clase": "DINERO SIMPLE",
+   "flujos": [
+    {
+     "tipo": "TRX",
+     "sentido": "TScVwVTj→TT2T17",
+     "total": 1170066903.59,
+     "n": 2,
+     "primera": "2024-08-19",
+     "ultima": "2025-01-31"
+    }
+   ],
+   "exclusividad": [
+    {
+     "tipo": "TRX",
+     "sentido": "TScVwVTj→TT2T17",
+     "porcentaje_de_lo_que_recibio_la_receptora": 14.66
+    }
+   ],
+   "control": [],
+   "que_falta_para_subir": "recurrencia y exclusividad, y después una clave o contrato en común"
+  },
+  {
+   "pareja": "TKpiitwG ↔ TQwh1ZDB",
+   "clase": "DINERO SIMPLE",
+   "flujos": [
+    {
+     "tipo": "TRX",
+     "sentido": "TQwh1ZDB→TKpiitwG",
+     "total": 1471079000,
+     "n": 1,
+     "primera": "2024-08-20",
+     "ultima": "2024-08-20"
+    }
+   ],
+   "exclusividad": [
+    {
+     "tipo": "TRX",
+     "sentido": "TQwh1ZDB→TKpiitwG",
+     "porcentaje_de_lo_que_recibio_la_receptora": 82.45
+    }
+   ],
+   "control": [],
+   "que_falta_para_subir": "recurrencia y exclusividad, y después una clave o contrato en común"
+  },
+  {
+   "pareja": "TCGVFGDd ↔ TPyjyZ",
+   "clase": "RELACIÓN DE TRABAJO (dinero + recurrencia + exclusividad)",
+   "flujos": [
+    {
+     "tipo": "TRX",
+     "sentido": "TPyjyZ→TCGVFGDd",
+     "total": 748525508,
+     "n": 4,
+     "primera": "2021-09-05",
+     "ultima": "2021-12-06"
+    },
+    {
+     "tipo": "TRX",
+     "sentido": "TCGVFGDd→TPyjyZ",
+     "total": 26706159,
+     "n": 3,
+     "primera": "2021-11-02",
+     "ultima": "2021-12-06"
+    }
+   ],
+   "exclusividad": [
+    {
+     "tipo": "TRX",
+     "sentido": "TPyjyZ→TCGVFGDd",
+     "porcentaje_de_lo_que_recibio_la_receptora": 73.56
+    },
+    {
+     "tipo": "TRX",
+     "sentido": "TCGVFGDd→TPyjyZ",
+     "porcentaje_de_lo_que_recibio_la_receptora": 0.25
+    }
+   ],
+   "control": [],
+   "que_falta_para_subir": "una clave o contrato que una a las dos (hoy ninguno)"
+  },
+  {
+   "pareja": "PROVEEDORA ↔ TEF9ZV",
+   "clase": "RELACIÓN DE TRABAJO (dinero + recurrencia + exclusividad)",
+   "flujos": [
+    {
+     "tipo": "TRX",
+     "sentido": "PROVEEDORA→TEF9ZV",
+     "total": 749999997,
+     "n": 3,
+     "primera": "2026-10-20",
+     "ultima": "2026-11-04"
+    }
+   ],
+   "exclusividad": [
+    {
+     "tipo": "TRX",
+     "sentido": "PROVEEDORA→TEF9ZV",
+     "porcentaje_de_lo_que_recibio_la_receptora": 44.8
+    }
+   ],
+   "control": [],
+   "que_falta_para_subir": "una clave o contrato que una a las dos (hoy ninguno)"
+  }
+ ]
+}

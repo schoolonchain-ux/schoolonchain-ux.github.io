@@ -1,0 +1,16 @@
+'use strict';
+// LÍNEA F · F5 — Sigo el TRX que Zion (génesis) mandó en 2023 a TWpMnUh9… (cuenta del círculo) y que esta reenvió en 2024-2025: ¿llega a la tesorería de TRON Inc. (TEySEZLJ…), a TT2T17… o a otro sitio?
+// Búsqueda hacia delante por TronScan, solo por envíos ≥ 50 M TRX, hasta 4 saltos, sin entrar en cuentas con más de 3.000 operaciones (casas de cambio y contratos: se anotan como destino final). SOLO LECTURA. Reproducible: REPRODUCIR=1 node f5-de-zion-a-tron-inc.cjs
+const fs = require('node:fs'), path = require('node:path'); const L = require('./lib.cjs'); L.usar('f5-2026-11-05');
+const OUT = path.join(__dirname, 'f-fundacion'); const M = x => Math.round(x * 100) / 100; const iso = ms => new Date(ms).toISOString().replace('.000Z', 'Z'); const ANCLA = 1793870328000; const TS = 'https://apilist.tronscanapi.com/api';
+const INI = 'TWpMnUh9pZS1Mf8yyw9WPiS82WYevKzQo2'; const DESDE = Date.parse('2023-08-03T00:00:00Z'); const UMBRAL = 50e6;
+const info = async a => { const t = await L.get(TS + '/accountv2?address=' + a).catch(() => ({})); return { etiqueta: t.publicTag || t.addressTag || null, ops: t.totalTransactionCount != null ? t.totalTransactionCount : null, hoy_M: M((t.balance || 0) / 1e12) }; };
+async function salidas(a, desde) { const filas = []; let total = null, leidas = 0; for (let start = 0; ; start += 50) { const j = await L.get(TS + '/transfer?sort=timestamp&count=true&limit=50&start=' + start + '&address=' + a + '&start_timestamp=' + desde + '&end_timestamp=' + ANCLA); if (total === null) total = j.total; if (!j.data || !j.data.length) break; leidas += j.data.length; for (const t of j.data) if (t.tokenName === '_' && t.contractRet === 'SUCCESS' && t.transferFromAddress === a && Number(t.amount) / 1e6 >= UMBRAL) filas.push({ t: t.timestamp, a: t.transferToAddress, trx: Number(t.amount) / 1e6, tx: t.transactionHash }); if (leidas >= total) break; } return { filas, total, leidas }; }
+(async () => {
+  const visto = new Set([INI]); const aristas = []; let nivel = [{ a: INI, desde: DESDE, prof: 0 }]; const fichas = {};
+  while (nivel.length) { const sig = []; for (const n of nivel) { const f = n.prof === 0 ? null : (fichas[n.a] = fichas[n.a] || await info(n.a)); if (f && f.ops > 3000) { continue; } const s = await salidas(n.a, n.desde); for (const e of s.filas) { aristas.push({ de: n.a, a: e.a, trx_M: M(e.trx / 1e6), t: iso(e.t), tx: e.tx, prof: n.prof + 1 }); if (!visto.has(e.a) && n.prof + 1 < 4) { visto.add(e.a); sig.push({ a: e.a, desde: e.t, prof: n.prof + 1 }); } } } nivel = sig; }
+  for (const a of new Set(aristas.map(x => x.a))) fichas[a] = fichas[a] || await info(a);
+  const res = { inicio: INI, desde: iso(DESDE), umbral_TRX: UMBRAL, aristas: aristas.map(x => ({ ...x, destino: fichas[x.a] })) };
+  const h = L.guardar(path.join(OUT, 'zion-a-tron-inc.json'), res);
+  for (const x of aristas) console.log('  '.repeat(x.prof - 1) + x.de.slice(0, 8) + ' → ' + x.a.slice(0, 10), String(x.trx_M).padStart(8) + ' M', x.t.slice(0, 10), '| ops', fichas[x.a].ops, '| hoy', fichas[x.a].hoy_M + ' M', fichas[x.a].etiqueta || ''); console.log(h, 'llamadas', L.metricas.llamadas);
+})().catch(e => { console.error('ERROR', e.message, (e.stack || '').split('\n')[1]); process.exit(1); });

@@ -1,0 +1,165 @@
+{
+ "total_entradas_significativas": 1678443068.82,
+ "por_origen": {
+  "TT2T17": {
+   "trx": 793999991,
+   "porcentaje": 47.31
+  },
+  "Desconocido (TKpiitwG…)": {
+   "trx": 99999999,
+   "porcentaje": 5.96
+  },
+  "TPyjyZ (directo)": {
+   "trx": 99999999,
+   "porcentaje": 5.96
+  },
+  "Recompensa de votos": {
+   "trx": 4443082.82,
+   "porcentaje": 0.26
+  },
+  "HTX-Cold 6": {
+   "trx": 179999998,
+   "porcentaje": 10.72
+  },
+  "TYL7z7VS (2022)": {
+   "trx": 499999999,
+   "porcentaje": 29.79
+  }
+ },
+ "entradas": [
+  {
+   "t": "2025-10-30T10:46:42Z",
+   "tx": "55d91dcf218060dd6a72f25abb0e05abbc78ee40f2eec04279947365bea39260",
+   "de": "TFTWNgDBkQ5wQoP8RXpRznnHvAVV8x5jLu",
+   "trx": 49999999,
+   "de_nombre": "HTX 4",
+   "origen": "TT2T17",
+   "por_que": "30-10-2025: TT2T17→TGStnGYq→HTX 4→TEF9ZV (100 M, +4 min)"
+  },
+  {
+   "t": "2025-10-30T10:48:36Z",
+   "tx": "cbdc04b28806ad77e929dd350d15d3c5e8f07a10bbf92a75cfdb3f2f7923419f",
+   "de": "TFTWNgDBkQ5wQoP8RXpRznnHvAVV8x5jLu",
+   "trx": 49999999,
+   "de_nombre": "HTX 4",
+   "origen": "TT2T17",
+   "por_que": "ídem"
+  },
+  {
+   "t": "2025-11-12T16:20:03Z",
+   "tx": "d86d5dff9f15a204ec0877c1d0227c02810f19148985f0387bfb6d134f57c4fc",
+   "de": "TFTWNgDBkQ5wQoP8RXpRznnHvAVV8x5jLu",
+   "trx": 63999999,
+   "de_nombre": "HTX 4",
+   "origen": "TT2T17",
+   "por_que": "12-11-2025: TT2T17→TB1LbnUG→HTX 4→TEF9ZV (64 M, +2 min)"
+  },
+  {
+   "t": "2026-02-02T11:24:15Z",
+   "tx": "0a4600714c1e40ac1c7560da471da2145c64d76b73e57f716baec84b69046269",
+   "de": "TFTWNgDBkQ5wQoP8RXpRznnHvAVV8x5jLu",
+   "trx": 99999999,
+   "de_nombre": "HTX 4",
+   "origen": "Desconocido (TKpiitwG…)",
+   "por_que": "02-02-2026: TKpiitwG…→TRziP5Ls (billetera de un día)→HTX 4→TEF9ZV (100 M, +5 min); origen de TKpiitwG… sin seguir"
+  },
+  {
+   "t": "2026-03-02T15:01:06Z",
+   "tx": "99950554ad0f62812b68ba7480ab4961b111f6cb92c5e90099935182572098c8",
+   "de": "TFTWNgDBkQ5wQoP8RXpRznnHvAVV8x5jLu",
+   "trx": 99999999,
+   "de_nombre": "HTX 4",
+   "origen": "TPyjyZ (directo)",
+   "por_que": "02-03-2026: TPyjyZ→TVgFeBur (billetera de un día)→HTX 4→TEF9ZV (100 M, +3 min)"
+  },
+  {
+   "t": "2026-03-21T13:49:09Z",
+   "tx": "c185f866bba4b70d3b73393918c4ca20fe1ea64c7263593623bd750ebf890ebc",
+   "de": "TFTWNgDBkQ5wQoP8RXpRznnHvAVV8x5jLu",
+   "trx": 99999999,
+   "de_nombre": "HTX 4",
+   "origen": "TT2T17",
+   "por_que": "21-03-2026: TT2T17→TM5h24Au→HTX 4→TEF9ZV (200 M, +2 min)"
+  },
+  {
+   "t": "2026-03-21T13:49:27Z",
+   "tx": "15a4608d893b9d12130aad954a50791d6e6b26829cbe39a213d2cfebdfa1eb94",
+   "de": "TFTWNgDBkQ5wQoP8RXpRznnHvAVV8x5jLu",
+   "trx": 99999999,
+   "de_nombre": "HTX 4",
+   "origen": "TT2T17",
+   "por_que": "ídem"
+  },
+  {
+   "t": "2026-05-07T12:20:54Z",
+   "tx": "45b31684d48880f93e70443d499982739237dd2a364067e8b80518763dc67fbc",
+   "de": "TFTWNgDBkQ5wQoP8RXpRznnHvAVV8x5jLu",
+   "trx": 99999999,
+   "de_nombre": "HTX 4",
+   "origen": "TT2T17",
+   "por_que": "07-05-2026 12:15: TT2T17→TBRoa9xa→HTX 4 (180 M) → 12:20 y 12:24 a TEF9ZV"
+  },
+  {
+   "t": "2026-05-07T12:24:27Z",
+   "tx": "0d33217c4d8976ca8473fe23fabbc171f8a5a4aff7ae0be8404e0f10f5ac530d",
+   "de": "TFTWNgDBkQ5wQoP8RXpRznnHvAVV8x5jLu",
+   "trx": 79999999,
+   "de_nombre": "HTX 4",
+   "origen": "TT2T17",
+   "por_que": "ídem"
+  },
+  {
+   "t": "2026-05-07T12:34:39.000Z",
+   "tx": "4b4a130a43744469cfc26401c64d82661e7c7e5cbc23b21a7ec51980a2aa2a37",
+   "de": "(recompensa de votos de la propia red)",
+   "trx": 4443082.818089,
+   "origen": "Recompensa de votos",
+   "por_que": "WithdrawBalance: recompensa por los votos de la cuenta, importe leído del recibo de la transacción"
+  },
+  {
+   "t": "2026-05-07T12:53:27Z",
+   "tx": "442ae337b99a2d07a311121c88159dff376a18492598063fb5385f178cb230a9",
+   "de": "TFTWNgDBkQ5wQoP8RXpRznnHvAVV8x5jLu",
+   "trx": 99999999,
+   "de_nombre": "HTX 4",
+   "origen": "HTX-Cold 6",
+   "por_que": "07-05-2026 12:48: HTX-Cold 6→TPznYuGC (200 M)→HTX 4 → 12:53 y 12:54 a TEF9ZV (180 M)"
+  },
+  {
+   "t": "2026-05-07T12:54:36Z",
+   "tx": "8d84c9f89eac1a82146f073da0e9762244eab6b2021be5081c5ec4450c7cfa24",
+   "de": "TFTWNgDBkQ5wQoP8RXpRznnHvAVV8x5jLu",
+   "trx": 79999999,
+   "de_nombre": "HTX 4",
+   "origen": "HTX-Cold 6",
+   "por_que": "ídem"
+  },
+  {
+   "t": "2026-10-20T12:03:15Z",
+   "tx": "ec9520b9f44162ca4ce398e6c2bac376072587e5673a335e3449b960e671065b",
+   "de": "TWhDfwC8QE6pQyiYy248dNor3uphPEw5M2",
+   "trx": 99999999,
+   "de_nombre": "proveedora TWhDfwC8",
+   "origen": "TT2T17",
+   "por_que": "20-10-2026: TT2T17→TFaboiG8→proveedora→TEF9ZV (100 M, +4 min)"
+  },
+  {
+   "t": "2026-11-02T09:59:27Z",
+   "tx": "b02dee0924cd91dbbcbed513dbfa76bc022daa9f555f4114827feb04df5081f7",
+   "de": "TWhDfwC8QE6pQyiYy248dNor3uphPEw5M2",
+   "trx": 499999999,
+   "de_nombre": "proveedora TWhDfwC8",
+   "origen": "TYL7z7VS (2022)",
+   "por_que": "02-11-2026: TYL7z7VS→TJHKNV4J→proveedora→TEF9ZV (500 M, +5 min). TYL7z7VS recibió 971 M de TPyjyZ (2022) y 950 M de TQwh1Z (2024)"
+  },
+  {
+   "t": "2026-11-04T10:55:39Z",
+   "tx": "db113f1bec479bcae2911f76de19b9248d291b7091265f62f86afbd60b28a42d",
+   "de": "TWhDfwC8QE6pQyiYy248dNor3uphPEw5M2",
+   "trx": 149999999,
+   "de_nombre": "proveedora TWhDfwC8",
+   "origen": "TT2T17",
+   "por_que": "04-11-2026: TT2T17→TQRBxpS5→proveedora→TEF9ZV (150 M, +14 min)"
+  }
+ ]
+}

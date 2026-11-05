@@ -1,0 +1,22 @@
+[
+ {
+  "cuenta": "TWhDfwC8… (proveedora)",
+  "lectura": "LEÍDA ENTERA en la línea B (b1): ver proveedora-lectura.json. Sus páginas NO se archivaron en bruto: solo filas compactas y la huella SHA-256 de cada página (b-proveedora/pages.jsonl)",
+  "motivo": "una lectura de unos 12.500 páginas (≈ 4 GB en bruto) no se archivó; b2-b4 se rehacen sin internet desde las filas compactas, b1 no"
+ },
+ {
+  "cuenta": "HTX 4 (TFTWNgDB…)",
+  "lectura": "solo ventanas de horas alrededor de 9 fechas (a6, a6c)",
+  "motivo": "decenas de miles de operaciones al día"
+ },
+ {
+  "cuenta": "HTX 3, GasFree, Bybit, Binance-Hot 12 y otras billeteras de Binance",
+  "lectura": "solo las últimas 24 h (a7) y el estado actual",
+  "motivo": "miles de operaciones al día; no hace falta su historia completa para esta fase"
+ },
+ {
+  "cuenta": "Origen de TKpiitwG… y de TQwh1Z…",
+  "lectura": "no seguido más atrás",
+  "motivo": "queda para la siguiente ronda"
+ }
+]

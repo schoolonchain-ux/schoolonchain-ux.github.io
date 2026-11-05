@@ -1,0 +1,501 @@
+{
+ "corte": "2026-11-05T09:18:48Z",
+ "filas": [
+  {
+   "n": 1,
+   "fuente": "Wu Blockchain (8-ago-2023) y Bloomberg/PeckShield/Arkham",
+   "afirmacion": "La dirección de Sun retiró 200 M de USDT de JustLend y los llevó a Huobi (8-ago-2023)",
+   "direccion": "TT2T17",
+   "comprobable_en_cadena": true,
+   "veredicto": "CUADRA EN PARTE (200 M USDT salen de TT2T17 el 8-ago-2023 a una cuenta sin etiqueta Huobi hoy; el destino «Huobi» no se verifica)",
+   "evidencia": {
+    "envios_de_1M_o_mas_entre_7_y_9_ago_2023": [
+     {
+      "t": "2023-08-07T16:05:21Z",
+      "a": "TYZiRt8GhSP9hH7mEPXeGFKpmwPSCAW3Ry",
+      "etiqueta": null,
+      "usdt": 38500000,
+      "tx": "1733c107c74e0ab68200341bcbf2df84fef3f6c9af5cc2ca04691ad136af788f"
+     },
+     {
+      "t": "2023-08-07T16:44:42Z",
+      "a": "TWRmU53wQZdBqSDjVn34j4VS8k1tt7WcNL",
+      "etiqueta": null,
+      "usdt": 25000000,
+      "tx": "f83f53c5f1ad987c05b52113be2862a0529e37292f48faf39b9fb5d3983d7dc5"
+     },
+     {
+      "t": "2023-08-08T02:05:54Z",
+      "a": "TNgMLDBZkcGA4WmRqmYf5yD883jgsvhvFW",
+      "etiqueta": null,
+      "usdt": 200000000,
+      "tx": "e90522573b381792f489c45f52f3f28eb30751426ff353a2ce88739fa3975cf0"
+     }
+    ],
+    "a_huobi_htx_total": 0,
+    "destino_de_los_200M": {
+     "cuenta": "TNgMLDBZkcGA4WmRqmYf5yD883jgsvhvFW",
+     "etiqueta": null,
+     "creada": "2023-07-18T12:09:45Z",
+     "operaciones": 30,
+     "es_contrato": false,
+     "nombre_contrato": null
+    },
+    "primeros_envios_del_destino_en_los_3_dias_siguientes": [
+     {
+      "t": "2023-08-08T02:08:15Z",
+      "a": "TDvf1dSBhR7dEskJs17HxGHheJrjXhiFyM",
+      "etiqueta": null,
+      "usdt": 200000000
+     }
+    ]
+   }
+  },
+  {
+   "n": 4,
+   "fuente": "crypto.news (22-jul-2023)",
+   "afirmacion": "El 21-jul-2023 la dirección acuñó 62 M de TUSD, retiró 50 M de USDT de Huobi, los llevó a Bitfinex, quemó 50 M de TUSD y mandó 50 M de USDT y 12 M de TUSD a JustLend (alegaciones, analista A. Cochran)",
+   "direccion": "TT2T17",
+   "comprobable_en_cadena": true,
+   "veredicto": "CUADRA EN PARTE (misma secuencia el 20-jul-2023 UTC: 63 M de TUSD creados desde la dirección cero, 50 M enviados a una dirección de 3 operaciones y 13 M a un contrato CErc20Delegator; 100 M de USDT recibidos, 50 M enviados a un contrato CErc20Delegator y 50 M a otra cuenta; ese tipo de contrato es el de los mercados de JustLend; «Bitfinex» no se verifica; lo de «sin respaldo» no es comprobable)",
+   "evidencia": {
+    "fichas_de_los_destinos": [
+     {
+      "cuenta": "T9yD14Nj9j7xAB4dbGeiX9h8unwHHpJXvv",
+      "etiqueta": null,
+      "creada": null,
+      "operaciones": 3,
+      "es_contrato": false,
+      "nombre_contrato": null
+     },
+     {
+      "cuenta": "TSXv71Fy5XdL3Rh2QfBoUu3NAaM4sMif8R",
+      "etiqueta": null,
+      "creada": null,
+      "operaciones": 46703,
+      "es_contrato": true,
+      "nombre_contrato": "CErc20Delegator"
+     },
+     {
+      "cuenta": "TPPLmhD4auqapdQxYPxJGuBS1gVw11D27m",
+      "etiqueta": null,
+      "creada": "2023-05-18T14:47:15Z",
+      "operaciones": 27,
+      "es_contrato": false,
+      "nombre_contrato": null
+     },
+     {
+      "cuenta": "TXJgMdjVX5dKiQaUi9QobwNxtSQaFqccvd",
+      "etiqueta": null,
+      "creada": null,
+      "operaciones": 481024,
+      "es_contrato": true,
+      "nombre_contrato": "CErc20Delegator"
+     },
+     {
+      "cuenta": "TWRmU53wQZdBqSDjVn34j4VS8k1tt7WcNL",
+      "etiqueta": null,
+      "creada": "2022-09-22T05:52:57Z",
+      "operaciones": 324,
+      "es_contrato": false,
+      "nombre_contrato": null
+     }
+    ],
+    "TUSD_recibido": [
+     {
+      "t": "2023-07-20T16:59:06Z",
+      "de": "T9yD14Nj9j7xAB4dbGeiX9h8unkKHxuWwb",
+      "a": "TT2T17KZhoDu47i2E4FWxfG79zdkEWkU9N",
+      "etiqueta_de": "Black Hole Address(0)",
+      "etiqueta_a": null,
+      "cantidad": 63000000
+     },
+     {
+      "t": "2023-07-21T11:19:27Z",
+      "de": "TV6MuMXfmLbBqPZvBHdwFsDnQeVfnmiuSi",
+      "a": "TT2T17KZhoDu47i2E4FWxfG79zdkEWkU9N",
+      "etiqueta_de": "Binance-Hot 2",
+      "etiqueta_a": null,
+      "cantidad": 9864583.2
+     }
+    ],
+    "TUSD_enviado": [
+     {
+      "t": "2023-07-20T17:51:00Z",
+      "de": "TT2T17KZhoDu47i2E4FWxfG79zdkEWkU9N",
+      "a": "T9yD14Nj9j7xAB4dbGeiX9h8unwHHpJXvv",
+      "etiqueta_de": null,
+      "etiqueta_a": null,
+      "cantidad": 50000000
+     },
+     {
+      "t": "2023-07-20T17:51:54Z",
+      "de": "TT2T17KZhoDu47i2E4FWxfG79zdkEWkU9N",
+      "a": "TSXv71Fy5XdL3Rh2QfBoUu3NAaM4sMif8R",
+      "etiqueta_de": null,
+      "etiqueta_a": null,
+      "cantidad": 13000000
+     },
+     {
+      "t": "2023-07-20T17:51:54Z",
+      "de": "TT2T17KZhoDu47i2E4FWxfG79zdkEWkU9N",
+      "a": "TSXv71Fy5XdL3Rh2QfBoUu3NAaM4sMif8R",
+      "etiqueta_de": null,
+      "etiqueta_a": null,
+      "cantidad": 1.157920892373162e+59
+     }
+    ],
+    "USDT_recibido": [
+     {
+      "t": "2023-07-20T17:11:00Z",
+      "de": "TNaRAoLUyYEV2uF7GUrzSjRQTU8v5ZJ5VR",
+      "a": "TT2T17KZhoDu47i2E4FWxfG79zdkEWkU9N",
+      "etiqueta_de": null,
+      "etiqueta_a": null,
+      "cantidad": 50000004
+     },
+     {
+      "t": "2023-07-20T17:27:30Z",
+      "de": "TNaRAoLUyYEV2uF7GUrzSjRQTU8v5ZJ5VR",
+      "a": "TT2T17KZhoDu47i2E4FWxfG79zdkEWkU9N",
+      "etiqueta_de": null,
+      "etiqueta_a": null,
+      "cantidad": 50000006
+     },
+     {
+      "t": "2023-07-21T11:17:09Z",
+      "de": "TXJgMdjVX5dKiQaUi9QobwNxtSQaFqccvd",
+      "a": "TT2T17KZhoDu47i2E4FWxfG79zdkEWkU9N",
+      "etiqueta_de": null,
+      "etiqueta_a": null,
+      "cantidad": 20000000
+     }
+    ],
+    "USDT_enviado": [
+     {
+      "t": "2023-07-20T17:16:15Z",
+      "de": "TT2T17KZhoDu47i2E4FWxfG79zdkEWkU9N",
+      "a": "TPPLmhD4auqapdQxYPxJGuBS1gVw11D27m",
+      "etiqueta_de": null,
+      "etiqueta_a": null,
+      "cantidad": 50000000
+     },
+     {
+      "t": "2023-07-20T17:51:39Z",
+      "de": "TT2T17KZhoDu47i2E4FWxfG79zdkEWkU9N",
+      "a": "TXJgMdjVX5dKiQaUi9QobwNxtSQaFqccvd",
+      "etiqueta_de": null,
+      "etiqueta_a": null,
+      "cantidad": 50000011.97
+     },
+     {
+      "t": "2023-07-21T11:17:42Z",
+      "de": "TT2T17KZhoDu47i2E4FWxfG79zdkEWkU9N",
+      "a": "TWRmU53wQZdBqSDjVn34j4VS8k1tt7WcNL",
+      "etiqueta_de": null,
+      "etiqueta_a": null,
+      "cantidad": 20000000
+     }
+    ]
+   }
+  },
+  {
+   "n": 3,
+   "fuente": "Protos «Where is Justin Sun's money?»",
+   "afirmacion": "TT2T17 guarda >100 M$ en TRX, stUSDT, 16 M$ en USDD, 5 M$ en TUSD y 16 M$ en JST; interactúa con Huobi y Poloniex",
+   "direccion": "TT2T17",
+   "comprobable_en_cadena": true,
+   "veredicto": "CUADRA EN PARTE (hoy: TRX 1.479 M y JST 386 M sí; USDD ≈ 9.000 y TUSD 0 no; sin precios no se verifican los dólares)",
+   "evidencia": {
+    "saldos_hoy_en_unidades": {
+     "USDD": {
+      "simbolo_en_cadena": "USDD",
+      "saldo": 9007.218648996568,
+      "oferta_total": 1140036676.93654
+     },
+     "TUSD": {
+      "simbolo_en_cadena": "TUSD",
+      "saldo": 0,
+      "oferta_total": 168513454.1376503
+     },
+     "JST": {
+      "simbolo_en_cadena": "JST",
+      "saldo": 386117386.88505584,
+      "oferta_total": 9793336268.029001
+     },
+     "TRX": 1478760593.91
+    },
+    "nota": "Importes en unidades de cada token (TRX, USDD, TUSD, JST). Los dólares dependen de un precio que aquí no se toma."
+   }
+  },
+  {
+   "n": 8,
+   "fuente": "OKLink (etiqueta pública)",
+   "afirmacion": "La dirección TPyjyZ está etiquetada «Justin Sun»",
+   "direccion": "TPyjyZ",
+   "comprobable_en_cadena": false,
+   "veredicto": "NO COMPROBABLE (identidad)",
+   "evidencia": {
+    "etiqueta_en_TronScan": null,
+    "nota": "Una etiqueta de identidad no se verifica en la cadena; TronScan no la tiene."
+   }
+  },
+  {
+   "n": 9,
+   "fuente": "Protos «Justin Sun's USDD has problems» (25-sep-2025)",
+   "afirmacion": "TPyjyZ guarda ≈ 56 % del USDD 1.0; se financió primero desde una dirección etiquetada Poloniex y más tarde desde HTX",
+   "direccion": "TPyjyZ",
+   "comprobable_en_cadena": true,
+   "veredicto": "CUADRA EN PARTE (la primera financiación es de TNCmcTdy…, hoy etiquetada Poloniex; la cuota de USDD 1.0 hoy es 8.74 % y no se comprueba la de sep-2025; no se ven entradas ≥ 1 M TRX desde HTX)",
+   "evidencia": {
+    "primeras_entradas": [
+     {
+      "t": "2021-05-27T13:48:27Z",
+      "de": "TNCmcTdyrYKMtmE1KU2itzeCX76jGm5Not",
+      "etiqueta": "Poloniex",
+      "trx": 9999.99
+     },
+     {
+      "t": "2021-05-27T13:48:30Z",
+      "de": "TPJ31fHhocNnjjg3DcMcWarEvWiodSXYwC",
+      "etiqueta": null,
+      "trx": 0.000001
+     },
+     {
+      "t": "2021-05-27T13:48:36Z",
+      "de": "TWzNhscr7WZpCFcaf5XThE7pMFwyj5RypM",
+      "etiqueta": null,
+      "trx": 0.000001
+     }
+    ],
+    "entradas_de_1M_o_mas_desde_HTX_o_Huobi": {},
+    "USDD": {
+     "simbolo_en_cadena": "USDD",
+     "saldo": 623187.181181328,
+     "oferta_total": 7127270.154809999,
+     "porcentaje_de_la_oferta": 8.74
+    }
+   }
+  },
+  {
+   "n": 10,
+   "fuente": "CCN «JUST Price Prediction 2025»",
+   "afirmacion": "TPyjyZ es la mayor tenedora de JST (~5,5 % de la oferta)",
+   "direccion": "TPyjyZ",
+   "comprobable_en_cadena": true,
+   "veredicto": "CUADRA EN PARTE (hoy 6.75 % de la oferta frente a ~5,5 % citado: mismo orden, no igual)",
+   "evidencia": {
+    "JST": {
+     "simbolo_en_cadena": "JST",
+     "saldo": 660882468.9411204,
+     "oferta_total": 9793336268.029001,
+     "porcentaje_de_la_oferta": 6.75
+    },
+    "nota": "«Mayor tenedora» no se comprueba aquí (haría falta la lista de tenedores)."
+   }
+  },
+  {
+   "n": 11,
+   "fuente": "Whale Alert",
+   "afirmacion": "Transferencia de 219,47 M TRX a TPyjyZ (tx c75bc133…)",
+   "direccion": "TPyjyZ",
+   "comprobable_en_cadena": true,
+   "veredicto": "CUADRA",
+   "evidencia": {
+    "tx_encontrada": true,
+    "tipo": "TransferContract",
+    "de": "TFLYd2Bk7CtsfQFpLnm2fKp2CsSwTDGmx2",
+    "a": "TPyjyZfsYaXStgz2NmAraF1uZcMtkgNan5",
+    "trx": 219470000,
+    "ok": "SUCCESS"
+   }
+  },
+  {
+   "n": 12,
+   "fuente": "Curve (gobernanza)",
+   "afirmacion": "TPcnRbpuB… es una multifirma de USDD (multisig2) con control de emisión 5 de 7",
+   "direccion": "TPcnRbpuB…",
+   "comprobable_en_cadena": true,
+   "veredicto": "NO CUADRA a nivel de permisos de la cuenta (clave simple, umbral 1); el 5 de 7 podría estar en otra capa (un contrato)",
+   "evidencia": {
+    "existe": true,
+    "propietario": {
+     "umbral": 1,
+     "claves": 1
+    },
+    "activos": [
+     {
+      "nombre": "active",
+      "umbral": 1,
+      "claves": 1
+     }
+    ]
+   }
+  },
+  {
+   "n": 13,
+   "fuente": "Protos «TRON Inc.'s TRX came from HTX after UK sanctions» (18-sep-2026)",
+   "afirmacion": "Cuatro afirmaciones comprobables sobre la tesorería de TRON Inc. (TEySEZLJ…, publicada en X y en un 8-K): ver subfilas",
+   "direccion": "TEySEZLJ…",
+   "comprobable_en_cadena": true,
+   "veredicto": "CUADRA EN PARTE",
+   "evidencia": {
+    "subafirmaciones": [
+     {
+      "dicho": "HTX 4 compraba TRX a TRON Inc. a diario hasta el 29-may-2026",
+      "cadena": {
+       "trx": 20475874.99,
+       "envios": 128,
+       "desde": "2026-01-23",
+       "hasta": "2026-05-29"
+      },
+      "veredicto": "CUADRA"
+     },
+     {
+      "dicho": "HTX 4 fundó TYyr…, que pasó a enviar el TRX diario",
+      "cadena": {
+       "trx_de_TYyr_a_TRON_Inc": 872669.37,
+       "envios": 6,
+       "desde": "2026-05-30",
+       "hasta": "2026-06-04"
+      },
+      "veredicto": "CUADRA EN PARTE (TYyr existe y envía, pero 6 envíos y 0,87 M TRX entre el 30-may y el 4-jun; no es «el TRX diario» sostenido)"
+     },
+     {
+      "dicho": "TRON Inc. recibe ahora generalmente desde TWhDfwC8…",
+      "cadena": {
+       "trx": 22247668.02,
+       "envios": 148,
+       "desde": "2026-06-11",
+       "hasta": "2026-11-05"
+      },
+      "veredicto": "CUADRA"
+     },
+     {
+      "dicho": "El TRX de TWhDfwC8… viene sobre todo de Binance y también de direcciones afiliadas a HTX",
+      "cadena": {
+       "trx_recibido_de_Binance_conocidas_directo": 0,
+       "trx_recibido_de_HTX_4": 0,
+       "trx_total_recibido": 3318478324.39,
+       "mayores_origenes_de_TRX": [
+        {
+         "cuenta": "THsd9w1M9N8JgfdXugsGhzdKwYrQ7c2zAM",
+         "trx": 1144360105.27
+        },
+        {
+         "cuenta": "TSzSgxRisS5VBXXDcAezTDvnPGi9CbsXvJ",
+         "trx": 421691020
+        },
+        {
+         "cuenta": "TJHKNV4Jwmk7YQht2LFrkQZd9pzvSuN543",
+         "trx": 500000000
+        },
+        {
+         "cuenta": "TQRBxpS5V1KZW8g3oJ1YNLqtj1j733Mc33",
+         "trx": 150000000
+        },
+        {
+         "cuenta": "TUgSgCQL6pMSy9zByn4sgxqrJa95sZExBG",
+         "trx": 132311000
+        }
+       ]
+      },
+      "veredicto": "NO CUADRA EN DIRECTO (ni una de sus 100 mayores contrapartes lleva etiqueta Binance y no toca las 10 billeteras de Binance conocidas; si viene de Binance, es por cuentas intermedias que este contraste no sigue)"
+     }
+    ],
+    "que_la_direccion_sea_de_TRON_Inc": "ATRIBUCIÓN: se apoya en una publicación de la propia empresa (no se verifica en cadena)"
+   }
+  },
+  {
+   "n": 2,
+   "fuente": "EmberCN (23-abr-2024)",
+   "afirmacion": "TT2T17 figura entre las direcciones de Sun en TRON junto a TWGHNcdt… y TA6bim7L…",
+   "direccion": "TT2T17",
+   "comprobable_en_cadena": false,
+   "veredicto": "CUADRA EN PARTE (TWGHNcdt… tiene 9 flujos directos con TT2T17 (46,3 M de USDT); TA6bim7L… ninguno; las tres con clave simple; las otras dos nacieron el 5-ene-2024 con 999 TRX de billeteras de Binance; la identidad no es comprobable)",
+   "evidencia": {
+    "las_otras_dos": [
+     {
+      "primera_entrada": {
+       "t": "2024-01-05T17:29:39Z",
+       "de": "TAzsQ9Gx8eqFNFSKbeXrbi45CuVPHzA8wr",
+       "etiqueta": "Binance-Hot 5",
+       "trx": 999
+      },
+      "flujos_directos_TRX_con_TT2T17": [],
+      "cuenta": "TWGHNcdtcegGKgLqiYrdBaF7eoFVibjeFP",
+      "creada": "2024-01-05T17:29:36Z",
+      "operaciones": 301,
+      "etiqueta": null,
+      "claves_propias_solo": true,
+      "flujos_directos_con_TT2T17_n": 9,
+      "flujos_directos_con_TT2T17_unidades": 46300000
+     },
+     {
+      "primera_entrada": {
+       "t": "2024-01-05T17:48:54Z",
+       "de": "TQrY8tryqsYVCYS3MFbtffiPp2ccyn4STm",
+       "etiqueta": "Binance 2",
+       "trx": 999
+      },
+      "flujos_directos_TRX_con_TT2T17": [],
+      "cuenta": "TA6bim7LX4j2aUB8V5TTnAPM56e4AzaPAL",
+      "creada": "2024-01-05T17:48:51Z",
+      "operaciones": 57,
+      "etiqueta": null,
+      "claves_propias_solo": true,
+      "flujos_directos_con_TT2T17_n": 0,
+      "flujos_directos_con_TT2T17_unidades": 0
+     }
+    ],
+    "nota": "Que las tres sean de la misma persona no se puede probar con la cadena; aquí solo se mira si hay flujo directo o clave en común."
+   }
+  },
+  {
+   "n": 5,
+   "fuente": "DailyCoin con datos de Arkham (2023)",
+   "afirmacion": "TT2T17 recibe del agujero negro, de una multifirma de Tether (~250 M$) y de dos ballenas de Binance y Huobi (> 2.260 M$ en TUSD) y lo reparte; las mayores salidas van a JustLend",
+   "direccion": "TT2T17",
+   "comprobable_en_cadena": false,
+   "veredicto": "NO COMPROBABLE sin las etiquetas de Arkham (de pago, no consultadas)",
+   "evidencia": {
+    "nota": "Se puede revisar el flujo de TUSD pero no quiénes son las «ballenas»; queda para si el propietario autoriza Arkham."
+   }
+  },
+  {
+   "n": 6,
+   "fuente": "Arkham (20-oct-2026)",
+   "afirmacion": "Patrimonio verificable ≈ 2.300 M$; 136–142 direcciones posiblemente suyas; participación en HTX 6.000–8.000 M$; «Global Advisor» de TRON Inc.",
+   "direccion": "varias",
+   "comprobable_en_cadena": false,
+   "veredicto": "NO COMPROBABLE (identidad, valoraciones y estructura societaria)",
+   "evidencia": {
+    "nota": "Son estimaciones y atribuciones de un tercero de pago."
+   }
+  },
+  {
+   "n": 14,
+   "fuente": "VanEck / extraETF",
+   "afirmacion": "El ETN VTRX está respaldado por TRX en frío en un custodio regulado, sin préstamo ni derivados",
+   "direccion": "—",
+   "comprobable_en_cadena": false,
+   "veredicto": "NO COMPROBABLE (el custodio no se identifica en cadena; el caso de «Vaneck» de TCGVFGDd… es otra cosa)",
+   "evidencia": {}
+  },
+  {
+   "n": 19,
+   "fuente": "SEC / Bloomberg / Molly White",
+   "afirmacion": "Procesos y negativas de Sun sobre el control de TT2T17",
+   "direccion": "—",
+   "comprobable_en_cadena": false,
+   "veredicto": "NO COMPROBABLE (no son hechos de cadena)",
+   "evidencia": {}
+  }
+ ],
+ "resumen": {
+  "CUADRA EN PARTE": 7,
+  "NO COMPROBABLE": 5,
+  "CUADRA": 1,
+  "NO CUADRA": 1
+ }
+}

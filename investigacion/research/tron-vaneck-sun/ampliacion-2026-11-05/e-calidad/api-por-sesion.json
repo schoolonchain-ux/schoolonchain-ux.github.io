@@ -1,0 +1,761 @@
+{
+ "a1-2026-11-05": {
+  "ficheros": 3,
+  "bytes": 583793,
+  "desde": "2026-11-05T09:22:06.160Z",
+  "hasta": "2026-11-05T09:22:07.787Z",
+  "endpoints": {
+   "trongrid.io/v1/accounts/T…/transactions": 3
+  },
+  "http": {
+   "200": 3
+  },
+  "errores_de_aplicacion": 0
+ },
+ "a2-2026-11-05": {
+  "ficheros": 283,
+  "bytes": 11605730,
+  "desde": "2026-11-05T09:24:47.949Z",
+  "hasta": "2026-11-05T09:27:08.240Z",
+  "endpoints": {
+   "trongrid.io/wallet/getaccount": 128,
+   "tronscancom/api/accountv2": 128,
+   "trongrid.io/v1/accounts/T…/transactions": 27
+  },
+  "http": {
+   "200": 283
+  },
+  "errores_de_aplicacion": 0
+ },
+ "a3-2026-11-05": {
+  "ficheros": 1,
+  "bytes": 518,
+  "desde": "2026-11-05T09:33:54.483Z",
+  "hasta": "2026-11-05T09:33:54.483Z",
+  "endpoints": {
+   "trongrid.io/wallet/gettransactioninfobyid": 1
+  },
+  "http": {
+   "200": 1
+  },
+  "errores_de_aplicacion": 0
+ },
+ "a6-2026-11-05": {
+  "ficheros": 148,
+  "bytes": 35995223,
+  "desde": "2026-11-05T09:28:23.366Z",
+  "hasta": "2026-11-05T09:29:52.235Z",
+  "endpoints": {
+   "trongrid.io/v1/accounts/T…/transactions": 132,
+   "trongrid.io/wallet/getaccount": 8,
+   "tronscancom/api/accountv2": 8
+  },
+  "http": {
+   "200": 148
+  },
+  "errores_de_aplicacion": 0
+ },
+ "a6c-2026-11-05": {
+  "ficheros": 101,
+  "bytes": 18107076,
+  "desde": "2026-11-05T09:30:42.581Z",
+  "hasta": "2026-11-05T09:31:39.766Z",
+  "endpoints": {
+   "trongrid.io/v1/accounts/T…/transactions": 77,
+   "trongrid.io/wallet/getaccount": 12,
+   "tronscancom/api/accountv2": 12
+  },
+  "http": {
+   "200": 101
+  },
+  "errores_de_aplicacion": 0
+ },
+ "a7-2026-11-05": {
+  "ficheros": 1284,
+  "bytes": 474831416,
+  "desde": "2026-11-05T09:43:16.378Z",
+  "hasta": "2026-11-05T09:56:13.665Z",
+  "endpoints": {
+   "trongrid.io/v1/accounts/T…/transactions": 1122,
+   "trongrid.io/wallet/getaccount": 81,
+   "trongrid.io/wallet/getaccountresource": 81
+  },
+  "http": {
+   "200": 1284
+  },
+  "errores_de_aplicacion": 0
+ },
+ "a7b-2026-11-05": {
+  "ficheros": 64,
+  "bytes": 116479,
+  "desde": "2026-11-05T10:10:42.405Z",
+  "hasta": "2026-11-05T10:11:26.310Z",
+  "endpoints": {
+   "trongrid.io/wallet/getdelegatedresourcev2": 20,
+   "trongrid.io/wallet/getdelegatedresourceaccountindexv2": 18,
+   "trongrid.io/wallet/getaccount": 18,
+   "tronscancom/api/accountv2": 8
+  },
+  "http": {
+   "200": 64
+  },
+  "errores_de_aplicacion": 0
+ },
+ "b-2026-11-05": {
+  "ficheros": 554,
+  "bytes": 218047904,
+  "desde": "2026-11-05T09:54:11.740Z",
+  "hasta": "2026-11-05T09:59:59.521Z",
+  "endpoints": {
+   "trongrid.io/v1/accounts/T…/transactions": 364,
+   "trongrid.io/wallet/getcontract": 53,
+   "trongrid.io/wallet/getaccount": 53,
+   "tronscancom/api/accountv2": 84
+  },
+  "http": {
+   "200": 554
+  },
+  "errores_de_aplicacion": 0
+ },
+ "b2-2026-11-05": {
+  "ficheros": 115,
+  "bytes": 563226,
+  "desde": "2026-11-05T11:16:36.068Z",
+  "hasta": "2026-11-05T12:20:35.652Z",
+  "endpoints": {
+   "tronscancom/api/accountv2": 115
+  },
+  "http": {
+   "200": 115
+  },
+  "errores_de_aplicacion": 0
+ },
+ "b3-2026-11-05": {
+  "ficheros": 0,
+  "bytes": 0,
+  "desde": null,
+  "hasta": null,
+  "endpoints": {},
+  "http": {},
+  "errores_de_aplicacion": 0
+ },
+ "b4-2026-11-05": {
+  "ficheros": 66,
+  "bytes": 1270578,
+  "desde": "2026-11-05T12:23:30.583Z",
+  "hasta": "2026-11-05T12:24:27.657Z",
+  "endpoints": {
+   "tronscancom/api/accountv2": 45,
+   "trongrid.io/v1/accounts/T…/transactions/trc20": 21
+  },
+  "http": {
+   "200": 66
+  },
+  "errores_de_aplicacion": 0
+ },
+ "b4b-2026-11-05": {
+  "ficheros": 42,
+  "bytes": 288091,
+  "desde": "2026-11-05T12:24:47.076Z",
+  "hasta": "2026-11-05T12:40:13.077Z",
+  "endpoints": {
+   "tronscancom/api/accountv2": 24,
+   "trongrid.io/v1/accounts/T…/transactions": 9,
+   "trongrid.io/v1/accounts/T…/transactions/trc20": 9
+  },
+  "http": {
+   "200": 42
+  },
+  "errores_de_aplicacion": 0
+ },
+ "b4c-2026-11-05": {
+  "ficheros": 1191,
+  "bytes": 82485391,
+  "desde": "2026-11-05T12:25:38.091Z",
+  "hasta": "2026-11-05T12:36:48.378Z",
+  "endpoints": {
+   "trongrid.io/v1/accounts/T…/transactions/trc20": 1131,
+   "tronscancom/api/accountv2": 59,
+   "trongrid.io/v1/accounts/T…/transactions": 1
+  },
+  "http": {
+   "200": 1191
+  },
+  "errores_de_aplicacion": 0
+ },
+ "b5-2026-11-05": {
+  "ficheros": 71,
+  "bytes": 17288440,
+  "desde": "2026-11-05T11:12:07.293Z",
+  "hasta": "2026-11-05T11:12:52.289Z",
+  "endpoints": {
+   "trongrid.io/v1/accounts/T…/transactions": 63,
+   "trongrid.io/wallet/getaccount": 4,
+   "tronscancom/api/accountv2": 4
+  },
+  "http": {
+   "200": 71
+  },
+  "errores_de_aplicacion": 0
+ },
+ "b5b-2026-11-05": {
+  "ficheros": 4,
+  "bytes": 8319,
+  "desde": "2026-11-05T11:13:28.992Z",
+  "hasta": "2026-11-05T11:13:30.311Z",
+  "endpoints": {
+   "trongrid.io/wallet/getaccount": 2,
+   "trongrid.io/wallet/triggerconstantcontract": 1,
+   "tronscancom/api/accountv2": 1
+  },
+  "http": {
+   "200": 4
+  },
+  "errores_de_aplicacion": 0
+ },
+ "b5c-2026-11-05": {
+  "ficheros": 7,
+  "bytes": 14687,
+  "desde": "2026-11-05T11:15:24.054Z",
+  "hasta": "2026-11-05T11:15:26.474Z",
+  "endpoints": {
+   "trongrid.io/wallet/triggerconstantcontract": 6,
+   "trongrid.io/wallet/getcontract": 1
+  },
+  "http": {
+   "200": 7
+  },
+  "errores_de_aplicacion": 0
+ },
+ "c-2026-11-05": {
+  "ficheros": 27,
+  "bytes": 7011204,
+  "desde": "2026-11-05T10:01:37.433Z",
+  "hasta": "2026-11-05T10:01:55.352Z",
+  "endpoints": {
+   "trongrid.io/v1/accounts/T…/transactions": 19,
+   "tronscancom/api/accountv2": 2,
+   "trongrid.io/wallet/getaccount": 2,
+   "trongrid.io/wallet/getdelegatedresourcev2": 1,
+   "trongrid.io/v1/accounts/T…/transactions/trc20": 2,
+   "trongrid.io/wallet/getdelegatedresourceaccountindexv2": 1
+  },
+  "http": {
+   "200": 27
+  },
+  "errores_de_aplicacion": 0
+ },
+ "c2-2026-11-05": {
+  "ficheros": 195,
+  "bytes": 136811082,
+  "desde": "2026-11-05T10:02:51.405Z",
+  "hasta": "2026-11-05T10:04:42.537Z",
+  "endpoints": {
+   "tronscancom/api/accountv2": 15,
+   "trongrid.io/v1/contracts/T…/transactions": 98,
+   "trongrid.io/wallet/gettransactioninfobyid": 41,
+   "trongrid.io/wallet/getcontract": 41
+  },
+  "http": {
+   "200": 195
+  },
+  "errores_de_aplicacion": 0
+ },
+ "c3-2026-11-05": {
+  "ficheros": 106,
+  "bytes": 404096,
+  "desde": "2026-11-05T10:05:06.940Z",
+  "hasta": "2026-11-05T10:06:05.476Z",
+  "endpoints": {
+   "trongrid.io/wallet/getaccount": 53,
+   "tronscancom/api/accountv2": 53
+  },
+  "http": {
+   "200": 106
+  },
+  "errores_de_aplicacion": 0
+ },
+ "c4-2026-11-05": {
+  "ficheros": 335,
+  "bytes": 749107,
+  "desde": "2026-11-05T10:17:08.466Z",
+  "hasta": "2026-11-05T10:19:29.596Z",
+  "endpoints": {
+   "trongrid.io/wallet/triggerconstantcontract": 287,
+   "tronscancom/api/accountv2": 24,
+   "trongrid.io/wallet/getaccount": 24
+  },
+  "http": {
+   "200": 335
+  },
+  "errores_de_aplicacion": 0
+ },
+ "c5-2026-11-05": {
+  "ficheros": 144,
+  "bytes": 11574850,
+  "desde": "2026-11-05T10:20:58.365Z",
+  "hasta": "2026-11-05T10:22:09.736Z",
+  "endpoints": {
+   "trongrid.io/wallet/getcontract": 25,
+   "trongrid.io/v1/accounts/T…/transactions": 44,
+   "trongrid.io/wallet/getaccount": 25,
+   "tronscancom/api/accountv2": 25,
+   "trongrid.io/wallet/getdelegatedresourceaccountindexv2": 25
+  },
+  "http": {
+   "200": 144
+  },
+  "errores_de_aplicacion": 0
+ },
+ "c6-2026-11-05": {
+  "ficheros": 47,
+  "bytes": 6911629,
+  "desde": "2026-11-05T10:23:26.990Z",
+  "hasta": "2026-11-05T10:23:52.529Z",
+  "endpoints": {
+   "trongrid.io/v1/accounts/T…/transactions": 30,
+   "tronscancom/api/accountv2": 11,
+   "trongrid.io/wallet/getaccount": 6
+  },
+  "http": {
+   "200": 47
+  },
+  "errores_de_aplicacion": 0
+ },
+ "c7-2026-11-05": {
+  "ficheros": 66,
+  "bytes": 6158567,
+  "desde": "2026-11-05T10:48:32.777Z",
+  "hasta": "2026-11-05T10:49:11.786Z",
+  "endpoints": {
+   "trongrid.io/v1/accounts/T…/transactions": 22,
+   "tronscancom/api/accountv2": 38,
+   "trongrid.io/wallet/getaccount": 6
+  },
+  "http": {
+   "200": 66
+  },
+  "errores_de_aplicacion": 0
+ },
+ "c8-2026-11-05": {
+  "ficheros": 44,
+  "bytes": 428091,
+  "desde": "2026-11-05T10:50:22.312Z",
+  "hasta": "2026-11-05T10:50:47.528Z",
+  "endpoints": {
+   "tronscancom/api/accountv2": 44
+  },
+  "http": {
+   "200": 44
+  },
+  "errores_de_aplicacion": 0
+ },
+ "d0-2026-11-05": {
+  "ficheros": 21,
+  "bytes": 211135,
+  "desde": "2026-11-05T13:11:30.254Z",
+  "hasta": "2026-11-05T13:11:41.468Z",
+  "endpoints": {
+   "tronscancom/api/accountv2": 21
+  },
+  "http": {
+   "200": 21
+  },
+  "errores_de_aplicacion": 0
+ },
+ "d1-2026-11-05": {
+  "ficheros": 203,
+  "bytes": 48590232,
+  "desde": "2026-11-05T13:12:22.621Z",
+  "hasta": "2026-11-05T13:14:31.261Z",
+  "endpoints": {
+   "trongrid.io/v1/accounts/T…/transactions": 152,
+   "trongrid.io/wallet/getaccount": 18,
+   "trongrid.io/v1/accounts/T…/transactions/trc20": 33
+  },
+  "http": {
+   "200": 203
+  },
+  "errores_de_aplicacion": 0
+ },
+ "d4-2026-11-05": {
+  "ficheros": 182,
+  "bytes": 27073139,
+  "desde": "2026-11-05T13:16:17.616Z",
+  "hasta": "2026-11-05T13:19:03.845Z",
+  "endpoints": {
+   "trongrid.io/wallet/triggerconstantcontract": 18,
+   "tronscancom/api/accountv2": 72,
+   "trongrid.io/v1/accounts/T…/transactions/trc20": 13,
+   "trongrid.io/v1/accounts/T…/transactions": 69,
+   "trongrid.io/wallet/getaccount": 3,
+   "trongrid.io/wallet/getcontract": 6,
+   "trongrid.io/wallet/gettransactionbyid": 1
+  },
+  "http": {
+   "200": 182
+  },
+  "errores_de_aplicacion": 0
+ },
+ "d5-2026-11-05": {
+  "ficheros": 171,
+  "bytes": 47354409,
+  "desde": "2026-11-05T13:20:36.786Z",
+  "hasta": "2026-11-05T13:22:19.471Z",
+  "endpoints": {
+   "trongrid.io/v1/accounts/T…/transactions": 152,
+   "trongrid.io/wallet/getaccount": 19
+  },
+  "http": {
+   "200": 171
+  },
+  "errores_de_aplicacion": 0
+ },
+ "f0-3-2026-11-05": {
+  "ficheros": 17,
+  "bytes": 2083847,
+  "desde": "2026-11-05T09:22:37.456Z",
+  "hasta": "2026-11-05T09:22:45.562Z",
+  "endpoints": {
+   "trongrid.io/v1/accounts/T…/transactions": 17
+  },
+  "http": {
+   "200": 17
+  },
+  "errores_de_aplicacion": 0
+ },
+ "f0-4-2026-11-05": {
+  "ficheros": 44,
+  "bytes": 788421,
+  "desde": "2026-11-05T09:23:41.225Z",
+  "hasta": "2026-11-05T09:23:51.120Z",
+  "endpoints": {
+   "trongrid.io/v1/accounts/T…/transactions": 7,
+   "trongrid.io/wallet/getaccount": 30,
+   "trongrid.io/v1/accounts/T…/transactions/trc20": 7
+  },
+  "http": {
+   "200": 44
+  },
+  "errores_de_aplicacion": 0
+ },
+ "f1-2026-11-05": {
+  "ficheros": 11,
+  "bytes": 1299615,
+  "desde": "2026-11-05T14:15:58.482Z",
+  "hasta": "2026-11-05T14:17:16.332Z",
+  "endpoints": {
+   "trongrid.io/v1/accounts/T…/transactions": 5,
+   "tronscancom/api/transfer": 2,
+   "tronscancom/api/accountv2": 1,
+   "trongrid.io/wallet/getblockbynum": 1,
+   "trongrid.io/wallet/gettransactionbyid": 1,
+   "trongrid.io/wallet/getaccount": 1
+  },
+  "http": {
+   "200": 11
+  },
+  "errores_de_aplicacion": 0
+ },
+ "f1b-2026-11-05": {
+  "ficheros": 14,
+  "bytes": 461100,
+  "desde": "2026-11-05T14:17:34.448Z",
+  "hasta": "2026-11-05T14:17:46.168Z",
+  "endpoints": {
+   "tronscancom/api/transfer": 14
+  },
+  "http": {
+   "200": 14
+  },
+  "errores_de_aplicacion": 0
+ },
+ "f2-2026-11-05": {
+  "ficheros": 51,
+  "bytes": 1042136,
+  "desde": "2026-11-05T14:18:21.535Z",
+  "hasta": "2026-11-05T14:18:55.088Z",
+  "endpoints": {
+   "tronscancom/api/accountv2": 30,
+   "tronscancom/api/transfer": 21
+  },
+  "http": {
+   "200": 51
+  },
+  "errores_de_aplicacion": 0
+ },
+ "f3-2026-11-05": {
+  "ficheros": 2925,
+  "bytes": 88157358,
+  "desde": "2026-11-05T14:20:08.777Z",
+  "hasta": "2026-11-05T14:58:08.446Z",
+  "endpoints": {
+   "tronscancom/api/transfer": 2925
+  },
+  "http": {
+   "200": 2925
+  },
+  "errores_de_aplicacion": 0
+ },
+ "f3b-2026-11-05": {
+  "ficheros": 15,
+  "bytes": 123148,
+  "desde": "2026-11-05T14:58:14.160Z",
+  "hasta": "2026-11-05T14:58:22.624Z",
+  "endpoints": {
+   "tronscancom/api/accountv2": 15
+  },
+  "http": {
+   "200": 15
+  },
+  "errores_de_aplicacion": 0
+ },
+ "f4-2026-11-05": {
+  "ficheros": 149,
+  "bytes": 4412086,
+  "desde": "2026-11-05T14:26:34.692Z",
+  "hasta": "2026-11-05T14:28:35.723Z",
+  "endpoints": {
+   "tronscancom/api/transfer": 131,
+   "tronscancom/api/accountv2": 18
+  },
+  "http": {
+   "200": 149
+  },
+  "errores_de_aplicacion": 0
+ },
+ "f5-2026-11-05": {
+  "ficheros": 48,
+  "bytes": 941726,
+  "desde": "2026-11-05T14:28:57.742Z",
+  "hasta": "2026-11-05T14:29:29.362Z",
+  "endpoints": {
+   "tronscancom/api/transfer": 36,
+   "tronscancom/api/accountv2": 12
+  },
+  "http": {
+   "200": 48
+  },
+  "errores_de_aplicacion": 0
+ },
+ "f6-2026-11-05": {
+  "ficheros": 8,
+  "bytes": 66693,
+  "desde": "2026-11-05T14:30:07.394Z",
+  "hasta": "2026-11-05T14:31:57.245Z",
+  "endpoints": {
+   "trongrid.io/wallet/getaccount": 6,
+   "tronscancom/api/transfer": 2
+  },
+  "http": {
+   "200": 8
+  },
+  "errores_de_aplicacion": 0
+ },
+ "f7-2026-11-05": {
+  "ficheros": 41,
+  "bytes": 1038673,
+  "desde": "2026-11-05T14:30:36.090Z",
+  "hasta": "2026-11-05T14:52:05.818Z",
+  "endpoints": {
+   "trongrid.io/wallet/gettransactioninfobyid": 36,
+   "trongrid.io/v1/accounts/T…/transactions": 5
+  },
+  "http": {
+   "200": 41
+  },
+  "errores_de_aplicacion": 0
+ },
+ "f8-2026-11-05": {
+  "ficheros": 723,
+  "bytes": 65121274,
+  "desde": "2026-11-05T14:58:54.407Z",
+  "hasta": "2026-11-05T15:08:22.150Z",
+  "endpoints": {
+   "tronscancom/api/transfer": 529,
+   "tronscancom/api/accountv2": 42,
+   "trongrid.io/v1/accounts/T…/transactions": 152
+  },
+  "http": {
+   "200": 723
+  },
+  "errores_de_aplicacion": 0
+ },
+ "f9-2026-11-05": {
+  "ficheros": 199,
+  "bytes": 6359067,
+  "desde": "2026-11-05T15:08:54.001Z",
+  "hasta": "2026-11-05T15:11:38.406Z",
+  "endpoints": {
+   "tronscancom/api/transfer": 183,
+   "tronscancom/api/accountv2": 16
+  },
+  "http": {
+   "200": 199
+  },
+  "errores_de_aplicacion": 0
+ },
+ "g1-2026-11-05": {
+  "ficheros": 117,
+  "bytes": 2515214,
+  "desde": "2026-11-05T18:04:02.745Z",
+  "hasta": "2026-11-05T18:04:54.821Z",
+  "endpoints": {
+   "trongrid.io/v1/accounts/T…/transactions/trc20": 4,
+   "trongrid.io/wallet/getaccount": 84,
+   "tronscancom/api/accountv2": 23,
+   "trongrid.io/v1/accounts/T…/transactions": 6
+  },
+  "http": {
+   "200": 117
+  },
+  "errores_de_aplicacion": 0
+ },
+ "g2-2026-11-05": {
+  "ficheros": 507,
+  "bytes": 80767710,
+  "desde": "2026-11-05T18:07:48.125Z",
+  "hasta": "2026-11-05T18:14:18.636Z",
+  "endpoints": {
+   "trongrid.io/v1/accounts/T…/transactions": 310,
+   "trongrid.io/wallet/getaccount": 197
+  },
+  "http": {
+   "200": 507
+  },
+  "errores_de_aplicacion": 0
+ },
+ "l1-2026-11-05": {
+  "ficheros": 4,
+  "bytes": 222021,
+  "desde": "2026-11-05T10:55:02.112Z",
+  "hasta": "2026-11-05T10:55:03.668Z",
+  "endpoints": {
+   "trongrid.io/wallet/getcontract": 1,
+   "trongrid.io/wallet/getcontractinfo": 1,
+   "tronscancom/api/accountv2": 1,
+   "trongrid.io/v1/contracts/T…/transactions": 1
+  },
+  "http": {
+   "200": 4
+  },
+  "errores_de_aplicacion": 0
+ },
+ "l2-2026-11-05": {
+  "ficheros": 62,
+  "bytes": 462308,
+  "desde": "2026-11-05T10:56:32.917Z",
+  "hasta": "2026-11-05T10:56:59.138Z",
+  "endpoints": {
+   "trongrid.io/wallet/gettransactioninfobyid": 16,
+   "trongrid.io/wallet/getcontract": 13,
+   "trongrid.io/wallet/gettransactionbyid": 16,
+   "trongrid.io/v1/transactions/bf9ae9db4c9e238f7418e84c4704722d81ed01a649346ee72527d1ccdaaa2e28/events": 1,
+   "trongrid.io/v1/transactions/914beecf1343f397cdd6ec8dbfcd1a3c75919bee45d4f94ccba489deaa6221cd/events": 1,
+   "trongrid.io/v1/transactions/4547bb06705db5280d277b9ad294ebca41d4e003845b2a1c3ccbf1bc17e3f079/events": 1,
+   "trongrid.io/v1/transactions/02906bb2ed867d6ebb5a8d75477b6141e4ef549a1eb8ae6a3e9d339eae371ee1/events": 1,
+   "trongrid.io/v1/transactions/0a63b77d094fa5554b74f0e0eaf57cc7590c469050c25c807fb5572415582272/events": 1,
+   "trongrid.io/v1/transactions/42ed37b88f20919a815c872e54a9507d5dd14351a96af27c284834652c31b5c9/events": 1,
+   "trongrid.io/v1/transactions/c1835b7968e4b633cb7cf1f6f4110241dbec9cf508f3322b4cdac3f369e56849/events": 1,
+   "trongrid.io/v1/transactions/15234c2733b7066181658a0f9009788ad26bb5f2b6e9bc57cf8232ecb5a18f60/events": 1,
+   "trongrid.io/v1/transactions/cb1ab6bebd3ae46c1f3593cc5bf595fa725f669dd0e03dd91958dd596d26916b/events": 1,
+   "trongrid.io/v1/transactions/f3885926c6804452b95dbf30a1f06ecd87977f7a9f826937ec2419639f572dc2/events": 1,
+   "trongrid.io/wallet/triggerconstantcontract": 1,
+   "trongrid.io/v1/transactions/36ccb2e82d2e91191de0fdf0626572345ddbd49bf324fec14e7880d53374661b/events": 1,
+   "trongrid.io/v1/transactions/3f075befcb17c70143b3aabee370aeeb82d59578b8b9669b09bdaa35dccde766/events": 1,
+   "trongrid.io/v1/transactions/58af6ee17716a00f10864285259e49be6a23e4f17704a1fc24bffe3f0f1098bf/events": 1,
+   "trongrid.io/v1/transactions/54b25d0893d76ebf87487f5adc3878432a4b330764fe4f5fb3de0c07abcb40f9/events": 1,
+   "trongrid.io/v1/transactions/3ae0bfde2336231822bd4d3ff1c4f6780d9706f1099d827c7eb3d16e810ce267/events": 1,
+   "trongrid.io/v1/transactions/1ae8660eaa6cb853e613211648d1415626959bf127d60603a386c127446c8edd/events": 1
+  },
+  "http": {
+   "200": 62
+  },
+  "errores_de_aplicacion": 0
+ },
+ "l3-2026-11-05": {
+  "ficheros": 29,
+  "bytes": 92282,
+  "desde": "2026-11-05T10:58:12.869Z",
+  "hasta": "2026-11-05T10:58:24.276Z",
+  "endpoints": {
+   "trongrid.io/wallet/triggerconstantcontract": 28,
+   "trongrid.io/wallet/getcontract": 1
+  },
+  "http": {
+   "200": 29
+  },
+  "errores_de_aplicacion": 0
+ },
+ "l4-2026-11-05": {
+  "ficheros": 103,
+  "bytes": 223319,
+  "desde": "2026-11-05T10:59:20.833Z",
+  "hasta": "2026-11-05T11:00:02.373Z",
+  "endpoints": {
+   "trongrid.io/wallet/triggerconstantcontract": 88,
+   "trongrid.io/wallet/getcontract": 11,
+   "tronscancom/api/accountv2": 1,
+   "trongrid.io/wallet/getaccount": 1,
+   "trongrid.io/wallet/gettransactioninfobyid": 1,
+   "trongrid.io/wallet/gettransactionbyid": 1
+  },
+  "http": {
+   "200": 103
+  },
+  "errores_de_aplicacion": 0
+ },
+ "linea-base-2026-11-05": {
+  "ficheros": 212,
+  "bytes": 1148883,
+  "desde": "2026-11-05T09:18:52.448Z",
+  "hasta": "2026-11-05T09:58:47.515Z",
+  "endpoints": {
+   "trongrid.io/wallet/triggerconstantcontract": 14,
+   "trongrid.io/wallet/getdelegatedresourcev2": 82,
+   "tronscancom/api/accountv2": 49,
+   "trongrid.io/wallet/getaccountresource": 21,
+   "trongrid.io/wallet/getaccount": 38,
+   "trongrid.io/wallet/getcontract": 2,
+   "trongrid.io/wallet/getnowblock": 1,
+   "trongrid.io/wallet/getcontractinfo": 2,
+   "trongrid.io/wallet/getdelegatedresourceaccountindexv2": 2,
+   "trongrid.io/wallet/getchainparameters": 1
+  },
+  "http": {
+   "200": 212
+  },
+  "errores_de_aplicacion": 0
+ },
+ "o1-2026-11-05": {
+  "ficheros": 144,
+  "bytes": 12326010,
+  "desde": "2026-11-05T12:49:37.658Z",
+  "hasta": "2026-11-05T12:53:49.710Z",
+  "endpoints": {
+   "trongrid.io/v1/accounts/T…/transactions": 36,
+   "trongrid.io/wallet/getaccount": 27,
+   "tronscancom/api/accountv2": 43,
+   "trongrid.io/v1/accounts/T…/transactions/trc20": 38
+  },
+  "http": {
+   "200": 144
+  },
+  "errores_de_aplicacion": 0
+ },
+ "o2-2026-11-05": {
+  "ficheros": 54,
+  "bytes": 644135,
+  "desde": "2026-11-05T12:54:44.489Z",
+  "hasta": "2026-11-05T12:55:15.385Z",
+  "endpoints": {
+   "trongrid.io/wallet/getaccount": 9,
+   "tronscancom/api/accountv2": 40,
+   "trongrid.io/v1/accounts/T…/transactions/trc20": 5
+  },
+  "http": {
+   "200": 54
+  },
+  "errores_de_aplicacion": 0
+ }
+}

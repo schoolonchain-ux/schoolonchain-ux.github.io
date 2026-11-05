@@ -1,0 +1,180 @@
+{
+ "cierre_TT2T17": {
+  "replay_trx": 187482224.09,
+  "cadena_trx": 187482220.55,
+  "diferencia": 3.53,
+  "cuadra": false,
+  "tipos_en_historial": {
+   "Transfer": 2639,
+   "TransferAsset": 251,
+   "TriggerSmart": 1775,
+   "FreezeBalanceV2": 30,
+   "DelegateResource": 264,
+   "VoteWitness": 12,
+   "UnDelegateResource": 278,
+   "UnfreezeBalanceV2": 19,
+   "WithdrawBalance": 11,
+   "WithdrawExpireUnfreeze": 13
+  },
+  "tx_leidas": 5292
+ },
+ "cortes": [
+  {
+   "corte": "2026-10-28T23:59:59Z",
+   "etiqueta": "víspera del robo",
+   "TEF9ZV": {
+    "total": 993445041,
+    "por_familia": {
+     "Sin etiqueta": 420413041,
+     "Binance — billeteras anteriores al robo": 129690000,
+     "Otra con etiqueta: Bitfinex": 2700000,
+     "Otra con etiqueta: coins.ph": 1579000,
+     "GasFree": 339063000,
+     "Bybit": 100000000
+    }
+   },
+   "TT2T17": {
+    "total": 706517990.56,
+    "por_familia": {
+     "Sin etiqueta": 3.53,
+     "Binance — billeteras anteriores al robo": 519035766.47,
+     "GasFree": 187482220.55
+    }
+   }
+  },
+  {
+   "corte": "2026-10-30T23:59:59Z",
+   "etiqueta": "tras el robo, antes de las billeteras nuevas",
+   "TEF9ZV": {
+    "total": 927985041,
+    "por_familia": {
+     "Sin etiqueta": 354953041,
+     "Binance — billeteras anteriores al robo": 129690000,
+     "Otra con etiqueta: Bitfinex": 2700000,
+     "Otra con etiqueta: coins.ph": 1579000,
+     "GasFree": 339063000,
+     "Bybit": 100000000
+    }
+   },
+   "TT2T17": {
+    "total": 706517990.56,
+    "por_familia": {
+     "Sin etiqueta": 3.53,
+     "Binance — billeteras anteriores al robo": 519035766.47,
+     "GasFree": 187482220.55
+    }
+   }
+  },
+  {
+   "corte": "2026-10-31T23:59:59Z",
+   "etiqueta": "31-oct: se crean las billeteras nuevas",
+   "TEF9ZV": {
+    "total": 798295041,
+    "por_familia": {
+     "Sin etiqueta": 354953041,
+     "Otra con etiqueta: Bitfinex": 2700000,
+     "Otra con etiqueta: coins.ph": 1579000,
+     "GasFree": 339063000,
+     "Bybit": 100000000
+    }
+   },
+   "TT2T17": {
+    "total": 706517990.56,
+    "por_familia": {
+     "Sin etiqueta": 3.53,
+     "Binance — billeteras anteriores al robo": 519035766.47,
+     "GasFree": 187482220.55
+    }
+   }
+  },
+  {
+   "corte": "2026-11-01T06:00:00Z",
+   "etiqueta": "1-nov antes de que TT2T17 retire",
+   "TEF9ZV": {
+    "total": 965595041,
+    "por_familia": {
+     "Sin etiqueta": 354953041,
+     "Otra con etiqueta: Bitfinex": 2700000,
+     "Otra con etiqueta: coins.ph": 1579000,
+     "GasFree": 339063000,
+     "Bybit": 100000000,
+     "Binance — billeteras nuevas (creadas tras el robo)": 167300000
+    }
+   },
+   "TT2T17": {
+    "total": 706517990.56,
+    "por_familia": {
+     "Sin etiqueta": 3.53,
+     "Binance — billeteras anteriores al robo": 519035766.47,
+     "GasFree": 187482220.55
+    }
+   }
+  },
+  {
+   "corte": "2026-11-01T12:00:00Z",
+   "etiqueta": "1-nov mediodía",
+   "TEF9ZV": {
+    "total": 1028270741,
+    "por_familia": {
+     "Sin etiqueta": 354953041,
+     "Otra con etiqueta: Bitfinex": 2700000,
+     "Otra con etiqueta: coins.ph": 1579000,
+     "GasFree": 339063000,
+     "Bybit": 100000000,
+     "Binance — billeteras nuevas (creadas tras el robo)": 229975700
+    }
+   },
+   "TT2T17": {
+    "total": 187482224.09,
+    "por_familia": {
+     "Sin etiqueta": 3.53,
+     "GasFree": 187482220.55
+    }
+   }
+  },
+  {
+   "corte": "2026-11-02T23:59:59Z",
+   "etiqueta": "2-nov fin del día",
+   "TEF9ZV": {
+    "total": 1028270741,
+    "por_familia": {
+     "Sin etiqueta": 354953041,
+     "Otra con etiqueta: Bitfinex": 2700000,
+     "Otra con etiqueta: coins.ph": 1579000,
+     "GasFree": 339063000,
+     "Bybit": 100000000,
+     "Binance — billeteras nuevas (creadas tras el robo)": 229975700
+    }
+   },
+   "TT2T17": {
+    "total": 187482224.09,
+    "por_familia": {
+     "Sin etiqueta": 3.53,
+     "GasFree": 187482220.55
+    }
+   }
+  },
+  {
+   "corte": "2026-11-05T09:18:48.000Z",
+   "etiqueta": "línea base (5-nov)",
+   "TEF9ZV": {
+    "total": 1529341741,
+    "por_familia": {
+     "Sin etiqueta": 356023041,
+     "Otra con etiqueta: Bitfinex": 2700000,
+     "Otra con etiqueta: coins.ph": 1579000,
+     "GasFree": 339063000,
+     "Bybit": 100000000,
+     "Binance — billeteras nuevas (creadas tras el robo)": 729976700
+    }
+   },
+   "TT2T17": {
+    "total": 187482224.09,
+    "por_familia": {
+     "Sin etiqueta": 3.53,
+     "GasFree": 187482220.55
+    }
+   }
+  }
+ ]
+}

@@ -1,0 +1,57 @@
+{
+ "direccion": "TEySEZLJf6rs2mCujGpDEsgoMVWKLAk9mT",
+ "trx_libre": 2740240.85,
+ "wtrx_saldo": 0,
+ "total_trx_mas_wtrx": 2740240.85,
+ "llamadas_a_contratos": [
+  {
+   "t": "2025-06-28T11:20:45Z",
+   "contrato": "TU3kjFuhtEo42tsCBtfYUAZxoqQ4yuSLQ5",
+   "selector": "d0e30db0",
+   "trx_adjuntos": 365096800,
+   "tx": "e8e750b702916f0ee635f8f88ec87885ef17658d438340e08bde57aa4cadd9ec"
+  },
+  {
+   "t": "2025-08-28T06:28:39Z",
+   "contrato": "TU3kjFuhtEo42tsCBtfYUAZxoqQ4yuSLQ5",
+   "selector": "d0e30db0",
+   "trx_adjuntos": 312500000,
+   "tx": "92978c370454c27d92cba9f74b31badbf079e5438dee56c3a2894e930f07dde9"
+  },
+  {
+   "t": "2026-01-21T09:58:36Z",
+   "contrato": "TR7NHqjeKQxGTCi8q8ZY4pL8otSzgjLj6t",
+   "selector": "a9059cbb",
+   "trx_adjuntos": 0,
+   "tx": "5edd5d3088f619bf0bcd3fa48d8f6f20d0e6db30f95d0118c14c6b5ec0ab6083"
+  },
+  {
+   "t": "2026-04-05T04:02:54Z",
+   "contrato": "TU3kjFuhtEo42tsCBtfYUAZxoqQ4yuSLQ5",
+   "selector": "d0e30db0",
+   "trx_adjuntos": 12487000,
+   "tx": "0ed027ebf33a7d2975bc85bb0960cf4a89c3dc5aec684eb047cd71489b92a30b"
+  },
+  {
+   "t": "2026-08-01T06:00:27Z",
+   "contrato": "TU3kjFuhtEo42tsCBtfYUAZxoqQ4yuSLQ5",
+   "selector": "d0e30db0",
+   "trx_adjuntos": 17730000,
+   "tx": "042e0a69477067effedfa98c7c8aceb30d556b382a9f9cc9dee43e05c20be8ff"
+  },
+  {
+   "t": "2026-10-18T13:03:39Z",
+   "contrato": "TU3kjFuhtEo42tsCBtfYUAZxoqQ4yuSLQ5",
+   "selector": "d0e30db0",
+   "trx_adjuntos": 11560000,
+   "tx": "e4d495ec3ae98d4a7b467de3b437658a99d5a6c7f5e8500688b405f84d8953d0"
+  }
+ ],
+ "quien_le_mando_los_677M": {
+  "direccion": "TFZZx3HXBEGqA1hJnYmRvscjS48gihWXY6",
+  "etiqueta": null,
+  "creada": "2025-06-28",
+  "n_tx": 41,
+  "trx_libre": 405.79
+ }
+}

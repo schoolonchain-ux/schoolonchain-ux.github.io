@@ -1,0 +1,16 @@
+'use strict';
+// LÍNEA F · F4 — Segundo nivel: las cuentas que recibieron de Zion (≥ 50 M TRX, con ≤ 2.000 operaciones, salvo la de las «mil») y a dónde mandaron su TRX (≥ 100 M por envío). TronScan. SOLO LECTURA.
+// Reproducible: REPRODUCIR=1 node f4-segundo-nivel.cjs
+const fs = require('node:fs'), path = require('node:path'); const L = require('./lib.cjs'); L.usar('f4-2026-11-05');
+const OUT = path.join(__dirname, 'f-fundacion'); const M = x => Math.round(x * 100) / 100; const iso = ms => new Date(ms).toISOString().replace('.000Z', 'Z'); const ANCLA = 1793870328000; const TS = 'https://apilist.tronscanapi.com/api';
+const N1 = JSON.parse(fs.readFileSync(path.join(OUT, 'nivel1-y-las-mil.json'), 'utf8')).nivel1_de_Zion.filter(d => d.cuenta !== 'TSnjgPDQfuxx72iaPy82v3T8HrsN4GVJzW' && d.trx >= 50e6 && d.operaciones <= 2000);
+const info = async a => { const t = await L.get(TS + '/accountv2?address=' + a).catch(() => ({})); return { etiqueta: t.publicTag || t.addressTag || null, operaciones: t.totalTransactionCount != null ? t.totalTransactionCount : null, trx_hoy_M: M((t.balance || 0) / 1e12), creada: t.date_created ? iso(t.date_created) : null }; };
+(async () => {
+  const res = []; const nom = {};
+  for (const d of N1) { const filas = []; let total = null, leidas = 0; for (let start = 0; ; start += 50) { const j = await L.get(TS + '/transfer?sort=timestamp&count=true&limit=50&start=' + start + '&address=' + d.cuenta + '&start_timestamp=0&end_timestamp=' + ANCLA); if (total === null) total = j.total; if (!j.data || !j.data.length) break; leidas += j.data.length; for (const t of j.data) if (t.tokenName === '_' && t.contractRet === 'SUCCESS') filas.push({ t: t.timestamp, de: t.transferFromAddress, a: t.transferToAddress, trx: Number(t.amount) / 1e6, tx: t.transactionHash }); if (leidas >= total) break; }
+    const sal = filas.filter(r => r.de === d.cuenta && r.trx >= 100e6); const dest = {}; for (const r of sal) { const o = dest[r.a] = dest[r.a] || { n: 0, trx: 0, primera: r.t, ultima: r.t }; o.n++; o.trx += r.trx; o.ultima = Math.max(o.ultima, r.t); }
+    const mayores = []; for (const [a, v] of Object.entries(dest).sort((x, y) => y[1].trx - x[1].trx).slice(0, 8)) { if (!(a in nom)) nom[a] = await info(a); mayores.push({ cuenta: a, ...nom[a], envios: v.n, trx_M: M(v.trx / 1e6), primera: iso(v.primera).slice(0, 10), ultima: iso(v.ultima).slice(0, 10) }); }
+    res.push({ cuenta: d.cuenta, recibio_de_Zion_M: M(d.trx / 1e6), fecha: d.primera.slice(0, 10), total_transferencias: total, leidas, completa: leidas >= total, salidas_de_100M_o_mas: sal.length, mayores_destinos: mayores });
+    console.log(d.cuenta.slice(0, 10), 'recibió', M(d.trx / 1e6), 'M', d.primera.slice(0, 10), '| tx', total, '| salidas ≥100M:', sal.length); for (const m of mayores) console.log('     →', m.cuenta.slice(0, 10), String(m.trx_M).padStart(8) + ' M', 'n', m.envios, m.primera, '→', m.ultima, '| hoy', m.trx_hoy_M + ' M', 'ops', m.operaciones, m.etiqueta || ''); }
+  const h = L.guardar(path.join(OUT, 'segundo-nivel.json'), { cuentas: res }); console.log(h, 'llamadas', L.metricas.llamadas);
+})().catch(e => { console.error('ERROR', e.message, (e.stack || '').split('\n')[1]); process.exit(1); });

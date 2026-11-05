@@ -1,0 +1,41 @@
+{
+ "entrada_a_traves_de_TFSd14UQ": {
+  "usdt": 886157263.22,
+  "origenes_distintos": 22,
+  "usdt_de_origenes_sin_etiqueta_Binance": 9.22,
+  "porcentaje_con_etiqueta_Binance": 100
+ },
+ "salida_a_Binance_con_vecinas_leidas_enteras": {
+  "usdt": 389600688.31,
+  "cuentas": [
+   {
+    "cuenta": "TFvgoqKbv4fu2RBp7215AR2eDupMhCdxkH",
+    "envios": 29,
+    "usdt_enviado": 170001613,
+    "a_binance": 170001613,
+    "destinos_cubren_el_total": true
+   },
+   {
+    "cuenta": "TVpNiLp3HhhDJHc7eBsqXeZFvqWdPfzCEt",
+    "envios": 3,
+    "usdt_enviado": 137999998.8,
+    "a_binance": 137999998.8,
+    "destinos_cubren_el_total": true
+   },
+   {
+    "cuenta": "TEVD7K98xyDHJv2zEtJMKV3B1TjCFUA4pb",
+    "envios": 122,
+    "usdt_enviado": 81599076.52,
+    "a_binance": 81599076.51,
+    "destinos_cubren_el_total": true
+   }
+  ]
+ },
+ "vecinas_con_mas_de_200_envios_o_sin_destinos_completos_NO_sumadas": [
+  {
+   "cuenta": "TPEfWM9ZJGjCrVA5La5KdwjHfxWR8ncHEE",
+   "a_binance_en_la_muestra": 92083327
+  }
+ ],
+ "aviso": "Salida = mínimo verificado, no el total: faltan las vecinas con más de 200 envíos y todo lo que pasa por cuentas de segundo orden que no se leyeron."
+}
