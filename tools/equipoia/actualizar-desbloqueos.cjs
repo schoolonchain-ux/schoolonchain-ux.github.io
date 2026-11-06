@@ -83,9 +83,12 @@ async function post(url, body, headers) {
   const eventos = [];
   for (const [address, e] of estados) for (const u of e.pendienteDeRetirar) eventos.push({ a: address, t: tag.get(address) || null, e: u.expira, x: Math.round(u.trx * 100) / 100 });
   eventos.sort((a, b) => (a.e || 9e15) - (b.e || 9e15));
+  // todas las cuentas con TRX ya retirable y sin retirar (la web enseña la lista entera, no solo las 5 mayores)
+  const yaPor = {}; for (const ev of eventos) if (ev.e && ev.e <= t0) yaPor[ev.a] = (yaPor[ev.a] || 0) + ev.x;
+  const sinRetirarTodas = Object.entries(yaPor).map(([address, trx]) => ({ address, tag: tag.get(address) || null, trx: Math.round(trx * 100) / 100 })).sort((a, b) => b.trx - a.trx);
   const out = {
     version: 1, leidoEn: new Date(t0).toISOString(), listaDe: new Date(t0).toISOString(), diasDemora, plazoLeido, activo: 'TRX',
-    total: r.total, calendario: r.calendario, principales: r.principales, sinRetirar: r.sinRetirar, concentracion3: r.concentracion3,
+    total: r.total, calendario: r.calendario, principales: r.principales, sinRetirar: r.sinRetirar, sinRetirarTodas, concentracion3: r.concentracion3,
     cobertura: { ...r.cobertura, paginasFallidas: fallidas }, tendencia: r.tendencia, avisos: r.avisos, descuadres: r.descuadres.length,
     eventos, fuentes: ['TronScan /api/account/list (10.000 mayores cuentas)', 'TronGrid /wallet/getaccount (unfrozenV2)', 'TronScan /api/freezeresource', 'TronGrid /wallet/getchainparameters'],
   };

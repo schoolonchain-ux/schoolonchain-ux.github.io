@@ -74,11 +74,40 @@ async function pool(items, n, fn) { const out = []; let i = 0; await Promise.all
   // ---- 3. que lo leído ahora cuadre con lo que tiene el vigilante (si no, algo falla en una de las dos lecturas) ----
   const v = resumen.respaldo;
   const dentro = (a, b, tol) => b > 0 && Math.abs(a - b) / b <= tol;
-  if (!v || !dentro(total, v.suministroEvm, 0.03) || !dentro(bloqueado, v.bloqueadoAdaptador, 0.03)) fallar('CIFRAS', 'las cifras leídas ahora no cuadran con las del vigilante: total ' + total + ' frente a ' + (v && v.suministroEvm) + ', adaptador ' + bloqueado + ' frente a ' + (v && v.bloqueadoAdaptador));
+  // Si la última foto de respaldo del vigilante quedó incompleta (alguna red sin suministro fresco), su total es nulo: se anota y no se compara; el adaptador se compara siempre.
+  const vigilanteCompleto = !!(v && v.suministroEvm);
+  if (!v || (vigilanteCompleto && !dentro(total, v.suministroEvm, 0.03)) || !dentro(bloqueado, v.bloqueadoAdaptador, 0.03)) fallar('CIFRAS', 'las cifras leídas ahora no cuadran con las del vigilante: total ' + total + ' frente a ' + (v && v.suministroEvm) + ', adaptador ' + bloqueado + ' frente a ' + (v && v.bloqueadoAdaptador));
   if (total < 1e9 || total > 1e11) fallar('CIFRAS', 'el total de USDT0 en circulación es absurdo: ' + total);
   const diferencia = bloqueado - total;
 
   const nombreRed = Object.fromEntries([...cfg.redes, ...(cfg.nativas || [])].map((n) => [n.id, n.nombre || n.id]));
+  // ---- 4. el ORIGEN de cada cifra, para que en la web se pueda pulsar: contrato de cada red con su explorador, direcciones bloqueadas con la transacción, mensajes de cada ruta ----
+  // Exploradores públicos por red (solo los que se conocen con seguridad; el resto queda sin enlace y la web lo dice).
+  const EXPLORADOR = { ethereum: 'https://etherscan.io', arbitrum: 'https://arbiscan.io', polygon: 'https://polygonscan.com', optimism: 'https://optimistic.etherscan.io', avalanche: 'https://snowtrace.io', mantle: 'https://mantlescan.xyz', berachain: 'https://berascan.com', celo: 'https://celoscan.io', unichain: 'https://uniscan.xyz', flare: 'https://flarescan.com', hyperevm: 'https://hyperevmscan.io', ink: 'https://explorer.inkonchain.com', kaia: 'https://kaiascan.io', morph: 'https://explorer.morphl2.io', rootstock: 'https://explorer.rootstock.io', conflux: 'https://evm.confluxscan.io', plasma: 'https://plasmascan.to', monad: 'https://monadscan.com', xlayer: 'https://www.oklink.com/xlayer', sei: 'https://seitrace.com' };
+  const urlDir = (red, a) => (red === 'tron' ? 'https://tronscan.org/#/address/' + a : EXPLORADOR[red] ? EXPLORADOR[red] + '/address/' + a + (red === 'sei' ? '?chain=pacific-1' : '') : null);
+  const urlTx = (red, h) => (red === 'tron' ? 'https://tronscan.org/#/transaction/' + h : EXPLORADOR[red] ? EXPLORADOR[red] + '/tx/' + h + (red === 'sei' ? '?chain=pacific-1' : '') : null);
+  const tokenDe = Object.fromEntries([...cfg.redes, ...(cfg.nativas || [])].filter((n) => n.token).map((n) => [n.id, n.token]));
+  // la bóveda del vigilante, SOLO LECTURA (el índice sqlite; nunca se escribe desde aquí)
+  const { DatabaseSync } = require('node:sqlite');
+  const bd = new DatabaseSync(RAIZ + '/state/usdt0-vault.sqlite', { readOnly: true });
+  // direcciones bloqueadas hoy: el mismo cálculo que hace el vigilante (último evento por dirección y red), con la transacción del bloqueo
+  const est = new Map();
+  for (const e of bd.prepare("SELECT chain, ts, tx, name, args FROM events WHERE name IN ('BlockPlaced','BlockReleased','DestroyedBlockedFunds') ORDER BY chain, block, log_index").all()) {
+    let a = {}; try { a = JSON.parse(e.args || '{}'); } catch { /* sin args */ }
+    if (!a.user) continue; const k = e.chain + ':' + a.user; const cur = est.get(k) || { red: e.chain, direccion: a.user, estado: 'libre', bloqueadaEl: null, tx: null, veces: 0, destruido: 0n };
+    if (e.name === 'BlockPlaced') { cur.estado = 'bloqueada'; cur.bloqueadaEl = e.ts; cur.tx = e.tx; cur.veces++; } else if (e.name === 'BlockReleased') { cur.estado = 'liberada'; } else { try { cur.destruido += BigInt(a.amount || 0); } catch { /* */ } }
+    est.set(k, cur);
+  }
+  const bloqueadas = [...est.values()].filter((x) => x.estado === 'bloqueada').map((x) => ({ red: x.red, nombreRed: nombreRed[x.red] || x.red, direccion: x.direccion, bloqueadaEl: x.bloqueadaEl, tx: x.tx, veces: x.veces, destruidoUsd: Number(x.destruido) / 1e6, enlace: urlDir(x.red, x.direccion), enlaceTx: x.tx ? urlTx(x.red, x.tx) : null })).sort((a, b) => (a.red === b.red ? (b.bloqueadaEl || '').localeCompare(a.bloqueadaEl || '') : a.red.localeCompare(b.red)));
+  if (Math.abs(bloqueadas.length - (resumen.bloqueosVigentesTotal || 0)) > 3) fallar('CIFRAS', 'las direcciones bloqueadas leídas de la bóveda (' + bloqueadas.length + ') no cuadran con el total del vigilante (' + resumen.bloqueosVigentesTotal + ')');
+  // mensajes de cada ruta en las últimas 24 h (LayerZero Scan, anotados por el vigilante): los mayores, con su identificador para abrirlos en LayerZero Scan
+  const nombreEid = Object.assign({}, cfg.eidsConocidos || {}, cfg.eidsMalla || {});
+  const redDeEid = (eid) => nombreEid[String(eid)] || ('eid ' + eid);
+  const desdeSeg = Math.floor(Date.now() / 1000) - 86400;
+  const msgs = bd.prepare('SELECT guid, src_eid, dst_eid, status, src_tx, src_ts, amount_usd FROM lz_messages WHERE src_ts > ? ORDER BY amount_usd DESC').all(desdeSeg);
+  const porRuta = new Map();
+  for (const x of msgs) { const r = redDeEid(x.src_eid) + '→' + redDeEid(x.dst_eid); const l = porRuta.get(r) || []; if (l.length < 8) l.push({ guid: x.guid, estado: x.status, usd: Math.round(Number(x.amount_usd) || 0), cuando: new Date(x.src_ts * 1000).toISOString(), enlace: 'https://layerzeroscan.com/tx/' + x.guid, txOrigen: x.src_tx, enlaceTxOrigen: urlTx(redDeEid(x.src_eid), x.src_tx) }); porRuta.set(r, l); }
+  bd.close();
   const m = resumen.mensajes || {};
   const abiertos = Array.isArray(m.abiertos) ? m.abiertos : [];
   const masViejo = abiertos.reduce((a, b) => (b.edadMin > (a ? a.edadMin : -1) ? b : a), null);
@@ -91,13 +120,13 @@ async function pool(items, n, fn) { const out = []; let i = 0; await Promise.all
     leidoEn: new Date().toISOString(),
     circulacion: {
       totalUsd: Math.round(total),
-      redes: lectura.map((x) => ({ id: x.id, nombre: x.nombre, usdt0: Math.round(x.usdt0), nodosQueCoincidieron: x.proveedores, nodosConfigurados: x.configurados })).sort((a, b) => b.usdt0 - a.usdt0),
+      redes: lectura.map((x) => ({ id: x.id, nombre: x.nombre, usdt0: Math.round(x.usdt0), nodosQueCoincidieron: x.proveedores, nodosConfigurados: x.configurados, contrato: tokenDe[x.id] || null, enlace: tokenDe[x.id] ? urlDir(x.id, tokenDe[x.id]) : null })).sort((a, b) => b.usdt0 - a.usdt0),
       redesLeidas: lectura.length, redesEsperadas: nets.length,
       metodo: 'cantidad total emitida del token USDT0 en cada red (totalSupply), leída hoy a los nodos públicos configurados, que tienen que coincidir',
     },
     respaldo: {
       usdtEnElAdaptador: Math.round(bloqueado), diferenciaUsd: Math.round(diferencia), diferenciaPct: Math.round((diferencia / bloqueado) * 1e5) / 1e3,
-      adaptador: eth.oft, usdtEthereum: eth.usdtNativo,
+      adaptador: eth.oft, usdtEthereum: eth.usdtNativo, enlaceAdaptador: urlDir('ethereum', eth.oft), enlaceUsdt: urlDir('ethereum', eth.usdtNativo),
       metodo: 'USDT de Ethereum a nombre del adaptador de USDT0 (balanceOf), leído hoy a dos nodos públicos que tienen que coincidir',
       nota: 'No incluye Stellar, IOTA ni HyperCore, donde también hay USDT0 respaldado por este adaptador. Que haya más USDT guardado que USDT0 medido no es un faltante.',
     },
@@ -107,10 +136,13 @@ async function pool(items, n, fn) { const out = []; let i = 0; await Promise.all
         vigentesTotal: resumen.bloqueosVigentesTotal,
         porRed: Object.entries(bl).filter(([, x]) => x.vigentes > 0).map(([id, x]) => ({ id, nombre: nombreRed[id] || id, vigentes: x.vigentes, liberadas: x.liberadas, destruidoUsd: Math.round(x.destruidoUsd) })).sort((a, b) => b.vigentes - a.vigentes),
         destruidoTotalUsd: Math.round(Object.values(bl).reduce((s, x) => s + (x.destruidoUsd || 0), 0)),
+        direcciones: bloqueadas, direccionesLeidasEn: new Date().toISOString(),
       },
       mensajes: {
         ultimas24h: m.ultimas24h || null, volumenUsd24h: m.volumenUsd24h || null,
-        rutasMayores: (m.rutasTop24h || []).slice(0, 5).map((r) => ({ ruta: r.ruta, mensajes: r.mensajes, usd: Math.round(r.usd) })),
+        rutasMayores: (m.rutasTop24h || []).slice(0, 5).map((r) => ({ ruta: r.ruta, mensajes: r.mensajes, usd: Math.round(r.usd), ejemplos: porRuta.get(r.ruta) || [] })),
+        enCurso: abiertos.slice(0, 12).map((x) => ({ guid: x.guid, ruta: x.ruta, estado: x.estado, horas: Math.round((x.edadMin / 60) * 10) / 10, usd: x.usd == null ? null : Math.round(x.usd), enlace: 'https://layerzeroscan.com/tx/' + x.guid })),
+        fuente: 'https://layerzeroscan.com',
         enCursoAhora: m.nAbiertos != null ? m.nAbiertos : null,
         masAntiguoEnCurso: masViejo ? { ruta: masViejo.ruta, horas: Math.round((masViejo.edadMin / 60) * 10) / 10 } : null,
         atascadosNuevos24h: m.nAtascadosNuevos24h != null ? m.nAtascadosNuevos24h : null,
@@ -120,7 +152,7 @@ async function pool(items, n, fn) { const out = []; let i = 0; await Promise.all
     },
     comprobaciones: {
       resumenEdadHoras: Math.round(edadH * 10) / 10,
-      cuadreConVigilante: { circulacionPct: Math.round(((total - v.suministroEvm) / v.suministroEvm) * 1e4) / 100, adaptadorPct: Math.round(((bloqueado - v.bloqueadoAdaptador) / v.bloqueadoAdaptador) * 1e4) / 100 },
+      cuadreConVigilante: { circulacionPct: vigilanteCompleto ? Math.round(((total - v.suministroEvm) / v.suministroEvm) * 1e4) / 100 : null, vigilanteSinTotalCompleto: !vigilanteCompleto, adaptadorPct: Math.round(((bloqueado - v.bloqueadoAdaptador) / v.bloqueadoAdaptador) * 1e4) / 100 },
       libroDelVigilante: libro,
     },
   };

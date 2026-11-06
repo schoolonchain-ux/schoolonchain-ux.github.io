@@ -8,7 +8,9 @@
   const fh = (t) => new Date(t).toISOString().replace('T', ' ').slice(0, 16) + ' UTC';
   const cuando = (h) => (h < 1 ? 'hace menos de 1 hora' : h < 48 ? 'hace ' + n(Math.round(h)) + ' horas' : 'hace ' + n(Math.round(h / 24)) + ' días');
   const mt = (x) => (Math.abs(x) >= 1e8 ? n(x / 1e6, 0) + ' M TRX' : Math.abs(x) >= 1e6 ? n(x / 1e6, 1) + ' M TRX' : n(x) + ' TRX');
-  const kp = (l, v, s) => el('div', { class: 'kpi' }, el('div', { class: 'kl' }, l), el('div', { class: 'kv' }, v), el('div', { class: 'kn' }, s));
+  const kp = (l, v, s, accion, pista) => { const t = el('div', { class: 'kpi' + (accion ? ' clk' : ''), role: accion ? 'button' : null, tabindex: accion ? '0' : null }, el('div', { class: 'kl' }, l), el('div', { class: 'kv' }, v), el('div', { class: 'kn' }, s), accion ? el('div', { class: 'ko' }, (pista || 'Ver de dónde sale') + ' →') : null); if (accion) { t.addEventListener('click', accion); t.addEventListener('keydown', (e) => { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); accion(); } }); } return t; };
+  const irA = (nodo) => { nodo.scrollIntoView({ behavior: 'smooth', block: 'start' }); nodo.classList.add('flash'); setTimeout(() => nodo.classList.remove('flash'), 1800); };
+  const ext = (href, texto) => el('a', { class: 'lnk', href, target: '_blank', rel: 'noopener', title: 'Se abre en otra pestaña' }, texto);
   const caja = (titulo, ...k) => el('div', { class: 'card', style: 'margin:12px 0' }, titulo ? el('h3', null, titulo) : null, ...k);
   const lectura = (iso, extra) => { const h = (Date.now() - Date.parse(iso)) / 3600000; return el('div', { class: 'res-head ' + (h > 48 ? 'warn' : '') }, el('div', { class: 'sub2' }, el('b', null, 'Lectura del ' + fh(Date.parse(iso))), ' (' + cuando(h) + '). ' + extra)); };
   const aviso = (cont, titulo, msg) => cont.replaceChildren(el('div', { class: 'res-head warn' }, el('div', { class: 'big' }, titulo), el('div', { class: 'sub2' }, msg)));
@@ -31,10 +33,10 @@
     cuerpo.append(lectura(D.leidoEn, 'Es una foto del día: las cuentas se leen una a una y cambian a diario.'));
     const sin = G.ballena_sin_identificar, mayores = D.sinIdentificarPorTramo[0];
     cuerpo.append(el('div', { class: 'kpis2' },
-      kp('TRX que existen', mt(T), n(D.cuentasEnLaRed) + ' cuentas en la red'),
-      kp('Sin nombre en TronScan, las mayores', n(mayores.pct, 1) + ' %', n(mayores.cuentas) + ' cuentas con ' + mayores.tramo.replace(' o más', '') + ' o más de TRX cada una'),
-      kp('Casas de cambio', n(G.exchange.pct, 1) + ' %', n(G.exchange.cuentas) + ' cuentas con nombre de casa de cambio'),
-      kp('Las 100 mayores cuentas', n(D.concentracion.top100, 1) + ' %', 'la mayor sola: ' + n(D.concentracion.top1, 1) + ' %')));
+      kp('TRX que existen', mt(T), n(D.cuentasEnLaRed) + ' cuentas en la red', () => irA(cajaOrigenR), 'Ver de dónde sale'),
+      kp('Sin nombre en TronScan, las mayores', n(mayores.pct, 1) + ' %', n(mayores.cuentas) + ' cuentas con ' + mayores.tramo.replace(' o más', '') + ' o más de TRX cada una', () => seleccionar('ballena_sin_identificar'), 'Ver esas cuentas'),
+      kp('Casas de cambio', n(G.exchange.pct, 1) + ' %', n(G.exchange.cuentas) + ' cuentas con nombre de casa de cambio', () => seleccionar('exchange'), 'Ver esas cuentas'),
+      kp('Las 100 mayores cuentas', n(D.concentracion.top100, 1) + ' %', 'la mayor sola: ' + n(D.concentracion.top1, 1) + ' %', () => irA(cajaTop100), 'Ver las 100 cuentas')));
 
     const filas = Object.keys(NOMBRE).filter((k) => G[k] && (G[k].cuentas > 0 || k === 'ballena_sin_identificar')).map((k) => ({ k, nombre: NOMBRE[k][0], que: NOMBRE[k][1], ...G[k] }));
     filas.push({ k: 'cola', nombre: 'Resto de la red', que: 'Todas las demás cuentas, cada una con menos de ' + n(D.saldoDeLaCuentaNTrx) + ' TRX: particulares pequeños.', cuentas: D.cola.cuentas, trx: D.cola.trx, pct: D.cola.pct });
@@ -50,7 +52,7 @@
       options: { responsive: true, maintainAspectRatio: false, cutout: '58%', plugins: { legend: { position: 'right', labels: { boxWidth: 12 }, onClick: (ev, it) => seleccionar(filas[it.index].k) }, tooltip: { callbacks: { label: (c) => ' ' + mt(c.parsed) + ' · ' + n((c.parsed / T) * 100, 1) + ' %' } } } } }, (e) => seleccionar(filas[e.index].k)));
 
     cuerpo.append(caja('Dentro de «sin nombre en TronScan»: por tamaño de cuenta', el('div', { class: 'cs' }, 'No es un bloque de ballenas: unas pocas cuentas enormes y miles de cuentas medianas, donde caben particulares con cientos de miles de TRX.'),
-      UI.tabla({ pp: 6, buscar: false, rows: D.sinIdentificarPorTramo.map((r) => ({ ...r })), cols: [{ t: 'Saldo de la cuenta', v: (r) => r.tramo + ' TRX', o: (r) => r.tramo }, { t: 'Cuentas', v: (r) => n(r.cuentas), o: (r) => r.cuentas }, { t: 'TRX', v: (r) => mt(r.trx), o: (r) => r.trx }, { t: '% del TRX', v: (r) => n(r.pct, 2) + ' %', o: (r) => r.pct }] })));
+      UI.tabla({ pp: 6, buscar: false, rows: D.sinIdentificarPorTramo.map((r) => ({ ...r })), onRow: () => seleccionar('ballena_sin_identificar'), cols: [{ t: 'Saldo de la cuenta', v: (r) => r.tramo + ' TRX', o: (r) => r.tramo }, { t: 'Cuentas', v: (r) => n(r.cuentas), o: (r) => r.cuentas }, { t: 'TRX', v: (r) => mt(r.trx), o: (r) => r.trx }, { t: '% del TRX', v: (r) => n(r.pct, 2) + ' %', o: (r) => r.pct }] })));
 
     // Al pulsar un grupo (trozo, leyenda o fila) se enseñan sus cuentas, enteras y con enlace, y lo que sabemos de cada una con su fuente: nuestros informes, los anuncios de SUN.io y la lectura de la cadena (data/direcciones-conocidas.json).
     // Al abrir la pestaña se ve ya el de «Sin nombre en TronScan».
@@ -59,7 +61,7 @@
     function seleccionar(k, { bajar = true } = {}) {
       const g = filas.find((x) => x.k === k); if (!g) return;
       elegido = k;
-      grafico.data.datasets[0].offset = filas.map((x) => (x.k === k ? 18 : 0)); grafico.update();
+      grafico.data.datasets[0].offset = filas.map((x) => (x.k === k ? 18 : 0)); grafico.update('none');
       const titulo = 'Cuentas de «' + g.nombre + '»';
       panel.replaceChildren(caja(titulo, el('p', { class: 'loading' }, el('span', { class: 'spin' }), 'Cargando las cuentas…')));
       if (bajar) panel.scrollIntoView({ behavior: 'smooth', block: 'start' });
@@ -95,6 +97,18 @@
     cuerpo.append(caja('Quiénes son, con nombre', el('p', { style: 'margin:6px 0' }, el('b', null, 'Casas de cambio: '), lista(D.detalle.exchange)), el('p', { style: 'margin:6px 0' }, el('b', null, 'Contratos: '), lista(D.detalle.contrato)),
       D.detalle.fondo_o_institucion.length ? el('p', { style: 'margin:6px 0' }, el('b', null, 'Fondos y gestoras: '), lista(D.detalle.fondo_o_institucion)) : null));
 
+    // las 100 mayores cuentas de la red, de todos los grupos, con enlace
+    const GN = Object.fromEntries(Object.entries(NOMBRE).map(([k, v]) => [k, v[0]]));
+    const top100 = [].concat(...Object.entries(D.cuentasPorGrupo || {}).map(([g, arr]) => arr.filter((x) => x.puesto <= 100).map((x) => ({ ...x, grupo: GN[g] || g })))).sort((a, b) => a.puesto - b.puesto);
+    const cajaTop100 = caja('Las 100 mayores cuentas de TRON', el('div', { class: 'cs' }, 'Las ' + n(top100.length) + ' cuentas con más TRX según TronScan hoy, con el grupo en el que las contamos. Pulsa la dirección para verla en TronScan.'),
+      UI.tabla({ pp: 10, ph: 'Buscar cuenta, nombre o grupo…', csv: 'trx-100-mayores-cuentas', rows: top100, orden: [0, 1],
+        cols: [{ t: 'Puesto', v: (r) => n(r.puesto), o: (r) => r.puesto }, { t: 'Cuenta', v: (r) => el('span', null, el('a', { class: 'addr mono', href: 'https://tronscan.org/#/address/' + r.a, target: '_blank', rel: 'noopener' }, r.a), r.etiqueta ? el('span', { class: 'muted' }, ' · ' + r.etiqueta) : null), o: (r) => r.a, csv: (r) => r.a + (r.etiqueta ? ' ' + r.etiqueta : '') }, { t: 'Grupo', v: (r) => r.grupo, o: (r) => r.grupo }, { t: 'TRX', v: (r) => n(r.trx), o: (r) => r.trx, csv: (r) => r.trx }, { t: '% del TRX', v: (r) => n(r.pct, 2) + ' %', o: (r) => r.pct }] }));
+    cuerpo.append(cajaTop100);
+    const cajaOrigenR = caja('De dónde sale cada cifra', el('p', { style: 'margin:6px 0' }, 'La lista de las 10.000 cuentas con más TRX, con su saldo y el nombre que les pone TronScan: ', ext('https://apilist.tronscanapi.com/api/account/list?sort=-balance&limit=50&start=0', 'lista pública de TronScan'), ' (200 páginas de 50 cuentas; esta es la primera). Es la fuente de todos los recuentos y porcentajes de esta pestaña.'),
+      el('p', { style: 'margin:6px 0' }, 'Todo el TRX que existe (' + mt(D.ofertaTrx) + '): se deduce de esa misma lista (saldo total de la primera cuenta dividido por la proporción que TronScan indica), no es un dato directo.'),
+      el('p', { style: 'margin:6px 0' }, 'Si una cuenta es un contrato o una cuenta normal: ', ext('https://developers.tron.network/reference/get-account-info-by-address', 'consulta de cuenta de TronGrid'), ', solo para las mayores sin nombre (la ayuda de abajo dice cuántas).'),
+      el('p', { class: 'hint', style: 'margin:8px 0 0' }, 'Lectura del ' + fh(Date.parse(D.leidoEn)) + '. Lo que dicen los informes de cada cuenta sale de un fichero fijo con la fuente de cada descripción (ver «Datos y método»).'));
+    cuerpo.append(cajaOrigenR);
     const R = D.etiquetasRecordadas, items = [];
     if (R && R.cuentas) { const vs = R.ejemplos.map((e) => e.visto).sort(); items.push({ k: 'Cuentas con el nombre recordado', v: n(R.cuentas) + ' cuentas (' + mt(R.trx) + ', el ' + n(R.pct, 1) + ' %) llevan hoy el nombre que TronScan les puso en una foto anterior (vistas con ese nombre entre el ' + vs[0] + ' y el ' + vs[vs.length - 1] + '). TronScan ya no las etiqueta; si no se contaran así, aparecerían como «sin identificar» y las casas de cambio saldrían con mucho menos de lo que TronScan les atribuía hasta entonces.' }); }
     items.push({ k: 'Qué NO dice', v: 'No separa «instituciones», «Justin Sun» y «particulares» dentro de las cuentas grandes: con TronScan y TronGrid no se puede. Sin una fuente anotada no se asigna nada a nadie.' });
@@ -113,21 +127,29 @@
     cuerpo.append(el('div', { class: 'res-head' }, el('div', { class: 'big' }, crece ? 'Ahora se crea más TRX del que se quema: la oferta crece' : 'Ahora se quema más TRX del que se crea: la oferta baja'),
       el('div', { class: 'sub2' }, 'En los últimos 30 días: ' + mt(A.emision30d) + ' creados y ' + mt(A.quema30d) + ' quemados, neto ' + (A.neto30d >= 0 ? '+' : '−') + mt(Math.abs(A.neto30d)) + '.' + (crece && D.regimen.primerDiaInflacionario30d ? ' El neto a 30 días es positivo desde el ' + D.regimen.primerDiaInflacionario30d + ' (' + n(D.regimen.diasInflacionarios) + ' de ' + n(D.regimen.diasDesdeEntonces) + ' días desde entonces).' : ''))));
     cuerpo.append(el('div', { class: 'kpis2' },
-      kp('TRX que existen', mt(A.ofertaTrx), 'al cierre del ' + A.dia),
-      kp('Emisión de ese día', mt(A.emisionDia), 'pago a validadores y a votantes'),
-      kp('Quema de ese día', mt(A.quemaDia), 'comisiones destruidas'),
-      kp('Neto de ese día', (A.netoDia >= 0 ? '+' : '−') + mt(Math.abs(A.netoDia)), A.netoDia >= 0 ? 'la oferta creció' : 'la oferta bajó')));
+      kp('TRX que existen', mt(A.ofertaTrx), 'al cierre del ' + A.dia, () => irA(cajaTrim), 'Ver la serie y su fuente'),
+      kp('Emisión de ese día', mt(A.emisionDia), 'pago a validadores y a votantes', () => irA(cajaTrim), 'Ver la serie y su fuente'),
+      kp('Quema de ese día', mt(A.quemaDia), 'comisiones destruidas', () => irA(cajaTrim), 'Ver la serie y su fuente'),
+      kp('Neto de ese día', (A.netoDia >= 0 ? '+' : '−') + mt(Math.abs(A.netoDia)), A.netoDia >= 0 ? 'la oferta creció' : 'la oferta bajó', () => irA(cajaTrim), 'Ver la serie y su fuente')));
 
     const T = D.trimestres, etq = (t) => t.q + (t.dias < 80 ? '*' : ''), cv = el('canvas');
-    cuerpo.append(caja('Emisión y quema por trimestre (millones de TRX)', el('div', { class: 'cs' }, 'Barras: TRX creados (verde) y quemados (rojo). Línea: el neto. Por debajo de cero la oferta baja. * trimestre incompleto (menos de 80 días de datos).'),
+    // la tabla por trimestre es el origen del gráfico: una barra pulsada la muestra; la fuente es la serie diaria pública de TronScan
+    const estadoTrim = el('p', { class: 'cs', style: 'margin:0 0 8px' });
+    const filasTrim = T.map((t) => ({ ...t }));
+    const tablaTrim = UI.tabla({ pp: 8, buscar: false, csv: 'quema-emision-trx-por-trimestre', rows: filasTrim, orden: [0, -1],
+      cols: [{ t: 'Trimestre', v: (r) => etq(r), o: (r) => r.q }, { t: 'Días', v: (r) => n(r.dias), o: (r) => r.dias }, { t: 'Emisión', v: (r) => mt(r.emision), o: (r) => r.emision, csv: (r) => r.emision }, { t: 'Quema', v: (r) => mt(r.quema), o: (r) => r.quema, csv: (r) => r.quema }, { t: 'Neto', v: (r) => (r.neto >= 0 ? '+' : '−') + mt(Math.abs(r.neto)), o: (r) => r.neto, csv: (r) => r.neto }, { t: 'Quema en dólares', v: (r) => (r.quemaUsd >= 1e6 ? n(r.quemaUsd / 1e6, 1) + ' M $' : n(r.quemaUsd) + ' $'), o: (r) => r.quemaUsd, csv: (r) => r.quemaUsd }] });
+    const mostrarTrim = (q) => { tablaTrim.cambiar(q ? filasTrim.filter((r) => r.q === q) : filasTrim); estadoTrim.replaceChildren(q ? el('span', null, 'Mostrando el trimestre ' + q + '. ', el('a', { href: '#', onclick: (e) => { e.preventDefault(); mostrarTrim(null); } }, 'Ver todos')) : ''); irA(cajaTrim); };
+    const cajaTrim = caja('Por trimestre: la serie de la que sale el gráfico', el('p', { style: 'margin:0 0 8px' }, 'Fuente: ', ext('https://apilist.tronscanapi.com/api/turnover?type=0&from=issuance', 'serie diaria pública de TronScan'), ' (emisión, quema y oferta de cada día; la lectura de hoy va del ' + D.desde + ' al ' + D.hasta + '). Cada trimestre suma sus días; los dólares, con el precio de cada día. * trimestre incompleto.'), estadoTrim, tablaTrim);
+    cuerpo.append(caja('Emisión y quema por trimestre (millones de TRX)', el('div', { class: 'cs' }, 'Barras: TRX creados (verde) y quemados (rojo). Línea: el neto. Por debajo de cero la oferta baja. Pulsa una barra para ver ese trimestre en la tabla. * trimestre incompleto (menos de 80 días de datos).'),
       el('div', { class: 'cv', style: 'height:300px' }, cv)));
     C.chartDefaults();
-    new Chart(cv, { data: { labels: T.map(etq), datasets: [
+    new Chart(cv, UI.clicable({ data: { labels: T.map(etq), datasets: [
       { type: 'bar', label: 'Emisión', data: T.map((t) => t.emision / 1e6), backgroundColor: C.pal[1], borderRadius: 3 },
       { type: 'bar', label: 'Quema', data: T.map((t) => t.quema / 1e6), backgroundColor: C.pal[3], borderRadius: 3 },
       { type: 'line', label: 'Neto', data: T.map((t) => t.neto / 1e6), borderColor: C.pal[0], backgroundColor: C.pal[0], pointRadius: 2, tension: 0.2 }] },
     options: { responsive: true, maintainAspectRatio: false, scales: { x: { grid: { display: false }, ticks: { maxRotation: 60, autoSkip: true } }, y: { ticks: { callback: (v) => n(v) + ' M' }, grid: { color: C.css('--line') } } },
-      plugins: { tooltip: { callbacks: { label: (c) => ' ' + c.dataset.label + ': ' + n(c.parsed.y, 1) + ' M TRX' } } } } });
+      plugins: { tooltip: { callbacks: { label: (c) => ' ' + c.dataset.label + ': ' + n(c.parsed.y, 1) + ' M TRX' } } } } }, (e) => mostrarTrim(T[e.index].q)));
+    cuerpo.append(cajaTrim);
 
     cuerpo.append(caja('Por año', el('div', { class: 'cs' }, 'El primer año de la serie y el actual están incompletos: la columna «Días» dice cuántos hay.'),
       UI.tabla({ pp: 8, buscar: false, rows: D.anios.map((r) => ({ ...r })), orden: [0, -1], csv: 'quema-emision-trx-por-anio',

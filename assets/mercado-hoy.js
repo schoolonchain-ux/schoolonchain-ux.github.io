@@ -40,7 +40,9 @@
     } else bloque = el('p', { class: 'hint' }, 'El índice de miedo y codicia no respondió ahora mismo.');
     const fallos = [!L.bin.ok && 'Binance', !L.fng.ok && 'alternative.me', L.cb.some((c) => !c.ok) && 'Coinbase (alguna moneda)'].filter(Boolean);
     const pie = el('div', { class: 'mh-pie' + (fallos.length ? ' warn' : '') }, 'Binance, Coinbase y alternative.me · leído ' + hhmm(L.t) + (fallos.length ? ' · sin respuesta: ' + fallos.join(', ') : '') + ' · la diferencia compara USDT con USD, no es un arbitraje');
-    raiz.replaceChildren(el('div', { class: 'mh-grid' }, tabla, bloque), pie);
+    const ext = (href, texto) => el('a', { class: 'lnk', href, target: '_blank', rel: 'noopener', title: 'Se abre en otra pestaña (datos en bruto)' }, texto);
+    const fuentes = el('p', { class: 'hint', style: 'margin:8px 0 0;line-height:1.5;overflow-wrap:anywhere' }, 'De dónde sale cada dato (se abre lo que responde cada servicio): ', ext('https://data-api.binance.vision/api/v3/ticker/24hr?symbols=' + encodeURIComponent(JSON.stringify(ACTIVOS.map((a) => a.b))), 'precios y cambio en 24 h de Binance'), ' · ', ...ACTIVOS.flatMap((a, i) => [i ? ', ' : '', ext('https://api.coinbase.com/v2/prices/' + a.c + '/spot', 'precio de ' + a.s + ' en Coinbase')]), ' · ', ext('https://api.alternative.me/fng/?limit=1', 'índice de miedo y codicia de alternative.me'), '.');
+    raiz.replaceChildren(el('div', { class: 'mh-grid' }, tabla, bloque), pie, fuentes);
     const c = document.querySelector('[data-cifra="mercado"]');
     if (c) c.textContent = L.fng.ok && L.fng.v && L.fng.v.data && L.fng.v.data[0] ? 'Miedo y codicia ' + L.fng.v.data[0].value : (B.BTCUSDT ? 'BTC ' + usd(Number(B.BTCUSDT.lastPrice)) : 'sin respuesta ahora');
   }
