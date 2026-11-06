@@ -31,6 +31,7 @@
     const sec = document.getElementById('z-' + zona); if (!sec || !tab) return;
     sec.querySelectorAll('.ztabs button').forEach((b) => { const on = b.dataset.tab === tab; b.classList.toggle('on', on); b.setAttribute('aria-selected', on ? 'true' : 'false'); });
     sec.querySelectorAll('.zpan').forEach((p) => { p.hidden = p.dataset.tab !== tab; });
+    Object.values(reajustar).forEach((f) => f());   // una pestaña que vuelve a verse recalcula si hace falta el «Ver todo»
   }
   function irAZona(clave, { bajar = true, hash = true } = {}) {
     const r = RUTAS[clave]; if (!r) return false;
@@ -41,7 +42,7 @@
   }
   function abrirTab(id) { irAZona(id); }
   // Las herramientas largas (últimos bloqueos, descongelaciones) enseñan lo principal y el resto se abre con «Ver todo».
-  const ALTO = { recientes: 600, desbloqueos: 620 }, vigias = {};
+  const ALTO = { recientes: 600, desbloqueos: 620 }, vigias = {}, reajustar = {};
   function plegable(id) {
     const w = document.getElementById(RAIZ[id]); if (!w || !ALTO[id]) return;
     w.classList.add('plegable'); w.style.setProperty('--alto', ALTO[id] + 'px');
@@ -50,7 +51,8 @@
     const ajustar = () => { const largo = w.firstElementChild && w.firstElementChild.getBoundingClientRect().height > ALTO[id] + 40; w.classList.toggle('corta', !largo); b.hidden = !largo; };
     if (vigias[id]) vigias[id].disconnect();
     if (typeof ResizeObserver === 'function' && w.firstElementChild) { vigias[id] = new ResizeObserver(ajustar); vigias[id].observe(w.firstElementChild); }
-    ajustar(); [1500, 4000].forEach((ms) => setTimeout(ajustar, ms));   // por si el contenido llega sin que el vigía lo note
+    // el vigía de tamaño no se entrega en algunos navegadores con la pestaña en segundo plano; además se repasa cada ¾ de segundo durante medio minuto (la lectura de TronGrid puede tardar)
+    reajustar[id] = ajustar; ajustar(); let vueltas = 0; const repaso = setInterval(() => { ajustar(); if (++vueltas >= 40) clearInterval(repaso); }, 750);
   }
   function remontar(id) {
     const t = TABS.find((x) => x.id === id); if (!t) return;
