@@ -239,7 +239,7 @@
     if (!q && !r) return null;
     const filas = [];
     if (q) { const crece = q.actual.neto30d > 0; filas.push(fila('Neto de 30 días', (crece ? '+' : '−') + mTrx(Math.abs(q.actual.neto30d)), crece ? '' : 'ok'), fila('La oferta de TRX', crece ? 'crece' : 'baja'), fila('Quema del último día', mTrx(q.actual.quemaDia))); }
-    if (r) { const my = r.sinIdentificarPorTramo[0]; filas.push(fila('Mayores sin identificar (' + n(my.cuentas) + ' cuentas)', n(my.pct, 1) + ' %'), fila('En casas de cambio', n(r.grupos.exchange.pct, 1) + ' %')); }
+    if (r) { const my = r.sinIdentificarPorTramo[0]; filas.push(fila('Mayores sin nombre en TronScan (' + n(my.cuentas) + ' cuentas)', n(my.pct, 1) + ' %'), fila('En casas de cambio', n(r.grupos.exchange.pct, 1) + ' %')); }
     const viejo = [q && q.leidoEn, r && r.leidoEn].filter(Boolean).sort()[0];
     return el('div', { class: 'lb' }, el('b', { class: 'lt' }, el('a', { href: 'herramientas.html#z-trx' }, 'TRX · quema y reparto')), ...filas, antiguedad(viejo, 'TronScan'));
   }

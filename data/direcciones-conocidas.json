@@ -1,0 +1,459 @@
+{
+ "version": 1,
+ "nota": "Lo que los informes publicados de School On-Chain dicen de cada dirección, con su fuente. Una atribución de terceros es una atribución (quién la hace), no un hecho. Fichero fijo, generado de los informes; no se actualiza solo.",
+ "generadoDe": [
+  "investigacion/docs/articulos/DIRECTORIO-DIRECCIONES-TRON-2026-10-29.md",
+  "reports/caso-vaneck-sun/energia.json",
+  "investigacion/research/tron-vaneck-sun/ampliacion-2026-11-05/f-fundacion/destino-de-las-mil.json"
+ ],
+ "direcciones": {
+  "TCGVFGDd62LSrfZEaz3M3fYifWWdSDHRL8": {
+   "nombre": "«Vaneck»",
+   "atribucion": "TronScan: «Vaneck» (publicTag). Nadie más la vincula a VanEck",
+   "papel": "Saca 132,7 M TRX del stake el 31-10-2026; envió 942,3 M TRX a la segunda",
+   "fuente": "Directorio de direcciones del caso Vaneck/Sun (29-oct-2026)",
+   "enlace": "https://github.com/schoolonchain-ux/schoolonchain-ux.github.io/blob/main/investigacion/docs/articulos/DIRECTORIO-DIRECCIONES-TRON-2026-10-29.md",
+   "fecha": "2026-10-29"
+  },
+  "TT2T17KZhoDu47i2E4FWxfG79zdkEWkU9N": {
+   "nombre": "Segunda cuenta",
+   "atribucion": "Sin etiqueta en TronScan. Atribuida a Justin Sun por Wu Blockchain, EmberCN, Arkham («Justin Sun?»), Protos, crypto.news, DailyCoin. Sun lo niega",
+   "papel": "Saca 305,7 M TRX el 03-11-2026; central de energía para casas de cambio",
+   "fuente": "Directorio de direcciones del caso Vaneck/Sun (29-oct-2026)",
+   "enlace": "https://github.com/schoolonchain-ux/schoolonchain-ux.github.io/blob/main/investigacion/docs/articulos/DIRECTORIO-DIRECCIONES-TRON-2026-10-29.md",
+   "fecha": "2026-10-29"
+  },
+  "TPyjyZfsYaXStgz2NmAraF1uZcMtkgNan5": {
+   "nombre": "Financiadora de «Vaneck»",
+   "atribucion": "OKLink: «Justin Sun». Protos: 56 % del USDD 1.0, fundada desde Poloniex y HTX. Sin etiqueta en TronScan",
+   "papel": "Dio 748,5 M TRX a «Vaneck» en 2021 (96,9 M$ de entonces); 1.876 M TRX hoy",
+   "fuente": "Directorio de direcciones del caso Vaneck/Sun (29-oct-2026)",
+   "enlace": "https://github.com/schoolonchain-ux/schoolonchain-ux.github.io/blob/main/investigacion/docs/articulos/DIRECTORIO-DIRECCIONES-TRON-2026-10-29.md",
+   "fecha": "2026-10-29"
+  },
+  "TUTtLtGjXWqkTAow7jj7oMhTGLe9XB9YMA": {
+   "nombre": "Segunda financiadora de «Vaneck»",
+   "atribucion": "Sin etiqueta; creada 15-05-2020; top-100 de SUN",
+   "papel": "Dio 269 M TRX a «Vaneck» el 02-10-2021",
+   "fuente": "Directorio de direcciones del caso Vaneck/Sun (29-oct-2026)",
+   "enlace": "https://github.com/schoolonchain-ux/schoolonchain-ux.github.io/blob/main/investigacion/docs/articulos/DIRECTORIO-DIRECCIONES-TRON-2026-10-29.md",
+   "fecha": "2026-10-29"
+  },
+  "TPcnRbpuB89eKKkfH2E7iJooAqeEZPpdGb": {
+   "nombre": "Multifirma 2 de USDD",
+   "atribucion": "Propuesta de Curve: «multisig2» de USDD (5 de 7). Sin etiqueta en TronScan. 1.641 M TRX, puesto 13",
+   "papel": "Recibió 21 M TRX de «Vaneck» el 06-03-2025",
+   "fuente": "Directorio de direcciones del caso Vaneck/Sun (29-oct-2026)",
+   "enlace": "https://github.com/schoolonchain-ux/schoolonchain-ux.github.io/blob/main/investigacion/docs/articulos/DIRECTORIO-DIRECCIONES-TRON-2026-10-29.md",
+   "fecha": "2026-10-29"
+  },
+  "TU1ZA8T2g8PvLK8BfM7N94xpmSSpyfxZoK": {
+   "nombre": "HTX 3",
+   "atribucion": "TronScan: «HTX 3»",
+   "papel": "Envió 400 M TRX a la segunda (15-10-2023); recibió 50 M en nov-2023",
+   "fuente": "Directorio de direcciones del caso Vaneck/Sun (29-oct-2026)",
+   "enlace": "https://github.com/schoolonchain-ux/schoolonchain-ux.github.io/blob/main/investigacion/docs/articulos/DIRECTORIO-DIRECCIONES-TRON-2026-10-29.md",
+   "fecha": "2026-10-29"
+  },
+  "TFTWNgDBkQ5wQoP8RXpRznnHvAVV8x5jLu": {
+   "nombre": "HTX 4",
+   "atribucion": "TronScan: «HTX 4». Protos: en la prueba de reservas de HTX; compraba TRX a diario para TRON Inc. hasta el 29-05-2026",
+   "papel": "Recibió 778,2 M TRX de la segunda vía billeteras puente (oct-2025 → may-2026)",
+   "fuente": "Directorio de direcciones del caso Vaneck/Sun (29-oct-2026)",
+   "enlace": "https://github.com/schoolonchain-ux/schoolonchain-ux.github.io/blob/main/investigacion/docs/articulos/DIRECTORIO-DIRECCIONES-TRON-2026-10-29.md",
+   "fecha": "2026-10-29"
+  },
+  "TK86Qm97uM848dMk8G7xNbJB7zG1uW3h1n": {
+   "nombre": "HTX 5",
+   "atribucion": "TronScan: «HTX 5» (según Protos, sigue en la prueba de reservas)",
+   "papel": "Alimentó a la sustituta de HTX 4 tras las sanciones",
+   "fuente": "Directorio de direcciones del caso Vaneck/Sun (29-oct-2026)",
+   "enlace": "https://github.com/schoolonchain-ux/schoolonchain-ux.github.io/blob/main/investigacion/docs/articulos/DIRECTORIO-DIRECCIONES-TRON-2026-10-29.md",
+   "fecha": "2026-10-29"
+  },
+  "TAuUCiH4JVNBZmDnEDZkXEUXDARdGpXTmX": {
+   "nombre": "HTX-Cold 6",
+   "atribucion": "TronScan: «HTX-Cold 6»",
+   "papel": "Envió 500 M TRX (174,5 M$ de entonces) a la segunda el 08-05-2026",
+   "fuente": "Directorio de direcciones del caso Vaneck/Sun (29-oct-2026)",
+   "enlace": "https://github.com/schoolonchain-ux/schoolonchain-ux.github.io/blob/main/investigacion/docs/articulos/DIRECTORIO-DIRECCIONES-TRON-2026-10-29.md",
+   "fecha": "2026-10-29"
+  },
+  "TV6MuMXfmLbBqPZvBHdwFsDnQeVfnmiuSi": {
+   "nombre": "Binance-Hot 2",
+   "atribucion": "TronScan: «Binance-Hot 2»",
+   "papel": "230 M TUSD (03-05-2023) y 200 M TRX a la segunda",
+   "fuente": "Directorio de direcciones del caso Vaneck/Sun (29-oct-2026)",
+   "enlace": "https://github.com/schoolonchain-ux/schoolonchain-ux.github.io/blob/main/investigacion/docs/articulos/DIRECTORIO-DIRECCIONES-TRON-2026-10-29.md",
+   "fecha": "2026-10-29"
+  },
+  "TNXoiAJ3dct8Fjg4M9fkLFh9S2v9TXc32G": {
+   "nombre": "Binance-Hot 4",
+   "atribucion": "TronScan: «Binance-Hot 4»",
+   "papel": "499.999 USDT el primer día de la segunda; BTT",
+   "fuente": "Directorio de direcciones del caso Vaneck/Sun (29-oct-2026)",
+   "enlace": "https://github.com/schoolonchain-ux/schoolonchain-ux.github.io/blob/main/investigacion/docs/articulos/DIRECTORIO-DIRECCIONES-TRON-2026-10-29.md",
+   "fecha": "2026-10-29"
+  },
+  "TJDENsfBJs4RFETt1X1W8wMDc8M5XnJhCe": {
+   "nombre": "Binance-Hot 6",
+   "atribucion": "TronScan: «Binance-Hot 6»",
+   "papel": "Activó la segunda cuenta (1.999 TRX + 999 USDT, 01-05-2023); recibía energía de ella",
+   "fuente": "Directorio de direcciones del caso Vaneck/Sun (29-oct-2026)",
+   "enlace": "https://github.com/schoolonchain-ux/schoolonchain-ux.github.io/blob/main/investigacion/docs/articulos/DIRECTORIO-DIRECCIONES-TRON-2026-10-29.md",
+   "fecha": "2026-10-29"
+  },
+  "TDqSquXBgUCLYvYC4XZgrprLK589dkhSCf": {
+   "nombre": "Binance-Hot 7",
+   "atribucion": "TronScan: «Binance-Hot 7»",
+   "papel": "Recibía energía; destino de 500 M TRX vía TNfVaLSy (27-10-2025)",
+   "fuente": "Directorio de direcciones del caso Vaneck/Sun (29-oct-2026)",
+   "enlace": "https://github.com/schoolonchain-ux/schoolonchain-ux.github.io/blob/main/investigacion/docs/articulos/DIRECTORIO-DIRECCIONES-TRON-2026-10-29.md",
+   "fecha": "2026-10-29"
+  },
+  "TYASr5UV6HEcXatwdFQfmLVUqQQQMUxHLS": {
+   "nombre": "Binance-Hot 3",
+   "atribucion": "TronScan",
+   "papel": "Recibía energía",
+   "fuente": "Directorio de direcciones del caso Vaneck/Sun (29-oct-2026)",
+   "enlace": "https://github.com/schoolonchain-ux/schoolonchain-ux.github.io/blob/main/investigacion/docs/articulos/DIRECTORIO-DIRECCIONES-TRON-2026-10-29.md",
+   "fecha": "2026-10-29"
+  },
+  "TAzsQ9Gx8eqFNFSKbeXrbi45CuVPHzA8wr": {
+   "nombre": "Binance-Hot 5",
+   "atribucion": "TronScan",
+   "papel": "Recibía energía",
+   "fuente": "Directorio de direcciones del caso Vaneck/Sun (29-oct-2026)",
+   "enlace": "https://github.com/schoolonchain-ux/schoolonchain-ux.github.io/blob/main/investigacion/docs/articulos/DIRECTORIO-DIRECCIONES-TRON-2026-10-29.md",
+   "fecha": "2026-10-29"
+  },
+  "TK4ykR48cQQoyFcZ5N4xZCbsBaHcg6n3gJ": {
+   "nombre": "Binance-Hot 8",
+   "atribucion": "TronScan",
+   "papel": "Recibía energía (65,9 M TRX)",
+   "fuente": "Directorio de direcciones del caso Vaneck/Sun (29-oct-2026)",
+   "enlace": "https://github.com/schoolonchain-ux/schoolonchain-ux.github.io/blob/main/investigacion/docs/articulos/DIRECTORIO-DIRECCIONES-TRON-2026-10-29.md",
+   "fecha": "2026-10-29"
+  },
+  "TJ5usJLLwjwn7Pw3TPbdzreG7dvgKzfQ5y": {
+   "nombre": "Binance-Hot 9",
+   "atribucion": "TronScan",
+   "papel": "Recibía energía",
+   "fuente": "Directorio de direcciones del caso Vaneck/Sun (29-oct-2026)",
+   "enlace": "https://github.com/schoolonchain-ux/schoolonchain-ux.github.io/blob/main/investigacion/docs/articulos/DIRECTORIO-DIRECCIONES-TRON-2026-10-29.md",
+   "fecha": "2026-10-29"
+  },
+  "TCLgK89AnXbC9rewvhNb9UgXCc2qJJpBXh": {
+   "nombre": "Binance-Hot 10",
+   "atribucion": "TronScan",
+   "papel": "Recibía energía",
+   "fuente": "Directorio de direcciones del caso Vaneck/Sun (29-oct-2026)",
+   "enlace": "https://github.com/schoolonchain-ux/schoolonchain-ux.github.io/blob/main/investigacion/docs/articulos/DIRECTORIO-DIRECCIONES-TRON-2026-10-29.md",
+   "fecha": "2026-10-29"
+  },
+  "TJqwA7SoZnERE4zW5uDEiPkbz4B66h9TFj": {
+   "nombre": "Binance-Hot 11",
+   "atribucion": "TronScan",
+   "papel": "Recibía energía (52,1 M TRX)",
+   "fuente": "Directorio de direcciones del caso Vaneck/Sun (29-oct-2026)",
+   "enlace": "https://github.com/schoolonchain-ux/schoolonchain-ux.github.io/blob/main/investigacion/docs/articulos/DIRECTORIO-DIRECCIONES-TRON-2026-10-29.md",
+   "fecha": "2026-10-29"
+  },
+  "TQrY8tryqsYVCYS3MFbtffiPp2ccyn4STm": {
+   "nombre": "Binance 2",
+   "atribucion": "TronScan",
+   "papel": "Recibía energía",
+   "fuente": "Directorio de direcciones del caso Vaneck/Sun (29-oct-2026)",
+   "enlace": "https://github.com/schoolonchain-ux/schoolonchain-ux.github.io/blob/main/investigacion/docs/articulos/DIRECTORIO-DIRECCIONES-TRON-2026-10-29.md",
+   "fecha": "2026-10-29"
+  },
+  "TLaGjwhvA8XQYSxFAcAXy7Dvuue9eGYitv": {
+   "nombre": "OKX Hot Wallet 8",
+   "atribucion": "TronScan",
+   "papel": "Recibía energía (119,5 M TRX)",
+   "fuente": "Directorio de direcciones del caso Vaneck/Sun (29-oct-2026)",
+   "enlace": "https://github.com/schoolonchain-ux/schoolonchain-ux.github.io/blob/main/investigacion/docs/articulos/DIRECTORIO-DIRECCIONES-TRON-2026-10-29.md",
+   "fecha": "2026-10-29"
+  },
+  "TU4vEruvZwLLkSfV9bNw12EJTPvNr7Pvaa": {
+   "nombre": "Bybit",
+   "atribucion": "TronScan",
+   "papel": "Recibía energía (110 M TRX)",
+   "fuente": "Directorio de direcciones del caso Vaneck/Sun (29-oct-2026)",
+   "enlace": "https://github.com/schoolonchain-ux/schoolonchain-ux.github.io/blob/main/investigacion/docs/articulos/DIRECTORIO-DIRECCIONES-TRON-2026-10-29.md",
+   "fecha": "2026-10-29"
+  },
+  "TNCmcTdyrYKMtmE1KU2itzeCX76jGm5Not": {
+   "nombre": "Poloniex",
+   "atribucion": "TronScan: «Poloniex»",
+   "papel": "300.000 M APENFT a la segunda (14-06-2023)",
+   "fuente": "Directorio de direcciones del caso Vaneck/Sun (29-oct-2026)",
+   "enlace": "https://github.com/schoolonchain-ux/schoolonchain-ux.github.io/blob/main/investigacion/docs/articulos/DIRECTORIO-DIRECCIONES-TRON-2026-10-29.md",
+   "fecha": "2026-10-29"
+  },
+  "TXFBqBbqJommqZf7BV8NNYzePh97UmJodJ": {
+   "nombre": "Bitfinex",
+   "atribucion": "TronScan: «Bitfinex»",
+   "papel": "Entradas de NFT, BTT y HTX a la segunda (ene-2026)",
+   "fuente": "Directorio de direcciones del caso Vaneck/Sun (29-oct-2026)",
+   "enlace": "https://github.com/schoolonchain-ux/schoolonchain-ux.github.io/blob/main/investigacion/docs/articulos/DIRECTORIO-DIRECCIONES-TRON-2026-10-29.md",
+   "fecha": "2026-10-29"
+  },
+  "TWhDfwC8QE6pQyiYy248dNor3uphPEw5M2": {
+   "nombre": "Proveedora de TRON Inc.",
+   "atribucion": "Sin etiqueta. Protos (18-sep-2026): billetera de la que TRON Inc. recibe ahora su TRX; mayoría desde Binance, también de HTX",
+   "papel": "Recibió 100 M TRX (01-10-2026) y 100 M (20-10-2026) desde la segunda vía puentes",
+   "fuente": "Directorio de direcciones del caso Vaneck/Sun (29-oct-2026)",
+   "enlace": "https://github.com/schoolonchain-ux/schoolonchain-ux.github.io/blob/main/investigacion/docs/articulos/DIRECTORIO-DIRECCIONES-TRON-2026-10-29.md",
+   "fecha": "2026-10-29"
+  },
+  "TEySEZLJf6rs2mCujGpDEsgoMVWKLAk9mT": {
+   "nombre": "Tesorería de TRON Inc.",
+   "atribucion": "Protos: dirección de tesorería publicada por TRON Inc. (X y 8-K)",
+   "papel": "No comprobado que los 200 M llegaran aquí",
+   "fuente": "Directorio de direcciones del caso Vaneck/Sun (29-oct-2026)",
+   "enlace": "https://github.com/schoolonchain-ux/schoolonchain-ux.github.io/blob/main/investigacion/docs/articulos/DIRECTORIO-DIRECCIONES-TRON-2026-10-29.md",
+   "fecha": "2026-10-29"
+  },
+  "TYyriWzf7AW75hwiVB4oDBrJGThidZuRTd": {
+   "nombre": "Sustituta de HTX 4",
+   "atribucion": "Protos: fundada por HTX 4 el 29-05-2026",
+   "papel": "Pasó a enviar TRX a TRON Inc. tras las sanciones",
+   "fuente": "Directorio de direcciones del caso Vaneck/Sun (29-oct-2026)",
+   "enlace": "https://github.com/schoolonchain-ux/schoolonchain-ux.github.io/blob/main/investigacion/docs/articulos/DIRECTORIO-DIRECCIONES-TRON-2026-10-29.md",
+   "fecha": "2026-10-29"
+  },
+  "TQWBKLpMNcP2UQrHB4U25dos8z2tfnTpyz": {
+   "nombre": "Barrido (17-10-2026)",
+   "atribucion": "Sin etiqueta; creada 18-06-2026; barre decenas de tokens",
+   "papel": "Recibió 150 M TRX; reenvía a TGHojUpU…",
+   "fuente": "Directorio de direcciones del caso Vaneck/Sun (29-oct-2026)",
+   "enlace": "https://github.com/schoolonchain-ux/schoolonchain-ux.github.io/blob/main/investigacion/docs/articulos/DIRECTORIO-DIRECCIONES-TRON-2026-10-29.md",
+   "fecha": "2026-10-29"
+  },
+  "TGHojUpUqZYeVu3ckSjXKMZQrYjaptMekv": {
+   "nombre": "Barrido 2",
+   "atribucion": "Sin etiqueta; creada 15-09-2026",
+   "papel": "173,8 M TRX recibidos; destino final sin identificar",
+   "fuente": "Directorio de direcciones del caso Vaneck/Sun (29-oct-2026)",
+   "enlace": "https://github.com/schoolonchain-ux/schoolonchain-ux.github.io/blob/main/investigacion/docs/articulos/DIRECTORIO-DIRECCIONES-TRON-2026-10-29.md",
+   "fecha": "2026-10-29"
+  },
+  "THZ1gL92HJ8DxKu1xJSP4YspFXuhehoNz6": {
+   "nombre": "09-11-2023",
+   "atribucion": "50 M",
+   "papel": "HTX 3",
+   "fuente": "Directorio de direcciones del caso Vaneck/Sun (29-oct-2026)",
+   "enlace": "https://github.com/schoolonchain-ux/schoolonchain-ux.github.io/blob/main/investigacion/docs/articulos/DIRECTORIO-DIRECCIONES-TRON-2026-10-29.md",
+   "fecha": "2026-10-29"
+  },
+  "TNfVaLSyDMSygm4uZPgAwyqUx15KFMbnby": {
+   "nombre": "27-10-2025",
+   "atribucion": "150 M",
+   "papel": "Binance-Hot 7 (500 M ese día)",
+   "fuente": "Directorio de direcciones del caso Vaneck/Sun (29-oct-2026)",
+   "enlace": "https://github.com/schoolonchain-ux/schoolonchain-ux.github.io/blob/main/investigacion/docs/articulos/DIRECTORIO-DIRECCIONES-TRON-2026-10-29.md",
+   "fecha": "2026-10-29"
+  },
+  "TGStnGYqGVEYwAQtJeqtoGL7KxorYS1GPH": {
+   "nombre": "30-10-2025",
+   "atribucion": "100 M",
+   "papel": "HTX 4",
+   "fuente": "Directorio de direcciones del caso Vaneck/Sun (29-oct-2026)",
+   "enlace": "https://github.com/schoolonchain-ux/schoolonchain-ux.github.io/blob/main/investigacion/docs/articulos/DIRECTORIO-DIRECCIONES-TRON-2026-10-29.md",
+   "fecha": "2026-10-29"
+  },
+  "TB1LbnUG14S6i2tWgf1pRtwXt6WHTtcSVL": {
+   "nombre": "12-11-2025",
+   "atribucion": "64 M",
+   "papel": "HTX 4",
+   "fuente": "Directorio de direcciones del caso Vaneck/Sun (29-oct-2026)",
+   "enlace": "https://github.com/schoolonchain-ux/schoolonchain-ux.github.io/blob/main/investigacion/docs/articulos/DIRECTORIO-DIRECCIONES-TRON-2026-10-29.md",
+   "fecha": "2026-10-29"
+  },
+  "TELL9LfBZbHYqZXvnx79EtBJEViU5dGTXc": {
+   "nombre": "16-11-2025",
+   "atribucion": "134,2 M",
+   "papel": "HTX 4",
+   "fuente": "Directorio de direcciones del caso Vaneck/Sun (29-oct-2026)",
+   "enlace": "https://github.com/schoolonchain-ux/schoolonchain-ux.github.io/blob/main/investigacion/docs/articulos/DIRECTORIO-DIRECCIONES-TRON-2026-10-29.md",
+   "fecha": "2026-10-29"
+  },
+  "TM5h24Au2G5gUSro8QrB31PjgqZZw77N1Q": {
+   "nombre": "21-03-2026",
+   "atribucion": "200 M",
+   "papel": "HTX 4",
+   "fuente": "Directorio de direcciones del caso Vaneck/Sun (29-oct-2026)",
+   "enlace": "https://github.com/schoolonchain-ux/schoolonchain-ux.github.io/blob/main/investigacion/docs/articulos/DIRECTORIO-DIRECCIONES-TRON-2026-10-29.md",
+   "fecha": "2026-10-29"
+  },
+  "TBRoa9xabNSTXTSK6iQAMPQQ7CNo2j2yuF": {
+   "nombre": "07-05-2026",
+   "atribucion": "180 M",
+   "papel": "HTX 4",
+   "fuente": "Directorio de direcciones del caso Vaneck/Sun (29-oct-2026)",
+   "enlace": "https://github.com/schoolonchain-ux/schoolonchain-ux.github.io/blob/main/investigacion/docs/articulos/DIRECTORIO-DIRECCIONES-TRON-2026-10-29.md",
+   "fecha": "2026-10-29"
+  },
+  "TEgMTsmbVbjGK9bSeEjkZmcE8EFW8iJ8RT": {
+   "nombre": "07-05-2026",
+   "atribucion": "100 M",
+   "papel": "HTX 4",
+   "fuente": "Directorio de direcciones del caso Vaneck/Sun (29-oct-2026)",
+   "enlace": "https://github.com/schoolonchain-ux/schoolonchain-ux.github.io/blob/main/investigacion/docs/articulos/DIRECTORIO-DIRECCIONES-TRON-2026-10-29.md",
+   "fecha": "2026-10-29"
+  },
+  "TUVw5u9yCG1CdE9aYrt6tzAoJciZ6hFgxa": {
+   "nombre": "01-10-2026",
+   "atribucion": "100 M",
+   "papel": "TWhDfwC8… (proveedora de TRON Inc.)",
+   "fuente": "Directorio de direcciones del caso Vaneck/Sun (29-oct-2026)",
+   "enlace": "https://github.com/schoolonchain-ux/schoolonchain-ux.github.io/blob/main/investigacion/docs/articulos/DIRECTORIO-DIRECCIONES-TRON-2026-10-29.md",
+   "fecha": "2026-10-29"
+  },
+  "TKK4M7HNG4NzfGYD3YGPMWZqZnZApycEfX": {
+   "nombre": "17-10-2026",
+   "atribucion": "150 M",
+   "papel": "TQWBKLpM… (barrido)",
+   "fuente": "Directorio de direcciones del caso Vaneck/Sun (29-oct-2026)",
+   "enlace": "https://github.com/schoolonchain-ux/schoolonchain-ux.github.io/blob/main/investigacion/docs/articulos/DIRECTORIO-DIRECCIONES-TRON-2026-10-29.md",
+   "fecha": "2026-10-29"
+  },
+  "TFaboiG8EBqZUoiSTz4ZcwkpJUE7f5YMWx": {
+   "nombre": "20-10-2026",
+   "atribucion": "100 M",
+   "papel": "TWhDfwC8… (proveedora de TRON Inc.)",
+   "fuente": "Directorio de direcciones del caso Vaneck/Sun (29-oct-2026)",
+   "enlace": "https://github.com/schoolonchain-ux/schoolonchain-ux.github.io/blob/main/investigacion/docs/articulos/DIRECTORIO-DIRECCIONES-TRON-2026-10-29.md",
+   "fecha": "2026-10-29"
+  },
+  "TEF9ZVUxhmGGffvkf59e2vdLfAG1QCMb7B": {
+   "nombre": "Cuenta de energía",
+   "atribucion": "Sin nombre en TronScan. El capítulo 7 del caso la describe por lo que hace: reparte energía.",
+   "papel": "Tiene delegados 1.529,3 M TRX (energía y ancho de banda) a 81 receptores; el 47,7 % de lo delegado va a billeteras nuevas de Binance. Datos del corte del 5-nov-2026.",
+   "fuente": "Caso Vaneck/Sun, capítulo 7",
+   "enlace": "caso-vaneck.html?cap=7",
+   "fecha": "2026-11-05"
+  },
+  "TM3sTVyahiGWYktKg8G6miHpTzRurKDt7b": {
+   "nombre": "Cuenta que controla a otra de energía",
+   "atribucion": "Sin nombre en TronScan. El capítulo 7 del caso la describe por su relación con otra cuenta.",
+   "papel": "Control común: es clave de TU3rMHyWHzeEJBReWLzHko728hbz6MtfNg, una cuenta que reparte energía a contratos de SUN.io (la controla).",
+   "fuente": "Caso Vaneck/Sun, capítulo 7",
+   "enlace": "caso-vaneck.html?cap=7",
+   "fecha": "2026-11-05"
+  },
+  "TJkgTCg91dEfsT9to74VDXi7uUxRDqF2ft": {
+   "nombre": "Destino del TRX de la antigua TRON Foundation",
+   "atribucion": "Sin nombre en TronScan. Es una cuenta a la que enviaron TRX direcciones de las 1.000 que la TRON Foundation bloqueó en 2018 (lo dice la cadena; no es una atribución a nadie).",
+   "papel": "Recibió 12.334,5 M TRX en 372 envíos de 370 de esas direcciones distintas (entre el 24/05/2022 y el 01/06/2022). Datos del corte del 5-nov-2026.",
+   "fuente": "Caso Vaneck/Sun, capítulo 8",
+   "enlace": "caso-vaneck.html?cap=8",
+   "fecha": "2026-11-05"
+  },
+  "TFDeweDKdJToPwiXUxbCVpNLi9wKGdi8pK": {
+   "nombre": "Destino del TRX de la antigua TRON Foundation",
+   "atribucion": "Sin nombre en TronScan. Es una cuenta a la que enviaron TRX direcciones de las 1.000 que la TRON Foundation bloqueó en 2018 (lo dice la cadena; no es una atribución a nadie).",
+   "papel": "Recibió 5.324,8 M TRX en 160 envíos de 160 de esas direcciones distintas (entre el 21/09/2020 y el 25/09/2020). Datos del corte del 5-nov-2026.",
+   "fuente": "Caso Vaneck/Sun, capítulo 8",
+   "enlace": "caso-vaneck.html?cap=8",
+   "fecha": "2026-11-05"
+  },
+  "TNzhS9jbtssBaNBMTm3L54A1VMfmxxC1x6": {
+   "nombre": "Destino del TRX de la antigua TRON Foundation",
+   "atribucion": "Sin nombre en TronScan. Es una cuenta a la que enviaron TRX direcciones de las 1.000 que la TRON Foundation bloqueó en 2018 (lo dice la cadena; no es una atribución a nadie).",
+   "papel": "Recibió 4.036,4 M TRX en 120 envíos de 120 de esas direcciones distintas (entre el 03/08/2020 y el 09/08/2020). Datos del corte del 5-nov-2026.",
+   "fuente": "Caso Vaneck/Sun, capítulo 8",
+   "enlace": "caso-vaneck.html?cap=8",
+   "fecha": "2026-11-05"
+  },
+  "TJ5GHePdhY7y52ugyu7omwL38xm7ahosr9": {
+   "nombre": "Destino del TRX de la antigua TRON Foundation",
+   "atribucion": "Sin nombre en TronScan. Es una cuenta a la que enviaron TRX direcciones de las 1.000 que la TRON Foundation bloqueó en 2018 (lo dice la cadena; no es una atribución a nadie).",
+   "papel": "Recibió 3.000,1 M TRX en 91 envíos de 91 de esas direcciones distintas (entre el 06/05/2020 y el 15/05/2020). Datos del corte del 5-nov-2026.",
+   "fuente": "Caso Vaneck/Sun, capítulo 8",
+   "enlace": "caso-vaneck.html?cap=8",
+   "fecha": "2026-11-05"
+  },
+  "TYSZXcgPar7Xj1b17Hj3WVVoJ1UGCe8xgd": {
+   "nombre": "Destino del TRX de la antigua TRON Foundation",
+   "atribucion": "Sin nombre en TronScan. Es una cuenta a la que enviaron TRX direcciones de las 1.000 que la TRON Foundation bloqueó en 2018 (lo dice la cadena; no es una atribución a nadie).",
+   "papel": "Recibió 2.931,1 M TRX en 92 envíos de 92 de esas direcciones distintas (entre el 12/02/2022 y el 09/05/2022). Datos del corte del 5-nov-2026.",
+   "fuente": "Caso Vaneck/Sun, capítulo 8",
+   "enlace": "caso-vaneck.html?cap=8",
+   "fecha": "2026-11-05"
+  },
+  "TMUsySjQJKfwR2btidkk5yAUJYcrvKdTwx": {
+   "nombre": "Destino del TRX de la antigua TRON Foundation",
+   "atribucion": "Sin nombre en TronScan. Es una cuenta a la que enviaron TRX direcciones de las 1.000 que la TRON Foundation bloqueó en 2018 (lo dice la cadena; no es una atribución a nadie).",
+   "papel": "Recibió 987,3 M TRX en 29 envíos de 29 de esas direcciones distintas (entre el 21/04/2020 y el 26/04/2020). Datos del corte del 5-nov-2026.",
+   "fuente": "Caso Vaneck/Sun, capítulo 8",
+   "enlace": "caso-vaneck.html?cap=8",
+   "fecha": "2026-11-05"
+  },
+  "TAKNpgbqxUYCbKojacSdNrEaVBJNF162WD": {
+   "nombre": "Destino del TRX de la antigua TRON Foundation",
+   "atribucion": "Sin nombre en TronScan. Es una cuenta a la que enviaron TRX direcciones de las 1.000 que la TRON Foundation bloqueó en 2018 (lo dice la cadena; no es una atribución a nadie).",
+   "papel": "Recibió 895,8 M TRX en 26 envíos de 26 de esas direcciones distintas (el 09/03/2022). Datos del corte del 5-nov-2026.",
+   "fuente": "Caso Vaneck/Sun, capítulo 8",
+   "enlace": "caso-vaneck.html?cap=8",
+   "fecha": "2026-11-05"
+  },
+  "TKHS9Wb1GH7YmEZrrPzEqCZ96uPBDJ7J2A": {
+   "nombre": "Destino del TRX de la antigua TRON Foundation",
+   "atribucion": "Sin nombre en TronScan. Es una cuenta a la que enviaron TRX direcciones de las 1.000 que la TRON Foundation bloqueó en 2018 (lo dice la cadena; no es una atribución a nadie).",
+   "papel": "Recibió 842,0 M TRX en 27 envíos de 27 de esas direcciones distintas (el 09/03/2022). Datos del corte del 5-nov-2026.",
+   "fuente": "Caso Vaneck/Sun, capítulo 8",
+   "enlace": "caso-vaneck.html?cap=8",
+   "fecha": "2026-11-05"
+  },
+  "TV6qo5vZ9t118WfkqqhFPLTRMxgPRXVr7t": {
+   "nombre": "Destino del TRX de la antigua TRON Foundation",
+   "atribucion": "Sin nombre en TronScan. Es una cuenta a la que enviaron TRX direcciones de las 1.000 que la TRON Foundation bloqueó en 2018 (lo dice la cadena; no es una atribución a nadie).",
+   "papel": "Recibió 836,8 M TRX en 25 envíos de 25 de esas direcciones distintas (el 09/03/2022). Datos del corte del 5-nov-2026.",
+   "fuente": "Caso Vaneck/Sun, capítulo 8",
+   "enlace": "caso-vaneck.html?cap=8",
+   "fecha": "2026-11-05"
+  },
+  "TDirN49rpXgs2RXJUudbcRskhoyD29c66U": {
+   "nombre": "Destino del TRX de la antigua TRON Foundation",
+   "atribucion": "Sin nombre en TronScan. Es una cuenta a la que enviaron TRX direcciones de las 1.000 que la TRON Foundation bloqueó en 2018 (lo dice la cadena; no es una atribución a nadie).",
+   "papel": "Recibió 484,6 M TRX en 12 envíos de 12 de esas direcciones distintas (el 30/03/2021). Datos del corte del 5-nov-2026.",
+   "fuente": "Caso Vaneck/Sun, capítulo 8",
+   "enlace": "caso-vaneck.html?cap=8",
+   "fecha": "2026-11-05"
+  },
+  "TWn3P22ujD4BGJfeM6YDDWydbZoAWkwPjZ": {
+   "nombre": "Destino del TRX de la antigua TRON Foundation",
+   "atribucion": "Sin nombre en TronScan. Es una cuenta a la que enviaron TRX direcciones de las 1.000 que la TRON Foundation bloqueó en 2018 (lo dice la cadena; no es una atribución a nadie).",
+   "papel": "Recibió 419,5 M TRX en 12 envíos de 12 de esas direcciones distintas (el 30/03/2021). Datos del corte del 5-nov-2026.",
+   "fuente": "Caso Vaneck/Sun, capítulo 8",
+   "enlace": "caso-vaneck.html?cap=8",
+   "fecha": "2026-11-05"
+  },
+  "TTXojNiH2hFL3mUC8yTGMwCQ17pmNFxvzE": {
+   "nombre": "Destino del TRX de la antigua TRON Foundation",
+   "atribucion": "Sin nombre en TronScan. Es una cuenta a la que enviaron TRX direcciones de las 1.000 que la TRON Foundation bloqueó en 2018 (lo dice la cadena; no es una atribución a nadie).",
+   "papel": "Recibió 387,8 M TRX en 12 envíos de 12 de esas direcciones distintas (el 30/03/2021). Datos del corte del 5-nov-2026.",
+   "fuente": "Caso Vaneck/Sun, capítulo 8",
+   "enlace": "caso-vaneck.html?cap=8",
+   "fecha": "2026-11-05"
+  },
+  "TVJVQtD1rPC2igEM82AfnPZTYdJFGAFQbw": {
+   "nombre": "Destino del TRX de la antigua TRON Foundation",
+   "atribucion": "Sin nombre en TronScan. Es una cuenta a la que enviaron TRX direcciones de las 1.000 que la TRON Foundation bloqueó en 2018 (lo dice la cadena; no es una atribución a nadie).",
+   "papel": "Recibió 364,6 M TRX en 12 envíos de 12 de esas direcciones distintas (el 30/03/2021). Datos del corte del 5-nov-2026.",
+   "fuente": "Caso Vaneck/Sun, capítulo 8",
+   "enlace": "caso-vaneck.html?cap=8",
+   "fecha": "2026-11-05"
+  },
+  "TEQBe7MdnfEwJ8RK7cjAvjMWmbCa4JgZwc": {
+   "nombre": "Destino del TRX de la antigua TRON Foundation",
+   "atribucion": "Sin nombre en TronScan. Es una cuenta a la que enviaron TRX direcciones de las 1.000 que la TRON Foundation bloqueó en 2018 (lo dice la cadena; no es una atribución a nadie).",
+   "papel": "Recibió 74,0 M TRX en 2 envíos de 2 de esas direcciones distintas (el 19/02/2020). Datos del corte del 5-nov-2026.",
+   "fuente": "Caso Vaneck/Sun, capítulo 8",
+   "enlace": "caso-vaneck.html?cap=8",
+   "fecha": "2026-11-05"
+  }
+ }
+}

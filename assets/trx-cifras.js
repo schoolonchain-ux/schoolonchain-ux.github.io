@@ -20,36 +20,75 @@
     contrato: ['Contratos', 'Fondos de muchísimos usuarios juntos (préstamos, TRX envuelto…); no son una persona.'],
     fondo_o_institucion: ['Fondos y gestoras', 'Con nombre en TronScan.'],
     otros_etiquetados: ['Otras con nombre en TronScan', 'Validadores, loterías, pagos, custodia…'],
-    ballena_sin_identificar: ['Cuentas grandes sin identificar', 'Sin nombre en TronScan. NO son todas ballenas: mira el desglose por tamaño.'],
+    ballena_sin_identificar: ['Sin nombre en TronScan', 'TronScan no les pone nombre (no es que nadie sepa quiénes son). NO son todas ballenas: mira el desglose por tamaño y la lista de las mayores.'],
     atribuido_externo: ['Atribuidas por otras fuentes', 'Con fuente anotada.'],
   };
   function pintarReparto(D) {
     const G = D.grupos, T = D.ofertaTrx, cuerpo = el('div');
     cuerpo.append(el('details', { class: 'como' }, el('summary', null, 'En pocas palabras: ¿qué es esto y cómo funciona?'),
       el('p', { html: 'TronScan da la lista de las <b>10.000 cuentas con más TRX</b>. Aquí se agrupan según lo que TronScan dice que son (casa de cambio, contrato, fondo…) y se compara con todo el TRX que existe. Lo que queda fuera de esas 10.000 cuentas es el resto de la red.' }),
-      el('p', { html: '<b>Un saldo grande no dice de quién es</b>: las casas de cambio guardan dinero de clientes y los contratos de muchos usuarios. Y que una cuenta esté «sin identificar» solo significa que TronScan no le pone nombre.' })));
+      el('p', { html: '<b>Un saldo grande no dice de quién es</b>: las casas de cambio guardan dinero de clientes y los contratos de muchos usuarios. Y que una cuenta aparezca «sin nombre en TronScan» no significa que nadie sepa quién es: más abajo ves cuáles son las mayores y qué dicen de ellas nuestros informes.' })));
     cuerpo.append(lectura(D.leidoEn, 'Es una foto del día: las cuentas se leen una a una y cambian a diario.'));
     const sin = G.ballena_sin_identificar, mayores = D.sinIdentificarPorTramo[0];
     cuerpo.append(el('div', { class: 'kpis2' },
       kp('TRX que existen', mt(T), n(D.cuentasEnLaRed) + ' cuentas en la red'),
-      kp('Sin identificar, las mayores', n(mayores.pct, 1) + ' %', n(mayores.cuentas) + ' cuentas con ' + mayores.tramo.replace(' o más', '') + ' o más de TRX cada una'),
+      kp('Sin nombre en TronScan, las mayores', n(mayores.pct, 1) + ' %', n(mayores.cuentas) + ' cuentas con ' + mayores.tramo.replace(' o más', '') + ' o más de TRX cada una'),
       kp('Casas de cambio', n(G.exchange.pct, 1) + ' %', n(G.exchange.cuentas) + ' cuentas con nombre de casa de cambio'),
       kp('Las 100 mayores cuentas', n(D.concentracion.top100, 1) + ' %', 'la mayor sola: ' + n(D.concentracion.top1, 1) + ' %')));
 
     const filas = Object.keys(NOMBRE).filter((k) => G[k] && (G[k].cuentas > 0 || k === 'ballena_sin_identificar')).map((k) => ({ k, nombre: NOMBRE[k][0], que: NOMBRE[k][1], ...G[k] }));
     filas.push({ k: 'cola', nombre: 'Resto de la red', que: 'Todas las demás cuentas, cada una con menos de ' + n(D.saldoDeLaCuentaNTrx) + ' TRX: particulares pequeños.', cuentas: D.cola.cuentas, trx: D.cola.trx, pct: D.cola.pct });
     const cv = el('canvas');
-    cuerpo.append(caja('¿De quién es el TRX?', el('div', { class: 'cs' }, 'Cada trozo es una parte de todo el TRX que existe (' + mt(T) + ').'),
+    cuerpo.append(caja('¿De quién es el TRX?', el('div', { class: 'cs' }, 'Cada trozo es una parte de todo el TRX que existe (' + mt(T) + '). Pulsa un trozo del gráfico, su nombre en la leyenda o una fila de la tabla para ver las cuentas de ese grupo.'),
       el('div', { class: 'cv', style: 'height:260px;max-width:520px;margin:0 auto' }, cv),
-      UI.tabla({ pp: 8, buscar: false, rows: filas, orden: [2, -1], csv: 'reparto-trx',
+      UI.tabla({ pp: 8, buscar: false, rows: filas, orden: [2, -1], csv: 'reparto-trx', onRow: (r) => seleccionar(r.k),
         cols: [{ t: 'Grupo', v: (r) => el('span', null, el('b', null, r.nombre), el('br'), el('span', { class: 'muted', style: 'font-size:12px' }, r.que)), o: (r) => r.nombre, csv: (r) => r.nombre }, { t: 'Cuentas', v: (r) => n(r.cuentas), o: (r) => r.cuentas },
           { t: 'TRX', v: (r) => mt(r.trx), o: (r) => r.trx }, { t: '% del TRX', v: (r) => n(r.pct, 1) + ' %', o: (r) => r.pct }] })));
+    const panel = el('div', { style: 'scroll-margin-top:90px' }); cuerpo.append(panel);
     C.chartDefaults();
-    new Chart(cv, { type: 'doughnut', data: { labels: filas.map((r) => r.nombre), datasets: [{ data: filas.map((r) => r.trx), backgroundColor: C.pal.slice(0, filas.length), borderWidth: 0 }] },
-      options: { responsive: true, maintainAspectRatio: false, cutout: '58%', plugins: { legend: { position: 'right', labels: { boxWidth: 12 } }, tooltip: { callbacks: { label: (c) => ' ' + mt(c.parsed) + ' · ' + n((c.parsed / T) * 100, 1) + ' %' } } } } });
+    const grafico = new Chart(cv, UI.clicable({ type: 'doughnut', data: { labels: filas.map((r) => r.nombre), datasets: [{ data: filas.map((r) => r.trx), backgroundColor: C.pal.slice(0, filas.length), borderWidth: 0, offset: filas.map(() => 0) }] },
+      options: { responsive: true, maintainAspectRatio: false, cutout: '58%', plugins: { legend: { position: 'right', labels: { boxWidth: 12 }, onClick: (ev, it) => seleccionar(filas[it.index].k) }, tooltip: { callbacks: { label: (c) => ' ' + mt(c.parsed) + ' · ' + n((c.parsed / T) * 100, 1) + ' %' } } } } }, (e) => seleccionar(filas[e.index].k)));
 
-    cuerpo.append(caja('Dentro de «sin identificar»: por tamaño de cuenta', el('div', { class: 'cs' }, 'No es un bloque de ballenas: unas pocas cuentas enormes y miles de cuentas medianas, donde caben particulares con cientos de miles de TRX.'),
+    cuerpo.append(caja('Dentro de «sin nombre en TronScan»: por tamaño de cuenta', el('div', { class: 'cs' }, 'No es un bloque de ballenas: unas pocas cuentas enormes y miles de cuentas medianas, donde caben particulares con cientos de miles de TRX.'),
       UI.tabla({ pp: 6, buscar: false, rows: D.sinIdentificarPorTramo.map((r) => ({ ...r })), cols: [{ t: 'Saldo de la cuenta', v: (r) => r.tramo + ' TRX', o: (r) => r.tramo }, { t: 'Cuentas', v: (r) => n(r.cuentas), o: (r) => r.cuentas }, { t: 'TRX', v: (r) => mt(r.trx), o: (r) => r.trx }, { t: '% del TRX', v: (r) => n(r.pct, 2) + ' %', o: (r) => r.pct }] })));
+
+    // Al pulsar un grupo (trozo, leyenda o fila) se enseñan sus cuentas, enteras y con enlace, y lo que dicen de cada una NUESTROS informes ya publicados (data/direcciones-conocidas.json).
+    // Al abrir la pestaña se ve ya el de «Sin nombre en TronScan».
+    const conocidasP = fetch('data/direcciones-conocidas.json?v=' + Math.floor(Date.now() / 600000), { signal: AbortSignal.timeout(15000) }).then((r) => { if (!r.ok) throw new Error('HTTP ' + r.status); return r.json(); }).then((j) => (j && j.direcciones ? j.direcciones : null)).catch(() => null);
+    let elegido = null;
+    function seleccionar(k, { bajar = true } = {}) {
+      const g = filas.find((x) => x.k === k); if (!g) return;
+      elegido = k;
+      grafico.data.datasets[0].offset = filas.map((x) => (x.k === k ? 18 : 0)); grafico.update();
+      const titulo = 'Cuentas de «' + g.nombre + '»';
+      panel.replaceChildren(caja(titulo, el('p', { class: 'loading' }, el('span', { class: 'spin' }), 'Cargando las cuentas…')));
+      if (bajar) panel.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      conocidasP.then((conocidas) => {
+        if (elegido !== k) return;                                   // se pulsó otro grupo mientras tanto
+        const lista = (D.cuentasPorGrupo || {})[k];
+        if (k === 'cola') { panel.replaceChildren(caja(titulo, el('p', { style: 'margin:0' }, 'Son ' + n(g.cuentas) + ' cuentas, cada una con menos de ' + n(D.saldoDeLaCuentaNTrx) + ' TRX: no se pueden enseñar una a una (TronScan solo da la lista de las 10.000 mayores). Es lo que queda de todo el TRX tras restar las 10.000 mayores cuentas.'))); return; }
+        if (!lista || !lista.length) { panel.replaceChildren(caja(titulo, el('p', { class: 'muted', style: 'margin:0' }, 'La lista de cuentas de este grupo no está en esta lectura.'))); return; }
+        const desc = (a) => conocidas && conocidas[a];
+        const sinNombre = k === 'ballena_sin_identificar';
+        const partes = [];
+        if (sinNombre) {
+          const grandes = lista.filter((x) => x.trx >= 100e6), conD = grandes.filter((x) => desc(x.a)), pD = conD.reduce((s2, x) => s2 + x.pct, 0), pG = grandes.reduce((s2, x) => s2 + x.pct, 0);
+          partes.push('Se muestran las ' + n(lista.length) + ' mayores de las ' + n(g.cuentas) + ' que TronScan no nombra. ' + n(grandes.length) + ' tienen 100 millones de TRX o más (' + n(pG, 1) + ' % de todo el TRX).' + (conocidas ? ' De esas ' + n(grandes.length) + ', ' + n(conD.length) + ' aparecen descritas en nuestros informes publicados (' + n(pD, 1) + ' % del TRX); de las otras ' + n(grandes.length - conD.length) + ' no hay nada documentado (' + n(pG - pD, 1) + ' % del TRX).' : ' No se pudo cargar lo que dicen nuestros informes; la lista de cuentas sí es de hoy.'));
+        } else partes.push('Las ' + n(lista.length) + ' cuentas de este grupo (de las 10.000 mayores), de mayor a menor.');
+        const cols = [
+          { t: 'Puesto', v: (r) => n(r.puesto), o: (r) => r.puesto },
+          { t: 'Dirección', v: (r) => el('span', null, el('a', { class: 'addr mono', href: 'https://tronscan.org/#/address/' + r.a, target: '_blank', rel: 'noopener', title: 'Comprobar en TronScan' }, r.a), el('br'), el('a', { class: 'muted', style: 'font-size:12px', href: 'herramientas.html?dir=' + r.a + '#comprobar' }, 'Comprobar aquí →')), o: (r) => r.a, csv: (r) => r.a }];
+        if (!sinNombre) cols.push({ t: 'Nombre', v: (r) => el('span', null, r.etiqueta || '—', r.recordada ? el('span', { class: 'muted', style: 'font-size:12px' }, ' (nombre que TronScan le dio antes)') : null), o: (r) => r.etiqueta || '', csv: (r) => r.etiqueta || '' });
+        cols.push({ t: 'TRX', v: (r) => n(r.trx), o: (r) => r.trx, csv: (r) => r.trx }, { t: '% del TRX', v: (r) => n(r.pct, 2) + ' %', o: (r) => r.pct, csv: (r) => r.pct },
+          { t: 'Qué dicen nuestros informes', v: (r) => { const d = desc(r.a); if (!d) return el('span', { class: 'muted' }, sinNombre ? (conocidas ? 'Nada documentado' : '—') : '—');
+              return el('span', { style: 'font-size:12.5px;line-height:1.45' }, el('b', null, d.nombre + '. '), d.atribucion + (d.papel ? ' · ' + d.papel : ''), ' ', el('a', { href: d.enlace, target: d.enlace.startsWith('http') ? '_blank' : null, rel: 'noopener' }, 'Fuente: ' + d.fuente + ' →')); },
+            o: (r) => (desc(r.a) ? 0 : 1), csv: (r) => { const d = desc(r.a); return d ? d.nombre + ': ' + d.atribucion + ' · ' + d.papel + ' (' + d.fuente + ')' : (sinNombre ? 'Nada documentado' : ''); } });
+        panel.replaceChildren(caja(titulo, el('p', { style: 'margin:0 0 8px' }, partes.join(' ') + ' Pulsa la dirección para comprobarla en TronScan o «Comprobar aquí» para verla en esta web.'),
+          UI.tabla({ pp: 10, ph: 'Buscar una dirección o un nombre…', csv: 'cuentas-' + k.replace(/_/g, '-'), rows: lista.map((x) => ({ ...x })), orden: [sinNombre ? 2 : 3, -1], cols }),
+          el('p', { class: 'hint', style: 'margin:8px 0 0' }, '«Sin nombre en TronScan» es lo que dice TronScan hoy. Una atribución de terceros (un medio, un analista) es una atribución: dice quién la hace, no es un hecho comprobado en cadena. «Nada documentado» significa que ninguno de nuestros informes publicados habla de esa cuenta.')));
+      });
+    }
+    seleccionar('ballena_sin_identificar', { bajar: false });
 
     const esDir = (x) => /^T[1-9A-HJ-NP-Za-km-z]{33}$/.test(x);
     const lista = (arr) => { const out = []; arr.forEach((x, i) => { if (i) out.push(' · '); out.push(esDir(x.nombre) ? el('a', { class: 'addr mono', href: 'https://tronscan.org/#/address/' + x.nombre, target: '_blank', rel: 'noopener' }, x.nombre) : x.nombre, ' ' + mt(x.trx)); }); return out; };
@@ -59,7 +98,7 @@
     const R = D.etiquetasRecordadas, items = [];
     if (R && R.cuentas) { const vs = R.ejemplos.map((e) => e.visto).sort(); items.push({ k: 'Cuentas con el nombre recordado', v: n(R.cuentas) + ' cuentas (' + mt(R.trx) + ', el ' + n(R.pct, 1) + ' %) llevan hoy el nombre que TronScan les puso en una foto anterior (vistas con ese nombre entre el ' + vs[0] + ' y el ' + vs[vs.length - 1] + '). TronScan ya no las etiqueta; si no se contaran así, aparecerían como «sin identificar» y las casas de cambio saldrían con mucho menos de lo que TronScan les atribuía hasta entonces.' }); }
     items.push({ k: 'Qué NO dice', v: 'No separa «instituciones», «Justin Sun» y «particulares» dentro de las cuentas grandes: con TronScan y TronGrid no se puede. Sin una fuente anotada no se asigna nada a nadie.' });
-    items.push({ k: 'Cobertura', v: 'Se leen las 10.000 mayores cuentas (' + n(D.cuentasAnalizadas) + ' leídas, ' + n(D.cobertura.paginasFallidas) + ' páginas fallidas). El tipo de cuenta (contrato o normal) está comprobado en ' + n(D.cobertura.tipoComprobado) + ' de las ' + n(sin.cuentas) + ' sin nombre (las mayores); en el resto no se ha comprobado y cuentan como «sin identificar». La oferta es la que se deduce de TronScan (saldo total ÷ su proporción), no un dato directo.' });
+    items.push({ k: 'Cobertura', v: 'Se leen las 10.000 mayores cuentas (' + n(D.cuentasAnalizadas) + ' leídas, ' + n(D.cobertura.paginasFallidas) + ' páginas fallidas). El tipo de cuenta (contrato o normal) está comprobado en ' + n(D.cobertura.tipoComprobado) + ' de las ' + n(sin.cuentas) + ' sin nombre (las mayores); en el resto no se ha comprobado y cuentan como «sin nombre». La oferta es la que se deduce de TronScan (saldo total ÷ su proporción), no un dato directo.' });
     items.push({ k: 'De dónde sale', v: D.fuentes.join(' · ') + '. Estudio original: «Cómo está repartido el TRX» (EquipoIA, 21-oct-2026).' });
     cuerpo.append(el('div', { class: 'ayuda' }, items.map((i) => el('div', { class: 'ai' }, el('b', null, i.k + '. '), el('span', { html: i.v })))));
     rReparto.replaceChildren(cuerpo);

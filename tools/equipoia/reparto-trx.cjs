@@ -106,7 +106,9 @@ function cargarMemoria() {
   const tramos = [[100e6, '100 M o más'], [10e6, '10 M - 100 M'], [1e6, '1 M - 10 M'], [300e3, '300 k - 1 M'], [0, 'menos de 300 k']];
   const bandas = Object.fromEntries(tramos.map(([, n]) => [n, { cuentas: 0, trx: 0 }]));
   let comprobadas = 0, sinComprobar = 0; const recordadas = { cuentas: 0, trx: 0, ejemplos: [] };
+  const mayoresSinNombre = []; let puesto = 0;   // las cuentas del tramo «100 M o más» que TronScan no nombra: se publican enteras para poder comprobarlas
   for (const r of rows) {
+    puesto++;
     const trx = Number(r.totalBalance) / SUN; let tag = (r.addressTag || '').trim(), recordada = false;
     if (!tag && mem.direcciones[r.address]) { tag = mem.direcciones[r.address].tag; recordada = true; }
     const low = tag.toLowerCase(); let g, nombre = null;
@@ -117,7 +119,7 @@ function cargarMemoria() {
     else {
       const inf = info[r.address] || tiposPropios[r.address];
       if (inf && inf.type === 'Contract') { g = 'contrato'; nombre = inf.name || r.address; }
-      else { g = 'ballena_sin_identificar'; const b = tramos.find(([lo]) => trx >= lo)[1]; bandas[b].cuentas++; bandas[b].trx += trx; if (inf) comprobadas++; else sinComprobar++; }
+      else { g = 'ballena_sin_identificar'; const b = tramos.find(([lo]) => trx >= lo)[1]; bandas[b].cuentas++; bandas[b].trx += trx; if (trx >= 100e6) mayoresSinNombre.push({ puesto, a: r.address, trx }); if (inf) comprobadas++; else sinComprobar++; }
     }
     if (recordada && g !== 'ballena_sin_identificar') { recordadas.cuentas++; recordadas.trx += trx; if (recordadas.ejemplos.length < 12) recordadas.ejemplos.push({ etiqueta: tag, visto: mem.direcciones[r.address].visto, trx: Math.round(trx) }); }
     G[g].cuentas++; G[g].trx += trx;
@@ -131,6 +133,7 @@ function cargarMemoria() {
   const salida = {
     version: 1, leidoEn, cuentasEnLaRed, cuentasAnalizadas: n, ofertaTrx: Math.round(oferta), saldoDeLaCuentaNTrx: Math.round(ultima),
     grupos, cola: { cuentas: cuentasEnLaRed != null ? cuentasEnLaRed - n : null, trx: Math.round(cola), pct: pct(cola) },
+    mayoresSinNombre: mayoresSinNombre.map((m) => ({ puesto: m.puesto, a: m.a, trx: Math.round(m.trx), pct: pct(m.trx) })),
     sinIdentificarPorTramo: tramos.map(([, nombre]) => ({ tramo: nombre, cuentas: bandas[nombre].cuentas, trx: Math.round(bandas[nombre].trx), pct: pct(bandas[nombre].trx) })),
     concentracion: conc,
     detalle: { exchange: topN(detalle.exchange, 8), contrato: topN(detalle.contrato, 8), otros_etiquetados: topN(detalle.otros_etiquetados, 6), fondo_o_institucion: topN(detalle.fondo_o_institucion, 4) },
