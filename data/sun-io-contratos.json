@@ -1,0 +1,713 @@
+{
+ "version": 1,
+ "leidoEn": "2026-11-06T20:57:43.945Z",
+ "nota": "Evidencia de que los contratos que SUN.io publica en sus anuncios los creó una misma cuenta. Las direcciones y sus fechas salen de los anuncios de SUN.io (centro de ayuda de SUN.io); el creador, de TronGrid (campo origin_address de cada contrato); las etiquetas, de TronScan (son de TronScan, no de la cadena). Lectura del 6-nov-2026.",
+ "desplegador": {
+  "cuenta": "TU3rMHyWHzeEJBReWLzHko728hbz6MtfNg",
+  "creada": "2024-08-09",
+  "contratosCreados": 41,
+  "primeraCreacion": "2024-08-09",
+  "ultimaCreacion": "2026-05-08",
+  "claves": {
+   "propietaria": "TM3sTVyahiGWYktKg8G6miHpTzRurKDt7b (única desde el 23-ago-2024)",
+   "activa": "TCXrf8SwGjcmQYY1FcFnV3LUXSQpqod3bi (desde el 23-ene-2025)"
+  },
+  "energiaDelegadaHoyTrx": 206680000
+ },
+ "anuncios": {
+  "sep2024": {
+   "titulo": "SUN.io Platform Updates The Smart Router Contract, Reduces Transaction Energy Fee to 1%",
+   "fecha": "2024-09-18",
+   "url": "https://sunio.zendesk.com/hc/en-us/articles/37839082907545"
+  },
+  "dic2025": {
+   "titulo": "Announcement on the Upgrade of SUN.io Smart Router and V2 Router Contracts, and Adjustments to Energy Subsidies",
+   "fecha": "2025-12-30",
+   "url": "https://sunio.zendesk.com/hc/en-us/articles/53327183802265"
+  },
+  "ene2026": {
+   "titulo": "Announcement on the Updated Deployment of SUN.io V2 Router Contract",
+   "fecha": "2026-01-07",
+   "url": "https://sunio.zendesk.com/hc/en-us/articles/53994815712281"
+  },
+  "feb2026": {
+   "titulo": "Announcement on SUN.io Smart Router Upgrade: Introducing Universal Router & Permit2 Protocols",
+   "fecha": "2026-02-05",
+   "url": "https://sunio.zendesk.com/hc/en-us/articles/54899665032601"
+  },
+  "may2026": {
+   "titulo": "Announcement on the SUN.io Universal Router Contract Upgrade",
+   "fecha": "2026-05-19",
+   "url": "https://sunio.zendesk.com/hc/en-us/articles/58065277910681"
+  },
+  "sep2026": {
+   "titulo": "Announcement on SUN.io SmartExchangeRouter Contract Energy Subsidy Adjustment",
+   "fecha": "2026-09-24",
+   "url": "https://sunio.zendesk.com/hc/en-us/articles/62573089241881"
+  }
+ },
+ "anunciadas": [
+  {
+   "direccion": "TJ4NNy8xZEqsowCBhLvZ45LCqPdGjkET5j",
+   "rol": "Router inteligente (smart router)",
+   "estado": "nuevo en ese anuncio",
+   "anuncio": "sep2024",
+   "creador": "TU3rMHyWHzeEJBReWLzHko728hbz6MtfNg",
+   "creado": "2024-09-17",
+   "etiquetaTronScan": "SUN: SunSwap Smart Exchange Router  (deprecated)"
+  },
+  {
+   "direccion": "TGnC7LMji8hBpyvZt1TTEJhVpAZ5HFyJ3r",
+   "rol": "Router inteligente y router inteligente de SunPump",
+   "estado": "nuevo en dic-2025; en sep-2026 pasa a «legacy»: sin subvención de energía desde el 31-oct-2026",
+   "anuncio": "dic2025",
+   "creador": "TU3rMHyWHzeEJBReWLzHko728hbz6MtfNg",
+   "creado": "2025-12-28",
+   "etiquetaTronScan": "SUN: SunSwap Smart Exchange Router (deprecated)"
+  },
+  {
+   "direccion": "TCFNp179Lg46D16zKoumd4Poa2WFFdtqYj",
+   "rol": "Router inteligente",
+   "estado": "antiguo, sustituido en dic-2025",
+   "anuncio": "dic2025",
+   "creador": "TU3rMHyWHzeEJBReWLzHko728hbz6MtfNg",
+   "creado": "2025-01-24",
+   "etiquetaTronScan": "SUN: SunSwap Smart Exchange Router (deprecated)"
+  },
+  {
+   "direccion": "TSiiYf1b1PV1fpT9T7V4wy11btsNVajw1g",
+   "rol": "Router inteligente de SunPump",
+   "estado": "antiguo, sustituido en dic-2025",
+   "anuncio": "dic2025",
+   "creador": "TU3rMHyWHzeEJBReWLzHko728hbz6MtfNg",
+   "creado": "2024-08-12",
+   "etiquetaTronScan": "SUN: SunPumpSmartRouter (deprecated)"
+  },
+  {
+   "direccion": "TMmRKgwC1hx4azzkXoPzujgQThzF48Actq",
+   "rol": "Router V2 y router V2 de SunPump",
+   "estado": "nuevo en dic-2025; sustituido en ene-2026",
+   "anuncio": "dic2025",
+   "creador": "TU3rMHyWHzeEJBReWLzHko728hbz6MtfNg",
+   "creado": "2025-12-28",
+   "etiquetaTronScan": "SUN: SunSwap V2Router (deprecated)"
+  },
+  {
+   "direccion": "TXF1xDbVGdxFGbovmmmXvBGu8ZiE3Lq4mR",
+   "rol": "Router V2",
+   "estado": "antiguo, sustituido en dic-2025",
+   "anuncio": "dic2025",
+   "creador": "TU3rMHyWHzeEJBReWLzHko728hbz6MtfNg",
+   "creado": "2024-09-06",
+   "etiquetaTronScan": "SUN: SunSwap V2 Router (deprecated)"
+  },
+  {
+   "direccion": "TZFs5ch1R1C4mmjwrrmZqeqbUgGpxY1yWB",
+   "rol": "Router V2 de SunPump",
+   "estado": "antiguo, sustituido en dic-2025",
+   "anuncio": "dic2025",
+   "creador": "TU3rMHyWHzeEJBReWLzHko728hbz6MtfNg",
+   "creado": "2024-08-12",
+   "etiquetaTronScan": "SUN: SunPumpSmartRouter (deprecated) "
+  },
+  {
+   "direccion": "TNJVzGqKBWkJxJB5XYSqGAwUTV15U24pPq",
+   "rol": "Router V2 y router V2 de SunPump",
+   "estado": "nuevo en ene-2026",
+   "anuncio": "ene2026",
+   "creador": "TU3rMHyWHzeEJBReWLzHko728hbz6MtfNg",
+   "creado": "2026-01-06",
+   "etiquetaTronScan": "SUN: SunSwap V2Router"
+  },
+  {
+   "direccion": "TTJxU3P8rHycAyFY4kVtGNfmnMH4ezcuM9",
+   "rol": "Permit2",
+   "estado": "direcciones oficialmente publicadas",
+   "anuncio": "feb2026",
+   "creador": "TU3rMHyWHzeEJBReWLzHko728hbz6MtfNg",
+   "creado": "2025-12-28",
+   "etiquetaTronScan": "SUN: Permit2"
+  },
+  {
+   "direccion": "TSJEtPuqHpvSaVnSwvCsngaeBxrGUzp95Q",
+   "rol": "Universal Router",
+   "estado": "en feb-2026 publicado como oficial; en may-2026 pasa a «antiguo»",
+   "anuncio": "feb2026",
+   "creador": "TU3rMHyWHzeEJBReWLzHko728hbz6MtfNg",
+   "creado": "2025-12-28",
+   "etiquetaTronScan": "SUN: SunSwap UniversalRouter (deprecated)"
+  },
+  {
+   "direccion": "TQqgNg13s2DjvXhW1ky4v6TsR8wZGvb7Y4",
+   "rol": "Universal Router",
+   "estado": "nuevo en may-2026",
+   "anuncio": "may2026",
+   "creador": "TU3rMHyWHzeEJBReWLzHko728hbz6MtfNg",
+   "creado": "2026-05-08",
+   "etiquetaTronScan": "SUN: SunSwap UniversalRouter"
+  }
+ ],
+ "contratos": [
+  {
+   "direccion": "TG9nDZMUtC4LBmrWSdNXNi8xrKzXTMMSKT",
+   "nombre": "SafeVault",
+   "creado": "2024-08-09",
+   "tx": "c3b4c4564eb4d5f7d2f0c72f92fb495b5a0719c4b678e3f186780bf478441a15",
+   "etiquetaTronScan": null,
+   "codigoVerificado": false,
+   "anunciadoPorSunio": false
+  },
+  {
+   "direccion": "TTfvyrAz86hbZk5iDpKD78pqLGgi8C7AAw",
+   "nombre": "LaunchPadProxy",
+   "creado": "2024-08-09",
+   "tx": "fa67da63b9e7aa94ab707c0ea608f874e48d9546e44962b4822dd88d48acc9be",
+   "etiquetaTronScan": "SUN: LaunchPadProxy",
+   "codigoVerificado": true,
+   "anunciadoPorSunio": false
+  },
+  {
+   "direccion": "TQHj5QZA8PaHBcAGkYdi8QxdtuNabuVx5r",
+   "nombre": "LaunchPad",
+   "creado": "2024-08-09",
+   "tx": "daa2587c1b31aef1cd7ed29c6b4a88911c6ebbd78168d42ef39b7894d2dc25dd",
+   "etiquetaTronScan": null,
+   "codigoVerificado": false,
+   "anunciadoPorSunio": false
+  },
+  {
+   "direccion": "TSiiYf1b1PV1fpT9T7V4wy11btsNVajw1g",
+   "nombre": "PumpSmartExchangeRouter",
+   "creado": "2024-08-12",
+   "tx": "eeaffbccae2aafb45b89ffe0a8f7e9fb38b8ed36c2ba8ac28c2de185f6aa994e",
+   "etiquetaTronScan": "SUN: SunPumpSmartRouter (deprecated)",
+   "codigoVerificado": true,
+   "anunciadoPorSunio": true
+  },
+  {
+   "direccion": "TZFs5ch1R1C4mmjwrrmZqeqbUgGpxY1yWB",
+   "nombre": "PumpswapRouter",
+   "creado": "2024-08-12",
+   "tx": "7ae3f13e51070f2f2f7c450298668eacb876d01a8e56368677ae45210cd79597",
+   "etiquetaTronScan": "SUN: SunPumpSmartRouter (deprecated) ",
+   "codigoVerificado": true,
+   "anunciadoPorSunio": true
+  },
+  {
+   "direccion": "TRs4TG1vizrtkVXAM1CsuWvxtXat3J7nTu",
+   "nombre": "LauncherProxy",
+   "creado": "2024-08-19",
+   "tx": "46b0da2ee7df5f41740864175a31781dca9a34392297d6f10fedf5ede4f4a2b7",
+   "etiquetaTronScan": null,
+   "codigoVerificado": false,
+   "anunciadoPorSunio": false
+  },
+  {
+   "direccion": "TXF1xDbVGdxFGbovmmmXvBGu8ZiE3Lq4mR",
+   "nombre": "UniswapV2Router02",
+   "creado": "2024-09-06",
+   "tx": "0ce5a7b5604af3a3e902b214cf75b30a469a299c8069eaf4eef034bcaed29cd8",
+   "etiquetaTronScan": "SUN: SunSwap V2 Router (deprecated)",
+   "codigoVerificado": true,
+   "anunciadoPorSunio": true
+  },
+  {
+   "direccion": "TJ4NNy8xZEqsowCBhLvZ45LCqPdGjkET5j",
+   "nombre": "SmartExchangeRouter",
+   "creado": "2024-09-17",
+   "tx": "5937935bce13745f2ca2161e94e38deb8a6b655f7f02d1d8420151ef8986d7eb",
+   "etiquetaTronScan": "SUN: SunSwap Smart Exchange Router  (deprecated)",
+   "codigoVerificado": true,
+   "anunciadoPorSunio": true
+  },
+  {
+   "direccion": "TVjnWgsW9VggDWh8cigTx4ZSXxuk5oXuVG",
+   "nombre": "MintProxy",
+   "creado": "2024-09-23",
+   "tx": "d22c37d0b4efd64a00f933c8f786ac4f39095266b98eacb40295f2be97d40de2",
+   "etiquetaTronScan": null,
+   "codigoVerificado": false,
+   "anunciadoPorSunio": false
+  },
+  {
+   "direccion": "TDo38LcXWjbq6ffSwnsPw3GPdXFnygL6jR",
+   "nombre": "MintFactory",
+   "creado": "2024-09-23",
+   "tx": "c7cfc66e3cbd126ec4e536150738ce02760eb742dc187e52a9be4fc86e88d1ed",
+   "etiquetaTronScan": null,
+   "codigoVerificado": false,
+   "anunciadoPorSunio": false
+  },
+  {
+   "direccion": "TFqwpvHwonR3XMyCTcLUPK77f6giMQATgG",
+   "nombre": "RebateRelationship",
+   "creado": "2024-10-30",
+   "tx": "4fc19a34c8bf67783b1ed2e4116cba8b44a397d65f93810077e9f11fde445313",
+   "etiquetaTronScan": null,
+   "codigoVerificado": false,
+   "anunciadoPorSunio": false
+  },
+  {
+   "direccion": "TRYeDrXweRdBorzH9XE8KWMq3TinW4fmjd",
+   "nombre": "TokenCreator",
+   "creado": "2025-01-24",
+   "tx": "181542ac529ac35bdc4d915d4530f91fdd38b275de94feab26dc3bb118456417",
+   "etiquetaTronScan": null,
+   "codigoVerificado": false,
+   "anunciadoPorSunio": false
+  },
+  {
+   "direccion": "TCFNp179Lg46D16zKoumd4Poa2WFFdtqYj",
+   "nombre": "SmartExchangeRouter",
+   "creado": "2025-01-24",
+   "tx": "3dfbaa9d212667be3c7689883944a06941bfba2aa995084ad1ee86541e1c7827",
+   "etiquetaTronScan": "SUN: SunSwap Smart Exchange Router (deprecated)",
+   "codigoVerificado": false,
+   "anunciadoPorSunio": true
+  },
+  {
+   "direccion": "TEPcBKJB7N6rF9xKQKPVeSrscsRTfsVFVi",
+   "nombre": "LaunchPadProxy",
+   "creado": "2025-02-21",
+   "tx": "3ecc0b6662c4fce0d4ae09286abb97b3ad8c117524c65d2cc518bf267e612eed",
+   "etiquetaTronScan": "SunPump: LaunchPadProxy",
+   "codigoVerificado": false,
+   "anunciadoPorSunio": false
+  },
+  {
+   "direccion": "TJW8L56KJgA9JLM5pWSMQT6jWN9omc7KfV",
+   "nombre": "LaunchPad",
+   "creado": "2025-02-21",
+   "tx": "281643663ec6c7347e75e36d2e3b7c8a725149a4cd549b7ba4c392d92845a380",
+   "etiquetaTronScan": null,
+   "codigoVerificado": false,
+   "anunciadoPorSunio": false
+  },
+  {
+   "direccion": "TGnC7LMji8hBpyvZt1TTEJhVpAZ5HFyJ3r",
+   "nombre": "SmartExchangeRouter",
+   "creado": "2025-12-28",
+   "tx": "30f9749647b16be176d4dfc833e570d61774ccb279967ea703be5dd2f96b67dd",
+   "etiquetaTronScan": "SUN: SunSwap Smart Exchange Router (deprecated)",
+   "codigoVerificado": false,
+   "anunciadoPorSunio": true
+  },
+  {
+   "direccion": "TMmRKgwC1hx4azzkXoPzujgQThzF48Actq",
+   "nombre": "UniswapV2Router02",
+   "creado": "2025-12-28",
+   "tx": "4ef5930a770e8528abfc7750ca0f93769891a8e51ab741efacaaeb77e2ec9903",
+   "etiquetaTronScan": "SUN: SunSwap V2Router (deprecated)",
+   "codigoVerificado": false,
+   "anunciadoPorSunio": true
+  },
+  {
+   "direccion": "TSJEtPuqHpvSaVnSwvCsngaeBxrGUzp95Q",
+   "nombre": "UniversalRouter",
+   "creado": "2025-12-28",
+   "tx": "fc609004169ef00d1925d4ae18305035b67a180459423f832cb12c237329bea9",
+   "etiquetaTronScan": "SUN: SunSwap UniversalRouter (deprecated)",
+   "codigoVerificado": false,
+   "anunciadoPorSunio": true
+  },
+  {
+   "direccion": "TXxav4qyfLUVgLfxUp4xLoAUjoBEjNqgbZ",
+   "nombre": "SafeVault",
+   "creado": "2025-12-28",
+   "tx": "6cf90267c9a3114086e22d02c1787b28223f13445c9cbe2ab28ef1c549d38037",
+   "etiquetaTronScan": null,
+   "codigoVerificado": false,
+   "anunciadoPorSunio": false
+  },
+  {
+   "direccion": "TL2zn49u5ntkU9FvisxLHwoE7yCW1kpRzu",
+   "nombre": "SafeVault",
+   "creado": "2025-12-28",
+   "tx": "5c398516429688a19bd6c45e787a6fcd3d44217adea4ad732500134e0f0cdb47",
+   "etiquetaTronScan": null,
+   "codigoVerificado": false,
+   "anunciadoPorSunio": false
+  },
+  {
+   "direccion": "TFsBPBR6FroyLcrkWsrPht1La2rBEG9WVM",
+   "nombre": "SwapInfoManager",
+   "creado": "2025-12-28",
+   "tx": "3923b4fc1b5d25a07ea25849de1b04c4cd6f86d079260fcd7e2093010413a218",
+   "etiquetaTronScan": null,
+   "codigoVerificado": false,
+   "anunciadoPorSunio": false
+  },
+  {
+   "direccion": "TJd9Sf8YnDgYKuLZFR6puxsxQUejXGz7MH",
+   "nombre": "CLDynamicFeeHook",
+   "creado": "2025-12-28",
+   "tx": "4c28488e9cebf52aa48400a9dff70b9c92d0d66e1a80da473d8e6d8a76b0dd68",
+   "etiquetaTronScan": null,
+   "codigoVerificado": false,
+   "anunciadoPorSunio": false
+  },
+  {
+   "direccion": "TN673trKGEALTAYB6n17SBGpzPwXrDqUKp",
+   "nombre": "CLLPFeesHelper",
+   "creado": "2025-12-28",
+   "tx": "de712ec3dd129c786bbf0225caa8d73322ed801d9cfce66eb56f2fe660a3d1ff",
+   "etiquetaTronScan": null,
+   "codigoVerificado": false,
+   "anunciadoPorSunio": false
+  },
+  {
+   "direccion": "TTuDCMoRaAKGL4V1gmJpmRKpDQz2ZCRQZL",
+   "nombre": "TickLens",
+   "creado": "2025-12-28",
+   "tx": "0533a61d14d0724a078d3751571de2250b905d7bf91d8022e22fc624688cff19",
+   "etiquetaTronScan": null,
+   "codigoVerificado": false,
+   "anunciadoPorSunio": false
+  },
+  {
+   "direccion": "TSupQTJWWoVpUqA7KGVYb8dB97n3civwiJ",
+   "nombre": "CLQuoter",
+   "creado": "2025-12-28",
+   "tx": "d0443ac571d95a9982207138600a73da4bb0680940317fc4bb8dc8837710dc55",
+   "etiquetaTronScan": null,
+   "codigoVerificado": false,
+   "anunciadoPorSunio": false
+  },
+  {
+   "direccion": "TC8xQzPHfn5KceZV6s6GmZkBCFWWUoPXs1",
+   "nombre": "CLPositionManager",
+   "creado": "2025-12-28",
+   "tx": "3c320ffda260cbfd9c3fb1ac43ff44c9150a20f93f0672db8b6d96de69b3d34f",
+   "etiquetaTronScan": "SUN: SunSwapV4 CLPositionManager",
+   "codigoVerificado": false,
+   "anunciadoPorSunio": false
+  },
+  {
+   "direccion": "TVx4x5TBTD5tq8Qz8ssF4jMsFu5c65i3Br",
+   "nombre": "CLPositionDescriptorOffChain",
+   "creado": "2025-12-28",
+   "tx": "1b1c2446aae63db1f548a9387b6843ae67ae03f26fea4ad7b926d5b4a1f53a19",
+   "etiquetaTronScan": null,
+   "codigoVerificado": false,
+   "anunciadoPorSunio": false
+  },
+  {
+   "direccion": "TGpNVNHq3cZ3xX859UppBgHMVDPevVx6zv",
+   "nombre": "Permit2Helper",
+   "creado": "2025-12-28",
+   "tx": "4f19debf93ff059f2b159fed53ed080df740b6777606ac27b7cf7b9d95a0d3b2",
+   "etiquetaTronScan": null,
+   "codigoVerificado": false,
+   "anunciadoPorSunio": false
+  },
+  {
+   "direccion": "TTJxU3P8rHycAyFY4kVtGNfmnMH4ezcuM9",
+   "nombre": "Permit2",
+   "creado": "2025-12-28",
+   "tx": "6829fac4b71416151cfa10afeee89b2b4e86259fbf1f6704fb7d6f9d869a43a5",
+   "etiquetaTronScan": "SUN: Permit2",
+   "codigoVerificado": true,
+   "anunciadoPorSunio": true
+  },
+  {
+   "direccion": "TEays9UfJn2EqKjkN7hWUWewBGpGxTzWEv",
+   "nombre": "ProtocolFeeController",
+   "creado": "2025-12-28",
+   "tx": "895564eafe64db0667016125e9fc4a23d1665c5e3646dfcb73dfd7ae99180b78",
+   "etiquetaTronScan": null,
+   "codigoVerificado": false,
+   "anunciadoPorSunio": false
+  },
+  {
+   "direccion": "TVjuTE3V5bMVdpfNhid8kD2v35T2k1u1Br",
+   "nombre": "PoolManager",
+   "creado": "2025-12-28",
+   "tx": "5b7988888634a41f67542036bc2bda8f303a99b061675bdcb6fc412152ac77b2",
+   "etiquetaTronScan": "SUN: SunSwapV4 PoolManager",
+   "codigoVerificado": false,
+   "anunciadoPorSunio": false
+  },
+  {
+   "direccion": "TNJVzGqKBWkJxJB5XYSqGAwUTV15U24pPq",
+   "nombre": "UniswapV2Router02",
+   "creado": "2026-01-06",
+   "tx": "3c21a6dd9b1606453cb74599816884509854e8fd040dfc7810cf9b346aaf1afa",
+   "etiquetaTronScan": "SUN: SunSwap V2Router",
+   "codigoVerificado": false,
+   "anunciadoPorSunio": true
+  },
+  {
+   "direccion": "TJ8QPGPEyEVE8rumE1vr3uscbhvTdXv9sf",
+   "nombre": "SwapInfoManager",
+   "creado": "2026-02-03",
+   "tx": "21ad9106492d06b8c4fa6520c999281bbf703461b683e882895fdf18b5a9eb97",
+   "etiquetaTronScan": null,
+   "codigoVerificado": false,
+   "anunciadoPorSunio": false
+  },
+  {
+   "direccion": "TWH7FMNjaLUfx5XnCzs1wybzA6jV5DXWsG",
+   "nombre": "SmartExchangeRouter",
+   "creado": "2026-02-03",
+   "tx": "6ca116e1d573542c0cead4046194f49675377b28c96feaad656359eb13840dc2",
+   "etiquetaTronScan": "SUN: SunSwap Smart Exchange Router",
+   "codigoVerificado": false,
+   "anunciadoPorSunio": false
+  },
+  {
+   "direccion": "TBc4z7389sAtM2nZRgWwHSJnHrWeUrZ3rL",
+   "nombre": "Permit2Helper",
+   "creado": "2026-02-03",
+   "tx": "af8cb2563828750f463acbc8eb9f15f5dda60d1ab0f9daf94ca3b783a81777fe",
+   "etiquetaTronScan": null,
+   "codigoVerificado": false,
+   "anunciadoPorSunio": false
+  },
+  {
+   "direccion": "TKAPSHZg8Z5fUn4ydY1nytkqjKx6EqUCqP",
+   "nombre": "Permit2Helper",
+   "creado": "2026-02-03",
+   "tx": "f405c774835b4fcd62fb484c52514b0d52928f7d176f0e5356748619d3c29c91",
+   "etiquetaTronScan": null,
+   "codigoVerificado": false,
+   "anunciadoPorSunio": false
+  },
+  {
+   "direccion": "TYWGPC53cD44MQW54tH11kNYxLW5eu5zGy",
+   "nombre": "PaymentPermit",
+   "creado": "2026-02-04",
+   "tx": "fd090f7c000fa4227b52cec0db9837483e3925a363683c34f98bf07afa0da410",
+   "etiquetaTronScan": null,
+   "codigoVerificado": false,
+   "anunciadoPorSunio": false
+  },
+  {
+   "direccion": "TDKRCJgbrsKfxSc2SW8cCvM8c7cFPsjyXT",
+   "nombre": "PaymentPermit",
+   "creado": "2026-02-04",
+   "tx": "e4c975679abdd141ab2939cda69b4f76a1b68a05f7de9c00a55fe5189b14516b",
+   "etiquetaTronScan": null,
+   "codigoVerificado": false,
+   "anunciadoPorSunio": false
+  },
+  {
+   "direccion": "TQLPR2HE3QTvFbjeUpMbEdZJGYNgz5AU3W",
+   "nombre": "SmartExchangeRouter",
+   "creado": "2026-02-09",
+   "tx": "b8f47ac92e0ae2a0d03a563b8aade45aece65045c27d72300ed28b8433614eec",
+   "etiquetaTronScan": null,
+   "codigoVerificado": false,
+   "anunciadoPorSunio": false
+  },
+  {
+   "direccion": "TVfkpvewpDohw5Ju6Dm68Cbj2TgByhVsEL",
+   "nombre": "ReferalVault",
+   "creado": "2026-05-08",
+   "tx": "bc38f7eddcf378555211c67a9c262ee63e9ade1bc778869326eef6ed48a12fa7",
+   "etiquetaTronScan": "SUN: SunSwap ReferralVault",
+   "codigoVerificado": true,
+   "anunciadoPorSunio": false
+  },
+  {
+   "direccion": "TQqgNg13s2DjvXhW1ky4v6TsR8wZGvb7Y4",
+   "nombre": "UniversalRouter",
+   "creado": "2026-05-08",
+   "tx": "d4c08d9114ada8de49d601ecda30a8fbd5a6d17173200ed463626b7e8c2847e2",
+   "etiquetaTronScan": "SUN: SunSwap UniversalRouter",
+   "codigoVerificado": true,
+   "anunciadoPorSunio": true
+  }
+ ],
+ "delegantes": [
+  {
+   "cuenta": "TT2T17KZhoDu47i2E4FWxfG79zdkEWkU9N",
+   "delegaciones": 27,
+   "retiradas": 38,
+   "desde": "2024-08-11",
+   "hasta": "2026-05-07",
+   "delegaHoy": false
+  },
+  {
+   "cuenta": "TEF9ZVUxhmGGffvkf59e2vdLfAG1QCMb7B",
+   "delegaciones": 6,
+   "retiradas": 0,
+   "desde": "2026-03-02",
+   "hasta": "2026-08-31",
+   "delegaHoy": true
+  },
+  {
+   "cuenta": "TPyjyZfsYaXStgz2NmAraF1uZcMtkgNan5",
+   "delegaciones": 5,
+   "retiradas": 5,
+   "desde": "2024-08-17",
+   "hasta": "2026-03-02",
+   "delegaHoy": false
+  },
+  {
+   "cuenta": "TWpMnUh9pZS1Mf8yyw9WPiS82WYevKzQo2",
+   "delegaciones": 3,
+   "retiradas": 2,
+   "desde": "2024-08-19",
+   "hasta": "2024-09-07",
+   "delegaHoy": false
+  },
+  {
+   "cuenta": "TU32XvjDNkxEkqxCgQQWEKmoMxTz8NECUV",
+   "delegaciones": 2,
+   "retiradas": 4,
+   "desde": "2024-08-20",
+   "hasta": "2025-03-21",
+   "delegaHoy": false
+  },
+  {
+   "cuenta": "TRzQrtxrEJbSbQNwAsgAHkBMxTX47yNmjo",
+   "delegaciones": 2,
+   "retiradas": 2,
+   "desde": "2024-08-20",
+   "hasta": "2024-09-18",
+   "delegaHoy": false
+  },
+  {
+   "cuenta": "TJNtFduS4oebw3jgGKCYmgSpTdyPieb6Ha",
+   "delegaciones": 2,
+   "retiradas": 2,
+   "desde": "2024-08-20",
+   "hasta": "2024-09-07",
+   "delegaHoy": false
+  },
+  {
+   "cuenta": "TPhGmczy3wkUGafFT8QMXPLN2rzdxeChME",
+   "delegaciones": 1,
+   "retiradas": 1,
+   "desde": "2024-08-20",
+   "hasta": "2024-09-11",
+   "delegaHoy": false
+  },
+  {
+   "cuenta": "TXjbXLdJ5LHYd23rYhddoZXffi3PJUtw5R",
+   "delegaciones": 1,
+   "retiradas": 1,
+   "desde": "2024-08-20",
+   "hasta": "2024-09-02",
+   "delegaHoy": false
+  },
+  {
+   "cuenta": "TKpiitwGUuW5WgsBMg5w5QWUpC6nUTroqa",
+   "delegaciones": 1,
+   "retiradas": 1,
+   "desde": "2024-08-20",
+   "hasta": "2024-09-02",
+   "delegaHoy": false
+  },
+  {
+   "cuenta": "TYL7z7VSVRShLoJ6YRQMA4t9pSECt9ZLmz",
+   "delegaciones": 1,
+   "retiradas": 1,
+   "desde": "2024-08-21",
+   "hasta": "2024-09-02",
+   "delegaHoy": false
+  },
+  {
+   "cuenta": "TLbkcH7QLcULY8dpPAbD9EYGLUWKbeRxuB",
+   "delegaciones": 1,
+   "retiradas": 1,
+   "desde": "2024-08-21",
+   "hasta": "2024-09-02",
+   "delegaHoy": false
+  },
+  {
+   "cuenta": "TFKSWmnRJkzCfWUr56DQ1zqGCxZLW9dKSv",
+   "delegaciones": 1,
+   "retiradas": 1,
+   "desde": "2024-08-21",
+   "hasta": "2024-09-02",
+   "delegaHoy": false
+  },
+  {
+   "cuenta": "TAibbFBAkcNioexXTFWKbp65mgLp7JiqHD",
+   "delegaciones": 1,
+   "retiradas": 1,
+   "desde": "2024-08-29",
+   "hasta": "2024-08-29",
+   "delegaHoy": false
+  },
+  {
+   "cuenta": "TFrT3EMHdroQ6YSwLZtSLuWxFEbMbLibnE",
+   "delegaciones": 1,
+   "retiradas": 1,
+   "desde": "2024-08-29",
+   "hasta": "2024-08-29",
+   "delegaHoy": false
+  },
+  {
+   "cuenta": "TU4hymfSVr4CkFQzyaoeuZ9zCZ9kQcUMTW",
+   "delegaciones": 1,
+   "retiradas": 1,
+   "desde": "2024-08-23",
+   "hasta": "2024-08-23",
+   "delegaHoy": false
+  }
+ ],
+ "creadoresDeContratosDelReparto": [
+  {
+   "direccion": "TU3kjFuhtEo42tsCBtfYUAZxoqQ4yuSLQ5",
+   "nombre": "STRXProxy",
+   "trx": 9895917713,
+   "creador": "TZHPiv9dNUZ9s8XLn5ihVvYc8GHFbwEAeM"
+  },
+  {
+   "direccion": "TNUC9Qb1rRpS5CbWLmNMxXBjyFoydXjWFR",
+   "nombre": "WTRX",
+   "trx": 3575437509,
+   "creador": "TG6jUMfwpwR9QNFsSwCGtLaV2TR2gV8yru"
+  },
+  {
+   "direccion": "TE2RzoSV3wFK99w6J9UnnZ4vLfXYoxvRwP",
+   "nombre": "CEther",
+   "trx": 1562350723,
+   "creador": "TV3Wg2zNUBzGJsJNCEUZ2W9YVsFK2AAcLB"
+  },
+  {
+   "direccion": "TVjuTE3V5bMVdpfNhid8kD2v35T2k1u1Br",
+   "nombre": "PoolManager",
+   "trx": 285928651,
+   "creador": "TU3rMHyWHzeEJBReWLzHko728hbz6MtfNg"
+  },
+  {
+   "direccion": "TWjkoz18Y48SgWoxEeGG11ezCCzee8wo1A",
+   "nombre": "TWjkoz18Y48SgWoxEeGG11ezCCzee8wo1A",
+   "trx": 134984089,
+   "creador": "TJeKahCVvhGBo42zu73vYoCJhqcD3TgnDD"
+  },
+  {
+   "direccion": "TDXSzDdCtHaewUshMSkHUWE1fADfxHRRVR",
+   "nombre": "EclipcityGlobalInsurance",
+   "trx": 21521599,
+   "creador": "TH746WKMRfNbe8CzYxRpkXwKr7fjocYFTN"
+  },
+  {
+   "direccion": "TFi3v5PtYRnVdC43qSvPR3upZhgreiURga",
+   "nombre": "TFi3v5PtYRnVdC43qSvPR3upZhgreiURga",
+   "trx": 14316411,
+   "creador": "TXk8rQSAvPvBBNtqSoY6nCfsXWCSSpTVQF"
+  },
+  {
+   "direccion": "TEWQKz9Rzn4rtNPgcChKW4C7vC5BayJFrT",
+   "nombre": "SunStakerSimpleStandAlone",
+   "trx": 13345774,
+   "creador": "TCGxQmQZwg61RLFbPsxsgLyKD8qsqUFjns"
+  },
+  {
+   "direccion": "TCkBkQBnSmsNXJvdn5ihPKUjUSHrjfT5xv",
+   "nombre": "TCkBkQBnSmsNXJvdn5ihPKUjUSHrjfT5xv",
+   "trx": 12282131,
+   "creador": "TXk8rQSAvPvBBNtqSoY6nCfsXWCSSpTVQF"
+  },
+  {
+   "direccion": "TXXD6jwUYdPRcMA3CP6gCWPQPY7LwrD5mZ",
+   "nombre": "SunTRXPool",
+   "trx": 10870897,
+   "creador": "TH5Z4LVX8wpFMyALNRm7i8EygvFuxfuCou"
+  }
+ ]
+}

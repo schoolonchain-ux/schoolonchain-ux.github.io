@@ -4,7 +4,8 @@
  "generadoDe": [
   "investigacion/docs/articulos/DIRECTORIO-DIRECCIONES-TRON-2026-10-29.md",
   "reports/caso-vaneck-sun/energia.json",
-  "investigacion/research/tron-vaneck-sun/ampliacion-2026-11-05/f-fundacion/destino-de-las-mil.json"
+  "investigacion/research/tron-vaneck-sun/ampliacion-2026-11-05/f-fundacion/destino-de-las-mil.json",
+  "data/sun-io-contratos.json"
  ],
  "direcciones": {
   "TCGVFGDd62LSrfZEaz3M3fYifWWdSDHRL8": {
@@ -18,7 +19,7 @@
   "TT2T17KZhoDu47i2E4FWxfG79zdkEWkU9N": {
    "nombre": "Segunda cuenta",
    "atribucion": "Sin etiqueta en TronScan. Atribuida a Justin Sun por Wu Blockchain, EmberCN, Arkham («Justin Sun?»), Protos, crypto.news, DailyCoin. Sun lo niega",
-   "papel": "Saca 305,7 M TRX el 03-11-2026; central de energía para casas de cambio",
+   "papel": "Saca 305,7 M TRX el 03-11-2026; central de energía para casas de cambio · Delegó energía a TU3rMH… en 27 operaciones (del 11/08/2024 al 07/05/2026) y la retiró en 38. Vínculo comprobado en la cadena con la cuenta que despliega los contratos de SUN.io; no es una atribución a nadie.",
    "fuente": "Directorio de direcciones del caso Vaneck/Sun (29-oct-2026)",
    "enlace": "https://github.com/schoolonchain-ux/schoolonchain-ux.github.io/blob/main/investigacion/docs/articulos/DIRECTORIO-DIRECCIONES-TRON-2026-10-29.md",
    "fecha": "2026-10-29"
@@ -26,7 +27,7 @@
   "TPyjyZfsYaXStgz2NmAraF1uZcMtkgNan5": {
    "nombre": "Financiadora de «Vaneck»",
    "atribucion": "OKLink: «Justin Sun». Protos: 56 % del USDD 1.0, fundada desde Poloniex y HTX. Sin etiqueta en TronScan",
-   "papel": "Dio 748,5 M TRX a «Vaneck» en 2021 (96,9 M$ de entonces); 1.876 M TRX hoy",
+   "papel": "Dio 748,5 M TRX a «Vaneck» en 2021 (96,9 M$ de entonces); 1.876 M TRX hoy · Delegó energía a TU3rMH… en 5 operaciones (del 17/08/2024 al 02/03/2026) y la retiró en 5. Vínculo comprobado en la cadena con la cuenta que despliega los contratos de SUN.io; no es una atribución a nadie.",
    "fuente": "Directorio de direcciones del caso Vaneck/Sun (29-oct-2026)",
    "enlace": "https://github.com/schoolonchain-ux/schoolonchain-ux.github.io/blob/main/investigacion/docs/articulos/DIRECTORIO-DIRECCIONES-TRON-2026-10-29.md",
    "fecha": "2026-10-29"
@@ -330,15 +331,7 @@
   "TEF9ZVUxhmGGffvkf59e2vdLfAG1QCMb7B": {
    "nombre": "Cuenta de energía",
    "atribucion": "Sin nombre en TronScan. El capítulo 7 del caso la describe por lo que hace: reparte energía.",
-   "papel": "Tiene delegados 1.529,3 M TRX (energía y ancho de banda) a 81 receptores; el 47,7 % de lo delegado va a billeteras nuevas de Binance. Datos del corte del 5-nov-2026.",
-   "fuente": "Caso Vaneck/Sun, capítulo 7",
-   "enlace": "caso-vaneck.html?cap=7",
-   "fecha": "2026-11-05"
-  },
-  "TM3sTVyahiGWYktKg8G6miHpTzRurKDt7b": {
-   "nombre": "Cuenta que controla a otra de energía",
-   "atribucion": "Sin nombre en TronScan. El capítulo 7 del caso la describe por su relación con otra cuenta.",
-   "papel": "Control común: es clave de TU3rMHyWHzeEJBReWLzHko728hbz6MtfNg, una cuenta que reparte energía a contratos de SUN.io (la controla).",
+   "papel": "Tiene delegados 1.529,3 M TRX (energía y ancho de banda) a 81 receptores; el 47,7 % de lo delegado va a billeteras nuevas de Binance. Datos del corte del 5-nov-2026. · Delegó energía a TU3rMH… en 6 operaciones (del 02/03/2026 al 31/08/2026); hoy es la única que le delega energía. Vínculo comprobado en la cadena con la cuenta que despliega los contratos de SUN.io; no es una atribución a nadie.",
    "fuente": "Caso Vaneck/Sun, capítulo 7",
    "enlace": "caso-vaneck.html?cap=7",
    "fecha": "2026-11-05"
@@ -454,6 +447,270 @@
    "fuente": "Caso Vaneck/Sun, capítulo 8",
    "enlace": "caso-vaneck.html?cap=8",
    "fecha": "2026-11-05"
+  },
+  "TTfvyrAz86hbZk5iDpKD78pqLGgi8C7AAw": {
+   "nombre": "Contrato etiquetado por TronScan: SUN: LaunchPadProxy",
+   "atribucion": "La etiqueta es de TronScan (no de la cadena). Lo creó TU3rMH… el 09/08/2024, la misma cuenta que creó 11 de las 11 direcciones que SUN.io publica en sus anuncios.",
+   "papel": "",
+   "fuente": "TronScan y lectura de la cadena (6-nov-2026)",
+   "enlace": "https://tronscan.org/#/contract/TTfvyrAz86hbZk5iDpKD78pqLGgi8C7AAw",
+   "fecha": "2026-11-06"
+  },
+  "TSiiYf1b1PV1fpT9T7V4wy11btsNVajw1g": {
+   "nombre": "Router inteligente de SunPump de SUN.io",
+   "atribucion": "SUN.io lo publica en su anuncio «Announcement on the Upgrade of SUN.io Smart Router and V2 Router Contracts, and Adjustments to Energy Subsidies» (30/12/2025): antiguo, sustituido en dic-2025. Lo creó TU3rMH… el 12/08/2024.",
+   "papel": "TronScan lo etiqueta «SUN: SunPumpSmartRouter (deprecated)».",
+   "fuente": "Anuncio de SUN.io (30/12/2025) y lectura de la cadena",
+   "enlace": "https://sunio.zendesk.com/hc/en-us/articles/53327183802265",
+   "fecha": "2026-11-06"
+  },
+  "TZFs5ch1R1C4mmjwrrmZqeqbUgGpxY1yWB": {
+   "nombre": "Router V2 de SunPump de SUN.io",
+   "atribucion": "SUN.io lo publica en su anuncio «Announcement on the Upgrade of SUN.io Smart Router and V2 Router Contracts, and Adjustments to Energy Subsidies» (30/12/2025): antiguo, sustituido en dic-2025. Lo creó TU3rMH… el 12/08/2024.",
+   "papel": "TronScan lo etiqueta «SUN: SunPumpSmartRouter (deprecated) ».",
+   "fuente": "Anuncio de SUN.io (30/12/2025) y lectura de la cadena",
+   "enlace": "https://sunio.zendesk.com/hc/en-us/articles/53327183802265",
+   "fecha": "2026-11-06"
+  },
+  "TXF1xDbVGdxFGbovmmmXvBGu8ZiE3Lq4mR": {
+   "nombre": "Router V2 de SUN.io",
+   "atribucion": "SUN.io lo publica en su anuncio «Announcement on the Upgrade of SUN.io Smart Router and V2 Router Contracts, and Adjustments to Energy Subsidies» (30/12/2025): antiguo, sustituido en dic-2025. Lo creó TU3rMH… el 06/09/2024.",
+   "papel": "TronScan lo etiqueta «SUN: SunSwap V2 Router (deprecated)».",
+   "fuente": "Anuncio de SUN.io (30/12/2025) y lectura de la cadena",
+   "enlace": "https://sunio.zendesk.com/hc/en-us/articles/53327183802265",
+   "fecha": "2026-11-06"
+  },
+  "TJ4NNy8xZEqsowCBhLvZ45LCqPdGjkET5j": {
+   "nombre": "Router inteligente (smart router) de SUN.io",
+   "atribucion": "SUN.io lo publica en su anuncio «SUN.io Platform Updates The Smart Router Contract, Reduces Transaction Energy Fee to 1%» (18/09/2024): nuevo en ese anuncio. Lo creó TU3rMH… el 17/09/2024.",
+   "papel": "TronScan lo etiqueta «SUN: SunSwap Smart Exchange Router  (deprecated)».",
+   "fuente": "Anuncio de SUN.io (18/09/2024) y lectura de la cadena",
+   "enlace": "https://sunio.zendesk.com/hc/en-us/articles/37839082907545",
+   "fecha": "2026-11-06"
+  },
+  "TCFNp179Lg46D16zKoumd4Poa2WFFdtqYj": {
+   "nombre": "Router inteligente de SUN.io",
+   "atribucion": "SUN.io lo publica en su anuncio «Announcement on the Upgrade of SUN.io Smart Router and V2 Router Contracts, and Adjustments to Energy Subsidies» (30/12/2025): antiguo, sustituido en dic-2025. Lo creó TU3rMH… el 24/01/2025.",
+   "papel": "TronScan lo etiqueta «SUN: SunSwap Smart Exchange Router (deprecated)».",
+   "fuente": "Anuncio de SUN.io (30/12/2025) y lectura de la cadena",
+   "enlace": "https://sunio.zendesk.com/hc/en-us/articles/53327183802265",
+   "fecha": "2026-11-06"
+  },
+  "TEPcBKJB7N6rF9xKQKPVeSrscsRTfsVFVi": {
+   "nombre": "Contrato etiquetado por TronScan: SunPump: LaunchPadProxy",
+   "atribucion": "La etiqueta es de TronScan (no de la cadena). Lo creó TU3rMH… el 21/02/2025, la misma cuenta que creó 11 de las 11 direcciones que SUN.io publica en sus anuncios.",
+   "papel": "",
+   "fuente": "TronScan y lectura de la cadena (6-nov-2026)",
+   "enlace": "https://tronscan.org/#/contract/TEPcBKJB7N6rF9xKQKPVeSrscsRTfsVFVi",
+   "fecha": "2026-11-06"
+  },
+  "TGnC7LMji8hBpyvZt1TTEJhVpAZ5HFyJ3r": {
+   "nombre": "Router inteligente y router inteligente de SunPump de SUN.io",
+   "atribucion": "SUN.io lo publica en su anuncio «Announcement on the Upgrade of SUN.io Smart Router and V2 Router Contracts, and Adjustments to Energy Subsidies» (30/12/2025): nuevo en dic-2025; en sep-2026 pasa a «legacy»: sin subvención de energía desde el 31-oct-2026. Lo creó TU3rMH… el 28/12/2025.",
+   "papel": "TronScan lo etiqueta «SUN: SunSwap Smart Exchange Router (deprecated)».",
+   "fuente": "Anuncio de SUN.io (30/12/2025) y lectura de la cadena",
+   "enlace": "https://sunio.zendesk.com/hc/en-us/articles/53327183802265",
+   "fecha": "2026-11-06"
+  },
+  "TMmRKgwC1hx4azzkXoPzujgQThzF48Actq": {
+   "nombre": "Router V2 y router V2 de SunPump de SUN.io",
+   "atribucion": "SUN.io lo publica en su anuncio «Announcement on the Upgrade of SUN.io Smart Router and V2 Router Contracts, and Adjustments to Energy Subsidies» (30/12/2025): nuevo en dic-2025; sustituido en ene-2026. Lo creó TU3rMH… el 28/12/2025.",
+   "papel": "TronScan lo etiqueta «SUN: SunSwap V2Router (deprecated)».",
+   "fuente": "Anuncio de SUN.io (30/12/2025) y lectura de la cadena",
+   "enlace": "https://sunio.zendesk.com/hc/en-us/articles/53327183802265",
+   "fecha": "2026-11-06"
+  },
+  "TSJEtPuqHpvSaVnSwvCsngaeBxrGUzp95Q": {
+   "nombre": "Universal Router de SUN.io",
+   "atribucion": "SUN.io lo publica en su anuncio «Announcement on SUN.io Smart Router Upgrade: Introducing Universal Router & Permit2 Protocols» (05/02/2026): en feb-2026 publicado como oficial; en may-2026 pasa a «antiguo». Lo creó TU3rMH… el 28/12/2025.",
+   "papel": "TronScan lo etiqueta «SUN: SunSwap UniversalRouter (deprecated)».",
+   "fuente": "Anuncio de SUN.io (05/02/2026) y lectura de la cadena",
+   "enlace": "https://sunio.zendesk.com/hc/en-us/articles/54899665032601",
+   "fecha": "2026-11-06"
+  },
+  "TC8xQzPHfn5KceZV6s6GmZkBCFWWUoPXs1": {
+   "nombre": "Contrato etiquetado por TronScan: SUN: SunSwapV4 CLPositionManager",
+   "atribucion": "La etiqueta es de TronScan (no de la cadena). Lo creó TU3rMH… el 28/12/2025, la misma cuenta que creó 11 de las 11 direcciones que SUN.io publica en sus anuncios.",
+   "papel": "",
+   "fuente": "TronScan y lectura de la cadena (6-nov-2026)",
+   "enlace": "https://tronscan.org/#/contract/TC8xQzPHfn5KceZV6s6GmZkBCFWWUoPXs1",
+   "fecha": "2026-11-06"
+  },
+  "TTJxU3P8rHycAyFY4kVtGNfmnMH4ezcuM9": {
+   "nombre": "Permit2 de SUN.io",
+   "atribucion": "SUN.io lo publica en su anuncio «Announcement on SUN.io Smart Router Upgrade: Introducing Universal Router & Permit2 Protocols» (05/02/2026): direcciones oficialmente publicadas. Lo creó TU3rMH… el 28/12/2025.",
+   "papel": "TronScan lo etiqueta «SUN: Permit2».",
+   "fuente": "Anuncio de SUN.io (05/02/2026) y lectura de la cadena",
+   "enlace": "https://sunio.zendesk.com/hc/en-us/articles/54899665032601",
+   "fecha": "2026-11-06"
+  },
+  "TVjuTE3V5bMVdpfNhid8kD2v35T2k1u1Br": {
+   "nombre": "Contrato etiquetado por TronScan: SUN: SunSwapV4 PoolManager",
+   "atribucion": "La etiqueta es de TronScan (no de la cadena). Lo creó TU3rMH… el 28/12/2025, la misma cuenta que creó 11 de las 11 direcciones que SUN.io publica en sus anuncios.",
+   "papel": "",
+   "fuente": "TronScan y lectura de la cadena (6-nov-2026)",
+   "enlace": "https://tronscan.org/#/contract/TVjuTE3V5bMVdpfNhid8kD2v35T2k1u1Br",
+   "fecha": "2026-11-06"
+  },
+  "TNJVzGqKBWkJxJB5XYSqGAwUTV15U24pPq": {
+   "nombre": "Router V2 y router V2 de SunPump de SUN.io",
+   "atribucion": "SUN.io lo publica en su anuncio «Announcement on the Updated Deployment of SUN.io V2 Router Contract» (07/01/2026): nuevo en ene-2026. Lo creó TU3rMH… el 06/01/2026.",
+   "papel": "TronScan lo etiqueta «SUN: SunSwap V2Router».",
+   "fuente": "Anuncio de SUN.io (07/01/2026) y lectura de la cadena",
+   "enlace": "https://sunio.zendesk.com/hc/en-us/articles/53994815712281",
+   "fecha": "2026-11-06"
+  },
+  "TWH7FMNjaLUfx5XnCzs1wybzA6jV5DXWsG": {
+   "nombre": "Contrato etiquetado por TronScan: SUN: SunSwap Smart Exchange Router",
+   "atribucion": "La etiqueta es de TronScan (no de la cadena). Lo creó TU3rMH… el 03/02/2026, la misma cuenta que creó 11 de las 11 direcciones que SUN.io publica en sus anuncios.",
+   "papel": "",
+   "fuente": "TronScan y lectura de la cadena (6-nov-2026)",
+   "enlace": "https://tronscan.org/#/contract/TWH7FMNjaLUfx5XnCzs1wybzA6jV5DXWsG",
+   "fecha": "2026-11-06"
+  },
+  "TVfkpvewpDohw5Ju6Dm68Cbj2TgByhVsEL": {
+   "nombre": "Contrato etiquetado por TronScan: SUN: SunSwap ReferralVault",
+   "atribucion": "La etiqueta es de TronScan (no de la cadena). Lo creó TU3rMH… el 08/05/2026, la misma cuenta que creó 11 de las 11 direcciones que SUN.io publica en sus anuncios.",
+   "papel": "",
+   "fuente": "TronScan y lectura de la cadena (6-nov-2026)",
+   "enlace": "https://tronscan.org/#/contract/TVfkpvewpDohw5Ju6Dm68Cbj2TgByhVsEL",
+   "fecha": "2026-11-06"
+  },
+  "TQqgNg13s2DjvXhW1ky4v6TsR8wZGvb7Y4": {
+   "nombre": "Universal Router de SUN.io",
+   "atribucion": "SUN.io lo publica en su anuncio «Announcement on the SUN.io Universal Router Contract Upgrade» (19/05/2026): nuevo en may-2026. Lo creó TU3rMH… el 08/05/2026.",
+   "papel": "TronScan lo etiqueta «SUN: SunSwap UniversalRouter».",
+   "fuente": "Anuncio de SUN.io (19/05/2026) y lectura de la cadena",
+   "enlace": "https://sunio.zendesk.com/hc/en-us/articles/58065277910681",
+   "fecha": "2026-11-06"
+  },
+  "TU3rMHyWHzeEJBReWLzHko728hbz6MtfNg": {
+   "nombre": "Cuenta que despliega los contratos de SUN.io",
+   "atribucion": "Sin nombre en TronScan. Creó 11 de las 11 direcciones que SUN.io publica en sus anuncios (de sep-2024 a sep-2026) y 41 contratos en total (del 09/08/2024 al 08/05/2026).",
+   "papel": "Su clave propietaria es TM3sTV… y su clave activa TCXrf8…. Recibe energía delegada por otras cuentas (hoy, 206,7 M TRX, de una sola).",
+   "fuente": "Anuncios de SUN.io y lectura de la cadena (6-nov-2026)",
+   "enlace": "https://tronscan.org/#/address/TU3rMHyWHzeEJBReWLzHko728hbz6MtfNg",
+   "fecha": "2026-11-06"
+  },
+  "TM3sTVyahiGWYktKg8G6miHpTzRurKDt7b": {
+   "nombre": "Clave propietaria de la cuenta que despliega los contratos de SUN.io",
+   "atribucion": "Sin nombre en TronScan. Es la única clave propietaria de TU3rMH… desde el 23-ago-2024 (permisos leídos de la cadena); esa cuenta creó 11 de las 11 direcciones que SUN.io publica en sus anuncios.",
+   "papel": "Que sea su clave no dice por sí solo quién la controla. El capítulo 7 del caso describe la misma relación («control común»).",
+   "fuente": "Lectura de la cadena (6-nov-2026) y caso Vaneck/Sun, capítulo 7",
+   "enlace": "caso-vaneck.html?cap=7",
+   "fecha": "2026-11-06"
+  },
+  "TCXrf8SwGjcmQYY1FcFnV3LUXSQpqod3bi": {
+   "nombre": "Clave activa de la cuenta que despliega los contratos de SUN.io",
+   "atribucion": "Sin nombre en TronScan. Es la clave activa de TU3rMH… desde el 23-ene-2025 y creó en jun-2023 dos contratos que TronScan etiqueta «SUN: SunSwapV3 SwapRouter» y «SUN: SunSwapV3 Factory».",
+   "papel": "La etiqueta es de TronScan; el creador, de la cadena.",
+   "fuente": "TronScan y lectura de la cadena (6-nov-2026)",
+   "enlace": "https://tronscan.org/#/address/TCXrf8SwGjcmQYY1FcFnV3LUXSQpqod3bi",
+   "fecha": "2026-11-06"
+  },
+  "TWpMnUh9pZS1Mf8yyw9WPiS82WYevKzQo2": {
+   "nombre": "Delegó energía a la cuenta que despliega los contratos de SUN.io",
+   "atribucion": "Sin nombre en TronScan. Vínculo comprobado en la cadena; no es una atribución a nadie.",
+   "papel": "Delegó energía a TU3rMH… en 3 operaciones (del 19/08/2024 al 07/09/2024) y la retiró en 2.",
+   "fuente": "Lectura de la cadena (6-nov-2026) y anuncios de SUN.io",
+   "enlace": "https://tronscan.org/#/address/TU3rMHyWHzeEJBReWLzHko728hbz6MtfNg",
+   "fecha": "2026-11-06"
+  },
+  "TU32XvjDNkxEkqxCgQQWEKmoMxTz8NECUV": {
+   "nombre": "Delegó energía a la cuenta que despliega los contratos de SUN.io",
+   "atribucion": "Sin nombre en TronScan. Vínculo comprobado en la cadena; no es una atribución a nadie.",
+   "papel": "Delegó energía a TU3rMH… en 2 operaciones (del 20/08/2024 al 21/03/2025) y la retiró en 4.",
+   "fuente": "Lectura de la cadena (6-nov-2026) y anuncios de SUN.io",
+   "enlace": "https://tronscan.org/#/address/TU3rMHyWHzeEJBReWLzHko728hbz6MtfNg",
+   "fecha": "2026-11-06"
+  },
+  "TRzQrtxrEJbSbQNwAsgAHkBMxTX47yNmjo": {
+   "nombre": "Delegó energía a la cuenta que despliega los contratos de SUN.io",
+   "atribucion": "Sin nombre en TronScan. Vínculo comprobado en la cadena; no es una atribución a nadie.",
+   "papel": "Delegó energía a TU3rMH… en 2 operaciones (del 20/08/2024 al 18/09/2024) y la retiró en 2.",
+   "fuente": "Lectura de la cadena (6-nov-2026) y anuncios de SUN.io",
+   "enlace": "https://tronscan.org/#/address/TU3rMHyWHzeEJBReWLzHko728hbz6MtfNg",
+   "fecha": "2026-11-06"
+  },
+  "TJNtFduS4oebw3jgGKCYmgSpTdyPieb6Ha": {
+   "nombre": "Delegó energía a la cuenta que despliega los contratos de SUN.io",
+   "atribucion": "Sin nombre en TronScan. Vínculo comprobado en la cadena; no es una atribución a nadie.",
+   "papel": "Delegó energía a TU3rMH… en 2 operaciones (del 20/08/2024 al 07/09/2024) y la retiró en 2.",
+   "fuente": "Lectura de la cadena (6-nov-2026) y anuncios de SUN.io",
+   "enlace": "https://tronscan.org/#/address/TU3rMHyWHzeEJBReWLzHko728hbz6MtfNg",
+   "fecha": "2026-11-06"
+  },
+  "TPhGmczy3wkUGafFT8QMXPLN2rzdxeChME": {
+   "nombre": "Delegó energía a la cuenta que despliega los contratos de SUN.io",
+   "atribucion": "Sin nombre en TronScan. Vínculo comprobado en la cadena; no es una atribución a nadie.",
+   "papel": "Delegó energía a TU3rMH… en 1 operación (del 20/08/2024 al 11/09/2024) y la retiró en 1.",
+   "fuente": "Lectura de la cadena (6-nov-2026) y anuncios de SUN.io",
+   "enlace": "https://tronscan.org/#/address/TU3rMHyWHzeEJBReWLzHko728hbz6MtfNg",
+   "fecha": "2026-11-06"
+  },
+  "TXjbXLdJ5LHYd23rYhddoZXffi3PJUtw5R": {
+   "nombre": "Delegó energía a la cuenta que despliega los contratos de SUN.io",
+   "atribucion": "Sin nombre en TronScan. Vínculo comprobado en la cadena; no es una atribución a nadie.",
+   "papel": "Delegó energía a TU3rMH… en 1 operación (del 20/08/2024 al 02/09/2024) y la retiró en 1.",
+   "fuente": "Lectura de la cadena (6-nov-2026) y anuncios de SUN.io",
+   "enlace": "https://tronscan.org/#/address/TU3rMHyWHzeEJBReWLzHko728hbz6MtfNg",
+   "fecha": "2026-11-06"
+  },
+  "TKpiitwGUuW5WgsBMg5w5QWUpC6nUTroqa": {
+   "nombre": "Delegó energía a la cuenta que despliega los contratos de SUN.io",
+   "atribucion": "Sin nombre en TronScan. Vínculo comprobado en la cadena; no es una atribución a nadie.",
+   "papel": "Delegó energía a TU3rMH… en 1 operación (del 20/08/2024 al 02/09/2024) y la retiró en 1.",
+   "fuente": "Lectura de la cadena (6-nov-2026) y anuncios de SUN.io",
+   "enlace": "https://tronscan.org/#/address/TU3rMHyWHzeEJBReWLzHko728hbz6MtfNg",
+   "fecha": "2026-11-06"
+  },
+  "TYL7z7VSVRShLoJ6YRQMA4t9pSECt9ZLmz": {
+   "nombre": "Delegó energía a la cuenta que despliega los contratos de SUN.io",
+   "atribucion": "Sin nombre en TronScan. Vínculo comprobado en la cadena; no es una atribución a nadie.",
+   "papel": "Delegó energía a TU3rMH… en 1 operación (del 21/08/2024 al 02/09/2024) y la retiró en 1.",
+   "fuente": "Lectura de la cadena (6-nov-2026) y anuncios de SUN.io",
+   "enlace": "https://tronscan.org/#/address/TU3rMHyWHzeEJBReWLzHko728hbz6MtfNg",
+   "fecha": "2026-11-06"
+  },
+  "TLbkcH7QLcULY8dpPAbD9EYGLUWKbeRxuB": {
+   "nombre": "Delegó energía a la cuenta que despliega los contratos de SUN.io",
+   "atribucion": "Sin nombre en TronScan. Vínculo comprobado en la cadena; no es una atribución a nadie.",
+   "papel": "Delegó energía a TU3rMH… en 1 operación (del 21/08/2024 al 02/09/2024) y la retiró en 1.",
+   "fuente": "Lectura de la cadena (6-nov-2026) y anuncios de SUN.io",
+   "enlace": "https://tronscan.org/#/address/TU3rMHyWHzeEJBReWLzHko728hbz6MtfNg",
+   "fecha": "2026-11-06"
+  },
+  "TFKSWmnRJkzCfWUr56DQ1zqGCxZLW9dKSv": {
+   "nombre": "Delegó energía a la cuenta que despliega los contratos de SUN.io",
+   "atribucion": "Sin nombre en TronScan. Vínculo comprobado en la cadena; no es una atribución a nadie.",
+   "papel": "Delegó energía a TU3rMH… en 1 operación (del 21/08/2024 al 02/09/2024) y la retiró en 1.",
+   "fuente": "Lectura de la cadena (6-nov-2026) y anuncios de SUN.io",
+   "enlace": "https://tronscan.org/#/address/TU3rMHyWHzeEJBReWLzHko728hbz6MtfNg",
+   "fecha": "2026-11-06"
+  },
+  "TAibbFBAkcNioexXTFWKbp65mgLp7JiqHD": {
+   "nombre": "Delegó energía a la cuenta que despliega los contratos de SUN.io",
+   "atribucion": "Sin nombre en TronScan. Vínculo comprobado en la cadena; no es una atribución a nadie.",
+   "papel": "Delegó energía a TU3rMH… en 1 operación (del 29/08/2024 al 29/08/2024) y la retiró en 1.",
+   "fuente": "Lectura de la cadena (6-nov-2026) y anuncios de SUN.io",
+   "enlace": "https://tronscan.org/#/address/TU3rMHyWHzeEJBReWLzHko728hbz6MtfNg",
+   "fecha": "2026-11-06"
+  },
+  "TFrT3EMHdroQ6YSwLZtSLuWxFEbMbLibnE": {
+   "nombre": "Delegó energía a la cuenta que despliega los contratos de SUN.io",
+   "atribucion": "Sin nombre en TronScan. Vínculo comprobado en la cadena; no es una atribución a nadie.",
+   "papel": "Delegó energía a TU3rMH… en 1 operación (del 29/08/2024 al 29/08/2024) y la retiró en 1.",
+   "fuente": "Lectura de la cadena (6-nov-2026) y anuncios de SUN.io",
+   "enlace": "https://tronscan.org/#/address/TU3rMHyWHzeEJBReWLzHko728hbz6MtfNg",
+   "fecha": "2026-11-06"
+  },
+  "TU4hymfSVr4CkFQzyaoeuZ9zCZ9kQcUMTW": {
+   "nombre": "Delegó energía a la cuenta que despliega los contratos de SUN.io",
+   "atribucion": "Sin nombre en TronScan. Vínculo comprobado en la cadena; no es una atribución a nadie.",
+   "papel": "Delegó energía a TU3rMH… en 1 operación (del 23/08/2024 al 23/08/2024) y la retiró en 1.",
+   "fuente": "Lectura de la cadena (6-nov-2026) y anuncios de SUN.io",
+   "enlace": "https://tronscan.org/#/address/TU3rMHyWHzeEJBReWLzHko728hbz6MtfNg",
+   "fecha": "2026-11-06"
   }
  }
 }

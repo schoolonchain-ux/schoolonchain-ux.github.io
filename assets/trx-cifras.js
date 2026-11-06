@@ -52,7 +52,7 @@
     cuerpo.append(caja('Dentro de «sin nombre en TronScan»: por tamaño de cuenta', el('div', { class: 'cs' }, 'No es un bloque de ballenas: unas pocas cuentas enormes y miles de cuentas medianas, donde caben particulares con cientos de miles de TRX.'),
       UI.tabla({ pp: 6, buscar: false, rows: D.sinIdentificarPorTramo.map((r) => ({ ...r })), cols: [{ t: 'Saldo de la cuenta', v: (r) => r.tramo + ' TRX', o: (r) => r.tramo }, { t: 'Cuentas', v: (r) => n(r.cuentas), o: (r) => r.cuentas }, { t: 'TRX', v: (r) => mt(r.trx), o: (r) => r.trx }, { t: '% del TRX', v: (r) => n(r.pct, 2) + ' %', o: (r) => r.pct }] })));
 
-    // Al pulsar un grupo (trozo, leyenda o fila) se enseñan sus cuentas, enteras y con enlace, y lo que dicen de cada una NUESTROS informes ya publicados (data/direcciones-conocidas.json).
+    // Al pulsar un grupo (trozo, leyenda o fila) se enseñan sus cuentas, enteras y con enlace, y lo que sabemos de cada una con su fuente: nuestros informes, los anuncios de SUN.io y la lectura de la cadena (data/direcciones-conocidas.json).
     // Al abrir la pestaña se ve ya el de «Sin nombre en TronScan».
     const conocidasP = fetch('data/direcciones-conocidas.json?v=' + Math.floor(Date.now() / 600000), { signal: AbortSignal.timeout(15000) }).then((r) => { if (!r.ok) throw new Error('HTTP ' + r.status); return r.json(); }).then((j) => (j && j.direcciones ? j.direcciones : null)).catch(() => null);
     let elegido = null;
@@ -73,19 +73,19 @@
         const partes = [];
         if (sinNombre) {
           const grandes = lista.filter((x) => x.trx >= 100e6), conD = grandes.filter((x) => desc(x.a)), pD = conD.reduce((s2, x) => s2 + x.pct, 0), pG = grandes.reduce((s2, x) => s2 + x.pct, 0);
-          partes.push('Se muestran las ' + n(lista.length) + ' mayores de las ' + n(g.cuentas) + ' que TronScan no nombra. ' + n(grandes.length) + ' tienen 100 millones de TRX o más (' + n(pG, 1) + ' % de todo el TRX).' + (conocidas ? ' De esas ' + n(grandes.length) + ', ' + n(conD.length) + ' aparecen descritas en nuestros informes publicados (' + n(pD, 1) + ' % del TRX); de las otras ' + n(grandes.length - conD.length) + ' no hay nada documentado (' + n(pG - pD, 1) + ' % del TRX).' : ' No se pudo cargar lo que dicen nuestros informes; la lista de cuentas sí es de hoy.'));
+          partes.push('Se muestran las ' + n(lista.length) + ' mayores de las ' + n(g.cuentas) + ' que TronScan no nombra. ' + n(grandes.length) + ' tienen 100 millones de TRX o más (' + n(pG, 1) + ' % de todo el TRX).' + (conocidas ? ' De esas ' + n(grandes.length) + ', ' + n(conD.length) + ' tienen una descripción con su fuente (nuestros informes, los anuncios de SUN.io o la cadena: ' + n(pD, 1) + ' % del TRX); de las otras ' + n(grandes.length - conD.length) + ' no hay nada documentado (' + n(pG - pD, 1) + ' % del TRX).' : ' No se pudo cargar lo que dicen nuestros informes; la lista de cuentas sí es de hoy.'));
         } else partes.push('Las ' + n(lista.length) + ' cuentas de este grupo (de las 10.000 mayores), de mayor a menor.');
         const cols = [
           { t: 'Puesto', v: (r) => n(r.puesto), o: (r) => r.puesto },
           { t: 'Dirección', v: (r) => el('span', null, el('a', { class: 'addr mono', href: 'https://tronscan.org/#/address/' + r.a, target: '_blank', rel: 'noopener', title: 'Comprobar en TronScan' }, r.a), el('br'), el('a', { class: 'muted', style: 'font-size:12px', href: 'herramientas.html?dir=' + r.a + '#comprobar' }, 'Comprobar aquí →')), o: (r) => r.a, csv: (r) => r.a }];
         if (!sinNombre) cols.push({ t: 'Nombre', v: (r) => el('span', null, r.etiqueta || '—', r.recordada ? el('span', { class: 'muted', style: 'font-size:12px' }, ' (nombre que TronScan le dio antes)') : null), o: (r) => r.etiqueta || '', csv: (r) => r.etiqueta || '' });
         cols.push({ t: 'TRX', v: (r) => n(r.trx), o: (r) => r.trx, csv: (r) => r.trx }, { t: '% del TRX', v: (r) => n(r.pct, 2) + ' %', o: (r) => r.pct, csv: (r) => r.pct },
-          { t: 'Qué dicen nuestros informes', v: (r) => { const d = desc(r.a); if (!d) return el('span', { class: 'muted' }, sinNombre ? (conocidas ? 'Nada documentado' : '—') : '—');
+          { t: 'Qué sabemos (con su fuente)', v: (r) => { const d = desc(r.a); if (!d) return el('span', { class: 'muted' }, sinNombre ? (conocidas ? 'Nada documentado' : '—') : '—');
               return el('span', { style: 'font-size:12.5px;line-height:1.45' }, el('b', null, d.nombre + '. '), d.atribucion + (d.papel ? ' · ' + d.papel : ''), ' ', el('a', { href: d.enlace, target: d.enlace.startsWith('http') ? '_blank' : null, rel: 'noopener' }, 'Fuente: ' + d.fuente + ' →')); },
             o: (r) => (desc(r.a) ? 0 : 1), csv: (r) => { const d = desc(r.a); return d ? d.nombre + ': ' + d.atribucion + ' · ' + d.papel + ' (' + d.fuente + ')' : (sinNombre ? 'Nada documentado' : ''); } });
         panel.replaceChildren(caja(titulo, el('p', { style: 'margin:0 0 8px' }, partes.join(' ') + ' Pulsa la dirección para comprobarla en TronScan o «Comprobar aquí» para verla en esta web.'),
           UI.tabla({ pp: 10, ph: 'Buscar una dirección o un nombre…', csv: 'cuentas-' + k.replace(/_/g, '-'), rows: lista.map((x) => ({ ...x })), orden: [sinNombre ? 2 : 3, -1], cols }),
-          el('p', { class: 'hint', style: 'margin:8px 0 0' }, '«Sin nombre en TronScan» es lo que dice TronScan hoy. Una atribución de terceros (un medio, un analista) es una atribución: dice quién la hace, no es un hecho comprobado en cadena. «Nada documentado» significa que ninguno de nuestros informes publicados habla de esa cuenta.')));
+          el('p', { class: 'hint', style: 'margin:8px 0 0' }, '«Sin nombre en TronScan» es lo que dice TronScan hoy. Una atribución de terceros (un medio, un analista) es una atribución: dice quién la hace, no es un hecho comprobado en cadena. «Nada documentado» significa que no tenemos nada publicado sobre esa cuenta. Un «vínculo comprobado en la cadena» (por ejemplo, haber delegado energía a la cuenta que despliega los contratos de SUN.io) es un hecho que se puede comprobar en TronScan; no dice quién controla la cuenta.')));
       });
     }
     seleccionar('ballena_sin_identificar', { bajar: false });
