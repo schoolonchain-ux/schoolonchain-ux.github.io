@@ -39,7 +39,7 @@ a{color:var(--acc)}
 .hero{padding:44px 0 22px}
 .hero h1{margin:0 0 8px;font-size:clamp(26px,4vw,38px);line-height:1.15;letter-spacing:-.01em}
 .hero p{margin:0;max-width:760px;color:var(--soft);font-size:16.5px}
-.cards{display:grid;grid-template-columns:repeat(auto-fill,minmax(340px,1fr));gap:16px;margin:22px 0 40px}
+.cards{display:grid;grid-template-columns:repeat(auto-fill,minmax(min(340px,100%),1fr));gap:16px;margin:22px 0 40px}
 .rcard{display:flex;flex-direction:column;gap:10px;background:var(--pan);border:1px solid var(--line);border-radius:16px;padding:18px;box-shadow:var(--shadow);text-decoration:none;color:inherit;transition:transform .12s,border-color .12s}
 .rcard:hover{transform:translateY(-2px);border-color:var(--acc)}
 .rcard h3{margin:0;font-size:17px;line-height:1.3}
