@@ -32,7 +32,10 @@
       f.innerHTML = '<div class="mt"><b>' + M.nombre + '</b> · ' + M.sub + '<div class="ml">' + M.lema + '</div><div class="ml2">' + M.lemaEs + '</div></div>';
       const s = document.createElement('div'); s.className = 'ms'; M.enlacesEl('soc big').forEach((a) => s.append(a)); f.append(s);
       const av = document.createElement('p'); av.className = 'av'; av.textContent = M.aviso; f.append(av);
-      main.append(f);
+      // En la portada el contenido principal va dentro de .lay con los dos laterales; el pie se pone DESPUÉS de todo
+      // (si fuera dentro de <main>, en pantallas normales y móvil los laterales saldrían debajo del pie).
+      const lay = document.querySelector('.lay');
+      if (lay) { const w = document.createElement('div'); w.className = 'wrap pie-sitio'; w.append(f); lay.after(w); } else main.append(f);
     }
   });
 })();
