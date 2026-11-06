@@ -49,7 +49,7 @@
     function ir(k) { i = (k + arts.length) % arts.length; if (reducido) { pintar(); return; } a.classList.add('fade'); setTimeout(() => { pintar(); a.classList.remove('fade'); }, 180); }
     const parar = () => { if (timer) clearInterval(timer); timer = null; };
     const arrancar = () => { parar(); if (arts.length > 1 && !reducido && !document.hidden) timer = setInterval(() => ir(i + 1), CADA); };
-    const box = bloque('En Medium · artículos de School On-Chain', a, dots, antiguedad(d.leidoEn, 'Lista de Medium'));
+    const box = bloque('Artículos de School On-Chain', a, dots, antiguedad(d.leidoEn, 'Lista de Medium'));
     box.addEventListener('mouseenter', parar); box.addEventListener('mouseleave', arrancar);   // con el ratón encima no cambia
     box.addEventListener('focusin', parar); box.addEventListener('focusout', arrancar);
     document.addEventListener('visibilitychange', () => (document.hidden ? parar() : arrancar()));
@@ -193,15 +193,15 @@
 
   /* =============== montaje =============== */
   (async () => {
-    izq.append(el('h4', { class: 'lh' }, 'Ahora en la cadena'));
-    der.append(el('h4', { class: 'lh' }, 'Compruébalo tú'));
-    der.append(comprobador(), paridad());
+    // cada apartado lleva su propio título: Medium NO va bajo «Ahora en la cadena» (son artículos, no datos de la cadena)
+    const apartado = (titulo, cls, ...kids) => el('section', { class: 'lsec' + (cls ? ' ' + cls : '') }, el('h4', { class: 'lh' }, titulo), ...kids.filter(Boolean));
+    const derSec = apartado('Compruébalo tú', '', comprobador(), paridad());
+    der.append(derSec);
     let [med, des, cas] = await Promise.all([medium(), desbloqueos(), casos()]);
-    if (med) izq.append(med);
-    if (des) izq.append(des);
-    izq.append(bloqueosTether());
-    if (cas) der.append(cas);
-    der.append(masHerramientas());
+    if (med) izq.append(apartado('En Medium', 'uno', med));
+    izq.append(apartado('Ahora en la cadena', '', des, bloqueosTether()));
+    if (cas) derSec.append(cas);
+    derSec.append(masHerramientas());
     // los ficheros diarios se vuelven a leer cada hora, por si la tarea de las 07:00 ha publicado algo nuevo
     cada(60 * 60000, async () => {
       const [m2, d2] = await Promise.all([medium(), desbloqueos()]);
