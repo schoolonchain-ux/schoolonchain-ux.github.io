@@ -434,4 +434,6 @@ async function historicalSample(assets) {
   });
 })();
 
+  // Lo que comparte la prueba de estrés (assets/estres.js): mismo histórico y mismas monedas que el riesgo diario.
+window.MERCADO = { historicalSample, assetsById };
 })();

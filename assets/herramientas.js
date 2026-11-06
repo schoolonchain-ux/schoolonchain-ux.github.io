@@ -21,10 +21,10 @@
   // #liquidez-venta, #paridad-stablecoins) los usan la portada, el teletipo y los informes: tienen que seguir funcionando.
   const RUTAS = {
     comprobar: { zona: 'comprobar' }, 'z-comprobar': { zona: 'comprobar' },
-    recientes: { zona: 'tether', tab: 'recientes' }, 'z-tether': { zona: 'tether' }, 'paridad-stablecoins': { zona: 'tether', tab: 'paridad' },
-    'z-cartera': { zona: 'cartera' }, 'riesgo-mercado': { zona: 'cartera', tab: 'riesgo' }, 'liquidez-venta': { zona: 'cartera', tab: 'salida' },
+    recientes: { zona: 'tether', tab: 'recientes' }, 'z-tether': { zona: 'tether' }, usdt0: { zona: 'tether', tab: 'usdt0' }, 'paridad-stablecoins': { zona: 'tether', tab: 'paridad' },
+    'z-cartera': { zona: 'cartera' }, 'riesgo-mercado': { zona: 'cartera', tab: 'riesgo' }, 'prueba-estres': { zona: 'cartera', tab: 'estres' }, estres: { zona: 'cartera', tab: 'estres' }, 'liquidez-venta': { zona: 'cartera', tab: 'salida' },
     'z-mercado': { zona: 'mercado' },
-    desbloqueos: { zona: 'trx', tab: 'desbloqueos' }, 'z-trx': { zona: 'trx' },
+    desbloqueos: { zona: 'trx', tab: 'desbloqueos' }, reparto: { zona: 'trx', tab: 'reparto' }, quema: { zona: 'trx', tab: 'quema' }, 'z-trx': { zona: 'trx' },
   };
   const cifra = (zona, texto) => { const c = document.querySelector('[data-cifra="' + zona + '"]'); if (c) c.textContent = texto; };
   function pestana(zona, tab) {

@@ -1,0 +1,262 @@
+{
+ "version": 1,
+ "leidoEn": "2026-11-06T16:32:28.524Z",
+ "desde": "2021-05-16",
+ "hasta": "2026-11-05",
+ "dias": 2000,
+ "coherencia": {
+  "desviacionMedianaTrx": 0,
+  "desviacionMaximaTrx": 210145,
+  "diasConMasDe5Trx": 324,
+  "de": 1999
+ },
+ "actual": {
+  "dia": "2026-11-05",
+  "emisionDia": 3915712,
+  "quemaDia": 2762642,
+  "netoDia": 1153070,
+  "ofertaTrx": 95026912336,
+  "precioUsd": 0.3177730548,
+  "emision30d": 117461160,
+  "quema30d": 75695436,
+  "neto30d": 41765724,
+  "cambioOferta30d": 41765722
+ },
+ "regimen": {
+  "ultimoDiaDeflacionario30d": "2025-11-07",
+  "primerDiaInflacionario30d": "2025-11-08",
+  "diasInflacionarios": 363,
+  "diasDesdeEntonces": 363
+ },
+ "trimestres": [
+  {
+   "q": "2021-T2",
+   "dias": 46,
+   "emision": 231855888,
+   "quema": 140841338,
+   "neto": 91014550,
+   "quemaUsd": 10439478
+  },
+  {
+   "q": "2021-T3",
+   "dias": 92,
+   "emision": 463839024,
+   "quema": 336828563,
+   "neto": 127010461,
+   "quemaUsd": 27330538
+  },
+  {
+   "q": "2021-T4",
+   "dias": 92,
+   "emision": 465128576,
+   "quema": 566457285,
+   "neto": -101328709,
+   "quemaUsd": 54240074
+  },
+  {
+   "q": "2022-T1",
+   "dias": 90,
+   "emision": 455266592,
+   "quema": 621047906,
+   "neto": -165781314,
+   "quemaUsd": 39659675
+  },
+  {
+   "q": "2022-T2",
+   "dias": 91,
+   "emision": 460173120,
+   "quema": 689474619,
+   "neto": -229301499,
+   "quemaUsd": 48572574
+  },
+  {
+   "q": "2022-T3",
+   "dias": 92,
+   "emision": 465709376,
+   "quema": 585958952,
+   "neto": -120249576,
+   "quemaUsd": 38291694
+  },
+  {
+   "q": "2022-T4",
+   "dias": 92,
+   "emision": 465671712,
+   "quema": 844140381,
+   "neto": -378468669,
+   "quemaUsd": 47959357
+  },
+  {
+   "q": "2023-T1",
+   "dias": 90,
+   "emision": 454920752,
+   "quema": 1396917047,
+   "neto": -941996295,
+   "quemaUsd": 89984948
+  },
+  {
+   "q": "2023-T2",
+   "dias": 91,
+   "emision": 460738960,
+   "quema": 1558915736,
+   "neto": -1098176776,
+   "quemaUsd": 109928057
+  },
+  {
+   "q": "2023-T3",
+   "dias": 92,
+   "emision": 465762352,
+   "quema": 1322057903,
+   "neto": -856295551,
+   "quemaUsd": 104954925
+  },
+  {
+   "q": "2023-T4",
+   "dias": 92,
+   "emision": 466176832,
+   "quema": 1213961610,
+   "neto": -747784778,
+   "quemaUsd": 119524698
+  },
+  {
+   "q": "2024-T1",
+   "dias": 91,
+   "emision": 460810944,
+   "quema": 1045672481,
+   "neto": -584861537,
+   "quemaUsd": 128068404
+  },
+  {
+   "q": "2024-T2",
+   "dias": 91,
+   "emision": 461057872,
+   "quema": 995975065,
+   "neto": -534917193,
+   "quemaUsd": 117479795
+  },
+  {
+   "q": "2024-T3",
+   "dias": 92,
+   "emision": 466113296,
+   "quema": 1053717697,
+   "neto": -587604401,
+   "quemaUsd": 151169591
+  },
+  {
+   "q": "2024-T4",
+   "dias": 92,
+   "emision": 466197072,
+   "quema": 881172895,
+   "neto": -414975823,
+   "quemaUsd": 180737945
+  },
+  {
+   "q": "2025-T1",
+   "dias": 90,
+   "emision": 456054544,
+   "quema": 658914335,
+   "neto": -202859791,
+   "quemaUsd": 156868954
+  },
+  {
+   "q": "2025-T2",
+   "dias": 91,
+   "emision": 440560200,
+   "quema": 634187640,
+   "neto": -193627440,
+   "quemaUsd": 165264707
+  },
+  {
+   "q": "2025-T3",
+   "dias": 92,
+   "emision": 360241424,
+   "quema": 490385933,
+   "neto": -130144509,
+   "quemaUsd": 160506215
+  },
+  {
+   "q": "2025-T4",
+   "dias": 92,
+   "emision": 360226872,
+   "quema": 335085540,
+   "neto": 25141332,
+   "quemaUsd": 99565626
+  },
+  {
+   "q": "2026-T1",
+   "dias": 90,
+   "emision": 352310720,
+   "quema": 281775811,
+   "neto": 70534909,
+   "quemaUsd": 82693141
+  },
+  {
+   "q": "2026-T2",
+   "dias": 91,
+   "emision": 356320136,
+   "quema": 269454484,
+   "neto": 86865652,
+   "quemaUsd": 89834579
+  },
+  {
+   "q": "2026-T3",
+   "dias": 92,
+   "emision": 360217352,
+   "quema": 234453624,
+   "neto": 125763728,
+   "quemaUsd": 77787164
+  },
+  {
+   "q": "2026-T4",
+   "dias": 36,
+   "emision": 140955024,
+   "quema": 90152451,
+   "neto": 50802573,
+   "quemaUsd": 29683907
+  }
+ ],
+ "anios": [
+  {
+   "y": "2021",
+   "dias": 230,
+   "emision": 1160823488,
+   "quema": 1044127186,
+   "neto": 116696302
+  },
+  {
+   "y": "2022",
+   "dias": 365,
+   "emision": 1846820800,
+   "quema": 2740621858,
+   "neto": -893801058
+  },
+  {
+   "y": "2023",
+   "dias": 365,
+   "emision": 1847598896,
+   "quema": 5491852296,
+   "neto": -3644253400
+  },
+  {
+   "y": "2024",
+   "dias": 366,
+   "emision": 1854179184,
+   "quema": 3976538138,
+   "neto": -2122358954
+  },
+  {
+   "y": "2025",
+   "dias": 365,
+   "emision": 1617083040,
+   "quema": 2118573448,
+   "neto": -501490408
+  },
+  {
+   "y": "2026",
+   "dias": 309,
+   "emision": 1209803232,
+   "quema": 875836370,
+   "neto": 333966862
+  }
+ ],
+ "fuente": "TronScan /api/turnover?type=0&from=issuance (serie diaria de emisión, quema y oferta)"
+}

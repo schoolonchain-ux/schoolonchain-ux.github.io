@@ -1,0 +1,273 @@
+{
+ "version": 1,
+ "leidoEn": "2026-11-06T16:42:37.594Z",
+ "circulacion": {
+  "totalUsd": 3295919925,
+  "redes": [
+   {
+    "id": "plasma",
+    "nombre": "Plasma",
+    "usdt0": 888939619,
+    "nodosQueCoincidieron": 1,
+    "nodosConfigurados": 1
+   },
+   {
+    "id": "arbitrum",
+    "nombre": "Arbitrum One",
+    "usdt0": 812462425,
+    "nodosQueCoincidieron": 2,
+    "nodosConfigurados": 2
+   },
+   {
+    "id": "polygon",
+    "nombre": "Polygon PoS",
+    "usdt0": 730885429,
+    "nodosQueCoincidieron": 2,
+    "nodosConfigurados": 2
+   },
+   {
+    "id": "mantle",
+    "nombre": "Mantle",
+    "usdt0": 427631564,
+    "nodosQueCoincidieron": 2,
+    "nodosConfigurados": 2
+   },
+   {
+    "id": "xlayer",
+    "nombre": "XLayer",
+    "usdt0": 132126240,
+    "nodosQueCoincidieron": 2,
+    "nodosConfigurados": 2
+   },
+   {
+    "id": "hyperevm",
+    "nombre": "HyperEVM",
+    "usdt0": 56441096,
+    "nodosQueCoincidieron": 1,
+    "nodosConfigurados": 2
+   },
+   {
+    "id": "optimism",
+    "nombre": "Optimism",
+    "usdt0": 54287992,
+    "nodosQueCoincidieron": 2,
+    "nodosConfigurados": 2
+   },
+   {
+    "id": "ink",
+    "nombre": "Ink",
+    "usdt0": 46828988,
+    "nodosQueCoincidieron": 2,
+    "nodosConfigurados": 2
+   },
+   {
+    "id": "monad",
+    "nombre": "Monad",
+    "usdt0": 34829740,
+    "nodosQueCoincidieron": 1,
+    "nodosConfigurados": 2
+   },
+   {
+    "id": "flare",
+    "nombre": "Flare",
+    "usdt0": 22494639,
+    "nodosQueCoincidieron": 2,
+    "nodosConfigurados": 2
+   },
+   {
+    "id": "conflux",
+    "nombre": "Conflux eSpace",
+    "usdt0": 20159660,
+    "nodosQueCoincidieron": 1,
+    "nodosConfigurados": 1
+   },
+   {
+    "id": "stable",
+    "nombre": "Stable",
+    "usdt0": 18760567,
+    "nodosQueCoincidieron": 1,
+    "nodosConfigurados": 1
+   },
+   {
+    "id": "berachain",
+    "nombre": "Berachain",
+    "usdt0": 18662384,
+    "nodosQueCoincidieron": 1,
+    "nodosConfigurados": 1
+   },
+   {
+    "id": "unichain",
+    "nombre": "Unichain",
+    "usdt0": 11684797,
+    "nodosQueCoincidieron": 2,
+    "nodosConfigurados": 2
+   },
+   {
+    "id": "tempo",
+    "nombre": "Tempo",
+    "usdt0": 7738734,
+    "nodosQueCoincidieron": 1,
+    "nodosConfigurados": 1
+   },
+   {
+    "id": "morph",
+    "nombre": "Morph",
+    "usdt0": 6223855,
+    "nodosQueCoincidieron": 2,
+    "nodosConfigurados": 2
+   },
+   {
+    "id": "megaeth",
+    "nombre": "MegaETH",
+    "usdt0": 2543000,
+    "nodosQueCoincidieron": 1,
+    "nodosConfigurados": 1
+   },
+   {
+    "id": "rootstock",
+    "nombre": "Rootstock",
+    "usdt0": 1729939,
+    "nodosQueCoincidieron": 2,
+    "nodosConfigurados": 2
+   },
+   {
+    "id": "sei",
+    "nombre": "Sei",
+    "usdt0": 1453320,
+    "nodosQueCoincidieron": 2,
+    "nodosConfigurados": 2
+   },
+   {
+    "id": "hedera",
+    "nombre": "Hedera",
+    "usdt0": 35938,
+    "nodosQueCoincidieron": 1,
+    "nodosConfigurados": 1
+   }
+  ],
+  "redesLeidas": 20,
+  "redesEsperadas": 20,
+  "metodo": "cantidad total emitida del token USDT0 en cada red (totalSupply), leída hoy a los nodos públicos configurados, que tienen que coincidir"
+ },
+ "respaldo": {
+  "usdtEnElAdaptador": 3369255169,
+  "diferenciaUsd": 73335244,
+  "diferenciaPct": 2.177,
+  "adaptador": "0x6C96dE32CEa08842dcc4058c14d3aaAD7Fa41dee",
+  "usdtEthereum": "0xdAC17F958D2ee523a2206206994597C13D831ec7",
+  "metodo": "USDT de Ethereum a nombre del adaptador de USDT0 (balanceOf), leído hoy a dos nodos públicos que tienen que coincidir",
+  "nota": "No incluye Stellar, IOTA ni HyperCore, donde también hay USDT0 respaldado por este adaptador. Que haya más USDT guardado que USDT0 medido no es un faltante."
+ },
+ "vigilante": {
+  "generadoEn": "2026-11-06T16:25:00.884Z",
+  "bloqueos": {
+   "vigentesTotal": 64,
+   "porRed": [
+    {
+     "id": "arbitrum",
+     "nombre": "Arbitrum One",
+     "vigentes": 39,
+     "liberadas": 1,
+     "destruidoUsd": 168796
+    },
+    {
+     "id": "avalanche",
+     "nombre": "Avalanche C-Chain",
+     "vigentes": 15,
+     "liberadas": 2,
+     "destruidoUsd": 3794426
+    },
+    {
+     "id": "polygon",
+     "nombre": "Polygon PoS",
+     "vigentes": 6,
+     "liberadas": 1,
+     "destruidoUsd": 1648714
+    },
+    {
+     "id": "plasma",
+     "nombre": "Plasma",
+     "vigentes": 2,
+     "liberadas": 0,
+     "destruidoUsd": 6019434
+    },
+    {
+     "id": "kaia",
+     "nombre": "Kaia",
+     "vigentes": 1,
+     "liberadas": 1,
+     "destruidoUsd": 100001
+    },
+    {
+     "id": "xlayer",
+     "nombre": "XLayer",
+     "vigentes": 1,
+     "liberadas": 0,
+     "destruidoUsd": 0
+    }
+   ],
+   "destruidoTotalUsd": 11891603
+  },
+  "mensajes": {
+   "ultimas24h": {
+    "total": 2412,
+    "entregados": 2361,
+    "enCurso": 51,
+    "conProblema": 0
+   },
+   "volumenUsd24h": 116944944,
+   "rutasMayores": [
+    {
+     "ruta": "ethereum→plasma",
+     "mensajes": 30,
+     "usd": 26593662
+    },
+    {
+     "ruta": "xlayer→ethereum",
+     "mensajes": 8,
+     "usd": 12000621
+    },
+    {
+     "ruta": "ethereum→tron",
+     "mensajes": 152,
+     "usd": 11014864
+    },
+    {
+     "ruta": "tron→ethereum",
+     "mensajes": 98,
+     "usd": 7684121
+    },
+    {
+     "ruta": "ethereum→arbitrum",
+     "mensajes": 54,
+     "usd": 7077122
+    }
+   ],
+   "enCursoAhora": 65,
+   "masAntiguoEnCurso": {
+    "ruta": "tron→ethereum",
+    "horas": 181.3
+   },
+   "atascadosNuevos24h": 12
+  },
+  "safes": {
+   "total": 14,
+   "tresDeCinco": 14
+  },
+  "huecosDeHistorialAbiertos": 10
+ },
+ "comprobaciones": {
+  "resumenEdadHoras": 0.3,
+  "cuadreConVigilante": {
+   "circulacionPct": 0.35,
+   "adaptadorPct": 1.84
+  },
+  "libroDelVigilante": {
+   "lineas": 19079,
+   "huellasMalas": 0,
+   "ilegibles": 0,
+   "numerosQueFaltan": 0,
+   "bifurcaciones": 3
+  }
+ }
+}

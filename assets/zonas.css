@@ -85,3 +85,20 @@
   .zona p{display:none}
   .zp{padding:14px}
 }
+
+/* Página «Datos y método» */
+.dm{display:grid;gap:0;margin:6px 0 4px}
+.dm-row{display:grid;grid-template-columns:minmax(150px,230px) minmax(0,1fr);gap:6px 18px;padding:10px 0;border-top:1px dashed var(--line);font-size:14px;line-height:1.5;min-width:0}
+.dm-row:first-child{border-top:0}
+.dm-row>b{color:var(--fg);display:flex;align-items:baseline;gap:8px;min-width:0}
+.dm-row>span{color:var(--soft);min-width:0;overflow-wrap:anywhere}
+.dm-row>span b{color:var(--fg)}
+.dm-h{margin:22px 0 2px;font-size:16px;display:flex;flex-wrap:wrap;align-items:center;gap:8px}
+.dm-h:first-of-type{margin-top:10px}
+.dm-t{font-size:10.5px;font-weight:700;letter-spacing:.07em;text-transform:uppercase;border:1px solid var(--line);border-radius:999px;padding:1px 8px;color:var(--mut)}
+.dm-t.vivo{color:var(--ok);border-color:color-mix(in srgb,var(--ok) 45%,var(--line))}
+.dm-t.dia{color:var(--warn);border-color:color-mix(in srgb,var(--warn) 45%,var(--line))}
+.dm-punto{flex:none;width:9px;height:9px;border-radius:50%;background:var(--ok);box-shadow:0 0 0 3px rgba(95,211,160,.18);transform:translateY(-1px)}
+.dm-punto.warn{background:var(--warn);box-shadow:0 0 0 3px rgba(242,184,75,.18)}
+.dm-punto.bad{background:var(--bad);box-shadow:0 0 0 3px rgba(255,107,131,.18)}
+@media (max-width:700px){.dm-row{grid-template-columns:minmax(0,1fr)}}

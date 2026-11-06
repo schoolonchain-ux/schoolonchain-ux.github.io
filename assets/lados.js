@@ -195,13 +195,65 @@
     return box;
   }
 
+  /* =============== 6b · cifras de las zonas (mercado, USDT0, TRX) =============== */
+  const mUsd = (x) => (Math.abs(x) >= 1e9 ? n(x / 1e6, 0) : n(x / 1e6, 1)) + ' M $';
+  const mTrx = (x) => (Math.abs(x) >= 1e8 ? n(x / 1e6, 0) : n(x / 1e6, 1)) + ' M TRX';
+  const ACTIVOS = [{ s: 'BTC', b: 'BTCUSDT' }, { s: 'ETH', b: 'ETHUSDT' }, { s: 'TRX', b: 'TRXUSDT' }];
+  const CLASE = { 'Extreme Fear': 'miedo extremo', Fear: 'miedo', Neutral: 'neutral', Greed: 'codicia', 'Extreme Greed': 'codicia extrema' };
+  function mercadoMini() {
+    const cuerpo = el('div'), foot = el('div');
+    const box = el('div', { class: 'lb' }, el('b', { class: 'lt' }, el('a', { href: 'herramientas.html#z-mercado' }, 'Mercado hoy')), cuerpo, foot);
+    async function leer() {
+      const ver = (u) => fetch(u, { cache: 'no-cache', signal: AbortSignal.timeout(9000) }).then((r) => (r.ok ? r.json() : null)).catch(() => null);
+      const [bin, fng] = await Promise.all([ver('https://data-api.binance.vision/api/v3/ticker/24hr?symbols=' + encodeURIComponent(JSON.stringify(ACTIVOS.map((a) => a.b)))), ver('https://api.alternative.me/fng/?limit=1')]);
+      const por = Object.fromEntries((Array.isArray(bin) ? bin : []).map((x) => [x.symbol, x]));
+      const filas = [];
+      for (const a of ACTIVOS) {
+        const x = por[a.b]; if (!x) continue;
+        const p = Number(x.lastPrice), d = Number(x.priceChangePercent);
+        filas.push(el('div', { class: 'lr' }, el('span', null, a.s), el('span', null, (p >= 100 ? n(p, 0) : p >= 1 ? n(p, 2) : n(p, 4)) + ' $ ', el('span', { class: d >= 0 ? 'ok' : 'bad' }, (d >= 0 ? '+' : '−') + n(Math.abs(d), 1) + ' %'))));
+      }
+      const f0 = fng && fng.data && fng.data[0];
+      if (f0) filas.push(fila('Miedo y codicia', n(Number(f0.value), 0) + ' · ' + (CLASE[f0.value_classification] || f0.value_classification)));
+      cuerpo.replaceChildren(...filas);
+      foot.replaceChildren(filas.length ? pie('Binance y alternative.me · leído en directo ' + hhmm(Date.now()), !Array.isArray(bin) || !f0 ? 'warn' : '') : pie('No se pudo leer el mercado ahora mismo', 'bad', el('button', { class: 'mini', type: 'button', onclick: leer }, '↻ Reintentar')));
+    }
+    leer(); cada(60000, leer);
+    return box;
+  }
+  async function usdt0Mini() {
+    const D = await cargar('data/usdt0.json?v=' + Math.floor(Date.now() / 600000));
+    if (!D || D.version !== 1 || !D.circulacion || !D.respaldo || !D.vigilante) return null;
+    const R = D.respaldo, M = D.vigilante.mensajes && D.vigilante.mensajes.ultimas24h;
+    return el('div', { class: 'lb' }, el('b', { class: 'lt' }, el('a', { href: 'herramientas.html#usdt0' }, 'USDT0 · circulación y respaldo')),
+      fila('En circulación (' + n(D.circulacion.redesLeidas) + ' redes)', mUsd(D.circulacion.totalUsd)),
+      fila('USDT guardado en Ethereum', mUsd(R.usdtEnElAdaptador)),
+      fila('Diferencia', (R.diferenciaUsd >= 0 ? '+' : '−') + mUsd(Math.abs(R.diferenciaUsd)) + ' · ' + n(Math.abs(R.diferenciaPct), 2) + ' %'),
+      fila('Direcciones bloqueadas', n(D.vigilante.bloqueos.vigentesTotal)),
+      M ? fila('Mensajes entre redes (24 h)', n(M.total)) : null,
+      antiguedad(D.leidoEn, 'Lectura directa en las redes'));
+  }
+  async function trxMini() {
+    const [Q, R] = await Promise.all([cargar('data/quema-trx.json?v=' + Math.floor(Date.now() / 600000)), cargar('data/reparto-trx.json?v=' + Math.floor(Date.now() / 600000))]);
+    const q = Q && Q.version === 1 && Q.actual ? Q : null, r = R && R.version === 1 && R.grupos ? R : null;
+    if (!q && !r) return null;
+    const filas = [];
+    if (q) { const crece = q.actual.neto30d > 0; filas.push(fila('Neto de 30 días', (crece ? '+' : '−') + mTrx(Math.abs(q.actual.neto30d)), crece ? '' : 'ok'), fila('La oferta de TRX', crece ? 'crece' : 'baja'), fila('Quema del último día', mTrx(q.actual.quemaDia))); }
+    if (r) { const my = r.sinIdentificarPorTramo[0]; filas.push(fila('Mayores sin identificar (' + n(my.cuentas) + ' cuentas)', n(my.pct, 1) + ' %'), fila('En casas de cambio', n(r.grupos.exchange.pct, 1) + ' %')); }
+    const viejo = [q && q.leidoEn, r && r.leidoEn].filter(Boolean).sort()[0];
+    return el('div', { class: 'lb' }, el('b', { class: 'lt' }, el('a', { href: 'herramientas.html#z-trx' }, 'TRX · quema y reparto')), ...filas, antiguedad(viejo, 'TronScan'));
+  }
+
   /* =============== 7 · más herramientas =============== */
   function masHerramientas() {
     const l = (h, k, v) => el('a', { class: 'lr', href: h }, el('span', null, k), el('span', { class: 'acc' }, v));
     return bloque('Más herramientas',
-      l('herramientas.html#riesgo-mercado', '¿Cuánto podría perder en un día? (VaR 99 %)', 'Calcular →'),
-      l('herramientas.html#liquidez-venta', '¿Cuánto recibiría si vendo?', 'Comparar →'),
-      l('herramientas.html#desbloqueos', 'Calendario completo de descongelaciones', 'Ver →'),
+      l('herramientas.html#z-comprobar', 'Comprobar una dirección o un contrato', 'Abrir →'),
+      l('herramientas.html#z-tether', 'Bloqueos de Tether, paridad y USDT0', 'Ver →'),
+      l('herramientas.html#z-cartera', 'Riesgo, prueba de estrés y coste de vender', 'Calcular →'),
+      l('herramientas.html#z-mercado', 'Mercado hoy', 'Ver →'),
+      l('herramientas.html#z-trx', 'TRX: descongelaciones, reparto y quema', 'Ver →'),
+      l('datos.html', 'De dónde sale cada cifra', 'Datos y método →'),
       pie('Todas leen la cadena o el mercado en directo'));
   }
 
@@ -211,11 +263,12 @@
     const apartado = (titulo, cls, ...kids) => el('section', { class: 'lsec' + (cls ? ' ' + cls : '') }, el('h4', { class: 'lh' }, titulo), ...kids.filter(Boolean));
     const derSec = apartado('Compruébalo tú', '', comprobador(), paridad());
     der.append(derSec);
-    let [med, des, cas] = await Promise.all([medium(), desbloqueos(), casos()]);
+    let [med, des, cas, u0, trx] = await Promise.all([medium(), desbloqueos(), casos(), usdt0Mini(), trxMini()]);
     if (med) izq.append(apartado('En Medium', 'uno', med));
     izq.append(apartado('Ahora en la cadena', 'ahora', des, bloqueosTether()));
     if (cas) derSec.append(cas);
     derSec.append(masHerramientas());
+    der.append(apartado('En cifras', '', mercadoMini(), u0, trx));
     // los ficheros diarios se vuelven a leer cada hora, por si la tarea de las 07:00 ha publicado algo nuevo
     cada(60 * 60000, async () => {
       const [m2, d2] = await Promise.all([medium(), desbloqueos()]);

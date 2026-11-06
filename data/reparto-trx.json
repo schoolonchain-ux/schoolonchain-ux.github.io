@@ -1,0 +1,245 @@
+{
+ "version": 1,
+ "leidoEn": "2026-11-06T16:28:40.347Z",
+ "cuentasEnLaRed": 412914252,
+ "cuentasAnalizadas": 10000,
+ "ofertaTrx": 95027317030,
+ "saldoDeLaCuentaNTrx": 141513,
+ "grupos": {
+  "exchange": {
+   "cuentas": 44,
+   "trx": 11447044634,
+   "pct": 12.046
+  },
+  "fondo_o_institucion": {
+   "cuentas": 1,
+   "trx": 140226995,
+   "pct": 0.148
+  },
+  "otros_etiquetados": {
+   "cuentas": 36,
+   "trx": 151046890,
+   "pct": 0.159
+  },
+  "contrato": {
+   "cuentas": 9,
+   "trx": 15516948887,
+   "pct": 16.329
+  },
+  "ballena_sin_identificar": {
+   "cuentas": 9910,
+   "trx": 62342522048,
+   "pct": 65.605
+  },
+  "atribuido_externo": {
+   "cuentas": 0,
+   "trx": 0,
+   "pct": 0
+  }
+ },
+ "cola": {
+  "cuentas": 412904252,
+  "trx": 5429527576,
+  "pct": 5.714
+ },
+ "sinIdentificarPorTramo": [
+  {
+   "tramo": "100 M o más",
+   "cuentas": 63,
+   "trx": 49910405921,
+   "pct": 52.522
+  },
+  {
+   "tramo": "10 M - 100 M",
+   "cuentas": 191,
+   "trx": 4699423171,
+   "pct": 4.945
+  },
+  {
+   "tramo": "1 M - 10 M",
+   "cuentas": 1941,
+   "trx": 5048840260,
+   "pct": 5.313
+  },
+  {
+   "tramo": "300 k - 1 M",
+   "cuentas": 3484,
+   "trx": 1829392803,
+   "pct": 1.925
+  },
+  {
+   "tramo": "menos de 300 k",
+   "cuentas": 4231,
+   "trx": 854459893,
+   "pct": 0.899
+  }
+ ],
+ "concentracion": {
+  "top1": 10.413,
+  "top10": 29.679,
+  "top50": 75.141,
+  "top100": 81.952,
+  "top500": 87.676,
+  "top1000": 89.514,
+  "top5000": 93.126,
+  "top10000": 94.286
+ },
+ "detalle": {
+  "exchange": [
+   {
+    "nombre": "HTX",
+    "trx": 8162547512
+   },
+   {
+    "nombre": "Binance",
+    "trx": 2308132594
+   },
+   {
+    "nombre": "Upbit",
+    "trx": 452746958
+   },
+   {
+    "nombre": "MXC",
+    "trx": 181595555
+   },
+   {
+    "nombre": "Gate",
+    "trx": 98528328
+   },
+   {
+    "nombre": "Poloniex",
+    "trx": 97758873
+   },
+   {
+    "nombre": "CoinSpot",
+    "trx": 66679032
+   },
+   {
+    "nombre": "Kraken",
+    "trx": 14003299
+   }
+  ],
+  "contrato": [
+   {
+    "nombre": "STRXProxy",
+    "trx": 9895387708
+   },
+   {
+    "nombre": "WTRX",
+    "trx": 3576702169
+   },
+   {
+    "nombre": "CEther",
+    "trx": 1562150215
+   },
+   {
+    "nombre": "PoolManager",
+    "trx": 286258791
+   },
+   {
+    "nombre": "TWjkoz18Y48SgWoxEeGG11ezCCzee8wo1A",
+    "trx": 134984089
+   },
+   {
+    "nombre": "EclipcityGlobalInsurance",
+    "trx": 21521599
+   },
+   {
+    "nombre": "TFi3v5PtYRnVdC43qSvPR3upZhgreiURga",
+    "trx": 14316411
+   },
+   {
+    "nombre": "SunStakerSimpleStandAlone",
+    "trx": 13345774
+   }
+  ],
+  "otros_etiquetados": [
+   {
+    "nombre": "SR Partners",
+    "trx": 47420097
+   },
+   {
+    "nombre": "TronLucky DepositAndWithdraw 1",
+    "trx": 45766063
+   },
+   {
+    "nombre": "TronLucky DepositAndWithdraw 2",
+    "trx": 29034871
+   },
+   {
+    "nombre": "Well Wallet Hot 2",
+    "trx": 6874560
+   },
+   {
+    "nombre": "Cobo Custody",
+    "trx": 3423454
+   },
+   {
+    "nombre": "Swapster Wallet",
+    "trx": 3359691
+   }
+  ],
+  "fondo_o_institucion": [
+   {
+    "nombre": "Vaneck",
+    "trx": 140226995
+   }
+  ]
+ },
+ "etiquetasRecordadas": {
+  "cuentas": 8,
+  "trx": 8162547512,
+  "pct": 8.59,
+  "ejemplos": [
+   {
+    "etiqueta": "HTX-Cold 2",
+    "visto": "2026-10-21",
+    "trx": 1741322578
+   },
+   {
+    "etiqueta": "HTX-Cold 4",
+    "visto": "2026-10-26",
+    "trx": 1705110564
+   },
+   {
+    "etiqueta": "HTX-Cold 3",
+    "visto": "2026-10-26",
+    "trx": 1632640337
+   },
+   {
+    "etiqueta": "HTX-Cold 7",
+    "visto": "2026-10-26",
+    "trx": 1126556038
+   },
+   {
+    "etiqueta": "HTX Exchange",
+    "visto": "2026-10-26",
+    "trx": 1082092950
+   },
+   {
+    "etiqueta": "HTX-Cold 6",
+    "visto": "2026-10-26",
+    "trx": 786759959
+   },
+   {
+    "etiqueta": "HTX 6",
+    "visto": "2026-10-26",
+    "trx": 56267264
+   },
+   {
+    "etiqueta": "HTX 5",
+    "visto": "2026-10-26",
+    "trx": 31797822
+   }
+  ]
+ },
+ "cobertura": {
+  "paginasFallidas": 0,
+  "tipoComprobado": 211,
+  "tipoSinComprobar": 9699
+ },
+ "fuentes": [
+  "TronScan /api/account/list (10.000 mayores cuentas por saldo total)",
+  "TronGrid /v1/accounts (tipo de cuenta de las mayores sin etiqueta)"
+ ]
+}

@@ -4,9 +4,9 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Herramientas on-chain y de mercado · School On-Chain</title>
-<meta name="description" content="Comprueba en vivo si una dirección está bloqueada por Tether (USDT) en 21 redes, mira los últimos bloqueos y el calendario de descongelaciones de TRX.">
+<meta name="description" content="Cinco zonas de herramientas on-chain y de mercado, sin IA: comprueba una dirección o un contrato, Tether, stablecoins y USDT0, riesgo y prueba de estrés de tu cartera, mercado de hoy y TRX (descongelaciones, reparto y quema).">
 <meta property="og:title" content="School On-Chain · Herramientas on-chain">
-<meta property="og:description" content="Bloqueos de Tether en vivo y calendario de descongelaciones de TRX.">
+<meta property="og:description" content="Bloqueos de Tether, USDT0, riesgo de cartera, mercado y TRX en cifras, con la fuente y la hora de cada lectura.">
 <meta property="og:type" content="website">
 <meta property="og:image" content="https://schoolonchain-ux.github.io/assets/brand/compartir.jpg">
 <meta property="og:image:type" content="image/jpeg">
@@ -15,6 +15,8 @@
 <meta property="og:image:alt" content="School On-Chain: seguimos el dinero, documentamos la evidencia. Grafos de transacciones, USDT bloqueados y una calavera con capucha naranja">
 <meta name="twitter:image" content="https://schoolonchain-ux.github.io/assets/brand/compartir.jpg">
 <meta name="twitter:card" content="summary_large_image">
+<link rel="icon" type="image/webp" href="assets/brand/calavera-icono.webp">
+<link rel="alternate" type="application/rss+xml" title="School On-Chain · Novedades" href="feed.xml">
 <link rel="stylesheet" href="assets/site.css?v=b463e647">
 <link rel="stylesheet" href="assets/site2.css?v=dfd5e8bc">
 <link rel="stylesheet" href="assets/site4.css?v=768a06d9">
@@ -22,7 +24,7 @@
 <link rel="stylesheet" href="assets/tema.css?v=43fe5cb5">
 <link rel="stylesheet" href="assets/ticker.css?v=040b25a2">
 <link rel="stylesheet" href="assets/mercado.css?v=1781fcfb">
-<link rel="stylesheet" href="assets/zonas.css?v=49eee3ac">
+<link rel="stylesheet" href="assets/zonas.css?v=4f990b77">
 </head>
 <body>
 <div class="topbar"><div class="wrap">
@@ -35,15 +37,15 @@
   <header class="hero-h">
     <span class="kick">Herramientas · en vivo · desde tu navegador</span>
     <h1>Herramientas on-chain y de mercado</h1>
-    <p>Cinco zonas. Todo se calcula con código y con fuentes públicas, sin IA, y cada bloque dice de dónde sale y cuándo se leyó.</p>
+    <p>Cinco zonas. Todo se calcula con código y con fuentes públicas, sin IA, y cada bloque dice de dónde sale y cuándo se leyó. <a href="datos.html">Cómo se calcula cada cifra →</a></p>
   </header>
 
   <nav class="zonas" id="zonas" aria-label="Zonas de herramientas">
     <a class="zona" href="#z-comprobar" data-z="comprobar"><span class="n">1</span><h3>Comprobar</h3><p>Una dirección: bloqueo de Tether, cuenta o contrato, hackeos y ficha.</p><div class="cifra" data-cifra="comprobar">…</div></a>
-    <a class="zona" href="#z-tether" data-z="tether"><span class="n">2</span><h3>Tether y stablecoins</h3><p>Bloqueos recientes y paridad con 1 USD.</p><div class="cifra" data-cifra="tether">…</div></a>
-    <a class="zona" href="#z-cartera" data-z="cartera"><span class="n">3</span><h3>Mi cartera</h3><p>Riesgo de un día y coste de vender.</p><div class="cifra" data-cifra="cartera"><span id="risk-asset-count">18</span> activos</div></a>
+    <a class="zona" href="#z-tether" data-z="tether"><span class="n">2</span><h3>Tether y stablecoins</h3><p>Bloqueos, paridad con 1 USD y USDT0.</p><div class="cifra" data-cifra="tether">…</div></a>
+    <a class="zona" href="#z-cartera" data-z="cartera"><span class="n">3</span><h3>Mi cartera</h3><p>Riesgo, prueba de estrés y coste de vender.</p><div class="cifra" data-cifra="cartera"><span id="risk-asset-count">18</span> activos</div></a>
     <a class="zona" href="#z-mercado" data-z="mercado"><span class="n">4</span><h3>Mercado</h3><p>Miedo y codicia, precios y diferencias.</p><div class="cifra" data-cifra="mercado">…</div></a>
-    <a class="zona" href="#z-trx" data-z="trx"><span class="n">5</span><h3>TRX en cifras</h3><p>Descongelaciones: quién puede retirar y cuándo.</p><div class="cifra" data-cifra="trx">…</div></a>
+    <a class="zona" href="#z-trx" data-z="trx"><span class="n">5</span><h3>TRX en cifras</h3><p>Descongelaciones, reparto entre cuentas y quema.</p><div class="cifra" data-cifra="trx">…</div></a>
   </nav>
 
   <!-- ZONA 1 · Comprobar (la monta herramientas.js) -->
@@ -55,12 +57,14 @@
   <!-- ZONA 2 · Tether y stablecoins -->
   <section class="zp" id="z-tether" aria-label="Tether y stablecoins">
     <p class="kick">2 · Tether y stablecoins</p>
-    <h2>Bloqueos recientes y paridad con 1 USD</h2>
+    <h2>Bloqueos, paridad con 1 USD y USDT0</h2>
     <div class="ztabs" role="tablist" data-zona="tether">
       <button type="button" role="tab" data-tab="recientes" class="on">Bloqueos recientes</button>
       <button type="button" role="tab" data-tab="paridad">Paridad</button>
+      <button type="button" role="tab" data-tab="usdt0">USDT0</button>
     </div>
     <div class="zpan" data-tab="recientes"><div id="recientes-raiz"><p class="muted">Cargando…</p></div></div>
+    <div class="zpan" data-tab="usdt0" hidden><div id="usdt0-raiz"><p class="muted">Cargando…</p></div></div>
     <div class="zpan" data-tab="paridad" hidden>
       <section id="paridad-stablecoins" class="preview-target" aria-label="Paridad de stablecoins">
         <h3>¿Sigue cerca de 1 USD?</h3>
@@ -78,18 +82,23 @@
   <!-- ZONA 3 · Mi cartera -->
   <section class="zp" id="z-cartera" aria-label="Mi cartera">
     <p class="kick">3 · Mi cartera</p>
-    <h2>Riesgo de un día y coste de vender</h2>
+    <h2>Riesgo, prueba de estrés y coste de vender</h2>
+    <div class="panel var-form" id="cartera-posiciones" style="margin:6px 0 16px">
+      <h3 style="margin:0 0 4px">Tus posiciones</h3>
+      <p class="sub">Elige una moneda y escribe cuánto vale hoy tu posición en dólares (5.000 dólares en BTC: 5000). Si tienes más monedas, añade una fila por cada una. Sirven para el riesgo diario y para la prueba de estrés. No se guarda nada: se queda en tu navegador mientras tengas la página abierta.</p>
+      <div id="positions" class="var-rows"></div>
+      <div class="var-actions"><button type="button" id="add-position" class="btn">＋ Añadir otro activo</button></div>
+    </div>
     <div class="ztabs" role="tablist" data-zona="cartera">
       <button type="button" role="tab" data-tab="riesgo" class="on">Riesgo diario</button>
+      <button type="button" role="tab" data-tab="estres">Prueba de estrés</button>
       <button type="button" role="tab" data-tab="salida">Coste de salida</button>
     </div>
     <div class="zpan" data-tab="riesgo">
       <section id="riesgo-mercado" class="preview-target" aria-label="Riesgo de mercado">
-        <header class="var-intro"><h3>¿Cuánto podría perder en un día?</h3><p>Elige una moneda y escribe cuánto vale hoy tu posición en dólares. Si tienes más monedas, añade una fila por cada una.</p><p><strong>Datos históricos reales.</strong> Precios diarios de DefiLlama. Método de cálculo de EquipoIA.</p></header>
+        <header class="var-intro"><h3>¿Cuánto podría perder en un día?</h3><p>Con las posiciones de arriba calculamos cuánto podrías perder en un mal día.</p><p><strong>Datos históricos reales.</strong> Precios diarios de DefiLlama. Método de cálculo de EquipoIA.</p></header>
         <form id="risk-form" class="panel var-form" novalidate>
-          <h2>Tus posiciones</h2><p class="sub">Escribe el valor total en USD. Si tienes 5.000 dólares en BTC, introduce 5000.</p>
-          <div id="positions" class="var-rows"></div>
-          <div class="var-actions"><button type="button" id="add-position" class="btn">＋ Añadir otro activo</button><button type="submit" class="btn primary">Calcular riesgo</button></div>
+          <div class="var-actions" style="margin-top:0"><button type="submit" class="btn primary">Calcular riesgo</button></div>
           <p id="risk-error" class="var-error" role="alert" hidden></p>
         </form>
         <section id="risk-result" class="panel var-result" aria-live="polite" hidden>
@@ -101,6 +110,16 @@
           <p id="risk-sample" class="sub"></p>
           <p class="sub">El cálculo aplica los importes actuales a los movimientos del pasado. La estimación depende de la muestra elegida.</p>
         </section>
+      </section>
+    </div>
+    <div class="zpan" data-tab="estres" hidden>
+      <section id="prueba-estres" class="preview-target" aria-label="Prueba de estrés">
+        <header class="var-intro"><h3>¿Y si el mercado se desploma?</h3><p>Con las posiciones de arriba verás cuánto habrías perdido en los peores días del último año, qué pasaría si todo cae de golpe y cuál fue el peor día de cada moneda.</p><p><strong>Datos históricos reales.</strong> Precios diarios de DefiLlama. Son ejemplos del pasado, no una previsión.</p></header>
+        <form id="estres-form" class="panel var-form" novalidate>
+          <div class="var-actions" style="margin-top:0"><button type="submit" class="btn primary">Hacer la prueba de estrés</button></div>
+          <p id="estres-error" class="var-error" role="alert" hidden></p>
+        </form>
+        <div id="estres-result" aria-live="polite"></div>
       </section>
     </div>
     <div class="zpan" data-tab="salida" hidden>
@@ -128,11 +147,15 @@
     <!-- ZONA 5 · TRX en cifras -->
     <section class="zp" id="z-trx" aria-label="TRX en cifras">
       <p class="kick">5 · TRX en cifras</p>
-      <h2>Salidas del stake</h2>
+      <h2>Descongelaciones, reparto y quema</h2>
       <div class="ztabs" role="tablist" data-zona="trx">
         <button type="button" role="tab" data-tab="desbloqueos" class="on">Descongelaciones</button>
+        <button type="button" role="tab" data-tab="reparto">Reparto</button>
+        <button type="button" role="tab" data-tab="quema">Quema y emisión</button>
       </div>
       <div class="zpan" data-tab="desbloqueos"><div id="desbloqueos-raiz"><p class="muted">Cargando…</p></div></div>
+      <div class="zpan" data-tab="reparto" hidden><div id="reparto-raiz"><p class="muted">Cargando…</p></div></div>
+      <div class="zpan" data-tab="quema" hidden><div id="quema-raiz"><p class="muted">Cargando…</p></div></div>
     </section>
 </main>
 
@@ -143,9 +166,12 @@
 <script src="assets/ui.js?v=5c721148"></script>
 <script src="assets/usdt-core.js?v=41f19e75"></script>
 <script src="assets/comprobar.js?v=eeef2d55"></script>
-<script src="assets/herramientas.js?v=b450c91a"></script>
+<script src="assets/herramientas.js?v=c20a42a6"></script>
 <script src="assets/ticker.js?v=62a3607d"></script>
-<script src="assets/mercado.js?v=4527f32e"></script>
+<script src="assets/mercado.js?v=c337b81d"></script>
+<script src="assets/trx-cifras.js?v=85c9724f"></script>
+<script src="assets/usdt0.js?v=7ee753f8"></script>
+<script src="assets/estres.js?v=9efad088"></script>
 <script src="assets/mercado-hoy.js?v=30a8e0a3"></script>
 </body>
 </html>

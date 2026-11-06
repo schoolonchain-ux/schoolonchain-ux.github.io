@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Datos y método · School On-Chain</title>
+<meta name="description" content="De dónde sale cada cifra de las herramientas de School On-Chain, cada cuánto se actualiza y qué se comprueba antes de publicarla. Sin IA.">
+<meta property="og:title" content="School On-Chain · Datos y método">
+<meta property="og:description" content="De dónde sale cada cifra, cada cuánto se actualiza y qué se comprueba antes de publicarla.">
+<meta property="og:type" content="website">
+<meta property="og:image" content="https://schoolonchain-ux.github.io/assets/brand/compartir.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://schoolonchain-ux.github.io/assets/brand/compartir.jpg">
+<link rel="icon" type="image/webp" href="assets/brand/calavera-icono.webp">
+<link rel="alternate" type="application/rss+xml" title="School On-Chain · Novedades" href="feed.xml">
+<link rel="stylesheet" href="assets/site.css?v=b463e647">
+<link rel="stylesheet" href="assets/site2.css?v=dfd5e8bc">
+<link rel="stylesheet" href="assets/site4.css?v=768a06d9">
+<link rel="stylesheet" href="assets/site5.css?v=64bd62d2">
+<link rel="stylesheet" href="assets/tema.css?v=43fe5cb5">
+<link rel="stylesheet" href="assets/zonas.css?v=4f990b77">
+</head>
+<body>
+<div class="topbar"><div class="wrap">
+  <a class="brand" href="./"><span class="dot"></span>School On-Chain</a>
+  <nav><a href="./">Informes</a><a href="herramientas.html">Herramientas</a><a href="https://github.com/schoolonchain-ux/schoolonchain-ux.github.io">Repositorio</a></nav>
+  <button class="theme" id="theme" title="Cambiar tema claro / oscuro">Tema</button>
+</div></div>
+
+<main class="wrap" id="app">
+  <header class="hero-h">
+    <span class="kick">Datos y método</span>
+    <h1>De dónde sale cada cifra</h1>
+    <p>Todo lo de <a href="herramientas.html">Herramientas</a> se calcula con código y con fuentes públicas. No usamos IA para dar cifras. Aquí ves, herramienta a herramienta, de dónde sale cada dato, cada cuánto se actualiza y qué se comprueba antes de publicarlo.</p>
+  </header>
+
+  <section class="zp" aria-label="Cómo se lee cada cifra">
+    <p class="kick">Tres tipos de dato</p>
+    <h2>En vivo, diario y estudio fijo</h2>
+    <div class="dm">
+      <div class="dm-row"><b>En vivo</b><span>Se lee en <b>tu navegador</b> al abrir la página, directamente de nodos públicos de las cadenas y de APIs públicas de mercado. No pasa por ningún servidor nuestro y no se guarda lo que escribes (una dirección, tus posiciones, una cantidad).</span></div>
+      <div class="dm-row"><b>Diario</b><span>Lo prepara cada día un programa de EquipoIA (hacia las 07:00, hora de España) y se publica como un fichero de datos. Cada pestaña dice a qué hora se hizo la lectura; si pasan <b>más de 48 horas</b> sin actualizarse, lo avisa.</span></div>
+      <div class="dm-row"><b>Estudio fijo</b><span>Un análisis hecho en una fecha concreta que no cambia solo (por ejemplo, el efecto de la propuesta 104 sobre la quema de TRX). Se marca siempre como dato fijo, con su fecha.</span></div>
+    </div>
+  </section>
+
+  <section class="zp" aria-label="Estado de los datos diarios">
+    <p class="kick">Ahora mismo</p>
+    <h2>Estado de los datos diarios</h2>
+    <p class="sub">Se lee en este momento de los ficheros publicados. Un punto verde es una lectura de menos de 48 horas; ámbar, más antigua.</p>
+    <div id="estado-datos" class="dm"><p class="muted">Leyendo…</p></div>
+  </section>
+
+  <section class="zp" aria-label="Por herramienta">
+    <p class="kick">Herramienta a herramienta</p>
+    <h2>Fuentes, frecuencia y límites</h2>
+
+    <h3 class="dm-h">1 · Comprobar una dirección o un contrato <span class="dm-t vivo">en vivo</span></h3>
+    <div class="dm">
+      <div class="dm-row"><b>Bloqueo de Tether</b><span>Se pregunta al contrato de USDT de cada red si esa dirección está bloqueada: a TronGrid en TRON y a nodos públicos en el resto (<span id="dm-redes">las redes de la lista</span>). Un fallo de red se dice como fallo; nunca se convierte en «no está bloqueada».</span></div>
+      <div class="dm-row"><b>¿Cuenta o contrato?</b><span>Se pregunta al nodo si en esa dirección hay código. Las cuentas que delegan en un contrato se detectan y se dicen aparte. Si parece un contrato que imita al USDT, compara su dirección con las oficiales.</span></div>
+      <div class="dm-row"><b>Hackeos documentados</b><span>Base pública DeFiHackLabs (licencia MIT), <span id="dm-incidentes">varios cientos de incidentes</span>. No cubre TRON, y la página lo dice. Una dirección en la lista no prueba culpabilidad.</span></div>
+    </div>
+
+    <h3 class="dm-h">2 · Tether y stablecoins <span class="dm-t vivo">en vivo</span> <span class="dm-t dia">diario</span></h3>
+    <div class="dm">
+      <div class="dm-row"><b>Bloqueos recientes</b><span>Los avisos que emite el propio contrato de USDT cuando Tether bloquea o libera una dirección: los últimos 100 en TRON y los de unos 20.000 bloques en Ethereum. En vivo. Antes de esas fechas no hay lectura, y la gráfica lo dice.</span></div>
+      <div class="dm-row"><b>Paridad con 1 USD</b><span>Precios de DefiLlama: el horario cuando existe y, si no, el más cercano a cada hora, con su fuente y sus puntos a la vista. En vivo.</span></div>
+      <div class="dm-row"><b>USDT0</b><span><b>Diario.</b> Circulación por red y USDT guardado en Ethereum: lectura directa en las cadenas, con los nodos públicos configurados (deben dar el mismo número). Bloqueos y mensajes entre redes: los anota el vigilante de USDT0 de EquipoIA con la API pública de LayerZero Scan. No mide Stellar, IOTA ni HyperCore y en algunas redes no guarda todo el historial: la pestaña lo dice.</span></div>
+    </div>
+
+    <h3 class="dm-h">3 · Mi cartera <span class="dm-t vivo">en vivo</span></h3>
+    <div class="dm">
+      <div class="dm-row"><b>Riesgo diario</b><span>Precios diarios de DefiLlama (último año). El cálculo se hace en tu navegador: se aplican tus importes de hoy a los movimientos del pasado y se toma la pérdida que se superó el 1 % de los días, y la media de esos días.</span></div>
+      <div class="dm-row"><b>Prueba de estrés</b><span>Los mismos datos: tus peores días del último año, el peor día de cada moneda y caídas generales de ejemplo. Es el pasado aplicado a lo que tienes hoy, no una previsión.</span></div>
+      <div class="dm-row"><b>Coste de salida</b><span>Los libros de órdenes de Binance y Kraken en el momento de consultar, antes de comisiones.</span></div>
+    </div>
+
+    <h3 class="dm-h">4 · Mercado <span class="dm-t vivo">en vivo</span></h3>
+    <div class="dm">
+      <div class="dm-row"><b>Precios y miedo y codicia</b><span>Binance (cambio en 24 h), Coinbase (precio spot) y alternative.me (índice de miedo y codicia). Se relee cada minuto mientras la pestaña está a la vista. Si una fuente no responde, esa celda lo dice.</span></div>
+    </div>
+
+    <h3 class="dm-h">5 · TRX en cifras <span class="dm-t dia">diario</span></h3>
+    <div class="dm">
+      <div class="dm-row"><b>Descongelaciones</b><span>Las 10.000 mayores cuentas de TronScan y, para cada una con un desbloqueo en curso, su fecha leída en TronGrid. La consulta de una dirección concreta sí es en vivo.</span></div>
+      <div class="dm-row"><b>Reparto</b><span>Las 10.000 mayores cuentas de TronScan agrupadas por lo que TronScan dice que son. Si TronScan pone nombre a una cuenta un día y al siguiente se lo quita, se conserva el último nombre que dio y se cuenta aparte; la pestaña dice cuántas cuentas y cuánto TRX.</span></div>
+      <div class="dm-row"><b>Quema y emisión</b><span>La serie diaria de TronScan (emisión, quema y oferta). Cada día se comprueba que lo que cambia la oferta cuadre con emisión menos quema.</span></div>
+    </div>
+  </section>
+
+  <section class="zp" aria-label="Qué se comprueba">
+    <p class="kick">Antes de publicar</p>
+    <h2>Qué se comprueba en cada lectura diaria</h2>
+    <div class="dm">
+      <div class="dm-row"><b>Que sea reciente</b><span>La lectura no puede tener más de 2 horas cuando se publica.</span></div>
+      <div class="dm-row"><b>Que esté completa</b><span>Un mínimo de cuentas leídas (calendario y reparto de TRX), todas las redes con su dato (USDT0), la serie entera (quema).</span></div>
+      <div class="dm-row"><b>Que cuadre</b><span>La oferta de TRX debe cuadrar con emisión menos quema; los grupos del reparto deben sumar el 100 %; el USDT0 leído debe parecerse al que anota el vigilante; el registro del vigilante de USDT0 no puede tener ninguna línea cambiada ni borrada.</span></div>
+      <div class="dm-row"><b>Qué pasa si falla</b><span>No se publica nada de esa lectura: la web sigue mostrando la anterior, con su fecha, y avisa si ya es antigua.</span></div>
+    </div>
+  </section>
+
+  <section class="zp" aria-label="Lo que no hacemos">
+    <p class="kick">Límites</p>
+    <h2>Lo que no hacemos</h2>
+    <div class="ayuda">
+      <div class="ai"><b>Sin IA en las cifras. </b>Ninguna cifra la produce un modelo de IA: son lecturas de fuentes públicas y operaciones aritméticas que se pueden repetir.</div>
+      <div class="ai"><b>Sin consejos. </b>Nada de lo publicado es consejo de inversión ni una previsión. Las pruebas de estrés y los riesgos aplican el pasado a lo que tienes hoy.</div>
+      <div class="ai"><b>Sin atribuir sin fuente. </b>Un saldo grande no dice de quién es. No se asigna una cuenta a una persona o empresa sin una fuente anotada.</div>
+      <div class="ai"><b>Fuentes de terceros. </b>TronScan, TronGrid, DefiLlama, Binance, Coinbase, Kraken, alternative.me, LayerZero Scan y los nodos públicos pueden fallar, cambiar sus datos o sus etiquetas. Cuando eso pasa se dice, no se tapa.</div>
+      <div class="ai"><b>El código. </b>Los programas que preparan los ficheros diarios están en la carpeta <code>tools/equipoia</code> del <a href="https://github.com/schoolonchain-ux/schoolonchain-ux.github.io">repositorio</a>, para que cualquiera los lea.</div>
+    </div>
+  </section>
+</main>
+<script src="assets/common.js?v=a7b1254f"></script>
+<script src="assets/datos.js?v=8a3e3b34"></script>
+</body>
+</html>
