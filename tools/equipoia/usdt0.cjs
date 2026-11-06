@@ -5,7 +5,9 @@
 //   · LO QUE HA ANOTADO EL VIGILANTE de USDT0 de EquipoIA (usdt0-watch): direcciones bloqueadas, mensajes entre redes, firmantes de los Safe, huecos de cobertura.
 // Antes de dejar nada se COMPRUEBA: que el resumen del vigilante sea reciente, que las cifras leídas ahora cuadren con las suyas, y que su libro no tenga ninguna línea
 // cambiada ni borrada (cada línea con su huella correcta y los números de línea completos). El vigilante tiene además una comprobación más estricta (que la cadena de
-// huellas enlace de principio a fin) que desde el 1-nov-2026 NO se cumple por una escritura simultánea de dos ciclos; esa comprobación no se toca ni se da por buena aquí.
+// huellas enlace de principio a fin) que desde el 1-nov-2026 no se cumplía por una escritura simultánea de dos ciclos (reparado el 6-nov-2026 con la autorización del
+// propietario: el propio libro reconoce esas 2 bifurcaciones y el vigilante comprueba «por padres»). Esa comprobación no se toca ni se da por buena aquí: este exportador
+// sigue haciendo la suya, más simple.
 // Uso: node usdt0.cjs <salida.json>
 const fs = require('node:fs');
 const crypto = require('node:crypto');
