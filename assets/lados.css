@@ -1,0 +1,96 @@
+/* ===== Laterales de la portada =====
+   En pantallas anchas (≥ 1600 px) la portada lleva una columna a cada lado: a la izquierda «Ahora en la cadena»
+   (artículos de Medium rotando, descongelaciones de TRX, últimos bloqueos de Tether) y a la derecha «Compruébalo tú»
+   (comprobador rápido de bloqueos, paridad de stablecoins, estado de los casos, más herramientas).
+   En pantallas normales y en el móvil esos bloques pasan DEBAJO de los informes, para que la portada siga empezando por el cartel. */
+.lay{display:flex;flex-direction:column}
+.lay>main.wrap{order:1}
+#lado-izq{order:2}
+#lado-der{order:3}
+aside.lado{max-width:1240px;width:100%;margin:0 auto 18px;padding:0 20px;display:grid;grid-template-columns:repeat(auto-fit,minmax(290px,1fr));gap:14px;align-items:start}
+aside.lado .lh{grid-column:1/-1;margin:0;font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:var(--mut)}
+@media (min-width:1600px){
+  .lay{display:grid;grid-template-columns:300px minmax(0,1240px) 300px;justify-content:center;gap:24px;padding:0 20px;align-items:start}
+  .lay>main.wrap{padding:0;max-width:none;order:0}
+  aside.lado,#lado-izq,#lado-der{display:flex;flex-direction:column;gap:14px;margin:26px 0 0;padding:0;order:0}
+  aside.lado .lh{margin:0 0 -4px}
+}
+.lado .lb{background:var(--pan);border:1px solid var(--line);border-radius:14px;padding:12px 14px;box-shadow:var(--shadow);min-width:0}
+.lado .lt{display:block;font-size:13.5px;margin-bottom:6px}
+.lado .lt a{color:inherit;text-decoration:none}
+.lado .lt a:hover{color:var(--acc)}
+.lado .lr{display:flex;justify-content:space-between;gap:8px;font-size:12.5px;padding:4px 0;border-top:1px dashed var(--line);min-width:0}
+.lado .lr:first-of-type{border-top:0}
+.lado .lr>span:first-child{min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.lado .lr>span:last-child{font-variant-numeric:tabular-nums;white-space:nowrap;flex:none}
+.lado a.lr{color:inherit;text-decoration:none}
+.lado a.lr:hover{color:var(--acc)}
+.lado .ok{color:var(--ok)} .lado .warn{color:var(--warn)} .lado .bad{color:var(--bad)} .lado .acc{color:var(--acc);font-weight:600}
+.lado .mono{font-family:var(--mono);font-size:11.5px}
+.lado .lv{display:flex;align-items:center;gap:6px;font-size:11px;color:var(--mut);margin-top:8px;line-height:1.3}
+.lado .lv::before{content:"";flex:none;width:7px;height:7px;border-radius:50%;background:var(--ok);box-shadow:0 0 0 3px rgba(95,211,160,.18)}
+.lado .lv.warn::before{background:var(--warn);box-shadow:0 0 0 3px rgba(242,184,75,.18)}
+.lado .lv.bad::before{background:var(--bad);box-shadow:0 0 0 3px rgba(255,107,131,.18)}
+.lado .lv.wait::before{background:var(--mut);box-shadow:none;animation:lpulse 1.2s ease-in-out infinite}
+@keyframes lpulse{50%{opacity:.3}}
+.lado .lv button{margin-left:auto}
+.lado .mini{font:inherit;font-size:11px;color:var(--acc);background:none;border:1px solid var(--line);border-radius:7px;padding:2px 7px;cursor:pointer}
+.lado .mini:hover{border-color:var(--acc)}
+.lado .hint{font-size:11.5px;color:var(--mut);margin:6px 0 0}
+.lado .ldesc{font-size:11.5px;color:var(--soft);margin:0 0 6px;line-height:1.35}
+
+/* artículo de Medium (rotatorio) */
+.lado .lmed{display:block;color:inherit;text-decoration:none;transition:opacity .18s}
+.lado .lmed.fade{opacity:0}
+.lado .limg{aspect-ratio:16/9;border-radius:10px;background:var(--bg) center/cover no-repeat;border:1px solid var(--line);margin-bottom:8px}
+.lado .lti{display:block;font-size:13.5px;line-height:1.3}
+.lado .lmed:hover .lti{color:var(--acc)}
+.lado .lfe{font-size:11.5px;color:var(--mut);margin-top:4px}
+.lado .lres{font-size:12px;color:var(--soft);margin-top:4px;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+.lado .ldots{display:flex;gap:5px;margin-top:10px;align-items:center}
+.lado .ldots i{width:6px;height:6px;border-radius:50%;background:var(--line);cursor:pointer;transition:width .15s}
+.lado .ldots i.on{background:var(--acc);width:18px;border-radius:3px}
+.lado .ldots .cnt{margin-left:auto;font-size:11px;color:var(--mut);font-variant-numeric:tabular-nums}
+.lado .ldots .nav{font:inherit;font-size:12px;line-height:1;color:var(--mut);background:none;border:1px solid var(--line);border-radius:6px;padding:1px 6px;cursor:pointer}
+.lado .ldots .nav:hover{color:var(--acc);border-color:var(--acc)}
+
+/* minicalendario de descongelaciones */
+.lado .lcal{display:grid;grid-template-columns:repeat(7,1fr);gap:4px;text-align:center;font-size:10.5px;color:var(--mut)}
+.lado .lcal>div{padding:5px 2px;border-radius:7px;background:var(--bg);border:1px solid var(--line);min-width:0}
+.lado .lcal b{display:block;font-size:12px;color:var(--fg);font-variant-numeric:tabular-nums}
+.lado .lcal .hoy{border-color:var(--acc)}
+.lado .lcal .hot{background:rgba(242,184,75,.14);border-color:var(--warn)}
+.lado .lcal .hot b{color:var(--warn)}
+
+/* comprobador rápido */
+.lado .lin{display:flex;gap:6px}
+.lado .lin input{flex:1;min-width:0;background:var(--bg);border:1px solid var(--line);color:var(--fg);border-radius:9px;padding:8px 10px;font-family:var(--mono);font-size:12px}
+.lado .lin input:focus{outline:none;border-color:var(--acc)}
+.lado .lin button{font:inherit;font-size:12.5px;font-weight:600;color:#fff;background:var(--acc);border:0;border-radius:9px;padding:0 12px;cursor:pointer}
+:root[data-theme="dark"] .lado .lin button,:root:not([data-theme="light"]) .lado .lin button{color:#0a0d12}
+@media (prefers-color-scheme:light){:root:not([data-theme="dark"]) .lado .lin button{color:#fff}}
+.lado .lin button:disabled{opacity:.6;cursor:wait}
+.lado .lout{margin-top:8px;padding:8px 10px;border-radius:9px;font-size:12.5px;border:1px solid var(--line);background:var(--bg);line-height:1.4;word-break:break-word}
+.lado .lout.bad{background:rgba(255,107,131,.12);border-color:rgba(255,107,131,.4)}
+.lado .lout.ok{background:rgba(95,211,160,.1);border-color:rgba(95,211,160,.4)}
+.lado .lout.warn{background:rgba(242,184,75,.1);border-color:rgba(242,184,75,.4)}
+.lado .lout a{font-size:12px}
+
+/* paridad: barra con la desviación (±1 %) */
+.lado .lbar{position:relative;height:6px;border-radius:3px;background:var(--line);margin:3px 0 4px;overflow:visible}
+.lado .lbar::before{content:"";position:absolute;left:50%;top:-2px;width:1px;height:10px;background:var(--mut)}
+.lado .lbar i{position:absolute;top:-2px;width:10px;height:10px;border-radius:50%;background:var(--ok);transform:translateX(-50%);box-shadow:0 0 0 2px var(--pan)}
+.lado .lbar i.warn{background:var(--warn)} .lado .lbar i.bad{background:var(--bad)}
+.lado .lrow2{display:flex;justify-content:space-between;font-size:12.5px;gap:8px}
+.lado .lrow2 span:last-child{font-variant-numeric:tabular-nums;white-space:nowrap}
+
+/* estado de los casos */
+.lado .lcaso{display:block;color:inherit;text-decoration:none;padding:6px 0;border-top:1px dashed var(--line)}
+.lado .lcaso:first-of-type{border-top:0;padding-top:0}
+.lado .lcaso b{display:block;font-size:12.5px}
+.lado .lcaso:hover b{color:var(--acc)}
+.lado .lcaso .lc2{font-size:11.5px;color:var(--mut);margin-top:2px}
+.lado .lcaso .lc3{display:flex;flex-wrap:wrap;gap:4px 10px;font-size:11.5px;margin-top:3px;color:var(--soft)}
+.lado .lcaso .lc3 b{display:inline;font-size:11.5px;color:var(--fg)}
+@media (max-width:640px){aside.lado{padding:0 14px}}
+@media (prefers-reduced-motion:reduce){.lado .lmed{transition:none}.lado .lv.wait::before{animation:none}}

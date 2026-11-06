@@ -18,10 +18,10 @@ Se lee de arriba abajo en 8 capítulos: lo esencial, cómo leer, el caso, dónde
 
 | Carpeta | Contenido |
 |---|---|
-| `index.html`, `report.html`, `assets/` | La web (HTML, CSS y JavaScript sin servidor; gráficos con Chart.js y D3, copias locales en `assets/vendor/`). |
+| `index.html`, `report.html`, `assets/` | La web (HTML, CSS y JavaScript sin servidor; gráficos con Chart.js y D3, copias locales en `assets/vendor/`). En pantallas anchas la portada lleva dos laterales (`assets/lados.js`): a la izquierda los artículos de Medium de School On-Chain rotando (`data/medium.json`), las descongelaciones de TRX de los próximos 7 días y los últimos bloqueos de Tether; a la derecha un comprobador rápido de bloqueos, la paridad de USDT/USDC/DAI, el estado de los casos y accesos a las demás herramientas. Todo sale de los ficheros de datos o de lecturas en vivo, con su hora; en pantallas normales y en el móvil esos bloques van debajo de los informes. |
 | `reports/<informe>/` | Datos de cada informe: `data.json` (resumen), `detalle.json` (tablas de detalle), `libro/` (libro mayor completo: direcciones y movimientos) e `informe-completo.html` (el informe original). |
 | `herramientas.html`, `data/` | Herramientas en vivo: comprobador de bloqueos de USDT en 21 redes, últimos bloqueos de Tether y calendario de descongelaciones de TRX (`data/desbloqueos-trx.json`, lectura de EquipoIA). |
-| `tools/` | Herramientas para generar los datos de un informe nuevo (Node 18 o superior, sin dependencias). `tools/equipoia/` actualiza el calendario de TRX y necesita EquipoIA. |
+| `tools/` | Herramientas para generar los datos de un informe nuevo (Node 18 o superior, sin dependencias). `tools/equipoia/` actualiza cada día el calendario de TRX, el seguimiento del caso Vaneck y la lista de artículos de Medium (`data/medium.json`, leída de la lista pública `medium.com/feed/@SchoolOnChain`, que Medium no deja leer desde el navegador); necesita EquipoIA. |
 | `investigacion/` | El código, los documentos y la evidencia de la investigación, tal como estaban en el repositorio de trabajo. Ver abajo. |
 
 ### `investigacion/`

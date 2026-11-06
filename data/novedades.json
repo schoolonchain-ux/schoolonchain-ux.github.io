@@ -1,6 +1,7 @@
 {
   "_nota": "Registro de actualizaciones del sitio. Cada vez que se publica o amplía un informe, una nota o una página, se añade una entrada aquí (la más reciente primero). La portada y las páginas de caso lo leen en vivo: lo que no esté aquí no aparece como novedad. Campos: fecha (UTC, ISO), caso (slug de reports/index.json), titulo (una línea), url (relativa al sitio).",
   "novedades": [
+    { "fecha": "2026-11-06T09:05:00Z", "caso": "portada", "titulo": "La portada estrena dos laterales en pantallas anchas: artículos de Medium de School On-Chain rotando, descongelaciones de TRX de la semana, últimos bloqueos de Tether, comprobador rápido de bloqueos, paridad de stablecoins y estado de los casos (todo con datos vivos y su hora de lectura; en móvil van debajo de los informes)", "url": "./" },
     { "fecha": "2026-11-05T22:43:00Z", "caso": "caso-vaneck-sun", "titulo": "Ampliación del 5-nov: la proveedora no es «de TRON Inc.» sino una cuenta de paso, el TRX de las 1.000 direcciones de la antigua TRON Foundation y quién controla la cuenta etiquetada «Poloniex» (3 capítulos nuevos)", "url": "caso-vaneck.html?cap=9" },
     { "fecha": "2026-11-04T17:05:31Z", "caso": "herramientas", "titulo": "El calculador de VaR y pérdida media en cola amplía su cobertura a 18 activos", "url": "herramientas.html#riesgo-mercado" },
     { "fecha": "2026-11-04T16:03:54Z", "caso": "herramientas", "titulo": "Tres herramientas de mercado: VaR y pérdida media en cola, liquidez de venta y paridad de stablecoins", "url": "herramientas.html" },
