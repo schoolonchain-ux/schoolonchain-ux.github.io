@@ -1,8 +1,8 @@
 {
  "version": 1,
- "leidoEn": "2026-11-06T16:42:37.594Z",
+ "leidoEn": "2026-11-06T16:48:45.868Z",
  "circulacion": {
-  "totalUsd": 3295919925,
+  "totalUsd": 3295936883,
   "redes": [
    {
     "id": "plasma",
@@ -14,28 +14,28 @@
    {
     "id": "arbitrum",
     "nombre": "Arbitrum One",
-    "usdt0": 812462425,
+    "usdt0": 812480246,
     "nodosQueCoincidieron": 2,
     "nodosConfigurados": 2
    },
    {
     "id": "polygon",
     "nombre": "Polygon PoS",
-    "usdt0": 730885429,
+    "usdt0": 730886661,
     "nodosQueCoincidieron": 2,
     "nodosConfigurados": 2
    },
    {
     "id": "mantle",
     "nombre": "Mantle",
-    "usdt0": 427631564,
+    "usdt0": 427631227,
     "nodosQueCoincidieron": 2,
     "nodosConfigurados": 2
    },
    {
     "id": "xlayer",
     "nombre": "XLayer",
-    "usdt0": 132126240,
+    "usdt0": 132125841,
     "nodosQueCoincidieron": 2,
     "nodosConfigurados": 2
    },
@@ -49,7 +49,7 @@
    {
     "id": "optimism",
     "nombre": "Optimism",
-    "usdt0": 54287992,
+    "usdt0": 54286742,
     "nodosQueCoincidieron": 2,
     "nodosConfigurados": 2
    },
@@ -70,7 +70,7 @@
    {
     "id": "flare",
     "nombre": "Flare",
-    "usdt0": 22494639,
+    "usdt0": 22494530,
     "nodosQueCoincidieron": 2,
     "nodosConfigurados": 2
    },
@@ -150,9 +150,9 @@
   "metodo": "cantidad total emitida del token USDT0 en cada red (totalSupply), leída hoy a los nodos públicos configurados, que tienen que coincidir"
  },
  "respaldo": {
-  "usdtEnElAdaptador": 3369255169,
-  "diferenciaUsd": 73335244,
-  "diferenciaPct": 2.177,
+  "usdtEnElAdaptador": 3369634392,
+  "diferenciaUsd": 73697508,
+  "diferenciaPct": 2.187,
   "adaptador": "0x6C96dE32CEa08842dcc4058c14d3aaAD7Fa41dee",
   "usdtEthereum": "0xdAC17F958D2ee523a2206206994597C13D831ec7",
   "metodo": "USDT de Ethereum a nombre del adaptador de USDT0 (balanceOf), leído hoy a dos nodos públicos que tienen que coincidir",
@@ -257,13 +257,13 @@
   "huecosDeHistorialAbiertos": 10
  },
  "comprobaciones": {
-  "resumenEdadHoras": 0.3,
+  "resumenEdadHoras": 0.4,
   "cuadreConVigilante": {
    "circulacionPct": 0.35,
-   "adaptadorPct": 1.84
+   "adaptadorPct": 1.85
   },
   "libroDelVigilante": {
-   "lineas": 19079,
+   "lineas": 19080,
    "huellasMalas": 0,
    "ilegibles": 0,
    "numerosQueFaltan": 0,
