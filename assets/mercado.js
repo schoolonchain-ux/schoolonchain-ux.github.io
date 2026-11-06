@@ -58,13 +58,39 @@ const CATALOGO = {
   }
 };
 const num = Number.isFinite;
+// Serie de precios de las últimas `horas` horas. Dos caminos, los dos de DefiLlama:
+//  1) /chart con period=1h: la serie horaria «oficial». Solo existe para las monedas grandes (USDT, USDC, DAI, USDe, USDS…);
+//     para TUSD, USDD o FRAX devuelve 0-2 puntos y para FDUSD o PYUSD llega incompleta (comprobado el 6-nov-2026).
+//  2) /batchHistorical: en UNA llamada, el precio más cercano a cada marca horaria. Responde para las 10 monedas (72 marcas,
+//     última a menos de 20 min, huecos de 1,5 h como mucho). Se usa cuando la serie oficial falta o viene corta/vieja.
 async function horario(getJson, gecko, { horas = 72, now = Date.now() } = {}) {
-  const id = 'coingecko:' + gecko, start = Math.floor(now / 1000) - horas * 3600;
-  let j; try { j = await getJson(`https://coins.llama.fi/chart/${id}?start=${start}&span=${horas}&period=1h`); } catch (e) { return { ok: false, reason: 'RED', detalle: String(e && e.message || e).slice(0, 80) }; }
-  const pts = j && j.coins && j.coins[id] && j.coins[id].prices;
-  if (!Array.isArray(pts) || !pts.length) return { ok: false, reason: 'SIN_DATOS' };
-  const serie = pts.filter(x => num(x.timestamp) && num(x.price) && x.price > 0).map(x => ({ t: x.timestamp * 1000, p: x.price }));
-  return serie.length ? { ok: true, serie, fuente: 'DefiLlama (precio por hora)' } : { ok: false, reason: 'SIN_DATOS' };
+  const id = 'coingecko:' + gecko, fin = Math.floor(now / 1000), start = fin - horas * 3600;
+  const limpiar = pts => (Array.isArray(pts) ? pts : []).filter(x => num(x.timestamp) && num(x.price) && x.price > 0).map(x => ({ t: x.timestamp * 1000, p: x.price }));
+  const errores = [];
+  let serie = [];
+  try { const j = await getJson(`https://coins.llama.fi/chart/${id}?start=${start}&span=${horas}&period=1h`); serie = limpiar(j && j.coins && j.coins[id] && j.coins[id].prices); }
+  catch (e) { errores.push('serie horaria: ' + String(e && e.message || e).slice(0, 80)); }
+  const reciente = s => s.length > 0 && now - s[s.length - 1].t <= MAX_ANTIGUEDAD_H * HOUR;
+  if (serie.length >= horas * 0.8 && reciente(serie)) return { ok: true, serie, fuente: 'DefiLlama (serie horaria)' };
+  try {
+    const marcas = Array.from({ length: horas }, (_, i) => fin - (horas - 1 - i) * 3600);
+    const j = await getJson('https://coins.llama.fi/batchHistorical?coins=' + encodeURIComponent(JSON.stringify({ [id]: marcas })) + '&searchWidth=2h');
+    const vistos = new Set();
+    const unida = serie.concat(limpiar(j && j.coins && j.coins[id] && j.coins[id].prices)).filter(x => !vistos.has(x.t) && vistos.add(x.t)).sort((a, b) => a.t - b.t);
+    if (unida.length) return { ok: true, serie: unida, fuente: 'DefiLlama (precio más cercano a cada hora)' };
+  } catch (e) { errores.push('precio por marcas: ' + String(e && e.message || e).slice(0, 80)); }
+  if (serie.length) return { ok: true, serie, fuente: 'DefiLlama (serie horaria, incompleta)' };
+  return errores.length ? { ok: false, reason: 'RED', detalle: errores.join(' · ') } : { ok: false, reason: 'SIN_DATOS' };
+}
+
+// Precio actual (DefiLlama /prices/current). Lo tienen las 10 monedas; sirve para dar al menos el precio de ahora
+// cuando la serie no alcanza para contar horas fuera de banda.
+async function actual(getJson, gecko) {
+  const id = 'coingecko:' + gecko;
+  let j; try { j = await getJson('https://coins.llama.fi/prices/current/' + id); } catch (e) { return { ok: false, reason: 'RED', detalle: String(e && e.message || e).slice(0, 80) }; }
+  const c = j && j.coins && j.coins[id];
+  if (!c || !num(c.price) || c.price <= 0 || !num(c.timestamp)) return { ok: false, reason: 'SIN_DATOS' };
+  return { ok: true, p: c.price, t: c.timestamp * 1000, fuente: 'DefiLlama (precio actual)' };
 }
 
 // Circulación y variaciones (DefiLlama stablecoins): { circ, d1, w1, m1, price } en USD.
@@ -142,9 +168,10 @@ async function stablecoin(symbol) {
     if (status !== 200) throw Error('HTTP ' + status);
     return data;
   };
-  const [prices, supply] = await Promise.all([
+  const [prices, supply, ahora] = await Promise.all([
     horario(get, coin.gecko, {now}),
-    circulacion(get, coin.llama)
+    circulacion(get, coin.llama),
+    actual(get, coin.gecko)
   ]);
   const series = prices.ok ? prices.serie.filter(point => point.t <= now).sort((a,b) => a.t - b.t) : [];
   const price = precioAhora(series, now);
@@ -159,7 +186,9 @@ async function stablecoin(symbol) {
     }
     hours = Math.floor((price.ultima - start) / HOUR);
   }
-  return {symbol, name:coin.nombre, price, hours, supply:supply.ok ? supply.circ : null, source:'DefiLlama'};
+  // precio de ahora mismo, solo si es reciente (misma regla que para la serie: no más viejo que MAX_ANTIGUEDAD_H)
+  const now_ = ahora.ok && now - ahora.t <= MAX_ANTIGUEDAD_H * HOUR ? ahora : null;
+  return {symbol, name:coin.nombre, price, hours, ahora: now_, serieFuente: prices.ok ? prices.fuente : null, seriePuntos: series.length, supply:supply.ok ? supply.circ : null, source:'DefiLlama'};
 }
 
 
@@ -392,9 +421,13 @@ async function historicalSample(assets) {
       line(box,'p',number(price.p,6) + ' USD · ' + (price.desv >= 0 ? '+' : '−') + number(Math.abs(price.desv) * 100,4) + ' % frente a 1 USD');
       line(box,'p',data.hours === null ? 'El último punto está dentro de la banda del 0,5 %.' : 'Fuera de la banda durante al menos ' + data.hours + ' h consecutivas observadas.');
       line(box,'p','Rango en 24 h: ' + number(price.min24,6) + '–' + number(price.max24,6) + ' USD.');
-      line(box,'small','Último precio horario: ' + time(price.ultima));
+      line(box,'small','Último precio horario: ' + time(price.ultima) + ' · ' + data.seriePuntos + ' puntos en 72 h · ' + data.serieFuente);
+    } else if (data.ahora) {
+      line(box,'p',number(data.ahora.p,6) + ' USD ahora mismo · ' + (data.ahora.p >= 1 ? '+' : '−') + number(Math.abs(data.ahora.p - 1) * 100,4) + ' % frente a 1 USD');
+      line(box,'p','No hay serie por horas suficiente para contar cuánto tiempo lleva fuera o dentro de la banda; solo se puede dar el precio de ahora.');
+      line(box,'small','Precio leído: ' + time(data.ahora.t) + ' · ' + data.ahora.fuente);
     } else {
-      line(box,'p',price.reason === 'DATO_VIEJO' ? 'El último precio disponible es antiguo: ' + time(price.ultima) + '.' : 'No hay suficientes precios horarios recientes para comprobar la paridad.');
+      line(box,'p',price.reason === 'DATO_VIEJO' ? 'El último precio disponible es antiguo: ' + time(price.ultima) + '.' : 'No hay precios recientes de esta moneda en la fuente; no se puede comprobar la paridad ahora mismo.');
     }
     if (data.supply !== null) line(box,'p','Oferta en circulación: ' + number(data.supply,0) + ' ' + data.symbol + '.');
     else line(box,'small','Oferta en circulación sin dato disponible.');
