@@ -11,26 +11,29 @@
 aside.lado{max-width:1240px;width:100%;margin:0 auto 18px;padding:0 20px;display:flex;flex-direction:column;gap:22px}
 .lado .lsec{display:grid;grid-template-columns:repeat(auto-fit,minmax(290px,1fr));gap:14px;align-items:start}
 .lado .lh{grid-column:1/-1;margin:0;font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:var(--mut)}
-/* apartado con un solo bloque (Medium) en pantallas medianas: tarjeta apaisada, imagen a la izquierda */
-@media (min-width:700px) and (max-width:1959px){
-  .lado .lsec.uno{grid-template-columns:1fr}
-  .lado .lsec.uno .lmed{display:grid;grid-template-columns:minmax(220px,340px) 1fr;gap:16px;align-items:center}
-  .lado .lsec.uno .limg{margin:0}
+/* Portátil (cuando caben tres tarjetas en fila): la izquierda es UNA fila de tres tarjetas iguales,
+   «En Medium» con su tarjeta y «Ahora en la cadena» con sus dos, cada apartado bajo su título. */
+@media (min-width:940px) and (max-width:1959px){
+  #lado-izq{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px;align-items:start}
+  #lado-izq .lsec.uno{grid-column:span 1;grid-template-columns:minmax(0,1fr)}
+  #lado-izq .lsec.ahora{grid-column:span 2;grid-template-columns:repeat(2,minmax(0,1fr))}
 }
 @media (min-width:1960px){
   .lay{display:grid;grid-template-columns:300px minmax(0,1240px) 300px;justify-content:center;gap:24px;padding:0 20px;align-items:start}
   .lay>main.wrap{padding:0;max-width:none;order:0}
   aside.lado,#lado-izq,#lado-der{display:flex;flex-direction:column;gap:20px;margin:26px 0 0;padding:0;order:0}
-  .lado .lsec{display:flex;flex-direction:column;gap:14px}
+  /* align-items:stretch es obligatorio: con «start» cada bloque toma el ancho de su contenido y se sale de la columna (fallo del 6-nov) */
+  .lado .lsec{display:flex;flex-direction:column;gap:14px;align-items:stretch}
+  .lado .lb{width:auto;max-width:100%}
   .lado .lh{margin:0 0 -4px}
 }
 .lado .lb{background:var(--pan);border:1px solid var(--line);border-radius:14px;padding:12px 14px;box-shadow:var(--shadow);min-width:0}
 .lado .lt{display:block;font-size:13.5px;margin-bottom:6px}
 .lado .lt a{color:inherit;text-decoration:none}
 .lado .lt a:hover{color:var(--acc)}
-.lado .lr{display:flex;justify-content:space-between;gap:8px;font-size:12.5px;padding:4px 0;border-top:1px dashed var(--line);min-width:0}
+.lado .lr{display:flex;justify-content:space-between;align-items:baseline;gap:8px;font-size:12.5px;padding:4px 0;border-top:1px dashed var(--line);min-width:0}
 .lado .lr:first-of-type{border-top:0}
-.lado .lr>span:first-child{min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.lado .lr>span:first-child{min-width:0;overflow-wrap:anywhere}  /* si no cabe, la etiqueta pasa a dos líneas; nunca se sale del bloque */
 .lado .lr>span:last-child{font-variant-numeric:tabular-nums;white-space:nowrap;flex:none}
 .lado a.lr{color:inherit;text-decoration:none}
 .lado a.lr:hover{color:var(--acc)}

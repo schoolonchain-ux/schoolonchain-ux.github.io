@@ -199,7 +199,7 @@
     der.append(derSec);
     let [med, des, cas] = await Promise.all([medium(), desbloqueos(), casos()]);
     if (med) izq.append(apartado('En Medium', 'uno', med));
-    izq.append(apartado('Ahora en la cadena', '', des, bloqueosTether()));
+    izq.append(apartado('Ahora en la cadena', 'ahora', des, bloqueosTether()));
     if (cas) derSec.append(cas);
     derSec.append(masHerramientas());
     // los ficheros diarios se vuelven a leer cada hora, por si la tarea de las 07:00 ha publicado algo nuevo
