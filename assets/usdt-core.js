@@ -18,10 +18,17 @@
   const parecePrivada = (s) => /^(0x)?[0-9a-fA-F]{64}$/.test(s) || s.split(/\s+/).length >= 12;
 
   /* ---------- red ---------- */
+  // TronGrid sin clave limita las consultas por dirección IP y contesta 429 si se le piden varias a la vez. Todas las lecturas a TronGrid
+  // (bloqueos, saldos, ficha, calendario…) van en fila, con un hueco mínimo entre una y otra, para que ninguna herramienta le quite el turno a otra.
+  let colaTron = Promise.resolve(), ultimaTron = 0;
+  function enFilaTron(fn, hueco = 420) {
+    const turno = colaTron.then(async () => { const espera = ultimaTron + hueco - Date.now(); if (espera > 0) await dormir(espera); ultimaTron = Date.now(); return fn(); });
+    colaTron = turno.then(() => {}, () => {});
+    return turno;
+  }
   async function json(url, opt = {}, ms = 9000) {
-    const r = await fetch(url, { ...opt, signal: AbortSignal.timeout(ms) });
-    if (!r.ok) throw new Error('HTTP ' + r.status);
-    return r.json();
+    const leer = async () => { const r = await fetch(url, { ...opt, signal: AbortSignal.timeout(ms) }); if (!r.ok) throw new Error('HTTP ' + r.status); return r.json(); };
+    return String(url).startsWith(GRID) ? enFilaTron(leer) : leer();
   }
   const dormir = (ms) => new Promise((r) => setTimeout(r, ms));
   async function jsonReintento(url, opt = {}, ms = 9000, intentos = 4) {

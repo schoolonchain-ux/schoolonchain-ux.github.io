@@ -1,0 +1,87 @@
+/* ===== Página Herramientas: cinco zonas =====
+   Fichas de arriba (una por zona, con una cifra viva) y, debajo, cada zona en su panel, con pestañas cuando tiene más de una herramienta.
+   Los enlaces antiguos (#comprobar, #recientes, #desbloqueos, #riesgo-mercado, #liquidez-venta, #paridad-stablecoins) llevan a su zona y pestaña (assets/herramientas.js, RUTAS). */
+.zonas{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:10px;margin:0 0 22px}
+.zona{display:block;min-width:0;color:inherit;text-decoration:none;border:1px solid var(--line);background:var(--pan);border-radius:14px;padding:12px 14px;box-shadow:var(--shadow)}
+.zona:hover{border-color:var(--acc)}
+.zona.on{border-color:var(--acc);box-shadow:0 0 0 1px var(--acc),var(--shadow)}
+.zona .n{display:inline-grid;place-items:center;width:22px;height:22px;border-radius:50%;background:var(--m-azul,var(--acc));color:#fff;font-size:12px;font-weight:800}
+.zona h3{margin:8px 0 2px;font-size:14.5px}
+.zona p{margin:0;color:var(--mut);font-size:12px;line-height:1.35}
+.zona .cifra{margin-top:8px;font-size:12px;color:var(--soft);display:flex;gap:6px;align-items:baseline;line-height:1.3}
+.zona .cifra::before{content:"";flex:none;width:7px;height:7px;border-radius:50%;background:var(--ok);box-shadow:0 0 0 3px rgba(95,211,160,.16);transform:translateY(-1px)}
+
+.zp{background:var(--pan);border:1px solid var(--line);border-radius:16px;padding:18px 20px;margin:0 0 20px;box-shadow:var(--shadow);min-width:0;scroll-margin-top:85px}
+.zp>.kick{font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:var(--mut);margin:0 0 6px;display:block}
+.zp>h2{margin:0 0 4px;font-size:20px}
+.zp h3{margin:0 0 4px;font-size:17px}
+.zp .sub{color:var(--mut);font-size:12.5px;margin:0 0 12px}
+.zp .panel{box-shadow:none}
+.zp .var-intro{padding:6px 0 10px}
+.zp .var-intro h3{font-size:17px;margin:0 0 4px}
+.zp .hueco,.zp .hint{margin-bottom:0}
+.zp .muted{color:var(--mut)}
+
+.ztabs{display:flex;gap:6px;margin:10px 0 14px;flex-wrap:wrap}
+.ztabs button{font:inherit;font-size:13px;color:var(--soft);background:var(--bg);border:1px solid var(--line);border-radius:999px;padding:5px 13px;cursor:pointer}
+.ztabs button:hover{border-color:var(--acc)}
+.ztabs button.on{background:var(--acc);border-color:var(--acc);color:#0a0d12;font-weight:700}
+:root[data-theme="light"] .ztabs button.on{color:#fff}
+@media (prefers-color-scheme:light){:root:not([data-theme="dark"]) .ztabs button.on{color:#fff}}
+.zpan[hidden]{display:none}
+
+/* Comprobar: la caja de búsqueda sin tarjeta propia y una fila por comprobación */
+.zp .buscar{background:none;border:0;border-radius:0;padding:0;box-shadow:none;margin:0 0 8px}
+.zp .res{display:grid;gap:10px;margin-top:12px}
+.zp .sec{display:grid;grid-template-columns:34px minmax(0,1fr);gap:10px;border:1px solid var(--line);background:var(--bg);border-radius:12px;padding:10px 12px}
+.zp .sec .ic{font-size:20px;line-height:1.3;display:grid;place-items:start center}
+.zp .sec b{display:block;font-size:14px;line-height:1.35;overflow-wrap:anywhere}
+.zp .sec p{margin:3px 0 0;color:var(--soft);font-size:12.8px;line-height:1.45;overflow-wrap:anywhere}
+.zp .sec .pie{margin-top:7px;font-size:11px;color:var(--mut);display:flex;gap:6px;align-items:center}
+.zp .sec .pie::before{content:"";flex:none;width:6px;height:6px;border-radius:50%;background:var(--ok)}
+.zp .sec.rojo{border-color:rgba(255,107,131,.45);background:rgba(255,107,131,.08)}
+.zp .sec.amar{border-color:rgba(242,184,75,.4)}
+.zp .sec.verde{border-color:rgba(95,211,160,.4)}
+.zp .sec.esp{opacity:.75}
+.zp .sec-det{margin-top:8px;font-size:12.5px}
+.zp .sec-det summary{cursor:pointer;color:var(--acc)}
+.zp .sec-lista{margin:6px 0 0 18px;padding:0;font-size:12.8px;color:var(--soft)}
+.zp .sec-lista li{margin:3px 0}
+.zp .sec-p{margin:6px 0 0;font-size:12.5px}
+.zp .mini{display:flex;gap:6px;flex-wrap:wrap;margin-top:8px}
+.zp .chip{font-family:var(--mono);font-size:11.5px;border:1px solid var(--line);border-radius:999px;padding:2px 9px;color:var(--soft);background:var(--pan);cursor:pointer}
+.zp .chip:hover{border-color:var(--acc);color:var(--fg)}
+
+/* herramientas largas: se ve lo principal y el resto se abre con «Ver todo» */
+.plegable{position:relative;max-height:var(--alto,600px);overflow:hidden}
+.plegable.corta,.plegable.abierto{max-height:none;overflow:visible}
+.plegable:not(.corta):not(.abierto)::after{content:"";position:absolute;left:0;right:0;bottom:0;height:110px;background:linear-gradient(to bottom,transparent,var(--pan));pointer-events:none}
+.ver-mas{margin-top:12px}
+.ver-mas[hidden]{display:none}
+
+/* Mercado · hoy */
+.mh-grid{display:grid;grid-template-columns:minmax(0,1.5fr) minmax(0,1fr);gap:28px;align-items:start}
+.mh-grid .mh-fng{margin-top:0}
+.mh{width:100%;border-collapse:collapse;font-size:13px}
+.mh th{font-size:11px;letter-spacing:.06em;text-transform:uppercase;color:var(--mut);text-align:left;padding:4px 6px;border-bottom:1px solid var(--line);font-weight:600}
+.mh td{padding:7px 6px;border-bottom:1px dashed var(--line);font-variant-numeric:tabular-nums}
+.mh th.r,.mh td.r{text-align:right}
+.mh .ok{color:var(--ok)}.mh .bad{color:var(--bad)}.mh .warn{color:var(--warn)}
+.mh-fng{display:flex;align-items:baseline;gap:10px;flex-wrap:wrap;margin:12px 0 4px}
+.mh-fng b{font-size:26px;font-variant-numeric:tabular-nums}
+.mh-bar{position:relative;height:8px;border-radius:4px;background:linear-gradient(90deg,var(--bad),var(--warn),var(--ok));margin:8px 0 4px}
+.mh-bar i{position:absolute;top:-3px;width:4px;height:14px;border-radius:2px;background:var(--fg);transform:translateX(-50%)}
+.mh-pie{display:flex;align-items:center;gap:6px;font-size:11.5px;color:var(--mut);margin-top:10px;line-height:1.3}
+.mh-pie::before{content:"";flex:none;width:7px;height:7px;border-radius:50%;background:var(--ok)}
+.mh-pie.warn::before{background:var(--warn)}
+
+@media (max-width:900px){
+  .zonas{display:flex;overflow-x:auto;gap:8px;padding-bottom:6px;scroll-snap-type:x proximity;scrollbar-width:thin;scrollbar-color:var(--line) transparent}
+  .zona{flex:none;min-width:170px;scroll-snap-align:start}
+  .mh-grid{grid-template-columns:minmax(0,1fr);gap:14px}
+}
+@media (max-width:700px){
+  .zona{min-width:150px}
+  .zona p{display:none}
+  .zp{padding:14px}
+}
