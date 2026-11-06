@@ -130,19 +130,33 @@
 
   /* =============== 5 · paridad de stablecoins (en vivo, DefiLlama) =============== */
   function paridad() {
-    // USDD (la de TRON) no tiene precio por hora en DefiLlama, por eso no está aquí; sigue en la herramienta completa.
-    const MONEDAS = [{ s: 'USDT', id: 'coingecko:tether' }, { s: 'USDC', id: 'coingecko:usd-coin' }, { s: 'DAI', id: 'coingecko:dai' }];
+    // USDD (la de TRON) no tiene serie horaria en DefiLlama (/chart); para ella, y para cualquiera que venga corta o vieja,
+    // se pide el precio más cercano a cada marca horaria (/batchHistorical), que sí existe para todas. Mismo criterio que la herramienta completa.
+    const MONEDAS = [{ s: 'USDT', id: 'coingecko:tether' }, { s: 'USDC', id: 'coingecko:usd-coin' }, { s: 'DAI', id: 'coingecko:dai' }, { s: 'USDD', id: 'coingecko:usdd' }];
     const BANDA = 0.005, HORAS = 72;
     const cuerpo = el('div'); const foot = el('div');
     const box = el('div', { class: 'lb' }, el('b', { class: 'lt' }, el('a', { href: 'herramientas.html#paridad-stablecoins' }, '¿Siguen cerca de 1 USD?')), cuerpo, foot);
+    const limpiar = (pts, ahora) => (Array.isArray(pts) ? pts : []).filter((x) => x.price > 0 && x.timestamp * 1000 <= ahora).map((x) => ({ t: x.timestamp * 1000, p: x.price })).sort((a, b) => a.t - b.t);
     async function leer() {
       foot.replaceChildren(pie('Leyendo los precios por hora…', 'wait'));
-      const ahora = Date.now(), start = Math.floor(ahora / 1000) - HORAS * 3600;
+      const ahora = Date.now(), fin = Math.floor(ahora / 1000), start = fin - HORAS * 3600;
       const j = await cargar('https://coins.llama.fi/chart/' + MONEDAS.map((m) => m.id).join(',') + '?start=' + start + '&span=' + HORAS + '&period=1h', 15000);
+      const series = {};
+      for (const m of MONEDAS) series[m.id] = limpiar(j && j.coins && j.coins[m.id] && j.coins[m.id].prices, ahora);
+      // segundo camino, en una sola llamada, para las que no tienen serie suficiente (≥ 80 % de las horas y último precio de hace ≤ 3 h)
+      const cortas = MONEDAS.filter((m) => { const s = series[m.id]; return s.length < HORAS * 0.8 || ahora - s[s.length - 1].t > 3 * HORA; });
+      if (cortas.length) {
+        const marcas = Array.from({ length: HORAS }, (_, i) => fin - (HORAS - 1 - i) * 3600);
+        const pedido = {}; for (const m of cortas) pedido[m.id] = marcas;
+        const j2 = await cargar('https://coins.llama.fi/batchHistorical?coins=' + encodeURIComponent(JSON.stringify(pedido)) + '&searchWidth=2h', 15000);
+        for (const m of cortas) {
+          const vistos = new Set();
+          series[m.id] = series[m.id].concat(limpiar(j2 && j2.coins && j2.coins[m.id] && j2.coins[m.id].prices, ahora)).filter((x) => !vistos.has(x.t) && vistos.add(x.t)).sort((a, b) => a.t - b.t);
+        }
+      }
       cuerpo.replaceChildren(); let viejo = 0, sin = 0;
       for (const m of MONEDAS) {
-        const pts = j && j.coins && j.coins[m.id] && j.coins[m.id].prices;
-        const s = Array.isArray(pts) ? pts.filter((x) => x.price > 0 && x.timestamp * 1000 <= ahora).map((x) => ({ t: x.timestamp * 1000, p: x.price })).sort((a, b) => a.t - b.t) : [];
+        const s = series[m.id];
         if (!s.length) { sin++; cuerpo.append(el('div', { class: 'lrow2' }, el('span', null, m.s), el('span', { class: 'warn' }, 'sin dato'))); continue; }
         const ult = s[s.length - 1], edadH = (ahora - ult.t) / HORA, desv = ult.p - 1;
         if (edadH > 3) { viejo++; cuerpo.append(el('div', { class: 'lrow2' }, el('span', null, m.s), el('span', { class: 'warn', title: 'Último precio de ' + C.utc(ult.t) }, 'dato viejo (' + hace(ult.t) + ')'))); continue; }
