@@ -258,3 +258,5 @@
 .tip small{opacity:.75;font-size:11px}
 .sk svg path,.sk svg rect{transition:stroke-opacity .12s,opacity .12s}
 .sk svg path:hover{stroke-opacity:.7}
+
+.coinciden{font-size:12px;color:var(--mut);margin:6px 0 0;line-height:1.4}

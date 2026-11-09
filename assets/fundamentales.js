@@ -530,10 +530,15 @@
     const cfg = { type: o.tipo || 'line', data: { labels, datasets: series.map((s, i) => ({ label: s.t, data: labels.map((d) => (mapas[i].has(d) ? mapas[i].get(d) : null)), borderColor: s.color || C.pal[i], backgroundColor: (s.color || C.pal[i]) + (o.tipo === 'bar' ? 'cc' : '22'), fill: !!s.relleno, borderWidth: 1.6, pointRadius: 0, pointHitRadius: 8, tension: .25, spanGaps: true, yAxisID: s.eje || 'y', ...puntoHover })) },
       options: { responsive: true, maintainAspectRatio: false, interaction: { mode: 'index', intersect: false }, plugins: { legend: { display: series.length > 1, position: 'bottom' }, tooltip: tipLineas((c) => ' ' + series[c.datasetIndex].t + ': ' + (series[c.datasetIndex].fmt || o.fmt || m)(c.parsed.y)) },
         scales: Object.assign({ x: ejeFecha(labels, dias > 120), y: { ticks: { maxTicksLimit: 5, callback: (v) => (o.fmt || m)(v) }, grid: { color: C.css('--line') } } }, o.eje2 ? { y2: { position: 'right', ticks: { maxTicksLimit: 5, callback: (v) => (o.fmt2 || m)(v) }, grid: { drawOnChartArea: false } } } : {}) } };
+    // dos series con la misma cifra día a día se taparían: la segunda va a trazos y se avisa debajo
+    const coinciden = [];
+    cfg.data.datasets.forEach((dj, j) => { for (let i = 0; i < j; i++) { const di = cfg.data.datasets[i]; let iguales = 0, ambos = 0; dj.data.forEach((v, k) => { const u = di.data[k]; if (v == null || u == null) return; ambos++; if (Math.abs(v - u) <= Math.max(Math.abs(v), Math.abs(u)) * 1e-6) iguales++; }); if (ambos >= 20 && iguales / ambos >= 0.98) { dj.borderDash = [6, 4]; dj.borderWidth = 2.2; dj.fill = false; coinciden.push([series[i].t, series[j].t, Math.round(iguales / ambos * 100)]); } } });
+    let salida = wrap;
+    if (coinciden.length) salida = el('div', null, wrap, el('p', { class: 'coinciden' }, coinciden.map((c) => 'Las líneas «' + c[0] + '» y «' + c[1] + '» coinciden (misma cifra el ' + c[2] + ' % de los días): la segunda se dibuja a trazos para que se vea.').join(' ')));
     UI.clicable(cfg, (e) => { const dia = labels[e.index]; UI.abrir((o.titulo || 'Valores') + ' · ' + dia, () => el('div', null, UI.tabla({ pp: 10, buscar: false, rows: series.map((s, i) => ({ s, v: mapas[i].get(dia) })), cols: [{ t: 'Serie', v: (r) => r.s.t }, { t: 'Valor', v: (r) => (r.v == null ? '—' : (r.s.fmt || o.fmt || m)(r.v)), num: true }, { t: 'Fuente', v: (r) => (r.s.fuente ? ext(r.s.fuente[0], r.s.fuente[1]) : '—') }] }), o.nota ? el('p', { class: 'serie-nota' }, o.nota) : null), { sub: F.nombre, ancho: true }); });
     cfg.plugins = [marcasPlugin(fechasCambio(F)), cruzPlugin];
     C.chartDefaults(); new Chart(cv, cfg);
-    return wrap;
+    return salida;
   }
 
   /* ---- nivel 1: tres tarjetas priorizadas ---- */
@@ -569,8 +574,8 @@
     const fin = F.cm.SplyCur ? ultimo(F.cm.SplyCur)[1] : (F.x.quema ? F.x.quema.actual.ofertaTrx : md.circulating_supply);
     const card = el('div', { class: 'card' });
     if (em && em.length > 30) {
-      let d = 30; const cont = el('div'); const lineas = el('div');
-      const per = el('div', { class: 'per' }, [30, 90, 365].map((x) => el('button', { type: 'button', class: x === d ? 'on' : '', onclick: (e) => { d = x; per.querySelectorAll('button').forEach((b) => b.classList.toggle('on', b === e.currentTarget)); pintar(); } }, x === 365 ? '1 año' : x + ' d')));
+      let d = 30; const cont = el('div'); const lineas = el('div'); const pie = el('p', { class: 'regla2' });
+      const per = el('div', { class: 'per' }, [30, 90, 365].map((x) => el('button', { type: 'button', class: x === d ? 'on' : '', onclick: (e) => { d = x; per.querySelectorAll('button').forEach((b) => b.classList.toggle('on', b === e.currentTarget)); pintar(); pintarLineas(); } }, x === 365 ? '1 año' : x + ' d')));
       const pintar = () => {
         const sE = completos(em), sQ = qu ? completos(qu) : [], f = HOY0(), E = suma(sE, f - d * DIA, f), Q = sQ.length ? suma(sQ, f - d * DIA, f) : 0, neto = E - Q, ini = fin - neto;
         const abrirB = (titulo, texto) => () => abrirTexto(titulo, [texto, nota], fuentes, 'Regla escrita');
@@ -581,9 +586,10 @@
           el('div', { class: neto > 0 ? 'mas' : 'menos', onclick: abrirB('Variación neta', 'Emisión menos quema en ' + d + ' días: ' + (neto >= 0 ? '+' : '') + nt(neto, s) + ' (' + pct(neto / ini, 2) + ' de la oferta inicial; ' + pct((neto / d * 365.25) / ini, 2) + ' anualizado).') }, el('span', null, 'Variación neta'), el('b', null, (neto >= 0 ? '+' : '') + nt(neto, s)), el('span', null, pct(neto / ini, 2) + ' · ' + pct((neto / d * 365.25) / ini, 2) + ' anualizado')),
           el('div', { onclick: abrirB('Oferta hoy', F.cm.SplyCur ? 'Oferta existente según Coin Metrics (monedas creadas, bloqueadas o no).' : F.x.quema ? 'Oferta de TRX según la serie de TronScan.' : 'Circulante según CoinGecko.') }, el('span', null, 'Oferta hoy'), el('b', null, nt(fin, s)), el('span', null, md.max_supply ? pctAbs(fin / md.max_supply * 100, 1) + ' del máximo' : 'sin máximo fijado'))));
       };
-      pintar();
-      lineas.append(graficoLineas(F, { titulo: 'Emisión y quema diarias', series: [{ t: 'Emisión / día', serie: em, color: C.pal[1], fmt: (v) => nt(v, s), fuente: fuentes[0] }, qu ? { t: 'Quema / día', serie: qu, color: C.pal[3], fmt: (v) => nt(v, s), fuente: fuentes[fuentes.length - 1] } : null].filter(Boolean), fmt: (v) => nt(v, s), nota }));
-      card.append(el('h4', null, 'Balance de oferta', per), cont, lineas, el('p', { class: 'regla2' }, 'Las dos líneas, día a día (1 año). ' + nota + ' Pulsa un punto para ver las cifras de ese día.'));
+      // el gráfico sigue al periodo elegido (30 / 90 días / 1 año), igual que las cajas
+      const pintarLineas = () => { const viejo = lineas.querySelector('canvas'); if (viejo && Chart.getChart(viejo)) Chart.getChart(viejo).destroy(); lineas.replaceChildren(graficoLineas(F, { titulo: 'Emisión y quema diarias', dias: d, series: [{ t: 'Emisión / día', serie: em, color: C.pal[1], fmt: (v) => nt(v, s), fuente: fuentes[0] }, qu ? { t: 'Quema / día', serie: qu, color: C.pal[3], fmt: (v) => nt(v, s), fuente: fuentes[fuentes.length - 1] } : null].filter(Boolean), fmt: (v) => nt(v, s), nota })); pie.textContent = 'Las dos líneas, día a día (' + (d === 365 ? 'último año' : 'últimos ' + d + ' días') + '). ' + nota + ' Pasa el ratón para ver cada día; pulsa un punto para ver las cifras y su origen.'; };
+      pintar(); pintarLineas();
+      card.append(el('h4', null, 'Balance de oferta', per), cont, lineas, pie);
     } else if (em && em.length) card.append(el('h4', null, 'Balance de oferta'), el('div', { class: 'sd' }, el('b', null, 'Serie corta. '), 'La fuente da menos de un mes de emisión para ' + s + '.'));
     else {
       // sin emisión medible: la oferta se enseña como barra de circulante / emitido no circulante / sin emitir
