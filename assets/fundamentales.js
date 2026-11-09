@@ -75,7 +75,16 @@
   // línea guía vertical mientras la ventanita está abierta (ratón o dedo)
   const cruzPlugin = { id: 'cruz', afterDraw(chart) { const t = chart.tooltip; if (!t || !t.opacity) return; const act = t.getActiveElements(); const y = chart.scales.y; if (!act.length || !y) return; const ctx = chart.ctx; ctx.save(); ctx.globalAlpha = t.opacity; ctx.setLineDash([3, 3]); ctx.lineWidth = 1; ctx.strokeStyle = C.css('--mut') || '#8b9ab4'; ctx.beginPath(); ctx.moveTo(act[0].element.x, y.top); ctx.lineTo(act[0].element.x, y.bottom); ctx.stroke(); ctx.restore(); } };
   // ventanita de los gráficos de líneas: el día en letras, una fila por serie, y responde al dedo igual que al ratón
-  const tipLineas = (label) => ({ mode: 'index', intersect: false, usePointStyle: true, boxPadding: 4, callbacks: { title: (it) => (it.length && it[0].label ? fechaLarga(it[0].label) : ''), label } });
+  const tipLineas = (label) => ({ mode: 'index', intersect: false, animation: false, usePointStyle: true, boxPadding: 4, callbacks: { title: (it) => (it.length && it[0].label ? fechaLarga(it[0].label) : ''), label } });
+  // Chart.js procesa el ratón a través de requestAnimationFrame; donde ese ciclo no corre (panel incrustado, pestaña ahorrando energía) el gráfico queda inerte.
+  // Aquí el movimiento se procesa directamente y se redibuja al momento, sin esperar al ciclo.
+  const hoverDirecto = (ch) => {
+    if (!ch || typeof ch._eventHandler !== 'function') return ch;
+    const cv = ch.canvas; let dentro = false;
+    const f = (ev) => { if (dentro) return; dentro = true; try { const r = cv.getBoundingClientRect(); const p = (ev.touches && ev.touches[0]) || (ev.changedTouches && ev.changedTouches[0]) || ev; const fuera = ev.type === 'mouseleave' || ev.type === 'touchend' || ev.type === 'touchcancel'; ch._eventHandler({ type: fuera ? 'mouseout' : 'mousemove', chart: ch, native: ev, x: p.clientX - r.left, y: p.clientY - r.top }, false); ch.draw(); } catch (e) { /* si Chart.js cambia por dentro, queda el comportamiento normal */ } dentro = false; };
+    cv.addEventListener('mousemove', f); cv.addEventListener('mouseleave', f); cv.addEventListener('touchstart', f, { passive: true }); cv.addEventListener('touchmove', f, { passive: true }); cv.addEventListener('touchend', f); cv.addEventListener('touchcancel', f);
+    return ch;
+  };
   const puntoHover = { pointHoverRadius: 4.5, pointHoverBorderWidth: 2, pointHoverBackgroundColor: '#fff' };
   const fechasCambio = (F) => [...new Set((F.cambios || []).map((c) => c.fecha))];
   const PLAZOS = [7, 30, 90, 365];
@@ -537,7 +546,7 @@
     if (coinciden.length) salida = el('div', null, wrap, el('p', { class: 'coinciden' }, coinciden.map((c) => 'Las líneas «' + c[0] + '» y «' + c[1] + '» coinciden (misma cifra el ' + c[2] + ' % de los días): la segunda se dibuja a trazos para que se vea.').join(' ')));
     UI.clicable(cfg, (e) => { const dia = labels[e.index]; UI.abrir((o.titulo || 'Valores') + ' · ' + dia, () => el('div', null, UI.tabla({ pp: 10, buscar: false, rows: series.map((s, i) => ({ s, v: mapas[i].get(dia) })), cols: [{ t: 'Serie', v: (r) => r.s.t }, { t: 'Valor', v: (r) => (r.v == null ? '—' : (r.s.fmt || o.fmt || m)(r.v)), num: true }, { t: 'Fuente', v: (r) => (r.s.fuente ? ext(r.s.fuente[0], r.s.fuente[1]) : '—') }] }), o.nota ? el('p', { class: 'serie-nota' }, o.nota) : null), { sub: F.nombre, ancho: true }); });
     cfg.plugins = [marcasPlugin(fechasCambio(F)), cruzPlugin];
-    C.chartDefaults(); new Chart(cv, cfg);
+    C.chartDefaults(); hoverDirecto(new Chart(cv, cfg));
     return salida;
   }
 
@@ -753,7 +762,7 @@
       const abrir = (i) => { const x = ult[i]; UI.abrir(r.t + ' · ' + fd(x[0]), () => el('div', null, el('p', { class: 'serie-nota' }, etq(r.num[0]), r.num[1] + ' (30 días hasta ese día): ' + r.fmtAB(x[2]) + '.'), el('p', { class: 'serie-nota' }, etq(r.den[0]), r.den[1] + ': ' + r.fmtAB(x[3]) + '.'), el('div', { class: 'regla' }, r.fmtAB(x[2]) + ' ÷ ' + r.fmtAB(x[3]) + ' = ' + r.fmt(x[1]) + '. ' + r.regla), UI.tabla({ pp: 15, ph: 'Buscar una fecha…', csv: s + '-relacion', rows: r.serie.slice().reverse(), cols: [{ t: 'Día', v: (y) => fd(y[0]), o: (y) => y[0] }, { t: r.num[1], v: (y) => r.fmtAB(y[2]), o: (y) => y[2], num: true, csv: (y) => y[2] }, { t: r.den[1], v: (y) => r.fmtAB(y[3]), o: (y) => y[3], num: true, csv: (y) => y[3] }, { t: 'Cociente', v: (y) => r.fmt(y[1]), o: (y) => y[1], num: true, csv: (y) => y[1] }] }), el('p', { class: 'fuente' }, 'De dónde sale: ', ...r.fuentes.filter(Boolean).flatMap((f, k) => [k ? ' · ' : '', ext(f[0], f[1])]), '.')), { sub: F.nombre, ancho: true }); };
       const cfg = UI.clicable({ type: 'line', data: { labels, datasets: [{ data: ult.map((x) => x[1]), borderColor: C.pal[2], backgroundColor: C.pal[2] + '22', fill: true, borderWidth: 1.6, pointRadius: 0, pointHitRadius: 8, tension: .25, ...puntoHover }] }, options: { responsive: true, maintainAspectRatio: false, interaction: { mode: 'index', intersect: false }, plugins: { legend: { display: false }, tooltip: tipLineas((c) => ' ' + r.t + ': ' + r.fmt(c.parsed.y)) }, scales: { x: { ticks: { maxTicksLimit: 6, callback: (v, i) => (labels[i] ? labels[i].slice(2, 7) : '') }, grid: { display: false } }, y: { ticks: { maxTicksLimit: 4, callback: (v) => r.fmt(v) }, grid: { color: C.css('--line') } } } } }, (e) => abrir(e.index));
       cfg.plugins = [marcasPlugin(fechas), cruzPlugin];
-      C.chartDefaults(); new Chart(cv, cfg);
+      C.chartDefaults(); hoverDirecto(new Chart(cv, cfg));
       return card;
   }
 
@@ -817,7 +826,7 @@
       UI.clicable(cfg, (e) => { const dia = dias_[e.index]; abrirDia(F, series, dia); });
       cfg.plugins = [marcasPlugin(fechasCambio(F)), cruzPlugin];
       if (grafico) grafico.destroy();
-      C.chartDefaults(); grafico = new Chart(cv, cfg);
+      C.chartDefaults(); grafico = hoverDirecto(new Chart(cv, cfg));
     }
     dibujar();
     return card;
