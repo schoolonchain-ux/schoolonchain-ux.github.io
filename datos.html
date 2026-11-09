@@ -23,7 +23,7 @@
 <body>
 <div class="topbar"><div class="wrap">
   <a class="brand" href="./"><span class="dot"></span>School On-Chain</a>
-  <nav><a href="./">Informes</a><a href="herramientas.html">Herramientas</a><a href="https://github.com/schoolonchain-ux/schoolonchain-ux.github.io">Repositorio</a></nav>
+  <nav><a href="./">Informes</a><a href="herramientas.html">Herramientas</a><a href="fundamentales.html">Fundamentales</a><a href="https://github.com/schoolonchain-ux/schoolonchain-ux.github.io">Repositorio</a></nav>
   <button class="theme" id="theme" title="Cambiar tema claro / oscuro">Tema</button>
 </div></div>
 
@@ -85,7 +85,22 @@
     <div class="dm">
       <div class="dm-row"><b>Descongelaciones</b><span>Las 10.000 mayores cuentas de TronScan y, para cada una con un desbloqueo en curso, su fecha leída en TronGrid. La consulta de una dirección concreta sí es en vivo.</span></div>
       <div class="dm-row"><b>Reparto</b><span>Las 10.000 mayores cuentas de TronScan agrupadas por lo que TronScan dice que son. Si TronScan pone nombre a una cuenta un día y al siguiente se lo quita, se conserva el último nombre que dio y se cuenta aparte; la pestaña dice cuántas cuentas y cuánto TRX. Las mayores cuentas sin nombre se enseñan enteras y con enlace, y se cruzan con lo que sabemos de cada una, con su fuente: nuestros informes del caso Vaneck/Sun, los anuncios de SUN.io (centro de ayuda de SUN.io) y lecturas de la cadena (un fichero fijo que guarda la fuente de cada descripción; una atribución de terceros se muestra como atribución, no como hecho, y las etiquetas de TronScan se dicen de TronScan).</span></div>
-      <div class="dm-row"><b>Quema y emisión</b><span>La serie diaria de TronScan (emisión, quema y oferta). Cada día se comprueba que lo que cambia la oferta cuadre con emisión menos quema.</span></div>
+      <div class="dm-row"><b>Quema y emisión</b><span>La serie diaria de TronScan (emisión, quema y oferta). Cada día se comprueba que lo que cambia la oferta cuadre con emisión menos quema. Desde el 10-nov-2026 el fichero lleva también los últimos 400 días, día a día, que usa el Laboratorio de fundamentales.</span></div>
+    </div>
+  </section>
+
+  <section class="zp" id="fundamentales" aria-label="Laboratorio de fundamentales">
+    <h3 class="dm-h">6 · Laboratorio de fundamentales <span class="dm-t vivo">en vivo</span> <span class="dm-t dia">diario</span></h3>
+    <div class="dm">
+      <div class="dm-row"><b>Qué es</b><span>Escribes un token y el cuadro de mando se monta en tu navegador con fuentes públicas: cinco tarjetas, el gráfico de un año con cada serie en porcentaje sobre su primer día, la tarta de a quién pertenece el token, la pregunta guía en cinco cifras, la tabla por los seis pasos (economía del token, actividad y demanda, monetización, captura de valor, sostenibilidad, valoración y riesgo), los múltiplos con sus cuatro etiquetas y, aparte, las aplicaciones de su cadena. Hasta cuatro tokens se comparan en columnas con las mismas filas. Sin nota ni recomendaciones.</span></div>
+      <div class="dm-row"><b>Precio, capitalización, oferta</b><span>CoinGecko (ficha del token y 365 días de precio, capitalización y volumen); dos lecturas por ficha, con pausa, porque CoinGecko limita por visitante y, si corta, la ficha espera 25 segundos y reintenta una vez. El precio de la cabecera se renueva cada minuto desde coins.llama.fi.</span></div>
+      <div class="dm-row"><b>Comisiones, ingresos y valor para el token</b><span>DefiLlama, con el texto de método que publica para cada cadena o protocolo. Cuatro etiquetas que nunca se suman: <em>comisiones de usuarios</em> (lo que pagan quienes usan la red o la aplicación), <em>ingresos del protocolo</em> (lo que se queda el protocolo o su tesorería), <em>valor para el token</em> (lo que llega a los titulares: quema, recompra o reparto) e <em>ingresos de validadores</em> (emisión más comisiones no quemadas). También de DefiLlama: TVL histórico de la cadena, stablecoins en la cadena, volumen de los intercambios descentralizados y las aplicaciones de la cadena con comisiones.</span></div>
+      <div class="dm-row"><b>Actividad on-chain</b><span>Coin Metrics (comunidad): direcciones activas, transacciones, transferencias, emisión, oferta y direcciones con saldo, una métrica por lectura, dos años de serie. No cubre todos los activos (SOL, SUI, HYPE o TON no tienen actividad gratuita) y la ficha lo dice en cada fila.</span></div>
+      <div class="dm-row"><b>TRX y ETH</b><span>TRX: TronScan (actividad diaria, validadores con sus votos y lo que se quedan de la recompensa), TronGrid (pago por bloque confirmado en los parámetros de la red) y las lecturas diarias de quema, reparto y descongelaciones de esta misma web. ETH: ultrasound.money (ETH en staking y recompensas de validadores) y el TVL de Lido como aproximación de concentración, rotulada así.</span></div>
+      <div class="dm-row"><b>Desarrollo</b><span>GitHub sin clave (60 lecturas por hora y visitante): commits de 28 días en la rama por defecto del primer repositorio que CoinGecko asocia al token y su última versión. Sin semáforo: los commits son una aproximación débil.</span></div>
+      <div class="dm-row"><b>Tendencias</b><span>Cada cifra con historia lleva su variación a 7, 30, 90 y 365 días. Flujos (comisiones, operaciones): la suma del periodo frente a la del periodo anterior de igual duración, sin contar el día de hoy. Saldos (capitalización, TVL, oferta): el valor de hoy frente al de hace ese tiempo. Flecha arriba por encima de +5 %, abajo por debajo de −5 %, plana entre medias. Las relaciones (valor para el token / comisiones, ingresos / emisión, ingresos / capital depositado) usan sumas de 30 días.</span></div>
+      <div class="dm-row"><b>El fichero diario</b><span><code>data/fundamentales-indice.json</code>: qué cadena y qué protocolos de DefiLlama corresponden a cada token (la lista completa pesa más de 9 MB y no se puede leer en cada visita), los 250 tokens con más capitalización para el buscador, qué métricas de Coin Metrics tiene cada activo y los <b>cambios de método o de cobertura</b> detectados: cada día se guardan los textos de método de DefiLlama y la cobertura de Coin Metrics (<code>data/fundamentales-metodos.json</code>) y se comparan con los del día anterior; si cambian, la ficha lo avisa con la fecha y los gráficos dibujan una marca, para que un salto de la serie no se lea como un cambio económico. Antes de publicarlo se comprueba que haya al menos 200 cadenas, 1.500 tokens y 1.000 métodos y que TRX y AAVE enlacen con su cadena y su protocolo.</span></div>
+      <div class="dm-row"><b>Lo que no hay gratis</b><span>Calendario de desbloqueos de inversores, pagos en tokens a los usuarios (incentivos), valor transferido en la propia moneda, validadores y titulares de la mayoría de cadenas. En la ficha aparecen como «sin dato gratuito», con el motivo; nunca se estima ni se rellena.</span></div>
     </div>
   </section>
 
@@ -113,6 +128,6 @@
   </section>
 </main>
 <script src="assets/common.js?v=a7b1254f"></script>
-<script src="assets/datos.js?v=8a3e3b34"></script>
+<script src="assets/datos.js?v=9b930de5"></script>
 </body>
 </html>

@@ -38,6 +38,7 @@
     for (const p of Dash.partes.sort((a, b) => a.orden - b.orden)) { try { await p.fn(Dash); } catch (e) { console.error(e); app.append(el('p', { class: 'muted' }, 'Error al dibujar una sección: ' + e.message)); } }
     const nav = document.getElementById('nav');
     Dash.nav.forEach(([id, t]) => nav.append(el('a', { href: '#' + id }, t)));
+    nav.append(el('a', { href: 'herramientas.html' }, 'Herramientas'), el('a', { href: 'fundamentales.html' }, 'Fundamentales'));
     pie();
     modoCaptura();
     if (!q.has('nolibro')) setTimeout(() => Libro.cargar().catch(() => {}), 1500); // precarga en segundo plano

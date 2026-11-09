@@ -56,6 +56,8 @@ async function leer() {
     },
     regimen: { ultimoDiaDeflacionario30d: ultNeg, primerDiaInflacionario30d: primPos, diasInflacionarios: desde.filter((x) => x.v > 0).length, diasDesdeEntonces: desde.length },
     trimestres, anios,
+    // los últimos 400 días, día a día (emisión y quema en TRX, precio en dólares): los usa la página de fundamentales para dibujar ingresos frente a emisión; campo añadido el 9-nov-2026, el resto del fichero no cambia
+    ultimos400: filas.slice(-400).map((r) => [r.dia, Math.round(r.emision), Math.round(r.quema), r.precio]),
     fuente: 'TronScan /api/turnover?type=0&from=issuance (serie diaria de emisión, quema y oferta)',
   };
   fs.writeFileSync(SALIDA, JSON.stringify(salida, null, 1));

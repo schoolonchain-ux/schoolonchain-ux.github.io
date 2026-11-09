@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Laboratorio de fundamentales · School On-Chain</title>
+<meta name="description" content="Escribe un token y mira cómo funciona económicamente: emisión y quema, actividad y demanda, comisiones e ingresos, qué parte llega al token, sostenibilidad y valoración. Datos públicos en vivo, cada cifra con su origen, sin recomendaciones.">
+<meta property="og:title" content="School On-Chain · Laboratorio de fundamentales">
+<meta property="og:description" content="Cómo funciona económicamente un activo cripto: de dónde viene su demanda, cómo genera ingresos, qué captura su token y si su modelo es sostenible. Con la fuente de cada cifra.">
+<meta property="og:type" content="website">
+<meta property="og:image" content="https://schoolonchain-ux.github.io/assets/brand/compartir.jpg">
+<meta property="og:image:type" content="image/jpeg">
+<meta property="og:image:width" content="1672">
+<meta property="og:image:height" content="941">
+<meta property="og:image:alt" content="School On-Chain: seguimos el dinero, documentamos la evidencia. Grafos de transacciones, USDT bloqueados y una calavera con capucha naranja">
+<meta name="twitter:image" content="https://schoolonchain-ux.github.io/assets/brand/compartir.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" type="image/webp" href="assets/brand/calavera-icono.webp">
+<link rel="alternate" type="application/rss+xml" title="School On-Chain · Novedades" href="feed.xml">
+<link rel="stylesheet" href="assets/site.css?v=580a9dc7">
+<link rel="stylesheet" href="assets/site2.css?v=dfd5e8bc">
+<link rel="stylesheet" href="assets/site4.css?v=768a06d9">
+<link rel="stylesheet" href="assets/site5.css?v=64bd62d2">
+<link rel="stylesheet" href="assets/tema.css?v=43fe5cb5">
+<link rel="stylesheet" href="assets/zonas.css?v=6bf76ff1">
+<link rel="stylesheet" href="assets/fundamentales.css?v=50ebb797">
+</head>
+<body>
+<div class="topbar"><div class="wrap">
+  <a class="brand" href="./"><span class="dot"></span>School On-Chain</a>
+  <nav><a href="./">Informes</a><a href="herramientas.html">Herramientas</a><a href="fundamentales.html" class="on">Fundamentales</a><a href="https://github.com/schoolonchain-ux/schoolonchain-ux.github.io">Repositorio</a></nav>
+  <button class="theme" id="theme" title="Cambiar tema claro / oscuro">Tema</button>
+</div></div>
+
+<main class="wrap" id="app">
+  <header class="hero-h">
+    <span class="kick">Laboratorio de fundamentales · en vivo · desde tu navegador</span>
+    <h1>¿Cómo funciona económicamente este activo?</h1>
+    <p>Escribe un token y verás de dónde procede su demanda, cómo genera ingresos, qué parte de ese valor captura el token y hasta qué punto su modelo es sostenible. Datos públicos, cada cifra con su origen y su tendencia, sin nota ni recomendaciones. <a href="datos.html#fundamentales">Cómo se calcula cada cifra →</a></p>
+  </header>
+
+  <section class="zp" id="z-buscar" aria-label="Buscar un token">
+    <form class="fb" id="fb" autocomplete="off" role="search">
+      <input id="fb-q" type="search" placeholder="Escribe un token: TRX, ETH, AAVE, SOL…" aria-label="Token" aria-autocomplete="list" aria-controls="fb-sug" spellcheck="false">
+      <button type="submit" class="btn primary">Ver fundamentales</button>
+      <div class="fb-sug" id="fb-sug" role="listbox" hidden></div>
+    </form>
+    <div class="fb-ej" id="fb-ej">Prueba con: </div>
+    <p class="hint" id="fb-estado" style="margin-top:10px"></p>
+  </section>
+
+  <div id="ficha" aria-live="polite"></div>
+
+  <section class="zp" id="z-metodo" aria-label="Cómo leer esta ficha">
+    <p class="kick">Cómo leer esta ficha</p>
+    <h2>Seis pasos, en orden: una cadena de razonamiento, no una nota</h2>
+    <div class="ayuda" style="margin-top:8px">
+      <div class="ai"><b>Qué hay en pantalla.</b> Cinco tarjetas con su minigráfico de 30 días; el gráfico grande, con cada serie en porcentaje sobre su primer día del periodo (7 d, 30 d, 90 d o 1 año) para que quepan en un mismo eje; la tarta de a quién pertenece el token con lo que cada fuente permite saber; la pregunta guía en cinco líneas con su cifra; la tabla de detalle ordenada por los seis pasos; los múltiplos con sus cuatro etiquetas; y, aparte, las aplicaciones de su cadena, cuyo dinero no llega al token. Todo se pulsa: cada tarjeta, fila, punto del gráfico y trozo de la tarta abre su serie y el enlace a la respuesta en bruto de la fuente.</div>
+      <div class="ai"><b>1 · Economía del token.</b> Cuánto hay, cuánto se crea y cuánto se destruye: emisión, inflación, quema y dilución.</div>
+      <div class="ai"><b>2 · Actividad y demanda.</b> Una escalera de cuatro peldaños: actividad (direcciones, operaciones), uso económico (stablecoins, volumen en intercambios), monetización (comisiones pagadas) y captura (lo que llega al token). Millones de operaciones no son, por sí solas, demanda económica.</div>
+      <div class="ai"><b>3 · Monetización.</b> Comisiones que pagan los usuarios e ingresos que se queda el protocolo, con el texto de método de la fuente. Los incentivos (pagos en tokens a los usuarios) no tienen fuente gratuita y se dice.</div>
+      <div class="ai"><b>4 · Captura de valor.</b> Qué parte de ese dinero llega de verdad al token (quema, recompra o reparto) y qué cobran los validadores.</div>
+      <div class="ai"><b>5 · Sostenibilidad.</b> Lo que entra (ingresos) frente a lo que se emite para pagar la seguridad, y cuánto rinde el capital depositado.</div>
+      <div class="ai"><b>6 · Valoración y riesgo.</b> Múltiplos solo con sus cuatro etiquetas (qué va arriba, qué va abajo, de qué periodo, quién cobra), concentración (quién tiene, quién controla, quién cobra), seguridad, ecosistema y desarrollo.</div>
+      <div class="ai"><b>Cuatro etiquetas de dinero que nunca se suman.</b> <span class="etq etq-fees">Comisiones de usuarios</span> lo que pagan quienes usan la red o la aplicación · <span class="etq etq-rev">Ingresos del protocolo</span> lo que se queda el protocolo o la tesorería · <span class="etq etq-hold">Valor para el token</span> lo que llega a los titulares (quema, recompra, reparto) · <span class="etq etq-val">Ingresos de validadores</span> emisión más comisiones no quemadas.</div>
+      <div class="ai"><b>Tendencias, no fotografías.</b> Cada cifra con historia lleva su variación a 7, 30, 90 y 365 días: para los flujos (comisiones, operaciones) se compara el periodo con el anterior de igual duración; para los saldos (capitalización, TVL, oferta) se compara el valor de hoy con el de hace ese tiempo. Flecha: sube si varía más de un +5 %, baja si menos de un −5 %, plana entre medias.</div>
+      <div class="ai"><b>Cambios de método o de cobertura.</b> Si la fuente cambia lo que mide o deja de cubrir un dato, el índice diario lo detecta y la ficha lo marca con la fecha, para que un salto de la serie no se lea como un cambio económico.</div>
+      <div class="ai"><b>Lo que no hay gratis se dice.</b> Calendario de desbloqueos, dependencia de incentivos, valor transferido, validadores de la mayoría de cadenas: «sin dato gratuito», con el motivo. Nunca se estima ni se rellena.</div>
+    </div>
+  </section>
+</main>
+
+<div class="tip" id="tip"></div>
+<script src="assets/vendor/chart.umd.min.js?v=49aef4c2"></script>
+<script src="assets/common.js?v=a7b1254f"></script>
+<script src="assets/marca.js?v=c3a7aa09"></script>
+<script src="assets/ui.js?v=5c721148"></script>
+<script src="assets/fundamentales.js?v=07f17d4f"></script>
+</body>
+</html>

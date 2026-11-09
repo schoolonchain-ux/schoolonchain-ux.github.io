@@ -9,6 +9,7 @@
     { r: 'data/reparto-trx.json', t: 'Reparto del TRX entre cuentas' },
     { r: 'data/quema-trx.json', t: 'Quema y emisión de TRX', extra: (D) => ' · serie hasta el ' + D.hasta },
     { r: 'data/desbloqueos-trx.json', t: 'Descongelaciones de TRX' },
+    { r: 'data/fundamentales-indice.json', t: 'Índice del Laboratorio de fundamentales (token → cadena y protocolos, cobertura, cambios de método)', extra: (D) => (D.comprobaciones ? ' · ' + D.comprobaciones.tokens + ' tokens, ' + D.comprobaciones.cadenas + ' cadenas' + (D.cambios && D.cambios.length ? ', ' + D.cambios.length + ' cambios de método o cobertura anotados' : '') : '') },
     { r: 'data/medium.json', t: 'Artículos de Medium' },
     { r: 'reports/caso-vaneck-sun/seguimiento.json', t: 'Seguimiento del caso Vaneck / Sun' },
   ];
