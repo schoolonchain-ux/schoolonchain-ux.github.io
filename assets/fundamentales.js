@@ -454,7 +454,9 @@
     const cats = (F.cg.categories || []).filter((c) => c && !/Portfolio|Index|Alleged|Made in|Holdings|Ecosystem$|Launchpad/i.test(c)).slice(0, 4).join(' · ');
     F.cab = el('div', { class: 'ft' }, img ? el('img', { src: img, alt: '' }) : null,
       el('div', { class: 'ftt' }, el('h2', null, F.nombre, el('small', null, F.simbolo), el('span', { class: 'tipo' }, tipo)), el('p', { class: 'sub' }, (F.cg.market_cap_rank ? 'Nº ' + F.cg.market_cap_rank + ' por capitalización · ' : '') + (cats || 'sin categoría en CoinGecko'))),
-      el('div', { class: 'fp' }, F.precioEl = el('b', null, usd(md.current_price && md.current_price.usd)), F.precioSub = el('span', null, (md.price_change_percentage_24h != null ? pct(md.price_change_percentage_24h / 100) + ' en 24 h · ' : '') + 'CoinGecko ' + fh(Date.parse(F.cg.last_updated || Date.now())).slice(11)), el('div', null, el('button', { type: 'button', class: 'chip', style: 'margin-top:6px', onclick: () => { anadirComparar(F.gid); cmpInp.focus(); cmpBox.scrollIntoView({ behavior: 'smooth', block: 'center' }); } }, 'Comparar con otro token →'))));
+      el('div', { class: 'fp' }, F.precioEl = el('b', null, usd(md.current_price && md.current_price.usd)), F.precioSub = el('span', null, (md.price_change_percentage_24h != null ? pct(md.price_change_percentage_24h / 100) + ' en 24 h · ' : '') + 'CoinGecko ' + fh(Date.parse(F.cg.last_updated || Date.now())).slice(11)),
+        el('span', { class: 'cap' }, 'Capitalización ' + m(md.market_cap && md.market_cap.usd) + (md.fully_diluted_valuation && md.fully_diluted_valuation.usd ? ' · FDV ' + m(md.fully_diluted_valuation.usd) : '') + (F.cg.market_cap_rank ? ' · nº ' + F.cg.market_cap_rank : '')),
+        el('div', null, el('button', { type: 'button', class: 'chip', style: 'margin-top:6px', onclick: () => { anadirComparar(F.gid); cmpInp.focus(); cmpBox.scrollIntoView({ behavior: 'smooth', block: 'center' }); } }, 'Comparar con otro token →'))));
     raiz.replaceChildren(F.cab);
   }
 
@@ -463,11 +465,235 @@
     const s = F.simbolo, G = F.G;
     if (F.cambios.length) F.cab.append(el('button', { type: 'button', class: 'cm', onclick: () => abrirCambios(F) }, 'Método o cobertura cambiados: ' + [...new Set(F.cambios.map((c) => c.fecha))].sort().slice(-3).join(', ')));
     if (idxError) F.cab.append(el('span', { class: 'cm' }, 'El índice diario no se pudo leer: DefiLlama y Coin Metrics no se consultan'));
-    raiz.append(tarjetas(F), el('div', { class: 'tab' }, graficoClave(F), el('div', { class: 'lado' }, tarta(F), preguntaGuia(F))), relaciones(F), tablaDetalle(F), el('div', { class: 'dos' }, multiplos(F), aplicaciones(F)), piebar(F));
+    // tres niveles: resumen (lectura ejecutiva) → una sección por dimensión → evidencia (tabla completa, fuentes)
+    F.rel = calcularRelaciones(F);
+    raiz.append(navegacion(F),
+      seccion('resumen', 'Resumen', '¿Cómo funciona económicamente ' + F.nombre + '?', 'Lo esencial de las seis dimensiones en una pantalla. Cada sección de abajo entra en una; la evidencia completa está al final.', tarjetasResumen(F), el('div', { class: 'tab' }, graficoClave(F), el('div', { class: 'lado' }, preguntaGuia(F)))),
+      seccion('economia', '1 · Economía del token', 'Cuánto hay, cuánto se crea y cuánto se destruye', 'Emisión · inflación · quema · dilución. El balance del periodo y, debajo, emisión y quema día a día.', secEconomia(F)),
+      seccion('actividad', '2 · Actividad y demanda', 'De la actividad al valor que llega al token, en cuatro etapas', 'Millones de operaciones no son, por sí solas, demanda económica. Cada etapa con su gráfico; las dos últimas llevan a su sección.', secActividad(F)),
+      seccion('monetizacion', '3 · Monetización', 'Cuánto pagan los usuarios y cuánto se queda el protocolo', 'El diagrama de flujos sigue el dinero de 30 días según la metodología de la fuente; lo que la fuente no desglosa se dice.', secMonetizacion(F)),
+      seccion('captura', '4 · Captura de valor', 'Qué parte de ese dinero llega de verdad al token', 'Quema, recompra o reparto, y qué cobran los validadores: otra capa, que no se suma.', secCaptura(F)),
+      seccion('sostenibilidad', '5 · Sostenibilidad', '¿Cubren los ingresos lo que se emite para pagar la seguridad?', 'Dos series y su cociente, para ver si mejora o empeora, no solo dónde está hoy.', secSostenibilidad(F)),
+      seccion('valoracion', '6 · Valoración y riesgo', 'Múltiplos, concentración, seguridad y ecosistema', 'Cuatro paneles, sin nota ni radar: los matices se conservan.', secValoracion(F)),
+      seccion('evidencia', 'Evidencia', 'Todas las cifras, su serie, su regla y su fuente', 'La tabla completa por los seis pasos, para auditar. Cada fila se pulsa y abre la serie entera y la respuesta en bruto.', tablaDetalle(F), piebar(F)));
+    espiar(F);
+  }
+  const seccion = (id, kick, titulo, sub, ...kids) => el('section', { class: 'zp fsec', id: 's-' + id, 'data-sec': id }, el('span', { class: 'kick' }, kick), el('h3', null, titulo), sub ? el('p', { class: 'sub' }, sub) : null, ...kids.flat(Infinity).filter(Boolean));
+  const SECS = [['resumen', 'Resumen'], ['economia', 'Economía'], ['actividad', 'Actividad'], ['monetizacion', 'Monetización'], ['captura', 'Captura'], ['sostenibilidad', 'Sostenibilidad'], ['valoracion', 'Valoración y riesgo'], ['evidencia', 'Evidencia']];
+  function navegacion(F) {
+    const ir = (id) => (e) => { e.preventDefault(); const s = document.getElementById('s-' + id); if (s) { s.scrollIntoView({ behavior: 'smooth', block: 'start' }); try { history.replaceState(null, '', location.pathname + location.search + '#' + id); } catch (x) { /* sin historial */ } } };
+    F.nav = el('nav', { class: 'fnav', 'aria-label': 'Dimensiones' }, SECS.map(([id, t], i) => el('a', { href: '#' + id, 'data-sec': id, class: i === 0 ? 'on' : '', onclick: ir(id) }, t)), el('span', { class: 'nivel' }, 'Resumen → dimensiones → evidencia'));
+    return F.nav;
+  }
+  // marca en la navegación la sección que está a la vista
+  function espiar(F) {
+    if (!('IntersectionObserver' in window) || !F.nav) return;
+    const vistos = new Map();
+    const io = new IntersectionObserver((es) => { for (const e of es) vistos.set(e.target.dataset.sec, e.isIntersecting ? e.boundingClientRect.top : Infinity); let mejor = null; for (const [k, top] of vistos) if (top !== Infinity && (mejor == null || Math.abs(top - 120) < Math.abs(vistos.get(mejor) - 120))) mejor = k; if (mejor) F.nav.querySelectorAll('a').forEach((a) => a.classList.toggle('on', a.dataset.sec === mejor)); }, { rootMargin: '-100px 0px -55% 0px', threshold: [0, 0.2] });
+    raiz.querySelectorAll('.fsec').forEach((s) => io.observe(s));
+    const h = location.hash.replace('#', ''); if (h && SECS.some(([id]) => id === h)) setTimeout(() => { const s = document.getElementById('s-' + h); if (s) s.scrollIntoView({ block: 'start' }); }, 300);
   }
 
-  /* ---- 2b) relaciones entre métricas: tres cocientes a lo largo de un año, con su regla escrita ---- */
-  function relaciones(F) {
+  /* ---- gráficos auxiliares ---- */
+  const MESES = ['ene', 'feb', 'mar', 'abr', 'may', 'jun', 'jul', 'ago', 'sep', 'oct', 'nov', 'dic'];
+  const ejeFecha = (labels, largo) => ({ ticks: { maxTicksLimit: largo ? 12 : 6, callback: (v, i) => { const d = labels[i]; return d ? MESES[Number(d.slice(5, 7)) - 1] + (d.slice(5, 7) === '01' || i === 0 ? ' ' + d.slice(2, 4) : '') : ''; } }, grid: { display: false } });
+  // líneas de una o varias series (mismo eje), con marcas de cambio de método y clic → panel del día
+  function graficoLineas(F, o) {
+    const dias = o.dias || 365, series = o.series.filter((s) => s.serie && s.serie.length > 2);
+    const cv = el('canvas'); const wrap = el('div', { class: o.clase || 'cvm' }, cv);
+    if (!series.length) { wrap.replaceChildren(el('div', { class: 'sd' }, el('b', null, 'Sin serie gratuita. '), o.sin || '')); return wrap; }
+    const labels = [...new Set(series.flatMap((s) => desde(s.serie, dias).map((x) => fd(x[0]))))].sort();
+    const mapas = series.map((s) => porDia(s.serie));
+    const cfg = { type: o.tipo || 'line', data: { labels, datasets: series.map((s, i) => ({ label: s.t, data: labels.map((d) => (mapas[i].has(d) ? mapas[i].get(d) : null)), borderColor: s.color || C.pal[i], backgroundColor: (s.color || C.pal[i]) + (o.tipo === 'bar' ? 'cc' : '22'), fill: !!s.relleno, borderWidth: 1.6, pointRadius: 0, pointHitRadius: 8, tension: .25, spanGaps: true, yAxisID: s.eje || 'y' })) },
+      options: { responsive: true, maintainAspectRatio: false, interaction: { mode: 'index', intersect: false }, plugins: { legend: { display: series.length > 1, position: 'bottom' }, tooltip: { callbacks: { label: (c) => ' ' + series[c.datasetIndex].t + ': ' + (series[c.datasetIndex].fmt || o.fmt || m)(c.parsed.y) } } },
+        scales: Object.assign({ x: ejeFecha(labels, dias > 120), y: { ticks: { maxTicksLimit: 5, callback: (v) => (o.fmt || m)(v) }, grid: { color: C.css('--line') } } }, o.eje2 ? { y2: { position: 'right', ticks: { maxTicksLimit: 5, callback: (v) => (o.fmt2 || m)(v) }, grid: { drawOnChartArea: false } } } : {}) } };
+    UI.clicable(cfg, (e) => { const dia = labels[e.index]; UI.abrir((o.titulo || 'Valores') + ' · ' + dia, () => el('div', null, UI.tabla({ pp: 10, buscar: false, rows: series.map((s, i) => ({ s, v: mapas[i].get(dia) })), cols: [{ t: 'Serie', v: (r) => r.s.t }, { t: 'Valor', v: (r) => (r.v == null ? '—' : (r.s.fmt || o.fmt || m)(r.v)), num: true }, { t: 'Fuente', v: (r) => (r.s.fuente ? ext(r.s.fuente[0], r.s.fuente[1]) : '—') }] }), o.nota ? el('p', { class: 'serie-nota' }, o.nota) : null), { sub: F.nombre, ancho: true }); });
+    cfg.plugins = [marcasPlugin(fechasCambio(F))];
+    C.chartDefaults(); new Chart(cv, cfg);
+    return wrap;
+  }
+
+  /* ---- nivel 1: tres tarjetas priorizadas ---- */
+  function tarjetasResumen(F) {
+    const s = F.simbolo, G = F.G, t = [];
+    if (F.x.quema) { const A = F.x.quema.actual; t.push(tarjeta({ l: '1 · Economía: oferta en 30 d', v: pct(A.neto30d / A.ofertaTrx, 2), n: 'emisión ' + nt(A.emision30d, 'TRX') + ' · quema ' + nt(A.quema30d, 'TRX') + ' · neto ' + (A.neto30d > 0 ? '+' : '') + nt(A.neto30d, 'TRX'), serie: G && G.hold, tipo: 'flujo', dias: 30, abrir: () => irSeccion('economia') })); }
+    else if (F.cm.SplyCur) { const r = variacion(F.cm.SplyCur, 'saldo', 30); t.push(tarjeta({ l: '1 · Economía: oferta en 30 d', v: r ? pct(r.v, 2) : '—', n: 'oferta existente ' + nt(ultimo(F.cm.SplyCur)[1], s) + ' (Coin Metrics)', serie: F.cm.SplyCur, tipo: 'saldo', dias: 30, abrir: () => irSeccion('economia') })); }
+    else t.push(tarjeta({ l: '1 · Economía: emitido', v: F.md.max_supply ? pctAbs(F.md.circulating_supply / F.md.max_supply * 100, 1) + ' del máximo' : nt(F.md.circulating_supply, s), n: 'sin serie gratuita de oferta', abrir: () => irSeccion('economia') }));
+    if (F.cm.AdrActCnt) t.push(tarjeta({ l: '2 · Demanda: direcciones activas / día', v: nt(ultimo(F.cm.AdrActCnt)[1]), serie: F.cm.AdrActCnt, tipo: 'flujo', dias: 30, abrir: () => irSeccion('actividad') }));
+    else if (F.stablesS) t.push(tarjeta({ l: '2 · Demanda: stablecoins en la cadena', v: m(ultimo(F.stablesS)[1]), serie: F.stablesS, tipo: 'saldo', dias: 30, abrir: () => irSeccion('actividad') }));
+    else if (F.prots[0]) t.push(tarjeta({ l: '2 · Demanda: capital depositado', v: m(F.prots[0][4]), var: F.prots[0][7] ? F.prots[0][4] / F.prots[0][7] - 1 : null, abrir: () => irSeccion('actividad') }));
+    else t.push(tarjeta({ l: '2 · Demanda', v: 'sin dato gratuito', sin: true, abrir: () => irSeccion('actividad') }));
+    if (G && G.hold) t.push(tarjeta({ l: el('span', null, etq('hold'), '30 d'), v: m(G.t30.hold), n: G.t30.fees ? pctAbs(G.t30.hold / G.t30.fees * 100, 0) + ' de ' + m(G.t30.fees) + ' pagados por los usuarios' : '', serie: G.hold, tipo: 'flujo', dias: 30, abrir: () => irSeccion('captura') }));
+    else if (G && G.fees) t.push(tarjeta({ l: el('span', null, etq('fees'), '30 d'), v: m(G.t30.fees), n: 'la fuente no registra valor para el token', serie: G.fees, tipo: 'flujo', dias: 30, abrir: () => irSeccion('monetizacion') }));
+    else t.push(tarjeta({ l: '4 · Captura de valor', v: 'sin dato gratuito', n: 'sin comisiones registradas en DefiLlama', sin: true, abrir: () => irSeccion('captura') }));
+    return el('div', { class: 'kp3' }, t);
+  }
+  const irSeccion = (id) => { const s = document.getElementById('s-' + id); if (s) s.scrollIntoView({ behavior: 'smooth', block: 'start' }); };
+
+  /* ---- 1 · Economía del token: balance de oferta y emisión frente a quema ---- */
+  function seriesEmisionQuema(F) {
+    const s = F.simbolo; let em = null, qu = null, nota = [], fuentes = [];
+    if (F.x.quema && F.x.quema.ultimos400) { em = F.x.quema.ultimos400.map((r) => [Date.parse(r[0] + 'T00:00:00Z'), r[1]]); qu = F.x.quema.ultimos400.map((r) => [Date.parse(r[0] + 'T00:00:00Z'), r[2]]); nota.push('Emisión y quema en TRX, día a día, de la serie de TronScan.'); fuentes.push(['https://apilist.tronscanapi.com/api/turnover?type=0&from=issuance', 'serie diaria de TronScan']); }
+    else {
+      if (F.cm.IssTotNtv) { em = F.cm.IssTotNtv; nota.push('Emisión diaria en ' + s + ' según Coin Metrics.'); fuentes.push([F.cmUrl.IssTotNtv, 'emisión diaria (Coin Metrics)']); }
+      const G = F.G;
+      if (G && G.hold && G.m.hold && /burn|quema/i.test(G.m.hold) && F.precioS) { const mp = porDia(F.precioS); qu = G.hold.map((x) => { const p = mp.get(fd(x[0])); return p ? [x[0], x[1] / p] : null; }).filter(Boolean); nota.push('Quema: dólares quemados según DefiLlama («' + G.m.hold.slice(0, 90) + '») convertidos a ' + s + ' con el precio de cada día: estimación.'); fuentes.push([G.urls.hold, 'valor quemado (DefiLlama)']); }
+    }
+    return { em, qu, nota: nota.join(' '), fuentes };
+  }
+  function secEconomia(F) {
+    const s = F.simbolo, md = F.md, { em, qu, nota, fuentes } = seriesEmisionQuema(F);
+    const fin = F.cm.SplyCur ? ultimo(F.cm.SplyCur)[1] : (F.x.quema ? F.x.quema.actual.ofertaTrx : md.circulating_supply);
+    const card = el('div', { class: 'card' });
+    if (em && em.length > 30) {
+      let d = 30; const cont = el('div'); const lineas = el('div');
+      const per = el('div', { class: 'per' }, [30, 90, 365].map((x) => el('button', { type: 'button', class: x === d ? 'on' : '', onclick: (e) => { d = x; per.querySelectorAll('button').forEach((b) => b.classList.toggle('on', b === e.currentTarget)); pintar(); } }, x === 365 ? '1 año' : x + ' d')));
+      const pintar = () => {
+        const sE = completos(em), sQ = qu ? completos(qu) : [], f = HOY0(), E = suma(sE, f - d * DIA, f), Q = sQ.length ? suma(sQ, f - d * DIA, f) : 0, neto = E - Q, ini = fin - neto;
+        const abrirB = (titulo, texto) => () => abrirTexto(titulo, [texto, nota], fuentes, 'Regla escrita');
+        cont.replaceChildren(el('div', { class: 'bal' },
+          el('div', { onclick: abrirB('Oferta al inicio del periodo', 'Oferta de hoy (' + nt(fin, s) + ') menos el neto del periodo (' + (neto >= 0 ? '+' : '') + nt(neto, s) + '). No es una lectura directa: se deduce.') }, el('span', null, 'Oferta hace ' + d + ' días'), el('b', null, nt(ini, s))),
+          el('div', { class: 'mas', onclick: abrirB('Emisión en ' + d + ' días', 'Suma de la emisión diaria de los últimos ' + d + ' días completos: ' + nt(E, s) + '.') }, el('span', null, 'Emisión'), el('b', null, '+' + nt(E, s))),
+          el('div', { class: 'menos', onclick: qu ? abrirB('Quema en ' + d + ' días', 'Suma de la quema diaria de los últimos ' + d + ' días: ' + nt(Q, s) + '.') : abrirB('Quema', 'Ninguna fuente gratuita registra quema para ' + s + '.') }, el('span', null, 'Quema'), el('b', null, qu ? '−' + nt(Q, s) : 'sin dato')),
+          el('div', { class: neto > 0 ? 'mas' : 'menos', onclick: abrirB('Variación neta', 'Emisión menos quema en ' + d + ' días: ' + (neto >= 0 ? '+' : '') + nt(neto, s) + ' (' + pct(neto / ini, 2) + ' de la oferta inicial; ' + pct((neto / d * 365.25) / ini, 2) + ' anualizado).') }, el('span', null, 'Variación neta'), el('b', null, (neto >= 0 ? '+' : '') + nt(neto, s)), el('span', null, pct(neto / ini, 2) + ' · ' + pct((neto / d * 365.25) / ini, 2) + ' anualizado')),
+          el('div', { onclick: abrirB('Oferta hoy', F.cm.SplyCur ? 'Oferta existente según Coin Metrics (monedas creadas, bloqueadas o no).' : F.x.quema ? 'Oferta de TRX según la serie de TronScan.' : 'Circulante según CoinGecko.') }, el('span', null, 'Oferta hoy'), el('b', null, nt(fin, s)), el('span', null, md.max_supply ? pctAbs(fin / md.max_supply * 100, 1) + ' del máximo' : 'sin máximo fijado'))));
+      };
+      pintar();
+      lineas.append(graficoLineas(F, { titulo: 'Emisión y quema diarias', series: [{ t: 'Emisión / día', serie: em, color: C.pal[1], fmt: (v) => nt(v, s), fuente: fuentes[0] }, qu ? { t: 'Quema / día', serie: qu, color: C.pal[3], fmt: (v) => nt(v, s), fuente: fuentes[fuentes.length - 1] } : null].filter(Boolean), fmt: (v) => nt(v, s), nota }));
+      card.append(el('h4', null, 'Balance de oferta', per), cont, lineas, el('p', { class: 'regla2' }, 'Las dos líneas, día a día (1 año). ' + nota + ' Pulsa un punto para ver las cifras de ese día.'));
+    } else if (em && em.length) card.append(el('h4', null, 'Balance de oferta'), el('div', { class: 'sd' }, el('b', null, 'Serie corta. '), 'La fuente da menos de un mes de emisión para ' + s + '.'));
+    else {
+      // sin emisión medible: la oferta se enseña como barra de circulante / emitido no circulante / sin emitir
+      const circ = md.circulating_supply, tot = md.total_supply, max = md.max_supply, base = max || tot || circ;
+      const partes = [['En circulación', circ, C.pal[0]], tot && tot > circ * 1.001 ? ['Emitido pero no circulante (bloqueado, tesorería o vesting; CoinGecko no lo separa)', tot - circ, C.pal[2]] : null, max && max > (tot || circ) * 1.001 ? ['Aún sin emitir', max - (tot || circ), C.pal[8]] : null].filter(Boolean);
+      const cv = el('canvas');
+      card.append(el('h4', null, 'Reparto de la oferta'), el('p', { class: 'cs' }, F.cm.IssTotNtv ? s + ' no ha emitido monedas nuevas en los últimos dos años según Coin Metrics: la oferta se reparte así.' : 'Ninguna fuente gratuita publica la emisión de ' + s + ': se muestra lo que da CoinGecko.'), el('div', { class: 'cvs', style: 'height:90px' }, cv));
+      C.chartDefaults(); new Chart(cv, UI.clicable({ type: 'bar', data: { labels: [s], datasets: partes.map((p) => ({ label: p[0], data: [p[1]], backgroundColor: p[2], borderWidth: 0 })) }, options: { indexAxis: 'y', responsive: true, maintainAspectRatio: false, plugins: { legend: { position: 'bottom' }, tooltip: { callbacks: { label: (c) => ' ' + c.dataset.label + ': ' + nt(c.parsed.x, s) + ' (' + pctAbs(c.parsed.x / base * 100, 1) + ')' } } }, scales: { x: { stacked: true, ticks: { callback: (v) => nt(v, s) } }, y: { stacked: true, display: false } } } }, (e) => abrirTexto('Oferta de ' + s, [partes[e.datasetIndex][0] + ': ' + nt(partes[e.datasetIndex][1], s) + ' (' + pctAbs(partes[e.datasetIndex][1] / base * 100, 1) + ').'], [[F.urlCG, 'ficha de CoinGecko']], 'CoinGecko')));
+    }
+    const lado = el('div', { class: 'pila' },
+      el('div', { class: 'card' }, el('h4', null, 'Dilución'), el('div', { class: 'ahora' }, F.fdv && F.mcap ? n(F.mcap / F.fdv * 100, 0) + ' %' : '—', el('small', null, 'capitalización / FDV')), el('p', { class: 'regla2' }, F.fdv && F.mcap ? (F.mcap / F.fdv < 0.95 ? 'El ' + pctAbs((1 - F.mcap / F.fdv) * 100, 0) + ' del valor a precio de hoy está en monedas aún no emitidas (FDV ' + m(F.fdv) + ').' : 'Casi todo lo que existirá ya circula (FDV ' + m(F.fdv) + ').') : 'CoinGecko no da FDV para este token.'), el('p', { class: 'regla2' }, 'Circulante ' + nt(md.circulating_supply, s) + ' · total ' + nt(md.total_supply, s) + ' · máximo ' + (md.max_supply ? nt(md.max_supply, s) : 'sin máximo fijado') + '.')),
+      el('div', { class: 'sd' }, el('b', null, 'Calendario de desbloqueos (vesting): sin dato gratuito. '), 'DefiLlama lo cobra. La dilución de arriba dice cuánto valor está en monedas aún no emitidas.' + (F.x.desbloqueos ? ' En TRX lo que sí hay es TRX que sale del stake: ' + nt(F.x.desbloqueos.calendario.porFecha.slice(0, 14).reduce((a, x) => a + x.trx, 0), 'TRX') + ' en 14 días (ver descongelaciones en Herramientas).' : '')));
+    return el('div', { class: 'grid2-1' }, card, lado);
+  }
+
+  /* ---- 2 · Actividad y demanda: cuatro etapas ---- */
+  function secActividad(F) {
+    const s = F.simbolo, G = F.G;
+    const mini = (serie, color, fmt, fuente, titulo) => graficoLineas(F, { titulo, series: [{ t: titulo, serie, color, fmt, fuente }], fmt, dias: 90, clase: 'cvs' });
+    const etapa = (num, titulo, que, cifra, sub, abrir, grafico, ir) => el('div', { class: 'etapa' }, el('span', { class: 'n' }, num), el('h4', null, titulo), el('p', { class: 'que' }, que), el('div', { class: 'cif', onclick: abrir, role: abrir ? 'button' : null, tabindex: abrir ? '0' : null }, cifra, el('small', null, sub)), grafico, ir ? el('a', { class: 'ir', href: '#' + ir, onclick: (e) => { e.preventDefault(); irSeccion(ir); } }, 'Ver la sección →') : null);
+    const e1 = F.cm.AdrActCnt ? etapa(1, 'Actividad', 'Direcciones activas y transacciones al día. Una dirección no es una persona.', nt(ultimo(F.cm.AdrActCnt)[1]) + ' direcciones/día', F.cm.TxCnt ? nt(ultimo(F.cm.TxCnt)[1]) + ' transacciones/día' + (F.cm.TxTfrCnt ? ' · ' + nt(ultimo(F.cm.TxTfrCnt)[1]) + ' transferencias' : '') : 'el ' + fd(ultimo(F.cm.AdrActCnt)[0]), abrirCM(F, 'AdrActCnt', 'Direcciones activas al día · ' + s), mini(F.cm.AdrActCnt, C.pal[1], (v) => n(v, 0), [F.cmUrl.AdrActCnt, 'Coin Metrics'], 'Direcciones activas / día'))
+      : F.cm.TxCnt ? etapa(1, 'Actividad', 'Transacciones al día.', nt(ultimo(F.cm.TxCnt)[1]) + ' transacciones/día', '', abrirCM(F, 'TxCnt', 'Transacciones al día · ' + s), mini(F.cm.TxCnt, C.pal[1], (v) => n(v, 0), [F.cmUrl.TxCnt, 'Coin Metrics'], 'Transacciones / día'))
+      : etapa(1, 'Actividad', 'Direcciones activas y transacciones al día.', 'sin dato gratuito', 'Coin Metrics (comunidad) no cubre ' + s, () => abrirTexto('Actividad de ' + s, ['Coin Metrics (comunidad) no publica direcciones activas ni transacciones de ' + s + '. Las fuentes que sí lo dan exigen clave o son de pago. No se estima.']), null);
+    if (F.x.tron) { const d = F.x.tron.data || [], u = d[d.length - 1]; if (u) e1.append(el('p', { class: 'regla2' }, 'TronScan: ' + n(u.active_account_number, 0) + ' cuentas activas, ' + n(u.newAddressSeen, 0) + ' nuevas y ' + n(u.usdt_transaction, 0) + ' transacciones de USDT el ' + u.dateDayStr + '.')); }
+    let e2;
+    if (F.stablesS || F.dexS) e2 = etapa(2, 'Uso económico', 'Dinero que la gente decide tener y mover en esta red: stablecoins y volumen de los intercambios descentralizados.', F.stablesS ? m(ultimo(F.stablesS)[1]) + ' en stablecoins' : m(F.dex24) + '/24 h en DEX', F.stablesS && F.dexS ? m(F.dex24) + ' negociados en 24 h en los DEX' : '', F.stablesS ? () => abrirSerie({ titulo: 'Stablecoins en ' + F.cadena.nombre, serie: F.stablesS, tipo: 'saldo', fmt: m, fuentes: [[F.urlStables, 'DefiLlama']], csv: s + '-stablecoins', sub: F.cadena.nombre }) : () => abrirSerie({ titulo: 'Volumen DEX en ' + F.cadena.nombre, serie: F.dexS, fmt: m, fuentes: [[F.urlDex, 'DefiLlama']], csv: s + '-dex', sub: F.cadena.nombre }), graficoLineas(F, { titulo: 'Uso económico', series: [F.stablesS ? { t: 'Stablecoins', serie: F.stablesS, color: C.pal[5], fmt: m, fuente: [F.urlStables, 'DefiLlama'] } : null, F.dexS ? { t: 'Volumen DEX / día', serie: F.dexS, color: C.pal[6], fmt: m, fuente: [F.urlDex, 'DefiLlama'], eje: F.stablesS ? 'y2' : 'y' } : null].filter(Boolean), fmt: m, eje2: !!(F.stablesS && F.dexS), fmt2: m, dias: 90, clase: 'cvs' }));
+    else if (F.prots[0]) { const p = F.prots[0]; e2 = etapa(2, 'Uso económico', 'Capital depositado por los usuarios en ' + p[1] + ' (dato diario del índice; sin serie gratuita).', m(p[4]) + ' TVL', 'ayer ' + m(p[5]) + ' · hace 7 d ' + m(p[6]) + ' · hace 30 d ' + m(p[7]), () => abrirProtocolo(F, p), null); }
+    else e2 = etapa(2, 'Uso económico', 'Stablecoins, volumen transferido y DEX.', 'sin dato gratuito', 'el valor transferido lo cobra Coin Metrics; ' + s + ' no es cadena ni protocolo en DefiLlama', () => abrirTexto('Uso económico de ' + s, ['El valor transferido en la propia moneda lo reserva Coin Metrics a su plan de pago, y ' + s + ' no es una cadena ni un protocolo con datos en DefiLlama.']), null);
+    const e3 = G && G.fees ? etapa(3, 'Monetización', 'Comisiones que pagan los usuarios: lo que la actividad convierte en dinero.', m(G.t30.fees) + ' en 30 d', G.nombre + ' · ' + m(G.t24.fees) + ' en 24 h', abrirLlama(F, G, 'fees', 'Comisiones de usuarios · ' + G.nombre), mini(G.fees, C.pal[2], m, [G.urls.fees, 'DefiLlama'], 'Comisiones de usuarios / día'), 'monetizacion') : etapa(3, 'Monetización', 'Comisiones que pagan los usuarios.', 'sin dato gratuito', s + ' no tiene cadena ni protocolo con comisiones en DefiLlama', () => abrirTexto('Comisiones de ' + s, [s + ' no tiene cadena ni protocolo con comisiones registradas en DefiLlama, la única fuente gratuita con metodología publicada.']), null, 'monetizacion');
+    const e4 = G && G.hold ? etapa(4, 'Captura de valor', 'Lo que de todo eso llega al token: quema, recompra o reparto.', m(G.t30.hold) + ' en 30 d', G.t30.fees ? pctAbs(G.t30.hold / G.t30.fees * 100, 0) + ' de las comisiones' : '', abrirLlama(F, G, 'hold', 'Valor que llega al token · ' + G.nombre), mini(G.hold, C.pal[3], m, [G.urls.hold, 'DefiLlama'], 'Valor para el token / día'), 'captura') : etapa(4, 'Captura de valor', 'Lo que llega al token.', G && G.fees ? 'nada registrado' : 'sin dato gratuito', G && G.m.hold ? '«' + G.m.hold.slice(0, 70) + '…»' : '', () => abrirTexto('Captura de valor · ' + s, [G && G.fees ? 'La fuente registra comisiones pero no quema, recompra ni reparto a los titulares de ' + s + (G.m.hold ? '. Texto de la fuente: «' + G.m.hold + '».' : '.') : 'Sin comisiones registradas no hay forma gratuita de medir lo que llega al token.']), null, 'captura');
+    return el('div', { class: 'etapas' }, e1, e2, e3, e4);
+  }
+
+  /* ---- 3 · Monetización: diagrama de flujos de 30 días ---- */
+  function secMonetizacion(F) {
+    const s = F.simbolo, G = F.G;
+    if (!G || !G.fees) return el('div', { class: 'sd' }, el('b', null, 'Sin comisiones registradas. '), s + ' no tiene cadena ni protocolo con comisiones en DefiLlama, la única fuente gratuita con metodología publicada. Las alternativas (Token Terminal, Artemis, Messari) son de pago.');
+    const Fe = G.t30.fees || 0, Re = G.t30.rev != null ? G.t30.rev : null, Ho = G.t30.hold != null ? G.t30.hold : null, em30 = emision30Usd(F);
+    const nodos = [], enlaces = [], ids = {};
+    const nodo = (id, nombre, color, abrir, detalle) => { ids[id] = nodos.length; nodos.push({ id, name: nombre, color, abrir, detalle }); };
+    const enlace = (a, b, v, color) => { if (v > 0) enlaces.push({ source: ids[a], target: ids[b], value: v, color }); };
+    nodo('u', 'Pagan los usuarios · ' + m(Fe), C.pal[0], abrirLlama(F, G, 'fees', 'Comisiones de usuarios · ' + G.nombre), 'Comisiones de 30 días: «' + (G.m.fees || 'sin texto') + '».');
+    if (Re != null) {
+      nodo('p', 'Retiene el protocolo · ' + m(Re), C.pal[4], abrirLlama(F, G, 'rev', 'Ingresos del protocolo · ' + G.nombre), 'Ingresos del protocolo de 30 días: «' + (G.m.rev || 'sin texto') + '».');
+      if (Fe - Re > 0) { const quien = F.x.recompensas ? 'Validadores (propinas y MEV)' : 'No lo retiene el protocolo'; nodo('r', quien + ' · ' + m(Fe - Re), C.pal[8], () => abrirTexto(quien, ['Comisiones de usuarios (' + m(Fe) + ') menos ingresos del protocolo (' + m(Re) + ') = ' + m(Fe - Re) + '. La fuente no lo desglosa en este dato: según su método, va a quien produce bloques, a los proveedores de liquidez o a los prestamistas. Texto de la fuente para las comisiones: «' + (G.m.fees || 'sin texto') + '»; para los ingresos: «' + (G.m.rev || 'sin texto') + '».'], [[G.urls.fees, 'comisiones (DefiLlama)'], [G.urls.rev, 'ingresos (DefiLlama)']], 'Según la fuente'), 'Diferencia entre lo que pagan los usuarios y lo que retiene el protocolo.'); }
+      enlace('u', 'p', Math.min(Fe, Re), C.pal[4]); enlace('u', 'r', Fe - Re, C.pal[8]);
+      if (Ho != null) {
+        const base = Math.min(Re, Fe);
+        nodo('t', 'Llega al token · ' + m(Ho), C.pal[1], abrirLlama(F, G, 'hold', 'Valor para el token · ' + G.nombre), 'Valor para los titulares de 30 días: «' + (G.m.hold || 'sin texto') + '».');
+        if (base - Ho > 0) nodo('o', 'Tesorería u otros usos · ' + m(base - Ho), C.pal[7], () => abrirTexto('Tesorería u otros usos', ['Ingresos del protocolo (' + m(base) + ') menos lo que llega al token (' + m(Ho) + ') = ' + m(base - Ho) + '. Según la fuente, lo que el protocolo retiene y no reparte ni quema. Texto de la fuente: «' + (G.m.rev || 'sin texto') + '».'], [[G.urls.rev, 'ingresos (DefiLlama)']], 'Según la fuente'), 'Lo que el protocolo retiene y no llega al token.');
+        enlace('p', 't', Math.min(Ho, base), C.pal[1]); enlace('p', 'o', base - Ho, C.pal[7]);
+        if (Ho > base) nodo('x', 'Aviso: la fuente da más valor para el token que ingresos', C.pal[3], null, '');
+      } else nodo('t0', 'Valor para el token: no registrado', C.pal[8], null, '');
+    }
+    if (em30 && F.cadena) { nodo('e', 'Emisión nueva (30 d, otra capa) · ' + m(em30), C.pal[2], () => abrirTexto('Emisión frente a comisiones', ['Emisión de 30 días en dólares: ' + m(em30) + ' según ' + origenEmision(F) + '. Es otra capa: dinero nuevo para pagar la seguridad, no comisiones. Se dibuja aparte para compararla a simple vista con lo que pagan los usuarios; no se suma.'], [], 'Otra capa'), 'Emisión en dólares, para comparar el tamaño; no es un flujo de comisiones.'); nodo('v', 'Validadores (por la emisión)', C.pal[2], null, ''); enlace('e', 'v', em30, C.pal[2]); }
+    const card = el('div', { class: 'card' }, el('h4', null, 'El dinero de 30 días, según la metodología de ' + G.nombre + ' en DefiLlama'), el('p', { class: 'cs' }, 'De izquierda a derecha: lo que pagan los usuarios, lo que retiene el protocolo y lo que llega al token. La banda gris es lo que la fuente no atribuye al protocolo. La emisión, si la hay, va aparte: es otra capa y no se suma. Pulsa un nodo o una banda para ver su serie y su texto de método.'));
+    const sk = el('div', { class: 'sk' }); card.append(sk);
+    if (window.d3 && d3.sankey && enlaces.length) {
+      const W = 920, H = Math.max(220, 60 + nodos.length * 34);
+      const g = d3.sankey().nodeWidth(16).nodePadding(18).nodeAlign(d3.sankeyJustify).extent([[8, 10], [W - 8, H - 10]])({ nodes: nodos.map((x) => ({ ...x })), links: enlaces.map((x) => ({ ...x })) });
+      const svg = d3.select(sk).append('svg').attr('viewBox', '0 0 ' + W + ' ' + H).attr('role', 'img').attr('aria-label', 'Diagrama de flujos del dinero de 30 días');
+      svg.append('g').selectAll('path').data(g.links).join('path').attr('d', d3.sankeyLinkHorizontal()).attr('fill', 'none').attr('stroke', (l) => l.color).attr('stroke-opacity', .4).attr('stroke-width', (l) => Math.max(1.5, l.width)).style('cursor', 'pointer').on('click', (ev, l) => { const n2 = g.nodes[l.target.index]; if (n2.abrir) n2.abrir(); }).append('title').text((l) => m(l.value));
+      const gn = svg.append('g').selectAll('g').data(g.nodes).join('g').style('cursor', (d) => (d.abrir ? 'pointer' : 'default')).on('click', (ev, d) => { if (d.abrir) d.abrir(); });
+      gn.append('rect').attr('x', (d) => d.x0).attr('y', (d) => d.y0).attr('height', (d) => Math.max(2, d.y1 - d.y0)).attr('width', (d) => d.x1 - d.x0).attr('fill', (d) => d.color).attr('rx', 3);
+      gn.append('text').attr('x', (d) => (d.x0 < W / 2 ? d.x1 + 6 : d.x0 - 6)).attr('y', (d) => (d.y1 + d.y0) / 2).attr('dy', '0.35em').attr('text-anchor', (d) => (d.x0 < W / 2 ? 'start' : 'end')).text((d) => d.name);
+    } else sk.append(el('div', { class: 'sd' }, el('b', null, 'Sin flujo que dibujar. '), 'La fuente solo da comisiones (' + m(Fe) + ') sin desglose de ingresos.'));
+    const ley = el('div', { class: 'sk-leyenda' }, nodos.filter((x) => x.detalle).map((x) => el('span', null, el('i', { style: 'background:' + x.color }), x.name.split(' · ')[0])));
+    card.append(ley);
+    const met = el('div', { class: 'ayuda' }, el('div', { class: 'ai' }, el('b', null, 'Qué cuenta la fuente como comisiones. '), G.m.fees || 'DefiLlama no da el texto.'), el('div', { class: 'ai' }, el('b', null, 'Qué cuenta como ingresos del protocolo. '), G.m.rev || 'DefiLlama no da el texto.'), el('div', { class: 'ai' }, el('b', null, 'Qué cuenta como valor para el token. '), G.m.hold || 'DefiLlama no registra este dato para ' + G.nombre + '.'), G.url ? el('div', { class: 'ai' }, el('b', null, 'Cómo se mide. '), ext(G.url, 'código del adaptador de DefiLlama')) : null);
+    const lineas = el('div', { class: 'card' }, el('h4', null, 'Comisiones e ingresos, día a día (1 año)'), graficoLineas(F, { titulo: 'Comisiones e ingresos', series: [{ t: 'Comisiones de usuarios', serie: G.fees, color: C.pal[0], fmt: m, fuente: [G.urls.fees, 'DefiLlama'] }, G.rev ? { t: 'Ingresos del protocolo', serie: G.rev, color: C.pal[4], fmt: m, fuente: [G.urls.rev, 'DefiLlama'] } : null].filter(Boolean), fmt: m }), el('p', { class: 'regla2' }, 'Datos diarios de DefiLlama. ' + (F.pf.length && F.cad ? 'Se muestra la cadena; el protocolo ' + F.pf[0].nombre + ' está en la evidencia.' : '') + ' Los incentivos (pagos en tokens a los usuarios) no tienen fuente gratuita y no aparecen.'));
+    return [el('div', { class: 'grid2-1' }, card, el('div', { class: 'pila' }, met, el('div', { class: 'sd' }, el('b', null, 'Incentivos: sin dato gratuito. '), 'DefiLlama los publica solo en su API de pago. Sin ese dato no se puede separar la demanda orgánica de la comprada con incentivos.'))), lineas];
+  }
+
+  /* ---- 4 · Captura de valor ---- */
+  function secCaptura(F) {
+    const s = F.simbolo, G = F.G, md = F.md, fechas = fechasCambio(F);
+    const partes = [];
+    if (G && G.hold) partes.push(el('div', { class: 'card' }, el('h4', null, 'Valor que llega al token, día a día (1 año)'), el('div', { class: 'ahora' }, m(G.t30.hold), el('small', null, 'en 30 d · ' + m(G.t1a.hold) + ' en 1 año' + (G.t30.fees ? ' · ' + pctAbs(G.t30.hold / G.t30.fees * 100, 0) + ' de las comisiones' : ''))), graficoLineas(F, { titulo: 'Valor para el token', series: [{ t: 'Valor para el token / día', serie: G.hold, color: C.pal[1], fmt: m, fuente: [G.urls.hold, 'DefiLlama'], relleno: true }], fmt: m }), el('p', { class: 'regla2' }, etq('hold'), '«' + (G.m.hold || 'sin texto de método') + '». Pulsa una cifra para abrir la serie con su regla y su origen.')));
+    else partes.push(el('div', { class: 'sd' }, el('b', null, 'Valor para el token: ' + (G && G.fees ? 'nada registrado. ' : 'sin dato gratuito. ')), G && G.fees ? 'La fuente registra comisiones pero no quema, recompra ni reparto a los titulares de ' + s + (G && G.m.hold ? '. Texto de la fuente: «' + G.m.hold + '».' : '.') : 'Sin comisiones registradas en DefiLlama no hay forma gratuita de medir lo que llega al token.'));
+    const r1 = F.rel.find((r) => r.k === 'captura'); if (r1) partes.push(tarjetaRelacion(F, r1, fechas));
+    // validadores: otra capa
+    let val;
+    if (F.x.quema && F.x.testigos) { const prod = (F.x.testigos.data || []).filter((x) => x.producer), tasas = prod.map((x) => Number(x.annualizedRate)).filter((x) => x > 0), media = tasas.length ? tasas.reduce((a, b) => a + b, 0) / tasas.length : null; val = el('div', { class: 'card' }, el('h4', null, etq('val'), 'TRON'), el('div', { class: 'ahora' }, nt(F.x.quema.actual.emisionDia, 'TRX') + '/día', el('small', null, 'solo emisión: todas las comisiones se queman')), el('p', { class: 'regla2' }, 'Rentabilidad anual media que los 27 productores dan al votante: ' + (media != null ? pctAbs(media, 2) : '—') + '. ', el('a', { class: 'lnk', onclick: () => abrirTestigos(F) }, 'Ver los validadores →'))); }
+    else if (F.x.recompensas && F.x.staked) { const r = F.x.recompensas, st = F.x.staked.sum / 1e9; val = el('div', { class: 'card' }, el('h4', null, etq('val'), 'Ethereum'), el('div', { class: 'ahora' }, nt((r.issuance.apr + r.tips.apr + r.mev.apr) * st, 'ETH') + '/año', el('small', null, 'estimación de ultrasound.money')), el('p', { class: 'regla2' }, 'Emisión ' + pctAbs(r.issuance.apr * 100, 2) + ' + propinas ' + pctAbs(r.tips.apr * 100, 2) + ' + MEV ' + pctAbs(r.mev.apr * 100, 2) + ' sobre ' + nt(st, 'ETH') + ' en staking (' + pctAbs(st / md.circulating_supply * 100, 1) + ' de la oferta). Las comisiones base no las cobran: se queman. ', ext(F.urlRec, 'recompensas (ultrasound.money)'))); }
+    else if (!F.cadena) val = el('div', { class: 'sd' }, el('b', null, 'Validadores: no aplica. '), s + ' vive sobre otras cadenas y su seguridad la pagan ellas.');
+    else if (F.cm.IssTotNtv) { const sI = completos(F.cm.IssTotNtv), fin = HOY0(); val = el('div', { class: 'card' }, el('h4', null, etq('val'), s), el('div', { class: 'ahora' }, nt(suma(sI, fin - 30 * DIA, fin), s), el('small', null, 'emisión en 30 d (Coin Metrics)')), el('p', { class: 'regla2' }, 'Las comisiones que cobran los validadores o mineros no se separan en la fuente gratuita. ', el('a', { class: 'lnk', onclick: abrirCM(F, 'IssTotNtv', 'Emisión diaria de ' + s, (v) => nt(v, s)) }, 'Ver la serie →'))); }
+    else val = el('div', { class: 'sd' }, el('b', null, 'Ingresos de validadores: sin dato gratuito. '), 'Ninguna fuente gratuita publica la emisión ni las recompensas de los validadores de ' + s + '.');
+    return el('div', { class: 'grid2-1' }, el('div', { class: 'pila' }, partes), el('div', { class: 'pila' }, el('p', { class: 'cs', style: 'margin:0' }, 'Qué cobran los validadores: otra capa, que no se suma a lo anterior.'), val));
+  }
+
+  /* ---- 5 · Sostenibilidad: dos series y su cociente ---- */
+  function secSostenibilidad(F) {
+    const s = F.simbolo, G = F.G, fechas = fechasCambio(F), r2 = F.rel.find((r) => r.k === 'emision'), r3 = F.rel.find((r) => r.k === 'tvl');
+    const partes = [];
+    if (r2 && !r2.sin) partes.push(el('div', { class: 'card' }, el('h4', null, 'Ingresos del protocolo frente a emisión (sumas de 30 días, en dólares)'), graficoLineas(F, { titulo: 'Ingresos frente a emisión (30 d acumulados)', series: [{ t: 'Ingresos del protocolo (30 d)', serie: r2.serie.map((x) => [x[0], x[2]]), color: C.pal[4], fmt: m, fuente: r2.fuentes[0] }, { t: 'Emisión (30 d)', serie: r2.serie.map((x) => [x[0], x[3]]), color: C.pal[2], fmt: m, fuente: r2.fuentes[1] }], fmt: m }), el('p', { class: 'regla2' }, etq('rev'), 'frente a ', etq('val'), ' Dos capas: lo que entra por comisiones y lo que la red emite para pagar la seguridad. Cuando la primera línea va por encima, las comisiones cubren la emisión.')));
+    if (r2) partes.push(tarjetaRelacion(F, r2, fechas));
+    const lado = [];
+    if (r3) lado.push(tarjetaRelacion(F, r3, fechas));
+    if (F.x.quema) { const A = F.x.quema.actual; lado.push(el('div', { class: 'res-head ' + (A.neto30d > 0 ? 'warn' : 'ok'), style: 'margin:0' }, el('div', { class: 'big', style: 'font-size:17px' }, A.neto30d > 0 ? 'Hoy TRON emite más de lo que quema' : 'Hoy TRON quema más de lo que emite'), el('div', { class: 'sub2' }, 'Emisión 30 d ' + nt(A.emision30d, 'TRX') + ' · quema ' + nt(A.quema30d, 'TRX') + ' · neto ' + (A.neto30d > 0 ? '+' : '') + nt(A.neto30d, 'TRX') + ' (' + pct((A.neto30d / 30 * 365.25) / A.ofertaTrx, 2) + ' anualizado). Hecho de la serie diaria, no una opinión.'))); }
+    lado.push(el('div', { class: 'sd' }, el('b', null, 'Dependencia de incentivos: sin dato gratuito. '), 'Los pagos en tokens a los usuarios solo están en la API de pago de DefiLlama. El rendimiento del capital depositado es un sustituto rotulado que no los descuenta.'));
+    if (!partes.length) partes.push(el('div', { class: 'sd' }, el('b', null, 'Sin ingresos frente a emisión. '), (r2 && r2.sin ? r2.sin : 'sin datos suficientes') + '.'));
+    return el('div', { class: 'grid2-1' }, el('div', { class: 'pila' }, partes), el('div', { class: 'pila' }, lado));
+  }
+
+  /* ---- 6 · Valoración y riesgo: cuatro paneles ---- */
+  function secValoracion(F) {
+    const s = F.simbolo, G = F.G, md = F.md;
+    // valoración: múltiplos + evolución del múltiplo capitalización / comisiones (365 d) a lo largo del último año
+    const valor = el('div', { class: 'pila' }, multiplos(F));
+    if (G && G.fees && F.mcapS) { const ac = acumulado(G.fees, 365), c = cociente(F.mcapS, ac); if (c.length > 30) valor.append(el('div', { class: 'card' }, el('h4', null, 'Capitalización / comisiones de 365 días, a lo largo del último año'), graficoLineas(F, { titulo: 'Capitalización / comisiones (365 d)', series: [{ t: 'veces', serie: c.map((x) => [x[0], x[1]]), color: C.pal[0], fmt: (v) => n(v, 0) + ' ×', fuente: [G.urls.fees, 'DefiLlama'] }], fmt: (v) => n(v, 0) + ' ×', clase: 'cvs', nota: 'Capitalización de cada día (CoinGecko) dividida por las comisiones de usuarios de los 365 días anteriores (DefiLlama).' }), el('p', { class: 'regla2' }, 'Mismo numerador, denominador, periodo y beneficiario cada día: por eso la línea es comparable consigo misma. Pulsa un punto para ver las dos cifras.'))); }
+    // concentración
+    const conc = el('div', { class: 'card' }, el('h4', null, 'Concentración: quién tiene el token'));
+    if (F.x.reparto) { const R = F.x.reparto, Gp = R.grupos, NOM = { exchange: 'Casas de cambio', contrato: 'Contratos', fondo_o_institucion: 'Fondos y gestoras', otros_etiquetados: 'Otras con nombre', ballena_sin_identificar: 'Sin nombre en TronScan', atribuido_externo: 'Atribuidas por otras fuentes' }; const filas = Object.keys(NOM).filter((k) => Gp[k] && Gp[k].cuentas > 0).map((k) => [NOM[k], Gp[k].pct, Gp[k].cuentas]); filas.push(['Resto de la red', R.cola.pct, R.cola.cuentas]); const cv = el('canvas'); conc.append(el('p', { class: 'cs' }, 'Las 10.000 mayores cuentas según TronScan, agrupadas por lo que TronScan dice que son, frente a todo el TRX. Las 100 mayores tienen el ' + pctAbs(R.concentracion.top100, 1) + '; la mayor sola, el ' + pctAbs(R.concentracion.top1, 1) + '. Lectura del ' + fd(Date.parse(R.leidoEn)) + '. Pulsa una barra para ver las cuentas.'), el('div', { class: 'cvm' }, cv)); C.chartDefaults(); new Chart(cv, UI.clicable({ type: 'bar', data: { labels: filas.map((f) => f[0]), datasets: [{ data: filas.map((f) => f[1]), backgroundColor: filas.map((f, i) => C.pal[i % C.pal.length]), borderWidth: 0 }] }, options: { indexAxis: 'y', responsive: true, maintainAspectRatio: false, plugins: { legend: { display: false }, tooltip: { callbacks: { label: (c) => ' ' + pctAbs(c.parsed.x, 1) + ' del TRX · ' + n(filas[c.dataIndex][2]) + ' cuentas' } } }, scales: { x: { ticks: { callback: (v) => v + ' %' } } } } }, () => window.open('herramientas.html#reparto', '_blank', 'noopener'))); }
+    else if (F.x.staked) { const st = F.x.staked.sum / 1e9, lido = F.x.lido && F.precio ? F.x.lido / F.precio : null, circ = md.circulating_supply; const filas = [lido ? ['En staking a través de Lido (aprox.)', lido / circ * 100] : null, ['Resto en staking', (st - (lido || 0)) / circ * 100], ['Sin staking', (circ - st) / circ * 100]].filter(Boolean); const cv = el('canvas'); conc.append(el('p', { class: 'cs' }, 'La lista de titulares de ETH exige clave. Lo que sí hay gratis: cuánto ETH asegura la red y qué parte pasa por Lido (TVL al precio de hoy: aproximación). ' + (F.cm.AdrBalCnt ? n(ultimo(F.cm.AdrBalCnt)[1], 0) + ' direcciones tienen algo de ETH (Coin Metrics).' : '')), el('div', { class: 'cvm' }, cv)); C.chartDefaults(); new Chart(cv, UI.clicable({ type: 'bar', data: { labels: filas.map((f) => f[0]), datasets: [{ data: filas.map((f) => f[1]), backgroundColor: filas.map((f, i) => C.pal[i]), borderWidth: 0 }] }, options: { indexAxis: 'y', responsive: true, maintainAspectRatio: false, plugins: { legend: { display: false }, tooltip: { callbacks: { label: (c) => ' ' + pctAbs(c.parsed.x, 1) + ' de la oferta' } } }, scales: { x: { ticks: { callback: (v) => v + ' %' } } } } }, () => abrirTexto('ETH en staking y fuera', ['En staking: ' + nt(st, 'ETH') + ' (' + pctAbs(st / circ * 100, 1) + ' de la oferta)' + (lido ? '; a través de Lido ≈ ' + nt(lido, 'ETH') + ' (aproximación con el precio de hoy)' : '') + '.'], [[F.urlStaked, 'ultrasound.money'], F.urlLido ? [F.urlLido, 'TVL de Lido (DefiLlama)'] : null].filter(Boolean), 'Aproximación'))); }
+    else if (F.cm.AdrBalCnt) conc.append(el('div', { class: 'ahora' }, nt(ultimo(F.cm.AdrBalCnt)[1]), el('small', null, 'direcciones con saldo (Coin Metrics)')), graficoLineas(F, { titulo: 'Direcciones con saldo', series: [{ t: 'Direcciones con saldo', serie: F.cm.AdrBalCnt, color: C.pal[0], fmt: (v) => n(v, 0), fuente: [F.cmUrl.AdrBalCnt, 'Coin Metrics'] }], fmt: (v) => n(v, 0), clase: 'cvs' }), el('p', { class: 'regla2' }, 'La fuente gratuita no dice cuánto tiene cada una: la lista de titulares exige clave en los exploradores.'));
+    else conc.append(el('div', { class: 'sd' }, el('b', null, 'Sin dato gratuito. '), 'La lista de titulares de ' + s + ' exige clave en los exploradores y Coin Metrics (comunidad) no da direcciones con saldo.'));
+    // seguridad
+    const seg = el('div', { class: 'card' }, el('h4', null, 'Seguridad: quién controla la red y con cuánto'));
+    if (F.x.testigos) { const T = F.x.testigos.data || [], prod = T.filter((x) => x.producer).sort((a, b) => b.votes - a.votes), tot = T.reduce((a, x) => a + (x.votes || 0), 0), top = (kk) => prod.slice(0, kk).reduce((a, x) => a + (x.votes || 0), 0) / tot * 100, seQuedan = prod.filter((x) => x.brokerage >= 50).length; const filas = [['El primer productor', top(1)], ['Los 5 primeros', top(5)], ['Los 27 productores', top(27)]]; const cv = el('canvas'); seg.append(el('p', { class: 'cs' }, nt(tot, 'TRX') + ' votando (' + pctAbs(tot / md.circulating_supply * 100, 1) + ' de la oferta) respaldan a ' + n(T.length) + ' candidatos; los 27 con más votos producen bloques. ' + n(seQuedan) + ' de los 27 se quedan la mitad o más de la recompensa; el resto la reparte a sus votantes. Pulsa una barra para ver la lista.'), el('div', { class: 'cvs' }, cv)); C.chartDefaults(); new Chart(cv, UI.clicable({ type: 'bar', data: { labels: filas.map((f) => f[0]), datasets: [{ data: filas.map((f) => f[1]), backgroundColor: [C.pal[3], C.pal[2], C.pal[0]], borderWidth: 0 }] }, options: { indexAxis: 'y', responsive: true, maintainAspectRatio: false, plugins: { legend: { display: false }, tooltip: { callbacks: { label: (c) => ' ' + pctAbs(c.parsed.x, 1) + ' de los votos' } } }, scales: { x: { min: 0, max: 100, ticks: { callback: (v) => v + ' %' } } } } }, () => abrirTestigos(F))); }
+    else if (F.x.staked) { const st = F.x.staked.sum / 1e9, lido = F.x.lido && F.precio ? F.x.lido / F.precio : null; seg.append(el('div', { class: 'ahora' }, pctAbs(st / md.circulating_supply * 100, 1), el('small', null, 'de la oferta en staking · ' + nt(st, 'ETH'))), el('p', { class: 'regla2' }, (lido ? 'Cuota de Lido en el staking ≈ ' + pctAbs(lido / st * 100, 1) + ' (aproximación con el TVL de Lido al precio de hoy). ' : '') + 'La lista de validadores exige clave (beaconcha.in): no se cuenta. Fuente: ', ext(F.urlStaked, 'ultrasound.money'), '.')); }
+    else if (F.cm.HashRate) seg.append(el('div', { class: 'ahora' }, n(ultimo(F.cm.HashRate)[1] / 1e6, 0) + ' EH/s', el('small', null, 'potencia de minado, media del día ' + fd(ultimo(F.cm.HashRate)[0]))), graficoLineas(F, { titulo: 'Potencia de minado', series: [{ t: 'EH/s', serie: F.cm.HashRate.map((x) => [x[0], x[1] / 1e6]), color: C.pal[2], fmt: (v) => n(v, 0) + ' EH/s', fuente: [F.cmUrl.HashRate, 'Coin Metrics'] }], fmt: (v) => n(v, 0), clase: 'cvs' }));
+    else seg.append(el('div', { class: 'sd' }, el('b', null, 'Sin dato gratuito. '), F.cadena ? 'Validadores y capital en stake de ' + F.cadena.nombre + ': sin fuente gratuita sin clave.' : s + ' es un token sobre otra cadena: su seguridad es la de esa cadena y la de su contrato.'));
+    seg.append(el('p', { class: 'regla2' }, 'Hackeos y riesgo de contrato: ', el('a', { href: 'herramientas.html#comprobar' }, 'comprueba una dirección o un contrato en Herramientas →')));
+    // ecosistema
+    const eco = el('div', { class: 'pila' });
+    if (F.cadena) eco.append(el('div', { class: 'card' }, el('h4', null, etq('tvl'), 'Capital depositado en ' + F.cadena.nombre + ' (1 año)'), el('div', { class: 'ahora' }, m(F.tvlS ? ultimo(F.tvlS)[1] : F.cadena.tvl), el('small', null, (F.apps ? n(F.apps.length) + ' aplicaciones con comisiones' : '') + (F.dex24 != null ? ' · DEX ' + m(F.dex24) + '/24 h' : ''))), graficoLineas(F, { titulo: 'TVL de la cadena', series: [{ t: 'TVL', serie: F.tvlS, color: C.pal[8], fmt: m, fuente: [F.urlTvl, 'DefiLlama'], relleno: true }], fmt: m, clase: 'cvs', sin: 'DefiLlama no respondió con el TVL histórico.' })));
+    eco.append(aplicaciones(F));
+    if (F.repo) { const gh = F.R.gh, rel = F.R.rel; eco.append(el('div', { class: 'card' }, el('h4', null, 'Desarrollo (sin semáforo)'), el('div', { class: 'ahora' }, gh && gh.ok ? n(gh.v.commits) : '—', el('small', null, 'commits en 28 días en la rama por defecto de ' + F.repo)), el('p', { class: 'regla2' }, 'Última versión publicada: ', rel && rel.ok ? el('span', null, ext(rel.v.html_url, rel.v.tag_name || rel.v.name), ' el ' + fd(Date.parse(rel.v.published_at))) : 'ninguna publicada o sin respuesta', '. Repositorios según CoinGecko: ', ...F.repos.slice(0, 5).flatMap((r, i) => [i ? ', ' : '', ext(r, String(r).replace('https://github.com/', ''))]), '. GitHub sin clave (60 lecturas por hora y visitante). Los commits son una aproximación débil: por eso no hay color ni nota.'))); }
+    return el('div', { class: 'paneles' }, valor, conc, seg, eco);
+  }
+
+  /* ---- relaciones entre métricas: tres cocientes a lo largo de un año, con su regla escrita ---- */
+  function calcularRelaciones(F) {
     const s = F.simbolo, G = F.G;
     // emisión diaria en dólares: TRX del fichero diario (emisión × precio del día), resto Coin Metrics IssTotUSD
     let emUsd = null, emFuente = null;
@@ -475,18 +701,20 @@
     else if (F.cm.IssTotUSD) { emUsd = F.cm.IssTotUSD; emFuente = [F.cmUrl.IssTotUSD, 'emisión diaria en dólares (Coin Metrics, IssTotUSD)']; }
     const R = [];
     // 1) valor para el token / comisiones (30 días acumulados)
-    if (G && G.hold && G.fees) { const c = cociente(acumulado(G.hold, 30), acumulado(G.fees, 30)); if (c.length > 10) R.push({ t: 'Valor para el token / comisiones de usuarios', num: ['hold', 'valor para el token'], den: ['fees', 'comisiones de usuarios'], serie: c, fmt: (v) => pctAbs(v * 100, 0), fmtAB: m, regla: 'Suma de 30 días de lo que llega al token dividida por la suma de 30 días de lo que pagan los usuarios. Dice qué parte de cada dólar pagado acaba en los titulares (quema, recompra o reparto).', fuentes: [[G.urls.hold, 'valor para el token (DefiLlama)'], [G.urls.fees, 'comisiones de usuarios (DefiLlama)']] }); }
-    else R.push({ t: 'Valor para el token / comisiones de usuarios', sin: G && G.fees ? 'la fuente no registra valor para los titulares de ' + s : 'sin comisiones registradas en DefiLlama' });
+    if (G && G.hold && G.fees) { const c = cociente(acumulado(G.hold, 30), acumulado(G.fees, 30)); if (c.length > 10) R.push({ k: 'captura', t: 'Valor para el token / comisiones de usuarios', num: ['hold', 'valor para el token'], den: ['fees', 'comisiones de usuarios'], serie: c, fmt: (v) => pctAbs(v * 100, 0), fmtAB: m, regla: 'Suma de 30 días de lo que llega al token dividida por la suma de 30 días de lo que pagan los usuarios. Dice qué parte de cada dólar pagado acaba en los titulares (quema, recompra o reparto).', fuentes: [[G.urls.hold, 'valor para el token (DefiLlama)'], [G.urls.fees, 'comisiones de usuarios (DefiLlama)']] }); }
+    else R.push({ k: 'captura', t: 'Valor para el token / comisiones de usuarios', sin: G && G.fees ? 'la fuente no registra valor para los titulares de ' + s : 'sin comisiones registradas en DefiLlama' });
     // 2) ingresos del protocolo / emisión (30 días acumulados, en dólares)
     const emAc = emUsd ? acumulado(emUsd, 30) : [];
-    if (G && G.rev && emUsd && emAc.length && ultimo(emAc)[1] === 0) R.push({ t: 'Ingresos del protocolo / emisión', sin: s + ' no ha emitido monedas nuevas en los últimos 30 días: no hay coste de seguridad propio que cubrir, no aplica' });
-    else if (G && G.rev && emUsd) { const c = cociente(acumulado(G.rev, 30), emAc); if (c.length > 10) R.push({ t: 'Ingresos del protocolo / emisión', num: ['rev', 'ingresos del protocolo'], den: ['val', 'emisión en dólares'], serie: c, fmt: (v) => n(v, 2) + ' ×', fmtAB: m, regla: 'Suma de 30 días de ingresos dividida por la suma de 30 días de emisión (monedas nuevas × precio de cada día). Por encima de 1, las comisiones cubren lo que se emite para pagar la seguridad; por debajo, la seguridad se paga con inflación.', fuentes: [[G.urls.rev, 'ingresos del protocolo (DefiLlama)'], emFuente] }); else R.push({ t: 'Ingresos del protocolo / emisión', sin: 'la emisión no tiene serie suficiente' }); }
-    else R.push({ t: 'Ingresos del protocolo / emisión', sin: !F.cadena ? s + ' no emite para pagar una seguridad propia: no aplica' : !emUsd ? 'sin serie gratuita de emisión en dólares para ' + s : 'sin ingresos registrados en DefiLlama' });
+    if (G && G.rev && emUsd && emAc.length && ultimo(emAc)[1] === 0) R.push({ k: 'emision', t: 'Ingresos del protocolo / emisión', sin: s + ' no ha emitido monedas nuevas en los últimos 30 días: no hay coste de seguridad propio que cubrir, no aplica' });
+    else if (G && G.rev && emUsd) { const c = cociente(acumulado(G.rev, 30), emAc); if (c.length > 10) R.push({ k: 'emision', t: 'Ingresos del protocolo / emisión', num: ['rev', 'ingresos del protocolo'], den: ['val', 'emisión en dólares'], serie: c, fmt: (v) => n(v, 2) + ' ×', fmtAB: m, regla: 'Suma de 30 días de ingresos dividida por la suma de 30 días de emisión (monedas nuevas × precio de cada día). Por encima de 1, las comisiones cubren lo que se emite para pagar la seguridad; por debajo, la seguridad se paga con inflación.', fuentes: [[G.urls.rev, 'ingresos del protocolo (DefiLlama)'], emFuente] }); else R.push({ k: 'emision', t: 'Ingresos del protocolo / emisión', sin: 'la emisión no tiene serie suficiente' }); }
+    else R.push({ k: 'emision', t: 'Ingresos del protocolo / emisión', sin: !F.cadena ? s + ' no emite para pagar una seguridad propia: no aplica' : !emUsd ? 'sin serie gratuita de emisión en dólares para ' + s : 'sin ingresos registrados en DefiLlama' });
     // 3) ingresos anualizados / capital depositado
-    if (G && G.rev && F.tvlS) { const c = cociente(acumulado(G.rev, 30).map((x) => [x[0], x[1] / 30 * 365.25]), F.tvlS); if (c.length > 10) R.push({ t: 'Ingresos anualizados / capital depositado', num: ['rev', 'ingresos de 30 días × 365,25/30'], den: ['tvl', 'capital depositado (TVL)'], serie: c, fmt: (v) => pctAbs(v * 100, 2), fmtAB: m, regla: 'Ingresos de 30 días anualizados divididos por el TVL de ese día. Cuánto rinde para el protocolo el dinero depositado. No descuenta incentivos: sin fuente gratuita.', fuentes: [[G.urls.rev, 'ingresos del protocolo (DefiLlama)'], [F.urlTvl, 'TVL histórico (DefiLlama)']] }); }
-    else R.push({ t: 'Ingresos anualizados / capital depositado', sin: F.cadena ? 'sin serie de TVL o de ingresos' : 'el TVL de un protocolo solo está como dato diario en el índice, sin serie gratuita' });
-    const fechas = fechasCambio(F);
-    const tarjetasRel = R.map((r) => {
+    if (G && G.rev && F.tvlS) { const c = cociente(acumulado(G.rev, 30).map((x) => [x[0], x[1] / 30 * 365.25]), F.tvlS); if (c.length > 10) R.push({ k: 'tvl', t: 'Ingresos anualizados / capital depositado', num: ['rev', 'ingresos de 30 días × 365,25/30'], den: ['tvl', 'capital depositado (TVL)'], serie: c, fmt: (v) => pctAbs(v * 100, 2), fmtAB: m, regla: 'Ingresos de 30 días anualizados divididos por el TVL de ese día. Cuánto rinde para el protocolo el dinero depositado. No descuenta incentivos: sin fuente gratuita.', fuentes: [[G.urls.rev, 'ingresos del protocolo (DefiLlama)'], [F.urlTvl, 'TVL histórico (DefiLlama)']] }); }
+    else R.push({ k: 'tvl', t: 'Ingresos anualizados / capital depositado', sin: F.cadena ? 'sin serie de TVL o de ingresos' : 'el TVL de un protocolo solo está como dato diario en el índice, sin serie gratuita' });
+    return R;
+  }
+  function tarjetaRelacion(F, r, fechas) {
+      const s = F.simbolo;
       const card = el('div', { class: 'card' }, el('h4', null, r.t));
       if (r.sin) { card.append(el('div', { class: 'sd', style: 'margin:8px 0 0' }, el('b', null, 'Sin dato gratuito. '), r.sin + '.')); return card; }
       const ult = desde(r.serie, 365), u = ultimo(r.serie), hace = enFecha(r.serie, u[0] - 365 * DIA);
@@ -498,8 +726,6 @@
       cfg.plugins = [marcasPlugin(fechas)];
       C.chartDefaults(); new Chart(cv, cfg);
       return card;
-    });
-    return el('div', { class: 'rel' }, tarjetasRel);
   }
 
   /* ---- 1) cinco tarjetas con minigráfico ---- */

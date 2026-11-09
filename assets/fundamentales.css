@@ -145,6 +145,74 @@
 .mult tr.clk{cursor:pointer}.mult tr.clk:hover td{background:color-mix(in srgb,var(--acc) 7%,transparent)}
 .mult .cap{font-size:11px;color:var(--mut);display:block;margin-top:2px}
 
+/* navegación fija por dimensiones (bajo la barra del sitio) */
+.fnav{position:sticky;top:54px;z-index:30;display:flex;gap:4px;flex-wrap:wrap;align-items:center;background:color-mix(in srgb,var(--bg) 92%,transparent);backdrop-filter:blur(8px);border:1px solid var(--line);border-radius:12px;padding:6px 8px;margin:10px 0 14px}
+.fnav a{font-size:12.5px;color:var(--soft);text-decoration:none;padding:5px 11px;border-radius:999px;white-space:nowrap;border:1px solid transparent}
+.fnav a:hover{border-color:var(--acc);color:var(--fg)}
+.fnav a.on{background:var(--acc);color:#0a0d12;font-weight:700}
+:root[data-theme="light"] .fnav a.on{color:#fff}
+@media (prefers-color-scheme:light){:root:not([data-theme="dark"]) .fnav a.on{color:#fff}}
+.fnav .nivel{margin-left:auto;font-size:11px;color:var(--mut)}
+@media (max-width:760px){.fnav{overflow-x:auto;flex-wrap:nowrap;scrollbar-width:none}.fnav .nivel{display:none}}
+
+/* secciones por dimensión */
+.fsec{scroll-margin-top:110px;margin:0 0 16px}
+.fsec>.kick{font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:var(--mut);margin:0 0 4px;display:block}
+.fsec>h3{margin:0 0 4px;font-size:21px}
+.fsec>.sub{color:var(--mut);font-size:13px;margin:0 0 12px;max-width:900px}
+.fsec .card{margin:0}
+.fsec .card h4{margin:0 0 6px;font-size:14.5px}
+.fsec .cs{margin:0 0 8px;color:var(--mut);font-size:12.5px}
+.fsec .grid2{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:14px;align-items:start}
+.fsec .grid2-1{display:grid;grid-template-columns:minmax(0,1.5fr) minmax(0,1fr);gap:14px;align-items:start}
+.fsec .pila{display:grid;gap:14px}
+.cvm{position:relative;height:220px}
+.cvs{position:relative;height:170px}
+.cvl{position:relative;height:300px}
+.ahora{font-size:22px;font-weight:700;font-variant-numeric:tabular-nums;margin:4px 0 0}
+.ahora small{font-size:12px;font-weight:400;color:var(--mut);margin-left:6px}
+.regla2{color:var(--mut);font-size:11.8px;line-height:1.45;margin:6px 0 0}
+.kp3{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;margin:0 0 14px}
+.ft .fp .cap{font-size:12px;color:var(--soft);display:block;margin-top:2px}
+
+/* balance de oferta */
+.bal{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:8px;margin:6px 0 10px}
+.bal div{border:1px solid var(--line);border-radius:12px;padding:10px 12px;background:var(--bg);cursor:pointer}
+.bal div:hover{border-color:var(--acc)}
+.bal b{display:block;font-size:17px;font-variant-numeric:tabular-nums}
+.bal span{font-size:11.5px;color:var(--mut);display:block}
+.bal .mas b{color:var(--ok)}.bal .menos b{color:var(--bad)}
+@media (max-width:900px){.bal{grid-template-columns:repeat(2,minmax(0,1fr))}}
+
+/* cuatro etapas de la demanda */
+.etapas{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px}
+.etapa{position:relative;border:1px solid var(--line);border-radius:14px;padding:12px 14px;background:var(--pan);box-shadow:var(--shadow);min-width:0}
+.etapa .n{display:inline-grid;place-items:center;width:22px;height:22px;border-radius:50%;background:var(--m-azul,var(--acc));color:#fff;font-size:12px;font-weight:800;margin-right:6px}
+.etapa h4{display:inline;font-size:14px}
+.etapa .que{color:var(--mut);font-size:11.8px;margin:4px 0 6px;line-height:1.4}
+.etapa .cif{font-size:19px;font-weight:700;font-variant-numeric:tabular-nums;cursor:pointer}
+.etapa .cif:hover{color:var(--acc)}
+.etapa .cif small{display:block;font-size:11.5px;color:var(--mut);font-weight:400}
+.etapa .cvs{height:110px;margin-top:6px}
+.etapa:not(:last-child)::after{content:"→";position:absolute;right:-13px;top:50%;transform:translateY(-50%);color:var(--mut);font-size:16px;z-index:1}
+.etapa .ir{display:inline-block;margin-top:8px;font-size:12px;color:var(--acc);text-decoration:none}
+.etapa .ir:hover{text-decoration:underline}
+@media (max-width:1000px){.etapas{grid-template-columns:repeat(2,minmax(0,1fr))}.etapa::after{display:none}}
+@media (max-width:560px){.etapas{grid-template-columns:1fr}}
+
+/* diagrama de flujos */
+.sk{position:relative}
+.sk svg{width:100%;height:auto;display:block}
+.sk text{font-size:11px;fill:var(--fg)}
+.sk .peq{font-size:10px;fill:var(--mut)}
+.sk-leyenda{display:flex;gap:10px;flex-wrap:wrap;margin:8px 0 0;font-size:12px;color:var(--soft)}
+.sk-leyenda span{display:inline-flex;align-items:center;gap:6px}
+.sk-leyenda i{width:10px;height:10px;border-radius:3px;display:inline-block}
+
+/* cuatro paneles de valoración y riesgo */
+.paneles{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:14px;align-items:start}
+@media (max-width:1000px){.fsec .grid2,.fsec .grid2-1,.paneles{grid-template-columns:1fr}}
+
 /* relaciones entre métricas: tres gráficos pequeños */
 .rel{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px;margin:0 0 14px}
 .rel .card{margin:0}
