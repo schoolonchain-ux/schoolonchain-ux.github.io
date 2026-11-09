@@ -252,3 +252,9 @@
 
 @media (max-width:1000px){.kp5{grid-template-columns:repeat(3,minmax(0,1fr))}.tab{grid-template-columns:1fr}.dos{grid-template-columns:1fr}}
 @media (max-width:620px){.kp5{grid-template-columns:repeat(2,minmax(0,1fr))}.ft .fp{margin-left:0;text-align:left}.fb{flex-wrap:wrap}.fb .btn.primary{flex-basis:100%}.tarta{grid-template-columns:1fr}.gcv{height:260px}}
+
+/* ventanita al pasar el ratón o el dedo: minigráficos, Sankey y gráficos */
+.kc canvas,.tb td.sp canvas,.tb.cmp td.cell .sp canvas{cursor:crosshair;touch-action:pan-y}
+.tip small{opacity:.75;font-size:11px}
+.sk svg path,.sk svg rect{transition:stroke-opacity .12s,opacity .12s}
+.sk svg path:hover{stroke-opacity:.7}
