@@ -44,7 +44,9 @@
       if (!window.Chart) return;
       Chart.defaults.color = C.css('--soft'); Chart.defaults.borderColor = C.css('--line');
       Chart.defaults.font.family = getComputedStyle(document.body).fontFamily; Chart.defaults.font.size = 12;
-      Chart.defaults.animation = window.__sinAnimacion ? false : { duration: 500 };
+      // Se cambia solo la duración, sin sustituir el objeto: Chart.js lee de él la lista de opciones de animación (type, from, to…)
+      // y, si el objeto se sustituye por { duration }, pierde el tipo y al animar un color revienta ('this._fn is not a function'), parando el animador de toda la página.
+      if (window.__sinAnimacion) Chart.defaults.animation = false; else if (Chart.defaults.animation) Chart.defaults.animation.duration = 500;
       Chart.defaults.plugins.legend.labels.boxWidth = 10; Chart.defaults.plugins.legend.labels.boxHeight = 10; Chart.defaults.plugins.legend.labels.usePointStyle = true;
       Chart.defaults.plugins.tooltip.padding = 9; Chart.defaults.plugins.tooltip.cornerRadius = 8;
     },
