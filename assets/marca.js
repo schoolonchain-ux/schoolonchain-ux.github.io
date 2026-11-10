@@ -24,7 +24,7 @@
       ['Investigaciones', [['Casos', './#informes'], ['Archivo por fecha', 'archivo.html'], ['Registro de cambios', 'cambios.html']]],
       ['Herramientas', [['Herramientas en vivo', 'herramientas.html'], ['Laboratorio de fundamentales', 'fundamentales.html'], ['Buscar', 'buscar.html']]],
       ['Método', [['Cómo investigamos', 'como-investigamos.html'], ['De dónde sale cada cifra', 'datos.html'], ['Registro de cambios', 'cambios.html']]],
-      ['El proyecto', [['Acerca y contacto', 'acerca.html'], ['Novedades (RSS)', 'feed.xml'], ['Repositorio y datos', 'https://github.com/schoolonchain-ux/schoolonchain-ux.github.io']]],
+      ['El proyecto', [['Acerca y contacto', 'acerca.html'], ['Novedades y RSS', 'novedades.html'], ['Repositorio y datos', 'https://github.com/schoolonchain-ux/schoolonchain-ux.github.io']]],
     ],
     aviso: 'Proyecto independiente. Las marcas de terceros que aparecen (Binance, TRON, Tether…) pertenecen a sus titulares; este sitio no está afiliado a ellas. Nada de lo publicado es consejo de inversión.',
   });
@@ -36,7 +36,7 @@
   // enlaces como elementos (para usarlos desde cualquier página)
   M.enlacesEl = (cls) => M.enlaces.map((e) => { const a = document.createElement('a'); a.className = cls || 'soc'; a.href = e.u; a.target = '_blank'; a.rel = 'noopener'; a.innerHTML = SVG[e.k] + '<span>' + e.t + '</span>'; a.title = e.t; return a; });
   // Qué entrada de la barra corresponde a la página abierta (las páginas de caso cuentan como Investigaciones).
-  M.paginaActual = () => { const f = (location.pathname.split('/').pop() || 'index.html').toLowerCase(); return { 'mercado.html': 'mer', 'herramientas.html': 'her', 'fundamentales.html': 'fun', 'datos.html': 'met', 'como-investigamos.html': 'met', 'cambios.html': 'met', 'acerca.html': 'ace', 'buscar.html': 'bus', 'index.html': 'inv', 'report.html': 'inv', 'caso-vaneck.html': 'inv', 'archivo.html': 'inv' }[f] || ''; };
+  M.paginaActual = () => { const f = (location.pathname.split('/').pop() || 'index.html').toLowerCase(); return { 'mercado.html': 'mer', 'herramientas.html': 'her', 'fundamentales.html': 'fun', 'datos.html': 'met', 'como-investigamos.html': 'met', 'cambios.html': 'met', 'acerca.html': 'ace', 'novedades.html': 'ace', 'buscar.html': 'bus', 'index.html': 'inv', 'report.html': 'inv', 'caso-vaneck.html': 'inv', 'archivo.html': 'inv' }[f] || ''; };
   M.navEl = () => { const act = M.paginaActual(); const enPortada = /^(index\.html)?$/.test((location.pathname.split('/').pop() || '').toLowerCase()); return M.nav.map((e) => { const a = document.createElement('a'); a.className = 'nv-sitio' + (e.k === act ? ' on' : ''); a.href = e.k === 'inv' && enPortada ? '#informes' : e.u; a.textContent = e.t; if (e.titulo) a.title = e.titulo; return a; }); };
   document.addEventListener('DOMContentLoaded', () => {
     // barra principal: la misma en todas las páginas; las que tienen capítulos propios los añaden después de estos enlaces
@@ -45,7 +45,7 @@
     const b = document.querySelector('.topbar .brand');
     if (b) { b.innerHTML = '<span class="dot"></span><span class="bn">' + M.nombre + '<small>' + M.sub + '</small></span>'; }
     const tb = document.querySelector('.topbar .wrap');
-    if (tb) { const box = document.createElement('div'); box.className = 'socs'; M.enlacesEl('soc').forEach((a) => box.append(a)); { const r = document.createElement('a'); r.className = 'soc'; r.href = 'feed.xml'; r.title = 'Novedades por RSS'; r.innerHTML = '<svg viewBox="0 0 24 24" width="15" height="15" fill="currentColor" aria-hidden="true"><circle cx="5" cy="19" r="2.6"/><path d="M2.4 9.6v3.5a8.5 8.5 0 0 1 8.5 8.5h3.5c0-6.6-5.4-12-12-12z"/><path d="M2.4 2.4v3.5c8.7 0 15.7 7 15.7 15.7h3.5C21.6 11 13 2.4 2.4 2.4z"/></svg><span>RSS</span>'; box.append(r); } const th = document.getElementById('theme'); tb.insertBefore(box, th); }
+    if (tb) { const box = document.createElement('div'); box.className = 'socs'; M.enlacesEl('soc').forEach((a) => box.append(a)); { const r = document.createElement('a'); r.className = 'soc'; r.href = 'novedades.html'; r.title = 'Novedades y canal RSS: qué hay de nuevo y cómo recibirlo'; r.innerHTML = '<svg viewBox="0 0 24 24" width="15" height="15" fill="currentColor" aria-hidden="true"><circle cx="5" cy="19" r="2.6"/><path d="M2.4 9.6v3.5a8.5 8.5 0 0 1 8.5 8.5h3.5c0-6.6-5.4-12-12-12z"/><path d="M2.4 2.4v3.5c8.7 0 15.7 7 15.7 15.7h3.5C21.6 11 13 2.4 2.4 2.4z"/></svg><span>RSS</span>'; box.append(r); } const th = document.getElementById('theme'); tb.insertBefore(box, th); }
     // pie de marca
     const main = document.querySelector('main.wrap');
     if (main) {
