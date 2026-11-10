@@ -1,0 +1,5 @@
+const fs=require('fs');const [a,b]=process.argv.slice(2,4).map(f=>JSON.parse(fs.readFileSync(f,'utf8')));
+const flat=(o,p='',out={})=>{if(Array.isArray(o)){o.forEach((v,i)=>flat(v,p+'['+i+']',out));}else if(o&&typeof o==='object'){for(const k in o)flat(o[k],p?p+'.'+k:k,out);}else out[p]=o;return out;};
+const fa=flat(a),fb=flat(b);let ig=0,dn=[],dt=[];for(const k in fa){if(!(k in fb))continue;const x=fa[k],y=fb[k];if(x===y){ig++;continue;}if(typeof x==='number'&&typeof y==='number'){if(Math.abs(x-y)<=1e-9*Math.max(1,Math.abs(x)))ig++;else dn.push([k,x,y]);}else dt.push([k,String(x).slice(0,90),String(y).slice(0,90)]);}
+console.log('hojas A',Object.keys(fa).length,'hojas B',Object.keys(fb).length,'iguales',ig,'numeros distintos',dn.length,'textos distintos',dt.length,'solo A',Object.keys(fa).filter(k=>!(k in fb)).length,'solo B',Object.keys(fb).filter(k=>!(k in fa)).length);
+for(const d of dn.slice(0,+process.argv[4]||30))console.log(' N',d.join(' | '));for(const d of dt.slice(0,12))console.log(' T',d.join(' | '));

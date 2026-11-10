@@ -120,3 +120,15 @@ table.t td.n{text-align:right;font-variant-numeric:tabular-nums;white-space:nowr
 .tl .it b{font-size:14px}
 .tl ul{margin:4px 0 0 18px;padding:0;color:var(--soft);font-size:13px}
 footer.site{border-top:1px solid var(--line);margin-top:60px;padding:22px 0 40px;color:var(--mut);font-size:12.5px}
+
+/* Aviso fechado sobre una edición publicada (report.html) y su marca en la tarjeta de la portada */
+.aviso-ed{border:1px solid var(--warn);border-left-width:5px;border-radius:12px;background:color-mix(in srgb,var(--warn) 9%,var(--pan));padding:14px 18px;margin:14px 0 16px;max-width:980px;color:var(--fg);font-size:14.5px;line-height:1.5;scroll-margin-top:90px}
+.aviso-ed .av-t{font-weight:700;font-size:16px;margin-bottom:6px}
+.aviso-ed p{margin:6px 0}
+.aviso-ed ul{margin:6px 0 8px 20px;padding:0}
+.aviso-ed li{margin:3px 0}
+.aviso-ed details{margin:8px 0}
+.aviso-ed summary{cursor:pointer;font-weight:600}
+.aviso-ed .av-s{font-size:13.5px;color:var(--soft)}
+.aviso-ed .actions{margin-top:10px}
+.chip.chip-aviso{color:var(--warn);border-color:var(--warn)}

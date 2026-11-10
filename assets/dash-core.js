@@ -132,6 +132,19 @@
     const I = Dash.itemsNivel(k);
     return C.el('p', { style: estilo || 'margin:8px 0' }, C.el('button', { class: 'estbtn', title: 'Ver todo lo que lleva esta etiqueta', onclick: () => Dash.porNivel(k) }, C.est(k, true), C.el('span', { class: 'estn', 'data-niv': k }, I.total ? C.n(I.total) + ' ›' : '0')), ' ', texto);
   };
+  // Aviso fechado sobre la edición publicada (reports/index.json → aviso). El informe original no se toca: el aviso va encima, con sus cifras y sus enlaces a la evidencia.
+  function avisoEdicion(a) {
+    if (!a) return null;
+    const usd0 = (v) => Math.round(v).toLocaleString('es-ES') + ' $';
+    return el('aside', { class: 'aviso-ed', id: 'aviso', role: 'note' },
+      el('div', { class: 'av-t' }, a.titulo),
+      el('p', null, a.resumen),
+      el('ul', { class: 'av-p' }, (a.puntos || []).map((x) => el('li', null, el('b', null, x.t + ': ' + usd0(x.importe) + '. '), x.d))),
+      (a.efecto || []).length ? el('details', null, el('summary', null, 'Qué cambia en las cifras de este panel'), el('ul', null, a.efecto.map((t) => el('li', null, t)))) : null,
+      a.comprobacion ? el('p', { class: 'av-s' }, el('b', null, 'Cómo se ha comprobado. '), a.comprobacion) : null,
+      a.limites ? el('p', { class: 'av-s' }, el('b', null, 'Lo que falta. '), a.limites) : null,
+      el('div', { class: 'actions' }, (a.enlaces || []).map((e) => el('a', { class: 'btn' + (e.principal ? ' primary' : ''), href: e.href }, e.t))));
+  }
   function cabecera() {
     const { d, meta, base, app } = Dash;
     const ult = (d.novedades || []).slice(-1)[0];
@@ -139,6 +152,7 @@
       meta.caso ? el('div', { class: 'caso' }, 'Caso · ' + meta.caso) : null,
       el('h1', null, d.titulo),
       el('div', { class: 'sub' }, 'Datos hasta ', el('b', null, C.utc(new Date(d.corte).getTime())), ' · generado el ', C.utc(new Date(d.generado).getTime()), ult ? ' · versión ' : '', ult ? el('b', null, ult.version) : null),
+      avisoEdicion(meta.aviso),
       Dash.acciones([
         [el('a', { class: 'btn primary', href: base + 'informe-completo.html' }, 'Abrir el informe original completo'), 'El informe tal como se escribió (HTML, unos 11 MB): lectura lineal de principio a fin, sin este panel. Tarda en abrir.'],
         ...(meta.archivos || []).filter((a) => a.ruta !== 'informe-completo.html').map((a) => [el('a', { class: 'btn', href: base + a.ruta }, a.nombre), Dash.descArchivo[a.ruta] || 'Archivo de datos abierto de este informe.']),

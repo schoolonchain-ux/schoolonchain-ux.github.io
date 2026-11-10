@@ -1,0 +1,4843 @@
+{
+ "leidoEn": "2026-11-10T00:00:28.790Z",
+ "fuente": "api.trongrid.io (eventos, gettransactionbyid, gettransactioninfobyid), sin clave",
+ "pruebas": [
+  {
+   "grupo": "Chainflip",
+   "caso": "tramo 5 deposito con salida en la misma transaccion",
+   "tx": "f627f22e96c95b4032f1f50e99f35d1d67605d915674c2c3de4c25bfe0fcf035",
+   "espera": {
+    "token": "USDT",
+    "de": "TJtan1Fw2DyU3MFLgoXNUwT42tiLRv84FS",
+    "a": "TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC",
+    "cantidad": 159192.775199
+   },
+   "espera2": {
+    "token": "USDT",
+    "a": "TYrbuz533nmpJCdrAqYVMQG9NaoNZhPjvt",
+    "cantidad": 159185.587093
+   },
+   "leido": {
+    "tx": "f627f22e96c95b4032f1f50e99f35d1d67605d915674c2c3de4c25bfe0fcf035",
+    "estado": "SUCCESS",
+    "hora": "2026-10-30T23:27:09.000Z",
+    "bloque": 87576474,
+    "tipo": "TriggerSmartContract",
+    "remitente": "TXw58jkJvcWaEossiFdRWJcUaScsCBmav6",
+    "contrato": "TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC",
+    "trxEnviado": 0,
+    "transferencias": [
+     {
+      "token": "USDT",
+      "de": "TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC",
+      "a": "TYrbuz533nmpJCdrAqYVMQG9NaoNZhPjvt",
+      "cantidad": 159185.587093
+     },
+     {
+      "token": "USDT",
+      "de": "TJtan1Fw2DyU3MFLgoXNUwT42tiLRv84FS",
+      "a": "TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC",
+      "cantidad": 159192.775199
+     }
+    ],
+    "internas": [],
+    "error": null
+   },
+   "coincide": true,
+   "comprobaciones": {
+    "transferencia": true,
+    "salidaMismaTx": true,
+    "trxEnviado": null
+   }
+  },
+  {
+   "grupo": "Chainflip",
+   "caso": "tramo 5 deposito con salida en la misma transaccion",
+   "tx": "9497137d9afcc68c0051c7dc9b541df499d004ca0b39d930216a20508c2f9a81",
+   "espera": {
+    "token": "USDT",
+    "de": "TMQbd8z1EPNr6e7u6ayjtA8KebzGiexWAH",
+    "a": "TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC",
+    "cantidad": 115775.754509
+   },
+   "espera2": {
+    "token": "USDT",
+    "a": "TSmaU99ZtprH5Vt5R2nfPvmqXs5sEE6gu2",
+    "cantidad": 115768.566713
+   },
+   "leido": {
+    "tx": "9497137d9afcc68c0051c7dc9b541df499d004ca0b39d930216a20508c2f9a81",
+    "estado": "SUCCESS",
+    "hora": "2026-10-31T07:44:45.000Z",
+    "bloque": 87586422,
+    "tipo": "TriggerSmartContract",
+    "remitente": "TDwpWtUBWupyRcCDdU3NEu9AWp4Zyqux9q",
+    "contrato": "TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC",
+    "trxEnviado": 0,
+    "transferencias": [
+     {
+      "token": "USDT",
+      "de": "TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC",
+      "a": "TSmaU99ZtprH5Vt5R2nfPvmqXs5sEE6gu2",
+      "cantidad": 115768.566713
+     },
+     {
+      "token": "USDT",
+      "de": "TMQbd8z1EPNr6e7u6ayjtA8KebzGiexWAH",
+      "a": "TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC",
+      "cantidad": 115775.754509
+     }
+    ],
+    "internas": [],
+    "error": null
+   },
+   "coincide": true,
+   "comprobaciones": {
+    "transferencia": true,
+    "salidaMismaTx": true,
+    "trxEnviado": null
+   }
+  },
+  {
+   "grupo": "Chainflip",
+   "caso": "tramo 5 deposito con salida en la misma transaccion",
+   "tx": "692d717afb8433cbe7014d63fb94a00c9cb6472f92d26ec6f42166850bab0418",
+   "espera": {
+    "token": "USDT",
+    "de": "TVkSQWL8YqVvVLVznHhQtfY4Lspfs1Yuof",
+    "a": "TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC",
+    "cantidad": 115760.878199
+   },
+   "espera2": {
+    "token": "USDT",
+    "a": "TSmaU99ZtprH5Vt5R2nfPvmqXs5sEE6gu2",
+    "cantidad": 115753.69058
+   },
+   "leido": {
+    "tx": "692d717afb8433cbe7014d63fb94a00c9cb6472f92d26ec6f42166850bab0418",
+    "estado": "SUCCESS",
+    "hora": "2026-10-31T08:32:15.000Z",
+    "bloque": 87587372,
+    "tipo": "TriggerSmartContract",
+    "remitente": "TReuDwwamQvdCvjYTEJUjk4AhNw6hRTo2a",
+    "contrato": "TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC",
+    "trxEnviado": 0,
+    "transferencias": [
+     {
+      "token": "USDT",
+      "de": "TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC",
+      "a": "TSmaU99ZtprH5Vt5R2nfPvmqXs5sEE6gu2",
+      "cantidad": 115753.69058
+     },
+     {
+      "token": "USDT",
+      "de": "TVkSQWL8YqVvVLVznHhQtfY4Lspfs1Yuof",
+      "a": "TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC",
+      "cantidad": 115760.878199
+     }
+    ],
+    "internas": [],
+    "error": null
+   },
+   "coincide": true,
+   "comprobaciones": {
+    "transferencia": true,
+    "salidaMismaTx": true,
+    "trxEnviado": null
+   }
+  },
+  {
+   "grupo": "Chainflip",
+   "caso": "tramo 5 deposito con salida en la misma transaccion",
+   "tx": "1fbb09458a171fc323b6bbe7795a746bdff5fe9d5948717fe023c03979951825",
+   "espera": {
+    "token": "USDT",
+    "de": "TD5FFCqNv59m3xq9DPCFGbx5NXiZCF3Fuc",
+    "a": "TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC",
+    "cantidad": 115753.690638
+   },
+   "espera2": {
+    "token": "USDT",
+    "a": "TWoDWB7PjgWgBZeE2Qr29sNmXoN8Zi91Qd",
+    "cantidad": 115746.503453
+   },
+   "leido": {
+    "tx": "1fbb09458a171fc323b6bbe7795a746bdff5fe9d5948717fe023c03979951825",
+    "estado": "SUCCESS",
+    "hora": "2026-10-31T08:44:00.000Z",
+    "bloque": 87587607,
+    "tipo": "TriggerSmartContract",
+    "remitente": "TPVixcpi6txCLNTzTkYwkPzUzWsr4sKJPn",
+    "contrato": "TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC",
+    "trxEnviado": 0,
+    "transferencias": [
+     {
+      "token": "USDT",
+      "de": "TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC",
+      "a": "TWoDWB7PjgWgBZeE2Qr29sNmXoN8Zi91Qd",
+      "cantidad": 115746.503453
+     },
+     {
+      "token": "USDT",
+      "de": "TD5FFCqNv59m3xq9DPCFGbx5NXiZCF3Fuc",
+      "a": "TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC",
+      "cantidad": 115753.690638
+     }
+    ],
+    "internas": [],
+    "error": null
+   },
+   "coincide": true,
+   "comprobaciones": {
+    "transferencia": true,
+    "salidaMismaTx": true,
+    "trxEnviado": null
+   }
+  },
+  {
+   "grupo": "Chainflip",
+   "caso": "tramo 5 deposito con salida en la misma transaccion",
+   "tx": "5698a3ed60279758ee3a05ffb1d536e715cf0bd6eea9794bbf10900f601883ec",
+   "espera": {
+    "token": "USDT",
+    "de": "TWovqEnRyXSPnTGEcSmibrstRvtL1qeXqZ",
+    "a": "TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC",
+    "cantidad": 112887.149798
+   },
+   "espera2": {
+    "token": "USDT",
+    "a": "TFf4eXVn62k8wDyKf4kcHEzTJE8GXF74ZZ",
+    "cantidad": 112879.961974
+   },
+   "leido": {
+    "tx": "5698a3ed60279758ee3a05ffb1d536e715cf0bd6eea9794bbf10900f601883ec",
+    "estado": "SUCCESS",
+    "hora": "2026-10-31T06:46:27.000Z",
+    "bloque": 87585256,
+    "tipo": "TriggerSmartContract",
+    "remitente": "TRLTBf262j7LCV4XVrGR98eFBXURRX8hEK",
+    "contrato": "TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC",
+    "trxEnviado": 0,
+    "transferencias": [
+     {
+      "token": "USDT",
+      "de": "TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC",
+      "a": "TFf4eXVn62k8wDyKf4kcHEzTJE8GXF74ZZ",
+      "cantidad": 112879.961974
+     },
+     {
+      "token": "USDT",
+      "de": "TWovqEnRyXSPnTGEcSmibrstRvtL1qeXqZ",
+      "a": "TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC",
+      "cantidad": 112887.149798
+     }
+    ],
+    "internas": [],
+    "error": null
+   },
+   "coincide": true,
+   "comprobaciones": {
+    "transferencia": true,
+    "salidaMismaTx": true,
+    "trxEnviado": null
+   }
+  },
+  {
+   "grupo": "Chainflip",
+   "caso": "tramo 5 deposito con salida en la misma transaccion",
+   "tx": "aaf75923f12fd58b98f7fe0d42f1687d50b01f84bb089af37729dd27993c027c",
+   "espera": {
+    "token": "USDT",
+    "de": "TTwZXJm4f8d7UMXuhT7i2zZcEMEFr2a7Xo",
+    "a": "TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC",
+    "cantidad": 107525.405049
+   },
+   "espera2": {
+    "token": "USDT",
+    "a": "THVV48XiNden66ZBiU6twUY5DDDVcqKPui",
+    "cantidad": 107518.217511
+   },
+   "leido": {
+    "tx": "aaf75923f12fd58b98f7fe0d42f1687d50b01f84bb089af37729dd27993c027c",
+    "estado": "SUCCESS",
+    "hora": "2026-10-31T06:34:51.000Z",
+    "bloque": 87585024,
+    "tipo": "TriggerSmartContract",
+    "remitente": "TRLTBf262j7LCV4XVrGR98eFBXURRX8hEK",
+    "contrato": "TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC",
+    "trxEnviado": 0,
+    "transferencias": [
+     {
+      "token": "USDT",
+      "de": "TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC",
+      "a": "THVV48XiNden66ZBiU6twUY5DDDVcqKPui",
+      "cantidad": 107518.217511
+     },
+     {
+      "token": "USDT",
+      "de": "TTwZXJm4f8d7UMXuhT7i2zZcEMEFr2a7Xo",
+      "a": "TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC",
+      "cantidad": 107525.405049
+     }
+    ],
+    "internas": [],
+    "error": null
+   },
+   "coincide": true,
+   "comprobaciones": {
+    "transferencia": true,
+    "salidaMismaTx": true,
+    "trxEnviado": null
+   }
+  },
+  {
+   "grupo": "Chainflip",
+   "caso": "tramo 5 deposito con salida en la misma transaccion",
+   "tx": "6e4c4c2ad96fb73139caf5a15955afec646a1e11730224c94d70277254d9f082",
+   "espera": {
+    "token": "USDT",
+    "de": "TBjdybw2ncfyUrNDB5KgVp3nZ6uY2NDmt4",
+    "a": "TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC",
+    "cantidad": 104501.7701
+   },
+   "espera2": {
+    "token": "USDT",
+    "a": "TYoKc1fG4yWTt4zxJyXUsrnotr322FwVFj",
+    "cantidad": 7233.444542
+   },
+   "leido": {
+    "tx": "6e4c4c2ad96fb73139caf5a15955afec646a1e11730224c94d70277254d9f082",
+    "estado": "SUCCESS",
+    "hora": "2026-10-31T06:04:15.000Z",
+    "bloque": 87584412,
+    "tipo": "TriggerSmartContract",
+    "remitente": "TXgTNd9eBgPbMd472oXa9ANB1xAdoj7oXL",
+    "contrato": "TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC",
+    "trxEnviado": 0,
+    "transferencias": [
+     {
+      "token": "USDT",
+      "de": "TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC",
+      "a": "TYoKc1fG4yWTt4zxJyXUsrnotr322FwVFj",
+      "cantidad": 7233.444542
+     },
+     {
+      "token": "USDT",
+      "de": "TBjdybw2ncfyUrNDB5KgVp3nZ6uY2NDmt4",
+      "a": "TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC",
+      "cantidad": 104501.7701
+     }
+    ],
+    "internas": [],
+    "error": null
+   },
+   "coincide": true,
+   "comprobaciones": {
+    "transferencia": true,
+    "salidaMismaTx": true,
+    "trxEnviado": null
+   }
+  },
+  {
+   "grupo": "Chainflip",
+   "caso": "tramo 5 deposito con salida en la misma transaccion",
+   "tx": "31e70aebb73a761e78e7125582811b25cb45ac6d156ad3b57b5a7ca59a4a025e",
+   "espera": {
+    "token": "USDT",
+    "de": "TUt42mPYvpuFHE54dZZRTuHusncqXSxjz9",
+    "a": "TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC",
+    "cantidad": 100040.457516
+   },
+   "espera2": {
+    "token": "USDT",
+    "a": "TNbPMoZQQdSynD7sD7MjZQeiQqCRKc2iPA",
+    "cantidad": 100033.2707
+   },
+   "leido": {
+    "tx": "31e70aebb73a761e78e7125582811b25cb45ac6d156ad3b57b5a7ca59a4a025e",
+    "estado": "SUCCESS",
+    "hora": "2026-10-31T05:36:36.000Z",
+    "bloque": 87583861,
+    "tipo": "TriggerSmartContract",
+    "remitente": "TT9UMJT52Uf5Z2d92e3WJs2rkZiuxFDq87",
+    "contrato": "TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC",
+    "trxEnviado": 0,
+    "transferencias": [
+     {
+      "token": "USDT",
+      "de": "TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC",
+      "a": "TNbPMoZQQdSynD7sD7MjZQeiQqCRKc2iPA",
+      "cantidad": 100033.2707
+     },
+     {
+      "token": "USDT",
+      "de": "TUt42mPYvpuFHE54dZZRTuHusncqXSxjz9",
+      "a": "TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC",
+      "cantidad": 100040.457516
+     }
+    ],
+    "internas": [],
+    "error": null
+   },
+   "coincide": true,
+   "comprobaciones": {
+    "transferencia": true,
+    "salidaMismaTx": true,
+    "trxEnviado": null
+   }
+  },
+  {
+   "grupo": "Chainflip",
+   "caso": "tramo 5 deposito con salida en la misma transaccion",
+   "tx": "ce15b043cafa95e8a8ae6c39d266bb89e984c208e45c08c3f7af168eb391e1e1",
+   "espera": {
+    "token": "USDT",
+    "de": "THpLMBsGRK62TEDzr7E3mNdqWd97ZCuFW5",
+    "a": "TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC",
+    "cantidad": 99983.926128
+   },
+   "espera2": {
+    "token": "USDT",
+    "a": "TA1CCCXhYtAb2x7ghPCtxw9GfQu2H3GZYU",
+    "cantidad": 99975.363149
+   },
+   "leido": {
+    "tx": "ce15b043cafa95e8a8ae6c39d266bb89e984c208e45c08c3f7af168eb391e1e1",
+    "estado": "SUCCESS",
+    "hora": "2026-10-31T05:19:12.000Z",
+    "bloque": 87583513,
+    "tipo": "TriggerSmartContract",
+    "remitente": "TDwpWtUBWupyRcCDdU3NEu9AWp4Zyqux9q",
+    "contrato": "TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC",
+    "trxEnviado": 0,
+    "transferencias": [
+     {
+      "token": "USDT",
+      "de": "TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC",
+      "a": "TA1CCCXhYtAb2x7ghPCtxw9GfQu2H3GZYU",
+      "cantidad": 99975.363149
+     },
+     {
+      "token": "USDT",
+      "de": "THpLMBsGRK62TEDzr7E3mNdqWd97ZCuFW5",
+      "a": "TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC",
+      "cantidad": 99983.926128
+     }
+    ],
+    "internas": [],
+    "error": null
+   },
+   "coincide": true,
+   "comprobaciones": {
+    "transferencia": true,
+    "salidaMismaTx": true,
+    "trxEnviado": null
+   }
+  },
+  {
+   "grupo": "Chainflip",
+   "caso": "tramo 5 deposito con salida en la misma transaccion",
+   "tx": "e915daddda4366ad6bb8d82100936f5db4b6b44d385aea3d2680ee3593db7f7b",
+   "espera": {
+    "token": "USDT",
+    "de": "TXqrMQWTqkAJ6Z5ssxc6V69TZKVTkL1Bps",
+    "a": "TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC",
+    "cantidad": 99630.758229
+   },
+   "espera2": {
+    "token": "USDT",
+    "a": "TQBuZ63bQ1knbu9opyfW26v9XGtAdFKzeV",
+    "cantidad": 8106.85185
+   },
+   "leido": {
+    "tx": "e915daddda4366ad6bb8d82100936f5db4b6b44d385aea3d2680ee3593db7f7b",
+    "estado": "SUCCESS",
+    "hora": "2026-10-31T09:35:15.000Z",
+    "bloque": 87588632,
+    "tipo": "TriggerSmartContract",
+    "remitente": "TSPVndL2R5hNt5XebGDMcQYJNALhuNGvMK",
+    "contrato": "TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC",
+    "trxEnviado": 0,
+    "transferencias": [
+     {
+      "token": "USDT",
+      "de": "TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC",
+      "a": "TQBuZ63bQ1knbu9opyfW26v9XGtAdFKzeV",
+      "cantidad": 8106.85185
+     },
+     {
+      "token": "USDT",
+      "de": "TXqrMQWTqkAJ6Z5ssxc6V69TZKVTkL1Bps",
+      "a": "TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC",
+      "cantidad": 99630.758229
+     }
+    ],
+    "internas": [],
+    "error": null
+   },
+   "coincide": true,
+   "comprobaciones": {
+    "transferencia": true,
+    "salidaMismaTx": true,
+    "trxEnviado": null
+   }
+  },
+  {
+   "grupo": "Chainflip",
+   "caso": "tramo 5 deposito con salida en la misma transaccion",
+   "tx": "c1ba9e13a53569743bec79dfd5b82da66984faa64a301c74753f1e3d72e7965d",
+   "espera": {
+    "token": "USDT",
+    "de": "TWDAB1azrW1npPVgVs8JTLSzQwHWHW34LS",
+    "a": "TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC",
+    "cantidad": 99321.965189
+   },
+   "espera2": {
+    "token": "USDT",
+    "a": "TW7hC4Y89n4W7g3XoBQ5wUeXQ8dG3ZavZF",
+    "cantidad": 99314.777402
+   },
+   "leido": {
+    "tx": "c1ba9e13a53569743bec79dfd5b82da66984faa64a301c74753f1e3d72e7965d",
+    "estado": "SUCCESS",
+    "hora": "2026-10-31T07:32:36.000Z",
+    "bloque": 87586179,
+    "tipo": "TriggerSmartContract",
+    "remitente": "TLRDq4b3vTH1DKnHfFMi4wVByiTh9BpGdP",
+    "contrato": "TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC",
+    "trxEnviado": 0,
+    "transferencias": [
+     {
+      "token": "USDT",
+      "de": "TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC",
+      "a": "TW7hC4Y89n4W7g3XoBQ5wUeXQ8dG3ZavZF",
+      "cantidad": 99314.777402
+     },
+     {
+      "token": "USDT",
+      "de": "TWDAB1azrW1npPVgVs8JTLSzQwHWHW34LS",
+      "a": "TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC",
+      "cantidad": 99321.965189
+     }
+    ],
+    "internas": [],
+    "error": null
+   },
+   "coincide": true,
+   "comprobaciones": {
+    "transferencia": true,
+    "salidaMismaTx": true,
+    "trxEnviado": null
+   }
+  },
+  {
+   "grupo": "Chainflip",
+   "caso": "tramo 5 deposito con salida en la misma transaccion",
+   "tx": "88db30e05a2d2bd5a2fb777a9ff97d5ec8bbd41e91d11fb64ea8b32a15f48163",
+   "espera": {
+    "token": "USDT",
+    "de": "TJHetvgzLkqAmPSi34V1QbifPxfr4P1M4P",
+    "a": "TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC",
+    "cantidad": 97647.778499
+   },
+   "espera2": {
+    "token": "USDT",
+    "a": "TGiJ2tD4D6YbgqzbvpxdQYA8BQiED2MkP2",
+    "cantidad": 97640.590862
+   },
+   "leido": {
+    "tx": "88db30e05a2d2bd5a2fb777a9ff97d5ec8bbd41e91d11fb64ea8b32a15f48163",
+    "estado": "SUCCESS",
+    "hora": "2026-10-31T06:57:18.000Z",
+    "bloque": 87585473,
+    "tipo": "TriggerSmartContract",
+    "remitente": "TLRDq4b3vTH1DKnHfFMi4wVByiTh9BpGdP",
+    "contrato": "TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC",
+    "trxEnviado": 0,
+    "transferencias": [
+     {
+      "token": "USDT",
+      "de": "TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC",
+      "a": "TGiJ2tD4D6YbgqzbvpxdQYA8BQiED2MkP2",
+      "cantidad": 97640.590862
+     },
+     {
+      "token": "USDT",
+      "de": "TJHetvgzLkqAmPSi34V1QbifPxfr4P1M4P",
+      "a": "TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC",
+      "cantidad": 97647.778499
+     }
+    ],
+    "internas": [],
+    "error": null
+   },
+   "coincide": true,
+   "comprobaciones": {
+    "transferencia": true,
+    "salidaMismaTx": true,
+    "trxEnviado": null
+   }
+  },
+  {
+   "grupo": "Chainflip",
+   "caso": "tramo 5 deposito con salida en la misma transaccion",
+   "tx": "74d8b9af289c0813f85da3f5b3d0b18a4916b6693de1be87438852e722c0505a",
+   "espera": {
+    "token": "USDT",
+    "de": "TRBY7z2eYDfXDBHDYL25RL9cdr1RyXUAo8",
+    "a": "TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC",
+    "cantidad": 56709
+   },
+   "espera2": {
+    "token": "USDT",
+    "a": "THjgeZ3QZyBE8aRwoz7NPQKZYoGhpyHt4U",
+    "cantidad": 56701.812745
+   },
+   "leido": {
+    "tx": "74d8b9af289c0813f85da3f5b3d0b18a4916b6693de1be87438852e722c0505a",
+    "estado": "SUCCESS",
+    "hora": "2026-10-31T09:01:27.000Z",
+    "bloque": 87587956,
+    "tipo": "TriggerSmartContract",
+    "remitente": "TPyWA7U7fdv5R4V9nmbYAktXDutsbkRut2",
+    "contrato": "TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC",
+    "trxEnviado": 0,
+    "transferencias": [
+     {
+      "token": "USDT",
+      "de": "TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC",
+      "a": "THjgeZ3QZyBE8aRwoz7NPQKZYoGhpyHt4U",
+      "cantidad": 56701.812745
+     },
+     {
+      "token": "USDT",
+      "de": "TRBY7z2eYDfXDBHDYL25RL9cdr1RyXUAo8",
+      "a": "TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC",
+      "cantidad": 56709
+     }
+    ],
+    "internas": [],
+    "error": null
+   },
+   "coincide": true,
+   "comprobaciones": {
+    "transferencia": true,
+    "salidaMismaTx": true,
+    "trxEnviado": null
+   }
+  },
+  {
+   "grupo": "Chainflip",
+   "caso": "tramo 5 deposito con salida en la misma transaccion",
+   "tx": "9408f97f689e8a4ed0cd42ed5d0a153454841a0ab06d99f4d99691b5622f4383",
+   "espera": {
+    "token": "USDT",
+    "de": "TEgR2V6ZkuR2WpSaYTcy7mXy9XHJ1eJrY2",
+    "a": "TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC",
+    "cantidad": 47456.976678
+   },
+   "espera2": {
+    "token": "USDT",
+    "a": "TSMmauZn7PZBuy3WBRokSQxRgVJcXyBkH1",
+    "cantidad": 47440.24165
+   },
+   "leido": {
+    "tx": "9408f97f689e8a4ed0cd42ed5d0a153454841a0ab06d99f4d99691b5622f4383",
+    "estado": "SUCCESS",
+    "hora": "2026-10-31T11:56:15.000Z",
+    "bloque": 87591452,
+    "tipo": "TriggerSmartContract",
+    "remitente": "TYU88zK91HUUa9DRv17YbhpVt7j6ghd2oK",
+    "contrato": "TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC",
+    "trxEnviado": 0,
+    "transferencias": [
+     {
+      "token": "USDT",
+      "de": "TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC",
+      "a": "TSMmauZn7PZBuy3WBRokSQxRgVJcXyBkH1",
+      "cantidad": 47440.24165
+     },
+     {
+      "token": "USDT",
+      "de": "TEgR2V6ZkuR2WpSaYTcy7mXy9XHJ1eJrY2",
+      "a": "TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC",
+      "cantidad": 47456.976678
+     }
+    ],
+    "internas": [],
+    "error": null
+   },
+   "coincide": true,
+   "comprobaciones": {
+    "transferencia": true,
+    "salidaMismaTx": true,
+    "trxEnviado": null
+   }
+  },
+  {
+   "grupo": "Chainflip",
+   "caso": "tramo 5 deposito con salida en la misma transaccion",
+   "tx": "b8085efc7f346c44cd390346051c30add4fddcd51801d14a9d0db7438d7c881c",
+   "espera": {
+    "token": "USDT",
+    "de": "TAGMSnRr9Si2fDTfczyGNmtEgXJ3NynBfD",
+    "a": "TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC",
+    "cantidad": 56147.265909
+   },
+   "espera2": {
+    "token": "USDT",
+    "a": "TKajHEXubunyfQr9Uo9du2EWxdbRs7xwxf",
+    "cantidad": 56120.912478
+   },
+   "leido": {
+    "tx": "b8085efc7f346c44cd390346051c30add4fddcd51801d14a9d0db7438d7c881c",
+    "estado": "SUCCESS",
+    "hora": "2026-10-31T12:00:18.000Z",
+    "bloque": 87591531,
+    "tipo": "TriggerSmartContract",
+    "remitente": "TYU88zK91HUUa9DRv17YbhpVt7j6ghd2oK",
+    "contrato": "TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC",
+    "trxEnviado": 0,
+    "transferencias": [
+     {
+      "token": "USDT",
+      "de": "TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC",
+      "a": "TKajHEXubunyfQr9Uo9du2EWxdbRs7xwxf",
+      "cantidad": 56120.912478
+     },
+     {
+      "token": "USDT",
+      "de": "TAGMSnRr9Si2fDTfczyGNmtEgXJ3NynBfD",
+      "a": "TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC",
+      "cantidad": 56147.265909
+     }
+    ],
+    "internas": [],
+    "error": null
+   },
+   "coincide": true,
+   "comprobaciones": {
+    "transferencia": true,
+    "salidaMismaTx": true,
+    "trxEnviado": null
+   }
+  },
+  {
+   "grupo": "Chainflip",
+   "caso": "tramo 5 deposito con salida en la misma transaccion",
+   "tx": "6780a35ad14c28ac055c52349aaacc3f3c676360060510af22380ae3653ff0c6",
+   "espera": {
+    "token": "USDT",
+    "de": "TEVVgrsTJRwZYmwZi8fjwJddFy8kPVqDiZ",
+    "a": "TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC",
+    "cantidad": 58542.693697
+   },
+   "espera2": {
+    "token": "USDT",
+    "a": "TNq989q63Moq2rSYBGfAzXLhKhAU1mwnAj",
+    "cantidad": 58535.506495
+   },
+   "leido": {
+    "tx": "6780a35ad14c28ac055c52349aaacc3f3c676360060510af22380ae3653ff0c6",
+    "estado": "SUCCESS",
+    "hora": "2026-10-31T09:49:06.000Z",
+    "bloque": 87588909,
+    "tipo": "TriggerSmartContract",
+    "remitente": "TSPVndL2R5hNt5XebGDMcQYJNALhuNGvMK",
+    "contrato": "TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC",
+    "trxEnviado": 0,
+    "transferencias": [
+     {
+      "token": "USDT",
+      "de": "TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC",
+      "a": "TNq989q63Moq2rSYBGfAzXLhKhAU1mwnAj",
+      "cantidad": 58535.506495
+     },
+     {
+      "token": "USDT",
+      "de": "TEVVgrsTJRwZYmwZi8fjwJddFy8kPVqDiZ",
+      "a": "TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC",
+      "cantidad": 58542.693697
+     }
+    ],
+    "internas": [],
+    "error": null
+   },
+   "coincide": true,
+   "comprobaciones": {
+    "transferencia": true,
+    "salidaMismaTx": true,
+    "trxEnviado": null
+   }
+  },
+  {
+   "grupo": "Symbiosis",
+   "caso": "tramo 5 envio al MetaRouter",
+   "tx": "d0e3531433ba0ea2fa76e3bf9291748631e2d42f2fb06ac22d3cbdacde937820",
+   "esperaTrx": {
+    "de": "TA4iZnpvJATkFc85XPat8mrjRNjXf2GDoU",
+    "cantidad": 33000
+   },
+   "espera": null,
+   "leido": {
+    "tx": "d0e3531433ba0ea2fa76e3bf9291748631e2d42f2fb06ac22d3cbdacde937820",
+    "estado": "SUCCESS",
+    "hora": "2026-10-31T12:28:03.000Z",
+    "bloque": 87592086,
+    "tipo": "TriggerSmartContract",
+    "remitente": "TA4iZnpvJATkFc85XPat8mrjRNjXf2GDoU",
+    "contrato": "TPuaJ6gnYfE9gLUDFrbWbPx3tMnjG8max1",
+    "trxEnviado": 33000,
+    "transferencias": [
+     {
+      "token": "USDT",
+      "de": "TUyTiAkE5R5GF9MrDW9oTWPCqYai42ngTc",
+      "a": "TD4tamFrCq7KvQEB1LArNXr9sKFC6GaAmt",
+      "cantidad": 10589.79959
+     },
+     {
+      "token": "USDT",
+      "de": "TYmb1NaNsehpXcsnV19zpAcZ56V4k1NLJ9",
+      "a": "TUyTiAkE5R5GF9MrDW9oTWPCqYai42ngTc",
+      "cantidad": 10589.79959
+     },
+     {
+      "token": "USDT",
+      "de": "TQqgNg13s2DjvXhW1ky4v6TsR8wZGvb7Y4",
+      "a": "TYmb1NaNsehpXcsnV19zpAcZ56V4k1NLJ9",
+      "cantidad": 10589.79959
+     },
+     {
+      "token": "TNUC9Qb1rRpS5CbWLmNMxXBjyFoydXjWFR",
+      "de": "TQqgNg13s2DjvXhW1ky4v6TsR8wZGvb7Y4",
+      "a": "TSUUVjysXV8YqHytSNjfkNXnnB49QDvZpx",
+      "cantidad": "33000000000"
+     },
+     {
+      "token": "USDT",
+      "de": "TSUUVjysXV8YqHytSNjfkNXnnB49QDvZpx",
+      "a": "TQqgNg13s2DjvXhW1ky4v6TsR8wZGvb7Y4",
+      "cantidad": 10589.79959
+     }
+    ],
+    "internas": [
+     {
+      "de": "TPuaJ6gnYfE9gLUDFrbWbPx3tMnjG8max1",
+      "a": "TUyTiAkE5R5GF9MrDW9oTWPCqYai42ngTc",
+      "trx": 33000
+     },
+     {
+      "de": "TUyTiAkE5R5GF9MrDW9oTWPCqYai42ngTc",
+      "a": "TYmb1NaNsehpXcsnV19zpAcZ56V4k1NLJ9",
+      "trx": 33000
+     },
+     {
+      "de": "TYmb1NaNsehpXcsnV19zpAcZ56V4k1NLJ9",
+      "a": "TQqgNg13s2DjvXhW1ky4v6TsR8wZGvb7Y4",
+      "trx": 33000
+     },
+     {
+      "de": "TQqgNg13s2DjvXhW1ky4v6TsR8wZGvb7Y4",
+      "a": "TNUC9Qb1rRpS5CbWLmNMxXBjyFoydXjWFR",
+      "trx": 33000
+     }
+    ],
+    "error": null
+   },
+   "coincide": true,
+   "comprobaciones": {
+    "transferencia": null,
+    "salidaMismaTx": null,
+    "trxEnviado": true
+   }
+  },
+  {
+   "grupo": "Symbiosis",
+   "caso": "tramo 5 devolucion a la misma billetera",
+   "tx": "03bdbd1c70aa55ad8badf28677f55b20925339ec69cfd354c04580fbca4d5fdc",
+   "espera": {
+    "token": "USDT",
+    "a": "TA4iZnpvJATkFc85XPat8mrjRNjXf2GDoU",
+    "cantidad": 10586.29959
+   },
+   "mismaBilletera": true,
+   "leido": {
+    "tx": "03bdbd1c70aa55ad8badf28677f55b20925339ec69cfd354c04580fbca4d5fdc",
+    "estado": "SUCCESS",
+    "hora": "2026-10-31T12:44:12.000Z",
+    "bloque": 87592409,
+    "tipo": "TriggerSmartContract",
+    "remitente": "TKSyjU1syKL2gmGZbpexiYZkvcbk6jqAtf",
+    "contrato": "TQDdx5hH1E6KBXdvTiYH39b3B9cTTw1wtn",
+    "trxEnviado": 0,
+    "transferencias": [
+     {
+      "token": "USDT",
+      "de": "TD4tamFrCq7KvQEB1LArNXr9sKFC6GaAmt",
+      "a": "TQDdx5hH1E6KBXdvTiYH39b3B9cTTw1wtn",
+      "cantidad": 3.5
+     },
+     {
+      "token": "USDT",
+      "de": "TD4tamFrCq7KvQEB1LArNXr9sKFC6GaAmt",
+      "a": "TA4iZnpvJATkFc85XPat8mrjRNjXf2GDoU",
+      "cantidad": 10586.29959
+     }
+    ],
+    "internas": [],
+    "error": null
+   },
+   "coincide": true,
+   "comprobaciones": {
+    "transferencia": true,
+    "salidaMismaTx": null,
+    "trxEnviado": null
+   }
+  },
+  {
+   "grupo": "Symbiosis",
+   "caso": "tramo 5 envio al MetaRouter",
+   "tx": "571ea8c9b1144c6d9fd94bfc2d04826ee91a7846a900b4a3099af22b4029b6cd",
+   "esperaTrx": {
+    "de": "TUHVF83msiguVSK6Wn4gviW1YyfhXw1mnQ",
+    "cantidad": 112234
+   },
+   "espera": null,
+   "leido": {
+    "tx": "571ea8c9b1144c6d9fd94bfc2d04826ee91a7846a900b4a3099af22b4029b6cd",
+    "estado": "SUCCESS",
+    "hora": "2026-10-31T20:32:39.000Z",
+    "bloque": 87601776,
+    "tipo": "TriggerSmartContract",
+    "remitente": "TUHVF83msiguVSK6Wn4gviW1YyfhXw1mnQ",
+    "contrato": "TPuaJ6gnYfE9gLUDFrbWbPx3tMnjG8max1",
+    "trxEnviado": 112234,
+    "transferencias": [
+     {
+      "token": "USDT",
+      "de": "TUyTiAkE5R5GF9MrDW9oTWPCqYai42ngTc",
+      "a": "TD4tamFrCq7KvQEB1LArNXr9sKFC6GaAmt",
+      "cantidad": 34242.41934
+     },
+     {
+      "token": "USDT",
+      "de": "TYmb1NaNsehpXcsnV19zpAcZ56V4k1NLJ9",
+      "a": "TUyTiAkE5R5GF9MrDW9oTWPCqYai42ngTc",
+      "cantidad": 34242.41934
+     },
+     {
+      "token": "USDT",
+      "de": "TQqgNg13s2DjvXhW1ky4v6TsR8wZGvb7Y4",
+      "a": "TYmb1NaNsehpXcsnV19zpAcZ56V4k1NLJ9",
+      "cantidad": 34242.41934
+     },
+     {
+      "token": "USDT",
+      "de": "TVjuTE3V5bMVdpfNhid8kD2v35T2k1u1Br",
+      "a": "TQqgNg13s2DjvXhW1ky4v6TsR8wZGvb7Y4",
+      "cantidad": 34242.41934
+     }
+    ],
+    "internas": [
+     {
+      "de": "TPuaJ6gnYfE9gLUDFrbWbPx3tMnjG8max1",
+      "a": "TUyTiAkE5R5GF9MrDW9oTWPCqYai42ngTc",
+      "trx": 112234
+     },
+     {
+      "de": "TUyTiAkE5R5GF9MrDW9oTWPCqYai42ngTc",
+      "a": "TYmb1NaNsehpXcsnV19zpAcZ56V4k1NLJ9",
+      "trx": 112234
+     },
+     {
+      "de": "TYmb1NaNsehpXcsnV19zpAcZ56V4k1NLJ9",
+      "a": "TQqgNg13s2DjvXhW1ky4v6TsR8wZGvb7Y4",
+      "trx": 112234
+     },
+     {
+      "de": "TQqgNg13s2DjvXhW1ky4v6TsR8wZGvb7Y4",
+      "a": "TVjuTE3V5bMVdpfNhid8kD2v35T2k1u1Br",
+      "trx": 112234
+     }
+    ],
+    "error": null
+   },
+   "coincide": true,
+   "comprobaciones": {
+    "transferencia": null,
+    "salidaMismaTx": null,
+    "trxEnviado": true
+   }
+  },
+  {
+   "grupo": "Symbiosis",
+   "caso": "tramo 5 devolucion a la misma billetera",
+   "tx": "ee598298fb0f13595a394fd8aa417e39987192f9e983a499679b5a6a23202df3",
+   "espera": {
+    "token": "USDT",
+    "a": "TUHVF83msiguVSK6Wn4gviW1YyfhXw1mnQ",
+    "cantidad": 34238.91934
+   },
+   "mismaBilletera": true,
+   "leido": {
+    "tx": "ee598298fb0f13595a394fd8aa417e39987192f9e983a499679b5a6a23202df3",
+    "estado": "SUCCESS",
+    "hora": "2026-10-31T20:48:09.000Z",
+    "bloque": 87602086,
+    "tipo": "TriggerSmartContract",
+    "remitente": "TKSyjU1syKL2gmGZbpexiYZkvcbk6jqAtf",
+    "contrato": "TQDdx5hH1E6KBXdvTiYH39b3B9cTTw1wtn",
+    "trxEnviado": 0,
+    "transferencias": [
+     {
+      "token": "USDT",
+      "de": "TD4tamFrCq7KvQEB1LArNXr9sKFC6GaAmt",
+      "a": "TQDdx5hH1E6KBXdvTiYH39b3B9cTTw1wtn",
+      "cantidad": 3.5
+     },
+     {
+      "token": "USDT",
+      "de": "TD4tamFrCq7KvQEB1LArNXr9sKFC6GaAmt",
+      "a": "TUHVF83msiguVSK6Wn4gviW1YyfhXw1mnQ",
+      "cantidad": 34238.91934
+     }
+    ],
+    "internas": [],
+    "error": null
+   },
+   "coincide": true,
+   "comprobaciones": {
+    "transferencia": true,
+    "salidaMismaTx": null,
+    "trxEnviado": null
+   }
+  },
+  {
+   "grupo": "Symbiosis",
+   "caso": "tramo 5 envio al MetaRouter",
+   "tx": "6c96fc6011dedfd091ff9493b96c5a64786b3513645757a928267baa489ed2c3",
+   "esperaTrx": {
+    "de": "TMpoA8sWYFPZvF9NikJK43WmaxdZYpDfoJ",
+    "cantidad": 70000
+   },
+   "espera": null,
+   "leido": {
+    "tx": "6c96fc6011dedfd091ff9493b96c5a64786b3513645757a928267baa489ed2c3",
+    "estado": "SUCCESS",
+    "hora": "2026-10-31T07:37:39.000Z",
+    "bloque": 87586280,
+    "tipo": "TriggerSmartContract",
+    "remitente": "TMpoA8sWYFPZvF9NikJK43WmaxdZYpDfoJ",
+    "contrato": "TPuaJ6gnYfE9gLUDFrbWbPx3tMnjG8max1",
+    "trxEnviado": 70000,
+    "transferencias": [
+     {
+      "token": "USDT",
+      "de": "TUyTiAkE5R5GF9MrDW9oTWPCqYai42ngTc",
+      "a": "TD4tamFrCq7KvQEB1LArNXr9sKFC6GaAmt",
+      "cantidad": 22895.892884
+     },
+     {
+      "token": "USDT",
+      "de": "TYmb1NaNsehpXcsnV19zpAcZ56V4k1NLJ9",
+      "a": "TUyTiAkE5R5GF9MrDW9oTWPCqYai42ngTc",
+      "cantidad": 22895.892884
+     },
+     {
+      "token": "USDT",
+      "de": "TQqgNg13s2DjvXhW1ky4v6TsR8wZGvb7Y4",
+      "a": "TYmb1NaNsehpXcsnV19zpAcZ56V4k1NLJ9",
+      "cantidad": 22895.892884
+     },
+     {
+      "token": "TNUC9Qb1rRpS5CbWLmNMxXBjyFoydXjWFR",
+      "de": "TQqgNg13s2DjvXhW1ky4v6TsR8wZGvb7Y4",
+      "a": "TSUUVjysXV8YqHytSNjfkNXnnB49QDvZpx",
+      "cantidad": "70000000000"
+     },
+     {
+      "token": "USDT",
+      "de": "TSUUVjysXV8YqHytSNjfkNXnnB49QDvZpx",
+      "a": "TQqgNg13s2DjvXhW1ky4v6TsR8wZGvb7Y4",
+      "cantidad": 22895.892884
+     }
+    ],
+    "internas": [
+     {
+      "de": "TPuaJ6gnYfE9gLUDFrbWbPx3tMnjG8max1",
+      "a": "TUyTiAkE5R5GF9MrDW9oTWPCqYai42ngTc",
+      "trx": 70000
+     },
+     {
+      "de": "TUyTiAkE5R5GF9MrDW9oTWPCqYai42ngTc",
+      "a": "TYmb1NaNsehpXcsnV19zpAcZ56V4k1NLJ9",
+      "trx": 70000
+     },
+     {
+      "de": "TYmb1NaNsehpXcsnV19zpAcZ56V4k1NLJ9",
+      "a": "TQqgNg13s2DjvXhW1ky4v6TsR8wZGvb7Y4",
+      "trx": 70000
+     },
+     {
+      "de": "TQqgNg13s2DjvXhW1ky4v6TsR8wZGvb7Y4",
+      "a": "TNUC9Qb1rRpS5CbWLmNMxXBjyFoydXjWFR",
+      "trx": 70000
+     }
+    ],
+    "error": null
+   },
+   "coincide": true,
+   "comprobaciones": {
+    "transferencia": null,
+    "salidaMismaTx": null,
+    "trxEnviado": true
+   }
+  },
+  {
+   "grupo": "Symbiosis",
+   "caso": "tramo 5 devolucion a la misma billetera",
+   "tx": "67159382b87a74386d55b72257cf832142f08d2f7ad27a17779c30dcc9e002ee",
+   "espera": {
+    "token": "USDT",
+    "a": "TMpoA8sWYFPZvF9NikJK43WmaxdZYpDfoJ",
+    "cantidad": 22892.142884
+   },
+   "mismaBilletera": true,
+   "leido": {
+    "tx": "67159382b87a74386d55b72257cf832142f08d2f7ad27a17779c30dcc9e002ee",
+    "estado": "SUCCESS",
+    "hora": "2026-10-31T07:53:12.000Z",
+    "bloque": 87586591,
+    "tipo": "TriggerSmartContract",
+    "remitente": "TKSyjU1syKL2gmGZbpexiYZkvcbk6jqAtf",
+    "contrato": "TQDdx5hH1E6KBXdvTiYH39b3B9cTTw1wtn",
+    "trxEnviado": 0,
+    "transferencias": [
+     {
+      "token": "USDT",
+      "de": "TD4tamFrCq7KvQEB1LArNXr9sKFC6GaAmt",
+      "a": "TQDdx5hH1E6KBXdvTiYH39b3B9cTTw1wtn",
+      "cantidad": 3.75
+     },
+     {
+      "token": "USDT",
+      "de": "TD4tamFrCq7KvQEB1LArNXr9sKFC6GaAmt",
+      "a": "TMpoA8sWYFPZvF9NikJK43WmaxdZYpDfoJ",
+      "cantidad": 22892.142884
+     }
+    ],
+    "internas": [],
+    "error": null
+   },
+   "coincide": true,
+   "comprobaciones": {
+    "transferencia": true,
+    "salidaMismaTx": null,
+    "trxEnviado": null
+   }
+  },
+  {
+   "grupo": "Symbiosis",
+   "caso": "tramo 5 envio al MetaRouter",
+   "tx": "139c7ace9f33c10131a00a9fb8c148eae32f9bdaec0ec6ed2918b9d24766b219",
+   "esperaTrx": {
+    "de": "TRR434Rc4ju5b8KZ2ek7Vqond19j4LQLcZ",
+    "cantidad": 40000
+   },
+   "espera": null,
+   "leido": {
+    "tx": "139c7ace9f33c10131a00a9fb8c148eae32f9bdaec0ec6ed2918b9d24766b219",
+    "estado": "SUCCESS",
+    "hora": "2026-10-31T20:27:54.000Z",
+    "bloque": 87601681,
+    "tipo": "TriggerSmartContract",
+    "remitente": "TRR434Rc4ju5b8KZ2ek7Vqond19j4LQLcZ",
+    "contrato": "TPuaJ6gnYfE9gLUDFrbWbPx3tMnjG8max1",
+    "trxEnviado": 40000,
+    "transferencias": [
+     {
+      "token": "USDT",
+      "de": "TUyTiAkE5R5GF9MrDW9oTWPCqYai42ngTc",
+      "a": "TD4tamFrCq7KvQEB1LArNXr9sKFC6GaAmt",
+      "cantidad": 12211.587595
+     },
+     {
+      "token": "USDT",
+      "de": "TYmb1NaNsehpXcsnV19zpAcZ56V4k1NLJ9",
+      "a": "TUyTiAkE5R5GF9MrDW9oTWPCqYai42ngTc",
+      "cantidad": 12211.587595
+     },
+     {
+      "token": "USDT",
+      "de": "TQqgNg13s2DjvXhW1ky4v6TsR8wZGvb7Y4",
+      "a": "TYmb1NaNsehpXcsnV19zpAcZ56V4k1NLJ9",
+      "cantidad": 12211.587595
+     },
+     {
+      "token": "USDT",
+      "de": "TVjuTE3V5bMVdpfNhid8kD2v35T2k1u1Br",
+      "a": "TQqgNg13s2DjvXhW1ky4v6TsR8wZGvb7Y4",
+      "cantidad": 12211.587595
+     }
+    ],
+    "internas": [
+     {
+      "de": "TPuaJ6gnYfE9gLUDFrbWbPx3tMnjG8max1",
+      "a": "TUyTiAkE5R5GF9MrDW9oTWPCqYai42ngTc",
+      "trx": 40000
+     },
+     {
+      "de": "TUyTiAkE5R5GF9MrDW9oTWPCqYai42ngTc",
+      "a": "TYmb1NaNsehpXcsnV19zpAcZ56V4k1NLJ9",
+      "trx": 40000
+     },
+     {
+      "de": "TYmb1NaNsehpXcsnV19zpAcZ56V4k1NLJ9",
+      "a": "TQqgNg13s2DjvXhW1ky4v6TsR8wZGvb7Y4",
+      "trx": 40000
+     },
+     {
+      "de": "TQqgNg13s2DjvXhW1ky4v6TsR8wZGvb7Y4",
+      "a": "TVjuTE3V5bMVdpfNhid8kD2v35T2k1u1Br",
+      "trx": 40000
+     }
+    ],
+    "error": null
+   },
+   "coincide": true,
+   "comprobaciones": {
+    "transferencia": null,
+    "salidaMismaTx": null,
+    "trxEnviado": true
+   }
+  },
+  {
+   "grupo": "Symbiosis",
+   "caso": "tramo 5 devolucion a la misma billetera",
+   "tx": "a212cde2de30c264600da3430f475c263a169485e9dab4a1c6f65419d21e1b41",
+   "espera": {
+    "token": "USDT",
+    "a": "TRR434Rc4ju5b8KZ2ek7Vqond19j4LQLcZ",
+    "cantidad": 12208.087595
+   },
+   "mismaBilletera": true,
+   "leido": {
+    "tx": "a212cde2de30c264600da3430f475c263a169485e9dab4a1c6f65419d21e1b41",
+    "estado": "SUCCESS",
+    "hora": "2026-10-31T20:43:24.000Z",
+    "bloque": 87601991,
+    "tipo": "TriggerSmartContract",
+    "remitente": "TKSyjU1syKL2gmGZbpexiYZkvcbk6jqAtf",
+    "contrato": "TQDdx5hH1E6KBXdvTiYH39b3B9cTTw1wtn",
+    "trxEnviado": 0,
+    "transferencias": [
+     {
+      "token": "USDT",
+      "de": "TD4tamFrCq7KvQEB1LArNXr9sKFC6GaAmt",
+      "a": "TQDdx5hH1E6KBXdvTiYH39b3B9cTTw1wtn",
+      "cantidad": 3.5
+     },
+     {
+      "token": "USDT",
+      "de": "TD4tamFrCq7KvQEB1LArNXr9sKFC6GaAmt",
+      "a": "TRR434Rc4ju5b8KZ2ek7Vqond19j4LQLcZ",
+      "cantidad": 12208.087595
+     }
+    ],
+    "internas": [],
+    "error": null
+   },
+   "coincide": true,
+   "comprobaciones": {
+    "transferencia": true,
+    "salidaMismaTx": null,
+    "trxEnviado": null
+   }
+  },
+  {
+   "grupo": "Symbiosis",
+   "caso": "tramo 5 envio al MetaRouter",
+   "tx": "e54b88032b17d4efae034b1f9cf9abf594e576867fcb621e2fc4be03ffb5ab18",
+   "esperaTrx": {
+    "de": "TRR434Rc4ju5b8KZ2ek7Vqond19j4LQLcZ",
+    "cantidad": 35000
+   },
+   "espera": null,
+   "leido": {
+    "tx": "e54b88032b17d4efae034b1f9cf9abf594e576867fcb621e2fc4be03ffb5ab18",
+    "estado": "SUCCESS",
+    "hora": "2026-10-31T20:48:00.000Z",
+    "bloque": 87602083,
+    "tipo": "TriggerSmartContract",
+    "remitente": "TRR434Rc4ju5b8KZ2ek7Vqond19j4LQLcZ",
+    "contrato": "TPuaJ6gnYfE9gLUDFrbWbPx3tMnjG8max1",
+    "trxEnviado": 35000,
+    "transferencias": [
+     {
+      "token": "USDT",
+      "de": "TUyTiAkE5R5GF9MrDW9oTWPCqYai42ngTc",
+      "a": "TD4tamFrCq7KvQEB1LArNXr9sKFC6GaAmt",
+      "cantidad": 10668.794506
+     },
+     {
+      "token": "USDT",
+      "de": "TYmb1NaNsehpXcsnV19zpAcZ56V4k1NLJ9",
+      "a": "TUyTiAkE5R5GF9MrDW9oTWPCqYai42ngTc",
+      "cantidad": 10668.794506
+     },
+     {
+      "token": "USDT",
+      "de": "TQqgNg13s2DjvXhW1ky4v6TsR8wZGvb7Y4",
+      "a": "TYmb1NaNsehpXcsnV19zpAcZ56V4k1NLJ9",
+      "cantidad": 10668.794506
+     },
+     {
+      "token": "TNUC9Qb1rRpS5CbWLmNMxXBjyFoydXjWFR",
+      "de": "TQqgNg13s2DjvXhW1ky4v6TsR8wZGvb7Y4",
+      "a": "TSUUVjysXV8YqHytSNjfkNXnnB49QDvZpx",
+      "cantidad": "35000000000"
+     },
+     {
+      "token": "USDT",
+      "de": "TSUUVjysXV8YqHytSNjfkNXnnB49QDvZpx",
+      "a": "TQqgNg13s2DjvXhW1ky4v6TsR8wZGvb7Y4",
+      "cantidad": 10668.794506
+     }
+    ],
+    "internas": [
+     {
+      "de": "TPuaJ6gnYfE9gLUDFrbWbPx3tMnjG8max1",
+      "a": "TUyTiAkE5R5GF9MrDW9oTWPCqYai42ngTc",
+      "trx": 35000
+     },
+     {
+      "de": "TUyTiAkE5R5GF9MrDW9oTWPCqYai42ngTc",
+      "a": "TYmb1NaNsehpXcsnV19zpAcZ56V4k1NLJ9",
+      "trx": 35000
+     },
+     {
+      "de": "TYmb1NaNsehpXcsnV19zpAcZ56V4k1NLJ9",
+      "a": "TQqgNg13s2DjvXhW1ky4v6TsR8wZGvb7Y4",
+      "trx": 35000
+     },
+     {
+      "de": "TQqgNg13s2DjvXhW1ky4v6TsR8wZGvb7Y4",
+      "a": "TNUC9Qb1rRpS5CbWLmNMxXBjyFoydXjWFR",
+      "trx": 35000
+     }
+    ],
+    "error": null
+   },
+   "coincide": true,
+   "comprobaciones": {
+    "transferencia": null,
+    "salidaMismaTx": null,
+    "trxEnviado": true
+   }
+  },
+  {
+   "grupo": "Symbiosis",
+   "caso": "tramo 5 devolucion a la misma billetera",
+   "tx": "7a26144593f0c471aae2dde790140a503da6ea1b5ba52d407cab5d223bd7c744",
+   "espera": {
+    "token": "USDT",
+    "a": "TRR434Rc4ju5b8KZ2ek7Vqond19j4LQLcZ",
+    "cantidad": 10665.294506
+   },
+   "mismaBilletera": true,
+   "leido": {
+    "tx": "7a26144593f0c471aae2dde790140a503da6ea1b5ba52d407cab5d223bd7c744",
+    "estado": "SUCCESS",
+    "hora": "2026-10-31T21:03:06.000Z",
+    "bloque": 87602385,
+    "tipo": "TriggerSmartContract",
+    "remitente": "TKSyjU1syKL2gmGZbpexiYZkvcbk6jqAtf",
+    "contrato": "TQDdx5hH1E6KBXdvTiYH39b3B9cTTw1wtn",
+    "trxEnviado": 0,
+    "transferencias": [
+     {
+      "token": "USDT",
+      "de": "TD4tamFrCq7KvQEB1LArNXr9sKFC6GaAmt",
+      "a": "TQDdx5hH1E6KBXdvTiYH39b3B9cTTw1wtn",
+      "cantidad": 3.5
+     },
+     {
+      "token": "USDT",
+      "de": "TD4tamFrCq7KvQEB1LArNXr9sKFC6GaAmt",
+      "a": "TRR434Rc4ju5b8KZ2ek7Vqond19j4LQLcZ",
+      "cantidad": 10665.294506
+     }
+    ],
+    "internas": [],
+    "error": null
+   },
+   "coincide": true,
+   "comprobaciones": {
+    "transferencia": true,
+    "salidaMismaTx": null,
+    "trxEnviado": null
+   }
+  },
+  {
+   "grupo": "Symbiosis",
+   "caso": "tramo 5 envio al MetaRouter",
+   "tx": "252be0c4dcbe7ef12e0154687aeee31ba01b5719618f16232f213c21f02b2fc3",
+   "esperaTrx": {
+    "de": "TFHAsVkcvtB9Ug4eaGzTm6vxvmqjDBVheT",
+    "cantidad": 35000
+   },
+   "espera": null,
+   "leido": {
+    "tx": "252be0c4dcbe7ef12e0154687aeee31ba01b5719618f16232f213c21f02b2fc3",
+    "estado": "SUCCESS",
+    "hora": "2026-10-31T20:26:42.000Z",
+    "bloque": 87601657,
+    "tipo": "TriggerSmartContract",
+    "remitente": "TFHAsVkcvtB9Ug4eaGzTm6vxvmqjDBVheT",
+    "contrato": "TPuaJ6gnYfE9gLUDFrbWbPx3tMnjG8max1",
+    "trxEnviado": 35000,
+    "transferencias": [
+     {
+      "token": "USDT",
+      "de": "TUyTiAkE5R5GF9MrDW9oTWPCqYai42ngTc",
+      "a": "TD4tamFrCq7KvQEB1LArNXr9sKFC6GaAmt",
+      "cantidad": 10682.655368
+     },
+     {
+      "token": "USDT",
+      "de": "TYmb1NaNsehpXcsnV19zpAcZ56V4k1NLJ9",
+      "a": "TUyTiAkE5R5GF9MrDW9oTWPCqYai42ngTc",
+      "cantidad": 10682.655368
+     },
+     {
+      "token": "USDT",
+      "de": "TQqgNg13s2DjvXhW1ky4v6TsR8wZGvb7Y4",
+      "a": "TYmb1NaNsehpXcsnV19zpAcZ56V4k1NLJ9",
+      "cantidad": 10682.655368
+     },
+     {
+      "token": "TNUC9Qb1rRpS5CbWLmNMxXBjyFoydXjWFR",
+      "de": "TQqgNg13s2DjvXhW1ky4v6TsR8wZGvb7Y4",
+      "a": "TSUUVjysXV8YqHytSNjfkNXnnB49QDvZpx",
+      "cantidad": "35000000000"
+     },
+     {
+      "token": "USDT",
+      "de": "TSUUVjysXV8YqHytSNjfkNXnnB49QDvZpx",
+      "a": "TQqgNg13s2DjvXhW1ky4v6TsR8wZGvb7Y4",
+      "cantidad": 10682.655368
+     }
+    ],
+    "internas": [
+     {
+      "de": "TPuaJ6gnYfE9gLUDFrbWbPx3tMnjG8max1",
+      "a": "TUyTiAkE5R5GF9MrDW9oTWPCqYai42ngTc",
+      "trx": 35000
+     },
+     {
+      "de": "TUyTiAkE5R5GF9MrDW9oTWPCqYai42ngTc",
+      "a": "TYmb1NaNsehpXcsnV19zpAcZ56V4k1NLJ9",
+      "trx": 35000
+     },
+     {
+      "de": "TYmb1NaNsehpXcsnV19zpAcZ56V4k1NLJ9",
+      "a": "TQqgNg13s2DjvXhW1ky4v6TsR8wZGvb7Y4",
+      "trx": 35000
+     },
+     {
+      "de": "TQqgNg13s2DjvXhW1ky4v6TsR8wZGvb7Y4",
+      "a": "TNUC9Qb1rRpS5CbWLmNMxXBjyFoydXjWFR",
+      "trx": 35000
+     }
+    ],
+    "error": null
+   },
+   "coincide": true,
+   "comprobaciones": {
+    "transferencia": null,
+    "salidaMismaTx": null,
+    "trxEnviado": true
+   }
+  },
+  {
+   "grupo": "Symbiosis",
+   "caso": "tramo 5 devolucion a la misma billetera",
+   "tx": "42a066d2ae45797446206b12bb10d3249e31063a7ac0937a769ecdaa992a85f0",
+   "espera": {
+    "token": "USDT",
+    "a": "TFHAsVkcvtB9Ug4eaGzTm6vxvmqjDBVheT",
+    "cantidad": 10679.155368
+   },
+   "mismaBilletera": true,
+   "leido": {
+    "tx": "42a066d2ae45797446206b12bb10d3249e31063a7ac0937a769ecdaa992a85f0",
+    "estado": "SUCCESS",
+    "hora": "2026-10-31T20:43:15.000Z",
+    "bloque": 87601988,
+    "tipo": "TriggerSmartContract",
+    "remitente": "TKSyjU1syKL2gmGZbpexiYZkvcbk6jqAtf",
+    "contrato": "TQDdx5hH1E6KBXdvTiYH39b3B9cTTw1wtn",
+    "trxEnviado": 0,
+    "transferencias": [
+     {
+      "token": "USDT",
+      "de": "TD4tamFrCq7KvQEB1LArNXr9sKFC6GaAmt",
+      "a": "TQDdx5hH1E6KBXdvTiYH39b3B9cTTw1wtn",
+      "cantidad": 3.5
+     },
+     {
+      "token": "USDT",
+      "de": "TD4tamFrCq7KvQEB1LArNXr9sKFC6GaAmt",
+      "a": "TFHAsVkcvtB9Ug4eaGzTm6vxvmqjDBVheT",
+      "cantidad": 10679.155368
+     }
+    ],
+    "internas": [],
+    "error": null
+   },
+   "coincide": true,
+   "comprobaciones": {
+    "transferencia": true,
+    "salidaMismaTx": null,
+    "trxEnviado": null
+   }
+  },
+  {
+   "grupo": "Symbiosis",
+   "caso": "tramo 5 envio al MetaRouter",
+   "tx": "0fd063a5697d2eb3d57f5a20f60257d57fd9098ed04d4aca1fe06950b169214b",
+   "esperaTrx": {
+    "de": "TKo12FdQfZtQkJmx1XMwJovYUD2GSUGPeY",
+    "cantidad": 48000
+   },
+   "espera": null,
+   "leido": {
+    "tx": "0fd063a5697d2eb3d57f5a20f60257d57fd9098ed04d4aca1fe06950b169214b",
+    "estado": "SUCCESS",
+    "hora": "2026-10-31T20:32:57.000Z",
+    "bloque": 87601782,
+    "tipo": "TriggerSmartContract",
+    "remitente": "TKo12FdQfZtQkJmx1XMwJovYUD2GSUGPeY",
+    "contrato": "TPuaJ6gnYfE9gLUDFrbWbPx3tMnjG8max1",
+    "trxEnviado": 48000,
+    "transferencias": [
+     {
+      "token": "USDT",
+      "de": "TUyTiAkE5R5GF9MrDW9oTWPCqYai42ngTc",
+      "a": "TD4tamFrCq7KvQEB1LArNXr9sKFC6GaAmt",
+      "cantidad": 14643.860926
+     },
+     {
+      "token": "USDT",
+      "de": "TYmb1NaNsehpXcsnV19zpAcZ56V4k1NLJ9",
+      "a": "TUyTiAkE5R5GF9MrDW9oTWPCqYai42ngTc",
+      "cantidad": 14643.860926
+     },
+     {
+      "token": "USDT",
+      "de": "TQqgNg13s2DjvXhW1ky4v6TsR8wZGvb7Y4",
+      "a": "TYmb1NaNsehpXcsnV19zpAcZ56V4k1NLJ9",
+      "cantidad": 14643.860926
+     },
+     {
+      "token": "USDT",
+      "de": "TVjuTE3V5bMVdpfNhid8kD2v35T2k1u1Br",
+      "a": "TQqgNg13s2DjvXhW1ky4v6TsR8wZGvb7Y4",
+      "cantidad": 14643.860926
+     }
+    ],
+    "internas": [
+     {
+      "de": "TPuaJ6gnYfE9gLUDFrbWbPx3tMnjG8max1",
+      "a": "TUyTiAkE5R5GF9MrDW9oTWPCqYai42ngTc",
+      "trx": 48000
+     },
+     {
+      "de": "TUyTiAkE5R5GF9MrDW9oTWPCqYai42ngTc",
+      "a": "TYmb1NaNsehpXcsnV19zpAcZ56V4k1NLJ9",
+      "trx": 48000
+     },
+     {
+      "de": "TYmb1NaNsehpXcsnV19zpAcZ56V4k1NLJ9",
+      "a": "TQqgNg13s2DjvXhW1ky4v6TsR8wZGvb7Y4",
+      "trx": 48000
+     },
+     {
+      "de": "TQqgNg13s2DjvXhW1ky4v6TsR8wZGvb7Y4",
+      "a": "TVjuTE3V5bMVdpfNhid8kD2v35T2k1u1Br",
+      "trx": 48000
+     }
+    ],
+    "error": null
+   },
+   "coincide": true,
+   "comprobaciones": {
+    "transferencia": null,
+    "salidaMismaTx": null,
+    "trxEnviado": true
+   }
+  },
+  {
+   "grupo": "Symbiosis",
+   "caso": "tramo 5 devolucion a la misma billetera",
+   "tx": "d898393e2410c1614598c811850baace62829e2197e065550792783b1af7146d",
+   "espera": {
+    "token": "USDT",
+    "a": "TKo12FdQfZtQkJmx1XMwJovYUD2GSUGPeY",
+    "cantidad": 14640.360926
+   },
+   "mismaBilletera": true,
+   "leido": {
+    "tx": "d898393e2410c1614598c811850baace62829e2197e065550792783b1af7146d",
+    "estado": "SUCCESS",
+    "hora": "2026-10-31T20:48:12.000Z",
+    "bloque": 87602087,
+    "tipo": "TriggerSmartContract",
+    "remitente": "TKSyjU1syKL2gmGZbpexiYZkvcbk6jqAtf",
+    "contrato": "TQDdx5hH1E6KBXdvTiYH39b3B9cTTw1wtn",
+    "trxEnviado": 0,
+    "transferencias": [
+     {
+      "token": "USDT",
+      "de": "TD4tamFrCq7KvQEB1LArNXr9sKFC6GaAmt",
+      "a": "TQDdx5hH1E6KBXdvTiYH39b3B9cTTw1wtn",
+      "cantidad": 3.5
+     },
+     {
+      "token": "USDT",
+      "de": "TD4tamFrCq7KvQEB1LArNXr9sKFC6GaAmt",
+      "a": "TKo12FdQfZtQkJmx1XMwJovYUD2GSUGPeY",
+      "cantidad": 14640.360926
+     }
+    ],
+    "internas": [],
+    "error": null
+   },
+   "coincide": true,
+   "comprobaciones": {
+    "transferencia": true,
+    "salidaMismaTx": null,
+    "trxEnviado": null
+   }
+  },
+  {
+   "grupo": "Symbiosis",
+   "caso": "tramo 5 envio al MetaRouter",
+   "tx": "e446e8ccb81e8b99fef0052188b22d61c955a7ce8498f742108376f909295499",
+   "esperaTrx": {
+    "de": "TUAjmtLpYMaRh1EmhFbFzo5GoXZK7qVsFg",
+    "cantidad": 40400
+   },
+   "espera": null,
+   "leido": {
+    "tx": "e446e8ccb81e8b99fef0052188b22d61c955a7ce8498f742108376f909295499",
+    "estado": "SUCCESS",
+    "hora": "2026-10-31T20:55:48.000Z",
+    "bloque": 87602239,
+    "tipo": "TriggerSmartContract",
+    "remitente": "TUAjmtLpYMaRh1EmhFbFzo5GoXZK7qVsFg",
+    "contrato": "TPuaJ6gnYfE9gLUDFrbWbPx3tMnjG8max1",
+    "trxEnviado": 40400,
+    "transferencias": [
+     {
+      "token": "USDT",
+      "de": "TUyTiAkE5R5GF9MrDW9oTWPCqYai42ngTc",
+      "a": "TD4tamFrCq7KvQEB1LArNXr9sKFC6GaAmt",
+      "cantidad": 12310.850308
+     },
+     {
+      "token": "USDT",
+      "de": "TYmb1NaNsehpXcsnV19zpAcZ56V4k1NLJ9",
+      "a": "TUyTiAkE5R5GF9MrDW9oTWPCqYai42ngTc",
+      "cantidad": 12310.850308
+     },
+     {
+      "token": "USDT",
+      "de": "TQqgNg13s2DjvXhW1ky4v6TsR8wZGvb7Y4",
+      "a": "TYmb1NaNsehpXcsnV19zpAcZ56V4k1NLJ9",
+      "cantidad": 12310.850308
+     },
+     {
+      "token": "USDT",
+      "de": "TVjuTE3V5bMVdpfNhid8kD2v35T2k1u1Br",
+      "a": "TQqgNg13s2DjvXhW1ky4v6TsR8wZGvb7Y4",
+      "cantidad": 12310.850308
+     }
+    ],
+    "internas": [
+     {
+      "de": "TPuaJ6gnYfE9gLUDFrbWbPx3tMnjG8max1",
+      "a": "TUyTiAkE5R5GF9MrDW9oTWPCqYai42ngTc",
+      "trx": 40400
+     },
+     {
+      "de": "TUyTiAkE5R5GF9MrDW9oTWPCqYai42ngTc",
+      "a": "TYmb1NaNsehpXcsnV19zpAcZ56V4k1NLJ9",
+      "trx": 40400
+     },
+     {
+      "de": "TYmb1NaNsehpXcsnV19zpAcZ56V4k1NLJ9",
+      "a": "TQqgNg13s2DjvXhW1ky4v6TsR8wZGvb7Y4",
+      "trx": 40400
+     },
+     {
+      "de": "TQqgNg13s2DjvXhW1ky4v6TsR8wZGvb7Y4",
+      "a": "TVjuTE3V5bMVdpfNhid8kD2v35T2k1u1Br",
+      "trx": 40400
+     }
+    ],
+    "error": null
+   },
+   "coincide": true,
+   "comprobaciones": {
+    "transferencia": null,
+    "salidaMismaTx": null,
+    "trxEnviado": true
+   }
+  },
+  {
+   "grupo": "Symbiosis",
+   "caso": "tramo 5 devolucion a la misma billetera",
+   "tx": "8f92bb171997556d1e14a88b675ef12e73e205592e83c3542624fb6a090075b5",
+   "espera": {
+    "token": "USDT",
+    "a": "TUAjmtLpYMaRh1EmhFbFzo5GoXZK7qVsFg",
+    "cantidad": 12307.350308
+   },
+   "mismaBilletera": true,
+   "leido": {
+    "tx": "8f92bb171997556d1e14a88b675ef12e73e205592e83c3542624fb6a090075b5",
+    "estado": "SUCCESS",
+    "hora": "2026-10-31T21:11:12.000Z",
+    "bloque": 87602547,
+    "tipo": "TriggerSmartContract",
+    "remitente": "TKSyjU1syKL2gmGZbpexiYZkvcbk6jqAtf",
+    "contrato": "TQDdx5hH1E6KBXdvTiYH39b3B9cTTw1wtn",
+    "trxEnviado": 0,
+    "transferencias": [
+     {
+      "token": "USDT",
+      "de": "TD4tamFrCq7KvQEB1LArNXr9sKFC6GaAmt",
+      "a": "TQDdx5hH1E6KBXdvTiYH39b3B9cTTw1wtn",
+      "cantidad": 3.5
+     },
+     {
+      "token": "USDT",
+      "de": "TD4tamFrCq7KvQEB1LArNXr9sKFC6GaAmt",
+      "a": "TUAjmtLpYMaRh1EmhFbFzo5GoXZK7qVsFg",
+      "cantidad": 12307.350308
+     }
+    ],
+    "internas": [],
+    "error": null
+   },
+   "coincide": true,
+   "comprobaciones": {
+    "transferencia": true,
+    "salidaMismaTx": null,
+    "trxEnviado": null
+   }
+  },
+  {
+   "grupo": "Symbiosis",
+   "caso": "tramo 5 envio al MetaRouter",
+   "tx": "8a4a3f5bdd95f667daa5c5ebc6f3250f20718f8910b033de44f5550960f40065",
+   "esperaTrx": {
+    "de": "TLUKJVhmiZMDcP2YPmL8gc4mykc3uV3Wbf",
+    "cantidad": 50000
+   },
+   "espera": null,
+   "leido": {
+    "tx": "8a4a3f5bdd95f667daa5c5ebc6f3250f20718f8910b033de44f5550960f40065",
+    "estado": "SUCCESS",
+    "hora": "2026-10-31T12:27:15.000Z",
+    "bloque": 87592070,
+    "tipo": "TriggerSmartContract",
+    "remitente": "TLUKJVhmiZMDcP2YPmL8gc4mykc3uV3Wbf",
+    "contrato": "TPuaJ6gnYfE9gLUDFrbWbPx3tMnjG8max1",
+    "trxEnviado": 50000,
+    "transferencias": [
+     {
+      "token": "USDT",
+      "de": "TUyTiAkE5R5GF9MrDW9oTWPCqYai42ngTc",
+      "a": "TD4tamFrCq7KvQEB1LArNXr9sKFC6GaAmt",
+      "cantidad": 16053.317002
+     },
+     {
+      "token": "USDT",
+      "de": "TYmb1NaNsehpXcsnV19zpAcZ56V4k1NLJ9",
+      "a": "TUyTiAkE5R5GF9MrDW9oTWPCqYai42ngTc",
+      "cantidad": 16053.317002
+     },
+     {
+      "token": "USDT",
+      "de": "TQqgNg13s2DjvXhW1ky4v6TsR8wZGvb7Y4",
+      "a": "TYmb1NaNsehpXcsnV19zpAcZ56V4k1NLJ9",
+      "cantidad": 16053.317002
+     },
+     {
+      "token": "TNUC9Qb1rRpS5CbWLmNMxXBjyFoydXjWFR",
+      "de": "TQqgNg13s2DjvXhW1ky4v6TsR8wZGvb7Y4",
+      "a": "TSUUVjysXV8YqHytSNjfkNXnnB49QDvZpx",
+      "cantidad": "50000000000"
+     },
+     {
+      "token": "USDT",
+      "de": "TSUUVjysXV8YqHytSNjfkNXnnB49QDvZpx",
+      "a": "TQqgNg13s2DjvXhW1ky4v6TsR8wZGvb7Y4",
+      "cantidad": 16053.317002
+     }
+    ],
+    "internas": [
+     {
+      "de": "TPuaJ6gnYfE9gLUDFrbWbPx3tMnjG8max1",
+      "a": "TUyTiAkE5R5GF9MrDW9oTWPCqYai42ngTc",
+      "trx": 50000
+     },
+     {
+      "de": "TUyTiAkE5R5GF9MrDW9oTWPCqYai42ngTc",
+      "a": "TYmb1NaNsehpXcsnV19zpAcZ56V4k1NLJ9",
+      "trx": 50000
+     },
+     {
+      "de": "TYmb1NaNsehpXcsnV19zpAcZ56V4k1NLJ9",
+      "a": "TQqgNg13s2DjvXhW1ky4v6TsR8wZGvb7Y4",
+      "trx": 50000
+     },
+     {
+      "de": "TQqgNg13s2DjvXhW1ky4v6TsR8wZGvb7Y4",
+      "a": "TNUC9Qb1rRpS5CbWLmNMxXBjyFoydXjWFR",
+      "trx": 50000
+     }
+    ],
+    "error": null
+   },
+   "coincide": true,
+   "comprobaciones": {
+    "transferencia": null,
+    "salidaMismaTx": null,
+    "trxEnviado": true
+   }
+  },
+  {
+   "grupo": "Symbiosis",
+   "caso": "tramo 5 devolucion a la misma billetera",
+   "tx": "29c8be81e2d3e06466e454309fdaedb1a60634103aa2903e55c0fa25fc6c24b4",
+   "espera": {
+    "token": "USDT",
+    "a": "TLUKJVhmiZMDcP2YPmL8gc4mykc3uV3Wbf",
+    "cantidad": 16049.817002
+   },
+   "mismaBilletera": true,
+   "leido": {
+    "tx": "29c8be81e2d3e06466e454309fdaedb1a60634103aa2903e55c0fa25fc6c24b4",
+    "estado": "SUCCESS",
+    "hora": "2026-10-31T12:43:12.000Z",
+    "bloque": 87592389,
+    "tipo": "TriggerSmartContract",
+    "remitente": "TKSyjU1syKL2gmGZbpexiYZkvcbk6jqAtf",
+    "contrato": "TQDdx5hH1E6KBXdvTiYH39b3B9cTTw1wtn",
+    "trxEnviado": 0,
+    "transferencias": [
+     {
+      "token": "USDT",
+      "de": "TD4tamFrCq7KvQEB1LArNXr9sKFC6GaAmt",
+      "a": "TQDdx5hH1E6KBXdvTiYH39b3B9cTTw1wtn",
+      "cantidad": 3.5
+     },
+     {
+      "token": "USDT",
+      "de": "TD4tamFrCq7KvQEB1LArNXr9sKFC6GaAmt",
+      "a": "TLUKJVhmiZMDcP2YPmL8gc4mykc3uV3Wbf",
+      "cantidad": 16049.817002
+     }
+    ],
+    "internas": [],
+    "error": null
+   },
+   "coincide": true,
+   "comprobaciones": {
+    "transferencia": true,
+    "salidaMismaTx": null,
+    "trxEnviado": null
+   }
+  },
+  {
+   "grupo": "Symbiosis",
+   "caso": "tramo 5 envio al MetaRouter",
+   "tx": "314720ba2140da473a977c8a9d13c312eec14ca90d20f6507db79787bbeb7bb9",
+   "esperaTrx": {
+    "de": "TKerRZXNv4wqXeEt65YzK2Euu7BvghTCKb",
+    "cantidad": 34725
+   },
+   "espera": null,
+   "leido": {
+    "tx": "314720ba2140da473a977c8a9d13c312eec14ca90d20f6507db79787bbeb7bb9",
+    "estado": "SUCCESS",
+    "hora": "2026-10-31T20:27:21.000Z",
+    "bloque": 87601670,
+    "tipo": "TriggerSmartContract",
+    "remitente": "TKerRZXNv4wqXeEt65YzK2Euu7BvghTCKb",
+    "contrato": "TPuaJ6gnYfE9gLUDFrbWbPx3tMnjG8max1",
+    "trxEnviado": 34725,
+    "transferencias": [
+     {
+      "token": "USDT",
+      "de": "TUyTiAkE5R5GF9MrDW9oTWPCqYai42ngTc",
+      "a": "TD4tamFrCq7KvQEB1LArNXr9sKFC6GaAmt",
+      "cantidad": 10598.547338
+     },
+     {
+      "token": "USDT",
+      "de": "TYmb1NaNsehpXcsnV19zpAcZ56V4k1NLJ9",
+      "a": "TUyTiAkE5R5GF9MrDW9oTWPCqYai42ngTc",
+      "cantidad": 10598.547338
+     },
+     {
+      "token": "USDT",
+      "de": "TQqgNg13s2DjvXhW1ky4v6TsR8wZGvb7Y4",
+      "a": "TYmb1NaNsehpXcsnV19zpAcZ56V4k1NLJ9",
+      "cantidad": 10598.547338
+     },
+     {
+      "token": "TNUC9Qb1rRpS5CbWLmNMxXBjyFoydXjWFR",
+      "de": "TQqgNg13s2DjvXhW1ky4v6TsR8wZGvb7Y4",
+      "a": "TSUUVjysXV8YqHytSNjfkNXnnB49QDvZpx",
+      "cantidad": "34725000000"
+     },
+     {
+      "token": "USDT",
+      "de": "TSUUVjysXV8YqHytSNjfkNXnnB49QDvZpx",
+      "a": "TQqgNg13s2DjvXhW1ky4v6TsR8wZGvb7Y4",
+      "cantidad": 10598.547338
+     }
+    ],
+    "internas": [
+     {
+      "de": "TPuaJ6gnYfE9gLUDFrbWbPx3tMnjG8max1",
+      "a": "TUyTiAkE5R5GF9MrDW9oTWPCqYai42ngTc",
+      "trx": 34725
+     },
+     {
+      "de": "TUyTiAkE5R5GF9MrDW9oTWPCqYai42ngTc",
+      "a": "TYmb1NaNsehpXcsnV19zpAcZ56V4k1NLJ9",
+      "trx": 34725
+     },
+     {
+      "de": "TYmb1NaNsehpXcsnV19zpAcZ56V4k1NLJ9",
+      "a": "TQqgNg13s2DjvXhW1ky4v6TsR8wZGvb7Y4",
+      "trx": 34725
+     },
+     {
+      "de": "TQqgNg13s2DjvXhW1ky4v6TsR8wZGvb7Y4",
+      "a": "TNUC9Qb1rRpS5CbWLmNMxXBjyFoydXjWFR",
+      "trx": 34725
+     }
+    ],
+    "error": null
+   },
+   "coincide": true,
+   "comprobaciones": {
+    "transferencia": null,
+    "salidaMismaTx": null,
+    "trxEnviado": true
+   }
+  },
+  {
+   "grupo": "Symbiosis",
+   "caso": "tramo 5 devolucion a la misma billetera",
+   "tx": "1fa104cfefadd8795de6804a4cb492ebe6b1f610227ea8c5c8bed0d5b65786c3",
+   "espera": {
+    "token": "USDT",
+    "a": "TKerRZXNv4wqXeEt65YzK2Euu7BvghTCKb",
+    "cantidad": 10595.047338
+   },
+   "mismaBilletera": true,
+   "leido": {
+    "tx": "1fa104cfefadd8795de6804a4cb492ebe6b1f610227ea8c5c8bed0d5b65786c3",
+    "estado": "SUCCESS",
+    "hora": "2026-10-31T20:43:24.000Z",
+    "bloque": 87601991,
+    "tipo": "TriggerSmartContract",
+    "remitente": "TKSyjU1syKL2gmGZbpexiYZkvcbk6jqAtf",
+    "contrato": "TQDdx5hH1E6KBXdvTiYH39b3B9cTTw1wtn",
+    "trxEnviado": 0,
+    "transferencias": [
+     {
+      "token": "USDT",
+      "de": "TD4tamFrCq7KvQEB1LArNXr9sKFC6GaAmt",
+      "a": "TQDdx5hH1E6KBXdvTiYH39b3B9cTTw1wtn",
+      "cantidad": 3.5
+     },
+     {
+      "token": "USDT",
+      "de": "TD4tamFrCq7KvQEB1LArNXr9sKFC6GaAmt",
+      "a": "TKerRZXNv4wqXeEt65YzK2Euu7BvghTCKb",
+      "cantidad": 10595.047338
+     }
+    ],
+    "internas": [],
+    "error": null
+   },
+   "coincide": true,
+   "comprobaciones": {
+    "transferencia": true,
+    "salidaMismaTx": null,
+    "trxEnviado": null
+   }
+  },
+  {
+   "grupo": "Symbiosis",
+   "caso": "tramo 5 envio al MetaRouter",
+   "tx": "33424d8f72e1e1cdb7cfd492ee902406f3a75df335db0f7564ba89c7dd5914ea",
+   "esperaTrx": {
+    "de": "TKerRZXNv4wqXeEt65YzK2Euu7BvghTCKb",
+    "cantidad": 34600
+   },
+   "espera": null,
+   "leido": {
+    "tx": "33424d8f72e1e1cdb7cfd492ee902406f3a75df335db0f7564ba89c7dd5914ea",
+    "estado": "SUCCESS",
+    "hora": "2026-10-31T20:47:33.000Z",
+    "bloque": 87602074,
+    "tipo": "TriggerSmartContract",
+    "remitente": "TKerRZXNv4wqXeEt65YzK2Euu7BvghTCKb",
+    "contrato": "TPuaJ6gnYfE9gLUDFrbWbPx3tMnjG8max1",
+    "trxEnviado": 34600,
+    "transferencias": [
+     {
+      "token": "USDT",
+      "de": "TUyTiAkE5R5GF9MrDW9oTWPCqYai42ngTc",
+      "a": "TD4tamFrCq7KvQEB1LArNXr9sKFC6GaAmt",
+      "cantidad": 10551.223346
+     },
+     {
+      "token": "USDT",
+      "de": "TYmb1NaNsehpXcsnV19zpAcZ56V4k1NLJ9",
+      "a": "TUyTiAkE5R5GF9MrDW9oTWPCqYai42ngTc",
+      "cantidad": 10551.223346
+     },
+     {
+      "token": "USDT",
+      "de": "TQqgNg13s2DjvXhW1ky4v6TsR8wZGvb7Y4",
+      "a": "TYmb1NaNsehpXcsnV19zpAcZ56V4k1NLJ9",
+      "cantidad": 10551.223346
+     },
+     {
+      "token": "TNUC9Qb1rRpS5CbWLmNMxXBjyFoydXjWFR",
+      "de": "TQqgNg13s2DjvXhW1ky4v6TsR8wZGvb7Y4",
+      "a": "TSUUVjysXV8YqHytSNjfkNXnnB49QDvZpx",
+      "cantidad": "34600000000"
+     },
+     {
+      "token": "USDT",
+      "de": "TSUUVjysXV8YqHytSNjfkNXnnB49QDvZpx",
+      "a": "TQqgNg13s2DjvXhW1ky4v6TsR8wZGvb7Y4",
+      "cantidad": 10551.223346
+     }
+    ],
+    "internas": [
+     {
+      "de": "TPuaJ6gnYfE9gLUDFrbWbPx3tMnjG8max1",
+      "a": "TUyTiAkE5R5GF9MrDW9oTWPCqYai42ngTc",
+      "trx": 34600
+     },
+     {
+      "de": "TUyTiAkE5R5GF9MrDW9oTWPCqYai42ngTc",
+      "a": "TYmb1NaNsehpXcsnV19zpAcZ56V4k1NLJ9",
+      "trx": 34600
+     },
+     {
+      "de": "TYmb1NaNsehpXcsnV19zpAcZ56V4k1NLJ9",
+      "a": "TQqgNg13s2DjvXhW1ky4v6TsR8wZGvb7Y4",
+      "trx": 34600
+     },
+     {
+      "de": "TQqgNg13s2DjvXhW1ky4v6TsR8wZGvb7Y4",
+      "a": "TNUC9Qb1rRpS5CbWLmNMxXBjyFoydXjWFR",
+      "trx": 34600
+     }
+    ],
+    "error": null
+   },
+   "coincide": true,
+   "comprobaciones": {
+    "transferencia": null,
+    "salidaMismaTx": null,
+    "trxEnviado": true
+   }
+  },
+  {
+   "grupo": "Symbiosis",
+   "caso": "tramo 5 devolucion a la misma billetera",
+   "tx": "0cc2273f5191548af11791b66f036fb74ad102355e43632c0d7a844e461680ad",
+   "espera": {
+    "token": "USDT",
+    "a": "TKerRZXNv4wqXeEt65YzK2Euu7BvghTCKb",
+    "cantidad": 10547.723346
+   },
+   "mismaBilletera": true,
+   "leido": {
+    "tx": "0cc2273f5191548af11791b66f036fb74ad102355e43632c0d7a844e461680ad",
+    "estado": "SUCCESS",
+    "hora": "2026-10-31T21:03:06.000Z",
+    "bloque": 87602385,
+    "tipo": "TriggerSmartContract",
+    "remitente": "TKSyjU1syKL2gmGZbpexiYZkvcbk6jqAtf",
+    "contrato": "TQDdx5hH1E6KBXdvTiYH39b3B9cTTw1wtn",
+    "trxEnviado": 0,
+    "transferencias": [
+     {
+      "token": "USDT",
+      "de": "TD4tamFrCq7KvQEB1LArNXr9sKFC6GaAmt",
+      "a": "TQDdx5hH1E6KBXdvTiYH39b3B9cTTw1wtn",
+      "cantidad": 3.5
+     },
+     {
+      "token": "USDT",
+      "de": "TD4tamFrCq7KvQEB1LArNXr9sKFC6GaAmt",
+      "a": "TKerRZXNv4wqXeEt65YzK2Euu7BvghTCKb",
+      "cantidad": 10547.723346
+     }
+    ],
+    "internas": [],
+    "error": null
+   },
+   "coincide": true,
+   "comprobaciones": {
+    "transferencia": true,
+    "salidaMismaTx": null,
+    "trxEnviado": null
+   }
+  },
+  {
+   "grupo": "Symbiosis",
+   "caso": "tramo 5 envio al MetaRouter",
+   "tx": "bd29a3185acea6753ca3b1df9cfe4f1a3e3a37fa62cd9f11824585d6cf968040",
+   "esperaTrx": {
+    "de": "TNjXHRDLmYs3d4Z4ofFbFy1q3b5uLHQE6d",
+    "cantidad": 35000
+   },
+   "espera": null,
+   "leido": {
+    "tx": "bd29a3185acea6753ca3b1df9cfe4f1a3e3a37fa62cd9f11824585d6cf968040",
+    "estado": "SUCCESS",
+    "hora": "2026-10-31T20:27:27.000Z",
+    "bloque": 87601672,
+    "tipo": "TriggerSmartContract",
+    "remitente": "TNjXHRDLmYs3d4Z4ofFbFy1q3b5uLHQE6d",
+    "contrato": "TPuaJ6gnYfE9gLUDFrbWbPx3tMnjG8max1",
+    "trxEnviado": 35000,
+    "transferencias": [
+     {
+      "token": "USDT",
+      "de": "TUyTiAkE5R5GF9MrDW9oTWPCqYai42ngTc",
+      "a": "TD4tamFrCq7KvQEB1LArNXr9sKFC6GaAmt",
+      "cantidad": 10677.089802
+     },
+     {
+      "token": "USDT",
+      "de": "TYmb1NaNsehpXcsnV19zpAcZ56V4k1NLJ9",
+      "a": "TUyTiAkE5R5GF9MrDW9oTWPCqYai42ngTc",
+      "cantidad": 10677.089802
+     },
+     {
+      "token": "USDT",
+      "de": "TQqgNg13s2DjvXhW1ky4v6TsR8wZGvb7Y4",
+      "a": "TYmb1NaNsehpXcsnV19zpAcZ56V4k1NLJ9",
+      "cantidad": 10677.089802
+     },
+     {
+      "token": "TNUC9Qb1rRpS5CbWLmNMxXBjyFoydXjWFR",
+      "de": "TQqgNg13s2DjvXhW1ky4v6TsR8wZGvb7Y4",
+      "a": "TSUUVjysXV8YqHytSNjfkNXnnB49QDvZpx",
+      "cantidad": "35000000000"
+     },
+     {
+      "token": "USDT",
+      "de": "TSUUVjysXV8YqHytSNjfkNXnnB49QDvZpx",
+      "a": "TQqgNg13s2DjvXhW1ky4v6TsR8wZGvb7Y4",
+      "cantidad": 10677.089802
+     }
+    ],
+    "internas": [
+     {
+      "de": "TPuaJ6gnYfE9gLUDFrbWbPx3tMnjG8max1",
+      "a": "TUyTiAkE5R5GF9MrDW9oTWPCqYai42ngTc",
+      "trx": 35000
+     },
+     {
+      "de": "TUyTiAkE5R5GF9MrDW9oTWPCqYai42ngTc",
+      "a": "TYmb1NaNsehpXcsnV19zpAcZ56V4k1NLJ9",
+      "trx": 35000
+     },
+     {
+      "de": "TYmb1NaNsehpXcsnV19zpAcZ56V4k1NLJ9",
+      "a": "TQqgNg13s2DjvXhW1ky4v6TsR8wZGvb7Y4",
+      "trx": 35000
+     },
+     {
+      "de": "TQqgNg13s2DjvXhW1ky4v6TsR8wZGvb7Y4",
+      "a": "TNUC9Qb1rRpS5CbWLmNMxXBjyFoydXjWFR",
+      "trx": 35000
+     }
+    ],
+    "error": null
+   },
+   "coincide": true,
+   "comprobaciones": {
+    "transferencia": null,
+    "salidaMismaTx": null,
+    "trxEnviado": true
+   }
+  },
+  {
+   "grupo": "Symbiosis",
+   "caso": "tramo 5 devolucion a la misma billetera",
+   "tx": "d32dae50d171c1d8e15fde2fb8defe1ff87c9682ff486c5a9ff10cf4c308b4c1",
+   "espera": {
+    "token": "USDT",
+    "a": "TNjXHRDLmYs3d4Z4ofFbFy1q3b5uLHQE6d",
+    "cantidad": 10673.589802
+   },
+   "mismaBilletera": true,
+   "leido": {
+    "tx": "d32dae50d171c1d8e15fde2fb8defe1ff87c9682ff486c5a9ff10cf4c308b4c1",
+    "estado": "SUCCESS",
+    "hora": "2026-10-31T20:43:27.000Z",
+    "bloque": 87601992,
+    "tipo": "TriggerSmartContract",
+    "remitente": "TKSyjU1syKL2gmGZbpexiYZkvcbk6jqAtf",
+    "contrato": "TQDdx5hH1E6KBXdvTiYH39b3B9cTTw1wtn",
+    "trxEnviado": 0,
+    "transferencias": [
+     {
+      "token": "USDT",
+      "de": "TD4tamFrCq7KvQEB1LArNXr9sKFC6GaAmt",
+      "a": "TQDdx5hH1E6KBXdvTiYH39b3B9cTTw1wtn",
+      "cantidad": 3.5
+     },
+     {
+      "token": "USDT",
+      "de": "TD4tamFrCq7KvQEB1LArNXr9sKFC6GaAmt",
+      "a": "TNjXHRDLmYs3d4Z4ofFbFy1q3b5uLHQE6d",
+      "cantidad": 10673.589802
+     }
+    ],
+    "internas": [],
+    "error": null
+   },
+   "coincide": true,
+   "comprobaciones": {
+    "transferencia": true,
+    "salidaMismaTx": null,
+    "trxEnviado": null
+   }
+  },
+  {
+   "grupo": "Chainflip",
+   "caso": "tramo 6 deposito con salida en la misma transaccion",
+   "tx": "70f47baa9464b975d19a50a6c6a85efa1ccc59ada449c05805ef44b35f6cb2a7",
+   "espera": {
+    "token": "USDT",
+    "de": "TCe9CjSScVDhaTjQm81yGAEhqqU8Wcmqq1",
+    "a": "TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC",
+    "cantidad": 143050.999999
+   },
+   "espera2": {
+    "token": "USDT",
+    "a": "TNyH35RFP9F8yAJPk9tnuZ8omVEdwiyL6a",
+    "cantidad": 143043.812734
+   },
+   "leido": {
+    "tx": "70f47baa9464b975d19a50a6c6a85efa1ccc59ada449c05805ef44b35f6cb2a7",
+    "estado": "SUCCESS",
+    "hora": "2026-10-30T17:08:24.000Z",
+    "bloque": 87568901,
+    "tipo": "TriggerSmartContract",
+    "remitente": "TYU88zK91HUUa9DRv17YbhpVt7j6ghd2oK",
+    "contrato": "TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC",
+    "trxEnviado": 0,
+    "transferencias": [
+     {
+      "token": "USDT",
+      "de": "TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC",
+      "a": "TNyH35RFP9F8yAJPk9tnuZ8omVEdwiyL6a",
+      "cantidad": 143043.812734
+     },
+     {
+      "token": "USDT",
+      "de": "TCe9CjSScVDhaTjQm81yGAEhqqU8Wcmqq1",
+      "a": "TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC",
+      "cantidad": 143050.999999
+     }
+    ],
+    "internas": [],
+    "error": null
+   },
+   "coincide": true,
+   "comprobaciones": {
+    "transferencia": true,
+    "salidaMismaTx": true,
+    "trxEnviado": null
+   }
+  },
+  {
+   "grupo": "Chainflip",
+   "caso": "tramo 6 deposito con salida en la misma transaccion",
+   "tx": "8788d0c2d05cf016985aba143c619c3e932213377d0233c4c4104d4f246a24d0",
+   "espera": {
+    "token": "USDT",
+    "de": "TQjjxMpFS2U7XKsg1DS5SXjATkJg4WDP9U",
+    "a": "TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC",
+    "cantidad": 136840
+   },
+   "espera2": {
+    "token": "USDT",
+    "a": "TV8TeuuP9AdwwJYbfBCTXtKQyqkfrKnueG",
+    "cantidad": 136832.80922
+   },
+   "leido": {
+    "tx": "8788d0c2d05cf016985aba143c619c3e932213377d0233c4c4104d4f246a24d0",
+    "estado": "SUCCESS",
+    "hora": "2026-10-30T15:21:30.000Z",
+    "bloque": 87566763,
+    "tipo": "TriggerSmartContract",
+    "remitente": "TKLYFRPFirgS8Ly4kVsugjLaXsifnGPoFb",
+    "contrato": "TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC",
+    "trxEnviado": 0,
+    "transferencias": [
+     {
+      "token": "USDT",
+      "de": "TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC",
+      "a": "TV8TeuuP9AdwwJYbfBCTXtKQyqkfrKnueG",
+      "cantidad": 136832.80922
+     },
+     {
+      "token": "USDT",
+      "de": "TQjjxMpFS2U7XKsg1DS5SXjATkJg4WDP9U",
+      "a": "TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC",
+      "cantidad": 136840
+     }
+    ],
+    "internas": [],
+    "error": null
+   },
+   "coincide": true,
+   "comprobaciones": {
+    "transferencia": true,
+    "salidaMismaTx": true,
+    "trxEnviado": null
+   }
+  },
+  {
+   "grupo": "Chainflip",
+   "caso": "tramo 6 deposito con salida en la misma transaccion",
+   "tx": "24f8b84fd0777e9b8271ce571ada49141b8fa206502c9978d12001074b41fad7",
+   "espera": {
+    "token": "USDT",
+    "de": "TGGubE2f1ND9PtXBWrqPrHTvGT4t8MLDXy",
+    "a": "TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC",
+    "cantidad": 136358.999999
+   },
+   "espera2": {
+    "token": "USDT",
+    "a": "TMqSEVHeb2R2zwaD4uX1GDVS6w3Vy836d8",
+    "cantidad": 136351.81188
+   },
+   "leido": {
+    "tx": "24f8b84fd0777e9b8271ce571ada49141b8fa206502c9978d12001074b41fad7",
+    "estado": "SUCCESS",
+    "hora": "2026-10-30T16:38:57.000Z",
+    "bloque": 87568312,
+    "tipo": "TriggerSmartContract",
+    "remitente": "TGwKRvTwGhZZj32D7phaSEJUKL2CToJZgA",
+    "contrato": "TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC",
+    "trxEnviado": 0,
+    "transferencias": [
+     {
+      "token": "USDT",
+      "de": "TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC",
+      "a": "TMqSEVHeb2R2zwaD4uX1GDVS6w3Vy836d8",
+      "cantidad": 136351.81188
+     },
+     {
+      "token": "USDT",
+      "de": "TGGubE2f1ND9PtXBWrqPrHTvGT4t8MLDXy",
+      "a": "TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC",
+      "cantidad": 136358.999999
+     }
+    ],
+    "internas": [],
+    "error": null
+   },
+   "coincide": true,
+   "comprobaciones": {
+    "transferencia": true,
+    "salidaMismaTx": true,
+    "trxEnviado": null
+   }
+  },
+  {
+   "grupo": "Chainflip",
+   "caso": "tramo 6 deposito con salida en la misma transaccion",
+   "tx": "56fa2286848364a202810aedceea6b4d3d1d7b3f4bace841ae42ab8f57c5b916",
+   "espera": {
+    "token": "USDT",
+    "de": "TAxfm8i83Fngyej7s13ucYLXoiKsuxyRUJ",
+    "a": "TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC",
+    "cantidad": 109327
+   },
+   "espera2": {
+    "token": "USDT",
+    "a": "TNpHSk5ZHtw1qSBJzSHfYRqgKT8MSk7GQA",
+    "cantidad": 109319.809188
+   },
+   "leido": {
+    "tx": "56fa2286848364a202810aedceea6b4d3d1d7b3f4bace841ae42ab8f57c5b916",
+    "estado": "SUCCESS",
+    "hora": "2026-10-30T14:56:21.000Z",
+    "bloque": 87566260,
+    "tipo": "TriggerSmartContract",
+    "remitente": "TQVcLmqzaACHjAws45oCZAZSkcadaP4FQZ",
+    "contrato": "TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC",
+    "trxEnviado": 0,
+    "transferencias": [
+     {
+      "token": "USDT",
+      "de": "TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC",
+      "a": "TNpHSk5ZHtw1qSBJzSHfYRqgKT8MSk7GQA",
+      "cantidad": 109319.809188
+     },
+     {
+      "token": "USDT",
+      "de": "TAxfm8i83Fngyej7s13ucYLXoiKsuxyRUJ",
+      "a": "TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC",
+      "cantidad": 109327
+     }
+    ],
+    "internas": [],
+    "error": null
+   },
+   "coincide": true,
+   "comprobaciones": {
+    "transferencia": true,
+    "salidaMismaTx": true,
+    "trxEnviado": null
+   }
+  },
+  {
+   "grupo": "Chainflip",
+   "caso": "tramo 6 deposito con salida en la misma transaccion",
+   "tx": "22ebb9265e8cb8113e10581334201e8837b3ba45eb02cb70d963d2989413f2f1",
+   "espera": {
+    "token": "USDT",
+    "de": "TWTtk78egBZhUwHHuUEPMPpqqVbeS1suT7",
+    "a": "TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC",
+    "cantidad": 101320.956999
+   },
+   "espera2": {
+    "token": "USDT",
+    "a": "TB7pUXywPHA4UUhyVbX4U9hsBCFQm14z31",
+    "cantidad": 74265.995116
+   },
+   "leido": {
+    "tx": "22ebb9265e8cb8113e10581334201e8837b3ba45eb02cb70d963d2989413f2f1",
+    "estado": "SUCCESS",
+    "hora": "2026-10-30T17:03:45.000Z",
+    "bloque": 87568808,
+    "tipo": "TriggerSmartContract",
+    "remitente": "TPKMEAHNZj16wgD22Y32LTVHqgs666RxR8",
+    "contrato": "TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC",
+    "trxEnviado": 0,
+    "transferencias": [
+     {
+      "token": "USDT",
+      "de": "TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC",
+      "a": "TB7pUXywPHA4UUhyVbX4U9hsBCFQm14z31",
+      "cantidad": 74265.995116
+     },
+     {
+      "token": "USDT",
+      "de": "TWTtk78egBZhUwHHuUEPMPpqqVbeS1suT7",
+      "a": "TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC",
+      "cantidad": 101320.956999
+     }
+    ],
+    "internas": [],
+    "error": null
+   },
+   "coincide": true,
+   "comprobaciones": {
+    "transferencia": true,
+    "salidaMismaTx": true,
+    "trxEnviado": null
+   }
+  },
+  {
+   "grupo": "Chainflip",
+   "caso": "tramo 6 deposito con salida en la misma transaccion",
+   "tx": "64304c1948985172d96f469ec9f699946a5adce160db0371638417dac2d6423b",
+   "espera": {
+    "token": "USDT",
+    "de": "TMBXkmnJqDmxdfTkhZDmd9vNXAgwA9jSAf",
+    "a": "TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC",
+    "cantidad": 99470.5768
+   },
+   "espera2": {
+    "token": "USDT",
+    "a": "TUFrEvyQgstaJUh18DUGFHfSRzDzwsz689",
+    "cantidad": 99463.388661
+   },
+   "leido": {
+    "tx": "64304c1948985172d96f469ec9f699946a5adce160db0371638417dac2d6423b",
+    "estado": "SUCCESS",
+    "hora": "2026-10-30T16:43:54.000Z",
+    "bloque": 87568411,
+    "tipo": "TriggerSmartContract",
+    "remitente": "TT9UMJT52Uf5Z2d92e3WJs2rkZiuxFDq87",
+    "contrato": "TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC",
+    "trxEnviado": 0,
+    "transferencias": [
+     {
+      "token": "USDT",
+      "de": "TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC",
+      "a": "TUFrEvyQgstaJUh18DUGFHfSRzDzwsz689",
+      "cantidad": 99463.388661
+     },
+     {
+      "token": "USDT",
+      "de": "TMBXkmnJqDmxdfTkhZDmd9vNXAgwA9jSAf",
+      "a": "TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC",
+      "cantidad": 99470.5768
+     }
+    ],
+    "internas": [],
+    "error": null
+   },
+   "coincide": true,
+   "comprobaciones": {
+    "transferencia": true,
+    "salidaMismaTx": true,
+    "trxEnviado": null
+   }
+  },
+  {
+   "grupo": "Chainflip",
+   "caso": "tramo 6 deposito con salida en la misma transaccion",
+   "tx": "7af943ae9ce78562b94e3c27b9e7e69ad64765834fcb814d14d7629e7f46e514",
+   "espera": {
+    "token": "USDT",
+    "de": "TPAErnwuqnmjvYVvkHUMpmvyXfRMnYAdKt",
+    "a": "TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC",
+    "cantidad": 99379.809
+   },
+   "espera2": {
+    "token": "USDT",
+    "a": "TUfmVoURAGWXDXtSCCcduWMk37aNaW1bsh",
+    "cantidad": 79176.250729
+   },
+   "leido": {
+    "tx": "7af943ae9ce78562b94e3c27b9e7e69ad64765834fcb814d14d7629e7f46e514",
+    "estado": "SUCCESS",
+    "hora": "2026-10-30T16:17:45.000Z",
+    "bloque": 87567888,
+    "tipo": "TriggerSmartContract",
+    "remitente": "TPyWA7U7fdv5R4V9nmbYAktXDutsbkRut2",
+    "contrato": "TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC",
+    "trxEnviado": 0,
+    "transferencias": [
+     {
+      "token": "USDT",
+      "de": "TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC",
+      "a": "TUfmVoURAGWXDXtSCCcduWMk37aNaW1bsh",
+      "cantidad": 79176.250729
+     },
+     {
+      "token": "USDT",
+      "de": "TPAErnwuqnmjvYVvkHUMpmvyXfRMnYAdKt",
+      "a": "TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC",
+      "cantidad": 99379.809
+     }
+    ],
+    "internas": [],
+    "error": null
+   },
+   "coincide": true,
+   "comprobaciones": {
+    "transferencia": true,
+    "salidaMismaTx": true,
+    "trxEnviado": null
+   }
+  },
+  {
+   "grupo": "Chainflip",
+   "caso": "tramo 6 deposito con salida en la misma transaccion",
+   "tx": "8785a0a7e69754bd524b2d9b45c7d424b07309abb9e330f62c123393f4f11bd4",
+   "espera": {
+    "token": "USDT",
+    "de": "TZHpufDjGEJLBgTpGsEJtvfjEUmL7ypSCZ",
+    "a": "TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC",
+    "cantidad": 87586.836319
+   },
+   "espera2": {
+    "token": "USDT",
+    "a": "TVuv3ho45tWWyQsANoYL3MESzAXvWsJvxp",
+    "cantidad": 87579.646968
+   },
+   "leido": {
+    "tx": "8785a0a7e69754bd524b2d9b45c7d424b07309abb9e330f62c123393f4f11bd4",
+    "estado": "SUCCESS",
+    "hora": "2026-10-30T20:54:12.000Z",
+    "bloque": 87573415,
+    "tipo": "TriggerSmartContract",
+    "remitente": "TKLYFRPFirgS8Ly4kVsugjLaXsifnGPoFb",
+    "contrato": "TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC",
+    "trxEnviado": 0,
+    "transferencias": [
+     {
+      "token": "USDT",
+      "de": "TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC",
+      "a": "TVuv3ho45tWWyQsANoYL3MESzAXvWsJvxp",
+      "cantidad": 87579.646968
+     },
+     {
+      "token": "USDT",
+      "de": "TZHpufDjGEJLBgTpGsEJtvfjEUmL7ypSCZ",
+      "a": "TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC",
+      "cantidad": 87586.836319
+     }
+    ],
+    "internas": [],
+    "error": null
+   },
+   "coincide": true,
+   "comprobaciones": {
+    "transferencia": true,
+    "salidaMismaTx": true,
+    "trxEnviado": null
+   }
+  },
+  {
+   "grupo": "Chainflip",
+   "caso": "tramo 6 deposito con salida en la misma transaccion",
+   "tx": "081c8b233abf6329b6ed7d0c268950c2c98974a73c416b68cb47dd8395a9f92e",
+   "espera": {
+    "token": "USDT",
+    "de": "TRT3MocfkZ4ANFo4kmfHqbN8hWQoLaHKjU",
+    "a": "TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC",
+    "cantidad": 81143.079499
+   },
+   "espera2": {
+    "token": "USDT",
+    "a": "THTxJsFXNsPFBBN91yGZHyUXcdUbaZ6WNN",
+    "cantidad": 81135.889659
+   },
+   "leido": {
+    "tx": "081c8b233abf6329b6ed7d0c268950c2c98974a73c416b68cb47dd8395a9f92e",
+    "estado": "SUCCESS",
+    "hora": "2026-10-30T19:20:00.000Z",
+    "bloque": 87571531,
+    "tipo": "TriggerSmartContract",
+    "remitente": "TTkTvutRbigEHM1zvQyrXo7affVQxwZv3z",
+    "contrato": "TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC",
+    "trxEnviado": 0,
+    "transferencias": [
+     {
+      "token": "USDT",
+      "de": "TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC",
+      "a": "THTxJsFXNsPFBBN91yGZHyUXcdUbaZ6WNN",
+      "cantidad": 81135.889659
+     },
+     {
+      "token": "USDT",
+      "de": "TRT3MocfkZ4ANFo4kmfHqbN8hWQoLaHKjU",
+      "a": "TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC",
+      "cantidad": 81143.079499
+     }
+    ],
+    "internas": [],
+    "error": null
+   },
+   "coincide": true,
+   "comprobaciones": {
+    "transferencia": true,
+    "salidaMismaTx": true,
+    "trxEnviado": null
+   }
+  },
+  {
+   "grupo": "Chainflip",
+   "caso": "tramo 6 deposito con salida en la misma transaccion",
+   "tx": "3b1c57d278839f4145a4c64d2d27189fc347d88ca2a4eac764c29920d3f48c42",
+   "espera": {
+    "token": "USDT",
+    "de": "TAU2X5Vrd7FiW4G8Xrkmdx2ZMGzWihY9QV",
+    "a": "TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC",
+    "cantidad": 77280.399999
+   },
+   "espera2": {
+    "token": "USDT",
+    "a": "TZGnitxuMPHLiLQaeV18tAYNBN6qmaNfqR",
+    "cantidad": 77271.690789
+   },
+   "leido": {
+    "tx": "3b1c57d278839f4145a4c64d2d27189fc347d88ca2a4eac764c29920d3f48c42",
+    "estado": "SUCCESS",
+    "hora": "2026-10-30T18:34:51.000Z",
+    "bloque": 87570628,
+    "tipo": "TriggerSmartContract",
+    "remitente": "TPadTSqQcDP6MNuXSu4vTSXHJMp8sZGK4q",
+    "contrato": "TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC",
+    "trxEnviado": 0,
+    "transferencias": [
+     {
+      "token": "USDT",
+      "de": "TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC",
+      "a": "TZGnitxuMPHLiLQaeV18tAYNBN6qmaNfqR",
+      "cantidad": 77271.690789
+     },
+     {
+      "token": "USDT",
+      "de": "TAU2X5Vrd7FiW4G8Xrkmdx2ZMGzWihY9QV",
+      "a": "TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC",
+      "cantidad": 77280.399999
+     }
+    ],
+    "internas": [],
+    "error": null
+   },
+   "coincide": true,
+   "comprobaciones": {
+    "transferencia": true,
+    "salidaMismaTx": true,
+    "trxEnviado": null
+   }
+  },
+  {
+   "grupo": "Chainflip",
+   "caso": "tramo 6 deposito con salida en la misma transaccion",
+   "tx": "9f7aadab2ef22737e037b3dd193ffe2121d5b0971b0279175b9ed8ab3f15d5fe",
+   "espera": {
+    "token": "USDT",
+    "de": "TTYHjpDDD6xkU4SyeKAQghoSDMbPo77uhj",
+    "a": "TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC",
+    "cantidad": 77271.689999
+   },
+   "espera2": {
+    "token": "USDT",
+    "a": "TZGnitxuMPHLiLQaeV18tAYNBN6qmaNfqR",
+    "cantidad": 77264.502611
+   },
+   "leido": {
+    "tx": "9f7aadab2ef22737e037b3dd193ffe2121d5b0971b0279175b9ed8ab3f15d5fe",
+    "estado": "SUCCESS",
+    "hora": "2026-10-30T18:38:00.000Z",
+    "bloque": 87570691,
+    "tipo": "TriggerSmartContract",
+    "remitente": "TYU88zK91HUUa9DRv17YbhpVt7j6ghd2oK",
+    "contrato": "TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC",
+    "trxEnviado": 0,
+    "transferencias": [
+     {
+      "token": "USDT",
+      "de": "TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC",
+      "a": "TZGnitxuMPHLiLQaeV18tAYNBN6qmaNfqR",
+      "cantidad": 77264.502611
+     },
+     {
+      "token": "USDT",
+      "de": "TTYHjpDDD6xkU4SyeKAQghoSDMbPo77uhj",
+      "a": "TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC",
+      "cantidad": 77271.689999
+     }
+    ],
+    "internas": [],
+    "error": null
+   },
+   "coincide": true,
+   "comprobaciones": {
+    "transferencia": true,
+    "salidaMismaTx": true,
+    "trxEnviado": null
+   }
+  },
+  {
+   "grupo": "Chainflip",
+   "caso": "tramo 6 deposito con salida en la misma transaccion",
+   "tx": "025bc919ad4617b8dda5808d1da3520b775603d0697588e42f6783502994f188",
+   "espera": {
+    "token": "USDT",
+    "de": "TTo9b7HvBVHNyGGc1o6NgF6MsJ4RtV8iVe",
+    "a": "TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC",
+    "cantidad": 76000
+   },
+   "espera2": {
+    "token": "USDT",
+    "a": "TM2MN865CQJax5va9QuH8N9xMjAQoQTpim",
+    "cantidad": 75992.811334
+   },
+   "leido": {
+    "tx": "025bc919ad4617b8dda5808d1da3520b775603d0697588e42f6783502994f188",
+    "estado": "SUCCESS",
+    "hora": "2026-10-30T19:05:12.000Z",
+    "bloque": 87571235,
+    "tipo": "TriggerSmartContract",
+    "remitente": "TQCdhYuLSnQ6YMFYPybE9XYSUUzvqSjnTX",
+    "contrato": "TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC",
+    "trxEnviado": 0,
+    "transferencias": [
+     {
+      "token": "USDT",
+      "de": "TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC",
+      "a": "TM2MN865CQJax5va9QuH8N9xMjAQoQTpim",
+      "cantidad": 75992.811334
+     },
+     {
+      "token": "USDT",
+      "de": "TTo9b7HvBVHNyGGc1o6NgF6MsJ4RtV8iVe",
+      "a": "TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC",
+      "cantidad": 76000
+     }
+    ],
+    "internas": [],
+    "error": null
+   },
+   "coincide": true,
+   "comprobaciones": {
+    "transferencia": true,
+    "salidaMismaTx": true,
+    "trxEnviado": null
+   }
+  },
+  {
+   "grupo": "Chainflip",
+   "caso": "tramo 6 deposito con salida en la misma transaccion",
+   "tx": "2ef674810328b6ea7e656a316c58c93fa8d9baf598ed3bdd9ed48002b619c0ec",
+   "espera": {
+    "token": "USDT",
+    "de": "TYoDPrkN4Qr2hrG5c7kHC1BTeaL7Q8sy5g",
+    "a": "TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC",
+    "cantidad": 71337.999999
+   },
+   "espera2": {
+    "token": "USDT",
+    "a": "TUacpVatWqiTWVTeZut6fg4U9GhiR2VWW4",
+    "cantidad": 71329.255425
+   },
+   "leido": {
+    "tx": "2ef674810328b6ea7e656a316c58c93fa8d9baf598ed3bdd9ed48002b619c0ec",
+    "estado": "SUCCESS",
+    "hora": "2026-10-30T18:12:45.000Z",
+    "bloque": 87570186,
+    "tipo": "TriggerSmartContract",
+    "remitente": "TXCPrZLGNBTW3fCAxrfiF5xtTJcTkL6Ayq",
+    "contrato": "TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC",
+    "trxEnviado": 0,
+    "transferencias": [
+     {
+      "token": "USDT",
+      "de": "TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC",
+      "a": "TUacpVatWqiTWVTeZut6fg4U9GhiR2VWW4",
+      "cantidad": 71329.255425
+     },
+     {
+      "token": "USDT",
+      "de": "TYoDPrkN4Qr2hrG5c7kHC1BTeaL7Q8sy5g",
+      "a": "TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC",
+      "cantidad": 71337.999999
+     }
+    ],
+    "internas": [],
+    "error": null
+   },
+   "coincide": true,
+   "comprobaciones": {
+    "transferencia": true,
+    "salidaMismaTx": true,
+    "trxEnviado": null
+   }
+  },
+  {
+   "grupo": "Chainflip",
+   "caso": "tramo 6 deposito con salida en la misma transaccion",
+   "tx": "01c5f60742bb8c3f1f7538fd111b4816a7f7713d90ddc0c18cdf52615a6d89a9",
+   "espera": {
+    "token": "USDT",
+    "de": "TA91gfdyoGs5T98bKTzsMpTjaNudAFrDX3",
+    "a": "TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC",
+    "cantidad": 68051.667048
+   },
+   "espera2": {
+    "token": "USDT",
+    "a": "TVjv2sZxJGFTvK7UhNhgZWTZvsLpKQ9PoZ",
+    "cantidad": 68044.479303
+   },
+   "leido": {
+    "tx": "01c5f60742bb8c3f1f7538fd111b4816a7f7713d90ddc0c18cdf52615a6d89a9",
+    "estado": "SUCCESS",
+    "hora": "2026-10-30T17:48:15.000Z",
+    "bloque": 87569698,
+    "tipo": "TriggerSmartContract",
+    "remitente": "TPKMEAHNZj16wgD22Y32LTVHqgs666RxR8",
+    "contrato": "TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC",
+    "trxEnviado": 0,
+    "transferencias": [
+     {
+      "token": "USDT",
+      "de": "TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC",
+      "a": "TVjv2sZxJGFTvK7UhNhgZWTZvsLpKQ9PoZ",
+      "cantidad": 68044.479303
+     },
+     {
+      "token": "USDT",
+      "de": "TA91gfdyoGs5T98bKTzsMpTjaNudAFrDX3",
+      "a": "TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC",
+      "cantidad": 68051.667048
+     }
+    ],
+    "internas": [],
+    "error": null
+   },
+   "coincide": true,
+   "comprobaciones": {
+    "transferencia": true,
+    "salidaMismaTx": true,
+    "trxEnviado": null
+   }
+  },
+  {
+   "grupo": "Chainflip",
+   "caso": "tramo 6 deposito con salida en la misma transaccion",
+   "tx": "7784b6f8f10740a74fd43bbd523ac3b43667616562ccb67d7f42f10ec64b7513",
+   "espera": {
+    "token": "USDT",
+    "de": "TRSqU88BQY9bU9aCpj3dzYAcyvQKm5tpsL",
+    "a": "TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC",
+    "cantidad": 66473.999999
+   },
+   "espera2": {
+    "token": "USDT",
+    "a": "TWLvSJrziLfVTqcTNiyd1NurFhDu5g4kkv",
+    "cantidad": 66466.812156
+   },
+   "leido": {
+    "tx": "7784b6f8f10740a74fd43bbd523ac3b43667616562ccb67d7f42f10ec64b7513",
+    "estado": "SUCCESS",
+    "hora": "2026-10-30T17:50:54.000Z",
+    "bloque": 87569751,
+    "tipo": "TriggerSmartContract",
+    "remitente": "TPKMEAHNZj16wgD22Y32LTVHqgs666RxR8",
+    "contrato": "TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC",
+    "trxEnviado": 0,
+    "transferencias": [
+     {
+      "token": "USDT",
+      "de": "TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC",
+      "a": "TWLvSJrziLfVTqcTNiyd1NurFhDu5g4kkv",
+      "cantidad": 66466.812156
+     },
+     {
+      "token": "USDT",
+      "de": "TRSqU88BQY9bU9aCpj3dzYAcyvQKm5tpsL",
+      "a": "TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC",
+      "cantidad": 66473.999999
+     }
+    ],
+    "internas": [],
+    "error": null
+   },
+   "coincide": true,
+   "comprobaciones": {
+    "transferencia": true,
+    "salidaMismaTx": true,
+    "trxEnviado": null
+   }
+  },
+  {
+   "grupo": "Chainflip",
+   "caso": "tramo 6 deposito con salida en la misma transaccion",
+   "tx": "ecae48974a869259a679e2281ddf64ca99da841370b9ca17af6a8eb8ad845e0a",
+   "espera": {
+    "token": "USDT",
+    "de": "TASraav2gszoEnAfeFbPB33ZPXMmnacKgt",
+    "a": "TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC",
+    "cantidad": 61293
+   },
+   "espera2": {
+    "token": "USDT",
+    "a": "TXGLv8JM314jjZ7GoqKRBkC3PdywjWgfDo",
+    "cantidad": 61285.813705
+   },
+   "leido": {
+    "tx": "ecae48974a869259a679e2281ddf64ca99da841370b9ca17af6a8eb8ad845e0a",
+    "estado": "SUCCESS",
+    "hora": "2026-10-30T17:31:09.000Z",
+    "bloque": 87569356,
+    "tipo": "TriggerSmartContract",
+    "remitente": "TGEBcybpBmZ51sQXm8UzgshVQQzeso689B",
+    "contrato": "TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC",
+    "trxEnviado": 0,
+    "transferencias": [
+     {
+      "token": "USDT",
+      "de": "TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC",
+      "a": "TXGLv8JM314jjZ7GoqKRBkC3PdywjWgfDo",
+      "cantidad": 61285.813705
+     },
+     {
+      "token": "USDT",
+      "de": "TASraav2gszoEnAfeFbPB33ZPXMmnacKgt",
+      "a": "TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC",
+      "cantidad": 61293
+     }
+    ],
+    "internas": [],
+    "error": null
+   },
+   "coincide": true,
+   "comprobaciones": {
+    "transferencia": true,
+    "salidaMismaTx": true,
+    "trxEnviado": null
+   }
+  },
+  {
+   "grupo": "Chainflip",
+   "caso": "tramo 6 deposito con salida en la misma transaccion",
+   "tx": "574b37234624077e9fb33dfd8d3f9202b7843ff51599a567c3ac12099e92a857",
+   "espera": {
+    "token": "USDT",
+    "de": "TWXLGW77C9hztbRPZEzHJzm3Ab79Cdb5QT",
+    "a": "TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC",
+    "cantidad": 48057.433999
+   },
+   "espera2": {
+    "token": "USDT",
+    "a": "TB7pUXywPHA4UUhyVbX4U9hsBCFQm14z31",
+    "cantidad": 91883.621773
+   },
+   "leido": {
+    "tx": "574b37234624077e9fb33dfd8d3f9202b7843ff51599a567c3ac12099e92a857",
+    "estado": "SUCCESS",
+    "hora": "2026-10-30T18:30:00.000Z",
+    "bloque": 87570531,
+    "tipo": "TriggerSmartContract",
+    "remitente": "TKLYFRPFirgS8Ly4kVsugjLaXsifnGPoFb",
+    "contrato": "TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC",
+    "trxEnviado": 0,
+    "transferencias": [
+     {
+      "token": "USDT",
+      "de": "TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC",
+      "a": "TB7pUXywPHA4UUhyVbX4U9hsBCFQm14z31",
+      "cantidad": 91883.621773
+     },
+     {
+      "token": "USDT",
+      "de": "TWXLGW77C9hztbRPZEzHJzm3Ab79Cdb5QT",
+      "a": "TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC",
+      "cantidad": 48057.433999
+     }
+    ],
+    "internas": [],
+    "error": null
+   },
+   "coincide": true,
+   "comprobaciones": {
+    "transferencia": true,
+    "salidaMismaTx": true,
+    "trxEnviado": null
+   }
+  },
+  {
+   "grupo": "Symbiosis",
+   "caso": "tramo 6 envio al MetaRouter",
+   "tx": "15399b55497eb3cb553de2de58261c4f4992701b560d54e02df298d4ff0bef3c",
+   "esperaTrx": {
+    "de": "TXNipvQmarXgwbtTtin7nMtE77sio7iRzP",
+    "cantidad": 30000
+   },
+   "espera": null,
+   "leido": {
+    "tx": "15399b55497eb3cb553de2de58261c4f4992701b560d54e02df298d4ff0bef3c",
+    "estado": "SUCCESS",
+    "hora": "2026-10-30T19:51:57.000Z",
+    "bloque": 87572170,
+    "tipo": "TriggerSmartContract",
+    "remitente": "TXNipvQmarXgwbtTtin7nMtE77sio7iRzP",
+    "contrato": "TPuaJ6gnYfE9gLUDFrbWbPx3tMnjG8max1",
+    "trxEnviado": 30000,
+    "transferencias": [
+     {
+      "token": "USDT",
+      "de": "TUyTiAkE5R5GF9MrDW9oTWPCqYai42ngTc",
+      "a": "TD4tamFrCq7KvQEB1LArNXr9sKFC6GaAmt",
+      "cantidad": 10142.885522
+     },
+     {
+      "token": "USDT",
+      "de": "TYmb1NaNsehpXcsnV19zpAcZ56V4k1NLJ9",
+      "a": "TUyTiAkE5R5GF9MrDW9oTWPCqYai42ngTc",
+      "cantidad": 10142.885522
+     },
+     {
+      "token": "USDT",
+      "de": "TQqgNg13s2DjvXhW1ky4v6TsR8wZGvb7Y4",
+      "a": "TYmb1NaNsehpXcsnV19zpAcZ56V4k1NLJ9",
+      "cantidad": 10142.885522
+     },
+     {
+      "token": "USDT",
+      "de": "TVjuTE3V5bMVdpfNhid8kD2v35T2k1u1Br",
+      "a": "TQqgNg13s2DjvXhW1ky4v6TsR8wZGvb7Y4",
+      "cantidad": 10142.885522
+     }
+    ],
+    "internas": [
+     {
+      "de": "TPuaJ6gnYfE9gLUDFrbWbPx3tMnjG8max1",
+      "a": "TUyTiAkE5R5GF9MrDW9oTWPCqYai42ngTc",
+      "trx": 30000
+     },
+     {
+      "de": "TUyTiAkE5R5GF9MrDW9oTWPCqYai42ngTc",
+      "a": "TYmb1NaNsehpXcsnV19zpAcZ56V4k1NLJ9",
+      "trx": 30000
+     },
+     {
+      "de": "TYmb1NaNsehpXcsnV19zpAcZ56V4k1NLJ9",
+      "a": "TQqgNg13s2DjvXhW1ky4v6TsR8wZGvb7Y4",
+      "trx": 30000
+     },
+     {
+      "de": "TQqgNg13s2DjvXhW1ky4v6TsR8wZGvb7Y4",
+      "a": "TVjuTE3V5bMVdpfNhid8kD2v35T2k1u1Br",
+      "trx": 30000
+     }
+    ],
+    "error": null
+   },
+   "coincide": true,
+   "comprobaciones": {
+    "transferencia": null,
+    "salidaMismaTx": null,
+    "trxEnviado": true
+   }
+  },
+  {
+   "grupo": "Symbiosis",
+   "caso": "tramo 6 devolucion a la misma billetera",
+   "tx": "10f816e0ea528feb28c431388194f9c6dafae189fa6781a5a9a01b9d6327bdcd",
+   "espera": {
+    "token": "USDT",
+    "a": "TXNipvQmarXgwbtTtin7nMtE77sio7iRzP",
+    "cantidad": 10139.135522
+   },
+   "mismaBilletera": true,
+   "leido": {
+    "tx": "10f816e0ea528feb28c431388194f9c6dafae189fa6781a5a9a01b9d6327bdcd",
+    "estado": "SUCCESS",
+    "hora": "2026-10-30T20:07:12.000Z",
+    "bloque": 87572475,
+    "tipo": "TriggerSmartContract",
+    "remitente": "TKSyjU1syKL2gmGZbpexiYZkvcbk6jqAtf",
+    "contrato": "TQDdx5hH1E6KBXdvTiYH39b3B9cTTw1wtn",
+    "trxEnviado": 0,
+    "transferencias": [
+     {
+      "token": "USDT",
+      "de": "TD4tamFrCq7KvQEB1LArNXr9sKFC6GaAmt",
+      "a": "TQDdx5hH1E6KBXdvTiYH39b3B9cTTw1wtn",
+      "cantidad": 3.75
+     },
+     {
+      "token": "USDT",
+      "de": "TD4tamFrCq7KvQEB1LArNXr9sKFC6GaAmt",
+      "a": "TXNipvQmarXgwbtTtin7nMtE77sio7iRzP",
+      "cantidad": 10139.135522
+     }
+    ],
+    "internas": [],
+    "error": null
+   },
+   "coincide": true,
+   "comprobaciones": {
+    "transferencia": true,
+    "salidaMismaTx": null,
+    "trxEnviado": null
+   }
+  },
+  {
+   "grupo": "Symbiosis",
+   "caso": "tramo 6 envio al MetaRouter",
+   "tx": "75dfe24134b4b1eb9283030779d7fe1606daf6383b2a6079a03aadce7e562d3e",
+   "esperaTrx": {
+    "de": "TUQ4bic35uvybH3yAXc7Aomkiq6t5r2Nv9",
+    "cantidad": 20000
+   },
+   "espera": null,
+   "leido": {
+    "tx": "75dfe24134b4b1eb9283030779d7fe1606daf6383b2a6079a03aadce7e562d3e",
+    "estado": "SUCCESS",
+    "hora": "2026-10-30T08:02:12.000Z",
+    "bloque": 87557979,
+    "tipo": "TriggerSmartContract",
+    "remitente": "TUQ4bic35uvybH3yAXc7Aomkiq6t5r2Nv9",
+    "contrato": "TPuaJ6gnYfE9gLUDFrbWbPx3tMnjG8max1",
+    "trxEnviado": 20000,
+    "transferencias": [
+     {
+      "token": "USDT",
+      "de": "TUyTiAkE5R5GF9MrDW9oTWPCqYai42ngTc",
+      "a": "TD4tamFrCq7KvQEB1LArNXr9sKFC6GaAmt",
+      "cantidad": 6979.539901
+     },
+     {
+      "token": "USDT",
+      "de": "TYmb1NaNsehpXcsnV19zpAcZ56V4k1NLJ9",
+      "a": "TUyTiAkE5R5GF9MrDW9oTWPCqYai42ngTc",
+      "cantidad": 6979.539901
+     },
+     {
+      "token": "USDT",
+      "de": "TQqgNg13s2DjvXhW1ky4v6TsR8wZGvb7Y4",
+      "a": "TYmb1NaNsehpXcsnV19zpAcZ56V4k1NLJ9",
+      "cantidad": 6979.539901
+     },
+     {
+      "token": "USDT",
+      "de": "TVjuTE3V5bMVdpfNhid8kD2v35T2k1u1Br",
+      "a": "TQqgNg13s2DjvXhW1ky4v6TsR8wZGvb7Y4",
+      "cantidad": 6979.539901
+     }
+    ],
+    "internas": [
+     {
+      "de": "TPuaJ6gnYfE9gLUDFrbWbPx3tMnjG8max1",
+      "a": "TUyTiAkE5R5GF9MrDW9oTWPCqYai42ngTc",
+      "trx": 20000
+     },
+     {
+      "de": "TUyTiAkE5R5GF9MrDW9oTWPCqYai42ngTc",
+      "a": "TYmb1NaNsehpXcsnV19zpAcZ56V4k1NLJ9",
+      "trx": 20000
+     },
+     {
+      "de": "TYmb1NaNsehpXcsnV19zpAcZ56V4k1NLJ9",
+      "a": "TQqgNg13s2DjvXhW1ky4v6TsR8wZGvb7Y4",
+      "trx": 20000
+     },
+     {
+      "de": "TQqgNg13s2DjvXhW1ky4v6TsR8wZGvb7Y4",
+      "a": "TVjuTE3V5bMVdpfNhid8kD2v35T2k1u1Br",
+      "trx": 20000
+     }
+    ],
+    "error": null
+   },
+   "coincide": true,
+   "comprobaciones": {
+    "transferencia": null,
+    "salidaMismaTx": null,
+    "trxEnviado": true
+   }
+  },
+  {
+   "grupo": "Symbiosis",
+   "caso": "tramo 6 devolucion a la misma billetera",
+   "tx": "21f64bc5374acfe76e8fd658780fb70caa6fdceab0ecdc7f204887c2105fbfaa",
+   "espera": {
+    "token": "USDT",
+    "a": "TUQ4bic35uvybH3yAXc7Aomkiq6t5r2Nv9",
+    "cantidad": 6975.789901
+   },
+   "mismaBilletera": true,
+   "leido": {
+    "tx": "21f64bc5374acfe76e8fd658780fb70caa6fdceab0ecdc7f204887c2105fbfaa",
+    "estado": "SUCCESS",
+    "hora": "2026-10-30T08:18:15.000Z",
+    "bloque": 87558300,
+    "tipo": "TriggerSmartContract",
+    "remitente": "TKSyjU1syKL2gmGZbpexiYZkvcbk6jqAtf",
+    "contrato": "TQDdx5hH1E6KBXdvTiYH39b3B9cTTw1wtn",
+    "trxEnviado": 0,
+    "transferencias": [
+     {
+      "token": "USDT",
+      "de": "TD4tamFrCq7KvQEB1LArNXr9sKFC6GaAmt",
+      "a": "TQDdx5hH1E6KBXdvTiYH39b3B9cTTw1wtn",
+      "cantidad": 3.75
+     },
+     {
+      "token": "USDT",
+      "de": "TD4tamFrCq7KvQEB1LArNXr9sKFC6GaAmt",
+      "a": "TUQ4bic35uvybH3yAXc7Aomkiq6t5r2Nv9",
+      "cantidad": 6975.789901
+     }
+    ],
+    "internas": [],
+    "error": null
+   },
+   "coincide": true,
+   "comprobaciones": {
+    "transferencia": true,
+    "salidaMismaTx": null,
+    "trxEnviado": null
+   }
+  },
+  {
+   "grupo": "Symbiosis",
+   "caso": "tramo 6 envio al MetaRouter",
+   "tx": "b4e6da7cdc6846e9285ec4e050c3d1f71b5feb4f77af323303fbe6cc3a9804fd",
+   "esperaTrx": {
+    "de": "TSa3bTm7k3ekQLbQeQne19LwcBry4WUVbf",
+    "cantidad": 15000
+   },
+   "espera": null,
+   "leido": {
+    "tx": "b4e6da7cdc6846e9285ec4e050c3d1f71b5feb4f77af323303fbe6cc3a9804fd",
+    "estado": "SUCCESS",
+    "hora": "2026-10-30T08:02:06.000Z",
+    "bloque": 87557977,
+    "tipo": "TriggerSmartContract",
+    "remitente": "TSa3bTm7k3ekQLbQeQne19LwcBry4WUVbf",
+    "contrato": "TPuaJ6gnYfE9gLUDFrbWbPx3tMnjG8max1",
+    "trxEnviado": 15000,
+    "transferencias": [
+     {
+      "token": "USDT",
+      "de": "TUyTiAkE5R5GF9MrDW9oTWPCqYai42ngTc",
+      "a": "TD4tamFrCq7KvQEB1LArNXr9sKFC6GaAmt",
+      "cantidad": 5234.727118
+     },
+     {
+      "token": "USDT",
+      "de": "TYmb1NaNsehpXcsnV19zpAcZ56V4k1NLJ9",
+      "a": "TUyTiAkE5R5GF9MrDW9oTWPCqYai42ngTc",
+      "cantidad": 5234.727118
+     },
+     {
+      "token": "USDT",
+      "de": "TQqgNg13s2DjvXhW1ky4v6TsR8wZGvb7Y4",
+      "a": "TYmb1NaNsehpXcsnV19zpAcZ56V4k1NLJ9",
+      "cantidad": 5234.727118
+     },
+     {
+      "token": "USDT",
+      "de": "TVjuTE3V5bMVdpfNhid8kD2v35T2k1u1Br",
+      "a": "TQqgNg13s2DjvXhW1ky4v6TsR8wZGvb7Y4",
+      "cantidad": 5234.727118
+     }
+    ],
+    "internas": [
+     {
+      "de": "TPuaJ6gnYfE9gLUDFrbWbPx3tMnjG8max1",
+      "a": "TUyTiAkE5R5GF9MrDW9oTWPCqYai42ngTc",
+      "trx": 15000
+     },
+     {
+      "de": "TUyTiAkE5R5GF9MrDW9oTWPCqYai42ngTc",
+      "a": "TYmb1NaNsehpXcsnV19zpAcZ56V4k1NLJ9",
+      "trx": 15000
+     },
+     {
+      "de": "TYmb1NaNsehpXcsnV19zpAcZ56V4k1NLJ9",
+      "a": "TQqgNg13s2DjvXhW1ky4v6TsR8wZGvb7Y4",
+      "trx": 15000
+     },
+     {
+      "de": "TQqgNg13s2DjvXhW1ky4v6TsR8wZGvb7Y4",
+      "a": "TVjuTE3V5bMVdpfNhid8kD2v35T2k1u1Br",
+      "trx": 15000
+     }
+    ],
+    "error": null
+   },
+   "coincide": true,
+   "comprobaciones": {
+    "transferencia": null,
+    "salidaMismaTx": null,
+    "trxEnviado": true
+   }
+  },
+  {
+   "grupo": "Symbiosis",
+   "caso": "tramo 6 devolucion a la misma billetera",
+   "tx": "a6fc32390a920c540d28261e05553b9c74fdc75a4955a1bb0568725937878801",
+   "espera": {
+    "token": "USDT",
+    "a": "TSa3bTm7k3ekQLbQeQne19LwcBry4WUVbf",
+    "cantidad": 5230.727118
+   },
+   "mismaBilletera": true,
+   "leido": {
+    "tx": "a6fc32390a920c540d28261e05553b9c74fdc75a4955a1bb0568725937878801",
+    "estado": "SUCCESS",
+    "hora": "2026-10-30T08:18:15.000Z",
+    "bloque": 87558300,
+    "tipo": "TriggerSmartContract",
+    "remitente": "TKSyjU1syKL2gmGZbpexiYZkvcbk6jqAtf",
+    "contrato": "TQDdx5hH1E6KBXdvTiYH39b3B9cTTw1wtn",
+    "trxEnviado": 0,
+    "transferencias": [
+     {
+      "token": "USDT",
+      "de": "TD4tamFrCq7KvQEB1LArNXr9sKFC6GaAmt",
+      "a": "TQDdx5hH1E6KBXdvTiYH39b3B9cTTw1wtn",
+      "cantidad": 4
+     },
+     {
+      "token": "USDT",
+      "de": "TD4tamFrCq7KvQEB1LArNXr9sKFC6GaAmt",
+      "a": "TSa3bTm7k3ekQLbQeQne19LwcBry4WUVbf",
+      "cantidad": 5230.727118
+     }
+    ],
+    "internas": [],
+    "error": null
+   },
+   "coincide": true,
+   "comprobaciones": {
+    "transferencia": true,
+    "salidaMismaTx": null,
+    "trxEnviado": null
+   }
+  },
+  {
+   "grupo": "Symbiosis",
+   "caso": "tramo 6 envio al MetaRouter",
+   "tx": "37b6d8c6e596ca9201e01f55789812bd17b329baebefbe45b0a3a2e5b5c274fe",
+   "esperaTrx": {
+    "de": "TKqZWqmZMDNbfxekGKM7xK1d9iPENrW7Q7",
+    "cantidad": 35000
+   },
+   "espera": null,
+   "leido": {
+    "tx": "37b6d8c6e596ca9201e01f55789812bd17b329baebefbe45b0a3a2e5b5c274fe",
+    "estado": "SUCCESS",
+    "hora": "2026-10-30T12:14:27.000Z",
+    "bloque": 87563022,
+    "tipo": "TriggerSmartContract",
+    "remitente": "TKqZWqmZMDNbfxekGKM7xK1d9iPENrW7Q7",
+    "contrato": "TPuaJ6gnYfE9gLUDFrbWbPx3tMnjG8max1",
+    "trxEnviado": 35000,
+    "transferencias": [
+     {
+      "token": "USDT",
+      "de": "TUyTiAkE5R5GF9MrDW9oTWPCqYai42ngTc",
+      "a": "TD4tamFrCq7KvQEB1LArNXr9sKFC6GaAmt",
+      "cantidad": 12066.355746
+     },
+     {
+      "token": "USDT",
+      "de": "TYmb1NaNsehpXcsnV19zpAcZ56V4k1NLJ9",
+      "a": "TUyTiAkE5R5GF9MrDW9oTWPCqYai42ngTc",
+      "cantidad": 12066.355746
+     },
+     {
+      "token": "USDT",
+      "de": "TQqgNg13s2DjvXhW1ky4v6TsR8wZGvb7Y4",
+      "a": "TYmb1NaNsehpXcsnV19zpAcZ56V4k1NLJ9",
+      "cantidad": 12066.355746
+     },
+     {
+      "token": "TNUC9Qb1rRpS5CbWLmNMxXBjyFoydXjWFR",
+      "de": "TQqgNg13s2DjvXhW1ky4v6TsR8wZGvb7Y4",
+      "a": "TSUUVjysXV8YqHytSNjfkNXnnB49QDvZpx",
+      "cantidad": "35000000000"
+     },
+     {
+      "token": "USDT",
+      "de": "TSUUVjysXV8YqHytSNjfkNXnnB49QDvZpx",
+      "a": "TQqgNg13s2DjvXhW1ky4v6TsR8wZGvb7Y4",
+      "cantidad": 12066.355746
+     }
+    ],
+    "internas": [
+     {
+      "de": "TPuaJ6gnYfE9gLUDFrbWbPx3tMnjG8max1",
+      "a": "TUyTiAkE5R5GF9MrDW9oTWPCqYai42ngTc",
+      "trx": 35000
+     },
+     {
+      "de": "TUyTiAkE5R5GF9MrDW9oTWPCqYai42ngTc",
+      "a": "TYmb1NaNsehpXcsnV19zpAcZ56V4k1NLJ9",
+      "trx": 35000
+     },
+     {
+      "de": "TYmb1NaNsehpXcsnV19zpAcZ56V4k1NLJ9",
+      "a": "TQqgNg13s2DjvXhW1ky4v6TsR8wZGvb7Y4",
+      "trx": 35000
+     },
+     {
+      "de": "TQqgNg13s2DjvXhW1ky4v6TsR8wZGvb7Y4",
+      "a": "TNUC9Qb1rRpS5CbWLmNMxXBjyFoydXjWFR",
+      "trx": 35000
+     }
+    ],
+    "error": null
+   },
+   "coincide": true,
+   "comprobaciones": {
+    "transferencia": null,
+    "salidaMismaTx": null,
+    "trxEnviado": true
+   }
+  },
+  {
+   "grupo": "Symbiosis",
+   "caso": "tramo 6 devolucion a la misma billetera",
+   "tx": "feca855fdaa2e7adc38e0b246be50a13402af48f2dd65c5f2c358a28ad3fab60",
+   "espera": {
+    "token": "USDT",
+    "a": "TKqZWqmZMDNbfxekGKM7xK1d9iPENrW7Q7",
+    "cantidad": 12062.605746
+   },
+   "mismaBilletera": true,
+   "leido": {
+    "tx": "feca855fdaa2e7adc38e0b246be50a13402af48f2dd65c5f2c358a28ad3fab60",
+    "estado": "SUCCESS",
+    "hora": "2026-10-30T12:30:15.000Z",
+    "bloque": 87563338,
+    "tipo": "TriggerSmartContract",
+    "remitente": "TKSyjU1syKL2gmGZbpexiYZkvcbk6jqAtf",
+    "contrato": "TQDdx5hH1E6KBXdvTiYH39b3B9cTTw1wtn",
+    "trxEnviado": 0,
+    "transferencias": [
+     {
+      "token": "USDT",
+      "de": "TD4tamFrCq7KvQEB1LArNXr9sKFC6GaAmt",
+      "a": "TQDdx5hH1E6KBXdvTiYH39b3B9cTTw1wtn",
+      "cantidad": 3.75
+     },
+     {
+      "token": "USDT",
+      "de": "TD4tamFrCq7KvQEB1LArNXr9sKFC6GaAmt",
+      "a": "TKqZWqmZMDNbfxekGKM7xK1d9iPENrW7Q7",
+      "cantidad": 12062.605746
+     }
+    ],
+    "internas": [],
+    "error": null
+   },
+   "coincide": true,
+   "comprobaciones": {
+    "transferencia": true,
+    "salidaMismaTx": null,
+    "trxEnviado": null
+   }
+  },
+  {
+   "grupo": "Symbiosis",
+   "caso": "tramo 6 envio al MetaRouter",
+   "tx": "84aec86b87a103d88ddb39866b92a2a68f2dfd7176978f587e9a223f90221bf9",
+   "esperaTrx": {
+    "de": "TRdhuHTTRo21gnctQVp2etB3QYTkepsWGi",
+    "cantidad": 35010
+   },
+   "espera": null,
+   "leido": {
+    "tx": "84aec86b87a103d88ddb39866b92a2a68f2dfd7176978f587e9a223f90221bf9",
+    "estado": "SUCCESS",
+    "hora": "2026-10-30T12:15:03.000Z",
+    "bloque": 87563034,
+    "tipo": "TriggerSmartContract",
+    "remitente": "TRdhuHTTRo21gnctQVp2etB3QYTkepsWGi",
+    "contrato": "TPuaJ6gnYfE9gLUDFrbWbPx3tMnjG8max1",
+    "trxEnviado": 35010,
+    "transferencias": [
+     {
+      "token": "USDT",
+      "de": "TUyTiAkE5R5GF9MrDW9oTWPCqYai42ngTc",
+      "a": "TD4tamFrCq7KvQEB1LArNXr9sKFC6GaAmt",
+      "cantidad": 12069.590012
+     },
+     {
+      "token": "USDT",
+      "de": "TYmb1NaNsehpXcsnV19zpAcZ56V4k1NLJ9",
+      "a": "TUyTiAkE5R5GF9MrDW9oTWPCqYai42ngTc",
+      "cantidad": 12069.590012
+     },
+     {
+      "token": "USDT",
+      "de": "TQqgNg13s2DjvXhW1ky4v6TsR8wZGvb7Y4",
+      "a": "TYmb1NaNsehpXcsnV19zpAcZ56V4k1NLJ9",
+      "cantidad": 12069.590012
+     },
+     {
+      "token": "TNUC9Qb1rRpS5CbWLmNMxXBjyFoydXjWFR",
+      "de": "TQqgNg13s2DjvXhW1ky4v6TsR8wZGvb7Y4",
+      "a": "TSUUVjysXV8YqHytSNjfkNXnnB49QDvZpx",
+      "cantidad": "35010000000"
+     },
+     {
+      "token": "USDT",
+      "de": "TSUUVjysXV8YqHytSNjfkNXnnB49QDvZpx",
+      "a": "TQqgNg13s2DjvXhW1ky4v6TsR8wZGvb7Y4",
+      "cantidad": 12069.590012
+     }
+    ],
+    "internas": [
+     {
+      "de": "TPuaJ6gnYfE9gLUDFrbWbPx3tMnjG8max1",
+      "a": "TUyTiAkE5R5GF9MrDW9oTWPCqYai42ngTc",
+      "trx": 35010
+     },
+     {
+      "de": "TUyTiAkE5R5GF9MrDW9oTWPCqYai42ngTc",
+      "a": "TYmb1NaNsehpXcsnV19zpAcZ56V4k1NLJ9",
+      "trx": 35010
+     },
+     {
+      "de": "TYmb1NaNsehpXcsnV19zpAcZ56V4k1NLJ9",
+      "a": "TQqgNg13s2DjvXhW1ky4v6TsR8wZGvb7Y4",
+      "trx": 35010
+     },
+     {
+      "de": "TQqgNg13s2DjvXhW1ky4v6TsR8wZGvb7Y4",
+      "a": "TNUC9Qb1rRpS5CbWLmNMxXBjyFoydXjWFR",
+      "trx": 35010
+     }
+    ],
+    "error": null
+   },
+   "coincide": true,
+   "comprobaciones": {
+    "transferencia": null,
+    "salidaMismaTx": null,
+    "trxEnviado": true
+   }
+  },
+  {
+   "grupo": "Symbiosis",
+   "caso": "tramo 6 devolucion a la misma billetera",
+   "tx": "7b3fa02b1c323fc347cad7211e06f8fa34de0faa48ed78eb4e9522605dacc6e6",
+   "espera": {
+    "token": "USDT",
+    "a": "TRdhuHTTRo21gnctQVp2etB3QYTkepsWGi",
+    "cantidad": 12065.840012
+   },
+   "mismaBilletera": true,
+   "leido": {
+    "tx": "7b3fa02b1c323fc347cad7211e06f8fa34de0faa48ed78eb4e9522605dacc6e6",
+    "estado": "SUCCESS",
+    "hora": "2026-10-30T12:31:12.000Z",
+    "bloque": 87563357,
+    "tipo": "TriggerSmartContract",
+    "remitente": "TKSyjU1syKL2gmGZbpexiYZkvcbk6jqAtf",
+    "contrato": "TQDdx5hH1E6KBXdvTiYH39b3B9cTTw1wtn",
+    "trxEnviado": 0,
+    "transferencias": [
+     {
+      "token": "USDT",
+      "de": "TD4tamFrCq7KvQEB1LArNXr9sKFC6GaAmt",
+      "a": "TQDdx5hH1E6KBXdvTiYH39b3B9cTTw1wtn",
+      "cantidad": 3.75
+     },
+     {
+      "token": "USDT",
+      "de": "TD4tamFrCq7KvQEB1LArNXr9sKFC6GaAmt",
+      "a": "TRdhuHTTRo21gnctQVp2etB3QYTkepsWGi",
+      "cantidad": 12065.840012
+     }
+    ],
+    "internas": [],
+    "error": null
+   },
+   "coincide": true,
+   "comprobaciones": {
+    "transferencia": true,
+    "salidaMismaTx": null,
+    "trxEnviado": null
+   }
+  },
+  {
+   "grupo": "Symbiosis",
+   "caso": "tramo 6 envio al MetaRouter",
+   "tx": "406682ea46aa9e305e3fbcf0b974b71a852c47e6d899527a3af4d1451ab24075",
+   "esperaTrx": {
+    "de": "TP5BZfCdjneSzNCcMEoPAhwL78x5EYoN1N",
+    "cantidad": 24350
+   },
+   "espera": null,
+   "leido": {
+    "tx": "406682ea46aa9e305e3fbcf0b974b71a852c47e6d899527a3af4d1451ab24075",
+    "estado": "SUCCESS",
+    "hora": "2026-10-30T20:30:42.000Z",
+    "bloque": 87572945,
+    "tipo": "TriggerSmartContract",
+    "remitente": "TP5BZfCdjneSzNCcMEoPAhwL78x5EYoN1N",
+    "contrato": "TPuaJ6gnYfE9gLUDFrbWbPx3tMnjG8max1",
+    "trxEnviado": 24350,
+    "transferencias": [
+     {
+      "token": "USDT",
+      "de": "TUyTiAkE5R5GF9MrDW9oTWPCqYai42ngTc",
+      "a": "TD4tamFrCq7KvQEB1LArNXr9sKFC6GaAmt",
+      "cantidad": 8219.622464
+     },
+     {
+      "token": "USDT",
+      "de": "TYmb1NaNsehpXcsnV19zpAcZ56V4k1NLJ9",
+      "a": "TUyTiAkE5R5GF9MrDW9oTWPCqYai42ngTc",
+      "cantidad": 8219.622464
+     },
+     {
+      "token": "USDT",
+      "de": "TQqgNg13s2DjvXhW1ky4v6TsR8wZGvb7Y4",
+      "a": "TYmb1NaNsehpXcsnV19zpAcZ56V4k1NLJ9",
+      "cantidad": 8219.622464
+     },
+     {
+      "token": "USDT",
+      "de": "TVjuTE3V5bMVdpfNhid8kD2v35T2k1u1Br",
+      "a": "TQqgNg13s2DjvXhW1ky4v6TsR8wZGvb7Y4",
+      "cantidad": 8219.622464
+     }
+    ],
+    "internas": [
+     {
+      "de": "TPuaJ6gnYfE9gLUDFrbWbPx3tMnjG8max1",
+      "a": "TUyTiAkE5R5GF9MrDW9oTWPCqYai42ngTc",
+      "trx": 24350
+     },
+     {
+      "de": "TUyTiAkE5R5GF9MrDW9oTWPCqYai42ngTc",
+      "a": "TYmb1NaNsehpXcsnV19zpAcZ56V4k1NLJ9",
+      "trx": 24350
+     },
+     {
+      "de": "TYmb1NaNsehpXcsnV19zpAcZ56V4k1NLJ9",
+      "a": "TQqgNg13s2DjvXhW1ky4v6TsR8wZGvb7Y4",
+      "trx": 24350
+     },
+     {
+      "de": "TQqgNg13s2DjvXhW1ky4v6TsR8wZGvb7Y4",
+      "a": "TVjuTE3V5bMVdpfNhid8kD2v35T2k1u1Br",
+      "trx": 24350
+     }
+    ],
+    "error": null
+   },
+   "coincide": true,
+   "comprobaciones": {
+    "transferencia": null,
+    "salidaMismaTx": null,
+    "trxEnviado": true
+   }
+  },
+  {
+   "grupo": "Symbiosis",
+   "caso": "tramo 6 devolucion a la misma billetera",
+   "tx": "05b6e607c8314217bd39dd70be150a67a9ccef6a26f2b1ad3ac2e8aa21c726a6",
+   "espera": {
+    "token": "USDT",
+    "a": "TP5BZfCdjneSzNCcMEoPAhwL78x5EYoN1N",
+    "cantidad": 8215.872464
+   },
+   "mismaBilletera": true,
+   "leido": {
+    "tx": "05b6e607c8314217bd39dd70be150a67a9ccef6a26f2b1ad3ac2e8aa21c726a6",
+    "estado": "SUCCESS",
+    "hora": "2026-10-30T20:46:09.000Z",
+    "bloque": 87573254,
+    "tipo": "TriggerSmartContract",
+    "remitente": "TKSyjU1syKL2gmGZbpexiYZkvcbk6jqAtf",
+    "contrato": "TQDdx5hH1E6KBXdvTiYH39b3B9cTTw1wtn",
+    "trxEnviado": 0,
+    "transferencias": [
+     {
+      "token": "USDT",
+      "de": "TD4tamFrCq7KvQEB1LArNXr9sKFC6GaAmt",
+      "a": "TQDdx5hH1E6KBXdvTiYH39b3B9cTTw1wtn",
+      "cantidad": 3.75
+     },
+     {
+      "token": "USDT",
+      "de": "TD4tamFrCq7KvQEB1LArNXr9sKFC6GaAmt",
+      "a": "TP5BZfCdjneSzNCcMEoPAhwL78x5EYoN1N",
+      "cantidad": 8215.872464
+     }
+    ],
+    "internas": [],
+    "error": null
+   },
+   "coincide": true,
+   "comprobaciones": {
+    "transferencia": true,
+    "salidaMismaTx": null,
+    "trxEnviado": null
+   }
+  },
+  {
+   "grupo": "Symbiosis",
+   "caso": "tramo 6 envio al MetaRouter",
+   "tx": "fcbc3ee350a7cfc0cb51e444478e31ffd3234bd21bdafb0644c6c3d526d1619b",
+   "esperaTrx": {
+    "de": "TGb8CAGReBaRwYgrvacWkDFHZ8o2CLtZKT",
+    "cantidad": 30000
+   },
+   "espera": null,
+   "leido": {
+    "tx": "fcbc3ee350a7cfc0cb51e444478e31ffd3234bd21bdafb0644c6c3d526d1619b",
+    "estado": "SUCCESS",
+    "hora": "2026-10-30T12:53:03.000Z",
+    "bloque": 87563794,
+    "tipo": "TriggerSmartContract",
+    "remitente": "TGb8CAGReBaRwYgrvacWkDFHZ8o2CLtZKT",
+    "contrato": "TPuaJ6gnYfE9gLUDFrbWbPx3tMnjG8max1",
+    "trxEnviado": 30000,
+    "transferencias": [
+     {
+      "token": "USDT",
+      "de": "TUyTiAkE5R5GF9MrDW9oTWPCqYai42ngTc",
+      "a": "TD4tamFrCq7KvQEB1LArNXr9sKFC6GaAmt",
+      "cantidad": 10317.465253
+     },
+     {
+      "token": "USDT",
+      "de": "TYmb1NaNsehpXcsnV19zpAcZ56V4k1NLJ9",
+      "a": "TUyTiAkE5R5GF9MrDW9oTWPCqYai42ngTc",
+      "cantidad": 10317.465253
+     },
+     {
+      "token": "USDT",
+      "de": "TQqgNg13s2DjvXhW1ky4v6TsR8wZGvb7Y4",
+      "a": "TYmb1NaNsehpXcsnV19zpAcZ56V4k1NLJ9",
+      "cantidad": 10317.465253
+     },
+     {
+      "token": "USDT",
+      "de": "TVjuTE3V5bMVdpfNhid8kD2v35T2k1u1Br",
+      "a": "TQqgNg13s2DjvXhW1ky4v6TsR8wZGvb7Y4",
+      "cantidad": 10317.465253
+     }
+    ],
+    "internas": [
+     {
+      "de": "TPuaJ6gnYfE9gLUDFrbWbPx3tMnjG8max1",
+      "a": "TUyTiAkE5R5GF9MrDW9oTWPCqYai42ngTc",
+      "trx": 30000
+     },
+     {
+      "de": "TUyTiAkE5R5GF9MrDW9oTWPCqYai42ngTc",
+      "a": "TYmb1NaNsehpXcsnV19zpAcZ56V4k1NLJ9",
+      "trx": 30000
+     },
+     {
+      "de": "TYmb1NaNsehpXcsnV19zpAcZ56V4k1NLJ9",
+      "a": "TQqgNg13s2DjvXhW1ky4v6TsR8wZGvb7Y4",
+      "trx": 30000
+     },
+     {
+      "de": "TQqgNg13s2DjvXhW1ky4v6TsR8wZGvb7Y4",
+      "a": "TVjuTE3V5bMVdpfNhid8kD2v35T2k1u1Br",
+      "trx": 30000
+     }
+    ],
+    "error": null
+   },
+   "coincide": true,
+   "comprobaciones": {
+    "transferencia": null,
+    "salidaMismaTx": null,
+    "trxEnviado": true
+   }
+  },
+  {
+   "grupo": "Symbiosis",
+   "caso": "tramo 6 devolucion a la misma billetera",
+   "tx": "54c9a9d6ca84573200229393f3dd370381c6fbac6f5e0a2eac473ab093441e52",
+   "espera": {
+    "token": "USDT",
+    "a": "TGb8CAGReBaRwYgrvacWkDFHZ8o2CLtZKT",
+    "cantidad": 10313.715253
+   },
+   "mismaBilletera": true,
+   "leido": {
+    "tx": "54c9a9d6ca84573200229393f3dd370381c6fbac6f5e0a2eac473ab093441e52",
+    "estado": "SUCCESS",
+    "hora": "2026-10-30T13:09:06.000Z",
+    "bloque": 87564115,
+    "tipo": "TriggerSmartContract",
+    "remitente": "TKSyjU1syKL2gmGZbpexiYZkvcbk6jqAtf",
+    "contrato": "TQDdx5hH1E6KBXdvTiYH39b3B9cTTw1wtn",
+    "trxEnviado": 0,
+    "transferencias": [
+     {
+      "token": "USDT",
+      "de": "TD4tamFrCq7KvQEB1LArNXr9sKFC6GaAmt",
+      "a": "TQDdx5hH1E6KBXdvTiYH39b3B9cTTw1wtn",
+      "cantidad": 3.75
+     },
+     {
+      "token": "USDT",
+      "de": "TD4tamFrCq7KvQEB1LArNXr9sKFC6GaAmt",
+      "a": "TGb8CAGReBaRwYgrvacWkDFHZ8o2CLtZKT",
+      "cantidad": 10313.715253
+     }
+    ],
+    "internas": [],
+    "error": null
+   },
+   "coincide": true,
+   "comprobaciones": {
+    "transferencia": true,
+    "salidaMismaTx": null,
+    "trxEnviado": null
+   }
+  },
+  {
+   "grupo": "Symbiosis",
+   "caso": "tramo 6 envio al MetaRouter",
+   "tx": "0fb8bb84182aecced37df5f79690cf0627e3a11ca16f0a73d9cfad157287d916",
+   "esperaTrx": {
+    "de": "THLFFGjuGnVYP29ZhptKgYMbPoomM2AWsS",
+    "cantidad": 30000
+   },
+   "espera": null,
+   "leido": {
+    "tx": "0fb8bb84182aecced37df5f79690cf0627e3a11ca16f0a73d9cfad157287d916",
+    "estado": "SUCCESS",
+    "hora": "2026-10-30T19:51:21.000Z",
+    "bloque": 87572158,
+    "tipo": "TriggerSmartContract",
+    "remitente": "THLFFGjuGnVYP29ZhptKgYMbPoomM2AWsS",
+    "contrato": "TPuaJ6gnYfE9gLUDFrbWbPx3tMnjG8max1",
+    "trxEnviado": 30000,
+    "transferencias": [
+     {
+      "token": "USDT",
+      "de": "TUyTiAkE5R5GF9MrDW9oTWPCqYai42ngTc",
+      "a": "TD4tamFrCq7KvQEB1LArNXr9sKFC6GaAmt",
+      "cantidad": 10143.118044
+     },
+     {
+      "token": "USDT",
+      "de": "TYmb1NaNsehpXcsnV19zpAcZ56V4k1NLJ9",
+      "a": "TUyTiAkE5R5GF9MrDW9oTWPCqYai42ngTc",
+      "cantidad": 10143.118044
+     },
+     {
+      "token": "USDT",
+      "de": "TQqgNg13s2DjvXhW1ky4v6TsR8wZGvb7Y4",
+      "a": "TYmb1NaNsehpXcsnV19zpAcZ56V4k1NLJ9",
+      "cantidad": 10143.118044
+     },
+     {
+      "token": "USDT",
+      "de": "TVjuTE3V5bMVdpfNhid8kD2v35T2k1u1Br",
+      "a": "TQqgNg13s2DjvXhW1ky4v6TsR8wZGvb7Y4",
+      "cantidad": 10143.118044
+     }
+    ],
+    "internas": [
+     {
+      "de": "TPuaJ6gnYfE9gLUDFrbWbPx3tMnjG8max1",
+      "a": "TUyTiAkE5R5GF9MrDW9oTWPCqYai42ngTc",
+      "trx": 30000
+     },
+     {
+      "de": "TUyTiAkE5R5GF9MrDW9oTWPCqYai42ngTc",
+      "a": "TYmb1NaNsehpXcsnV19zpAcZ56V4k1NLJ9",
+      "trx": 30000
+     },
+     {
+      "de": "TYmb1NaNsehpXcsnV19zpAcZ56V4k1NLJ9",
+      "a": "TQqgNg13s2DjvXhW1ky4v6TsR8wZGvb7Y4",
+      "trx": 30000
+     },
+     {
+      "de": "TQqgNg13s2DjvXhW1ky4v6TsR8wZGvb7Y4",
+      "a": "TVjuTE3V5bMVdpfNhid8kD2v35T2k1u1Br",
+      "trx": 30000
+     }
+    ],
+    "error": null
+   },
+   "coincide": true,
+   "comprobaciones": {
+    "transferencia": null,
+    "salidaMismaTx": null,
+    "trxEnviado": true
+   }
+  },
+  {
+   "grupo": "Symbiosis",
+   "caso": "tramo 6 devolucion a la misma billetera",
+   "tx": "2a425f17cd32fdada13dfea2858ffae885723b25e5faee3b9498e1fcea4ef0fc",
+   "espera": {
+    "token": "USDT",
+    "a": "THLFFGjuGnVYP29ZhptKgYMbPoomM2AWsS",
+    "cantidad": 10139.368044
+   },
+   "mismaBilletera": true,
+   "leido": {
+    "tx": "2a425f17cd32fdada13dfea2858ffae885723b25e5faee3b9498e1fcea4ef0fc",
+    "estado": "SUCCESS",
+    "hora": "2026-10-30T20:07:18.000Z",
+    "bloque": 87572477,
+    "tipo": "TriggerSmartContract",
+    "remitente": "TKSyjU1syKL2gmGZbpexiYZkvcbk6jqAtf",
+    "contrato": "TQDdx5hH1E6KBXdvTiYH39b3B9cTTw1wtn",
+    "trxEnviado": 0,
+    "transferencias": [
+     {
+      "token": "USDT",
+      "de": "TD4tamFrCq7KvQEB1LArNXr9sKFC6GaAmt",
+      "a": "TQDdx5hH1E6KBXdvTiYH39b3B9cTTw1wtn",
+      "cantidad": 3.75
+     },
+     {
+      "token": "USDT",
+      "de": "TD4tamFrCq7KvQEB1LArNXr9sKFC6GaAmt",
+      "a": "THLFFGjuGnVYP29ZhptKgYMbPoomM2AWsS",
+      "cantidad": 10139.368044
+     }
+    ],
+    "internas": [],
+    "error": null
+   },
+   "coincide": true,
+   "comprobaciones": {
+    "transferencia": true,
+    "salidaMismaTx": null,
+    "trxEnviado": null
+   }
+  },
+  {
+   "grupo": "Symbiosis",
+   "caso": "tramo 6 envio al MetaRouter",
+   "tx": "f9232a635d938cea799b0f45d9dc15fd1ffa38897991cdfb810d4ba4266c0fb0",
+   "esperaTrx": {
+    "de": "TDfrwg7i3q2VugzVu6HofoXGsrnTkKNu2E",
+    "cantidad": 29900
+   },
+   "espera": null,
+   "leido": {
+    "tx": "f9232a635d938cea799b0f45d9dc15fd1ffa38897991cdfb810d4ba4266c0fb0",
+    "estado": "SUCCESS",
+    "hora": "2026-10-30T20:31:57.000Z",
+    "bloque": 87572970,
+    "tipo": "TriggerSmartContract",
+    "remitente": "TDfrwg7i3q2VugzVu6HofoXGsrnTkKNu2E",
+    "contrato": "TPuaJ6gnYfE9gLUDFrbWbPx3tMnjG8max1",
+    "trxEnviado": 29900,
+    "transferencias": [
+     {
+      "token": "USDT",
+      "de": "TUyTiAkE5R5GF9MrDW9oTWPCqYai42ngTc",
+      "a": "TD4tamFrCq7KvQEB1LArNXr9sKFC6GaAmt",
+      "cantidad": 10091.785381
+     },
+     {
+      "token": "USDT",
+      "de": "TYmb1NaNsehpXcsnV19zpAcZ56V4k1NLJ9",
+      "a": "TUyTiAkE5R5GF9MrDW9oTWPCqYai42ngTc",
+      "cantidad": 10091.785381
+     },
+     {
+      "token": "USDT",
+      "de": "TQqgNg13s2DjvXhW1ky4v6TsR8wZGvb7Y4",
+      "a": "TYmb1NaNsehpXcsnV19zpAcZ56V4k1NLJ9",
+      "cantidad": 10091.785381
+     },
+     {
+      "token": "TNUC9Qb1rRpS5CbWLmNMxXBjyFoydXjWFR",
+      "de": "TQqgNg13s2DjvXhW1ky4v6TsR8wZGvb7Y4",
+      "a": "TSUUVjysXV8YqHytSNjfkNXnnB49QDvZpx",
+      "cantidad": "29900000000"
+     },
+     {
+      "token": "USDT",
+      "de": "TSUUVjysXV8YqHytSNjfkNXnnB49QDvZpx",
+      "a": "TQqgNg13s2DjvXhW1ky4v6TsR8wZGvb7Y4",
+      "cantidad": 10091.785381
+     }
+    ],
+    "internas": [
+     {
+      "de": "TPuaJ6gnYfE9gLUDFrbWbPx3tMnjG8max1",
+      "a": "TUyTiAkE5R5GF9MrDW9oTWPCqYai42ngTc",
+      "trx": 29900
+     },
+     {
+      "de": "TUyTiAkE5R5GF9MrDW9oTWPCqYai42ngTc",
+      "a": "TYmb1NaNsehpXcsnV19zpAcZ56V4k1NLJ9",
+      "trx": 29900
+     },
+     {
+      "de": "TYmb1NaNsehpXcsnV19zpAcZ56V4k1NLJ9",
+      "a": "TQqgNg13s2DjvXhW1ky4v6TsR8wZGvb7Y4",
+      "trx": 29900
+     },
+     {
+      "de": "TQqgNg13s2DjvXhW1ky4v6TsR8wZGvb7Y4",
+      "a": "TNUC9Qb1rRpS5CbWLmNMxXBjyFoydXjWFR",
+      "trx": 29900
+     }
+    ],
+    "error": null
+   },
+   "coincide": true,
+   "comprobaciones": {
+    "transferencia": null,
+    "salidaMismaTx": null,
+    "trxEnviado": true
+   }
+  },
+  {
+   "grupo": "Symbiosis",
+   "caso": "tramo 6 devolucion a la misma billetera",
+   "tx": "62c6607aec2b41160f8c9c55fa50c7b5a8b8d672479501004a81bf567b3042bc",
+   "espera": {
+    "token": "USDT",
+    "a": "TDfrwg7i3q2VugzVu6HofoXGsrnTkKNu2E",
+    "cantidad": 10088.035381
+   },
+   "mismaBilletera": true,
+   "leido": {
+    "tx": "62c6607aec2b41160f8c9c55fa50c7b5a8b8d672479501004a81bf567b3042bc",
+    "estado": "SUCCESS",
+    "hora": "2026-10-30T20:47:15.000Z",
+    "bloque": 87573276,
+    "tipo": "TriggerSmartContract",
+    "remitente": "TKSyjU1syKL2gmGZbpexiYZkvcbk6jqAtf",
+    "contrato": "TQDdx5hH1E6KBXdvTiYH39b3B9cTTw1wtn",
+    "trxEnviado": 0,
+    "transferencias": [
+     {
+      "token": "USDT",
+      "de": "TD4tamFrCq7KvQEB1LArNXr9sKFC6GaAmt",
+      "a": "TQDdx5hH1E6KBXdvTiYH39b3B9cTTw1wtn",
+      "cantidad": 3.75
+     },
+     {
+      "token": "USDT",
+      "de": "TD4tamFrCq7KvQEB1LArNXr9sKFC6GaAmt",
+      "a": "TDfrwg7i3q2VugzVu6HofoXGsrnTkKNu2E",
+      "cantidad": 10088.035381
+     }
+    ],
+    "internas": [],
+    "error": null
+   },
+   "coincide": true,
+   "comprobaciones": {
+    "transferencia": true,
+    "salidaMismaTx": null,
+    "trxEnviado": null
+   }
+  },
+  {
+   "grupo": "Symbiosis",
+   "caso": "tramo 6 envio al MetaRouter",
+   "tx": "94a1e372b948dacf6e6f724ccd631a1ac9579be8fb042d9eccdbde99978d25c7",
+   "esperaTrx": {
+    "de": "THm3jd3xZTMGAamjmJjcuGVtrgVHjZUb2i",
+    "cantidad": 20000
+   },
+   "espera": null,
+   "leido": {
+    "tx": "94a1e372b948dacf6e6f724ccd631a1ac9579be8fb042d9eccdbde99978d25c7",
+    "estado": "SUCCESS",
+    "hora": "2026-10-30T21:05:54.000Z",
+    "bloque": 87573649,
+    "tipo": "TriggerSmartContract",
+    "remitente": "THm3jd3xZTMGAamjmJjcuGVtrgVHjZUb2i",
+    "contrato": "TPuaJ6gnYfE9gLUDFrbWbPx3tMnjG8max1",
+    "trxEnviado": 20000,
+    "transferencias": [
+     {
+      "token": "USDT",
+      "de": "TUyTiAkE5R5GF9MrDW9oTWPCqYai42ngTc",
+      "a": "TD4tamFrCq7KvQEB1LArNXr9sKFC6GaAmt",
+      "cantidad": 6740.781918
+     },
+     {
+      "token": "USDT",
+      "de": "TYmb1NaNsehpXcsnV19zpAcZ56V4k1NLJ9",
+      "a": "TUyTiAkE5R5GF9MrDW9oTWPCqYai42ngTc",
+      "cantidad": 6740.781918
+     },
+     {
+      "token": "USDT",
+      "de": "TQqgNg13s2DjvXhW1ky4v6TsR8wZGvb7Y4",
+      "a": "TYmb1NaNsehpXcsnV19zpAcZ56V4k1NLJ9",
+      "cantidad": 6740.781918
+     },
+     {
+      "token": "TNUC9Qb1rRpS5CbWLmNMxXBjyFoydXjWFR",
+      "de": "TQqgNg13s2DjvXhW1ky4v6TsR8wZGvb7Y4",
+      "a": "TSUUVjysXV8YqHytSNjfkNXnnB49QDvZpx",
+      "cantidad": "20000000000"
+     },
+     {
+      "token": "USDT",
+      "de": "TSUUVjysXV8YqHytSNjfkNXnnB49QDvZpx",
+      "a": "TQqgNg13s2DjvXhW1ky4v6TsR8wZGvb7Y4",
+      "cantidad": 6740.781918
+     }
+    ],
+    "internas": [
+     {
+      "de": "TPuaJ6gnYfE9gLUDFrbWbPx3tMnjG8max1",
+      "a": "TUyTiAkE5R5GF9MrDW9oTWPCqYai42ngTc",
+      "trx": 20000
+     },
+     {
+      "de": "TUyTiAkE5R5GF9MrDW9oTWPCqYai42ngTc",
+      "a": "TYmb1NaNsehpXcsnV19zpAcZ56V4k1NLJ9",
+      "trx": 20000
+     },
+     {
+      "de": "TYmb1NaNsehpXcsnV19zpAcZ56V4k1NLJ9",
+      "a": "TQqgNg13s2DjvXhW1ky4v6TsR8wZGvb7Y4",
+      "trx": 20000
+     },
+     {
+      "de": "TQqgNg13s2DjvXhW1ky4v6TsR8wZGvb7Y4",
+      "a": "TNUC9Qb1rRpS5CbWLmNMxXBjyFoydXjWFR",
+      "trx": 20000
+     }
+    ],
+    "error": null
+   },
+   "coincide": true,
+   "comprobaciones": {
+    "transferencia": null,
+    "salidaMismaTx": null,
+    "trxEnviado": true
+   }
+  },
+  {
+   "grupo": "Symbiosis",
+   "caso": "tramo 6 devolucion a la misma billetera",
+   "tx": "56f8c1a6213ebb2492d604a646060d593fd5082fad7080327ea982c42916d03c",
+   "espera": {
+    "token": "USDT",
+    "a": "THm3jd3xZTMGAamjmJjcuGVtrgVHjZUb2i",
+    "cantidad": 6737.031918
+   },
+   "mismaBilletera": true,
+   "leido": {
+    "tx": "56f8c1a6213ebb2492d604a646060d593fd5082fad7080327ea982c42916d03c",
+    "estado": "SUCCESS",
+    "hora": "2026-10-30T21:21:12.000Z",
+    "bloque": 87573955,
+    "tipo": "TriggerSmartContract",
+    "remitente": "TKSyjU1syKL2gmGZbpexiYZkvcbk6jqAtf",
+    "contrato": "TQDdx5hH1E6KBXdvTiYH39b3B9cTTw1wtn",
+    "trxEnviado": 0,
+    "transferencias": [
+     {
+      "token": "USDT",
+      "de": "TD4tamFrCq7KvQEB1LArNXr9sKFC6GaAmt",
+      "a": "TQDdx5hH1E6KBXdvTiYH39b3B9cTTw1wtn",
+      "cantidad": 3.75
+     },
+     {
+      "token": "USDT",
+      "de": "TD4tamFrCq7KvQEB1LArNXr9sKFC6GaAmt",
+      "a": "THm3jd3xZTMGAamjmJjcuGVtrgVHjZUb2i",
+      "cantidad": 6737.031918
+     }
+    ],
+    "internas": [],
+    "error": null
+   },
+   "coincide": true,
+   "comprobaciones": {
+    "transferencia": true,
+    "salidaMismaTx": null,
+    "trxEnviado": null
+   }
+  },
+  {
+   "grupo": "Symbiosis",
+   "caso": "tramo 6 envio al MetaRouter",
+   "tx": "d567a903c523fa5173d4e0dd561d1737d507c05142ee49e649b9be820123a366",
+   "esperaTrx": {
+    "de": "TPcfxfb58kjaXjHwxx8DT57PVEFnz1ppg4",
+    "cantidad": 30000
+   },
+   "espera": null,
+   "leido": {
+    "tx": "d567a903c523fa5173d4e0dd561d1737d507c05142ee49e649b9be820123a366",
+    "estado": "SUCCESS",
+    "hora": "2026-10-30T20:31:09.000Z",
+    "bloque": 87572954,
+    "tipo": "TriggerSmartContract",
+    "remitente": "TPcfxfb58kjaXjHwxx8DT57PVEFnz1ppg4",
+    "contrato": "TPuaJ6gnYfE9gLUDFrbWbPx3tMnjG8max1",
+    "trxEnviado": 30000,
+    "transferencias": [
+     {
+      "token": "USDT",
+      "de": "TUyTiAkE5R5GF9MrDW9oTWPCqYai42ngTc",
+      "a": "TD4tamFrCq7KvQEB1LArNXr9sKFC6GaAmt",
+      "cantidad": 10127.102494
+     },
+     {
+      "token": "USDT",
+      "de": "TYmb1NaNsehpXcsnV19zpAcZ56V4k1NLJ9",
+      "a": "TUyTiAkE5R5GF9MrDW9oTWPCqYai42ngTc",
+      "cantidad": 10127.102494
+     },
+     {
+      "token": "USDT",
+      "de": "TQqgNg13s2DjvXhW1ky4v6TsR8wZGvb7Y4",
+      "a": "TYmb1NaNsehpXcsnV19zpAcZ56V4k1NLJ9",
+      "cantidad": 10127.102494
+     },
+     {
+      "token": "TNUC9Qb1rRpS5CbWLmNMxXBjyFoydXjWFR",
+      "de": "TQqgNg13s2DjvXhW1ky4v6TsR8wZGvb7Y4",
+      "a": "TSUUVjysXV8YqHytSNjfkNXnnB49QDvZpx",
+      "cantidad": "30000000000"
+     },
+     {
+      "token": "USDT",
+      "de": "TSUUVjysXV8YqHytSNjfkNXnnB49QDvZpx",
+      "a": "TQqgNg13s2DjvXhW1ky4v6TsR8wZGvb7Y4",
+      "cantidad": 10127.102494
+     }
+    ],
+    "internas": [
+     {
+      "de": "TPuaJ6gnYfE9gLUDFrbWbPx3tMnjG8max1",
+      "a": "TUyTiAkE5R5GF9MrDW9oTWPCqYai42ngTc",
+      "trx": 30000
+     },
+     {
+      "de": "TUyTiAkE5R5GF9MrDW9oTWPCqYai42ngTc",
+      "a": "TYmb1NaNsehpXcsnV19zpAcZ56V4k1NLJ9",
+      "trx": 30000
+     },
+     {
+      "de": "TYmb1NaNsehpXcsnV19zpAcZ56V4k1NLJ9",
+      "a": "TQqgNg13s2DjvXhW1ky4v6TsR8wZGvb7Y4",
+      "trx": 30000
+     },
+     {
+      "de": "TQqgNg13s2DjvXhW1ky4v6TsR8wZGvb7Y4",
+      "a": "TNUC9Qb1rRpS5CbWLmNMxXBjyFoydXjWFR",
+      "trx": 30000
+     }
+    ],
+    "error": null
+   },
+   "coincide": true,
+   "comprobaciones": {
+    "transferencia": null,
+    "salidaMismaTx": null,
+    "trxEnviado": true
+   }
+  },
+  {
+   "grupo": "Symbiosis",
+   "caso": "tramo 6 devolucion a la misma billetera",
+   "tx": "94e1a6f5a15f0d81beada613ac7ce66621fa203439ead08678fd19090a6c9b9a",
+   "espera": {
+    "token": "USDT",
+    "a": "TPcfxfb58kjaXjHwxx8DT57PVEFnz1ppg4",
+    "cantidad": 10123.352494
+   },
+   "mismaBilletera": true,
+   "leido": {
+    "tx": "94e1a6f5a15f0d81beada613ac7ce66621fa203439ead08678fd19090a6c9b9a",
+    "estado": "SUCCESS",
+    "hora": "2026-10-30T20:47:24.000Z",
+    "bloque": 87573279,
+    "tipo": "TriggerSmartContract",
+    "remitente": "TKSyjU1syKL2gmGZbpexiYZkvcbk6jqAtf",
+    "contrato": "TQDdx5hH1E6KBXdvTiYH39b3B9cTTw1wtn",
+    "trxEnviado": 0,
+    "transferencias": [
+     {
+      "token": "USDT",
+      "de": "TD4tamFrCq7KvQEB1LArNXr9sKFC6GaAmt",
+      "a": "TQDdx5hH1E6KBXdvTiYH39b3B9cTTw1wtn",
+      "cantidad": 3.75
+     },
+     {
+      "token": "USDT",
+      "de": "TD4tamFrCq7KvQEB1LArNXr9sKFC6GaAmt",
+      "a": "TPcfxfb58kjaXjHwxx8DT57PVEFnz1ppg4",
+      "cantidad": 10123.352494
+     }
+    ],
+    "internas": [],
+    "error": null
+   },
+   "coincide": true,
+   "comprobaciones": {
+    "transferencia": true,
+    "salidaMismaTx": null,
+    "trxEnviado": null
+   }
+  },
+  {
+   "grupo": "Symbiosis",
+   "caso": "tramo 6 envio al MetaRouter",
+   "tx": "0bf2af23c8a939efab7bee88931549f0b5ee9e68c9ca651d812d6ed5fddd3696",
+   "esperaTrx": {
+    "de": "TPcfxfb58kjaXjHwxx8DT57PVEFnz1ppg4",
+    "cantidad": 20000
+   },
+   "espera": null,
+   "leido": {
+    "tx": "0bf2af23c8a939efab7bee88931549f0b5ee9e68c9ca651d812d6ed5fddd3696",
+    "estado": "SUCCESS",
+    "hora": "2026-10-30T21:04:42.000Z",
+    "bloque": 87573625,
+    "tipo": "TriggerSmartContract",
+    "remitente": "TPcfxfb58kjaXjHwxx8DT57PVEFnz1ppg4",
+    "contrato": "TPuaJ6gnYfE9gLUDFrbWbPx3tMnjG8max1",
+    "trxEnviado": 20000,
+    "transferencias": [
+     {
+      "token": "USDT",
+      "de": "TUyTiAkE5R5GF9MrDW9oTWPCqYai42ngTc",
+      "a": "TD4tamFrCq7KvQEB1LArNXr9sKFC6GaAmt",
+      "cantidad": 6732.297206
+     },
+     {
+      "token": "USDT",
+      "de": "TFGDbUyP8xez44C76fin3bn3Ss6jugoUwJ",
+      "a": "TUyTiAkE5R5GF9MrDW9oTWPCqYai42ngTc",
+      "cantidad": 6732.297206
+     },
+     {
+      "token": "TNUC9Qb1rRpS5CbWLmNMxXBjyFoydXjWFR",
+      "de": "TKzxdSv2FZKQrEqkKVgp5DcwEXBEKMg2Ax",
+      "a": "TFGDbUyP8xez44C76fin3bn3Ss6jugoUwJ",
+      "cantidad": "20000000000"
+     }
+    ],
+    "internas": [
+     {
+      "de": "TPuaJ6gnYfE9gLUDFrbWbPx3tMnjG8max1",
+      "a": "TUyTiAkE5R5GF9MrDW9oTWPCqYai42ngTc",
+      "trx": 20000
+     },
+     {
+      "de": "TUyTiAkE5R5GF9MrDW9oTWPCqYai42ngTc",
+      "a": "TKzxdSv2FZKQrEqkKVgp5DcwEXBEKMg2Ax",
+      "trx": 20000
+     },
+     {
+      "de": "TKzxdSv2FZKQrEqkKVgp5DcwEXBEKMg2Ax",
+      "a": "TNUC9Qb1rRpS5CbWLmNMxXBjyFoydXjWFR",
+      "trx": 20000
+     }
+    ],
+    "error": null
+   },
+   "coincide": true,
+   "comprobaciones": {
+    "transferencia": null,
+    "salidaMismaTx": null,
+    "trxEnviado": true
+   }
+  },
+  {
+   "grupo": "Symbiosis",
+   "caso": "tramo 6 devolucion a la misma billetera",
+   "tx": "98d342e2c9ec5fd009d701ee2a1f362b830ca233659dbce2fe4c83a0cfad9d0d",
+   "espera": {
+    "token": "USDT",
+    "a": "TPcfxfb58kjaXjHwxx8DT57PVEFnz1ppg4",
+    "cantidad": 6728.547206
+   },
+   "mismaBilletera": true,
+   "leido": {
+    "tx": "98d342e2c9ec5fd009d701ee2a1f362b830ca233659dbce2fe4c83a0cfad9d0d",
+    "estado": "SUCCESS",
+    "hora": "2026-10-30T21:20:12.000Z",
+    "bloque": 87573935,
+    "tipo": "TriggerSmartContract",
+    "remitente": "TKSyjU1syKL2gmGZbpexiYZkvcbk6jqAtf",
+    "contrato": "TQDdx5hH1E6KBXdvTiYH39b3B9cTTw1wtn",
+    "trxEnviado": 0,
+    "transferencias": [
+     {
+      "token": "USDT",
+      "de": "TD4tamFrCq7KvQEB1LArNXr9sKFC6GaAmt",
+      "a": "TQDdx5hH1E6KBXdvTiYH39b3B9cTTw1wtn",
+      "cantidad": 3.75
+     },
+     {
+      "token": "USDT",
+      "de": "TD4tamFrCq7KvQEB1LArNXr9sKFC6GaAmt",
+      "a": "TPcfxfb58kjaXjHwxx8DT57PVEFnz1ppg4",
+      "cantidad": 6728.547206
+     }
+    ],
+    "internas": [],
+    "error": null
+   },
+   "coincide": true,
+   "comprobaciones": {
+    "transferencia": true,
+    "salidaMismaTx": null,
+    "trxEnviado": null
+   }
+  },
+  {
+   "grupo": "Symbiosis",
+   "caso": "tramo 6 envio al MetaRouter",
+   "tx": "a7f736929942fa72eaec22dcfdbb7ce0749faa9c087b5b057353953fe29d0c78",
+   "esperaTrx": {
+    "de": "TX13YPL7EmC5cAsDR5gJ6MW7Jn9MFaud4b",
+    "cantidad": 40100
+   },
+   "espera": null,
+   "leido": {
+    "tx": "a7f736929942fa72eaec22dcfdbb7ce0749faa9c087b5b057353953fe29d0c78",
+    "estado": "SUCCESS",
+    "hora": "2026-10-30T08:39:21.000Z",
+    "bloque": 87558722,
+    "tipo": "TriggerSmartContract",
+    "remitente": "TX13YPL7EmC5cAsDR5gJ6MW7Jn9MFaud4b",
+    "contrato": "TPuaJ6gnYfE9gLUDFrbWbPx3tMnjG8max1",
+    "trxEnviado": 40100,
+    "transferencias": [
+     {
+      "token": "USDT",
+      "de": "TUyTiAkE5R5GF9MrDW9oTWPCqYai42ngTc",
+      "a": "TD4tamFrCq7KvQEB1LArNXr9sKFC6GaAmt",
+      "cantidad": 13955.123582
+     },
+     {
+      "token": "USDT",
+      "de": "TYmb1NaNsehpXcsnV19zpAcZ56V4k1NLJ9",
+      "a": "TUyTiAkE5R5GF9MrDW9oTWPCqYai42ngTc",
+      "cantidad": 13955.123582
+     },
+     {
+      "token": "USDT",
+      "de": "TQqgNg13s2DjvXhW1ky4v6TsR8wZGvb7Y4",
+      "a": "TYmb1NaNsehpXcsnV19zpAcZ56V4k1NLJ9",
+      "cantidad": 13955.123582
+     },
+     {
+      "token": "USDT",
+      "de": "TVjuTE3V5bMVdpfNhid8kD2v35T2k1u1Br",
+      "a": "TQqgNg13s2DjvXhW1ky4v6TsR8wZGvb7Y4",
+      "cantidad": 13955.123582
+     }
+    ],
+    "internas": [
+     {
+      "de": "TPuaJ6gnYfE9gLUDFrbWbPx3tMnjG8max1",
+      "a": "TUyTiAkE5R5GF9MrDW9oTWPCqYai42ngTc",
+      "trx": 40100
+     },
+     {
+      "de": "TUyTiAkE5R5GF9MrDW9oTWPCqYai42ngTc",
+      "a": "TYmb1NaNsehpXcsnV19zpAcZ56V4k1NLJ9",
+      "trx": 40100
+     },
+     {
+      "de": "TYmb1NaNsehpXcsnV19zpAcZ56V4k1NLJ9",
+      "a": "TQqgNg13s2DjvXhW1ky4v6TsR8wZGvb7Y4",
+      "trx": 40100
+     },
+     {
+      "de": "TQqgNg13s2DjvXhW1ky4v6TsR8wZGvb7Y4",
+      "a": "TVjuTE3V5bMVdpfNhid8kD2v35T2k1u1Br",
+      "trx": 40100
+     }
+    ],
+    "error": null
+   },
+   "coincide": true,
+   "comprobaciones": {
+    "transferencia": null,
+    "salidaMismaTx": null,
+    "trxEnviado": true
+   }
+  },
+  {
+   "grupo": "Symbiosis",
+   "caso": "tramo 6 devolucion a la misma billetera",
+   "tx": "8af0edf96a2bc8b57574d5c4ded0196cb71d399cded01ec4147b0ce721de7071",
+   "espera": {
+    "token": "USDT",
+    "a": "TX13YPL7EmC5cAsDR5gJ6MW7Jn9MFaud4b",
+    "cantidad": 13951.373582
+   },
+   "mismaBilletera": true,
+   "leido": {
+    "tx": "8af0edf96a2bc8b57574d5c4ded0196cb71d399cded01ec4147b0ce721de7071",
+    "estado": "SUCCESS",
+    "hora": "2026-10-30T08:55:15.000Z",
+    "bloque": 87559040,
+    "tipo": "TriggerSmartContract",
+    "remitente": "TKSyjU1syKL2gmGZbpexiYZkvcbk6jqAtf",
+    "contrato": "TQDdx5hH1E6KBXdvTiYH39b3B9cTTw1wtn",
+    "trxEnviado": 0,
+    "transferencias": [
+     {
+      "token": "USDT",
+      "de": "TD4tamFrCq7KvQEB1LArNXr9sKFC6GaAmt",
+      "a": "TQDdx5hH1E6KBXdvTiYH39b3B9cTTw1wtn",
+      "cantidad": 3.75
+     },
+     {
+      "token": "USDT",
+      "de": "TD4tamFrCq7KvQEB1LArNXr9sKFC6GaAmt",
+      "a": "TX13YPL7EmC5cAsDR5gJ6MW7Jn9MFaud4b",
+      "cantidad": 13951.373582
+     }
+    ],
+    "internas": [],
+    "error": null
+   },
+   "coincide": true,
+   "comprobaciones": {
+    "transferencia": true,
+    "salidaMismaTx": null,
+    "trxEnviado": null
+   }
+  },
+  {
+   "grupo": "Symbiosis",
+   "caso": "tramo 6 envio al MetaRouter",
+   "tx": "6d8c42bc4cc97786cb42dddf2069d9e9b2a487248adbd83a242eed812228255e",
+   "esperaTrx": {
+    "de": "TXW5eReJVJ1gB342y6m1v8n9JiT1YAsqAt",
+    "cantidad": 45150
+   },
+   "espera": null,
+   "leido": {
+    "tx": "6d8c42bc4cc97786cb42dddf2069d9e9b2a487248adbd83a242eed812228255e",
+    "estado": "SUCCESS",
+    "hora": "2026-10-30T10:23:18.000Z",
+    "bloque": 87560801,
+    "tipo": "TriggerSmartContract",
+    "remitente": "TXW5eReJVJ1gB342y6m1v8n9JiT1YAsqAt",
+    "contrato": "TPuaJ6gnYfE9gLUDFrbWbPx3tMnjG8max1",
+    "trxEnviado": 45150,
+    "transferencias": [
+     {
+      "token": "USDT",
+      "de": "TUyTiAkE5R5GF9MrDW9oTWPCqYai42ngTc",
+      "a": "TD4tamFrCq7KvQEB1LArNXr9sKFC6GaAmt",
+      "cantidad": 15624.416998
+     },
+     {
+      "token": "USDT",
+      "de": "TYmb1NaNsehpXcsnV19zpAcZ56V4k1NLJ9",
+      "a": "TUyTiAkE5R5GF9MrDW9oTWPCqYai42ngTc",
+      "cantidad": 15624.416998
+     },
+     {
+      "token": "USDT",
+      "de": "TQqgNg13s2DjvXhW1ky4v6TsR8wZGvb7Y4",
+      "a": "TYmb1NaNsehpXcsnV19zpAcZ56V4k1NLJ9",
+      "cantidad": 15624.416998
+     },
+     {
+      "token": "USDT",
+      "de": "TVjuTE3V5bMVdpfNhid8kD2v35T2k1u1Br",
+      "a": "TQqgNg13s2DjvXhW1ky4v6TsR8wZGvb7Y4",
+      "cantidad": 15624.416998
+     }
+    ],
+    "internas": [
+     {
+      "de": "TPuaJ6gnYfE9gLUDFrbWbPx3tMnjG8max1",
+      "a": "TUyTiAkE5R5GF9MrDW9oTWPCqYai42ngTc",
+      "trx": 45150
+     },
+     {
+      "de": "TUyTiAkE5R5GF9MrDW9oTWPCqYai42ngTc",
+      "a": "TYmb1NaNsehpXcsnV19zpAcZ56V4k1NLJ9",
+      "trx": 45150
+     },
+     {
+      "de": "TYmb1NaNsehpXcsnV19zpAcZ56V4k1NLJ9",
+      "a": "TQqgNg13s2DjvXhW1ky4v6TsR8wZGvb7Y4",
+      "trx": 45150
+     },
+     {
+      "de": "TQqgNg13s2DjvXhW1ky4v6TsR8wZGvb7Y4",
+      "a": "TVjuTE3V5bMVdpfNhid8kD2v35T2k1u1Br",
+      "trx": 45150
+     }
+    ],
+    "error": null
+   },
+   "coincide": true,
+   "comprobaciones": {
+    "transferencia": null,
+    "salidaMismaTx": null,
+    "trxEnviado": true
+   }
+  },
+  {
+   "grupo": "Symbiosis",
+   "caso": "tramo 6 devolucion a la misma billetera",
+   "tx": "5ab74b03d8a05db3b7415c2c37a4d88614d1b7eb0dd8d43eb9037c4123be77c6",
+   "espera": {
+    "token": "USDT",
+    "a": "TXW5eReJVJ1gB342y6m1v8n9JiT1YAsqAt",
+    "cantidad": 15620.666998
+   },
+   "mismaBilletera": true,
+   "leido": {
+    "tx": "5ab74b03d8a05db3b7415c2c37a4d88614d1b7eb0dd8d43eb9037c4123be77c6",
+    "estado": "SUCCESS",
+    "hora": "2026-10-30T10:39:06.000Z",
+    "bloque": 87561117,
+    "tipo": "TriggerSmartContract",
+    "remitente": "TKSyjU1syKL2gmGZbpexiYZkvcbk6jqAtf",
+    "contrato": "TQDdx5hH1E6KBXdvTiYH39b3B9cTTw1wtn",
+    "trxEnviado": 0,
+    "transferencias": [
+     {
+      "token": "USDT",
+      "de": "TD4tamFrCq7KvQEB1LArNXr9sKFC6GaAmt",
+      "a": "TQDdx5hH1E6KBXdvTiYH39b3B9cTTw1wtn",
+      "cantidad": 3.75
+     },
+     {
+      "token": "USDT",
+      "de": "TD4tamFrCq7KvQEB1LArNXr9sKFC6GaAmt",
+      "a": "TXW5eReJVJ1gB342y6m1v8n9JiT1YAsqAt",
+      "cantidad": 15620.666998
+     }
+    ],
+    "internas": [],
+    "error": null
+   },
+   "coincide": true,
+   "comprobaciones": {
+    "transferencia": true,
+    "salidaMismaTx": null,
+    "trxEnviado": null
+   }
+  },
+  {
+   "grupo": "Symbiosis",
+   "caso": "tramo 6 envio al MetaRouter",
+   "tx": "cd7bf21aa22c1bb382faeb3a8ddfc892b304bdcf04658ef8e3688173ff3b5bdc",
+   "esperaTrx": {
+    "de": "TA6zNTfFonmaVPwbajUbiR2iN5wAksgnDc",
+    "cantidad": 34900
+   },
+   "espera": null,
+   "leido": {
+    "tx": "cd7bf21aa22c1bb382faeb3a8ddfc892b304bdcf04658ef8e3688173ff3b5bdc",
+    "estado": "SUCCESS",
+    "hora": "2026-10-30T16:31:15.000Z",
+    "bloque": 87568158,
+    "tipo": "TriggerSmartContract",
+    "remitente": "TA6zNTfFonmaVPwbajUbiR2iN5wAksgnDc",
+    "contrato": "TPuaJ6gnYfE9gLUDFrbWbPx3tMnjG8max1",
+    "trxEnviado": 34900,
+    "transferencias": [
+     {
+      "token": "USDT",
+      "de": "TUyTiAkE5R5GF9MrDW9oTWPCqYai42ngTc",
+      "a": "TD4tamFrCq7KvQEB1LArNXr9sKFC6GaAmt",
+      "cantidad": 11897.097895
+     },
+     {
+      "token": "USDT",
+      "de": "TYmb1NaNsehpXcsnV19zpAcZ56V4k1NLJ9",
+      "a": "TUyTiAkE5R5GF9MrDW9oTWPCqYai42ngTc",
+      "cantidad": 11897.097895
+     },
+     {
+      "token": "USDT",
+      "de": "TQqgNg13s2DjvXhW1ky4v6TsR8wZGvb7Y4",
+      "a": "TYmb1NaNsehpXcsnV19zpAcZ56V4k1NLJ9",
+      "cantidad": 11897.097895
+     },
+     {
+      "token": "USDT",
+      "de": "TVjuTE3V5bMVdpfNhid8kD2v35T2k1u1Br",
+      "a": "TQqgNg13s2DjvXhW1ky4v6TsR8wZGvb7Y4",
+      "cantidad": 11897.097895
+     }
+    ],
+    "internas": [
+     {
+      "de": "TPuaJ6gnYfE9gLUDFrbWbPx3tMnjG8max1",
+      "a": "TUyTiAkE5R5GF9MrDW9oTWPCqYai42ngTc",
+      "trx": 34900
+     },
+     {
+      "de": "TUyTiAkE5R5GF9MrDW9oTWPCqYai42ngTc",
+      "a": "TYmb1NaNsehpXcsnV19zpAcZ56V4k1NLJ9",
+      "trx": 34900
+     },
+     {
+      "de": "TYmb1NaNsehpXcsnV19zpAcZ56V4k1NLJ9",
+      "a": "TQqgNg13s2DjvXhW1ky4v6TsR8wZGvb7Y4",
+      "trx": 34900
+     },
+     {
+      "de": "TQqgNg13s2DjvXhW1ky4v6TsR8wZGvb7Y4",
+      "a": "TVjuTE3V5bMVdpfNhid8kD2v35T2k1u1Br",
+      "trx": 34900
+     }
+    ],
+    "error": null
+   },
+   "coincide": true,
+   "comprobaciones": {
+    "transferencia": null,
+    "salidaMismaTx": null,
+    "trxEnviado": true
+   }
+  },
+  {
+   "grupo": "Symbiosis",
+   "caso": "tramo 6 devolucion a la misma billetera",
+   "tx": "d2457f1e542e4e404206a69731450e4b20e4f761a50d47652ee0b48ef6351c7a",
+   "espera": {
+    "token": "USDT",
+    "a": "TA6zNTfFonmaVPwbajUbiR2iN5wAksgnDc",
+    "cantidad": 11893.097895
+   },
+   "mismaBilletera": true,
+   "leido": {
+    "tx": "d2457f1e542e4e404206a69731450e4b20e4f761a50d47652ee0b48ef6351c7a",
+    "estado": "SUCCESS",
+    "hora": "2026-10-30T16:47:12.000Z",
+    "bloque": 87568477,
+    "tipo": "TriggerSmartContract",
+    "remitente": "TKSyjU1syKL2gmGZbpexiYZkvcbk6jqAtf",
+    "contrato": "TQDdx5hH1E6KBXdvTiYH39b3B9cTTw1wtn",
+    "trxEnviado": 0,
+    "transferencias": [
+     {
+      "token": "USDT",
+      "de": "TD4tamFrCq7KvQEB1LArNXr9sKFC6GaAmt",
+      "a": "TQDdx5hH1E6KBXdvTiYH39b3B9cTTw1wtn",
+      "cantidad": 4
+     },
+     {
+      "token": "USDT",
+      "de": "TD4tamFrCq7KvQEB1LArNXr9sKFC6GaAmt",
+      "a": "TA6zNTfFonmaVPwbajUbiR2iN5wAksgnDc",
+      "cantidad": 11893.097895
+     }
+    ],
+    "internas": [],
+    "error": null
+   },
+   "coincide": true,
+   "comprobaciones": {
+    "transferencia": true,
+    "salidaMismaTx": null,
+    "trxEnviado": null
+   }
+  }
+ ]
+}

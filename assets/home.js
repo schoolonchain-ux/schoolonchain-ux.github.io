@@ -19,7 +19,7 @@
     if (r.imagen) a.append(el('div', { class: 'rcard-img' }, el('img', { src: r.imagen, alt: r.imagenAlt || r.titulo, loading: 'lazy', width: '900', height: '560' })));   // imagen de cabecera (opcional, reports/index.json)
     a.append(
       r.caso ? el('span', { class: 'caso' }, 'Caso · ' + r.caso) : null,
-      el('div', { class: 'chips' }, (r.cadenas || []).map((c) => el('span', { class: 'chip' }, c)), el('span', { class: 'chip ver' }, r.version || '')),
+      el('div', { class: 'chips' }, (r.cadenas || []).map((c) => el('span', { class: 'chip' }, c)), el('span', { class: 'chip ver' }, r.version || ''), r.aviso ? el('span', { class: 'chip chip-aviso', title: r.aviso.titulo }, r.aviso.corto || 'Aviso') : null),
       el('h3', null, r.titulo),
       el('p', null, r.resumen || ''));
     const zona = el('div'); a.append(zona);

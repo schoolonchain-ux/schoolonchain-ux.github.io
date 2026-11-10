@@ -1,0 +1,181 @@
+{
+ "tron": {
+  "diferencia_v07": -14601841.37,
+  "pasos": [
+   {
+    "paso": "La deriva de precio del TRX pasa a ser una partida propia (antes estaba dentro de la diferencia)",
+    "efectoEnLaDiferencia": -7909441,
+    "diferenciaTras": -22511282.37,
+    "origen": "informe v0.9.3, partida 7; aritmetica comprobada: 226.348.470,87 - 218.439.029,87"
+   },
+   {
+    "paso": "JustLend: se quita lo que de verdad se contaba dos veces (deposito + justificantes seguidos hasta su redencion)",
+    "efectoEnLaDiferencia": 7064354.07,
+    "diferenciaTras": -15446928.31,
+    "origen": "recalculo propio: tramo 5 4206125.35 + tramo 6 2858228.72"
+   },
+   {
+    "paso": "Chainflip: se quita la parte del deposito que la salida de la misma transaccion ya sigue",
+    "efectoEnLaDiferencia": 2795172.9,
+    "diferenciaTras": -12651755.41,
+    "origen": "recalculo propio: tramo 5 1309563.7 + tramo 6 1485609.2 (33 transacciones)"
+   },
+   {
+    "paso": "Symbiosis: 27 cruces revertidos cuyo dinero volvio a la misma billetera dejan de contar como puente",
+    "efectoEnLaDiferencia": 316381.99,
+    "diferenciaTras": -12335373.42,
+    "origen": "recalculo propio: tramo 5 176453.22 + tramo 6 139928.76"
+   }
+  ],
+  "diferencia_v093": -12335373.42,
+  "residuo": 0,
+  "suma_v07": 642710952.86,
+  "suma_v093": 640444484.91,
+  "cambioDeLaSuma": -2266467.95,
+  "sumaDeLosCambiosDePartida": -2266467.96,
+  "partidas": [
+   {
+    "partida": "Congelados por Tether (USDT)",
+    "v07": 378719468,
+    "v093": 378719468,
+    "cambio": 0
+   },
+   {
+    "partida": "Localizados en billeteras del recorrido",
+    "v07": 8675102.91,
+    "v093": 8675102.91,
+    "cambio": 0
+   },
+   {
+    "partida": "En protocolos DeFi (préstamos y USDD)",
+    "v07": 36724491.85,
+    "v093": 27221079.83,
+    "cambio": -9503412.02
+   },
+   {
+    "partida": "En servicios, nodos y casas de cambio (puntos de parada)",
+    "v07": 136696708.32,
+    "v093": 136696708.32,
+    "cambio": 0
+   },
+   {
+    "partida": "Enviado a otras cadenas (puentes, incl. Symbiosis)",
+    "v07": 52353938.57,
+    "v093": 49242383.69,
+    "cambio": -3111554.89
+   },
+   {
+    "partida": "Sin localizar (salidas pequeñas no seguidas y contratos cuya salida no se ve)",
+    "v07": 6500070.59,
+    "v093": 8939128.54,
+    "cambio": 2439057.95
+   },
+   {
+    "partida": "Efecto de precio de la conversión USDT → TRX",
+    "v07": 23041172.62,
+    "v093": 23041172.62,
+    "cambio": 0
+   },
+   {
+    "partida": "Deriva de precio del TRX (desde que se recibe hasta que se reparte)",
+    "v07": null,
+    "v093": 7909441,
+    "cambio": 7909441,
+    "nueva": true
+   }
+  ]
+ },
+ "justlend": {
+  "quitadoEnLaV09": 11642061.02,
+  "dobleConteoReal": 7064354.07,
+  "restituidoTrasLaPrimeraRevision": 4577706.95,
+  "delRestituido_aSinLocalizar": 2439057.95
+ },
+ "recalculoPropio": [
+  {
+   "que": "Prestamo tramo 5 (v0.7)",
+   "segunElInforme": 6721604.01,
+   "recalculoPropio": 6721604.01,
+   "diferencia": 0
+  },
+  {
+   "que": "Prestamo tramo 5 (v0.9.3)",
+   "segunElInforme": 76420.71,
+   "recalculoPropio": 76420.71,
+   "diferencia": 0
+  },
+  {
+   "que": "Prestamo tramo 6 (v0.7)",
+   "segunElInforme": 5028718.91,
+   "recalculoPropio": 5028718.91,
+   "diferencia": 0
+  },
+  {
+   "que": "Prestamo tramo 6 (v0.9.3)",
+   "segunElInforme": 2170490.19,
+   "recalculoPropio": 2170490.19,
+   "diferencia": 0
+  },
+  {
+   "que": "Sin localizar tramo 5: aumento",
+   "segunElInforme": 2439057.95,
+   "recalculoPropio": 2439057.95,
+   "diferencia": 0
+  },
+  {
+   "que": "Puentes tramo 5 (v0.7)",
+   "segunElInforme": 33676671.39,
+   "recalculoPropio": 33676671.39,
+   "diferencia": 0
+  },
+  {
+   "que": "Puentes tramo 5 (v0.9.3)",
+   "segunElInforme": 32190654.47,
+   "recalculoPropio": 32190654.47,
+   "diferencia": 0
+  },
+  {
+   "que": "Puentes tramo 6 (v0.7)",
+   "segunElInforme": 18677267.18,
+   "recalculoPropio": 18677267.18,
+   "diferencia": 0
+  },
+  {
+   "que": "Puentes tramo 6 (v0.9.3)",
+   "segunElInforme": 17051729.22,
+   "recalculoPropio": 17051729.22,
+   "diferencia": 0
+  }
+ ],
+ "ethereum": {
+  "v07": -210784081.04,
+  "ARB_declarado": -11877376.97,
+  "efectoPrecioOro": -1044050.29,
+  "esperado": -223705508.29,
+  "v093": -223705508.29,
+  "residuo": 0
+ },
+ "global": {
+  "v07": -225385922.41,
+  "cambioTron": 2266467.95,
+  "cambioEthereum": -12921427.26,
+  "esperado": -236040881.72,
+  "v093": -236040881.72,
+  "residuo": 0
+ },
+ "rangoPorVia_v093": {
+  "actual": -12335373.42,
+  "ciclo": -3008027.26,
+  "diluida": 35553395.21,
+  "tope": 2913719.14,
+  "cicloTope": 5004840.85
+ },
+ "sinCambios": {
+  "capitalTron": 628109111.49,
+  "igualEnLasDos": true,
+  "congelado": 378719468,
+  "igualCongelado": true,
+  "capitalEth": 3302122176.69,
+  "igualEth": true
+ }
+}

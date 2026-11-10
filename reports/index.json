@@ -34,7 +34,57 @@
         }
       ],
       "imagen": "assets/img/portada/binance-hack.webp",
-      "imagenAlt": "Tablón de investigación del caso Binance Hack: direcciones, transacciones, puentes, exchanges y atribución, con una calavera encapuchada"
+      "imagenAlt": "Tablón de investigación del caso Binance Hack: direcciones, transacciones, puentes, exchanges y atribución, con una calavera encapuchada",
+      "aviso": {
+        "fecha": "2026-11-10",
+        "corto": "Aviso 10-nov",
+        "titulo": "Aviso del 10 de noviembre de 2026 sobre esta edición (v0.7)",
+        "resumen": "Una auditoría propia ha comprobado que esta edición cuenta dos veces 10,18 millones de dólares en TRON. El informe publicado se conserva tal como salió, sin retocar; este aviso se añade encima.",
+        "puntos": [
+          {
+            "t": "Préstamos en JustLend",
+            "importe": 7064354.07,
+            "d": "Depósitos contados como «dinero en préstamos» cuyo dinero salió de JustLend, siguió su camino y se cuenta otra vez donde acabó."
+          },
+          {
+            "t": "Depósitos en Chainflip",
+            "importe": 2795172.9,
+            "d": "33 depósitos contados como «enviado a otra cadena» aunque la misma transacción manda el dinero a otra billetera de TRON que el informe también sigue."
+          },
+          {
+            "t": "Cruces revertidos de Symbiosis",
+            "importe": 316381.98,
+            "d": "27 envíos contados como «enviado a otra cadena» aunque el cruce se revirtió y el dinero volvió a la misma billetera."
+          }
+        ],
+        "efecto": [
+          "Partidas de TRON afectadas: «En protocolos DeFi» pasaría de 36,72 a 27,22 M$; «Enviado a otras cadenas», de 52,35 a 49,24 M$; «Sin localizar», de 6,50 a 8,94 M$ (2,44 M$ de justificantes de JustLend enviados a un contrato que no se pudo seguir).",
+          "La «diferencia» de TRON de −14,6 M$ que enseña este panel mezcla dos cosas: un exceso del cálculo y una caída del precio del TRX de 7,91 M$ que lo tapaba en parte. Corregido y separado, queda en −12,34 M$ con el método de este informe, y entre −12,34 y +35,55 M$ según el método de atribución que se use. Ese rango es la incertidumbre real.",
+          "En Ethereum falta una partida: 74,56 millones de ARB (unos 11,9 M$, estimado) que siguen en una dirección de Arbitrum, releída en la cadena el 10-nov.",
+          "No cambian el capital robado ni lo congelado."
+        ],
+        "comprobacion": "Recalculado con un programa independiente del que generó el informe; las cuentas entre lo publicado y lo corregido cierran sin residuo; 98 transacciones leídas en la cadena el 10-nov (las 33 de Chainflip, las 54 de Symbiosis y una muestra de 11 de JustLend) y las 98 coinciden.",
+        "limites": "La edición corregida no está publicada: ninguna persona ni sistema ajeno la ha revisado todavía, y sus textos no están auditados. Las respuestas íntegras de las tres revisiones que se citan en la auditoría tampoco están publicadas aún. La auditoría la ha hecho la misma familia de IA que escribió el informe; lo dice en su primera página.",
+        "enlaces": [
+          {
+            "t": "Leer la auditoría completa",
+            "href": "doc.html?f=investigacion/audits/auditoria-comparativa-binance-v07-v093-2026-11-10/01-INFORME-AUDITORIA.md",
+            "principal": true
+          },
+          {
+            "t": "Cuentas entre las dos ediciones (JSON)",
+            "href": "investigacion/audits/auditoria-comparativa-binance-v07-v093-2026-11-10/02-puente-de-cifras.json"
+          },
+          {
+            "t": "Cada transacción (JSON)",
+            "href": "investigacion/audits/auditoria-comparativa-binance-v07-v093-2026-11-10/04-evidencia-por-transaccion.json"
+          },
+          {
+            "t": "Lecturas de la cadena (JSON)",
+            "href": "investigacion/audits/auditoria-comparativa-binance-v07-v093-2026-11-10/07-verificacion-en-cadena-chainflip-symbiosis.json"
+          }
+        ]
+      }
     },
     {
       "slug": "caso-vaneck-sun",
