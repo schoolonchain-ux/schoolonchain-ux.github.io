@@ -1,23 +1,25 @@
-/* Observatorio de mercado (mercado.html). BOCETO de la fase 2.
-   Lee data/mercado.json (lo genera cada día tools/equipoia/mercado.cjs con lecturas públicas) y, en vivo desde el navegador, el precio
-   de ahora y el libro de órdenes de Binance. Todos los cálculos están en assets/mercado-calc.js (con pruebas y contraste con numpy). Sin IA.
+/* Observatorio de mercado (mercado.html). Fase 2, sin publicar: entrega 1 hecha (capital y mapa de calor por activo, sector y cadena).
+   Lee data/mercado.json y data/mercado-serie.json (los genera cada día tools/equipoia/mercado.cjs con lecturas públicas) y, en vivo desde
+   el navegador, el precio de ahora (una lectura ligera por minuto) y un libro de órdenes de Binance solo cuando se pide. Todos los cálculos están en assets/mercado-calc.js (con pruebas y contraste con numpy). Sin IA.
    Cada cifra se puede pulsar: abre su regla, su serie y el enlace a la respuesta en bruto del servicio. Si falta un dato, se dice. */
 (function () {
   const { el } = window.C; const M = window.MCALC; const raiz = document.getElementById('ob-raiz'); if (!raiz || !M) return;
   const nf = (x, d = 0) => Number(x).toLocaleString('es-ES', { useGrouping: 'always', minimumFractionDigits: d, maximumFractionDigits: d });
   const SD = 'sin dato';
   const sg = (x, d = 2) => (x == null || !isFinite(x) ? SD : (x < 0 ? '−' : '') + nf(Math.abs(x), d));
-  const pct = (x, d = 1) => (x == null || !isFinite(x) ? SD : (x >= 0 ? '+' : '−') + nf(Math.abs(x * 100), d) + ' %');
+  const pct = (x, d = 1) => (x == null || !isFinite(x) ? SD : (Number(Math.abs(x * 100).toFixed(d)) === 0 ? '' : x >= 0 ? '+' : '−') + nf(Math.abs(x * 100), d) + ' %'); // un cambio que redondea a cero va sin signo
   const mUsd = (x) => (x == null ? SD : x >= 1e6 ? nf(x / 1e6, x >= 1e9 ? 0 : 1) + ' M$' : nf(x) + ' $');
   const precio = (x) => (x == null ? SD : (x >= 100 ? nf(x, 0) : x >= 1 ? nf(x, 2) : x >= 0.01 ? nf(x, 4) : nf(x, 8)) + ' $');
   const signo = (x) => (x == null || !isFinite(x) ? '' : x >= 0 ? 'ob-sube' : 'ob-baja');
   const fh = (iso) => { const d = new Date(iso); return isNaN(d) ? SD : d.getUTCDate() + '-' + ['ene', 'feb', 'mar', 'abr', 'may', 'jun', 'jul', 'ago', 'sep', 'oct', 'nov', 'dic'][d.getUTCMonth()] + '-' + d.getUTCFullYear() + ', ' + String(d.getUTCHours()).padStart(2, '0') + ':' + String(d.getUTCMinutes()).padStart(2, '0') + ' UTC'; };
+  const fd = (d) => { const m = /^(\d{4})-(\d\d)-(\d\d)/.exec(d || ''); return m ? Number(m[3]) + '-' + ['ene', 'feb', 'mar', 'abr', 'may', 'jun', 'jul', 'ago', 'sep', 'oct', 'nov', 'dic'][Number(m[2]) - 1] + '-' + m[1] : SD; };
   const traer = (u, ms = 15000) => fetch(u, { cache: 'no-cache', signal: AbortSignal.timeout(ms) }).then((r) => { if (!r.ok) throw new Error('HTTP ' + r.status); return r.json(); });
-  let D = null, vivo = null, vivoError = null, periodo = '24h';
+  let D = null, SP = null, vivo = null, vivoError = null, periodo = '24h';
 
   /* ---------- panel de origen: toda cifra abre el suyo ---------- */
   const dlg = el('dialog', { class: 'ob-panel' }); document.body.append(dlg);
   dlg.addEventListener('click', (e) => { if (e.target === dlg) dlg.close(); });
+  const fx = (v) => (/^\d{4}-\d\d-\d\d$/.test(v) ? fd(v) : v === 'ahora' ? 'momento de la lectura en vivo' : v);
   function grafico(x, y, fmt) {
     const p = []; for (let i = 0; i < y.length; i++) if (typeof y[i] === 'number' && isFinite(y[i])) p.push([i, y[i]]);
     if (p.length < 2) return el('p', { class: 'ob-nota' }, 'No hay serie suficiente para dibujarla.');
@@ -26,7 +28,7 @@
     const pts = p.map((q) => X(q[0]).toFixed(1) + ',' + Y(q[1]).toFixed(1)).join(' ');
     const svg = '<svg class="ob-graf" viewBox="0 0 ' + W + ' ' + H + '" role="img" aria-label="Serie"><polyline fill="none" stroke="currentColor" stroke-width="1.8" points="' + pts + '"/>' +
       '</svg>';
-    return el('div', null, el('div', { html: svg }), el('p', { class: 'ob-nota', style: 'margin-top:0' }, 'Máximo ' + fmt(hi) + ' · mínimo ' + fmt(lo) + ' · de ' + x[p[0][0]] + ' a ' + x[p[p.length - 1][0]] + '.'));
+    return el('div', null, el('div', { html: svg }), el('p', { class: 'ob-nota', style: 'margin-top:0' }, 'Máximo ' + fmt(hi) + ' · mínimo ' + fmt(lo) + ' · del ' + fx(x[p[0][0]]) + ' al ' + fx(x[p[p.length - 1][0]]) + '.'));
   }
   function abrir(o) {
     const c = el('div', { class: 'ob-pc' }, el('button', { class: 'cerrar', title: 'Cerrar', 'aria-label': 'Cerrar', onclick: () => dlg.close() }, '×'), el('h3', null, o.t), o.sub ? el('p', { class: 'sub' }, o.sub) : null);
@@ -34,7 +36,7 @@
     if (o.serie) c.append(grafico(o.serie.x, o.serie.y, o.serie.fmt || ((v) => nf(v, 2))), o.serie.pie ? el('p', { class: 'ob-nota' }, o.serie.pie) : null);
     if (o.regla) c.append(el('p', { class: 'regla' }, el('b', null, 'Cómo se calcula. '), o.regla));
     if (o.limite) c.append(el('p', { class: 'regla' }, el('b', null, 'Qué no dice. '), o.limite));
-    c.append(el('p', { class: 'ob-nota', style: 'margin-top:12px' }, el('b', null, 'De dónde sale')), el('ul', { class: 'fu' }, (o.fuentes || []).map((f) => el('li', null, f.t + ': ', el('a', { href: f.u, target: '_blank', rel: 'noopener' }, 'respuesta en bruto del servicio')))));
+    c.append(el('p', { class: 'ob-nota', style: 'margin-top:12px' }, el('b', null, 'De dónde sale')), el('ul', { class: 'fu' }, (o.fuentes || []).map((f) => el('li', null, f.t + ': ', el('a', { href: f.u, target: '_blank', rel: 'noopener' }, f.e || 'respuesta en bruto del servicio')))));
     dlg.replaceChildren(c); if (!dlg.open) dlg.showModal();
   }
   const fuenteDe = (re) => { const f = (D.fuentes || []).find((x) => re.test(x.que)); return f ? [{ t: f.que, u: f.url }] : []; };
@@ -45,43 +47,111 @@
   function rendPeriodo(a, k) { if (k === '24h') { const v = vivo && vivo.get(a.par); return v && v.apertura > 0 ? v.ultimo / v.apertura - 1 : null; } return M.rend(serieDe(a), Number(k)); }
   const PERIODOS = [['24h', '24 horas', 0.08], ['7', '7 días', 0.15], ['30', '30 días', 0.3], ['90', '90 días', 0.5], ['365', '1 año', 1]];
 
+  /* ---------- serie propia: lo que no tiene histórico gratuito (una lectura al día, la guarda el programa diario) ---------- */
+  const filasSerie = () => (SP && Array.isArray(SP.filas) ? SP.filas : []).filter((x) => x && x.dia);
+  function bloqueSerie() {
+    const F = filasSerie(); const porque = 'La dominancia y el capital total no tienen histórico gratuito, así que el observatorio guarda su propia lectura, una al día. ';
+    if (!F.length) return el('p', { class: 'ob-nota' }, porque + 'Todavía no hay ninguna guardada.');
+    const cuantas = 'Serie propia: ' + F.length + (F.length === 1 ? ' lectura' : ' lecturas') + ', desde el ' + fd(F[0].dia) + '. ';
+    if (F.length < 2) return el('p', { class: 'ob-nota' }, porque + cuantas + 'Hacen falta al menos dos días para poder comparar.');
+    const x = F.map((q) => q.dia), u = F[F.length - 1], p = F[0];
+    const o = (t, campo, fmt, regla) => ({ t, sub: 'Serie propia del observatorio · ' + F.length + ' lecturas, del ' + fd(p.dia) + ' al ' + fd(u.dia), cifras: [['Primera lectura (' + fd(p.dia) + ')', fmt(p[campo])], ['Última lectura (' + fd(u.dia) + ')', fmt(u[campo])]], serie: { x, y: F.map((q) => q[campo]), fmt, pie: 'Un punto por cada día leído. Si un día no se pudo leer, no se rellena.' }, regla, limite: 'Es una lectura al día, a la hora en que se actualiza la web: no recoge lo que pasa entre una y otra. La serie empieza el día de la primera lectura; lo anterior no existe gratis.', fuentes: fuenteDe(/Capitalización total/).concat([{ t: 'Serie propia del observatorio', u: 'data/mercado-serie.json', e: 'fichero completo' }]) });
+    const b = (t, ob) => el('button', { class: 'btn mini', onclick: () => abrir(ob) }, t);
+    return el('p', { class: 'ob-nota' }, porque + cuantas, b('Dominancia de bitcoin', o('Dominancia de bitcoin, serie propia', 'btcPct', (v) => nf(v, 2) + ' %', 'Porcentaje del capital total del mercado que es bitcoin, según CoinGecko, guardado una vez al día.')), ' ', b('Capital total', o('Capital total del mercado, serie propia', 'capTotalUsd', mUsd, 'Capitalización total del mercado según CoinGecko, guardada una vez al día.')));
+  }
+
   /* ---------- 1 · capital ---------- */
   function capital() {
     const G = D.global, S = D.stables; const pSt = S.totalUsd / G.capTotalUsd * 100, pB = G.dominanciaPct.btc, pE = G.dominanciaPct.eth, pR = 100 - pB - pE - pSt;
     const seg = (cls, t, p, o) => el('button', { class: cls, style: 'width:' + Math.max(p, 0).toFixed(2) + '%', title: t + ' ' + nf(p, 1) + ' %', onclick: () => abrir(o) }, (p >= 15 ? t + ' ' : '') + nf(p, 0) + ' %');
     const fG = fuenteDe(/Capitalización total/), fS = fuenteDe(/Stablecoins en circulación, serie/);
     const reglaCap = { Stablecoins: 'Stablecoins ancladas al dólar en circulación (DefiLlama) divididas entre el capital total del mercado (CoinGecko). Son dos fuentes distintas, así que el porcentaje es aproximado.', 'Todo lo demás': '100 menos las partes de bitcoin, ether y stablecoins.', 'Capital total del mercado': 'Suma de la capitalización de todos los activos que sigue CoinGecko.' };
-    const oCap = (t, p, extra) => ({ t, sub: 'Lectura de CoinGecko del ' + fh(G.leidoEn), cifras: [['Parte del capital total', nf(p, 2) + ' %'], ['En dólares', mUsd(G.capTotalUsd * p / 100)], ['Capital total del mercado', mUsd(G.capTotalUsd)]].concat(extra || []), regla: reglaCap[t] || 'CoinGecko suma la capitalización de todos los activos que sigue y da el porcentaje de cada uno. ' + t + ' es ese porcentaje.', limite: 'Capitalización es precio por unidades en circulación: no es dinero que haya entrado. Solo hay la lectura de hoy; el histórico no es gratuito, así que la serie propia empezará el día que se publique el observatorio.', fuentes: fG });
+    const oCap = (t, p, extra) => ({ t, sub: 'Lectura de CoinGecko del ' + fh(G.leidoEn), cifras: [['Parte del capital total', nf(p, 2) + ' %'], ['En dólares', mUsd(G.capTotalUsd * p / 100)], ['Capital total del mercado', mUsd(G.capTotalUsd)]].concat(extra || []), regla: reglaCap[t] || 'CoinGecko suma la capitalización de todos los activos que sigue y da el porcentaje de cada uno. ' + t + ' es ese porcentaje.', limite: 'Capitalización es precio por unidades en circulación: no es dinero que haya entrado. El histórico no es gratuito, así que el observatorio guarda su propia lectura, una al día.', fuentes: fG });
     const ySt = S.serie.map((x) => x[1]), xSt = S.serie.map((x) => x[0]); const cSt = (n) => (ySt.length > n ? ySt[ySt.length - 1] / ySt[ySt.length - 1 - n] - 1 : null);
     const oSt = (n) => ({ t: 'Stablecoins en circulación', sub: 'Serie diaria de DefiLlama hasta el ' + S.dia, cifras: [['Hoy', mUsd(S.totalUsd)], ['Hace ' + n + ' días', mUsd(ySt[ySt.length - 1 - n])], ['Cambio', pct(cSt(n), 2) + ' (' + mUsd(Math.abs(ySt[ySt.length - 1] - ySt[ySt.length - 1 - n])) + (cSt(n) >= 0 ? ' más' : ' menos') + ')']], serie: { x: xSt, y: ySt, fmt: (v) => mUsd(v), pie: 'Stablecoins ancladas al dólar en circulación, últimos ' + ySt.length + ' días.' }, regla: 'Suma de todas las stablecoins ancladas al dólar que sigue DefiLlama, en todas las cadenas. El cambio compara hoy con el mismo dato de hace ' + n + ' días.', limite: 'Que haya más stablecoins indica dólares que han entrado al sistema, pero no dice adónde van ni si se usan para comprar.', fuentes: fS });
     const k = (t, v, s, o, cls) => el('button', { class: 'ob-k', onclick: () => abrir(o) }, el('span', { class: 'k' }, t), el('span', { class: 'v ' + (cls || '') }, v), s ? el('span', { class: 's' }, s) : null);
-    const filaCad = (c) => { const v = (h) => (h > 0 ? c.usd / h - 1 : null); const td = (h) => el('td', { class: signo(v(h)) }, pct(v(h))); return el('tr', { class: 'cl', onclick: () => abrir({ t: 'Stablecoins en ' + c.nombre, sub: 'DefiLlama, dato del ' + (c.dia || S.dia), cifras: [['Hoy', mUsd(c.usd)], ['Hace 7 días', mUsd(c.hace7)], ['Hace 30 días', mUsd(c.hace30)], ['Hace 90 días', mUsd(c.hace90)]], regla: 'Stablecoins ancladas al dólar emitidas en esa cadena. El cambio compara hoy con el dato de hace 7, 30 o 90 días.', limite: 'Un traspaso entre cadenas baja una y sube otra sin que entre dinero nuevo.', fuentes: fuenteDe(new RegExp('Stablecoins en ' + c.nombre + ',')) }) }, el('td', null, c.nombre), el('td', null, mUsd(c.usd)), td(c.hace7), td(c.hace30), td(c.hace90)); };
-    const filaTvl = (c) => { const v = (h) => (h > 0 ? c.tvl / h - 1 : null); const td = (h) => el('td', { class: signo(v(h)) }, pct(v(h))); return el('tr', { class: 'cl', onclick: () => abrir({ t: 'Dinero depositado en ' + c.nombre, sub: 'DefiLlama, dato del ' + (c.dia || ''), cifras: [['Hoy', mUsd(c.tvl)], ['Hace 7 días', mUsd(c.hace7)], ['Hace 30 días', mUsd(c.hace30)], ['Hace 90 días', mUsd(c.hace90)]], regla: 'Valor en dólares de lo depositado en las aplicaciones de esa cadena (lo que DefiLlama llama TVL).', limite: 'Sube y baja también con el precio de lo depositado, aunque nadie meta ni saque nada.', fuentes: fuenteDe(new RegExp('Dinero depositado en ' + c.nombre + ',')) }) }, el('td', null, c.nombre), el('td', null, mUsd(c.tvl)), td(c.hace7), td(c.hace30), td(c.hace90)); };
+    const filaRed = (k) => (r) => { const c = r[k], i = M.ultimo(c); const td = (n) => { const v = M.cambio(c, n); return el('td', { class: signo(v) }, pct(v)); }; return el('tr', { class: 'cl', onclick: () => fichaRed(r, k) }, el('td', null, r.nombre), el('td', null, mUsd(c[i] * 1e6)), td(7), td(30), td(90), td(365)); };
+    const redesCon = (k) => D.redes.filas.filter((r) => r[k]).sort((a, b) => b[k][M.ultimo(b[k])] - a[k][M.ultimo(a[k])]);
+    const sinRed = (k, que) => { const L = D.redes.filas.filter((r) => !r[k]); return L.length ? el('p', { class: 'ob-nota' }, 'DefiLlama no da serie de ' + que + ' para: ' + L.map((r) => r.nombre).join(', ') + '. No se rellena.') : null; };
+    const CAB = ['Cadena', 'Último dato', '7 días', '30 días', '90 días', '1 año'];
     const cab = (a) => el('thead', null, el('tr', null, a.map((t) => el('th', null, t))));
     return el('section', { class: 'zp', id: 'capital' }, el('p', { class: 'kick' }, 'Pregunta 1'), el('h2', null, '¿Dónde está el capital?'),
       el('p', { class: 'ob-sub' }, 'De cada 100 dólares que vale hoy el mercado, cuántos están en bitcoin, en ether, en stablecoins y en todo lo demás. Pulsa cualquier trozo o cifra para ver de dónde sale.'),
       el('div', { class: 'ob-barra' }, seg('ob-seg-btc', 'BTC', pB, oCap('Bitcoin', pB)), seg('ob-seg-eth', 'ETH', pE, oCap('Ether', pE)), seg('ob-seg-st', 'Stablecoins', pSt, oCap('Stablecoins', pSt, [['Stablecoins en circulación (DefiLlama)', mUsd(S.totalUsd)], ['Aviso', 'El total es de CoinGecko y las stablecoins, de DefiLlama: dos fuentes distintas.']])), seg('ob-seg-re', 'Resto', pR, oCap('Todo lo demás', pR))),
       el('div', { class: 'ob-ley' }, [['ob-seg-btc', 'Bitcoin', pB], ['ob-seg-eth', 'Ether', pE], ['ob-seg-st', 'Stablecoins', pSt], ['ob-seg-re', 'Todo lo demás', pR]].map(([cls, t, p]) => el('span', null, el('i', { class: cls }), t + ' ' + nf(p, 1) + ' %'))),
-      el('div', { class: 'ob-kpis' }, k('Capital total', mUsd(G.capTotalUsd), pct(G.cambio24hPct / 100, 2) + ' en 24 h', oCap('Capital total del mercado', 100), ''), k('Stablecoins · 7 días', pct(cSt(7), 2), mUsd(S.totalUsd) + ' hoy', oSt(7), signo(cSt(7))), k('Stablecoins · 30 días', pct(cSt(30), 2), '', oSt(30), signo(cSt(30))), k('Stablecoins · 90 días', pct(cSt(90), 2), '', oSt(90), signo(cSt(90)))),
-      el('h3', { class: 'ob-h3' }, 'Stablecoins por cadena'), el('div', { class: 'ob-tw' }, el('table', { class: 'ob-t' }, cab(['Cadena', 'Hoy', '7 días', '30 días', '90 días']), el('tbody', null, S.porCadena.map(filaCad)))),
-      el('h3', { class: 'ob-h3' }, 'Dinero depositado en aplicaciones, por cadena'), el('div', { class: 'ob-tw' }, el('table', { class: 'ob-t' }, cab(['Cadena', 'Hoy', '7 días', '30 días', '90 días']), el('tbody', null, D.cadenas.map(filaTvl)))),
-      el('p', { class: 'ob-nota' }, 'La dominancia solo tiene lectura de hoy: su histórico no es gratuito. Cuando el observatorio se publique empezará a guardar una lectura propia al día.'));
+      el('div', { class: 'ob-kpis' }, k('Capital total', mUsd(G.capTotalUsd), pct(G.cambio24hPct / 100, 2) + ' en 24 h', oCap('Capital total del mercado', 100), ''), k('Stablecoins · 7 días', pct(cSt(7), 2), mUsd(S.totalUsd) + ' hoy', oSt(7), signo(cSt(7))), k('Stablecoins · 30 días', pct(cSt(30), 2), '', oSt(30), signo(cSt(30))), k('Stablecoins · 90 días', pct(cSt(90), 2), '', oSt(90), signo(cSt(90))), k('Stablecoins · 1 año', pct(cSt(365), 2), '', oSt(365), signo(cSt(365)))),
+      el('h3', { class: 'ob-h3' }, 'Stablecoins por cadena'), el('div', { class: 'ob-tw' }, el('table', { class: 'ob-t' }, cab(CAB), el('tbody', null, redesCon('st').map(filaRed('st'))))), sinRed('st', 'stablecoins'),
+      el('h3', { class: 'ob-h3' }, 'Dinero depositado en aplicaciones, por cadena'), el('div', { class: 'ob-tw' }, el('table', { class: 'ob-t' }, cab(CAB), el('tbody', null, redesCon('tvl').map(filaRed('tvl'))))), sinRed('tvl', 'dinero depositado'),
+      el('p', { class: 'ob-nota' }, 'Son las cadenas con más dinero depositado o más stablecoins. Pulsa una fila para ver su serie de más de un año. Si una cadena tiene menos historia que el plazo, se dice «sin dato».'),
+      bloqueSerie());
   }
 
-  /* ---------- mapa de calor ---------- */
-  const cajaCalor = el('div', { class: 'ob-calor' }), cajaPer = el('div', { class: 'ob-per' }), notaCalor = el('p', { class: 'ob-nota' });
+  /* ---------- mapa de calor: por activo, por sector y por cadena ---------- */
+  const cajaCalor = el('div'), cajaVista = el('div', { class: 'ob-per' }), cajaPer = el('div', { class: 'ob-per' }), notaCalor = el('p', { class: 'ob-nota' }); let vista = 'activos';
+  const VISTAS = [['activos', 'Por activo'], ['sectores', 'Por sector'], ['cadenas', 'Por cadena']];
+  const MIN_SECTOR = 3; // con menos activos con dato no se da cifra de sector
+  const escala = () => PERIODOS.find((p) => p[0] === periodo)[2];
+  const tPer = () => PERIODOS.find((p) => p[0] === periodo)[1];
+  const nPer = () => (periodo === '24h' ? 1 : Number(periodo));
+  const fondo = (r) => { if (r == null || !isFinite(r)) return 'var(--bg)'; const i = Math.min(1, Math.abs(r) / escala()); return 'color-mix(in srgb, var(' + (r >= 0 ? '--ok' : '--bad') + ') ' + Math.round(12 + 58 * i) + '%, var(--pan))'; };
   function fichaActivo(a) {
     const c = serieDe(a), x = diasDe(a); const v = vivo && vivo.get(a.par);
     abrir({ t: a.n + ' (' + a.s + ')', sub: 'Par ' + a.par + ' en Binance · puesto ' + a.rango + ' por capitalización (CoinGecko)', cifras: [['Precio ' + (v ? 'ahora' : 'al cierre de ayer'), precio(c[M.ultimo(c)])]].concat(PERIODOS.map(([k, t]) => [t, pct(rendPeriodo(a, k), 2)]), [['Volatilidad a 30 días', M.vol(a.c, 30) == null ? SD : nf(M.vol(a.c, 30), 1) + ' % anual'], ['Días con dato', nf(a.dias)]]), serie: { x, y: c, fmt: precio, pie: 'Cierres diarios en UTC' + (v ? ' y, al final, el precio de ahora.' : '.') }, regla: 'Rendimiento a n días = precio de ahora dividido entre el cierre de hace n días, menos 1. El de 24 horas es la ventana móvil de Binance. Si no hay lectura en vivo se usa el cierre de ayer y se avisa.', limite: 'Es el precio en una sola casa de cambio (Binance). Un rendimiento pasado no anticipa el siguiente.', fuentes: [{ t: 'Cierres y volumen diarios de ' + a.par + ' (Binance)', u: a.url }].concat(v ? [{ t: 'Precio de ahora y ventana de 24 horas (Binance)', u: urlVivo([a.par]) }] : []) });
   }
-  function pintarCalor() {
-    cajaPer.replaceChildren(...PERIODOS.map(([k, t]) => el('button', { class: k === periodo ? 'on' : '', onclick: () => { periodo = k; pintarCalor(); } }, t)));
-    const esc = PERIODOS.find((p) => p[0] === periodo)[2];
-    cajaCalor.replaceChildren(...D.activos.map((a) => { const r = rendPeriodo(a, periodo); const i = r == null ? 0 : Math.min(1, Math.abs(r) / esc); const fondo = r == null ? 'var(--bg)' : 'color-mix(in srgb, var(' + (r >= 0 ? '--ok' : '--bad') + ') ' + Math.round(12 + 58 * i) + '%, var(--pan))'; return el('button', { class: 'ob-c', style: 'background:' + fondo, title: a.n, onclick: () => fichaActivo(a) }, el('span', { class: 's' }, a.s), el('span', { class: 'v' }, r == null ? SD : pct(r, 1))); }));
-    const con = D.activos.map((a) => rendPeriodo(a, periodo)).filter((x) => x != null); const sub = con.filter((x) => x >= 0).length;
-    notaCalor.textContent = con.length ? sub + ' de ' + con.length + ' activos suben y ' + (con.length - sub) + ' bajan en este periodo. Ordenados por capitalización. ' + (periodo === '24h' && !vivo ? 'Sin lectura en vivo no hay cifra de 24 horas.' : vivo ? 'Con el precio de ahora en Binance.' : 'Con el cierre de ayer: ahora mismo no se pudo leer el precio en vivo.') : 'Sin lectura en vivo no hay cifra de 24 horas: elige otro periodo.';
+  // sectores: qué activos de la cesta pone CoinGecko en cada sector de la lista fija; la cifra del sector es la mediana de sus rendimientos
+  const porSimbolo = () => new Map(D.activos.map((a) => [a.s, a]));
+  function gruposSector() { const m = porSimbolo(); return (D.sectoresCesta || []).map((x) => ({ x, ms: (x.miembros || []).map((s) => m.get(s)).filter(Boolean) })); }
+  const rendSector = (g, k) => M.grupo(g.ms.map((a) => rendPeriodo(a, k)), MIN_SECTOR);
+  const ordenSector = (G, k) => G.map((g) => ({ g, r: rendSector(g, k) })).sort((a, b) => (b.r ? b.r.mediana : -9) - (a.r ? a.r.mediana : -9));
+  function fichaSector(g) {
+    const x = g.x; const filas = g.ms.map((a) => [a, rendPeriodo(a, periodo)]).sort((p, q) => (q[1] == null ? -9 : q[1]) - (p[1] == null ? -9 : p[1]));
+    const cif = PERIODOS.map(([k, t]) => { const r = rendSector(g, k); return ['Sector, ' + t, r ? pct(r.mediana, 2) + ' · suben ' + r.suben + ' de ' + r.n : SD + (k === '24h' && !vivo ? ' (falta la lectura en vivo)' : ' (menos de ' + MIN_SECTOR + ' activos con dato)')]; });
+    abrir({ t: x.nombre, sub: 'Sector «' + x.original + '» de CoinGecko · ' + (x.fallo ? 'la lectura diaria falló' : g.ms.length + (g.ms.length === 1 ? ' activo' : ' activos') + ' de la cesta'),
+      cifras: x.fallo ? [['Lectura de CoinGecko', 'falló (' + x.fallo + '). No se muestra nada en su lugar.']] : cif.concat(filas.map(([a, r]) => [a.s + ' · ' + a.n + ', ' + tPer(), pct(r, 2)])),
+      serie: x.fallo || !g.ms.length ? null : (() => { const n = periodo === '24h' ? 30 : Number(periodo); const eje = diasDe(g.ms[0]).slice(-(n + 1)); return { x: eje, y: M.caminoGrupo(g.ms.map(serieDe), n, MIN_SECTOR), fmt: (v) => pct(v, 1), pie: 'Camino del sector en ' + (periodo === '24h' ? 'los últimos 30 días' : tPer()) + ': para cada día, la mediana de lo que lleva ganado o perdido cada activo desde el primer día.' }; })(),
+      regla: 'CoinGecko dice qué activos pertenecen al sector. De ellos se toman los que están en la cesta y se calcula el rendimiento de cada uno con precios de Binance. La cifra del sector es la mediana (el valor central) de esos rendimientos. Con menos de ' + MIN_SECTOR + ' activos con dato no se da cifra.',
+      limite: 'El sector es una etiqueta que pone CoinGecko, no un hecho, y un mismo activo puede estar en varios. Solo cuentan los activos de la cesta, no el sector entero. La mediana trata igual a un activo grande que a uno pequeño.',
+      fuentes: [{ t: 'Activos del sector «' + x.original + '» (CoinGecko)', u: x.url }].concat(fuenteDe(/Cierres y volumen diarios de cada activo/)) });
   }
-  function calor() { return el('section', { class: 'zp', id: 'calor' }, el('p', { class: 'kick' }, 'Vista general'), el('h2', null, 'Mapa de calor'), el('p', { class: 'ob-sub' }, 'Cuánto ha subido o bajado cada activo de la cesta. Verde sube, rojo baja; cuanto más intenso, más movimiento. Pulsa un activo para ver su serie.'), cajaPer, cajaCalor, notaCalor); }
+  // redes: dinero depositado (tvl) y stablecoins (st) de cada cadena, serie diaria de DefiLlama en millones de dólares
+  const PR = [[1, '1 día'], [7, '7 días'], [30, '30 días'], [90, '90 días'], [365, 'un año']];
+  function fichaRed(r, k) {
+    const c = r[k], esT = k === 'tvl', i = M.ultimo(c); const usd = (v) => (v == null ? SD : mUsd(v * 1e6));
+    abrir({ t: (esT ? 'Dinero depositado en ' : 'Stablecoins en ') + r.nombre, sub: 'DefiLlama · serie diaria, último dato del ' + fd(D.redes.dias[i]),
+      cifras: [['Último dato', usd(c[i])]].concat(PR.map(([n, t]) => { const a = M.atras(c, n); return ['Hace ' + t, a ? usd(a.antes) + ' · cambio ' + pct(M.cambio(c, n), 2) : SD + ' (la serie no llega tan atrás o falta ese día)']; })),
+      serie: { x: D.redes.dias, y: c.map((v) => (v == null ? null : v * 1e6)), fmt: mUsd, pie: (esT ? 'Dinero depositado en las aplicaciones de ' : 'Stablecoins ancladas al dólar emitidas en ') + r.nombre + ', día a día.' },
+      regla: (esT ? 'Valor en dólares de lo depositado en las aplicaciones de esa cadena (lo que DefiLlama llama TVL). ' : 'Stablecoins ancladas al dólar emitidas en esa cadena. ') + 'El cambio a n días compara el último dato con el de n días antes.',
+      limite: esT ? 'Sube y baja también con el precio de lo depositado, aunque nadie meta ni saque nada.' : 'Un traspaso entre cadenas baja una y sube otra sin que entre dinero nuevo.',
+      fuentes: [{ t: (esT ? 'Dinero depositado en ' : 'Stablecoins en ') + r.nombre + ', serie diaria (DefiLlama)', u: esT ? r.urlTvl : r.urlSt }] });
+  }
+  function pintarCalor() {
+    cajaVista.replaceChildren(...VISTAS.map(([k, t]) => el('button', { class: k === vista ? 'on' : '', onclick: () => { vista = k; pintarCalor(); } }, t)));
+    cajaPer.replaceChildren(...PERIODOS.map(([k, t]) => el('button', { class: k === periodo ? 'on' : '', onclick: () => { periodo = k; pintarCalor(); } }, t)));
+    const precioDe = periodo === '24h' && !vivo ? 'Sin lectura en vivo no hay cifra de 24 horas para los precios: elige otro periodo.' : vivo ? 'Precios: con el de ahora en Binance.' : 'Precios: con el cierre de ayer, porque ahora mismo no se pudo leer el precio en vivo.';
+    if (vista === 'activos') {
+      cajaCalor.className = 'ob-calor';
+      cajaCalor.replaceChildren(...D.activos.map((a) => { const r = rendPeriodo(a, periodo); return el('button', { class: 'ob-c', style: 'background:' + fondo(r), title: a.n, onclick: () => fichaActivo(a) }, el('span', { class: 's' }, a.s), el('span', { class: 'v' }, r == null ? SD : pct(r, 1))); }));
+      const con = D.activos.map((a) => rendPeriodo(a, periodo)).filter((x) => x != null); const sub = con.filter((x) => x >= 0).length;
+      notaCalor.textContent = (con.length ? sub + ' de ' + con.length + ' activos suben y ' + (con.length - sub) + ' bajan en este periodo. Ordenados por capitalización. ' : '') + precioDe;
+    } else if (vista === 'sectores') {
+      const O = ordenSector(gruposSector(), periodo);
+      cajaCalor.className = 'ob-calor sec';
+      cajaCalor.replaceChildren(...O.map(({ g, r }) => el('button', { class: 'ob-c', style: 'background:' + fondo(r && r.mediana), title: 'Sector «' + g.x.original + '» de CoinGecko', onclick: () => fichaSector(g) }, el('span', { class: 's' }, g.x.nombre), el('span', { class: 'v' }, r ? pct(r.mediana, 1) : SD), el('span', { class: 'n' }, g.x.fallo ? 'lectura fallida' : g.ms.length + (g.ms.length === 1 ? ' activo' : ' activos') + ' de la cesta'))));
+      const con = O.filter((o) => o.r); const sub = con.filter((o) => o.r.mediana >= 0).length;
+      notaCalor.textContent = (O.length ? (con.length ? sub + ' de ' + con.length + ' sectores suben y ' + (con.length - sub) + ' bajan en este periodo. ' : '') + 'La cifra de cada sector es la mediana del rendimiento de los activos de la cesta que CoinGecko pone en él; con menos de ' + MIN_SECTOR + ' no se da cifra. Un activo puede estar en varios sectores. ' : 'La lectura diaria no trae los sectores de la cesta. ') + precioDe;
+    } else {
+      const m = porSimbolo(), n = nPer();
+      const celda = (v, abre, vacio) => el('td', Object.assign({ class: 'ob-cc' + (v == null ? ' vacia' : '') }, v == null ? {} : { style: 'background:' + fondo(v) }, abre ? { onclick: abre, title: 'Ver la serie y de dónde sale' } : {}), v == null ? (vacio || SD) : pct(v, 1));
+      cajaCalor.className = 'ob-tw';
+      cajaCalor.replaceChildren(el('table', { class: 'ob-t ob-tc' }, el('thead', null, el('tr', null, ['Cadena', 'Su moneda (precio)', 'Dinero depositado', 'Stablecoins'].map((t) => el('th', null, t)))), el('tbody', null, D.redes.filas.map((r) => { const a = r.token ? m.get(String(r.token).toUpperCase()) : null;
+        return el('tr', null, el('td', null, r.nombre, a ? el('span', { class: 'n2' }, a.s) : null),
+          celda(a ? rendPeriodo(a, periodo) : null, a ? () => fichaActivo(a) : null, a ? SD : r.token ? r.token + ' no está en la cesta' : 'sin moneda propia'),
+          celda(r.tvl ? M.cambio(r.tvl, n) : null, r.tvl ? () => fichaRed(r, 'tvl') : null, r.tvl ? SD : 'sin serie'),
+          celda(r.st ? M.cambio(r.st, n) : null, r.st ? () => fichaRed(r, 'st') : null, r.st ? SD : 'sin serie')); }))));
+      notaCalor.textContent = 'Las cadenas con más dinero depositado o más stablecoins. «Su moneda» es el precio de la moneda propia de la cadena en Binance, solo si está en la cesta. El dinero depositado y las stablecoins son datos diarios de DefiLlama' + (periodo === '24h' ? ': en «24 horas» comparan el último dato con el del día anterior' : '') + '. Las tres columnas usan la misma escala de color. ' + precioDe;
+    }
+  }
+  function calor() { return el('section', { class: 'zp', id: 'calor' }, el('p', { class: 'kick' }, 'Vista general'), el('h2', null, 'Mapa de calor'), el('p', { class: 'ob-sub' }, 'Cuánto ha subido o bajado cada activo, cada sector y cada cadena. Verde sube, rojo baja; cuanto más intenso, más movimiento. Pulsa cualquier casilla para ver su serie y de dónde sale.'), cajaVista, cajaPer, cajaCalor, notaCalor); }
 
   /* ---------- 2 · liquidez: foto diaria (la toma el programa diario) y lectura en vivo de UN libro cuando se pide ----------
      Una lectura profunda del libro cuenta 250 de los 6.000 puntos por minuto que Binance da a cada visitante: leer ocho al abrir la página
@@ -104,18 +174,32 @@
   }
   function fraseLiquidez() { const b = filasLiq()[0]; return b && b.compras != null ? (b.enVivo ? 'Ahora mismo hay ' : 'En la última foto había ') + mUsd(b.compras) + ' esperando para comprar bitcoin a menos de un 1 % del precio y ' + mUsd(b.ventas) + ' para venderlo.' : 'La lectura diaria no trae la foto de los libros.'; }
   function liquidez() { const F = filasLiq(); const h = F.find((x) => x.hora); pintarLiquidez(); if (h) notaLiq.textContent = 'Foto de la lectura diaria, tomada el ' + fh(h.hora) + '. Dinero esperando a menos de un 1 % del precio.';
-    return el('section', { class: 'zp', id: 'liquidez' }, el('p', { class: 'kick' }, 'Pregunta 2'), el('h2', null, '¿Dónde aumenta la liquidez?'), el('p', { class: 'ob-sub' }, 'Cuánto dinero hay esperando para comprar y para vender cerca del precio en Binance, para los ocho mayores activos de la cesta. La otra mitad de la respuesta está arriba: las stablecoins que entran o salen de cada cadena.'), el('div', { class: 'ob-tw' }, el('table', { class: 'ob-t' }, el('thead', null, el('tr', null, ['Activo', 'Diferencial', 'Para comprar (−1 %)', 'Para vender (+1 %)', 'Reparto', 'Desequilibrio', ''].map((t) => el('th', null, t)))), cuerpoLiq)), notaLiq, el('p', { class: 'ob-nota' }, 'La foto la toma la lectura diaria, no tu navegador: Binance limita las lecturas profundas por visitante. «Leer ahora» lee un solo libro en el momento. No existe histórico gratuito de la profundidad: para saber si la liquidez AUMENTA hay que comparar con días anteriores, y esa serie propia empezará a guardarse cuando el observatorio se publique.')); }
+    return el('section', { class: 'zp', id: 'liquidez' }, el('p', { class: 'kick' }, 'Pregunta 2'), el('h2', null, '¿Dónde aumenta la liquidez?'), el('p', { class: 'ob-sub' }, 'Cuánto dinero hay esperando para comprar y para vender cerca del precio en Binance, para los ocho mayores activos de la cesta. La otra mitad de la respuesta está arriba: las stablecoins que entran o salen de cada cadena.'), el('div', { class: 'ob-tw' }, el('table', { class: 'ob-t' }, el('thead', null, el('tr', null, ['Activo', 'Diferencial', 'Para comprar (−1 %)', 'Para vender (+1 %)', 'Reparto', 'Desequilibrio', ''].map((t) => el('th', null, t)))), cuerpoLiq)), notaLiq, el('p', { class: 'ob-nota' }, 'La foto la toma la lectura diaria, no tu navegador: Binance limita las lecturas profundas por visitante. «Leer ahora» lee un solo libro en el momento. No existe histórico gratuito de la profundidad: para saber si la liquidez AUMENTA hay que comparar con días anteriores, y esa comparación se hará con la serie propia del observatorio (una foto al día) cuando tenga días suficientes.')); }
 
   /* ---------- 3 · sectores ---------- */
   const RUIDO = /portfolio|ecosystem|holdings|index|alleged|made in|ftx|fund\b/i;
   const sectoresUtiles = () => (D.sectores || []).filter((s) => !RUIDO.test(s.nombre)).slice(0, 20);
+  const cuerpoSecCesta = el('tbody');
+  function pintarTablaSectores() {
+    const O = ordenSector(gruposSector(), '30');
+    cuerpoSecCesta.replaceChildren(...O.map(({ g }) => el('tr', { class: 'cl', onclick: () => fichaSector(g) }, el('td', null, g.x.nombre), g.x.fallo ? el('td', { colspan: 6, style: 'text-align:left' }, 'La lectura diaria de CoinGecko falló para este sector; sin dato') : [el('td', null, String(g.ms.length))].concat(PERIODOS.map(([k]) => { const r = rendSector(g, k); return el('td', { class: signo(r && r.mediana) }, r ? pct(r.mediana, 1) : SD); })))));
+  }
+  function fraseSectores(L, sb) {
+    const O = ordenSector(gruposSector(), '30').filter((o) => o.r); const out = [];
+    if (O.length) { const s30 = O.filter((o) => o.r.mediana >= 0).length; out.push('En 30 días suben ', el('b', null, String(s30)), ' de los ', String(O.length), ' sectores de la cesta con cifra. El que mejor va: ', O[0].g.x.nombre, ' (', pct(O[0].r.mediana, 1), '); el que peor: ', O[O.length - 1].g.x.nombre, ' (', pct(O[O.length - 1].r.mediana, 1), '). '); }
+    if (L.length) out.push('En 24 horas, según CoinGecko, suben ', el('b', null, String(sb)), ' de sus ', String(L.length), ' mayores sectores.');
+    return out.length ? out : 'La lectura de sectores no llegó en la última actualización.';
+  }
   function sectores() {
     const L = sectoresUtiles(); const fu = fuenteDe(/Sectores:/);
-    if (!L.length) return el('section', { class: 'zp', id: 'sectores' }, el('p', { class: 'kick' }, 'Pregunta 3'), el('h2', null, '¿Qué sectores ganan actividad?'), el('p', { class: 'ob-sub' }, 'La lectura de sectores de CoinGecko no llegó en la última actualización' + (D.sectoresFallo ? ' (' + D.sectoresFallo + ')' : '') + '. No se muestra nada en su lugar.'));
+    pintarTablaSectores(); const hay = (D.sectoresCesta || []).length > 0;
     const mx = Math.max(...L.map((s) => Math.abs(s.cambio24hPct)), 1);
-    return el('section', { class: 'zp', id: 'sectores' }, el('p', { class: 'kick' }, 'Pregunta 3'), el('h2', null, '¿Qué sectores ganan actividad?'), el('p', { class: 'ob-sub' }, 'Los veinte mayores sectores según la clasificación de CoinGecko: cuánto ha cambiado su capitalización en 24 horas y cuánto se ha negociado. Un mismo activo puede estar en varios sectores.'),
-      el('div', { class: 'ob-tw' }, el('table', { class: 'ob-t' }, el('thead', null, el('tr', null, ['Sector (CoinGecko)', 'Capitalización', 'Cambio 24 h', '', 'Negociado 24 h', 'Negociado / capital'].map((t) => el('th', null, t)))), el('tbody', null, L.map((s) => { const w = Math.abs(s.cambio24hPct) / mx * 100; return el('tr', { class: 'cl', onclick: () => abrir({ t: s.nombre, sub: 'Sector según CoinGecko · lectura diaria del ' + fh(D.leidoEn), cifras: [['Capitalización', mUsd(s.capUsd)], ['Cambio en 24 horas', pct(s.cambio24hPct / 100, 2)], ['Negociado en 24 horas', mUsd(s.volumen24hUsd)], ['Negociado / capitalización', nf(s.volumen24hUsd / s.capUsd * 100, 2) + ' %']], regla: 'Las cifras son las que publica CoinGecko para cada categoría. «Negociado / capital» divide el volumen de 24 horas entre la capitalización: cuánto se mueve el sector en relación con su tamaño.', limite: 'El sector es una etiqueta que pone CoinGecko, no un hecho. Las categorías se solapan (bitcoin está en varias). En este boceto solo hay 24 horas; los periodos largos necesitan asignar cada activo a un sector, que es la entrega siguiente.', fuentes: fu }) }, el('td', null, s.nombre), el('td', null, mUsd(s.capUsd)), el('td', { class: signo(s.cambio24hPct) }, pct(s.cambio24hPct / 100, 2)), el('td', null, el('span', { class: 'ob-deseq', style: 'width:90px' }, el('i', { class: s.cambio24hPct >= 0 ? 'c' : 'v', style: 'width:' + w.toFixed(0) + '%' }))), el('td', null, mUsd(s.volumen24hUsd)), el('td', null, nf(s.volumen24hUsd / s.capUsd * 100, 2) + ' %')); })))),
-      el('p', { class: 'ob-nota' }, 'Lectura diaria del ' + fh(D.leidoEn) + ' (CoinGecko limita las consultas por visitante, así que esto no se lee desde tu navegador). Se han quitado las categorías que son carteras de fondos o ecosistemas de una cadena.'));
+    return el('section', { class: 'zp', id: 'sectores' }, el('p', { class: 'kick' }, 'Pregunta 3'), el('h2', null, '¿Qué sectores ganan actividad?'), el('p', { class: 'ob-sub' }, 'Dos miradas. Primero, los sectores que se siguen en la cesta, a varios plazos: la cifra es la mediana del rendimiento de sus activos. Después, los veinte mayores sectores según CoinGecko, con lo que ha cambiado su capitalización y lo que se ha negociado en 24 horas. Un mismo activo puede estar en varios sectores.'),
+      el('h3', { class: 'ob-h3' }, 'Sectores de la cesta, por plazo'),
+      hay ? [el('div', { class: 'ob-tw' }, el('table', { class: 'ob-t' }, el('thead', null, el('tr', null, ['Sector', 'Activos'].concat(PERIODOS.map((p) => p[1])).map((t) => el('th', null, t)))), cuerpoSecCesta)), el('p', { class: 'ob-nota' }, 'Ordenados por su rendimiento a 30 días. Lista fija de ' + D.sectoresCesta.length + ' sectores; con menos de ' + MIN_SECTOR + ' activos de la cesta con dato no se da cifra. Pulsa un sector para ver sus activos y de dónde sale.')] : el('p', { class: 'ob-nota' }, 'La lectura diaria no trae los sectores de la cesta. No se muestra nada en su lugar.'),
+      el('h3', { class: 'ob-h3' }, 'Los veinte mayores sectores según CoinGecko, en 24 horas'),
+      !L.length ? el('p', { class: 'ob-nota' }, 'La lectura de sectores de CoinGecko no llegó en la última actualización' + (D.sectoresFallo ? ' (' + D.sectoresFallo + ')' : '') + '. No se muestra nada en su lugar.') : el('div', { class: 'ob-tw' }, el('table', { class: 'ob-t' }, el('thead', null, el('tr', null, ['Sector (CoinGecko)', 'Capitalización', 'Cambio 24 h', '', 'Negociado 24 h', 'Negociado / capital'].map((t) => el('th', null, t)))), el('tbody', null, L.map((s) => { const w = Math.abs(s.cambio24hPct) / mx * 100; return el('tr', { class: 'cl', onclick: () => abrir({ t: s.nombre, sub: 'Sector según CoinGecko · lectura diaria del ' + fh(D.leidoEn), cifras: [['Capitalización', mUsd(s.capUsd)], ['Cambio en 24 horas', pct(s.cambio24hPct / 100, 2)], ['Negociado en 24 horas', mUsd(s.volumen24hUsd)], ['Negociado / capitalización', nf(s.volumen24hUsd / s.capUsd * 100, 2) + ' %']], regla: 'Las cifras son las que publica CoinGecko para cada categoría. «Negociado / capital» divide el volumen de 24 horas entre la capitalización: cuánto se mueve el sector en relación con su tamaño.', limite: 'El sector es una etiqueta que pone CoinGecko, no un hecho. Las categorías se solapan (bitcoin está en varias). Estas cifras de CoinGecko solo existen a 24 horas; para plazos más largos está la tabla de sectores de la cesta.', fuentes: fu }) }, el('td', null, s.nombre), el('td', null, mUsd(s.capUsd)), el('td', { class: signo(s.cambio24hPct) }, pct(s.cambio24hPct / 100, 2)), el('td', null, el('span', { class: 'ob-deseq', style: 'width:90px' }, el('i', { class: s.cambio24hPct >= 0 ? 'c' : 'v', style: 'width:' + w.toFixed(0) + '%' }))), el('td', null, mUsd(s.volumen24hUsd)), el('td', null, nf(s.volumen24hUsd / s.capUsd * 100, 2) + ' %')); })))),
+      !L.length ? null : el('p', { class: 'ob-nota' }, 'Lectura diaria del ' + fh(D.leidoEn) + ' (CoinGecko limita las consultas por visitante, así que esto no se lee desde tu navegador). Se han quitado las categorías que son carteras de fondos o ecosistemas de una cadena.'));
   }
 
   /* ---------- volatilidad ---------- */
@@ -144,13 +228,13 @@
   const cajaPreg = el('div', { class: 'ob-preg' });
   function pintarPreguntas() {
     const G = D.global, S = D.stables; const pSt = S.totalUsd / G.capTotalUsd * 100; const y = S.serie.map((x) => x[1]); const c30 = y.length > 30 ? y[y.length - 1] / y[y.length - 31] - 1 : null;
-    const L = sectoresUtiles(); const sb = L.filter((s) => s.cambio24hPct >= 0).length; const orden = L.slice().sort((a, b) => b.cambio24hPct - a.cambio24hPct);
+    const L = sectoresUtiles(); const sb = L.filter((s) => s.cambio24hPct >= 0).length;
     const F = filasCorr(); const des = F.filter((f) => f.e === 'desacopla'); const conDato = F.filter((f) => f.d != null).length;
     const p = (id, q, r) => el('a', { class: 'ob-p', href: '#' + id }, el('p', { class: 'q' }, q), el('p', { class: 'r' }, r), el('span', { class: 'mas' }, 'Ver el detalle ↓'));
     cajaPreg.replaceChildren(
       p('capital', '1 · ¿Dónde está el capital?', ['De cada 100 $ del mercado, ', el('b', null, nf(G.dominanciaPct.btc, 0)), ' están en bitcoin, ', el('b', null, nf(G.dominanciaPct.eth, 0)), ' en ether, ', el('b', null, nf(pSt, 0)), ' en stablecoins y ', el('b', null, nf(100 - G.dominanciaPct.btc - G.dominanciaPct.eth - pSt, 0)), ' en todo lo demás.']),
       p('liquidez', '2 · ¿Dónde aumenta la liquidez?', [c30 == null ? '' : ['Las stablecoins en circulación han ', c30 >= 0 ? 'subido' : 'bajado', ' un ', el('b', null, nf(Math.abs(c30 * 100), 1) + ' %'), ' en 30 días. '], fraseLiquidez()]),
-      p('sectores', '3 · ¿Qué sectores ganan actividad?', L.length ? ['De los ', String(L.length), ' mayores sectores, ', el('b', null, String(sb)), ' suben y ', el('b', null, String(L.length - sb)), ' bajan en 24 horas. El que más sube: ', orden[0].nombre, ' (', pct(orden[0].cambio24hPct / 100, 1), '); el que más baja: ', orden[orden.length - 1].nombre, ' (', pct(orden[orden.length - 1].cambio24hPct / 100, 1), ').'] : 'La lectura de sectores no llegó en la última actualización.'),
+      p('sectores', '3 · ¿Qué sectores ganan actividad?', fraseSectores(L, sb)),
       p('desacoples', '4 · ¿Qué activos se están desacoplando?', [el('b', null, String(des.length)), ' de ', String(conDato), ' activos se mueven estos 30 días menos pegados a bitcoin que los 30 anteriores', des.length ? [': ', des.slice(0, 5).map((f) => f.a.s).join(', '), des.length > 5 ? ' y ' + (des.length - 5) + ' más' : '', '.'] : '.']));
   }
 
@@ -159,7 +243,7 @@
   const urlVivo = (pares) => 'https://data-api.binance.vision/api/v3/ticker/24hr?type=MINI&symbols=' + encodeURIComponent(JSON.stringify(pares));
   function pintarEstado() { const edad = (Date.now() - Date.parse(D.leidoEn)) / 3600000; estado.replaceChildren(el('span', null, el('b', null, 'Datos diarios: '), fh(D.leidoEn), edad > 36 ? ' · ¡tienen más de un día y medio!' : ''), el('span', null, el('i', { class: 'ob-vivo' + (vivo ? '' : ' mal') }), el('b', null, 'Precio en vivo: '), vivo ? 'Binance, leído el ' + fh(vivo.hora) + ' (se relee cada minuto)' : 'no se pudo leer ahora' + (vivoError ? ' (' + vivoError + ')' : '') + '; se usan los cierres de ayer'), el('span', null, el('b', null, 'Cesta: '), D.activos.length + ' activos')); }
   let pausaVivo = 0; // si Binance pide esperar (418 o 429) no se insiste durante diez minutos: insistir alarga el bloqueo
-  async function leerVivo() { if (Date.now() < pausaVivo) return; try { const j = await traer(urlVivo(D.activos.map((a) => a.par))); const m = new Map(); for (const t of j) { const u = Number(t.lastPrice), o = Number(t.openPrice); if (u > 0) m.set(t.symbol, { ultimo: u, apertura: o }); } if (m.size < D.activos.length * 0.8) throw new Error('respuesta incompleta'); m.hora = new Date().toISOString(); vivo = m; vivoError = null; } catch (e) { vivoError = e.message; if (/HTTP (418|429)/.test(e.message)) { pausaVivo = Date.now() + 600000; vivoError = 'Binance pide esperar; se volverá a intentar en diez minutos'; } } pintarEstado(); pintarCalor(); }
+  async function leerVivo() { if (Date.now() < pausaVivo) return; try { const j = await traer(urlVivo(D.activos.map((a) => a.par))); const m = new Map(); for (const t of j) { const u = Number(t.lastPrice), o = Number(t.openPrice); if (u > 0) m.set(t.symbol, { ultimo: u, apertura: o }); } if (m.size < D.activos.length * 0.8) throw new Error('respuesta incompleta'); m.hora = new Date().toISOString(); vivo = m; vivoError = null; } catch (e) { vivoError = e.message; if (/HTTP (418|429)/.test(e.message)) { pausaVivo = Date.now() + 600000; vivoError = 'Binance pide esperar; se volverá a intentar en diez minutos'; } } pintarEstado(); pintarCalor(); pintarTablaSectores(); pintarPreguntas(); }
 
   /* ---------- montaje ---------- */
   function limites() { return el('section', { class: 'zp', id: 'limites' }, el('p', { class: 'kick' }, 'Antes de leer nada'), el('h2', null, 'Qué es esto y qué no'), el('ul', { class: 'ob-reglas' }, [
@@ -167,11 +251,13 @@
     ['La cesta son los mayores de hoy. ', D.metodo.cesta],
     ['Un solo mercado para los precios. ', 'Los precios y los libros de órdenes son de Binance. ' + D.metodo.series],
     ['Los sectores son una etiqueta de terceros. ', D.metodo.sectores],
-    ['Lo que no hay gratis se dice. ', 'No existe histórico gratuito de la dominancia ni de la profundidad de los libros: el observatorio guardará su propia lectura diaria desde el día en que se publique.'],
+    ['Lo que no hay gratis se dice. ', 'No existe histórico gratuito de la dominancia ni de la profundidad de los libros: el observatorio guarda su propia lectura, una al día' + (filasSerie().length ? ' (' + filasSerie().length + ' hasta hoy, desde el ' + fd(filasSerie()[0].dia) + ').' : '.')],
     ['Las cifras las hace un programa. ', 'Sin IA. Los cálculos tienen pruebas y se contrastan con una segunda herramienta independiente sobre los mismos datos.'],
   ].map(([b, t]) => el('li', null, el('b', null, b), t))), el('details', { style: 'margin-top:10px' }, el('summary', { class: 'ob-nota', style: 'cursor:pointer' }, 'Activos que no entran en la cesta y por qué (' + D.excluidos.length + ')'), el('div', { class: 'ob-tw' }, el('table', { class: 'ob-t' }, el('tbody', null, D.excluidos.map((e) => el('tr', null, el('td', null, e.s, el('span', { class: 'n2' }, e.n || '')), el('td', { style: 'text-align:left;white-space:normal' }, e.motivo)))))))); }
-  fetch('data/mercado.json', { cache: 'no-cache' }).then((r) => { if (!r.ok) throw new Error('HTTP ' + r.status); return r.json(); }).then((j) => {
-    if (!j || j.version !== 1 || !Array.isArray(j.activos) || j.activos.length < 10 || !j.global || !j.stables) throw new Error('formato inesperado');
+  // la serie propia es un añadido: si no se puede leer, la página sigue y lo dice en su sitio
+  const leeSerie = fetch('data/mercado-serie.json', { cache: 'no-cache' }).then((r) => (r.ok ? r.json() : null)).then((j) => (j && j.version === 1 && Array.isArray(j.filas) ? j : null)).catch(() => null);
+  fetch('data/mercado.json', { cache: 'no-cache' }).then((r) => { if (!r.ok) throw new Error('HTTP ' + r.status); return r.json(); }).then((j) => leeSerie.then((q) => { SP = q; return j; })).then((j) => {
+    if (!j || j.version !== 2 || !j.redes || !Array.isArray(j.redes.filas) || !Array.isArray(j.activos) || j.activos.length < 10 || !j.global || !j.stables) throw new Error('formato inesperado');
     D = j; pintarEstado(); pintarPreguntas(); pintarCalor();
     raiz.replaceChildren(estado, cajaPreg, capital(), calor(), liquidez(), sectores(), volatilidad(), desacoples(), limites());
     leerVivo(); setInterval(() => { if (!document.hidden) leerVivo(); }, 60000);

@@ -7,6 +7,10 @@
    - Percentil de volatilidad: qué parte de las volatilidades a n días de toda la historia disponible es menor o igual que la de hoy.
    - Correlación a n días: Pearson entre los rendimientos diarios de dos activos en los últimos n días en que ambos tienen dato.
    - Sensibilidad (beta) a n días: covarianza con el activo de referencia / varianza del de referencia, en esos mismos días.
+   - Cambio a n días de una serie diaria (dinero depositado, stablecoins): último dato / dato de n posiciones antes − 1.
+   - Mediana: el valor central de los que tienen dato (con un número par, la media de los dos centrales).
+   - Rendimiento de un grupo (sector): la mediana de los rendimientos de sus activos; con menos de tres activos con dato no hay cifra.
+   - Camino de un grupo: esa misma mediana calculada cada día del periodo, contando desde el primer día.
    Vale en el navegador (window.MCALC) y en Node (module.exports), para poder probarlo. */
 (function (raiz) {
   const num = (x) => typeof x === 'number' && isFinite(x);
@@ -29,6 +33,15 @@
   function caidaDesdeMaximo(c, n) { const i = ultimo(c); if (i < 0) return null; let mx = null; for (let k = Math.max(0, i - n + 1); k <= i; k++) if (num(c[k]) && (mx == null || c[k] > mx)) mx = c[k]; return mx ? c[i] / mx - 1 : null; }
   // profundidad de un libro de órdenes a ±pct del precio medio: dinero esperando a cada lado y desequilibrio (−1 todo ventas … +1 todo compras)
   function profundidad(bids, asks, pct) { if (!bids || !asks || !bids.length || !asks.length) return null; const mb = Number(bids[0][0]), ma = Number(asks[0][0]); if (!(mb > 0) || !(ma > 0) || ma < mb) return null; const medio = (mb + ma) / 2, lo = medio * (1 - pct), hi = medio * (1 + pct); let c = 0, v = 0; for (const [p, q] of bids) { const P = Number(p); if (P < lo) break; c += P * Number(q); } for (const [p, q] of asks) { const P = Number(p); if (P > hi) break; v += P * Number(q); } const cubreC = Number(bids[bids.length - 1][0]) <= lo, cubreV = Number(asks[asks.length - 1][0]) >= hi; return { medio, diferencialPct: (ma - mb) / medio * 100, compras: c, ventas: v, desequilibrio: c + v > 0 ? (c - v) / (c + v) : null, completo: cubreC && cubreV }; }
-  const M = { rend, retornos, desv, vol, serieVol, percentil, estadoVol, corr, beta, caidaDesdeMaximo, profundidad, ultimo };
+  // último dato de una serie y el de n posiciones antes: { hoy, antes, i } o null si falta alguno de los dos
+  function atras(c, n) { const i = ultimo(c); if (i < 0 || i - n < 0 || !num(c[i - n])) return null; return { hoy: c[i], antes: c[i - n], i }; }
+  function cambio(c, n) { const a = atras(c, n); return a && a.antes > 0 ? a.hoy / a.antes - 1 : null; }
+  function mediana(a) { const v = (a || []).filter(num).sort((x, y) => x - y); if (!v.length) return null; const m = v.length >> 1; return v.length % 2 ? v[m] : (v[m - 1] + v[m]) / 2; }
+  // resumen de un grupo de rendimientos: cuántos tienen dato, cuántos suben, mediana; null si hay menos de «minimo» con dato (3 por defecto)
+  function grupo(rends, minimo) { const v = (rends || []).filter(num); if (v.length < (minimo == null ? 3 : minimo)) return null; return { n: v.length, suben: v.filter((x) => x >= 0).length, mediana: mediana(v) }; }
+  // camino de un grupo en los últimos n días: para cada día, la mediana de lo que lleva ganado o perdido cada activo desde hace n días.
+  // Cada serie se cuenta desde su propio último dato; solo entran las que tienen dato hace n días. El último valor coincide con grupo(rendimientos a n días).
+  function caminoGrupo(series, n, minimo) { const base = []; for (const c of series || []) { const i = ultimo(c); if (i >= 0 && i - n >= 0 && num(c[i - n]) && c[i - n] > 0) base.push([c, i]); } const y = []; for (let k = n; k >= 0; k--) { const v = []; for (const [c, i] of base) if (num(c[i - k])) v.push(c[i - k] / c[i - n] - 1); y.push(v.length >= (minimo == null ? 3 : minimo) ? mediana(v) : null); } return y; }
+  const M = { atras, cambio, mediana, grupo, caminoGrupo, rend, retornos, desv, vol, serieVol, percentil, estadoVol, corr, beta, caidaDesdeMaximo, profundidad, ultimo };
   if (typeof module !== 'undefined' && module.exports) module.exports = M; else raiz.MCALC = M;
 })(typeof window !== 'undefined' ? window : globalThis);

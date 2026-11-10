@@ -55,8 +55,10 @@ def beta(a, ref, n):
 btc = serie(datos['activos'][0])
 peor = {}
 faltan = 0
+hechas = 0
 def cmp(clave, s, mio, suyo):
-    global faltan
+    global faltan, hechas
+    hechas += 1
     if mio is None or suyo is None:
         if mio is not suyo: faltan += 1; print('DISTINTO (uno sin dato):', s, clave, mio, suyo)
         return
@@ -77,6 +79,42 @@ for a in datos['activos']:
     cmp('corr30previa', s, corr(c, btc, 30, 30), v['corr30previa'])
     cmp('beta90', s, beta(c, btc, 90), v['beta90'])
 
+# --- entrega 1: rendimiento a un ano, mediana por sector (np.median) y cambios por cadena
+por_s = {a['s']: serie(a) for a in datos['activos']}
+def rend(c, n):
+    u = ultimo(c); i = u - n
+    if u < 0 or i < 0 or np.isnan(c[i]) or c[i] <= 0: return None
+    return float(c[u] / c[i] - 1)
+for a in datos['activos']:
+    cmp('rend365', a['s'], rend(por_s[a['s']], 365), volc[a['s']]['rend365'])
+n_sec = 0
+for x in datos.get('sectoresCesta', []):
+    if 'miembros' not in x: continue
+    n_sec += 1; v = volc['__sectores'][x['id']]
+    for n in (7, 30, 90, 365):
+        rs = [r for r in (rend(por_s[m], n) for m in x['miembros']) if r is not None]
+        hay = len(rs) >= 3
+        cmp('sector_mediana%d' % n, x['id'], (float(np.median(np.array(rs))) if hay else None), v['m%d' % n])
+        cmp('sector_n%d' % n, x['id'], (float(len(rs)) if hay else None), v['n%d' % n])
+        cmp('sector_suben%d' % n, x['id'], (float(sum(1 for r in rs if r >= 0)) if hay else None), v['s%d' % n])
+    # camino a 30 dias: mediana, dia a dia, de lo que lleva cada activo desde hace 30 dias
+    base = []
+    for m in x['miembros']:
+        c = por_s[m]; u = ultimo(c)
+        if u >= 30 and not np.isnan(c[u - 30]) and c[u - 30] > 0: base.append((c, u))
+    for k in range(30, -1, -1):
+        vals = [float(c[u - k] / c[u - 30] - 1) for (c, u) in base if not np.isnan(c[u - k])]
+        cmp('sector_camino30', x['id'], (float(np.median(np.array(vals))) if len(vals) >= 3 else None), v['camino30'][30 - k])
+n_red = 0
+for r in datos.get('redes', {}).get('filas', []):
+    v = volc['__redes'][r['nombre']]; n_red += 1
+    for k in ('tvl', 'st'):
+        if k not in r: continue
+        c = np.array([np.nan if q is None else float(q) for q in r[k]], dtype=float)
+        for n in (1, 7, 30, 90, 365):
+            cmp('red_%s%d' % (k, n), r['nombre'], rend(c, n), v['%s%d' % (k, n)])
+print('sectores contrastados:', n_sec, '| cadenas contrastadas:', n_red)
+print('comparaciones hechas:', hechas)
 print('activos:', len(datos['activos']), '| casos con dato en un lado y no en el otro:', faltan)
 for k in sorted(peor): print('  diferencia maxima en %-13s %.3e  (%s)' % (k, peor[k][0], peor[k][1]))
 mx = max([p[0] for p in peor.values()] or [0])

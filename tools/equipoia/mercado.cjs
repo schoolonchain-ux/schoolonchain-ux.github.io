@@ -5,7 +5,10 @@
 //    con el de CoinGecko (otro activo con las mismas letras), el activo se descarta y se anota.
 //  - Series: cierres y volumen diarios de Binance (días ya cerrados; el día en curso lo pone la página con una lectura en vivo).
 //  - Capital: capitalización total y dominancia de hoy (CoinGecko global); stablecoins en circulación, total y por cadena (DefiLlama).
-//  - Redes: dinero depositado por cadena, hoy y hace 7 y 30 días (DefiLlama).  - Sectores: clasificación y cifras de 24 h de CoinGecko.
+//  - Redes: dinero depositado y stablecoins por cadena, con 400 días de serie diaria (DefiLlama).
+//  - Sectores: cifras de 24 h de CoinGecko y, para una lista FIJA de sectores, qué activos de la cesta pone CoinGecko en cada uno.
+//  - Serie propia (data/mercado-serie.json): una fila por día con lo que no tiene histórico gratuito (capital total, dominancia y profundidad
+//    de los libros). La primera lectura de cada día queda fijada: una fila escrita no se vuelve a tocar.
 // Si una lectura imprescindible falla o sale incompleta NO se escribe nada (la web sigue con el fichero anterior y dice su antigüedad).
 // Uso: node mercado.cjs <carpeta-del-repositorio> [nº de activos, 50 por defecto]
 const fs = require('node:fs'); const path = require('node:path');
@@ -24,6 +27,16 @@ const dia = (ms) => new Date(ms).toISOString().slice(0, 10);
 const red = (x, d) => (x == null || !isFinite(x) ? null : Number(Number(x).toPrecision(d)));
 const ENVUELTOS = { WBTC: 'bitcoin envuelto', WETH: 'ether envuelto', WBETH: 'ether en depósito (Binance)', STETH: 'ether en depósito (Lido)', WSTETH: 'ether en depósito (Lido)', WEETH: 'ether en depósito', BNSOL: 'solana en depósito (Binance)', CBBTC: 'bitcoin envuelto (Coinbase)', PAXG: 'oro en fichas', XAUT: 'oro en fichas' };
 
+// Sectores que se siguen en la cesta. Lista FIJA: identificador de la categoría en CoinGecko, nombre en español y nombre original.
+const SECTORES = [
+  ['layer-1', 'Cadenas base (capa 1)', 'Layer 1 (L1)'], ['layer-2', 'Segundas capas (capa 2)', 'Layer 2 (L2)'], ['proof-of-work-pow', 'Prueba de trabajo (minería)', 'Proof of Work (PoW)'],
+  ['decentralized-finance-defi', 'Finanzas descentralizadas (DeFi)', 'Decentralized Finance (DeFi)'], ['decentralized-exchange', 'Casas de cambio descentralizadas', 'Decentralized Exchange (DEX)'],
+  ['lending-borrowing', 'Préstamos', 'Lending/Borrowing Protocols'], ['decentralized-perpetuals', 'Futuros perpetuos', 'Perpetuals'], ['exchange-based-tokens', 'Fichas de casas de cambio', 'Exchange-based Tokens'],
+  ['meme-token', 'Memes', 'Meme'], ['artificial-intelligence', 'Inteligencia artificial', 'Artificial Intelligence (AI)'], ['privacy-coins', 'Privacidad', 'Privacy Coins'],
+  ['real-world-assets-rwa', 'Activos del mundo real', 'Real World Assets (RWA)'], ['oracle', 'Oráculos', 'Oracle'], ['proof-of-stake-pos', 'Prueba de participación', 'Proof of Stake (PoS)'],
+  ['depin', 'Infraestructura física (DePIN)', 'DePIN'], ['layer-0-l0', 'Cadenas de cadenas (capa 0)', 'Layer 0 (L0)'],
+];
+
 (async () => {
   const ahora = Date.now();
   // ---- capital de hoy
@@ -38,14 +51,26 @@ const ENVUELTOS = { WBTC: 'bitcoin envuelto', WETH: 'ether envuelto', WBETH: 'et
   const serieSt = (arr) => arr.map((x) => [dia(Number(x.date) * 1000), usdDe(x)]).filter((x) => x[1] != null && x[1] > 0);
   const stTot = serieSt(await leer('https://stablecoins.llama.fi/stablecoincharts/all', 'Stablecoins en circulación, serie diaria (DefiLlama)'));
   if (stTot.length < 400) throw new Error('DefiLlama: serie de stablecoins demasiado corta');
-  const atras = (s, n) => (s.length > n ? s[s.length - 1 - n][1] : null);
-  const stCad = (await leer('https://stablecoins.llama.fi/stablecoinchains', 'Stablecoins por cadena, hoy (DefiLlama)')).map((c) => ({ nombre: c.name, usd: usdDe(c) })).filter((c) => c.usd > 0).sort((a, b) => b.usd - a.usd).slice(0, 8);
-  for (const c of stCad) { try { const s = serieSt(await leer('https://stablecoins.llama.fi/stablecoincharts/' + encodeURIComponent(c.nombre), 'Stablecoins en ' + c.nombre + ', serie diaria (DefiLlama)')); c.usd = Math.round(s[s.length - 1][1]); c.hace7 = red(atras(s, 7), 9); c.hace30 = red(atras(s, 30), 9); c.hace90 = red(atras(s, 90), 9); c.dia = s[s.length - 1][0]; } catch (e) { c.sinSerie = e.message; c.usd = Math.round(c.usd); } await dormir(250); }
-  const stables = { totalUsd: Math.round(stTot[stTot.length - 1][1]), dia: stTot[stTot.length - 1][0], serie: stTot.slice(-400).map((x) => [x[0], Math.round(x[1])]), porCadena: stCad };
-  // ---- dinero depositado por cadena (DefiLlama)
-  const CH = (await leer('https://api.llama.fi/v2/chains', 'Dinero depositado por cadena, hoy (DefiLlama)')).filter((c) => c.tvl > 0).sort((a, b) => b.tvl - a.tvl).slice(0, 10);
-  const cadenas = [];
-  for (const c of CH) { const o = { nombre: c.name, tvl: Math.round(c.tvl), token: c.tokenSymbol || null }; try { const s = (await leer('https://api.llama.fi/v2/historicalChainTvl/' + encodeURIComponent(c.name), 'Dinero depositado en ' + c.name + ', serie diaria (DefiLlama)')).map((x) => [dia(x.date * 1000), x.tvl]); o.dia = s[s.length - 1][0]; o.tvl = Math.round(s[s.length - 1][1]); o.hace7 = Math.round(atras(s, 7)); o.hace30 = Math.round(atras(s, 30)); o.hace90 = Math.round(atras(s, 90)); } catch (e) { o.sinSerie = e.message; } cadenas.push(o); await dormir(250); }
+  const stables = { totalUsd: Math.round(stTot[stTot.length - 1][1]), dia: stTot[stTot.length - 1][0], serie: stTot.slice(-400).map((x) => [x[0], Math.round(x[1])]) };
+  // ---- redes: dinero depositado y stablecoins por cadena, con 400 días de serie diaria (DefiLlama), en millones de dólares
+  const DR = 400; const diasRed = []; for (let i = DR - 1; i >= 0; i--) diasRed.push(dia(ahora - i * 86400000));
+  const posRed = new Map(diasRed.map((d, i) => [d, i]));
+  const enRejilla = (pares) => { const a = new Array(DR).fill(null); for (const [d, v] of pares) { const i = posRed.get(d); if (i != null && typeof v === 'number' && v > 0) a[i] = red(v / 1e6, 7); } return a; };
+  const CHT = (await leer('https://api.llama.fi/v2/chains', 'Dinero depositado por cadena, hoy (DefiLlama)')).filter((c) => c.tvl > 0).sort((a, b) => b.tvl - a.tvl);
+  const STC = (await leer('https://stablecoins.llama.fi/stablecoinchains', 'Stablecoins por cadena, hoy (DefiLlama)')).map((c) => ({ nombre: c.name, usd: usdDe(c) })).filter((c) => c.usd > 0).sort((a, b) => b.usd - a.usd);
+  const nombresRed = [...new Set(CHT.slice(0, 10).map((c) => c.name).concat(STC.slice(0, 8).map((c) => c.nombre)))];
+  const redes = { unidad: 'millones de dólares', dias: diasRed, filas: [] };
+  for (const nombre of nombresRed) {
+    const t = CHT.find((c) => c.name === nombre); const o = { nombre, token: (t && t.tokenSymbol) || null };
+    o.urlTvl = 'https://api.llama.fi/v2/historicalChainTvl/' + encodeURIComponent(nombre); o.urlSt = 'https://stablecoins.llama.fi/stablecoincharts/' + encodeURIComponent(nombre);
+    try { o.tvl = enRejilla((await leer(o.urlTvl, null)).map((x) => [dia(x.date * 1000), x.tvl])); if (!o.tvl.some((x) => x != null)) throw new Error('serie vacía'); } catch (e) { delete o.tvl; o.sinTvl = e.message; }
+    await dormir(250);
+    try { o.st = enRejilla(serieSt(await leer(o.urlSt, null))); if (!o.st.some((x) => x != null)) throw new Error('serie vacía'); } catch (e) { delete o.st; o.sinSt = e.message; }
+    redes.filas.push(o); await dormir(250);
+  }
+  if (redes.filas.filter((x) => x.tvl).length < 6 || redes.filas.filter((x) => x.st).length < 5) throw new Error('DefiLlama: faltan demasiadas series por cadena');
+  fuentes.push({ que: 'Dinero depositado en cada cadena, serie diaria (DefiLlama; una dirección por cadena, en cada fila)', url: 'https://api.llama.fi/v2/historicalChainTvl/Ethereum' });
+  fuentes.push({ que: 'Stablecoins en cada cadena, serie diaria (DefiLlama; una dirección por cadena, en cada fila)', url: 'https://stablecoins.llama.fi/stablecoincharts/Ethereum' });
   // ---- sectores (clasificación de CoinGecko, etiqueta de terceros)
   let sectores = [], sectoresFallo = null;
   try { sectores = (await leer('https://api.coingecko.com/api/v3/coins/categories', 'Sectores: capitalización, cambio y volumen de 24 h (CoinGecko)', { espera: 8000 })).filter((s) => s.market_cap > 0 && typeof s.market_cap_change_24h === 'number').sort((a, b) => b.market_cap - a.market_cap).slice(0, 40).map((s) => ({ id: s.id, nombre: s.name, capUsd: Math.round(s.market_cap), cambio24hPct: red(s.market_cap_change_24h, 4), volumen24hUsd: Math.round(s.volume_24h || 0) })); } catch (e) { sectoresFallo = e.message; }
@@ -90,11 +115,31 @@ const ENVUELTOS = { WBTC: 'bitcoin envuelto', WETH: 'ether envuelto', WBETH: 'et
   if (!CALC) liquidez.fallo = 'no se encontró el módulo de cálculo';
   else for (const a of buena.slice(0, 8)) { const u = 'https://data-api.binance.vision/api/v3/depth?symbol=' + a.par + '&limit=5000'; try { const j = await leer(u, null, { intentos: 1 }); const p = CALC.profundidad(j.bids, j.asks, liquidez.banda); if (!p) throw new Error('libro vacío o cruzado'); liquidez.filas.push({ s: a.s, par: a.par, url: u, hora: new Date().toISOString(), medio: red(p.medio, 8), diferencialPct: red(p.diferencialPct, 4), compras: Math.round(p.compras), ventas: Math.round(p.ventas), desequilibrio: red(p.desequilibrio, 4), completo: p.completo }); } catch (e) { liquidez.filas.push({ s: a.s, par: a.par, url: u, fallo: e.message }); } await dormir(3500); }
   fuentes.push({ que: 'Libro de órdenes de cada par (Binance; una dirección por par, en cada fila)', url: 'https://data-api.binance.vision/api/v3/depth?symbol=BTCUSDT&limit=5000' });
+  // ---- sectores de la cesta: qué activos de la cesta pone CoinGecko en cada sector de la lista fija (una lectura por sector, despacio:
+  //      CoinGecko limita las consultas). Si una lectura falla, ese sector queda sin dato y se dice; no se rellena.
+  const idCesta = new Map(buena.map((a) => [a.id, a.s])); const sectoresCesta = [];
+  for (const [id, nombre, original] of SECTORES) {
+    const u = 'https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&category=' + id + '&order=market_cap_desc&per_page=250&page=1&sparkline=false'; const o = { id, nombre, original, url: u };
+    try { const j = await leer(u, null, { espera: 8000 }); if (!Array.isArray(j) || !j.length) throw new Error('respuesta vacía'); o.leidos = j.length; o.miembros = j.filter((m) => idCesta.has(m.id)).map((m) => idCesta.get(m.id)); } catch (e) { o.fallo = e.message; }
+    sectoresCesta.push(o); await dormir(7000);
+  }
+  fuentes.push({ que: 'Activos de cada sector (CoinGecko; una dirección por sector, en cada ficha)', url: 'https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&category=layer-1&order=market_cap_desc&per_page=250&page=1&sparkline=false' });
+  // ---- serie propia: lo que no tiene histórico gratuito. Una fila por día (UTC); la primera lectura del día queda fijada.
+  const fSerie = path.join(REPO, 'data', 'mercado-serie.json');
+  let serie = { version: 1, que: 'Lectura propia diaria del Observatorio de mercado: capital total y dominancia (CoinGecko), stablecoins (DefiLlama) y profundidad de los libros a ±1 % (Binance). Una fila por día; una fila escrita no se modifica.', filas: [] };
+  if (fs.existsSync(fSerie)) { let j; try { j = JSON.parse(fs.readFileSync(fSerie, 'utf8')); } catch (e) { throw new Error('la serie propia existe pero no se puede leer (' + e.message + '); no se toca nada'); } if (!j || j.version !== 1 || !Array.isArray(j.filas)) throw new Error('la serie propia tiene un formato inesperado; no se toca nada'); serie = j; }
+  let filaNueva = false;
+  if (!serie.filas.some((x) => x.dia === hoy)) {
+    const libros = {}; for (const x of liquidez.filas) if (!x.fallo) libros[x.s] = { compras: x.compras, ventas: x.ventas, diferencialPct: x.diferencialPct, completo: x.completo };
+    serie.filas.push({ dia: hoy, leidoEn: new Date(ahora).toISOString(), capTotalUsd: global.capTotalUsd, btcPct: global.dominanciaPct.btc, ethPct: global.dominanciaPct.eth, stablesUsd: stables.totalUsd, libros });
+    serie.filas.sort((a, b) => (a.dia < b.dia ? -1 : 1)); filaNueva = true;
+  }
   const out = {
-    version: 1, leidoEn: new Date(ahora).toISOString(),
-    metodo: { cesta: 'Los ' + N + ' mayores activos por capitalización de CoinGecko que cotizan contra USDT en Binance, sin stablecoins, sin versiones envueltas o en depósito y sin oro en fichas. Son los mayores de HOY: los que desaparecieron no están.', series: 'Cierres diarios de Binance en UTC, solo días cerrados. El día en curso lo añade la página con una lectura en vivo.', sectores: 'Los sectores son la clasificación de CoinGecko, una etiqueta de terceros.' },
-    fuentes, global, stables, liquidez, cadenas, sectores, ...(sectoresFallo ? { sectoresFallo } : {}), dias: rejilla, activos: buena, excluidos,
+    version: 2, leidoEn: new Date(ahora).toISOString(),
+    metodo: { cesta: 'Los ' + N + ' mayores activos por capitalización de CoinGecko que cotizan contra USDT en Binance, sin stablecoins, sin versiones envueltas o en depósito y sin oro en fichas. Son los mayores de HOY: los que desaparecieron no están.', series: 'Cierres diarios de Binance en UTC, solo días cerrados. El día en curso lo añade la página con una lectura en vivo.', sectores: 'Los sectores son la clasificación de CoinGecko, una etiqueta de terceros, y un mismo activo puede estar en varios. Se sigue una lista fija de ' + SECTORES.length + ' sectores; el rendimiento de un sector es la mediana del de los activos de la cesta que CoinGecko pone en él, y hacen falta al menos tres.' },
+    fuentes, global, stables, redes, liquidez, sectores, sectoresCesta, ...(sectoresFallo ? { sectoresFallo } : {}), dias: rejilla, activos: buena, excluidos,
   };
   const dst = path.join(REPO, 'data', 'mercado.json'); fs.writeFileSync(dst, JSON.stringify(out) + '\n');
-  console.log('OK mercado.json: ' + buena.length + ' activos, ' + rejilla.length + ' días, ' + sectores.length + ' sectores, ' + cadenas.length + ' cadenas, stablecoins ' + Math.round(stables.totalUsd / 1e9) + ' mil M$, ' + excluidos.length + ' excluidos, ' + liquidez.filas.filter((x) => !x.fallo).length + ' libros, ' + Math.round(fs.statSync(dst).size / 1024) + ' KB');
+  if (filaNueva) fs.writeFileSync(fSerie, JSON.stringify(serie) + '\n');
+  console.log('OK mercado.json: ' + buena.length + ' activos, ' + rejilla.length + ' días, ' + sectores.length + ' sectores (' + sectoresCesta.filter((x) => x.miembros).length + ' de ' + SECTORES.length + ' con sus activos), ' + redes.filas.length + ' cadenas, serie propia de ' + serie.filas.length + ' días' + (filaNueva ? ' (fila de hoy añadida)' : ' (la de hoy ya estaba)') + ', stablecoins ' + Math.round(stables.totalUsd / 1e9) + ' mil M$, ' + excluidos.length + ' excluidos, ' + liquidez.filas.filter((x) => !x.fallo).length + ' libros, ' + Math.round(fs.statSync(dst).size / 1024) + ' KB');
 })().catch((e) => { console.error('FALLO mercado: ' + e.message); process.exit(1); });

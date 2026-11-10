@@ -48,3 +48,28 @@ test('profundidad del libro de órdenes', () => {
   assert.equal(M.profundidad([['99', '1']], [['101', '1']], 0.02).completo, false); // el libro leído no llega al ±2 %: se avisa
   assert.equal(M.profundidad([], [], 0.02), null); assert.equal(M.profundidad([['101', '1']], [['99', '1']], 0.02), null); // libro cruzado: no se usa
 });
+test('cambio a n días de una serie diaria (dinero depositado, stablecoins)', () => {
+  cerca(M.cambio([100, 110, 121], 1), 0.1); cerca(M.cambio([100, 110, 121], 2), 0.21); cerca(M.cambio([200, null, 100, null], 2), -0.5); // el último con dato es 100
+  assert.equal(M.cambio([100, null, 110], 1), null); // falta justo el día con el que se compara: no se toma el vecino
+  assert.equal(M.cambio([100, 110], 5), null); assert.equal(M.cambio([], 1), null); assert.equal(M.cambio([0, 10], 1), null); assert.equal(M.cambio([null, null], 1), null);
+  assert.deepEqual(M.atras([5, 6, 7, null], 2), { hoy: 7, antes: 5, i: 2 }); assert.equal(M.atras([5, 6, 7], 3), null);
+});
+test('mediana', () => {
+  cerca(M.mediana([3, 1, 2]), 2); cerca(M.mediana([4, 1, 3, 2]), 2.5); cerca(M.mediana([7]), 7); cerca(M.mediana([null, 5, undefined, 1, NaN]), 3); cerca(M.mediana([-0.1, -0.3, 0.2]), -0.1);
+  assert.equal(M.mediana([]), null); assert.equal(M.mediana([null, NaN]), null); assert.equal(M.mediana(null), null);
+  const a = [3, 1, 2]; M.mediana(a); assert.deepEqual(a, [3, 1, 2]); // no desordena lo que recibe
+});
+test('rendimiento de un grupo (sector): mediana, cuántos suben y mínimo de activos', () => {
+  assert.deepEqual(M.grupo([0.1, -0.2, 0.3]), { n: 3, suben: 2, mediana: 0.1 }); assert.deepEqual(M.grupo([0.1, null, -0.2, 0.3, -0.4]), { n: 4, suben: 2, mediana: -0.05 });
+  assert.equal(M.grupo([0.1, -0.2]), null); assert.equal(M.grupo([0.1, null, null]), null); assert.equal(M.grupo([]), null); assert.equal(M.grupo(null), null); // con menos de tres no hay cifra
+  assert.deepEqual(M.grupo([0.5, 0.1], 2), { n: 2, suben: 2, mediana: 0.3 }); assert.deepEqual(M.grupo([0, -0.1, -0.2]), { n: 3, suben: 1, mediana: -0.1 }); // quedarse igual cuenta como no bajar
+});
+test('camino de un grupo: mediana día a día desde el primer día del periodo', () => {
+  const a = [100, 110, 121], b = [100, 90, 81], c = [100, 120, 150]; const y = M.caminoGrupo([a, b, c], 2);
+  assert.equal(y.length, 3); cerca(y[0], 0); cerca(y[1], 0.1); cerca(y[2], 0.21);
+  cerca(y[2], M.grupo([a, b, c].map((q) => M.rend(q, 2))).mediana); // el final es la cifra del sector
+  const hueco = M.caminoGrupo([a, [100, null, 81], c], 2); cerca(hueco[0], 0); assert.equal(hueco[1], null); cerca(hueco[2], 0.21); // el día en que solo dos tienen dato no hay cifra
+  assert.deepEqual(M.caminoGrupo([a, b], 2), [null, null, null]); assert.deepEqual(M.caminoGrupo([a, b, [null, 5, 6]], 2), [null, null, null]); // menos de tres con dato al empezar el periodo
+  assert.deepEqual(M.caminoGrupo([], 1), [null, null]); assert.deepEqual(M.caminoGrupo(null, 1), [null, null]);
+  const largo = [1, 1, 100, 110, 121, null]; cerca(M.caminoGrupo([largo, b, c], 2)[2], 0.21); // cada serie cuenta desde su propio último dato
+});

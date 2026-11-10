@@ -41,6 +41,14 @@
 .ob-c:hover{outline:2px solid var(--acc);outline-offset:-1px}
 .ob-c .s{display:block;font-weight:700;font-size:13px}
 .ob-c .v{display:block;font-size:12.5px;font-variant-numeric:tabular-nums;margin-top:2px}
+.ob-calor.sec{grid-template-columns:repeat(auto-fill,minmax(170px,1fr))}
+.ob-c .n{display:block;font-size:11px;opacity:.75;margin-top:3px}
+.ob-per + .ob-per{margin-top:-4px}
+.ob-t.ob-tc td.ob-cc{font-weight:600;border-bottom:2px solid var(--pan);border-left:2px solid var(--pan)}
+.ob-t.ob-tc td.ob-cc[title]{cursor:pointer}
+.ob-t.ob-tc td.ob-cc[title]:hover{outline:2px solid var(--acc);outline-offset:-2px}
+.ob-t.ob-tc td.ob-cc.vacia{color:var(--mut);font-weight:400;white-space:normal;font-size:12.5px}
+.ob-nota .btn.mini{margin-left:4px}
 .ob-chip{display:inline-block;font-size:11.5px;font-weight:600;border-radius:999px;padding:2px 9px;border:1px solid var(--line)}
 .ob-chip.calma{color:var(--mut)}.ob-chip.normal{color:var(--soft)}
 .ob-chip.agitado{color:var(--warn);border-color:var(--warn)}.ob-chip.extremo{color:var(--bad);border-color:var(--bad)}
