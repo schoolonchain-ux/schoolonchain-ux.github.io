@@ -11,6 +11,8 @@
    - Mediana: el valor central de los que tienen dato (con un número par, la media de los dos centrales).
    - Rendimiento de un grupo (sector): la mediana de los rendimientos de sus activos; con menos de tres activos con dato no hay cifra.
    - Camino de un grupo: esa misma mediana calculada cada día del periodo, contando desde el primer día.
+   - Matriz de correlación: la correlación a n días de cada pareja de una lista de activos; «salto» la calcula en la ventana anterior.
+   - Correlación de una pareja a lo largo del tiempo: esa misma correlación calculada con los n días que acaban en cada día de la serie.
    - Máximo de n días: el cierre más alto de los últimos n días (con empate, el más reciente), cuántos días hace y la caída desde él.
    - Esperado frente a ocurrido: se empareja la volatilidad que el mercado esperaba un día para los h días siguientes con la realizada en esos h días.
    Vale en el navegador (window.MCALC) y en Node (module.exports), para poder probarlo. */
@@ -29,8 +31,15 @@
   function percentil(serie, minimo) { const v = serie.filter(num); if (v.length < (minimo || 60)) return null; const hoy = v[v.length - 1]; let k = 0; for (const x of v) if (x <= hoy) k++; return (k / v.length) * 100; }
   function estadoVol(p) { if (!num(p)) return null; return p >= 95 ? 'extremo' : p >= 75 ? 'agitado' : p >= 25 ? 'normal' : 'calma'; }
   // pares de rendimientos de los últimos n días en que los dos tienen dato; «salto» desplaza la ventana hacia atrás (para comparar con la anterior)
-  function pares(a, b, n, salto) { const ra = retornos(a), rb = retornos(b); const fin = Math.min(ultimo(a), ultimo(b)) - (salto || 0); const x = [], y = []; for (let i = fin; i >= 1 && x.length < n; i--) if (num(ra[i]) && num(rb[i])) { x.push(ra[i]); y.push(rb[i]); } return x.length === n ? [x, y] : null; }
-  function corr(a, b, n, salto) { const p = pares(a, b, n, salto); if (!p) return null; const [x, y] = p; const mx = media(x), my = media(y); let sxy = 0, sxx = 0, syy = 0; for (let i = 0; i < n; i++) { sxy += (x[i] - mx) * (y[i] - my); sxx += (x[i] - mx) * (x[i] - mx); syy += (y[i] - my) * (y[i] - my); } if (!(sxx > 0) || !(syy > 0)) return null; return sxy / Math.sqrt(sxx * syy); }
+  // lo mismo sobre rendimientos ya calculados, con la ventana acabando en la posición «fin»
+  function paresR(ra, rb, n, fin) { const x = [], y = []; for (let i = fin; i >= 1 && x.length < n; i--) if (num(ra[i]) && num(rb[i])) { x.push(ra[i]); y.push(rb[i]); } return x.length === n ? [x, y] : null; }
+  function pares(a, b, n, salto) { return paresR(retornos(a), retornos(b), n, Math.min(ultimo(a), ultimo(b)) - (salto || 0)); }
+  function pearson(x, y) { const n = x.length; const mx = media(x), my = media(y); let sxy = 0, sxx = 0, syy = 0; for (let i = 0; i < n; i++) { sxy += (x[i] - mx) * (y[i] - my); sxx += (x[i] - mx) * (x[i] - mx); syy += (y[i] - my) * (y[i] - my); } if (!(sxx > 0) || !(syy > 0)) return null; return sxy / Math.sqrt(sxx * syy); }
+  function corr(a, b, n, salto) { const p = pares(a, b, n, salto); return p ? pearson(p[0], p[1]) : null; }
+  // matriz de correlación a n días de una lista de series (simétrica; null donde no hay n días comunes). «salto» la desplaza hacia atrás, como en corr.
+  function matrizCorr(series, n, salto) { const R = (series || []).map(retornos), U = (series || []).map(ultimo); const m = R.map(() => new Array(R.length).fill(null)); for (let i = 0; i < R.length; i++) for (let j = i; j < R.length; j++) { const p = paresR(R[i], R[j], n, Math.min(U[i], U[j]) - (salto || 0)); m[i][j] = m[j][i] = p ? pearson(p[0], p[1]) : null; } return m; }
+  // correlación a n días de una pareja, día a día: en cada posición, la de los n días comunes que acaban en ella. El último valor coincide con corr(a, b, n).
+  function serieCorr(a, b, n) { const ra = retornos(a), rb = retornos(b); const fin = Math.min(ultimo(a), ultimo(b)); const s = new Array(Math.max(a.length, b.length)).fill(null); for (let i = n; i <= fin; i++) { const p = paresR(ra, rb, n, i); s[i] = p ? pearson(p[0], p[1]) : null; } return s; }
   function beta(a, ref, n) { const p = pares(a, ref, n); if (!p) return null; const [x, y] = p; const mx = media(x), my = media(y); let sxy = 0, syy = 0; for (let i = 0; i < n; i++) { sxy += (x[i] - mx) * (y[i] - my); syy += (y[i] - my) * (y[i] - my); } return syy > 0 ? sxy / syy : null; }
   function caidaDesdeMaximo(c, n) { const i = ultimo(c); if (i < 0) return null; let mx = null; for (let k = Math.max(0, i - n + 1); k <= i; k++) if (num(c[k]) && (mx == null || c[k] > mx)) mx = c[k]; return mx ? c[i] / mx - 1 : null; }
   // máximo de los últimos n datos (hasta el último con dato): posición, valor, cuántas posiciones hace y caída desde él; con empate, el más reciente
@@ -49,6 +58,6 @@
   // camino de un grupo en los últimos n días: para cada día, la mediana de lo que lleva ganado o perdido cada activo desde hace n días.
   // Cada serie se cuenta desde su propio último dato; solo entran las que tienen dato hace n días. El último valor coincide con grupo(rendimientos a n días).
   function caminoGrupo(series, n, minimo) { const base = []; for (const c of series || []) { const i = ultimo(c); if (i >= 0 && i - n >= 0 && num(c[i - n]) && c[i - n] > 0) base.push([c, i]); } const y = []; for (let k = n; k >= 0; k--) { const v = []; for (const [c, i] of base) if (num(c[i - k])) v.push(c[i - k] / c[i - n] - 1); y.push(v.length >= (minimo == null ? 3 : minimo) ? mediana(v) : null); } return y; }
-  const M = { atras, cambio, mediana, grupo, caminoGrupo, maximo, esperadaFrenteAReal, rend, retornos, desv, vol, serieVol, percentil, estadoVol, corr, beta, caidaDesdeMaximo, profundidad, ultimo };
+  const M = { atras, cambio, mediana, grupo, caminoGrupo, maximo, esperadaFrenteAReal, rend, retornos, desv, vol, serieVol, percentil, estadoVol, corr, matrizCorr, serieCorr, beta, caidaDesdeMaximo, profundidad, ultimo };
   if (typeof module !== 'undefined' && module.exports) module.exports = M; else raiz.MCALC = M;
 })(typeof window !== 'undefined' ? window : globalThis);

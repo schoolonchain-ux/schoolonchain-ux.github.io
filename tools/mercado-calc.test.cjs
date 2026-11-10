@@ -86,3 +86,17 @@ test('esperado frente a ocurrido: empareja lo esperado hace h días con lo ocurr
   const q = M.esperadaFrenteAReal([10, 20, 30, 40], [0, 15, 15, 35], 1, 1); assert.equal(q.n, 3); assert.equal(q.mas, 1); cerca(q.medianaDif, -5); // 10−15, 20−15, 30−35
   assert.equal(M.esperadaFrenteAReal([], [], 30, 1), null); assert.equal(M.esperadaFrenteAReal(null, null, 30, 1), null);
 });
+test('matriz de correlación: simétrica, coincide con la correlación de cada pareja y admite la ventana anterior', () => {
+  const r = [0.01, -0.02, 0.03, 0.005, -0.01, 0.02, -0.015, 0.012]; const a = deRetornos(r), b = deRetornos(r.map((x) => 2 * x)), c = deRetornos(r.map((x) => -x)), d = deRetornos([0.02, 0.01, -0.03, 0.004, 0.02, -0.01, 0.005, -0.02]);
+  const m = M.matrizCorr([a, b, c, d], 6); cerca(m[0][0], 1, 1e-12); cerca(m[0][1], 1, 1e-12); cerca(m[0][2], -1, 1e-12); cerca(m[1][2], -1, 1e-12);
+  for (let i = 0; i < 4; i++) for (let j = 0; j < 4; j++) { assert.equal(m[i][j], m[j][i]); if (i !== j) cerca(m[i][j], M.corr([a, b, c, d][i], [a, b, c, d][j], 6), 1e-12); }
+  const p = M.matrizCorr([a, d], 4, 3); cerca(p[0][1], M.corr(a, d, 4, 3), 1e-12);
+  assert.equal(M.matrizCorr([a, d], 9)[0][1], null); assert.deepEqual(M.matrizCorr([], 5), []); assert.equal(M.matrizCorr([a, deRetornos(Array(8).fill(0))], 6)[0][1], null);
+});
+test('correlación de una pareja a lo largo del tiempo: cada día coincide con la correlación de la ventana que acaba ese día', () => {
+  const a = deRetornos([0.01, -0.02, 0.03, 0.005, -0.01, 0.02, -0.015, 0.012, 0.004, -0.007]), b = deRetornos([0.02, 0.01, -0.03, 0.004, 0.02, -0.01, 0.005, -0.02, 0.011, 0.003]);
+  const s = M.serieCorr(a, b, 4); assert.equal(s.length, a.length); for (let i = 0; i < 4; i++) assert.equal(s[i], null);
+  const u = a.length - 1; cerca(s[u], M.corr(a, b, 4), 1e-12); for (let k = 1; k <= 5; k++) cerca(s[u - k], M.corr(a, b, 4, k), 1e-12);
+  const h = a.slice(); h[5] = null; const sh = M.serieCorr(h, b, 4); cerca(sh[u], M.corr(h, b, 4), 1e-12); // con un hueco se usan los cuatro últimos días comunes
+  assert.deepEqual(M.serieCorr([], [], 4), []);
+});

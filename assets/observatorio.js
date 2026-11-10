@@ -289,17 +289,60 @@
       el('p', { class: 'ob-nota' }, 'Volatilidad en % anual, con cierres hasta ayer. El percentil y el estado salen de la volatilidad a 30 días. Regla fija del estado: calma por debajo del percentil 25, normal entre 25 y 75, agitado entre 75 y 95, extremo a partir de 95. «Desde su máximo» es cuánto está el último cierre por debajo del más alto del periodo; quien lleva menos de dos años cotizando se compara con toda su serie. Pulsa una fila para ver sus datos.'));
   }
 
-  /* ---------- 4 · desacoples ---------- */
+  /* ---------- 4 · desacoples y correlaciones ---------- */
   const UMBRAL = 0.2;
   function filasCorr() { const btc = D.activos[0].c; return D.activos.slice(1).map((a) => { const c30 = M.corr(a.c, btc, 30), prev = M.corr(a.c, btc, 30, 30), c90 = M.corr(a.c, btc, 90), b = M.beta(a.c, btc, 90); const d = c30 != null && prev != null ? c30 - prev : null; return { a, c30, prev, c90, b, d, e: d == null ? null : d <= -UMBRAL ? 'desacopla' : d >= UMBRAL ? 'acopla' : null }; }).sort((x, y) => (x.d == null ? 9 : x.d) - (y.d == null ? 9 : y.d)); }
+  const c2 = (x) => sg(x, 2); const dif2 = (d) => (d == null ? SD : (Number(Math.abs(d).toFixed(2)) === 0 ? '' : d >= 0 ? '+' : '−') + nf(Math.abs(d), 2));
+  const REGLA_CORR = 'Correlación de Pearson entre los rendimientos diarios de los dos activos, en los últimos 30 (o 90) días en que ambos tienen dato: 1 es moverse igual, 0 es no tener relación, −1 es moverse al revés. «Se desacoplan» cuando la correlación a 30 días ha caído ' + nf(UMBRAL, 2) + ' o más respecto a los 30 días anteriores; «se acoplan» cuando ha subido otro tanto.';
+  const LIMITE_CORR = 'Correlación no es causa, y con 30 días cambia mucho de una semana a otra. Dice si se mueven juntos, no cuál va mejor ni peor. Los precios son de un solo mercado (Binance).';
+  // una pareja cualquiera: sus cifras y la correlación día a día
+  function fichaPar(a, b) {
+    const s30 = M.serieCorr(a.c, b.c, 30), s90 = M.serieCorr(a.c, b.c, 90); const c30 = M.corr(a.c, b.c, 30), p30 = M.corr(a.c, b.c, 30, 30), c90 = M.corr(a.c, b.c, 90), p90 = M.corr(a.c, b.c, 90, 90);
+    const d = c30 != null && p30 != null ? c30 - p30 : null, d90 = c90 != null && p90 != null ? c90 - p90 : null; const pc = M.percentil(s30);
+    let lo = -1, hi = -1; s30.forEach((v, i) => { if (typeof v !== 'number') return; if (lo < 0 || v < s30[lo]) lo = i; if (hi < 0 || v > s30[hi]) hi = i; });
+    const bab = M.beta(a.c, b.c, 90), bba = M.beta(b.c, a.c, 90);
+    abrir({ t: a.n + ' y ' + b.n + ': ¿se mueven juntos?', sub: 'Con cierres diarios de Binance hasta ayer',
+      cifras: [['Correlación, últimos 30 días', c2(c30)], ['Correlación, los 30 días anteriores', c2(p30)], ['Cambio', dif2(d) + (d == null ? '' : d <= -UMBRAL ? ' · se desacoplan' : d >= UMBRAL ? ' · se acoplan' : ' · sin cambio de calado')],
+        ['Correlación a 90 días', c2(c90) + (d90 == null ? '' : ' (' + dif2(d90) + ' frente a los 90 días anteriores)')],
+        ['Comparado con su propia historia', pc == null ? SD : 'percentil ' + nf(pc, 0) + ' de 100: ' + (pc < 25 ? 'van más separados de lo que acostumbran' : pc > 75 ? 'van más juntos de lo que acostumbran' : 'dentro de lo que acostumbran')],
+        ['Cuando menos se han movido juntos', lo < 0 ? SD : c2(s30[lo]) + ', el ' + fd(D.dias[lo])], ['Cuando más', hi < 0 ? SD : c2(s30[hi]) + ', el ' + fd(D.dias[hi])],
+        ['Sensibilidad (90 días)', bab == null ? SD : 'cuando ' + b.s + ' se mueve un 1 %, ' + a.s + ' se mueve un ' + sg(bab, 2) + ' %' + (bba == null ? '' : '; cuando ' + a.s + ' se mueve un 1 %, ' + b.s + ' se mueve un ' + sg(bba, 2) + ' %')]],
+      serie: { x: D.dias, y: s30, y2: s90, nombres: ['Correlación a 30 días', 'Correlación a 90 días'], fmt: c2, pie: 'Correlación entre ' + a.s + ' y ' + b.s + ', día a día, en toda la historia que comparten.' },
+      regla: REGLA_CORR + ' La sensibilidad es cuánto se mueve uno, de media, cuando el otro se mueve un 1 %, en los últimos 90 días.', limite: LIMITE_CORR, fuentes: [{ t: 'Cierres diarios de ' + a.par + ' (Binance)', u: a.url }, { t: 'Cierres diarios de ' + b.par + ' (Binance)', u: b.url }] });
+  }
+  // matriz: quién se mueve con quién
+  let mxN = 30, mxModo = 'corr', mxG = 12; const cajaMx = el('div'); const MX = {};
+  const matriz = (n) => MX[n] || (MX[n] = { hoy: M.matrizCorr(D.activos.map((a) => a.c), n), antes: M.matrizCorr(D.activos.map((a) => a.c), n, n) });
+  function pintarMatriz() {
+    const A = D.activos.slice(0, mxG); const X = matriz(mxN); const cambio = mxModo === 'cambio';
+    const val = (i, j) => { const h = X.hoy[i][j]; if (!cambio) return h; const p = X.antes[i][j]; return h != null && p != null ? h - p : null; };
+    const color = (v) => (v == null ? 'transparent' : 'color-mix(in srgb, var(' + (v >= 0 ? '--acc' : '--warn') + ') ' + Math.round(5 + 60 * Math.min(1, Math.abs(v) / (cambio ? 0.5 : 1))) + '%, var(--pan))');
+    const P = []; for (let i = 0; i < A.length; i++) for (let j = i + 1; j < A.length; j++) { const v = val(i, j); if (v != null) P.push({ i, j, v }); }
+    const alto = P.reduce((m, p) => (!m || p.v > m.v ? p : m), null), bajo = P.reduce((m, p) => (!m || p.v < m.v ? p : m), null); const par = (p) => A[p.i].s + ' y ' + A[p.j].s + ' (' + (cambio ? dif2(p.v) : c2(p.v)) + ')';
+    const grupo = mxG >= D.activos.length ? 'En toda la cesta' : 'Entre los ' + mxG + ' mayores';
+    const frase = !P.length ? 'No hay parejas con datos suficientes.' : cambio ? grupo + ', la pareja que más se ha acercado es ' + par(alto) + ' y la que más se ha separado, ' + par(bajo) + '. El cambio mediano es ' + dif2(M.mediana(P.map((p) => p.v))) + '.' : grupo + ', la pareja que más se mueve junta es ' + par(alto) + ' y la que menos, ' + par(bajo) + '. La correlación mediana es ' + c2(M.mediana(P.map((p) => p.v))) + '.';
+    const conCifra = mxG <= 12; const txt = (v) => (v == null ? '·' : !conCifra ? '' : cambio ? dif2(v) : c2(v));
+    const celda = (i, j) => { if (i === j) return el('td', { class: 'd' }, ''); const v = val(i, j); return el('td', { style: 'background:' + color(v), title: A[i].s + ' y ' + A[j].s + ': ' + (v == null ? 'sin datos suficientes' : cambio ? dif2(v) + ' (de ' + c2(X.antes[i][j]) + ' a ' + c2(X.hoy[i][j]) + ')' : c2(v)), onclick: () => fichaPar(A[i], A[j]) }, txt(v)); };
+    const opcion = (a, elegido) => { const o = el('option', { value: a.s }, a.s + ' · ' + a.n); if (a.s === elegido) o.selected = true; return o; };
+    const selA = el('select', { class: 'ob-sel', 'aria-label': 'Primer activo' }, D.activos.map((a) => opcion(a, D.activos[1].s))), selB = el('select', { class: 'ob-sel', 'aria-label': 'Segundo activo' }, D.activos.map((a) => opcion(a, D.activos[0].s)));
+    const aviso = el('span', { class: 'ob-nota', style: 'margin:0' }, '');
+    const ver = () => { const a = D.activos.find((x) => x.s === selA.value), b = D.activos.find((x) => x.s === selB.value); if (!a || !b || a === b) { aviso.textContent = 'Elige dos activos distintos.'; return; } aviso.textContent = ''; fichaPar(a, b); };
+    cajaMx.replaceChildren(
+      el('div', { class: 'ob-sels' }, selector([[30, '30 días'], [90, '90 días']], mxN, (k) => { mxN = k; pintarMatriz(); }), selector([['corr', 'Correlación'], ['cambio', 'Cambio frente a los ' + mxN + ' días anteriores']], mxModo, (k) => { mxModo = k; pintarMatriz(); }), selector([[12, 'Los 12 mayores'], [24, 'Los 24 mayores'], [D.activos.length, 'Toda la cesta']], mxG, (k) => { mxG = k; pintarMatriz(); })),
+      el('p', { class: 'ob-nota', style: 'margin:0 0 8px' }, frase),
+      el('div', { class: 'ob-tw' }, el('table', { class: 'ob-mx' + (mxG > 24 ? ' m48' : mxG > 12 ? ' m24' : '') }, el('thead', null, el('tr', null, el('th', null, ''), A.map((a) => el('th', { class: 'c', title: a.n }, a.s)))), el('tbody', null, A.map((a, i) => el('tr', null, el('th', { class: 'f', title: a.n }, a.s), A.map((_, j) => celda(i, j))))))),
+      cambio ? leyenda([['color-mix(in srgb, var(--acc) 60%, var(--pan))', 'Se mueven más juntos que antes'], ['color-mix(in srgb, var(--warn) 60%, var(--pan))', 'Se mueven menos juntos que antes']]) : leyenda([['color-mix(in srgb, var(--acc) 65%, var(--pan))', 'Se mueven juntos (cerca de 1)'], ['color-mix(in srgb, var(--acc) 10%, var(--pan))', 'Poca relación (cerca de 0)'], ['color-mix(in srgb, var(--warn) 60%, var(--pan))', 'Se mueven al revés (por debajo de 0)']]),
+      el('p', { class: 'ob-nota' }, (conCifra ? '' : 'Pasa por encima de una casilla para ver su cifra. ') + 'Pulsa una casilla para ver cómo se ha movido esa pareja a lo largo del tiempo. Un punto quiere decir que no hay días suficientes en común.'),
+      el('div', { class: 'ob-par' }, el('span', null, 'Cualquier pareja de la cesta:'), selA, el('span', null, 'con'), selB, el('button', { class: 'ob-btn', onclick: ver }, 'Ver la pareja'), aviso));
+  }
   function desacoples() {
-    const btc = D.activos[0]; const F = filasCorr(); const f2 = (x) => sg(x, 2);
-    const serieCorr = (a) => { const y = []; for (let k = 330; k >= 0; k--) y.push(M.corr(a.c, btc.c, 30, k)); return y; };
-    const ficha = (f) => abrir({ t: f.a.n + ' frente a bitcoin', sub: 'Con cierres diarios de Binance hasta ayer', cifras: [['Correlación, últimos 30 días', f2(f.c30)], ['Correlación, los 30 días anteriores', f2(f.prev)], ['Cambio', f.d == null ? SD : (f.d >= 0 ? '+' : '−') + nf(Math.abs(f.d), 2)], ['Correlación a 90 días', f2(f.c90)], ['Sensibilidad a bitcoin (90 días)', f.b == null ? SD : 'cuando bitcoin se mueve un 1 %, se mueve un ' + sg(f.b, 2) + ' %']], serie: { x: D.dias.slice(-331), y: serieCorr(f.a), fmt: (v) => sg(v, 2), pie: 'Correlación a 30 días con bitcoin, día a día, en el último año.' }, regla: 'Correlación de Pearson entre los rendimientos diarios del activo y los de bitcoin, en los últimos 30 días en que ambos tienen dato: 1 es moverse igual, 0 es no tener relación, −1 es moverse al revés. «Se desacopla» cuando esa correlación ha caído ' + nf(UMBRAL, 2) + ' o más respecto a los 30 días anteriores; «se acopla» cuando ha subido otro tanto.', limite: 'Correlación no es causa, y con 30 días cambia mucho de una semana a otra. Dice que se mueven menos juntos, no que el activo vaya mejor ni peor.', fuentes: [{ t: 'Cierres diarios de ' + f.a.par + ' (Binance)', u: f.a.url }, { t: 'Cierres diarios de ' + btc.par + ' (Binance)', u: btc.url }] });
-    const fila = (f) => el('tr', { class: 'cl', onclick: () => ficha(f) }, el('td', null, f.a.s, el('span', { class: 'n2' }, f.a.n)), el('td', null, f2(f.c30)), el('td', null, f2(f.prev)), el('td', { class: signo(f.d) }, f.d == null ? SD : (f.d >= 0 ? '+' : '−') + nf(Math.abs(f.d), 2)), el('td', null, f.e ? el('span', { class: 'ob-chip ' + f.e }, f.e === 'desacopla' ? 'se desacopla' : 'se acopla') : ''), el('td', null, f2(f.c90)), el('td', null, f2(f.b)));
-    return el('section', { class: 'zp', id: 'desacoples' }, el('p', { class: 'kick' }, 'Pregunta 4'), el('h2', null, '¿Qué activos se están desacoplando?'), el('p', { class: 'ob-sub' }, 'Cuánto se mueve cada activo al compás de bitcoin estos 30 días, comparado con los 30 anteriores. Arriba, los que más se han separado.'),
+    const btc = D.activos[0]; const F = filasCorr(); pintarMatriz();
+    const m30 = M.mediana(F.map((f) => f.c30)), mPrev = M.mediana(F.map((f) => f.prev)); const nDes = F.filter((f) => f.e === 'desacopla').length, nAco = F.filter((f) => f.e === 'acopla').length;
+    const fila = (f) => el('tr', { class: 'cl', onclick: () => fichaPar(f.a, btc) }, el('td', null, f.a.s, el('span', { class: 'n2' }, f.a.n)), el('td', null, c2(f.c30)), el('td', null, c2(f.prev)), el('td', { class: signo(f.d) }, dif2(f.d)), el('td', null, f.e ? el('span', { class: 'ob-chip ' + f.e }, f.e === 'desacopla' ? 'se desacopla' : 'se acopla') : ''), el('td', null, c2(f.c90)), el('td', null, c2(f.b)));
+    return el('section', { class: 'zp', id: 'desacoples' }, el('p', { class: 'kick' }, 'Pregunta 4'), el('h2', null, '¿Qué activos se están desacoplando?'), el('p', { class: 'ob-sub' }, 'Cuánto se mueve cada activo al compás de bitcoin estos 30 días, comparado con los 30 anteriores. Hoy: ' + (nDes === 1 ? '1 se desacopla' : nDes + ' se desacoplan') + ' y ' + (nAco === 1 ? '1 se acopla' : nAco + ' se acoplan') + '. La correlación mediana de la cesta con bitcoin es ' + c2(m30) + (mPrev == null ? '' : ' (' + c2(mPrev) + ' en los 30 días anteriores)') + '. Arriba, los que más se han separado.'),
       el('div', { class: 'ob-tw' }, el('table', { class: 'ob-t' }, el('thead', null, el('tr', null, ['Activo', 'Con BTC, 30 d', '30 d anteriores', 'Cambio', '', 'Con BTC, 90 d', 'Sensibilidad'].map((t) => el('th', null, t)))), el('tbody', null, F.map(fila)))),
-      el('p', { class: 'ob-nota' }, 'Regla fija: «se desacopla» si la correlación a 30 días ha caído ' + nf(UMBRAL, 2) + ' o más; «se acopla» si ha subido otro tanto. Con cierres hasta ayer.'));
+      el('p', { class: 'ob-nota' }, 'Regla fija: «se desacopla» si la correlación a 30 días ha caído ' + nf(UMBRAL, 2) + ' o más; «se acopla» si ha subido otro tanto. Sensibilidad: cuánto se mueve el activo cuando bitcoin se mueve un 1 %, en los últimos 90 días. Con cierres hasta ayer. Pulsa una fila para ver la pareja a lo largo del tiempo.'),
+      el('h3', { class: 'ob-h3' }, 'Quién se mueve con quién'), cajaMx);
   }
 
   /* ---------- gráficos de conjunto: el gráfico va primero; cada marca abre sus datos completos y la tabla queda plegada debajo ---------- */

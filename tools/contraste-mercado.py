@@ -143,7 +143,28 @@ for x in datos.get('esperada', {}).get('filas', []):
     cmp('esp_mediana_dif', x['s'], (float(np.median(dif)) if hay else None), v['medianaDif'])
     cmp('esp_ult_esperada', x['s'], (float(antes[ok][-1]) if hay else None), v['ultEsperada'])
     cmp('esp_ult_ocurrida', x['s'], (float(desp[ok][-1]) if hay else None), v['ultOcurrida'])
-print('sectores contrastados:', n_sec, '| cadenas contrastadas:', n_red, '| monedas con volatilidad esperada:', n_esp)
+# --- entrega 3: matriz de correlacion de toda la cesta y correlacion de una pareja dia a dia (np.corrcoef sobre los n dias comunes que acaban cada dia)
+ret = {k: retornos(v) for k, v in por_s.items()}; ult = {k: ultimo(v) for k, v in por_s.items()}
+def corr_fin(ra, rb, n, fin):
+    ok = np.where((~np.isnan(ra[1:fin + 1])) & (~np.isnan(rb[1:fin + 1])))[0] + 1
+    if len(ok) < n: return None
+    k = ok[-n:]; x = ra[k]; y = rb[k]
+    if np.var(x) == 0 or np.var(y) == 0: return None
+    return float(np.corrcoef(x, y)[0, 1])
+orden = volc['__matriz']['orden']; n_par = 0
+for i, a in enumerate(orden):
+    for j, b in enumerate(orden):
+        if j < i: continue
+        n_par += 1; fin = min(ult[a], ult[b])
+        for clave, n, salto in (('m30', 30, 0), ('m30prev', 30, 30), ('m90', 90, 0), ('m90prev', 90, 90)):
+            cmp('matriz_' + clave, a + '-' + b, corr_fin(ret[a], ret[b], n, fin - salto), volc['__matriz'][clave][i][j])
+            if volc['__matriz'][clave][i][j] != volc['__matriz'][clave][j][i]: faltan += 1; print('MATRIZ NO SIMETRICA:', clave, a, b)
+n_ser = 0
+for clave, serie_pag in volc['__serieCorr'].items():
+    a, b = clave.split('|'); n_ser += 1; fin = min(ult[a], ult[b])
+    for i in range(len(serie_pag)):
+        cmp('serie_corr30', clave, (corr_fin(ret[a], ret[b], 30, i) if 30 <= i <= fin else None), serie_pag[i])
+print('sectores contrastados:', n_sec, '| cadenas contrastadas:', n_red, '| monedas con volatilidad esperada:', n_esp, '| parejas de la matriz:', n_par, '| parejas dia a dia:', n_ser)
 print('comparaciones hechas:', hechas)
 print('activos:', len(datos['activos']), '| casos con dato en un lado y no en el otro:', faltan)
 for k in sorted(peor): print('  diferencia maxima en %-13s %.3e  (%s)' % (k, peor[k][0], peor[k][1]))
