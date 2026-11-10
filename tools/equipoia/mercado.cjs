@@ -83,11 +83,18 @@ const ENVUELTOS = { WBTC: 'bitcoin envuelto', WETH: 'ether envuelto', WBETH: 'et
   for (const a of fijos) excluidos.push({ s: a.s, n: a.n, motivo: 'anclado al dólar: sus últimos 90 cierres no se separan más de un 3 % de 1 $' });
   if (buena.length < Math.min(N, 30) - 5) throw new Error('demasiados activos sin historia suficiente');
   if (buena[0].c[buena[0].c.length - 1] == null) throw new Error('falta el cierre de ayer de BTC');
+  // ---- foto de los libros de órdenes de los ocho mayores (Binance). Cada lectura profunda cuenta mucho para el límite de Binance (250 de 6.000 por minuto):
+  //      por eso se hace aquí, una vez al día y despacio, y NO desde el navegador de cada visitante.
+  let CALC = null; for (const p of [path.join(__dirname, 'mercado-calc.js'), path.join(__dirname, '..', '..', 'assets', 'mercado-calc.js'), path.join(REPO, 'assets', 'mercado-calc.js')]) { if (fs.existsSync(p)) { CALC = require(p); break; } }
+  const liquidez = { banda: 0.01, filas: [] };
+  if (!CALC) liquidez.fallo = 'no se encontró el módulo de cálculo';
+  else for (const a of buena.slice(0, 8)) { const u = 'https://data-api.binance.vision/api/v3/depth?symbol=' + a.par + '&limit=5000'; try { const j = await leer(u, null, { intentos: 1 }); const p = CALC.profundidad(j.bids, j.asks, liquidez.banda); if (!p) throw new Error('libro vacío o cruzado'); liquidez.filas.push({ s: a.s, par: a.par, url: u, hora: new Date().toISOString(), medio: red(p.medio, 8), diferencialPct: red(p.diferencialPct, 4), compras: Math.round(p.compras), ventas: Math.round(p.ventas), desequilibrio: red(p.desequilibrio, 4), completo: p.completo }); } catch (e) { liquidez.filas.push({ s: a.s, par: a.par, url: u, fallo: e.message }); } await dormir(3500); }
+  fuentes.push({ que: 'Libro de órdenes de cada par (Binance; una dirección por par, en cada fila)', url: 'https://data-api.binance.vision/api/v3/depth?symbol=BTCUSDT&limit=5000' });
   const out = {
     version: 1, leidoEn: new Date(ahora).toISOString(),
     metodo: { cesta: 'Los ' + N + ' mayores activos por capitalización de CoinGecko que cotizan contra USDT en Binance, sin stablecoins, sin versiones envueltas o en depósito y sin oro en fichas. Son los mayores de HOY: los que desaparecieron no están.', series: 'Cierres diarios de Binance en UTC, solo días cerrados. El día en curso lo añade la página con una lectura en vivo.', sectores: 'Los sectores son la clasificación de CoinGecko, una etiqueta de terceros.' },
-    fuentes, global, stables, cadenas, sectores, ...(sectoresFallo ? { sectoresFallo } : {}), dias: rejilla, activos: buena, excluidos,
+    fuentes, global, stables, liquidez, cadenas, sectores, ...(sectoresFallo ? { sectoresFallo } : {}), dias: rejilla, activos: buena, excluidos,
   };
   const dst = path.join(REPO, 'data', 'mercado.json'); fs.writeFileSync(dst, JSON.stringify(out) + '\n');
-  console.log('OK mercado.json: ' + buena.length + ' activos, ' + rejilla.length + ' días, ' + sectores.length + ' sectores, ' + cadenas.length + ' cadenas, stablecoins ' + Math.round(stables.totalUsd / 1e9) + ' mil M$, ' + excluidos.length + ' excluidos, ' + Math.round(fs.statSync(dst).size / 1024) + ' KB');
+  console.log('OK mercado.json: ' + buena.length + ' activos, ' + rejilla.length + ' días, ' + sectores.length + ' sectores, ' + cadenas.length + ' cadenas, stablecoins ' + Math.round(stables.totalUsd / 1e9) + ' mil M$, ' + excluidos.length + ' excluidos, ' + liquidez.filas.filter((x) => !x.fallo).length + ' libros, ' + Math.round(fs.statSync(dst).size / 1024) + ' KB');
 })().catch((e) => { console.error('FALLO mercado: ' + e.message); process.exit(1); });
