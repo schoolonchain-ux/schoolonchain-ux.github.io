@@ -7,7 +7,7 @@
   const { el, m, n, pct } = C;
   // Novedades (data/novedades.json): la lista general va encima de las tarjetas; cada tarjeta lleva su última actualización.
   const NOV = window.NOVEDADES ? await window.NOVEDADES.cargar() : [];
-  const nombres = Object.fromEntries(idx.informes.map((r) => [r.slug, r.caso || r.titulo]));
+  const nombres = Object.fromEntries(idx.informes.map((r) => [r.slug, r.caso || r.titulo])); nombres.medium = 'Medium';
   const listaNov = window.NOVEDADES && NOV.length ? window.NOVEDADES.lista(NOV, { limite: 6, titulo: 'Novedades · últimas actualizaciones', nombres }) : null;
   if (listaNov) box.parentNode.insertBefore(listaNov, box);
   // Intro: nº de casos abiertos y fecha de la última actualización (de reports/index.json y data/novedades.json) + la última novedad. Nada de esto se escribe a mano.

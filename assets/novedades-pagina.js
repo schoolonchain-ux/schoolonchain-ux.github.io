@@ -11,7 +11,7 @@ document.addEventListener('DOMContentLoaded', async () => {
   if (!destino) return;
   try {
     const NOV = window.NOVEDADES ? await window.NOVEDADES.cargar() : [];
-    let nombres = { portada: 'Portada', herramientas: 'Herramientas', fundamentales: 'Fundamentales' };
+    let nombres = { portada: 'Portada', herramientas: 'Herramientas', fundamentales: 'Fundamentales', medium: 'Medium' };
     try { const idx = await (await fetch('reports/index.json', { cache: 'no-cache' })).json(); for (const r of idx.informes || []) nombres[r.slug] = r.caso || r.titulo; } catch (e) { /* sin nombres de caso */ }
     const caja = NOV.length ? window.NOVEDADES.lista(NOV, { limite: 200, titulo: 'Novedades · todas, de la más reciente a la más antigua', nombres }) : null;
     destino.replaceChildren(...(caja ? [caja] : []));
