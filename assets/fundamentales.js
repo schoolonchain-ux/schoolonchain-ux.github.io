@@ -38,9 +38,9 @@
       ultimaCG = Date.now();
       let r;
       // cuando CoinGecko limita, su respuesta 429 llega sin cabecera CORS y el navegador la ve como «Failed to fetch»: se trata igual que un 429
-      try { r = await fetch(u, { signal: AbortSignal.timeout(20000) }); } catch (e) { if (i === 0 && e.name !== 'TimeoutError') { avisar('CoinGecko no responde o ha pedido esperar (límite por visitante). Se reintenta en 25 segundos…'); await dormir(25000); continue; } throw new Error('CoinGecko no responde (' + (e.name === 'TimeoutError' ? 'tiempo agotado' : 'límite por visitante o red') + ')'); }
+      try { r = await fetch(u, { signal: AbortSignal.timeout(20000) }); } catch (e) { if (i === 0 && e.name !== 'TimeoutError') { avisar('CoinGecko no responde o ha pedido esperar (límite por visitante). Se reintenta en 25 segundos…'); await dormir(25000); continue; } avisar(''); throw new Error('CoinGecko no responde (' + (e.name === 'TimeoutError' ? 'tiempo agotado' : 'límite por visitante o red') + ')'); }
       if (r.status === 429 && i === 0) { avisar('CoinGecko ha pedido esperar (límite por visitante). Se reintenta en 25 segundos…'); await dormir(25000); continue; }
-      if (!r.ok) throw new Error('HTTP ' + r.status + ' (CoinGecko)');
+      if (!r.ok) { avisar(''); throw new Error('HTTP ' + r.status + ' (CoinGecko)'); }
       avisar(''); return r.json();
     }
   }));
