@@ -164,6 +164,71 @@ for clave, serie_pag in volc['__serieCorr'].items():
     a, b = clave.split('|'); n_ser += 1; fin = min(ult[a], ult[b])
     for i in range(len(serie_pag)):
         cmp('serie_corr30', clave, (corr_fin(ret[a], ret[b], 30, i) if 30 <= i <= fin else None), serie_pag[i])
+# --- entrega 5: los hechos de la lectura del dia (ultimo dia cerrado, estado y desacoples de hoy y con los datos hasta ayer, capital y libros)
+import os
+lec = volc.get('__lectura') or {}; n_lec = 0
+fin = len(datos['dias']) - 1
+def r1(s):
+    c = por_s[s]
+    if ultimo(c) != fin or np.isnan(c[fin - 1]) or c[fin - 1] <= 0: return None
+    return float(c[fin] / c[fin - 1] - 1)
+def num(x): return None if x is None else float(x)
+dia = [(a['s'], r1(a['s'])) for a in datos['activos']]; dia = [q for q in dia if q[1] is not None]
+if lec.get('dia') or len(dia) >= 10:
+    v = lec['dia']; rs = np.array([q[1] for q in dia]); n_lec += 1
+    cmp('lec_dia_n', 'cesta', float(len(rs)), num(v['n'])); cmp('lec_dia_suben', 'cesta', float((rs >= 0).sum()), num(v['suben'])); cmp('lec_dia_mediana', 'cesta', float(np.median(rs)), v['mediana'])
+    cmp('lec_dia_btc', 'BTC', r1('BTC'), v['btc']); cmp('lec_dia_eth', 'ETH', r1('ETH') if 'ETH' in por_s else None, v['eth']); cmp('lec_dia_mejor', 'cesta', float(rs.max()), v['mejor']); cmp('lec_dia_peor', 'cesta', float(rs.min()), v['peor'])
+    vistos = 0
+    for x in datos.get('sectoresCesta', []):
+        q = [r for r in (r1(m) for m in x.get('miembros', []) if m in por_s) if r is not None]; suyo = v['sectores'].get(x['id'])
+        if len(q) >= 3:
+            vistos += 1; cmp('lec_sector_dia', x['id'], float(np.median(np.array(q))), suyo['mediana'] if suyo else None); cmp('lec_sector_dia_n', x['id'], float(len(q)), num(suyo['n']) if suyo else None)
+        elif suyo is not None: faltan += 1; print('SECTOR DE MAS EN LA LECTURA:', x['id'])
+    cmp('lec_sectores', 'cesta', float(vistos), float(len(v['sectores'])))
+hoy = str(datos.get('leidoEn', ''))[:10]; filas = []
+try: filas = json.load(open(os.path.join(os.path.dirname(sys.argv[1]), 'mercado-serie.json'), encoding='utf-8')).get('filas', [])
+except Exception: filas = []
+antes = sorted([f for f in filas if f.get('dia') and f['dia'] < hoy], key=lambda f: f['dia']); previa = antes[-1] if antes else None
+if lec.get('capital'):
+    v = lec['capital']; g = datos['global']; st = datos['stables']; n_lec += 1; y = st['serie']
+    cmp('lec_cap_stables', 'mercado', float(st['totalUsd'] / g['capTotalUsd'] * 100), v['st'])
+    cmp('lec_cap_stables30', 'mercado', (float(y[-1][1] / y[-31][1] - 1) if len(y) > 30 else None), v['c30'])
+    cmp('lec_cap_previa', 'mercado', (float(g['dominanciaPct']['btc'] - previa['btcPct']) if previa and previa.get('btcPct') is not None else None), v['previaDif'])
+if lec.get('liquidez'):
+    v = lec['liquidez']; n_lec += 1; L = [x for x in datos['liquidez']['filas'] if not x.get('fallo') and x.get('compras') is not None and x.get('ventas') is not None]
+    C = float(sum(x['compras'] for x in L)); V = float(sum(x['ventas'] for x in L))
+    cmp('lec_liq_n', 'libros', float(len(L)), num(v['n'])); cmp('lec_liq_compras', 'libros', C, num(v['compras'])); cmp('lec_liq_ventas', 'libros', V, num(v['ventas'])); cmp('lec_liq_deseq', 'libros', (C - V) / (C + V), v['desequilibrio']); cmp('lec_liq_mas', 'libros', float(sum(1 for x in L if x['compras'] > x['ventas'])), num(v['masComprador']))
+    lp = (previa or {}).get('libros') or {}; com = [x for x in L if x['s'] in lp and lp[x['s']].get('compras') is not None and lp[x['s']].get('ventas') is not None]
+    a = float(sum(x['compras'] + x['ventas'] for x in com)); b = float(sum(lp[x['s']]['compras'] + lp[x['s']]['ventas'] for x in com))
+    cmp('lec_liq_previa', 'libros', (a / b - 1 if com and b > 0 else None), v['previaCambio'])
+def perc_estado(c, quita):
+    r = retornos(c); tope = len(c) - quita
+    sv = [vol_en(r, 30, i) for i in range(30, tope)]; sv = [x for x in sv if x is not None]
+    if len(sv) < 60: return None, None
+    p = float(sum(1 for x in sv if x <= sv[-1]) / len(sv) * 100)
+    return p, ('extremo' if p >= 95 else 'agitado' if p >= 75 else 'normal' if p >= 25 else 'calma')
+if lec.get('vol'):
+    v = lec['vol']; n_lec += 1; alt = 0; alt_a = 0; con = 0; con_a = 0
+    for a in datos['activos']:
+        p, e = perc_estado(por_s[a['s']], 0); pa, ea = perc_estado(por_s[a['s']], 1)
+        cmp('lec_vol_percentil_ayer', a['s'], pa, v['pAyer'].get(a['s']))
+        con += e is not None; con_a += ea is not None; alt += e in ('agitado', 'extremo'); alt_a += ea in ('agitado', 'extremo')
+    cmp('lec_vol_n', 'cesta', float(con), num(v['n'])); cmp('lec_vol_altos', 'cesta', float(alt), num(v['altos'])); cmp('lec_vol_n_ayer', 'cesta', float(con_a), num(v['nAyer'])); cmp('lec_vol_altos_ayer', 'cesta', float(alt_a), num(v['altosAyer']))
+    xe = [x for x in datos.get('esperada', {}).get('filas', []) if x.get('s') == datos['activos'][0]['s'] and 'v' in x]
+    if xe:
+        e = np.array([np.nan if q is None else float(q) for q in xe[0]['v']], dtype=float); ue = ultimo(e); cb = por_s[datos['activos'][0]['s']]
+        cmp('lec_vol_esperada', 'BTC', (float(e[ue] - vol_en(retornos(cb), 30, ultimo(cb))) if ue >= fin - 1 else None), v['espDif'])
+if lec.get('des'):
+    v = lec['des']; n_lec += 1; c30s = []; prevs = []; nl = 0; ne = 0; ns = 0
+    for a in datos['activos'][1:]:
+        c = por_s[a['s']]; k = corr(c, btc, 30); p = corr(c, btc, 30, 30); ka = corr(c, btc, 30, 1); pa = corr(c, btc, 30, 31)
+        h = None if k is None or p is None else (1.0 if k - p <= -0.2 else 0.0); ay = None if ka is None or pa is None else (1.0 if ka - pa <= -0.2 else 0.0)
+        cmp('lec_des_hoy', a['s'], h, num(v['hoy'].get(a['s']))); cmp('lec_des_ayer', a['s'], ay, num(v['ayer'].get(a['s'])))
+        if h is None: continue
+        c30s.append(k); prevs.append(p); nl += h == 1.0; ne += (h == 1.0 and ay == 0.0); ns += (h == 0.0 and ay == 1.0)
+    cmp('lec_des_n', 'cesta', float(len(c30s)), num(v['n'])); cmp('lec_des_lista', 'cesta', float(nl), num(v['lista'])); cmp('lec_des_entran', 'cesta', float(ne), num(v['entran'])); cmp('lec_des_salen', 'cesta', float(ns), num(v['salen']))
+    cmp('lec_des_mediana', 'cesta', float(np.median(np.array(c30s))), v['medianaHoy']); cmp('lec_des_mediana_antes', 'cesta', float(np.median(np.array(prevs))), v['medianaAntes'])
+print('puntos de la lectura del dia contrastados:', n_lec)
 print('sectores contrastados:', n_sec, '| cadenas contrastadas:', n_red, '| monedas con volatilidad esperada:', n_esp, '| parejas de la matriz:', n_par, '| parejas dia a dia:', n_ser)
 print('comparaciones hechas:', hechas)
 print('activos:', len(datos['activos']), '| casos con dato en un lado y no en el otro:', faltan)

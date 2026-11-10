@@ -22,7 +22,7 @@
     ],
     pie: [
       ['Investigaciones', [['Casos', './#informes'], ['Archivo por fecha', 'archivo.html'], ['Registro de cambios', 'cambios.html']]],
-      ['Herramientas', [['Herramientas en vivo', 'herramientas.html'], ['Laboratorio de fundamentales', 'fundamentales.html'], ['Buscar', 'buscar.html']]],
+      ['Herramientas', [['Herramientas en vivo', 'herramientas.html'], ['Observatorio de mercado', 'mercado.html'], ['Laboratorio de fundamentales', 'fundamentales.html'], ['Buscar', 'buscar.html']]],
       ['Método', [['Cómo investigamos', 'como-investigamos.html'], ['De dónde sale cada cifra', 'datos.html'], ['Registro de cambios', 'cambios.html']]],
       ['El proyecto', [['Acerca y contacto', 'acerca.html'], ['Novedades y RSS', 'novedades.html'], ['Repositorio y datos', 'https://github.com/schoolonchain-ux/schoolonchain-ux.github.io']]],
     ],

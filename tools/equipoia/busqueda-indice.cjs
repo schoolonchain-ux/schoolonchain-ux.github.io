@@ -14,12 +14,24 @@ const corta = (s, n) => { s = limpia(s); return s.length > n ? s.slice(0, n - 1)
 const entradas = []; const E = (k, t, u, d, x, f) => { if (t && u) entradas.push({ k, t: corta(t, 160), u, ...(d ? { d: corta(d, 220) } : {}), ...(x ? { x: corta(x, 900) } : {}), ...(f ? { f } : {}) }); };
 
 /* ---------- páginas y sus apartados (se leen los encabezados del propio HTML) ---------- */
-const PAGINAS = [['index.html', './', 'Portada'], ['herramientas.html', 'herramientas.html', 'Herramientas'], ['fundamentales.html', 'fundamentales.html', 'Laboratorio de fundamentales'], ['datos.html', 'datos.html', 'De dónde sale cada cifra'], ['como-investigamos.html', 'como-investigamos.html', 'Cómo investigamos'], ['cambios.html', 'cambios.html', 'Registro de cambios'], ['archivo.html', 'archivo.html', 'Archivo'], ['acerca.html', 'acerca.html', 'Acerca de School On-Chain']];
+const PAGINAS = [['index.html', './', 'Portada'], ['herramientas.html', 'herramientas.html', 'Herramientas'], ['fundamentales.html', 'fundamentales.html', 'Laboratorio de fundamentales'], ['datos.html', 'datos.html', 'De dónde sale cada cifra'], ['como-investigamos.html', 'como-investigamos.html', 'Cómo investigamos'], ['cambios.html', 'cambios.html', 'Registro de cambios'], ['archivo.html', 'archivo.html', 'Archivo'], ['mercado.html', 'mercado.html', 'Observatorio de mercado'], ['acerca.html', 'acerca.html', 'Acerca de School On-Chain'], ['novedades.html', 'novedades.html', 'Novedades y canal RSS']];
 for (const [f, u, nombre] of PAGINAS) {
   if (!existe(f)) continue; const h = lee(f); const desc = (h.match(/<meta name="description" content="([^"]*)"/) || [])[1] || '';
   E('pag', nombre, u, desc, limpia((h.match(/<main[\s\S]*<\/main>/) || [''])[0]).slice(0, 900));
   const re = /<(section|div|h2|h3)[^>]*\bid="([^"]+)"[^>]*>|<h([23])[^>]*>([\s\S]*?)<\/h\3>/g; let m, id = null;
   while ((m = re.exec(h))) { if (m[2]) { id = m[2]; if (m[1] === 'h2' || m[1] === 'h3') { const t = limpia(h.slice(m.index).match(/>([\s\S]*?)<\/h[23]>/)[1]); if (t) E('pag', nombre + ' · ' + t, u + '#' + id); } continue; } const t = limpia(m[4]); if (t && t.length > 3 && id) { E('pag', nombre + ' · ' + t, u + '#' + id); id = null; } }
+}
+
+/* ---------- Observatorio de mercado: la página se monta en el navegador, así que sus bloques y la lectura del día se apuntan aquí ---------- */
+if (existe('mercado.html')) {
+  let lec = null; // la lectura del día la escribe el mismo programa que usa la página (copia de confianza junto a este guion; si no, la del repositorio)
+  if (existe('data/mercado.json')) try {
+    let L = null; for (const q of [path.join(__dirname, 'mercado-lectura.js'), path.join(__dirname, '..', '..', 'assets', 'mercado-lectura.js')]) if (fs.existsSync(q)) { L = require(q); break; }
+    if (L) { const M = j('data/mercado.json'); const P = L.frases(L.hechos(M, existe('data/mercado-serie.json') ? j('data/mercado-serie.json').filas : [])); if (P.length) lec = { dia: String(M.leidoEn).slice(0, 10), fecha: M.leidoEn, primera: L.texto(P[0]), todo: P.map((x) => x.titulo + ': ' + L.texto(x)).join(' ') }; }
+  } catch (e) { console.error('aviso busqueda-indice: no se pudo apuntar la lectura del día del observatorio (' + e.message + ')'); }
+  const B = [['capital', '¿Dónde está el capital?', 'Capitalización total, peso de bitcoin, ether y stablecoins, y dinero depositado y stablecoins por cadena.'], ['calor', 'Mapa de calor', 'Rendimiento de cada activo, sector y cadena a 24 horas, 7, 30 y 90 días y un año.'], ['liquidez', '¿Dónde aumenta la liquidez?', 'Dinero esperando para comprar y para vender en los libros de órdenes de Binance y Kraken, a un 1 % y a un 2 % del precio, y su comparación entre días.'], ['sectores', '¿Qué sectores ganan actividad?', 'Capitalización, cambio y volumen de los sectores, y la mediana de los activos de la cesta en cada uno.'], ['volatilidad', 'Volatilidad: ¿está el mercado tranquilo o agitado?', 'Volatilidad a 7, 30 y 90 días, estado de cada activo (calma, normal, agitado, extremo) y volatilidad esperada por el mercado de opciones.'], ['desacoples', '¿Qué activos se están desacoplando?', 'Correlación de cada activo con bitcoin, matriz de correlación de la cesta y ficha de cualquier pareja.'], ['limites', 'Qué es esto y qué no', 'Contexto, no consejo: límites de la cesta, de las fuentes y de cada cálculo.']];
+  if (lec) E('pag', 'Mercado · Lectura del día (' + lec.dia + ')', 'mercado.html#lectura', lec.primera, lec.todo, lec.fecha); else E('pag', 'Mercado · Lectura del día', 'mercado.html#lectura', 'Cinco puntos escritos por un programa con reglas fijas: el día, el capital, la liquidez, la volatilidad y los desacoples.');
+  for (const [id, t, d] of B) E('pag', 'Mercado · ' + t, 'mercado.html#' + id, d);
 }
 
 /* ---------- informes, capítulos y ficha ---------- */

@@ -105,6 +105,23 @@
     </div>
   </section>
 
+  <section class="zp" id="mercado" aria-label="Observatorio de mercado">
+    <h3 class="dm-h">7 · Observatorio de mercado <span class="dm-t dia">diario</span> <span class="dm-t vivo">en vivo</span></h3>
+    <div class="dm">
+      <div class="dm-row"><b>Qué es</b><span>La página <a href="mercado.html">Mercado</a>: la lectura del día, dónde está el capital, el mapa de calor, la liquidez, los sectores, la volatilidad y los desacoples. Contexto, sin señales. Toda cifra abre una ficha con su regla, su serie y el enlace a la respuesta en bruto del servicio.</span></div>
+      <div class="dm-row"><b>La cesta</b><span>Los mayores activos por capitalización según CoinGecko que cotizan contra USDT en Binance, sin stablecoins, sin versiones envueltas o en depósito y sin oro en fichas. Los que quedan fuera se listan en la página con su motivo. Son los mayores de hoy: los que desaparecieron no están.</span></div>
+      <div class="dm-row"><b>Precios</b><span>Cierres diarios de Binance (datos públicos de mercado, en UTC), unos dos años. El precio de ahora y lo negociado en 24 horas se leen de Binance en tu navegador, una lectura ligera por minuto.</span></div>
+      <div class="dm-row"><b>Capital y stablecoins</b><span>Capitalización total y peso de bitcoin y ether: CoinGecko. Stablecoins en circulación, dinero depositado y stablecoins por cadena: DefiLlama, con un año de serie.</span></div>
+      <div class="dm-row"><b>Sectores</b><span>La clasificación es de CoinGecko, una etiqueta de terceros. La cifra de un sector en la cesta es la mediana de sus activos, con tres como mínimo.</span></div>
+      <div class="dm-row"><b>Liquidez</b><span>Libros de órdenes de los ocho mayores en Binance (contra USDT) y en Kraken (contra el dólar): dinero esperando a menos de un 1 % y de un 2 % del precio. Una foto al día; «Leer ahora» relee un libro en tu navegador. Si el precio de Kraken se separa más de un 3 % del de Binance, ese libro se descarta.</span></div>
+      <div class="dm-row"><b>Volatilidad esperada</b><span>El índice de volatilidad de Deribit para bitcoin y ether: lo que descuentan los precios de las opciones para los 30 días siguientes. Se compara con la volatilidad que de verdad hubo, calculada con los cierres de Binance.</span></div>
+      <div class="dm-row"><b>La serie propia</b><span><code>data/mercado-serie.json</code>: no existe histórico gratuito del peso de bitcoin ni de la profundidad de los libros, así que el programa diario guarda su propia lectura, una fila por día desde el 10-nov-2026. Una fila escrita no se modifica.</span></div>
+      <div class="dm-row"><b>La lectura del día</b><span>Cinco puntos (el día, el capital, la liquidez, la volatilidad y los desacoples) que escribe un programa con reglas fijas, sin IA y sin opinión; las reglas están en la propia página, en «Cómo se escribe esta lectura». Lo que no se puede calcular no se dice.</span></div>
+      <div class="dm-row"><b>Los cálculos</b><span>Rendimientos, volatilidad, percentiles, correlaciones y medianas se hacen en tu navegador con un programa que tiene sus pruebas y que se contrasta, sobre los mismos datos, con una segunda herramienta independiente (numpy).</span></div>
+      <div class="dm-row"><b>Lo que no hay gratis</b><span>Flujos entre cadenas, entradas y salidas de casas de cambio, interés abierto y liquidaciones de derivados, y la profundidad de los libros antes del primer día de la serie propia. No se estima ni se rellena.</span></div>
+    </div>
+  </section>
+
   <section class="zp" aria-label="Qué se comprueba">
     <p class="kick">Antes de publicar</p>
     <h2>Qué se comprueba en cada lectura diaria</h2>
@@ -112,6 +129,7 @@
       <div class="dm-row"><b>Que sea reciente</b><span>La lectura no puede tener más de 2 horas cuando se publica.</span></div>
       <div class="dm-row"><b>Que esté completa</b><span>Un mínimo de cuentas leídas (calendario y reparto de TRX), todas las redes con su dato (USDT0), la serie entera (quema).</span></div>
       <div class="dm-row"><b>Que cuadre</b><span>La oferta de TRX debe cuadrar con emisión menos quema; los grupos del reparto deben sumar el 100 %; el USDT0 leído debe parecerse al que anota el vigilante; el registro del vigilante de USDT0 no puede tener ninguna línea cambiada ni borrada.</span></div>
+      <div class="dm-row"><b>Observatorio de mercado</b><span>Al menos 30 activos con más de 700 días de cierres, capital y stablecoins con cifras creíbles, que ninguna fila ya escrita de la serie propia haya cambiado y que la lectura del día se pueda escribir con esos datos.</span></div>
       <div class="dm-row"><b>Qué pasa si falla</b><span>No se publica nada de esa lectura: la web sigue mostrando la anterior, con su fecha, y avisa si ya es antigua.</span></div>
     </div>
   </section>
@@ -129,8 +147,8 @@
   </section>
 </main>
 <script src="assets/common.js?v=35a0e468"></script>
-<script src="assets/marca.js?v=5a4564fe"></script>
+<script src="assets/marca.js?v=d30960e4"></script>
 <script src="assets/globo.js?v=f7a7ba09"></script>
-<script src="assets/datos.js?v=9b930de5"></script>
+<script src="assets/datos.js?v=f64b12f8"></script>
 </body>
 </html>

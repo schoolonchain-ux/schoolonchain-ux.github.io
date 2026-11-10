@@ -101,4 +101,13 @@ dialog.ob-panel::backdrop{background:rgba(0,0,0,.55)}
 .ob-graf text{fill:var(--mut);font-size:11px}
 .ob-graf .s2{color:var(--mut)}
 .ob-pc .ob-ley{margin-top:10px}
-@media (max-width:720px){.ob-preg{grid-template-columns:1fr}.ob-p .r{font-size:15px}.ob-pc dl{grid-template-columns:1fr;gap:2px 0}.ob-pc dt{margin-top:6px}}
+/* lectura del día */
+.ob-lec{margin-bottom:22px}
+.ob-lec-l{margin:12px 0 8px;padding:0 0 0 22px;display:grid;gap:12px}
+.ob-lec-l li{font-size:16px;line-height:1.6;color:var(--fg);overflow-wrap:anywhere;padding-left:2px}
+.ob-lec-l li::marker{color:var(--mut);font-weight:700}
+.ob-cif{font:inherit;font-weight:650;font-variant-numeric:tabular-nums;color:inherit;background:none;border:0;border-bottom:1.5px dotted var(--acc);border-radius:0;padding:0;margin:0;cursor:pointer;text-align:inherit}
+.ob-cif:hover,.ob-cif:focus-visible{color:var(--acc);outline:none;border-bottom-style:solid}
+.ob-lec-l .mas{font-size:12.5px;color:var(--acc);text-decoration:none;white-space:nowrap}
+.ob-lec-l .mas:hover{text-decoration:underline}
+@media (max-width:720px){.ob-preg{grid-template-columns:1fr}.ob-lec-l li{font-size:15px}.ob-p .r{font-size:15px}.ob-pc dl{grid-template-columns:1fr;gap:2px 0}.ob-pc dt{margin-top:6px}}

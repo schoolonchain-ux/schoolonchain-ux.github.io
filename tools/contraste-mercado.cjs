@@ -16,4 +16,13 @@ out.__esperada = {}; for (const x of (D.esperada && D.esperada.filas) || []) { i
 // entrega 3: matriz de correlación de toda la cesta (30 días, los 30 anteriores, 90 días y los 90 anteriores) y correlación a 30 días de cada activo con bitcoin y con ether, día a día
 { const S = D.activos.map((a) => a.c); out.__matriz = { orden: D.activos.map((a) => a.s), m30: M.matrizCorr(S, 30), m30prev: M.matrizCorr(S, 30, 30), m90: M.matrizCorr(S, 90), m90prev: M.matrizCorr(S, 90, 90) };
   out.__serieCorr = {}; for (const ref of ['BTC', 'ETH']) { const r = porS.get(ref); if (!r) continue; for (const a of D.activos) if (a.s !== ref) out.__serieCorr[a.s + '|' + ref] = M.serieCorr(a.c, r.c, 30); } }
+// entrega 5: los hechos de la lectura del día (assets/mercado-lectura.js), con la serie propia que está junto a mercado.json
+{ const L = require('../assets/mercado-lectura.js'); const path = require('node:path'); let filas = []; try { filas = JSON.parse(fs.readFileSync(path.join(path.dirname(process.argv[2]), 'mercado-serie.json'), 'utf8')).filas || []; } catch (e) { filas = []; }
+  const H = L.hechos(D, filas); const b = (x) => (x == null ? null : x ? 1 : 0); const o = { dia: null, capital: null, liquidez: null, vol: null, des: null };
+  if (H.dia) { o.dia = { n: H.dia.n, suben: H.dia.suben, mediana: H.dia.mediana, btc: H.dia.btc, eth: H.dia.eth, mejor: H.dia.mejor.r, peor: H.dia.peor.r, sectores: {} }; for (const x of H.dia.sectores) o.dia.sectores[x.id] = { mediana: x.mediana, n: x.n, suben: x.suben }; }
+  if (H.capital) o.capital = { st: H.capital.st, c30: H.capital.c30 ? H.capital.c30.cambio : null, previaDif: H.capital.previa ? H.capital.previa.dif : null };
+  if (H.liquidez) o.liquidez = { n: H.liquidez.n, compras: H.liquidez.compras, ventas: H.liquidez.ventas, desequilibrio: H.liquidez.desequilibrio, masComprador: H.liquidez.masComprador, previaCambio: H.liquidez.previa ? H.liquidez.previa.cambio : null };
+  if (H.vol) { o.vol = { n: H.vol.n, altos: H.vol.altos.length, nAyer: H.vol.nAyer, altosAyer: H.vol.altosAyer.length, espDif: H.vol.esperada ? H.vol.esperada.dif : null, pAyer: {} }; for (const x of H.vol.lista) o.vol.pAyer[x.s] = x.pAyer; }
+  if (H.des) { o.des = { n: H.des.n, lista: H.des.lista.length, entran: H.des.entran.length, salen: H.des.salen.length, medianaHoy: H.des.medianaHoy, medianaAntes: H.des.medianaAntes, hoy: {}, ayer: {} }; for (const x of H.des.tabla) { o.des.hoy[x.s] = b(x.hoy); o.des.ayer[x.s] = b(x.ayer); } }
+  out.__lectura = o; }
 fs.writeFileSync(process.argv[3], JSON.stringify(out)); console.log('volcado de ' + D.activos.length + ' activos');

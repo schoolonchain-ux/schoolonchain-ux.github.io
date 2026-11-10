@@ -10,6 +10,7 @@
     { r: 'data/quema-trx.json', t: 'Quema y emisión de TRX', extra: (D) => ' · serie hasta el ' + D.hasta },
     { r: 'data/desbloqueos-trx.json', t: 'Descongelaciones de TRX' },
     { r: 'data/fundamentales-indice.json', t: 'Índice del Laboratorio de fundamentales (token → cadena y protocolos, cobertura, cambios de método)', extra: (D) => (D.comprobaciones ? ' · ' + D.comprobaciones.tokens + ' tokens, ' + D.comprobaciones.cadenas + ' cadenas' + (D.cambios && D.cambios.length ? ', ' + D.cambios.length + ' cambios de método o cobertura anotados' : '') : '') },
+    { r: 'data/mercado.json', t: 'Observatorio de mercado (cierres, capital, sectores, liquidez y volatilidad esperada)', extra: (D) => (Array.isArray(D.activos) && Array.isArray(D.dias) ? ' · ' + D.activos.length + ' activos, cierres hasta el ' + D.dias[D.dias.length - 1] : '') },
     { r: 'data/medium.json', t: 'Artículos de Medium' },
     { r: 'reports/caso-vaneck-sun/seguimiento.json', t: 'Seguimiento del caso Vaneck / Sun' },
   ];
