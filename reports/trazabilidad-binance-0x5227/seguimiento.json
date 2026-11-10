@@ -1,10 +1,13 @@
 {
  "version": 1,
- "generado": "2026-11-10T10:39:21.545Z",
+ "generado": "2026-11-10T11:08:58.967Z",
+ "parado": true,
  "caso": "trazabilidad-binance-0x5227",
- "ultimaComprobacion": "2026-11-10T10:38:59.616Z",
+ "ultimaComprobacion": "2026-11-10T11:08:58.967Z",
  "ethereum": {
-  "activo": true,
+  "activo": false,
+  "paradoEl": "2026-11-10",
+  "motivo": "La vigilancia de las direcciones de Ethereum se paró el 2026-11-10: el caso se da por cerrado.",
   "direcciones": [
    "0x8532fa14acaf483729c449b8458aeddb900543d4",
    "0x03b0ee5d82990cff1bda48651ac3e436d1a020ea",
@@ -16,8 +19,8 @@
    "0x5227f603c1ee34ce3c06efe6477003bdfccb2f8c"
   ],
   "vigilaDesde": "2026-10-30T10:12:39.672Z",
-  "ultimaComprobacion": "2026-11-10T10:38:59.616Z",
-  "ultimoBloque": 26383965,
+  "ultimaComprobacion": "2026-11-10T11:08:58.967Z",
+  "ultimoBloque": 26384114,
   "cadaMinutos": 10,
   "umbralEth": 100,
   "avisa": "Si alguna envía o recibe 100 ETH o más, o saca cualquier token.",
