@@ -73,3 +73,16 @@ test('camino de un grupo: mediana día a día desde el primer día del periodo',
   assert.deepEqual(M.caminoGrupo([], 1), [null, null]); assert.deepEqual(M.caminoGrupo(null, 1), [null, null]);
   const largo = [1, 1, 100, 110, 121, null]; cerca(M.caminoGrupo([largo, b, c], 2)[2], 0.21); // cada serie cuenta desde su propio último dato
 });
+test('máximo de n días: valor, hace cuánto y caída; con empate, el más reciente', () => {
+  assert.deepEqual(M.maximo([100, 120, 90], 3), { i: 1, valor: 120, hace: 1, caida: 90 / 120 - 1 }); assert.deepEqual(M.maximo([100, 120, 90], 1), { i: 2, valor: 90, hace: 0, caida: 0 });
+  assert.equal(M.maximo([5, 5, 4], 3).i, 1); assert.equal(M.maximo([200, 100, 120, 90], 3).valor, 120); assert.equal(M.maximo([], 5), null); assert.equal(M.maximo([null, null], 5), null);
+  const m = M.maximo([80, null, 100, null, 50, null], 10); assert.equal(m.i, 2); assert.equal(m.hace, 2); cerca(m.caida, -0.5); // el último dato es el 50; los huecos no cuentan
+  cerca(M.maximo([100, 120, 90, 60], 4).caida, M.caidaDesdeMaximo([100, 120, 90, 60], 4)); // coincide con la función que ya había
+});
+test('esperado frente a ocurrido: empareja lo esperado hace h días con lo ocurrido hasta hoy', () => {
+  const esp = [50, 40, 30, null, 20, 99], real = [null, null, 45, 35, 25, null, 10];
+  const r = M.esperadaFrenteAReal(esp, real, 2, 3); assert.equal(r.n, 3); assert.equal(r.mas, 3); cerca(r.medianaDif, 5); assert.deepEqual(r.ultimo, { i: 4, esperada: 30, ocurrida: 25 });
+  assert.equal(M.esperadaFrenteAReal(esp, real, 2), null); // por defecto hacen falta 60 pares
+  const q = M.esperadaFrenteAReal([10, 20, 30, 40], [0, 15, 15, 35], 1, 1); assert.equal(q.n, 3); assert.equal(q.mas, 1); cerca(q.medianaDif, -5); // 10−15, 20−15, 30−35
+  assert.equal(M.esperadaFrenteAReal([], [], 30, 1), null); assert.equal(M.esperadaFrenteAReal(null, null, 30, 1), null);
+});

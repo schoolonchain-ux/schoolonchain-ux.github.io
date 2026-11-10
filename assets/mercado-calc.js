@@ -11,6 +11,8 @@
    - Mediana: el valor central de los que tienen dato (con un número par, la media de los dos centrales).
    - Rendimiento de un grupo (sector): la mediana de los rendimientos de sus activos; con menos de tres activos con dato no hay cifra.
    - Camino de un grupo: esa misma mediana calculada cada día del periodo, contando desde el primer día.
+   - Máximo de n días: el cierre más alto de los últimos n días (con empate, el más reciente), cuántos días hace y la caída desde él.
+   - Esperado frente a ocurrido: se empareja la volatilidad que el mercado esperaba un día para los h días siguientes con la realizada en esos h días.
    Vale en el navegador (window.MCALC) y en Node (module.exports), para poder probarlo. */
 (function (raiz) {
   const num = (x) => typeof x === 'number' && isFinite(x);
@@ -31,6 +33,11 @@
   function corr(a, b, n, salto) { const p = pares(a, b, n, salto); if (!p) return null; const [x, y] = p; const mx = media(x), my = media(y); let sxy = 0, sxx = 0, syy = 0; for (let i = 0; i < n; i++) { sxy += (x[i] - mx) * (y[i] - my); sxx += (x[i] - mx) * (x[i] - mx); syy += (y[i] - my) * (y[i] - my); } if (!(sxx > 0) || !(syy > 0)) return null; return sxy / Math.sqrt(sxx * syy); }
   function beta(a, ref, n) { const p = pares(a, ref, n); if (!p) return null; const [x, y] = p; const mx = media(x), my = media(y); let sxy = 0, syy = 0; for (let i = 0; i < n; i++) { sxy += (x[i] - mx) * (y[i] - my); syy += (y[i] - my) * (y[i] - my); } return syy > 0 ? sxy / syy : null; }
   function caidaDesdeMaximo(c, n) { const i = ultimo(c); if (i < 0) return null; let mx = null; for (let k = Math.max(0, i - n + 1); k <= i; k++) if (num(c[k]) && (mx == null || c[k] > mx)) mx = c[k]; return mx ? c[i] / mx - 1 : null; }
+  // máximo de los últimos n datos (hasta el último con dato): posición, valor, cuántas posiciones hace y caída desde él; con empate, el más reciente
+  function maximo(c, n) { const i = ultimo(c); if (i < 0) return null; let k = -1; for (let j = Math.max(0, i - n + 1); j <= i; j++) if (num(c[j]) && c[j] > 0 && (k < 0 || c[j] >= c[k])) k = j; return k < 0 ? null : { i: k, valor: c[k], hace: i - k, caida: c[i] / c[k] - 1 }; }
+  // lo esperado frente a lo ocurrido. «esp[i]»: volatilidad que el mercado esperaba al cierre del día i para los h días siguientes; «real[i]»: la realizada en los h días que acaban el día i (misma rejilla).
+  // Empareja esp[i−h] con real[i]. Devuelve cuántos pares hay, en cuántos se esperó más de lo que pasó, la mediana de (esperada − ocurrida) y el último par; null con menos de «minimo» pares (60).
+  function esperadaFrenteAReal(esp, real, h, minimo) { const d = []; let mas = 0, ult = null; const n = Math.min((esp || []).length, (real || []).length); for (let i = h; i < n; i++) if (num(esp[i - h]) && num(real[i])) { const x = esp[i - h] - real[i]; d.push(x); if (x > 0) mas++; ult = { i, esperada: esp[i - h], ocurrida: real[i] }; } if (d.length < (minimo == null ? 60 : minimo)) return null; return { n: d.length, mas, medianaDif: mediana(d), ultimo: ult }; }
   // profundidad de un libro de órdenes a ±pct del precio medio: dinero esperando a cada lado y desequilibrio (−1 todo ventas … +1 todo compras)
   function profundidad(bids, asks, pct) { if (!bids || !asks || !bids.length || !asks.length) return null; const mb = Number(bids[0][0]), ma = Number(asks[0][0]); if (!(mb > 0) || !(ma > 0) || ma < mb) return null; const medio = (mb + ma) / 2, lo = medio * (1 - pct), hi = medio * (1 + pct); let c = 0, v = 0; for (const [p, q] of bids) { const P = Number(p); if (P < lo) break; c += P * Number(q); } for (const [p, q] of asks) { const P = Number(p); if (P > hi) break; v += P * Number(q); } const cubreC = Number(bids[bids.length - 1][0]) <= lo, cubreV = Number(asks[asks.length - 1][0]) >= hi; return { medio, diferencialPct: (ma - mb) / medio * 100, compras: c, ventas: v, desequilibrio: c + v > 0 ? (c - v) / (c + v) : null, completo: cubreC && cubreV }; }
   // último dato de una serie y el de n posiciones antes: { hoy, antes, i } o null si falta alguno de los dos
@@ -42,6 +49,6 @@
   // camino de un grupo en los últimos n días: para cada día, la mediana de lo que lleva ganado o perdido cada activo desde hace n días.
   // Cada serie se cuenta desde su propio último dato; solo entran las que tienen dato hace n días. El último valor coincide con grupo(rendimientos a n días).
   function caminoGrupo(series, n, minimo) { const base = []; for (const c of series || []) { const i = ultimo(c); if (i >= 0 && i - n >= 0 && num(c[i - n]) && c[i - n] > 0) base.push([c, i]); } const y = []; for (let k = n; k >= 0; k--) { const v = []; for (const [c, i] of base) if (num(c[i - k])) v.push(c[i - k] / c[i - n] - 1); y.push(v.length >= (minimo == null ? 3 : minimo) ? mediana(v) : null); } return y; }
-  const M = { atras, cambio, mediana, grupo, caminoGrupo, rend, retornos, desv, vol, serieVol, percentil, estadoVol, corr, beta, caidaDesdeMaximo, profundidad, ultimo };
+  const M = { atras, cambio, mediana, grupo, caminoGrupo, maximo, esperadaFrenteAReal, rend, retornos, desv, vol, serieVol, percentil, estadoVol, corr, beta, caidaDesdeMaximo, profundidad, ultimo };
   if (typeof module !== 'undefined' && module.exports) module.exports = M; else raiz.MCALC = M;
 })(typeof window !== 'undefined' ? window : globalThis);

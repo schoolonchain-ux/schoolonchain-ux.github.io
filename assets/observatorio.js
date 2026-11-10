@@ -20,20 +20,21 @@
   const dlg = el('dialog', { class: 'ob-panel' }); document.body.append(dlg);
   dlg.addEventListener('click', (e) => { if (e.target === dlg) dlg.close(); });
   const fx = (v) => (/^\d{4}-\d\d-\d\d$/.test(v) ? fd(v) : v === 'ahora' ? 'momento de la lectura en vivo' : v);
-  function grafico(x, y, fmt) {
-    const p = []; for (let i = 0; i < y.length; i++) if (typeof y[i] === 'number' && isFinite(y[i])) p.push([i, y[i]]);
+  function grafico(x, y, fmt, y2, nombres) {
+    const marcas = (q) => { const p = []; for (let i = 0; i < (q || []).length; i++) if (typeof q[i] === 'number' && isFinite(q[i])) p.push([i, q[i]]); return p; };
+    const p = marcas(y), p2 = marcas(y2); const dos = p2.length > 1;
     if (p.length < 2) return el('p', { class: 'ob-nota' }, 'No hay serie suficiente para dibujarla.');
-    const W = 680, H = 150, mi = 6, ms = 8, mb = 8; let lo = Infinity, hi = -Infinity; for (const q of p) { if (q[1] < lo) lo = q[1]; if (q[1] > hi) hi = q[1]; } if (hi === lo) { hi += 1; lo -= 1; }
-    const X = (i) => mi + (i - p[0][0]) / (p[p.length - 1][0] - p[0][0]) * (W - 2 * mi), Y = (v) => ms + (1 - (v - lo) / (hi - lo)) * (H - ms - mb);
-    const pts = p.map((q) => X(q[0]).toFixed(1) + ',' + Y(q[1]).toFixed(1)).join(' ');
-    const svg = '<svg class="ob-graf" viewBox="0 0 ' + W + ' ' + H + '" role="img" aria-label="Serie"><polyline fill="none" stroke="currentColor" stroke-width="1.8" points="' + pts + '"/>' +
-      '</svg>';
-    return el('div', null, el('div', { html: svg }), el('p', { class: 'ob-nota', style: 'margin-top:0' }, 'Máximo ' + fmt(hi) + ' · mínimo ' + fmt(lo) + ' · del ' + fx(x[p[0][0]]) + ' al ' + fx(x[p[p.length - 1][0]]) + '.'));
+    const W = 680, H = 150, mi = 6, ms = 8, mb = 8; let lo = Infinity, hi = -Infinity; for (const q of (dos ? p.concat(p2) : p)) { if (q[1] < lo) lo = q[1]; if (q[1] > hi) hi = q[1]; } if (hi === lo) { hi += 1; lo -= 1; }
+    const i0 = dos ? Math.min(p[0][0], p2[0][0]) : p[0][0], i1 = dos ? Math.max(p[p.length - 1][0], p2[p2.length - 1][0]) : p[p.length - 1][0];
+    const X = (i) => mi + (i - i0) / (i1 - i0) * (W - 2 * mi), Y = (v) => ms + (1 - (v - lo) / (hi - lo)) * (H - ms - mb);
+    const linea = (q, cls) => '<polyline' + (cls ? ' class="' + cls + '"' : '') + ' fill="none" stroke="currentColor" stroke-width="1.8" points="' + q.map((r) => X(r[0]).toFixed(1) + ',' + Y(r[1]).toFixed(1)).join(' ') + '"/>';
+    const svg = '<svg class="ob-graf" viewBox="0 0 ' + W + ' ' + H + '" role="img" aria-label="' + (dos ? 'Dos series' : 'Serie') + '">' + (dos ? linea(p2, 's2') : '') + linea(p) + '</svg>';
+    return el('div', null, dos ? leyenda([['var(--acc)', (nombres || [])[0] || 'Primera serie'], ['var(--mut)', (nombres || [])[1] || 'Segunda serie']]) : null, el('div', { html: svg }), el('p', { class: 'ob-nota', style: 'margin-top:0' }, (dos ? 'Entre ' + fmt(lo) + ' y ' + fmt(hi) : 'Máximo ' + fmt(hi) + ' · mínimo ' + fmt(lo)) + ' · del ' + fx(x[i0]) + ' al ' + fx(x[i1]) + '.'));
   }
   function abrir(o) {
     const c = el('div', { class: 'ob-pc' }, el('button', { class: 'cerrar', title: 'Cerrar', 'aria-label': 'Cerrar', onclick: () => dlg.close() }, '×'), el('h3', null, o.t), o.sub ? el('p', { class: 'sub' }, o.sub) : null);
     if (o.cifras && o.cifras.length) c.append(el('dl', null, o.cifras.map(([k, v]) => [el('dt', null, k), el('dd', null, v)])));
-    if (o.serie) c.append(grafico(o.serie.x, o.serie.y, o.serie.fmt || ((v) => nf(v, 2))), o.serie.pie ? el('p', { class: 'ob-nota' }, o.serie.pie) : null);
+    if (o.serie) c.append(grafico(o.serie.x, o.serie.y, o.serie.fmt || ((v) => nf(v, 2)), o.serie.y2, o.serie.nombres), o.serie.pie ? el('p', { class: 'ob-nota' }, o.serie.pie) : null);
     if (o.regla) c.append(el('p', { class: 'regla' }, el('b', null, 'Cómo se calcula. '), o.regla));
     if (o.limite) c.append(el('p', { class: 'regla' }, el('b', null, 'Qué no dice. '), o.limite));
     c.append(el('p', { class: 'ob-nota', style: 'margin-top:12px' }, el('b', null, 'De dónde sale')), el('ul', { class: 'fu' }, (o.fuentes || []).map((f) => el('li', null, f.t + ': ', el('a', { href: f.u, target: '_blank', rel: 'noopener' }, f.e || 'respuesta en bruto del servicio')))));
@@ -207,15 +208,85 @@
       !L.length ? null : el('p', { class: 'ob-nota' }, 'Lectura diaria del ' + fh(D.leidoEn) + ' (CoinGecko limita las consultas por visitante, así que esto no se lee desde tu navegador). Se han quitado las categorías que son carteras de fondos o ecosistemas de una cadena.'));
   }
 
-  /* ---------- volatilidad ---------- */
+  /* ---------- volatilidad y estado del mercado ---------- */
+  const ESTADOS = ['extremo', 'agitado', 'normal', 'calma']; const NOMBRE_ESTADO = { calma: 'En calma', normal: 'Normal', agitado: 'Agitado', extremo: 'En extremo' };
+  const REGLA_VOL = 'Volatilidad: desviación típica de los rendimientos diarios de los últimos 7, 30 o 90 días, multiplicada por la raíz de 365 para expresarla en un año. El percentil dice qué parte de los días de su propia historia tuvo una volatilidad a 30 días igual o menor que la de hoy. Estados: calma (menos de 25), normal (25 a 75), agitado (75 a 95), extremo (95 o más).';
+  const LIMITE_VOL = 'La volatilidad mide cuánto se mueve, no hacia dónde. La pasada no predice la futura. Con menos de dos años de historia el percentil es menos fiable.';
+  const va = (v, d = 1) => (v == null ? SD : nf(v, d) + ' % anual'); const v0 = (v) => (v == null ? SD : nf(v, 0) + ' %');
+  const puntos = (d) => (d == null ? SD : (Number(Math.abs(d).toFixed(1)) === 0 ? '' : d >= 0 ? '+' : '−') + nf(Math.abs(d), 1));
+  let FV = null; // una fila por activo; se calcula una vez porque usa cierres hasta ayer
+  function filasVol() { if (!FV) FV = D.activos.map((a) => { const sv = M.serieVol(a.c, 30); const p = M.percentil(sv); return { a, v7: M.vol(a.c, 7), v30: M.vol(a.c, 30), v90: M.vol(a.c, 90), p, e: M.estadoVol(p), sv, m1: M.maximo(a.c, 365), m2: M.maximo(a.c, D.dias.length) }; }).sort((x, y) => (y.p == null ? -1 : y.p) - (x.p == null ? -1 : x.p)); return FV; }
+  const txtMax = (m) => (m ? precio(m.valor) + ', el ' + fd(D.dias[m.i]) + (m.hace === 0 ? ' (es su último cierre)' : m.hace === 1 ? ' (un día antes de su último cierre)' : ' (' + nf(m.hace) + ' días antes de su último cierre)') : SD);
+  function fichaVol(f) {
+    abrir({ t: 'Volatilidad de ' + f.a.n + ' (' + f.a.s + ')', sub: 'Con cierres diarios de Binance hasta ayer',
+      cifras: [['Volatilidad a 7 días', va(f.v7)], ['Volatilidad a 30 días', va(f.v30)], ['Volatilidad a 90 días', va(f.v90)], ['Percentil en su propia historia (30 días)', f.p == null ? SD + ' (hacen falta 60 valores)' : nf(f.p, 0) + ' de 100'], ['Estado', f.e || SD],
+        ['Máximo de un año', txtMax(f.m1)], ['Caída desde ese máximo', f.m1 ? pct(f.m1.caida, 1) : SD], ['Máximo de toda su serie (' + nf(f.a.dias) + ' días)', txtMax(f.m2)], ['Caída desde ese máximo', f.m2 ? pct(f.m2.caida, 1) : SD]],
+      serie: { x: D.dias, y: f.sv, fmt: (v) => nf(v, 0) + ' %', pie: 'Volatilidad a 30 días, día a día, en toda la historia disponible (' + nf(f.a.dias) + ' días).' },
+      regla: REGLA_VOL + ' La caída desde el máximo es el último cierre dividido entre el cierre más alto del periodo, menos uno.', limite: LIMITE_VOL, fuentes: [{ t: 'Cierres diarios de ' + f.a.par + ' (Binance)', u: f.a.url }] });
+  }
+  function fichaCestaVol() {
+    const F = filasVol(); const lista = (e) => { const L = F.filter((f) => f.e === e).map((f) => f.a.s); return L.length + (L.length ? ': ' + L.slice(0, 14).join(', ') + (L.length > 14 ? ' y ' + (L.length - 14) + ' más' : '') : ''); };
+    abrir({ t: 'Estado de la cesta', sub: D.activos.length + ' activos, con cierres diarios de Binance hasta ayer',
+      cifras: ESTADOS.map((e) => [NOMBRE_ESTADO[e], lista(e)]).concat([['Sin historia suficiente', String(F.filter((f) => !f.e).length)], ['Volatilidad a 30 días, mediana de la cesta', va(M.mediana(F.map((f) => f.v30)))], ['Volatilidad a 90 días, mediana de la cesta', va(M.mediana(F.map((f) => f.v90)))]]),
+      regla: REGLA_VOL + ' Cada activo se compara solo consigo mismo: «agitado» quiere decir agitado para lo que ese activo acostumbra.', limite: LIMITE_VOL + ' La cesta son los mayores de hoy.', fuentes: fuenteDe(/Cierres y volumen diarios/) });
+  }
+
+  /* volatilidad esperada (Deribit) frente a la realizada, para bitcoin y ether */
+  let espViva = null, espError = null; const MONEDA = { BTC: 'bitcoin', ETH: 'ether' };
+  const filasEsp = () => ((D.esperada && D.esperada.filas) || []).map((x) => ({ x, a: D.activos.find((a) => a.s === x.s) })).filter((q) => q.a);
+  function datosEsp(q) {
+    const { x, a } = q; const viva = espViva && espViva.get(x.s); const u = x.v ? M.ultimo(x.v) : -1; const ayer = u >= 0 ? x.v[u] : null; const ahora = viva ? viva.v : ayer;
+    const sv = M.serieVol(a.c, 30); const real = M.vol(a.c, 30);
+    return { x, a, viva, ayer, diaAyer: u >= 0 ? D.dias[u] : null, ahora, real, dif: ahora != null && real != null ? ahora - real : null, p: x.v ? M.percentil(x.v) : null, e: x.v ? M.esperadaFrenteAReal(x.v, sv, 30) : null, sv };
+  }
+  function fichaEsp(d) {
+    const e = d.e; const n = MONEDA[d.x.s] || d.x.s;
+    abrir({ t: 'Volatilidad esperada y realizada de ' + n, sub: 'La esperada sale de las opciones de Deribit; la realizada, de los cierres de Binance hasta ayer. Las dos en % anual.',
+      cifras: [[d.viva ? 'Esperada ahora' : 'Esperada al cierre de ayer', va(d.ahora) + (d.viva ? ' (leída de Deribit el ' + fh(d.viva.hora) + ')' : d.diaAyer ? ' (cierre del ' + fd(d.diaAyer) + '; la lectura en vivo no llegó' + (espError ? ': ' + espError : '') + ')' : '')],
+        ['Realizada en los últimos 30 días', va(d.real)],
+        ['Diferencia', d.dif == null ? SD : puntos(d.dif) + ' puntos: el mercado espera ' + (d.dif >= 0 ? 'más' : 'menos') + ' movimiento del que ha habido'],
+        ['Percentil de la esperada en su propia historia', d.p == null ? SD : nf(d.p, 0) + ' de 100 (cierre de ayer, entre ' + nf(d.x.dias) + ' días)'],
+        ['Hace 30 días se esperaba', e ? va(e.ultimo.esperada) + ' (cierre del ' + fd(D.dias[e.ultimo.i - 30]) + ')' : SD],
+        ['Lo que pasó en esos 30 días', e ? va(e.ultimo.ocurrida) : SD],
+        ['Días en que se esperó más de lo que luego pasó', e ? nf(e.mas) + ' de ' + nf(e.n) + ' (' + nf(e.mas / e.n * 100, 0) + ' %)' : SD],
+        ['Diferencia mediana entre lo esperado y lo ocurrido', e ? puntos(e.medianaDif) + ' puntos' : SD]],
+      serie: d.x.v ? { x: D.dias, y: d.x.v, y2: d.sv, nombres: ['Esperada para los 30 días siguientes (Deribit)', 'Realizada en los 30 días anteriores (Binance)'], fmt: (v) => nf(v, 0) + ' %', pie: 'Las dos series, día a día, con cierres hasta ayer.' } : null,
+      regla: 'La esperada es el índice de volatilidad de Deribit (DVOL): se calcula con los precios de las opciones de ' + n + ' y dice, en % anual, cuánto movimiento descuenta ese mercado para los 30 días siguientes. La realizada es la desviación típica de los 30 últimos rendimientos diarios en Binance, por la raíz de 365. Para comparar lo esperado con lo ocurrido se empareja la esperada de un día con la realizada 30 días después.',
+      limite: 'La esperada no es una previsión de esta web ni dice hacia dónde irá el precio: es lo que cuesta asegurarse en un solo mercado de opciones. Que lo esperado suela quedar por encima de lo ocurrido es habitual: quien vende ese seguro cobra por el riesgo. Los periodos de 30 días se pisan unos con otros, así que los días no son casos independientes.',
+      fuentes: [{ t: 'Índice de volatilidad diario de ' + d.x.s + ' (Deribit)', u: d.x.url }].concat(d.viva ? [{ t: 'Lectura en vivo (Deribit)', u: d.viva.u }] : [], [{ t: 'Cierres diarios de ' + d.a.par + ' (Binance)', u: d.a.url }]) });
+  }
+  const urlEsp = (s) => 'https://www.deribit.com/api/v2/public/get_volatility_index_data?currency=' + s + '&start_timestamp=' + (Date.now() - 2 * 86400000) + '&end_timestamp=' + Date.now() + '&resolution=1D';
+  async function leerEsperada() {
+    const Q = filasEsp(); if (!Q.length) return; const m = new Map();
+    try { for (const q of Q) { const u = urlEsp(q.x.s); const j = await traer(u); const d = j && j.result && j.result.data; const k = Array.isArray(d) && d.length ? d[d.length - 1] : null; const c = k ? Number(k[4]) : NaN; if (!(c > 0 && c < 1000)) throw new Error('respuesta sin dato'); if (Date.now() - k[0] > 86400000) throw new Error('la respuesta no trae el día en curso'); m.set(q.x.s, { v: c, u, hora: new Date().toISOString() }); } espViva = m; espError = null; } catch (e) { espViva = null; espError = e.message; }
+    pintarVol();
+  }
+  const cajaVolK = el('div', { class: 'ob-kpis' }), cajaEsp = el('div');
+  function pintarVol() {
+    const F = filasVol(); const kV = (t, v, s, alPulsar) => el('button', { class: 'ob-k', onclick: alPulsar }, el('span', { class: 'k' }, t), el('span', { class: 'v' }, v), s ? el('span', { class: 's' }, s) : null);
+    const agit = F.filter((f) => f.e === 'agitado' || f.e === 'extremo').length; const E = filasEsp().map(datosEsp);
+    cajaVolK.replaceChildren(
+      ...['BTC', 'ETH'].map((s) => F.find((f) => f.a.s === s)).filter(Boolean).map((f) => kV(f.a.n, f.e ? NOMBRE_ESTADO[f.e] : SD, v0(f.v30) + ' anual a 30 días' + (f.p == null ? '' : ' · percentil ' + nf(f.p, 0)), () => fichaVol(f))),
+      kV('Activos agitados o en extremo', agit + ' de ' + F.length, 'mediana de la cesta: ' + v0(M.mediana(F.map((f) => f.v30))) + ' anual a 30 días', fichaCestaVol),
+      ...E.filter((d) => d.ahora != null).map((d) => kV('Esperada de ' + (MONEDA[d.x.s] || d.x.s) + (d.viva ? ', ahora' : ', ayer'), va(d.ahora), d.dif == null ? '' : puntos(d.dif) + ' puntos frente a la realizada', () => fichaEsp(d))));
+    const vivas = E.filter((d) => d.viva); const hora = vivas.length ? vivas[0].viva.hora : null;
+    if (!E.length) { cajaEsp.replaceChildren(el('p', { class: 'ob-nota' }, 'La lectura diaria no trae la volatilidad esperada de Deribit. No se muestra nada en su lugar.')); return; }
+    const fila = (d) => (d.ahora == null ? el('tr', null, el('td', null, d.x.s, el('span', { class: 'n2' }, d.a.n)), el('td', { colspan: '6', style: 'text-align:left;white-space:normal' }, 'La lectura de Deribit no llegó (' + (d.x.fallo || 'sin dato') + '). No se muestra nada en su lugar.'))
+      : el('tr', { class: 'cl', onclick: () => fichaEsp(d) }, el('td', null, d.x.s, el('span', { class: 'n2' }, d.a.n)), el('td', null, nf(d.ahora, 1) + ' %' + (d.viva ? '' : ' (ayer)')), el('td', null, d.real == null ? SD : nf(d.real, 1) + ' %'), el('td', null, puntos(d.dif)), el('td', null, d.p == null ? SD : nf(d.p, 0)), el('td', null, d.e ? nf(d.e.ultimo.esperada, 1) + ' %' : SD), el('td', null, d.e ? nf(d.e.ultimo.ocurrida, 1) + ' %' : SD)));
+    const b = E.find((d) => d.e);
+    cajaEsp.replaceChildren(
+      el('div', { class: 'ob-tw' }, el('table', { class: 'ob-t' }, el('thead', null, el('tr', null, ['Moneda', 'Esperada', 'Realizada 30 d', 'Diferencia (puntos)', 'Percentil de la esperada', 'Hace 30 días se esperaba', 'Lo que pasó'].map((t) => el('th', null, t)))), el('tbody', null, E.map(fila)))),
+      el('p', { class: 'ob-nota' }, 'Esperada: lo que descuentan las opciones para los 30 días siguientes (índice de volatilidad de Deribit), ' + (hora ? 'leída de Deribit el ' + fh(hora) + ' y releída cada cinco minutos' : 'al cierre de ayer; la lectura en vivo no llegó' + (espError ? ' (' + espError + ')' : '')) + '. Realizada: lo que se ha movido de verdad en los últimos 30 días, con cierres de Binance hasta ayer. Las dos en % anual.' + (b ? ' En ' + nf(b.e.mas / b.e.n * 100, 0) + ' de cada 100 días de esta serie, el mercado esperó para ' + (MONEDA[b.x.s] || b.x.s) + ' más movimiento del que luego hubo.' : '') + ' Pulsa una fila para ver las dos series.'));
+  }
   function volatilidad() {
-    const F = D.activos.map((a) => { const sv = M.serieVol(a.c, 30); const p = M.percentil(sv); return { a, v30: M.vol(a.c, 30), v90: M.vol(a.c, 90), p, e: M.estadoVol(p), sv, caida: M.caidaDesdeMaximo(a.c, 365) }; }).sort((x, y) => (y.p == null ? -1 : y.p) - (x.p == null ? -1 : x.p));
-    const cuenta = {}; for (const f of F) if (f.e) cuenta[f.e] = (cuenta[f.e] || 0) + 1;
-    const ficha = (f) => abrir({ t: 'Volatilidad de ' + f.a.n + ' (' + f.a.s + ')', sub: 'Con cierres diarios de Binance hasta ayer', cifras: [['Volatilidad a 30 días', f.v30 == null ? SD : nf(f.v30, 1) + ' % anual'], ['Volatilidad a 90 días', f.v90 == null ? SD : nf(f.v90, 1) + ' % anual'], ['Percentil en su propia historia', f.p == null ? SD + ' (hacen falta 60 valores)' : nf(f.p, 0) + ' de 100'], ['Estado', f.e || SD], ['Caída desde su máximo de un año', pct(f.caida, 1)]], serie: { x: D.dias, y: f.sv, fmt: (v) => nf(v, 0) + ' %', pie: 'Volatilidad a 30 días, día a día, en toda la historia disponible (' + f.a.dias + ' días).' }, regla: 'Desviación típica de los últimos 30 rendimientos diarios, multiplicada por la raíz de 365 para expresarla en un año. El percentil dice qué parte de los días de su propia historia tuvo una volatilidad igual o menor que la de hoy. Estados: calma (menos de 25), normal (25 a 75), agitado (75 a 95), extremo (95 o más).', limite: 'La volatilidad mide cuánto se mueve, no hacia dónde. La pasada no predice la futura. Con menos de dos años de historia el percentil es menos fiable.', fuentes: [{ t: 'Cierres diarios de ' + f.a.par + ' (Binance)', u: f.a.url }] });
-    const fila = (f) => el('tr', { class: 'cl', onclick: () => ficha(f) }, el('td', null, f.a.s, el('span', { class: 'n2' }, f.a.n)), el('td', null, f.v30 == null ? SD : nf(f.v30, 0) + ' %'), el('td', null, f.p == null ? SD : nf(f.p, 0)), el('td', null, f.e ? el('span', { class: 'ob-chip ' + f.e }, f.e) : SD), el('td', null, f.v90 == null ? SD : nf(f.v90, 0) + ' %'), el('td', { class: signo(f.caida) }, pct(f.caida, 0)));
-    return el('section', { class: 'zp', id: 'volatilidad' }, el('p', { class: 'kick' }, 'Contexto'), el('h2', null, 'Volatilidad: ¿está el mercado tranquilo o agitado?'), el('p', { class: 'ob-sub' }, 'Cuánto se mueve cada activo estos 30 días comparado con su propia historia. Hoy: ' + ['extremo', 'agitado', 'normal', 'calma'].map((e) => (cuenta[e] || 0) + ' en ' + e).join(', ') + '.'),
-      el('div', { class: 'ob-tw' }, el('table', { class: 'ob-t' }, el('thead', null, el('tr', null, ['Activo', 'Volatilidad 30 d', 'Percentil', 'Estado', 'Volatilidad 90 d', 'Desde su máximo (1 año)'].map((t) => el('th', null, t)))), el('tbody', null, F.map(fila)))),
-      el('p', { class: 'ob-nota' }, 'Regla fija: calma por debajo del percentil 25, normal entre 25 y 75, agitado entre 75 y 95, extremo a partir de 95. Con cierres hasta ayer.'));
+    const F = filasVol(); const cuenta = {}; for (const f of F) if (f.e) cuenta[f.e] = (cuenta[f.e] || 0) + 1; pintarVol();
+    const fila = (f) => el('tr', { class: 'cl', onclick: () => fichaVol(f) }, el('td', null, f.a.s, el('span', { class: 'n2' }, f.a.n)), el('td', null, v0(f.v7)), el('td', null, v0(f.v30)), el('td', null, v0(f.v90)), el('td', null, f.p == null ? SD : nf(f.p, 0)), el('td', null, f.e ? el('span', { class: 'ob-chip ' + f.e }, f.e) : SD), el('td', { class: signo(f.m1 && f.m1.caida) }, f.m1 ? pct(f.m1.caida, 0) : SD), el('td', { class: signo(f.m2 && f.m2.caida) }, f.m2 ? pct(f.m2.caida, 0) : SD));
+    return el('section', { class: 'zp', id: 'volatilidad' }, el('p', { class: 'kick' }, 'Contexto'), el('h2', null, 'Volatilidad: ¿está el mercado tranquilo o agitado?'), el('p', { class: 'ob-sub' }, 'Cuánto se mueve cada activo comparado con su propia historia, y cuánto movimiento espera el mercado para bitcoin y ether. Hoy: ' + ESTADOS.map((e) => (cuenta[e] || 0) + ' en ' + e).join(', ') + '.'),
+      cajaVolK,
+      el('h3', { class: 'ob-h3' }, 'Bitcoin y ether: lo que el mercado espera frente a lo que ha pasado'), cajaEsp,
+      el('h3', { class: 'ob-h3' }, 'Activo por activo'),
+      el('div', { class: 'ob-tw' }, el('table', { class: 'ob-t' }, el('thead', null, el('tr', null, el('th', { rowspan: '2' }, 'Activo'), el('th', { colspan: '3', class: 'g' }, 'Volatilidad anual'), el('th', { rowspan: '2' }, 'Percentil'), el('th', { rowspan: '2' }, 'Estado'), el('th', { colspan: '2', class: 'g' }, 'Desde su máximo')), el('tr', { class: 'sub' }, ['7 días', '30 días', '90 días', 'de 1 año', 'de 2 años'].map((t) => el('th', null, t)))), el('tbody', null, F.map(fila)))),
+      el('p', { class: 'ob-nota' }, 'Volatilidad en % anual, con cierres hasta ayer. El percentil y el estado salen de la volatilidad a 30 días. Regla fija del estado: calma por debajo del percentil 25, normal entre 25 y 75, agitado entre 75 y 95, extremo a partir de 95. «Desde su máximo» es cuánto está el último cierre por debajo del más alto del periodo; quien lleva menos de dos años cotizando se compara con toda su serie. Pulsa una fila para ver sus datos.'));
   }
 
   /* ---------- 4 · desacoples ---------- */
@@ -308,5 +379,6 @@
     D = j; pintarEstado(); pintarPreguntas(); pintarCalor();
     raiz.replaceChildren(estado, cajaPreg, capital(), calor(), liquidez(), sectores(), volatilidad(), desacoples(), limites());
     leerVivo(); setInterval(() => { if (!document.hidden) leerVivo(); }, 60000);
+    leerEsperada(); setInterval(() => { if (!document.hidden) leerEsperada(); }, 300000);
   }).catch((e) => { raiz.replaceChildren(el('div', { class: 'ob-aviso' }, el('b', null, 'No se pudieron leer los datos del observatorio. '), 'Motivo: ' + e.message + '. No se muestra nada en su lugar.')); });
 })();

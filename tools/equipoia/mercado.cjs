@@ -6,6 +6,7 @@
 //  - Series: cierres y volumen diarios de Binance (días ya cerrados; el día en curso lo pone la página con una lectura en vivo).
 //  - Capital: capitalización total y dominancia de hoy (CoinGecko global); stablecoins en circulación, total y por cadena (DefiLlama).
 //  - Redes: dinero depositado y stablecoins por cadena, con 400 días de serie diaria (DefiLlama).
+//  - Volatilidad esperada: el índice de Deribit (DVOL) de BTC y ETH, un cierre por día sobre la misma rejilla de días. Si falla, se anota y lo demás sigue.
 //  - Sectores: cifras de 24 h de CoinGecko y, para una lista FIJA de sectores, qué activos de la cesta pone CoinGecko en cada uno.
 //  - Serie propia (data/mercado-serie.json): una fila por día con lo que no tiene histórico gratuito (capital total, dominancia y profundidad
 //    de los libros). La primera lectura de cada día queda fijada: una fila escrita no se vuelve a tocar.
@@ -108,6 +109,20 @@ const SECTORES = [
   for (const a of fijos) excluidos.push({ s: a.s, n: a.n, motivo: 'anclado al dólar: sus últimos 90 cierres no se separan más de un 3 % de 1 $' });
   if (buena.length < Math.min(N, 30) - 5) throw new Error('demasiados activos sin historia suficiente');
   if (buena[0].c[buena[0].c.length - 1] == null) throw new Error('falta el cierre de ayer de BTC');
+  // ---- volatilidad esperada (Deribit): índice DVOL de BTC y ETH, la volatilidad anual que descuentan sus opciones para los 30 días siguientes.
+  //      Un valor por día (cierre del día en UTC) sobre la misma rejilla que los cierres de Binance; solo días cerrados. Una lectura por moneda.
+  const esperada = { que: 'Índice de volatilidad de Deribit (DVOL): volatilidad anual, en %, que descuentan las opciones para los 30 días siguientes. Cierre de cada día en UTC.', filas: [] };
+  for (const mon of ['BTC', 'ETH']) {
+    const u = 'https://www.deribit.com/api/v2/public/get_volatility_index_data?currency=' + mon + '&start_timestamp=' + Date.parse(rejilla[0] + 'T00:00:00Z') + '&end_timestamp=' + (Date.parse(hoy + 'T00:00:00Z') - 1) + '&resolution=1D'; const o = { s: mon, url: u };
+    try {
+      const j = await leer(u, null); const d = j && j.result && j.result.data; if (!Array.isArray(d) || d.length < 300) throw new Error('serie corta o ausente (' + (Array.isArray(d) ? d.length : 0) + ' días)');
+      if (j.result.continuation) throw new Error('la respuesta llegó partida');
+      const v = new Array(rejilla.length).fill(null); for (const x of d) { const i = pos.get(dia(x[0])); const c = Number(x[4]); if (i != null && c > 0 && c < 1000) v[i] = red(c, 5); }
+      if (v[v.length - 1] == null) throw new Error('falta el cierre de ayer'); o.v = v; o.dias = v.filter((x) => x != null).length;
+    } catch (e) { o.fallo = e.message; }
+    esperada.filas.push(o); await dormir(500);
+  }
+  fuentes.push({ que: 'Volatilidad esperada de bitcoin y ether, índice DVOL diario (Deribit; una dirección por moneda, en cada fila)', url: 'https://www.deribit.com/api/v2/public/get_volatility_index_data?currency=BTC&start_timestamp=' + Date.parse(rejilla[0] + 'T00:00:00Z') + '&end_timestamp=' + (Date.parse(hoy + 'T00:00:00Z') - 1) + '&resolution=1D' });
   // ---- foto de los libros de órdenes de los ocho mayores (Binance). Cada lectura profunda cuenta mucho para el límite de Binance (250 de 6.000 por minuto):
   //      por eso se hace aquí, una vez al día y despacio, y NO desde el navegador de cada visitante.
   let CALC = null; for (const p of [path.join(__dirname, 'mercado-calc.js'), path.join(__dirname, '..', '..', 'assets', 'mercado-calc.js'), path.join(REPO, 'assets', 'mercado-calc.js')]) { if (fs.existsSync(p)) { CALC = require(p); break; } }
@@ -137,9 +152,9 @@ const SECTORES = [
   const out = {
     version: 2, leidoEn: new Date(ahora).toISOString(),
     metodo: { cesta: 'Los ' + N + ' mayores activos por capitalización de CoinGecko que cotizan contra USDT en Binance, sin stablecoins, sin versiones envueltas o en depósito y sin oro en fichas. Son los mayores de HOY: los que desaparecieron no están.', series: 'Cierres diarios de Binance en UTC, solo días cerrados. El día en curso lo añade la página con una lectura en vivo.', sectores: 'Los sectores son la clasificación de CoinGecko, una etiqueta de terceros, y un mismo activo puede estar en varios. Se sigue una lista fija de ' + SECTORES.length + ' sectores; el rendimiento de un sector es la mediana del de los activos de la cesta que CoinGecko pone en él, y hacen falta al menos tres.' },
-    fuentes, global, stables, redes, liquidez, sectores, sectoresCesta, ...(sectoresFallo ? { sectoresFallo } : {}), dias: rejilla, activos: buena, excluidos,
+    fuentes, global, stables, redes, liquidez, esperada, sectores, sectoresCesta, ...(sectoresFallo ? { sectoresFallo } : {}), dias: rejilla, activos: buena, excluidos,
   };
   const dst = path.join(REPO, 'data', 'mercado.json'); fs.writeFileSync(dst, JSON.stringify(out) + '\n');
   if (filaNueva) fs.writeFileSync(fSerie, JSON.stringify(serie) + '\n');
-  console.log('OK mercado.json: ' + buena.length + ' activos, ' + rejilla.length + ' días, ' + sectores.length + ' sectores (' + sectoresCesta.filter((x) => x.miembros).length + ' de ' + SECTORES.length + ' con sus activos), ' + redes.filas.length + ' cadenas, serie propia de ' + serie.filas.length + ' días' + (filaNueva ? ' (fila de hoy añadida)' : ' (la de hoy ya estaba)') + ', stablecoins ' + Math.round(stables.totalUsd / 1e9) + ' mil M$, ' + excluidos.length + ' excluidos, ' + liquidez.filas.filter((x) => !x.fallo).length + ' libros, ' + Math.round(fs.statSync(dst).size / 1024) + ' KB');
+  console.log('OK mercado.json: ' + buena.length + ' activos, ' + rejilla.length + ' días, ' + sectores.length + ' sectores (' + sectoresCesta.filter((x) => x.miembros).length + ' de ' + SECTORES.length + ' con sus activos), ' + redes.filas.length + ' cadenas, serie propia de ' + serie.filas.length + ' días' + (filaNueva ? ' (fila de hoy añadida)' : ' (la de hoy ya estaba)') + ', stablecoins ' + Math.round(stables.totalUsd / 1e9) + ' mil M$, ' + excluidos.length + ' excluidos, volatilidad esperada de ' + (esperada.filas.filter((x) => x.v).map((x) => x.s).join(' y ') || 'ninguna moneda') + ', ' + liquidez.filas.filter((x) => !x.fallo).length + ' libros, ' + Math.round(fs.statSync(dst).size / 1024) + ' KB');
 })().catch((e) => { console.error('FALLO mercado: ' + e.message); process.exit(1); });

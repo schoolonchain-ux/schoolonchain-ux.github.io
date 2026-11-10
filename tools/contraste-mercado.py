@@ -113,7 +113,37 @@ for r in datos.get('redes', {}).get('filas', []):
         c = np.array([np.nan if q is None else float(q) for q in r[k]], dtype=float)
         for n in (1, 7, 30, 90, 365):
             cmp('red_%s%d' % (k, n), r['nombre'], rend(c, n), v['%s%d' % (k, n)])
-print('sectores contrastados:', n_sec, '| cadenas contrastadas:', n_red)
+# --- entrega 2: maximo de un ano y de toda la serie (valor, hace cuanto, caida) y volatilidad esperada (Deribit) frente a la realizada
+def maximo(c, n):
+    u = ultimo(c)
+    if u < 0: return None
+    ini = max(0, u - n + 1); w = c[ini:u + 1].copy(); w[~(w > 0)] = np.nan
+    if np.isnan(w).all(): return None
+    k = len(w) - 1 - int(np.nanargmax(w[::-1]))  # con empate, el mas reciente
+    return (float(w[k]), float(u - (ini + k)), float(c[u] / w[k] - 1))
+for a in datos['activos']:
+    c = por_s[a['s']]; v = volc[a['s']]
+    for n, k in ((365, 'max365'), (len(datos['dias']), 'maxTodo')):
+        m = maximo(c, n)
+        for j, campo in enumerate(('valor', 'hace', 'caida')): cmp(k + '_' + campo, a['s'], (m[j] if m else None), v[k + campo])
+n_esp = 0
+for x in datos.get('esperada', {}).get('filas', []):
+    if 'v' not in x or x['s'] not in por_s: continue
+    n_esp += 1; v = volc['__esperada'][x['s']]; c = por_s[x['s']]; r = retornos(c); u = ultimo(c)
+    e = np.array([np.nan if q is None else float(q) for q in x['v']], dtype=float)
+    real = np.array([np.nan if (i < 30 or vol_en(r, 30, i) is None) else vol_en(r, 30, i) for i in range(len(c))], dtype=float)
+    hist = e[~np.isnan(e)]
+    cmp('esp_hoy', x['s'], float(hist[-1]), v['hoy'])
+    cmp('esp_percentil', x['s'], (float((hist <= hist[-1]).sum() / len(hist) * 100) if len(hist) >= 60 else None), v['percentil'])
+    cmp('esp_dif_hoy', x['s'], float(hist[-1] - vol_en(r, 30, u)), v['dif'])
+    antes = e[:-30]; desp = real[30:]; ok = (~np.isnan(antes)) & (~np.isnan(desp)); dif = antes[ok] - desp[ok]
+    hay = len(dif) >= 60
+    cmp('esp_pares', x['s'], (float(len(dif)) if hay else None), v['n'])
+    cmp('esp_mas', x['s'], (float((dif > 0).sum()) if hay else None), v['mas'])
+    cmp('esp_mediana_dif', x['s'], (float(np.median(dif)) if hay else None), v['medianaDif'])
+    cmp('esp_ult_esperada', x['s'], (float(antes[ok][-1]) if hay else None), v['ultEsperada'])
+    cmp('esp_ult_ocurrida', x['s'], (float(desp[ok][-1]) if hay else None), v['ultOcurrida'])
+print('sectores contrastados:', n_sec, '| cadenas contrastadas:', n_red, '| monedas con volatilidad esperada:', n_esp)
 print('comparaciones hechas:', hechas)
 print('activos:', len(datos['activos']), '| casos con dato en un lado y no en el otro:', faltan)
 for k in sorted(peor): print('  diferencia maxima en %-13s %.3e  (%s)' % (k, peor[k][0], peor[k][1]))

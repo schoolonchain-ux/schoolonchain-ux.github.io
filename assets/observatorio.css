@@ -30,6 +30,7 @@
 .ob-t{border-collapse:collapse;width:100%;font-size:13.5px;font-variant-numeric:tabular-nums}
 .ob-t th{text-align:right;font-size:11.5px;font-weight:600;color:var(--mut);padding:6px 10px;border-bottom:1px solid var(--line);white-space:nowrap}
 .ob-t th:first-child,.ob-t td:first-child{text-align:left}
+.ob-t th.g{text-align:center;border-bottom:0;padding-bottom:0}.ob-t tr.sub th:first-child{text-align:right}.ob-t th[rowspan]{vertical-align:bottom}
 .ob-t td{text-align:right;padding:7px 10px;border-bottom:1px dashed var(--line);white-space:nowrap}
 .ob-t tr.cl{cursor:pointer}.ob-t tr.cl:hover td{background:color-mix(in srgb,var(--acc) 7%,transparent)}
 .ob-t td .n2{color:var(--mut);font-size:12px;margin-left:6px}
@@ -87,4 +88,6 @@ dialog.ob-panel::backdrop{background:rgba(0,0,0,.55)}
 .ob-pc .fu{font-size:13px;margin:10px 0 0;padding:0 0 0 18px}.ob-pc .fu li{margin:0 0 4px;overflow-wrap:anywhere}
 .ob-graf{width:100%;height:auto;display:block;margin:8px 0 2px;color:var(--acc)}
 .ob-graf text{fill:var(--mut);font-size:11px}
+.ob-graf .s2{color:var(--mut)}
+.ob-pc .ob-ley{margin-top:10px}
 @media (max-width:720px){.ob-preg{grid-template-columns:1fr}.ob-p .r{font-size:15px}.ob-pc dl{grid-template-columns:1fr;gap:2px 0}.ob-pc dt{margin-top:6px}}
