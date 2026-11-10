@@ -12,14 +12,14 @@
   if (listaNov) box.parentNode.insertBefore(listaNov, box);
   // Intro: nº de casos abiertos y fecha de la última actualización (de reports/index.json y data/novedades.json) + la última novedad. Nada de esto se escribe a mano.
   { const k = document.getElementById('hero-kick'), N = window.NOVEDADES, casos = idx.informes.length;
-    if (k && casos) k.textContent = casos + (casos === 1 ? ' caso abierto' : ' casos abiertos') + (NOV[0] && N ? ' · actualizado el ' + N.fecha(NOV[0].fecha) + ', ' + N.hora(NOV[0].fecha) : '');
+    if (k && casos) k.textContent = (window.CASO ? CASO.resumenCasos(idx.informes) : casos + (casos === 1 ? ' caso' : ' casos')) + (NOV[0] && N ? ' · actualizado el ' + N.fecha(NOV[0].fecha) + ', ' + N.hora(NOV[0].fecha) : '');
     const hn = document.getElementById('hero-nov'); if (hn && NOV[0] && N) hn.append(N.linea(NOV[0])); }
   for (const r of idx.informes) {
     const a = C.el('a', { class: 'rcard' + (r.caso ? ' destacada' : ''), href: r.url || 'report.html?r=' + encodeURIComponent(r.slug) });
     if (r.imagen) a.append(el('div', { class: 'rcard-img' }, el('img', { src: r.imagen, alt: r.imagenAlt || r.titulo, loading: 'lazy', width: '900', height: '560' })));   // imagen de cabecera (opcional, reports/index.json)
     a.append(
       r.caso ? el('span', { class: 'caso' }, 'Caso · ' + r.caso) : null,
-      el('div', { class: 'chips' }, (r.cadenas || []).map((c) => el('span', { class: 'chip' }, c)), el('span', { class: 'chip ver' }, r.version || ''), r.aviso ? el('span', { class: 'chip chip-aviso', title: r.aviso.titulo }, r.aviso.corto || 'Aviso') : null),
+      el('div', { class: 'chips' }, (r.cadenas || []).map((c) => el('span', { class: 'chip' }, c)), el('span', { class: 'chip ver' }, r.version || ''), r.aviso ? el('span', { class: 'chip chip-aviso', title: r.aviso.titulo }, r.aviso.corto || 'Aviso') : null, window.CASO ? CASO.chips(r) : null),
       el('h3', null, r.titulo),
       el('p', null, r.resumen || ''));
     const zona = el('div'); a.append(zona);

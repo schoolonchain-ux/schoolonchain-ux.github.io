@@ -31,14 +31,16 @@
     Libro.configurar(base);
     Dash.reU0 = await fetch(base + 'usdt0-reconsulta.json').then((r) => (r.ok ? r.json() : null)).catch(() => null); // reconsulta fechada de los envíos USDT0 que el informe dejó «en camino»
     Dash.estLibro = await fetch(base + 'libro/estados.json').then((r) => (r.ok ? r.json() : null)).catch(() => null); // recuento por nivel de evidencia de los movimientos del libro (fichero pequeño)
+    Dash.seg = meta.seguimiento && meta.seguimiento.datos ? await fetch(base + meta.seguimiento.datos, { cache: 'no-cache' }).then((r) => (r.ok ? r.json() : null)).catch(() => null) : null; // estado del seguimiento (se publica cada día)
+    Dash.cambios = await fetch('data/cambios.json', { cache: 'no-cache' }).then((r) => (r.ok ? r.json() : null)).then((k) => (k ? k.cambios.filter((c) => c.caso === meta.slug).length : null)).catch(() => null); // entradas de este caso en el registro de cambios
     document.title = meta.titulo + ' · Informes on-chain';
     C.chartDefaults(); if (q.has('static')) window.__sinAnimacion = true; C.chartDefaults();
     app.textContent = '';
     cabecera();
     for (const p of Dash.partes.sort((a, b) => a.orden - b.orden)) { try { await p.fn(Dash); } catch (e) { console.error(e); app.append(el('p', { class: 'muted' }, 'Error al dibujar una sección: ' + e.message)); } }
     const nav = document.getElementById('nav');
-    Dash.nav.forEach(([id, t]) => nav.append(el('a', { href: '#' + id }, t)));
-    nav.append(el('a', { href: 'herramientas.html' }, 'Herramientas'), el('a', { href: 'fundamentales.html' }, 'Fundamentales'));
+    if (Dash.nav.length) nav.append(el('span', { class: 'nv-sep', 'aria-hidden': 'true' }));
+    Dash.nav.forEach(([id, t]) => nav.append(el('a', { href: '#' + id, class: 'nv-cap' }, t)));
     pie();
     modoCaptura();
     if (!q.has('nolibro')) setTimeout(() => Libro.cargar().catch(() => {}), 1500); // precarga en segundo plano
@@ -145,6 +147,12 @@
       a.limites ? el('p', { class: 'av-s' }, el('b', null, 'Lo que falta. '), a.limites) : null,
       el('div', { class: 'actions' }, (a.enlaces || []).map((e) => el('a', { class: 'btn' + (e.principal ? ' primary' : ''), href: e.href }, e.t))));
   }
+  // Cifras de la ficha del caso: salen de lo que esta página acaba de leer (libro, datos del informe y seguimiento); lo que falte se escribe «sin dato».
+  function valoresFicha() {
+    const { d, seg, estLibro } = Dash; const pe = (estLibro && estLibro.porEstado) || {}; const e = seg && seg.ethereum;
+    return { hipotesis: pe.HIPOTESIS, verificados: pe.VERIFICADO, estimados: pe.ESTIMADO, movimientos: estLibro && estLibro.total, pendientes: (d.pendientes || []).length || null, cambios: Dash.cambios, versiones: (d.novedades || []).length || null,
+      ultima: seg && seg.ultimaComprobacion, movimientosAvisados: e ? e.movimientosAvisados : null, ultimoMovimiento: e && e.ultimoMovimientoAvisado ? CASO.dia(e.ultimoMovimientoAvisado.fecha) : (e ? 'ninguno' : null) };
+  }
   function cabecera() {
     const { d, meta, base, app } = Dash;
     const ult = (d.novedades || []).slice(-1)[0];
@@ -153,6 +161,7 @@
       el('h1', null, d.titulo),
       el('div', { class: 'sub' }, 'Datos hasta ', el('b', null, C.utc(new Date(d.corte).getTime())), ' · generado el ', C.utc(new Date(d.generado).getTime()), ult ? ' · versión ' : '', ult ? el('b', null, ult.version) : null),
       avisoEdicion(meta.aviso),
+      window.CASO ? CASO.ficha(meta, valoresFicha()) : null,
       Dash.acciones([
         [el('a', { class: 'btn primary', href: base + 'informe-completo.html' }, 'Abrir el informe original completo'), 'El informe tal como se escribió (HTML, unos 11 MB): lectura lineal de principio a fin, sin este panel. Tarda en abrir.'],
         ...(meta.archivos || []).filter((a) => a.ruta !== 'informe-completo.html').map((a) => [el('a', { class: 'btn', href: base + a.ruta }, a.nombre), Dash.descArchivo[a.ruta] || 'Archivo de datos abierto de este informe.']),

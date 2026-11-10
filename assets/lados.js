@@ -175,15 +175,16 @@
     return box;
   }
 
-  /* =============== 6 · estado de los casos abiertos =============== */
+  /* =============== 6 · estado de los casos =============== */
   async function casos() {
     const idx = await cargar('reports/index.json'); const NOV = N ? await N.cargar() : [];
     if (!idx || !Array.isArray(idx.informes) || !idx.informes.length) return null;
-    const box = bloque('Estado de los casos abiertos'); let ultima = null;
+    const box = bloque('Estado de los casos'); let ultima = null;
     for (const r of idx.informes) {
       const nov = NOV.find((x) => x.caso === r.slug); if (nov && (!ultima || Date.parse(nov.fecha) > Date.parse(ultima))) ultima = nov.fecha;
       const a = el('a', { class: 'lcaso', href: r.url || 'report.html?r=' + encodeURIComponent(r.slug) }, el('b', null, r.caso || r.titulo),
-        el('div', { class: 'lc2' }, (r.version ? r.version + ' · ' : '') + (nov ? 'actualizado el ' + N.fecha(nov.fecha) : r.corte ? 'datos hasta ' + ddmm(r.corte) : 'seguimiento en vivo')));
+        el('div', { class: 'lc2' }, (r.version ? r.version + ' · ' : '') + (nov ? 'actualizado el ' + N.fecha(nov.fecha) : r.corte ? 'datos hasta ' + ddmm(r.corte) : 'seguimiento en vivo')),
+        window.CASO ? el('div', { class: 'lc2' }, window.CASO.etiquetas(r).map((e) => e.texto).join(' · ')) : null);
       box.append(a);
       if (r.url) continue;
       try {

@@ -1,0 +1,272 @@
+{
+  "_nota": "Registro público de cambios de las investigaciones de School On-Chain. Una entrada por cambio, la más reciente primero. No es solo una lista de errores: una investigación puede mejorar sin que la versión anterior fuese incorrecta, y el tipo lo dice. Regla: ninguna entrada sin evidencia enlazada que cualquiera pueda abrir. Campos: id, fecha (UTC), tipo (clave de 'tipos'), caso (slug de reports/index.json), titulo, antes (qué decíamos), ahora (qué decimos), porque, detectado (quién o qué lo detectó), evidencia [{t, href}], versionAntes y versionAhora cuando aplica. Las versiones anteriores de un informe se conservan y se enlazan; lo publicado no se retoca.",
+  "tipos": {
+    "error": "Corrección de error",
+    "datos": "Corrección de datos",
+    "metodo": "Cambio de metodología",
+    "atribucion": "Nueva atribución",
+    "certeza": "Cambio en el grado de certeza",
+    "ampliacion": "Ampliación de la investigación"
+  },
+  "cambios": [
+    {
+      "id": "2026-11-10-01",
+      "fecha": "2026-11-10",
+      "tipo": "error",
+      "caso": "trazabilidad-binance-0x5227",
+      "titulo": "El informe del robo a Binance (v0.7) cuenta dos veces 10,18 millones de dólares en TRON",
+      "antes": "La edición v0.7 da 36,72 M$ «en protocolos DeFi», 52,35 M$ «enviado a otras cadenas», 6,50 M$ «sin localizar» y una diferencia de TRON de −14,6 M$.",
+      "ahora": "10.175.909 $ estaban contados dos veces: 7.064.354 $ de depósitos en JustLend cuyo dinero salió y se cuenta otra vez donde acabó, 2.795.173 $ de 33 depósitos en Chainflip que la misma transacción manda a otra billetera de TRON, y 316.382 $ de 27 cruces de Symbiosis que se revirtieron. Corregido, las partidas quedarían en 27,22, 49,24 y 8,94 M$, y la diferencia de TRON entre −12,34 y +35,55 M$ según el método de atribución. Capital y congelado no cambian.",
+      "porque": "El reparto por partidas contaba el depósito entero y, además, seguía el dinero que salía de él. La edición publicada no se retoca: lleva un aviso encima. La edición corregida no se publica hasta que la revise alguien ajeno.",
+      "detectado": "Investigación propia del 4-nov (JustLend) y revisiones hechas por otra sesión de IA (Chainflip y Symbiosis); comprobado en la auditoría comparativa del 10-nov, con 98 transacciones leídas en la cadena.",
+      "evidencia": [
+        { "t": "Auditoría comparativa (10-nov)", "href": "doc.html?f=investigacion/audits/auditoria-comparativa-binance-v07-v093-2026-11-10/01-INFORME-AUDITORIA.md" },
+        { "t": "Cuentas entre las dos ediciones (JSON)", "href": "investigacion/audits/auditoria-comparativa-binance-v07-v093-2026-11-10/02-puente-de-cifras.json" },
+        { "t": "Cada transacción (JSON)", "href": "investigacion/audits/auditoria-comparativa-binance-v07-v093-2026-11-10/04-evidencia-por-transaccion.json" },
+        { "t": "Lecturas de la cadena (JSON)", "href": "investigacion/audits/auditoria-comparativa-binance-v07-v093-2026-11-10/07-verificacion-en-cadena-chainflip-symbiosis.json" },
+        { "t": "Aviso sobre la edición publicada", "href": "report.html?r=trazabilidad-binance-0x5227#aviso" }
+      ],
+      "versionAntes": "v0.7 (publicada, se conserva)",
+      "versionAhora": "v0.9.3 (sin publicar)"
+    },
+    {
+      "id": "2026-11-05-02",
+      "fecha": "2026-11-05",
+      "tipo": "atribucion",
+      "caso": "caso-vaneck-sun",
+      "titulo": "La «proveedora de TRON Inc.» es una cuenta de paso",
+      "antes": "La cuenta TWhDfwC8QE6pQyiYy248dNor3uphPEw5M2 se presentaba como «proveedora de TRON Inc.» (según Protos, abastece de TRX a TRON Inc.).",
+      "ahora": "Leída entera, es una cuenta de paso: entran 7.091,2 M USDT y salen 7.090,7 M. A TRON Inc. le mandó 22,2 M TRX en tres años. Hizo el relevo de 750 M TRX a la cuenta de energía.",
+      "porque": "La primera descripción se apoyaba en lo que decía un medio. Al leer todos los movimientos de la cuenta, lo que hace no encaja con «ser de» TRON Inc.",
+      "detectado": "Investigación propia: lectura completa de la cuenta.",
+      "evidencia": [
+        { "t": "Nota de ampliación del 5-nov", "href": "doc.html?f=investigacion/docs/articulos/NOTA-AMPLIACION-VANECK-SUN-2026-11-05.md" },
+        { "t": "Capítulo 7 del caso", "href": "caso-vaneck.html?cap=7" },
+        { "t": "La cuenta en TronScan", "href": "https://tronscan.org/#/address/TWhDfwC8QE6pQyiYy248dNor3uphPEw5M2" }
+      ]
+    },
+    {
+      "id": "2026-11-05-01",
+      "fecha": "2026-11-05",
+      "tipo": "ampliacion",
+      "caso": "caso-vaneck-sun",
+      "titulo": "Tres capítulos nuevos: la energía de Binance, el TRX de la antigua TRON Foundation y las claves de la cuenta «Poloniex»",
+      "antes": "El caso llegaba hasta el seguimiento del 4-nov.",
+      "ahora": "Se añaden quién reparte la energía y qué es la proveedora, adónde fue el TRX de las 1.000 direcciones de la antigua TRON Foundation, y quién controla la cuenta etiquetada «Poloniex», comprobado con las firmas.",
+      "porque": "Hechos nuevos encontrados al seguir los envíos del 2 y el 4 de noviembre.",
+      "detectado": "Investigación propia.",
+      "evidencia": [
+        { "t": "Nota de ampliación del 5-nov", "href": "doc.html?f=investigacion/docs/articulos/NOTA-AMPLIACION-VANECK-SUN-2026-11-05.md" },
+        { "t": "Capítulos 7 a 9 del caso", "href": "caso-vaneck.html?cap=7" }
+      ]
+    },
+    {
+      "id": "2026-11-04-03",
+      "fecha": "2026-11-04",
+      "tipo": "ampliacion",
+      "caso": "caso-vaneck-sun",
+      "titulo": "La segunda cuenta envía 150 M TRX hacia la cuenta que da energía a las billeteras nuevas de Binance",
+      "antes": "La nota de seguimiento de esa mañana recogía la retirada del TRX desbloqueado y los 140 M USDT.",
+      "ahora": "A las 10:40 UTC la segunda cuenta envió 150 millones de TRX por una billetera de un día a la proveedora, y esta los pasó a la cuenta de energía.",
+      "porque": "Movimiento nuevo el mismo día de la nota.",
+      "detectado": "Seguimiento propio de las dos cuentas.",
+      "evidencia": [
+        { "t": "Nota de seguimiento del 4-nov, apartado 7", "href": "doc.html?f=investigacion/docs/articulos/NOTA-SEGUIMIENTO-VANECK-SUN-2026-11-04.md#7-anadido-a-mediodia-150-millones-de-trx-salen-hacia-la-cuenta-que-da-energia-a-binance" }
+      ]
+    },
+    {
+      "id": "2026-11-04-02",
+      "fecha": "2026-11-04",
+      "tipo": "ampliacion",
+      "caso": "caso-vaneck-sun",
+      "titulo": "Nota de seguimiento: el TRX desbloqueado se retiró y sigue en la cuenta; 140 M USDT acabaron en Binance-Hot 12",
+      "antes": "El caso llegaba hasta el seguimiento del 30-oct.",
+      "ahora": "El TRX desbloqueado se retiró del stake y sigue en la cuenta. El 2-nov salieron 140 millones de USDT por dos billeteras creadas ese día y acabaron en Binance-Hot 12.",
+      "porque": "Movimientos nuevos de las dos cuentas.",
+      "detectado": "Seguimiento propio de las dos cuentas.",
+      "evidencia": [
+        { "t": "Nota de seguimiento del 4-nov", "href": "doc.html?f=investigacion/docs/articulos/NOTA-SEGUIMIENTO-VANECK-SUN-2026-11-04.md" }
+      ]
+    },
+    {
+      "id": "2026-11-04-01",
+      "fecha": "2026-11-04",
+      "tipo": "error",
+      "caso": "caso-vaneck-sun",
+      "titulo": "La tarjeta de la segunda cuenta decía «sin retirar» cuando ya se había retirado",
+      "antes": "La página del caso mostraba los 305,7 M TRX de la segunda cuenta como «sin retirar».",
+      "ahora": "Los 305,7 M TRX se habían retirado el 3-nov. La tarjeta se corrigió.",
+      "porque": "La tarjeta no reflejaba la retirada del 3-nov.",
+      "detectado": "No quedó anotado quién lo detectó.",
+      "evidencia": [
+        { "t": "Estado en vivo de las dos cuentas (capítulo 6)", "href": "caso-vaneck.html?cap=6" },
+        { "t": "Datos del seguimiento (JSON)", "href": "reports/caso-vaneck-sun/seguimiento.json" }
+      ]
+    },
+    {
+      "id": "2026-11-03-04",
+      "fecha": "2026-11-03",
+      "tipo": "datos",
+      "caso": "trazabilidad-binance-0x5227",
+      "titulo": "El ETH directo: del «214.735 ETH recibidos de Binance» al saldo real de las receptoras",
+      "antes": "La partida decía «214.735 ETH recibidos directamente de Binance».",
+      "ahora": "Usa el saldo real de las receptoras 1 y 2 (214.720,12 ETH) y desglosa de dónde entraron los 214.734,66 ETH: no todos vienen de una dirección etiquetada como Binance.",
+      "porque": "Al cruzar el informe con otro trabajo propio sobre los mismos fondos, la frase afirmaba más de lo que los datos demostraban.",
+      "detectado": "Cruce con el trabajo de otro agente de investigación de EquipoIA.",
+      "evidencia": [
+        { "t": "Historial de versiones del informe (v0.7)", "href": "report.html?r=trazabilidad-binance-0x5227#novedades" },
+        { "t": "Edición anterior v0.6 (HTML)", "href": "investigacion/research/auditoria-adversarial-2026-10-31/informes-entregados/INFORME-TRAZABILIDAD-TRON-v0.6.html" }
+      ],
+      "versionAntes": "v0.6",
+      "versionAhora": "v0.7"
+    },
+    {
+      "id": "2026-11-03-03",
+      "fecha": "2026-11-03",
+      "tipo": "datos",
+      "caso": "trazabilidad-binance-0x5227",
+      "titulo": "Las horas de los 175 M USDT en Ethereum estaban mal anotadas",
+      "antes": "La investigación del 30-oct daba las 20:45:51 y las 20:55:03.",
+      "ahora": "Son las 20:59:11 (bloque 26300942) y las 21:08:23. Las demás horas de esa tabla se comprobaron en la cadena y son correctas.",
+      "porque": "Estaban anotadas a mano. Se comprobaron contra la cadena.",
+      "detectado": "Cruce con el trabajo de otro agente de investigación de EquipoIA.",
+      "evidencia": [
+        { "t": "Historial de versiones del informe (v0.7)", "href": "report.html?r=trazabilidad-binance-0x5227#novedades" },
+        { "t": "Investigación del 30-oct", "href": "doc.html?f=investigacion/docs/INVESTIGACION-BINANCE-0x5227-2026-10-30.md" }
+      ],
+      "versionAntes": "v0.6",
+      "versionAhora": "v0.7"
+    },
+    {
+      "id": "2026-11-03-02",
+      "fecha": "2026-11-03",
+      "tipo": "error",
+      "caso": "trazabilidad-binance-0x5227",
+      "titulo": "El seguimiento en Ethereum trataba como contratos dos cuentas que no lo eran",
+      "antes": "El seguimiento hacia adelante cerraba el rastro en 9 «contratos».",
+      "ahora": "Dos de los 9 eran cuentas normales con delegación (EIP-7702) y se siguen como cuentas; una recibía 151 ETH.",
+      "porque": "Las cuentas con delegación se estaban tratando como contratos, y en un contrato el seguimiento se detiene.",
+      "detectado": "Cruce con el trabajo de otro agente de investigación de EquipoIA.",
+      "evidencia": [
+        { "t": "Historial de versiones del informe (v0.7)", "href": "report.html?r=trazabilidad-binance-0x5227#novedades" }
+      ],
+      "versionAntes": "v0.6",
+      "versionAhora": "v0.7"
+    },
+    {
+      "id": "2026-11-03-01",
+      "fecha": "2026-11-03",
+      "tipo": "metodo",
+      "caso": "trazabilidad-binance-0x5227",
+      "titulo": "Los dos métodos de atribución se conservan siempre, con su evidencia",
+      "antes": "No había una regla escrita sobre qué hacer con los métodos alternativos para decidir qué parte de cada billetera viene del robo.",
+      "ahora": "Los dos métodos (el actual y el de ciclo) se conservan siempre con su definición, su evidencia y sus resultados. Ninguno sustituye al otro, y un método nuevo se añade como uno más. Un control de calidad falla si falta alguno o si un resultado cambia sin guardarse versión.",
+      "porque": "Los dos métodos dan cifras distintas y ninguno está demostrado. Enseñar solo uno escondía la incertidumbre.",
+      "detectado": "Decisión del propietario.",
+      "evidencia": [
+        { "t": "Historial de versiones del informe (v0.6)", "href": "report.html?r=trazabilidad-binance-0x5227#novedades" },
+        { "t": "Sección «Incertidumbre del modelo»", "href": "report.html?r=trazabilidad-binance-0x5227#pureza" }
+      ],
+      "versionAhora": "v0.6"
+    },
+    {
+      "id": "2026-10-31-05",
+      "fecha": "2026-10-31",
+      "tipo": "ampliacion",
+      "caso": "trazabilidad-binance-0x5227",
+      "titulo": "Se declaran dos huecos de cobertura que el artículo original no mencionaba",
+      "antes": "El artículo original no declaraba ni el hueco de ventana previa ni las billeteras que no se pudieron leer, y decía que la muestra auditada no tenía «ninguna omisión».",
+      "ahora": "Se declaran 112 billeteras con movimientos anteriores a la ventana leída y 420 direcciones que no se pudieron leer (en el segundo tramo, unos 10,67 M$ atribuidos con cobertura incompleta).",
+      "porque": "Una auditoría hecha para refutar el artículo encontró lo que este no cubría.",
+      "detectado": "Auditoría adversarial propia con revisión de Codex.",
+      "evidencia": [
+        { "t": "Tabla de diferencias: original → revisado", "href": "doc.html?f=investigacion/docs/auditoria-adversarial-2026-10-31/TABLA-DIFERENCIAS-2026-10-31.md" },
+        { "t": "Artículo original, intacto", "href": "investigacion/docs/articulos/ORIGINAL-INTACTO/ARTICULO-COMPLETO-ROBO-BINANCE-2026-10-31.ORIGINAL.html" },
+        { "t": "Artículo revisado", "href": "investigacion/docs/articulos/ARTICULO-COMPLETO-ROBO-BINANCE-2026-10-31-REVISADO.html" }
+      ],
+      "versionAntes": "Artículo original (31-oct)",
+      "versionAhora": "Artículo revisado"
+    },
+    {
+      "id": "2026-10-31-04",
+      "fecha": "2026-10-31",
+      "tipo": "datos",
+      "caso": "trazabilidad-binance-0x5227",
+      "titulo": "El reparto posterior a la foto mezclaba dos cortes de hora",
+      "antes": "«363 envíos por 60,7 M$ (166,2 M TRX) a 51 billeteras hasta las 10:11».",
+      "ahora": "Son dos cortes distintos: hasta las 10:11:59, 353 envíos a 49 billeteras, 166,63 M TRX, 58,65 M$; hasta las 10:28:48, 363 envíos a 51 billeteras, 172,33 M TRX, 60,66 M$. Los 166,2 M TRX no suman 60,7 M$.",
+      "porque": "La hoja original etiquetaba como «hasta las 10:11» movimientos de entre las 10:24 y las 10:28.",
+      "detectado": "Revisión de Codex, tercera ronda.",
+      "evidencia": [
+        { "t": "Tabla de diferencias: original → revisado", "href": "doc.html?f=investigacion/docs/auditoria-adversarial-2026-10-31/TABLA-DIFERENCIAS-2026-10-31.md" },
+        { "t": "Revisión de Codex", "href": "doc.html?f=investigacion/docs/auditoria-adversarial-2026-10-31/REVISION-CODEX-2026-10-31.md" }
+      ],
+      "versionAntes": "Artículo original (31-oct)",
+      "versionAhora": "Artículo revisado"
+    },
+    {
+      "id": "2026-10-31-03",
+      "fecha": "2026-10-31",
+      "tipo": "certeza",
+      "caso": "trazabilidad-binance-0x5227",
+      "titulo": "El 11 % «sin explicar» deja de tener una lista de causas",
+      "antes": "El 11 % sin explicar (5,5 M$) se atribuía a «cambios sin decodificar, precio y entradas ajenas».",
+      "ahora": "La cifra se mantiene, pero se retira la lista de causas: su composición no está demostrada.",
+      "porque": "Las causas eran una suposición razonable, no algo comprobado.",
+      "detectado": "Auditoría adversarial propia con revisión de Codex.",
+      "evidencia": [
+        { "t": "Tabla de diferencias: original → revisado", "href": "doc.html?f=investigacion/docs/auditoria-adversarial-2026-10-31/TABLA-DIFERENCIAS-2026-10-31.md" }
+      ],
+      "versionAntes": "Artículo original (31-oct)",
+      "versionAhora": "Artículo revisado"
+    },
+    {
+      "id": "2026-10-31-02",
+      "fecha": "2026-10-31",
+      "tipo": "certeza",
+      "caso": "trazabilidad-binance-0x5227",
+      "titulo": "Quién envía a las casas de cambio pasa de «casi con seguridad» a hipótesis",
+      "antes": "Los remitentes eran «casi con seguridad direcciones de depósito de clientes».",
+      "ahora": "Es una hipótesis: barrederas hacia la billetera caliente de la casa, con titular desconocido; algunas tienen miles de operaciones y muchos remitentes.",
+      "porque": "Lo observado encaja con esa explicación, pero no la demuestra.",
+      "detectado": "Auditoría adversarial propia con revisión de Codex.",
+      "evidencia": [
+        { "t": "Tabla de diferencias: original → revisado", "href": "doc.html?f=investigacion/docs/auditoria-adversarial-2026-10-31/TABLA-DIFERENCIAS-2026-10-31.md" }
+      ],
+      "versionAntes": "Artículo original (31-oct)",
+      "versionAhora": "Artículo revisado"
+    },
+    {
+      "id": "2026-10-31-01",
+      "fecha": "2026-10-31",
+      "tipo": "certeza",
+      "caso": "trazabilidad-binance-0x5227",
+      "titulo": "Se retira la frase que llamaba al grupo del 11-oct «infraestructura propia del blanqueo»",
+      "antes": "El grupo de billeteras del 11-oct era «infraestructura propia del blanqueo y no un servicio de uso general».",
+      "ahora": "Fechas y direcciones verificadas. Que haya control común, aprovisionamiento coordinado o servicio a terceros es hipótesis. De quién eran los fondos que movían y quién está detrás es desconocido.",
+      "porque": "Las billeteras ya tenían actividad antes del robo, y eso no permite afirmar que fueran solo para blanquearlo.",
+      "detectado": "Auditoría adversarial propia con revisión de Codex.",
+      "evidencia": [
+        { "t": "Tabla de diferencias: original → revisado", "href": "doc.html?f=investigacion/docs/auditoria-adversarial-2026-10-31/TABLA-DIFERENCIAS-2026-10-31.md" },
+        { "t": "Artículo original, intacto", "href": "investigacion/docs/articulos/ORIGINAL-INTACTO/ARTICULO-COMPLETO-ROBO-BINANCE-2026-10-31.ORIGINAL.html" },
+        { "t": "Artículo revisado", "href": "investigacion/docs/articulos/ARTICULO-COMPLETO-ROBO-BINANCE-2026-10-31-REVISADO.html" }
+      ],
+      "versionAntes": "Artículo original (31-oct)",
+      "versionAhora": "Artículo revisado"
+    },
+    {
+      "id": "2026-10-30-01",
+      "fecha": "2026-10-30",
+      "tipo": "ampliacion",
+      "caso": "caso-vaneck-sun",
+      "titulo": "Nota de seguimiento: la segunda cuenta hace de banco de liquidez en SunSwap",
+      "antes": "La investigación del 29-oct describía las dos cuentas y los 942 M TRX que las unen.",
+      "ahora": "La segunda cuenta hace de banco de liquidez en SunSwap, y la billetera de Binance a la que daba energía es la que vaciaron en el robo.",
+      "porque": "Hechos nuevos al seguir la segunda cuenta.",
+      "detectado": "Investigación propia.",
+      "evidencia": [
+        { "t": "Nota de seguimiento del 30-oct", "href": "doc.html?f=investigacion/docs/articulos/NOTA-SEGUIMIENTO-VANECK-SUN-2026-10-30.md" }
+      ]
+    }
+  ]
+}

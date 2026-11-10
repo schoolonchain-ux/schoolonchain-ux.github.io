@@ -36,6 +36,7 @@
   Dash.add(230, function ({ d }) {
     if (!d.novedades || !d.novedades.length) return;
     const s = Dash.sec('novedades', 'Historial de versiones', 'Versiones');
+    const av = window.CASO ? CASO.versiones(Dash.meta) : null; if (av) s.append(av, el('h3', null, 'Qué cambió en cada versión'));
     s.append(el('div', { class: 'tl' }, d.novedades.slice().reverse().map((v) => el('div', { class: 'it' }, el('b', null, v.version), ' ', el('span', { class: 'muted' }, v.fecha), el('ul', null, (v.cambios || []).slice(0, 5).map((c) => el('li', null, Dash.corto(c, 260))))))));
   });
 })();

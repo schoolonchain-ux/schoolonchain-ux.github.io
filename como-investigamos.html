@@ -1,0 +1,138 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Cómo investigamos · School On-Chain</title>
+<meta name="description" content="Qué fuentes usamos, cómo clasificamos la evidencia, cómo atribuimos una dirección, qué hacemos con las hipótesis, quién revisa y cómo corregimos.">
+<meta property="og:title" content="School On-Chain · Cómo investigamos">
+<meta property="og:description" content="Qué fuentes usamos, cómo clasificamos la evidencia, cómo atribuimos una dirección, qué hacemos con las hipótesis, quién revisa y cómo corregimos.">
+<meta property="og:type" content="website">
+<meta property="og:image" content="https://schoolonchain-ux.github.io/assets/brand/compartir.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://schoolonchain-ux.github.io/assets/brand/compartir.jpg">
+<link rel="icon" type="image/webp" href="assets/brand/calavera-icono.webp">
+<link rel="alternate" type="application/rss+xml" title="School On-Chain · Novedades" href="feed.xml">
+<link rel="stylesheet" href="assets/site.css?v=7ebefeaa">
+<link rel="stylesheet" href="assets/site2.css?v=dfd5e8bc">
+<link rel="stylesheet" href="assets/site4.css?v=768a06d9">
+<link rel="stylesheet" href="assets/site5.css?v=64bd62d2">
+<link rel="stylesheet" href="assets/tema.css?v=43fe5cb5">
+<link rel="stylesheet" href="assets/zonas.css?v=6bf76ff1">
+</head>
+<body>
+<div class="topbar"><div class="wrap">
+  <a class="brand" href="./"><span class="dot"></span>School On-Chain</a>
+  <nav><a href="./#informes">Investigaciones</a><a href="herramientas.html">Herramientas</a><a href="fundamentales.html">Fundamentales</a><a href="como-investigamos.html" class="on">Método</a><a href="acerca.html">Acerca</a><a href="buscar.html">Buscar</a></nav>
+  <button class="theme" id="theme" title="Cambiar tema claro / oscuro">Tema</button>
+</div></div>
+
+<main class="wrap" id="app">
+  <header class="hero-h">
+    <span class="kick">Método</span>
+    <h1>Cómo investigamos</h1>
+    <p>Esta página dice cómo se hace una investigación en School On-Chain: de dónde salen los datos, qué grado de certeza lleva cada afirmación, cómo se decide de quién es una dirección y qué pasa cuando algo resulta estar mal. Sirve para que cualquiera pueda contrastar lo que publicamos.</p>
+  </header>
+  <nav class="subnav" aria-label="Método"><a href="como-investigamos.html" class="on" aria-current="page">Cómo investigamos</a><a href="datos.html">De dónde sale cada cifra</a><a href="cambios.html">Registro de cambios</a></nav>
+
+  <section class="zp" id="fuentes">
+    <p class="kick">1</p>
+    <h2>Política de fuentes</h2>
+    <div class="dm">
+      <div class="dm-row"><b>La cadena, primero</b><span>La fuente principal es la propia cadena de bloques: transacciones, saldos y eventos leídos de nodos públicos y de exploradores (TronGrid y TronScan en TRON; Etherscan y nodos públicos en Ethereum y redes compatibles). Lo que está en la cadena lo puede comprobar cualquiera con el identificador de la transacción.</span></div>
+      <div class="dm-row"><b>Datos de mercado</b><span>Precios, comisiones e ingresos salen de servicios públicos (DefiLlama, CoinGecko, Binance, Coin Metrics y otros). En <a href="datos.html">De dónde sale cada cifra</a> está la lista completa, con cada cuánto se lee y qué límites tiene.</span></div>
+      <div class="dm-row"><b>Lo que dicen otros</b><span>Las etiquetas de un explorador, las listas de una empresa de análisis o lo que publica un medio se citan con su autor. Son pistas: no se convierten en hechos por repetirlas.</span></div>
+      <div class="dm-row"><b>Cada cifra, con su origen</b><span>Una cifra publicada enlaza a la tabla de la que sale, y cada fila de esa tabla, a la transacción, al contrato o a la respuesta en bruto del servicio. Si una cifra no tiene origen que enseñar, no se publica.</span></div>
+      <div class="dm-row"><b>Datos congelados</b><span>Un estudio cerrado trabaja sobre una copia de los datos tomada en una fecha y hora que se declaran. Esa copia se guarda con su huella para poder repetir el cálculo y obtener lo mismo.</span></div>
+    </div>
+  </section>
+
+  <section class="zp" id="evidencia">
+    <p class="kick">2</p>
+    <h2>Clasificación de evidencias</h2>
+    <p class="sub">Cada afirmación y cada movimiento llevan una de estas etiquetas. En los informes se pueden pulsar para ver todo lo que hay en ese nivel.</p>
+    <div class="dm">
+      <div class="dm-row"><b><span class="est est-VERIFICADO">VERIFICADO</span></b><span>Evidencia directa que se puede contrastar: una transacción o una lectura de la cadena.</span></div>
+      <div class="dm-row"><b><span class="est est-ESTIMADO">ESTIMADO</span></b><span>Sale de un cálculo con un modelo explícito (por ejemplo, qué parte del dinero de una billetera viene de un origen concreto, o un precio fijado). El modelo se declara, y cuando hay varios posibles se enseña el rango que dan.</span></div>
+      <div class="dm-row"><b><span class="est est-HIPOTESIS">HIPÓTESIS</span></b><span>Una interpretación que todavía no está demostrada.</span></div>
+      <div class="dm-row"><b><span class="est est-DESCONOCIDO">DESCONOCIDO</span></b><span>No hay datos suficientes para saberlo. Se dice así, sin rellenar el hueco.</span></div>
+      <div class="dm-row"><b><span class="est est-PENDIENTE">PENDIENTE</span></b><span>Se está investigando todavía.</span></div>
+    </div>
+  </section>
+
+  <section class="zp" id="atribucion">
+    <p class="kick">3</p>
+    <h2>Cómo se atribuye una dirección</h2>
+    <div class="dm">
+      <div class="dm-row"><b>Qué hace y de quién es</b><span>Son dos preguntas distintas. Qué hace una dirección se ve en la cadena. De quién es casi nunca: hace falta una fuente, y esa fuente se anota.</span></div>
+      <div class="dm-row"><b>Una atribución no es un hecho</b><span>Si un explorador, una empresa de análisis o un medio dicen que una cuenta es de alguien, publicamos que lo dicen ellos. Un saldo grande, un nombre en una etiqueta o un patrón de movimientos no bastan para afirmar un titular.</span></div>
+      <div class="dm-row"><b>Lo que sí se puede comprobar</b><span>Quién creó una cuenta, quién la financió, qué claves la controlan y con qué otras se mueve de forma coordinada. Cuando eso se comprueba, se dice qué se comprobó y con qué transacciones.</span></div>
+      <div class="dm-row"><b>Movimiento no es propiedad</b><span>Que el dinero llegue a una casa de cambio no dice quién lo cobra. Que salga de una billetera no significa que cambie de dueño. Se separan los movimientos, los cambios de custodia y lo que de verdad es una entrada o salida de dinero.</span></div>
+      <div class="dm-row"><b>Cuando cambia</b><span>Si una atribución resulta ser otra, se anota en el <a href="cambios.html?tipo=atribucion">registro de cambios</a> con lo que se decía, lo que se dice ahora y la evidencia.</span></div>
+    </div>
+  </section>
+
+  <section class="zp" id="hipotesis">
+    <p class="kick">4</p>
+    <h2>Qué hacemos con las hipótesis</h2>
+    <div class="dm">
+      <div class="dm-row"><b>Se escriben como hipótesis</b><span>Con la palabra delante. Cada una lleva lo que la apoya y lo que la tumbaría.</span></div>
+      <div class="dm-row"><b>Varias a la vez</b><span>Cuando caben varias explicaciones se ponen todas, ordenadas, y ninguna se da por buena por ser la más llamativa.</span></div>
+      <div class="dm-row"><b>Se pueden retirar</b><span>Si una frase afirmaba más de lo que los datos demuestran, se rebaja o se quita, y queda anotado como un <a href="cambios.html?tipo=certeza">cambio en el grado de certeza</a>.</span></div>
+      <div class="dm-row"><b>Sin conclusiones a medias</b><span>Lo que no se sabe se deja como desconocido. No se publican conclusiones sin demostrar.</span></div>
+    </div>
+  </section>
+
+  <section class="zp" id="verificacion">
+    <p class="kick">5</p>
+    <h2>Quién hace el trabajo y quién lo revisa</h2>
+    <div class="dm">
+      <div class="dm-row"><b>Quién lo hace</b><span>Las investigaciones las prepara EquipoIA, un sistema de agentes de inteligencia artificial que dirige una persona. Las cifras no las da la IA: salen de programas que leen la cadena y hacen cuentas que se pueden repetir. La IA escribe esos programas, redacta y revisa.</span></div>
+      <div class="dm-row"><b>Revisión para refutar</b><span>Antes de dar algo por bueno, otra sesión u otro modelo de IA recibe el encargo de refutarlo, no de aprobarlo. Cada objeción se comprueba contra los datos antes de aceptarla o rechazarla, y las respuestas se guardan sin editar.</span></div>
+      <div class="dm-row"><b>Repetir el cálculo</b><span>Cuando se audita un informe, sus cifras se recalculan con un programa distinto del que las produjo y se releen en la cadena las transacciones que las sostienen.</span></div>
+      <div class="dm-row"><b>Lo que falta</b><span>Hasta hoy ninguna persona ajena al proyecto ni ningún sistema de otro origen ha auditado un informe entero. Las revisiones son de IA, y eso tiene un límite: pueden compartir los mismos puntos ciegos. Cada informe declara lo que no se revisó o no se hizo.</span></div>
+    </div>
+  </section>
+
+  <section class="zp" id="correcciones">
+    <p class="kick">6</p>
+    <h2>Política de correcciones</h2>
+    <p class="sub">Ninguna cifra publicada pierde su procedencia cuando algo cambia. Los pasos son siempre estos:</p>
+    <ol class="pasos">
+      <li><b>Se conserva la versión anterior</b>, tal como se publicó, con sus datos y su huella.</li>
+      <li><b>Se genera la nueva</b> desde el programa, sin retocar lo publicado.</li>
+      <li><b>Se comparan</b> las dos, cifra a cifra.</li>
+      <li><b>Se documentan las diferencias</b>: qué cambia, cuánto y por qué.</li>
+      <li><b>Se verifican las fuentes</b> de lo que cambia.</li>
+      <li><b>Se publica el historial</b> junto a la versión nueva.</li>
+    </ol>
+    <div class="ayuda">
+      <div class="ai"><b>No solo errores. </b>El <a href="cambios.html">registro de cambios</a> recoge también cambios de método, atribuciones nuevas, datos corregidos, cambios en el grado de certeza y ampliaciones. Una investigación puede mejorar sin que la versión anterior fuese incorrecta.</div>
+      <div class="ai"><b>Aviso antes que silencio. </b>Si una edición publicada tiene un error conocido y la corregida no está lista, la publicada lleva un aviso fechado encima, con el importe y la evidencia.</div>
+      <div class="ai"><b>Sin evidencia no hay entrada. </b>Cada cambio enlaza a algo que se puede abrir: una transacción, un documento o una lectura de la cadena.</div>
+    </div>
+  </section>
+
+  <section class="zp" id="limites">
+    <p class="kick">7</p>
+    <h2>Limitaciones</h2>
+    <div class="dm">
+      <div class="dm-row"><b>Los servicios fallan</b><span>Los nodos y los servicios públicos tienen cortes, límites de consultas y datos que cambian. Un fallo de lectura se publica como fallo, no como «no hay nada». El detalle está en <a href="datos.html">De dónde sale cada cifra</a>.</span></div>
+      <div class="dm-row"><b>No se ve todo</b><span>Un rastreo lee un número limitado de billeteras y una ventana de tiempo. Lo que queda fuera se declara: direcciones que no se pudieron leer, contratos cuya salida no se entiende, dinero que cruza a otra cadena.</span></div>
+      <div class="dm-row"><b>Los modelos estiman</b><span>Cuando el dinero de un origen se mezcla con otro en la misma billetera, qué parte es de cada uno es una estimación. Métodos distintos dan cifras distintas, y se enseñan todas.</span></div>
+      <div class="dm-row"><b>Las etiquetas se equivocan</b><span>Las de exploradores y empresas de análisis pueden estar mal o cambiar sin aviso.</span></div>
+      <div class="dm-row"><b>Lo que no hacemos</b><span>No damos consejos de inversión ni señales, no identificamos a personas sin una fuente y no publicamos lo que no se puede comprobar.</span></div>
+    </div>
+  </section>
+
+  <section class="zp" id="conflictos">
+    <p class="kick">8</p>
+    <h2>Conflictos de interés y financiación</h2>
+    <div class="pendiente"><b>Pendiente de publicar.</b> Este apartado lo escribe la persona responsable del proyecto, no el sistema que prepara los informes: quién financia School On-Chain y si quien lo dirige tiene posiciones en los activos que se investigan. Mientras falte, lo publicado debe leerse sabiendo que esta información no está.</div>
+  </section>
+</main>
+<script src="assets/common.js?v=35a0e468"></script>
+<script src="assets/marca.js?v=07627cef"></script>
+
+</body>
+</html>

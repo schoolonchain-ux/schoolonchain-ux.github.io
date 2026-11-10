@@ -1,0 +1,55 @@
+{
+ "version": 1,
+ "generado": "2026-11-10T00:53:59.435Z",
+ "caso": "trazabilidad-binance-0x5227",
+ "ultimaComprobacion": "2026-11-10T00:48:59.095Z",
+ "ethereum": {
+  "activo": true,
+  "direcciones": [
+   "0x8532fa14acaf483729c449b8458aeddb900543d4",
+   "0x03b0ee5d82990cff1bda48651ac3e436d1a020ea",
+   "0xc887af690e0301cd4edbbce8f8d31b4ec65b286a",
+   "0x897c80d1a9729e94460e2bd93178bd5215158df3",
+   "0x54401f80da97893a15d43566184635b6674bc942",
+   "0x79e70d139fc05aa75f75611fdf2680e9952b544a",
+   "0x8d4b8ee62124b7ee140a51ddd07390a56f1c9e19",
+   "0x5227f603c1ee34ce3c06efe6477003bdfccb2f8c"
+  ],
+  "vigilaDesde": "2026-10-30T10:12:39.672Z",
+  "ultimaComprobacion": "2026-11-10T00:48:59.095Z",
+  "ultimoBloque": 26381024,
+  "cadaMinutos": 10,
+  "umbralEth": 100,
+  "avisa": "Si alguna envía o recibe 100 ETH o más, o saca cualquier token.",
+  "movimientosAvisados": 29,
+  "porClase": {
+   "salida_token": 12,
+   "entrada": 17
+  },
+  "ultimoMovimientoAvisado": {
+   "fecha": "2026-10-31T21:09:16.792Z",
+   "clase": "entrada"
+  },
+  "ultimoCiclo": {
+   "cuentas": 8,
+   "destinos": 0,
+   "hechos": 0,
+   "avisos": 0,
+   "errores": []
+  },
+  "fuente": "Vigilante eth-salidas-watch de EquipoIA (lee Etherscan v2); los avisos se envían en privado al propietario"
+ },
+ "tron": {
+  "activo": false,
+  "direcciones": [
+   "TRBdWqHnDVSZCVGfgHdKFLQPirQcA2PRki",
+   "TKkH2vH6kyi2QKcMbqym53WMuvdd1xvw6K",
+   "TL2F4GhnaFVZBZPncHYjwfYZFW44NcfVwj",
+   "TCBAz7itvtX5CjBzVMPQdrbwQLN63ao1fk",
+   "TJajtPqDqUGh1Sr1j8ugHoSXBVpaFLLHKT"
+  ],
+  "paradoEl": "2026-11-04",
+  "motivo": "La vigilancia de las cinco cuentas del robo en TRON se paró el 4-nov-2026: el seguimiento de cada billetera nueva llegó a 64.000 billeteras y dejó de ser manejable.",
+  "fuente": "tron-salidas-watch/config/cuentas.binance-pausadas.json"
+ }
+}

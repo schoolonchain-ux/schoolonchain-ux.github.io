@@ -84,6 +84,145 @@
             "href": "investigacion/audits/auditoria-comparativa-binance-v07-v093-2026-11-10/07-verificacion-en-cadena-chainflip-symbiosis.json"
           }
         ]
+      },
+      "investigacion": {
+        "estado": "cerrada",
+        "datosHasta": "2026-11-02T09:23:00.033Z",
+        "nota": "Estudio histórico terminado: no se amplía con datos nuevos. La edición publicada es la v0.7 y lleva un aviso del 10-nov; hay una edición corregida sin publicar, a la espera de una revisión ajena."
+      },
+      "seguimiento": {
+        "estado": "activo",
+        "etiqueta": "solo Ethereum",
+        "datos": "seguimiento.json",
+        "alcance": "Ocho direcciones de Ethereum vigiladas cada 10 minutos. En TRON la vigilancia de las cinco cuentas del robo está parada desde el 4-nov-2026.",
+        "siHayMovimientos": "Si los fondos vigilados se mueven se publicará una actualización aparte, enlazada a este estudio; el estudio original no se reabre ni se retoca."
+      },
+      "ficha": [
+        {
+          "t": "Hipótesis iniciales",
+          "texto": "Este informe no partió de una lista de hipótesis escritas: sigue el dinero y marca como HIPÓTESIS lo que interpreta ({hipotesis} movimientos del libro).",
+          "enlace": "#metodo",
+          "enlaceT": "Método y decisiones"
+        },
+        {
+          "t": "Hechos verificados",
+          "texto": "{verificados} de {movimientos} movimientos del libro tienen evidencia directa en la cadena; {estimados} son estimaciones con su modelo declarado.",
+          "enlace": "#direcciones",
+          "enlaceT": "Explorador de direcciones"
+        },
+        {
+          "t": "Evidencias pendientes",
+          "texto": "{pendientes} puntos abiertos, cada uno con su causa.",
+          "enlace": "#calidad",
+          "enlaceT": "Control de calidad y pendientes"
+        },
+        {
+          "t": "Direcciones y entidades",
+          "texto": "Todas las direcciones del recorrido, con lo que se sabe de cada una, y la red de relaciones entre ellas.",
+          "enlace": "#red",
+          "enlaceT": "Red de direcciones"
+        },
+        {
+          "t": "Cronología",
+          "texto": "Desde el robo (29-oct-2026) hasta el corte de datos, hora a hora.",
+          "enlace": "#cronologia",
+          "enlaceT": "Cronología"
+        },
+        {
+          "t": "Cambios de atribución",
+          "texto": "Ninguno registrado en este caso. Las atribuciones de terceros se tratan como atribuciones, no como hechos; los cambios de certeza sí están en el registro.",
+          "enlace": "cambios.html?caso=trazabilidad-binance-0x5227",
+          "enlaceT": "Registro de cambios del caso"
+        },
+        {
+          "t": "Historial de conclusiones",
+          "texto": "{versiones} versiones con sus cambios, las ediciones publicadas con su huella, el aviso del 10-nov y {cambios} entradas en el registro de cambios.",
+          "enlace": "#novedades",
+          "enlaceT": "Historial de versiones"
+        },
+        {
+          "t": "Última comprobación",
+          "texto": "{ultima} (seguimiento en Ethereum). Movimientos avisados desde el 30-oct: {movimientosAvisados}; el último, el {ultimoMovimiento}.",
+          "enlace": "reports/trazabilidad-binance-0x5227/seguimiento.json",
+          "enlaceT": "Datos del seguimiento"
+        }
+      ],
+      "versiones": {
+        "nota": "Cada edición publicada sigue accesible tal como salió, con sus datos y su huella (SHA-256), para poder comprobar qué se publicó en cada fecha. El informe que abre este panel es, byte a byte, la v0.7 de esta tabla.",
+        "ediciones": [
+          {
+            "version": "v0.7",
+            "fecha": "2026-11-03",
+            "papel": "Edición publicada y vigente. Lleva el aviso del 10-nov-2026 (10,18 M$ contados dos veces en TRON).",
+            "archivos": [
+              {
+                "t": "Informe (HTML)",
+                "ruta": "investigacion/research/auditoria-adversarial-2026-10-31/informes-entregados/INFORME-TRAZABILIDAD-TRON-v0.7.html",
+                "sha256": "b7854eb8c1b23a5e78f3b2bd15e427e8f46d541735e2e71a02eea6618afe80d1"
+              },
+              {
+                "t": "Datos (JSON)",
+                "ruta": "investigacion/research/auditoria-adversarial-2026-10-31/informes-entregados/INFORME-TRAZABILIDAD-TRON-v0.7.json",
+                "sha256": "68bd3426181d4e1b0580f15ecc2430c4dd064f43452e704006b5b2193a6b58ab"
+              },
+              {
+                "t": "Rastro perdido (CSV)",
+                "ruta": "investigacion/research/auditoria-adversarial-2026-10-31/informes-entregados/INFORME-TRAZABILIDAD-TRON-v0.7-perdida-de-rastro.csv",
+                "sha256": "9750c634e76e7bea6f6af12970315e10a4d3256ac9902d532319d0b96f7d2583"
+              }
+            ],
+            "resumen": "investigacion/research/auditoria-adversarial-2026-10-31/informes-entregados/resumen-v0.7.txt"
+          },
+          {
+            "version": "v0.6",
+            "fecha": "2026-11-03",
+            "papel": "Primera edición publicada; sustituida el mismo día por la v0.7. Conservada.",
+            "archivos": [
+              {
+                "t": "Informe (HTML)",
+                "ruta": "investigacion/research/auditoria-adversarial-2026-10-31/informes-entregados/INFORME-TRAZABILIDAD-TRON-v0.6.html",
+                "sha256": "3f99beca50c3d4effe9e939fc2e4c4a87e97c35e7d7a1e63b6edfbcbc008eedb"
+              },
+              {
+                "t": "Datos (JSON)",
+                "ruta": "investigacion/research/auditoria-adversarial-2026-10-31/informes-entregados/INFORME-TRAZABILIDAD-TRON-v0.6.json",
+                "sha256": "7e600c272602a9defc440861076df9249d9f2116ea3e748f96bf514864749cd7"
+              },
+              {
+                "t": "Rastro perdido (CSV)",
+                "ruta": "investigacion/research/auditoria-adversarial-2026-10-31/informes-entregados/INFORME-TRAZABILIDAD-TRON-v0.6-perdida-de-rastro.csv",
+                "sha256": "1b5437629b22403add86c8893610e72c8f6ac669f87e39ac4b4f458a0012800d"
+              }
+            ],
+            "resumen": "investigacion/research/auditoria-adversarial-2026-10-31/informes-entregados/resumen-v0.6.txt"
+          },
+          {
+            "version": "v0.5",
+            "fecha": "2026-11-03",
+            "papel": "No se publicó como informe. Se conserva su resumen.",
+            "archivos": [],
+            "resumen": "investigacion/research/auditoria-adversarial-2026-10-31/informes-entregados/resumen-v0.5.txt"
+          },
+          {
+            "version": "v0.4",
+            "fecha": "2026-11-03",
+            "papel": "No se publicó como informe. Se conserva su resumen.",
+            "archivos": [],
+            "resumen": "investigacion/research/auditoria-adversarial-2026-10-31/informes-entregados/resumen-v0.4.txt"
+          },
+          {
+            "version": "v0.3",
+            "fecha": "2026-11-03",
+            "papel": "No se publicó como informe. Se conserva su resumen.",
+            "archivos": [],
+            "resumen": "investigacion/research/auditoria-adversarial-2026-10-31/informes-entregados/resumen-v0.3.txt"
+          }
+        ],
+        "noPublicadas": {
+          "texto": "las ediciones v0.8 a v0.9.3 (4-nov-2026) corrigen los dobles conteos del aviso. No se publican hasta que las revise alguien ajeno.",
+          "enlace": "doc.html?f=investigacion/audits/auditoria-comparativa-binance-v07-v093-2026-11-10/01-INFORME-AUDITORIA.md",
+          "enlaceT": "Auditoría comparativa del 10-nov"
+        }
       }
     },
     {
@@ -99,7 +238,67 @@
       "corte": null,
       "archivos": [],
       "imagen": "assets/img/portada/caso-vaneck.webp",
-      "imagenAlt": "Tablón de investigación del caso Vaneck / Justin Sun: carteles de VanEck y TRON, una pantalla con direcciones y una calavera encapuchada"
+      "imagenAlt": "Tablón de investigación del caso Vaneck / Justin Sun: carteles de VanEck y TRON, una pantalla con direcciones y una calavera encapuchada",
+      "investigacion": {
+        "estado": "curso",
+        "nota": "Investigación abierta: se amplía cuando hay hechos nuevos (29-oct, 30-oct, 4-nov y 5-nov)."
+      },
+      "seguimiento": {
+        "estado": "activo",
+        "datos": "seguimiento.json",
+        "alcance": "Las dos cuentas se leen cada día para esta página; el vigilante de EquipoIA las mira cada hora y avisa en privado si retiran o envían TRX.",
+        "siHayMovimientos": "Los movimientos nuevos se publican como nota de seguimiento."
+      },
+      "ficha": [
+        {
+          "t": "Hipótesis iniciales",
+          "texto": "Cinco explicaciones posibles, ordenadas, con lo que apoya y lo que tumba cada una.",
+          "enlace": "#cap-5",
+          "enlaceT": "Capítulo 5"
+        },
+        {
+          "t": "Hechos verificados",
+          "texto": "{hechos} transferencias entre las cuentas verificadas por su identificador en la cadena, y el estado en vivo de las dos.",
+          "enlace": "#cap-3",
+          "enlaceT": "Capítulo 3"
+        },
+        {
+          "t": "Evidencias pendientes",
+          "texto": "Lo que no se hizo y lo que falta por comprobar está declarado en el método.",
+          "enlace": "#cap-10",
+          "enlaceT": "Capítulo 10"
+        },
+        {
+          "t": "Direcciones y entidades",
+          "texto": "Las dos cuentas, la proveedora de energía, la antigua TRON Foundation y las claves de la cuenta «Poloniex».",
+          "enlace": "#cap-7",
+          "enlaceT": "Capítulos 7 a 9"
+        },
+        {
+          "t": "Cronología",
+          "texto": "Sin capítulo propio: las fechas van dentro de los hechos y de las notas de seguimiento.",
+          "enlace": "#cap-3",
+          "enlaceT": "Capítulo 3"
+        },
+        {
+          "t": "Cambios de atribución",
+          "texto": "{atribuciones} registrado: el 5-nov-2026 la proveedora de energía deja de presentarse como «de TRON Inc.»; leída entera, es una cuenta de paso.",
+          "enlace": "cambios.html?caso=caso-vaneck-sun&tipo=atribucion",
+          "enlaceT": "Ver la entrada"
+        },
+        {
+          "t": "Historial de conclusiones",
+          "texto": "{novedades} novedades fechadas, cuatro documentos (investigación del 29-oct, seguimientos del 30-oct y 4-nov y ampliación del 5-nov) y {cambios} entradas en el registro de cambios.",
+          "enlace": "cambios.html?caso=caso-vaneck-sun",
+          "enlaceT": "Registro de cambios del caso"
+        },
+        {
+          "t": "Última comprobación",
+          "texto": "{ultima} (lectura diaria de las dos cuentas).",
+          "enlace": "reports/caso-vaneck-sun/seguimiento.json",
+          "enlaceT": "Datos del seguimiento"
+        }
+      ]
     }
   ]
 }
