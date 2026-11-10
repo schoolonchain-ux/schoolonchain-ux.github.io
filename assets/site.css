@@ -253,3 +253,5 @@ footer.marca .pie-nav a{color:var(--soft);text-decoration:none}
 .zp .reg a.chip{cursor:pointer}.zp .reg a.chip:hover{border-color:var(--fg);color:var(--fg)}
 /* Barra superior: las redes van solo con icono (el nombre sale al pasar el ratón) para que quepan todas las entradas de la barra */
 .topbar .socs .soc span{display:none}.topbar .socs .soc{padding:6px 8px}
+/* Con siete entradas en la barra, en pantallas medianas se aprieta para que quepan todas sin tener que deslizar. */
+@media (min-width:641px) and (max-width:1180px){.topbar .wrap{gap:10px}.topbar nav a{padding:6px 7px;font-size:12.5px}.topbar .socs{gap:2px}.topbar .socs .soc{padding:6px 5px}.topbar .brand .bn small{display:none}}

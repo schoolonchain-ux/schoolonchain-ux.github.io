@@ -13,6 +13,7 @@
     // Barra principal y enlaces del pie: se definen aquí una vez y valen para todas las páginas.
     nav: [
       { t: 'Investigaciones', u: './#informes', k: 'inv' },
+      { t: 'Mercado', u: 'mercado.html', k: 'mer', titulo: 'Observatorio de mercado: capital, liquidez, sectores y desacoples' },
       { t: 'Herramientas', u: 'herramientas.html', k: 'her' },
       { t: 'Fundamentales', u: 'fundamentales.html', k: 'fun' },
       { t: 'Método', u: 'como-investigamos.html', k: 'met', titulo: 'Cómo investigamos, de dónde sale cada cifra y el registro de cambios' },
@@ -35,7 +36,7 @@
   // enlaces como elementos (para usarlos desde cualquier página)
   M.enlacesEl = (cls) => M.enlaces.map((e) => { const a = document.createElement('a'); a.className = cls || 'soc'; a.href = e.u; a.target = '_blank'; a.rel = 'noopener'; a.innerHTML = SVG[e.k] + '<span>' + e.t + '</span>'; a.title = e.t; return a; });
   // Qué entrada de la barra corresponde a la página abierta (las páginas de caso cuentan como Investigaciones).
-  M.paginaActual = () => { const f = (location.pathname.split('/').pop() || 'index.html').toLowerCase(); return { 'herramientas.html': 'her', 'fundamentales.html': 'fun', 'datos.html': 'met', 'como-investigamos.html': 'met', 'cambios.html': 'met', 'acerca.html': 'ace', 'buscar.html': 'bus', 'index.html': 'inv', 'report.html': 'inv', 'caso-vaneck.html': 'inv', 'archivo.html': 'inv' }[f] || ''; };
+  M.paginaActual = () => { const f = (location.pathname.split('/').pop() || 'index.html').toLowerCase(); return { 'mercado.html': 'mer', 'herramientas.html': 'her', 'fundamentales.html': 'fun', 'datos.html': 'met', 'como-investigamos.html': 'met', 'cambios.html': 'met', 'acerca.html': 'ace', 'buscar.html': 'bus', 'index.html': 'inv', 'report.html': 'inv', 'caso-vaneck.html': 'inv', 'archivo.html': 'inv' }[f] || ''; };
   M.navEl = () => { const act = M.paginaActual(); const enPortada = /^(index\.html)?$/.test((location.pathname.split('/').pop() || '').toLowerCase()); return M.nav.map((e) => { const a = document.createElement('a'); a.className = 'nv-sitio' + (e.k === act ? ' on' : ''); a.href = e.k === 'inv' && enPortada ? '#informes' : e.u; a.textContent = e.t; if (e.titulo) a.title = e.titulo; return a; }); };
   document.addEventListener('DOMContentLoaded', () => {
     // barra principal: la misma en todas las páginas; las que tienen capítulos propios los añaden después de estos enlaces

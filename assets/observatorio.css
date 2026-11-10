@@ -1,0 +1,65 @@
+/* Observatorio de mercado (mercado.html). Todo va con las variables de color del sitio, para que valga en claro y en oscuro. */
+.ob-aviso{border:1px dashed var(--warn);border-radius:12px;padding:10px 14px;margin:0 0 18px;font-size:13.5px;color:var(--soft);background:color-mix(in srgb,var(--warn) 7%,transparent)}
+.ob-estado{font-size:12.5px;color:var(--mut);margin:6px 0 16px;display:flex;flex-wrap:wrap;gap:6px 16px;align-items:center}
+.ob-estado b{color:var(--soft);font-weight:600}
+.ob-vivo{display:inline-block;width:8px;height:8px;border-radius:50%;background:var(--ok);margin-right:6px;vertical-align:1px}
+.ob-vivo.mal{background:var(--bad)}
+.ob-preg{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px;margin:0 0 22px}
+.ob-p{display:block;text-decoration:none;color:inherit;background:var(--pan);border:1px solid var(--line);border-radius:16px;padding:16px 18px;box-shadow:var(--shadow);min-width:0}
+.ob-p:hover{border-color:var(--acc)}
+.ob-p .q{font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:var(--mut);margin:0 0 8px}
+.ob-p .r{font-size:16px;line-height:1.45;color:var(--fg);margin:0 0 10px;overflow-wrap:anywhere}
+.ob-p .r b{font-variant-numeric:tabular-nums}
+.ob-p .mas{font-size:12.5px;color:var(--acc)}
+.zp .ob-sub{color:var(--soft);font-size:14px;line-height:1.5;margin:0 0 14px;max-width:820px}
+.zp h3.ob-h3{font-size:15px;margin:20px 0 8px}
+.ob-barra{display:flex;height:40px;border-radius:10px;overflow:hidden;border:1px solid var(--line);margin:4px 0 10px}
+.ob-barra button{border:0;margin:0;padding:0 6px;font:600 12.5px/40px inherit;color:#fff;cursor:pointer;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;min-width:0}
+.ob-barra button:hover{filter:brightness(1.15)}
+.ob-seg-btc{background:#c9791b}.ob-seg-eth{background:#5b6fd6}.ob-seg-st{background:#2f9e73}.ob-seg-re{background:#6b7280}
+.ob-ley{display:flex;flex-wrap:wrap;gap:6px 18px;font-size:13px;color:var(--soft);margin:0 0 6px}
+.ob-ley i{display:inline-block;width:10px;height:10px;border-radius:3px;margin-right:6px}
+.ob-kpis{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:10px;margin:8px 0 12px}
+.ob-k{border:1px solid var(--line);border-radius:12px;padding:10px 12px;background:var(--bg);text-align:left;cursor:pointer;color:inherit;font:inherit;min-width:0}
+.ob-k:hover{border-color:var(--acc)}
+.ob-k .k{font-size:11.5px;color:var(--mut);display:block;margin-bottom:4px}
+.ob-k .v{font-size:18px;font-weight:700;font-variant-numeric:tabular-nums;display:block;overflow-wrap:anywhere}
+.ob-k .s{font-size:12px;color:var(--mut);display:block;margin-top:2px}
+.ob-sube{color:var(--ok)}.ob-baja{color:var(--bad)}
+.ob-tw{overflow-x:auto;margin:6px 0 4px}
+.ob-t{border-collapse:collapse;width:100%;font-size:13.5px;font-variant-numeric:tabular-nums}
+.ob-t th{text-align:right;font-size:11.5px;font-weight:600;color:var(--mut);padding:6px 10px;border-bottom:1px solid var(--line);white-space:nowrap}
+.ob-t th:first-child,.ob-t td:first-child{text-align:left}
+.ob-t td{text-align:right;padding:7px 10px;border-bottom:1px dashed var(--line);white-space:nowrap}
+.ob-t tr.cl{cursor:pointer}.ob-t tr.cl:hover td{background:color-mix(in srgb,var(--acc) 7%,transparent)}
+.ob-t td .n2{color:var(--mut);font-size:12px;margin-left:6px}
+.ob-per{display:flex;flex-wrap:wrap;gap:6px;margin:0 0 12px}
+.ob-per button{border:1px solid var(--line);background:var(--bg);color:var(--soft);border-radius:999px;padding:4px 12px;font:600 12.5px inherit;cursor:pointer}
+.ob-per button.on{background:var(--fg);color:var(--bg);border-color:var(--fg)}
+.ob-calor{display:grid;grid-template-columns:repeat(auto-fill,minmax(92px,1fr));gap:6px}
+.ob-c{border:1px solid var(--line);border-radius:10px;padding:9px 6px;text-align:center;cursor:pointer;color:var(--fg);font:inherit;min-width:0}
+.ob-c:hover{outline:2px solid var(--acc);outline-offset:-1px}
+.ob-c .s{display:block;font-weight:700;font-size:13px}
+.ob-c .v{display:block;font-size:12.5px;font-variant-numeric:tabular-nums;margin-top:2px}
+.ob-chip{display:inline-block;font-size:11.5px;font-weight:600;border-radius:999px;padding:2px 9px;border:1px solid var(--line)}
+.ob-chip.calma{color:var(--mut)}.ob-chip.normal{color:var(--soft)}
+.ob-chip.agitado{color:var(--warn);border-color:var(--warn)}.ob-chip.extremo{color:var(--bad);border-color:var(--bad)}
+.ob-chip.desacopla{color:var(--warn);border-color:var(--warn)}.ob-chip.acopla{color:var(--acc);border-color:var(--acc)}
+.ob-deseq{display:inline-flex;width:120px;height:10px;border-radius:5px;overflow:hidden;border:1px solid var(--line);vertical-align:middle}
+.ob-deseq i{display:block;height:100%}.ob-deseq .c{background:var(--ok)}.ob-deseq .v{background:var(--bad)}
+.ob-nota{font-size:12.5px;color:var(--mut);margin:8px 0 0;line-height:1.5;max-width:860px}
+.ob-reglas{margin:0;padding:0 0 0 18px;font-size:14px;line-height:1.6;color:var(--soft)}
+.ob-reglas li{margin:0 0 6px}
+dialog.ob-panel{border:1px solid var(--line);border-radius:16px;background:var(--pan);color:var(--fg);padding:0;width:min(720px,calc(100vw - 24px));max-height:calc(100vh - 40px);box-shadow:0 20px 60px rgba(0,0,0,.45)}
+dialog.ob-panel::backdrop{background:rgba(0,0,0,.55)}
+.ob-pc{padding:18px 20px 20px;overflow:auto;max-height:calc(100vh - 42px)}
+.ob-pc h3{margin:0 34px 4px 0;font-size:18px}
+.ob-pc .sub{color:var(--mut);font-size:13px;margin:0 0 12px}
+.ob-pc .cerrar{position:absolute;top:12px;right:12px;border:1px solid var(--line);background:var(--bg);color:var(--fg);border-radius:8px;width:30px;height:30px;cursor:pointer;font-size:16px;line-height:1}
+.ob-pc dl{display:grid;grid-template-columns:minmax(120px,200px) minmax(0,1fr);gap:6px 14px;margin:10px 0;font-size:13.5px}
+.ob-pc dt{color:var(--mut)}.ob-pc dd{margin:0;font-variant-numeric:tabular-nums;overflow-wrap:anywhere}
+.ob-pc .regla{font-size:13.5px;line-height:1.55;color:var(--soft);border-left:3px solid var(--line);padding:2px 0 2px 12px;margin:12px 0}
+.ob-pc .fu{font-size:13px;margin:10px 0 0;padding:0 0 0 18px}.ob-pc .fu li{margin:0 0 4px;overflow-wrap:anywhere}
+.ob-graf{width:100%;height:auto;display:block;margin:8px 0 2px;color:var(--acc)}
+.ob-graf text{fill:var(--mut);font-size:11px}
+@media (max-width:720px){.ob-preg{grid-template-columns:1fr}.ob-p .r{font-size:15px}.ob-pc dl{grid-template-columns:1fr;gap:2px 0}.ob-pc dt{margin-top:6px}}
