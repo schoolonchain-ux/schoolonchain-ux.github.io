@@ -158,25 +158,91 @@
   /* ---------- 2 · liquidez: foto diaria (la toma el programa diario) y lectura en vivo de UN libro cuando se pide ----------
      Una lectura profunda del libro cuenta 250 de los 6.000 puntos por minuto que Binance da a cada visitante: leer ocho al abrir la página
      agota el límite con un par de recargas y Binance bloquea al visitante unos minutos. Por eso la página NO lee libros al abrirse. */
-  const cuerpoLiq = el('tbody'), notaLiq = el('p', { class: 'ob-nota' }); let pausaLiq = 0;
+  const cuerpoLiq = el('tbody'), notaLiq = el('p', { class: 'ob-nota' }), cajaLiq = el('div'), cajaSerieLiq = el('div'); let pausaLiq = 0, leyendoLibro = false;
+  let liqCasa = 'binance', liqBanda = 1, liqRef = 'anterior'; const CASA = { binance: 'Binance', kraken: 'Kraken' };
   const filasLiq = () => ((D.liquidez && D.liquidez.filas) || []);
-  function fichaLibro(x) { const dif = x.medio * x.diferencialPct / 100; abrir({ t: 'Libro de órdenes de ' + x.par, sub: 'Binance · ' + (x.enVivo ? 'leído ahora, el ' : 'foto de la lectura diaria, el ') + fh(x.hora), cifras: [['Precio medio', precio(x.medio)], ['Diferencial entre compra y venta', nf(x.diferencialPct, 5) + ' % (' + nf(dif, dif >= 0.01 ? 2 : 6) + ' $)'], ['Esperando para comprar (hasta −1 %)', mUsd(x.compras)], ['Esperando para vender (hasta +1 %)', mUsd(x.ventas)], ['Desequilibrio', sg(x.desequilibrio, 2) + ' (−1 todo ventas · +1 todo compras)'], ['¿El libro leído llega al ±1 %?', x.completo ? 'sí' : 'no: hay más órdenes de las que devuelve la lectura; la cifra es un mínimo']], regla: 'Se suman, en dólares, las órdenes de compra entre el precio medio y un 1 % por debajo, y las de venta hasta un 1 % por encima. Desequilibrio = (compras − ventas) / (compras + ventas).', limite: 'Es una foto de un instante en una sola casa de cambio. Las órdenes se pueden retirar antes de ejecutarse, y hay liquidez que no aparece en el libro.', fuentes: [{ t: 'Libro de órdenes de ' + x.par + ' (Binance)', u: x.url }] }); }
-  async function leerUnLibro(x, boton) {
-    if (Date.now() < pausaLiq) { notaLiq.textContent = 'Espera unos segundos entre lectura y lectura: Binance limita las consultas por visitante.'; return; }
-    pausaLiq = Date.now() + 15000; boton.disabled = true; boton.textContent = 'Leyendo…';
-    try { const r = await fetch(x.url, { cache: 'no-cache', signal: AbortSignal.timeout(20000) }); if (r.status === 418 || r.status === 429) throw new Error('Binance pide esperar (límite por visitante); no se reintenta solo'); if (!r.ok) throw new Error('HTTP ' + r.status); const j = await r.json(); const p = M.profundidad(j.bids, j.asks, 0.01); if (!p) throw new Error('libro vacío'); Object.assign(x, { hora: new Date().toISOString(), medio: p.medio, diferencialPct: p.diferencialPct, compras: p.compras, ventas: p.ventas, desequilibrio: p.desequilibrio, completo: p.completo, enVivo: true, fallo: null }); notaLiq.textContent = 'Leído ' + x.s + ' ahora mismo, el ' + fh(x.hora) + '.'; } catch (e) { notaLiq.textContent = 'No se pudo leer ' + x.s + ' ahora: ' + e.message + '. Se mantiene la foto anterior.'; }
-    pintarLiquidez(); pintarPreguntas();
+  // lo que se enseña de un activo en la casa de cambio y la banda elegidas; con «falta» si no hay foto
+  function vistaLiq(x, casa, banda) {
+    const o = casa === 'kraken' ? x.kraken : x; const base = { x, s: x.s, casa, banda, par: o && o.par, url: o && o.url };
+    if (!o) return Object.assign(base, { falta: 'la lectura diaria no trae este libro' });
+    if (o.noCotiza) return Object.assign(base, { falta: 'no cotiza contra el dólar en Kraken' });
+    if (o.fallo || o.compras == null) return Object.assign(base, { falta: 'sin foto en la lectura diaria' + (o.fallo ? ' (' + o.fallo + ')' : '') });
+    const b = banda === 2 ? o.b2 : o; if (!b || b.compras == null) return Object.assign(base, { falta: 'la lectura diaria no trae la banda del 2 %' });
+    return Object.assign(base, { hora: o.hora, medio: o.medio, diferencialPct: o.diferencialPct, enVivo: !!o.enVivo, compras: b.compras, ventas: b.ventas, desequilibrio: b.desequilibrio, completo: b.completo });
   }
+  const mm = (v, k) => (v.completo ? '' : '≥ ') + mUsd(v[k]);
+  // negociado en 24 horas en Binance: de la lectura en vivo si la hay; si no, el del último día cerrado
+  function vol24(s) { const a = D.activos.find((q) => q.s === s); if (!a) return null; const t = vivo && vivo.get(a.par); if (t && t.volumen > 0) return { v: t.volumen, txt: mUsd(t.volumen), nota: 'últimas 24 horas, leído ahora' }; const i = M.ultimo(a.v || []); return i >= 0 ? { v: a.v[i], txt: mUsd(a.v[i]), nota: 'día ' + fd(D.dias[i]) + ' completo' } : null; }
+  // serie propia de un libro: una entrada por día guardado (o null si ese día no se guardó ese libro)
+  const serieLibro = (s, casa) => filasSerie().map((f) => { const o = (casa === 'kraken' ? f.kraken || {} : f.libros || {})[s]; return o && o.compras != null ? o : null; });
+  function fichaLibro(x) {
+    const a = D.activos.find((q) => q.s === x.s); const otra = liqCasa === 'kraken' ? 'binance' : 'kraken'; const v = vistaLiq(x, liqCasa, 1); const dif = v.falta ? null : v.medio * v.diferencialPct / 100;
+    const renglon = (casa, banda) => { const w = vistaLiq(x, casa, banda); return w.falta ? SD + ' (' + w.falta + ')' : mm(w, 'compras') + ' para comprar · ' + mm(w, 'ventas') + ' para vender · desequilibrio ' + sg(w.desequilibrio, 2); };
+    const S = filasSerie(), sl = serieLibro(x.s, liqCasa), con = sl.filter(Boolean).length; const vo = vol24(x.s);
+    abrir({ t: 'Libro de órdenes de ' + (a ? a.n : x.s), sub: v.falta ? CASA[liqCasa] + ': ' + v.falta : CASA[liqCasa] + ' · ' + v.par + ' · ' + (v.enVivo ? 'leído ahora, el ' : 'foto de la lectura diaria, el ') + fh(v.hora),
+      cifras: [['Precio medio', v.falta ? SD : precio(v.medio)], ['Diferencial entre compra y venta', v.falta ? SD : nf(v.diferencialPct, 5) + ' % (' + nf(dif, dif >= 0.01 ? 2 : 6) + ' $)'],
+        [CASA[liqCasa] + ', a menos de un 1 % del precio', renglon(liqCasa, 1)], [CASA[liqCasa] + ', a menos de un 2 %', renglon(liqCasa, 2)], [CASA[otra] + ', a menos de un 1 %', renglon(otra, 1)], [CASA[otra] + ', a menos de un 2 %', renglon(otra, 2)],
+        ['Negociado en Binance', vo ? vo.txt + ' (' + vo.nota + ')' : SD],
+        ['Serie propia', con ? con + (con === 1 ? ' día guardado' : ' días guardados') + ' de ' + CASA[liqCasa] + ', desde el ' + fd(S[sl.findIndex(Boolean)].dia) + (con < 2 ? '; el gráfico aparece con el segundo' : '') : 'todavía no hay ningún día guardado de este libro en ' + CASA[liqCasa]]],
+      serie: con >= 2 ? { x: S.map((f) => f.dia), y: sl.map((o) => (o ? o.compras : null)), y2: sl.map((o) => (o ? o.ventas : null)), nombres: ['Esperando para comprar (a menos de un 1 %)', 'Esperando para vender (a menos de un 1 %)'], fmt: mUsd, pie: 'Serie propia: una foto al día del libro de ' + CASA[liqCasa] + '.' } : null,
+      regla: 'Se suman, en dólares, las órdenes de compra entre el precio medio y un 1 % (o un 2 %) por debajo, y las de venta hasta ese mismo tanto por encima. Desequilibrio = (compras − ventas) / (compras + ventas): −1 es todo ventas y +1 todo compras. «≥» quiere decir que el libro leído no llega hasta esa distancia y la cifra es un mínimo.',
+      limite: 'Es una foto de un instante en una casa de cambio. Las órdenes se pueden retirar antes de ejecutarse y hay liquidez que no aparece en el libro. Binance cotiza contra USDT y Kraken contra el dólar: no son exactamente el mismo mercado.',
+      fuentes: [{ t: 'Libro de órdenes de ' + x.par + ' (Binance)', u: x.url }].concat(x.kraken && x.kraken.url ? [{ t: 'Libro de órdenes de ' + x.kraken.par + ' (Kraken)', u: x.kraken.url }] : []) });
+  }
+  async function leerUnLibro(x, boton) {
+    const casa = liqCasa; const o = casa === 'kraken' ? x.kraken : x; if (!o || !o.url) return;
+    if (Date.now() < pausaLiq) { notaLiq.textContent = 'Espera unos segundos entre lectura y lectura: las casas de cambio limitan las consultas por visitante.'; return; }
+    pausaLiq = Date.now() + 15000; leyendoLibro = true; boton.disabled = true; boton.textContent = 'Leyendo…';
+    try {
+      const r = await fetch(o.url, { cache: 'no-cache', signal: AbortSignal.timeout(20000) }); if (r.status === 418 || r.status === 429) throw new Error(CASA[casa] + ' pide esperar (límite por visitante); no se reintenta solo'); if (!r.ok) throw new Error('HTTP ' + r.status);
+      const j = await r.json(); let b = j; if (casa === 'kraken') { if (!j || (Array.isArray(j.error) && j.error.length) || !j.result) throw new Error('Kraken responde con error'); const k = Object.keys(j.result); b = k.length === 1 ? j.result[k[0]] : null; }
+      const p = b && M.profundidad(b.bids, b.asks, 0.01), q = b && M.profundidad(b.bids, b.asks, 0.02); if (!p || !q) throw new Error('libro vacío');
+      Object.assign(o, { hora: new Date().toISOString(), medio: p.medio, diferencialPct: p.diferencialPct, compras: p.compras, ventas: p.ventas, desequilibrio: p.desequilibrio, completo: p.completo, b2: { compras: q.compras, ventas: q.ventas, desequilibrio: q.desequilibrio, completo: q.completo }, enVivo: true, fallo: null });
+      notaLiq.textContent = 'Leído ' + x.s + ' en ' + CASA[casa] + ' ahora mismo, el ' + fh(o.hora) + '.';
+    } catch (e) { notaLiq.textContent = 'No se pudo leer ' + x.s + ' en ' + CASA[casa] + ' ahora: ' + e.message + '. Se mantiene la foto anterior.'; }
+    leyendoLibro = false; pintarLiquidez(); pintarPreguntas();
+  }
+  // gráfico del conjunto (comprar a la izquierda, vender a la derecha, en dólares) y tabla de datos, para la casa y la banda elegidas
   function pintarLiquidez() {
-    pintarGraficoLiq(); const F = filasLiq(); if (!F.length) { cuerpoLiq.replaceChildren(el('tr', null, el('td', { colspan: 7 }, 'La lectura diaria no trae la foto de los libros' + (D.liquidez && D.liquidez.fallo ? ' (' + D.liquidez.fallo + ')' : '') + '. No se muestra nada en su lugar.'))); return; }
-    cuerpoLiq.replaceChildren(...F.map((x) => { const b = el('button', { class: 'btn mini', title: 'Leer ahora este libro en Binance' }, 'Leer ahora'); b.onclick = (e) => { e.stopPropagation(); leerUnLibro(x, b); };
-      if (x.fallo || x.compras == null) return el('tr', null, el('td', null, x.s), el('td', { colspan: 5 }, 'Sin foto en la lectura diaria' + (x.fallo ? ' (' + x.fallo + ')' : '')), el('td', null, b));
-      const c = x.compras / (x.compras + x.ventas) * 100;
-      return el('tr', { class: 'cl', onclick: () => fichaLibro(x) }, el('td', null, x.s, el('span', { class: 'n2' }, x.enVivo ? 'ahora' : 'foto diaria')), el('td', null, nf(x.diferencialPct, 5) + ' %'), el('td', null, (x.completo ? '' : '≥ ') + mUsd(x.compras)), el('td', null, (x.completo ? '' : '≥ ') + mUsd(x.ventas)), el('td', null, el('span', { class: 'ob-deseq', title: nf(c, 0) + ' % compras' }, el('i', { class: 'c', style: 'width:' + c.toFixed(1) + '%' }), el('i', { class: 'v', style: 'width:' + (100 - c).toFixed(1) + '%' }))), el('td', { class: signo(x.desequilibrio) }, sg(x.desequilibrio, 2)), el('td', null, b)); }));
+    if (!filasLiq().length) { cajaLiq.replaceChildren(el('p', { class: 'ob-nota' }, 'La lectura diaria no trae la foto de los libros' + (D.liquidez && D.liquidez.fallo ? ' (' + D.liquidez.fallo + ')' : '') + '. No se muestra nada en su lugar.')); cuerpoLiq.replaceChildren(); return; }
+    const V = filasLiq().map((x) => vistaLiq(x, liqCasa, liqBanda)); const ok = V.filter((v) => !v.falta); const banda = liqBanda + ' %';
+    const mx = Math.max(1, ...ok.map((v) => Math.max(v.compras, v.ventas))); const w = (q) => (q / mx * 50).toFixed(2); const suma = (k) => ok.reduce((t, v) => t + v[k], 0);
+    const frase = ok.length ? 'Entre los ' + ok.length + ' libros de ' + CASA[liqCasa] + ' hay ' + mUsd(suma('compras')) + ' esperando para comprar y ' + mUsd(suma('ventas')) + ' para vender a menos de un ' + banda + ' del precio. Hay más dinero comprador que vendedor en ' + ok.filter((v) => v.compras > v.ventas).length + ' de ' + ok.length + '.' : 'No hay ningún libro de ' + CASA[liqCasa] + ' con esa banda en la lectura diaria.';
+    const marca = (v) => (v.enVivo ? 'ahora' : 'foto diaria');
+    cajaLiq.replaceChildren(
+      el('div', { class: 'ob-sels' }, selector([['binance', 'Binance'], ['kraken', 'Kraken']], liqCasa, (k) => { liqCasa = k; pintarLiquidez(); pintarSerieLiq(); }), selector([[1, 'A menos de un 1 % del precio'], [2, 'A menos de un 2 %']], liqBanda, (k) => { liqBanda = k; pintarLiquidez(); })),
+      el('p', { class: 'ob-nota', style: 'margin:0 0 8px' }, frase),
+      leyenda([['var(--ok)', 'Esperando para comprar, hasta un ' + banda + ' por debajo del precio'], ['var(--bad)', 'Esperando para vender, hasta un ' + banda + ' por encima']]),
+      el('div', { class: 'ob-bars' }, V.map((v) => (v.falta ? el('button', { class: 'ob-br mar', title: v.s + ': ' + v.falta, onclick: () => fichaLibro(v.x) }, el('span', { class: 'et' }, v.s), el('span', { class: 'va sd', style: 'grid-column:2 / -1;text-align:left;white-space:normal' }, v.falta))
+        : el('button', { class: 'ob-br mar', title: v.s + ': ' + mUsd(v.compras) + ' para comprar y ' + mUsd(v.ventas) + ' para vender. Pulsa para ver sus datos.', onclick: () => fichaLibro(v.x) }, el('span', { class: 'et' }, v.s, el('span', { class: 'n2' }, marca(v))), el('span', { class: 'va' }, mm(v, 'compras')),
+          el('span', { class: 'pista' }, el('i', { class: 'eje', style: 'left:50%' }), el('i', { class: 'b izq', style: 'left:' + (50 - Number(w(v.compras))).toFixed(2) + '%;width:' + w(v.compras) + '%' }), el('i', { class: 'b der', style: 'left:50%;width:' + w(v.ventas) + '%' })), el('span', { class: 'va izda' }, mm(v, 'ventas')))))),
+      el('p', { class: 'ob-nota' }, 'Dinero esperando en el libro de órdenes de ' + CASA[liqCasa] + ' a menos de un ' + banda + ' del precio. «≥» quiere decir que el libro leído no llega hasta ahí y la cifra es un mínimo. Pulsa una fila para ver sus datos y compararla con la otra casa de cambio. Para releer un libro en el momento, abre la tabla de datos y pulsa «Leer ahora».'));
+    cuerpoLiq.replaceChildren(...V.map((v) => { const o = liqCasa === 'kraken' ? v.x.kraken : v.x; const vo = vol24(v.s);
+      const b = o && o.url ? el('button', { class: 'btn mini', title: 'Leer ahora este libro en ' + CASA[liqCasa] }, 'Leer ahora') : null; if (b) b.onclick = (e) => { e.stopPropagation(); leerUnLibro(v.x, b); };
+      if (v.falta) return el('tr', null, el('td', null, v.s), el('td', { colspan: 6, style: 'text-align:left;white-space:normal' }, v.falta), el('td', null, b));
+      const c = v.compras / (v.compras + v.ventas) * 100;
+      return el('tr', { class: 'cl', onclick: () => fichaLibro(v.x) }, el('td', null, v.s, el('span', { class: 'n2' }, marca(v))), el('td', null, nf(v.diferencialPct, 5) + ' %'), el('td', null, mm(v, 'compras')), el('td', null, mm(v, 'ventas')), el('td', null, el('span', { class: 'ob-deseq', title: nf(c, 0) + ' % compras' }, el('i', { class: 'c', style: 'width:' + c.toFixed(1) + '%' }), el('i', { class: 'v', style: 'width:' + (100 - c).toFixed(1) + '%' }))), el('td', { class: signo(v.desequilibrio) }, sg(v.desequilibrio, 2)), el('td', { title: vo ? vo.nota : '' }, vo ? vo.txt : SD), el('td', null, b)); }));
+  }
+  // serie propia: cuánto ha cambiado el dinero que espera en cada libro frente a una lectura anterior
+  function pintarSerieLiq() {
+    const S = filasSerie(), n = S.length;
+    if (!n) { cajaSerieLiq.replaceChildren(el('p', { class: 'ob-nota' }, 'Todavía no hay ninguna foto guardada. No se muestra nada en su lugar.')); return; }
+    if (n < 2) { cajaSerieLiq.replaceChildren(el('p', { class: 'ob-nota' }, 'Hay un solo día guardado (el ' + fd(S[0].dia) + '). Con la próxima foto diaria aparecerá aquí la primera comparación: en qué libros hay más dinero esperando que el día anterior y en cuáles menos. La foto se guarda sola, una al día.')); return; }
+    if (n < 3) liqRef = 'anterior'; const paso = liqRef === 'primera' ? n - 1 : 1; const ref = S[n - 1 - paso], ult = S[n - 1];
+    const filas = filasLiq().map((x) => { const sl = serieLibro(x.s, liqCasa).map((o) => (o ? o.compras + o.ventas : null)); const hoy = sl[n - 1], antes = sl[n - 1 - paso]; const c = hoy != null && antes > 0 ? hoy / antes - 1 : null;
+      return { t: x.s, sub: c == null ? '' : mUsd(antes) + ' → ' + mUsd(hoy), v: c == null ? null : c * 100, txt: c == null ? 'sin dato' : pct(c, 1), abre: () => fichaLibro(x) }; });
+    cajaSerieLiq.replaceChildren(
+      n > 2 ? selector([['anterior', 'Frente a la foto anterior'], ['primera', 'Frente a la primera (' + fd(S[0].dia) + ')']], liqRef, (k) => { liqRef = k; pintarSerieLiq(); }) : null,
+      barras(filas, 'Dinero esperando para comprar y para vender a menos de un 1 % del precio en ' + CASA[liqCasa] + ', sumado: foto del ' + fd(ult.dia) + ' frente a la del ' + fd(ref.dia) + '. Llevamos ' + n + ' días guardados. Cada foto es un instante y un libro cambia mucho de un momento a otro: la subida o bajada de un día dice poco; importa la tendencia de varios.'));
   }
   function fraseLiquidez() { const b = filasLiq()[0]; return b && b.compras != null ? (b.enVivo ? 'Ahora mismo hay ' : 'En la última foto había ') + mUsd(b.compras) + ' esperando para comprar bitcoin a menos de un 1 % del precio y ' + mUsd(b.ventas) + ' para venderlo.' : 'La lectura diaria no trae la foto de los libros.'; }
-  function liquidez() { const F = filasLiq(); const h = F.find((x) => x.hora); pintarLiquidez(); if (h) notaLiq.textContent = 'Foto de la lectura diaria, tomada el ' + fh(h.hora) + '. Dinero esperando a menos de un 1 % del precio.';
-    return el('section', { class: 'zp', id: 'liquidez' }, el('p', { class: 'kick' }, 'Pregunta 2'), el('h2', null, '¿Dónde aumenta la liquidez?'), el('p', { class: 'ob-sub' }, 'Cuánto dinero hay esperando para comprar y para vender cerca del precio en Binance, para los ocho mayores activos de la cesta. La otra mitad de la respuesta está arriba: las stablecoins que entran o salen de cada cadena.'), cajaLiq, plegada(el('table', { class: 'ob-t' }, el('thead', null, el('tr', null, ['Activo', 'Diferencial', 'Para comprar (−1 %)', 'Para vender (+1 %)', 'Reparto', 'Desequilibrio', ''].map((t) => el('th', null, t)))), cuerpoLiq)), notaLiq, el('p', { class: 'ob-nota' }, 'La foto la toma la lectura diaria, no tu navegador: Binance limita las lecturas profundas por visitante. «Leer ahora» lee un solo libro en el momento. No existe histórico gratuito de la profundidad: para saber si la liquidez AUMENTA hay que comparar con días anteriores, y esa comparación se hará con la serie propia del observatorio (una foto al día) cuando tenga días suficientes.')); }
+  function liquidez() {
+    pintarLiquidez(); pintarSerieLiq(); const h = filasLiq().find((x) => x.hora); if (h) notaLiq.textContent = 'Foto de la lectura diaria, tomada el ' + fh(h.hora) + '.';
+    return el('section', { class: 'zp', id: 'liquidez' }, el('p', { class: 'kick' }, 'Pregunta 2'), el('h2', null, '¿Dónde aumenta la liquidez?'), el('p', { class: 'ob-sub' }, 'Cuánto dinero hay esperando para comprar y para vender cerca del precio, en Binance y en Kraken, para los ocho mayores activos de la cesta. La otra mitad de la respuesta está arriba: las stablecoins que entran o salen de cada cadena.'),
+      cajaLiq, plegada(el('table', { class: 'ob-t' }, el('thead', null, el('tr', null, ['Activo', 'Diferencial', 'Para comprar', 'Para vender', 'Reparto', 'Desequilibrio', 'Negociado 24 h (Binance)', ''].map((t) => el('th', null, t)))), cuerpoLiq)), notaLiq,
+      el('h3', { class: 'ob-h3' }, 'Serie propia: ¿hay más o menos dinero esperando que antes?'), cajaSerieLiq,
+      el('p', { class: 'ob-nota' }, 'La foto la toma la lectura diaria, no tu navegador: las casas de cambio limitan las lecturas profundas por visitante. «Leer ahora» lee un solo libro en el momento. Binance cotiza contra USDT y Kraken contra el dólar. No existe histórico gratuito de la profundidad: por eso el observatorio guarda su propia foto, una al día. Para saber cuánto recibirías por una venta concreta: ', el('a', { href: 'herramientas.html#liquidez-venta' }, '¿Cuánto recibiría si vendo?'), '.'));
+  }
 
   /* ---------- 3 · sectores ---------- */
   const RUIDO = /portfolio|ecosystem|holdings|index|alleged|made in|ftx|fund\b/i;
@@ -374,17 +440,6 @@
       barras(O.map(({ g, r }) => ({ t: g.x.nombre, sub: g.x.fallo ? 'lectura fallida' : g.ms.length + (g.ms.length === 1 ? ' activo' : ' activos'), v: r ? r.mediana : null, txt: r ? pct(r.mediana, 1) : perSec === '24h' && !vivo ? 'sin lectura en vivo' : 'sin cifra', abre: () => fichaSector(g, perSec) })),
         'Rendimiento de cada sector en ' + tp + ': la mediana de lo que han subido o bajado sus activos de la cesta. Del que mejor va al que peor. Pulsa una barra para ver sus activos y de dónde sale.'));
   }
-  // liquidez: lo que espera para comprar (a la izquierda) frente a lo que espera para vender (a la derecha), en dólares
-  const cajaLiq = el('div');
-  function pintarGraficoLiq() {
-    const F = ((D.liquidez && D.liquidez.filas) || []).filter((x) => !x.fallo && x.compras != null); if (!F.length) { cajaLiq.replaceChildren(); return; }
-    const mx = Math.max(...F.map((x) => Math.max(x.compras, x.ventas))) || 1; const w = (v) => (v / mx * 50).toFixed(2);
-    cajaLiq.replaceChildren(leyenda([['var(--ok)', 'Esperando para comprar, hasta un 1 % por debajo del precio'], ['var(--bad)', 'Esperando para vender, hasta un 1 % por encima']]),
-      el('div', { class: 'ob-bars' }, F.map((x) => el('button', { class: 'ob-br mar', title: x.s + ': ' + mUsd(x.compras) + ' para comprar y ' + mUsd(x.ventas) + ' para vender. Pulsa para ver sus datos.', onclick: () => fichaLibro(x) }, el('span', { class: 'et' }, x.s, el('span', { class: 'n2' }, x.enVivo ? 'ahora' : 'foto diaria')), el('span', { class: 'va' }, (x.completo ? '' : '≥ ') + mUsd(x.compras)),
-        el('span', { class: 'pista' }, el('i', { class: 'eje', style: 'left:50%' }), el('i', { class: 'b izq', style: 'left:' + (50 - Number(w(x.compras))).toFixed(2) + '%;width:' + w(x.compras) + '%' }), el('i', { class: 'b der', style: 'left:50%;width:' + w(x.ventas) + '%' })), el('span', { class: 'va izda' }, (x.completo ? '' : '≥ ') + mUsd(x.ventas))))),
-      el('p', { class: 'ob-nota' }, 'Dinero esperando en el libro de órdenes de Binance a menos de un 1 % del precio. Pulsa una fila para ver sus datos. Para releer un libro en el momento, abre la tabla de datos y pulsa «Leer ahora».'));
-  }
-
   /* ---------- las cuatro preguntas, arriba ---------- */
   const cajaPreg = el('div', { class: 'ob-preg' });
   function pintarPreguntas() {
@@ -404,7 +459,7 @@
   const urlVivo = (pares) => 'https://data-api.binance.vision/api/v3/ticker/24hr?type=MINI&symbols=' + encodeURIComponent(JSON.stringify(pares));
   function pintarEstado() { const edad = (Date.now() - Date.parse(D.leidoEn)) / 3600000; estado.replaceChildren(el('span', null, el('b', null, 'Datos diarios: '), fh(D.leidoEn), edad > 36 ? ' · ¡tienen más de un día y medio!' : ''), el('span', null, el('i', { class: 'ob-vivo' + (vivo ? '' : ' mal') }), el('b', null, 'Precio en vivo: '), vivo ? 'Binance, leído el ' + fh(vivo.hora) + ' (se relee cada minuto)' : 'no se pudo leer ahora' + (vivoError ? ' (' + vivoError + ')' : '') + '; se usan los cierres de ayer'), el('span', null, el('b', null, 'Cesta: '), D.activos.length + ' activos')); }
   let pausaVivo = 0; // si Binance pide esperar (418 o 429) no se insiste durante diez minutos: insistir alarga el bloqueo
-  async function leerVivo() { if (Date.now() < pausaVivo) return; try { const j = await traer(urlVivo(D.activos.map((a) => a.par))); const m = new Map(); for (const t of j) { const u = Number(t.lastPrice), o = Number(t.openPrice); if (u > 0) m.set(t.symbol, { ultimo: u, apertura: o }); } if (m.size < D.activos.length * 0.8) throw new Error('respuesta incompleta'); m.hora = new Date().toISOString(); vivo = m; vivoError = null; } catch (e) { vivoError = e.message; if (/HTTP (418|429)/.test(e.message)) { pausaVivo = Date.now() + 600000; vivoError = 'Binance pide esperar; se volverá a intentar en diez minutos'; } } pintarEstado(); pintarCalor(); pintarTablaSectores(); pintarPreguntas(); }
+  async function leerVivo() { if (Date.now() < pausaVivo) return; try { const j = await traer(urlVivo(D.activos.map((a) => a.par))); const m = new Map(); for (const t of j) { const u = Number(t.lastPrice), o = Number(t.openPrice); if (u > 0) m.set(t.symbol, { ultimo: u, apertura: o, volumen: Number(t.quoteVolume) }); } if (m.size < D.activos.length * 0.8) throw new Error('respuesta incompleta'); m.hora = new Date().toISOString(); vivo = m; vivoError = null; } catch (e) { vivoError = e.message; if (/HTTP (418|429)/.test(e.message)) { pausaVivo = Date.now() + 600000; vivoError = 'Binance pide esperar; se volverá a intentar en diez minutos'; } } pintarEstado(); pintarCalor(); pintarTablaSectores(); pintarPreguntas(); if (!leyendoLibro) pintarLiquidez(); }
 
   /* ---------- montaje ---------- */
   function limites() { return el('section', { class: 'zp', id: 'limites' }, el('p', { class: 'kick' }, 'Antes de leer nada'), el('h2', null, 'Qué es esto y qué no'), el('ul', { class: 'ob-reglas' }, [

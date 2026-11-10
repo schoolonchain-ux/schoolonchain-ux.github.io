@@ -8,6 +8,8 @@
 //  - Redes: dinero depositado y stablecoins por cadena, con 400 días de serie diaria (DefiLlama).
 //  - Volatilidad esperada: el índice de Deribit (DVOL) de BTC y ETH, un cierre por día sobre la misma rejilla de días. Si falla, se anota y lo demás sigue.
 //  - Sectores: cifras de 24 h de CoinGecko y, para una lista FIJA de sectores, qué activos de la cesta pone CoinGecko en cada uno.
+//  - Libros de órdenes de los ocho mayores: dinero esperando a ±1 % y ±2 % del precio en Binance (contra USDT) y en Kraken (contra el dólar).
+//    Si el precio de Kraken se separa más de un 3 % del de Binance se descarta (otro activo con las mismas letras).
 //  - Serie propia (data/mercado-serie.json): una fila por día con lo que no tiene histórico gratuito (capital total, dominancia y profundidad
 //    de los libros). La primera lectura de cada día queda fijada: una fila escrita no se vuelve a tocar.
 // Si una lectura imprescindible falla o sale incompleta NO se escribe nada (la web sigue con el fichero anterior y dice su antigüedad).
@@ -126,9 +128,30 @@ const SECTORES = [
   // ---- foto de los libros de órdenes de los ocho mayores (Binance). Cada lectura profunda cuenta mucho para el límite de Binance (250 de 6.000 por minuto):
   //      por eso se hace aquí, una vez al día y despacio, y NO desde el navegador de cada visitante.
   let CALC = null; for (const p of [path.join(__dirname, 'mercado-calc.js'), path.join(__dirname, '..', '..', 'assets', 'mercado-calc.js'), path.join(REPO, 'assets', 'mercado-calc.js')]) { if (fs.existsSync(p)) { CALC = require(p); break; } }
-  const liquidez = { banda: 0.01, filas: [] };
+  const liquidez = { banda: 0.01, banda2: 0.02, filas: [] };
   if (!CALC) liquidez.fallo = 'no se encontró el módulo de cálculo';
-  else for (const a of buena.slice(0, 8)) { const u = 'https://data-api.binance.vision/api/v3/depth?symbol=' + a.par + '&limit=5000'; try { const j = await leer(u, null, { intentos: 1 }); const p = CALC.profundidad(j.bids, j.asks, liquidez.banda); if (!p) throw new Error('libro vacío o cruzado'); liquidez.filas.push({ s: a.s, par: a.par, url: u, hora: new Date().toISOString(), medio: red(p.medio, 8), diferencialPct: red(p.diferencialPct, 4), compras: Math.round(p.compras), ventas: Math.round(p.ventas), desequilibrio: red(p.desequilibrio, 4), completo: p.completo }); } catch (e) { liquidez.filas.push({ s: a.s, par: a.par, url: u, fallo: e.message }); } await dormir(3500); }
+  // una foto de un libro: las dos bandas con la misma lectura
+  const foto = (bids, asks) => { const p = CALC.profundidad(bids, asks, liquidez.banda), q = CALC.profundidad(bids, asks, liquidez.banda2); if (!p || !q) throw new Error('libro vacío o cruzado'); return { hora: new Date().toISOString(), medio: red(p.medio, 8), diferencialPct: red(p.diferencialPct, 4), compras: Math.round(p.compras), ventas: Math.round(p.ventas), desequilibrio: red(p.desequilibrio, 4), completo: p.completo, b2: { compras: Math.round(q.compras), ventas: Math.round(q.ventas), desequilibrio: red(q.desequilibrio, 4), completo: q.completo } }; };
+  // Kraken: qué activos cotizan contra el dólar (una lectura de su lista de pares). Kraken llama XBT a bitcoin y XDG a dogecoin.
+  let paresK = null, falloK = null;
+  if (CALC) try { const j = await leer('https://api.kraken.com/0/public/AssetPairs', null); if (!j || (Array.isArray(j.error) && j.error.length) || !j.result) throw new Error('respuesta sin pares'); paresK = new Map(); for (const v of Object.values(j.result)) { if (!v || !v.wsname || v.status !== 'online') continue; const [b, q] = String(v.wsname).split('/'); if (q === 'USD') paresK.set({ XBT: 'BTC', XDG: 'DOGE' }[b] || b, v.altname); } if (paresK.size < 50) throw new Error('lista de pares demasiado corta (' + paresK.size + ')'); } catch (e) { falloK = e.message; paresK = null; }
+  if (CALC) for (const a of buena.slice(0, 8)) {
+    const u = 'https://data-api.binance.vision/api/v3/depth?symbol=' + a.par + '&limit=5000'; let x;
+    try { const j = await leer(u, null, { intentos: 1 }); x = Object.assign({ s: a.s, par: a.par, url: u }, foto(j.bids, j.asks)); } catch (e) { x = { s: a.s, par: a.par, url: u, fallo: e.message }; }
+    if (!paresK) x.kraken = { fallo: 'no se pudo leer la lista de pares de Kraken (' + falloK + ')' };
+    else if (!paresK.has(a.s)) x.kraken = { noCotiza: true };
+    else {
+      const pk = paresK.get(a.s), uk = 'https://api.kraken.com/0/public/Depth?pair=' + pk + '&count=500';
+      try {
+        const j = await leer(uk, null, { intentos: 2 }); if (!j || (Array.isArray(j.error) && j.error.length) || !j.result) throw new Error('Kraken responde con error' + (j && j.error && j.error.length ? ': ' + j.error.join(', ') : ''));
+        const k = Object.keys(j.result); const b = k.length === 1 ? j.result[k[0]] : null; if (!b || !Array.isArray(b.bids) || !Array.isArray(b.asks)) throw new Error('respuesta sin libro');
+        const ft = foto(b.bids, b.asks); if (x.medio && Math.abs(ft.medio / x.medio - 1) > 0.03) throw new Error('el precio de Kraken (' + ft.medio + ') no coincide con el de Binance (' + x.medio + '): se descarta');
+        x.kraken = Object.assign({ par: pk, url: uk }, ft);
+      } catch (e) { x.kraken = { par: pk, url: uk, fallo: e.message }; }
+    }
+    liquidez.filas.push(x); await dormir(3500);
+  }
+  fuentes.push({ que: 'Libro de órdenes de cada par contra el dólar (Kraken; una dirección por par, en cada fila)', url: 'https://api.kraken.com/0/public/Depth?pair=XBTUSD&count=500' });
   fuentes.push({ que: 'Libro de órdenes de cada par (Binance; una dirección por par, en cada fila)', url: 'https://data-api.binance.vision/api/v3/depth?symbol=BTCUSDT&limit=5000' });
   // ---- sectores de la cesta: qué activos de la cesta pone CoinGecko en cada sector de la lista fija (una lectura por sector, despacio:
   //      CoinGecko limita las consultas). Si una lectura falla, ese sector queda sin dato y se dice; no se rellena.
@@ -145,8 +168,9 @@ const SECTORES = [
   if (fs.existsSync(fSerie)) { let j; try { j = JSON.parse(fs.readFileSync(fSerie, 'utf8')); } catch (e) { throw new Error('la serie propia existe pero no se puede leer (' + e.message + '); no se toca nada'); } if (!j || j.version !== 1 || !Array.isArray(j.filas)) throw new Error('la serie propia tiene un formato inesperado; no se toca nada'); serie = j; }
   let filaNueva = false;
   if (!serie.filas.some((x) => x.dia === hoy)) {
-    const libros = {}; for (const x of liquidez.filas) if (!x.fallo) libros[x.s] = { compras: x.compras, ventas: x.ventas, diferencialPct: x.diferencialPct, completo: x.completo };
-    serie.filas.push({ dia: hoy, leidoEn: new Date(ahora).toISOString(), capTotalUsd: global.capTotalUsd, btcPct: global.dominanciaPct.btc, ethPct: global.dominanciaPct.eth, stablesUsd: stables.totalUsd, libros });
+    const guarda = (x) => ({ compras: x.compras, ventas: x.ventas, diferencialPct: x.diferencialPct, completo: x.completo, compras2: x.b2.compras, ventas2: x.b2.ventas, completo2: x.b2.completo });
+    const libros = {}, kraken = {}; for (const x of liquidez.filas) { if (!x.fallo) libros[x.s] = guarda(x); if (x.kraken && x.kraken.compras != null) kraken[x.s] = guarda(x.kraken); }
+    serie.filas.push({ dia: hoy, leidoEn: new Date(ahora).toISOString(), capTotalUsd: global.capTotalUsd, btcPct: global.dominanciaPct.btc, ethPct: global.dominanciaPct.eth, stablesUsd: stables.totalUsd, libros, kraken });
     serie.filas.sort((a, b) => (a.dia < b.dia ? -1 : 1)); filaNueva = true;
   }
   const out = {
@@ -156,5 +180,5 @@ const SECTORES = [
   };
   const dst = path.join(REPO, 'data', 'mercado.json'); fs.writeFileSync(dst, JSON.stringify(out) + '\n');
   if (filaNueva) fs.writeFileSync(fSerie, JSON.stringify(serie) + '\n');
-  console.log('OK mercado.json: ' + buena.length + ' activos, ' + rejilla.length + ' días, ' + sectores.length + ' sectores (' + sectoresCesta.filter((x) => x.miembros).length + ' de ' + SECTORES.length + ' con sus activos), ' + redes.filas.length + ' cadenas, serie propia de ' + serie.filas.length + ' días' + (filaNueva ? ' (fila de hoy añadida)' : ' (la de hoy ya estaba)') + ', stablecoins ' + Math.round(stables.totalUsd / 1e9) + ' mil M$, ' + excluidos.length + ' excluidos, volatilidad esperada de ' + (esperada.filas.filter((x) => x.v).map((x) => x.s).join(' y ') || 'ninguna moneda') + ', ' + liquidez.filas.filter((x) => !x.fallo).length + ' libros, ' + Math.round(fs.statSync(dst).size / 1024) + ' KB');
+  console.log('OK mercado.json: ' + buena.length + ' activos, ' + rejilla.length + ' días, ' + sectores.length + ' sectores (' + sectoresCesta.filter((x) => x.miembros).length + ' de ' + SECTORES.length + ' con sus activos), ' + redes.filas.length + ' cadenas, serie propia de ' + serie.filas.length + ' días' + (filaNueva ? ' (fila de hoy añadida)' : ' (la de hoy ya estaba)') + ', stablecoins ' + Math.round(stables.totalUsd / 1e9) + ' mil M$, ' + excluidos.length + ' excluidos, volatilidad esperada de ' + (esperada.filas.filter((x) => x.v).map((x) => x.s).join(' y ') || 'ninguna moneda') + ', ' + liquidez.filas.filter((x) => !x.fallo).length + ' libros de Binance y ' + liquidez.filas.filter((x) => x.kraken && x.kraken.compras != null).length + ' de Kraken, ' + Math.round(fs.statSync(dst).size / 1024) + ' KB');
 })().catch((e) => { console.error('FALLO mercado: ' + e.message); process.exit(1); });
