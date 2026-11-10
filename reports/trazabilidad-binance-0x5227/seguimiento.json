@@ -1,8 +1,8 @@
 {
  "version": 1,
- "generado": "2026-11-10T00:53:59.435Z",
+ "generado": "2026-11-10T10:27:01.532Z",
  "caso": "trazabilidad-binance-0x5227",
- "ultimaComprobacion": "2026-11-10T00:48:59.095Z",
+ "ultimaComprobacion": "2026-11-10T10:18:58.960Z",
  "ethereum": {
   "activo": true,
   "direcciones": [
@@ -16,8 +16,8 @@
    "0x5227f603c1ee34ce3c06efe6477003bdfccb2f8c"
   ],
   "vigilaDesde": "2026-10-30T10:12:39.672Z",
-  "ultimaComprobacion": "2026-11-10T00:48:59.095Z",
-  "ultimoBloque": 26381024,
+  "ultimaComprobacion": "2026-11-10T10:18:58.960Z",
+  "ultimoBloque": 26383865,
   "cadaMinutos": 10,
   "umbralEth": 100,
   "avisa": "Si alguna envía o recibe 100 ETH o más, o saca cualquier token.",
