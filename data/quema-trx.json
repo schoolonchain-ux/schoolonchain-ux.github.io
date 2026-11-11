@@ -1,8 +1,8 @@
 {
  "version": 1,
- "leidoEn": "2026-11-10T22:07:35.600Z",
- "desde": "2021-05-20",
- "hasta": "2026-11-09",
+ "leidoEn": "2026-11-11T06:07:45.605Z",
+ "desde": "2021-05-21",
+ "hasta": "2026-11-10",
  "dias": 2000,
  "coherencia": {
   "desviacionMedianaTrx": 0,
@@ -11,31 +11,31 @@
   "de": 1999
  },
  "actual": {
-  "dia": "2026-11-09",
-  "emisionDia": 3915712,
-  "quemaDia": 2545151,
-  "netoDia": 1370561,
-  "ofertaTrx": 95033580279,
-  "precioUsd": 0.3173745631,
-  "emision30d": 117461160,
-  "quema30d": 75014856,
-  "neto30d": 42446304,
-  "cambioOferta30d": 42446302
+  "dia": "2026-11-10",
+  "emisionDia": 3915168,
+  "quemaDia": 2744137,
+  "netoDia": 1171031,
+  "ofertaTrx": 95034751310,
+  "precioUsd": 0.3174840216,
+  "emision30d": 117460616,
+  "quema30d": 76000770,
+  "neto30d": 41459846,
+  "cambioOferta30d": 41459844
  },
  "regimen": {
   "ultimoDiaDeflacionario30d": "2025-11-07",
   "primerDiaInflacionario30d": "2025-11-08",
-  "diasInflacionarios": 367,
-  "diasDesdeEntonces": 367
+  "diasInflacionarios": 368,
+  "diasDesdeEntonces": 368
  },
  "trimestres": [
   {
    "q": "2021-T2",
-   "dias": 42,
-   "emision": 211703184,
-   "quema": 127889259,
-   "neto": 83813925,
-   "quemaUsd": 9071602
+   "dias": 41,
+   "emision": 206653040,
+   "quema": 124686809,
+   "neto": 81966231,
+   "quemaUsd": 8784673
   },
   {
    "q": "2021-T3",
@@ -207,20 +207,20 @@
   },
   {
    "q": "2026-T4",
-   "dias": 40,
-   "emision": 156617872,
-   "quema": 99147356,
-   "neto": 57470516,
-   "quemaUsd": 32547170
+   "dias": 41,
+   "emision": 160533040,
+   "quema": 101891493,
+   "neto": 58641547,
+   "quemaUsd": 33418390
   }
  ],
  "anios": [
   {
    "y": "2021",
-   "dias": 226,
-   "emision": 1140670784,
-   "quema": 1031175107,
-   "neto": 109495677
+   "dias": 225,
+   "emision": 1135620640,
+   "quema": 1027972657,
+   "neto": 107647983
   },
   {
    "y": "2022",
@@ -252,19 +252,13 @@
   },
   {
    "y": "2026",
-   "dias": 313,
-   "emision": 1225466080,
-   "quema": 884831275,
-   "neto": 340634805
+   "dias": 314,
+   "emision": 1229381248,
+   "quema": 887575412,
+   "neto": 341805836
   }
  ],
  "ultimos400": [
-  [
-   "2025-10-06",
-   3915712,
-   4135401,
-   0.3461995119
-  ],
   [
    "2025-10-07",
    3914896,
@@ -2658,6 +2652,12 @@
    3915712,
    2545151,
    0.3173745631
+  ],
+  [
+   "2026-11-10",
+   3915168,
+   2744137,
+   0.3174840216
   ]
  ],
  "fuente": "TronScan /api/turnover?type=0&from=issuance (serie diaria de emisión, quema y oferta)"
