@@ -58,6 +58,9 @@
   // camino de un grupo en los últimos n días: para cada día, la mediana de lo que lleva ganado o perdido cada activo desde hace n días.
   // Cada serie se cuenta desde su propio último dato; solo entran las que tienen dato hace n días. El último valor coincide con grupo(rendimientos a n días).
   function caminoGrupo(series, n, minimo) { const base = []; for (const c of series || []) { const i = ultimo(c); if (i >= 0 && i - n >= 0 && num(c[i - n]) && c[i - n] > 0) base.push([c, i]); } const y = []; for (let k = n; k >= 0; k--) { const v = []; for (const [c, i] of base) if (num(c[i - k])) v.push(c[i - k] / c[i - n] - 1); y.push(v.length >= (minimo == null ? 3 : minimo) ? mediana(v) : null); } return y; }
-  const M = { atras, cambio, mediana, grupo, caminoGrupo, maximo, esperadaFrenteAReal, rend, retornos, desv, vol, serieVol, percentil, estadoVol, corr, matrizCorr, serieCorr, beta, caidaDesdeMaximo, profundidad, ultimo };
+  // De una lista de correlaciones (una por pareja), las que se nombran: la más alta (se mueven juntos), la más cercana a cero (menos relación) y,
+  // solo si hay alguna por debajo de cero, la más baja (se mueven al revés). Devuelve posiciones en la lista; con empate, la primera. Sin datos, null.
+  function destacadas(v) { let alto = -1, cero = -1, reves = -1; for (let i = 0; i < (v || []).length; i++) { const x = v[i]; if (!num(x)) continue; if (alto < 0 || x > v[alto]) alto = i; if (cero < 0 || Math.abs(x) < Math.abs(v[cero])) cero = i; if (x < 0 && (reves < 0 || x < v[reves])) reves = i; } return alto < 0 ? null : { alto, cero, reves: reves < 0 ? null : reves }; }
+  const M = { atras, cambio, mediana, grupo, caminoGrupo, maximo, esperadaFrenteAReal, rend, retornos, desv, vol, serieVol, percentil, estadoVol, corr, matrizCorr, serieCorr, destacadas, beta, caidaDesdeMaximo, profundidad, ultimo };
   if (typeof module !== 'undefined' && module.exports) module.exports = M; else raiz.MCALC = M;
 })(typeof window !== 'undefined' ? window : globalThis);

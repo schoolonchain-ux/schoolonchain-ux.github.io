@@ -100,3 +100,14 @@ test('correlación de una pareja a lo largo del tiempo: cada día coincide con l
   const h = a.slice(); h[5] = null; const sh = M.serieCorr(h, b, 4); cerca(sh[u], M.corr(h, b, 4), 1e-12); // con un hueco se usan los cuatro últimos días comunes
   assert.deepEqual(M.serieCorr([], [], 4), []);
 });
+
+test('parejas que se nombran en la matriz: la más alta, la más cercana a cero y la más baja solo si es negativa', () => {
+  // el caso que vio el propietario el 11-nov: −0,63 no es «la que menos relación tiene»; esa es −0,18
+  assert.deepEqual(M.destacadas([0.94, -0.2, -0.18, -0.63, 0.57]), { alto: 0, cero: 2, reves: 3 });
+  assert.deepEqual(M.destacadas([0.9, 0.5, 0.1]), { alto: 0, cero: 2, reves: null }); // nada por debajo de cero: no hay pareja «al revés»
+  assert.deepEqual(M.destacadas([0.9, 0.5, -0.05]), { alto: 0, cero: 2, reves: 2 }); // la única negativa es también la más cercana a cero
+  assert.deepEqual(M.destacadas([-0.3, -0.7]), { alto: 0, cero: 0, reves: 1 });
+  assert.deepEqual(M.destacadas([null, 0.4, undefined, NaN]), { alto: 1, cero: 1, reves: null });
+  assert.deepEqual(M.destacadas([0.2, -0.2]), { alto: 0, cero: 0, reves: 1 }); // empate en distancia a cero: la primera
+  assert.equal(M.destacadas([]), null); assert.equal(M.destacadas([null]), null); assert.equal(M.destacadas(null), null);
+});

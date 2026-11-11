@@ -25,4 +25,6 @@ out.__esperada = {}; for (const x of (D.esperada && D.esperada.filas) || []) { i
   if (H.vol) { o.vol = { n: H.vol.n, altos: H.vol.altos.length, nAyer: H.vol.nAyer, altosAyer: H.vol.altosAyer.length, espDif: H.vol.esperada ? H.vol.esperada.dif : null, pAyer: {} }; for (const x of H.vol.lista) o.vol.pAyer[x.s] = x.pAyer; }
   if (H.des) { o.des = { n: H.des.n, lista: H.des.lista.length, entran: H.des.entran.length, salen: H.des.salen.length, medianaHoy: H.des.medianaHoy, medianaAntes: H.des.medianaAntes, hoy: {}, ayer: {} }; for (const x of H.des.tabla) { o.des.hoy[x.s] = b(x.hoy); o.des.ayer[x.s] = b(x.ayer); } }
   out.__lectura = o; }
+// corrección del 11-nov: parejas que nombra la frase de la matriz (la más alta, la más cercana a cero y la más baja si es negativa)
+{ out.__destacadas = {}; for (const clave of ['m30', 'm90']) for (const g of [12, 24, D.activos.length]) { const v = []; for (let i = 0; i < Math.min(g, D.activos.length); i++) for (let k = i + 1; k < Math.min(g, D.activos.length); k++) if (out.__matriz[clave][i][k] != null) v.push(out.__matriz[clave][i][k]); const q = M.destacadas(v); out.__destacadas[clave + '_' + g] = q ? { alto: v[q.alto], cero: Math.abs(v[q.cero]), reves: q.reves == null ? null : v[q.reves] } : null; } }
 fs.writeFileSync(process.argv[3], JSON.stringify(out)); console.log('volcado de ' + D.activos.length + ' activos');

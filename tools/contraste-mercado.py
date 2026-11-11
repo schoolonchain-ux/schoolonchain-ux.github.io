@@ -229,6 +229,22 @@ if lec.get('des'):
     cmp('lec_des_n', 'cesta', float(len(c30s)), num(v['n'])); cmp('lec_des_lista', 'cesta', float(nl), num(v['lista'])); cmp('lec_des_entran', 'cesta', float(ne), num(v['entran'])); cmp('lec_des_salen', 'cesta', float(ns), num(v['salen']))
     cmp('lec_des_mediana', 'cesta', float(np.median(np.array(c30s))), v['medianaHoy']); cmp('lec_des_mediana_antes', 'cesta', float(np.median(np.array(prevs))), v['medianaAntes'])
 print('puntos de la lectura del dia contrastados:', n_lec)
+# --- correccion del 11-nov: parejas que nombra la frase de la matriz, recalculadas aqui con las correlaciones de numpy
+n_des = 0
+for clave, nd in (('m30', 30), ('m90', 90)):
+    for g in (12, 24, len(orden)):
+        g = min(g, len(orden)); vals = []
+        for i in range(g):
+            for k in range(i + 1, g):
+                c = corr_fin(ret[orden[i]], ret[orden[k]], nd, min(ult[orden[i]], ult[orden[k]]))
+                if c is not None: vals.append(c)
+        suyo = volc['__destacadas'].get('%s_%d' % (clave, g)); n_des += 1
+        if not vals:
+            if suyo is not None: faltan += 1; print('DESTACADAS DE MAS:', clave, g)
+            continue
+        a = np.array(vals); neg = a[a < 0]
+        cmp('destacada_alta', '%s_%d' % (clave, g), float(a.max()), suyo['alto']); cmp('destacada_cero', '%s_%d' % (clave, g), float(np.abs(a).min()), suyo['cero']); cmp('destacada_reves', '%s_%d' % (clave, g), (float(neg.min()) if len(neg) else None), suyo['reves'])
+print('grupos de parejas destacadas contrastados:', n_des)
 print('sectores contrastados:', n_sec, '| cadenas contrastadas:', n_red, '| monedas con volatilidad esperada:', n_esp, '| parejas de la matriz:', n_par, '| parejas dia a dia:', n_ser)
 print('comparaciones hechas:', hechas)
 print('activos:', len(datos['activos']), '| casos con dato en un lado y no en el otro:', faltan)
