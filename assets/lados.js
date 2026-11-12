@@ -4,6 +4,7 @@
    Izquierda «Ahora en la cadena»: artículos de Medium (data/medium.json, rotan solos), descongelaciones de TRX (data/desbloqueos-trx.json),
    últimos bloqueos de Tether (eventos del contrato de USDT en TRON y Ethereum, en vivo).
    Derecha «Compruébalo tú»: comprobador rápido de bloqueos (nodos públicos, en vivo), paridad de stablecoins (DefiLlama, en vivo),
+   coste de vender en SUNSwap (data/liquidez-sunswap.json, renovado cada hora),
    estado de los casos (reports/index.json + data.json + data/novedades.json) y accesos a las demás herramientas. */
 (function () {
   const izq = document.getElementById('lado-izq'), der = document.getElementById('lado-der');
@@ -175,6 +176,42 @@
     return box;
   }
 
+  /* =============== 5b · ¿cuánto cuesta vender en SUNSwap? (data/liquidez-sunswap.json, lo renueva cada hora el publicador de EquipoIA) =============== */
+  // Misma cuenta que la pestaña «Liquidez SUNSwap» de Herramientas (assets/interp.js): el importe se escribe a mano y se recuerda entre las dos
+  // (localStorage «liq-importe» / «liq-umbral»). Cada token sale con su veredicto y su coste; si el fichero falta o es viejo, el bloque lo dice.
+  function liquidezSunswap() {
+    if (!window.LIQ) return null;
+    const lee = (k, d) => { try { const v = localStorage.getItem(k); return v == null ? d : v; } catch (e) { return d; } };
+    const guarda = (k, v) => { try { localStorage.setItem(k, String(v)); } catch (e) { /* sin almacenamiento */ } };
+    let importe = Number(lee('liq-importe', '1000000')) || 1000000; const umbral = Number(lee('liq-umbral', '0.5')) || 0.5; let datos = null;
+    const inp = el('input', { type: 'text', inputmode: 'decimal', autocomplete: 'off', spellcheck: 'false', 'aria-label': 'Importe a vender en dólares', value: n(importe) });
+    const aplica = () => { const v = Number(String(inp.value).replace(/\./g, '').replace(',', '.').replace(/[^0-9.]/g, '')); if (v > 0) { importe = v; guarda('liq-importe', v); } inp.value = n(importe); pinta(); };
+    inp.addEventListener('change', aplica);
+    const form = el('form', { class: 'lin', onsubmit: (ev) => { ev.preventDefault(); aplica(); } }, inp, el('button', { type: 'submit' }, 'Ver'));
+    const resumen = el('div', { class: 'lliq-res' }), rejilla = el('div', { class: 'lliq' }), nota = el('p', { class: 'hint' }), foot = el('div');
+    const box = el('div', { class: 'lb' }, el('b', { class: 'lt' }, el('a', { href: 'herramientas.html#liquidez-sunswap' }, '¿Cuánto cuesta vender en SUNSwap?')), form, resumen, rejilla, nota, foot);
+    function pinta() {
+      if (!datos) return;
+      const mn = datos.tamanosUsd, fuera = importe < mn[0] || importe > mn[mn.length - 1];
+      const filas = datos.tokens.map((t) => { const sin = t.sinMercado || !t.curva || !t.curva.length; const ev = sin ? null : window.LIQ.evaluar(t.curva, importe); return { t, sin, ev, s: sin ? 'sin' : (fuera ? 'rojo' : window.LIQ.semaforo(ev, umbral, umbral * 4)) }; });
+      filas.sort((a, b) => { const ca = a.sin || !a.ev || a.ev.estado !== 'ok' ? Infinity : a.ev.costePct, cb = b.sin || !b.ev || b.ev.estado !== 'ok' ? Infinity : b.ev.costePct; return ca === cb ? a.t.simbolo.localeCompare(b.t.simbolo) : ca - cb; });
+      const caben = filas.filter((f) => f.s === 'verde').length, total = filas.filter((f) => !f.sin).length;
+      resumen.replaceChildren(fuera ? el('span', { class: 'warn' }, 'El cálculo cubre de ' + n(mn[0]) + ' $ a ' + n(mn[mn.length - 1]) + ' $.') : el('span', null, 'Vender ', el('b', null, n(importe) + ' $'), ' por USDT: ', el('b', { class: caben ? 'ok' : 'bad' }, caben + ' de ' + total), ' tokens cuestan hasta ' + n(umbral, 1) + ' %'));
+      rejilla.replaceChildren(...filas.map((f) => { const ok = f.ev && f.ev.estado === 'ok'; const txt = f.sin ? 'sin mercado' : ok ? n(f.ev.costePct, f.ev.costePct < 0.1 ? 3 : f.ev.costePct < 10 ? 2 : 1) + ' %' : (fuera ? '—' : 'no cabe');
+        return el('a', { class: 'lpill ' + f.s, href: 'herramientas.html#liquidez-sunswap', title: f.t.simbolo + ' · ' + (f.sin ? 'no tiene mercado con USDT en SUNSwap' : ok ? 'coste de vender ' + n(importe) + ' $: ' + n(f.ev.costePct, 3) + ' % · recibirías ' + n(Math.round(f.ev.salidaUsdt)) + ' $' : 'no cabe entera') }, el('b', null, f.t.simbolo), el('span', null, txt)); }));
+      nota.textContent = 'Verde: hasta tu límite (' + n(umbral, 1) + ' %) · ámbar: hasta 4 veces · rojo: más, o no cabe. Se recuerda el importe de la herramienta.';
+      const h = (Date.now() - Date.parse(datos.generado)) / HORA;
+      foot.replaceChildren(h > 4 ? pie('⚠ SUNSwap sin actualizar desde hace ' + Math.round(h) + ' h', 'warn') : pie('SUNSwap · lectura ' + hace(Date.parse(datos.generado)) + ' · bloque ' + n(datos.bloque.n), '', el('a', { href: 'herramientas.html#liquidez-sunswap', style: 'margin-left:auto' }, 'Ver todo →')));
+    }
+    async function leer() {
+      const d = await cargar('data/liquidez-sunswap.json?v=' + Math.floor(Date.now() / 600000));
+      if (!d || d.version !== 1 || !Array.isArray(d.tokens) || !d.tamanosUsd) { if (!datos) { resumen.replaceChildren(el('span', { class: 'warn' }, 'Todavía no hay lectura de SUNSwap.')); foot.replaceChildren(pie('Los datos se publican cada hora', 'warn')); } return; }
+      datos = d; pinta();
+    }
+    resumen.replaceChildren(el('span', { class: 'hint' }, 'Leyendo los mercados de SUNSwap…')); leer(); cada(10 * 60000, leer);
+    return box;
+  }
+
   /* =============== 6 · estado de los casos =============== */
   async function casos() {
     const idx = await cargar('reports/index.json'); const NOV = N ? await N.cargar() : [];
@@ -252,6 +289,7 @@
       l('herramientas.html#z-comprobar', 'Comprobar una dirección o un contrato', 'Abrir →'),
       l('herramientas.html#z-tether', 'Bloqueos de Tether, paridad y USDT0', 'Ver →'),
       l('herramientas.html#z-cartera', 'Riesgo, prueba de estrés y coste de vender', 'Calcular →'),
+      l('herramientas.html#liquidez-sunswap', '¿Cuánto cuesta vender en SUNSwap?', 'Probar →'),
       l('herramientas.html#z-mercado', 'Mercado hoy', 'Ver →'),
       l('herramientas.html#z-trx', 'TRX: descongelaciones, reparto y quema', 'Ver →'),
       l('datos.html', 'De dónde sale cada cifra', 'Datos y método →'),
@@ -262,7 +300,7 @@
   (async () => {
     // cada apartado lleva su propio título: Medium NO va bajo «Ahora en la cadena» (son artículos, no datos de la cadena)
     const apartado = (titulo, cls, ...kids) => el('section', { class: 'lsec' + (cls ? ' ' + cls : '') }, el('h4', { class: 'lh' }, titulo), ...kids.filter(Boolean));
-    const derSec = apartado('Compruébalo tú', '', comprobador(), paridad());
+    const derSec = apartado('Compruébalo tú', '', comprobador(), paridad(), liquidezSunswap());
     der.append(derSec);
     let [med, des, cas, u0, trx] = await Promise.all([medium(), desbloqueos(), casos(), usdt0Mini(), trxMini()]);
     if (med) izq.append(apartado('En Medium', 'uno', med));

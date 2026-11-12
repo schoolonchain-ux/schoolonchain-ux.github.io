@@ -106,3 +106,16 @@ aside.lado{max-width:1240px;width:100%;margin:0 auto 18px;padding:0 20px;display
 .lado .lcaso .lc3 b{display:inline;font-size:11.5px;color:var(--fg)}
 @media (max-width:640px){aside.lado{padding:0 14px}}
 @media (prefers-reduced-motion:reduce){.lado .lmed{transition:none}.lado .lv.wait::before{animation:none}}
+
+/* coste de vender en SUNSwap: una pastilla por token con su veredicto (verde / ámbar / rojo) y su coste */
+.lado .lliq-res{font-size:12.5px;color:var(--soft);margin:8px 0 0;line-height:1.35}
+.lado .lliq-res b{color:var(--fg)} .lado .lliq-res b.ok{color:var(--ok)} .lado .lliq-res b.bad{color:var(--bad)}
+.lado .lliq{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:5px;margin-top:8px}
+.lado .lpill{display:flex;flex-direction:column;align-items:center;gap:1px;padding:5px 2px;border:1px solid var(--line);border-radius:9px;background:var(--bg);color:inherit;text-decoration:none;line-height:1.2;min-width:0}
+.lado .lpill b{font-size:12px}
+.lado .lpill span{font-size:11px;font-variant-numeric:tabular-nums;color:var(--soft);white-space:nowrap}
+.lado .lpill.verde{border-color:var(--ok);background:rgba(95,211,160,.1)} .lado .lpill.verde b{color:var(--ok)}
+.lado .lpill.ambar{border-color:var(--warn);background:rgba(242,184,75,.1)} .lado .lpill.ambar b{color:var(--warn)}
+.lado .lpill.rojo{border-color:rgba(255,107,131,.5)} .lado .lpill.rojo b{color:var(--bad)}
+.lado .lpill.sin{opacity:.6}
+.lado .lpill:hover{border-color:var(--acc)}
