@@ -1,4 +1,4 @@
-/* Capítulos 7 a 9 de la página de SUNSwap: historia, anomalías y riesgos, método y evidencia. */
+/* Capítulos 7 a 9 de la página de sun.io: historia, anomalías y riesgos, método y evidencia. */
 (function () {
   const { el, n, m, pct, VS, VC } = SS;
   const col = (x) => VC[x] || SS.GRIS, pn = SS.pn;
@@ -85,7 +85,7 @@
     const k = d.kpi, v = d.validacion; app.append(SS.cap(9));
     const tot = VS.reduce((a, x) => a + v[x].tot, 0), comp = VS.reduce((a, x) => a + v[x].coi + v[x].dif, 0), sinq = VS.reduce((a, x) => a + v[x].cpu + v[x].rev, 0), fuera = VS.reduce((a, x) => a + v[x].ven, 0);
     app.append(SS.llano(
-      'Los importes en dólares son siempre <b>estimados</b>: las cantidades (saldos, eventos, volúmenes) salen de la cadena y se valoran con precios de DefiLlama contrastados con Binance. Para que se pueda <b>comprobar</b>, el motor que simula las operaciones se contrastó con los contratos oficiales de SUNSwap y con intercambios reales.',
+      'Los importes en dólares son siempre <b>estimados</b>: las cantidades (saldos, eventos, volúmenes) salen de la cadena y se valoran con precios de DefiLlama contrastados con Binance. Para que se pueda <b>comprobar</b>, el motor que simula las operaciones se contrastó con los contratos oficiales de sun.io y con intercambios reales.',
       'De <b>' + n(tot) + '</b> cotizaciones pedidas a los contratos (sin enviar ninguna transacción), ' + n(comp) + ' se pudieron comparar y <b>solo 2 salieron distintas</b> (las dos del mercado V4 con un «hook» sin caracterizar); de <b>' + k.RE_N + ' intercambios reales</b> re-ejecutados, ' + k.RE_EX + ' coinciden exactos.',
       '<b>Lo que no se sabe</b> está escrito: el TVL completo (faltan precios fiables de unos 15.100 tokens menores), la profundidad realmente ejecutable, el origen del capital anterior a la ventana, la identidad de cualquier dirección y las causas de los grandes movimientos.'));
     app.append(el('div', { class: 'kpis2' }, SS.kpi('Cotizaciones de los contratos', n(tot), 'sin enviar ninguna transacción · VERIFICADO'), SS.kpi('Comparables', n(comp), 'idénticas salvo 2 (hook de V4) · VERIFICADO'), SS.kpi('Intercambios reales reproducidos', k.RE_EX + ' de ' + k.RE_N, k.RE_D2 + ' con diferencia de hasta 2 unidades mínimas; ' + k.RE_DI + ' «redondos» · VERIFICADO')));
@@ -101,7 +101,7 @@
     app.append(el('h3', { class: 'ss-sub' }, 'Ejemplos que se pueden comprobar ahora mismo'));
     app.append(el('p', { class: 'narr' }, '14 transacciones del informe, con su hash completo y enlace a TronScan (apartado 16.1). Pulsa el hash para abrirla.'));
     app.append(SS.tabla('16.1#0', { pp: 7, buscar: true, texto: [1, 2], extra: { ph: 'Buscar una transacción…' } }));
-    app.append(SS.acordeon('Los contratos oficiales de SUNSwap, verificados (apartado 5.1)', SS.tabla('5.1#0', { pp: 10, buscar: false, texto: [0, 2, 3] })));
+    app.append(SS.acordeon('Los contratos oficiales de sun.io, verificados (apartado 5.1)', SS.tabla('5.1#0', { pp: 10, buscar: false, texto: [0, 2, 3] })));
     app.append(SS.acordeon('Mercados clave con su identificador completo (apartado 16.2)', SS.tabla('16.2#0', { pp: 6, buscar: false, texto: [0, 1] })));
     app.append(SS.acordeon('Cuántos mercados hay y en qué estado (apartado 5.2)', SS.tabla('5.2#0', { pp: 6, buscar: false })));
     app.append(el('h3', { class: 'ss-sub' }, 'Método, conclusiones y límites'));
@@ -112,7 +112,7 @@
     app.append(SS.acordeon('Informes de fase y huellas (apartado 16.3)', SS.tabla('16.3#0', { pp: 6, buscar: false, texto: [0, 1, 2, 3] })));
     app.append(el('div', { class: 'card', style: 'margin:16px 0' }, el('h3', null, 'Descargas y verificación'),
       el('p', { class: 'narr' }, 'Edición pública del informe validado (huella ', el('code', null, d.informe.huella), '). Si hay cambios se publica una edición nueva; esta no se retoca.'),
-      el('div', { class: 'actions' }, el('a', { class: 'btn primary', href: SS.INFORME }, 'Leer el informe completo'), el('a', { class: 'btn', href: 'investigacion/docs/SUNSWAP-INFORME-FINAL-2026-11-12.md', target: '_blank', rel: 'noopener' }, 'Texto original (.md) ↗'), el('a', { class: 'btn', href: 'reports/sunswap-microscopio/data.json', target: '_blank', rel: 'noopener' }, 'Datos de esta página (JSON) ↗'), el('a', { class: 'btn', href: 'herramientas.html#liquidez-sunswap' }, 'Herramienta «Liquidez SUNSwap»'))));
+      el('div', { class: 'actions' }, el('a', { class: 'btn primary', href: SS.INFORME }, 'Leer el informe completo'), el('a', { class: 'btn', href: 'investigacion/docs/SUNSWAP-INFORME-FINAL-2026-11-12.md', target: '_blank', rel: 'noopener' }, 'Texto original (.md) ↗'), el('a', { class: 'btn', href: 'reports/sunswap-microscopio/data.json', target: '_blank', rel: 'noopener' }, 'Datos de esta página (JSON) ↗'), el('a', { class: 'btn', href: 'herramientas.html#liquidez-sunswap' }, 'Herramienta «Liquidez sun.io»'))));
     app.append(SS.recap(9, [
       'Los importes en dólares son <b>estimados</b>; el cálculo se contrastó con los contratos (' + n(comp) + ' cotizaciones comparables, solo 2 distintas) y con ' + k.RE_N + ' intercambios reales.',
       'La profundidad <b>ejecutable</b> no se afirma para ningún mercado.',

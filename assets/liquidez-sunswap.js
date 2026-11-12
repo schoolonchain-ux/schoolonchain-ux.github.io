@@ -1,6 +1,6 @@
-/* Zona 3 · pestaña «Liquidez SUNSwap»: ¿cuánto cuesta vender X dólares de cada token por USDT en SUNSwap (V1–V4)?
+/* Zona 3 · pestaña «Liquidez sun.io»: ¿cuánto cuesta vender X dólares de cada token por USDT en sun.io (V1–V4)?
    El importe se escribe a mano. Lee data/liquidez-sunswap.json, que prepara el publicador de EquipoIA leyendo la cadena (TronGrid) y simulando la venta con el mismo motor de la investigación
-   «SUNSwap bajo el microscopio» (enteros exactos; contrastado con los cotizadores de los contratos). El fichero trae, para cada token, el coste de vender una cuadrícula de tamaños (de 100 $ a 50 M$);
+   «sun.io bajo el microscopio» (enteros exactos; contrastado con los cotizadores de los contratos). El fichero trae, para cada token, el coste de vender una cuadrícula de tamaños (de 100 $ a 50 M$);
    para el importe que escribes se interpola entre dos puntos de esa cuadrícula (assets/interp.js). Coste = comisión + deslizamiento de la curva. Sin IA. Si no hay fichero, la pestaña lo dice. */
 (function () {
   const { el, n } = C;
@@ -71,7 +71,7 @@
       const alterna = () => { if (abierto.has(t.simbolo)) abierto.delete(t.simbolo); else abierto.add(t.simbolo); pinta(); };
       tr.addEventListener('click', alterna); tr.addEventListener('keydown', (e) => { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); alterna(); } });
       cuerpo.append(tr);
-      if (ab) cuerpo.append(el('tr', { class: 'liq-detf' }, el('td', { colspan: '6' }, f.sin ? el('p', { class: 'muted' }, t.simbolo + ' no tiene ningún mercado con USDT en SUNSwap ni con TRX/WTRX con liquidez medible: no se puede vender por USDT en SUNSwap.') : detalle(t, ev))));
+      if (ab) cuerpo.append(el('tr', { class: 'liq-detf' }, el('td', { colspan: '6' }, f.sin ? el('p', { class: 'muted' }, t.simbolo + ' no tiene ningún mercado con USDT en sun.io ni con TRX/WTRX con liquidez medible: no se puede vender por USDT en sun.io.') : detalle(t, ev))));
     }
     return el('div', { class: 'liq-caja' }, el('table', { class: 'liq-tabla' }, el('thead', null, el('tr', null, el('th', null, 'Token'), el('th', null, '¿Cabe?'), el('th', { class: 'num' }, 'Coste de vender'), el('th', { class: 'num' }, 'Recibirías'), el('th', null, 'Ruta'), el('th', { class: 'num' }, 'Máximo con coste ≤ ' + n(umbral, 1) + ' %'))), cuerpo));
   }
@@ -88,7 +88,7 @@
     const aviso = viejo > 4 ? el('p', { class: 'liq-aviso' }, 'Atención: estos datos son de ' + hace(datos.generado) + ' (' + fh(datos.generado) + '); el monitor no se ha actualizado desde entonces.') : null;
     const mn = datos.tamanosUsd; const fuera = importe < mn[0] || importe > mn[mn.length - 1];
     raiz.replaceChildren(...[
-      el('div', { class: 'liq-cab' }, el('h3', null, '¿Cuánto cuesta vender en SUNSwap?'), el('p', { class: 'sub' }, 'Escribe cuántos dólares quieres vender de cada token y lo cambiamos por USDT. Calculamos cuánto perderías por la comisión y por el deslizamiento de la curva, repartiendo la venta entre los mercados de SUNSwap (V1, V2, V3 y V4) donde sale mejor.')),
+      el('div', { class: 'liq-cab' }, el('h3', null, '¿Cuánto cuesta vender en sun.io?'), el('p', { class: 'sub' }, 'Escribe cuántos dólares quieres vender de cada token y lo cambiamos por USDT. Calculamos cuánto perderías por la comisión y por el deslizamiento de la curva, repartiendo la venta entre los mercados de sun.io (V1, V2, V3 y V4) donde sale mejor.')),
       el('form', { class: 'liq-form', onsubmit: (e) => e.preventDefault() }, el('label', null, 'Importe a vender (USD)', inp), el('div', { class: 'liq-qs', role: 'group', 'aria-label': 'Importes habituales' }, rapidos), el('label', null, 'Coste máximo que acepto', sel)),
       fuera ? el('p', { class: 'liq-aviso' }, 'El cálculo cubre de ' + usd(mn[0]) + ' a ' + usd(mn[mn.length - 1]) + '. Para ese importe no hay dato.') : null,
       aviso, pintaTabla(),
@@ -101,7 +101,7 @@
           el('li', null, el('b', null, 'Dos rutas. '), 'Directa (token → USDT, repartida entre los mercados token/USDT) y de dos saltos (token → TRX/WTRX → USDT). Se muestra la que más da; una mezcla de las dos podría dar algo más. WTRX y TRX se tratan como equivalentes 1 a 1 (envolver y desenvolver no tiene coste de mercado; sí algo de energía).'),
           el('li', null, el('b', null, 'Capital no es liquidez vendible. '), 'Un mercado puede tener millones depositados fuera del rango de precios actual y no admitir una venta: aquí cuenta lo que realmente absorbe la venta.'),
           el('li', null, el('b', null, 'Límites. '), 'Mapa de ticks leído en una ventana alrededor del precio actual (60 palabras del bitmap a cada lado); lo que quede fuera cuenta como «no cabe». Mercados con hooks que alteran el intercambio, y mercados con menos de 200 $, no se incluyen.')),
-          el('p', null, 'Método completo en el informe ', el('a', { href: 'doc.html?f=investigacion/docs/SUNSWAP-INFORME-FINAL-2026-11-12.md#8-profundidad-y-eficiencia' }, 'SUNSwap bajo el microscopio (apartado 8)'), '. Nada de esto es consejo de inversión.'))].filter(Boolean));
+          el('p', null, 'Método completo en el informe ', el('a', { href: 'doc.html?f=investigacion/docs/SUNSWAP-INFORME-FINAL-2026-11-12.md#8-profundidad-y-eficiencia' }, 'sun.io bajo el microscopio (apartado 8)'), '. Nada de esto es consejo de inversión.'))].filter(Boolean));
   }
   fetch('data/liquidez-sunswap.json', { cache: 'no-cache' }).then((r) => { if (!r.ok) throw new Error('HTTP ' + r.status); return r.json(); }).then((d) => { datos = d; pinta(); })
     .catch((e) => raiz.replaceChildren(el('p', { class: 'muted' }, 'Todavía no hay datos del monitor (' + e.message + '). Se publican cuando el publicador de EquipoIA los lee de la cadena.')));

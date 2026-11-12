@@ -1,8 +1,8 @@
-# Monitor de liquidez de SUNSwap: los programas
+# Monitor de liquidez de sun.io: los programas
 
-Copia de transparencia de lo que calcula la pestaña «Liquidez SUNSwap» de Herramientas. Los programas que se ejecutan de verdad viven fuera de este repositorio; aquí están para que cualquiera pueda leerlos.
+Copia de transparencia de lo que calcula la pestaña «Liquidez sun.io» de Herramientas. Los programas que se ejecutan de verdad viven fuera de este repositorio; aquí están para que cualquiera pueda leerlos.
 
-- `mercados.json` y `tokens.json`: los mercados de SUNSwap (V1–V4) con liquidez para los 12 tokens y los propios tokens. Salen del inventario de la investigación «SUNSwap bajo el microscopio» (`exportar-mercados.cjs`).
+- `mercados.json` y `tokens.json`: los mercados de sun.io (V1–V4) con liquidez para los 12 tokens y los propios tokens. Salen del inventario de la investigación «sun.io bajo el microscopio» (`exportar-mercados.cjs`).
 - `lector.cjs`: lee el estado de cada mercado directamente en la cadena TRON (nodo público de TronGrid, solo lectura): reservas en V1 y V2; precio, liquidez y mapa de ticks en V3 y V4.
 - `motor.cjs`: el mismo motor de enteros exactos de la investigación; simula una venta contra cada mercado.
 - `curvas.cjs`: para cada token calcula el coste de vender una cuadrícula de tamaños (de 100 $ a 50 M$), repartiendo la venta entre los mercados y comparando la ruta directa con la de dos saltos.

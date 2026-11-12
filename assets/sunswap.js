@@ -1,4 +1,4 @@
-/* Página interactiva de «SUNSwap bajo el microscopio» (sunswap.html).
+/* Página interactiva de «sun.io bajo el microscopio» (sunswap.html).
    Los datos salen de reports/sunswap-microscopio/data.json, que genera el programa sunswap-visual/exportar.cjs a partir de los archivos de la propia investigación y del informe validado:
    todas las tablas son las del informe, copiadas tal cual, y antes de escribir el fichero el programa comprueba que los números de los gráficos coinciden con las tablas del informe.
    Esta página no cambia ni reinterpreta el informe: lo enseña de otra forma. El texto íntegro sigue en doc.html. Los capítulos viven en sunswap-c1.js, sunswap-c2.js y sunswap-c3.js. */
@@ -23,7 +23,9 @@
   SS.nivel = (t, p) => (p ? p + 'O' : t);
   SS.norm = (s) => String(s).replace(/(VERIFICAD|ESTIMAD|DESCONOCID)A/g, '$1O');
   const url = (h) => (/^https?:/.test(h) ? h : /^#/.test(h) ? SS.INFORME + h : 'investigacion/docs/' + h.replace(/^\.\//, ''));
-  SS.md = (s) => esc(s).replace(/\*\*(.+?)\*\*/g, '<b>$1</b>').replace(/`([^`]+)`/g, '<code>$1</code>').replace(/\[([^\]]+)\]\(([^)]+)\)/g, (_, t, h) => '<a href="' + esc(url(h.replace(/&amp;/g, '&'))) + '" target="_blank" rel="noopener">' + t + '</a>').replace(ESTR, (t, p) => '<span class="est est-' + SS.nivel(t, p) + ' est-click" role="button" tabindex="0" data-nivel="' + SS.nivel(t, p) + '" title="Pulsa para ver todo lo que lleva esta etiqueta">' + t + '</span>');
+  /* El nombre del producto se muestra como «sun.io» también en lo que viene del informe validado; el informe en sí no se modifica (data.json conserva su redacción original). */
+  SS.marca = (s) => String(s).replace(/\b(?:SUN[Ss]wap|Sun[Ss]wap)\b/g, 'sun.io');
+  SS.md = (s) => esc(SS.marca(s)).replace(/\*\*(.+?)\*\*/g, '<b>$1</b>').replace(/`([^`]+)`/g, '<code>$1</code>').replace(/\[([^\]]+)\]\(([^)]+)\)/g, (_, t, h) => '<a href="' + esc(url(h.replace(/&amp;/g, '&'))) + '" target="_blank" rel="noopener">' + t + '</a>').replace(ESTR, (t, p) => '<span class="est est-' + SS.nivel(t, p) + ' est-click" role="button" tabindex="0" data-nivel="' + SS.nivel(t, p) + '" title="Pulsa para ver todo lo que lleva esta etiqueta">' + t + '</span>');
   SS.html = (s) => el('span', { html: SS.md(s) });
 
   /* ---------- números en formato del informe (para ordenar tablas) ---------- */
@@ -41,7 +43,7 @@
   const esNum = (filas, i) => filas.length && filas.every((r) => /^[-—]|^`?\d/.test(String(r[i] || '').trim()) && SS.pn(r[i]) !== null || /^—$/.test(String(r[i] || '').trim()));
   /* columnas para UI.tabla a partir de una tabla del informe (key = «apartado#número») */
   SS.cols = (key, o = {}) => { const t = SS.d.tablas[key]; if (!t) throw new Error('falta la tabla ' + key);
-    return t.cab.map((c, i) => { const num = o.texto && o.texto.includes(i) ? false : esNum(t.filas, i); return { t: c, num: num ? 1 : 0, v: (r) => SS.celda(r[i]), o: (r) => { const x = SS.pn(r[i]); return num ? (x === null ? -Infinity : x) : String(r[i]).replace(/`/g, '').toLowerCase(); }, csv: (r) => String(r[i]).replace(/`/g, '') }; }); };
+    return t.cab.map((c, i) => { const num = o.texto && o.texto.includes(i) ? false : esNum(t.filas, i); return { t: SS.marca(c), num: num ? 1 : 0, v: (r) => SS.celda(r[i]), o: (r) => { const x = SS.pn(r[i]); return num ? (x === null ? -Infinity : x) : String(r[i]).replace(/`/g, '').toLowerCase(); }, csv: (r) => SS.marca(String(r[i]).replace(/`/g, '')) }; }); };
   SS.rows = (key) => SS.d.tablas[key].filas.map((f) => f.slice());
   SS.tabla = (key, o = {}) => UI.tabla(Object.assign({ cols: SS.cols(key, o), rows: SS.rows(key), pp: o.pp || 12, csv: 'sunswap-' + key.replace('#', '-'), buscar: o.buscar }, o.extra || {}));
   SS.datos = (key, titulo, nota, o = {}) => Object.assign({ cols: SS.cols(key, o), rows: SS.rows(key), csv: 'sunswap-' + key.replace('#', '-'), titulo, nota }, o.extra || {});
@@ -63,7 +65,7 @@
 
   /* ---------- piezas de capítulo ---------- */
   SS.CAPS = [
-    { n: 1, t: 'Lo esencial', d: 'Qué es SUNSwap, qué medimos y lo que más sorprende, en una página.' },
+    { n: 1, t: 'Lo esencial', d: 'Qué es sun.io, qué medimos y lo que más sorprende, en una página.' },
     { n: 2, t: 'Dónde está el capital', d: 'Cuánto hay, en qué versión, en qué mercados y en qué monedas.' },
     { n: 3, t: 'Pocos mercados, pocas cuentas', d: 'Cuánta parte del capital reúnen los mayores mercados y los mayores titulares.' },
     { n: 4, t: 'Capital no es profundidad', d: 'Cuánto se puede vender de verdad antes de mover el precio, según la simulación.' },
@@ -81,7 +83,7 @@
   SS.aviso = (t, ...k) => el('div', { class: 'ss-nota' }, t ? el('b', null, t + ' ') : null, ...k);
   SS.acordeon = (resumen, ...cuerpo) => el('details', { class: 'ss-det' }, el('summary', null, resumen), el('div', { class: 'ss-detc' }, ...cuerpo));
   /* enlace a la herramienta viva */
-  SS.herramienta = (texto) => el('div', { class: 'ss-cta' }, el('div', null, el('b', null, 'Pruébalo con tu importe. '), texto), el('a', { class: 'btn primary', href: 'herramientas.html#liquidez-sunswap' }, 'Abrir la herramienta «Liquidez SUNSwap» →'));
+  SS.herramienta = (texto) => el('div', { class: 'ss-cta' }, el('div', null, el('b', null, 'Pruébalo con tu importe. '), texto), el('a', { class: 'btn primary', href: 'herramientas.html#liquidez-sunswap' }, 'Abrir la herramienta «Liquidez sun.io» →'));
   /* bloque de texto del informe (lista de párrafos en Markdown) */
   SS.texto = (lineas) => { const w = el('div', { class: 'ss-md' }); let lista = null, tipo = null; for (const l of lineas) { const t = l.trim(); if (!t) { lista = null; continue; }
       const b = /^[-*]\s+(.*)/.exec(t), nu = /^(\d+)\.\s+(.*)/.exec(t);
@@ -96,7 +98,7 @@
   /* ---------- ficha de un mercado (panel lateral) ---------- */
   SS.fichaMercado = (mk) => UI.abrir(mk.par + ' · ' + mk.v, () => { const dir = mk.id.slice(3);
     const fila = (k, v) => el('tr', null, el('th', { scope: 'row' }, k), el('td', null, v));
-    return el('div', null, el('p', { class: 'narr' }, 'Mercado de SUNSwap ' + mk.v + '. Capital valorado el 11-nov-2026 (valoración parcial: solo lo que tiene precio fiable). ', C.est('ESTIMADO')),
+    return el('div', null, el('p', { class: 'narr' }, 'Mercado de sun.io ' + mk.v + '. Capital valorado el 11-nov-2026 (valoración parcial: solo lo que tiene precio fiable). ', C.est('ESTIMADO')),
       el('table', { class: 'tb' }, el('tbody', null, fila('Par', mk.par), fila('Versión', mk.v), fila('Capital valorado', C.m(mk.usd) + ' (' + n(Math.round(mk.usd)) + ' $)'), fila('Parte del capital valorado', pct(mk.cuota, 2)), fila('Estado', mk.estado + (mk.completitud ? ' · valoración ' + mk.completitud : '')),
         fila(mk.v === 'V4' ? 'Identificador del mercado (pool id)' : 'Contrato', el('span', { style: 'word-break:break-all' }, dir)))),
       mk.v === 'V4' ? el('p', { class: 'narr' }, 'En V4 todos los mercados viven en un único contrato (el gestor de mercados); cada uno se distingue por su identificador, que no es una dirección.') : el('p', null, UI.enlace(SS.ts(dir), 'Comprobar el contrato en TronScan ↗', 'btn primary')),
@@ -108,11 +110,11 @@
     const [d, idx] = await Promise.all([cargar('reports/sunswap-microscopio/data.json'), cargar('reports/index.json')]);
     if (!d) { app.textContent = 'No se pudieron cargar los datos de la investigación (reports/sunswap-microscopio/data.json).'; return; }
     SS.d = d; SS.meta = idx && idx.informes.find((r) => r.slug === 'sunswap-microscopio'); C.chartDefaults(); app.textContent = '';
-    document.title = 'SUNSwap bajo el microscopio · School On-Chain';
-    app.append(el('header', { class: 'rhead' }, el('span', { class: 'caso' }, 'Caso · SUNSwap V1–V4 · TRON · 11 nov 2026'),
-      el('h1', null, 'SUNSwap bajo el microscopio: distribución del capital, titularidad y profundidad en V1–V4'),
+    document.title = 'sun.io bajo el microscopio · School On-Chain';
+    app.append(el('header', { class: 'rhead' }, el('span', { class: 'caso' }, 'Caso · sun.io V1–V4 · TRON · 11 nov 2026'),
+      el('h1', null, 'sun.io bajo el microscopio: distribución del capital, titularidad y profundidad en V1–V4'),
       el('div', { class: 'sub' }, 'Estudio de un periodo cerrado, del 11-nov-2025 al 11-nov-2026, con datos leídos de la cadena TRON. Informe final validado el 12-nov-2026 (' + d.informe.edicion + '). Todo lo que ves se puede pulsar: cada gráfico tiene su botón «Datos» y las tablas son las del informe, tal cual.'),
-      el('div', { class: 'actions' }, el('a', { class: 'btn primary', href: SS.INFORME }, 'Leer el informe completo'), el('a', { class: 'btn', href: 'herramientas.html#liquidez-sunswap' }, 'Herramienta «Liquidez SUNSwap»'), el('a', { class: 'btn', href: 'investigacion/docs/SUNSWAP-INFORME-FINAL-2026-11-12.md', target: '_blank', rel: 'noopener' }, 'Texto original (.md) ↗'), el('a', { class: 'btn', href: 'reports/sunswap-microscopio/data.json', target: '_blank', rel: 'noopener' }, 'Datos de esta página (JSON) ↗'))));
+      el('div', { class: 'actions' }, el('a', { class: 'btn primary', href: SS.INFORME }, 'Leer el informe completo'), el('a', { class: 'btn', href: 'herramientas.html#liquidez-sunswap' }, 'Herramienta «Liquidez sun.io»'), el('a', { class: 'btn', href: 'investigacion/docs/SUNSWAP-INFORME-FINAL-2026-11-12.md', target: '_blank', rel: 'noopener' }, 'Texto original (.md) ↗'), el('a', { class: 'btn', href: 'reports/sunswap-microscopio/data.json', target: '_blank', rel: 'noopener' }, 'Datos de esta página (JSON) ↗'))));
     /* ficha del caso: dos estados y ocho apartados, como en las otras investigaciones */
     try { const N0 = window.NOVEDADES ? await window.NOVEDADES.cargar() : []; const K0 = await cargar('data/cambios.json');
       const fc = SS.meta && window.CASO ? CASO.ficha(SS.meta, { reejecutados: d.kpi.RE_N, exactos: d.kpi.RE_EX, huella: d.informe.huella, novedades: N0.filter((x) => x.caso === 'sunswap-microscopio').length || null, cambios: K0 && K0.cambios ? K0.cambios.filter((c) => c.caso === 'sunswap-microscopio').length : null }) : null; if (fc) app.append(fc);
@@ -122,6 +124,6 @@
     app.append(el('div', { class: 'guia' }, el('div', { class: 'guiat' }, 'Cómo leer esta investigación: ' + SS.CAPS.length + ' capítulos, de arriba abajo'), el('ol', null, SS.CAPS.map((c) => el('li', null, el('a', { onclick: () => document.getElementById('cap-' + c.n).scrollIntoView({ behavior: 'smooth' }) }, el('b', null, c.t), el('span', null, c.d)))))));
     const etiquetar = () => document.querySelectorAll('.est:not([data-nivel]):not(.est-click)').forEach((s) => { const t = SS.norm(s.textContent.trim()); if (/^(VERIFICADO|ESTIMADO|HIPÓTESIS|DESCONOCIDO|PENDIENTE)$/.test(t)) { s.dataset.nivel = t; s.classList.add('est-click'); s.setAttribute('role', 'button'); s.setAttribute('tabindex', '0'); s.title = 'Pulsa para ver todo lo que lleva esta etiqueta'; } });
     for (const p of SS.partes.sort((a, b) => a.orden - b.orden)) { try { await p.fn(app, d); etiquetar(); } catch (e) { console.error(e); app.append(el('p', { class: 'muted' }, 'Error al dibujar un capítulo: ' + e.message)); } }
-    app.append(el('p', { class: 'muted', style: 'margin:40px 0 20px;font-size:12.5px' }, 'Esta página enseña de otra forma el informe «' + d.informe.titulo + '» (huella ' + d.informe.huella + '); no lo modifica. Los datos de los gráficos salen de los archivos de la investigación y se comprueban contra las tablas del informe antes de publicarse. Nada de esto es consejo de inversión.'));
+    app.append(el('p', { class: 'muted', style: 'margin:40px 0 20px;font-size:12.5px' }, 'Esta página enseña de otra forma el informe «' + SS.marca(d.informe.titulo) + '» (huella ' + d.informe.huella + '); no lo modifica. Los datos de los gráficos salen de los archivos de la investigación y se comprueban contra las tablas del informe antes de publicarse. En esta página el nombre del producto se escribe «sun.io»; el informe validado conserva su redacción original. Nada de esto es consejo de inversión.'));
   });
 })();

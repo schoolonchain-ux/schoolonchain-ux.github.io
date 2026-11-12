@@ -1,4 +1,4 @@
-/* Capítulos 1 a 3 de la página de SUNSwap: lo esencial, dónde está el capital, concentración. */
+/* Capítulos 1 a 3 de la página de sun.io: lo esencial, dónde está el capital, concentración. */
 (function () {
   const { el, n, m, pct, VS, VC } = SS;
   const par0 = (p) => p.replace(/ 0\.\d+ %$/, '');          // «WTRX/USDT 0.05 %» → «WTRX/USDT»
@@ -10,7 +10,7 @@
     const prof = Object.fromEntries(d.cuotas.map((c) => [c.v, c.profundidad])), capi = Object.fromEntries(d.cuotas.map((c) => [c.v, c.capital]));
     app.append(SS.cap(1));
     app.append(SS.llano(
-      'SUNSwap es el principal intercambio descentralizado (DEX) de TRON. Reconstruimos <b>desde la propia cadena</b> cuánto capital hay en sus mercados, cómo se reparte, cuánto se puede mover de verdad, cuánto se opera, quién pone la liquidez y cómo cambió en un año (del 11-nov-2025 al 11-nov-2026).',
+      'sun.io es el principal intercambio descentralizado (DEX) de TRON. Reconstruimos <b>desde la propia cadena</b> cuánto capital hay en sus mercados, cómo se reparte, cuánto se puede mover de verdad, cuánto se opera, quién pone la liquidez y cómo cambió en un año (del 11-nov-2025 al 11-nov-2026).',
       'Lo que más sorprende: de <b>' + k.MKT_V1V4 + '</b> mercados registrados solo <b>' + k.ACT_TOT + '</b> están activos; <b>tres mercados reúnen el ' + k.TOP3 + '</b> del capital valorado; y tener capital no es lo mismo que tener liquidez: con el 1 % de movimiento de precio, V3 aporta el <b>' + pct(prof.V3, 1) + '</b> de la profundidad simulada y V4 el <b>' + pct(prof.V4, 1) + '</b>, y V2, con el ' + pct(capi.V2, 1) + ' del capital, solo el ' + pct(prof.V2, 1) + ' (mercados con los dos lados valorados).',
       'Cada cifra lleva su nivel de certeza (<span class="est est-VERIFICADO">VERIFICADO</span>, <span class="est est-ESTIMADO">ESTIMADO</span>, <span class="est est-HIPÓTESIS">HIPÓTESIS</span>, <span class="est est-DESCONOCIDO">DESCONOCIDO</span> o <span class="est est-PENDIENTE">PENDIENTE</span>) y lo que no se sabe está escrito en el capítulo 9. Los importes en dólares son siempre estimados.'));
     const ir = (i) => () => document.getElementById('cap-' + i).scrollIntoView({ behavior: 'smooth' });
@@ -24,10 +24,10 @@
 
     app.append(el('h3', { class: 'ss-sub' }, 'Los ' + d.resumen.length + ' hallazgos del resumen ejecutivo'));
     app.append(el('p', { class: 'narr' }, 'Texto del apartado 1 del informe, punto por punto. Pulsa uno para leerlo.'));
-    d.resumen.forEach((r) => app.append(el('details', { class: 'ss-det ss-hall' }, el('summary', null, el('span', { class: 'nn' }, String(r.n)), r.titulo.replace(/:$/, ''), el('span', { class: 'ss-peq', style: 'font-weight:400' }, ' · ' + (r.texto.replace(/\*\*|`/g, '').replace(/\[([^\]]*)\]\([^)]*\)/g, '$1').slice(0, 105).replace(/\s+\S*$/, '') + '…'))), el('div', { class: 'ss-detc' }, el('p', { html: SS.md(r.texto) })))));
+    d.resumen.forEach((r) => app.append(el('details', { class: 'ss-det ss-hall' }, el('summary', null, el('span', { class: 'nn' }, String(r.n)), SS.marca(r.titulo).replace(/:$/, ''), el('span', { class: 'ss-peq', style: 'font-weight:400' }, ' · ' + (SS.marca(r.texto).replace(/\*\*|`/g, '').replace(/\[([^\]]*)\]\([^)]*\)/g, '$1').slice(0, 105).replace(/\s+\S*$/, '') + '…'))), el('div', { class: 'ss-detc' }, el('p', { html: SS.md(r.texto) })))));
     app.append(SS.acordeon('Las 8 preguntas de la investigación y su respuesta corta', SS.tabla('2#0', { pp: 10, buscar: false })));
     app.append(SS.recap(1, [
-      'SUNSwap tiene <b>' + k.MKT_V1V4 + ' mercados registrados</b>, pero solo <b>' + k.ACT_TOT + '</b> están activos.',
+      'sun.io tiene <b>' + k.MKT_V1V4 + ' mercados registrados</b>, pero solo <b>' + k.ACT_TOT + '</b> están activos.',
       'El capital valorado es <b>' + k.TVL + '</b>, con valoración parcial: solo cuenta lo que tiene precio fiable.',
       'Está <b>muy concentrado</b>: tres mercados reúnen el ' + k.TOP3 + ' y dos cuentas tienen aproximadamente el ' + pct(dos, 0) + '.',
       'Capital no es profundidad: <b>cuánto se puede vender de verdad</b> depende de la versión (capítulo 4).'], 'Siguiente: dónde está ese capital.'));
@@ -44,7 +44,7 @@
     const verVersion = (x) => UI.abrir('Mayores mercados de ' + x, () => el('div', null, el('p', { class: 'narr' }, 'Los 10 mayores mercados de ' + x + ' por capital valorado el 11-nov-2026. Pulsa una fila para ver su ficha. ', C.est('ESTIMADO')),
       UI.tabla({ pp: 10, buscar: false, csv: 'mayores-' + x, rows: d.mayoresVersion[x], onRow: (r) => SS.fichaMercado(r), cols: [{ t: 'Mercado', v: (r) => par0(r.par), o: (r) => r.par }, { t: 'Capital', num: 1, v: (r) => m(r.usd), o: (r) => r.usd, csv: (r) => Math.round(r.usd) }, { t: 'Cuota de ' + x, num: 1, v: (r) => pct(r.cuota, 2), o: (r) => r.cuota, csv: (r) => r.cuota }, { t: 'Estado', v: (r) => r.estado, o: (r) => r.estado }] })), { ancho: true });
     SS.grafico(f1, { titulo: 'Capital valorado por versión', sub: k.TVL + ' en total · pulsa una porción para ver sus mayores mercados', alto: 250,
-      ayuda: [{ k: 'Qué muestra', v: 'Cuánto capital hay en cada versión de SUNSwap el 11-nov-2026, valorado en dólares solo donde hay precio fiable.' }, { k: 'Cómo se lee', l: ['Cada porción es una versión; su tamaño es su capital.', 'Debajo, para cada versión: mercados registrados y activos.', 'Pulsa una porción o una fila para ver los mayores mercados de esa versión.'] }],
+      ayuda: [{ k: 'Qué muestra', v: 'Cuánto capital hay en cada versión de sun.io el 11-nov-2026, valorado en dólares solo donde hay precio fiable.' }, { k: 'Cómo se lee', l: ['Cada porción es una versión; su tamaño es su capital.', 'Debajo, para cada versión: mercados registrados y activos.', 'Pulsa una porción o una fila para ver los mayores mercados de esa versión.'] }],
       datos: SS.datos('6.1#0', 'Capital valorado por versión', 'La tabla del apartado 6.1 del informe.'),
       extra: SS.leyenda(v.map((x) => ({ id: x.v, nombre: x.v, color: col(x.v), estado: null, desc: n(x.mercados) + ' mercados · ' + n(x.estados.activo || 0) + ' activos', valor: m(x.tvl) + ' · ' + pct(x.cuota, 1) })), (i) => verVersion(i.id)),
       cfg: () => SS.cursor({ type: 'doughnut', data: { labels: VS, datasets: [{ data: v.map((x) => x.tvl), backgroundColor: VS.map(col), borderColor: C.css('--pan'), borderWidth: 2 }] }, options: { cutout: '62%', plugins: { legend: { display: false }, tooltip: { callbacks: { label: (c) => ' ' + m(c.raw) + ' · ' + pct(v[c.dataIndex].cuota, 1) } } } } }, (e) => verVersion(VS[e.index])) });
@@ -78,7 +78,7 @@
     const fu = rg.V3.mayoresFuera.slice(0, 5);
     const tres = fu.slice(0, 3).reduce((a, x) => a + x.fueraUsd, 0);
     app.append(SS.aviso('El caso más claro:', 'el mercado V3 ' + fu[0].par + ' tiene <b>' + m(fu[0].fueraUsd) + '</b> fuera de rango y solo <b>' + m(fu[0].enRangoUsd) + '</b> en rango: contra él no se puede vender casi nada. Tres mercados de V3 concentran <b>' + m(tres) + '</b> de los ' + m(rg.V3.fueraUsd) + ' que están fuera de rango. ', C.est('ESTIMADO'), ' los importes; el patrón (capital depositado que no es liquidez) es del apartado 6.4.'));
-    app.append(SS.herramienta('El monitor calcula, con los mercados vivos de SUNSwap, cuánto cuesta vender el importe que escribas de doce tokens por USDT.'));
+    app.append(SS.herramienta('El monitor calcula, con los mercados vivos de sun.io, cuánto cuesta vender el importe que escribas de doce tokens por USDT.'));
     app.append(SS.recap(2, [
       'V2 reúne la mayor parte del capital (<b>' + pct(v[1].cuota, 1) + '</b>); V3 y V4 son más pequeñas pero más profundas.',
       'Los dos mayores mercados son <b>WTRX/USDT en V3 y TRX/USDT en V4</b>: sumados, más del 43 % del capital.',

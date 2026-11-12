@@ -1,4 +1,4 @@
-/* Capítulos 4 a 6 de la página de SUNSwap: profundidad, volumen y actividad, proveedores de liquidez. */
+/* Capítulos 4 a 6 de la página de sun.io: profundidad, volumen y actividad, proveedores de liquidez. */
 (function () {
   const { el, n, m, pct, VS, VC } = SS;
   const col = (x) => VC[x] || SS.GRIS, pn = SS.pn;
@@ -70,7 +70,7 @@
     const f1 = el('div', { class: 'ss-fila', style: 'grid-template-columns:1fr' }); app.append(f1);
     let tm; const chips = SS.interruptores(VS.map((v) => ({ id: v, nombre: v, color: col(v) })), (v, on) => { tm.chart.setDatasetVisibility(VS.indexOf(v), on); tm.chart.update(); });
     tm = SS.grafico(f1, { titulo: 'Volumen bruto mensual por versión', sub: 'Suma de lo operado cada mes (noviembre de 2025 y de 2026 son meses parciales)', alto: 320, filtros: chips,
-      ayuda: [{ k: 'Qué muestra', v: 'Cuánto se operó cada mes en SUNSwap, dividido por versión.' }, { k: 'Cómo se lee', l: ['Cada barra apila las versiones; pulsa una versión arriba para ocultarla.', 'El volumen bruto suma las patas de cada swap: en operaciones que pasan por varios mercados cuenta más de una vez (apartado 9.5).'] }],
+      ayuda: [{ k: 'Qué muestra', v: 'Cuánto se operó cada mes en sun.io, dividido por versión.' }, { k: 'Cómo se lee', l: ['Cada barra apila las versiones; pulsa una versión arriba para ocultarla.', 'El volumen bruto suma las patas de cada swap: en operaciones que pasan por varios mercados cuenta más de una vez (apartado 9.5).'] }],
       datos: SS.datosPropios('Volumen bruto mensual por versión', 'Los datos del gráfico (apartado 9.2 del informe, figura del volumen mensual).', ['Mes', ...VS.map((v) => ({ t: v, num: 1, f: (x) => m(x) })), { t: 'Total', num: 1, f: (x) => m(x) }], vm.meses.map((mes, i) => [mes, ...VS.map((v) => vm[v][i]), VS.reduce((a, v) => a + vm[v][i], 0)]), 'sunswap-volumen-mensual'),
       cfg: () => ({ type: 'bar', data: { labels: vm.meses, datasets: VS.map((v) => ({ label: v, data: vm[v], backgroundColor: col(v) })) }, options: { plugins: { legend: { display: false }, tooltip: { mode: 'index', callbacks: { label: (c) => ' ' + c.dataset.label + ': ' + m(c.raw), footer: (it) => 'Total: ' + m(it.reduce((a, x) => a + x.raw, 0)) } } }, scales: { x: Object.assign(SS.eje.cat(), { stacked: true }), y: Object.assign(SS.eje.dinero((v) => (v >= 1e9 ? n(v / 1e9, 1) + ' mil M$' : m(v))), { stacked: true }) } } }) });
 
@@ -142,7 +142,7 @@
     app.append(SS.acordeon('Tabla: el mayor titular de cada versión (apartado 10.2)', SS.tabla('10.2#1', { pp: 10, buscar: false, texto: [5] })));
     app.append(SS.acordeon('Procedencia de lo que tienen hoy los titulares (apartado 10.3, verificado con las transferencias de la ventana)', el('p', { class: 'narr' }, 'De dónde le llegó a cada titular el saldo actual: la posición la creó él mismo en la ventana, se la cedió otra dirección, o es anterior a la ventana (origen no observable).'), SS.tabla('10.3#0', { pp: 8, buscar: false, texto: [1, 2] }), SS.tabla('10.3#1', { pp: 8, buscar: false, texto: [2] })));
     app.append(SS.acordeon('Cuentas, contratos y enrutadores que llaman a los mercados (apartado 10.4)', SS.tabla('10.4#0', { pp: 6, buscar: false, texto: [3, 4, 5] })));
-    app.append(SS.aviso('Una referencia cruzada, no una atribución:', 'la dirección que más capital tiene hoy en SUNSwap es la que el <a href="caso-vaneck.html">caso Vaneck / Justin Sun</a> llama «la segunda cuenta». Este informe no atribuye identidad a ninguna dirección; allí están los hechos, las atribuciones de terceros y las hipótesis.'));
+    app.append(SS.aviso('Una referencia cruzada, no una atribución:', 'la dirección que más capital tiene hoy en sun.io es la que el <a href="caso-vaneck.html">caso Vaneck / Justin Sun</a> llama «la segunda cuenta». Este informe no atribuye identidad a ninguna dirección; allí están los hechos, las atribuciones de terceros y las hipótesis.'));
     app.append(SS.recap(6, [
       'La liquidez nueva la ponen <b>muy pocas direcciones</b>: en V3 y V4, una sola puso más del 95 % de lo añadido.',
       'Titular actual no es aportante original: las posiciones pueden haberse transferido.',
