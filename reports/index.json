@@ -301,10 +301,10 @@
     },
     {
       "slug": "sunswap-microscopio",
-      "url": "doc.html?f=investigacion/docs/SUNSWAP-INFORME-FINAL-2026-11-12.md",
+      "url": "sunswap.html",
       "caso": "SUNSwap V1–V4 · TRON",
       "titulo": "SUNSwap bajo el microscopio: distribución del capital, titularidad y profundidad en V1–V4",
-      "resumen": "Quién tiene el capital del principal DEX de TRON, cuánto se puede mover de verdad y cuánto se opera, del 11-nov-2025 al 11-nov-2026. Tres mercados reúnen el 59,95 % del capital y dos cuentas tienen aproximadamente el 78 %. Informe final con tablas, gráficos y 14 transacciones verificables; lo que no se sabe está escrito en el propio informe.",
+      "resumen": "Quién tiene el capital del principal DEX de TRON, cuánto se puede mover de verdad y cuánto se opera, del 11-nov-2025 al 11-nov-2026. Tres mercados reúnen el 59,95 % del capital y dos cuentas tienen aproximadamente el 78 %. Página interactiva con gráficos que se pueden pulsar, todas las tablas del informe y 14 transacciones verificables; el informe completo sigue disponible y lo que no se sabe está escrito en él.",
       "version": "Informe final",
       "cadenas": [
         "TRON"
@@ -315,13 +315,48 @@
       "imagenAlt": "Esqueleto encapuchado con una lupa sobre gráficos de liquidez de SunSwap V1 a V4, con el cartel SUNSwap y el logo de TRON",
       "investigacion": {
         "estado": "cerrada",
+        "datosHasta": "2026-11-11T22:03:00Z",
         "nota": "Informe final validado el 12-nov-2026; si hay cambios, se publica una edición nueva."
       },
       "seguimiento": {
         "estado": "sin",
         "alcance": "Estudio de un periodo cerrado: no hay seguimiento diario.",
         "siHayMovimientos": ""
-      }
+      },
+      "ficha": [
+        {
+          "t": "Hipótesis iniciales",
+          "texto": "Este estudio no partió de hipótesis sobre personas: midió. Las explicaciones que propone para lo raro (apartado 12) están marcadas como HIPÓTESIS y ninguna se afirma."
+        },
+        {
+          "t": "Hechos verificados",
+          "texto": "Inventarios de contratos, saldos y eventos leídos en la cadena, y la comparación del motor con los contratos: {reejecutados} intercambios reales re-ejecutados, {exactos} exactos. Los importes en dólares son siempre ESTIMADOS."
+        },
+        {
+          "t": "Evidencias pendientes",
+          "texto": "Lo que no se sabe y lo que no se midió está declarado en el apartado 15: el TVL completo, la profundidad ejecutable, el origen del capital anterior a la ventana y la identidad de cualquier dirección."
+        },
+        {
+          "t": "Direcciones y entidades",
+          "texto": "Los contratos oficiales, los mayores mercados y los mayores titulares, con su dirección completa y enlace a TronScan (apartados 5, 6 y 10). No se atribuye identidad a ninguna dirección."
+        },
+        {
+          "t": "Cronología",
+          "texto": "Un año de historia, del 11-nov-2025 al 11-nov-2026: capital reconstruido día a día, retiradas extraordinarias y picos de volumen (apartados 11 y 12)."
+        },
+        {
+          "t": "Cambios de atribución",
+          "texto": "Ninguno registrado: el informe no atribuye identidad a ninguna dirección."
+        },
+        {
+          "t": "Historial de conclusiones",
+          "texto": "Informe final validado el 12-nov-2026 (4.ª edición, huella {huella}), con las correcciones de tres revisiones externas recogidas en el apartado 16.7."
+        },
+        {
+          "t": "Última comprobación",
+          "texto": "Datos leídos el 11-nov-2026 (bloque 87.907.580 para el inventario). Estudio de un periodo cerrado: no hay lectura diaria."
+        }
+      ]
     }
   ]
 }

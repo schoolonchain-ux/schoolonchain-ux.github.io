@@ -1,0 +1,38 @@
+/* Página interactiva de «SUNSwap bajo el microscopio» (sunswap.html): solo lo que las hojas del sitio no traen. Colores y bordes salen de las variables del tema (claro / oscuro). */
+.ss-fila{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,430px),1fr));gap:14px;margin:12px 0;align-items:start}
+.ss-fila>.card{margin:0}
+.ss-nota{margin:12px 0;padding:11px 15px;border:1px solid var(--line);border-left:4px solid var(--acc);border-radius:10px;background:var(--pan);color:var(--soft);font-size:14px}
+.ss-nota b{color:var(--fg)}
+.ss-nota.warn{border-left-color:var(--warn)}
+.ss-cta{display:flex;flex-wrap:wrap;gap:12px 18px;align-items:center;justify-content:space-between;margin:14px 0;padding:14px 18px;border:1px solid var(--acc);border-radius:14px;background:color-mix(in srgb,var(--acc) 9%,var(--pan))}
+.ss-cta b{color:var(--fg)}
+.ss-det{margin:8px 0;border:1px solid var(--line);border-radius:12px;background:var(--pan)}
+.ss-det>summary{cursor:pointer;padding:11px 16px;font-weight:600;list-style:none}
+.ss-det>summary::-webkit-details-marker{display:none}
+.ss-det>summary::before{content:"▸";display:inline-block;margin-right:8px;color:var(--acc);transition:transform .15s}
+.ss-det[open]>summary::before{transform:rotate(90deg)}
+.ss-detc{padding:2px 16px 14px;color:var(--soft)}
+.ss-detc p{margin:7px 0}
+.ss-hall>summary .nn{display:inline-flex;align-items:center;justify-content:center;width:24px;height:24px;margin-right:9px;border-radius:50%;background:var(--acc);color:#0a0d12;font-size:12.5px;font-weight:800}
+.ss-md p{margin:8px 0}
+.ss-md ul,.ss-md ol{margin:6px 0 6px 20px;padding:0}
+.ss-md li{margin:4px 0}
+.ss-md h4{margin:14px 0 4px;color:var(--fg)}
+.ss-md code,.ss-nota code,.ss-detc code{font-size:.88em;word-break:break-all}
+.ss-chips{display:flex;flex-wrap:wrap;gap:6px;margin:4px 0 8px}
+.ss-chip{display:inline-flex;align-items:center;gap:6px;font:inherit;font-size:12.5px;color:var(--mut);background:var(--bg);border:1px solid var(--line);border-radius:999px;padding:4px 11px;cursor:pointer}
+.ss-chip .sw{display:inline-block;width:10px;height:10px;border-radius:3px;opacity:.35}
+.ss-chip.on{color:var(--fg);border-color:var(--c,var(--acc))}
+.ss-chip.on .sw{opacity:1}
+.ss-per{display:flex;flex-wrap:wrap;gap:6px;align-items:center;margin:2px 0 8px;font-size:12.5px;color:var(--mut)}
+.ss-per button{font:inherit;font-size:12.5px;color:var(--soft);background:var(--bg);border:1px solid var(--line);border-radius:999px;padding:4px 12px;cursor:pointer}
+.ss-per button.on{background:var(--acc);border-color:var(--acc);color:#0a0d12;font-weight:700}
+.kpi.clk{cursor:pointer}
+.kpi.clk:hover,.kpi.clk:focus{border-color:var(--acc)}
+.ss-sub{margin:20px 0 6px;font-size:19px}
+.ss-peq{font-size:12.5px;color:var(--mut)}
+@media (max-width:760px){.ss-fila{grid-template-columns:1fr}.ss-cta{align-items:flex-start}}
+
+.est[data-nivel]{cursor:pointer}
+:root[data-theme="light"] .ss-per button.on,:root[data-theme="light"] .ss-hall>summary .nn{color:#fff}
+@media (prefers-color-scheme:light){:root:not([data-theme="dark"]) .ss-per button.on,:root:not([data-theme="dark"]) .ss-hall>summary .nn{color:#fff}}
