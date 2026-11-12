@@ -298,6 +298,30 @@
           "enlaceT": "Datos del seguimiento"
         }
       ]
+    },
+    {
+      "slug": "sunswap-microscopio",
+      "url": "doc.html?f=investigacion/docs/SUNSWAP-INFORME-FINAL-2026-11-12.md",
+      "caso": "SUNSwap V1–V4 · TRON",
+      "titulo": "SUNSwap bajo el microscopio: distribución del capital, titularidad y profundidad en V1–V4",
+      "resumen": "Quién tiene el capital del principal DEX de TRON, cuánto se puede mover de verdad y cuánto se opera, del 11-nov-2025 al 11-nov-2026. Tres mercados reúnen el 59,95 % del capital y dos cuentas tienen aproximadamente el 78 %. Informe final con tablas, gráficos y 14 transacciones verificables; lo que no se sabe está escrito en el propio informe.",
+      "version": "Informe final",
+      "cadenas": [
+        "TRON"
+      ],
+      "corte": "2026-11-11T22:03:00Z",
+      "archivos": [],
+      "imagen": "assets/img/portada/sunswap-microscopio.webp",
+      "imagenAlt": "Esqueleto encapuchado con una lupa sobre gráficos de liquidez de SunSwap V1 a V4, con el cartel SUNSwap y el logo de TRON",
+      "investigacion": {
+        "estado": "cerrada",
+        "nota": "Informe final validado el 12-nov-2026; si hay cambios, se publica una edición nueva."
+      },
+      "seguimiento": {
+        "estado": "sin",
+        "alcance": "Estudio de un periodo cerrado: no hay seguimiento diario.",
+        "siHayMovimientos": ""
+      }
     }
   ]
 }
