@@ -108,3 +108,46 @@
 .kpi.clk:hover,.kpi.clk:focus-visible{border-color:var(--acc);outline:none}
 .kpi .ko{font-size:11px;color:var(--acc);margin-top:5px;font-weight:600}
 .card{scroll-margin-top:90px}
+
+/* ===== Zona 3 · pestaña «Liquidez SUNSwap» (assets/liquidez-sunswap.js) ===== */
+.liq-cab h3{margin:0 0 4px}
+.liq-form{display:flex;flex-wrap:wrap;gap:12px 16px;align-items:flex-end;margin:10px 0 12px}
+.liq-form label{display:flex;flex-direction:column;gap:4px;font-size:12px;color:var(--mut)}
+.liq-form input,.liq-form select{font:inherit;font-size:15px;color:var(--ink,inherit);background:var(--bg);border:1px solid var(--line);border-radius:10px;padding:8px 10px;min-width:150px}
+.liq-form input{font-variant-numeric:tabular-nums;font-weight:700;min-width:170px}
+.liq-qs{display:flex;gap:6px;flex-wrap:wrap}
+.liq-q{font:inherit;font-size:12.5px;color:var(--soft);background:var(--bg);border:1px solid var(--line);border-radius:999px;padding:6px 11px;cursor:pointer}
+.liq-q:hover{border-color:var(--acc)}.liq-q.on{border-color:var(--acc);color:var(--acc);font-weight:700}
+.liq-aviso{margin:8px 0;padding:8px 12px;border:1px solid var(--warn);border-radius:10px;color:var(--warn);font-size:13px;background:rgba(242,184,75,.08)}
+.liq-tabla{width:100%;border-collapse:collapse;font-size:13.5px}
+.liq-tabla th{text-align:left;font-size:11.5px;letter-spacing:.04em;text-transform:uppercase;color:var(--mut);font-weight:600;padding:6px 10px;border-bottom:1px solid var(--line);white-space:nowrap}
+.liq-tabla td{padding:9px 10px;border-bottom:1px solid var(--line);vertical-align:top}
+.liq-tabla .num{text-align:right;font-variant-numeric:tabular-nums;white-space:nowrap}
+.liq-tabla th.num{text-align:right}
+.liq-fila{cursor:pointer}.liq-fila:hover td,.liq-fila:focus td{background:rgba(120,160,220,.07)}.liq-fila:focus{outline:2px solid var(--acc);outline-offset:-2px}
+.liq-fila.abierta td{background:rgba(120,160,220,.1)}
+.liq-tok b{font-size:14.5px}
+.liq-ruta{color:var(--soft);font-size:12.5px}
+.liq-b{display:inline-block;min-width:44px;text-align:center;font-weight:800;font-size:12.5px;padding:3px 10px;border-radius:999px;border:1px solid}
+.liq-b.verde{color:var(--ok);border-color:var(--ok);background:rgba(95,211,160,.1)}
+.liq-b.ambar{color:var(--warn);border-color:var(--warn);background:rgba(242,184,75,.1)}
+.liq-b.rojo{color:var(--bad);border-color:var(--bad);background:rgba(255,107,131,.1)}
+.liq-detf td{background:rgba(120,160,220,.05)}
+.liq-det{display:grid;grid-template-columns:minmax(0,1fr) 300px;gap:16px;align-items:start}
+.liq-det p{margin:0 0 6px}.liq-partes{margin:0 0 8px;padding-left:18px;color:var(--soft);font-size:13px}
+.liq-graf{width:300px;max-width:100%;height:auto}
+.liq-graf .ej{stroke:var(--line);stroke-width:1}.liq-graf .lim{stroke:var(--warn);stroke-width:1;stroke-dasharray:4 3}
+.liq-graf .cur{fill:none;stroke:var(--acc);stroke-width:2}.liq-graf .imp{stroke:var(--mut);stroke-width:1}.liq-graf .pt{fill:var(--acc)}
+.liq-graf .et{fill:var(--mut);font-size:9.5px}
+.liq-pie{margin:10px 0 6px;font-size:12.5px;color:var(--mut)}
+.liq-met{margin:6px 0 0;font-size:13px;color:var(--soft)}.liq-met summary{cursor:pointer;color:var(--acc)}.liq-met ul{margin:8px 0 8px;padding-left:18px}.liq-met li{margin:0 0 5px}
+.liq-caja{overflow-x:auto;max-width:100%}
+#cartera-posiciones[hidden]{display:none}
+.liq-det>*{min-width:0}.liq-partes li,.liq-det p{overflow-wrap:anywhere}
+@media (max-width:760px){
+  .liq-det{grid-template-columns:1fr}
+  .liq-ruta,.liq-tabla th:nth-child(5),.liq-tabla .liq-fila td:nth-child(4),.liq-tabla th:nth-child(4){display:none}
+  .liq-tabla th{white-space:normal;font-size:10.5px;padding:6px 6px}.liq-tabla td{padding:9px 6px}
+  .liq-tabla .num{white-space:normal}
+  .liq-form input,.liq-form select{min-width:0;width:100%}.liq-form label{flex:1 1 100%}
+}
