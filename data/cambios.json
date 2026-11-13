@@ -10,6 +10,60 @@
   },
   "cambios": [
     {
+      "id": "2026-11-13-01",
+      "fecha": "2026-11-13",
+      "tipo": "ampliacion",
+      "caso": "caso-vaneck-sun",
+      "titulo": "Capítulo nuevo: la segunda cuenta y la financiadora de «Vaneck» son las dos mayores titulares del capital de sun.io",
+      "antes": "La nota del 30-oct decía que la segunda cuenta ponía liquidez en sun.io, sin medir cuánto del total era.",
+      "ahora": "El informe «sun.io bajo el microscopio» (12-nov) mide quién tenía el capital el 11-nov: la segunda cuenta, el 51,2 %, y la cuenta que más financió a «Vaneck» en 2021, el 27,2 % (aproximadamente el 78 % juntas del capital valorado; 78,4 % en el cálculo concreto; es una estimación). Se añade el capítulo 10, con una comprobación propia en la cadena (12-nov) de las posiciones de V3 con liquidez de cada una, que coinciden con el informe.",
+      "porque": "Ese informe no atribuye identidad a ninguna dirección; el vínculo con este caso es que son las mismas direcciones. Es dependencia de capital, no una venta, y no prueba quién está detrás.",
+      "detectado": "Cruce propio del informe de sun.io con las direcciones del caso.",
+      "evidencia": [
+        {
+          "t": "Capítulo 10 del caso",
+          "href": "caso-vaneck.html?cap=10"
+        },
+        {
+          "t": "sun.io bajo el microscopio",
+          "href": "sunswap.html"
+        },
+        {
+          "t": "Datos del informe (JSON)",
+          "href": "reports/sunswap-microscopio/data.json"
+        },
+        {
+          "t": "Comprobación propia en la cadena (JSON)",
+          "href": "reports/caso-vaneck-sun/sunswap-hoy.json"
+        },
+        {
+          "t": "Programa y lecturas",
+          "href": "https://github.com/schoolonchain-ux/schoolonchain-ux.github.io/tree/main/investigacion/research/tron-vaneck-sun/actualizacion-2026-11-13/"
+        }
+      ]
+    },
+    {
+      "id": "2026-11-13-02",
+      "fecha": "2026-11-13",
+      "tipo": "error",
+      "caso": "caso-vaneck-sun",
+      "titulo": "Una tarjeta del capítulo 6 decía que la segunda cuenta no había enviado TRX, y otra frase daba un saldo antiguo como si fuera de hoy",
+      "antes": "La tarjeta del 4-nov decía «no ha enviado TRX a nadie desde el 29-oct» y «hoy tiene unos 1.629 M TRX libres», mientras un párrafo posterior de la misma tarjeta contaba el envío de 150 M TRX del 4-nov a mediodía.",
+      "ahora": "La frase dice que hasta la mañana del 4-nov no había enviado TRX y que ese día tenía unos 1.629 M TRX libres; el saldo se lee del seguimiento diario (1.480,6 M TRX en la última lectura disponible, la del 12-nov a las 06:00 UTC).",
+      "porque": "La frase se escribió antes del envío del 4-nov a mediodía y no se revisó al añadirlo. No cambia ninguna conclusión del caso.",
+      "detectado": "Revisión de la página al preparar la actualización del 13-nov.",
+      "evidencia": [
+        {
+          "t": "Capítulo 6 del caso",
+          "href": "caso-vaneck.html?cap=6"
+        },
+        {
+          "t": "Transacción de 150 M TRX del 4-nov",
+          "href": "https://tronscan.org/#/transaction/190ea8594f856a8632ed2ecc157daed87ee6788a3bb637f6f65d3ef945d46317"
+        }
+      ]
+    },
+    {
       "id": "2026-11-10-01",
       "fecha": "2026-11-10",
       "tipo": "error",

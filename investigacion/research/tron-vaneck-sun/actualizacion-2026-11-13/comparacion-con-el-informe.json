@@ -1,0 +1,129 @@
+{
+ "version": 1,
+ "nota": "Comparación de la lectura propia en la cadena con la foto del informe. Liquidez en unidades del contrato (L), no en dólares.",
+ "leidoEn": "2026-11-12T23:59:30.678Z",
+ "cuentas": {
+  "segunda_cuenta": {
+   "direccion": "TT2T17KZhoDu47i2E4FWxfG79zdkEWkU9N",
+   "posicionesInforme": [
+    4,
+    5,
+    726,
+    844,
+    937,
+    978,
+    979,
+    1118,
+    1120,
+    1573
+   ],
+   "posicionesCadena": [
+    4,
+    5,
+    726,
+    844,
+    937,
+    978,
+    979,
+    1118,
+    1120,
+    1573
+   ],
+   "mismasPosiciones": true,
+   "detalle": [
+    {
+     "id": 4,
+     "titularInforme": "TT2T17KZhoDu47i2E4FWxfG79zdkEWkU9N",
+     "liquidezInforme": "19655943533027550912",
+     "liquidezCadena": "19655943533027550912",
+     "igual": true
+    },
+    {
+     "id": 5,
+     "titularInforme": "TT2T17KZhoDu47i2E4FWxfG79zdkEWkU9N",
+     "liquidezInforme": "183913334576605660868",
+     "liquidezCadena": "183913334576605660868",
+     "igual": true
+    },
+    {
+     "id": 726,
+     "titularInforme": "TT2T17KZhoDu47i2E4FWxfG79zdkEWkU9N",
+     "liquidezInforme": "2000797455118628982281",
+     "liquidezCadena": "2000797455118628982281",
+     "igual": true
+    },
+    {
+     "id": 844,
+     "titularInforme": "TT2T17KZhoDu47i2E4FWxfG79zdkEWkU9N",
+     "liquidezInforme": "198651528237884451776",
+     "liquidezCadena": "198651528237884451776",
+     "igual": true
+    },
+    {
+     "id": 937,
+     "titularInforme": "TT2T17KZhoDu47i2E4FWxfG79zdkEWkU9N",
+     "liquidezInforme": "204351885348630028515",
+     "liquidezCadena": "204351885348630028515",
+     "igual": true
+    },
+    {
+     "id": 978,
+     "titularInforme": "TT2T17KZhoDu47i2E4FWxfG79zdkEWkU9N",
+     "liquidezInforme": "5955463507986070017",
+     "liquidezCadena": "5955463507986070017",
+     "igual": true
+    },
+    {
+     "id": 979,
+     "titularInforme": "TT2T17KZhoDu47i2E4FWxfG79zdkEWkU9N",
+     "liquidezInforme": "1028790671842163838",
+     "liquidezCadena": "1028790671842163838",
+     "igual": true
+    },
+    {
+     "id": 1118,
+     "titularInforme": "TT2T17KZhoDu47i2E4FWxfG79zdkEWkU9N",
+     "liquidezInforme": "255254602441097395476",
+     "liquidezCadena": "255254602441097395476",
+     "igual": true
+    },
+    {
+     "id": 1120,
+     "titularInforme": "TT2T17KZhoDu47i2E4FWxfG79zdkEWkU9N",
+     "liquidezInforme": "13199966814054647759287",
+     "liquidezCadena": "13199966814054647759287",
+     "igual": true
+    },
+    {
+     "id": 1573,
+     "titularInforme": "TT2T17KZhoDu47i2E4FWxfG79zdkEWkU9N",
+     "liquidezInforme": "1651494202728729",
+     "liquidezCadena": "1651494202728729",
+     "igual": true
+    }
+   ],
+   "todoIgual": true
+  },
+  "financiadora_de_vaneck": {
+   "direccion": "TPyjyZfsYaXStgz2NmAraF1uZcMtkgNan5",
+   "posicionesInforme": [
+    980
+   ],
+   "posicionesCadena": [
+    980
+   ],
+   "mismasPosiciones": true,
+   "detalle": [
+    {
+     "id": 980,
+     "titularInforme": "TPyjyZfsYaXStgz2NmAraF1uZcMtkgNan5",
+     "liquidezInforme": "20583039401382947",
+     "liquidezCadena": "20583039401382947",
+     "igual": true
+    }
+   ],
+   "todoIgual": true
+  }
+ },
+ "todoIgual": true
+}

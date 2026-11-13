@@ -1,0 +1,136 @@
+{
+ "version": 1,
+ "leidoEn": "2026-11-13T01:07:25.734Z",
+ "desde": "2026-11-04T10:40:07.000Z",
+ "fuente": "TronGrid /v1/accounts/{a}/transactions y /transactions/trc20 (min_timestamp), paginado",
+ "cuentas": {
+  "vaneck": {
+   "direccion": "TCGVFGDd62LSrfZEaz3M3fYifWWdSDHRL8",
+   "transacciones": [],
+   "trc20": [],
+   "salidas": 0
+  },
+  "segunda_cuenta": {
+   "direccion": "TT2T17KZhoDu47i2E4FWxfG79zdkEWkU9N",
+   "transacciones": [
+    {
+     "hora": "2026-11-04T10:40:15.000Z",
+     "tipo": "TransferContract",
+     "de": "TJiTnXSHf3haCwxzZE2ocyg1nSs21fM433",
+     "a": "TT2T17KZhoDu47i2E4FWxfG79zdkEWkU9N",
+     "trx": 0.000002,
+     "sale": false,
+     "tx": "8a80c97a96845f7d73f1d7fde6c944f85d81a1a21a7a90bc3d4d4ec54aed426e"
+    },
+    {
+     "hora": "2026-11-04T10:40:30.000Z",
+     "tipo": "TransferContract",
+     "de": "TYHREmJ2CRiWJRBN5TKVCPECASFGVcUc33",
+     "a": "TT2T17KZhoDu47i2E4FWxfG79zdkEWkU9N",
+     "trx": 0.000007,
+     "sale": false,
+     "tx": "c8f2e76c271489c2b88ce452533ffcbd8cc95e64e26dc2a3642f4effc9b83c78"
+    },
+    {
+     "hora": "2026-11-04T10:42:18.000Z",
+     "tipo": "TransferContract",
+     "de": "TULzqLCuEmWxNwH2Ta2zTaaDfiW2dbSc33",
+     "a": "TT2T17KZhoDu47i2E4FWxfG79zdkEWkU9N",
+     "trx": 0.000006,
+     "sale": false,
+     "tx": "62766e030b567c68710708e4bd7178919a71980db04b90adc70732fd07cfbe41"
+    },
+    {
+     "hora": "2026-11-04T11:54:57.000Z",
+     "tipo": "TransferContract",
+     "de": "TSG8jEZjrjsQyWh3teqTAbxHaDgHG9duZV",
+     "a": "TT2T17KZhoDu47i2E4FWxfG79zdkEWkU9N",
+     "trx": 1621.978804,
+     "sale": false,
+     "tx": "0578db3a3dcbe3bb12fa871f5c722d7444e312d1a279e10f65c04a4051978e74"
+    },
+    {
+     "hora": "2026-11-06T09:55:06.000Z",
+     "tipo": "TransferContract",
+     "de": "TG8eS14GvQJ1Qi4iWoePavD8oBiSNVNqzi",
+     "a": "TT2T17KZhoDu47i2E4FWxfG79zdkEWkU9N",
+     "trx": 99,
+     "sale": false,
+     "tx": "76cde7d2f2758b9782a6c984761653a4b536585ed15bd48807c7b44489e86507"
+    },
+    {
+     "hora": "2026-11-06T09:55:18.000Z",
+     "tipo": "TransferContract",
+     "de": "TFGmRsnqPjjegw7fL61VAmaL9F3Z9GEqzi",
+     "a": "TT2T17KZhoDu47i2E4FWxfG79zdkEWkU9N",
+     "trx": 0.000003,
+     "sale": false,
+     "tx": "2a91aefe3f0fee6f433d674bd988de7d0a7014b2ec141732df012b54d67d40ef"
+    },
+    {
+     "hora": "2026-11-06T09:57:06.000Z",
+     "tipo": "TransferContract",
+     "de": "TEYdEi4ZqbhWnSKiirUyrXGnwJzUAKdqzi",
+     "a": "TT2T17KZhoDu47i2E4FWxfG79zdkEWkU9N",
+     "trx": 0.000003,
+     "sale": false,
+     "tx": "28967c879ffccf41407f975b3a0d17ccc482f02e0c5335d69134b2aea68a8e55"
+    },
+    {
+     "hora": "2026-11-06T09:57:15.000Z",
+     "tipo": "TransferContract",
+     "de": "TYFk1UYFJ73kYG6yoRCeg5Z7vbbE3zaqzi",
+     "a": "TT2T17KZhoDu47i2E4FWxfG79zdkEWkU9N",
+     "trx": 0.000005,
+     "sale": false,
+     "tx": "8b4b455a815f9bab2fedec2b48a43ad2662fbba5f7bd26790c06027f294b4e1f"
+    },
+    {
+     "hora": "2026-11-06T10:00:09.000Z",
+     "tipo": "TransferContract",
+     "de": "TUHmvYWY5fKazhGqe6AYV6GmqKPq3D7qzi",
+     "a": "TT2T17KZhoDu47i2E4FWxfG79zdkEWkU9N",
+     "trx": 0.000002,
+     "sale": false,
+     "tx": "e4938fb158d58c80b5b7bec2f600c7879914947ec6005b0924bd3f1ae0e73791"
+    },
+    {
+     "hora": "2026-11-06T15:12:27.000Z",
+     "tipo": "TransferContract",
+     "de": "TG8eS14GvQJ1Qi4iWoePavD8oBiSNVNqzi",
+     "a": "TT2T17KZhoDu47i2E4FWxfG79zdkEWkU9N",
+     "trx": 1874901,
+     "sale": false,
+     "tx": "d882c8d7dcfccf4bccd09010a34b82ad26fdb4cb9fe39a485dcd89a83cb18d9a"
+    },
+    {
+     "hora": "2026-11-06T15:14:39.000Z",
+     "tipo": "TransferContract",
+     "de": "TYFk1UYFJ73kYG6yoRCeg5Z7vbbE3zaqzi",
+     "a": "TT2T17KZhoDu47i2E4FWxfG79zdkEWkU9N",
+     "trx": 0.000005,
+     "sale": false,
+     "tx": "cabf25083d4bd0b60be90b2a8109e7a51d6e0e0234a146b9ee39f28d0f571963"
+    }
+   ],
+   "trc20": [
+    {
+     "hora": "2026-11-04T10:55:27.000Z",
+     "token": "USDDOLD",
+     "de": "TSG8jEZjrjsQyWh3teqTAbxHaDgHG9duZV",
+     "a": "TT2T17KZhoDu47i2E4FWxfG79zdkEWkU9N",
+     "valor": "5966283902702637194",
+     "sale": false,
+     "tx": "12cda1ac701df0362a0b287f2109e779a67c0a6cb16ec5c06ae396baadc68f27"
+    }
+   ],
+   "salidas": 0
+  },
+  "financiadora": {
+   "direccion": "TPyjyZfsYaXStgz2NmAraF1uZcMtkgNan5",
+   "transacciones": [],
+   "trc20": [],
+   "salidas": 0
+  }
+ }
+}
