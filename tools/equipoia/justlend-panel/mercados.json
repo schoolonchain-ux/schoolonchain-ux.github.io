@@ -1,0 +1,1756 @@
+{
+ "generado": "desde el inventario de la investigación (11-nov-2026)",
+ "mercados": [
+  {
+   "id": "v3:TSUUVjysXV8YqHytSNjfkNXnnB49QDvZpx",
+   "version": "V3",
+   "direccion": "TSUUVjysXV8YqHytSNjfkNXnnB49QDvZpx",
+   "token0": "TNUC9Qb1rRpS5CbWLmNMxXBjyFoydXjWFR",
+   "token1": "TR7NHqjeKQxGTCi8q8ZY4pL8otSzgjLj6t",
+   "simbolo0": "WTRX",
+   "simbolo1": "USDT",
+   "dec0": 6,
+   "dec1": 6,
+   "feePpm": 500,
+   "tickSpacing": 10,
+   "parametros": null,
+   "hooks": null,
+   "capital11nov": 128783642,
+   "roles": [
+    "directo",
+    "salto2"
+   ],
+   "tokens": [
+    "WTRX"
+   ],
+   "estado11nov": "activo"
+  },
+  {
+   "id": "v4:dda1d5819853f19f3e952da5d93aa2d572d95c72a8e6e4c2acab65384fd2557e",
+   "version": "V4",
+   "direccion": "dda1d5819853f19f3e952da5d93aa2d572d95c72a8e6e4c2acab65384fd2557e",
+   "token0": "T9yD14Nj9j7xAB4dbGeiX9h8unkKHxuWwb",
+   "token1": "TR7NHqjeKQxGTCi8q8ZY4pL8otSzgjLj6t",
+   "simbolo0": "TRX",
+   "simbolo1": "USDT",
+   "dec0": 6,
+   "dec1": 6,
+   "feePpm": 500,
+   "tickSpacing": 10,
+   "parametros": "00000000000000000000000000000000000000000000000000000000000a0000",
+   "hooks": "T9yD14Nj9j7xAB4dbGeiX9h8unkKHxuWwb",
+   "capital11nov": 115660924,
+   "roles": [
+    "salto2"
+   ],
+   "tokens": [
+    "TRX"
+   ],
+   "estado11nov": "activo"
+  },
+  {
+   "id": "v2:TFGDbUyP8xez44C76fin3bn3Ss6jugoUwJ",
+   "version": "V2",
+   "direccion": "TFGDbUyP8xez44C76fin3bn3Ss6jugoUwJ",
+   "token0": "TNUC9Qb1rRpS5CbWLmNMxXBjyFoydXjWFR",
+   "token1": "TR7NHqjeKQxGTCi8q8ZY4pL8otSzgjLj6t",
+   "simbolo0": "WTRX",
+   "simbolo1": "USDT",
+   "dec0": 6,
+   "dec1": 6,
+   "feePpm": 3000,
+   "tickSpacing": null,
+   "parametros": null,
+   "hooks": null,
+   "capital11nov": 91537494,
+   "roles": [
+    "directo",
+    "salto2"
+   ],
+   "tokens": [
+    "WTRX"
+   ],
+   "estado11nov": "activo"
+  },
+  {
+   "id": "v2:TRaQussyGeM6rhRGM3wfEj3B8vofTJj3EB",
+   "version": "V2",
+   "direccion": "TRaQussyGeM6rhRGM3wfEj3B8vofTJj3EB",
+   "token0": "TNUC9Qb1rRpS5CbWLmNMxXBjyFoydXjWFR",
+   "token1": "TUPM7K8REVzD2UdV4R5fe5M8XbnR2DdoJ6",
+   "simbolo0": "WTRX",
+   "simbolo1": "HTX",
+   "dec0": 6,
+   "dec1": 18,
+   "feePpm": 3000,
+   "tickSpacing": null,
+   "parametros": null,
+   "hooks": null,
+   "capital11nov": 65965028,
+   "roles": [
+    "salto1"
+   ],
+   "tokens": [
+    "HTX"
+   ],
+   "estado11nov": "activo"
+  },
+  {
+   "id": "v2:THu6ConqvZ3phYHeNTDyW9aE3pGypwBsP6",
+   "version": "V2",
+   "direccion": "THu6ConqvZ3phYHeNTDyW9aE3pGypwBsP6",
+   "token0": "TNUC9Qb1rRpS5CbWLmNMxXBjyFoydXjWFR",
+   "token1": "TSSMHYeV2uE9qYH95DqyoCuNCzEL1NvU3S",
+   "simbolo0": "WTRX",
+   "simbolo1": "SUN",
+   "dec0": 6,
+   "dec1": 18,
+   "feePpm": 3000,
+   "tickSpacing": null,
+   "parametros": null,
+   "hooks": null,
+   "capital11nov": 15334068,
+   "roles": [
+    "salto1"
+   ],
+   "tokens": [
+    "SUN"
+   ],
+   "estado11nov": "activo"
+  },
+  {
+   "id": "v2:TW68dBGdy9gtk16BfzmvaCZ9pEti3KFkk2",
+   "version": "V2",
+   "direccion": "TW68dBGdy9gtk16BfzmvaCZ9pEti3KFkk2",
+   "token0": "TCFLL5dx5ZJdKnWuesXxi1VPwjLVmWZZy9",
+   "token1": "TR7NHqjeKQxGTCi8q8ZY4pL8otSzgjLj6t",
+   "simbolo0": "JST",
+   "simbolo1": "USDT",
+   "dec0": 18,
+   "dec1": 6,
+   "feePpm": 3000,
+   "tickSpacing": null,
+   "parametros": null,
+   "hooks": null,
+   "capital11nov": 14374763,
+   "roles": [
+    "directo"
+   ],
+   "tokens": [
+    "JST"
+   ],
+   "estado11nov": "activo"
+  },
+  {
+   "id": "v4:9a77a90c118768c6acceb24a531242ac57112f8dbeb2e0b4c1dce6aebbd2cac9",
+   "version": "V4",
+   "direccion": "9a77a90c118768c6acceb24a531242ac57112f8dbeb2e0b4c1dce6aebbd2cac9",
+   "token0": "TCFLL5dx5ZJdKnWuesXxi1VPwjLVmWZZy9",
+   "token1": "TR7NHqjeKQxGTCi8q8ZY4pL8otSzgjLj6t",
+   "simbolo0": "JST",
+   "simbolo1": "USDT",
+   "dec0": 18,
+   "dec1": 6,
+   "feePpm": 500,
+   "tickSpacing": 10,
+   "parametros": "00000000000000000000000000000000000000000000000000000000000a0000",
+   "hooks": "T9yD14Nj9j7xAB4dbGeiX9h8unkKHxuWwb",
+   "capital11nov": 12197091,
+   "roles": [
+    "directo"
+   ],
+   "tokens": [
+    "JST"
+   ],
+   "estado11nov": "activo"
+  },
+  {
+   "id": "v2:TUDo1PuMG6j4aDSg6rsCNiz5gR5cnQaNTT",
+   "version": "V2",
+   "direccion": "TUDo1PuMG6j4aDSg6rsCNiz5gR5cnQaNTT",
+   "token0": "TCFLL5dx5ZJdKnWuesXxi1VPwjLVmWZZy9",
+   "token1": "TNUC9Qb1rRpS5CbWLmNMxXBjyFoydXjWFR",
+   "simbolo0": "JST",
+   "simbolo1": "WTRX",
+   "dec0": 18,
+   "dec1": 6,
+   "feePpm": 3000,
+   "tickSpacing": null,
+   "parametros": null,
+   "hooks": null,
+   "capital11nov": 7535083,
+   "roles": [
+    "salto1"
+   ],
+   "tokens": [
+    "JST"
+   ],
+   "estado11nov": "activo"
+  },
+  {
+   "id": "v2:TPBtSWUNAQWfMUJk92czYwktvF7aS44nLp",
+   "version": "V2",
+   "direccion": "TPBtSWUNAQWfMUJk92czYwktvF7aS44nLp",
+   "token0": "TNUC9Qb1rRpS5CbWLmNMxXBjyFoydXjWFR",
+   "token1": "TU3kjFuhtEo42tsCBtfYUAZxoqQ4yuSLQ5",
+   "simbolo0": "WTRX",
+   "simbolo1": "sTRX",
+   "dec0": 6,
+   "dec1": 18,
+   "feePpm": 3000,
+   "tickSpacing": null,
+   "parametros": null,
+   "hooks": null,
+   "capital11nov": 7380105,
+   "roles": [
+    "salto1"
+   ],
+   "tokens": [
+    "sTRX"
+   ],
+   "estado11nov": "activo"
+  },
+  {
+   "id": "v3:TDvGaAn29mHna9b4yrdvX2hivitYUkWTh5",
+   "version": "V3",
+   "direccion": "TDvGaAn29mHna9b4yrdvX2hivitYUkWTh5",
+   "token0": "TR7NHqjeKQxGTCi8q8ZY4pL8otSzgjLj6t",
+   "token1": "TSSMHYeV2uE9qYH95DqyoCuNCzEL1NvU3S",
+   "simbolo0": "USDT",
+   "simbolo1": "SUN",
+   "dec0": 6,
+   "dec1": 18,
+   "feePpm": 500,
+   "tickSpacing": 10,
+   "parametros": null,
+   "hooks": null,
+   "capital11nov": 6749253,
+   "roles": [
+    "directo"
+   ],
+   "tokens": [
+    "SUN"
+   ],
+   "estado11nov": "activo"
+  },
+  {
+   "id": "v3:TQ3SU3p5hKogGrHmfMq7F3LQ9zAnZYHfsL",
+   "version": "V3",
+   "direccion": "TQ3SU3p5hKogGrHmfMq7F3LQ9zAnZYHfsL",
+   "token0": "TNUC9Qb1rRpS5CbWLmNMxXBjyFoydXjWFR",
+   "token1": "TU3kjFuhtEo42tsCBtfYUAZxoqQ4yuSLQ5",
+   "simbolo0": "WTRX",
+   "simbolo1": "sTRX",
+   "dec0": 6,
+   "dec1": 18,
+   "feePpm": 100,
+   "tickSpacing": 1,
+   "parametros": null,
+   "hooks": null,
+   "capital11nov": 6438943,
+   "roles": [
+    "salto1"
+   ],
+   "tokens": [
+    "sTRX"
+   ],
+   "estado11nov": "activo"
+  },
+  {
+   "id": "v3:TEZWKD7eujZVDJAm74ArJUCJ7s95xj2vn7",
+   "version": "V3",
+   "direccion": "TEZWKD7eujZVDJAm74ArJUCJ7s95xj2vn7",
+   "token0": "TR7NHqjeKQxGTCi8q8ZY4pL8otSzgjLj6t",
+   "token1": "TUPM7K8REVzD2UdV4R5fe5M8XbnR2DdoJ6",
+   "simbolo0": "USDT",
+   "simbolo1": "HTX",
+   "dec0": 6,
+   "dec1": 18,
+   "feePpm": 500,
+   "tickSpacing": 10,
+   "parametros": null,
+   "hooks": null,
+   "capital11nov": 4859912,
+   "roles": [
+    "directo"
+   ],
+   "tokens": [
+    "HTX"
+   ],
+   "estado11nov": "activo"
+  },
+  {
+   "id": "v2:TTdeCobmYxhfFBYUZbiQqbZ56zrFkSE5DG",
+   "version": "V2",
+   "direccion": "TTdeCobmYxhfFBYUZbiQqbZ56zrFkSE5DG",
+   "token0": "TR7NHqjeKQxGTCi8q8ZY4pL8otSzgjLj6t",
+   "token1": "TSSMHYeV2uE9qYH95DqyoCuNCzEL1NvU3S",
+   "simbolo0": "USDT",
+   "simbolo1": "SUN",
+   "dec0": 6,
+   "dec1": 18,
+   "feePpm": 3000,
+   "tickSpacing": null,
+   "parametros": null,
+   "hooks": null,
+   "capital11nov": 4812653,
+   "roles": [
+    "directo"
+   ],
+   "tokens": [
+    "SUN"
+   ],
+   "estado11nov": "activo"
+  },
+  {
+   "id": "v2:TXFpue4nqvVptJEv4o8JXko5W6yCWpZZaR",
+   "version": "V2",
+   "direccion": "TXFpue4nqvVptJEv4o8JXko5W6yCWpZZaR",
+   "token0": "TFczxzPhnThNSqr5by8tvxsdCFRRz6cPNq",
+   "token1": "TR7NHqjeKQxGTCi8q8ZY4pL8otSzgjLj6t",
+   "simbolo0": "NFT",
+   "simbolo1": "USDT",
+   "dec0": 6,
+   "dec1": 6,
+   "feePpm": 3000,
+   "tickSpacing": null,
+   "parametros": null,
+   "hooks": null,
+   "capital11nov": 3947076,
+   "roles": [
+    "directo"
+   ],
+   "tokens": [
+    "NFT"
+   ],
+   "estado11nov": "activo"
+  },
+  {
+   "id": "v2:TLKyq7eJ4YKbs3TGEvoBJWkAXWYQKWo2Nn",
+   "version": "V2",
+   "direccion": "TLKyq7eJ4YKbs3TGEvoBJWkAXWYQKWo2Nn",
+   "token0": "TAFjULxiVgT4qWk6UZwjqwZXTSaGaqnVp4",
+   "token1": "TR7NHqjeKQxGTCi8q8ZY4pL8otSzgjLj6t",
+   "simbolo0": "BTT",
+   "simbolo1": "USDT",
+   "dec0": 18,
+   "dec1": 6,
+   "feePpm": 3000,
+   "tickSpacing": null,
+   "parametros": null,
+   "hooks": null,
+   "capital11nov": 3881750,
+   "roles": [
+    "directo"
+   ],
+   "tokens": [
+    "BTT"
+   ],
+   "estado11nov": "activo"
+  },
+  {
+   "id": "v2:TC1GhhC5iGFLuuUthriuUu183P8YWPmQsK",
+   "version": "V2",
+   "direccion": "TC1GhhC5iGFLuuUthriuUu183P8YWPmQsK",
+   "token0": "TLa2f6VPqDgRE67v1736s7bJ8Ray5wYjU7",
+   "token1": "TR7NHqjeKQxGTCi8q8ZY4pL8otSzgjLj6t",
+   "simbolo0": "WIN",
+   "simbolo1": "USDT",
+   "dec0": 6,
+   "dec1": 6,
+   "feePpm": 3000,
+   "tickSpacing": null,
+   "parametros": null,
+   "hooks": null,
+   "capital11nov": 2470228,
+   "roles": [
+    "directo"
+   ],
+   "tokens": [
+    "WIN"
+   ],
+   "estado11nov": "activo"
+  },
+  {
+   "id": "v2:TTQpjqQUjMJjF3MAvWWVURn3YrRxg2quTM",
+   "version": "V2",
+   "direccion": "TTQpjqQUjMJjF3MAvWWVURn3YrRxg2quTM",
+   "token0": "TN3W4H6rK2ce4vX9YnFQHwKENnHjoxb3m9",
+   "token1": "TR7NHqjeKQxGTCi8q8ZY4pL8otSzgjLj6t",
+   "simbolo0": "BTC",
+   "simbolo1": "USDT",
+   "dec0": 8,
+   "dec1": 6,
+   "feePpm": 3000,
+   "tickSpacing": null,
+   "parametros": null,
+   "hooks": null,
+   "capital11nov": 2281044,
+   "roles": [
+    "directo"
+   ],
+   "tokens": [
+    "BTC"
+   ],
+   "estado11nov": "activo"
+  },
+  {
+   "id": "v3:TD3C3hcmRgTP42Sxv7XsT6fHbeX5eAryq6",
+   "version": "V3",
+   "direccion": "TD3C3hcmRgTP42Sxv7XsT6fHbeX5eAryq6",
+   "token0": "TR7NHqjeKQxGTCi8q8ZY4pL8otSzgjLj6t",
+   "token1": "TXDk8mbtRbXeYuMNS83CfKPaYYT8XWv9Hz",
+   "simbolo0": "USDT",
+   "simbolo1": "USDD",
+   "dec0": 6,
+   "dec1": 18,
+   "feePpm": 100,
+   "tickSpacing": 1,
+   "parametros": null,
+   "hooks": null,
+   "capital11nov": 2158976,
+   "roles": [
+    "directo"
+   ],
+   "tokens": [
+    "USDD"
+   ],
+   "estado11nov": "activo"
+  },
+  {
+   "id": "v3:TT9jKSZMMhhraQkJc9cdNUdP8vvDsmZn7x",
+   "version": "V3",
+   "direccion": "TT9jKSZMMhhraQkJc9cdNUdP8vvDsmZn7x",
+   "token0": "TFczxzPhnThNSqr5by8tvxsdCFRRz6cPNq",
+   "token1": "TR7NHqjeKQxGTCi8q8ZY4pL8otSzgjLj6t",
+   "simbolo0": "NFT",
+   "simbolo1": "USDT",
+   "dec0": 6,
+   "dec1": 6,
+   "feePpm": 500,
+   "tickSpacing": 10,
+   "parametros": null,
+   "hooks": null,
+   "capital11nov": 2112894,
+   "roles": [
+    "directo"
+   ],
+   "tokens": [
+    "NFT"
+   ],
+   "estado11nov": "activo"
+  },
+  {
+   "id": "v3:TW7pbp4pD38qv6kSaw44i4uVzthz2bBpYc",
+   "version": "V3",
+   "direccion": "TW7pbp4pD38qv6kSaw44i4uVzthz2bBpYc",
+   "token0": "TR7NHqjeKQxGTCi8q8ZY4pL8otSzgjLj6t",
+   "token1": "TUpMhErZL2fhh4sVNULAbNKLokS4GjC1F4",
+   "simbolo0": "USDT",
+   "simbolo1": "TUSD",
+   "dec0": 6,
+   "dec1": 18,
+   "feePpm": 100,
+   "tickSpacing": 1,
+   "parametros": null,
+   "hooks": null,
+   "capital11nov": 1848303,
+   "roles": [
+    "directo"
+   ],
+   "tokens": [
+    "TUSD"
+   ],
+   "estado11nov": "activo"
+  },
+  {
+   "id": "v1:TDQaYrhQynYV9aXTYj63nwLAafRffWSEj6",
+   "version": "V1",
+   "direccion": "TDQaYrhQynYV9aXTYj63nwLAafRffWSEj6",
+   "token0": "T9yD14Nj9j7xAB4dbGeiX9h8unkKHxuWwb",
+   "token1": "TSSMHYeV2uE9qYH95DqyoCuNCzEL1NvU3S",
+   "simbolo0": "TRX",
+   "simbolo1": "SUN",
+   "dec0": 6,
+   "dec1": 18,
+   "feePpm": 3000,
+   "tickSpacing": null,
+   "parametros": null,
+   "hooks": null,
+   "capital11nov": 1807132,
+   "roles": [
+    "salto1"
+   ],
+   "tokens": [
+    "SUN"
+   ],
+   "estado11nov": "activo"
+  },
+  {
+   "id": "v1:TQn9Y2khEsLJW1ChVWFMSMeRDow5KcbLSE",
+   "version": "V1",
+   "direccion": "TQn9Y2khEsLJW1ChVWFMSMeRDow5KcbLSE",
+   "token0": "T9yD14Nj9j7xAB4dbGeiX9h8unkKHxuWwb",
+   "token1": "TR7NHqjeKQxGTCi8q8ZY4pL8otSzgjLj6t",
+   "simbolo0": "TRX",
+   "simbolo1": "USDT",
+   "dec0": 6,
+   "dec1": 6,
+   "feePpm": 3000,
+   "tickSpacing": null,
+   "parametros": null,
+   "hooks": null,
+   "capital11nov": 1274243,
+   "roles": [
+    "salto2"
+   ],
+   "tokens": [
+    "TRX"
+   ],
+   "estado11nov": "activo"
+  },
+  {
+   "id": "v2:TR4fHizLc7xCy6v1UVdTqLxYzTW1QHCds6",
+   "version": "V2",
+   "direccion": "TR4fHizLc7xCy6v1UVdTqLxYzTW1QHCds6",
+   "token0": "TR7NHqjeKQxGTCi8q8ZY4pL8otSzgjLj6t",
+   "token1": "TUpMhErZL2fhh4sVNULAbNKLokS4GjC1F4",
+   "simbolo0": "USDT",
+   "simbolo1": "TUSD",
+   "dec0": 6,
+   "dec1": 18,
+   "feePpm": 3000,
+   "tickSpacing": null,
+   "parametros": null,
+   "hooks": null,
+   "capital11nov": 1246708,
+   "roles": [
+    "directo"
+   ],
+   "tokens": [
+    "TUSD"
+   ],
+   "estado11nov": "activo"
+  },
+  {
+   "id": "v1:TUEYcyPAqc4hTg1fSuBCPc18vGWcJDECVw",
+   "version": "V1",
+   "direccion": "TUEYcyPAqc4hTg1fSuBCPc18vGWcJDECVw",
+   "token0": "T9yD14Nj9j7xAB4dbGeiX9h8unkKHxuWwb",
+   "token1": "TKkeiboTkxXKJpbmVFbv4a8ov5rAfRDMf9",
+   "simbolo0": "TRX",
+   "simbolo1": "SUN",
+   "dec0": 6,
+   "dec1": 18,
+   "feePpm": 3000,
+   "tickSpacing": null,
+   "parametros": null,
+   "hooks": null,
+   "capital11nov": 1062236,
+   "roles": [
+    "salto1"
+   ],
+   "tokens": [
+    "SUN-viejo"
+   ],
+   "estado11nov": "activo"
+  },
+  {
+   "id": "v4:61446c8062cdc7f165946650c5ca6b6aa1809d19fcdf69b58824b01dd581333e",
+   "version": "V4",
+   "direccion": "61446c8062cdc7f165946650c5ca6b6aa1809d19fcdf69b58824b01dd581333e",
+   "token0": "TFNirp6PbqYE1ZTtWuCMUKJWLNZkoCoeFJ",
+   "token1": "TR7NHqjeKQxGTCi8q8ZY4pL8otSzgjLj6t",
+   "simbolo0": "U",
+   "simbolo1": "USDT",
+   "dec0": 18,
+   "dec1": 6,
+   "feePpm": 100,
+   "tickSpacing": 1,
+   "parametros": "0000000000000000000000000000000000000000000000000000000000010000",
+   "hooks": "T9yD14Nj9j7xAB4dbGeiX9h8unkKHxuWwb",
+   "capital11nov": 1049448,
+   "roles": [
+    "directo"
+   ],
+   "tokens": [
+    "U"
+   ],
+   "estado11nov": "activo"
+  },
+  {
+   "id": "v3:TGUZpxeGtx6sWBbeXxakaEui7iFb7RaM9z",
+   "version": "V3",
+   "direccion": "TGUZpxeGtx6sWBbeXxakaEui7iFb7RaM9z",
+   "token0": "TPFqcBAaaUMCSVRCqPaQ9QnzKhmuoLR6Rc",
+   "token1": "TR7NHqjeKQxGTCi8q8ZY4pL8otSzgjLj6t",
+   "simbolo0": "USD1",
+   "simbolo1": "USDT",
+   "dec0": 18,
+   "dec1": 6,
+   "feePpm": 100,
+   "tickSpacing": 1,
+   "parametros": null,
+   "hooks": null,
+   "capital11nov": 1020912,
+   "roles": [
+    "directo"
+   ],
+   "tokens": [
+    "USD1"
+   ],
+   "estado11nov": "activo"
+  },
+  {
+   "id": "v4:7f23868f298bcda69212ce836a45fe4f08b5d4077b90303da16fc0db44ae3f11",
+   "version": "V4",
+   "direccion": "7f23868f298bcda69212ce836a45fe4f08b5d4077b90303da16fc0db44ae3f11",
+   "token0": "TR7NHqjeKQxGTCi8q8ZY4pL8otSzgjLj6t",
+   "token1": "TXDk8mbtRbXeYuMNS83CfKPaYYT8XWv9Hz",
+   "simbolo0": "USDT",
+   "simbolo1": "USDD",
+   "dec0": 6,
+   "dec1": 18,
+   "feePpm": 100,
+   "tickSpacing": 1,
+   "parametros": "0000000000000000000000000000000000000000000000000000000000010000",
+   "hooks": "T9yD14Nj9j7xAB4dbGeiX9h8unkKHxuWwb",
+   "capital11nov": 1000480,
+   "roles": [
+    "directo"
+   ],
+   "tokens": [
+    "USDD"
+   ],
+   "estado11nov": "activo"
+  },
+  {
+   "id": "v1:TYukBQZ2XXCcRCReAUguyXncCWNY9CEiDQ",
+   "version": "V1",
+   "direccion": "TYukBQZ2XXCcRCReAUguyXncCWNY9CEiDQ",
+   "token0": "T9yD14Nj9j7xAB4dbGeiX9h8unkKHxuWwb",
+   "token1": "TCFLL5dx5ZJdKnWuesXxi1VPwjLVmWZZy9",
+   "simbolo0": "TRX",
+   "simbolo1": "JST",
+   "dec0": 6,
+   "dec1": 18,
+   "feePpm": 3000,
+   "tickSpacing": null,
+   "parametros": null,
+   "hooks": null,
+   "capital11nov": 974819,
+   "roles": [
+    "salto1"
+   ],
+   "tokens": [
+    "JST"
+   ],
+   "estado11nov": "activo"
+  },
+  {
+   "id": "v2:TYtVkfCdjsnaDufhrhPWYN59NThMVSgiJs",
+   "version": "V2",
+   "direccion": "TYtVkfCdjsnaDufhrhPWYN59NThMVSgiJs",
+   "token0": "TAFjULxiVgT4qWk6UZwjqwZXTSaGaqnVp4",
+   "token1": "TNUC9Qb1rRpS5CbWLmNMxXBjyFoydXjWFR",
+   "simbolo0": "BTT",
+   "simbolo1": "WTRX",
+   "dec0": 18,
+   "dec1": 6,
+   "feePpm": 3000,
+   "tickSpacing": null,
+   "parametros": null,
+   "hooks": null,
+   "capital11nov": 652061,
+   "roles": [
+    "salto1"
+   ],
+   "tokens": [
+    "BTT"
+   ],
+   "estado11nov": "activo"
+  },
+  {
+   "id": "v2:TCd33fPbq8tCjCTUxQXsgSCNU2Wg3nGjsg",
+   "version": "V2",
+   "direccion": "TCd33fPbq8tCjCTUxQXsgSCNU2Wg3nGjsg",
+   "token0": "TNUC9Qb1rRpS5CbWLmNMxXBjyFoydXjWFR",
+   "token1": "TRFe3hT5oYhjSZ6f3ji5FJ7YCfrkWnHRvh",
+   "simbolo0": "WTRX",
+   "simbolo1": "ETH",
+   "dec0": 6,
+   "dec1": 18,
+   "feePpm": 3000,
+   "tickSpacing": null,
+   "parametros": null,
+   "hooks": null,
+   "capital11nov": 626616,
+   "roles": [
+    "salto1"
+   ],
+   "tokens": [
+    "ETH-nuevo"
+   ],
+   "estado11nov": "activo"
+  },
+  {
+   "id": "v2:TNLcz8A9hGKbTNJ6b6C1GTyigwxURbWzkM",
+   "version": "V2",
+   "direccion": "TNLcz8A9hGKbTNJ6b6C1GTyigwxURbWzkM",
+   "token0": "TPYmHEhy5n8TCEfYGqW2rPxsghSfzghPDn",
+   "token1": "TR7NHqjeKQxGTCi8q8ZY4pL8otSzgjLj6t",
+   "simbolo0": "USDD",
+   "simbolo1": "USDT",
+   "dec0": 18,
+   "dec1": 6,
+   "feePpm": 3000,
+   "tickSpacing": null,
+   "parametros": null,
+   "hooks": null,
+   "capital11nov": 523122,
+   "roles": [
+    "directo"
+   ],
+   "tokens": [
+    "USDD-viejo"
+   ],
+   "estado11nov": "activo"
+  },
+  {
+   "id": "v3:TJn3qJRDjEyhhh5iyWZhSu1RMaH76vURgQ",
+   "version": "V3",
+   "direccion": "TJn3qJRDjEyhhh5iyWZhSu1RMaH76vURgQ",
+   "token0": "TNUC9Qb1rRpS5CbWLmNMxXBjyFoydXjWFR",
+   "token1": "TPFqcBAaaUMCSVRCqPaQ9QnzKhmuoLR6Rc",
+   "simbolo0": "WTRX",
+   "simbolo1": "USD1",
+   "dec0": 6,
+   "dec1": 18,
+   "feePpm": 500,
+   "tickSpacing": 10,
+   "parametros": null,
+   "hooks": null,
+   "capital11nov": 499865,
+   "roles": [
+    "salto1"
+   ],
+   "tokens": [
+    "USD1"
+   ],
+   "estado11nov": "activo"
+  },
+  {
+   "id": "v1:TJ3mvzmKS8tXMTYmpyN8XnWP8h99y3f412",
+   "version": "V1",
+   "direccion": "TJ3mvzmKS8tXMTYmpyN8XnWP8h99y3f412",
+   "token0": "T9yD14Nj9j7xAB4dbGeiX9h8unkKHxuWwb",
+   "token1": "TFczxzPhnThNSqr5by8tvxsdCFRRz6cPNq",
+   "simbolo0": "TRX",
+   "simbolo1": "NFT",
+   "dec0": 6,
+   "dec1": 6,
+   "feePpm": 3000,
+   "tickSpacing": null,
+   "parametros": null,
+   "hooks": null,
+   "capital11nov": 378641,
+   "roles": [
+    "salto1"
+   ],
+   "tokens": [
+    "NFT"
+   ],
+   "estado11nov": "activo"
+  },
+  {
+   "id": "v4:aa9dd874ed373cf93a9a39f2e79476f996ff3f2de0332fdd851453964978e599",
+   "version": "V4",
+   "direccion": "aa9dd874ed373cf93a9a39f2e79476f996ff3f2de0332fdd851453964978e599",
+   "token0": "T9yD14Nj9j7xAB4dbGeiX9h8unkKHxuWwb",
+   "token1": "TR7NHqjeKQxGTCi8q8ZY4pL8otSzgjLj6t",
+   "simbolo0": "TRX",
+   "simbolo1": "USDT",
+   "dec0": 6,
+   "dec1": 6,
+   "feePpm": 3000,
+   "tickSpacing": 1,
+   "parametros": "0000000000000000000000000000000000000000000000000000000000010000",
+   "hooks": "T9yD14Nj9j7xAB4dbGeiX9h8unkKHxuWwb",
+   "capital11nov": 346766,
+   "roles": [
+    "salto2"
+   ],
+   "tokens": [
+    "TRX"
+   ],
+   "estado11nov": "activo"
+  },
+  {
+   "id": "v1:TSJWbBJAS8HgQCMJfY5drVwYDa7JBAm6Es",
+   "version": "V1",
+   "direccion": "TSJWbBJAS8HgQCMJfY5drVwYDa7JBAm6Es",
+   "token0": "T9yD14Nj9j7xAB4dbGeiX9h8unkKHxuWwb",
+   "token1": "TPYmHEhy5n8TCEfYGqW2rPxsghSfzghPDn",
+   "simbolo0": "TRX",
+   "simbolo1": "USDD",
+   "dec0": 6,
+   "dec1": 18,
+   "feePpm": 3000,
+   "tickSpacing": null,
+   "parametros": null,
+   "hooks": null,
+   "capital11nov": 318280,
+   "roles": [
+    "salto1"
+   ],
+   "tokens": [
+    "USDD-viejo"
+   ],
+   "estado11nov": "activo"
+  },
+  {
+   "id": "v1:TVrZ3PjjFGbnp44p6SGASAKrJWAUjCHmCA",
+   "version": "V1",
+   "direccion": "TVrZ3PjjFGbnp44p6SGASAKrJWAUjCHmCA",
+   "token0": "T9yD14Nj9j7xAB4dbGeiX9h8unkKHxuWwb",
+   "token1": "THb4CqiFdwNHsWsQCs4JhzwjMWys4aqCbF",
+   "simbolo0": "TRX",
+   "simbolo1": "ETH",
+   "dec0": 6,
+   "dec1": 18,
+   "feePpm": 3000,
+   "tickSpacing": null,
+   "parametros": null,
+   "hooks": null,
+   "capital11nov": 287007,
+   "roles": [
+    "salto1"
+   ],
+   "tokens": [
+    "ETH"
+   ],
+   "estado11nov": "activo"
+  },
+  {
+   "id": "v1:TXX1i3BWKBuTxUmTERCztGyxSSpRagEcjX",
+   "version": "V1",
+   "direccion": "TXX1i3BWKBuTxUmTERCztGyxSSpRagEcjX",
+   "token0": "T9yD14Nj9j7xAB4dbGeiX9h8unkKHxuWwb",
+   "token1": "TEkxiTehnzSmSe2XqrBj4w32RUN966rdz8",
+   "simbolo0": "TRX",
+   "simbolo1": "USDC",
+   "dec0": 6,
+   "dec1": 6,
+   "feePpm": 3000,
+   "tickSpacing": null,
+   "parametros": null,
+   "hooks": null,
+   "capital11nov": 257378,
+   "roles": [
+    "salto1"
+   ],
+   "tokens": [
+    "USDC"
+   ],
+   "estado11nov": "activo"
+  },
+  {
+   "id": "v1:TQcia2H2TU3WrFk9sKtdK9qCfkW8XirfPQ",
+   "version": "V1",
+   "direccion": "TQcia2H2TU3WrFk9sKtdK9qCfkW8XirfPQ",
+   "token0": "T9yD14Nj9j7xAB4dbGeiX9h8unkKHxuWwb",
+   "token1": "TMwFHYXLJaRUPeW6421aqXL4ZEzPRFGkGT",
+   "simbolo0": "TRX",
+   "simbolo1": "USDJ",
+   "dec0": 6,
+   "dec1": 18,
+   "feePpm": 3000,
+   "tickSpacing": null,
+   "parametros": null,
+   "hooks": null,
+   "capital11nov": 204848,
+   "roles": [
+    "salto1"
+   ],
+   "tokens": [
+    "USDJ"
+   ],
+   "estado11nov": "activo"
+  },
+  {
+   "id": "v3:TMxxHG5PRVakKwNCvTWDb73gPwXvkZAhpm",
+   "version": "V3",
+   "direccion": "TMxxHG5PRVakKwNCvTWDb73gPwXvkZAhpm",
+   "token0": "TPYmHEhy5n8TCEfYGqW2rPxsghSfzghPDn",
+   "token1": "TR7NHqjeKQxGTCi8q8ZY4pL8otSzgjLj6t",
+   "simbolo0": "USDD",
+   "simbolo1": "USDT",
+   "dec0": 18,
+   "dec1": 6,
+   "feePpm": 100,
+   "tickSpacing": 1,
+   "parametros": null,
+   "hooks": null,
+   "capital11nov": 196136,
+   "roles": [
+    "directo"
+   ],
+   "tokens": [
+    "USDD-viejo"
+   ],
+   "estado11nov": "activo"
+  },
+  {
+   "id": "v1:TKAtLoCB529zusLfLVkGvLNis6okwjB7jf",
+   "version": "V1",
+   "direccion": "TKAtLoCB529zusLfLVkGvLNis6okwjB7jf",
+   "token0": "T9yD14Nj9j7xAB4dbGeiX9h8unkKHxuWwb",
+   "token1": "TN3W4H6rK2ce4vX9YnFQHwKENnHjoxb3m9",
+   "simbolo0": "TRX",
+   "simbolo1": "BTC",
+   "dec0": 6,
+   "dec1": 8,
+   "feePpm": 3000,
+   "tickSpacing": null,
+   "parametros": null,
+   "hooks": null,
+   "capital11nov": 174581,
+   "roles": [
+    "salto1"
+   ],
+   "tokens": [
+    "BTC"
+   ],
+   "estado11nov": "activo"
+  },
+  {
+   "id": "v1:TKJYoAbbLMsZkC7bonqiyzNmqtGu1iD7in",
+   "version": "V1",
+   "direccion": "TKJYoAbbLMsZkC7bonqiyzNmqtGu1iD7in",
+   "token0": "T9yD14Nj9j7xAB4dbGeiX9h8unkKHxuWwb",
+   "token1": "TUpMhErZL2fhh4sVNULAbNKLokS4GjC1F4",
+   "simbolo0": "TRX",
+   "simbolo1": "TUSD",
+   "dec0": 6,
+   "dec1": 18,
+   "feePpm": 3000,
+   "tickSpacing": null,
+   "parametros": null,
+   "hooks": null,
+   "capital11nov": 101498,
+   "roles": [
+    "salto1"
+   ],
+   "tokens": [
+    "TUSD"
+   ],
+   "estado11nov": "activo"
+  },
+  {
+   "id": "v1:TH2mEwTKNgtg8psR6Qx2RBUXZ48Lon1ygu",
+   "version": "V1",
+   "direccion": "TH2mEwTKNgtg8psR6Qx2RBUXZ48Lon1ygu",
+   "token0": "T9yD14Nj9j7xAB4dbGeiX9h8unkKHxuWwb",
+   "token1": "TKfjV9RNKJJCqPvBtK8L7Knykh7DNWvnYt",
+   "simbolo0": "TRX",
+   "simbolo1": "WBTT",
+   "dec0": 6,
+   "dec1": 6,
+   "feePpm": 3000,
+   "tickSpacing": null,
+   "parametros": null,
+   "hooks": null,
+   "capital11nov": 88468,
+   "roles": [
+    "salto1"
+   ],
+   "tokens": [
+    "WBTT"
+   ],
+   "estado11nov": "activo"
+  },
+  {
+   "id": "v1:TYN6Wh11maRfzgG7n5B6nM5VW1jfGs9chu",
+   "version": "V1",
+   "direccion": "TYN6Wh11maRfzgG7n5B6nM5VW1jfGs9chu",
+   "token0": "T9yD14Nj9j7xAB4dbGeiX9h8unkKHxuWwb",
+   "token1": "TLa2f6VPqDgRE67v1736s7bJ8Ray5wYjU7",
+   "simbolo0": "TRX",
+   "simbolo1": "WIN",
+   "dec0": 6,
+   "dec1": 6,
+   "feePpm": 3000,
+   "tickSpacing": null,
+   "parametros": null,
+   "hooks": null,
+   "capital11nov": 82857,
+   "roles": [
+    "salto1"
+   ],
+   "tokens": [
+    "WIN"
+   ],
+   "estado11nov": "activo"
+  },
+  {
+   "id": "v1:TPavNqt8xhoBp4NNBSdEx3FBP24NBfVRxU",
+   "version": "V1",
+   "direccion": "TPavNqt8xhoBp4NNBSdEx3FBP24NBfVRxU",
+   "token0": "T9yD14Nj9j7xAB4dbGeiX9h8unkKHxuWwb",
+   "token1": "TAFjULxiVgT4qWk6UZwjqwZXTSaGaqnVp4",
+   "simbolo0": "TRX",
+   "simbolo1": "BTT",
+   "dec0": 6,
+   "dec1": 18,
+   "feePpm": 3000,
+   "tickSpacing": null,
+   "parametros": null,
+   "hooks": null,
+   "capital11nov": 53211,
+   "roles": [
+    "salto1"
+   ],
+   "tokens": [
+    "BTT"
+   ],
+   "estado11nov": "activo"
+  },
+  {
+   "id": "v4:366e5c971695cdabe2b5fb14f296e6eb39ed247d74de43c9a4a222acf816382b",
+   "version": "V4",
+   "direccion": "366e5c971695cdabe2b5fb14f296e6eb39ed247d74de43c9a4a222acf816382b",
+   "token0": "T9yD14Nj9j7xAB4dbGeiX9h8unkKHxuWwb",
+   "token1": "TSSMHYeV2uE9qYH95DqyoCuNCzEL1NvU3S",
+   "simbolo0": "TRX",
+   "simbolo1": "SUN",
+   "dec0": 6,
+   "dec1": 18,
+   "feePpm": 100,
+   "tickSpacing": 1,
+   "parametros": "0000000000000000000000000000000000000000000000000000000000010000",
+   "hooks": "T9yD14Nj9j7xAB4dbGeiX9h8unkKHxuWwb",
+   "capital11nov": 44903,
+   "roles": [
+    "salto1"
+   ],
+   "tokens": [
+    "SUN"
+   ],
+   "estado11nov": "activo"
+  },
+  {
+   "id": "v4:834ac2d0a8d6c9894685f09606dae085ee42b7d4d9d616c342e01669dd55f465",
+   "version": "V4",
+   "direccion": "834ac2d0a8d6c9894685f09606dae085ee42b7d4d9d616c342e01669dd55f465",
+   "token0": "TR7NHqjeKQxGTCi8q8ZY4pL8otSzgjLj6t",
+   "token1": "TYhWwKpw43ENFWBTGpzLHn3882f2au7SMi",
+   "simbolo0": "USDT",
+   "simbolo1": "WBTC",
+   "dec0": 6,
+   "dec1": 8,
+   "feePpm": 500,
+   "tickSpacing": 60,
+   "parametros": "00000000000000000000000000000000000000000000000000000000003c0000",
+   "hooks": "T9yD14Nj9j7xAB4dbGeiX9h8unkKHxuWwb",
+   "capital11nov": 41695,
+   "roles": [
+    "directo"
+   ],
+   "tokens": [
+    "WBTC"
+   ],
+   "estado11nov": "activo"
+  },
+  {
+   "id": "v2:TS6USKLXpe5sSdrX4GUhMjVMYV3Ty9f2yi",
+   "version": "V2",
+   "direccion": "TS6USKLXpe5sSdrX4GUhMjVMYV3Ty9f2yi",
+   "token0": "TFczxzPhnThNSqr5by8tvxsdCFRRz6cPNq",
+   "token1": "TNUC9Qb1rRpS5CbWLmNMxXBjyFoydXjWFR",
+   "simbolo0": "NFT",
+   "simbolo1": "WTRX",
+   "dec0": 6,
+   "dec1": 6,
+   "feePpm": 3000,
+   "tickSpacing": null,
+   "parametros": null,
+   "hooks": null,
+   "capital11nov": 37573,
+   "roles": [
+    "salto1"
+   ],
+   "tokens": [
+    "NFT"
+   ],
+   "estado11nov": "activo"
+  },
+  {
+   "id": "v4:497d13abe10340d569f99629672d5421489c7cbe5f097368be544e740112ef73",
+   "version": "V4",
+   "direccion": "497d13abe10340d569f99629672d5421489c7cbe5f097368be544e740112ef73",
+   "token0": "T9yD14Nj9j7xAB4dbGeiX9h8unkKHxuWwb",
+   "token1": "TR7NHqjeKQxGTCi8q8ZY4pL8otSzgjLj6t",
+   "simbolo0": "TRX",
+   "simbolo1": "USDT",
+   "dec0": 6,
+   "dec1": 6,
+   "feePpm": 3000,
+   "tickSpacing": 10,
+   "parametros": "00000000000000000000000000000000000000000000000000000000000a0000",
+   "hooks": "T9yD14Nj9j7xAB4dbGeiX9h8unkKHxuWwb",
+   "capital11nov": 28987,
+   "roles": [
+    "salto2"
+   ],
+   "tokens": [
+    "TRX"
+   ],
+   "estado11nov": "activo"
+  },
+  {
+   "id": "v2:TPMVeY18uPGAgWQ1Vim3RPjMX6BoA1Q9Sk",
+   "version": "V2",
+   "direccion": "TPMVeY18uPGAgWQ1Vim3RPjMX6BoA1Q9Sk",
+   "token0": "TEkxiTehnzSmSe2XqrBj4w32RUN966rdz8",
+   "token1": "TNUC9Qb1rRpS5CbWLmNMxXBjyFoydXjWFR",
+   "simbolo0": "USDC",
+   "simbolo1": "WTRX",
+   "dec0": 6,
+   "dec1": 6,
+   "feePpm": 3000,
+   "tickSpacing": null,
+   "parametros": null,
+   "hooks": null,
+   "capital11nov": 22364,
+   "roles": [
+    "salto1"
+   ],
+   "tokens": [
+    "USDC"
+   ],
+   "estado11nov": "activo"
+  },
+  {
+   "id": "v3:TC9QmgR8MUwRCYe3kCLwH8MW2WtxiLd6AV",
+   "version": "V3",
+   "direccion": "TC9QmgR8MUwRCYe3kCLwH8MW2WtxiLd6AV",
+   "token0": "TNUC9Qb1rRpS5CbWLmNMxXBjyFoydXjWFR",
+   "token1": "TR7NHqjeKQxGTCi8q8ZY4pL8otSzgjLj6t",
+   "simbolo0": "WTRX",
+   "simbolo1": "USDT",
+   "dec0": 6,
+   "dec1": 6,
+   "feePpm": 3000,
+   "tickSpacing": 60,
+   "parametros": null,
+   "hooks": null,
+   "capital11nov": 15786,
+   "roles": [
+    "directo",
+    "salto2"
+   ],
+   "tokens": [
+    "WTRX"
+   ],
+   "estado11nov": "activo"
+  },
+  {
+   "id": "v2:TDq9PCXQM5RfpN14T8sc6ePYJRFecPJCut",
+   "version": "V2",
+   "direccion": "TDq9PCXQM5RfpN14T8sc6ePYJRFecPJCut",
+   "token0": "TLa2f6VPqDgRE67v1736s7bJ8Ray5wYjU7",
+   "token1": "TNUC9Qb1rRpS5CbWLmNMxXBjyFoydXjWFR",
+   "simbolo0": "WIN",
+   "simbolo1": "WTRX",
+   "dec0": 6,
+   "dec1": 6,
+   "feePpm": 3000,
+   "tickSpacing": null,
+   "parametros": null,
+   "hooks": null,
+   "capital11nov": 15760,
+   "roles": [
+    "salto1"
+   ],
+   "tokens": [
+    "WIN"
+   ],
+   "estado11nov": "activo"
+  },
+  {
+   "id": "v2:TWNjMgKWAJtdGx5tR1fJNyK76zo1KXcruU",
+   "version": "V2",
+   "direccion": "TWNjMgKWAJtdGx5tR1fJNyK76zo1KXcruU",
+   "token0": "THb4CqiFdwNHsWsQCs4JhzwjMWys4aqCbF",
+   "token1": "TR7NHqjeKQxGTCi8q8ZY4pL8otSzgjLj6t",
+   "simbolo0": "ETH",
+   "simbolo1": "USDT",
+   "dec0": 18,
+   "dec1": 6,
+   "feePpm": 3000,
+   "tickSpacing": null,
+   "parametros": null,
+   "hooks": null,
+   "capital11nov": 15127,
+   "roles": [
+    "directo"
+   ],
+   "tokens": [
+    "ETH"
+   ],
+   "estado11nov": "activo"
+  },
+  {
+   "id": "v3:TTbvjUk7gxTRVMmVN4v6uLR9pEcfmg9vH9",
+   "version": "V3",
+   "direccion": "TTbvjUk7gxTRVMmVN4v6uLR9pEcfmg9vH9",
+   "token0": "TNUC9Qb1rRpS5CbWLmNMxXBjyFoydXjWFR",
+   "token1": "TSSMHYeV2uE9qYH95DqyoCuNCzEL1NvU3S",
+   "simbolo0": "WTRX",
+   "simbolo1": "SUN",
+   "dec0": 6,
+   "dec1": 18,
+   "feePpm": 3000,
+   "tickSpacing": 60,
+   "parametros": null,
+   "hooks": null,
+   "capital11nov": 14733,
+   "roles": [
+    "salto1"
+   ],
+   "tokens": [
+    "SUN"
+   ],
+   "estado11nov": "activo"
+  },
+  {
+   "id": "v4:e37e054374f63e18fd8a7c3d5ae82ec5c8c8348bd9715ed260c6a76a78c1374c",
+   "version": "V4",
+   "direccion": "e37e054374f63e18fd8a7c3d5ae82ec5c8c8348bd9715ed260c6a76a78c1374c",
+   "token0": "T9yD14Nj9j7xAB4dbGeiX9h8unkKHxuWwb",
+   "token1": "TR7NHqjeKQxGTCi8q8ZY4pL8otSzgjLj6t",
+   "simbolo0": "TRX",
+   "simbolo1": "USDT",
+   "dec0": 6,
+   "dec1": 6,
+   "feePpm": 3000,
+   "tickSpacing": 60,
+   "parametros": "00000000000000000000000000000000000000000000000000000000003c0000",
+   "hooks": "T9yD14Nj9j7xAB4dbGeiX9h8unkKHxuWwb",
+   "capital11nov": 8776,
+   "roles": [
+    "salto2"
+   ],
+   "tokens": [
+    "TRX"
+   ],
+   "estado11nov": "activo"
+  },
+  {
+   "id": "v2:TT6KuQtTbuPnbaxnLwVK16Pgf2FZcfLy3q",
+   "version": "V2",
+   "direccion": "TT6KuQtTbuPnbaxnLwVK16Pgf2FZcfLy3q",
+   "token0": "TR7NHqjeKQxGTCi8q8ZY4pL8otSzgjLj6t",
+   "token1": "TYhWwKpw43ENFWBTGpzLHn3882f2au7SMi",
+   "simbolo0": "USDT",
+   "simbolo1": "WBTC",
+   "dec0": 6,
+   "dec1": 8,
+   "feePpm": 3000,
+   "tickSpacing": null,
+   "parametros": null,
+   "hooks": null,
+   "capital11nov": 8470,
+   "roles": [
+    "directo"
+   ],
+   "tokens": [
+    "WBTC"
+   ],
+   "estado11nov": "activo"
+  },
+  {
+   "id": "v2:TMr7LizLihDymctG2w2ezLxjZDrv9S53p6",
+   "version": "V2",
+   "direccion": "TMr7LizLihDymctG2w2ezLxjZDrv9S53p6",
+   "token0": "TNUC9Qb1rRpS5CbWLmNMxXBjyFoydXjWFR",
+   "token1": "TUpMhErZL2fhh4sVNULAbNKLokS4GjC1F4",
+   "simbolo0": "WTRX",
+   "simbolo1": "TUSD",
+   "dec0": 6,
+   "dec1": 18,
+   "feePpm": 3000,
+   "tickSpacing": null,
+   "parametros": null,
+   "hooks": null,
+   "capital11nov": 8346,
+   "roles": [
+    "salto1"
+   ],
+   "tokens": [
+    "TUSD"
+   ],
+   "estado11nov": "activo"
+  },
+  {
+   "id": "v2:TEqC4WA5fjqXDuCy9xbYiay3h1ZoQ6v5iN",
+   "version": "V2",
+   "direccion": "TEqC4WA5fjqXDuCy9xbYiay3h1ZoQ6v5iN",
+   "token0": "TKfjV9RNKJJCqPvBtK8L7Knykh7DNWvnYt",
+   "token1": "TNUC9Qb1rRpS5CbWLmNMxXBjyFoydXjWFR",
+   "simbolo0": "WBTT",
+   "simbolo1": "WTRX",
+   "dec0": 6,
+   "dec1": 6,
+   "feePpm": 3000,
+   "tickSpacing": null,
+   "parametros": null,
+   "hooks": null,
+   "capital11nov": 7764,
+   "roles": [
+    "salto1"
+   ],
+   "tokens": [
+    "WBTT"
+   ],
+   "estado11nov": "activo"
+  },
+  {
+   "id": "v3:TKNrjhpJmRMcbvjoFRV1CyKwHYiNungGPy",
+   "version": "V3",
+   "direccion": "TKNrjhpJmRMcbvjoFRV1CyKwHYiNungGPy",
+   "token0": "TN3W4H6rK2ce4vX9YnFQHwKENnHjoxb3m9",
+   "token1": "TNUC9Qb1rRpS5CbWLmNMxXBjyFoydXjWFR",
+   "simbolo0": "BTC",
+   "simbolo1": "WTRX",
+   "dec0": 8,
+   "dec1": 6,
+   "feePpm": 3000,
+   "tickSpacing": 60,
+   "parametros": null,
+   "hooks": null,
+   "capital11nov": 6509,
+   "roles": [
+    "salto1"
+   ],
+   "tokens": [
+    "BTC"
+   ],
+   "estado11nov": "activo"
+  },
+  {
+   "id": "v2:TEjpEVwm3Xr5VHfa2CWYLqcyKZEGE9CGUz",
+   "version": "V2",
+   "direccion": "TEjpEVwm3Xr5VHfa2CWYLqcyKZEGE9CGUz",
+   "token0": "TNUC9Qb1rRpS5CbWLmNMxXBjyFoydXjWFR",
+   "token1": "TPYmHEhy5n8TCEfYGqW2rPxsghSfzghPDn",
+   "simbolo0": "WTRX",
+   "simbolo1": "USDD",
+   "dec0": 6,
+   "dec1": 18,
+   "feePpm": 3000,
+   "tickSpacing": null,
+   "parametros": null,
+   "hooks": null,
+   "capital11nov": 6393,
+   "roles": [
+    "salto1"
+   ],
+   "tokens": [
+    "USDD-viejo"
+   ],
+   "estado11nov": "activo"
+  },
+  {
+   "id": "v2:TP9JNjdEh533AzVowuLMiZGjoNuSHrxaBV",
+   "version": "V2",
+   "direccion": "TP9JNjdEh533AzVowuLMiZGjoNuSHrxaBV",
+   "token0": "THb4CqiFdwNHsWsQCs4JhzwjMWys4aqCbF",
+   "token1": "TNUC9Qb1rRpS5CbWLmNMxXBjyFoydXjWFR",
+   "simbolo0": "ETH",
+   "simbolo1": "WTRX",
+   "dec0": 18,
+   "dec1": 6,
+   "feePpm": 3000,
+   "tickSpacing": null,
+   "parametros": null,
+   "hooks": null,
+   "capital11nov": 4522,
+   "roles": [
+    "salto1"
+   ],
+   "tokens": [
+    "ETH"
+   ],
+   "estado11nov": "activo"
+  },
+  {
+   "id": "v4:289dae8ce6486ff5ab25349202631f770987f950f9a2e9ec615c7b7f5052d94a",
+   "version": "V4",
+   "direccion": "289dae8ce6486ff5ab25349202631f770987f950f9a2e9ec615c7b7f5052d94a",
+   "token0": "T9yD14Nj9j7xAB4dbGeiX9h8unkKHxuWwb",
+   "token1": "TR7NHqjeKQxGTCi8q8ZY4pL8otSzgjLj6t",
+   "simbolo0": "TRX",
+   "simbolo1": "USDT",
+   "dec0": 6,
+   "dec1": 6,
+   "feePpm": 10000,
+   "tickSpacing": 200,
+   "parametros": "0000000000000000000000000000000000000000000000000000000000c80000",
+   "hooks": "T9yD14Nj9j7xAB4dbGeiX9h8unkKHxuWwb",
+   "capital11nov": 3844,
+   "roles": [
+    "salto2"
+   ],
+   "tokens": [
+    "TRX"
+   ],
+   "estado11nov": "activo"
+  },
+  {
+   "id": "v4:1eefe7bd9db7c0d9dc5198832bbb580ca2d1d5cd3558d0abf618da5e387e7356",
+   "version": "V4",
+   "direccion": "1eefe7bd9db7c0d9dc5198832bbb580ca2d1d5cd3558d0abf618da5e387e7356",
+   "token0": "TLa2f6VPqDgRE67v1736s7bJ8Ray5wYjU7",
+   "token1": "TR7NHqjeKQxGTCi8q8ZY4pL8otSzgjLj6t",
+   "simbolo0": "WIN",
+   "simbolo1": "USDT",
+   "dec0": 6,
+   "dec1": 6,
+   "feePpm": 10000,
+   "tickSpacing": 10,
+   "parametros": "00000000000000000000000000000000000000000000000000000000000a0000",
+   "hooks": "T9yD14Nj9j7xAB4dbGeiX9h8unkKHxuWwb",
+   "capital11nov": 2166,
+   "roles": [
+    "directo"
+   ],
+   "tokens": [
+    "WIN"
+   ],
+   "estado11nov": "activo"
+  },
+  {
+   "id": "v3:TUijXw7B5q3X3d5Zaa7NBdu8pv1eMvir3n",
+   "version": "V3",
+   "direccion": "TUijXw7B5q3X3d5Zaa7NBdu8pv1eMvir3n",
+   "token0": "TAFjULxiVgT4qWk6UZwjqwZXTSaGaqnVp4",
+   "token1": "TNUC9Qb1rRpS5CbWLmNMxXBjyFoydXjWFR",
+   "simbolo0": "BTT",
+   "simbolo1": "WTRX",
+   "dec0": 18,
+   "dec1": 6,
+   "feePpm": 3000,
+   "tickSpacing": 60,
+   "parametros": null,
+   "hooks": null,
+   "capital11nov": 2148,
+   "roles": [
+    "salto1"
+   ],
+   "tokens": [
+    "BTT"
+   ],
+   "estado11nov": "activo"
+  },
+  {
+   "id": "v4:cbfda477bf21f2c6785959e669fb57c8759f9b051ca556f1982d3802450e9d8a",
+   "version": "V4",
+   "direccion": "cbfda477bf21f2c6785959e669fb57c8759f9b051ca556f1982d3802450e9d8a",
+   "token0": "TR7NHqjeKQxGTCi8q8ZY4pL8otSzgjLj6t",
+   "token1": "TYhWwKpw43ENFWBTGpzLHn3882f2au7SMi",
+   "simbolo0": "USDT",
+   "simbolo1": "WBTC",
+   "dec0": 6,
+   "dec1": 8,
+   "feePpm": 3000,
+   "tickSpacing": 60,
+   "parametros": "00000000000000000000000000000000000000000000000000000000003c0000",
+   "hooks": "T9yD14Nj9j7xAB4dbGeiX9h8unkKHxuWwb",
+   "capital11nov": 1579,
+   "roles": [
+    "directo"
+   ],
+   "tokens": [
+    "WBTC"
+   ],
+   "estado11nov": "activo"
+  },
+  {
+   "id": "v2:TH39qL219FayKqeFFv8hxd7tMPKdu4x6mF",
+   "version": "V2",
+   "direccion": "TH39qL219FayKqeFFv8hxd7tMPKdu4x6mF",
+   "token0": "TMwFHYXLJaRUPeW6421aqXL4ZEzPRFGkGT",
+   "token1": "TR7NHqjeKQxGTCi8q8ZY4pL8otSzgjLj6t",
+   "simbolo0": "USDJ",
+   "simbolo1": "USDT",
+   "dec0": 18,
+   "dec1": 6,
+   "feePpm": 3000,
+   "tickSpacing": null,
+   "parametros": null,
+   "hooks": null,
+   "capital11nov": 1573,
+   "roles": [
+    "directo"
+   ],
+   "tokens": [
+    "USDJ"
+   ],
+   "estado11nov": "activo"
+  },
+  {
+   "id": "v4:e0568225a6128b8607da8beae3562a65763c6a6c3e963773893c20d6b4468036",
+   "version": "V4",
+   "direccion": "e0568225a6128b8607da8beae3562a65763c6a6c3e963773893c20d6b4468036",
+   "token0": "T9yD14Nj9j7xAB4dbGeiX9h8unkKHxuWwb",
+   "token1": "TFczxzPhnThNSqr5by8tvxsdCFRRz6cPNq",
+   "simbolo0": "TRX",
+   "simbolo1": "NFT",
+   "dec0": 6,
+   "dec1": 6,
+   "feePpm": 3000,
+   "tickSpacing": 1,
+   "parametros": "0000000000000000000000000000000000000000000000000000000000010000",
+   "hooks": "T9yD14Nj9j7xAB4dbGeiX9h8unkKHxuWwb",
+   "capital11nov": 1560,
+   "roles": [
+    "salto1"
+   ],
+   "tokens": [
+    "NFT"
+   ],
+   "estado11nov": "activo"
+  },
+  {
+   "id": "v4:dd94d80183233bbebb4b7b639a5eb1c25617f9b936a60134c1092c1009f2e300",
+   "version": "V4",
+   "direccion": "dd94d80183233bbebb4b7b639a5eb1c25617f9b936a60134c1092c1009f2e300",
+   "token0": "TLa2f6VPqDgRE67v1736s7bJ8Ray5wYjU7",
+   "token1": "TR7NHqjeKQxGTCi8q8ZY4pL8otSzgjLj6t",
+   "simbolo0": "WIN",
+   "simbolo1": "USDT",
+   "dec0": 6,
+   "dec1": 6,
+   "feePpm": 3000,
+   "tickSpacing": 60,
+   "parametros": "00000000000000000000000000000000000000000000000000000000003c0000",
+   "hooks": "T9yD14Nj9j7xAB4dbGeiX9h8unkKHxuWwb",
+   "capital11nov": 1225,
+   "roles": [
+    "directo"
+   ],
+   "tokens": [
+    "WIN"
+   ],
+   "estado11nov": "activo"
+  },
+  {
+   "id": "v2:TAQCLN5kbhRUrNDQ3AVmaiXJfchc7cEBVW",
+   "version": "V2",
+   "direccion": "TAQCLN5kbhRUrNDQ3AVmaiXJfchc7cEBVW",
+   "token0": "TEkxiTehnzSmSe2XqrBj4w32RUN966rdz8",
+   "token1": "TR7NHqjeKQxGTCi8q8ZY4pL8otSzgjLj6t",
+   "simbolo0": "USDC",
+   "simbolo1": "USDT",
+   "dec0": 6,
+   "dec1": 6,
+   "feePpm": 3000,
+   "tickSpacing": null,
+   "parametros": null,
+   "hooks": null,
+   "capital11nov": 1086,
+   "roles": [
+    "directo"
+   ],
+   "tokens": [
+    "USDC"
+   ],
+   "estado11nov": "activo"
+  },
+  {
+   "id": "v2:TXBLiUHDEZMCWQFPc5rKc9eMu38SuBcDJ9",
+   "version": "V2",
+   "direccion": "TXBLiUHDEZMCWQFPc5rKc9eMu38SuBcDJ9",
+   "token0": "TKkeiboTkxXKJpbmVFbv4a8ov5rAfRDMf9",
+   "token1": "TNUC9Qb1rRpS5CbWLmNMxXBjyFoydXjWFR",
+   "simbolo0": "SUN",
+   "simbolo1": "WTRX",
+   "dec0": 18,
+   "dec1": 6,
+   "feePpm": 3000,
+   "tickSpacing": null,
+   "parametros": null,
+   "hooks": null,
+   "capital11nov": 1025,
+   "roles": [
+    "salto1"
+   ],
+   "tokens": [
+    "SUN-viejo"
+   ],
+   "estado11nov": "activo"
+  },
+  {
+   "id": "v4:569f14608e8120225e98a861a3ffc3a3d49c8b8ddb7f5ec2b665bfbfb0ebc2b2",
+   "version": "V4",
+   "direccion": "569f14608e8120225e98a861a3ffc3a3d49c8b8ddb7f5ec2b665bfbfb0ebc2b2",
+   "token0": "TLa2f6VPqDgRE67v1736s7bJ8Ray5wYjU7",
+   "token1": "TR7NHqjeKQxGTCi8q8ZY4pL8otSzgjLj6t",
+   "simbolo0": "WIN",
+   "simbolo1": "USDT",
+   "dec0": 6,
+   "dec1": 6,
+   "feePpm": 10000,
+   "tickSpacing": 1,
+   "parametros": "0000000000000000000000000000000000000000000000000000000000010000",
+   "hooks": "T9yD14Nj9j7xAB4dbGeiX9h8unkKHxuWwb",
+   "capital11nov": 924,
+   "roles": [
+    "directo"
+   ],
+   "tokens": [
+    "WIN"
+   ],
+   "estado11nov": "activo"
+  },
+  {
+   "id": "v2:TQG29YL2HVQqJgt6Yve8ZXiCRyWZ41PyZN",
+   "version": "V2",
+   "direccion": "TQG29YL2HVQqJgt6Yve8ZXiCRyWZ41PyZN",
+   "token0": "TNUC9Qb1rRpS5CbWLmNMxXBjyFoydXjWFR",
+   "token1": "TYhWwKpw43ENFWBTGpzLHn3882f2au7SMi",
+   "simbolo0": "WTRX",
+   "simbolo1": "WBTC",
+   "dec0": 6,
+   "dec1": 8,
+   "feePpm": 3000,
+   "tickSpacing": null,
+   "parametros": null,
+   "hooks": null,
+   "capital11nov": 772,
+   "roles": [
+    "salto1"
+   ],
+   "tokens": [
+    "WBTC"
+   ],
+   "estado11nov": "activo"
+  },
+  {
+   "id": "v2:TTDiSZfLFcsPYXYkakR3fiqbKmWqjtzFBx",
+   "version": "V2",
+   "direccion": "TTDiSZfLFcsPYXYkakR3fiqbKmWqjtzFBx",
+   "token0": "TN3W4H6rK2ce4vX9YnFQHwKENnHjoxb3m9",
+   "token1": "TNUC9Qb1rRpS5CbWLmNMxXBjyFoydXjWFR",
+   "simbolo0": "BTC",
+   "simbolo1": "WTRX",
+   "dec0": 8,
+   "dec1": 6,
+   "feePpm": 3000,
+   "tickSpacing": null,
+   "parametros": null,
+   "hooks": null,
+   "capital11nov": 694,
+   "roles": [
+    "salto1"
+   ],
+   "tokens": [
+    "BTC"
+   ],
+   "estado11nov": "activo"
+  },
+  {
+   "id": "v3:TXRBgSdqy6R9xWT1syXTp87ZbTDFqCtdSW",
+   "version": "V3",
+   "direccion": "TXRBgSdqy6R9xWT1syXTp87ZbTDFqCtdSW",
+   "token0": "TR7NHqjeKQxGTCi8q8ZY4pL8otSzgjLj6t",
+   "token1": "TSSMHYeV2uE9qYH95DqyoCuNCzEL1NvU3S",
+   "simbolo0": "USDT",
+   "simbolo1": "SUN",
+   "dec0": 6,
+   "dec1": 18,
+   "feePpm": 3000,
+   "tickSpacing": 60,
+   "parametros": null,
+   "hooks": null,
+   "capital11nov": 454,
+   "roles": [
+    "directo"
+   ],
+   "tokens": [
+    "SUN"
+   ],
+   "estado11nov": "activo"
+  },
+  {
+   "id": "v1:TQa9qf3nsgAjkyfJWen1CgyBXacaWnAQMw",
+   "version": "V1",
+   "direccion": "TQa9qf3nsgAjkyfJWen1CgyBXacaWnAQMw",
+   "token0": "T9yD14Nj9j7xAB4dbGeiX9h8unkKHxuWwb",
+   "token1": "TYhWwKpw43ENFWBTGpzLHn3882f2au7SMi",
+   "simbolo0": "TRX",
+   "simbolo1": "WBTC",
+   "dec0": 6,
+   "dec1": 8,
+   "feePpm": 3000,
+   "tickSpacing": null,
+   "parametros": null,
+   "hooks": null,
+   "capital11nov": 276,
+   "roles": [
+    "salto1"
+   ],
+   "tokens": [
+    "WBTC"
+   ],
+   "estado11nov": "activo"
+  },
+  {
+   "id": "v3:TGKoSrRQQDxtzm8rPKkNiaNi5s5UbUPyNb",
+   "version": "V3",
+   "direccion": "TGKoSrRQQDxtzm8rPKkNiaNi5s5UbUPyNb",
+   "token0": "TN3W4H6rK2ce4vX9YnFQHwKENnHjoxb3m9",
+   "token1": "TR7NHqjeKQxGTCi8q8ZY4pL8otSzgjLj6t",
+   "simbolo0": "BTC",
+   "simbolo1": "USDT",
+   "dec0": 8,
+   "dec1": 6,
+   "feePpm": 3000,
+   "tickSpacing": 60,
+   "parametros": null,
+   "hooks": null,
+   "capital11nov": 253,
+   "roles": [
+    "directo"
+   ],
+   "tokens": [
+    "BTC"
+   ],
+   "estado11nov": "inactivo"
+  },
+  {
+   "id": "v4:fa1b6e55bc3ce122c21f5e3fc1a53bbb6d68192b4d084f13cd3c14da10dc23c5",
+   "version": "V4",
+   "direccion": "fa1b6e55bc3ce122c21f5e3fc1a53bbb6d68192b4d084f13cd3c14da10dc23c5",
+   "token0": "T9yD14Nj9j7xAB4dbGeiX9h8unkKHxuWwb",
+   "token1": "TCFLL5dx5ZJdKnWuesXxi1VPwjLVmWZZy9",
+   "simbolo0": "TRX",
+   "simbolo1": "JST",
+   "dec0": 6,
+   "dec1": 18,
+   "feePpm": 3000,
+   "tickSpacing": 1,
+   "parametros": "0000000000000000000000000000000000000000000000000000000000010000",
+   "hooks": "T9yD14Nj9j7xAB4dbGeiX9h8unkKHxuWwb",
+   "capital11nov": 236,
+   "roles": [
+    "salto1"
+   ],
+   "tokens": [
+    "JST"
+   ],
+   "estado11nov": "activo"
+  }
+ ]
+}

@@ -1,0 +1,526 @@
+{
+ "version": 1,
+ "fuente": "foto del informe de JustLend del 13-nov-2026 (reports/justlend-liquidez/data.json)",
+ "fecha": "2026-11-13T18:29:51.000Z",
+ "bloque": 87973572,
+ "informe": "doc.html?f=investigacion/docs/JUSTLEND-LIQUIDEZ-2026-11-13.md",
+ "huellaInforme": "93a3e235a2247279",
+ "trxUsdFoto": 0.3132,
+ "gobierno": {
+  "comptroller": "TGjYzgCyPobsNS9n6WcbdLVR9dH7mWqFx7",
+  "implementacion": "TETm1bMHUm9135d5NmUgfkvqZQ4bk6DgWs",
+  "admin": "TRWNvb15NmfNKNLhQpxefFz7cNjrYjEw7x",
+  "pendiente": "T9yD14Nj9j7xAB4dbGeiX9h8unkKHxuWwb",
+  "guardian": "TLntW9Z59LYY5KEi9cmwk3PKjQga828ird",
+  "oraculo": "TGnYnSn4G9PgWFj7QQemh4YMZKp3fkympJ",
+  "oraculoV1": "TMiNCmvD3zdsv6mk7niBU6NPBzVNjYMQTV",
+  "poster": "TBPtNVdgkB8QPRHAJeZok6D9pqsFdALv9w",
+  "anchorAdmin": "TEYZj3NDXoC7RGCtRS6iNKmQRdVkx8iSSr",
+  "retardoTimelockSeg": 172800
+ },
+ "psm": {
+  "psm": "TBXW4hS5KYjjbJXDpnrPf4zhkLwrpUjbyz",
+  "gemJoin": "TSUYvQ5tdd3DijCD1uGunGLpftHuSZ12sQ",
+  "usdtEnPSMfoto": 88033392.938485
+ },
+ "mercados": [
+  {
+   "jToken": "TR7BUFRQeq1w5jAZf1FKx85SHuX6PfMqsV",
+   "simbolo": "jETH",
+   "token": "ETH",
+   "tokenDir": "THb4CqiFdwNHsWsQCs4JhzwjMWys4aqCbF",
+   "decimales": 18,
+   "abierto": true,
+   "factorGarantia": 0.75,
+   "poderes": {
+    "abiPublicado": true,
+    "proxy": false,
+    "crear": true,
+    "congelar": true,
+    "destruir": true,
+    "pausar": true,
+    "owner": "TCQQjfccKdMi4CnPAzmZW5TALH4HbwceVb"
+   },
+   "parteTop3": 0.9997,
+   "reclamoUSDfoto": 933776039.47,
+   "cajaUSDfoto": 933478935.99
+  },
+  {
+   "jToken": "TJQ9rbVe9ei3nNtyGgBL22Fuu2xYjZaLAQ",
+   "simbolo": "jSTRX",
+   "token": "sTRX",
+   "tokenDir": "TU3kjFuhtEo42tsCBtfYUAZxoqQ4yuSLQ5",
+   "decimales": 18,
+   "abierto": true,
+   "factorGarantia": 0.75,
+   "poderes": {
+    "abiPublicado": false,
+    "proxy": false,
+    "crear": false,
+    "congelar": false,
+    "destruir": false,
+    "pausar": false,
+    "owner": "T9yD14Nj9j7xAB4dbGeiX9h8unkKHxuWwb"
+   },
+   "parteTop3": 0.9617,
+   "reclamoUSDfoto": 740921204.01,
+   "cajaUSDfoto": 739968263.13
+  },
+  {
+   "jToken": "TE2RzoSV3wFK99w6J9UnnZ4vLfXYoxvRwP",
+   "simbolo": "jTRX",
+   "token": "TRX",
+   "tokenDir": null,
+   "decimales": 6,
+   "abierto": true,
+   "factorGarantia": 0.75,
+   "poderes": {
+    "nativo": true
+   },
+   "parteTop3": 0.9562,
+   "reclamoUSDfoto": 544979162.3,
+   "cajaUSDfoto": 493199255.22
+  },
+  {
+   "jToken": "TLeEu311Cbw63BcmMHDgDLu7fnk9fqGcqT",
+   "simbolo": "jBTC",
+   "token": "BTC",
+   "tokenDir": "TN3W4H6rK2ce4vX9YnFQHwKENnHjoxb3m9",
+   "decimales": 8,
+   "abierto": true,
+   "factorGarantia": 0.75,
+   "poderes": {
+    "abiPublicado": true,
+    "proxy": false,
+    "crear": true,
+    "congelar": true,
+    "destruir": true,
+    "pausar": true,
+    "owner": "TAyZrEhSYUWZ8c5HgFEjSndKvvTp3CzkYa"
+   },
+   "parteTop3": 0.9601,
+   "reclamoUSDfoto": 451827462.76,
+   "cajaUSDfoto": 450581256.28
+  },
+  {
+   "jToken": "TKFRELGGoRgiayhwJTNNLqCNjFoLBh3Mnf",
+   "simbolo": "jUSDD",
+   "token": "USDD",
+   "tokenDir": "TXDk8mbtRbXeYuMNS83CfKPaYYT8XWv9Hz",
+   "decimales": 18,
+   "abierto": true,
+   "factorGarantia": 0.85,
+   "poderes": {
+    "abiPublicado": false,
+    "proxy": false,
+    "crear": false,
+    "congelar": false,
+    "destruir": false,
+    "pausar": false,
+    "owner": null
+   },
+   "parteTop3": 0.2268,
+   "reclamoUSDfoto": 404601509.67,
+   "cajaUSDfoto": 404567999.2
+  },
+  {
+   "jToken": "TXJgMdjVX5dKiQaUi9QobwNxtSQaFqccvd",
+   "simbolo": "jUSDT",
+   "token": "USDT",
+   "tokenDir": "TR7NHqjeKQxGTCi8q8ZY4pL8otSzgjLj6t",
+   "decimales": 6,
+   "abierto": true,
+   "factorGarantia": 0.75,
+   "poderes": {
+    "abiPublicado": true,
+    "proxy": false,
+    "crear": true,
+    "congelar": true,
+    "destruir": true,
+    "pausar": true,
+    "owner": "TBPxhVAsuzoFnKyXtc1o2UySEydPHgATto"
+   },
+   "parteTop3": 0.5234,
+   "reclamoUSDfoto": 304957496.74,
+   "cajaUSDfoto": 160472534.65
+  },
+  {
+   "jToken": "TWQhCXaWz4eHK4Kd1ErSDHjMFPoPc9czts",
+   "simbolo": "jJST",
+   "token": "JST",
+   "tokenDir": "TCFLL5dx5ZJdKnWuesXxi1VPwjLVmWZZy9",
+   "decimales": 18,
+   "abierto": true,
+   "factorGarantia": 0.6,
+   "poderes": {
+    "abiPublicado": true,
+    "proxy": false,
+    "crear": true,
+    "congelar": false,
+    "destruir": false,
+    "pausar": false,
+    "owner": "TTmWtSB8FtzmiD5p2ejP5NRf4VLCo1ms9H"
+   },
+   "parteTop3": 0.1545,
+   "reclamoUSDfoto": 13918317.46,
+   "cajaUSDfoto": 13065560.42
+  },
+  {
+   "jToken": "TVyvpmaVmz25z2GaXBDDjzLZi5iR5dBzGd",
+   "simbolo": "jWBTC",
+   "token": "WBTC",
+   "tokenDir": "TYhWwKpw43ENFWBTGpzLHn3882f2au7SMi",
+   "decimales": 8,
+   "abierto": true,
+   "factorGarantia": 0.75,
+   "poderes": {
+    "abiPublicado": true,
+    "proxy": false,
+    "crear": true,
+    "congelar": false,
+    "destruir": false,
+    "pausar": true,
+    "owner": "TPF62tA6ABdmTVUSLgtbdKGXmbAUwcCabt"
+   },
+   "parteTop3": 0.9998,
+   "reclamoUSDfoto": 6132595.6,
+   "cajaUSDfoto": 6132427.76
+  },
+  {
+   "jToken": "TPXDpkg9e3eZzxqxAUyke9S4z4pGJBJw9e",
+   "simbolo": "jSUN",
+   "token": "SUN",
+   "tokenDir": "TSSMHYeV2uE9qYH95DqyoCuNCzEL1NvU3S",
+   "decimales": 18,
+   "abierto": true,
+   "factorGarantia": 0.5,
+   "poderes": {
+    "abiPublicado": true,
+    "proxy": false,
+    "crear": false,
+    "congelar": false,
+    "destruir": false,
+    "pausar": false,
+    "owner": null
+   },
+   "parteTop3": 0.2855,
+   "reclamoUSDfoto": 4679968.18,
+   "cajaUSDfoto": 4286744.9
+  },
+  {
+   "jToken": "TMz7vmyqoq4WKDiztrZpjAZPnzE9XgXaK4",
+   "simbolo": "jU",
+   "token": "U",
+   "tokenDir": "TFNirp6PbqYE1ZTtWuCMUKJWLNZkoCoeFJ",
+   "decimales": 18,
+   "abierto": true,
+   "factorGarantia": 0.8,
+   "poderes": {
+    "abiPublicado": false,
+    "proxy": true,
+    "crear": false,
+    "congelar": false,
+    "destruir": false,
+    "pausar": false,
+    "owner": "TCbJRUNYD2tJEwP9wo41whF3DCrZaXgg6A"
+   },
+   "parteTop3": 1,
+   "reclamoUSDfoto": 5047221.52,
+   "cajaUSDfoto": 3407055.61
+  },
+  {
+   "jToken": "TRg6MnpsFXc82ymUPgf5qbj59ibxiEDWvv",
+   "simbolo": "jWIN",
+   "token": "WIN",
+   "tokenDir": "TLa2f6VPqDgRE67v1736s7bJ8Ray5wYjU7",
+   "decimales": 6,
+   "abierto": true,
+   "factorGarantia": 0.5,
+   "poderes": {
+    "abiPublicado": true,
+    "proxy": false,
+    "crear": true,
+    "congelar": false,
+    "destruir": false,
+    "pausar": false,
+    "owner": null
+   },
+   "parteTop3": 0.3451,
+   "reclamoUSDfoto": 1680976.25,
+   "cajaUSDfoto": 1707168.49
+  },
+  {
+   "jToken": "TSXv71Fy5XdL3Rh2QfBoUu3NAaM4sMif8R",
+   "simbolo": "jTUSD",
+   "token": "TUSD",
+   "tokenDir": "TUpMhErZL2fhh4sVNULAbNKLokS4GjC1F4",
+   "decimales": 18,
+   "abierto": true,
+   "factorGarantia": 0.75,
+   "poderes": {
+    "abiPublicado": true,
+    "proxy": false,
+    "crear": true,
+    "congelar": false,
+    "destruir": false,
+    "pausar": false,
+    "owner": "TTfLBC7hVJMbHxiBqmKFUaW5dtoPfUWaMA"
+   },
+   "parteTop3": 0.9942,
+   "reclamoUSDfoto": 2099586.03,
+   "cajaUSDfoto": 1188319.12
+  },
+  {
+   "jToken": "TUaUHU9Dy8x5yNi1pKnFYqHWojot61Jfto",
+   "simbolo": "jBTT",
+   "token": "BTT",
+   "tokenDir": "TAFjULxiVgT4qWk6UZwjqwZXTSaGaqnVp4",
+   "decimales": 18,
+   "abierto": true,
+   "factorGarantia": 0.5,
+   "poderes": {
+    "abiPublicado": true,
+    "proxy": false,
+    "crear": false,
+    "congelar": false,
+    "destruir": false,
+    "pausar": false,
+    "owner": null
+   },
+   "parteTop3": 0.5505,
+   "reclamoUSDfoto": 1102878.85,
+   "cajaUSDfoto": 1129194.46
+  },
+  {
+   "jToken": "TDA1mWPyAjTRATMGA55UTswGAHhV2itEXR",
+   "simbolo": "jHTX",
+   "token": "HTX",
+   "tokenDir": "TUPM7K8REVzD2UdV4R5fe5M8XbnR2DdoJ6",
+   "decimales": 18,
+   "abierto": true,
+   "factorGarantia": 0.5,
+   "poderes": {
+    "abiPublicado": true,
+    "proxy": false,
+    "crear": false,
+    "congelar": false,
+    "destruir": false,
+    "pausar": false,
+    "owner": null
+   },
+   "parteTop3": 0.9947,
+   "reclamoUSDfoto": 861809.39,
+   "cajaUSDfoto": 854234.65
+  },
+  {
+   "jToken": "TD5SdLw5scR6mXgyMK2xKrFJpauDjpKqrW",
+   "simbolo": "jWSTUSDT",
+   "token": "wstUSDT",
+   "tokenDir": "TGkxzkDKyMeq2T7edKnyjZoFypyzjkkssq",
+   "decimales": 18,
+   "abierto": true,
+   "factorGarantia": 0.75,
+   "poderes": {
+    "abiPublicado": false,
+    "proxy": false,
+    "crear": false,
+    "congelar": false,
+    "destruir": false,
+    "pausar": false,
+    "owner": "TXomXpYhRcCCoEyki5Vg8Si1vUFaamFX9t"
+   },
+   "parteTop3": 0.8701,
+   "reclamoUSDfoto": 616710.98,
+   "cajaUSDfoto": 447840.5
+  },
+  {
+   "jToken": "TFpPyDCKvNFgos3g3WVsAqMrdqhB81JXHE",
+   "simbolo": "jNFT",
+   "token": "NFT",
+   "tokenDir": "TFczxzPhnThNSqr5by8tvxsdCFRRz6cPNq",
+   "decimales": 6,
+   "abierto": true,
+   "factorGarantia": 0.6,
+   "poderes": {
+    "abiPublicado": true,
+    "proxy": false,
+    "crear": false,
+    "congelar": false,
+    "destruir": false,
+    "pausar": true,
+    "owner": "T9yD14Nj9j7xAB4dbGeiX9h8unkKLxmGkn"
+   },
+   "parteTop3": 0.3441,
+   "reclamoUSDfoto": 423188.08,
+   "cajaUSDfoto": 445642.44
+  },
+  {
+   "jToken": "TBEKggwqFkrc4KckQVR9BLucAmQugafEZf",
+   "simbolo": "jUSD1",
+   "token": "USD1",
+   "tokenDir": "TPFqcBAaaUMCSVRCqPaQ9QnzKhmuoLR6Rc",
+   "decimales": 18,
+   "abierto": true,
+   "factorGarantia": 0,
+   "poderes": {
+    "abiPublicado": false,
+    "proxy": true,
+    "crear": false,
+    "congelar": false,
+    "destruir": false,
+    "pausar": false,
+    "owner": "TBZbFrVxJ8uoRQUwGSFXucpa8i2aXzGqJ8"
+   },
+   "parteTop3": 1,
+   "reclamoUSDfoto": 657788.84,
+   "cajaUSDfoto": 370824.89
+  },
+  {
+   "jToken": "TX7kybeP6UwTBRHLNPYmswFESHfyjm9bAS",
+   "simbolo": "jUSDD",
+   "token": "USDD",
+   "tokenDir": "TPYmHEhy5n8TCEfYGqW2rPxsghSfzghPDn",
+   "decimales": 18,
+   "abierto": false,
+   "factorGarantia": 0.85,
+   "poderes": {
+    "abiPublicado": true,
+    "proxy": false,
+    "crear": false,
+    "congelar": false,
+    "destruir": false,
+    "pausar": false,
+    "owner": "T9yD14Nj9j7xAB4dbGeiX9h8unkKHxuWwb"
+   },
+   "parteTop3": 0.5259,
+   "reclamoUSDfoto": 442039.11,
+   "cajaUSDfoto": 363469.77
+  },
+  {
+   "jToken": "TGBr8uh9jBVHJhhkwSJvQN2ZAKzVkxDmno",
+   "simbolo": "jSUN",
+   "token": "SUN",
+   "tokenDir": "TKkeiboTkxXKJpbmVFbv4a8ov5rAfRDMf9",
+   "decimales": 18,
+   "abierto": false,
+   "factorGarantia": 0,
+   "poderes": {
+    "abiPublicado": true,
+    "proxy": false,
+    "crear": false,
+    "congelar": false,
+    "destruir": false,
+    "pausar": false,
+    "owner": null
+   },
+   "parteTop3": 0.6562,
+   "reclamoUSDfoto": 219168.05,
+   "cajaUSDfoto": 217462.23
+  },
+  {
+   "jToken": "TNSBA6KvSvMoTqQcEgpVK7VhHT3z7wifxy",
+   "simbolo": "jUSDC",
+   "token": "USDC",
+   "tokenDir": "TEkxiTehnzSmSe2XqrBj4w32RUN966rdz8",
+   "decimales": 6,
+   "abierto": false,
+   "factorGarantia": 0,
+   "poderes": {
+    "abiPublicado": true,
+    "proxy": false,
+    "crear": true,
+    "congelar": true,
+    "destruir": false,
+    "pausar": true,
+    "owner": "TJqyfyLxfVMnJHu39F7WrPUMipfLD1Xzrb"
+   },
+   "parteTop3": 0.8595,
+   "reclamoUSDfoto": 33288.74,
+   "cajaUSDfoto": 189099.05
+  },
+  {
+   "jToken": "TWBxQMb6RD3qmkXUXpNwVCYbL8SHNreru6",
+   "simbolo": "jETH",
+   "token": "ETH",
+   "tokenDir": "TRFe3hT5oYhjSZ6f3ji5FJ7YCfrkWnHRvh",
+   "decimales": 18,
+   "abierto": false,
+   "factorGarantia": 0.45,
+   "poderes": {
+    "abiPublicado": true,
+    "proxy": false,
+    "crear": true,
+    "congelar": false,
+    "destruir": false,
+    "pausar": false,
+    "owner": null
+   },
+   "parteTop3": 0.6619,
+   "reclamoUSDfoto": 185182.43,
+   "cajaUSDfoto": 185328.91
+  },
+  {
+   "jToken": "TUY54PVeH6WCcYCd6ZXXoBDsHytN9V5PXt",
+   "simbolo": "jWBTT",
+   "token": "WBTT",
+   "tokenDir": "TKfjV9RNKJJCqPvBtK8L7Knykh7DNWvnYt",
+   "decimales": 6,
+   "abierto": false,
+   "factorGarantia": 0,
+   "poderes": {
+    "abiPublicado": true,
+    "proxy": false,
+    "crear": false,
+    "congelar": false,
+    "destruir": false,
+    "pausar": false,
+    "owner": "T9yD14Nj9j7xAB4dbGeiX9h8unkKHxuWwb"
+   },
+   "parteTop3": 0.807,
+   "reclamoUSDfoto": 180732.28,
+   "cajaUSDfoto": 159795.81
+  },
+  {
+   "jToken": "TL5x9MtSnDy537FXKx53yAaHRRNdg9TkkA",
+   "simbolo": "jUSDJ",
+   "token": "USDJ",
+   "tokenDir": "TMwFHYXLJaRUPeW6421aqXL4ZEzPRFGkGT",
+   "decimales": 18,
+   "abierto": false,
+   "factorGarantia": 0,
+   "poderes": {
+    "abiPublicado": true,
+    "proxy": false,
+    "crear": true,
+    "congelar": false,
+    "destruir": false,
+    "pausar": false,
+    "owner": "T9yD14Nj9j7xAB4dbGeiX9h8unkKHxuWwb"
+   },
+   "parteTop3": 0.7176,
+   "reclamoUSDfoto": 28498.03,
+   "cajaUSDfoto": 29310.36
+  },
+  {
+   "jToken": "TLHASseQymmpGQdfAyNjkMXFTJh8nzR2x2",
+   "simbolo": "jBUSD",
+   "token": "BUSD",
+   "tokenDir": "TMz2SWatiAtZVVcH2ebpsbVtYwUPT9EdjH",
+   "decimales": 18,
+   "abierto": false,
+   "factorGarantia": 0,
+   "poderes": {
+    "abiPublicado": false,
+    "proxy": true,
+    "crear": false,
+    "congelar": false,
+    "destruir": false,
+    "pausar": false,
+    "owner": "TDE6LDhCfAQbaxs5RLgjJmYbtP5YyorQeh"
+   },
+   "parteTop3": 0.9986,
+   "reclamoUSDfoto": 158.49,
+   "cajaUSDfoto": 218.29
+  }
+ ]
+}

@@ -22,7 +22,7 @@
   const RUTAS = {
     comprobar: { zona: 'comprobar' }, 'z-comprobar': { zona: 'comprobar' },
     recientes: { zona: 'tether', tab: 'recientes' }, 'z-tether': { zona: 'tether' }, usdt0: { zona: 'tether', tab: 'usdt0' }, 'paridad-stablecoins': { zona: 'tether', tab: 'paridad' },
-    'z-cartera': { zona: 'cartera' }, 'riesgo-mercado': { zona: 'cartera', tab: 'riesgo' }, 'prueba-estres': { zona: 'cartera', tab: 'estres' }, estres: { zona: 'cartera', tab: 'estres' }, 'liquidez-venta': { zona: 'cartera', tab: 'salida' }, 'liquidez-sunswap': { zona: 'cartera', tab: 'sunswap' },
+    'z-cartera': { zona: 'cartera' }, 'riesgo-mercado': { zona: 'cartera', tab: 'riesgo' }, 'prueba-estres': { zona: 'cartera', tab: 'estres' }, estres: { zona: 'cartera', tab: 'estres' }, 'liquidez-venta': { zona: 'cartera', tab: 'salida' }, 'liquidez-sunswap': { zona: 'cartera', tab: 'sunswap' }, justlend: { zona: 'cartera', tab: 'justlend' }, 'recuperar-justlend': { zona: 'cartera', tab: 'justlend' },
     'z-mercado': { zona: 'mercado' },
     desbloqueos: { zona: 'trx', tab: 'desbloqueos' }, reparto: { zona: 'trx', tab: 'reparto' }, quema: { zona: 'trx', tab: 'quema' }, 'z-trx': { zona: 'trx' },
   };
@@ -31,7 +31,7 @@
     const sec = document.getElementById('z-' + zona); if (!sec || !tab) return;
     sec.querySelectorAll('.ztabs button').forEach((b) => { const on = b.dataset.tab === tab; b.classList.toggle('on', on); b.setAttribute('aria-selected', on ? 'true' : 'false'); });
     sec.querySelectorAll('.zpan').forEach((p) => { p.hidden = p.dataset.tab !== tab; });
-    const pos = document.getElementById('cartera-posiciones'); if (zona === 'cartera' && pos) pos.hidden = tab === 'sunswap';   // «Liquidez SUNSwap» no usa tus posiciones: se escribe el importe en la propia pestaña
+    const pos = document.getElementById('cartera-posiciones'); if (zona === 'cartera' && pos) pos.hidden = tab === 'sunswap' || tab === 'justlend';   // «Liquidez SUNSwap» no usa tus posiciones: se escribe el importe en la propia pestaña
     Object.values(reajustar).forEach((f) => f());   // una pestaña que vuelve a verse recalcula si hace falta el «Ver todo»
   }
   function irAZona(clave, { bajar = true, hash = true } = {}) {

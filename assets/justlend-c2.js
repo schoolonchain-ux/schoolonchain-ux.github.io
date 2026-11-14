@@ -47,7 +47,7 @@
 
     /* ---- Mi importe ---- */
     app.append(el('h3', { class: 'jl-sub', id: 'mi-importe' }, 'Pruébalo con tu importe'));
-    app.append(el('p', { class: 'narr' }, 'Elige un token y escribe un importe. Verás las cuatro cosas que importan (caja, venta, salida oficial, poderes del emisor) y un veredicto con las reglas del capítulo 10. ', C.est('ESTIMADO'), ' Es una foto del 13-nov-2026: la herramienta viva renovaría los datos cada hora.'));
+    app.append(el('p', { class: 'narr' }, 'Elige un token y escribe un importe. Verás las cuatro cosas que importan (caja, venta, salida oficial, poderes del emisor) y un veredicto con las reglas del capítulo 10. ', C.est('ESTIMADO'), ' Esta calculadora trabaja con la foto del 13-nov-2026; la herramienta viva, con los datos de la cadena de cada hora y todos los tokens a la vez, es el ', el('a', { href: 'herramientas.html#justlend' }, 'panel «Recuperar de JustLend»'), '.'));
     const opc = d.mercados.filter((x) => x.cajaUSD > 1000).map((x) => el('option', { value: x.jToken }, nombreM(x) + ' · caja ' + m(x.cajaUSD)));
     const sel = el('select', { 'aria-label': 'Token' }, opc); sel.value = mk('jETH').jToken; const imp = el('input', { type: 'text', inputmode: 'decimal', value: '100000', 'aria-label': 'Importe en dólares' }); const res = el('div', { class: 'jl-res' }); const ver = el('div', { style: 'margin:10px 0 2px' });
     const num = (s) => { const x = parseFloat(String(s).replace(/\./g, '').replace(',', '.').replace(/[^\d.]/g, '')); return isFinite(x) ? x : 0; };
