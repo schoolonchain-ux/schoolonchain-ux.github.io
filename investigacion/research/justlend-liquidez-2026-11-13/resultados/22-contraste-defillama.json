@@ -1,0 +1,42 @@
+{
+ "leido": "2026-11-13T19:01:46.291Z",
+ "out": {
+  "https://api.llama.fi/tvl/justlend": 6310535384.470146,
+  "https://api.llama.fi/protocol/justlend": {
+   "nombre": "JustLend",
+   "tvlActual": {
+    "Tron-borrowed": 205783830,
+    "Tron": 6310535383,
+    "borrowed": 205783830
+   },
+   "tokensEnLiquidez": {
+    "date": 1794594623,
+    "tokens": {
+     "TRON": 3581371973.88024,
+     "USDT": 160694812.07168,
+     "USDJ": 29459.22483,
+     "WIN": 1674396.97408,
+     "TUSD": 1187811.18408,
+     "NFT": 442616.44714,
+     "SUN": 4268423.4398,
+     "USDC": 188936.73438,
+     "BTT": 1121546.3582,
+     "USDD": 404578863.94123,
+     "BTC": 451318914.96257997,
+     "JST": 13060881.80839,
+     "WBTT": 445340.05129,
+     "ETH": 938463058.90799,
+     "BUSD": 218.12415,
+     "STRX": 740223273.18253,
+     "WSTUSDT": 444268.60905,
+     "USD1": 371088.12884,
+     "WBTC": 6135281.67709,
+     "HTX": 853482.41672,
+     "U": 3379755.10618,
+     "WTRX": 280981.23968
+    }
+   },
+   "descripcion": "JustLend is a TRON-powered coin market protocol aimed at establishing fund pools whose interest rates are determined by an algorithm based on the supply and demand of TRON assets."
+  }
+ }
+}

@@ -1,6 +1,7 @@
 {
   "_nota": "Registro de actualizaciones del sitio. Cada vez que se publica o amplía un informe, una nota o una página, se añade una entrada aquí (la más reciente primero). La portada y las páginas de caso lo leen en vivo: lo que no esté aquí no aparece como novedad. Campos: fecha (UTC, ISO), caso (slug de reports/index.json), titulo (una línea), url (relativa al sitio).",
   "novedades": [
+    { "fecha": "2026-11-13T20:31:09Z", "caso": "justlend-liquidez", "titulo": "Nueva investigación: JustLend, ¿cuánto dinero se puede recuperar de verdad? (con revisión adversarial independiente)", "url": "justlend.html" },
     { "fecha": "2026-11-12T19:51:17Z", "caso": "medium", "titulo": "Nuevo artículo en Medium: «The price of LTC and DOGE on sun.io vs. the price JUST uses»", "url": "https://medium.com/@SchoolOnChain/the-price-of-ltc-and-doge-on-sun-io-vs-the-price-just-uses-25624453810c" },
     { "fecha": "2026-11-12T19:40:28Z", "caso": "medium", "titulo": "Nuevo artículo en Medium: «El precio de LTC y DOGE en sun.io frente al que usa JUST»", "url": "https://medium.com/@SchoolOnChain/el-precio-de-ltc-y-doge-en-sun-io-frente-al-que-usa-just-f976a17ebdfb" },
     { "fecha": "2026-11-12T12:16:23Z", "caso": "medium", "titulo": "Nuevo artículo en Medium: «Cuando tú quieres salir, ¿quién quiere entrar?»", "url": "https://medium.com/@SchoolOnChain/cuando-t%C3%BA-quieres-salir-qui%C3%A9n-quiere-entrar-0fc2e52c5b52" },

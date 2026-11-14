@@ -357,6 +357,63 @@
           "texto": "Datos leídos el 11-nov-2026 (bloque 87.907.580 para el inventario). Estudio de un periodo cerrado: no hay lectura diaria."
         }
       ]
+    },
+    {
+      "slug": "justlend-liquidez",
+      "url": "justlend.html",
+      "caso": "JustLend · TRON",
+      "titulo": "JustLend: ¿cuánto dinero se puede recuperar de verdad?",
+      "resumen": "JustLend tiene 3.216 M$ en caja y casi nada prestado, pero solo una parte se convierte en USDT: el «ETH» de 933 M$ rinde ≈ 0,14 M$ si lo vendes. Quién tiene el dinero, de dónde sale el «ETH» y el «BTC», qué salidas hay y qué riesgos vigilar, con una revisión adversarial independiente. Página interactiva con 18 gráficos y una calculadora con tu importe; cada cifra enlaza con su origen y los datos originales están publicados.",
+      "version": "Informe final con revisión adversarial",
+      "cadenas": [
+        "TRON"
+      ],
+      "corte": "2026-11-13T18:29:51Z",
+      "archivos": [],
+      "investigacion": {
+        "estado": "cerrada",
+        "datosHasta": "2026-11-13T18:29:51Z",
+        "nota": "Foto del 13-nov-2026 (bloque 87973572). Si hay cambios, se publica una edición nueva."
+      },
+      "seguimiento": {
+        "estado": "sin",
+        "alcance": "Foto de un instante: no hay seguimiento diario. El panel «¿Puedo recuperar mi dinero de JustLend?» está propuesto, no construido.",
+        "siHayMovimientos": ""
+      },
+      "ficha": [
+        {
+          "t": "Hipótesis iniciales",
+          "texto": "La pregunta de partida fue «¿cuánto se puede recuperar de verdad de JustLend?». Las explicaciones sobre el «ETH» y el «BTC» que el informe propone están marcadas como HIPÓTESIS y ninguna se afirma."
+        },
+        {
+          "t": "Hechos verificados",
+          "texto": "Caja, deuda y reclamo de los 24 mercados leídos de la cadena; la caja coincide con el saldo real del token en 24 de 24 mercados en tres lecturas nuevas; las creaciones de «ETH» y «BTC» con su transacción; la PSM de USDD; {huella} es la huella del informe."
+        },
+        {
+          "t": "Evidencias pendientes",
+          "texto": "Lo que no se sabe está declarado en el capítulo 10: respaldo real del «ETH» y el «BTC», 37,5 M$ de deuda sin leer, tipos de interés, código de los contratos y del Timelock, y una venta conjunta simulada."
+        },
+        {
+          "t": "Direcciones y entidades",
+          "texto": "Los mayores titulares, los mercados, los contratos y las cuentas que firman las creaciones, con su dirección completa y enlace a TronScan. No se atribuye identidad a ninguna dirección."
+        },
+        {
+          "t": "Cronología",
+          "texto": "Creaciones y depósitos del «ETH» y el «BTC» desde 2020 (capítulo 4) y la lectura del 13-nov-2026 (capítulo 10)."
+        },
+        {
+          "t": "Cambios de atribución",
+          "texto": "Ninguno registrado: el informe no atribuye identidad a ninguna dirección."
+        },
+        {
+          "t": "Historial de conclusiones",
+          "texto": "Informe corregido tras una revisión adversarial independiente (11 objeciones, ninguna rechazada); la respuesta íntegra del revisor está publicada."
+        },
+        {
+          "t": "Última comprobación",
+          "texto": "Datos leídos el 13-nov-2026 (bloque 87973572). Estudio de un instante: no hay lectura diaria."
+        }
+      ]
     }
   ]
 }

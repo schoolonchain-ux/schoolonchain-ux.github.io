@@ -1,0 +1,66 @@
+{
+ "leido": "2026-11-13T20:56:29.818Z",
+ "token": "TFNirp6PbqYE1ZTtWuCMUKJWLNZkoCoeFJ",
+ "tronscan": {
+  "nombre": "United Stables",
+  "simbolo": "U",
+  "decimales": 18,
+  "emisor": "TRdMpJ7NoEdt6mPQJuJfondxiWThgmpzF9",
+  "creado": "2026-03-10 23:26:21",
+  "titulares": 133,
+  "oferta": "55000200000000000000000000",
+  "descripcion": "$U is a fully-backed stablecoin unifying liquidity across CeFi, DeFi, and payments — for institutions, individuals, and AI agents alike.",
+  "web": "https://u.tech",
+  "marca": true,
+  "nivel": "2"
+ },
+ "name()": "United Stables",
+ "symbol()": "U",
+ "decimals()": "18",
+ "totalSupply()": "55000200000000000000000000",
+ "owner()": "TCbJRUNYD2tJEwP9wo41whF3DCrZaXgg6A",
+ "contrato": {
+  "nombre": "TransparentUpgradeableProxy",
+  "creador": "TRdMpJ7NoEdt6mPQJuJfondxiWThgmpzF9",
+  "funciones": [
+   "admin",
+   "changeAdmin",
+   "implementation",
+   "upgradeTo",
+   "upgradeToAndCall"
+  ]
+ },
+ "cuenta": {
+  "etiqueta": null,
+  "nombre": "TransparentUpgradeableProxy",
+  "creada": null
+ },
+ "mayores": [
+  {
+   "a": "TJCo98saj6WND61g1uuKwJ9GMWMT9WkJFo",
+   "saldo": 26125547,
+   "etiqueta": "Binance 3"
+  },
+  {
+   "a": "TK86Qm97uM848dMk8G7xNbJB7zG1uW3h1n",
+   "saldo": 14186999.000000002,
+   "etiqueta": null
+  },
+  {
+   "a": "TWd4WrZ9wn84f5x1hZhL4DHvk738ns5jwb",
+   "saldo": 10000000,
+   "etiqueta": "Binance-Cold 2"
+  },
+  {
+   "a": "TMz7vmyqoq4WKDiztrZpjAZPnzE9XgXaK4",
+   "saldo": 3381693.315619929,
+   "etiqueta": null
+  },
+  {
+   "a": "TVjuTE3V5bMVdpfNhid8kD2v35T2k1u1Br",
+   "saldo": 910204.9423966862,
+   "etiqueta": null
+  }
+ ],
+ "totalTitulares": 133
+}

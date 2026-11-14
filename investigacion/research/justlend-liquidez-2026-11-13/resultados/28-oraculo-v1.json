@@ -1,0 +1,37 @@
+{
+ "leido": "2026-11-13T19:20:27.609Z",
+ "proxy": "TGnYnSn4G9PgWFj7QQemh4YMZKp3fkympJ",
+ "v1PriceOracle()": "TMiNCmvD3zdsv6mk7niBU6NPBzVNjYMQTV",
+ "guardian()": "TBPtNVdgkB8QPRHAJeZok6D9pqsFdALv9w",
+ "cUsdtAddress()": "T9yD14Nj9j7xAB4dbGeiX9h8unkKHxuWwb",
+ "cUsdcAddress()": "T9yD14Nj9j7xAB4dbGeiX9h8unkKHxuWwb",
+ "cEthAddress()": "TE2RzoSV3wFK99w6J9UnnZ4vLfXYoxvRwP",
+ "v1": {
+  "direccion": "TMiNCmvD3zdsv6mk7niBU6NPBzVNjYMQTV",
+  "nombre": "PriceOracle",
+  "funciones": [
+   "_acceptAnchorAdmin() *escribe*",
+   "_assetPrices(address)",
+   "_setPaused(bool) *escribe*",
+   "_setPendingAnchor(address,uint256) *escribe*",
+   "_setPendingAnchorAdmin(address) *escribe*",
+   "anchorAdmin()",
+   "anchors(address)",
+   "assetPrices(address)",
+   "getPrice(address)",
+   "maxSwing()",
+   "maxSwingMantissa()",
+   "numBlocksPerPeriod()",
+   "paused()",
+   "pendingAnchorAdmin()",
+   "pendingAnchors(address)",
+   "poster()",
+   "readers(address)",
+   "setPrice(address,uint256) *escribe*",
+   "setPrices(address[],uint256[]) *escribe*"
+  ],
+  "poster()": "TBPtNVdgkB8QPRHAJeZok6D9pqsFdALv9w",
+  "anchorAdmin()": "TEYZj3NDXoC7RGCtRS6iNKmQRdVkx8iSSr",
+  "pendingAnchorAdmin()": "T9yD14Nj9j7xAB4dbGeiX9h8unkKHxuWwb"
+ }
+}

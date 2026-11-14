@@ -1,0 +1,25 @@
+{
+ "generado": "2026-11-13T20:09:00.657Z",
+ "contadores": {
+  "getAssetsIn": {
+   "total": 807,
+   "vacias": 0,
+   "sinResultado": 0
+  },
+  "getAccountLiquidity": {
+   "total": 807,
+   "codigoDistintoDeCero": 0,
+   "sinResultado": 1
+  },
+  "getAccountSnapshot": {
+   "total": 3101,
+   "codigoDistintoDeCero": 0,
+   "sinResultado": 0,
+   "vacia": 0
+  }
+ },
+ "codigos": {},
+ "ejemplos": [
+  "getAccountLiquidity cf6068b6c81ff7b1c429.json"
+ ]
+}

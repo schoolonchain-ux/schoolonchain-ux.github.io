@@ -1,0 +1,1015 @@
+{
+ "generado": "2026-11-13T19:19:07.151Z",
+ "cuentasLeidas": 807,
+ "deudaTotalUSD": 205195224.19987082,
+ "deudaExplicadaUSD": 167678214.6175622,
+ "cobertura": [
+  {
+   "jToken": "TXJgMdjVX5dKiQaUi9QobwNxtSQaFqccvd",
+   "simbolo": "jUSDT",
+   "subyacente": "USDT",
+   "prestado": 144787852.761596,
+   "prestadoUSD": 144707450.61907893,
+   "explicadoPorLasCuentas": 126696642.01371704,
+   "parte": 0.8750502172466949
+  },
+  {
+   "jToken": "TE2RzoSV3wFK99w6J9UnnZ4vLfXYoxvRwP",
+   "simbolo": "jTRX",
+   "subyacente": "TRX",
+   "prestado": 169277378.466254,
+   "prestadoUSD": 53017674.935630746,
+   "explicadoPorLasCuentas": 112387528.67529395,
+   "parte": 0.6639252668820056
+  },
+  {
+   "jToken": "TMz7vmyqoq4WKDiztrZpjAZPnzE9XgXaK4",
+   "simbolo": "jU",
+   "subyacente": "U",
+   "prestado": 1629028.3041870533,
+   "prestadoUSD": 1641245.8222882824,
+   "explicadoPorLasCuentas": 1620446.6419950756,
+   "parte": 0.994732036165412
+  },
+  {
+   "jToken": "TLeEu311Cbw63BcmMHDgDLu7fnk9fqGcqT",
+   "simbolo": "jBTC",
+   "subyacente": "BTC",
+   "prestado": 18.27342868,
+   "prestadoUSD": 1258063.5870691144,
+   "explicadoPorLasCuentas": 15.06578521,
+   "parte": 0.8244640605673134
+  },
+  {
+   "jToken": "TWQhCXaWz4eHK4Kd1ErSDHjMFPoPc9czts",
+   "simbolo": "jJST",
+   "subyacente": "JST",
+   "prestado": 7108313.727041797,
+   "prestadoUSD": 1028062.9264564995,
+   "explicadoPorLasCuentas": 4371762.286060294,
+   "parte": 0.6150210097549608
+  },
+  {
+   "jToken": "TJQ9rbVe9ei3nNtyGgBL22Fuu2xYjZaLAQ",
+   "simbolo": "jSTRX",
+   "subyacente": "sTRX",
+   "prestado": 2301144.3987582265,
+   "prestadoUSD": 954607.0259252621,
+   "explicadoPorLasCuentas": 1479475.6268276172,
+   "parte": 0.6429303730900117
+  },
+  {
+   "jToken": "TSXv71Fy5XdL3Rh2QfBoUu3NAaM4sMif8R",
+   "simbolo": "jTUSD",
+   "subyacente": "TUSD",
+   "prestado": 950326.4885181193,
+   "prestadoUSD": 949798.7627157803,
+   "explicadoPorLasCuentas": 810686.6322631268,
+   "parte": 0.8530611764039764
+  },
+  {
+   "jToken": "TPXDpkg9e3eZzxqxAUyke9S4z4pGJBJw9e",
+   "simbolo": "jSUN",
+   "subyacente": "SUN",
+   "prestado": 33625744.82926024,
+   "prestadoUSD": 507927.7300364068,
+   "explicadoPorLasCuentas": 15961011.202347787,
+   "parte": 0.47466639871896416
+  },
+  {
+   "jToken": "TR7BUFRQeq1w5jAZf1FKx85SHuX6PfMqsV",
+   "simbolo": "jETH",
+   "subyacente": "ETH",
+   "prestado": 158.8004653089818,
+   "prestadoUSD": 306235.1073265194,
+   "explicadoPorLasCuentas": 157.5448264861336,
+   "parte": 0.9920929776848884
+  },
+  {
+   "jToken": "TBEKggwqFkrc4KckQVR9BLucAmQugafEZf",
+   "simbolo": "jUSD1",
+   "subyacente": "USD1",
+   "prestado": 294338.4048972803,
+   "prestadoUSD": 293663.5035355369,
+   "explicadoPorLasCuentas": 229507.35597219743,
+   "parte": 0.7797397558510655
+  },
+  {
+   "jToken": "TD5SdLw5scR6mXgyMK2xKrFJpauDjpKqrW",
+   "simbolo": "jWSTUSDT",
+   "subyacente": "wstUSDT",
+   "prestado": 154129.60671207774,
+   "prestadoUSD": 172693.31213137173,
+   "explicadoPorLasCuentas": 146631.57754422136,
+   "parte": 0.9513524407944342
+  },
+  {
+   "jToken": "TX7kybeP6UwTBRHLNPYmswFESHfyjm9bAS",
+   "simbolo": "jUSDD",
+   "subyacente": "USDD",
+   "prestado": 157298.2039121413,
+   "prestadoUSD": 157210.85464652683,
+   "explicadoPorLasCuentas": 89462.66732106415,
+   "parte": 0.5687456378779341
+  },
+  {
+   "jToken": "TL5x9MtSnDy537FXKx53yAaHRRNdg9TkkA",
+   "simbolo": "jUSDJ",
+   "subyacente": "USDJ",
+   "prestado": 143065.30006933783,
+   "prestadoUSD": 69595.86633800222,
+   "explicadoPorLasCuentas": 110582.98977640316,
+   "parte": 0.7729546558306464
+  },
+  {
+   "jToken": "TKFRELGGoRgiayhwJTNNLqCNjFoLBh3Mnf",
+   "simbolo": "jUSDD",
+   "subyacente": "USDD",
+   "prestado": 46051.72174480436,
+   "prestadoUSD": 46026.14876320225,
+   "explicadoPorLasCuentas": 12137.513565483085,
+   "parte": 0.2635626444705612
+  },
+  {
+   "jToken": "TUY54PVeH6WCcYCd6ZXXoBDsHytN9V5PXt",
+   "simbolo": "jWBTT",
+   "subyacente": "WBTT",
+   "prestado": 102220823.054395,
+   "prestadoUSD": 33324.99825746455,
+   "explicadoPorLasCuentas": 1109372.5227879998,
+   "parte": 0.010852705834677802
+  },
+  {
+   "jToken": "TUaUHU9Dy8x5yNi1pKnFYqHWojot61Jfto",
+   "simbolo": "jBTT",
+   "subyacente": "BTT",
+   "prestado": 80293041838.90007,
+   "prestadoUSD": 26176.32493473479,
+   "explicadoPorLasCuentas": 32434098519.55665,
+   "parte": 0.4039465659382093
+  },
+  {
+   "jToken": "TRg6MnpsFXc82ymUPgf5qbj59ibxiEDWvv",
+   "simbolo": "jWIN",
+   "subyacente": "WIN",
+   "prestado": 183163031.242679,
+   "prestadoUSD": 11009.322036427164,
+   "explicadoPorLasCuentas": 173418391.06909403,
+   "parte": 0.9467979968038749
+  },
+  {
+   "jToken": "TDA1mWPyAjTRATMGA55UTswGAHhV2itEXR",
+   "simbolo": "jHTX",
+   "subyacente": "HTX",
+   "prestado": 5041130183.550433,
+   "prestadoUSD": 7617.631857487532,
+   "explicadoPorLasCuentas": 5041130183.550433,
+   "parte": 1
+  },
+  {
+   "jToken": "TFpPyDCKvNFgos3g3WVsAqMrdqhB81JXHE",
+   "simbolo": "jNFT",
+   "subyacente": "NFT",
+   "prestado": 19662502278.449554,
+   "prestadoUSD": 3879.110470003191,
+   "explicadoPorLasCuentas": 16918423686.603075,
+   "parte": 0.8604410286653069
+  },
+  {
+   "jToken": "TGBr8uh9jBVHJhhkwSJvQN2ZAKzVkxDmno",
+   "simbolo": "jSUN",
+   "subyacente": "SUN",
+   "prestado": 137.8123685678439,
+   "prestadoUSD": 2081.7003130498556,
+   "explicadoPorLasCuentas": 0,
+   "parte": 0
+  },
+  {
+   "jToken": "TNSBA6KvSvMoTqQcEgpVK7VhHT3z7wifxy",
+   "simbolo": "jUSDC",
+   "subyacente": "USDC",
+   "prestado": 692.973736,
+   "prestadoUSD": 693.416491888163,
+   "explicadoPorLasCuentas": 227.75233300000002,
+   "parte": 0.32865940102526486
+  },
+  {
+   "jToken": "TVyvpmaVmz25z2GaXBDDjzLZi5iR5dBzGd",
+   "simbolo": "jWBTC",
+   "subyacente": "WBTC",
+   "prestado": 0.00244063,
+   "prestadoUSD": 168.0290976738851,
+   "explicadoPorLasCuentas": 0.000001,
+   "parte": 0.00040973027456025693
+  },
+  {
+   "jToken": "TWBxQMb6RD3qmkXUXpNwVCYbL8SHNreru6",
+   "simbolo": "jETH",
+   "subyacente": "ETH",
+   "prestado": 0.00905632920818085,
+   "prestadoUSD": 17.464469903506586,
+   "explicadoPorLasCuentas": 0.000011688132715015,
+   "parte": 0.0012906037806638881
+  },
+  {
+   "jToken": "TLHASseQymmpGQdfAyNjkMXFTJh8nzR2x2",
+   "simbolo": "jBUSD",
+   "subyacente": "BUSD",
+   "prestado": 9.2541702e-11,
+   "prestadoUSD": 9.249031266746237e-11,
+   "explicadoPorLasCuentas": 0,
+   "parte": 0
+  }
+ ],
+ "mayoresDeudores": [
+  {
+   "cuenta": "THxsp9rhGaYB5t6oP8jFPiR1A2XgpA44QW",
+   "deudaUSD": 8534711.6096246,
+   "depositosUSD": 14699942.582236685,
+   "poderDePrestamoUSD": 10802645.135793358,
+   "deficitRaw": "0",
+   "liquidezRaw": "7241167069755848508566",
+   "debe": [
+    {
+     "mercado": "jUSDT",
+     "sub": "USDT",
+     "usd": 8534711.6096246
+    }
+   ],
+   "garantia": [
+    {
+     "mercado": "jBTC",
+     "sub": "BTC",
+     "usd": 13783492.791800808,
+     "factor": 0.75
+    },
+    {
+     "mercado": "jNFT",
+     "sub": "NFT",
+     "usd": 1367.0619792947782,
+     "factor": 0.6
+    },
+    {
+     "mercado": "jWBTT",
+     "sub": "WBTT",
+     "usd": 139738.40611696063,
+     "factor": 0
+    },
+    {
+     "mercado": "jWIN",
+     "sub": "WIN",
+     "usd": 10012.886485974766,
+     "factor": 0.5
+    },
+    {
+     "mercado": "jJST",
+     "sub": "JST",
+     "usd": 765331.4358536452,
+     "factor": 0.6
+    }
+   ]
+  },
+  {
+   "cuenta": "TYCuRGbd67KmCPz2fPmWpjPzj87hzHfmvC",
+   "deudaUSD": 8102365.387452394,
+   "depositosUSD": 9774094.218826344,
+   "poderDePrestamoUSD": 8307980.086002393,
+   "deficitRaw": "0",
+   "liquidezRaw": "656496483237544507677",
+   "debe": [
+    {
+     "mercado": "jUSDD",
+     "sub": "USDD",
+     "usd": 0.07992741611227919
+    },
+    {
+     "mercado": "jUSDT",
+     "sub": "USDT",
+     "usd": 8102365.307524977
+    }
+   ],
+   "garantia": [
+    {
+     "mercado": "jUSDD",
+     "sub": "USDD",
+     "usd": 9774094.218826344,
+     "factor": 0.85
+    }
+   ]
+  },
+  {
+   "cuenta": "TJ6nABWuRk3GXMamH8Pr3rJuTFuUzfkszV",
+   "deudaUSD": 7702347.488881559,
+   "depositosUSD": 9154916.12703602,
+   "poderDePrestamoUSD": 7781678.707980617,
+   "deficitRaw": "0",
+   "liquidezRaw": "253292525859065088912",
+   "debe": [
+    {
+     "mercado": "jUSDT",
+     "sub": "USDT",
+     "usd": 7702347.488881559
+    }
+   ],
+   "garantia": [
+    {
+     "mercado": "jUSDD",
+     "sub": "USDD",
+     "usd": 9154916.12703602,
+     "factor": 0.85
+    }
+   ]
+  },
+  {
+   "cuenta": "TVKPeG4K94Z1GPWy5gyBVc3EJ7Bd1TcfeS",
+   "deudaUSD": 7031751.111705828,
+   "depositosUSD": 9093825.96352119,
+   "poderDePrestamoUSD": 7669818.270413189,
+   "deficitRaw": "0",
+   "liquidezRaw": "2037251464582893394818",
+   "debe": [
+    {
+     "mercado": "jTRX",
+     "sub": "TRX",
+     "usd": 2138450.4245975437
+    },
+    {
+     "mercado": "jSTRX",
+     "sub": "sTRX",
+     "usd": 593466.1871516788
+    },
+    {
+     "mercado": "jUSDT",
+     "sub": "USDT",
+     "usd": 4299834.499956606
+    }
+   ],
+   "garantia": [
+    {
+     "mercado": "jUSDD",
+     "sub": "USDD",
+     "usd": 8922586.539007412,
+     "factor": 0.85
+    },
+    {
+     "mercado": "jSUN",
+     "sub": "SUN",
+     "usd": 171239.42451377845,
+     "factor": 0.5
+    }
+   ]
+  },
+  {
+   "cuenta": "TWu8ihukiwSc466NAEwtRF5HMbW61uKXwB",
+   "deudaUSD": 6386151.451221057,
+   "depositosUSD": 7604415.225891959,
+   "poderDePrestamoUSD": 6463752.942008165,
+   "deficitRaw": "0",
+   "liquidezRaw": "247769766242359828992",
+   "debe": [
+    {
+     "mercado": "jUSDT",
+     "sub": "USDT",
+     "usd": 6386151.451221057
+    }
+   ],
+   "garantia": [
+    {
+     "mercado": "jUSDD",
+     "sub": "USDD",
+     "usd": 7604415.225891959,
+     "factor": 0.85
+    }
+   ]
+  },
+  {
+   "cuenta": "TDNEahDDvNBwfax5xTyvtQvAsTdAmgHHkb",
+   "deudaUSD": 6377268.194444222,
+   "depositosUSD": 7703613.965002465,
+   "poderDePrestamoUSD": 6548071.870252095,
+   "deficitRaw": "0",
+   "liquidezRaw": "545350178186057301445",
+   "debe": [
+    {
+     "mercado": "jUSDT",
+     "sub": "USDT",
+     "usd": 6377268.194444222
+    }
+   ],
+   "garantia": [
+    {
+     "mercado": "jUSDD",
+     "sub": "USDD",
+     "usd": 7703613.965002465,
+     "factor": 0.85
+    }
+   ]
+  },
+  {
+   "cuenta": "TMict8UqF83N4LtkigRYaPPFSQ6rZa2YT3",
+   "deudaUSD": 5125677.280986901,
+   "depositosUSD": 6240471.365260977,
+   "poderDePrestamoUSD": 5304400.6604718305,
+   "deficitRaw": "0",
+   "liquidezRaw": "570636588393771961473",
+   "debe": [
+    {
+     "mercado": "jUSDT",
+     "sub": "USDT",
+     "usd": 5125677.280986901
+    }
+   ],
+   "garantia": [
+    {
+     "mercado": "jUSDD",
+     "sub": "USDD",
+     "usd": 6240471.365260977,
+     "factor": 0.85
+    }
+   ]
+  },
+  {
+   "cuenta": "TM4A66t3H9RsaXwFJnWrGdRBEGsucXAoHL",
+   "deudaUSD": 5091563.786271048,
+   "depositosUSD": 6287215.706570411,
+   "poderDePrestamoUSD": 5344133.35058485,
+   "deficitRaw": "0",
+   "liquidezRaw": "806416233441256939851",
+   "debe": [
+    {
+     "mercado": "jUSDT",
+     "sub": "USDT",
+     "usd": 5091563.786271048
+    }
+   ],
+   "garantia": [
+    {
+     "mercado": "jUSDD",
+     "sub": "USDD",
+     "usd": 6287215.706570411,
+     "factor": 0.85
+    }
+   ]
+  },
+  {
+   "cuenta": "TXRPwEn96rDGcTV3dmLttZGbELaAfKtUXz",
+   "deudaUSD": 4837462.135009668,
+   "depositosUSD": 6100873.681634028,
+   "poderDePrestamoUSD": 5185742.629388924,
+   "deficitRaw": "0",
+   "liquidezRaw": "1112006687034662244173",
+   "debe": [
+    {
+     "mercado": "jUSDT",
+     "sub": "USDT",
+     "usd": 4837462.135009668
+    }
+   ],
+   "garantia": [
+    {
+     "mercado": "jUSDD",
+     "sub": "USDD",
+     "usd": 6100873.681634028,
+     "factor": 0.85
+    }
+   ]
+  },
+  {
+   "cuenta": "TJhuNQF9S15uJNa1xMtbBZ2115HnF98HSA",
+   "deudaUSD": 4704451.840927142,
+   "depositosUSD": 5709383.866180024,
+   "poderDePrestamoUSD": 4852976.28625302,
+   "deficitRaw": "0",
+   "liquidezRaw": "474215981244823301827",
+   "debe": [
+    {
+     "mercado": "jUSDT",
+     "sub": "USDT",
+     "usd": 4704451.840927142
+    }
+   ],
+   "garantia": [
+    {
+     "mercado": "jUSDD",
+     "sub": "USDD",
+     "usd": 5709383.866180024,
+     "factor": 0.85
+    }
+   ]
+  },
+  {
+   "cuenta": "TShD8hYmacHerZ4VuwK228dKU9sLtPKi86",
+   "deudaUSD": 4147937.707016011,
+   "depositosUSD": 5062629.824368066,
+   "poderDePrestamoUSD": 4303235.350712856,
+   "deficitRaw": "0",
+   "liquidezRaw": "495841774255573590955",
+   "debe": [
+    {
+     "mercado": "jUSDT",
+     "sub": "USDT",
+     "usd": 4147937.707016011
+    }
+   ],
+   "garantia": [
+    {
+     "mercado": "jUSDD",
+     "sub": "USDD",
+     "usd": 5062629.824368066,
+     "factor": 0.85
+    }
+   ]
+  },
+  {
+   "cuenta": "TNLFMo5qsFEZ8fctT7MaCHsZ38uT5ox7fK",
+   "deudaUSD": 3994607.10473803,
+   "depositosUSD": 7887671.434718972,
+   "poderDePrestamoUSD": 5919676.240384777,
+   "deficitRaw": "0",
+   "liquidezRaw": "6146453178948748268270",
+   "debe": [
+    {
+     "mercado": "jUSDT",
+     "sub": "USDT",
+     "usd": 3485468.9978063703
+    },
+    {
+     "mercado": "jU",
+     "sub": "U",
+     "usd": 509138.10693166
+    }
+   ],
+   "garantia": [
+    {
+     "mercado": "jSTRX",
+     "sub": "sTRX",
+     "usd": 7848444.791263492,
+     "factor": 0.75
+    },
+    {
+     "mercado": "jUSDD",
+     "sub": "USDD",
+     "usd": 39226.6434554804,
+     "factor": 0.85
+    }
+   ]
+  },
+  {
+   "cuenta": "TGf2HRhFdpznWT7emr7JKcM85T6fN4YJ81",
+   "deudaUSD": 3900476.9154818417,
+   "depositosUSD": 4949795.831736507,
+   "poderDePrestamoUSD": 4196471.461481432,
+   "deficitRaw": "0",
+   "liquidezRaw": "945065600254123049491",
+   "debe": [
+    {
+     "mercado": "jUSDT",
+     "sub": "USDT",
+     "usd": 3900476.9154818417
+    }
+   ],
+   "garantia": [
+    {
+     "mercado": "jUSDD",
+     "sub": "USDD",
+     "usd": 4906375.849758115,
+     "factor": 0.85
+    },
+    {
+     "mercado": "jJST",
+     "sub": "JST",
+     "usd": 43419.9819783923,
+     "factor": 0.6
+    }
+   ]
+  },
+  {
+   "cuenta": "TF1WDwzkFMV1n12cqPGJnX3QXtoK8UPe8W",
+   "deudaUSD": 3643211.7132130046,
+   "depositosUSD": 4608236.531254227,
+   "poderDePrestamoUSD": 3756060.8658323153,
+   "deficitRaw": "0",
+   "liquidezRaw": "360310194446049390890",
+   "debe": [
+    {
+     "mercado": "jTRX",
+     "sub": "TRX",
+     "usd": 1413030.4173495935
+    },
+    {
+     "mercado": "jUSDT",
+     "sub": "USDT",
+     "usd": 1999501.9056783763
+    },
+    {
+     "mercado": "jU",
+     "sub": "U",
+     "usd": 230679.39018503498
+    }
+   ],
+   "garantia": [
+    {
+     "mercado": "jTRX",
+     "sub": "TRX",
+     "usd": 6.263999999999999e-7,
+     "factor": 0.75
+    },
+    {
+     "mercado": "jSTRX",
+     "sub": "sTRX",
+     "usd": 1535572.7026479552,
+     "factor": 0.75
+    },
+    {
+     "mercado": "jUSDD",
+     "sub": "USDD",
+     "usd": 2998834.6729464578,
+     "factor": 0.85
+    },
+    {
+     "mercado": "jBTC",
+     "sub": "BTC",
+     "usd": 73829.15371921152,
+     "factor": 0.75
+    },
+    {
+     "mercado": "jU",
+     "sub": "U",
+     "usd": 0.0019399766751134657,
+     "factor": 0.8
+    }
+   ]
+  },
+  {
+   "cuenta": "TQ7Wymuf1LhFAwvRUv1kCuurxzY9UNo7dk",
+   "deudaUSD": 3445055.504812365,
+   "depositosUSD": 4142360.0289070453,
+   "poderDePrestamoUSD": 3521006.0245709885,
+   "deficitRaw": "0",
+   "liquidezRaw": "242498466662271322019",
+   "debe": [
+    {
+     "mercado": "jUSDT",
+     "sub": "USDT",
+     "usd": 3445055.504812365
+    }
+   ],
+   "garantia": [
+    {
+     "mercado": "jUSDD",
+     "sub": "USDD",
+     "usd": 4142360.0289070453,
+     "factor": 0.85
+    }
+   ]
+  }
+ ],
+ "garantia": {
+  "cuentasConDeuda": 251,
+  "deudaUSD": 167653183.98929283,
+  "poderUSD": 209515106.19594488,
+  "poderDeTokensDelEmisorUSD": 21267725.65048747,
+  "composicion": [
+   {
+    "garantia": "jUSDD USDD",
+    "poderUSD": 126258821.73243646,
+    "parte": 0.6026239540663736
+   },
+   {
+    "garantia": "jUSDT USDT",
+    "poderUSD": 24515424.452447228,
+    "parte": 0.1170102953317345
+   },
+   {
+    "garantia": "jBTC BTC",
+    "poderUSD": 21105189.78765523,
+    "parte": 0.100733499225192
+   },
+   {
+    "garantia": "jSTRX sTRX",
+    "poderUSD": 20685741.260340646,
+    "parte": 0.09873150263921644
+   },
+   {
+    "garantia": "jTRX TRX",
+    "poderUSD": 11330543.07247177,
+    "parte": 0.0540798383381249
+   },
+   {
+    "garantia": "jJST JST",
+    "poderUSD": 3019504.3925189013,
+    "parte": 0.014411869613329787
+   },
+   {
+    "garantia": "jSUN SUN",
+    "poderUSD": 1175415.1234044293,
+    "parte": 0.005610168854865985
+   },
+   {
+    "garantia": "jWIN WIN",
+    "poderUSD": 489782.07932427723,
+    "parte": 0.0023376933922187844
+   },
+   {
+    "garantia": "jWSTUSDT wstUSDT",
+    "poderUSD": 292404.3947728651,
+    "parte": 0.0013956244018958693
+   },
+   {
+    "garantia": "jBTT BTT",
+    "poderUSD": 259677.59301462214,
+    "parte": 0.00123942181415675
+   },
+   {
+    "garantia": "jETH ETH",
+    "poderUSD": 244787.11619868,
+    "parte": 0.001168350677157129
+   },
+   {
+    "garantia": "jNFT NFT",
+    "poderUSD": 84798.08043886893,
+    "parte": 0.0004047349233117501
+   },
+   {
+    "garantia": "jHTX HTX",
+    "poderUSD": 44941.706755108564,
+    "parte": 0.0002145034196869686
+   },
+   {
+    "garantia": "jTUSD TUSD",
+    "poderUSD": 4460.612304290671,
+    "parte": 0.000021290170361840027
+   },
+   {
+    "garantia": "jWBTC WBTC",
+    "poderUSD": 3614.790309470758,
+    "parte": 0.00001725312496603513
+   },
+   {
+    "garantia": "jU U",
+    "poderUSD": 0.0015519813400907726,
+    "parte": 7.40749136551191e-12
+   },
+   {
+    "garantia": "jWBTT WBTT",
+    "poderUSD": 0,
+    "parte": 0
+   },
+   {
+    "garantia": "jUSD1 USD1",
+    "poderUSD": 0,
+    "parte": 0
+   },
+   {
+    "garantia": "jUSDJ USDJ",
+    "poderUSD": 0,
+    "parte": 0
+   },
+   {
+    "garantia": "jUSDC USDC",
+    "poderUSD": 0,
+    "parte": 0
+   },
+   {
+    "garantia": "jBUSD BUSD",
+    "poderUSD": 0,
+    "parte": 0
+   }
+  ]
+ },
+ "cercaDeLiquidacion": [
+  {
+   "tramo": "en déficit (≥ 100 %)",
+   "cuentas": 3,
+   "deudaUSD": 14184.002398398645
+  },
+  {
+   "tramo": "95–100 %",
+   "cuentas": 22,
+   "deudaUSD": 66330086.578264
+  },
+  {
+   "tramo": "90–95 %",
+   "cuentas": 19,
+   "deudaUSD": 28805769.559369925
+  },
+  {
+   "tramo": "80–90 %",
+   "cuentas": 37,
+   "deudaUSD": 13508004.259183064
+  },
+  {
+   "tramo": "< 80 %",
+   "cuentas": 170,
+   "deudaUSD": 58995139.5900775
+  }
+ ],
+ "deudaUSDT": {
+  "total": 126616086.35630187,
+  "conGarantiaUSDDmas90": 92648975.02971224,
+  "cuentas": 28
+ },
+ "depositantesMayoresYSuDeuda": [
+  {
+   "cuenta": "TCQQjfccKdMi4CnPAzmZW5TALH4HbwceVb",
+   "depositosUSD": 933365099.1123941,
+   "deudaUSD": 0
+  },
+  {
+   "cuenta": "TUjx6w55Nx9G4GjjRNEB4e7w5BUH3WmJTZ",
+   "depositosUSD": 344285075.2815755,
+   "deudaUSD": 0
+  },
+  {
+   "cuenta": "TRzQrtxrEJbSbQNwAsgAHkBMxTX47yNmjo",
+   "depositosUSD": 338944364.1934313,
+   "deudaUSD": 0
+  },
+  {
+   "cuenta": "TMbTTiY5vZ6fXRWRMdHfB3ay1DcpSGQ9cG",
+   "depositosUSD": 375857506.3465955,
+   "deudaUSD": 0
+  },
+  {
+   "cuenta": "TCiRCBNFrL6bFKWL94yWQi5hNMGNp1Nu27",
+   "depositosUSD": 328857439.28545463,
+   "deudaUSD": 0
+  },
+  {
+   "cuenta": "TYL7z7VSVRShLoJ6YRQMA4t9pSECt9ZLmz",
+   "depositosUSD": 177327807.67262182,
+   "deudaUSD": 0
+  },
+  {
+   "cuenta": "TKVnVyJiTzyCDgTkZRYc5LM4q8B7xXEbh5",
+   "depositosUSD": 89980037.83499911,
+   "deudaUSD": 0
+  },
+  {
+   "cuenta": "TWPpxPd5PpU5FQk6F6F3HMN5VdufxnVA8K",
+   "depositosUSD": 40208078.04596351,
+   "deudaUSD": 0
+  },
+  {
+   "cuenta": "TYRmcmmKvjL1SFQbvPQtJU1YcaXEnH8dvT",
+   "depositosUSD": 29416305.855232876,
+   "deudaUSD": 0
+  },
+  {
+   "cuenta": "TDToUxX8sH4z6moQpK3ZLAN24eupu2ivA4",
+   "depositosUSD": 84771760.22497092,
+   "deudaUSD": 0
+  }
+ ],
+ "estres": {
+  "supuesto": "jETH (ETH viejo) y jBTC valen 0 como garantía",
+  "cuentasAfectadas": 51,
+  "deudaSinRespaldoUSD": 13217007.10544772,
+  "mayores": [
+   {
+    "cuenta": "THxsp9rhGaYB5t6oP8jFPiR1A2XgpA44QW",
+    "deudaUSD": 8534711.6096246,
+    "poderTotalUSD": 10802645.135793358,
+    "poderSinEmisorUSD": 465025.5419427514,
+    "deudaSinRespaldoUSD": 8069686.067681849
+   },
+   {
+    "cuenta": "TAtKk8WyMHquE3gYonf3ipJQiDYRdc4L3o",
+    "deudaUSD": 842300.4794089416,
+    "poderTotalUSD": 1498861.5571485413,
+    "poderSinEmisorUSD": 0,
+    "deudaSinRespaldoUSD": 842300.4794089416
+   },
+   {
+    "cuenta": "TRGDYohbUBYHK2Vb3jhgbMnCD71Ty6YgDR",
+    "deudaUSD": 780022.1376622895,
+    "poderTotalUSD": 1281985.3067049817,
+    "poderSinEmisorUSD": 0,
+    "deudaSinRespaldoUSD": 780022.1376622895
+   },
+   {
+    "cuenta": "TCydYeUb4PBy4fquTJkoMXpqqJCGxJhCkX",
+    "deudaUSD": 650598.5312595894,
+    "poderTotalUSD": 929477.2803879136,
+    "poderSinEmisorUSD": 0,
+    "deudaSinRespaldoUSD": 650598.5312595894
+   },
+   {
+    "cuenta": "TML3CzqXXh1d2fSRi2xfHuDXpHoPAW6wpA",
+    "deudaUSD": 411052.99415830453,
+    "poderTotalUSD": 607019.793104724,
+    "poderSinEmisorUSD": 105822.1058313321,
+    "deudaSinRespaldoUSD": 305230.88832697243
+   },
+   {
+    "cuenta": "TUfii2TfoaF8T6QY8S79fHaivczrkdfWJF",
+    "deudaUSD": 232327.13629538252,
+    "poderTotalUSD": 406643.00770051294,
+    "poderSinEmisorUSD": 173.63903706776705,
+    "deudaSinRespaldoUSD": 232153.49725831475
+   },
+   {
+    "cuenta": "TK8eFkm9qm2Xe2vuJKLaUMgY7Z2MufFYG3",
+    "deudaUSD": 203169.57528609905,
+    "poderTotalUSD": 274024.1826688771,
+    "poderSinEmisorUSD": 0,
+    "deudaSinRespaldoUSD": 203169.57528609905
+   },
+   {
+    "cuenta": "TDFn3ZwsD4KKrEi6hg8gKBJvf6AF2ktTiN",
+    "deudaUSD": 290934.10460503795,
+    "poderTotalUSD": 458495.9953247545,
+    "poderSinEmisorUSD": 93360.06472869267,
+    "deudaSinRespaldoUSD": 197574.03987634528
+   },
+   {
+    "cuenta": "TSGR323Tpco3cHHQWRSn8nj8TCLoBQNRxr",
+    "deudaUSD": 188440.72480050958,
+    "poderTotalUSD": 221315.21180327074,
+    "poderSinEmisorUSD": 0.34565094992366996,
+    "deudaSinRespaldoUSD": 188440.37914955965
+   },
+   {
+    "cuenta": "TMPEjjgChWyuwkMBcRvMcz4FidDwdh4p2B",
+    "deudaUSD": 166771.35043267006,
+    "poderTotalUSD": 240993.9187142908,
+    "poderSinEmisorUSD": 0,
+    "deudaSinRespaldoUSD": 166771.35043267006
+   },
+   {
+    "cuenta": "TWnBXvK6rN3MNGE3iW9949SnAMS2G5mweC",
+    "deudaUSD": 360966.7899050125,
+    "poderTotalUSD": 471174.5678374768,
+    "poderSinEmisorUSD": 208963.0233746649,
+    "deudaSinRespaldoUSD": 152003.76653034764
+   },
+   {
+    "cuenta": "TF63ntvSYLTW1XTbt4oSzc1h9ubR9EYK3Z",
+    "deudaUSD": 145938.15634134924,
+    "poderTotalUSD": 159868.5586042764,
+    "poderSinEmisorUSD": 18326.07662197362,
+    "deudaSinRespaldoUSD": 127612.07971937562
+   },
+   {
+    "cuenta": "TSjBaRLE1fmxmv4artNPMBzwcaozsySxEQ",
+    "deudaUSD": 155013.2455414176,
+    "poderTotalUSD": 267502.92985957075,
+    "poderSinEmisorUSD": 27471.894229368034,
+    "deudaSinRespaldoUSD": 127541.35131204956
+   },
+   {
+    "cuenta": "TK69t2VGtvxjfBh429TFU7Yp82PZosvYpG",
+    "deudaUSD": 124151.29588517515,
+    "poderTotalUSD": 206572.34621659011,
+    "poderSinEmisorUSD": 0,
+    "deudaSinRespaldoUSD": 124151.29588517515
+   },
+   {
+    "cuenta": "TRCmCTUEn1pPrWeR83Ds6kY4j526Py9rir",
+    "deudaUSD": 85313.0503405404,
+    "poderTotalUSD": 191045.55377324903,
+    "poderSinEmisorUSD": 0,
+    "deudaSinRespaldoUSD": 85313.0503405404
+   },
+   {
+    "cuenta": "TKE1t5n4eahre8wG4bMXJ6Q4fX3hTx1TEC",
+    "deudaUSD": 333412.5430304464,
+    "poderTotalUSD": 352493.8536376049,
+    "poderSinEmisorUSD": 253918.85884224426,
+    "deudaSinRespaldoUSD": 79493.68418820214
+   },
+   {
+    "cuenta": "TM11XmKqZ7c5YUdiU5qtuVVuQpRYPXpCFs",
+    "deudaUSD": 1421773.3516982829,
+    "poderTotalUSD": 1809277.2872347224,
+    "poderSinEmisorUSD": 1350138.7554626695,
+    "deudaSinRespaldoUSD": 71634.59623561334
+   },
+   {
+    "cuenta": "TSVicZQiden1byVHUXyFuZhoKTsPUHmgQK",
+    "deudaUSD": 184837.68370589038,
+    "poderTotalUSD": 226910.07900552498,
+    "poderSinEmisorUSD": 114568.18611808728,
+    "deudaSinRespaldoUSD": 70269.4975878031
+   },
+   {
+    "cuenta": "TKRAcnq9Q6XTwrQ6zbb2EYxQ7S2yqqkUxz",
+    "deudaUSD": 87468.79236990924,
+    "poderTotalUSD": 93064.19532089993,
+    "poderSinEmisorUSD": 25849.517189937957,
+    "deudaSinRespaldoUSD": 61619.27517997128
+   },
+   {
+    "cuenta": "TL66Lnyb8tW9urSMNxu8EVc3beGaDW3Crr",
+    "deudaUSD": 61081.4831040648,
+    "poderTotalUSD": 72248.84264766343,
+    "poderSinEmisorUSD": 0,
+    "deudaSinRespaldoUSD": 61081.4831040648
+   }
+  ]
+ },
+ "controlValoracion": {
+  "comparadas": 194,
+  "medianaCociente": 1.000000000000912
+ }
+}

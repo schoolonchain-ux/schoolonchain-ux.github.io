@@ -1,0 +1,459 @@
+{
+ "leido": "2026-11-13T18:52:40.728Z",
+ "psm": {
+  "buyEnabled": true,
+  "sellEnabled": true
+ },
+ "pruebas": [
+  {
+   "mercado": "jUSDT",
+   "jToken": "TXJgMdjVX5dKiQaUi9QobwNxtSQaFqccvd",
+   "titular": "TKVnVyJiTzyCDgTkZRYc5LM4q8B7xXEbh5",
+   "reclamoUSD": 89979996.31234688,
+   "cajaUSD": 160472534.65285075,
+   "pideUnPoco": {
+    "ok": true,
+    "codigo": 0,
+    "mensaje": null,
+    "energia": 214649
+   },
+   "pideTodoSuReclamo": {
+    "ok": true,
+    "codigo": 0,
+    "mensaje": null,
+    "energia": 214649
+   },
+   "pideMasQueLaCaja": {
+    "ok": true,
+    "codigo": 9,
+    "mensaje": null,
+    "energia": 55238
+   }
+  },
+  {
+   "mercado": "jUSDT",
+   "jToken": "TXJgMdjVX5dKiQaUi9QobwNxtSQaFqccvd",
+   "titular": "TWPpxPd5PpU5FQk6F6F3HMN5VdufxnVA8K",
+   "reclamoUSD": 40208059.49133681,
+   "cajaUSD": 160472534.65285075,
+   "pideUnPoco": {
+    "ok": true,
+    "codigo": 0,
+    "mensaje": null,
+    "energia": 148649
+   },
+   "pideTodoSuReclamo": {
+    "ok": true,
+    "codigo": 0,
+    "mensaje": null,
+    "energia": 148649
+   },
+   "pideMasQueLaCaja": {
+    "ok": true,
+    "codigo": 9,
+    "mensaje": null,
+    "energia": 55238
+   }
+  },
+  {
+   "mercado": "jUSDT",
+   "jToken": "TXJgMdjVX5dKiQaUi9QobwNxtSQaFqccvd",
+   "titular": "TYRmcmmKvjL1SFQbvPQtJU1YcaXEnH8dvT",
+   "reclamoUSD": 29416292.280633178,
+   "cajaUSD": 160472534.65285075,
+   "pideUnPoco": {
+    "ok": true,
+    "codigo": 0,
+    "mensaje": null,
+    "energia": 214649
+   },
+   "pideTodoSuReclamo": {
+    "ok": true,
+    "codigo": 0,
+    "mensaje": null,
+    "energia": 214649
+   },
+   "pideMasQueLaCaja": {
+    "ok": true,
+    "codigo": 9,
+    "mensaje": null,
+    "energia": 55238
+   }
+  },
+  {
+   "mercado": "jTRX",
+   "jToken": "TE2RzoSV3wFK99w6J9UnnZ4vLfXYoxvRwP",
+   "titular": "TRzQrtxrEJbSbQNwAsgAHkBMxTX47yNmjo",
+   "reclamoUSD": 338944218.1594,
+   "cajaUSD": 493199255.22334737,
+   "pideUnPoco": {
+    "ok": true,
+    "codigo": 0,
+    "mensaje": null,
+    "energia": 73177
+   },
+   "pideTodoSuReclamo": {
+    "ok": true,
+    "codigo": 0,
+    "mensaje": null,
+    "energia": 73177
+   },
+   "pideMasQueLaCaja": {
+    "ok": true,
+    "codigo": 9,
+    "mensaje": null,
+    "energia": 46210
+   }
+  },
+  {
+   "mercado": "jTRX",
+   "jToken": "TE2RzoSV3wFK99w6J9UnnZ4vLfXYoxvRwP",
+   "titular": "TYL7z7VSVRShLoJ6YRQMA4t9pSECt9ZLmz",
+   "reclamoUSD": 177327731.27101344,
+   "cajaUSD": 493199255.22334737,
+   "pideUnPoco": {
+    "ok": true,
+    "codigo": 0,
+    "mensaje": null,
+    "energia": 73177
+   },
+   "pideTodoSuReclamo": {
+    "ok": true,
+    "codigo": 0,
+    "mensaje": null,
+    "energia": 73177
+   },
+   "pideMasQueLaCaja": {
+    "ok": true,
+    "codigo": 9,
+    "mensaje": null,
+    "energia": 46210
+   }
+  },
+  {
+   "mercado": "jTRX",
+   "jToken": "TE2RzoSV3wFK99w6J9UnnZ4vLfXYoxvRwP",
+   "titular": "TR7NHqjeKQxGTCi8q8ZY4pL8otSzgjLj6t",
+   "reclamoUSD": 4837205.330490661,
+   "cajaUSD": 493199255.22334737,
+   "pideUnPoco": {
+    "ok": true,
+    "codigo": null,
+    "mensaje": null,
+    "energia": 46592
+   },
+   "pideTodoSuReclamo": {
+    "ok": true,
+    "codigo": null,
+    "mensaje": null,
+    "energia": 46592
+   },
+   "pideMasQueLaCaja": {
+    "ok": true,
+    "codigo": 9,
+    "mensaje": null,
+    "energia": 46210
+   }
+  },
+  {
+   "mercado": "jETH",
+   "jToken": "TR7BUFRQeq1w5jAZf1FKx85SHuX6PfMqsV",
+   "titular": "TCQQjfccKdMi4CnPAzmZW5TALH4HbwceVb",
+   "reclamoUSD": 933365099.1123941,
+   "cajaUSD": 933478935.9932269,
+   "pideUnPoco": {
+    "ok": true,
+    "codigo": 3.9638773911973445e+75,
+    "mensaje": null,
+    "energia": 89601
+   },
+   "pideTodoSuReclamo": {
+    "ok": true,
+    "codigo": 0,
+    "mensaje": null,
+    "energia": 100944
+   },
+   "pideMasQueLaCaja": {
+    "ok": true,
+    "codigo": 9,
+    "mensaje": null,
+    "energia": 48404
+   }
+  },
+  {
+   "mercado": "jETH",
+   "jToken": "TR7BUFRQeq1w5jAZf1FKx85SHuX6PfMqsV",
+   "titular": "TSGR323Tpco3cHHQWRSn8nj8TCLoBQNRxr",
+   "reclamoUSD": 67967.61751308128,
+   "cajaUSD": 933478935.9932269,
+   "pideUnPoco": {
+    "ok": true,
+    "codigo": 3.9638773911973445e+75,
+    "mensaje": null,
+    "energia": 138132
+   },
+   "pideTodoSuReclamo": {
+    "ok": true,
+    "codigo": 3,
+    "mensaje": null,
+    "energia": 96544
+   },
+   "pideMasQueLaCaja": {
+    "ok": true,
+    "codigo": 3,
+    "mensaje": null,
+    "energia": 96544
+   }
+  },
+  {
+   "mercado": "jETH",
+   "jToken": "TR7BUFRQeq1w5jAZf1FKx85SHuX6PfMqsV",
+   "titular": "TNgWgY9RRkgbviG9QswerjDsydtLpvyR9m",
+   "reclamoUSD": 47871.89898675757,
+   "cajaUSD": 933478935.9932269,
+   "pideUnPoco": {
+    "ok": true,
+    "codigo": 3.9638773911973445e+75,
+    "mensaje": null,
+    "energia": 74601
+   },
+   "pideTodoSuReclamo": {
+    "ok": true,
+    "codigo": 0,
+    "mensaje": null,
+    "energia": 85944
+   },
+   "pideMasQueLaCaja": {
+    "ok": true,
+    "codigo": 9,
+    "mensaje": null,
+    "energia": 48404
+   }
+  },
+  {
+   "mercado": "jBTC",
+   "jToken": "TLeEu311Cbw63BcmMHDgDLu7fnk9fqGcqT",
+   "titular": "TUjx6w55Nx9G4GjjRNEB4e7w5BUH3WmJTZ",
+   "reclamoUSD": 344285075.2815755,
+   "cajaUSD": 450581256.2819421,
+   "pideUnPoco": {
+    "ok": true,
+    "codigo": 0,
+    "mensaje": null,
+    "energia": 116665
+   },
+   "pideTodoSuReclamo": {
+    "ok": true,
+    "codigo": 0,
+    "mensaje": null,
+    "energia": 116665
+   },
+   "pideMasQueLaCaja": {
+    "ok": true,
+    "codigo": 3,
+    "mensaje": null,
+    "energia": 78734
+   }
+  },
+  {
+   "mercado": "jBTC",
+   "jToken": "TLeEu311Cbw63BcmMHDgDLu7fnk9fqGcqT",
+   "titular": "TPyjyZfsYaXStgz2NmAraF1uZcMtkgNan5",
+   "reclamoUSD": 75744775.34774122,
+   "cajaUSD": 450581256.2819421,
+   "pideUnPoco": {
+    "ok": true,
+    "codigo": 0,
+    "mensaje": null,
+    "energia": 100944
+   },
+   "pideTodoSuReclamo": {
+    "ok": true,
+    "codigo": 0,
+    "mensaje": null,
+    "energia": 100944
+   },
+   "pideMasQueLaCaja": {
+    "ok": true,
+    "codigo": 9,
+    "mensaje": null,
+    "energia": 48404
+   }
+  },
+  {
+   "mercado": "jBTC",
+   "jToken": "TLeEu311Cbw63BcmMHDgDLu7fnk9fqGcqT",
+   "titular": "THxsp9rhGaYB5t6oP8jFPiR1A2XgpA44QW",
+   "reclamoUSD": 13783492.791800808,
+   "cajaUSD": 450581256.2819421,
+   "pideUnPoco": {
+    "ok": true,
+    "codigo": 0,
+    "mensaje": null,
+    "energia": 204976
+   },
+   "pideTodoSuReclamo": {
+    "ok": true,
+    "codigo": 3,
+    "mensaje": null,
+    "energia": 152045
+   },
+   "pideMasQueLaCaja": {
+    "ok": true,
+    "codigo": 3,
+    "mensaje": null,
+    "energia": 152045
+   }
+  },
+  {
+   "mercado": "jSTRX",
+   "jToken": "TJQ9rbVe9ei3nNtyGgBL22Fuu2xYjZaLAQ",
+   "titular": "TMbTTiY5vZ6fXRWRMdHfB3ay1DcpSGQ9cG",
+   "reclamoUSD": 375857504.33484256,
+   "cajaUSD": 739968263.132353,
+   "pideUnPoco": {
+    "ok": true,
+    "codigo": 3.9638773911973445e+75,
+    "mensaje": null,
+    "energia": 75001
+   },
+   "pideTodoSuReclamo": {
+    "ok": true,
+    "codigo": 0,
+    "mensaje": null,
+    "energia": 86798
+   },
+   "pideMasQueLaCaja": {
+    "ok": true,
+    "codigo": 9,
+    "mensaje": null,
+    "energia": 49171
+   }
+  },
+  {
+   "mercado": "jSTRX",
+   "jToken": "TJQ9rbVe9ei3nNtyGgBL22Fuu2xYjZaLAQ",
+   "titular": "TCiRCBNFrL6bFKWL94yWQi5hNMGNp1Nu27",
+   "reclamoUSD": 328857437.52526647,
+   "cajaUSD": 739968263.132353,
+   "pideUnPoco": {
+    "ok": true,
+    "codigo": 3.9638773911973445e+75,
+    "mensaje": null,
+    "energia": 75001
+   },
+   "pideTodoSuReclamo": {
+    "ok": true,
+    "codigo": 0,
+    "mensaje": null,
+    "energia": 86798
+   },
+   "pideMasQueLaCaja": {
+    "ok": true,
+    "codigo": 9,
+    "mensaje": null,
+    "energia": 49171
+   }
+  },
+  {
+   "mercado": "jSTRX",
+   "jToken": "TJQ9rbVe9ei3nNtyGgBL22Fuu2xYjZaLAQ",
+   "titular": "TNLFMo5qsFEZ8fctT7MaCHsZ38uT5ox7fK",
+   "reclamoUSD": 7848444.7492552,
+   "cajaUSD": 739968263.132353,
+   "pideUnPoco": {
+    "ok": true,
+    "codigo": 3.9638773911973445e+75,
+    "mensaje": null,
+    "energia": 153554
+   },
+   "pideTodoSuReclamo": {
+    "ok": true,
+    "codigo": 3,
+    "mensaje": null,
+    "energia": 112333
+   },
+   "pideMasQueLaCaja": {
+    "ok": true,
+    "codigo": 3,
+    "mensaje": null,
+    "energia": 112333
+   }
+  },
+  {
+   "mercado": "jUSDD",
+   "jToken": "TKFRELGGoRgiayhwJTNNLqCNjFoLBh3Mnf",
+   "titular": "TDToUxX8sH4z6moQpK3ZLAN24eupu2ivA4",
+   "reclamoUSD": 72826925.89764309,
+   "cajaUSD": 404567999.1968213,
+   "pideUnPoco": {
+    "ok": true,
+    "codigo": 3.9638773911973445e+75,
+    "mensaje": null,
+    "energia": 72288
+   },
+   "pideTodoSuReclamo": {
+    "ok": true,
+    "codigo": 0,
+    "mensaje": null,
+    "energia": 83402
+   },
+   "pideMasQueLaCaja": {
+    "ok": true,
+    "codigo": 9,
+    "mensaje": null,
+    "energia": 47805
+   }
+  },
+  {
+   "mercado": "jUSDD",
+   "jToken": "TKFRELGGoRgiayhwJTNNLqCNjFoLBh3Mnf",
+   "titular": "TYCuRGbd67KmCPz2fPmWpjPzj87hzHfmvC",
+   "reclamoUSD": 9774094.211763414,
+   "cajaUSD": 404567999.1968213,
+   "pideUnPoco": {
+    "ok": true,
+    "codigo": 3.9638773911973445e+75,
+    "mensaje": null,
+    "energia": 106887
+   },
+   "pideTodoSuReclamo": {
+    "ok": true,
+    "codigo": 3,
+    "mensaje": null,
+    "energia": 82013
+   },
+   "pideMasQueLaCaja": {
+    "ok": true,
+    "codigo": 3,
+    "mensaje": null,
+    "energia": 82013
+   }
+  },
+  {
+   "mercado": "jUSDD",
+   "jToken": "TKFRELGGoRgiayhwJTNNLqCNjFoLBh3Mnf",
+   "titular": "TJ6nABWuRk3GXMamH8Pr3rJuTFuUzfkszV",
+   "reclamoUSD": 9154916.12042052,
+   "cajaUSD": 404567999.1968213,
+   "pideUnPoco": {
+    "ok": true,
+    "codigo": 3.9638773911973445e+75,
+    "mensaje": null,
+    "energia": 106362
+   },
+   "pideTodoSuReclamo": {
+    "ok": true,
+    "codigo": 3,
+    "mensaje": null,
+    "energia": 81488
+   },
+   "pideMasQueLaCaja": {
+    "ok": true,
+    "codigo": 3,
+    "mensaje": null,
+    "energia": 81488
+   }
+  }
+ ]
+}

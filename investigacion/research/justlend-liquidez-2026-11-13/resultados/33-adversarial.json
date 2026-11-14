@@ -1,0 +1,864 @@
+{
+ "generado": "2026-11-13T20:08:44.428Z",
+ "E1": {
+  "capacidadAdicionalUSD": 96259704.74485655,
+  "porMercado": [
+   {
+    "jToken": "TXJgMdjVX5dKiQaUi9QobwNxtSQaFqccvd",
+    "simbolo": "jUSDT",
+    "subyacente": "USDT",
+    "tope": 200000000,
+    "prestado": 144787852.761596,
+    "caja": 160561696.16835,
+    "libreHastaElTope": 55212147.238404006,
+    "tomable": 55212147.238404006,
+    "tomableUSD": 55181487.38092104,
+    "cajaUSD": 160472534.65285075,
+    "factorGarantia": 0.75
+   },
+   {
+    "jToken": "TE2RzoSV3wFK99w6J9UnnZ4vLfXYoxvRwP",
+    "simbolo": "jTRX",
+    "subyacente": "TRX",
+    "tope": 230000000,
+    "prestado": 169277378.466254,
+    "caja": 1574710265.7195,
+    "libreHastaElTope": 60722621.533746004,
+    "tomable": 60722621.533746004,
+    "tomableUSD": 19018325.064369246,
+    "cajaUSD": 493199255.22334737,
+    "factorGarantia": 0.75
+   },
+   {
+    "jToken": "TKFRELGGoRgiayhwJTNNLqCNjFoLBh3Mnf",
+    "simbolo": "jUSDD",
+    "subyacente": "USDD",
+    "tope": 10000000,
+    "prestado": 46051.72174480436,
+    "caja": 404792784.6780809,
+    "libreHastaElTope": 9953948.278255196,
+    "tomable": 9953948.278255196,
+    "tomableUSD": 9948420.751236798,
+    "cajaUSD": 404567999.1968213,
+    "factorGarantia": 0.85
+   },
+   {
+    "jToken": "TLeEu311Cbw63BcmMHDgDLu7fnk9fqGcqT",
+    "simbolo": "jBTC",
+    "subyacente": "BTC",
+    "tope": 100,
+    "prestado": 18.27342868,
+    "caja": 6544.71247387,
+    "libreHastaElTope": 81.72657132,
+    "tomable": 81.72657132,
+    "tomableUSD": 5626597.245334203,
+    "cajaUSD": 450581256.2819421,
+    "factorGarantia": 0.75
+   },
+   {
+    "jToken": "TMz7vmyqoq4WKDiztrZpjAZPnzE9XgXaK4",
+    "simbolo": "jU",
+    "subyacente": "U",
+    "tope": 5000000,
+    "prestado": 1629028.3041870533,
+    "caja": 3381693.315619929,
+    "libreHastaElTope": 3370971.6958129467,
+    "tomable": 3370971.6958129467,
+    "tomableUSD": 3396253.5817117174,
+    "cajaUSD": 3407055.6123892353,
+    "factorGarantia": 0.8
+   },
+   {
+    "jToken": "TSXv71Fy5XdL3Rh2QfBoUu3NAaM4sMif8R",
+    "simbolo": "jTUSD",
+    "subyacente": "TUSD",
+    "tope": 2000000,
+    "prestado": 950326.4885181193,
+    "caja": 1188979.369052613,
+    "libreHastaElTope": 1049673.5114818807,
+    "tomable": 1049673.5114818807,
+    "tomableUSD": 1049090.6172842195,
+    "cajaUSD": 1188319.116919184,
+    "factorGarantia": 0.75
+   },
+   {
+    "jToken": "TR7BUFRQeq1w5jAZf1FKx85SHuX6PfMqsV",
+    "simbolo": "jETH",
+    "subyacente": "ETH",
+    "tope": 500,
+    "prestado": 158.8004653089818,
+    "caja": 484062.3620393789,
+    "libreHastaElTope": 341.1995346910182,
+    "tomable": 341.1995346910182,
+    "tomableUSD": 657978.4002682805,
+    "cajaUSD": 933478935.9932269,
+    "factorGarantia": 0.75
+   },
+   {
+    "jToken": "TD5SdLw5scR6mXgyMK2xKrFJpauDjpKqrW",
+    "simbolo": "jWSTUSDT",
+    "subyacente": "wstUSDT",
+    "tope": 500000,
+    "prestado": 154129.60671207774,
+    "caja": 399699.78618984576,
+    "libreHastaElTope": 345870.39328792226,
+    "tomable": 345870.39328792226,
+    "tomableUSD": 387527.7765202459,
+    "cajaUSD": 447840.49870618834,
+    "factorGarantia": 0.75
+   },
+   {
+    "jToken": "TBEKggwqFkrc4KckQVR9BLucAmQugafEZf",
+    "simbolo": "jUSD1",
+    "subyacente": "USD1",
+    "tope": 2500000,
+    "prestado": 294338.4048972803,
+    "caja": 371677.12312659377,
+    "libreHastaElTope": 2205661.5951027195,
+    "tomable": 371677.12312659377,
+    "tomableUSD": 370824.8884458542,
+    "cajaUSD": 370824.8884458542,
+    "factorGarantia": 0
+   },
+   {
+    "jToken": "TVyvpmaVmz25z2GaXBDDjzLZi5iR5dBzGd",
+    "simbolo": "jWBTC",
+    "subyacente": "WBTC",
+    "tope": 5,
+    "prestado": 0.00244063,
+    "caja": 89.07378163,
+    "libreHastaElTope": 4.99755937,
+    "tomable": 4.99755937,
+    "tomableUSD": 344065.01252249203,
+    "cajaUSD": 6132427.755821072,
+    "factorGarantia": 0.75
+   },
+   {
+    "jToken": "TPXDpkg9e3eZzxqxAUyke9S4z4pGJBJw9e",
+    "simbolo": "jSUN",
+    "subyacente": "SUN",
+    "tope": 41000000,
+    "prestado": 33625744.82926024,
+    "caja": 283790353.5891809,
+    "libreHastaElTope": 7374255.1707397625,
+    "tomable": 7374255.1707397625,
+    "tomableUSD": 111390.50476359323,
+    "cajaUSD": 4286744.898490716,
+    "factorGarantia": 0.5
+   },
+   {
+    "jToken": "TRg6MnpsFXc82ymUPgf5qbj59ibxiEDWvv",
+    "simbolo": "jWIN",
+    "subyacente": "WIN",
+    "tope": 2000000000,
+    "prestado": 183163031.242679,
+    "caja": 28402308046.812977,
+    "libreHastaElTope": 1816836968.757321,
+    "tomable": 1816836968.757321,
+    "tomableUSD": 109204.04156357281,
+    "cajaUSD": 1707168.4921553668,
+    "factorGarantia": 0.5
+   },
+   {
+    "jToken": "TUaUHU9Dy8x5yNi1pKnFYqHWojot61Jfto",
+    "simbolo": "jBTT",
+    "subyacente": "BTT",
+    "tope": 230000000000,
+    "prestado": 80293041838.90007,
+    "caja": 3463681717215.099,
+    "libreHastaElTope": 149706958161.0999,
+    "tomable": 149706958161.0999,
+    "tomableUSD": 48805.9474652652,
+    "cajaUSD": 1129194.4609874883,
+    "factorGarantia": 0.5
+   },
+   {
+    "jToken": "TFpPyDCKvNFgos3g3WVsAqMrdqhB81JXHE",
+    "simbolo": "jNFT",
+    "subyacente": "NFT",
+    "tope": 69000000000,
+    "prestado": 19662502278.449554,
+    "caja": 2258880115180.9287,
+    "libreHastaElTope": 49337497721.550446,
+    "tomable": 49337497721.550446,
+    "tomableUSD": 9733.532449996808,
+    "cajaUSD": 445642.4406818326,
+    "factorGarantia": 0.6
+   },
+   {
+    "jToken": "TWQhCXaWz4eHK4Kd1ErSDHjMFPoPc9czts",
+    "simbolo": "jJST",
+    "subyacente": "JST",
+    "tope": 7099999.999999999,
+    "prestado": 7108313.727041797,
+    "caja": 90338927.7848558,
+    "libreHastaElTope": 0,
+    "tomable": 0,
+    "tomableUSD": 0,
+    "cajaUSD": 13065560.418095361,
+    "factorGarantia": 0.6
+   },
+   {
+    "jToken": "TJQ9rbVe9ei3nNtyGgBL22Fuu2xYjZaLAQ",
+    "simbolo": "jSTRX",
+    "subyacente": "sTRX",
+    "tope": 2300000,
+    "prestado": 2301144.3987582265,
+    "caja": 1783743234.3591201,
+    "libreHastaElTope": 0,
+    "tomable": 0,
+    "tomableUSD": 0,
+    "cajaUSD": 739968263.132353,
+    "factorGarantia": 0.75
+   },
+   {
+    "jToken": "TDA1mWPyAjTRATMGA55UTswGAHhV2itEXR",
+    "simbolo": "jHTX",
+    "subyacente": "HTX",
+    "tope": 5000000000,
+    "prestado": 5041130183.550433,
+    "caja": 565307982535.9102,
+    "libreHastaElTope": 0,
+    "tomable": 0,
+    "tomableUSD": 0,
+    "cajaUSD": 854234.6537904029,
+    "factorGarantia": 0.5
+   }
+  ],
+  "nota": "Mercados abiertos (sin pausa de depósito ni de préstamo). tomable = mínimo entre la caja y lo que falta hasta el tope de préstamo; un mercado sin tope (0) queda limitado solo por su caja.",
+  "garantiaNecesariaParaUSDT": 73575316.50789472,
+  "mayorDepositanteBTC": {
+   "cuenta": "TUjx6w55Nx9G4GjjRNEB4e7w5BUH3WmJTZ",
+   "poderDePrestamoUSD": 258213806.46118164,
+   "deudaUSD": 0,
+   "jBTCComoGarantia": true
+  },
+  "cuentaETH": {
+   "cuenta": "TCQQjfccKdMi4CnPAzmZW5TALH4HbwceVb",
+   "depositosUSD": 933365099.1123941,
+   "entradaComoGarantia": false,
+   "poderDePrestamoUSD": 0
+  }
+ },
+ "E3": {
+  "supuesto": "Cae el valor del USDD usado como garantía por las cuentas con deuda > 1.000 $ (251 cuentas); deudas, resto de precios y respuestas de usuarios y liquidadores, constantes. El «déficit ajustado» usa el poder de préstamo (depósito × factor); el «déficit sobre valor bruto» usa el valor del depósito sin factor.",
+  "curva": [
+   {
+    "caida": 0,
+    "cuentasConDeficitAjustado": 3,
+    "deudaDeEsasCuentas": 14184.002398398645,
+    "deficitAjustado": 14168.957550639108,
+    "cuentasSobreValorBruto": 3,
+    "deficitSobreValorBruto": 14163.803114821596
+   },
+   {
+    "caida": 0.01,
+    "cuentasConDeficitAjustado": 3,
+    "deudaDeEsasCuentas": 14184.002398398645,
+    "deficitAjustado": 14168.957550648222,
+    "cuentasSobreValorBruto": 3,
+    "deficitSobreValorBruto": 14163.803114832317
+   },
+   {
+    "caida": 0.02,
+    "cuentasConDeficitAjustado": 6,
+    "deudaDeEsasCuentas": 14104115.289303053,
+    "deficitAjustado": 142149.5762798133,
+    "cuentasSobreValorBruto": 3,
+    "deficitSobreValorBruto": 14163.803114843038
+   },
+   {
+    "caida": 0.03,
+    "cuentasConDeficitAjustado": 9,
+    "deudaDeEsasCuentas": 32028804.37601203,
+    "deficitAjustado": 383553.07218236866,
+    "cuentasSobreValorBruto": 3,
+    "deficitSobreValorBruto": 14163.80311485376
+   },
+   {
+    "caida": 0.05,
+    "cuentasConDeficitAjustado": 18,
+    "deudaDeEsasCuentas": 63830901.381938696,
+    "deficitAjustado": 1358005.2814507,
+    "cuentasSobreValorBruto": 3,
+    "deficitSobreValorBruto": 14163.803114875205
+   },
+   {
+    "caida": 0.075,
+    "cuentasConDeficitAjustado": 27,
+    "deudaDeEsasCuentas": 80994542.04237887,
+    "deficitAjustado": 3099448.1782974065,
+    "cuentasSobreValorBruto": 3,
+    "deficitSobreValorBruto": 14163.803114902006
+   },
+   {
+    "caida": 0.1,
+    "cuentasConDeficitAjustado": 29,
+    "deudaDeEsasCuentas": 89569889.41131105,
+    "deficitAjustado": 5302254.262541042,
+    "cuentasSobreValorBruto": 3,
+    "deficitSobreValorBruto": 14163.80311492881
+   },
+   {
+    "caida": 0.15,
+    "cuentasConDeficitAjustado": 33,
+    "deudaDeEsasCuentas": 96010345.68780419,
+    "deficitAjustado": 10089699.58060207,
+    "cuentasSobreValorBruto": 3,
+    "deficitSobreValorBruto": 14163.803114982416
+   },
+   {
+    "caida": 0.2,
+    "cuentasConDeficitAjustado": 35,
+    "deudaDeEsasCuentas": 96172384.17177454,
+    "deficitAjustado": 14990441.892325206,
+    "cuentasSobreValorBruto": 17,
+    "deficitSobreValorBruto": 1889907.5098039845
+   },
+   {
+    "caida": 0.3,
+    "cuentasConDeficitAjustado": 43,
+    "deudaDeEsasCuentas": 105558404.08198394,
+    "deficitAjustado": 25652418.47692325,
+    "cuentasSobreValorBruto": 27,
+    "deficitSobreValorBruto": 12063299.810828626
+   },
+   {
+    "caida": 0.5,
+    "cuentasConDeficitAjustado": 58,
+    "deudaDeEsasCuentas": 115584011.03250933,
+    "deficitAjustado": 48756242.264602065,
+    "cuentasSobreValorBruto": 42,
+    "deficitSobreValorBruto": 36573710.980174586
+   },
+   {
+    "caida": 1,
+    "cuentasConDeficitAjustado": 68,
+    "deudaDeEsasCuentas": 118480731.38598548,
+    "deficitAjustado": 109933796.78352094,
+    "cuentasSobreValorBruto": 58,
+    "deficitSobreValorBruto": 107582795.88690327
+   }
+  ]
+ },
+ "E9": {
+  "supuesto": "Caída simultánea de USDD, sTRX y TRX como garantía; las deudas se mantienen constantes (conservador para quien debe TRX/sTRX).",
+  "curva": [
+   {
+    "caida": 0,
+    "cuentasConDeficitAjustado": 3,
+    "deudaDeEsasCuentas": 14184.002398398645,
+    "deficitAjustado": 14168.957550639108,
+    "cuentasSobreValorBruto": 3,
+    "deficitSobreValorBruto": 14163.803114821596
+   },
+   {
+    "caida": 0.1,
+    "cuentasConDeficitAjustado": 40,
+    "deudaDeEsasCuentas": 94582183.656039,
+    "deficitAjustado": 5628462.588546059,
+    "cuentasSobreValorBruto": 3,
+    "deficitSobreValorBruto": 14163.80311492881
+   },
+   {
+    "caida": 0.2,
+    "cuentasConDeficitAjustado": 58,
+    "deudaDeEsasCuentas": 103543144.26918927,
+    "deficitAjustado": 16081781.370595334,
+    "cuentasSobreValorBruto": 17,
+    "deficitSobreValorBruto": 1889907.5323742616
+   },
+   {
+    "caida": 0.3,
+    "cuentasConDeficitAjustado": 74,
+    "deudaDeEsasCuentas": 115455752.29574405,
+    "deficitAjustado": 27722131.985068202,
+    "cuentasSobreValorBruto": 35,
+    "deficitSobreValorBruto": 12541443.327643633
+   },
+   {
+    "caida": 0.5,
+    "cuentasConDeficitAjustado": 109,
+    "deudaDeEsasCuentas": 131984717.99988401,
+    "deficitAjustado": 55049682.03480638,
+    "cuentasSobreValorBruto": 69,
+    "deficitSobreValorBruto": 39566848.21712401
+   }
+  ]
+ },
+ "estresETHBTC": {
+  "cuentas": 0,
+  "cuentasConDeficitAjustado": 54,
+  "deudaDeEsasCuentas": 17452547.604659762,
+  "deficitAjustado": 13231176.06299836,
+  "cuentasSobreValorBruto": 45,
+  "deficitSobreValorBruto": 12304007.521875316
+ },
+ "E4": {
+  "cajaInicial": 160561696.16835,
+  "reclamoInicial": 305126936.783742,
+  "prestado": 144787852.761596,
+  "corrida": [
+   {
+    "puesto": 1,
+    "titular": "TKVnVyJiTzyCDgTkZRYc5LM4q8B7xXEbh5",
+    "reclamo": 90029990.866575,
+    "sale": 90029990.866575,
+    "cajaRestante": 70531705.30177501,
+    "reclamoRestante": 215096945.917167,
+    "utilizacionTras": 0.673128352168009
+   },
+   {
+    "puesto": 2,
+    "titular": "TWPpxPd5PpU5FQk6F6F3HMN5VdufxnVA8K",
+    "reclamo": 40230399.834669,
+    "sale": 40230399.834669,
+    "cajaRestante": 30301305.467106007,
+    "reclamoRestante": 174866546.082498,
+    "utilizacionTras": 0.8279905791316193
+   },
+   {
+    "puesto": 3,
+    "titular": "TYRmcmmKvjL1SFQbvPQtJU1YcaXEnH8dvT",
+    "reclamo": 29432636.518018,
+    "sale": 29432636.518018,
+    "cajaRestante": 868668.9490880072,
+    "reclamoRestante": 145433909.56448,
+    "utilizacionTras": 0.9955577292474521
+   },
+   {
+    "puesto": 4,
+    "titular": "TSzSgxRisS5VBXXDcAezTDvnPGi9CbsXvJ",
+    "reclamo": 25115806.009807,
+    "sale": 868668.9490880072,
+    "cajaRestante": 0,
+    "reclamoRestante": 144565240.615392,
+    "utilizacionTras": 1.001539873245141
+   },
+   {
+    "puesto": 5,
+    "titular": "TT2T17KZhoDu47i2E4FWxfG79zdkEWkU9N",
+    "reclamo": 14004558.323802,
+    "sale": 0,
+    "cajaRestante": 0,
+    "reclamoRestante": 144565240.615392,
+    "utilizacionTras": 1.001539873245141
+   },
+   {
+    "puesto": 6,
+    "titular": "TRnZ8imxcZN5XdAkWopFFFofEmZ54qD94w",
+    "reclamo": 10311289.105349,
+    "sale": 0,
+    "cajaRestante": 0,
+    "reclamoRestante": 144565240.615392,
+    "utilizacionTras": 1.001539873245141
+   },
+   {
+    "puesto": 7,
+    "titular": "TBgGFBnqZuDeGkf4nyiaEo7mj3NodxYJBL",
+    "reclamo": 10022525.155369,
+    "sale": 0,
+    "cajaRestante": 0,
+    "reclamoRestante": 144565240.615392,
+    "utilizacionTras": 1.001539873245141
+   },
+   {
+    "puesto": 8,
+    "titular": "TTCVAFLg6NNzAkFNzANjt6A8AdAjymAY71",
+    "reclamo": 6270622.748099,
+    "sale": 0,
+    "cajaRestante": 0,
+    "reclamoRestante": 144565240.615392,
+    "utilizacionTras": 1.001539873245141
+   },
+   {
+    "puesto": 9,
+    "titular": "TA7X7h8Te7o52Z4KinjbdP3sLMfHydxvXu",
+    "reclamo": 5731320.945676,
+    "sale": 0,
+    "cajaRestante": 0,
+    "reclamoRestante": 144565240.615392,
+    "utilizacionTras": 1.001539873245141
+   },
+   {
+    "puesto": 10,
+    "titular": "TSXddfc7omKWTjyw2yYx7rnvYKSkkXY7Tm",
+    "reclamo": 5236981.98786,
+    "sale": 0,
+    "cajaRestante": 0,
+    "reclamoRestante": 144565240.615392,
+    "utilizacionTras": 1.001539873245141
+   }
+  ],
+  "nota": "Ejercicio mecánico con los saldos de ahora: cada titular retira TODO su reclamo por orden de tamaño. La tasa de interés (¿hay «kink»?) no se ha leído: no se afirma cómo reaccionarían los tipos."
+ },
+ "E7": {
+  "premio": 1.08,
+  "equilibrio": 0.07407407407407418,
+  "tokens": [
+   {
+    "simbolo": "WTRX",
+    "coste10k": 0.0005099999999999999,
+    "coste100k": 0.0005899999999999999,
+    "coste1M": 0.00111,
+    "recibePorDolar100k": 1.0793628000000002,
+    "recibePorDolar1M": 1.0788012
+   },
+   {
+    "simbolo": "ETH",
+    "coste10k": 0.06886,
+    "coste100k": 0.41326,
+    "coste1M": 0.87457,
+    "recibePorDolar100k": 0.6336792000000001,
+    "recibePorDolar1M": 0.13546440000000004
+   },
+   {
+    "simbolo": "ETH-nuevo",
+    "coste10k": 0.03494,
+    "coste100k": 0.24834,
+    "coste1M": 0.7659199999999999,
+    "recibePorDolar100k": 0.8117928000000001,
+    "recibePorDolar1M": 0.2528064000000001
+   },
+   {
+    "simbolo": "BTC",
+    "coste10k": 0.011930000000000001,
+    "coste100k": 0.08561999999999999,
+    "coste1M": 0.47623,
+    "recibePorDolar100k": 0.9875304,
+    "recibePorDolar1M": 0.5656716000000002
+   },
+   {
+    "simbolo": "WBTC",
+    "coste10k": 0.02997,
+    "coste100k": 0.64215,
+    "coste1M": 0.96341,
+    "recibePorDolar100k": 0.38647800000000004,
+    "recibePorDolar1M": 0.039517200000000016
+   },
+   {
+    "simbolo": "sTRX",
+    "coste10k": 0,
+    "coste100k": 0.00302,
+    "coste1M": 0.0158,
+    "recibePorDolar100k": 1.0767384,
+    "recibePorDolar1M": 1.062936
+   },
+   {
+    "simbolo": "USDD",
+    "coste10k": 0,
+    "coste100k": 0.00004,
+    "coste1M": 0.00037,
+    "recibePorDolar100k": 1.0799568,
+    "recibePorDolar1M": 1.0796004000000001
+   },
+   {
+    "simbolo": "USDD-viejo",
+    "coste10k": 0.00061,
+    "coste100k": 0.00522,
+    "coste1M": 0.70333,
+    "recibePorDolar100k": 1.0743624,
+    "recibePorDolar1M": 0.3204036
+   },
+   {
+    "simbolo": "JST",
+    "coste10k": 0.0008500000000000001,
+    "coste100k": 0.00393,
+    "coste1M": 0.028650000000000002,
+    "recibePorDolar100k": 1.0757556000000001,
+    "recibePorDolar1M": 1.049058
+   },
+   {
+    "simbolo": "SUN",
+    "coste10k": 0.0032300000000000002,
+    "coste100k": 0.01391,
+    "coste1M": 0.10813,
+    "recibePorDolar100k": 1.0649772000000002,
+    "recibePorDolar1M": 0.9632196
+   },
+   {
+    "simbolo": "SUN-viejo",
+    "coste10k": 0.01288,
+    "coste100k": 0.09000999999999999,
+    "coste1M": 0.48908999999999997,
+    "recibePorDolar100k": 0.9827892,
+    "recibePorDolar1M": 0.5517828
+   },
+   {
+    "simbolo": "WIN",
+    "coste10k": 0.01123,
+    "coste100k": 0.07963,
+    "coste1M": 0.45597,
+    "recibePorDolar100k": 0.9939996000000001,
+    "recibePorDolar1M": 0.5875524000000001
+   },
+   {
+    "simbolo": "BTT",
+    "coste10k": 0.008329999999999999,
+    "coste100k": 0.05383,
+    "coste1M": 0.35141,
+    "recibePorDolar100k": 1.0218636,
+    "recibePorDolar1M": 0.7004772
+   },
+   {
+    "simbolo": "WBTT",
+    "coste10k": 0.1777,
+    "coste100k": 0.6797,
+    "coste1M": 0.9549,
+    "recibePorDolar100k": 0.34592400000000006,
+    "recibePorDolar1M": 0.048708000000000036
+   },
+   {
+    "simbolo": "NFT",
+    "coste10k": 0.00805,
+    "coste100k": 0.051269999999999996,
+    "coste1M": 0.3392,
+    "recibePorDolar100k": 1.0246284,
+    "recibePorDolar1M": 0.7136640000000001
+   },
+   {
+    "simbolo": "TUSD",
+    "coste10k": 0.00015,
+    "coste100k": 0.00064,
+    "coste1M": 0.010620000000000001,
+    "recibePorDolar100k": 1.0793088000000002,
+    "recibePorDolar1M": 1.0685304000000002
+   },
+   {
+    "simbolo": "USDC",
+    "coste10k": 0.07442,
+    "coste100k": 0.43448,
+    "coste1M": 0.88421,
+    "recibePorDolar100k": 0.6107616,
+    "recibePorDolar1M": 0.12505319999999995
+   },
+   {
+    "simbolo": "BUSD",
+    "coste10k": null,
+    "coste100k": null,
+    "coste1M": null,
+    "recibePorDolar100k": null,
+    "recibePorDolar1M": null
+   },
+   {
+    "simbolo": "USD1",
+    "coste10k": 0.00015,
+    "coste100k": 0.0005899999999999999,
+    "coste1M": 1,
+    "recibePorDolar100k": 1.0793628000000002,
+    "recibePorDolar1M": 0
+   },
+   {
+    "simbolo": "USDJ",
+    "coste10k": 0.09307,
+    "coste100k": 0.49866,
+    "coste1M": 0.90838,
+    "recibePorDolar100k": 0.5414472,
+    "recibePorDolar1M": 0.09894960000000004
+   },
+   {
+    "simbolo": "wstUSDT",
+    "coste10k": null,
+    "coste100k": null,
+    "coste1M": null,
+    "recibePorDolar100k": null,
+    "recibePorDolar1M": null
+   },
+   {
+    "simbolo": "HTX",
+    "coste10k": 0.00096,
+    "coste100k": 0.00379,
+    "coste1M": 0.030950000000000002,
+    "recibePorDolar100k": 1.0759068,
+    "recibePorDolar1M": 1.0465740000000001
+   },
+   {
+    "simbolo": "U",
+    "coste10k": 0.00013,
+    "coste100k": 0.00035000000000000005,
+    "coste1M": 0.00264,
+    "recibePorDolar100k": 1.079622,
+    "recibePorDolar1M": 1.0771488
+   }
+  ]
+ },
+ "E2": {
+  "variacionMaxPorPeriodo": 0.1,
+  "minutosPorPeriodo": 30,
+  "caidaReal50": [
+   {
+    "periodos": 0,
+    "horas": 0,
+    "precioOraculoRelativo": 1,
+    "sobrevaloracionFrenteAlReal50": 1
+   },
+   {
+    "periodos": 1,
+    "horas": 0.5,
+    "precioOraculoRelativo": 0.9,
+    "sobrevaloracionFrenteAlReal50": 0.8
+   },
+   {
+    "periodos": 2,
+    "horas": 1,
+    "precioOraculoRelativo": 0.81,
+    "sobrevaloracionFrenteAlReal50": 0.6200000000000001
+   },
+   {
+    "periodos": 3,
+    "horas": 1.5,
+    "precioOraculoRelativo": 0.7290000000000001,
+    "sobrevaloracionFrenteAlReal50": 0.4580000000000002
+   },
+   {
+    "periodos": 4,
+    "horas": 2,
+    "precioOraculoRelativo": 0.6561,
+    "sobrevaloracionFrenteAlReal50": 0.31220000000000003
+   },
+   {
+    "periodos": 5,
+    "horas": 2.5,
+    "precioOraculoRelativo": 0.5904900000000001,
+    "sobrevaloracionFrenteAlReal50": 0.18098000000000014
+   },
+   {
+    "periodos": 6,
+    "horas": 3,
+    "precioOraculoRelativo": 0.531441,
+    "sobrevaloracionFrenteAlReal50": 0.0628820000000001
+   },
+   {
+    "periodos": 7,
+    "horas": 3.5,
+    "precioOraculoRelativo": 0.4782969000000001,
+    "sobrevaloracionFrenteAlReal50": 0
+   },
+   {
+    "periodos": 8,
+    "horas": 4,
+    "precioOraculoRelativo": 0.4304672100000001,
+    "sobrevaloracionFrenteAlReal50": 0
+   }
+  ],
+  "subidaMaxima": [
+   {
+    "periodos": 0,
+    "horas": 0,
+    "precioRelativo": 1
+   },
+   {
+    "periodos": 2,
+    "horas": 1,
+    "precioRelativo": 1.2100000000000002
+   },
+   {
+    "periodos": 4,
+    "horas": 2,
+    "precioRelativo": 1.4641000000000004
+   },
+   {
+    "periodos": 6,
+    "horas": 3,
+    "precioRelativo": 1.7715610000000008
+   },
+   {
+    "periodos": 8,
+    "horas": 4,
+    "precioRelativo": 2.1435888100000016
+   },
+   {
+    "periodos": 10,
+    "horas": 5,
+    "precioRelativo": 2.5937424601000023
+   },
+   {
+    "periodos": 12,
+    "horas": 6,
+    "precioRelativo": 3.138428376721003
+   },
+   {
+    "periodos": 16,
+    "horas": 8,
+    "precioRelativo": 4.594972986357222
+   },
+   {
+    "periodos": 21,
+    "horas": 10.5,
+    "precioRelativo": 7.400249944258173
+   }
+  ],
+  "nota": "ESPECULACIÓN condicionada a que el límite del 10 % por periodo de 600 bloques funcione como en el PriceOracle de Compound v1: no se ha leído su código."
+ },
+ "deudaSinExplicar": {
+  "total": 37517009.58230862,
+  "porcentaje": 0.18283568600877909,
+  "porMercado": [
+   {
+    "simbolo": "jUSDT",
+    "prestadoUSD": 144707450.61907893,
+    "sinExplicarUSD": 18081164.51763855
+   },
+   {
+    "simbolo": "jTRX",
+    "prestadoUSD": 53017674.935630746,
+    "sinExplicarUSD": 17817900.954528682
+   },
+   {
+    "simbolo": "jU",
+    "prestadoUSD": 1641245.8222882824,
+    "sinExplicarUSD": 8646.02363548358
+   },
+   {
+    "simbolo": "jBTC",
+    "prestadoUSD": 1258063.5870691144,
+    "sinExplicarUSD": 220835.37362223247
+   },
+   {
+    "simbolo": "jJST",
+    "prestadoUSD": 1028062.9264564995,
+    "sinExplicarUSD": 395782.6273355833
+   },
+   {
+    "simbolo": "jSTRX",
+    "prestadoUSD": 954607.0259252621,
+    "sinExplicarUSD": 340861.17459278693
+   },
+   {
+    "simbolo": "jTUSD",
+    "prestadoUSD": 949798.7627157803,
+    "sinExplicarUSD": 139562.31284641556
+   },
+   {
+    "simbolo": "jSUN",
+    "prestadoUSD": 507927.7300364068,
+    "sinExplicarUSD": 266831.5036105274
+   },
+   {
+    "simbolo": "jETH",
+    "prestadoUSD": 306235.1073265194,
+    "sinExplicarUSD": 2421.4078273013583
+   },
+   {
+    "simbolo": "jUSD1",
+    "prestadoUSD": 293663.5035355369,
+    "sinExplicarUSD": 64682.39498636883
+   },
+   {
+    "simbolo": "jWSTUSDT",
+    "prestadoUSD": 172693.31213137173,
+    "sinExplicarUSD": 8401.10812631619
+   },
+   {
+    "simbolo": "jUSDD",
+    "prestadoUSD": 157210.85464652683,
+    "sinExplicarUSD": 67797.86683925275
+   },
+   {
+    "simbolo": "jUSDJ",
+    "prestadoUSD": 69595.86633800222,
+    "sinExplicarUSD": 15801.417425476044
+   }
+  ]
+ }
+}

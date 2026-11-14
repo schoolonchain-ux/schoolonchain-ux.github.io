@@ -1,0 +1,614 @@
+{
+ "generado": "2026-11-13T20:09:40.084Z",
+ "nota": "Lecturas nuevas sin caché; getCash y saldo real se leen uno detrás de otro (≈ 0,7 s entre ambos) por cada mercado; un mercado con mucha actividad puede cambiar en ese lapso: por eso se repite 3 veces y se muestra cada diferencia.",
+ "vueltas": [
+  {
+   "vuelta": 1,
+   "bloqueAlEmpezar": 87975537,
+   "horaBloque": "2026-11-13T20:08:06.000Z",
+   "termino": "2026-11-13T20:08:29.443Z",
+   "segundos": 20,
+   "mercados": 24,
+   "coinciden": 24,
+   "distintos": []
+  },
+  {
+   "vuelta": 2,
+   "bloqueAlEmpezar": 87975549,
+   "horaBloque": "2026-11-13T20:08:42.000Z",
+   "termino": "2026-11-13T20:09:04.518Z",
+   "segundos": 19,
+   "mercados": 24,
+   "coinciden": 24,
+   "distintos": []
+  },
+  {
+   "vuelta": 3,
+   "bloqueAlEmpezar": 87975561,
+   "horaBloque": "2026-11-13T20:09:18.000Z",
+   "termino": "2026-11-13T20:09:40.084Z",
+   "segundos": 20,
+   "mercados": 24,
+   "coinciden": 24,
+   "distintos": []
+  }
+ ],
+ "detalle": [
+  {
+   "vuelta": 1,
+   "jToken": "TE2RzoSV3wFK99w6J9UnnZ4vLfXYoxvRwP",
+   "simbolo": "jTRX",
+   "caja": "1575285627691634",
+   "saldoReal": "1575285627691634",
+   "igual": true
+  },
+  {
+   "vuelta": 1,
+   "jToken": "TXJgMdjVX5dKiQaUi9QobwNxtSQaFqccvd",
+   "simbolo": "jUSDT",
+   "caja": "162104657168350",
+   "saldoReal": "162104657168350",
+   "igual": true
+  },
+  {
+   "vuelta": 1,
+   "jToken": "TL5x9MtSnDy537FXKx53yAaHRRNdg9TkkA",
+   "simbolo": "jUSDJ",
+   "caja": "60275835155981035073541",
+   "saldoReal": "60275835155981035073541",
+   "igual": true
+  },
+  {
+   "vuelta": 1,
+   "jToken": "TGBr8uh9jBVHJhhkwSJvQN2ZAKzVkxDmno",
+   "simbolo": "jSUN",
+   "caja": "14396397552717236486948",
+   "saldoReal": "14396397552717236486948",
+   "igual": true
+  },
+  {
+   "vuelta": 1,
+   "jToken": "TRg6MnpsFXc82ymUPgf5qbj59ibxiEDWvv",
+   "simbolo": "jWIN",
+   "caja": "28402308046812974",
+   "saldoReal": "28402308046812974",
+   "igual": true
+  },
+  {
+   "vuelta": 1,
+   "jToken": "TLeEu311Cbw63BcmMHDgDLu7fnk9fqGcqT",
+   "simbolo": "jBTC",
+   "caja": "654471247387",
+   "saldoReal": "654471247387",
+   "igual": true
+  },
+  {
+   "vuelta": 1,
+   "jToken": "TWQhCXaWz4eHK4Kd1ErSDHjMFPoPc9czts",
+   "simbolo": "jJST",
+   "caja": "90338927784855804158468984",
+   "saldoReal": "90338927784855804158468984",
+   "igual": true
+  },
+  {
+   "vuelta": 1,
+   "jToken": "TUY54PVeH6WCcYCd6ZXXoBDsHytN9V5PXt",
+   "simbolo": "jWBTT",
+   "caja": "490156352841406",
+   "saldoReal": "490156352841406",
+   "igual": true
+  },
+  {
+   "vuelta": 1,
+   "jToken": "TR7BUFRQeq1w5jAZf1FKx85SHuX6PfMqsV",
+   "simbolo": "jETH",
+   "caja": "484062362039378944441133",
+   "saldoReal": "484062362039378944441133",
+   "igual": true
+  },
+  {
+   "vuelta": 1,
+   "jToken": "TSXv71Fy5XdL3Rh2QfBoUu3NAaM4sMif8R",
+   "simbolo": "jTUSD",
+   "caja": "1188979369052612975216276",
+   "saldoReal": "1188979369052612975216276",
+   "igual": true
+  },
+  {
+   "vuelta": 1,
+   "jToken": "TFpPyDCKvNFgos3g3WVsAqMrdqhB81JXHE",
+   "simbolo": "jNFT",
+   "caja": "2258880115180928663",
+   "saldoReal": "2258880115180928663",
+   "igual": true
+  },
+  {
+   "vuelta": 1,
+   "jToken": "TPXDpkg9e3eZzxqxAUyke9S4z4pGJBJw9e",
+   "simbolo": "jSUN",
+   "caja": "283790353589180906139802025",
+   "saldoReal": "283790353589180906139802025",
+   "igual": true
+  },
+  {
+   "vuelta": 1,
+   "jToken": "TNSBA6KvSvMoTqQcEgpVK7VhHT3z7wifxy",
+   "simbolo": "jUSDC",
+   "caja": "188978309604",
+   "saldoReal": "188978309604",
+   "igual": true
+  },
+  {
+   "vuelta": 1,
+   "jToken": "TUaUHU9Dy8x5yNi1pKnFYqHWojot61Jfto",
+   "simbolo": "jBTT",
+   "caja": "3463681717215099600525796039488",
+   "saldoReal": "3463681717215099600525796039488",
+   "igual": true
+  },
+  {
+   "vuelta": 1,
+   "jToken": "TX7kybeP6UwTBRHLNPYmswFESHfyjm9bAS",
+   "simbolo": "jUSDD",
+   "caja": "363671722232088756022126",
+   "saldoReal": "363671722232088756022126",
+   "igual": true
+  },
+  {
+   "vuelta": 1,
+   "jToken": "TLHASseQymmpGQdfAyNjkMXFTJh8nzR2x2",
+   "simbolo": "jBUSD",
+   "caja": "218410095417381318880",
+   "saldoReal": "218410095417381318880",
+   "igual": true
+  },
+  {
+   "vuelta": 1,
+   "jToken": "TJQ9rbVe9ei3nNtyGgBL22Fuu2xYjZaLAQ",
+   "simbolo": "jSTRX",
+   "caja": "1783353234359120234249867667",
+   "saldoReal": "1783353234359120234249867667",
+   "igual": true
+  },
+  {
+   "vuelta": 1,
+   "jToken": "TWBxQMb6RD3qmkXUXpNwVCYbL8SHNreru6",
+   "simbolo": "jETH",
+   "caja": "96103666064889190470",
+   "saldoReal": "96103666064889190470",
+   "igual": true
+  },
+  {
+   "vuelta": 1,
+   "jToken": "TD5SdLw5scR6mXgyMK2xKrFJpauDjpKqrW",
+   "simbolo": "jWSTUSDT",
+   "caja": "399699786189845738680029",
+   "saldoReal": "399699786189845738680029",
+   "igual": true
+  },
+  {
+   "vuelta": 1,
+   "jToken": "TKFRELGGoRgiayhwJTNNLqCNjFoLBh3Mnf",
+   "simbolo": "jUSDD",
+   "caja": "405183722678080959359042885",
+   "saldoReal": "405183722678080959359042885",
+   "igual": true
+  },
+  {
+   "vuelta": 1,
+   "jToken": "TBEKggwqFkrc4KckQVR9BLucAmQugafEZf",
+   "simbolo": "jUSD1",
+   "caja": "371677123126593766265425",
+   "saldoReal": "371677123126593766265425",
+   "igual": true
+  },
+  {
+   "vuelta": 1,
+   "jToken": "TVyvpmaVmz25z2GaXBDDjzLZi5iR5dBzGd",
+   "simbolo": "jWBTC",
+   "caja": "8907378163",
+   "saldoReal": "8907378163",
+   "igual": true
+  },
+  {
+   "vuelta": 1,
+   "jToken": "TDA1mWPyAjTRATMGA55UTswGAHhV2itEXR",
+   "simbolo": "jHTX",
+   "caja": "565307982535910068834829674849",
+   "saldoReal": "565307982535910068834829674849",
+   "igual": true
+  },
+  {
+   "vuelta": 1,
+   "jToken": "TMz7vmyqoq4WKDiztrZpjAZPnzE9XgXaK4",
+   "simbolo": "jU",
+   "caja": "3381693315619929291335109",
+   "saldoReal": "3381693315619929291335109",
+   "igual": true
+  },
+  {
+   "vuelta": 2,
+   "jToken": "TE2RzoSV3wFK99w6J9UnnZ4vLfXYoxvRwP",
+   "simbolo": "jTRX",
+   "caja": "1575285627691634",
+   "saldoReal": "1575285627691634",
+   "igual": true
+  },
+  {
+   "vuelta": 2,
+   "jToken": "TXJgMdjVX5dKiQaUi9QobwNxtSQaFqccvd",
+   "simbolo": "jUSDT",
+   "caja": "162104657168350",
+   "saldoReal": "162104657168350",
+   "igual": true
+  },
+  {
+   "vuelta": 2,
+   "jToken": "TL5x9MtSnDy537FXKx53yAaHRRNdg9TkkA",
+   "simbolo": "jUSDJ",
+   "caja": "60275835155981035073541",
+   "saldoReal": "60275835155981035073541",
+   "igual": true
+  },
+  {
+   "vuelta": 2,
+   "jToken": "TGBr8uh9jBVHJhhkwSJvQN2ZAKzVkxDmno",
+   "simbolo": "jSUN",
+   "caja": "14396397552717236486948",
+   "saldoReal": "14396397552717236486948",
+   "igual": true
+  },
+  {
+   "vuelta": 2,
+   "jToken": "TRg6MnpsFXc82ymUPgf5qbj59ibxiEDWvv",
+   "simbolo": "jWIN",
+   "caja": "28402308046812974",
+   "saldoReal": "28402308046812974",
+   "igual": true
+  },
+  {
+   "vuelta": 2,
+   "jToken": "TLeEu311Cbw63BcmMHDgDLu7fnk9fqGcqT",
+   "simbolo": "jBTC",
+   "caja": "654471247387",
+   "saldoReal": "654471247387",
+   "igual": true
+  },
+  {
+   "vuelta": 2,
+   "jToken": "TWQhCXaWz4eHK4Kd1ErSDHjMFPoPc9czts",
+   "simbolo": "jJST",
+   "caja": "90338927784855804158468984",
+   "saldoReal": "90338927784855804158468984",
+   "igual": true
+  },
+  {
+   "vuelta": 2,
+   "jToken": "TUY54PVeH6WCcYCd6ZXXoBDsHytN9V5PXt",
+   "simbolo": "jWBTT",
+   "caja": "490156352841406",
+   "saldoReal": "490156352841406",
+   "igual": true
+  },
+  {
+   "vuelta": 2,
+   "jToken": "TR7BUFRQeq1w5jAZf1FKx85SHuX6PfMqsV",
+   "simbolo": "jETH",
+   "caja": "484062362039378944441133",
+   "saldoReal": "484062362039378944441133",
+   "igual": true
+  },
+  {
+   "vuelta": 2,
+   "jToken": "TSXv71Fy5XdL3Rh2QfBoUu3NAaM4sMif8R",
+   "simbolo": "jTUSD",
+   "caja": "1188979369052612975216276",
+   "saldoReal": "1188979369052612975216276",
+   "igual": true
+  },
+  {
+   "vuelta": 2,
+   "jToken": "TFpPyDCKvNFgos3g3WVsAqMrdqhB81JXHE",
+   "simbolo": "jNFT",
+   "caja": "2258880115180928663",
+   "saldoReal": "2258880115180928663",
+   "igual": true
+  },
+  {
+   "vuelta": 2,
+   "jToken": "TPXDpkg9e3eZzxqxAUyke9S4z4pGJBJw9e",
+   "simbolo": "jSUN",
+   "caja": "283790353589180906139802025",
+   "saldoReal": "283790353589180906139802025",
+   "igual": true
+  },
+  {
+   "vuelta": 2,
+   "jToken": "TNSBA6KvSvMoTqQcEgpVK7VhHT3z7wifxy",
+   "simbolo": "jUSDC",
+   "caja": "188978309604",
+   "saldoReal": "188978309604",
+   "igual": true
+  },
+  {
+   "vuelta": 2,
+   "jToken": "TUaUHU9Dy8x5yNi1pKnFYqHWojot61Jfto",
+   "simbolo": "jBTT",
+   "caja": "3463681717215099600525796039488",
+   "saldoReal": "3463681717215099600525796039488",
+   "igual": true
+  },
+  {
+   "vuelta": 2,
+   "jToken": "TX7kybeP6UwTBRHLNPYmswFESHfyjm9bAS",
+   "simbolo": "jUSDD",
+   "caja": "363671722232088756022126",
+   "saldoReal": "363671722232088756022126",
+   "igual": true
+  },
+  {
+   "vuelta": 2,
+   "jToken": "TLHASseQymmpGQdfAyNjkMXFTJh8nzR2x2",
+   "simbolo": "jBUSD",
+   "caja": "218410095417381318880",
+   "saldoReal": "218410095417381318880",
+   "igual": true
+  },
+  {
+   "vuelta": 2,
+   "jToken": "TJQ9rbVe9ei3nNtyGgBL22Fuu2xYjZaLAQ",
+   "simbolo": "jSTRX",
+   "caja": "1783353234359120234249867667",
+   "saldoReal": "1783353234359120234249867667",
+   "igual": true
+  },
+  {
+   "vuelta": 2,
+   "jToken": "TWBxQMb6RD3qmkXUXpNwVCYbL8SHNreru6",
+   "simbolo": "jETH",
+   "caja": "96103666064889190470",
+   "saldoReal": "96103666064889190470",
+   "igual": true
+  },
+  {
+   "vuelta": 2,
+   "jToken": "TD5SdLw5scR6mXgyMK2xKrFJpauDjpKqrW",
+   "simbolo": "jWSTUSDT",
+   "caja": "399699786189845738680029",
+   "saldoReal": "399699786189845738680029",
+   "igual": true
+  },
+  {
+   "vuelta": 2,
+   "jToken": "TKFRELGGoRgiayhwJTNNLqCNjFoLBh3Mnf",
+   "simbolo": "jUSDD",
+   "caja": "405183722678080959359042885",
+   "saldoReal": "405183722678080959359042885",
+   "igual": true
+  },
+  {
+   "vuelta": 2,
+   "jToken": "TBEKggwqFkrc4KckQVR9BLucAmQugafEZf",
+   "simbolo": "jUSD1",
+   "caja": "371677123126593766265425",
+   "saldoReal": "371677123126593766265425",
+   "igual": true
+  },
+  {
+   "vuelta": 2,
+   "jToken": "TVyvpmaVmz25z2GaXBDDjzLZi5iR5dBzGd",
+   "simbolo": "jWBTC",
+   "caja": "8907378163",
+   "saldoReal": "8907378163",
+   "igual": true
+  },
+  {
+   "vuelta": 2,
+   "jToken": "TDA1mWPyAjTRATMGA55UTswGAHhV2itEXR",
+   "simbolo": "jHTX",
+   "caja": "565307982535910068834829674849",
+   "saldoReal": "565307982535910068834829674849",
+   "igual": true
+  },
+  {
+   "vuelta": 2,
+   "jToken": "TMz7vmyqoq4WKDiztrZpjAZPnzE9XgXaK4",
+   "simbolo": "jU",
+   "caja": "3381693315619929291335109",
+   "saldoReal": "3381693315619929291335109",
+   "igual": true
+  },
+  {
+   "vuelta": 3,
+   "jToken": "TE2RzoSV3wFK99w6J9UnnZ4vLfXYoxvRwP",
+   "simbolo": "jTRX",
+   "caja": "1575285627691634",
+   "saldoReal": "1575285627691634",
+   "igual": true
+  },
+  {
+   "vuelta": 3,
+   "jToken": "TXJgMdjVX5dKiQaUi9QobwNxtSQaFqccvd",
+   "simbolo": "jUSDT",
+   "caja": "162104657168350",
+   "saldoReal": "162104657168350",
+   "igual": true
+  },
+  {
+   "vuelta": 3,
+   "jToken": "TL5x9MtSnDy537FXKx53yAaHRRNdg9TkkA",
+   "simbolo": "jUSDJ",
+   "caja": "60275835155981035073541",
+   "saldoReal": "60275835155981035073541",
+   "igual": true
+  },
+  {
+   "vuelta": 3,
+   "jToken": "TGBr8uh9jBVHJhhkwSJvQN2ZAKzVkxDmno",
+   "simbolo": "jSUN",
+   "caja": "14396397552717236486948",
+   "saldoReal": "14396397552717236486948",
+   "igual": true
+  },
+  {
+   "vuelta": 3,
+   "jToken": "TRg6MnpsFXc82ymUPgf5qbj59ibxiEDWvv",
+   "simbolo": "jWIN",
+   "caja": "28402308046812974",
+   "saldoReal": "28402308046812974",
+   "igual": true
+  },
+  {
+   "vuelta": 3,
+   "jToken": "TLeEu311Cbw63BcmMHDgDLu7fnk9fqGcqT",
+   "simbolo": "jBTC",
+   "caja": "654471247387",
+   "saldoReal": "654471247387",
+   "igual": true
+  },
+  {
+   "vuelta": 3,
+   "jToken": "TWQhCXaWz4eHK4Kd1ErSDHjMFPoPc9czts",
+   "simbolo": "jJST",
+   "caja": "90338927784855804158468984",
+   "saldoReal": "90338927784855804158468984",
+   "igual": true
+  },
+  {
+   "vuelta": 3,
+   "jToken": "TUY54PVeH6WCcYCd6ZXXoBDsHytN9V5PXt",
+   "simbolo": "jWBTT",
+   "caja": "490156352841406",
+   "saldoReal": "490156352841406",
+   "igual": true
+  },
+  {
+   "vuelta": 3,
+   "jToken": "TR7BUFRQeq1w5jAZf1FKx85SHuX6PfMqsV",
+   "simbolo": "jETH",
+   "caja": "484062362039378944441133",
+   "saldoReal": "484062362039378944441133",
+   "igual": true
+  },
+  {
+   "vuelta": 3,
+   "jToken": "TSXv71Fy5XdL3Rh2QfBoUu3NAaM4sMif8R",
+   "simbolo": "jTUSD",
+   "caja": "1188979369052612975216276",
+   "saldoReal": "1188979369052612975216276",
+   "igual": true
+  },
+  {
+   "vuelta": 3,
+   "jToken": "TFpPyDCKvNFgos3g3WVsAqMrdqhB81JXHE",
+   "simbolo": "jNFT",
+   "caja": "2258880115180928663",
+   "saldoReal": "2258880115180928663",
+   "igual": true
+  },
+  {
+   "vuelta": 3,
+   "jToken": "TPXDpkg9e3eZzxqxAUyke9S4z4pGJBJw9e",
+   "simbolo": "jSUN",
+   "caja": "283790353589180906139802025",
+   "saldoReal": "283790353589180906139802025",
+   "igual": true
+  },
+  {
+   "vuelta": 3,
+   "jToken": "TNSBA6KvSvMoTqQcEgpVK7VhHT3z7wifxy",
+   "simbolo": "jUSDC",
+   "caja": "188978309604",
+   "saldoReal": "188978309604",
+   "igual": true
+  },
+  {
+   "vuelta": 3,
+   "jToken": "TUaUHU9Dy8x5yNi1pKnFYqHWojot61Jfto",
+   "simbolo": "jBTT",
+   "caja": "3463681717215099600525796039488",
+   "saldoReal": "3463681717215099600525796039488",
+   "igual": true
+  },
+  {
+   "vuelta": 3,
+   "jToken": "TX7kybeP6UwTBRHLNPYmswFESHfyjm9bAS",
+   "simbolo": "jUSDD",
+   "caja": "363671722232088756022126",
+   "saldoReal": "363671722232088756022126",
+   "igual": true
+  },
+  {
+   "vuelta": 3,
+   "jToken": "TLHASseQymmpGQdfAyNjkMXFTJh8nzR2x2",
+   "simbolo": "jBUSD",
+   "caja": "218410095417381318880",
+   "saldoReal": "218410095417381318880",
+   "igual": true
+  },
+  {
+   "vuelta": 3,
+   "jToken": "TJQ9rbVe9ei3nNtyGgBL22Fuu2xYjZaLAQ",
+   "simbolo": "jSTRX",
+   "caja": "1783353234359120234249867667",
+   "saldoReal": "1783353234359120234249867667",
+   "igual": true
+  },
+  {
+   "vuelta": 3,
+   "jToken": "TWBxQMb6RD3qmkXUXpNwVCYbL8SHNreru6",
+   "simbolo": "jETH",
+   "caja": "96103666064889190470",
+   "saldoReal": "96103666064889190470",
+   "igual": true
+  },
+  {
+   "vuelta": 3,
+   "jToken": "TD5SdLw5scR6mXgyMK2xKrFJpauDjpKqrW",
+   "simbolo": "jWSTUSDT",
+   "caja": "399699786189845738680029",
+   "saldoReal": "399699786189845738680029",
+   "igual": true
+  },
+  {
+   "vuelta": 3,
+   "jToken": "TKFRELGGoRgiayhwJTNNLqCNjFoLBh3Mnf",
+   "simbolo": "jUSDD",
+   "caja": "405183722678080959359042885",
+   "saldoReal": "405183722678080959359042885",
+   "igual": true
+  },
+  {
+   "vuelta": 3,
+   "jToken": "TBEKggwqFkrc4KckQVR9BLucAmQugafEZf",
+   "simbolo": "jUSD1",
+   "caja": "371677123126593766265425",
+   "saldoReal": "371677123126593766265425",
+   "igual": true
+  },
+  {
+   "vuelta": 3,
+   "jToken": "TVyvpmaVmz25z2GaXBDDjzLZi5iR5dBzGd",
+   "simbolo": "jWBTC",
+   "caja": "8907378163",
+   "saldoReal": "8907378163",
+   "igual": true
+  },
+  {
+   "vuelta": 3,
+   "jToken": "TDA1mWPyAjTRATMGA55UTswGAHhV2itEXR",
+   "simbolo": "jHTX",
+   "caja": "565307982535910068834829674849",
+   "saldoReal": "565307982535910068834829674849",
+   "igual": true
+  },
+  {
+   "vuelta": 3,
+   "jToken": "TMz7vmyqoq4WKDiztrZpjAZPnzE9XgXaK4",
+   "simbolo": "jU",
+   "caja": "3381693315619929291335109",
+   "saldoReal": "3381693315619929291335109",
+   "igual": true
+  }
+ ]
+}

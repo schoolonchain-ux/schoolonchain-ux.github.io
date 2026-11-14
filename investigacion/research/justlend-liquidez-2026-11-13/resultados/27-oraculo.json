@@ -1,0 +1,29 @@
+{
+ "leido": "2026-11-13T19:20:11.872Z",
+ "oraculo": "TGnYnSn4G9PgWFj7QQemh4YMZKp3fkympJ",
+ "nombre": "PriceOracleProxy",
+ "funciones": [
+  "cDaiAddress()",
+  "cEthAddress()",
+  "cSaiAddress()",
+  "cUsdcAddress()",
+  "cUsdtAddress()",
+  "daiOracleKey()",
+  "getUnderlyingPrice(address)",
+  "guardian()",
+  "isPriceOracle()",
+  "saiPrice()",
+  "setSaiPrice(uint256) *escribe*",
+  "usdcOracleKey()",
+  "v1PriceOracle()"
+ ],
+ "lecturas": {
+  "admin()": null,
+  "owner()": null,
+  "priceFeed()": null,
+  "oracle()": null,
+  "trxPrice()": null,
+  "usdtPrice()": null,
+  "getPrice(address)": null
+ }
+}

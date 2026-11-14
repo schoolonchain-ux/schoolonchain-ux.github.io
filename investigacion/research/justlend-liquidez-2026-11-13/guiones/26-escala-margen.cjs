@@ -1,0 +1,7 @@
+'use strict';
+// Control: ¿en qué escala devuelve el Comptroller el margen (getAccountLiquidity)? Se compara con mi valoración (poder de préstamo − deuda) y se busca el factor que lo hace coincidir.
+const c9 = require('./resultados/09-cuentas.json').cuentas, TRXUSD = require('./resultados/03-timelock-y-precios.json').binance.TRXUSDT;
+const filas = c9.filter(c => c.liquidezComptrollerRaw !== null && (c.deudaUSD > 1e4 || c.poderDePrestamoUSD > 1e6)).map(c => { const liq = Number(c.liquidezComptrollerRaw), def = Number(c.deficitComptrollerRaw); const comp = liq - def; const mio = (c.poderDePrestamoUSD - c.deudaUSD) / TRXUSD; return { cuenta: c.cuenta, comp, mio, ratio: comp / mio }; }).filter(x => isFinite(x.ratio) && x.mio !== 0);
+const rs = filas.map(x => Math.log10(Math.abs(x.ratio))).sort((a, b) => a - b); const q = p => rs[Math.floor(rs.length * p)];
+console.log('cuentas', filas.length, '| log10(Comptroller/mi cálculo en TRX): p10', q(.1).toFixed(3), 'mediana', q(.5).toFixed(3), 'p90', q(.9).toFixed(3));
+const f = Math.pow(10, q(.5)); const dif = filas.map(x => Math.abs(x.comp / f / x.mio - 1)).sort((a, b) => a - b); console.log('con factor 10^' + Math.log10(f).toFixed(2) + ': diferencia relativa mediana', (dif[Math.floor(dif.length / 2)] * 100).toFixed(4) + '%', '| p90', (dif[Math.floor(dif.length * .9)] * 100).toFixed(4) + '%', '| máx', (dif[dif.length - 1] * 100).toFixed(4) + '%');

@@ -1,0 +1,1424 @@
+{
+ "leido": "2026-11-13T19:01:21.319Z",
+ "token": {
+  "nombre": "Bitcoin",
+  "creador": "TLncy1QaX1s2nrkLBvYPk1LUpo8UFuXoNB",
+  "creado": "2020-09-30 01:22:15",
+  "holders": 43678,
+  "oferta": 17545.3638369
+ },
+ "creaciones": [
+  {
+   "tx": "ce2f7882b4f95a515fc1859ec2d0abcff506ecf35492911ff91f83e725443009",
+   "cuando": "2022-08-21T09:46:39.000Z",
+   "de": "T9yD14Nj9j7xAB4dbGeiX9h8unkKHxuWwb",
+   "a": "TAyZrEhSYUWZ8c5HgFEjSndKvvTp3CzkYa",
+   "btc": 60000
+  },
+  {
+   "tx": "8d073d46bd3b102c51b1a936ff1273072360acd84aa1f94b26b47f203c697ae3",
+   "cuando": "2022-07-05T09:47:12.000Z",
+   "de": "T9yD14Nj9j7xAB4dbGeiX9h8unkKHxuWwb",
+   "a": "TKkrTxXwGszshcrYSashxbyrvGbPmshUoK",
+   "btc": 20000
+  },
+  {
+   "tx": "a9df6c308e17e66de0bd859bdcbcaf1e4e5428809b132b1c818be26a4062bc66",
+   "cuando": "2022-05-23T11:29:48.000Z",
+   "de": "T9yD14Nj9j7xAB4dbGeiX9h8unkKHxuWwb",
+   "a": "TKkrTxXwGszshcrYSashxbyrvGbPmshUoK",
+   "btc": 9000
+  },
+  {
+   "tx": "6df4fbe5ad066705a56a3fec83429fde3239b0948bf9718083e6b197a60ee5de",
+   "cuando": "2021-03-20T08:07:06.000Z",
+   "de": "T9yD14Nj9j7xAB4dbGeiX9h8unkKHxuWwb",
+   "a": "TKkrTxXwGszshcrYSashxbyrvGbPmshUoK",
+   "btc": 5000
+  },
+  {
+   "tx": "3f1d932fb2febd08f3c63da16afed8b4e7a271ffda6f5f3f8bb4e619442b9b08",
+   "cuando": "2021-03-06T04:38:09.000Z",
+   "de": "T9yD14Nj9j7xAB4dbGeiX9h8unkKHxuWwb",
+   "a": "TKkrTxXwGszshcrYSashxbyrvGbPmshUoK",
+   "btc": 5000
+  },
+  {
+   "tx": "fd87b87d40b32d499245617f16a7741497fc0bffa5619dd7871fa4f89885a13d",
+   "cuando": "2020-11-03T15:19:09.000Z",
+   "de": "T9yD14Nj9j7xAB4dbGeiX9h8unkKHxuWwb",
+   "a": "TKkrTxXwGszshcrYSashxbyrvGbPmshUoK",
+   "btc": 4000
+  },
+  {
+   "tx": "a87b5e0d178e6bad17e289162a4d91079684d2b0331f5f474f0eb689e229ba22",
+   "cuando": "2020-11-02T16:21:39.000Z",
+   "de": "T9yD14Nj9j7xAB4dbGeiX9h8unkKHxuWwb",
+   "a": "TKkrTxXwGszshcrYSashxbyrvGbPmshUoK",
+   "btc": 2000
+  },
+  {
+   "tx": "ba2c9121e72d7873ee08dc8a53ac055bacca6eebc9984d74b4e0165d6c34f26d",
+   "cuando": "2020-11-01T11:11:51.000Z",
+   "de": "T9yD14Nj9j7xAB4dbGeiX9h8unkKHxuWwb",
+   "a": "TKkrTxXwGszshcrYSashxbyrvGbPmshUoK",
+   "btc": 1000
+  },
+  {
+   "tx": "ace9c506528e42ea0c38562cbd184535a0c483d976a159c8a2ebfc9544dc8165",
+   "cuando": "2020-10-31T16:27:51.000Z",
+   "de": "T9yD14Nj9j7xAB4dbGeiX9h8unkKHxuWwb",
+   "a": "TKkrTxXwGszshcrYSashxbyrvGbPmshUoK",
+   "btc": 3000
+  },
+  {
+   "tx": "89fd64aa8d00fb8b9e01222d4f79447980caccacdb6c082c47ca0cb15c742326",
+   "cuando": "2020-10-31T10:45:09.000Z",
+   "de": "T9yD14Nj9j7xAB4dbGeiX9h8unkKHxuWwb",
+   "a": "TKkrTxXwGszshcrYSashxbyrvGbPmshUoK",
+   "btc": 1000
+  },
+  {
+   "tx": "b8030b2e53db0c2da134a449c36ce5740f5e72b5804822989a4ea9910a9f7753",
+   "cuando": "2020-10-14T12:40:21.000Z",
+   "de": "T9yD14Nj9j7xAB4dbGeiX9h8unkKHxuWwb",
+   "a": "TKkrTxXwGszshcrYSashxbyrvGbPmshUoK",
+   "btc": 1000
+  },
+  {
+   "tx": "e787bc363f0799bec104cceeed4149b347f3dd0f9894005eae4f9e131d18d4b7",
+   "cuando": "2020-10-10T09:47:42.000Z",
+   "de": "T9yD14Nj9j7xAB4dbGeiX9h8unkKHxuWwb",
+   "a": "TKkrTxXwGszshcrYSashxbyrvGbPmshUoK",
+   "btc": 1000
+  },
+  {
+   "tx": "a5fee731a2947b8989023ab73b2ea5b705a8265898b4f23e9c7a6f7d57d7c81e",
+   "cuando": "2020-10-05T10:44:18.000Z",
+   "de": "T9yD14Nj9j7xAB4dbGeiX9h8unkKHxuWwb",
+   "a": "TKkrTxXwGszshcrYSashxbyrvGbPmshUoK",
+   "btc": 1000
+  },
+  {
+   "tx": "1e20596714081394e57cf2bb6fc20612a4c79d12d93ca2dc2396359b9143b172",
+   "cuando": "2020-09-30T18:21:00.000Z",
+   "de": "T9yD14Nj9j7xAB4dbGeiX9h8unkKHxuWwb",
+   "a": "TKkrTxXwGszshcrYSashxbyrvGbPmshUoK",
+   "btc": 500
+  },
+  {
+   "tx": "b1d767946384442cc69bec37c9e874f74e7d0e38faf67be78a7edf887c758ffc",
+   "cuando": "2020-09-30T17:45:48.000Z",
+   "de": "T9yD14Nj9j7xAB4dbGeiX9h8unkKHxuWwb",
+   "a": "TKkrTxXwGszshcrYSashxbyrvGbPmshUoK",
+   "btc": 500
+  }
+ ],
+ "quemas": [
+  {
+   "tx": "35e16dbd1eb6e2eb79d2b7f3dcaf52e206d62239186383c5a888ddd958395ca6",
+   "cuando": "2024-10-27T16:42:00.000Z",
+   "de": "TAyZrEhSYUWZ8c5HgFEjSndKvvTp3CzkYa",
+   "a": "T9yD14Nj9j7xAB4dbGeiX9h8unkKHxuWwb",
+   "btc": 700.18103914
+  },
+  {
+   "tx": "0b7905e5f5f5ca1a31c702b5f9d2211d485e3e5b2f8713fefac5bf6d419424d9",
+   "cuando": "2024-10-27T16:39:39.000Z",
+   "de": "TAyZrEhSYUWZ8c5HgFEjSndKvvTp3CzkYa",
+   "a": "T9yD14Nj9j7xAB4dbGeiX9h8unkKHxuWwb",
+   "btc": 800
+  },
+  {
+   "tx": "262d1fa9b24563c8691f1bd36db4a72277bbeee5a6598e6d765add73dbc7de84",
+   "cuando": "2024-10-27T16:39:27.000Z",
+   "de": "TAyZrEhSYUWZ8c5HgFEjSndKvvTp3CzkYa",
+   "a": "T9yD14Nj9j7xAB4dbGeiX9h8unkKHxuWwb",
+   "btc": 800
+  },
+  {
+   "tx": "0c41886c07b939a473f71ea57dbb04324d9fc052b97cbb42a82b866d9393de3c",
+   "cuando": "2024-10-27T16:38:45.000Z",
+   "de": "TAyZrEhSYUWZ8c5HgFEjSndKvvTp3CzkYa",
+   "a": "T9yD14Nj9j7xAB4dbGeiX9h8unkKHxuWwb",
+   "btc": 900
+  },
+  {
+   "tx": "6b3ab722a834734e0396f294b3142dd68fa92382e9030bac1b126d0628c20277",
+   "cuando": "2024-10-27T16:38:33.000Z",
+   "de": "TAyZrEhSYUWZ8c5HgFEjSndKvvTp3CzkYa",
+   "a": "T9yD14Nj9j7xAB4dbGeiX9h8unkKHxuWwb",
+   "btc": 900
+  },
+  {
+   "tx": "acc7336289e602abe97e544e4fd2047090ac8e3f332edcfc8adabf3dd9d2fc0a",
+   "cuando": "2024-10-27T16:38:15.000Z",
+   "de": "TAyZrEhSYUWZ8c5HgFEjSndKvvTp3CzkYa",
+   "a": "T9yD14Nj9j7xAB4dbGeiX9h8unkKHxuWwb",
+   "btc": 900
+  },
+  {
+   "tx": "cd63e05d657e8f5a25df24ed050d7182e40b597eec51b550bea395d23f86201b",
+   "cuando": "2024-10-21T13:19:06.000Z",
+   "de": "TAyZrEhSYUWZ8c5HgFEjSndKvvTp3CzkYa",
+   "a": "T9yD14Nj9j7xAB4dbGeiX9h8unkKHxuWwb",
+   "btc": 299.99998
+  },
+  {
+   "tx": "bf7c2371a65b59855947f63f6da4838c9a76153cb8c15f4f6c174b087fcf68fd",
+   "cuando": "2024-10-18T14:50:15.000Z",
+   "de": "TAyZrEhSYUWZ8c5HgFEjSndKvvTp3CzkYa",
+   "a": "T9yD14Nj9j7xAB4dbGeiX9h8unkKHxuWwb",
+   "btc": 299.99996
+  },
+  {
+   "tx": "63f499cbd7b9372b06add4f138b62d9c3da1adf2208da2875d12168c1e76fc35",
+   "cuando": "2024-10-18T14:49:03.000Z",
+   "de": "TAyZrEhSYUWZ8c5HgFEjSndKvvTp3CzkYa",
+   "a": "T9yD14Nj9j7xAB4dbGeiX9h8unkKHxuWwb",
+   "btc": 900
+  },
+  {
+   "tx": "2b4473bd4e28f365304105c425fa4973892d90e416c3e85fcb042bdc9fcaa389",
+   "cuando": "2024-10-18T14:47:12.000Z",
+   "de": "TAyZrEhSYUWZ8c5HgFEjSndKvvTp3CzkYa",
+   "a": "T9yD14Nj9j7xAB4dbGeiX9h8unkKHxuWwb",
+   "btc": 900
+  },
+  {
+   "tx": "6f6e9750f61b4f16d8abf6f2eccff84cf850945f125e7c51425d0fd27cff9ef7",
+   "cuando": "2024-10-18T14:46:48.000Z",
+   "de": "TAyZrEhSYUWZ8c5HgFEjSndKvvTp3CzkYa",
+   "a": "T9yD14Nj9j7xAB4dbGeiX9h8unkKHxuWwb",
+   "btc": 900
+  },
+  {
+   "tx": "71012b1686afaa351e12411f913dc7920a7be351ab0a136bd0b135769dceaab9",
+   "cuando": "2024-10-17T16:03:33.000Z",
+   "de": "TAyZrEhSYUWZ8c5HgFEjSndKvvTp3CzkYa",
+   "a": "T9yD14Nj9j7xAB4dbGeiX9h8unkKHxuWwb",
+   "btc": 600.0228156
+  },
+  {
+   "tx": "d9a52952d3985498fb15f4d8452cd6c5265ef765fab9f6ad4d5dbbb8540a44e0",
+   "cuando": "2024-10-17T16:02:03.000Z",
+   "de": "TAyZrEhSYUWZ8c5HgFEjSndKvvTp3CzkYa",
+   "a": "T9yD14Nj9j7xAB4dbGeiX9h8unkKHxuWwb",
+   "btc": 900
+  },
+  {
+   "tx": "5d61a2d3d3467bad371fd4fb73cbf01a88ec0669357e4bfa38fff149d94745a0",
+   "cuando": "2024-10-17T16:01:33.000Z",
+   "de": "TAyZrEhSYUWZ8c5HgFEjSndKvvTp3CzkYa",
+   "a": "T9yD14Nj9j7xAB4dbGeiX9h8unkKHxuWwb",
+   "btc": 900
+  },
+  {
+   "tx": "45c44808d5a7d4fc61572fe500d2adf220035940a321c78a4a2f71712bab0424",
+   "cuando": "2024-10-17T16:01:18.000Z",
+   "de": "TAyZrEhSYUWZ8c5HgFEjSndKvvTp3CzkYa",
+   "a": "T9yD14Nj9j7xAB4dbGeiX9h8unkKHxuWwb",
+   "btc": 900
+  },
+  {
+   "tx": "1bf9679e3f930e7217407cf0facab3c593fa4f16b2a349a227f01729c32d220f",
+   "cuando": "2024-10-17T16:00:54.000Z",
+   "de": "TAyZrEhSYUWZ8c5HgFEjSndKvvTp3CzkYa",
+   "a": "T9yD14Nj9j7xAB4dbGeiX9h8unkKHxuWwb",
+   "btc": 900
+  },
+  {
+   "tx": "b9b81fb9efce5893d6c9144250da3aa88a3d5f18f01d006cf8a52e2e59adbb29",
+   "cuando": "2024-10-17T16:00:39.000Z",
+   "de": "TAyZrEhSYUWZ8c5HgFEjSndKvvTp3CzkYa",
+   "a": "T9yD14Nj9j7xAB4dbGeiX9h8unkKHxuWwb",
+   "btc": 900
+  },
+  {
+   "tx": "ca3dc10acd86a8bdd357341dd6b3a3b3665a524d0b795b517b3f473a73135fcd",
+   "cuando": "2024-10-17T16:00:18.000Z",
+   "de": "TAyZrEhSYUWZ8c5HgFEjSndKvvTp3CzkYa",
+   "a": "T9yD14Nj9j7xAB4dbGeiX9h8unkKHxuWwb",
+   "btc": 900
+  },
+  {
+   "tx": "79f2d78dd11c0c2a7fe071d868350c6327e974ea01079824f43d5e5a62828904",
+   "cuando": "2024-10-17T16:00:06.000Z",
+   "de": "TAyZrEhSYUWZ8c5HgFEjSndKvvTp3CzkYa",
+   "a": "T9yD14Nj9j7xAB4dbGeiX9h8unkKHxuWwb",
+   "btc": 900
+  },
+  {
+   "tx": "f06005c5379f4f7b0b2f6111ba3e1cbe90967376a49bd26153a5f2928b495abc",
+   "cuando": "2024-10-17T15:59:51.000Z",
+   "de": "TAyZrEhSYUWZ8c5HgFEjSndKvvTp3CzkYa",
+   "a": "T9yD14Nj9j7xAB4dbGeiX9h8unkKHxuWwb",
+   "btc": 900
+  },
+  {
+   "tx": "134e74a55bdb103efae62ad4b8c13ef1a8b33ee647c502b62c82419dfdb5f1f6",
+   "cuando": "2024-10-17T15:59:36.000Z",
+   "de": "TAyZrEhSYUWZ8c5HgFEjSndKvvTp3CzkYa",
+   "a": "T9yD14Nj9j7xAB4dbGeiX9h8unkKHxuWwb",
+   "btc": 900
+  },
+  {
+   "tx": "195b525789acebbb8accb9b06bbcab37bb5a3bff92ca351e7ae889105c8e21be",
+   "cuando": "2024-10-17T15:59:24.000Z",
+   "de": "TAyZrEhSYUWZ8c5HgFEjSndKvvTp3CzkYa",
+   "a": "T9yD14Nj9j7xAB4dbGeiX9h8unkKHxuWwb",
+   "btc": 900
+  },
+  {
+   "tx": "8d4f7a5215ad46cc39b611b7157072ea92909915f0df05953de4f4bccdcd6cf0",
+   "cuando": "2024-10-17T15:59:06.000Z",
+   "de": "TAyZrEhSYUWZ8c5HgFEjSndKvvTp3CzkYa",
+   "a": "T9yD14Nj9j7xAB4dbGeiX9h8unkKHxuWwb",
+   "btc": 900
+  },
+  {
+   "tx": "b9bc8476725d8a06b97f8ae6a24528282907934247662a9382f7c92edbcc475b",
+   "cuando": "2024-10-06T16:40:21.000Z",
+   "de": "TAyZrEhSYUWZ8c5HgFEjSndKvvTp3CzkYa",
+   "a": "T9yD14Nj9j7xAB4dbGeiX9h8unkKHxuWwb",
+   "btc": 500
+  },
+  {
+   "tx": "47a72c55850805db0088cc3c1710260f55f0f51015aa9fbce212c62a8b634bd2",
+   "cuando": "2024-10-06T16:39:57.000Z",
+   "de": "TAyZrEhSYUWZ8c5HgFEjSndKvvTp3CzkYa",
+   "a": "T9yD14Nj9j7xAB4dbGeiX9h8unkKHxuWwb",
+   "btc": 900
+  },
+  {
+   "tx": "f18fb5522eaadb2f4405be3309ea4dd8be2bca9f942de15414af8427ac4de985",
+   "cuando": "2024-10-06T16:39:30.000Z",
+   "de": "TAyZrEhSYUWZ8c5HgFEjSndKvvTp3CzkYa",
+   "a": "T9yD14Nj9j7xAB4dbGeiX9h8unkKHxuWwb",
+   "btc": 900
+  },
+  {
+   "tx": "a935a0ccc8432fdf606379dbd06f5f2e61564ef58a06ea25d8781c858963be06",
+   "cuando": "2024-10-06T16:38:42.000Z",
+   "de": "TAyZrEhSYUWZ8c5HgFEjSndKvvTp3CzkYa",
+   "a": "T9yD14Nj9j7xAB4dbGeiX9h8unkKHxuWwb",
+   "btc": 900
+  },
+  {
+   "tx": "24e2fbb041a0d4ff590b248f7b8909878bef62ea8667947049d3d6ce699094ca",
+   "cuando": "2024-10-06T16:38:21.000Z",
+   "de": "TAyZrEhSYUWZ8c5HgFEjSndKvvTp3CzkYa",
+   "a": "T9yD14Nj9j7xAB4dbGeiX9h8unkKHxuWwb",
+   "btc": 900
+  },
+  {
+   "tx": "03371e98a4c2ae4617fc0bbc4d5670726e368f1a4b16a331778235bd31055527",
+   "cuando": "2024-10-06T16:38:03.000Z",
+   "de": "TAyZrEhSYUWZ8c5HgFEjSndKvvTp3CzkYa",
+   "a": "T9yD14Nj9j7xAB4dbGeiX9h8unkKHxuWwb",
+   "btc": 900
+  },
+  {
+   "tx": "09682190acea58f40d36c6220ad72ce5ec2d581c65dbdd5865487744930511ec",
+   "cuando": "2024-10-06T16:27:00.000Z",
+   "de": "TAyZrEhSYUWZ8c5HgFEjSndKvvTp3CzkYa",
+   "a": "T9yD14Nj9j7xAB4dbGeiX9h8unkKHxuWwb",
+   "btc": 100
+  },
+  {
+   "tx": "aa323206023b0c6c1f65fba50857aea57b003dbcf57cd1af6a3d1cd4b59364a8",
+   "cuando": "2024-10-06T16:26:39.000Z",
+   "de": "TAyZrEhSYUWZ8c5HgFEjSndKvvTp3CzkYa",
+   "a": "T9yD14Nj9j7xAB4dbGeiX9h8unkKHxuWwb",
+   "btc": 900
+  },
+  {
+   "tx": "7fd5148cb96af65030ae4957471933f7e5ed9f44d7d0311811d97c688d25e8c5",
+   "cuando": "2024-10-06T16:26:12.000Z",
+   "de": "TAyZrEhSYUWZ8c5HgFEjSndKvvTp3CzkYa",
+   "a": "T9yD14Nj9j7xAB4dbGeiX9h8unkKHxuWwb",
+   "btc": 900
+  },
+  {
+   "tx": "36f4f9a822021571a4003e43c22f4cacacb9142ee0a2f799ee3cff084164ac03",
+   "cuando": "2024-10-06T16:25:57.000Z",
+   "de": "TAyZrEhSYUWZ8c5HgFEjSndKvvTp3CzkYa",
+   "a": "T9yD14Nj9j7xAB4dbGeiX9h8unkKHxuWwb",
+   "btc": 900
+  },
+  {
+   "tx": "8a090d2b90a11432acecde38e315e3e53772321a054730f640e46f42f9424c10",
+   "cuando": "2024-10-06T16:25:33.000Z",
+   "de": "TAyZrEhSYUWZ8c5HgFEjSndKvvTp3CzkYa",
+   "a": "T9yD14Nj9j7xAB4dbGeiX9h8unkKHxuWwb",
+   "btc": 900
+  },
+  {
+   "tx": "a36567b35aaa2bcd7eb49a98506e27d62527247a1ff99fe7f7498f0ee9a306ff",
+   "cuando": "2024-10-06T16:25:12.000Z",
+   "de": "TAyZrEhSYUWZ8c5HgFEjSndKvvTp3CzkYa",
+   "a": "T9yD14Nj9j7xAB4dbGeiX9h8unkKHxuWwb",
+   "btc": 900
+  },
+  {
+   "tx": "5c88c399816ecc3d117b10bdfe3c8a6972ca5274a9b8249b40989f5d2d359b04",
+   "cuando": "2024-10-06T16:24:48.000Z",
+   "de": "TAyZrEhSYUWZ8c5HgFEjSndKvvTp3CzkYa",
+   "a": "T9yD14Nj9j7xAB4dbGeiX9h8unkKHxuWwb",
+   "btc": 900
+  },
+  {
+   "tx": "b99a2c7863fc552c46353da44265946243270b5ce8ced296c936ce16ceac25c2",
+   "cuando": "2024-10-06T16:24:24.000Z",
+   "de": "TAyZrEhSYUWZ8c5HgFEjSndKvvTp3CzkYa",
+   "a": "T9yD14Nj9j7xAB4dbGeiX9h8unkKHxuWwb",
+   "btc": 900
+  },
+  {
+   "tx": "78ac98cb726b11d2ed704a650108bcb31dda8c15c49a5e3f4e1c3be9562ed7cd",
+   "cuando": "2024-10-06T16:24:06.000Z",
+   "de": "TAyZrEhSYUWZ8c5HgFEjSndKvvTp3CzkYa",
+   "a": "T9yD14Nj9j7xAB4dbGeiX9h8unkKHxuWwb",
+   "btc": 900
+  },
+  {
+   "tx": "2983497ffdf6586f90ef781e6c16d6e3dc176991cae34708e1d0f4c97e108839",
+   "cuando": "2024-10-06T16:23:51.000Z",
+   "de": "TAyZrEhSYUWZ8c5HgFEjSndKvvTp3CzkYa",
+   "a": "T9yD14Nj9j7xAB4dbGeiX9h8unkKHxuWwb",
+   "btc": 900
+  },
+  {
+   "tx": "d83c3a6066d025262605d9c7be5221c4479edf401d63cb528fce445ae261da25",
+   "cuando": "2024-10-06T16:23:18.000Z",
+   "de": "TAyZrEhSYUWZ8c5HgFEjSndKvvTp3CzkYa",
+   "a": "T9yD14Nj9j7xAB4dbGeiX9h8unkKHxuWwb",
+   "btc": 900
+  },
+  {
+   "tx": "266ee8e20d32f90b12321eaeadf9520448f8974cefa8da2d5db172f40dfdd613",
+   "cuando": "2024-10-06T16:23:00.000Z",
+   "de": "TAyZrEhSYUWZ8c5HgFEjSndKvvTp3CzkYa",
+   "a": "T9yD14Nj9j7xAB4dbGeiX9h8unkKHxuWwb",
+   "btc": 900
+  },
+  {
+   "tx": "d5735499a157c6b248b2bf76905cbf2742f4b17aa7dea3b47a7af9656a9c7d7c",
+   "cuando": "2024-10-03T13:13:03.000Z",
+   "de": "TAyZrEhSYUWZ8c5HgFEjSndKvvTp3CzkYa",
+   "a": "T9yD14Nj9j7xAB4dbGeiX9h8unkKHxuWwb",
+   "btc": 200
+  },
+  {
+   "tx": "144c0ed8f6bd1f67eadf132555ec08240d09410731eae0b8b7530f62c6b724f9",
+   "cuando": "2024-10-03T13:12:48.000Z",
+   "de": "TAyZrEhSYUWZ8c5HgFEjSndKvvTp3CzkYa",
+   "a": "T9yD14Nj9j7xAB4dbGeiX9h8unkKHxuWwb",
+   "btc": 900
+  },
+  {
+   "tx": "c39f5efedeb3c2123ab591d160605c23e6e6f237b60a1cd80ecac79220bb556f",
+   "cuando": "2024-10-03T13:12:33.000Z",
+   "de": "TAyZrEhSYUWZ8c5HgFEjSndKvvTp3CzkYa",
+   "a": "T9yD14Nj9j7xAB4dbGeiX9h8unkKHxuWwb",
+   "btc": 900
+  },
+  {
+   "tx": "8c08735c3c48d020d1cf928338770647e0e3b864f34665d9152856a9ede128a3",
+   "cuando": "2024-10-02T09:46:24.000Z",
+   "de": "TAyZrEhSYUWZ8c5HgFEjSndKvvTp3CzkYa",
+   "a": "T9yD14Nj9j7xAB4dbGeiX9h8unkKHxuWwb",
+   "btc": 100.14
+  },
+  {
+   "tx": "f70a9ae7c53560b48136437225d1437640cb3d483d5fcd39c8ef64a5566c79de",
+   "cuando": "2024-10-02T09:46:00.000Z",
+   "de": "TAyZrEhSYUWZ8c5HgFEjSndKvvTp3CzkYa",
+   "a": "T9yD14Nj9j7xAB4dbGeiX9h8unkKHxuWwb",
+   "btc": 900
+  },
+  {
+   "tx": "ec94de9d43081a6c0e8c066eb5cd9d2b5b000b6783961111c2ac9cfcfe563c73",
+   "cuando": "2024-10-02T09:45:27.000Z",
+   "de": "TAyZrEhSYUWZ8c5HgFEjSndKvvTp3CzkYa",
+   "a": "T9yD14Nj9j7xAB4dbGeiX9h8unkKHxuWwb",
+   "btc": 900
+  },
+  {
+   "tx": "5a0004dbb92110b5a5b39c280ece72657e247cefdfdde623578c79d37060eb33",
+   "cuando": "2024-10-02T09:45:12.000Z",
+   "de": "TAyZrEhSYUWZ8c5HgFEjSndKvvTp3CzkYa",
+   "a": "T9yD14Nj9j7xAB4dbGeiX9h8unkKHxuWwb",
+   "btc": 900
+  },
+  {
+   "tx": "df7850173289013b15da0ceda912cb83b9a608c36c3122eb0ef136e3aa204dcc",
+   "cuando": "2024-10-02T09:44:57.000Z",
+   "de": "TAyZrEhSYUWZ8c5HgFEjSndKvvTp3CzkYa",
+   "a": "T9yD14Nj9j7xAB4dbGeiX9h8unkKHxuWwb",
+   "btc": 900
+  },
+  {
+   "tx": "b2695b555dcb523734ad2b0f15b77c0ef95f51d72477c32b56d043f1d21d505b",
+   "cuando": "2024-10-02T09:44:36.000Z",
+   "de": "TAyZrEhSYUWZ8c5HgFEjSndKvvTp3CzkYa",
+   "a": "T9yD14Nj9j7xAB4dbGeiX9h8unkKHxuWwb",
+   "btc": 900
+  },
+  {
+   "tx": "1943dd6b29c4d800c0d2f3af082b0ba16f7704e204c05c660889f9407a18cf45",
+   "cuando": "2024-10-02T09:44:21.000Z",
+   "de": "TAyZrEhSYUWZ8c5HgFEjSndKvvTp3CzkYa",
+   "a": "T9yD14Nj9j7xAB4dbGeiX9h8unkKHxuWwb",
+   "btc": 900
+  },
+  {
+   "tx": "1704231ef57825a0191c1a325cf6e462894cc50db4e32a2376519e8e495d30e7",
+   "cuando": "2024-10-02T09:43:51.000Z",
+   "de": "TAyZrEhSYUWZ8c5HgFEjSndKvvTp3CzkYa",
+   "a": "T9yD14Nj9j7xAB4dbGeiX9h8unkKHxuWwb",
+   "btc": 900
+  },
+  {
+   "tx": "51d2761565ca99b1bcd9b21647e4c7bc43b171a05d0b4d8c22c41df022d68ec8",
+   "cuando": "2024-10-02T09:43:33.000Z",
+   "de": "TAyZrEhSYUWZ8c5HgFEjSndKvvTp3CzkYa",
+   "a": "T9yD14Nj9j7xAB4dbGeiX9h8unkKHxuWwb",
+   "btc": 900
+  },
+  {
+   "tx": "58ba291ba7e9b801a6d7b656869cbd1cc05bc409eaf3300be0690f568ee783ff",
+   "cuando": "2024-10-02T09:42:57.000Z",
+   "de": "TAyZrEhSYUWZ8c5HgFEjSndKvvTp3CzkYa",
+   "a": "T9yD14Nj9j7xAB4dbGeiX9h8unkKHxuWwb",
+   "btc": 900
+  },
+  {
+   "tx": "5b7b64e79d1a34075cf645fcf46beeb41c120bf17a7ca0317c74163baaedb4bd",
+   "cuando": "2024-10-02T09:42:45.000Z",
+   "de": "TAyZrEhSYUWZ8c5HgFEjSndKvvTp3CzkYa",
+   "a": "T9yD14Nj9j7xAB4dbGeiX9h8unkKHxuWwb",
+   "btc": 900
+  },
+  {
+   "tx": "542cf6129fa09ba932a00ef145e55b03da1b6528b0737b940b435726dc7d817d",
+   "cuando": "2024-10-02T09:08:45.000Z",
+   "de": "TAyZrEhSYUWZ8c5HgFEjSndKvvTp3CzkYa",
+   "a": "T9yD14Nj9j7xAB4dbGeiX9h8unkKHxuWwb",
+   "btc": 700
+  },
+  {
+   "tx": "d25c32daab84f99f13e6ed4451ae6800124040cc7577e246ef736a696d38b224",
+   "cuando": "2024-10-02T09:08:18.000Z",
+   "de": "TAyZrEhSYUWZ8c5HgFEjSndKvvTp3CzkYa",
+   "a": "T9yD14Nj9j7xAB4dbGeiX9h8unkKHxuWwb",
+   "btc": 600
+  },
+  {
+   "tx": "504575dfd1eb2c8d1e0f53ed1b6916c213ce642f3c9619db5ce00b28e09ea33a",
+   "cuando": "2024-09-28T09:42:03.000Z",
+   "de": "TAyZrEhSYUWZ8c5HgFEjSndKvvTp3CzkYa",
+   "a": "T9yD14Nj9j7xAB4dbGeiX9h8unkKHxuWwb",
+   "btc": 500
+  },
+  {
+   "tx": "db8bdd83f42819961c2cd3a920a190fda7f8373f9aa67e4ce4297e73feba1934",
+   "cuando": "2024-09-28T09:41:51.000Z",
+   "de": "TAyZrEhSYUWZ8c5HgFEjSndKvvTp3CzkYa",
+   "a": "T9yD14Nj9j7xAB4dbGeiX9h8unkKHxuWwb",
+   "btc": 900
+  },
+  {
+   "tx": "765aec47855ac8ab3b41964c5fdf5a5e71c05c0854348560685fbe4fbd1ddd89",
+   "cuando": "2024-09-28T09:41:33.000Z",
+   "de": "TAyZrEhSYUWZ8c5HgFEjSndKvvTp3CzkYa",
+   "a": "T9yD14Nj9j7xAB4dbGeiX9h8unkKHxuWwb",
+   "btc": 900
+  },
+  {
+   "tx": "29567bdca7fd9b18de0621c9371e3625415c751c23d6bcb3875fae03be4f52a9",
+   "cuando": "2024-09-28T09:41:15.000Z",
+   "de": "TAyZrEhSYUWZ8c5HgFEjSndKvvTp3CzkYa",
+   "a": "T9yD14Nj9j7xAB4dbGeiX9h8unkKHxuWwb",
+   "btc": 900
+  },
+  {
+   "tx": "776056b89592296a5b1ae5ead5c47ea9c3a8bb6250bcaf802d905907d68a12cf",
+   "cuando": "2024-09-28T09:40:57.000Z",
+   "de": "TAyZrEhSYUWZ8c5HgFEjSndKvvTp3CzkYa",
+   "a": "T9yD14Nj9j7xAB4dbGeiX9h8unkKHxuWwb",
+   "btc": 900
+  },
+  {
+   "tx": "8cf9ae839e7ddc53d2d637fc4ba0fee7326e82429d78c0076d3a9afa31e62c82",
+   "cuando": "2024-09-28T09:40:42.000Z",
+   "de": "TAyZrEhSYUWZ8c5HgFEjSndKvvTp3CzkYa",
+   "a": "T9yD14Nj9j7xAB4dbGeiX9h8unkKHxuWwb",
+   "btc": 900
+  },
+  {
+   "tx": "57c9e896182f2688ea8092b705e9276a65a71e3ee9c4984ff04ffb5e1ea6136e",
+   "cuando": "2024-09-28T06:15:09.000Z",
+   "de": "TAyZrEhSYUWZ8c5HgFEjSndKvvTp3CzkYa",
+   "a": "T9yD14Nj9j7xAB4dbGeiX9h8unkKHxuWwb",
+   "btc": 800
+  },
+  {
+   "tx": "5ae911f2a937640ccd149ec0137ecf58e127e05667e521fdb283643b29a24029",
+   "cuando": "2024-09-28T06:14:54.000Z",
+   "de": "TAyZrEhSYUWZ8c5HgFEjSndKvvTp3CzkYa",
+   "a": "T9yD14Nj9j7xAB4dbGeiX9h8unkKHxuWwb",
+   "btc": 800
+  },
+  {
+   "tx": "11b2d6eded4c65b7df56c20a8b6130922ee65a7c88b753909d79ed6edbb3d8b2",
+   "cuando": "2024-09-28T06:14:30.000Z",
+   "de": "TAyZrEhSYUWZ8c5HgFEjSndKvvTp3CzkYa",
+   "a": "T9yD14Nj9j7xAB4dbGeiX9h8unkKHxuWwb",
+   "btc": 800
+  },
+  {
+   "tx": "224f9026f0aadc3541f3dc3e7768aea20c693024f36393b51168d1883b89838c",
+   "cuando": "2024-09-28T06:14:12.000Z",
+   "de": "TAyZrEhSYUWZ8c5HgFEjSndKvvTp3CzkYa",
+   "a": "T9yD14Nj9j7xAB4dbGeiX9h8unkKHxuWwb",
+   "btc": 800
+  },
+  {
+   "tx": "9e7fb8667d726c869870f6d17d742ea27aff0303f304bbaf0042ab3ac0c4c12a",
+   "cuando": "2024-09-28T06:13:45.000Z",
+   "de": "TAyZrEhSYUWZ8c5HgFEjSndKvvTp3CzkYa",
+   "a": "T9yD14Nj9j7xAB4dbGeiX9h8unkKHxuWwb",
+   "btc": 800
+  },
+  {
+   "tx": "8f659720aef779ccd735798cac06e7c54e561c6b781ea5389ad5f117405924a5",
+   "cuando": "2024-09-28T06:02:24.000Z",
+   "de": "TAyZrEhSYUWZ8c5HgFEjSndKvvTp3CzkYa",
+   "a": "T9yD14Nj9j7xAB4dbGeiX9h8unkKHxuWwb",
+   "btc": 500
+  },
+  {
+   "tx": "9e6a6f4ec5e42978a50059cfd63c22c89fe016553839cb7f2a6c933e24812806",
+   "cuando": "2024-09-28T06:02:00.000Z",
+   "de": "TAyZrEhSYUWZ8c5HgFEjSndKvvTp3CzkYa",
+   "a": "T9yD14Nj9j7xAB4dbGeiX9h8unkKHxuWwb",
+   "btc": 900
+  },
+  {
+   "tx": "22501024ba96f30b686f6f6fba6257ac9eafb8ad7847216d100d839933dbf981",
+   "cuando": "2024-09-28T06:01:15.000Z",
+   "de": "TAyZrEhSYUWZ8c5HgFEjSndKvvTp3CzkYa",
+   "a": "T9yD14Nj9j7xAB4dbGeiX9h8unkKHxuWwb",
+   "btc": 900
+  },
+  {
+   "tx": "2532168dfb725acd484ca09bbe741c923ab5aaccafdd01e087d1943fd011a5f0",
+   "cuando": "2024-09-28T06:00:57.000Z",
+   "de": "TAyZrEhSYUWZ8c5HgFEjSndKvvTp3CzkYa",
+   "a": "T9yD14Nj9j7xAB4dbGeiX9h8unkKHxuWwb",
+   "btc": 900
+  },
+  {
+   "tx": "24e96ca31604bd7096adc89763aa6b0ebc10fbbf0a8e1ac9408160e190517b07",
+   "cuando": "2024-09-28T06:00:42.000Z",
+   "de": "TAyZrEhSYUWZ8c5HgFEjSndKvvTp3CzkYa",
+   "a": "T9yD14Nj9j7xAB4dbGeiX9h8unkKHxuWwb",
+   "btc": 900
+  },
+  {
+   "tx": "67006c26595dec667a29f04216e785e672b8dcadb30b31ccdc567fee19fb7a9f",
+   "cuando": "2024-09-28T06:00:27.000Z",
+   "de": "TAyZrEhSYUWZ8c5HgFEjSndKvvTp3CzkYa",
+   "a": "T9yD14Nj9j7xAB4dbGeiX9h8unkKHxuWwb",
+   "btc": 900
+  },
+  {
+   "tx": "4d52d3c46fc2212575587f8e1ff97de4a7042640a0f41d7815d1a4338b8c8468",
+   "cuando": "2024-09-23T17:12:12.000Z",
+   "de": "TAyZrEhSYUWZ8c5HgFEjSndKvvTp3CzkYa",
+   "a": "T9yD14Nj9j7xAB4dbGeiX9h8unkKHxuWwb",
+   "btc": 500
+  },
+  {
+   "tx": "19c4ceb709d5bccc332f9f5ea0d759e58ca14b221afe428f8bc2f1e5389b6907",
+   "cuando": "2024-09-23T17:11:42.000Z",
+   "de": "TAyZrEhSYUWZ8c5HgFEjSndKvvTp3CzkYa",
+   "a": "T9yD14Nj9j7xAB4dbGeiX9h8unkKHxuWwb",
+   "btc": 900
+  },
+  {
+   "tx": "fcd41c11c71461ad91aab1adb5eef642953ad3f1f9fd2dfb9f6d2e1787156900",
+   "cuando": "2024-09-23T17:11:00.000Z",
+   "de": "TAyZrEhSYUWZ8c5HgFEjSndKvvTp3CzkYa",
+   "a": "T9yD14Nj9j7xAB4dbGeiX9h8unkKHxuWwb",
+   "btc": 900
+  },
+  {
+   "tx": "20a3187f05e63908355430fb7455319844afd1e09e25ebbe9925cce7b99d3e35",
+   "cuando": "2024-09-23T17:10:39.000Z",
+   "de": "TAyZrEhSYUWZ8c5HgFEjSndKvvTp3CzkYa",
+   "a": "T9yD14Nj9j7xAB4dbGeiX9h8unkKHxuWwb",
+   "btc": 900
+  },
+  {
+   "tx": "7878c0d7656e5f7d364a59994b51b28ba7e2d0b2acb3150b590a91abe0056844",
+   "cuando": "2024-09-23T17:08:21.000Z",
+   "de": "TAyZrEhSYUWZ8c5HgFEjSndKvvTp3CzkYa",
+   "a": "T9yD14Nj9j7xAB4dbGeiX9h8unkKHxuWwb",
+   "btc": 900
+  },
+  {
+   "tx": "29274d0cd894b307e88f2db3cb87079273a62914ff852e72890a66e2dd064328",
+   "cuando": "2024-09-23T17:08:00.000Z",
+   "de": "TAyZrEhSYUWZ8c5HgFEjSndKvvTp3CzkYa",
+   "a": "T9yD14Nj9j7xAB4dbGeiX9h8unkKHxuWwb",
+   "btc": 900
+  },
+  {
+   "tx": "bd05e8e8c23532cd9c7e8e7e442c170221d9d8490218fd5bce5e2243249bfd9b",
+   "cuando": "2024-09-23T08:48:15.000Z",
+   "de": "TAyZrEhSYUWZ8c5HgFEjSndKvvTp3CzkYa",
+   "a": "T9yD14Nj9j7xAB4dbGeiX9h8unkKHxuWwb",
+   "btc": 500
+  },
+  {
+   "tx": "6e91de12039efde570db719d27bc3d9ea869695cb0381fa5899c4aa84d109347",
+   "cuando": "2024-09-23T08:47:54.000Z",
+   "de": "TAyZrEhSYUWZ8c5HgFEjSndKvvTp3CzkYa",
+   "a": "T9yD14Nj9j7xAB4dbGeiX9h8unkKHxuWwb",
+   "btc": 900
+  },
+  {
+   "tx": "4e0f27bdbe9d9d50ddf1c91138ee90357f283697c346b53352f319500b675c39",
+   "cuando": "2024-09-23T08:47:27.000Z",
+   "de": "TAyZrEhSYUWZ8c5HgFEjSndKvvTp3CzkYa",
+   "a": "T9yD14Nj9j7xAB4dbGeiX9h8unkKHxuWwb",
+   "btc": 900
+  },
+  {
+   "tx": "5d55fff1cea6580280705b1d82cc2a3c0cb7adcb5f773c7260d65257d4d314db",
+   "cuando": "2024-09-23T08:47:12.000Z",
+   "de": "TAyZrEhSYUWZ8c5HgFEjSndKvvTp3CzkYa",
+   "a": "T9yD14Nj9j7xAB4dbGeiX9h8unkKHxuWwb",
+   "btc": 900
+  },
+  {
+   "tx": "ae5e35c7f54a4ecabd31d37e66a484554003fda2c5d9aee1a213dcc3d69c9638",
+   "cuando": "2024-09-23T08:46:57.000Z",
+   "de": "TAyZrEhSYUWZ8c5HgFEjSndKvvTp3CzkYa",
+   "a": "T9yD14Nj9j7xAB4dbGeiX9h8unkKHxuWwb",
+   "btc": 900
+  },
+  {
+   "tx": "1fc904b7c9579cc86cccf5442dbb92983ca34c8478b95d5abd82dd847ef25043",
+   "cuando": "2024-09-23T08:46:42.000Z",
+   "de": "TAyZrEhSYUWZ8c5HgFEjSndKvvTp3CzkYa",
+   "a": "T9yD14Nj9j7xAB4dbGeiX9h8unkKHxuWwb",
+   "btc": 900
+  },
+  {
+   "tx": "ffd65c00008de027d706c33c3a16ba8387333d830fbd54fa34702eef78af9aaf",
+   "cuando": "2024-09-20T16:13:15.000Z",
+   "de": "TAyZrEhSYUWZ8c5HgFEjSndKvvTp3CzkYa",
+   "a": "T9yD14Nj9j7xAB4dbGeiX9h8unkKHxuWwb",
+   "btc": 500
+  },
+  {
+   "tx": "7fe59bd928e16858c2962d8b6a1d34957953ee55b5caebc3011fcbc8b9564496",
+   "cuando": "2024-09-20T16:08:57.000Z",
+   "de": "TAyZrEhSYUWZ8c5HgFEjSndKvvTp3CzkYa",
+   "a": "T9yD14Nj9j7xAB4dbGeiX9h8unkKHxuWwb",
+   "btc": 900
+  },
+  {
+   "tx": "c82edd834835d05cb52590e4a7bdb1ee9344f4a8f26e7087a49890c8bbbb01c2",
+   "cuando": "2024-09-20T16:08:45.000Z",
+   "de": "TAyZrEhSYUWZ8c5HgFEjSndKvvTp3CzkYa",
+   "a": "T9yD14Nj9j7xAB4dbGeiX9h8unkKHxuWwb",
+   "btc": 900
+  },
+  {
+   "tx": "1d62f5c023b1a0b66981bec6d800b2b4e51c94b9351e8d5273a128c58591b597",
+   "cuando": "2024-09-20T16:08:30.000Z",
+   "de": "TAyZrEhSYUWZ8c5HgFEjSndKvvTp3CzkYa",
+   "a": "T9yD14Nj9j7xAB4dbGeiX9h8unkKHxuWwb",
+   "btc": 900
+  },
+  {
+   "tx": "5f59c42380ea6a32315f82a034c2a121847639c22a6accc4fb31f4fe466ba872",
+   "cuando": "2024-09-20T16:08:18.000Z",
+   "de": "TAyZrEhSYUWZ8c5HgFEjSndKvvTp3CzkYa",
+   "a": "T9yD14Nj9j7xAB4dbGeiX9h8unkKHxuWwb",
+   "btc": 900
+  },
+  {
+   "tx": "ca01301e7b47f0a163834328386dd79b895c4c136b60574c6d46c973dd83018b",
+   "cuando": "2024-09-20T16:07:57.000Z",
+   "de": "TAyZrEhSYUWZ8c5HgFEjSndKvvTp3CzkYa",
+   "a": "T9yD14Nj9j7xAB4dbGeiX9h8unkKHxuWwb",
+   "btc": 900
+  },
+  {
+   "tx": "6ec56a6532b8eaec72bd8acfa56ac44f00360d5f15ed53559c8537e51849ad1b",
+   "cuando": "2024-09-20T10:17:21.000Z",
+   "de": "TAyZrEhSYUWZ8c5HgFEjSndKvvTp3CzkYa",
+   "a": "T9yD14Nj9j7xAB4dbGeiX9h8unkKHxuWwb",
+   "btc": 700
+  },
+  {
+   "tx": "c879c089d4ea75a8854c600109098f5fd9d9c5eaa9179803c84612992e461a6a",
+   "cuando": "2024-09-20T10:17:09.000Z",
+   "de": "TAyZrEhSYUWZ8c5HgFEjSndKvvTp3CzkYa",
+   "a": "T9yD14Nj9j7xAB4dbGeiX9h8unkKHxuWwb",
+   "btc": 700
+  },
+  {
+   "tx": "a14db785eeeba900886e9e251ab5697d2335a3445ad53e7ecdd2a107a87d17f6",
+   "cuando": "2024-09-20T10:16:45.000Z",
+   "de": "TAyZrEhSYUWZ8c5HgFEjSndKvvTp3CzkYa",
+   "a": "T9yD14Nj9j7xAB4dbGeiX9h8unkKHxuWwb",
+   "btc": 900
+  },
+  {
+   "tx": "ed88fb0d4b04c77ba726adcd9cdf3a702bca1c3f2bfc92c8ee1bceb3c30e299f",
+   "cuando": "2024-09-20T10:16:30.000Z",
+   "de": "TAyZrEhSYUWZ8c5HgFEjSndKvvTp3CzkYa",
+   "a": "T9yD14Nj9j7xAB4dbGeiX9h8unkKHxuWwb",
+   "btc": 900
+  },
+  {
+   "tx": "d3014a767def9f14d3decbf63188e6bccfea2d61d105c3de225095fdf5062796",
+   "cuando": "2024-09-20T10:16:15.000Z",
+   "de": "TAyZrEhSYUWZ8c5HgFEjSndKvvTp3CzkYa",
+   "a": "T9yD14Nj9j7xAB4dbGeiX9h8unkKHxuWwb",
+   "btc": 900
+  },
+  {
+   "tx": "998fe4291cc931e42de5dac4fa3308db1c323a68ccd2233837d99f63d92077d2",
+   "cuando": "2024-09-20T10:15:51.000Z",
+   "de": "TAyZrEhSYUWZ8c5HgFEjSndKvvTp3CzkYa",
+   "a": "T9yD14Nj9j7xAB4dbGeiX9h8unkKHxuWwb",
+   "btc": 900
+  },
+  {
+   "tx": "f5c77b1846d94ebc65f61bc0bcf05787c0ce56a3b9d1b911c4492bcdd00964b8",
+   "cuando": "2024-09-19T16:52:33.000Z",
+   "de": "TAyZrEhSYUWZ8c5HgFEjSndKvvTp3CzkYa",
+   "a": "T9yD14Nj9j7xAB4dbGeiX9h8unkKHxuWwb",
+   "btc": 500
+  },
+  {
+   "tx": "03f9e5220990137448621048e63b4297db6ebccb4b150daca1c559ec94a7e10d",
+   "cuando": "2024-09-19T16:52:09.000Z",
+   "de": "TAyZrEhSYUWZ8c5HgFEjSndKvvTp3CzkYa",
+   "a": "T9yD14Nj9j7xAB4dbGeiX9h8unkKHxuWwb",
+   "btc": 900
+  },
+  {
+   "tx": "e9d73727c7f62fea0f78fcc88d54c5185f636c60e1e854aeb53608763af9269b",
+   "cuando": "2024-09-19T16:51:27.000Z",
+   "de": "TAyZrEhSYUWZ8c5HgFEjSndKvvTp3CzkYa",
+   "a": "T9yD14Nj9j7xAB4dbGeiX9h8unkKHxuWwb",
+   "btc": 900
+  },
+  {
+   "tx": "b017775d2e42cc3f97defd4b6b4ea3103156eed68262d58fb9223288cf53917f",
+   "cuando": "2024-09-19T16:51:12.000Z",
+   "de": "TAyZrEhSYUWZ8c5HgFEjSndKvvTp3CzkYa",
+   "a": "T9yD14Nj9j7xAB4dbGeiX9h8unkKHxuWwb",
+   "btc": 900
+  },
+  {
+   "tx": "ecbeccbed7dc4fa9bc4493e48798a9d76a61c1a7f59984e833b963fe66b525db",
+   "cuando": "2024-09-19T16:50:57.000Z",
+   "de": "TAyZrEhSYUWZ8c5HgFEjSndKvvTp3CzkYa",
+   "a": "T9yD14Nj9j7xAB4dbGeiX9h8unkKHxuWwb",
+   "btc": 900
+  },
+  {
+   "tx": "8a886778de6e25a0f865485cf14e9ec000ec3b602cfdb15280ed2e62b19e8ec5",
+   "cuando": "2024-09-19T16:50:21.000Z",
+   "de": "TAyZrEhSYUWZ8c5HgFEjSndKvvTp3CzkYa",
+   "a": "T9yD14Nj9j7xAB4dbGeiX9h8unkKHxuWwb",
+   "btc": 900
+  },
+  {
+   "tx": "c6681c3d8f9b7c8afc25810b23ff9eb4aa4f95892db603391a161675a2f3e863",
+   "cuando": "2024-09-19T11:05:09.000Z",
+   "de": "TAyZrEhSYUWZ8c5HgFEjSndKvvTp3CzkYa",
+   "a": "T9yD14Nj9j7xAB4dbGeiX9h8unkKHxuWwb",
+   "btc": 500
+  },
+  {
+   "tx": "0b4aeec1e104f5325ab8c635206cd8912735f0b732f2754dc9021ae726ea8c03",
+   "cuando": "2024-09-19T11:04:51.000Z",
+   "de": "TAyZrEhSYUWZ8c5HgFEjSndKvvTp3CzkYa",
+   "a": "T9yD14Nj9j7xAB4dbGeiX9h8unkKHxuWwb",
+   "btc": 900
+  },
+  {
+   "tx": "01068e5803cb63da10f25d7b3c1430ae5e03a453b049acc41efeef61238aa063",
+   "cuando": "2024-09-19T11:04:30.000Z",
+   "de": "TAyZrEhSYUWZ8c5HgFEjSndKvvTp3CzkYa",
+   "a": "T9yD14Nj9j7xAB4dbGeiX9h8unkKHxuWwb",
+   "btc": 900
+  },
+  {
+   "tx": "fa760a5f350046426110ccff20deb27fb7c2cffa2e06627ddf90e44ee9226347",
+   "cuando": "2024-09-19T11:04:15.000Z",
+   "de": "TAyZrEhSYUWZ8c5HgFEjSndKvvTp3CzkYa",
+   "a": "T9yD14Nj9j7xAB4dbGeiX9h8unkKHxuWwb",
+   "btc": 900
+  },
+  {
+   "tx": "ae912e181a4e4514ef5c1c7a9dffe2c471f0fa069cc80c20edb499b8e0714b46",
+   "cuando": "2024-09-19T11:04:00.000Z",
+   "de": "TAyZrEhSYUWZ8c5HgFEjSndKvvTp3CzkYa",
+   "a": "T9yD14Nj9j7xAB4dbGeiX9h8unkKHxuWwb",
+   "btc": 900
+  },
+  {
+   "tx": "d5d640de0f6678b6f6857ad70a0f7d6e31408fc2a1a25804a031f3d91b692a0e",
+   "cuando": "2024-09-19T11:03:39.000Z",
+   "de": "TAyZrEhSYUWZ8c5HgFEjSndKvvTp3CzkYa",
+   "a": "T9yD14Nj9j7xAB4dbGeiX9h8unkKHxuWwb",
+   "btc": 900
+  },
+  {
+   "tx": "30b27293471a71feb632b2d3c6b6979440db4b01d366659cba768375b276ec38",
+   "cuando": "2024-09-19T07:59:39.000Z",
+   "de": "TAyZrEhSYUWZ8c5HgFEjSndKvvTp3CzkYa",
+   "a": "T9yD14Nj9j7xAB4dbGeiX9h8unkKHxuWwb",
+   "btc": 300
+  },
+  {
+   "tx": "62169c670f70831323469481f70c480e4e5bf500bb4e6dd467814ac3487fc431",
+   "cuando": "2024-09-19T07:57:51.000Z",
+   "de": "TAyZrEhSYUWZ8c5HgFEjSndKvvTp3CzkYa",
+   "a": "T9yD14Nj9j7xAB4dbGeiX9h8unkKHxuWwb",
+   "btc": 900
+  },
+  {
+   "tx": "7b86ca43b78a4159be3ffc132780d7c42bf7c9cf607fc40af46169a0f13b294f",
+   "cuando": "2024-09-19T07:57:33.000Z",
+   "de": "TAyZrEhSYUWZ8c5HgFEjSndKvvTp3CzkYa",
+   "a": "T9yD14Nj9j7xAB4dbGeiX9h8unkKHxuWwb",
+   "btc": 900
+  },
+  {
+   "tx": "9855edd4ad58ae24f36743ece9000ffa441fd805b16adc4104dba384f7caf81e",
+   "cuando": "2024-09-19T07:57:09.000Z",
+   "de": "TAyZrEhSYUWZ8c5HgFEjSndKvvTp3CzkYa",
+   "a": "T9yD14Nj9j7xAB4dbGeiX9h8unkKHxuWwb",
+   "btc": 900
+  },
+  {
+   "tx": "f464df1d8634f0daff4453ae5b154d68653418ba59fa7125ece38f29ac8b97f6",
+   "cuando": "2024-09-19T07:50:30.000Z",
+   "de": "TAyZrEhSYUWZ8c5HgFEjSndKvvTp3CzkYa",
+   "a": "T9yD14Nj9j7xAB4dbGeiX9h8unkKHxuWwb",
+   "btc": 1000
+  },
+  {
+   "tx": "567a9e8ad3881a04d40c59c25a204d10b7e2045a6ab958079d9753fb1c0e19f7",
+   "cuando": "2024-09-19T07:49:30.000Z",
+   "de": "TAyZrEhSYUWZ8c5HgFEjSndKvvTp3CzkYa",
+   "a": "T9yD14Nj9j7xAB4dbGeiX9h8unkKHxuWwb",
+   "btc": 1000
+  },
+  {
+   "tx": "b8d6165cb04c683dcdfea7b312ef9a367f6269929f0d6928787a93137c085da5",
+   "cuando": "2023-10-18T07:52:48.000Z",
+   "de": "TAyZrEhSYUWZ8c5HgFEjSndKvvTp3CzkYa",
+   "a": "T9yD14Nj9j7xAB4dbGeiX9h8unkKHxuWwb",
+   "btc": 890
+  }
+ ],
+ "totalCeroSegunTronScan": 10000,
+ "cuentaGrande": [
+  {
+   "tx": "c0632879ab0dd3460fb6677e9d854991c8709fc5c0242afc6b97f4ffd0752b3a",
+   "cuando": "2024-10-06T16:34:12.000Z",
+   "de": "TUjx6w55Nx9G4GjjRNEB4e7w5BUH3WmJTZ",
+   "a": "TAyZrEhSYUWZ8c5HgFEjSndKvvTp3CzkYa",
+   "btc": 2000
+  },
+  {
+   "tx": "84a5044a9435c736a9d19c0aeffd58a3eaa3b53c7ed76d04270aec04ab7488f9",
+   "cuando": "2024-10-06T16:33:42.000Z",
+   "de": "TUjx6w55Nx9G4GjjRNEB4e7w5BUH3WmJTZ",
+   "a": "TAyZrEhSYUWZ8c5HgFEjSndKvvTp3CzkYa",
+   "btc": 1500
+  },
+  {
+   "tx": "77d3c583b82f42d75365732c4aea0fae39d9a70f4c410af8f865a5c4380677c7",
+   "cuando": "2024-10-06T16:33:18.000Z",
+   "de": "TUjx6w55Nx9G4GjjRNEB4e7w5BUH3WmJTZ",
+   "a": "TAyZrEhSYUWZ8c5HgFEjSndKvvTp3CzkYa",
+   "btc": 1500
+  },
+  {
+   "tx": "4ea611d87c259118f4dbd2bb88174028d224703c585a531f2c8d54fbfbaec958",
+   "cuando": "2024-10-06T16:30:39.000Z",
+   "de": "TLeEu311Cbw63BcmMHDgDLu7fnk9fqGcqT",
+   "a": "TUjx6w55Nx9G4GjjRNEB4e7w5BUH3WmJTZ",
+   "btc": 1500
+  },
+  {
+   "tx": "5ebde415bef5e70693d22e2c663f5a30d5982b613599bfcbe620660d5febbf3b",
+   "cuando": "2024-10-06T16:30:12.000Z",
+   "de": "TLeEu311Cbw63BcmMHDgDLu7fnk9fqGcqT",
+   "a": "TUjx6w55Nx9G4GjjRNEB4e7w5BUH3WmJTZ",
+   "btc": 1500
+  },
+  {
+   "tx": "17da6c5e405487daca6ecaa830152329cc558b30da46c65a20c590f6cb8b34d8",
+   "cuando": "2024-10-06T16:29:39.000Z",
+   "de": "TLeEu311Cbw63BcmMHDgDLu7fnk9fqGcqT",
+   "a": "TUjx6w55Nx9G4GjjRNEB4e7w5BUH3WmJTZ",
+   "btc": 2000
+  },
+  {
+   "tx": "e12385543290d3ac4e59ee4bd83e9d6236347e4b79bbdeb8e455ad2ca9dd2306",
+   "cuando": "2024-10-02T09:41:18.000Z",
+   "de": "TUjx6w55Nx9G4GjjRNEB4e7w5BUH3WmJTZ",
+   "a": "TAyZrEhSYUWZ8c5HgFEjSndKvvTp3CzkYa",
+   "btc": 650.14
+  },
+  {
+   "tx": "17466c5b781b508d13746e2db02088a4cc4946c33f6385659d6ffe59e531f855",
+   "cuando": "2024-10-02T09:40:30.000Z",
+   "de": "TUjx6w55Nx9G4GjjRNEB4e7w5BUH3WmJTZ",
+   "a": "TAyZrEhSYUWZ8c5HgFEjSndKvvTp3CzkYa",
+   "btc": 600
+  },
+  {
+   "tx": "8d0914579c31b0324a46d38aeb127141b5da735d49f85e723652c791479e75db",
+   "cuando": "2024-10-02T09:39:30.000Z",
+   "de": "TUjx6w55Nx9G4GjjRNEB4e7w5BUH3WmJTZ",
+   "a": "TAyZrEhSYUWZ8c5HgFEjSndKvvTp3CzkYa",
+   "btc": 850
+  },
+  {
+   "tx": "76d897dab26ff12c88a7d23a178d96bfd59735e893737bbe680f61211da13821",
+   "cuando": "2024-10-02T09:39:03.000Z",
+   "de": "TUjx6w55Nx9G4GjjRNEB4e7w5BUH3WmJTZ",
+   "a": "TAyZrEhSYUWZ8c5HgFEjSndKvvTp3CzkYa",
+   "btc": 900
+  },
+  {
+   "tx": "7de12bbbc7873895c6d76b3a475c1d99e2de654f0910c5d663d64dbe71e02727",
+   "cuando": "2024-10-02T09:37:39.000Z",
+   "de": "TUjx6w55Nx9G4GjjRNEB4e7w5BUH3WmJTZ",
+   "a": "TAyZrEhSYUWZ8c5HgFEjSndKvvTp3CzkYa",
+   "btc": 900
+  },
+  {
+   "tx": "2f049c8dd3193f06e0a0c0404fbdb2b3f6e91f8f7de0156c4685bc33497f6973",
+   "cuando": "2024-10-02T09:37:09.000Z",
+   "de": "TUjx6w55Nx9G4GjjRNEB4e7w5BUH3WmJTZ",
+   "a": "TAyZrEhSYUWZ8c5HgFEjSndKvvTp3CzkYa",
+   "btc": 900
+  },
+  {
+   "tx": "2214e71222ca9db39f105bc9e0e1c2bbc37d90d0ccb2f9cc1ddf9fe5f91ab54f",
+   "cuando": "2024-10-02T09:35:48.000Z",
+   "de": "TUjx6w55Nx9G4GjjRNEB4e7w5BUH3WmJTZ",
+   "a": "TAyZrEhSYUWZ8c5HgFEjSndKvvTp3CzkYa",
+   "btc": 750
+  },
+  {
+   "tx": "2b6dabfcb0413707334eadda2a438d54633a5f460fd2dc5dff2783b2d0e5ddfb",
+   "cuando": "2024-10-02T09:35:18.000Z",
+   "de": "TUjx6w55Nx9G4GjjRNEB4e7w5BUH3WmJTZ",
+   "a": "TAyZrEhSYUWZ8c5HgFEjSndKvvTp3CzkYa",
+   "btc": 900
+  },
+  {
+   "tx": "7403a3fe71a2bc51c53b3bc9893bcfcec3982c2b02691a8445b583b5544cdab8",
+   "cuando": "2024-10-02T09:34:51.000Z",
+   "de": "TUjx6w55Nx9G4GjjRNEB4e7w5BUH3WmJTZ",
+   "a": "TAyZrEhSYUWZ8c5HgFEjSndKvvTp3CzkYa",
+   "btc": 900
+  },
+  {
+   "tx": "897e7b85a2769d56ca1c94c11760e25e07cc97574427a36a7d96a3a18bec0860",
+   "cuando": "2024-10-02T09:34:21.000Z",
+   "de": "TUjx6w55Nx9G4GjjRNEB4e7w5BUH3WmJTZ",
+   "a": "TAyZrEhSYUWZ8c5HgFEjSndKvvTp3CzkYa",
+   "btc": 800
+  },
+  {
+   "tx": "5848bdbe5c10eb5260d8783bfcf34a2430cf9f2030e0e427a0c6f0d42919b733",
+   "cuando": "2024-10-02T09:33:51.000Z",
+   "de": "TUjx6w55Nx9G4GjjRNEB4e7w5BUH3WmJTZ",
+   "a": "TAyZrEhSYUWZ8c5HgFEjSndKvvTp3CzkYa",
+   "btc": 950
+  },
+  {
+   "tx": "cc798ba469d3d19d55c3da42b5eb4e5a7a471552f0cb3cb4c12ca35843856f49",
+   "cuando": "2024-10-02T09:31:54.000Z",
+   "de": "TLeEu311Cbw63BcmMHDgDLu7fnk9fqGcqT",
+   "a": "TUjx6w55Nx9G4GjjRNEB4e7w5BUH3WmJTZ",
+   "btc": 1049.12291022
+  },
+  {
+   "tx": "d052d57e59a202d7ad3dc3c3b7623e64e0265feb70dc5eaf038a7be91a960b5a",
+   "cuando": "2024-10-02T09:30:24.000Z",
+   "de": "TLeEu311Cbw63BcmMHDgDLu7fnk9fqGcqT",
+   "a": "TUjx6w55Nx9G4GjjRNEB4e7w5BUH3WmJTZ",
+   "btc": 900
+  },
+  {
+   "tx": "e4d435f573cb1bf55195e82c406a39b2a63214aee218765ca4a7db812539a9ed",
+   "cuando": "2024-10-02T09:29:03.000Z",
+   "de": "TLeEu311Cbw63BcmMHDgDLu7fnk9fqGcqT",
+   "a": "TUjx6w55Nx9G4GjjRNEB4e7w5BUH3WmJTZ",
+   "btc": 900
+  },
+  {
+   "tx": "8453756a8f9eba2eb61212f3236e82fed90447e9b001395eecee5864acba8128",
+   "cuando": "2024-10-02T09:28:21.000Z",
+   "de": "TLeEu311Cbw63BcmMHDgDLu7fnk9fqGcqT",
+   "a": "TUjx6w55Nx9G4GjjRNEB4e7w5BUH3WmJTZ",
+   "btc": 900
+  },
+  {
+   "tx": "7c676ae114b97e54d4ccc3b8eebc64ba436e4c3638ea9212aae611f225b904f6",
+   "cuando": "2024-10-02T09:27:54.000Z",
+   "de": "TLeEu311Cbw63BcmMHDgDLu7fnk9fqGcqT",
+   "a": "TUjx6w55Nx9G4GjjRNEB4e7w5BUH3WmJTZ",
+   "btc": 900
+  },
+  {
+   "tx": "fcd7259a98b1fe17a52660af03e26bb297259dcfe8d6c79680ac66b525d31fc5",
+   "cuando": "2024-10-02T09:27:24.000Z",
+   "de": "TLeEu311Cbw63BcmMHDgDLu7fnk9fqGcqT",
+   "a": "TUjx6w55Nx9G4GjjRNEB4e7w5BUH3WmJTZ",
+   "btc": 950
+  },
+  {
+   "tx": "0fa62f0fbc99db8998089368a258d148d56a73973e9b04dc6427886ec1e9ca56",
+   "cuando": "2024-10-02T09:25:48.000Z",
+   "de": "TLeEu311Cbw63BcmMHDgDLu7fnk9fqGcqT",
+   "a": "TUjx6w55Nx9G4GjjRNEB4e7w5BUH3WmJTZ",
+   "btc": 900
+  },
+  {
+   "tx": "f106e3d7b50b5bd1e905a68acd03eb12d7c896f188956f222f05f42173e511e1",
+   "cuando": "2024-10-02T09:25:00.000Z",
+   "de": "TLeEu311Cbw63BcmMHDgDLu7fnk9fqGcqT",
+   "a": "TUjx6w55Nx9G4GjjRNEB4e7w5BUH3WmJTZ",
+   "btc": 900
+  },
+  {
+   "tx": "229d06cb2a177f708fa6e52d00e75081127f76fccc7aff93f4ac1b35cd7ad121",
+   "cuando": "2024-10-02T09:24:42.000Z",
+   "de": "TLeEu311Cbw63BcmMHDgDLu7fnk9fqGcqT",
+   "a": "TUjx6w55Nx9G4GjjRNEB4e7w5BUH3WmJTZ",
+   "btc": 800
+  },
+  {
+   "tx": "ff6e4038c438874f6fc24c5b30a0f061a658869dd1dc808eeca6835ff7e75f58",
+   "cuando": "2024-10-02T09:23:54.000Z",
+   "de": "TLeEu311Cbw63BcmMHDgDLu7fnk9fqGcqT",
+   "a": "TUjx6w55Nx9G4GjjRNEB4e7w5BUH3WmJTZ",
+   "btc": 900
+  },
+  {
+   "tx": "3ab18eec46a49bb75c0a37bd5c35ad5492916623d9ebc19ac208b8e2f9d4bc4e",
+   "cuando": "2024-09-28T05:58:42.000Z",
+   "de": "TUjx6w55Nx9G4GjjRNEB4e7w5BUH3WmJTZ",
+   "a": "TAyZrEhSYUWZ8c5HgFEjSndKvvTp3CzkYa",
+   "btc": 800
+  },
+  {
+   "tx": "6e224e1614289c5b01a04b18a73d77498446f7af61cb4d9ebdf7273eb6add9f4",
+   "cuando": "2024-09-28T05:58:18.000Z",
+   "de": "TUjx6w55Nx9G4GjjRNEB4e7w5BUH3WmJTZ",
+   "a": "TAyZrEhSYUWZ8c5HgFEjSndKvvTp3CzkYa",
+   "btc": 800
+  },
+  {
+   "tx": "1056a8b1a757dfdc8d2d2e5c1f2061165bd6bbaf2c05180bce22c4f097b332d0",
+   "cuando": "2024-09-28T05:57:51.000Z",
+   "de": "TUjx6w55Nx9G4GjjRNEB4e7w5BUH3WmJTZ",
+   "a": "TAyZrEhSYUWZ8c5HgFEjSndKvvTp3CzkYa",
+   "btc": 900
+  },
+  {
+   "tx": "844d51493458407cba0003fb4c9d5a430e808b7fb35cff01032164d6d02df204",
+   "cuando": "2024-09-28T05:57:24.000Z",
+   "de": "TUjx6w55Nx9G4GjjRNEB4e7w5BUH3WmJTZ",
+   "a": "TAyZrEhSYUWZ8c5HgFEjSndKvvTp3CzkYa",
+   "btc": 750
+  },
+  {
+   "tx": "f6ba301084e58fb18a4837f68fbeb992630a3d03877121774fd4ebdc12fba57b",
+   "cuando": "2024-09-28T05:56:54.000Z",
+   "de": "TUjx6w55Nx9G4GjjRNEB4e7w5BUH3WmJTZ",
+   "a": "TAyZrEhSYUWZ8c5HgFEjSndKvvTp3CzkYa",
+   "btc": 850
+  },
+  {
+   "tx": "58380d57de02e7992d323e435a1d1d3c0c3287b8b10af6472d1ea8ae4ce8fc56",
+   "cuando": "2024-09-28T05:56:27.000Z",
+   "de": "TUjx6w55Nx9G4GjjRNEB4e7w5BUH3WmJTZ",
+   "a": "TAyZrEhSYUWZ8c5HgFEjSndKvvTp3CzkYa",
+   "btc": 900
+  },
+  {
+   "tx": "6a25de09ef9b24339b503476ffc4dee839f8ebf964a91e81a38e600c1f24d2d7",
+   "cuando": "2024-09-28T05:55:24.000Z",
+   "de": "TLeEu311Cbw63BcmMHDgDLu7fnk9fqGcqT",
+   "a": "TUjx6w55Nx9G4GjjRNEB4e7w5BUH3WmJTZ",
+   "btc": 900
+  },
+  {
+   "tx": "834ffa1b82efe5aacffca16ea810ced16b1a3fc6c39d404d88aa0fd793027ff1",
+   "cuando": "2024-09-28T05:54:39.000Z",
+   "de": "TLeEu311Cbw63BcmMHDgDLu7fnk9fqGcqT",
+   "a": "TUjx6w55Nx9G4GjjRNEB4e7w5BUH3WmJTZ",
+   "btc": 800
+  },
+  {
+   "tx": "952645b2dfcf81ae5c3176b64b33d2bd3fdfa534680a449a9f62be60d58156a3",
+   "cuando": "2024-09-28T05:53:51.000Z",
+   "de": "TLeEu311Cbw63BcmMHDgDLu7fnk9fqGcqT",
+   "a": "TUjx6w55Nx9G4GjjRNEB4e7w5BUH3WmJTZ",
+   "btc": 750
+  },
+  {
+   "tx": "7bed4c99b562c1ceb2cb5da7a10927eaa8cf1b5cc191ad54c213f4f24d248cf6",
+   "cuando": "2024-09-28T05:53:21.000Z",
+   "de": "TLeEu311Cbw63BcmMHDgDLu7fnk9fqGcqT",
+   "a": "TUjx6w55Nx9G4GjjRNEB4e7w5BUH3WmJTZ",
+   "btc": 850
+  },
+  {
+   "tx": "73842db1c7bcea27da60f80c9fb1754fdf6a5d3cbe9950f771d054c10e267400",
+   "cuando": "2024-09-28T05:51:33.000Z",
+   "de": "TLeEu311Cbw63BcmMHDgDLu7fnk9fqGcqT",
+   "a": "TUjx6w55Nx9G4GjjRNEB4e7w5BUH3WmJTZ",
+   "btc": 800
+  },
+  {
+   "tx": "ee10d1f37aad4f751587ab6ff04932ff08460442a37d0bf766dc9a9eb2e1c422",
+   "cuando": "2024-09-28T05:51:06.000Z",
+   "de": "TLeEu311Cbw63BcmMHDgDLu7fnk9fqGcqT",
+   "a": "TUjx6w55Nx9G4GjjRNEB4e7w5BUH3WmJTZ",
+   "btc": 900
+  },
+  {
+   "tx": "2398ccc51ef5428809e57ca95457d679d87240e46be46a7687617443ff0898fc",
+   "cuando": "2024-09-23T08:45:06.000Z",
+   "de": "TUjx6w55Nx9G4GjjRNEB4e7w5BUH3WmJTZ",
+   "a": "TAyZrEhSYUWZ8c5HgFEjSndKvvTp3CzkYa",
+   "btc": 900
+  },
+  {
+   "tx": "2582b4a14c248d30391c138cc89377988d3f1263674a30def3c693aaf314b248",
+   "cuando": "2024-09-23T08:44:39.000Z",
+   "de": "TUjx6w55Nx9G4GjjRNEB4e7w5BUH3WmJTZ",
+   "a": "TAyZrEhSYUWZ8c5HgFEjSndKvvTp3CzkYa",
+   "btc": 700
+  },
+  {
+   "tx": "8f40a6573655e8c2e54a9ba4575ac4c889defcd962adfba8d82ae84745179750",
+   "cuando": "2024-09-23T08:44:09.000Z",
+   "de": "TUjx6w55Nx9G4GjjRNEB4e7w5BUH3WmJTZ",
+   "a": "TAyZrEhSYUWZ8c5HgFEjSndKvvTp3CzkYa",
+   "btc": 750
+  },
+  {
+   "tx": "08b91d19079f68b47fe8cb0c3043ac8506fc0825de7382b3e5fdf07ed6443935",
+   "cuando": "2024-09-23T08:43:42.000Z",
+   "de": "TUjx6w55Nx9G4GjjRNEB4e7w5BUH3WmJTZ",
+   "a": "TAyZrEhSYUWZ8c5HgFEjSndKvvTp3CzkYa",
+   "btc": 950
+  },
+  {
+   "tx": "05cf927718c347f6dd61920fab396d5b63add311fa82235cc4f85173cfa973db",
+   "cuando": "2024-09-23T08:43:12.000Z",
+   "de": "TUjx6w55Nx9G4GjjRNEB4e7w5BUH3WmJTZ",
+   "a": "TAyZrEhSYUWZ8c5HgFEjSndKvvTp3CzkYa",
+   "btc": 900
+  },
+  {
+   "tx": "3977ea19f4b6d7fa07a29489b703fed7967a767da67143a19e380f78afbda1c9",
+   "cuando": "2024-09-23T08:42:45.000Z",
+   "de": "TUjx6w55Nx9G4GjjRNEB4e7w5BUH3WmJTZ",
+   "a": "TAyZrEhSYUWZ8c5HgFEjSndKvvTp3CzkYa",
+   "btc": 800
+  },
+  {
+   "tx": "f28dd010620038c8d1df153165aabc13f0a0854e3c32b83487bc355d4e806438",
+   "cuando": "2024-09-23T08:41:00.000Z",
+   "de": "TLeEu311Cbw63BcmMHDgDLu7fnk9fqGcqT",
+   "a": "TUjx6w55Nx9G4GjjRNEB4e7w5BUH3WmJTZ",
+   "btc": 750
+  },
+  {
+   "tx": "0633d85c2401c49c58dc5a4c5407bb7e514a548288092cb1cca0584cb86b7c58",
+   "cuando": "2024-09-23T08:39:36.000Z",
+   "de": "TLeEu311Cbw63BcmMHDgDLu7fnk9fqGcqT",
+   "a": "TUjx6w55Nx9G4GjjRNEB4e7w5BUH3WmJTZ",
+   "btc": 750
+  },
+  {
+   "tx": "760efb24ef6d3fc687aa6a1bcba6dc91c5f1c74f94f07c825ba8088a8b2f1bdd",
+   "cuando": "2024-09-23T08:39:12.000Z",
+   "de": "TLeEu311Cbw63BcmMHDgDLu7fnk9fqGcqT",
+   "a": "TUjx6w55Nx9G4GjjRNEB4e7w5BUH3WmJTZ",
+   "btc": 900
+  },
+  {
+   "tx": "f315d1cae50696ee3856f3c51600e38d8f3597e3b8a0dfa3da280645e059679a",
+   "cuando": "2024-09-23T08:35:33.000Z",
+   "de": "TLeEu311Cbw63BcmMHDgDLu7fnk9fqGcqT",
+   "a": "TUjx6w55Nx9G4GjjRNEB4e7w5BUH3WmJTZ",
+   "btc": 900
+  },
+  {
+   "tx": "8cd54f1379c42cc7bef2c6644ac8dde91407389e266e9348093fe0e8aee16e29",
+   "cuando": "2024-09-23T08:35:15.000Z",
+   "de": "TLeEu311Cbw63BcmMHDgDLu7fnk9fqGcqT",
+   "a": "TUjx6w55Nx9G4GjjRNEB4e7w5BUH3WmJTZ",
+   "btc": 800
+  },
+  {
+   "tx": "a831a35ca65ed3203c71389270a0b5068f605ab6d93a0571abaced06b55a69a4",
+   "cuando": "2024-09-23T08:34:42.000Z",
+   "de": "TLeEu311Cbw63BcmMHDgDLu7fnk9fqGcqT",
+   "a": "TUjx6w55Nx9G4GjjRNEB4e7w5BUH3WmJTZ",
+   "btc": 900
+  },
+  {
+   "tx": "754ca4ff0cca810cf5064c1361433a83be6f87f72268d8eb5bd33351d8336d2b",
+   "cuando": "2024-02-16T07:11:03.000Z",
+   "de": "TUjx6w55Nx9G4GjjRNEB4e7w5BUH3WmJTZ",
+   "a": "TDJb344XvG12mTSvVExXzKsSHRZRMWt7Fa",
+   "btc": 2502
+  },
+  {
+   "tx": "f3c95c4aeb75f47b8daa2da84259e283fc6f7c2db7ca169e4f3b5d71bed5d496",
+   "cuando": "2024-02-16T07:10:24.000Z",
+   "de": "TUjx6w55Nx9G4GjjRNEB4e7w5BUH3WmJTZ",
+   "a": "TPu8TraSqwnRpLxXQB2XzVLiapiMhecDqj",
+   "btc": 1999
+  },
+  {
+   "tx": "0411b12a8ec24203f60f086f254fc0b67504500dfdd50744fdf280e146114d2a",
+   "cuando": "2024-02-16T07:09:12.000Z",
+   "de": "TUjx6w55Nx9G4GjjRNEB4e7w5BUH3WmJTZ",
+   "a": "TT6kvovn28Vtqu3qGXjVQttuN6UhoGhqoD",
+   "btc": 2999
+  },
+  {
+   "tx": "0486e8a21b6dd3af814f2f712047bb1ceb184b72dc77be786e5bee7125579995",
+   "cuando": "2024-02-16T07:08:24.000Z",
+   "de": "TLeEu311Cbw63BcmMHDgDLu7fnk9fqGcqT",
+   "a": "TUjx6w55Nx9G4GjjRNEB4e7w5BUH3WmJTZ",
+   "btc": 7500
+  },
+  {
+   "tx": "298965dbfe20d353be85e1fbe0a2b35fab049f7ee80555ee161ea34c3bbfa9bf",
+   "cuando": "2024-02-14T08:50:45.000Z",
+   "de": "TUjx6w55Nx9G4GjjRNEB4e7w5BUH3WmJTZ",
+   "a": "TMNgo1318CLLqxRjeHVstYD6kLKDvAhR56",
+   "btc": 999.99
+  },
+  {
+   "tx": "cf1268dee8470026c485a216215586de40fd03f2562e7af4b19c5a16a946549f",
+   "cuando": "2024-02-14T08:49:39.000Z",
+   "de": "TUjx6w55Nx9G4GjjRNEB4e7w5BUH3WmJTZ",
+   "a": "TMNgo1318CLLqxRjeHVstYD6kLKDvAhR56",
+   "btc": 999.99
+  },
+  {
+   "tx": "c9d29322df379ef0c6b3ea7bdcaaace5b81601f12bc5ceec11a69dbfe2ab0f45",
+   "cuando": "2024-02-14T08:46:33.000Z",
+   "de": "TLeEu311Cbw63BcmMHDgDLu7fnk9fqGcqT",
+   "a": "TUjx6w55Nx9G4GjjRNEB4e7w5BUH3WmJTZ",
+   "btc": 2000
+  },
+  {
+   "tx": "8b77c467efa5ea1bc0c21f8b136e728ef19b0bfa13fe82fa145082cceade5ddd",
+   "cuando": "2024-02-14T08:33:45.000Z",
+   "de": "TUjx6w55Nx9G4GjjRNEB4e7w5BUH3WmJTZ",
+   "a": "TMNgo1318CLLqxRjeHVstYD6kLKDvAhR56",
+   "btc": 0.001
+  },
+  {
+   "tx": "6d71d9381f88efad3f94b1e4160f58b8b371c11aebe7e3bc235088c34842de30",
+   "cuando": "2024-02-14T08:09:39.000Z",
+   "de": "TUjx6w55Nx9G4GjjRNEB4e7w5BUH3WmJTZ",
+   "a": "TMNgo1318CLLqxRjeHVstYD6kLKDvAhR56",
+   "btc": 0.001
+  },
+  {
+   "tx": "38107be3fec758f0d2e19415fca06a7c3b076eaa96749f9bfc0cccec954d0930",
+   "cuando": "2024-02-14T08:08:48.000Z",
+   "de": "TLeEu311Cbw63BcmMHDgDLu7fnk9fqGcqT",
+   "a": "TUjx6w55Nx9G4GjjRNEB4e7w5BUH3WmJTZ",
+   "btc": 1
+  },
+  {
+   "tx": "afd05b1e772fa469026f67fb65b4f50d9ac6c52aac07649920d3f1214d4a5a1d",
+   "cuando": "2023-07-01T14:44:03.000Z",
+   "de": "TUjx6w55Nx9G4GjjRNEB4e7w5BUH3WmJTZ",
+   "a": "TLeEu311Cbw63BcmMHDgDLu7fnk9fqGcqT",
+   "btc": 3000
+  },
+  {
+   "tx": "7031b1b442e4ddbed55e58cb50e377f4aa63873d0688144cc165b5811cb3e9ba",
+   "cuando": "2023-07-01T14:42:51.000Z",
+   "de": "TLeEu311Cbw63BcmMHDgDLu7fnk9fqGcqT",
+   "a": "TUjx6w55Nx9G4GjjRNEB4e7w5BUH3WmJTZ",
+   "btc": 3000
+  },
+  {
+   "tx": "4008d924ae852279441183af6bb272b954c38209abc113f18bf0a804f325bdab",
+   "cuando": "2023-07-01T14:39:51.000Z",
+   "de": "TUjx6w55Nx9G4GjjRNEB4e7w5BUH3WmJTZ",
+   "a": "TTiSDs8P142SdtaKZSqeqtroWASyGX4r3A",
+   "btc": 2400
+  },
+  {
+   "tx": "3690502ce2e20823ab527f6da5ab95fc8ee86429c6e91b41bd73ddda7d33c67a",
+   "cuando": "2023-07-01T14:38:33.000Z",
+   "de": "TLeEu311Cbw63BcmMHDgDLu7fnk9fqGcqT",
+   "a": "TUjx6w55Nx9G4GjjRNEB4e7w5BUH3WmJTZ",
+   "btc": 2400
+  },
+  {
+   "tx": "18535c0a615d6702bb635d444b90b62fb118fbfe0aef77336cc96f820d181d50",
+   "cuando": "2022-08-21T09:05:09.000Z",
+   "de": "TUjx6w55Nx9G4GjjRNEB4e7w5BUH3WmJTZ",
+   "a": "TLeEu311Cbw63BcmMHDgDLu7fnk9fqGcqT",
+   "btc": 21000
+  },
+  {
+   "tx": "26398bf570682432bd77b8c2bda56565383e3d301cf02b3bdeb619eed33d98ca",
+   "cuando": "2022-08-21T09:04:03.000Z",
+   "de": "TQwh1ZDBdqMKDtGWEeDdrRUUbtgaVL1Se2",
+   "a": "TUjx6w55Nx9G4GjjRNEB4e7w5BUH3WmJTZ",
+   "btc": 21000
+  },
+  {
+   "tx": "5534a56bdcb59ecf388ce44a10dc0970ea3a9125fa2097800995d5ccfa9d609d",
+   "cuando": "2022-07-05T10:01:42.000Z",
+   "de": "TUjx6w55Nx9G4GjjRNEB4e7w5BUH3WmJTZ",
+   "a": "TLeEu311Cbw63BcmMHDgDLu7fnk9fqGcqT",
+   "btc": 20000
+  },
+  {
+   "tx": "d7df63476b81462dce7c1e76d6a209ddce264fbcf65fa666ada7b377466b7956",
+   "cuando": "2022-07-05T09:51:00.000Z",
+   "de": "TKkrTxXwGszshcrYSashxbyrvGbPmshUoK",
+   "a": "TUjx6w55Nx9G4GjjRNEB4e7w5BUH3WmJTZ",
+   "btc": 20000
+  }
+ ]
+}

@@ -1,0 +1,457 @@
+{
+ "leido": "2026-11-13T20:10:57.736Z",
+ "tokens": [
+  {
+   "token": "ETH",
+   "direccion": "THb4CqiFdwNHsWsQCs4JhzwjMWys4aqCbF",
+   "nombreContrato": "Ethereum",
+   "verificadoAbi": true,
+   "nFunciones": 33,
+   "congelar": [
+    "addBlackList"
+   ],
+   "destruirSaldos": [
+    "destroyBlackFunds"
+   ],
+   "pausa": [
+    "pause"
+   ],
+   "crear": [
+    "issue"
+   ],
+   "esProxy": [],
+   "owner": "TCQQjfccKdMi4CnPAzmZW5TALH4HbwceVb",
+   "mercados": [
+    "TR7BUFRQeq1w5jAZf1FKx85SHuX6PfMqsV"
+   ]
+  },
+  {
+   "token": "sTRX",
+   "direccion": "TU3kjFuhtEo42tsCBtfYUAZxoqQ4yuSLQ5",
+   "nombreContrato": "STRXProxy",
+   "verificadoAbi": false,
+   "nFunciones": 0,
+   "congelar": [],
+   "destruirSaldos": [],
+   "pausa": [],
+   "crear": [],
+   "esProxy": [],
+   "owner": "T9yD14Nj9j7xAB4dbGeiX9h8unkKHxuWwb",
+   "mercados": [
+    "TJQ9rbVe9ei3nNtyGgBL22Fuu2xYjZaLAQ"
+   ]
+  },
+  {
+   "token": "BTC",
+   "direccion": "TN3W4H6rK2ce4vX9YnFQHwKENnHjoxb3m9",
+   "nombreContrato": "Bitcoin",
+   "verificadoAbi": true,
+   "nFunciones": 33,
+   "congelar": [
+    "addBlackList"
+   ],
+   "destruirSaldos": [
+    "destroyBlackFunds"
+   ],
+   "pausa": [
+    "pause"
+   ],
+   "crear": [
+    "issue"
+   ],
+   "esProxy": [],
+   "owner": "TAyZrEhSYUWZ8c5HgFEjSndKvvTp3CzkYa",
+   "mercados": [
+    "TLeEu311Cbw63BcmMHDgDLu7fnk9fqGcqT"
+   ]
+  },
+  {
+   "token": "USDD",
+   "direccion": "TXDk8mbtRbXeYuMNS83CfKPaYYT8XWv9Hz",
+   "nombreContrato": null,
+   "verificadoAbi": false,
+   "nFunciones": 0,
+   "congelar": [],
+   "destruirSaldos": [],
+   "pausa": [],
+   "crear": [],
+   "esProxy": [],
+   "owner": null,
+   "mercados": [
+    "TKFRELGGoRgiayhwJTNNLqCNjFoLBh3Mnf"
+   ]
+  },
+  {
+   "token": "USDT",
+   "direccion": "TR7NHqjeKQxGTCi8q8ZY4pL8otSzgjLj6t",
+   "nombreContrato": "TetherToken",
+   "verificadoAbi": true,
+   "nFunciones": 33,
+   "congelar": [
+    "addBlackList"
+   ],
+   "destruirSaldos": [
+    "destroyBlackFunds"
+   ],
+   "pausa": [
+    "pause"
+   ],
+   "crear": [
+    "issue"
+   ],
+   "esProxy": [],
+   "owner": "TBPxhVAsuzoFnKyXtc1o2UySEydPHgATto",
+   "mercados": [
+    "TXJgMdjVX5dKiQaUi9QobwNxtSQaFqccvd"
+   ]
+  },
+  {
+   "token": "JST",
+   "direccion": "TCFLL5dx5ZJdKnWuesXxi1VPwjLVmWZZy9",
+   "nombreContrato": "JST",
+   "verificadoAbi": true,
+   "nFunciones": 26,
+   "congelar": [],
+   "destruirSaldos": [],
+   "pausa": [],
+   "crear": [
+    "mint",
+    "mint"
+   ],
+   "esProxy": [],
+   "owner": "TTmWtSB8FtzmiD5p2ejP5NRf4VLCo1ms9H",
+   "mercados": [
+    "TWQhCXaWz4eHK4Kd1ErSDHjMFPoPc9czts"
+   ]
+  },
+  {
+   "token": "WBTC",
+   "direccion": "TYhWwKpw43ENFWBTGpzLHn3882f2au7SMi",
+   "nombreContrato": "WBTC",
+   "verificadoAbi": true,
+   "nFunciones": 24,
+   "congelar": [],
+   "destruirSaldos": [],
+   "pausa": [
+    "pause"
+   ],
+   "crear": [
+    "mint"
+   ],
+   "esProxy": [],
+   "owner": "TPF62tA6ABdmTVUSLgtbdKGXmbAUwcCabt",
+   "mercados": [
+    "TVyvpmaVmz25z2GaXBDDjzLZi5iR5dBzGd"
+   ]
+  },
+  {
+   "token": "U",
+   "direccion": "TFNirp6PbqYE1ZTtWuCMUKJWLNZkoCoeFJ",
+   "nombreContrato": "TransparentUpgradeableProxy",
+   "verificadoAbi": true,
+   "nFunciones": 5,
+   "congelar": [],
+   "destruirSaldos": [],
+   "pausa": [],
+   "crear": [],
+   "esProxy": [
+    "implementation",
+    "upgradeTo"
+   ],
+   "owner": "TCbJRUNYD2tJEwP9wo41whF3DCrZaXgg6A",
+   "mercados": [
+    "TMz7vmyqoq4WKDiztrZpjAZPnzE9XgXaK4"
+   ]
+  },
+  {
+   "token": "SUN",
+   "direccion": "TSSMHYeV2uE9qYH95DqyoCuNCzEL1NvU3S",
+   "nombreContrato": "SunToken",
+   "verificadoAbi": true,
+   "nFunciones": 11,
+   "congelar": [],
+   "destruirSaldos": [],
+   "pausa": [],
+   "crear": [],
+   "esProxy": [],
+   "owner": null,
+   "mercados": [
+    "TPXDpkg9e3eZzxqxAUyke9S4z4pGJBJw9e"
+   ]
+  },
+  {
+   "token": "TUSD",
+   "direccion": "TUpMhErZL2fhh4sVNULAbNKLokS4GjC1F4",
+   "nombreContrato": "TrueUSD",
+   "verificadoAbi": true,
+   "nFunciones": 33,
+   "congelar": [],
+   "destruirSaldos": [],
+   "pausa": [],
+   "crear": [
+    "mint"
+   ],
+   "esProxy": [
+    "implementation",
+    "upgradeTo"
+   ],
+   "owner": "TTfLBC7hVJMbHxiBqmKFUaW5dtoPfUWaMA",
+   "mercados": [
+    "TSXv71Fy5XdL3Rh2QfBoUu3NAaM4sMif8R"
+   ]
+  },
+  {
+   "token": "WIN",
+   "direccion": "TLa2f6VPqDgRE67v1736s7bJ8Ray5wYjU7",
+   "nombreContrato": "WINK",
+   "verificadoAbi": true,
+   "nFunciones": 17,
+   "congelar": [],
+   "destruirSaldos": [],
+   "pausa": [],
+   "crear": [
+    "mint"
+   ],
+   "esProxy": [],
+   "owner": null,
+   "mercados": [
+    "TRg6MnpsFXc82ymUPgf5qbj59ibxiEDWvv"
+   ]
+  },
+  {
+   "token": "BTT",
+   "direccion": "TAFjULxiVgT4qWk6UZwjqwZXTSaGaqnVp4",
+   "nombreContrato": "BTT",
+   "verificadoAbi": true,
+   "nFunciones": 11,
+   "congelar": [],
+   "destruirSaldos": [],
+   "pausa": [],
+   "crear": [],
+   "esProxy": [],
+   "owner": null,
+   "mercados": [
+    "TUaUHU9Dy8x5yNi1pKnFYqHWojot61Jfto"
+   ]
+  },
+  {
+   "token": "HTX",
+   "direccion": "TUPM7K8REVzD2UdV4R5fe5M8XbnR2DdoJ6",
+   "nombreContrato": "HTX",
+   "verificadoAbi": true,
+   "nFunciones": 11,
+   "congelar": [],
+   "destruirSaldos": [],
+   "pausa": [],
+   "crear": [],
+   "esProxy": [],
+   "owner": null,
+   "mercados": [
+    "TDA1mWPyAjTRATMGA55UTswGAHhV2itEXR"
+   ]
+  },
+  {
+   "token": "USD1",
+   "direccion": "TPFqcBAaaUMCSVRCqPaQ9QnzKhmuoLR6Rc",
+   "nombreContrato": "TransparentUpgradeableProxy",
+   "verificadoAbi": true,
+   "nFunciones": 5,
+   "congelar": [],
+   "destruirSaldos": [],
+   "pausa": [],
+   "crear": [],
+   "esProxy": [
+    "implementation",
+    "upgradeTo"
+   ],
+   "owner": "TBZbFrVxJ8uoRQUwGSFXucpa8i2aXzGqJ8",
+   "mercados": [
+    "TBEKggwqFkrc4KckQVR9BLucAmQugafEZf"
+   ]
+  },
+  {
+   "token": "wstUSDT",
+   "direccion": "TGkxzkDKyMeq2T7edKnyjZoFypyzjkkssq",
+   "nombreContrato": "WstUSDTProxy",
+   "verificadoAbi": false,
+   "nFunciones": 0,
+   "congelar": [],
+   "destruirSaldos": [],
+   "pausa": [],
+   "crear": [],
+   "esProxy": [],
+   "owner": "TXomXpYhRcCCoEyki5Vg8Si1vUFaamFX9t",
+   "mercados": [
+    "TD5SdLw5scR6mXgyMK2xKrFJpauDjpKqrW"
+   ]
+  },
+  {
+   "token": "USDD",
+   "direccion": "TPYmHEhy5n8TCEfYGqW2rPxsghSfzghPDn",
+   "nombreContrato": "USDD",
+   "verificadoAbi": true,
+   "nFunciones": 14,
+   "congelar": [],
+   "destruirSaldos": [],
+   "pausa": [],
+   "crear": [],
+   "esProxy": [],
+   "owner": "T9yD14Nj9j7xAB4dbGeiX9h8unkKHxuWwb",
+   "mercados": [
+    "TX7kybeP6UwTBRHLNPYmswFESHfyjm9bAS"
+   ]
+  },
+  {
+   "token": "NFT",
+   "direccion": "TFczxzPhnThNSqr5by8tvxsdCFRRz6cPNq",
+   "nombreContrato": "APENFT",
+   "verificadoAbi": true,
+   "nFunciones": 37,
+   "congelar": [],
+   "destruirSaldos": [],
+   "pausa": [
+    "pause"
+   ],
+   "crear": [],
+   "esProxy": [],
+   "owner": "T9yD14Nj9j7xAB4dbGeiX9h8unkKLxmGkn",
+   "mercados": [
+    "TFpPyDCKvNFgos3g3WVsAqMrdqhB81JXHE"
+   ]
+  },
+  {
+   "token": "SUN",
+   "direccion": "TKkeiboTkxXKJpbmVFbv4a8ov5rAfRDMf9",
+   "nombreContrato": "SunToken",
+   "verificadoAbi": true,
+   "nFunciones": 11,
+   "congelar": [],
+   "destruirSaldos": [],
+   "pausa": [],
+   "crear": [],
+   "esProxy": [],
+   "owner": null,
+   "mercados": [
+    "TGBr8uh9jBVHJhhkwSJvQN2ZAKzVkxDmno"
+   ]
+  },
+  {
+   "token": "ETH",
+   "direccion": "TRFe3hT5oYhjSZ6f3ji5FJ7YCfrkWnHRvh",
+   "nombreContrato": "ETH",
+   "verificadoAbi": true,
+   "nFunciones": 26,
+   "congelar": [],
+   "destruirSaldos": [],
+   "pausa": [],
+   "crear": [
+    "mint"
+   ],
+   "esProxy": [],
+   "owner": null,
+   "mercados": [
+    "TWBxQMb6RD3qmkXUXpNwVCYbL8SHNreru6"
+   ]
+  },
+  {
+   "token": "WBTT",
+   "direccion": "TKfjV9RNKJJCqPvBtK8L7Knykh7DNWvnYt",
+   "nombreContrato": "WBTT",
+   "verificadoAbi": true,
+   "nFunciones": 13,
+   "congelar": [],
+   "destruirSaldos": [],
+   "pausa": [],
+   "crear": [],
+   "esProxy": [],
+   "owner": "T9yD14Nj9j7xAB4dbGeiX9h8unkKHxuWwb",
+   "mercados": [
+    "TUY54PVeH6WCcYCd6ZXXoBDsHytN9V5PXt"
+   ]
+  },
+  {
+   "token": "USDC",
+   "direccion": "TEkxiTehnzSmSe2XqrBj4w32RUN966rdz8",
+   "nombreContrato": "FiatTokenProxy",
+   "verificadoAbi": true,
+   "nFunciones": 306,
+   "congelar": [
+    "blacklist",
+    "blacklist",
+    "blacklist",
+    "blacklist",
+    "blacklist",
+    "blacklist"
+   ],
+   "destruirSaldos": [],
+   "pausa": [
+    "pause",
+    "pause",
+    "pause",
+    "pause",
+    "pause",
+    "pause"
+   ],
+   "crear": [
+    "mint",
+    "mint",
+    "mint",
+    "mint",
+    "mint",
+    "mint"
+   ],
+   "esProxy": [
+    "implementation",
+    "upgradeTo"
+   ],
+   "owner": "TJqyfyLxfVMnJHu39F7WrPUMipfLD1Xzrb",
+   "mercados": [
+    "TNSBA6KvSvMoTqQcEgpVK7VhHT3z7wifxy"
+   ]
+  },
+  {
+   "token": "USDJ",
+   "direccion": "TMwFHYXLJaRUPeW6421aqXL4ZEzPRFGkGT",
+   "nombreContrato": "USDJ",
+   "verificadoAbi": true,
+   "nFunciones": 26,
+   "congelar": [],
+   "destruirSaldos": [],
+   "pausa": [],
+   "crear": [
+    "mint",
+    "mint"
+   ],
+   "esProxy": [],
+   "owner": "T9yD14Nj9j7xAB4dbGeiX9h8unkKHxuWwb",
+   "mercados": [
+    "TL5x9MtSnDy537FXKx53yAaHRRNdg9TkkA"
+   ]
+  },
+  {
+   "token": "BUSD",
+   "direccion": "TMz2SWatiAtZVVcH2ebpsbVtYwUPT9EdjH",
+   "nombreContrato": "TransparentUpgradeableProxy",
+   "verificadoAbi": true,
+   "nFunciones": 5,
+   "congelar": [],
+   "destruirSaldos": [],
+   "pausa": [],
+   "crear": [],
+   "esProxy": [
+    "implementation",
+    "upgradeTo"
+   ],
+   "owner": "TDE6LDhCfAQbaxs5RLgjJmYbtP5YyorQeh",
+   "mercados": [
+    "TLHASseQymmpGQdfAyNjkMXFTJh8nzR2x2"
+   ]
+  }
+ ],
+ "listaNegra": {
+  "THb4CqiFdwNHsWsQCs4JhzwjMWys4aqCbF:jETH": false,
+  "THb4CqiFdwNHsWsQCs4JhzwjMWys4aqCbF:TCQQ": false,
+  "TN3W4H6rK2ce4vX9YnFQHwKENnHjoxb3m9:jBTC": false,
+  "TN3W4H6rK2ce4vX9YnFQHwKENnHjoxb3m9:TUjx": false
+ }
+}

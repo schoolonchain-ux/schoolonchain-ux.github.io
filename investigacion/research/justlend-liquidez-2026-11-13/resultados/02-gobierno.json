@@ -1,0 +1,250 @@
+{
+ "leido": "2026-11-13T19:03:54.676Z",
+ "comptroller": "TGjYzgCyPobsNS9n6WcbdLVR9dH7mWqFx7",
+ "comp": {
+  "admin": "TRWNvb15NmfNKNLhQpxefFz7cNjrYjEw7x",
+  "pendingAdmin": "T9yD14Nj9j7xAB4dbGeiX9h8unkKHxuWwb",
+  "pauseGuardian": "TLntW9Z59LYY5KEi9cmwk3PKjQga828ird",
+  "implementacion": "TETm1bMHUm9135d5NmUgfkvqZQ4bk6DgWs",
+  "oraculo": "TGnYnSn4G9PgWFj7QQemh4YMZKp3fkympJ",
+  "closeFactorRaw": "500000000000000000",
+  "incentivoLiquidacionRaw": "1080000000000000000",
+  "transferPausado": false,
+  "seizePausado": false,
+  "maxAssets": "12",
+  "pruebaPausaRetirada": {
+   "redeemGuardianPaused()": null,
+   "redeemPaused()": null,
+   "paused()": null,
+   "protocolPaused()": null
+  }
+ },
+ "mercados": [
+  {
+   "jToken": "TE2RzoSV3wFK99w6J9UnnZ4vLfXYoxvRwP",
+   "simbolo": "jTRX",
+   "admin": "TRWNvb15NmfNKNLhQpxefFz7cNjrYjEw7x",
+   "implementacion": null,
+   "comptroller": "TGjYzgCyPobsNS9n6WcbdLVR9dH7mWqFx7",
+   "modeloTipos": "TMca13trZmVvVttrGWJyUSm33qZdohDDuh",
+   "reservaPorBloqueTope": null
+  },
+  {
+   "jToken": "TXJgMdjVX5dKiQaUi9QobwNxtSQaFqccvd",
+   "simbolo": "jUSDT",
+   "admin": "TRWNvb15NmfNKNLhQpxefFz7cNjrYjEw7x",
+   "implementacion": "TLjn59xNM7VEK6VZ3VQ8Y1ipxsdsFka5wZ",
+   "comptroller": "TGjYzgCyPobsNS9n6WcbdLVR9dH7mWqFx7",
+   "modeloTipos": "TTetZxp98wcPaciyBMHYvQkS735RZ3tyXY",
+   "reservaPorBloqueTope": null
+  },
+  {
+   "jToken": "TL5x9MtSnDy537FXKx53yAaHRRNdg9TkkA",
+   "simbolo": "jUSDJ",
+   "admin": "TRWNvb15NmfNKNLhQpxefFz7cNjrYjEw7x",
+   "implementacion": "TYSHTEq9NFSgst94saeRvt6rAYgWkqMFbj",
+   "comptroller": "TGjYzgCyPobsNS9n6WcbdLVR9dH7mWqFx7",
+   "modeloTipos": "TLScd7kpWnKADtH7ZXKzrJHAxJUnjiiExq",
+   "reservaPorBloqueTope": null
+  },
+  {
+   "jToken": "TGBr8uh9jBVHJhhkwSJvQN2ZAKzVkxDmno",
+   "simbolo": "jSUN",
+   "admin": "TRWNvb15NmfNKNLhQpxefFz7cNjrYjEw7x",
+   "implementacion": "TSCpzKvJfXHj1HW5jKg9dZA8z9aMxxGLd8",
+   "comptroller": "TGjYzgCyPobsNS9n6WcbdLVR9dH7mWqFx7",
+   "modeloTipos": "TK7WVRz34wUVRCpsgbW1wUCPmh5bSnCqg1",
+   "reservaPorBloqueTope": null
+  },
+  {
+   "jToken": "TRg6MnpsFXc82ymUPgf5qbj59ibxiEDWvv",
+   "simbolo": "jWIN",
+   "admin": "TRWNvb15NmfNKNLhQpxefFz7cNjrYjEw7x",
+   "implementacion": "TW3GyD3hYkKwzSGytWwWGXpe2a93zCpRzJ",
+   "comptroller": "TGjYzgCyPobsNS9n6WcbdLVR9dH7mWqFx7",
+   "modeloTipos": "TBtChPo34CGJkb1QVEwPhxS8HQE2Xp7ir2",
+   "reservaPorBloqueTope": null
+  },
+  {
+   "jToken": "TLeEu311Cbw63BcmMHDgDLu7fnk9fqGcqT",
+   "simbolo": "jBTC",
+   "admin": "TRWNvb15NmfNKNLhQpxefFz7cNjrYjEw7x",
+   "implementacion": "TVsKSRgRoMcCp798qqRGesXRfzy2MzRjkR",
+   "comptroller": "TGjYzgCyPobsNS9n6WcbdLVR9dH7mWqFx7",
+   "modeloTipos": "TYJi9q4qLQWoBiKmMQY3Mn81tmhw7SeCmh",
+   "reservaPorBloqueTope": null
+  },
+  {
+   "jToken": "TWQhCXaWz4eHK4Kd1ErSDHjMFPoPc9czts",
+   "simbolo": "jJST",
+   "admin": "TRWNvb15NmfNKNLhQpxefFz7cNjrYjEw7x",
+   "implementacion": "TQ2sbnmxtR7jrNk4nxz2A8f9sneCqmk6SB",
+   "comptroller": "TGjYzgCyPobsNS9n6WcbdLVR9dH7mWqFx7",
+   "modeloTipos": "TMNXjQTa8x4wNHBa3X647KRnkRQpSuXBRT",
+   "reservaPorBloqueTope": null
+  },
+  {
+   "jToken": "TUY54PVeH6WCcYCd6ZXXoBDsHytN9V5PXt",
+   "simbolo": "jWBTT",
+   "admin": "TRWNvb15NmfNKNLhQpxefFz7cNjrYjEw7x",
+   "implementacion": "TV4WWBqBfn1kd4KmpYeSJpVAfybfrxEN9L",
+   "comptroller": "TGjYzgCyPobsNS9n6WcbdLVR9dH7mWqFx7",
+   "modeloTipos": "TJAfCJdJZa44pG5adQGLMLh27hJqPeLxod",
+   "reservaPorBloqueTope": null
+  },
+  {
+   "jToken": "TR7BUFRQeq1w5jAZf1FKx85SHuX6PfMqsV",
+   "simbolo": "jETH",
+   "admin": "TRWNvb15NmfNKNLhQpxefFz7cNjrYjEw7x",
+   "implementacion": "TQBvTVisiceDvsQVbLbcYyWQGWP7wtaQnc",
+   "comptroller": "TGjYzgCyPobsNS9n6WcbdLVR9dH7mWqFx7",
+   "modeloTipos": "TCiKn6EFBsNrNCFQXWaEuAxr8Su3y4Rx9D",
+   "reservaPorBloqueTope": null
+  },
+  {
+   "jToken": "TSXv71Fy5XdL3Rh2QfBoUu3NAaM4sMif8R",
+   "simbolo": "jTUSD",
+   "admin": "TRWNvb15NmfNKNLhQpxefFz7cNjrYjEw7x",
+   "implementacion": "THbrSjDsDA2KJRxx8K73tN7vLgaXSUNQFk",
+   "comptroller": "TGjYzgCyPobsNS9n6WcbdLVR9dH7mWqFx7",
+   "modeloTipos": "TLY3wRNGrQpJCZrYKu9VjntMj2kNxisAL2",
+   "reservaPorBloqueTope": null
+  },
+  {
+   "jToken": "TFpPyDCKvNFgos3g3WVsAqMrdqhB81JXHE",
+   "simbolo": "jNFT",
+   "admin": "TRWNvb15NmfNKNLhQpxefFz7cNjrYjEw7x",
+   "implementacion": "TLkUdtDBLMfJdXni2iTa4u2DKM53XmDJHi",
+   "comptroller": "TGjYzgCyPobsNS9n6WcbdLVR9dH7mWqFx7",
+   "modeloTipos": "TBE9tkWYdZPEHLNeKC6Xn44YFLpieiM3xq",
+   "reservaPorBloqueTope": null
+  },
+  {
+   "jToken": "TPXDpkg9e3eZzxqxAUyke9S4z4pGJBJw9e",
+   "simbolo": "jSUN",
+   "admin": "TRWNvb15NmfNKNLhQpxefFz7cNjrYjEw7x",
+   "implementacion": "TM82erAZJSP7NKc17JdTnzVC8WKJHismWB",
+   "comptroller": "TGjYzgCyPobsNS9n6WcbdLVR9dH7mWqFx7",
+   "modeloTipos": "THCVC3DHgZ5qmUcJPutw7TrMMfj1h2bvkZ",
+   "reservaPorBloqueTope": null
+  },
+  {
+   "jToken": "TNSBA6KvSvMoTqQcEgpVK7VhHT3z7wifxy",
+   "simbolo": "jUSDC",
+   "admin": "TRWNvb15NmfNKNLhQpxefFz7cNjrYjEw7x",
+   "implementacion": "THQY8YX19jLFSFg1xhthM5wb7xZvKLCzgq",
+   "comptroller": "TGjYzgCyPobsNS9n6WcbdLVR9dH7mWqFx7",
+   "modeloTipos": "TDECE4PZFEkmTyFk9sJMya9PY99BapHpyP",
+   "reservaPorBloqueTope": null
+  },
+  {
+   "jToken": "TUaUHU9Dy8x5yNi1pKnFYqHWojot61Jfto",
+   "simbolo": "jBTT",
+   "admin": "TRWNvb15NmfNKNLhQpxefFz7cNjrYjEw7x",
+   "implementacion": "TH3x5EqLnPduHNX41MaCCb2UfnfFMLuYwe",
+   "comptroller": "TGjYzgCyPobsNS9n6WcbdLVR9dH7mWqFx7",
+   "modeloTipos": "TQ9zMkrqgej7GjLdMrpNuURozg8J2fSXsW",
+   "reservaPorBloqueTope": null
+  },
+  {
+   "jToken": "TX7kybeP6UwTBRHLNPYmswFESHfyjm9bAS",
+   "simbolo": "jUSDD",
+   "admin": "TRWNvb15NmfNKNLhQpxefFz7cNjrYjEw7x",
+   "implementacion": "TFdTqrMyb6PMMqTa9vnhmQHDFDU2oUhw9W",
+   "comptroller": "TGjYzgCyPobsNS9n6WcbdLVR9dH7mWqFx7",
+   "modeloTipos": "TDoB7y9HHj6bXTwEe6BhfAkdETjQR2He6u",
+   "reservaPorBloqueTope": null
+  },
+  {
+   "jToken": "TLHASseQymmpGQdfAyNjkMXFTJh8nzR2x2",
+   "simbolo": "jBUSD",
+   "admin": "TRWNvb15NmfNKNLhQpxefFz7cNjrYjEw7x",
+   "implementacion": "TNRUqbYfYv4iizWa1b2kd6ZBaoh5zrg3yk",
+   "comptroller": "TGjYzgCyPobsNS9n6WcbdLVR9dH7mWqFx7",
+   "modeloTipos": "TUSGt1WAYeJSV94M5muFi2KvtE6EquZPUC",
+   "reservaPorBloqueTope": null
+  },
+  {
+   "jToken": "TJQ9rbVe9ei3nNtyGgBL22Fuu2xYjZaLAQ",
+   "simbolo": "jSTRX",
+   "admin": "TRWNvb15NmfNKNLhQpxefFz7cNjrYjEw7x",
+   "implementacion": "TCyNbCipGbAybb8rG4aatEoEnfuYpVYCPP",
+   "comptroller": "TGjYzgCyPobsNS9n6WcbdLVR9dH7mWqFx7",
+   "modeloTipos": "TW4fpkc98kzVbdiPhutCg2uivwVJ9MDa2P",
+   "reservaPorBloqueTope": null
+  },
+  {
+   "jToken": "TWBxQMb6RD3qmkXUXpNwVCYbL8SHNreru6",
+   "simbolo": "jETH",
+   "admin": "TRWNvb15NmfNKNLhQpxefFz7cNjrYjEw7x",
+   "implementacion": "TS9fVh58y2RMDnpucGXkbfZhAJxmGafGqe",
+   "comptroller": "TGjYzgCyPobsNS9n6WcbdLVR9dH7mWqFx7",
+   "modeloTipos": "TD5wmR7NfBM2JdSGSTTq1MgMARX2k5KE2b",
+   "reservaPorBloqueTope": null
+  },
+  {
+   "jToken": "TD5SdLw5scR6mXgyMK2xKrFJpauDjpKqrW",
+   "simbolo": "jWSTUSDT",
+   "admin": "TRWNvb15NmfNKNLhQpxefFz7cNjrYjEw7x",
+   "implementacion": "TUx4cV8FQNR5W4FhtF7mHZwaJMoco2464o",
+   "comptroller": "TGjYzgCyPobsNS9n6WcbdLVR9dH7mWqFx7",
+   "modeloTipos": "TPqKsaTnSKEU3aGHanpVFNU3cE8SmJsAYz",
+   "reservaPorBloqueTope": null
+  },
+  {
+   "jToken": "TKFRELGGoRgiayhwJTNNLqCNjFoLBh3Mnf",
+   "simbolo": "jUSDD",
+   "admin": "TRWNvb15NmfNKNLhQpxefFz7cNjrYjEw7x",
+   "implementacion": "TLrEfG4QCbax8MTYgZzmjj4gE8RPVNvUn4",
+   "comptroller": "TGjYzgCyPobsNS9n6WcbdLVR9dH7mWqFx7",
+   "modeloTipos": "TRLEr5FkpBPTGdywxA8tjMfsHy8bSYWohF",
+   "reservaPorBloqueTope": null
+  },
+  {
+   "jToken": "TBEKggwqFkrc4KckQVR9BLucAmQugafEZf",
+   "simbolo": "jUSD1",
+   "admin": "TRWNvb15NmfNKNLhQpxefFz7cNjrYjEw7x",
+   "implementacion": "TRo2exz6ZHn6W3Ey3G93FnzhWvjLPUcR2B",
+   "comptroller": "TGjYzgCyPobsNS9n6WcbdLVR9dH7mWqFx7",
+   "modeloTipos": "TKgX5vEds8UW8bd5fSDGHpTT4UwmVz4yPS",
+   "reservaPorBloqueTope": null
+  },
+  {
+   "jToken": "TVyvpmaVmz25z2GaXBDDjzLZi5iR5dBzGd",
+   "simbolo": "jWBTC",
+   "admin": "TRWNvb15NmfNKNLhQpxefFz7cNjrYjEw7x",
+   "implementacion": "TDwUJqxB1962DSfKHWMnEu1sWMGGRvHDB5",
+   "comptroller": "TGjYzgCyPobsNS9n6WcbdLVR9dH7mWqFx7",
+   "modeloTipos": "TXv7ZXpDomF69z46WvNE8xVMThz3LPmoAY",
+   "reservaPorBloqueTope": null
+  },
+  {
+   "jToken": "TDA1mWPyAjTRATMGA55UTswGAHhV2itEXR",
+   "simbolo": "jHTX",
+   "admin": "TRWNvb15NmfNKNLhQpxefFz7cNjrYjEw7x",
+   "implementacion": "TJD7nb5Wq1P1rRi3Se2vLpLhksALdW8adb",
+   "comptroller": "TGjYzgCyPobsNS9n6WcbdLVR9dH7mWqFx7",
+   "modeloTipos": "TTok6CVuPBa71rvMYWnf6uESe96t93QWgb",
+   "reservaPorBloqueTope": null
+  },
+  {
+   "jToken": "TMz7vmyqoq4WKDiztrZpjAZPnzE9XgXaK4",
+   "simbolo": "jU",
+   "admin": "TRWNvb15NmfNKNLhQpxefFz7cNjrYjEw7x",
+   "implementacion": "TTb3TxobUaSHpPBa4J98Wtg71mN9qJuFm4",
+   "comptroller": "TGjYzgCyPobsNS9n6WcbdLVR9dH7mWqFx7",
+   "modeloTipos": "TPToTDNuVJ3F7A37KeZB1SWQ2w6HMrfSAP",
+   "reservaPorBloqueTope": null
+  }
+ ],
+ "quienesSonLosAdmin": {
+  "TRWNvb15NmfNKNLhQpxefFz7cNjrYjEw7x": {
+   "esContrato": true,
+   "nombre": "Timelock",
+   "cuenta": {
+    "creada": null,
+    "permisosOwner": null
+   }
+  }
+ }
+}

@@ -1,0 +1,149 @@
+{
+ "leido": "2026-11-13T19:00:49.584Z",
+ "transacciones": [
+  {
+   "tx": "24981cf23d30ded9c2ae305688e875928e5c0fa74212e01d96b47ea8fe65a9c0",
+   "cuando": "2024-11-02T14:38:06.000Z",
+   "eth": 536000,
+   "de": "T9yD14Nj9j7xAB4dbGeiX9h8unkKHxuWwb",
+   "a": "TCQQjfccKdMi4CnPAzmZW5TALH4HbwceVb",
+   "firma": "TCQQjfccKdMi4CnPAzmZW5TALH4HbwceVb",
+   "llamaA": "THb4CqiFdwNHsWsQCs4JhzwjMWys4aqCbF",
+   "selector": "cc872b66",
+   "metodoProbable": "issue(uint256)",
+   "resultado": "SUCCESS"
+  },
+  {
+   "tx": "95d4d6b3952167f7ed35110cacb56f358b04664435befcf473c9c955da63df11",
+   "cuando": "2024-11-02T14:35:06.000Z",
+   "eth": 1,
+   "de": "T9yD14Nj9j7xAB4dbGeiX9h8unkKHxuWwb",
+   "a": "TCQQjfccKdMi4CnPAzmZW5TALH4HbwceVb",
+   "firma": "TCQQjfccKdMi4CnPAzmZW5TALH4HbwceVb",
+   "llamaA": "THb4CqiFdwNHsWsQCs4JhzwjMWys4aqCbF",
+   "selector": "cc872b66",
+   "metodoProbable": "issue(uint256)",
+   "resultado": "SUCCESS"
+  },
+  {
+   "tx": "fcd6e98977ec3ee2471507c9ab039ebe36bd66510ef117bcc153745eb80979a5",
+   "cuando": "2021-03-30T08:22:15.000Z",
+   "eth": 13000,
+   "de": "T9yD14Nj9j7xAB4dbGeiX9h8unkKHxuWwb",
+   "a": "TKkrTxXwGszshcrYSashxbyrvGbPmshUoK",
+   "firma": "TKkrTxXwGszshcrYSashxbyrvGbPmshUoK",
+   "llamaA": "THb4CqiFdwNHsWsQCs4JhzwjMWys4aqCbF",
+   "selector": "cc872b66",
+   "metodoProbable": "issue(uint256)",
+   "resultado": "SUCCESS"
+  },
+  {
+   "tx": "26d36f89fbe014f4e7c29051e33f25b752930239c35f51be3392eec35f73cbcf",
+   "cuando": "2021-03-30T08:02:03.000Z",
+   "eth": 7000,
+   "de": "T9yD14Nj9j7xAB4dbGeiX9h8unkKHxuWwb",
+   "a": "TKkrTxXwGszshcrYSashxbyrvGbPmshUoK",
+   "firma": "TKkrTxXwGszshcrYSashxbyrvGbPmshUoK",
+   "llamaA": "THb4CqiFdwNHsWsQCs4JhzwjMWys4aqCbF",
+   "selector": "cc872b66",
+   "metodoProbable": "issue(uint256)",
+   "resultado": "SUCCESS"
+  },
+  {
+   "tx": "1e1dba16e0954f495dae9aaad30937d148b47bf9d06be938a6cd953e57fb92f1",
+   "cuando": "2021-03-21T07:30:09.000Z",
+   "eth": 10000,
+   "de": "T9yD14Nj9j7xAB4dbGeiX9h8unkKHxuWwb",
+   "a": "TKkrTxXwGszshcrYSashxbyrvGbPmshUoK",
+   "firma": "TKkrTxXwGszshcrYSashxbyrvGbPmshUoK",
+   "llamaA": "THb4CqiFdwNHsWsQCs4JhzwjMWys4aqCbF",
+   "selector": "cc872b66",
+   "metodoProbable": "issue(uint256)",
+   "resultado": "SUCCESS"
+  },
+  {
+   "tx": "8cfd11cf3393a3592b2959dc1ad0e899dd252ff28f2650621cccf7b543b674d7",
+   "cuando": "2021-03-19T17:56:12.000Z",
+   "eth": 10000,
+   "de": "T9yD14Nj9j7xAB4dbGeiX9h8unkKHxuWwb",
+   "a": "TKkrTxXwGszshcrYSashxbyrvGbPmshUoK",
+   "firma": "TKkrTxXwGszshcrYSashxbyrvGbPmshUoK",
+   "llamaA": "THb4CqiFdwNHsWsQCs4JhzwjMWys4aqCbF",
+   "selector": "cc872b66",
+   "metodoProbable": "issue(uint256)",
+   "resultado": "SUCCESS"
+  },
+  {
+   "tx": "b3e3b64f9cf17580714db10a00f4f504cb5eb9a2b1854940a0f7ee336c71caf7",
+   "cuando": "2020-12-23T08:34:33.000Z",
+   "eth": 10000,
+   "de": "T9yD14Nj9j7xAB4dbGeiX9h8unkKHxuWwb",
+   "a": "TKkrTxXwGszshcrYSashxbyrvGbPmshUoK",
+   "firma": "TKkrTxXwGszshcrYSashxbyrvGbPmshUoK",
+   "llamaA": "THb4CqiFdwNHsWsQCs4JhzwjMWys4aqCbF",
+   "selector": "cc872b66",
+   "metodoProbable": "issue(uint256)",
+   "resultado": "SUCCESS"
+  },
+  {
+   "tx": "b526b84060e15aacb8a4a10b7ff9a6179d571b9aee16d931aa94afcdcc416dbd",
+   "cuando": "2020-11-22T08:31:42.000Z",
+   "eth": 10000,
+   "de": "T9yD14Nj9j7xAB4dbGeiX9h8unkKHxuWwb",
+   "a": "TKkrTxXwGszshcrYSashxbyrvGbPmshUoK",
+   "firma": "TKkrTxXwGszshcrYSashxbyrvGbPmshUoK",
+   "llamaA": "THb4CqiFdwNHsWsQCs4JhzwjMWys4aqCbF",
+   "selector": "cc872b66",
+   "metodoProbable": "issue(uint256)",
+   "resultado": "SUCCESS"
+  },
+  {
+   "tx": "a318bebb234be68f3cdc3e52f396ae2edb078bf8d25e3a9b5a74115e7d0d2468",
+   "cuando": "2025-11-10T16:13:33.000Z",
+   "eth": 49999.99999999999,
+   "de": "TR7BUFRQeq1w5jAZf1FKx85SHuX6PfMqsV",
+   "a": "TCQQjfccKdMi4CnPAzmZW5TALH4HbwceVb",
+   "firma": "TCQQjfccKdMi4CnPAzmZW5TALH4HbwceVb",
+   "llamaA": "TR7BUFRQeq1w5jAZf1FKx85SHuX6PfMqsV",
+   "selector": "852a12e3",
+   "metodoProbable": null,
+   "resultado": "SUCCESS"
+  },
+  {
+   "tx": "7d5d5755643b78a1f1917e17f90236109796b3fd1b57102cb55a5fc2f4bc84a6",
+   "cuando": "2025-05-10T16:52:03.000Z",
+   "eth": 524000,
+   "de": "TCQQjfccKdMi4CnPAzmZW5TALH4HbwceVb",
+   "a": "TR7BUFRQeq1w5jAZf1FKx85SHuX6PfMqsV",
+   "firma": "TCQQjfccKdMi4CnPAzmZW5TALH4HbwceVb",
+   "llamaA": "TR7BUFRQeq1w5jAZf1FKx85SHuX6PfMqsV",
+   "selector": "a0712d68",
+   "metodoProbable": "mint(uint256)",
+   "resultado": "SUCCESS"
+  },
+  {
+   "tx": "6fe1c1544a8c705b4af1dd52818ac57bb9a8527b3918c1d398474928d620c7bb",
+   "cuando": "2025-05-10T16:51:36.000Z",
+   "eth": 1,
+   "de": "TCQQjfccKdMi4CnPAzmZW5TALH4HbwceVb",
+   "a": "TR7BUFRQeq1w5jAZf1FKx85SHuX6PfMqsV",
+   "firma": "TCQQjfccKdMi4CnPAzmZW5TALH4HbwceVb",
+   "llamaA": "TR7BUFRQeq1w5jAZf1FKx85SHuX6PfMqsV",
+   "selector": "a0712d68",
+   "metodoProbable": "mint(uint256)",
+   "resultado": "SUCCESS"
+  },
+  {
+   "tx": "d709116063c73580ccd54a4502b6f87ab2c490d80ae72b57b1f2d273a2125a14",
+   "cuando": "2024-11-02T15:05:48.000Z",
+   "eth": 10000,
+   "de": "TCQQjfccKdMi4CnPAzmZW5TALH4HbwceVb",
+   "a": "TR7BUFRQeq1w5jAZf1FKx85SHuX6PfMqsV",
+   "firma": "TCQQjfccKdMi4CnPAzmZW5TALH4HbwceVb",
+   "llamaA": "TR7BUFRQeq1w5jAZf1FKx85SHuX6PfMqsV",
+   "selector": "a0712d68",
+   "metodoProbable": "mint(uint256)",
+   "resultado": "SUCCESS"
+  }
+ ]
+}
