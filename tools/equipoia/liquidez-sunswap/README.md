@@ -9,6 +9,7 @@ Copia de transparencia de lo que calcula la pestaña «Liquidez sun.io» de Herr
 - `liquidez.cjs`: junta lo anterior y escribe `data/liquidez-sunswap.json`, que es lo que lee la página.
 - `interp.js`: lo que hace la página con el importe que escribes (interpola entre dos puntos de la cuadrícula; error medido: menos de 0,02 puntos con costes de hasta el 5 %).
 - `validar.cjs`: compara el motor con los cotizadores oficiales de los contratos (solo lectura); se repite una vez al día.
-- `decidir.cjs`: decide si una lectura es válida y si hay que renovar la página.
+- `decidir.cjs`: decide si una lectura es válida y si hay que renovar la página. Una lectura con errores o en la que a algún token le falta un mercado por leer no se publica nunca. Si un token que tenía mercado lo pierde con la lectura completa (caso real: el 13-nov-2026 se retiró casi toda la liquidez del mercado stUSDT/USDT), se publica cuando la lectura anterior, de hace entre 10 minutos y 6 horas, dice lo mismo; con una sola lectura queda pendiente.
+- `decidir.test.cjs`: las pruebas de esa regla, con el caso real incluido (`node --test`).
 
 Es una simulación, no una venta real: no incluye la energía de TRON ni lo que cambie el mercado entre la lectura y la operación. Nada de esto es consejo de inversión.
