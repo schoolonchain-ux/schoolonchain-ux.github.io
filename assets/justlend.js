@@ -31,6 +31,8 @@
   JL.datosPropios = (titulo, nota, cab, filas, csv) => ({ titulo, nota, csv, rows: filas, cols: cab.map((c, i) => ({ t: c.t || c, num: c.num ? 1 : 0, v: (r) => (c.f ? c.f(r[i], r) : r[i]), o: (r) => (typeof r[i] === 'number' ? r[i] : String(r[i]).toLowerCase()), csv: (r) => (c.csv ? c.csv(r[i], r) : r[i]) })) });
   JL.grafico = (padre, o) => { const extra = Array.isArray(o.extra) ? el('div', null, ...o.extra) : o.extra; const t = UI.tarjeta({ titulo: o.titulo, sub: o.sub, alto: o.alto || 280, ayuda: o.ayuda, datos: o.datos, extra, filtros: o.filtros, cls: o.cls }); padre.append(t.c);
     const cfg = typeof o.cfg === 'function' ? o.cfg(t) : o.cfg; cfg.options = Object.assign({ responsive: true, maintainAspectRatio: false }, cfg.options || {});
+    /* En todas las barras, el ratón elige la FILA (o la columna) entera y no solo la barra: así las barras diminutas (ETH, BTC, sTRX… con un 0,1 % o menos) también se pillan; vale para tooltip, cursor y clic. */
+    if (cfg.type === 'bar' && !cfg.options.interaction) cfg.options.interaction = { mode: 'index', axis: cfg.options.indexAxis === 'y' ? 'y' : 'x', intersect: false };
     /* leyendas con rectángulos (no círculos) y con aire, en todos los gráficos que la muestran */
     const lg = cfg.options.plugins && cfg.options.plugins.legend; if (lg && lg.display !== false) lg.labels = Object.assign({ usePointStyle: false, boxWidth: 18, boxHeight: 10, padding: 16, font: { size: 13 } }, lg.labels || {});
     t.chart = new Chart(t.cv, cfg); JL.charts.push(t.chart); return t; };
