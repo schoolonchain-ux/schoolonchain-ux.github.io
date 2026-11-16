@@ -126,13 +126,13 @@
           el('td', { class: 'num' }, m(mk.cajaUSD)), el('td', { class: 'num' }, m(ret), el('div', { class: 'jlp-sub' }, pc(usd > 0 ? ret / usd * 100 : 0, 0) + ' de lo tuyo')), el('td', { class: 'num' }, f.deuda > 0 ? m(dUsd) : '—'), el('td', null, badge(ev.v)));
       });
       const nDep = grandes.filter((f) => f.dep * (f.m.precioUSD || 0) >= 0.5).length;
-      sal.push(el('p', null, el('b', null, 'Tienes ' + m(totDep) + ' depositados'), ' en ' + nDep + (nDep === 1 ? ' mercado' : ' mercados') + '. ', el('b', null, 'Retirable ahora, de golpe: ' + m(totRet)), ' (' + pc(totDep > 0 ? totRet / totDep * 100 : 0, 0) + '). Vendiendo en sun.io eso daría ≈ ' + m(totSal) + ' en USDT (cada token por separado: las ventas comparten mercados, así que es una cifra optimista).'));
+      sal.push(el('p', null, el('b', null, 'Tienes ' + m(totDep) + ' depositados'), ' en ' + nDep + (nDep === 1 ? ' mercado' : ' mercados') + '. ', el('b', null, 'Retirable de golpe con la caja que había a las ' + (datos.bloque && datos.bloque.ts ? fh(datos.bloque.ts).slice(11) : 'la última lectura') + ': ' + m(totRet)), ' (' + pc(totDep > 0 ? totRet / totDep * 100 : 0, 0) + '). Tu posición se acaba de leer; la caja de cada mercado es la de esa lectura y puede haber cambiado. Vendiendo en sun.io eso daría ≈ ' + m(totSal) + ' en USDT (cada token por separado: las ventas comparten mercados, así que es una cifra optimista).'));
       if (hayDeuda) sal.push(el('p', { class: 'liq-aviso' }, 'Tienes deuda (' + m(deuda) + ' en total). Retirar depósitos que la respaldan puede ser rechazado por JustLend si te dejara sin garantía suficiente: este panel no calcula tu margen.'));
-      sal.push(el('div', { class: 'jlp-scroll' }, el('table', { class: 'jlp-tabla' }, el('thead', null, el('tr', null, ['Mercado', 'Tu depósito', 'Caja del mercado', 'Retirable ahora', 'Tu deuda', 'Veredicto'].map((t, i) => el('th', { class: i > 0 && i < 5 ? 'num' : '' }, t)))), el('tbody', null, trs))));
+      sal.push(el('div', { class: 'jlp-scroll' }, el('table', { class: 'jlp-tabla' }, el('thead', null, el('tr', null, ['Mercado', 'Tu depósito (leído al consultar)', 'Caja del mercado (lectura de las ' + (datos.bloque && datos.bloque.ts ? fh(datos.bloque.ts).slice(11) : 'la última lectura') + ')', 'Retirable con esa caja', 'Tu deuda', 'Veredicto'].map((t, i) => el('th', { class: i > 0 && i < 5 ? 'num' : '' }, t)))), el('tbody', null, trs))));
     }
     if (polvo && grandes.length) sal.push(el('p', { class: 'jlp-sub' }, polvo + (polvo === 1 ? ' posición de menos de 0,5 $ no se muestra.' : ' posiciones de menos de 0,5 $ no se muestran.')));
     if (r.fallos) sal.push(el('p', { class: 'liq-aviso' }, r.fallos + ' de 24 mercados no se pudieron leer: la cuenta puede tener más posiciones de las que se ven.'));
-    sal.push(el('p', { class: 'jlp-sub' }, 'Cuenta: ', ext(TS(addr), addr), ' · lectura de ahora mismo en TronGrid desde tu navegador; no se guarda.'));
+    sal.push(el('p', { class: 'jlp-sub' }, 'Cuenta: ', ext(TS(addr), addr), ' · posición leída en TronGrid desde tu navegador el ' + fh(Date.now()) + '; no se guarda. La caja y los veredictos son de la lectura publicada (' + (datos.bloque && datos.bloque.ts ? fh(datos.bloque.ts) : 'sin fecha') + ').'));
     return sal;
   }
   function montarCuenta() {
@@ -145,21 +145,22 @@
       btn.disabled = false;
     };
     btn.addEventListener('click', ir); inp.addEventListener('keydown', (e) => { if (e.key === 'Enter') ir(); });
-    cuentaBox.replaceChildren(el('h4', { style: 'margin:0 0 4px' }, 'Mi cuenta'), el('p', { class: 'sub' }, 'Pega una dirección y verás qué tiene depositado y debe en JustLend y cuánto podría retirar ahora. Solo lectura: la consulta sale de tu navegador hacia el nodo público de TronGrid y no se guarda.'), el('div', { class: 'liq-form' }, el('label', null, 'Dirección', inp), btn), salida);
+    cuentaBox.replaceChildren(el('h4', { style: 'margin:0 0 4px' }, 'Mi cuenta'), el('p', { class: 'sub' }, 'Pega una dirección y verás qué tiene depositado y debe en JustLend y cuánto podría retirar con la caja de la última lectura publicada. Solo lectura: la consulta sale de tu navegador hacia el nodo público de TronGrid y no se guarda.'), el('div', { class: 'liq-form' }, el('label', null, 'Dirección', inp), btn), salida);
   }
 
   function pintarTodo() {
     const e = edadH(), c = datos.cambios || [];
-    const estado = el('div', { class: 'jlp-estado' }, el('b', null, 'Lectura en vivo: '), e == null ? 'sin fecha' : hace(e) + ' · bloque ' + n(datos.bloque.n) + ' (' + fh(datos.bloque.ts) + ')', ' · ', ext('data/justlend-panel.json', 'datos en bruto', 'addr'), ' · ', el('a', { href: 'justlend.html' }, 'la investigación completa →'));
+    const estado = el('div', { class: 'jlp-estado' }, el('b', null, 'Última lectura publicada de la cadena: '), e == null ? 'sin fecha' : fh(datos.bloque.ts) + ' (' + hace(e) + ') · bloque ' + n(datos.bloque.n), ' · ', ext('data/justlend-panel.json', 'datos en bruto', 'addr'), ' · ', el('a', { href: 'justlend.html' }, 'la investigación completa →'));
     const avisoEdad = e != null && e > R.LIMITE_EDAD_H ? el('p', { class: 'liq-aviso' }, 'La lectura tiene ' + n(Math.round(e * 10) / 10, 1) + ' horas. Con más de ' + R.LIMITE_EDAD_H + ' h el panel no clasifica: todo sale «desconocido» hasta que se renueve.') : null;
     const cambios = c.length
       ? el('div', { class: 'jlp-alerta' }, el('b', null, '⚠ ' + c.length + (c.length === 1 ? ' cambio' : ' cambios') + ' respecto a la investigación del 13-nov'), el('ul', null, c.map((x) => el('li', null, el('b', null, x.donde + ' · ' + x.campo + ': '), val(x.antes), ' → ', val(x.ahora)))), el('p', { class: 'jlp-sub' }, 'Un cambio de dueño, de implementación o de oráculo puede cambiar quién controla el dinero: revisa qué ha pasado antes de fiarte del semáforo.'))
       : el('p', { class: 'jlp-ok' }, '✓ Sin cambios de gobierno desde la investigación del 13-nov: mismo dueño, implementación, oráculo, guardián y plazo del Timelock (' + n(datos.gobierno.retardoTimelockSeg / 3600) + ' h) en el Comptroller y en los ' + datos.mercados.length + ' mercados.');
+    const yaUsdt = datos.mercados.reduce((a, x) => a + (x.venta && x.venta.esUSDT ? (x.cajaUSD || 0) : 0), 0);   // caja que ya es USDT: no hay que venderla (P6)
     const t = datos.totales, kpi = (titulo, valor, sub) => el('div', { class: 'jlp-kpi' }, el('span', null, titulo), el('strong', null, valor), el('small', null, sub));
     const kpis = el('div', { class: 'jlp-kpis' },
-      kpi('Caja de JustLend', m(t.cajaUSD), 'lo que hay ahora para retirar de golpe'),
+      kpi('Caja de JustLend', m(t.cajaUSD), 'lo que había en esa lectura para retirar de golpe'),
       kpi('Prestado', m(t.prestadoUSD), pc(t.reclamoUSD ? t.prestadoUSD / t.reclamoUSD * 100 : 0, 1) + ' de lo depositado'),
-      kpi('Vendible por USDT en sun.io', m(t.vendibleUSD), pc(t.cajaUSD ? t.vendibleUSD / t.cajaUSD * 100 : 0, 1) + ' de la caja (suma de estimaciones por separado)'),
+      kpi('Caja que es USDT o se vendería por USDT', m(t.vendibleUSD), pc(t.cajaUSD ? t.vendibleUSD / t.cajaUSD * 100 : 0, 1) + ' de la caja: ' + m(yaUsdt) + ' ya son USDT y ≈ ' + m(Math.max(0, t.vendibleUSD - yaUsdt)) + ' saldrían de vender los demás tokens en sun.io (suma de estimaciones por separado)'),
       kpi('USDT en la PSM de USDD', datos.psm.usdtEnPSM == null ? '—' : m(datos.psm.usdtEnPSM), 'salida oficial de USDD, compartida'));
     const inp = el('input', { type: 'text', inputmode: 'decimal', value: n(importe), 'aria-label': 'Importe en dólares' });
     const poner = (v) => { importe = Math.max(1, Math.round(v)); guarda('jl-importe', importe); inp.value = n(importe); qs.forEach((b) => b.classList.toggle('on', Number(b.dataset.v) === importe)); pintarTabla(); };
@@ -174,10 +175,10 @@
       el('li', null, el('b', null, 'Desconocido'), ' si no hay mercado de venta o tu importe supera lo que mide el motor, y no hay salida oficial verificable.'), el('li', null, el('b', null, 'Comprometido'), ' si vender cuesta más del 5 % y no hay salida oficial.'),
       el('li', null, el('b', null, 'Parcial'), ' si tu importe es más de una décima parte de la caja, si vender cuesta entre el 1 % y el 5 %, si la única salida es lenta, si 3 cuentas reclaman ≥ 80 % de la caja, o si el dueño del token puede congelarlo o pausarlo (o no se sabe).'),
       el('li', null, el('b', null, 'Recuperable'), ' si nada de lo anterior se cumple.')), el('p', { class: 'jlp-sub' }, 'Las reglas se aplican por orden y gana la primera. Los umbrales (10 veces, 1 %, 5 %, 80 %) son un punto de partida, no están calibrados con datos históricos. Es la misma regla de la calculadora de la investigación.'));
-    const pie = el('div', { class: 'jlp-pie' }, el('p', null, el('b', null, 'Qué se lee cada hora y qué no. '), 'En vivo: caja, deuda, precios del oráculo, pausas, dueños e implementaciones, PSM de USDD y el coste de vender cada token en sun.io. De la foto del 13-nov (no se relee): qué puede hacer el dueño de cada token (congelar, pausar, crear) y cuánto concentran los tres mayores titulares; por eso un token puede cambiar de poderes sin que este panel lo note todavía.'),
-      el('p', null, el('b', null, 'Lo que NO es. '), 'No es una predicción ni un consejo financiero: es lo que la cadena dice ahora. El coste de venta es una estimación sobre el estado actual de sun.io; la suma de varios tokens no es una venta conjunta. Los canjes con el emisor de ETH y BTC y el plazo de sTRX no se pueden comprobar en la cadena (se dice en cada fila).'));
+    const pie = el('div', { class: 'jlp-pie' }, el('p', null, el('b', null, 'Qué se lee cada hora y qué no. '), 'La cadena se relee cada hora, pero la página solo se renueva cuando cambia algo apreciable o, como mucho, cada 3 horas: lo que ves puede tener hasta unas 3 horas (arriba pone la hora exacta). De esa lectura: caja, deuda, precios del oráculo, pausas, dueños e implementaciones, PSM de USDD y el coste de vender cada token en sun.io. De la foto del 13-nov (no se relee): qué puede hacer el dueño de cada token (congelar, pausar, crear) y cuánto concentran los tres mayores titulares; por eso un token puede cambiar de poderes sin que este panel lo note todavía.'),
+      el('p', null, el('b', null, 'Lo que NO es. '), 'No es una predicción ni un consejo financiero: es lo que decía la cadena en la lectura de arriba. El coste de venta es una estimación sobre el estado de sun.io en esa lectura; la suma de varios tokens no es una venta conjunta. Los canjes con el emisor de ETH y BTC y el plazo de sTRX no se pueden comprobar en la cadena (se dice en cada fila).'));
     raiz.replaceChildren(...[
-      el('div', { class: 'liq-cab' }, el('h3', null, '¿Puedo recuperar mi dinero de JustLend?'), el('p', { class: 'sub' }, 'Para cada token: cuánta caja hay ahora para retirar, cuánto USDT sacarías vendiéndolo, qué salida oficial tiene y qué puede hacer el dueño del token. El semáforo se calcula con tu importe.')),
+      el('div', { class: 'liq-cab' }, el('h3', null, '¿Puedo recuperar mi dinero de JustLend?'), el('p', { class: 'sub' }, 'Para cada token: cuánta caja había en la última lectura para retirar, cuánto USDT sacarías vendiéndolo, qué salida oficial tiene y qué puede hacer el dueño del token. El semáforo se calcula con tu importe.')),
       estado, avisoEdad, cambios, kpis, form, cuerpo.resumen, cuerpo.tabla, reglas, cuentaBox, pie].filter(Boolean));   // replaceChildren(null) pinta «null»
     montarCuenta(); pintarTabla();
   }

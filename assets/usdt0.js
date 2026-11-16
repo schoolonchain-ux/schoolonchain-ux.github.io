@@ -15,7 +15,14 @@
   // una cifra grande que se puede pulsar: lleva a la tabla o al origen de donde sale
   const kp = (l, v, s, accion, pista) => { const t = el('div', { class: 'kpi' + (accion ? ' clk' : ''), role: accion ? 'button' : null, tabindex: accion ? '0' : null }, el('div', { class: 'kl' }, l), el('div', { class: 'kv' }, v), el('div', { class: 'kn' }, s), accion ? el('div', { class: 'ko' }, (pista || 'Ver de dónde sale') + ' →') : null); if (accion) { t.addEventListener('click', accion); t.addEventListener('keydown', (e) => { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); accion(); } }); } return t; };
 
-  function pintar(D) {
+  function pintar(D, redesComprobar) {
+    // A4 (auditoría del 16-nov): «Comprobar» pregunta al contrato en el momento, pero solo en las redes de su lista (data/redes-usdt.json). Las redes de esta pestaña que no están ahí se dicen por su nombre.
+    const idsC = redesComprobar ? new Set(redesComprobar.map((r) => r.id)) : null;
+    const fuera = idsC ? [...new Map(D.circulacion.redes.concat(D.vigilante.bloqueos.porRed).filter((r) => r.id && !idsC.has(r.id)).map((r) => [r.id, r.nombre])).values()] : [];
+    const lista = (a) => (a.length > 1 ? a.slice(0, -1).join(', ') + ' y ' + a[a.length - 1] : a[0] || '');
+    const alcance = idsC ? 'pregunta al contrato en el momento de la consulta, desde tu navegador, en las ' + n(idsC.size) + ' redes de su lista' + (fuera.length ? '. <b>No mira ' + lista(fuera).replace(/, ([^,]+) y /, ', $1 ni ').replace(/^([^,]+) y ([^,]+)$/, '$1 ni $2') + '</b>: de ' + (fuera.length > 1 ? 'esas redes' : 'esa red') + ' solo hay lo que anotó el vigilante en la lectura del ' + fh(Date.parse(D.vigilante.generadoEn)) + ', y cada dirección enlaza a su explorador' : '') : 'pregunta al contrato en el momento de la consulta, desde tu navegador, pero solo en las redes de <a class="lnk" href="data/redes-usdt.json">su lista</a>, que no son todas las de esta pestaña';
+    const unNodo = D.circulacion.redes.filter((r) => r.nodosQueCoincidieron < 2);   // A8: redes cuya cifra viene de un solo nodo (no hay contraste)
+    const parteUnNodo = unNodo.reduce((t, r) => t + r.usdt0, 0) / D.circulacion.totalUsd;
     const edad = (Date.now() - Date.parse(D.leidoEn)) / 3600000;
     const C0 = D.circulacion, R = D.respaldo, V = D.vigilante, M = V.mensajes, B = V.bloqueos;
     const cuerpo = el('div');
@@ -26,11 +33,11 @@
 
     /* ---- las cajas de detalle (se crean antes para que las cifras puedan llevar a ellas) ---- */
     const total = C0.totalUsd;
-    const cajaRedes = caja('USDT0 en circulación por red', el('div', { class: 'cs' }, 'Cantidad total de USDT0 que existe en cada red, leída el ' + fh(Date.parse(D.leidoEn)) + ' directamente en el contrato del token en los nodos públicos de esa red; deben dar el mismo número. Pulsa una red para abrir ese contrato en su explorador.'),
+    const cajaRedes = caja('USDT0 en circulación por red', el('div', { class: 'cs' }, 'Cantidad total de USDT0 que existe en cada red, leída el ' + fh(Date.parse(D.leidoEn)) + ' directamente en el contrato del token en los nodos públicos configurados de esa red (uno o dos). Donde hay dos, tienen que dar el mismo número' + (unNodo.length ? '; en ' + n(unNodo.length) + ' de las ' + n(C0.redes.length) + ' redes (' + n(parteUnNodo * 100, 0) + ' % del USDT0) la cifra viene de un solo nodo, sin contraste: lo dice la última columna' : '') + '. Pulsa una red para abrir ese contrato en su explorador.'),
       UI.tabla({ pp: 10, buscar: false, csv: 'usdt0-circulacion-por-red', rows: C0.redes.map((r) => ({ ...r })), orden: [1, -1], onRow: (r) => { if (r.enlace) window.open(r.enlace, '_blank', 'noopener'); },
         cols: [{ t: 'Red', v: (r) => el('span', null, el('b', null, r.nombre), el('br'), r.contrato ? (r.enlace ? ext(r.enlace, 'contrato ' + corto(r.contrato) + ' ↗') : el('span', { class: 'mono', style: 'font-size:11.5px', title: 'Esta red no tiene explorador enlazado: copia la dirección' }, 'contrato ' + r.contrato + ' (sin explorador enlazado)')) : el('span', { class: 'muted' }, 'sin contrato')), o: (r) => r.nombre, csv: (r) => r.nombre + (r.contrato ? ' ' + r.contrato : '') },
           { t: 'USDT0 en circulación', v: (r) => mm(r.usdt0), o: (r) => r.usdt0, csv: (r) => r.usdt0 }, { t: '% del total', v: (r) => n((r.usdt0 / total) * 100, 1) + ' %', o: (r) => r.usdt0 },
-          { t: 'Nodos que dieron ese número', v: (r) => (r.nodosQueCoincidieron === r.nodosConfigurados ? n(r.nodosQueCoincidieron) + ' de ' + n(r.nodosConfigurados) : '1 de ' + n(r.nodosConfigurados) + ' (el otro no respondió)'), o: (r) => r.nodosQueCoincidieron }] }),
+          { t: 'Nodos que dieron ese número', v: (r) => (r.nodosQueCoincidieron === r.nodosConfigurados ? n(r.nodosQueCoincidieron) + ' de ' + n(r.nodosConfigurados) + (r.nodosConfigurados < 2 ? ' (sin contraste)' : '') : n(r.nodosQueCoincidieron) + ' de ' + n(r.nodosConfigurados) + ' (el otro no respondió o dio otro número; se toma el primero)'), o: (r) => r.nodosQueCoincidieron }] }),
       el('p', { class: 'hint', style: 'margin:8px 0 0' }, 'Cómo se lee: la función totalSupply() del contrato del token USDT0 de cada red. Lectura del ' + fh(Date.parse(D.leidoEn)) + '.'));
 
     const cajaRespaldo = caja('¿Cuadra el respaldo?', el('p', { class: 'cs', style: 'margin:0 0 8px' }, 'Se compara el USDT que guarda el adaptador de Ethereum con la suma del USDT0 de las redes de arriba, leído el ' + fh(Date.parse(D.leidoEn)) + ' a dos nodos públicos de Ethereum que deben dar el mismo número.'),
@@ -56,8 +63,9 @@
     const cajaBloq = caja('Direcciones con el USDT bloqueado, por red', el('div', { class: 'cs' }, 'Según el vigilante: direcciones bloqueadas, bloqueos que se levantaron y el dinero de cuentas bloqueadas que Tether ha destruido. Aquí entran Avalanche y Kaia, que usan el USDT nativo de Tether, no el USDT0. Pulsa una red para ver sus direcciones.'),
       UI.tabla({ pp: 10, buscar: false, rows: B.porRed.map((r) => ({ ...r })), orden: [1, -1], onRow: (r) => { if (dirs.length) { pintarDirs(r.id); irA(cuerpoDirs); } },
         cols: [{ t: 'Red', v: (r) => r.nombre, o: (r) => r.nombre }, { t: 'Bloqueadas', v: (r) => n(r.vigentes), o: (r) => r.vigentes }, { t: 'Liberadas', v: (r) => n(r.liberadas), o: (r) => r.liberadas }, { t: 'Fondos destruidos', v: (r) => (r.destruidoUsd ? mm(r.destruidoUsd) : '—'), o: (r) => r.destruidoUsd }] }),
+      (() => { const enTabla = B.porRed.reduce((t, r) => t + (r.destruidoUsd || 0), 0), resto = B.destruidoTotalUsd - enTabla; return resto > 0.5 ? el('p', { class: 'cs', style: 'margin:8px 0 0' }, 'La tabla solo lista las redes que tienen alguna dirección bloqueada: sus fondos destruidos suman ' + mm(enTabla) + '. El total de la cifra de arriba (' + mm(B.destruidoTotalUsd) + ') incluye otros ' + mm(resto) + ' destruidos en redes donde ya no queda ninguna dirección bloqueada.') : null; })(),
       el('h3', { style: 'margin:16px 0 4px;font-size:15px' }, 'Las direcciones, una a una'), estadoDirs, cuerpoDirs,
-      el('p', { class: 'hint', style: 'margin:8px 0 0' }, 'Cómo se lee: los avisos BlockPlaced / BlockReleased / DestroyedBlockedFunds que emite el contrato del USDT0 de cada red (y el del USDT en Avalanche y Kaia), recogidos por el vigilante. Para ver si UNA dirección concreta está bloqueada ahora mismo, usa la zona «Comprobar»: lo lee en vivo de la cadena.'));
+      el('p', { class: 'hint', style: 'margin:8px 0 0' }, 'Cómo se lee: los avisos BlockPlaced / BlockReleased / DestroyedBlockedFunds que emite el contrato del USDT0 de cada red (y el del USDT en Avalanche y Kaia), recogidos por el vigilante. Lectura del vigilante: ' + fh(Date.parse(V.generadoEn)) + '. '), el('p', { class: 'hint', style: 'margin:6px 0 0', html: 'Para ver si UNA dirección concreta sigue bloqueada, usa la zona «Comprobar»: ' + alcance + '.' }));
 
     // mensajes entre redes: cada ruta lleva a sus mensajes, cada mensaje a LayerZero Scan
     const cuerpoMsgs = el('div');
@@ -82,14 +90,14 @@
     cuerpo.append(el('div', { class: 'kpis2' },
       kp('USDT0 en circulación', mm(total), 'sumado en ' + n(C0.redesLeidas) + ' redes · lectura directa', () => irA(cajaRedes), 'Ver por red y contrato'),
       kp('USDT guardado en Ethereum', mm(R.usdtEnElAdaptador), (R.diferenciaUsd >= 0 ? '+' : '−') + mm(Math.abs(R.diferenciaUsd)) + ' (' + n(Math.abs(R.diferenciaPct), 2) + ' %) ' + (R.diferenciaUsd >= 0 ? 'más que el USDT0 medido' : 'menos que el USDT0 medido') + ' · lectura directa', () => irA(cajaRespaldo), 'Ver el adaptador en Etherscan'),
-      kp('Direcciones bloqueadas', n(B.vigentesTotal), 'en ' + n(B.porRed.length) + ' redes · fondos destruidos hasta hoy ' + mm(B.destruidoTotalUsd) + ' · vigilante', () => { if (dirs.length) pintarDirs(null); irA(cajaBloq); }, 'Ver las direcciones'),
+      kp('Direcciones bloqueadas', n(B.vigentesTotal), 'en ' + n(B.porRed.length) + ' redes · fondos destruidos hasta esa lectura, en todas las redes: ' + mm(B.destruidoTotalUsd) + ' · vigilante', () => { if (dirs.length) pintarDirs(null); irA(cajaBloq); }, 'Ver las direcciones'),
       m24 ? kp('Mensajes entre redes (24 h)', n(m24.total), (M.volumenUsd24h != null ? mm(M.volumenUsd24h) + ' movidos · ' : '') + n(m24.enCurso) + ' en curso · ' + n(m24.conProblema) + ' con problema · vigilante', cajaMsgs ? () => irA(cajaMsgs) : null, 'Ver rutas y mensajes') : null));
 
     cuerpo.append(cajaRedes, cajaRespaldo, cajaBloq); if (cajaMsgs) cuerpo.append(cajaMsgs);
     cuerpo.append(el('div', { class: 'ayuda' }, [
-      { k: 'De dónde sale', v: 'Circulación y respaldo: leídos directamente en cada red con los nodos públicos configurados, que tienen que dar el mismo número (la tabla dice cuántos lo dieron). Bloqueos y mensajes: el vigilante de USDT0 de EquipoIA (' + n(V.safes.total) + ' cuentas multifirma leídas en las redes, ' + (V.safes.tresDeCinco === V.safes.total ? 'todas con 3 firmas de 5' : n(V.safes.tresDeCinco) + ' con 3 firmas de 5') + '; lectura de ' + fh(Date.parse(V.generadoEn)) + ').' },
+      { k: 'De dónde sale', v: 'Circulación y respaldo: leídos directamente en cada red con los nodos públicos configurados (uno o dos por red); donde hay dos tienen que dar el mismo número, y la tabla dice cuántos lo dieron' + (unNodo.length ? ' (' + n(unNodo.length) + ' redes, el ' + n(parteUnNodo * 100, 0) + ' % del USDT0, se leen con un solo nodo)' : '') + '. Bloqueos y mensajes: el vigilante de USDT0 de EquipoIA (' + n(V.safes.total) + ' cuentas multifirma leídas en las redes, ' + (V.safes.tresDeCinco === V.safes.total ? 'todas con 3 firmas de 5' : n(V.safes.tresDeCinco) + ' con 3 firmas de 5') + '; lectura de ' + fh(Date.parse(V.generadoEn)) + ').' },
       { k: 'Qué NO cubre', v: 'No mide Stellar, IOTA ni HyperCore. En ' + n(V.huecosDeHistorialAbiertos) + ' puntos de la historia (redes cuyos nodos públicos no guardan todo el pasado) el vigilante no ha podido leer los bloqueos antiguos, así que los bloqueos viejos de esas redes pueden faltar. La cifra de «bloqueadas» es la que consta en lo que sí se ha leído. Cuatro redes (Stable, Tempo, MegaETH y Hedera) no tienen explorador enlazado: se enseña la dirección para copiarla.' },
-      { k: 'Cuándo se actualiza', v: 'Una vez al día. Para una dirección o contrato concreto, usa «Comprobar»: eso sí se lee en vivo.' }].map((i) => el('div', { class: 'ai' }, el('b', null, i.k + '. '), el('span', { html: i.v })))));
+      { k: 'Cuándo se actualiza', v: 'Una vez al día. Para una dirección concreta, «Comprobar» ' + alcance + '.' }].map((i) => el('div', { class: 'ai' }, el('b', null, i.k + '. '), el('span', { html: i.v })))));
     raiz.replaceChildren(cuerpo);
   }
 
@@ -100,7 +108,9 @@
   document.addEventListener('DOMContentLoaded', () => {
     fetch('data/usdt0.json?v=' + Math.floor(Date.now() / 600000), { signal: AbortSignal.timeout(15000) })
       .then((r) => { if (!r.ok) throw new Error('HTTP ' + r.status); return r.json(); })
-      .then((D) => { if (!D || D.version !== 1 || !D.circulacion || !D.respaldo || !D.vigilante) throw new Error('formato inesperado'); pintar(D); })
+      .then(async (D) => { if (!D || D.version !== 1 || !D.circulacion || !D.respaldo || !D.vigilante) throw new Error('formato inesperado');
+        let redesC = null; try { const r = await fetch('data/redes-usdt.json', { signal: AbortSignal.timeout(15000) }); if (r.ok) redesC = (await r.json()).redes || null; } catch (e) { /* sin la lista: el texto lo dice en general */ }
+        pintar(D, redesC); })
       .catch((e) => fallo('No se pudo cargar la lectura (' + String(e.message).slice(0, 40) + ').'));
   });
 })();

@@ -12,7 +12,7 @@
   if (listaNov) box.parentNode.insertBefore(listaNov, box);
   // Intro: nº de casos abiertos y fecha de la última actualización (de reports/index.json y data/novedades.json) + la última novedad. Nada de esto se escribe a mano.
   { const k = document.getElementById('hero-kick'), N = window.NOVEDADES, casos = idx.informes.length;
-    if (k && casos) k.textContent = (window.CASO ? CASO.resumenCasos(idx.informes) : casos + (casos === 1 ? ' caso' : ' casos')) + (NOV[0] && N ? ' · actualizado el ' + N.fecha(NOV[0].fecha) + ', ' + N.hora(NOV[0].fecha) : '');
+    if (k && casos) k.textContent = (window.CASO ? CASO.resumenCasos(idx.informes) : casos + (casos === 1 ? ' caso' : ' casos')) + (NOV[0] && N ? ' · última novedad del sitio: ' + N.fecha(NOV[0].fecha) + ', ' + N.hora(NOV[0].fecha) : '');
     const hn = document.getElementById('hero-nov'); if (hn && NOV[0] && N) hn.append(N.linea(NOV[0])); }
   for (const r of idx.informes) {
     const a = C.el('a', { class: 'rcard' + (r.caso ? ' destacada' : ''), href: r.url || 'report.html?r=' + encodeURIComponent(r.slug) });
@@ -24,7 +24,7 @@
       el('p', null, r.resumen || ''));
     const zona = el('div'); a.append(zona);
     const ultima = NOV.find((x) => x.caso === r.slug); if (ultima && window.NOVEDADES) a.append(window.NOVEDADES.linea(ultima, { enlace: false }));
-    a.append(el('div', { class: 'foot' }, el('span', null, r.corte ? 'Datos hasta ' + r.corte.replace('T', ' ').slice(0, 16) + ' UTC' : 'Seguimiento en vivo'), el('span', null, 'Abrir panel →')));
+    a.append(el('div', { class: 'foot' }, el('span', null, r.corte ? 'Datos hasta ' + r.corte.replace('T', ' ').slice(0, 16) + ' UTC' : 'Se relee una vez al día'), el('span', null, 'Abrir panel →')));
     box.append(a);
     if (r.url) continue;
     try {

@@ -68,12 +68,16 @@
       const d = new Date(x.dia + 'T12:00:00Z');
       return el('div', { class: (x.dia === hoy ? 'hoy ' : '') + (x.trx === max && x.trx >= 1e6 ? 'hot' : ''), title: x.dia + ': ' + n(x.trx, 0) + ' TRX · ' + n(x.cuentas, 0) + (x.cuentas === 1 ? ' cuenta' : ' cuentas') }, DIAS[d.getUTCDay()], el('b', null, n(x.trx / 1e6, 1)), String(d.getUTCDate()));
     }));
-    const leyenda = el('p', { class: 'ldesc' }, 'Millones de TRX que terminan de descongelarse cada día. El día marcado es el mayor de la semana.');
+    const leyenda = el('p', { class: 'ldesc' }, 'Millones de TRX que terminan de descongelarse cada día (UTC), según la lectura del ' + String(D.leidoEn).slice(8, 10) + '/' + String(D.leidoEn).slice(5, 7) + ' a las ' + String(D.leidoEn).slice(11, 16) + ' UTC. El día de la lectura solo cuenta lo que quedaba por vencer desde esa hora. El día marcado es el mayor de la semana.');
     const resto = K.porFecha.slice(7); const mayor = resto.length ? resto.reduce((a, b) => (b.trx > a.trx ? b : a)) : null;
-    const total7 = dias.reduce((s, x) => s + x.trx, 0), cuentas7 = dias.reduce((s, x) => s + x.cuentas, 0);
+    const total7 = dias.reduce((s, x) => s + x.trx, 0);
+    // cuentas DISTINTAS de esos 7 días (una cuenta que descongela en dos días cuenta una vez); si la lectura no trae los eventos, no se da el número
+    const base = Date.parse(D.leidoEn), enDias = new Set(dias.map((x) => x.dia));
+    const cuentas7 = Array.isArray(D.eventos) ? new Set(D.eventos.filter((e) => e.e && e.e > base && enDias.has(new Date(e.e).toISOString().slice(0, 10))).map((e) => e.a)).size : null;
+    const hLec = String(D.leidoEn).slice(11, 16) + ' UTC';
     const a = el('a', { class: 'lt', href: 'herramientas.html#desbloqueos' }, 'Descongelaciones de TRX · próximos 7 días');
     const box = el('div', { class: 'lb' }, el('b', { class: 'lt' }, a), leyenda, cal,
-      el('div', { style: 'margin-top:8px' }, fila('Suman estos 7 días', mt(total7) + ' TRX · ' + n(cuentas7, 0) + ' cuentas'),
+      el('div', { style: 'margin-top:8px' }, fila('Suman estos 7 días', mt(total7) + ' TRX' + (cuentas7 == null ? '' : ' · ' + n(cuentas7, 0) + ' cuentas distintas')),
         K.yaDisponible ? fila('Ya retirables (sin retirar)', mt(K.yaDisponible.trx) + ' TRX · ' + n(K.yaDisponible.cuentas, 0) + ' cuentas', 'warn') : null,
         mayor && mayor.trx >= 1e6 ? fila('Mayor día siguiente: ' + DIAS[new Date(mayor.dia + 'T12:00:00Z').getUTCDay()] + ' ' + mayor.dia.slice(8), mt(mayor.trx) + ' TRX · ' + n(mayor.cuentas, 0) + ' cuentas') : null),
       antiguedad(D.leidoEn, 'Lista de TronScan'));
@@ -220,7 +224,7 @@
     for (const r of idx.informes) {
       const nov = NOV.find((x) => x.caso === r.slug); if (nov && (!ultima || Date.parse(nov.fecha) > Date.parse(ultima))) ultima = nov.fecha;
       const a = el('a', { class: 'lcaso', href: r.url || 'report.html?r=' + encodeURIComponent(r.slug) }, el('b', null, r.caso || r.titulo),
-        el('div', { class: 'lc2' }, (r.version ? r.version + ' · ' : '') + (nov ? 'actualizado el ' + N.fecha(nov.fecha) : r.corte ? 'datos hasta ' + ddmm(r.corte) : 'seguimiento en vivo')),
+        el('div', { class: 'lc2' }, (r.version ? r.version + ' · ' : '') + (r.corte ? 'datos hasta ' + ddmm(r.corte) : 'se relee una vez al día') + (nov ? ' · última novedad ' + N.fecha(nov.fecha) : '')),
         window.CASO ? el('div', { class: 'lc2' }, window.CASO.etiquetas(r).map((e) => e.texto).join(' · ')) : null);
       box.append(a);
       if (r.url) continue;
@@ -240,7 +244,7 @@
   const CLASE = { 'Extreme Fear': 'miedo extremo', Fear: 'miedo', Neutral: 'neutral', Greed: 'codicia', 'Extreme Greed': 'codicia extrema' };
   function mercadoMini() {
     const cuerpo = el('div'), foot = el('div');
-    const box = el('div', { class: 'lb' }, el('b', { class: 'lt' }, el('a', { href: 'herramientas.html#z-mercado' }, 'Mercado hoy')), cuerpo, foot);
+    const box = el('div', { class: 'lb' }, el('b', { class: 'lt' }, el('a', { href: 'herramientas.html#z-mercado' }, 'Mercado · precio y cambio en 24 h')), cuerpo, foot);
     async function leer() {
       const ver = (u) => fetch(u, { cache: 'no-cache', signal: AbortSignal.timeout(9000) }).then((r) => (r.ok ? r.json() : null)).catch(() => null);
       const [bin, fng] = await Promise.all([ver('https://data-api.binance.vision/api/v3/ticker/24hr?symbols=' + encodeURIComponent(JSON.stringify(ACTIVOS.map((a) => a.b)))), ver('https://api.alternative.me/fng/?limit=1')]);
@@ -290,7 +294,7 @@
       l('herramientas.html#z-tether', 'Bloqueos de Tether, paridad y USDT0', 'Ver →'),
       l('herramientas.html#z-cartera', 'Riesgo, prueba de estrés y coste de vender', 'Calcular →'),
       l('herramientas.html#liquidez-sunswap', '¿Cuánto cuesta vender en sun.io?', 'Probar →'),
-      l('herramientas.html#z-mercado', 'Mercado hoy', 'Ver →'),
+      l('herramientas.html#z-mercado', 'Mercado', 'Ver →'),
       l('herramientas.html#z-trx', 'TRX: descongelaciones, reparto y quema', 'Ver →'),
       l('datos.html', 'De dónde sale cada cifra', 'Datos y método →'),
       pie('Unas leen en el momento y otras una lectura diaria u horaria: cada una dice de cuándo es su dato'));
@@ -304,7 +308,7 @@
     der.append(derSec);
     let [med, des, cas, u0, trx] = await Promise.all([medium(), desbloqueos(), casos(), usdt0Mini(), trxMini()]);
     if (med) izq.append(apartado('En Medium', 'uno', med));
-    izq.append(apartado('Ahora en la cadena', 'ahora', des, bloqueosTether()));
+    izq.append(apartado('En la cadena · últimas lecturas', 'ahora', des, bloqueosTether()));
     if (cas) derSec.append(cas);
     derSec.append(masHerramientas());
     der.append(apartado('En cifras', '', mercadoMini(), u0, trx));

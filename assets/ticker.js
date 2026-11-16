@@ -50,7 +50,7 @@
       if (horas > 48) its.push(enlace('desbloqueos', '⚠ calendario sin actualizar desde hace ' + Math.round(horas / 24) + ' días'));
       if (K.yaDisponible) its.push(enlace('desbloqueos', el('b', null, 'Ya retirables:'), el('span', { class: 'tk-dato' }, mt(K.yaDisponible.trx) + ' · ' + num(K.yaDisponible.cuentas, 0) + ' cuentas')));
       K.porFecha.forEach((d) => its.push(enlace('desbloqueos', el('b', { class: d.dia === hoy ? 'tk-hoy' : '' }, d.dia === hoy ? 'HOY ' + fecha(d.dia) : fecha(d.dia)), el('span', { class: 'tk-dato' }, mt(d.trx) + ' · ' + num(d.cuentas, 0) + (d.cuentas === 1 ? ' cuenta' : ' cuentas')))));
-      its.push(enlace('desbloqueos', 'Lectura del ' + calendario.leidoEn.slice(8, 10) + '/' + calendario.leidoEn.slice(5, 7) + ' ' + calendario.leidoEn.slice(11, 16) + ' UTC'));
+      its.push(enlace('desbloqueos', 'Lectura del ' + calendario.leidoEn.slice(8, 10) + '/' + calendario.leidoEn.slice(5, 7) + ' ' + calendario.leidoEn.slice(11, 16) + ' UTC · el primer y el último día del calendario solo cuentan desde y hasta esa hora'));
       return its;
     }, 'Calendario de descongelaciones de TRX');
 
