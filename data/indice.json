@@ -13,31 +13,36 @@
        "t": "Comprobar una dirección",
        "et": "Herramientas › Comprobar",
        "desc": "Pega una dirección y mira si Tether la ha bloqueado, si es una cuenta o un contrato y si aparece en hackeos.",
-       "u": "herramientas.html#pega-una-direccion"
+       "u": "herramientas.html#pega-una-direccion",
+       "imagen": "assets/img/indice/comprobar-una-direccion.webp"
       },
       {
        "t": "Bloqueos de USDT por día",
        "et": "Herramientas › Bloqueos recientes",
        "desc": "Cuántas direcciones ha bloqueado Tether cada día, en los últimos 14 días.",
-       "u": "herramientas.html#bloqueos-por-dia-ultimos-14-dias-utc"
+       "u": "herramientas.html#bloqueos-por-dia-ultimos-14-dias-utc",
+       "imagen": "assets/img/indice/bloqueos-de-usdt-por-dia.webp"
       },
       {
        "t": "Últimos bloqueos de USDT, uno a uno",
        "et": "Herramientas › Bloqueos recientes",
        "desc": "Cada bloqueo reciente de Tether, con su dirección y su transacción.",
-       "u": "herramientas.html#eventos-recientes"
+       "u": "herramientas.html#eventos-recientes",
+       "imagen": "assets/img/indice/ultimos-bloqueos-de-usdt.webp"
       },
       {
        "t": "Paridad: ¿sigue valiendo 1 dólar?",
        "et": "Herramientas › Paridad",
        "desc": "Elige una stablecoin y mira su precio frente a 1 dólar y cuánto tiempo lleva fuera de la banda.",
-       "u": "herramientas.html#sigue-cerca-de-1-usd"
+       "u": "herramientas.html#sigue-cerca-de-1-usd",
+       "imagen": "assets/img/indice/paridad.webp"
       },
       {
        "t": "Stablecoins por cadena",
        "et": "Mercado › ¿Dónde está el capital?",
        "desc": "En qué redes hay más stablecoins y en cuáles menos que hace 7, 30 o 90 días o un año.",
-       "u": "mercado.html#stablecoins-por-cadena"
+       "u": "mercado.html#stablecoins-por-cadena",
+       "imagen": "assets/img/indice/stablecoins-por-cadena.webp"
       }
      ]
     }
@@ -55,37 +60,43 @@
        "t": "USDT0 de un vistazo",
        "et": "Herramientas › USDT0",
        "desc": "Cuánto USDT0 circula, cuánto USDT lo respalda, cuántas direcciones hay bloqueadas y cuánto se ha movido entre redes en 24 horas.",
-       "u": "herramientas.html#pestana-usdt0"
+       "u": "herramientas.html#pestana-usdt0",
+       "imagen": "assets/img/indice/usdt0-de-un-vistazo.webp"
       },
       {
        "t": "USDT0 en circulación, red a red",
        "et": "Herramientas › USDT0",
        "desc": "Cuánto USDT0 existe en cada red, leído en el contrato del token.",
-       "u": "herramientas.html#usdt0-en-circulacion-por-red"
+       "u": "herramientas.html#usdt0-en-circulacion-por-red",
+       "imagen": "assets/img/indice/usdt0-en-circulacion-red-a-red.webp"
       },
       {
        "t": "USDT0: direcciones bloqueadas, por red",
        "et": "Herramientas › USDT0",
        "desc": "Cuántos bloqueos hay hoy en cada red, cuántos se levantaron y cuánto dinero ha destruido Tether.",
-       "u": "herramientas.html#direcciones-con-el-usdt-bloqueado-por-red"
+       "u": "herramientas.html#direcciones-con-el-usdt-bloqueado-por-red",
+       "imagen": "assets/img/indice/usdt0-direcciones-bloqueadas-por-red.webp"
       },
       {
        "t": "USDT0: las direcciones bloqueadas, una a una",
        "et": "Herramientas › USDT0",
        "desc": "La lista de direcciones bloqueadas hoy, con la transacción en la que Tether bloqueó cada una.",
-       "u": "herramientas.html#las-direcciones-una-a-una"
+       "u": "herramientas.html#las-direcciones-una-a-una",
+       "imagen": "assets/img/indice/usdt0-direcciones-bloqueadas-una-a-una.webp"
       },
       {
        "t": "USDT0: por qué rutas se mueve más dinero",
        "et": "Herramientas › USDT0",
        "desc": "Entre qué redes ha viajado más USDT0 en las últimas 24 horas.",
-       "u": "herramientas.html#mensajes-entre-redes-las-rutas-con-mas-dinero-24-h"
+       "u": "herramientas.html#mensajes-entre-redes-las-rutas-con-mas-dinero-24-h",
+       "imagen": "assets/img/indice/usdt0-rutas-con-mas-dinero.webp"
       },
       {
        "t": "USDT0: traspasos que siguen en camino",
        "et": "Herramientas › USDT0",
        "desc": "Los traspasos entre redes que salieron y todavía no han llegado, empezando por los más antiguos.",
-       "u": "herramientas.html#mensajes-que-siguen-en-curso"
+       "u": "herramientas.html#mensajes-que-siguen-en-curso",
+       "imagen": "assets/img/indice/usdt0-traspasos-en-camino.webp"
       }
      ]
     }
@@ -103,31 +114,36 @@
        "t": "TRX que quedan libres cada día",
        "et": "Herramientas › Descongelaciones",
        "desc": "Cuántos TRX terminan de descongelarse cada día y se podrán retirar.",
-       "u": "herramientas.html#trx-que-se-podran-retirar-cada-dia-utc"
+       "u": "herramientas.html#trx-que-se-podran-retirar-cada-dia-utc",
+       "imagen": "assets/img/indice/trx-01-trx-que-quedan-libres-cada-dia.webp"
       },
       {
        "t": "Calendario de descongelaciones, cuenta a cuenta",
        "et": "Herramientas › Descongelaciones",
        "desc": "Cada descongelación con su fecha, su cuenta y su importe.",
-       "u": "herramientas.html#calendario-detallado"
+       "u": "herramientas.html#calendario-detallado",
+       "imagen": "assets/img/indice/trx-02-calendario-de-descongelaciones-cuenta-a-cuenta.webp"
       },
       {
        "t": "TRX ya libres que nadie ha retirado",
        "et": "Herramientas › Descongelaciones",
        "desc": "Las cuentas cuya descongelación ya terminó y que todavía no han retirado el TRX.",
-       "u": "herramientas.html#ya-retirables-sin-retirar-las-cuentas"
+       "u": "herramientas.html#ya-retirables-sin-retirar-las-cuentas",
+       "imagen": "assets/img/indice/trx-03-trx-ya-libres-sin-retirar.webp"
       },
       {
        "t": "Las mayores descongelaciones de los próximos 14 días",
        "et": "Herramientas › Descongelaciones",
        "desc": "Las cuentas que más TRX van a tener libre en las dos próximas semanas.",
-       "u": "herramientas.html#las-mayores-de-los-proximos-14-dias"
+       "u": "herramientas.html#las-mayores-de-los-proximos-14-dias",
+       "imagen": "assets/img/indice/trx-04-mayores-descongelaciones-proximos-14-dias.webp"
       },
       {
        "t": "Descongelaciones de una dirección concreta",
        "et": "Herramientas › Descongelaciones",
        "desc": "Escribe una dirección de TRON y mira en vivo qué TRX tiene en descongelación.",
-       "u": "herramientas.html#consultar-una-direccion-en-vivo"
+       "u": "herramientas.html#consultar-una-direccion-en-vivo",
+       "imagen": "assets/img/indice/trx-05-descongelaciones-de-una-direccion.webp"
       }
      ]
     },
@@ -138,31 +154,36 @@
        "t": "Reparto del TRX de un vistazo",
        "et": "Herramientas › Reparto",
        "desc": "Qué parte del TRX está en casas de cambio, en contratos, quemada o en cuentas sin nombre.",
-       "u": "herramientas.html#pestana-reparto"
+       "u": "herramientas.html#pestana-reparto",
+       "imagen": "assets/img/indice/trx-06-reparto-del-trx-de-un-vistazo.webp"
       },
       {
        "t": "¿De quién es el TRX?",
        "et": "Herramientas › Reparto",
        "desc": "El gráfico del reparto: cada trozo es una parte de todo el TRX que existe.",
-       "u": "herramientas.html#de-quien-es-el-trx"
+       "u": "herramientas.html#de-quien-es-el-trx",
+       "imagen": "assets/img/indice/trx-07-de-quien-es-el-trx.webp"
       },
       {
        "t": "Las mayores cuentas de TRX sin nombre conocido",
        "et": "Herramientas › Reparto",
        "desc": "Las cuentas grandes a las que TronScan no pone nombre, con lo que se sabe de cada una.",
-       "u": "herramientas.html#cuentas-de-sin-nombre-en-tronscan"
+       "u": "herramientas.html#cuentas-de-sin-nombre-en-tronscan",
+       "imagen": "assets/img/indice/trx-08-mayores-cuentas-trx-sin-nombre.webp"
       },
       {
        "t": "Cuentas sin nombre, por tamaño",
        "et": "Herramientas › Reparto",
        "desc": "Cuántas cuentas sin nombre hay de cada tamaño y cuánto TRX suman.",
-       "u": "herramientas.html#dentro-de-sin-nombre-en-tronscan-por-tamano-de-cuenta"
+       "u": "herramientas.html#dentro-de-sin-nombre-en-tronscan-por-tamano-de-cuenta",
+       "imagen": "assets/img/indice/trx-09-cuentas-sin-nombre-por-tamano.webp"
       },
       {
        "t": "Las 100 mayores cuentas de TRON",
        "et": "Herramientas › Reparto",
        "desc": "Las 100 cuentas con más TRX, con el grupo en el que se cuenta cada una.",
-       "u": "herramientas.html#las-100-mayores-cuentas-de-tron"
+       "u": "herramientas.html#las-100-mayores-cuentas-de-tron",
+       "imagen": "assets/img/indice/trx-10-las-100-mayores-cuentas-de-tron.webp"
       }
      ]
     },
@@ -173,25 +194,29 @@
        "t": "Quema y emisión de TRX de un vistazo",
        "et": "Herramientas › Quema y emisión",
        "desc": "Cuánto TRX crea la red y cuánto destruye, y si la oferta sube o baja.",
-       "u": "herramientas.html#pestana-quema"
+       "u": "herramientas.html#pestana-quema",
+       "imagen": "assets/img/indice/trx-11-quema-y-emision-de-trx-de-un-vistazo.webp"
       },
       {
        "t": "Quema y emisión de TRX por trimestre (gráfico)",
        "et": "Herramientas › Quema y emisión",
        "desc": "TRX creados y quemados cada trimestre, y el neto.",
-       "u": "herramientas.html#emision-y-quema-por-trimestre-millones-de-trx"
+       "u": "herramientas.html#emision-y-quema-por-trimestre-millones-de-trx",
+       "imagen": "assets/img/indice/trx-12-quema-y-emision-trimestral-grafico.webp"
       },
       {
        "t": "Quema y emisión de TRX por trimestre (tabla)",
        "et": "Herramientas › Quema y emisión",
        "desc": "Las cifras de cada trimestre, también en dólares.",
-       "u": "herramientas.html#por-trimestre-la-serie-de-la-que-sale-el-grafico"
+       "u": "herramientas.html#por-trimestre-la-serie-de-la-que-sale-el-grafico",
+       "imagen": "assets/img/indice/trx-13-quema-y-emision-trimestral-tabla.webp"
       },
       {
        "t": "Quema y emisión de TRX por año",
        "et": "Herramientas › Quema y emisión",
        "desc": "Las cifras de cada año.",
-       "u": "herramientas.html#por-ano"
+       "u": "herramientas.html#por-ano",
+       "imagen": "assets/img/indice/trx-14-quema-y-emision-de-trx-por-ano.webp"
       }
      ]
     }
@@ -209,19 +234,22 @@
        "t": "Liquidez sun.io: ¿cuánto cuesta vender?",
        "et": "Herramientas › Liquidez sun.io",
        "desc": "Escribe un importe y mira en qué tokens de TRON cabe venderlo por USDT en sun.io y cuánto costaría.",
-       "u": "herramientas.html#cuanto-cuesta-vender-en-sun-io"
+       "u": "herramientas.html#cuanto-cuesta-vender-en-sun-io",
+       "imagen": "assets/img/indice/sunio-justlend-01-liquidez-sunio-cuanto-cuesta-vender.webp"
       },
       {
        "t": "Recuperar de JustLend: ¿puedo sacar mi dinero?",
        "et": "Herramientas › Recuperar de JustLend",
        "desc": "Token a token: cuánta caja hay para retirar, cuánto sacarías vendiéndolo y qué puede hacer el emisor.",
-       "u": "herramientas.html#puedo-recuperar-mi-dinero-de-justlend"
+       "u": "herramientas.html#puedo-recuperar-mi-dinero-de-justlend",
+       "imagen": "assets/img/indice/sunio-justlend-02-recuperar-de-justlend-puedo-sacar-mi-dinero.webp"
       },
       {
        "t": "Recuperar de JustLend: mi cuenta",
        "et": "Herramientas › Recuperar de JustLend",
        "desc": "Escribe tu dirección y mira lo que tienes depositado en JustLend y si podrías recuperarlo.",
-       "u": "herramientas.html#mi-cuenta"
+       "u": "herramientas.html#mi-cuenta",
+       "imagen": "assets/img/indice/sunio-justlend-03-recuperar-de-justlend-mi-cuenta.webp"
       }
      ]
     }
@@ -239,13 +267,15 @@
        "t": "Precios de hoy: BTC, ETH y TRX, y miedo y codicia",
        "et": "Herramientas › Mercado",
        "desc": "Precio y cambio en 24 horas, diferencia entre casas de cambio y el índice de miedo y codicia.",
-       "u": "herramientas.html#hoy"
+       "u": "herramientas.html#hoy",
+       "imagen": "assets/img/indice/mercado-01-precios-de-hoy.webp"
       },
       {
        "t": "Lectura del día",
        "et": "Mercado",
        "desc": "Cinco puntos que escribe un programa con reglas fijas: el día, el capital, la liquidez, la volatilidad y los desacoples.",
-       "u": "mercado.html#lectura-del-dia"
+       "u": "mercado.html#lectura-del-dia",
+       "imagen": "assets/img/indice/mercado-02-lectura-del-dia.webp"
       }
      ]
     },
@@ -256,13 +286,15 @@
        "t": "¿Dónde está el capital?",
        "et": "Mercado › ¿Dónde está el capital?",
        "desc": "De cada 100 dólares que vale el mercado, cuántos están en bitcoin, en ether, en stablecoins y en el resto.",
-       "u": "mercado.html#donde-esta-el-capital"
+       "u": "mercado.html#donde-esta-el-capital",
+       "imagen": "assets/img/indice/mercado-03-donde-esta-el-capital.webp"
       },
       {
        "t": "Dinero depositado en aplicaciones, por cadena",
        "et": "Mercado › ¿Dónde está el capital?",
        "desc": "En qué redes hay más dinero depositado en aplicaciones y en cuáles menos que antes.",
-       "u": "mercado.html#dinero-depositado-en-aplicaciones-por-cadena"
+       "u": "mercado.html#dinero-depositado-en-aplicaciones-por-cadena",
+       "imagen": "assets/img/indice/mercado-04-depositos-en-aplicaciones-por-cadena.webp"
       }
      ]
     },
@@ -273,19 +305,22 @@
        "t": "Mapa de calor",
        "et": "Mercado › Mapa de calor",
        "desc": "Cuánto ha subido o bajado cada activo, cada sector y cada cadena: verde sube, rojo baja.",
-       "u": "mercado.html#mapa-de-calor"
+       "u": "mercado.html#mapa-de-calor",
+       "imagen": "assets/img/indice/mercado-05-mapa-de-calor.webp"
       },
       {
        "t": "Sectores: cuáles suben y cuáles bajan",
        "et": "Mercado › ¿Qué sectores ganan actividad?",
        "desc": "El rendimiento de cada sector, del que más sube al que más baja, a varios plazos.",
-       "u": "mercado.html#sectores-de-la-cesta-por-plazo"
+       "u": "mercado.html#sectores-de-la-cesta-por-plazo",
+       "imagen": "assets/img/indice/mercado-06-sectores-suben-y-bajan.webp"
       },
       {
        "t": "Los veinte mayores sectores, en 24 horas",
        "et": "Mercado › ¿Qué sectores ganan actividad?",
        "desc": "Cuánto ha cambiado en un día el valor de cada sector, según CoinGecko.",
-       "u": "mercado.html#los-veinte-mayores-sectores-segun-coingecko-en-24-horas"
+       "u": "mercado.html#los-veinte-mayores-sectores-segun-coingecko-en-24-horas",
+       "imagen": "assets/img/indice/mercado-07-veinte-mayores-sectores-24-horas.webp"
       }
      ]
     },
@@ -296,31 +331,36 @@
        "t": "Volatilidad: ¿mercado tranquilo o agitado?",
        "et": "Mercado › Volatilidad",
        "desc": "Cuánto se mueve el mercado comparado con su propia historia.",
-       "u": "mercado.html#volatilidad-esta-el-mercado-tranquilo-o-agitado"
+       "u": "mercado.html#volatilidad-esta-el-mercado-tranquilo-o-agitado",
+       "imagen": "assets/img/indice/mercado-08-volatilidad-mercado.webp"
       },
       {
        "t": "Bitcoin y ether: volatilidad esperada frente a la real",
        "et": "Mercado › Volatilidad",
        "desc": "Lo que el mercado de opciones espera para los próximos 30 días frente a lo que ha pasado.",
-       "u": "mercado.html#bitcoin-y-ether-lo-que-el-mercado-espera-frente-a-lo-que-ha"
+       "u": "mercado.html#bitcoin-y-ether-lo-que-el-mercado-espera-frente-a-lo-que-ha",
+       "imagen": "assets/img/indice/mercado-09-bitcoin-ether-volatilidad-esperada-y-real.webp"
       },
       {
        "t": "Volatilidad, activo por activo",
        "et": "Mercado › Volatilidad",
        "desc": "La volatilidad de cada activo a varios plazos.",
-       "u": "mercado.html#activo-por-activo"
+       "u": "mercado.html#activo-por-activo",
+       "imagen": "assets/img/indice/mercado-10-volatilidad-activo-por-activo.webp"
       },
       {
        "t": "¿Qué activos se desacoplan de bitcoin?",
        "et": "Mercado › ¿Qué activos se están desacoplando?",
        "desc": "Qué activos se mueven menos al compás de bitcoin estos 30 días que los 30 anteriores.",
-       "u": "mercado.html#que-activos-se-estan-desacoplando"
+       "u": "mercado.html#que-activos-se-estan-desacoplando",
+       "imagen": "assets/img/indice/mercado-11-activos-que-se-desacoplan-de-bitcoin.webp"
       },
       {
        "t": "Quién se mueve con quién",
        "et": "Mercado › ¿Qué activos se están desacoplando?",
        "desc": "Qué parejas de activos se mueven más juntas y cuáles menos.",
-       "u": "mercado.html#quien-se-mueve-con-quien"
+       "u": "mercado.html#quien-se-mueve-con-quien",
+       "imagen": "assets/img/indice/mercado-12-quien-se-mueve-con-quien.webp"
       }
      ]
     },
@@ -331,7 +371,8 @@
        "t": "Laboratorio de fundamentales",
        "et": "Fundamentales",
        "desc": "Escribe un token y mira cómo funciona económicamente: actividad, ingresos, qué captura el token y valoración.",
-       "u": "fundamentales.html"
+       "u": "fundamentales.html",
+       "imagen": "assets/img/indice/mercado-13-laboratorio-de-fundamentales.webp"
       }
      ]
     }
@@ -349,31 +390,36 @@
        "t": "Riesgo diario: ¿cuánto podría perder en un día?",
        "et": "Herramientas › Riesgo diario",
        "desc": "Con tus posiciones, cuánto podrías perder en un mal día.",
-       "u": "herramientas.html#cuanto-podria-perder-en-un-dia"
+       "u": "herramientas.html#cuanto-podria-perder-en-un-dia",
+       "imagen": "assets/img/indice/riesgo-01-riesgo-diario.webp"
       },
       {
        "t": "Prueba de estrés: ¿y si el mercado se desploma?",
        "et": "Herramientas › Prueba de estrés",
        "desc": "Con tus posiciones, qué le pasaría a tu cartera en una caída fuerte.",
-       "u": "herramientas.html#y-si-el-mercado-se-desploma"
+       "u": "herramientas.html#y-si-el-mercado-se-desploma",
+       "imagen": "assets/img/indice/riesgo-02-prueba-de-estres.webp"
       },
       {
        "t": "Coste de salida: ¿cuánto recibiría si vendo?",
        "et": "Herramientas › Coste de salida",
        "desc": "Cuánto recibirías de verdad al vender ahora una cantidad de un activo.",
-       "u": "herramientas.html#cuanto-recibiria-si-vendo"
+       "u": "herramientas.html#cuanto-recibiria-si-vendo",
+       "imagen": "assets/img/indice/riesgo-03-coste-de-salida.webp"
       },
       {
        "t": "Liquidez en Binance y Kraken",
        "et": "Mercado › ¿Dónde aumenta la liquidez?",
        "desc": "Cuánto dinero hay esperando para comprar y para vender cerca del precio, en los ocho mayores activos.",
-       "u": "mercado.html#donde-aumenta-la-liquidez"
+       "u": "mercado.html#donde-aumenta-la-liquidez",
+       "imagen": "assets/img/indice/riesgo-04-liquidez-en-binance-y-kraken.webp"
       },
       {
        "t": "Liquidez: ¿hay más o menos dinero esperando que antes?",
        "et": "Mercado › ¿Dónde aumenta la liquidez?",
        "desc": "El dinero esperando cerca del precio en Binance, comparado con los días anteriores.",
-       "u": "mercado.html#serie-propia-hay-mas-o-menos-dinero-esperando-que-antes"
+       "u": "mercado.html#serie-propia-hay-mas-o-menos-dinero-esperando-que-antes",
+       "imagen": "assets/img/indice/riesgo-05-liquidez-dinero-esperando.webp"
       }
      ]
     }

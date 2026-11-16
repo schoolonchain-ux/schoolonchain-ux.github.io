@@ -17,6 +17,7 @@ for (const [u, f] of Object.entries(conf.funciones)) {
   if (!f.t || !f.desc || !f.lugar || !f.tema) problemas.push('a esta función le falta tema, título, frase o lugar: ' + u);
   if (!conf.temas.some((t) => t.id === f.tema)) problemas.push('tema desconocido «' + f.tema + '» en ' + u);
   if (!fs.existsSync(path.join(REPO, u.split('#')[0].split('?')[0]))) problemas.push('la página no existe en la web: ' + u);
+  if (f.imagen && !fs.existsSync(path.join(REPO, f.imagen))) problemas.push('no existe la imagen ' + f.imagen + ' de ' + u);   // la imagen la pone el propietario; sin imagen, la tarjeta es de texto
 }
 const titulos = funciones.map((f) => f.t.toLowerCase()), repes = titulos.filter((x, i) => titulos.indexOf(x) !== i);
 if (repes.length) problemas.push('títulos repetidos: ' + repes.join(', '));

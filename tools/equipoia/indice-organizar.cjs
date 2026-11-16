@@ -10,7 +10,7 @@ function organizar(tarjetas, investigaciones, conf) {
     const f = conf.funciones[c.u]; vistas.add(c.u);
     if (f && f.oculta) continue;
     if (!f || !porTema.has(f.tema)) { sueltas.push({ t: c.t, et: 'Sin clasificar', desc: c.desc || '', u: c.u, foto: c.foto }); avisos.push('función sin clasificar en indice-temas.json: ' + c.u + ' («' + c.t + '»)'); continue; }
-    porTema.get(f.tema).push({ grupo: f.grupo || '', orden: Object.keys(conf.funciones).indexOf(c.u), t: f.t, et: f.lugar || '', desc: f.desc || '', u: c.u, foto: c.foto });
+    porTema.get(f.tema).push({ grupo: f.grupo || '', orden: Object.keys(conf.funciones).indexOf(c.u), t: f.t, et: f.lugar || '', desc: f.desc || '', u: c.u, imagen: f.imagen || '' });
   }
   for (const [u, f] of Object.entries(conf.funciones)) if (!f.oculta && !vistas.has(u)) avisos.push('función de indice-temas.json que ya no está en la web: ' + u);
   const temas = [];

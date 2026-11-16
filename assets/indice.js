@@ -1,7 +1,7 @@
 /* Índice de funciones (indice.html): pinta las tarjetas de data/indice.json.
    El índice va por TEMAS (de qué trata cada cosa), no por la página donde vive. El orden, los títulos y las frases
    están escritos a mano en tools/equipoia/indice-temas.json; data/indice.json sale de ahí con tools/equipoia/indice-construir.cjs.
-   Las tarjetas de las funciones son de texto (sin imágenes). Las investigaciones llevan su portada. */
+   Una tarjeta lleva imagen solo si el propietario le ha puesto una (campo «imagen»); si no, es de texto. Las investigaciones llevan su portada. */
 (() => {
   const $ = (s) => document.querySelector(s);
   const el = (t, a = {}, ...k) => { const e = document.createElement(t); for (const [x, v] of Object.entries(a)) { if (x === 'class') e.className = v; else if (x.startsWith('on')) e.addEventListener(x.slice(2), v); else e.setAttribute(x, v); } e.append(...k.filter((c) => c !== null && c !== undefined && c !== '')); return e; };
@@ -20,7 +20,8 @@
     b.innerHTML = ICONO + '<span>Compartir</span>'; return b;
   }
   // Una función: título propio, para qué sirve, dónde está en la web y el botón de compartir.
-  const tarjeta = (t) => el('article', { class: 'ix-c' },
+  const tarjeta = (t) => el('article', { class: 'ix-c' + (t.imagen ? ' con-im' : '') },
+    t.imagen ? el('div', { class: 'im' }, el('img', { src: t.imagen, alt: '', loading: 'lazy', decoding: 'async' })) : null,
     el('div', { class: 'tx' }, el('a', { class: 'ti', href: t.u }, t.t), t.desc ? el('p', {}, t.desc) : null),
     el('div', { class: 'pie' }, t.et ? el('span', { class: 'lugar' }, t.et) : null, compartir(t.u, t.t)));
   // Una investigación: su portada, su título y su resumen.
