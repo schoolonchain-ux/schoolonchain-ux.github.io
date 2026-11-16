@@ -1,282 +1,256 @@
 {
- "version": 1,
- "generado": "2026-11-16T12:42:32.339Z",
- "secciones": [
+ "version": 2,
+ "generado": "2026-11-16T13:19:58.754Z",
+ "temas": [
   {
-   "id": "herramientas",
-   "titulo": "Herramientas",
-   "u": "herramientas.html",
+   "id": "stablecoins",
+   "nombre": "Stablecoins y Tether (USDT)",
+   "desc": "Bloqueos de Tether, si una stablecoin sigue valiendo 1 dólar y en qué redes hay más o menos stablecoins.",
    "grupos": [
     {
-     "nombre": "Comprobar",
+     "nombre": "",
      "tarjetas": [
       {
-       "t": "Pega una dirección",
-       "et": "Herramienta",
-       "desc": "Según lo que pegues salen unas comprobaciones u otras: una dirección 0x… se mira en las 20 redes compatibles con Ethereum (es la misma en todas) y una dirección T… se mira en TRON.",
+       "t": "Comprobar una dirección",
+       "et": "Herramientas › Comprobar",
+       "desc": "Pega una dirección y mira si Tether la ha bloqueado, si es una cuenta o un contrato y si aparece en hackeos.",
        "u": "herramientas.html#pega-una-direccion",
-       "foto": "herramientas--pega-una-direccion.webp",
-       "principal": true
-      }
-     ]
-    },
-    {
-     "nombre": "Tether y stablecoins",
-     "tarjetas": [
+       "foto": "herramientas--pega-una-direccion.webp"
+      },
       {
-       "t": "Bloqueos por día (últimos 14 días, UTC)",
-       "et": "Pestaña Bloqueos recientes",
-       "desc": "Cada barra es el número de direcciones bloqueadas ese día. Pulsa una barra para ver esas direcciones. De TRON solo se leen los últimos 100 bloqueos, así que antes del 02/11 no hay barra roja: no es que no hubiera bloqueo",
+       "t": "Bloqueos de USDT por día",
+       "et": "Herramientas › Bloqueos recientes",
+       "desc": "Cuántas direcciones ha bloqueado Tether cada día, en los últimos 14 días.",
        "u": "herramientas.html#bloqueos-por-dia-ultimos-14-dias-utc",
-       "foto": "herramientas--bloqueos-por-dia-ultimos-14-dias-utc.webp",
-       "principal": false
+       "foto": "herramientas--bloqueos-por-dia-ultimos-14-dias-utc.webp"
       },
       {
-       "t": "Eventos recientes",
-       "et": "Pestaña Bloqueos recientes",
-       "desc": "Pulsa una fila para comprobar esa dirección en vivo; la transacción enlaza al explorador.",
+       "t": "Últimos bloqueos de USDT, uno a uno",
+       "et": "Herramientas › Bloqueos recientes",
+       "desc": "Cada bloqueo reciente de Tether, con su dirección y su transacción.",
        "u": "herramientas.html#eventos-recientes",
-       "foto": "herramientas--eventos-recientes.webp",
-       "principal": false
+       "foto": "herramientas--eventos-recientes.webp"
       },
       {
-       "t": "USDT0: resumen",
-       "et": "Pestaña USDT0",
-       "desc": "USDT0 es el dólar digital de Tether preparado para viajar entre muchas redes con el sistema LayerZero. El USDT de verdad queda guardado en un contrato de Ethereum (el «adaptador») y en cada red se crea una cantidad igual",
-       "u": "herramientas.html#pestana-usdt0",
-       "foto": "herramientas--pestana-usdt0.webp",
-       "principal": false
-      },
-      {
-       "t": "USDT0 en circulación por red",
-       "et": "Pestaña USDT0",
-       "desc": "Cantidad total de USDT0 que existe en cada red, leída hoy directamente en el contrato del token en los nodos públicos de esa red; deben dar el mismo número. Pulsa una red para abrir ese contrato en su explorador.",
-       "u": "herramientas.html#usdt0-en-circulacion-por-red",
-       "foto": "herramientas--usdt0-en-circulacion-por-red.webp",
-       "principal": false
-      },
-      {
-       "t": "Direcciones con el USDT bloqueado, por red",
-       "et": "Pestaña USDT0",
-       "desc": "Según el vigilante: bloqueos vigentes hoy, los que se levantaron y el dinero de cuentas bloqueadas que Tether ha destruido. Aquí entran Avalanche y Kaia, que usan el USDT nativo de Tether, no el USDT0. Pulsa una red para",
-       "u": "herramientas.html#direcciones-con-el-usdt-bloqueado-por-red",
-       "foto": "herramientas--direcciones-con-el-usdt-bloqueado-por-red.webp",
-       "principal": false
-      },
-      {
-       "t": "Las direcciones, una a una",
-       "et": "Pestaña USDT0",
-       "desc": "Las 65 direcciones bloqueadas hoy, con la transacción en la que Tether las bloqueó. Pulsa una dirección o una transacción para verla en el explorador de esa red.",
-       "u": "herramientas.html#las-direcciones-una-a-una",
-       "foto": "herramientas--las-direcciones-una-a-una.webp",
-       "principal": false
-      },
-      {
-       "t": "Mensajes entre redes: las rutas con más dinero (24 h)",
-       "et": "Pestaña USDT0",
-       "desc": "Cada traspaso de USDT0 de una red a otra viaja en un mensaje de LayerZero. Fuente: LayerZero Scan, anotado por el vigilante. Pulsa una ruta para ver sus mensajes.",
-       "u": "herramientas.html#mensajes-entre-redes-las-rutas-con-mas-dinero-24-h",
-       "foto": "herramientas--mensajes-entre-redes-las-rutas-con-mas-dinero-24-h.webp",
-       "principal": false
-      },
-      {
-       "t": "Mensajes que siguen en curso",
-       "et": "Pestaña USDT0",
-       "desc": "42 mensajes siguen en curso (el más antiguo, en la ruta tron → ethereum, lleva 410,6 horas). Aquí los 12 más antiguos; pulsa uno para verlo en LayerZero Scan. Un mensaje que tarda no significa por sí solo que el dinero s",
-       "u": "herramientas.html#mensajes-que-siguen-en-curso",
-       "foto": "herramientas--mensajes-que-siguen-en-curso.webp",
-       "principal": false
-      },
-      {
-       "t": "Paridad",
-       "et": "Herramienta",
-       "desc": "¿Sigue cerca de 1 USD?",
+       "t": "Paridad: ¿sigue valiendo 1 dólar?",
+       "et": "Herramientas › Paridad",
+       "desc": "Elige una stablecoin y mira su precio frente a 1 dólar y cuánto tiempo lleva fuera de la banda.",
        "u": "herramientas.html#sigue-cerca-de-1-usd",
-       "foto": "herramientas--sigue-cerca-de-1-usd.webp",
-       "principal": true
+       "foto": "herramientas--sigue-cerca-de-1-usd.webp"
+      },
+      {
+       "t": "Stablecoins por cadena",
+       "et": "Mercado › ¿Dónde está el capital?",
+       "desc": "En qué redes hay más stablecoins y en cuáles menos que hace 7, 30 o 90 días o un año.",
+       "u": "mercado.html#stablecoins-por-cadena",
+       "foto": "mercado--stablecoins-por-cadena.webp"
       }
      ]
-    },
+    }
+   ]
+  },
+  {
+   "id": "usdt0",
+   "nombre": "USDT0",
+   "desc": "El USDT que viaja entre redes: cuánto hay en cada una, qué lo respalda, qué direcciones están bloqueadas y por dónde se mueve.",
+   "grupos": [
     {
-     "nombre": "Mi cartera",
+     "nombre": "",
      "tarjetas": [
       {
-       "t": "Riesgo diario",
-       "et": "Herramienta",
-       "desc": "¿Cuánto podría perder en un día?",
-       "u": "herramientas.html#cuanto-podria-perder-en-un-dia",
-       "foto": "herramientas--cuanto-podria-perder-en-un-dia.webp",
-       "principal": true
+       "t": "USDT0 de un vistazo",
+       "et": "Herramientas › USDT0",
+       "desc": "Cuánto USDT0 circula, cuánto USDT lo respalda, cuántas direcciones hay bloqueadas y cuánto se ha movido entre redes en 24 horas.",
+       "u": "herramientas.html#pestana-usdt0",
+       "foto": "herramientas--pestana-usdt0.webp"
       },
       {
-       "t": "Prueba de estrés",
-       "et": "Herramienta",
-       "desc": "¿Y si el mercado se desploma?",
-       "u": "herramientas.html#y-si-el-mercado-se-desploma",
-       "foto": "herramientas--y-si-el-mercado-se-desploma.webp",
-       "principal": true
+       "t": "USDT0 en circulación, red a red",
+       "et": "Herramientas › USDT0",
+       "desc": "Cuánto USDT0 existe en cada red, leído en el contrato del token.",
+       "u": "herramientas.html#usdt0-en-circulacion-por-red",
+       "foto": "herramientas--usdt0-en-circulacion-por-red.webp"
       },
       {
-       "t": "Liquidez sun.io",
-       "et": "Herramienta",
-       "desc": "¿Cuánto cuesta vender en sun.io?",
-       "u": "herramientas.html#cuanto-cuesta-vender-en-sun-io",
-       "foto": "herramientas--cuanto-cuesta-vender-en-sun-io.webp",
-       "principal": true
+       "t": "USDT0: direcciones bloqueadas, por red",
+       "et": "Herramientas › USDT0",
+       "desc": "Cuántos bloqueos hay hoy en cada red, cuántos se levantaron y cuánto dinero ha destruido Tether.",
+       "u": "herramientas.html#direcciones-con-el-usdt-bloqueado-por-red",
+       "foto": "herramientas--direcciones-con-el-usdt-bloqueado-por-red.webp"
       },
       {
-       "t": "¿Puedo recuperar mi dinero de JustLend?",
-       "et": "Pestaña Recuperar de JustLend",
-       "desc": "Para cada token: cuánta caja hay ahora para retirar, cuánto USDT sacarías vendiéndolo, qué salida oficial tiene y qué puede hacer el dueño del token. El semáforo se calcula con tu importe.",
-       "u": "herramientas.html#puedo-recuperar-mi-dinero-de-justlend",
-       "foto": "herramientas--puedo-recuperar-mi-dinero-de-justlend.webp",
-       "principal": false
+       "t": "USDT0: las direcciones bloqueadas, una a una",
+       "et": "Herramientas › USDT0",
+       "desc": "La lista de direcciones bloqueadas hoy, con la transacción en la que Tether bloqueó cada una.",
+       "u": "herramientas.html#las-direcciones-una-a-una",
+       "foto": "herramientas--las-direcciones-una-a-una.webp"
       },
       {
-       "t": "Mi cuenta",
-       "et": "Pestaña Recuperar de JustLend",
-       "desc": "Las reglas se aplican por orden y gana la primera. Los umbrales (10 veces, 1 %, 5 %, 80 %) son un punto de partida, no están calibrados con datos históricos. Es la misma regla de la calculadora de la investigación.",
-       "u": "herramientas.html#mi-cuenta",
-       "foto": "herramientas--mi-cuenta.webp",
-       "principal": false
+       "t": "USDT0: por qué rutas se mueve más dinero",
+       "et": "Herramientas › USDT0",
+       "desc": "Entre qué redes ha viajado más USDT0 en las últimas 24 horas.",
+       "u": "herramientas.html#mensajes-entre-redes-las-rutas-con-mas-dinero-24-h",
+       "foto": "herramientas--mensajes-entre-redes-las-rutas-con-mas-dinero-24-h.webp"
       },
       {
-       "t": "Coste de salida",
-       "et": "Herramienta",
-       "desc": "¿Cuánto recibiría si vendo?",
-       "u": "herramientas.html#cuanto-recibiria-si-vendo",
-       "foto": "herramientas--cuanto-recibiria-si-vendo.webp",
-       "principal": true
+       "t": "USDT0: traspasos que siguen en camino",
+       "et": "Herramientas › USDT0",
+       "desc": "Los traspasos entre redes que salieron y todavía no han llegado, empezando por los más antiguos.",
+       "u": "herramientas.html#mensajes-que-siguen-en-curso",
+       "foto": "herramientas--mensajes-que-siguen-en-curso.webp"
       }
      ]
-    },
+    }
+   ]
+  },
+  {
+   "id": "trx",
+   "nombre": "TRX",
+   "desc": "Cuándo quedan libres los TRX congelados, quién tiene el TRX y cuánto se quema y se emite.",
+   "grupos": [
     {
-     "nombre": "TRX en cifras",
+     "nombre": "Descongelaciones",
      "tarjetas": [
       {
-       "t": "TRX que se podrán retirar cada día (UTC)",
-       "et": "Pestaña Descongelaciones",
-       "desc": "Cada barra suma los TRX cuya descongelación termina ese día en las cuentas leídas. Pulsa una barra para ver las cuentas.",
+       "t": "TRX que quedan libres cada día",
+       "et": "Herramientas › Descongelaciones",
+       "desc": "Cuántos TRX terminan de descongelarse cada día y se podrán retirar.",
        "u": "herramientas.html#trx-que-se-podran-retirar-cada-dia-utc",
-       "foto": "herramientas--trx-que-se-podran-retirar-cada-dia-utc.webp",
-       "principal": false
+       "foto": "herramientas--trx-que-se-podran-retirar-cada-dia-utc.webp"
       },
       {
-       "t": "Calendario detallado",
-       "et": "Pestaña Descongelaciones",
-       "desc": "398 desbloqueos con fecha leída en 214 cuentas. Pulsa una fila para comprobar esa dirección.",
+       "t": "Calendario de descongelaciones, cuenta a cuenta",
+       "et": "Herramientas › Descongelaciones",
+       "desc": "Cada descongelación con su fecha, su cuenta y su importe.",
        "u": "herramientas.html#calendario-detallado",
-       "foto": "herramientas--calendario-detallado.webp",
-       "principal": false
+       "foto": "herramientas--calendario-detallado.webp"
       },
       {
-       "t": "Ya retirables sin retirar: las cuentas",
-       "et": "Pestaña Descongelaciones",
-       "desc": "Las 311 cuentas cuya descongelación ya terminó y que aún no han retirado el TRX (leído de la cadena cuenta a cuenta). Pulsa una fila para comprobarla; la dirección enlaza a TronScan.",
+       "t": "TRX ya libres que nadie ha retirado",
+       "et": "Herramientas › Descongelaciones",
+       "desc": "Las cuentas cuya descongelación ya terminó y que todavía no han retirado el TRX.",
        "u": "herramientas.html#ya-retirables-sin-retirar-las-cuentas",
-       "foto": "herramientas--ya-retirables-sin-retirar-las-cuentas.webp",
-       "principal": false
+       "foto": "herramientas--ya-retirables-sin-retirar-las-cuentas.webp"
       },
       {
-       "t": "Las mayores de los próximos 14 días",
-       "et": "Pestaña Descongelaciones",
-       "desc": "Concentración: las 3 mayores suman 43 % del total.",
+       "t": "Las mayores descongelaciones de los próximos 14 días",
+       "et": "Herramientas › Descongelaciones",
+       "desc": "Las cuentas que más TRX van a tener libre en las dos próximas semanas.",
        "u": "herramientas.html#las-mayores-de-los-proximos-14-dias",
-       "foto": "herramientas--las-mayores-de-los-proximos-14-dias.webp",
-       "principal": false
+       "foto": "herramientas--las-mayores-de-los-proximos-14-dias.webp"
       },
       {
-       "t": "Consultar una dirección en vivo",
-       "et": "Pestaña Descongelaciones",
-       "desc": "",
+       "t": "Descongelaciones de una dirección concreta",
+       "et": "Herramientas › Descongelaciones",
+       "desc": "Escribe una dirección de TRON y mira en vivo qué TRX tiene en descongelación.",
        "u": "herramientas.html#consultar-una-direccion-en-vivo",
-       "foto": "herramientas--consultar-una-direccion-en-vivo.webp",
-       "principal": false
-      },
+       "foto": "herramientas--consultar-una-direccion-en-vivo.webp"
+      }
+     ]
+    },
+    {
+     "nombre": "Quién tiene el TRX",
+     "tarjetas": [
       {
-       "t": "Reparto: resumen",
-       "et": "Pestaña Reparto",
-       "desc": "TronScan da la lista de las 10.000 cuentas con más TRX. Aquí se agrupan según lo que TronScan dice que son (casa de cambio, contrato, fondo…) y se compara con todo el TRX que existe. Lo que queda fuera de esas 10.000 cue",
+       "t": "Reparto del TRX de un vistazo",
+       "et": "Herramientas › Reparto",
+       "desc": "Qué parte del TRX está en casas de cambio, en contratos, quemada o en cuentas sin nombre.",
        "u": "herramientas.html#pestana-reparto",
-       "foto": "herramientas--pestana-reparto.webp",
-       "principal": false
+       "foto": "herramientas--pestana-reparto.webp"
       },
       {
        "t": "¿De quién es el TRX?",
-       "et": "Pestaña Reparto",
-       "desc": "Cada trozo es una parte de todo el TRX que existe (95.044 M TRX). Pulsa un trozo del gráfico, su nombre en la leyenda o una fila de la tabla para ver las cuentas de ese grupo.",
+       "et": "Herramientas › Reparto",
+       "desc": "El gráfico del reparto: cada trozo es una parte de todo el TRX que existe.",
        "u": "herramientas.html#de-quien-es-el-trx",
-       "foto": "herramientas--de-quien-es-el-trx.webp",
-       "principal": false
+       "foto": "herramientas--de-quien-es-el-trx.webp"
       },
       {
-       "t": "Cuentas de «Sin nombre en TronScan»",
-       "et": "Pestaña Reparto",
-       "desc": "Se muestran las 200 mayores de las 9.911 que TronScan no nombra. 62 tienen 100 millones de TRX o más (52,8 % de todo el TRX). De esas 62, 13 tienen una descripción con su fuente (nuestros informes, los anuncios de SUN.io",
+       "t": "Las mayores cuentas de TRX sin nombre conocido",
+       "et": "Herramientas › Reparto",
+       "desc": "Las cuentas grandes a las que TronScan no pone nombre, con lo que se sabe de cada una.",
        "u": "herramientas.html#cuentas-de-sin-nombre-en-tronscan",
-       "foto": "herramientas--cuentas-de-sin-nombre-en-tronscan.webp",
-       "principal": false
+       "foto": "herramientas--cuentas-de-sin-nombre-en-tronscan.webp"
       },
       {
-       "t": "Dentro de «sin nombre en TronScan»: por tamaño de cuenta",
-       "et": "Pestaña Reparto",
-       "desc": "No es un bloque de ballenas: unas pocas cuentas enormes y miles de cuentas medianas, donde caben particulares con cientos de miles de TRX.",
+       "t": "Cuentas sin nombre, por tamaño",
+       "et": "Herramientas › Reparto",
+       "desc": "Cuántas cuentas sin nombre hay de cada tamaño y cuánto TRX suman.",
        "u": "herramientas.html#dentro-de-sin-nombre-en-tronscan-por-tamano-de-cuenta",
-       "foto": "herramientas--dentro-de-sin-nombre-en-tronscan-por-tamano-de-cuenta.webp",
-       "principal": false
+       "foto": "herramientas--dentro-de-sin-nombre-en-tronscan-por-tamano-de-cuenta.webp"
       },
       {
        "t": "Las 100 mayores cuentas de TRON",
-       "et": "Pestaña Reparto",
-       "desc": "Las 100 cuentas con más TRX según TronScan hoy, con el grupo en el que las contamos. Pulsa la dirección para verla en TronScan.",
+       "et": "Herramientas › Reparto",
+       "desc": "Las 100 cuentas con más TRX, con el grupo en el que se cuenta cada una.",
        "u": "herramientas.html#las-100-mayores-cuentas-de-tron",
-       "foto": "herramientas--las-100-mayores-cuentas-de-tron.webp",
-       "principal": false
-      },
-      {
-       "t": "Quema y emisión: resumen",
-       "et": "Pestaña Quema y emisión",
-       "desc": "Cada día la red crea TRX nuevos (el pago a los validadores y a los que votan: la emisión) y destruye otros: los que la gente paga en comisiones desaparecen para siempre (la quema). La diferencia es el neto: si es positiv",
-       "u": "herramientas.html#pestana-quema",
-       "foto": "herramientas--pestana-quema.webp",
-       "principal": false
-      },
-      {
-       "t": "Emisión y quema por trimestre (millones de TRX)",
-       "et": "Pestaña Quema y emisión",
-       "desc": "Barras: TRX creados (verde) y quemados (rojo). Línea: el neto. Por debajo de cero la oferta baja. Pulsa una barra para ver ese trimestre en la tabla. * trimestre incompleto (menos de 80 días de datos).",
-       "u": "herramientas.html#emision-y-quema-por-trimestre-millones-de-trx",
-       "foto": "herramientas--emision-y-quema-por-trimestre-millones-de-trx.webp",
-       "principal": false
-      },
-      {
-       "t": "Por trimestre: la serie de la que sale el gráfico",
-       "et": "Pestaña Quema y emisión",
-       "desc": "Fuente: serie diaria pública de TronScan (emisión, quema y oferta de cada día; la lectura de hoy va del 2021-05-26 al 2026-11-15). Cada trimestre suma sus días; los dólares, con el precio de cada día. * trimestre incompl",
-       "u": "herramientas.html#por-trimestre-la-serie-de-la-que-sale-el-grafico",
-       "foto": "herramientas--por-trimestre-la-serie-de-la-que-sale-el-grafico.webp",
-       "principal": false
-      },
-      {
-       "t": "Por año",
-       "et": "Pestaña Quema y emisión",
-       "desc": "El primer año de la serie y el actual están incompletos: la columna «Días» dice cuántos hay.",
-       "u": "herramientas.html#por-ano",
-       "foto": "herramientas--por-ano.webp",
-       "principal": false
+       "foto": "herramientas--las-100-mayores-cuentas-de-tron.webp"
       }
      ]
     },
     {
-     "nombre": "Fundamentales",
+     "nombre": "Quema y emisión",
      "tarjetas": [
       {
-       "t": "Laboratorio de fundamentales",
-       "et": "Página propia",
-       "desc": "Escribe un token y mira cómo funciona económicamente: emisión y quema, actividad y demanda, comisiones e ingresos, qué parte llega al token, sostenibilidad y valoración. Datos públicos en vivo, cada cifra con su origen, ",
-       "u": "fundamentales.html",
-       "foto": "fundamentales--pagina.webp",
-       "principal": true
+       "t": "Quema y emisión de TRX de un vistazo",
+       "et": "Herramientas › Quema y emisión",
+       "desc": "Cuánto TRX crea la red y cuánto destruye, y si la oferta sube o baja.",
+       "u": "herramientas.html#pestana-quema",
+       "foto": "herramientas--pestana-quema.webp"
+      },
+      {
+       "t": "Quema y emisión de TRX por trimestre (gráfico)",
+       "et": "Herramientas › Quema y emisión",
+       "desc": "TRX creados y quemados cada trimestre, y el neto.",
+       "u": "herramientas.html#emision-y-quema-por-trimestre-millones-de-trx",
+       "foto": "herramientas--emision-y-quema-por-trimestre-millones-de-trx.webp"
+      },
+      {
+       "t": "Quema y emisión de TRX por trimestre (tabla)",
+       "et": "Herramientas › Quema y emisión",
+       "desc": "Las cifras de cada trimestre, también en dólares.",
+       "u": "herramientas.html#por-trimestre-la-serie-de-la-que-sale-el-grafico",
+       "foto": "herramientas--por-trimestre-la-serie-de-la-que-sale-el-grafico.webp"
+      },
+      {
+       "t": "Quema y emisión de TRX por año",
+       "et": "Herramientas › Quema y emisión",
+       "desc": "Las cifras de cada año.",
+       "u": "herramientas.html#por-ano",
+       "foto": "herramientas--por-ano.webp"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "sunio-justlend",
+   "nombre": "sun.io y JustLend",
+   "desc": "Cuánto cuesta vender en sun.io y cuánto dinero se puede sacar de verdad de JustLend.",
+   "grupos": [
+    {
+     "nombre": "",
+     "tarjetas": [
+      {
+       "t": "Liquidez sun.io: ¿cuánto cuesta vender?",
+       "et": "Herramientas › Liquidez sun.io",
+       "desc": "Escribe un importe y mira en qué tokens de TRON cabe venderlo por USDT en sun.io y cuánto costaría.",
+       "u": "herramientas.html#cuanto-cuesta-vender-en-sun-io",
+       "foto": "herramientas--cuanto-cuesta-vender-en-sun-io.webp"
+      },
+      {
+       "t": "Recuperar de JustLend: ¿puedo sacar mi dinero?",
+       "et": "Herramientas › Recuperar de JustLend",
+       "desc": "Token a token: cuánta caja hay para retirar, cuánto sacarías vendiéndolo y qué puede hacer el emisor.",
+       "u": "herramientas.html#puedo-recuperar-mi-dinero-de-justlend",
+       "foto": "herramientas--puedo-recuperar-mi-dinero-de-justlend.webp"
+      },
+      {
+       "t": "Recuperar de JustLend: mi cuenta",
+       "et": "Herramientas › Recuperar de JustLend",
+       "desc": "Escribe tu dirección y mira lo que tienes depositado en JustLend y si podrías recuperarlo.",
+       "u": "herramientas.html#mi-cuenta",
+       "foto": "herramientas--mi-cuenta.webp"
       }
      ]
     }
@@ -284,1143 +258,25 @@
   },
   {
    "id": "mercado",
-   "titulo": "Mercado",
-   "u": "mercado.html",
+   "nombre": "El mercado cripto",
+   "desc": "Precios y lectura del día, dónde está el dinero, qué sube y qué baja, y cómo de agitado está todo.",
    "grupos": [
     {
-     "nombre": "",
+     "nombre": "Hoy",
      "tarjetas": [
       {
-       "t": "Mercado hoy: precios y miedo y codicia",
-       "et": "Está en Herramientas",
-       "desc": "",
+       "t": "Precios de hoy: BTC, ETH y TRX, y miedo y codicia",
+       "et": "Herramientas › Mercado",
+       "desc": "Precio y cambio en 24 horas, diferencia entre casas de cambio y el índice de miedo y codicia.",
        "u": "herramientas.html#hoy",
-       "foto": "herramientas--hoy.webp",
-       "principal": false
+       "foto": "herramientas--hoy.webp"
       },
       {
        "t": "Lectura del día",
-       "et": "",
-       "desc": "La escribe un programa con reglas fijas: sin IA y sin opinión. Usa los cierres hasta el 15-nov-2026 (UTC) y las fotos del 16-nov-2026, 06:07 UTC; no cambia hasta la lectura de mañana. Cada cifra subrayada abre su origen.",
+       "et": "Mercado",
+       "desc": "Cinco puntos que escribe un programa con reglas fijas: el día, el capital, la liquidez, la volatilidad y los desacoples.",
        "u": "mercado.html#lectura-del-dia",
-       "foto": "mercado--lectura-del-dia.webp",
-       "principal": false
-      },
-      {
-       "t": "¿Dónde está el capital?",
-       "et": "",
-       "desc": "De cada 100 dólares que vale hoy el mercado, cuántos están en bitcoin, en ether, en stablecoins y en todo lo demás. Pulsa cualquier trozo o cifra para ver de dónde sale.",
-       "u": "mercado.html#donde-esta-el-capital",
-       "foto": "mercado--donde-esta-el-capital.webp",
-       "principal": false
-      },
-      {
-       "t": "Stablecoins por cadena",
-       "et": "¿Dónde está el capital?",
-       "desc": "Cuánto ha cambiado las stablecoins de cada cadena en 30 días, en dólares. De la que más gana a la que más pierde; junto al nombre, lo que hay hoy. Pulsa una barra para ver su serie y de dónde sale.",
-       "u": "mercado.html#stablecoins-por-cadena",
-       "foto": "mercado--stablecoins-por-cadena.webp",
-       "principal": false
-      },
-      {
-       "t": "Dinero depositado en aplicaciones, por cadena",
-       "et": "¿Dónde está el capital?",
-       "desc": "Cuánto ha cambiado el dinero depositado en cada cadena en 30 días, en dólares. De la que más gana a la que más pierde; junto al nombre, lo que hay hoy. Pulsa una barra para ver su serie y de dónde sale.",
-       "u": "mercado.html#dinero-depositado-en-aplicaciones-por-cadena",
-       "foto": "mercado--dinero-depositado-en-aplicaciones-por-cadena.webp",
-       "principal": false
-      },
-      {
-       "t": "Mapa de calor",
-       "et": "",
-       "desc": "Cuánto ha subido o bajado cada activo, cada sector y cada cadena. Verde sube, rojo baja; cuanto más intenso, más movimiento. Pulsa cualquier casilla para ver su serie y de dónde sale.",
-       "u": "mercado.html#mapa-de-calor",
-       "foto": "mercado--mapa-de-calor.webp",
-       "principal": false
-      },
-      {
-       "t": "¿Dónde aumenta la liquidez?",
-       "et": "",
-       "desc": "Cuánto dinero hay esperando para comprar y para vender cerca del precio, en Binance y en Kraken, para los ocho mayores activos de la cesta. La otra mitad de la respuesta está arriba: las stablecoins que entran o salen de",
-       "u": "mercado.html#donde-aumenta-la-liquidez",
-       "foto": "mercado--donde-aumenta-la-liquidez.webp",
-       "principal": false
-      },
-      {
-       "t": "Serie propia: ¿hay más o menos dinero esperando que antes?",
-       "et": "¿Dónde aumenta la liquidez?",
-       "desc": "Dinero esperando para comprar y para vender a menos de un 1 % del precio en Binance, sumado: foto del 16-nov-2026 frente a la del 15-nov-2026. Llevamos 7 días guardados. Cada foto es un instante y un libro cambia mucho d",
-       "u": "mercado.html#serie-propia-hay-mas-o-menos-dinero-esperando-que-antes",
-       "foto": "mercado--serie-propia-hay-mas-o-menos-dinero-esperando-que-antes.webp",
-       "principal": false
-      },
-      {
-       "t": "Sectores de la cesta, por plazo",
-       "et": "¿Qué sectores ganan actividad?",
-       "desc": "Rendimiento de cada sector en 30 días: la mediana de lo que han subido o bajado sus activos de la cesta. Del que mejor va al que peor. Pulsa una barra para ver sus activos y de dónde sale.",
-       "u": "mercado.html#sectores-de-la-cesta-por-plazo",
-       "foto": "mercado--sectores-de-la-cesta-por-plazo.webp",
-       "principal": false
-      },
-      {
-       "t": "Los veinte mayores sectores según CoinGecko, en 24 horas",
-       "et": "¿Qué sectores ganan actividad?",
-       "desc": "Cuánto ha cambiado en 24 horas la capitalización de cada sector, según CoinGecko. Del que más sube al que más baja; junto al nombre, su capitalización. Pulsa una barra para ver sus datos.",
-       "u": "mercado.html#los-veinte-mayores-sectores-segun-coingecko-en-24-horas",
-       "foto": "mercado--los-veinte-mayores-sectores-segun-coingecko-en-24-horas.webp",
-       "principal": false
-      },
-      {
-       "t": "Volatilidad: ¿está el mercado tranquilo o agitado?",
-       "et": "",
-       "desc": "Cuánto se mueve cada activo comparado con su propia historia, y cuánto movimiento espera el mercado para bitcoin y ether. Hoy: 0 en extremo, 3 en agitado, 41 en normal, 4 en calma.",
-       "u": "mercado.html#volatilidad-esta-el-mercado-tranquilo-o-agitado",
-       "foto": "mercado--volatilidad-esta-el-mercado-tranquilo-o-agitado.webp",
-       "principal": false
-      },
-      {
-       "t": "Bitcoin y ether: lo que el mercado espera frente a lo que ha pasado",
-       "et": "Volatilidad: ¿está el mercado tranquilo o agitado?",
-       "desc": "Esperada: lo que descuentan las opciones para los 30 días siguientes (índice de volatilidad de Deribit), leída de Deribit el 16-nov-2026, 12:34 UTC y releída cada cinco minutos. Realizada: lo que se ha movido de verdad e",
-       "u": "mercado.html#bitcoin-y-ether-lo-que-el-mercado-espera-frente-a-lo-que-ha",
-       "foto": "mercado--bitcoin-y-ether-lo-que-el-mercado-espera-frente-a-lo-que-ha.webp",
-       "principal": false
-      },
-      {
-       "t": "Activo por activo",
-       "et": "Volatilidad: ¿está el mercado tranquilo o agitado?",
-       "desc": "7 días30 días90 díasde 1 añode 2 años",
-       "u": "mercado.html#activo-por-activo",
-       "foto": "mercado--activo-por-activo.webp",
-       "principal": false
-      },
-      {
-       "t": "¿Qué activos se están desacoplando?",
-       "et": "",
-       "desc": "Cuánto se mueve cada activo al compás de bitcoin estos 30 días, comparado con los 30 anteriores. Hoy: 2 se desacoplan y 16 se acoplan. La correlación mediana de la cesta con bitcoin es 0,72 (0,54 en los 30 días anteriore",
-       "u": "mercado.html#que-activos-se-estan-desacoplando",
-       "foto": "mercado--que-activos-se-estan-desacoplando.webp",
-       "principal": false
-      },
-      {
-       "t": "Quién se mueve con quién",
-       "et": "¿Qué activos se están desacoplando?",
-       "desc": "Entre los 12 mayores, la pareja que más se mueve junta es DOGE y ADA (0,97); la que menos relación tiene, ETH y TRX (−0,07); y la que más se mueve al revés, TRX y LINK (−0,50). La correlación mediana es 0,80.",
-       "u": "mercado.html#quien-se-mueve-con-quien",
-       "foto": "mercado--quien-se-mueve-con-quien.webp",
-       "principal": false
-      },
-      {
-       "t": "Qué es esto y qué no",
-       "et": "",
-       "desc": "",
-       "u": "mercado.html#que-es-esto-y-que-no",
-       "foto": "mercado--que-es-esto-y-que-no.webp",
-       "principal": false
-      }
-     ]
-    }
-   ]
-  }
- ],
- "investigaciones": [
-  {
-   "titulo": "Robo a Binance (0x5227): trazabilidad en TRON y Ethereum",
-   "resumen": "Seguimiento de 628 M$ robados en TRON y de los fondos en Ethereum: qué está congelado, dónde se repartió el resto, por qué puentes salió y cuánto rastro se pierde.",
-   "u": "report.html?r=trazabilidad-binance-0x5227",
-   "portada": "assets/img/portada/binance-hack.webp",
-   "grupos": [
-    {
-     "nombre": "",
-     "tarjetas": [
-      {
-       "t": "Resumen para cualquier lector",
-       "et": "",
-       "desc": "Del robo en Binance salieron, en Ethereum y otras redes, unos 3.302 M$ (USDT, USDC, ETH y otros activos) y, en TRON, 628 M$. Los emisores congelaron 2.685 M$: es lo único recuperado de verdad, y se comprueba hoy pregunta",
-       "u": "report.html?r=trazabilidad-binance-0x5227#resumen-para-cualquier-lector",
-       "foto": "trazabilidad-binance-0x5227--resumen-para-cualquier-lector.webp",
-       "principal": false
-      }
-     ]
-    },
-    {
-     "nombre": "¿Dónde está el dinero hoy?",
-     "tarjetas": [
-      {
-       "t": "TRON · tras convertir el robo",
-       "et": "",
-       "desc": "Capital 628 M$ · pulsa para profundizar",
-       "u": "report.html?r=trazabilidad-binance-0x5227#tron-tras-convertir-el-robo",
-       "foto": "trazabilidad-binance-0x5227--tron-tras-convertir-el-robo.webp",
-       "principal": false
-      },
-      {
-       "t": "Visión global · todas las cadenas",
-       "et": "",
-       "desc": "",
-       "u": "report.html?r=trazabilidad-binance-0x5227#vision-global-todas-las-cadenas",
-       "foto": "trazabilidad-binance-0x5227--vision-global-todas-las-cadenas.webp",
-       "principal": false
-      },
-      {
-       "t": "Antes y después de la «foto» (30-oct, 22:40 UTC)",
-       "et": "",
-       "desc": "La «foto» es un corte fijo en el tiempo (se explica en el capítulo 2). Importe atribuido al robo por destino · pulsa una barra.",
-       "u": "report.html?r=trazabilidad-binance-0x5227#antes-y-despues-de-la-foto-30-oct-22-40-utc",
-       "foto": "trazabilidad-binance-0x5227--antes-y-despues-de-la-foto-30-oct-22-40-utc.webp",
-       "principal": false
-      }
-     ]
-    },
-    {
-     "nombre": "Ethereum y otras redes compatibles",
-     "tarjetas": [
-      {
-       "t": "Qué hay en Ethereum, por partida",
-       "et": "",
-       "desc": "Verde: verificado en cadena · azul: estimado · pulsa una barra",
-       "u": "report.html?r=trazabilidad-binance-0x5227#que-hay-en-ethereum-por-partida",
-       "foto": "trazabilidad-binance-0x5227--que-hay-en-ethereum-por-partida.webp",
-       "principal": false
-      },
-      {
-       "t": "Entradas registradas a Ethereum en el tiempo",
-       "et": "",
-       "desc": "Cada punto es una transferencia · escala logarítmica · pulsa un punto",
-       "u": "report.html?r=trazabilidad-binance-0x5227#entradas-registradas-a-ethereum-en-el-tiempo",
-       "foto": "trazabilidad-binance-0x5227--entradas-registradas-a-ethereum-en-el-tiempo.webp",
-       "principal": false
-      },
-      {
-       "t": "Direcciones y activos comprobados hoy",
-       "et": "",
-       "desc": "Saldo y estado de bloqueo leídos hoy en el contrato de cada emisor. Pulsa una fila para abrir su ficha.",
-       "u": "report.html?r=trazabilidad-binance-0x5227#direcciones-y-activos-comprobados-hoy",
-       "foto": "trazabilidad-binance-0x5227--direcciones-y-activos-comprobados-hoy.webp",
-       "principal": false
-      }
-     ]
-    },
-    {
-     "nombre": "Cómo se reparte el capital",
-     "tarjetas": [
-      {
-       "t": "Del capital robado a cada destino",
-       "et": "",
-       "desc": "Rueda = zoom · arrastrar = mover · clic = detalle",
-       "u": "report.html?r=trazabilidad-binance-0x5227#del-capital-robado-a-cada-destino",
-       "foto": "trazabilidad-binance-0x5227--del-capital-robado-a-cada-destino.webp",
-       "principal": false
-      }
-     ]
-    },
-    {
-     "nombre": "Línea temporal",
-     "tarjetas": [
-      {
-       "t": "Reparto por hora desde la billetera de reparto",
-       "et": "",
-       "desc": "Barras: importe repartido (USD) · línea: número de envíos",
-       "u": "report.html?r=trazabilidad-binance-0x5227#reparto-por-hora-desde-la-billetera-de-reparto",
-       "foto": "trazabilidad-binance-0x5227--reparto-por-hora-desde-la-billetera-de-reparto.webp",
-       "principal": false
-      },
-      {
-       "t": "USDT congelado por Tether en TRON (acumulado)",
-       "et": "",
-       "desc": "66 de 69 direcciones siguen bloqueadas · 386 M$ vigentes · pulsa un punto",
-       "u": "report.html?r=trazabilidad-binance-0x5227#usdt-congelado-por-tether-en-tron-acumulado",
-       "foto": "trazabilidad-binance-0x5227--usdt-congelado-por-tether-en-tron-acumulado.webp",
-       "principal": false
-      },
-      {
-       "t": "Volumen por hora en TRON, por tipo de movimiento",
-       "et": "",
-       "desc": "Suma en USD de los movimientos del libro mayor. Pulsa una barra para ver los mayores movimientos de esa hora.",
-       "u": "report.html?r=trazabilidad-binance-0x5227#volumen-por-hora-en-tron-por-tipo-de-movimiento",
-       "foto": "trazabilidad-binance-0x5227--volumen-por-hora-en-tron-por-tipo-de-movimiento.webp",
-       "principal": false
-      }
-     ]
-    },
-    {
-     "nombre": "Red de direcciones",
-     "tarjetas": [
-      {
-       "t": "Mapa de direcciones y envíos",
-       "et": "",
-       "desc": "Tamaño = volumen · color = tipo de dirección · flecha = sentido · borde rojo = congelada",
-       "u": "report.html?r=trazabilidad-binance-0x5227#mapa-de-direcciones-y-envios",
-       "foto": "trazabilidad-binance-0x5227--mapa-de-direcciones-y-envios.webp",
-       "principal": false
-      }
-     ]
-    },
-    {
-     "nombre": "Explorador de direcciones",
-     "tarjetas": [
-      {
-       "t": "Todas las direcciones del libro mayor",
-       "et": "",
-       "desc": "12.978 billeteras en TRON y las direcciones de Ethereum que aparecen en el libro",
-       "u": "report.html?r=trazabilidad-binance-0x5227#todas-las-direcciones-del-libro-mayor",
-       "foto": "trazabilidad-binance-0x5227--todas-las-direcciones-del-libro-mayor.webp",
-       "principal": false
-      }
-     ]
-    },
-    {
-     "nombre": "Puentes entre cadenas",
-     "tarjetas": [
-      {
-       "t": "USDT0 (LayerZero)",
-       "et": "",
-       "desc": "186 envíos · 8 M$ enviados · 8 M$ recibidos · pulsa el gráfico",
-       "u": "report.html?r=trazabilidad-binance-0x5227#usdt0-layerzero",
-       "foto": "trazabilidad-binance-0x5227--usdt0-layerzero.webp",
-       "principal": false
-      },
-      {
-       "t": "Symbiosis · llegadas por cadena y activo",
-       "et": "",
-       "desc": "1.325 envíos · 30 revertidos y devueltos · pulsa una barra",
-       "u": "report.html?r=trazabilidad-binance-0x5227#symbiosis-llegadas-por-cadena-y-activo",
-       "foto": "trazabilidad-binance-0x5227--symbiosis-llegadas-por-cadena-y-activo.webp",
-       "principal": false
-      },
-      {
-       "t": "Chainflip · entrada y salida por destino",
-       "et": "",
-       "desc": "151 cambios nuestros de 752 en su explorador · pulsa una barra",
-       "u": "report.html?r=trazabilidad-binance-0x5227#chainflip-entrada-y-salida-por-destino",
-       "foto": "trazabilidad-binance-0x5227--chainflip-entrada-y-salida-por-destino.webp",
-       "principal": false
-      }
-     ]
-    },
-    {
-     "nombre": "Destinos del dinero repartido",
-     "tarjetas": [
-      {
-       "t": "Mayores destinos (importe atribuido)",
-       "et": "",
-       "desc": "Escala logarítmica · color = tipo · pulsa una barra",
-       "u": "report.html?r=trazabilidad-binance-0x5227#mayores-destinos-importe-atribuido",
-       "foto": "trazabilidad-binance-0x5227--mayores-destinos-importe-atribuido.webp",
-       "principal": false
-      },
-      {
-       "t": "Por tipo de destino",
-       "et": "",
-       "desc": "Importe atribuido · pulsa una porción",
-       "u": "report.html?r=trazabilidad-binance-0x5227#por-tipo-de-destino",
-       "foto": "trazabilidad-binance-0x5227--por-tipo-de-destino.webp",
-       "principal": false
-      },
-      {
-       "t": "Casas de cambio que recibieron fondos",
-       "et": "",
-       "desc": "Bruto recibido y parte atribuida al robo · pulsa una plataforma",
-       "u": "report.html?r=trazabilidad-binance-0x5227#casas-de-cambio-que-recibieron-fondos",
-       "foto": "trazabilidad-binance-0x5227--casas-de-cambio-que-recibieron-fondos.webp",
-       "principal": false
-      },
-      {
-       "t": "Cambios de moneda (swaps) por enrutador",
-       "et": "",
-       "desc": "3.256 operaciones · pulsa una barra",
-       "u": "report.html?r=trazabilidad-binance-0x5227#cambios-de-moneda-swaps-por-enrutador",
-       "foto": "trazabilidad-binance-0x5227--cambios-de-moneda-swaps-por-enrutador.webp",
-       "principal": false
-      }
-     ]
-    },
-    {
-     "nombre": "Incertidumbre del modelo: las dos vías de pureza",
-     "tarjetas": [
-      {
-       "t": "Cuánto de lo que entra se reparte entre destinos",
-       "et": "",
-       "desc": "Relación reparto / entrada por vía · pulsa una barra",
-       "u": "report.html?r=trazabilidad-binance-0x5227#cuanto-de-lo-que-entra-se-reparte-entre-destinos",
-       "foto": "trazabilidad-binance-0x5227--cuanto-de-lo-que-entra-se-reparte-entre-destinos.webp",
-       "principal": false
-      },
-      {
-       "t": "Importe llegado a destinos, por vía",
-       "et": "",
-       "desc": "USD atribuidos al robo · pulsa una barra",
-       "u": "report.html?r=trazabilidad-binance-0x5227#importe-llegado-a-destinos-por-via",
-       "foto": "trazabilidad-binance-0x5227--importe-llegado-a-destinos-por-via.webp",
-       "principal": false
-      }
-     ]
-    },
-    {
-     "nombre": "Dónde se pierde el rastro",
-     "tarjetas": [
-      {
-       "t": "Importe atribuido por causa",
-       "et": "",
-       "desc": "Azul: parada reconocida · rojo: desconocido · pulsa una barra",
-       "u": "report.html?r=trazabilidad-binance-0x5227#importe-atribuido-por-causa",
-       "foto": "trazabilidad-binance-0x5227--importe-atribuido-por-causa.webp",
-       "principal": false
-      },
-      {
-       "t": "Las 8 mayores",
-       "et": "",
-       "desc": "Pulsa una fila para abrir su ficha",
-       "u": "report.html?r=trazabilidad-binance-0x5227#las-8-mayores",
-       "foto": "trazabilidad-binance-0x5227--las-8-mayores.webp",
-       "principal": false
-      }
-     ]
-    },
-    {
-     "nombre": "Cruces con fuentes externas",
-     "tarjetas": [
-      {
-       "t": "Arkham · transacciones etiquetadas «Binance Hacker»",
-       "et": "",
-       "desc": "35 transacciones · 1,6 M$ · 2 ya estaban en nuestro libro · pulsa una barra",
-       "u": "report.html?r=trazabilidad-binance-0x5227#arkham-transacciones-etiquetadas-binance-hacker",
-       "foto": "trazabilidad-binance-0x5227--arkham-transacciones-etiquetadas-binance-hacker.webp",
-       "principal": false
-      },
-      {
-       "t": "Polytrop · direcciones que no teníamos",
-       "et": "",
-       "desc": "7.067 direcciones publicadas por Polytrop · pulsa una barra",
-       "u": "report.html?r=trazabilidad-binance-0x5227#polytrop-direcciones-que-no-teniamos",
-       "foto": "trazabilidad-binance-0x5227--polytrop-direcciones-que-no-teniamos.webp",
-       "principal": false
-      }
-     ]
-    },
-    {
-     "nombre": "Control de calidad y trabajo pendiente",
-     "tarjetas": [
-      {
-       "t": "Puntos abiertos",
-       "et": "",
-       "desc": "Lo que falta por saber o por leer, y por qué.",
-       "u": "report.html?r=trazabilidad-binance-0x5227#puntos-abiertos",
-       "foto": "trazabilidad-binance-0x5227--puntos-abiertos.webp",
-       "principal": false
-      }
-     ]
-    },
-    {
-     "nombre": "Fuentes, evidencia y descargas",
-     "tarjetas": [
-      {
-       "t": "Fuentes de datos",
-       "et": "",
-       "desc": "",
-       "u": "report.html?r=trazabilidad-binance-0x5227#fuentes-de-datos",
-       "foto": "trazabilidad-binance-0x5227--fuentes-de-datos.webp",
-       "principal": false
-      }
-     ]
-    },
-    {
-     "nombre": "Historial de versiones",
-     "tarjetas": [
-      {
-       "t": "Ediciones publicadas y conservadas",
-       "et": "",
-       "desc": "Cada edición publicada sigue accesible tal como salió, con sus datos y su huella (SHA-256), para poder comprobar qué se publicó en cada fecha. El informe que abre este panel es, byte a byte, la v0.7 de esta tabla.",
-       "u": "report.html?r=trazabilidad-binance-0x5227#ediciones-publicadas-y-conservadas",
-       "foto": "trazabilidad-binance-0x5227--ediciones-publicadas-y-conservadas.webp",
-       "principal": false
-      }
-     ]
-    }
-   ]
-  },
-  {
-   "titulo": "Las cuentas «Vaneck» y TT2T17…: qué se sabe y qué no",
-   "resumen": "942 M TRX enviados entre dos cuentas de TRON, verificados por hash; atribuciones de terceros, hipótesis y estado en vivo con seguimiento diario. Ampliación del 5-nov: la cuenta de paso que hace el relevo de fondos, el TRX de la antigua TRON Foundation y las claves de la cuenta etiquetada «Poloniex». Actualización del 13-nov: la segunda cuenta y la financiadora de «Vaneck» son las dos mayores titulares del capital de sun.io.",
-   "u": "caso-vaneck.html",
-   "portada": "assets/img/portada/caso-vaneck.webp",
-   "grupos": [
-    {
-     "nombre": "",
-     "tarjetas": [
-      {
-       "t": "Lo esencial",
-       "et": "",
-       "desc": "Una página: qué sabemos, qué no, y por qué importa.",
-       "u": "caso-vaneck.html#lo-esencial",
-       "foto": "caso-vaneck-sun--lo-esencial.webp",
-       "principal": false
-      }
-     ]
-    },
-    {
-     "nombre": "Lo esencial",
-     "tarjetas": [
-      {
-       "t": "Las dos cuentas, con su dirección completa",
-       "et": "",
-       "desc": "Cada dirección se puede copiar y comprobar en TronScan. Por eso en el resto de la página las llamamos «Vaneck» y «la segunda cuenta».",
-       "u": "caso-vaneck.html#las-dos-cuentas-con-su-direccion-completa",
-       "foto": "caso-vaneck-sun--las-dos-cuentas-con-su-direccion-completa.webp",
-       "principal": false
-      }
-     ]
-    },
-    {
-     "nombre": "Los hechos verificados en cadena",
-     "tarjetas": [
-      {
-       "t": "De dónde viene y a dónde va el TRX (importes documentados)",
-       "et": "",
-       "desc": "M TRX. El ancho es el importe. Los colores agrupan por tipo de cuenta (leyenda abajo). No es un balance completo: solo los movimientos grandes que se han verificado. Pulsa una banda para ver su fecha y detalle, o el nomb",
-       "u": "caso-vaneck.html#de-donde-viene-y-a-donde-va-el-trx-importes-documentados",
-       "foto": "caso-vaneck-sun--de-donde-viene-y-a-donde-va-el-trx-importes-documentados.webp",
-       "principal": false
-      },
-      {
-       "t": "Transferencias verificadas por hash",
-       "et": "",
-       "desc": "Cada fila se puede comprobar en TronScan. Fuente: TronGrid (investigación del 29-oct).",
-       "u": "caso-vaneck.html#transferencias-verificadas-por-hash",
-       "foto": "caso-vaneck-sun--transferencias-verificadas-por-hash.webp",
-       "principal": false
-      },
-      {
-       "t": "Cómo saca la segunda cuenta el TRX: siempre igual",
-       "et": "",
-       "desc": "Crea una billetera nueva, le manda el TRX y esa billetera lo reenvía ese mismo día. Cada barra es una de esas operaciones (M TRX). Los colores no indican nada bueno ni malo: solo distinguen el destino final, leído en Tro",
-       "u": "caso-vaneck.html#como-saca-la-segunda-cuenta-el-trx-siempre-igual",
-       "foto": "caso-vaneck-sun--como-saca-la-segunda-cuenta-el-trx-siempre-igual.webp",
-       "principal": false
-      },
-      {
-       "t": "Las dos cuentas el 29-oct-2026",
-       "et": "",
-       "desc": "VERIFICADO Lectura en TronGrid del 29-oct. El estado de hoy está en el capítulo 6.",
-       "u": "caso-vaneck.html#las-dos-cuentas-el-29-oct-2026",
-       "foto": "caso-vaneck-sun--las-dos-cuentas-el-29-oct-2026.webp",
-       "principal": false
-      }
-     ]
-    },
-    {
-     "nombre": "Lo que dicen terceros",
-     "tarjetas": [
-      {
-       "t": "Qué dicen, y quién lo dice",
-       "et": "",
-       "desc": "Justin Sun niega controlar la segunda cuenta (según Bloomberg, citado por Protos). Nadie ha vinculado públicamente la cuenta «Vaneck» a Sun; esa relación sale de las transferencias, no de ninguna declaración.",
-       "u": "caso-vaneck.html#que-dicen-y-quien-lo-dice",
-       "foto": "caso-vaneck-sun--que-dicen-y-quien-lo-dice.webp",
-       "principal": false
-      }
-     ]
-    },
-    {
-     "nombre": "Qué pasa ahora",
-     "tarjetas": [
-      {
-       "t": "«Vaneck»",
-       "et": "",
-       "desc": "TCGVFGDd62LSrfZEaz3M3fYifWWdSDHRL8",
-       "u": "caso-vaneck.html#vaneck",
-       "foto": "caso-vaneck-sun--vaneck.webp",
-       "principal": false
-      },
-      {
-       "t": "Segunda cuenta",
-       "et": "",
-       "desc": "TCGVFGDd62LSrfZEaz3M3fYifWWdSDHRL8",
-       "u": "caso-vaneck.html#segunda-cuenta",
-       "foto": "caso-vaneck-sun--segunda-cuenta.webp",
-       "principal": false
-      },
-      {
-       "t": "Movimientos relevantes desde el 29-oct",
-       "et": "Segunda cuenta",
-       "desc": "",
-       "u": "caso-vaneck.html#movimientos-relevantes-desde-el-29-oct",
-       "foto": "caso-vaneck-sun--movimientos-relevantes-desde-el-29-oct.webp",
-       "principal": false
-      },
-      {
-       "t": "Lo que ha anotado el vigilante de EquipoIA",
-       "et": "",
-       "desc": "Hechos de la cadena que el vigilante registra cada hora sobre estas dos cuentas. Para su nombre, se usan las etiquetas que EquipoIA conoce.",
-       "u": "caso-vaneck.html#lo-que-ha-anotado-el-vigilante-de-equipoia",
-       "foto": "caso-vaneck-sun--lo-que-ha-anotado-el-vigilante-de-equipoia.webp",
-       "principal": false
-      },
-      {
-       "t": "Cuándo quedan libres sus TRX",
-       "et": "",
-       "desc": "Cada barra suma los TRX de estas dos cuentas que se podrán retirar ese día. Fuente: calendario de descongelaciones de TRX (lectura del 2026-11-16 06:00 UTC).",
-       "u": "caso-vaneck.html#cuando-quedan-libres-sus-trx",
-       "foto": "caso-vaneck-sun--cuando-quedan-libres-sus-trx.webp",
-       "principal": false
-      }
-     ]
-    },
-    {
-     "nombre": "",
-     "tarjetas": [
-      {
-       "t": "La energía de Binance, la proveedora y el relevo de fondos",
-       "et": "",
-       "desc": "Quién reparte la energía, qué es la proveedora y cómo se movieron los 140 M de USDT del 2-nov.",
-       "u": "caso-vaneck.html#la-energia-de-binance-la-proveedora-y-el-relevo-de-fondos",
-       "foto": "caso-vaneck-sun--la-energia-de-binance-la-proveedora-y-el-relevo-de-fondos.webp",
-       "principal": false
-      }
-     ]
-    },
-    {
-     "nombre": "La energía de Binance, la proveedora y el relevo de fondos",
-     "tarjetas": [
-      {
-       "t": "Los tres relevos de TRX a la cuenta de energía",
-       "et": "",
-       "desc": "Cada envío sale de la proveedora minutos u horas después de entrar en ella, con 1 TRX menos. VERIFICADO",
-       "u": "caso-vaneck.html#los-tres-relevos-de-trx-a-la-cuenta-de-energia",
-       "foto": "caso-vaneck-sun--los-tres-relevos-de-trx-a-la-cuenta-de-energia.webp",
-       "principal": false
-      },
-      {
-       "t": "El 2 de noviembre: 140 M de USDT, eslabón a eslabón",
-       "et": "",
-       "desc": "La segunda cuenta mandó 60 M y 80 M de USDT a dos cuentas creadas ese mismo día; cada una los reenvió a la proveedora en pocos minutos. VERIFICADO",
-       "u": "caso-vaneck.html#el-2-de-noviembre-140-m-de-usdt-eslabon-a-eslabon",
-       "foto": "caso-vaneck-sun--el-2-de-noviembre-140-m-de-usdt-eslabon-a-eslabon.webp",
-       "principal": false
-      }
-     ]
-    },
-    {
-     "nombre": "El TRX de la antigua TRON Foundation",
-     "tarjetas": [
-      {
-       "t": "Primer salto desde las cuentas de reunión (envíos de 100 M TRX o más)",
-       "et": "",
-       "desc": "Etiquetas de TronScan (atribución de terceros). Un depósito en una casa de cambio no dice quién lo hizo ni para quién. ATRIBUCIÓN DE TERCEROS",
-       "u": "caso-vaneck.html#primer-salto-desde-las-cuentas-de-reunion-envios-de-100-m-tr",
-       "foto": "caso-vaneck-sun--primer-salto-desde-las-cuentas-de-reunion-envios-de-100-m-tr.webp",
-       "principal": false
-      },
-      {
-       "t": "Dos conexiones con el círculo de cuentas del caso",
-       "et": "",
-       "desc": "VERIFICADO Tres de las cuentas de reunión mandaron 1.131 M TRX a TWpMnUh9pZS1Mf8yyw9WPiS82WYevKzQo2: 370 M el 2023-07-15; 387 M el 2023-07-15; 374 M el 2024-07-13. Esa misma cuenta había recibido 430 M TRX de «Zion» en 2",
-       "u": "caso-vaneck.html#dos-conexiones-con-el-circulo-de-cuentas-del-caso",
-       "foto": "caso-vaneck-sun--dos-conexiones-con-el-circulo-de-cuentas-del-caso.webp",
-       "principal": false
-      }
-     ]
-    },
-    {
-     "nombre": "Las claves: la cuenta «Poloniex», «Poloniex 2» y la proveedora",
-     "tarjetas": [
-      {
-       "t": "Los tres cambios de permiso de la cuenta «Poloniex»",
-       "et": "",
-       "desc": "Leídos los permisos desde el 2023-10-31 (antes no se leyó: tope de 60.000 transacciones). La firma de cada transacción se convierte en la dirección que firmó; el método se comprobó con cuentas de clave propia (8/8 y 8/8 ",
-       "u": "caso-vaneck.html#los-tres-cambios-de-permiso-de-la-cuenta-poloniex",
-       "foto": "caso-vaneck-sun--los-tres-cambios-de-permiso-de-la-cuenta-poloniex.webp",
-       "principal": false
-      },
-      {
-       "t": "«Poloniex 2» y la proveedora",
-       "et": "",
-       "desc": "Verificado: «Poloniex 2» (creada el 2022-08-21, clave propia) firma en la multifirma TSzSgxRisS5VBXXDcAezTDvnPGi9CbsXvJ (3 de 5, desde el 2024-08-29) y en la multifirma TWPpxPd5PpU5FQk6F6F3HMN5VdufxnVA8K (3 de 5, desde e",
-       "u": "caso-vaneck.html#poloniex-2-y-la-proveedora",
-       "foto": "caso-vaneck-sun--poloniex-2-y-la-proveedora.webp",
-       "principal": false
-      },
-      {
-       "t": "Lo que ha dicho Justin Sun en público sobre Poloniex y HTX",
-       "et": "",
-       "desc": "Fuente: prensa que cita sus declaraciones (no se han podido abrir sus publicaciones originales en X). ATRIBUCIÓN DE TERCEROS",
-       "u": "caso-vaneck.html#lo-que-ha-dicho-justin-sun-en-publico-sobre-poloniex-y-htx",
-       "foto": "caso-vaneck-sun--lo-que-ha-dicho-justin-sun-en-publico-sobre-poloniex-y-htx.webp",
-       "principal": false
-      }
-     ]
-    },
-    {
-     "nombre": "",
-     "tarjetas": [
-      {
-       "t": "El capital de sun.io: la segunda cuenta y la financiadora de «Vaneck»",
-       "et": "",
-       "desc": "Quién tenía el 11-nov el capital depositado en sun.io, según el informe validado, con una comprobación propia de sus posiciones de V3, y lo que eso no significa.",
-       "u": "caso-vaneck.html#el-capital-de-sun-io-la-segunda-cuenta-y-la-financiadora-de",
-       "foto": "caso-vaneck-sun--el-capital-de-sun-io-la-segunda-cuenta-y-la-financiadora-de.webp",
-       "principal": false
-      }
-     ]
-    },
-    {
-     "nombre": "El capital de sun.io: la segunda cuenta y la financiadora de «Vaneck»",
-     "tarjetas": [
-      {
-       "t": "Qué tenía cada una el 11-nov-2026, por versión de sun.io",
-       "et": "",
-       "desc": "Cifras del apartado 10.2 del informe (mezclan cortes de hora distintos y no atribuyen identidad). V3 y V4: principal de las posiciones; V1 y V2: parte de los tokens de liquidez. ESTIMADO",
-       "u": "caso-vaneck.html#que-tenia-cada-una-el-11-nov-2026-por-version-de-sun-io",
-       "foto": "caso-vaneck-sun--que-tenia-cada-una-el-11-nov-2026-por-version-de-sun-io.webp",
-       "principal": false
-      },
-      {
-       "t": "De dónde viene lo que tenían",
-       "et": "",
-       "desc": "Apartado 10.3 del informe: si la posición nació dentro del último año a nombre de su titular (A) o es anterior y su origen no se puede observar (D). La clase está verificada con los traspasos de la ventana; los importes ",
-       "u": "caso-vaneck.html#de-donde-viene-lo-que-tenian",
-       "foto": "caso-vaneck-sun--de-donde-viene-lo-que-tenian.webp",
-       "principal": false
-      },
-      {
-       "t": "Qué hicieron en el último año",
-       "et": "",
-       "desc": "Apartado 10.1 del informe. «Añadido» y «retirado» son lo que entró y salió en la ventana (del 11-nov-2025 al 11-nov-2026); no es el saldo, que está en la primera tabla. Los importes son estimados y la dirección es la tit",
-       "u": "caso-vaneck.html#que-hicieron-en-el-ultimo-ano",
-       "foto": "caso-vaneck-sun--que-hicieron-en-el-ultimo-ano.webp",
-       "principal": false
-      },
-      {
-       "t": "Comprobación propia en la cadena (iniciada el 2026-11-12 23:59 UTC)",
-       "et": "",
-       "desc": "Para no fiarnos solo del informe, leímos en el gestor de posiciones de V3 (TLSWrv7eC1AZCXkRjpqMZUmvgd99cj7pPF) cuántas posiciones con liquidez tenía cada cuenta, una a una, con consultas sucesivas (menos de dos minutos, ",
-       "u": "caso-vaneck.html#comprobacion-propia-en-la-cadena-iniciada-el-2026-11-12-23-5",
-       "foto": "caso-vaneck-sun--comprobacion-propia-en-la-cadena-iniciada-el-2026-11-12-23-5.webp",
-       "principal": false
-      }
-     ]
-    }
-   ]
-  },
-  {
-   "titulo": "sun.io bajo el microscopio: distribución del capital, titularidad y profundidad en V1–V4",
-   "resumen": "Quién tiene el capital del principal DEX de TRON, cuánto se puede mover de verdad y cuánto se opera, del 11-nov-2025 al 11-nov-2026. Tres mercados reúnen el 59,95 % del capital y dos cuentas tienen aproximadamente el 78 %. Página interactiva con gráficos que se pueden pulsar, todas las tablas del informe y 14 transacciones verificables; el informe completo sigue disponible y lo que no se sabe está escrito en él.",
-   "u": "sunswap.html",
-   "portada": "assets/img/portada/sunswap-microscopio.webp",
-   "grupos": [
-    {
-     "nombre": "",
-     "tarjetas": [
-      {
-       "t": "Lo esencial",
-       "et": "",
-       "desc": "Qué es sun.io, qué medimos y lo que más sorprende, en una página.",
-       "u": "sunswap.html#lo-esencial",
-       "foto": "sunswap-microscopio--lo-esencial.webp",
-       "principal": false
-      }
-     ]
-    },
-    {
-     "nombre": "Lo esencial",
-     "tarjetas": [
-      {
-       "t": "Los 11 hallazgos del resumen ejecutivo",
-       "et": "",
-       "desc": "Texto del apartado 1 del informe, punto por punto. Pulsa uno para leerlo.",
-       "u": "sunswap.html#los-11-hallazgos-del-resumen-ejecutivo",
-       "foto": "sunswap-microscopio--los-11-hallazgos-del-resumen-ejecutivo.webp",
-       "principal": false
-      }
-     ]
-    },
-    {
-     "nombre": "Dónde está el capital",
-     "tarjetas": [
-      {
-       "t": "Capital valorado por versión",
-       "et": "",
-       "desc": "560,4 M$ en total · pulsa una porción para ver sus mayores mercados",
-       "u": "sunswap.html#capital-valorado-por-version",
-       "foto": "sunswap-microscopio--capital-valorado-por-version.webp",
-       "principal": false
-      },
-      {
-       "t": "Los 10 mayores mercados",
-       "et": "",
-       "desc": "Capital valorado · color = versión · pulsa una barra para ver su ficha",
-       "u": "sunswap.html#los-10-mayores-mercados",
-       "foto": "sunswap-microscopio--los-10-mayores-mercados.webp",
-       "principal": false
-      },
-      {
-       "t": "Capital por token",
-       "et": "",
-       "desc": "Los 15 tokens con más capital valorado (el valor de cada lado de cada mercado, sumado por token)",
-       "u": "sunswap.html#capital-por-token",
-       "foto": "sunswap-microscopio--capital-por-token.webp",
-       "principal": false
-      },
-      {
-       "t": "Capital por tipo de activo",
-       "et": "",
-       "desc": "TRX y WTRX, stablecoins y otros tokens con precio fiable",
-       "u": "sunswap.html#capital-por-tipo-de-activo",
-       "foto": "sunswap-microscopio--capital-por-tipo-de-activo.webp",
-       "principal": false
-      },
-      {
-       "t": "En V3 y V4, ¿cuánto del capital está en rango?",
-       "et": "",
-       "desc": "Depositado y valorado, dividido en dentro y fuera del rango de precios actual",
-       "u": "sunswap.html#en-v3-y-v4-cuanto-del-capital-esta-en-rango",
-       "foto": "sunswap-microscopio--en-v3-y-v4-cuanto-del-capital-esta-en-rango.webp",
-       "principal": false
-      }
-     ]
-    },
-    {
-     "nombre": "Pocos mercados, pocas cuentas",
-     "tarjetas": [
-      {
-       "t": "¿Cuántos mercados hacen falta para reunir el capital?",
-       "et": "",
-       "desc": "Parte acumulada del capital que reúnen los N mayores (eje horizontal por pasos, no lineal)",
-       "u": "sunswap.html#cuantos-mercados-hacen-falta-para-reunir-el-capital",
-       "foto": "sunswap-microscopio--cuantos-mercados-hacen-falta-para-reunir-el-capital.webp",
-       "principal": false
-      },
-      {
-       "t": "Qué parte reúnen el mayor, los 10 y los 50 mayores",
-       "et": "",
-       "desc": "Por versión y en conjunto · el índice HHI sale al pasar el ratón",
-       "u": "sunswap.html#que-parte-reunen-el-mayor-los-10-y-los-50-mayores",
-       "foto": "sunswap-microscopio--que-parte-reunen-el-mayor-los-10-y-los-50-mayores.webp",
-       "principal": false
-      },
-      {
-       "t": "El capital valorado según quién tiene hoy las posiciones",
-       "et": "",
-       "desc": "Titulares actuales, no aportantes originales · fecha de la foto: 2026-11-11",
-       "u": "sunswap.html#el-capital-valorado-segun-quien-tiene-hoy-las-posiciones",
-       "foto": "sunswap-microscopio--el-capital-valorado-segun-quien-tiene-hoy-las-posiciones.webp",
-       "principal": false
-      }
-     ]
-    },
-    {
-     "nombre": "",
-     "tarjetas": [
-      {
-       "t": "Capital no es profundidad",
-       "et": "",
-       "desc": "Cuánto se puede vender de verdad antes de mover el precio, según la simulación.",
-       "u": "sunswap.html#capital-no-es-profundidad",
-       "foto": "sunswap-microscopio--capital-no-es-profundidad.webp",
-       "principal": false
-      }
-     ]
-    },
-    {
-     "nombre": "Capital no es profundidad",
-     "tarjetas": [
-      {
-       "t": "Capital frente a profundidad",
-       "et": "",
-       "desc": "Qué parte del capital y qué parte de la profundidad simulada (±1 %) aporta cada versión",
-       "u": "sunswap.html#capital-frente-a-profundidad",
-       "foto": "sunswap-microscopio--capital-frente-a-profundidad.webp",
-       "principal": false
-      },
-      {
-       "t": "De cada 100 $ depositados, ¿cuánto es profundidad?",
-       "et": "",
-       "desc": "Profundidad a ±1 % ÷ capital, por versión (mercados con 100.000 $ o más)",
-       "u": "sunswap.html#de-cada-100-depositados-cuanto-es-profundidad",
-       "foto": "sunswap-microscopio--de-cada-100-depositados-cuanto-es-profundidad.webp",
-       "principal": false
-      },
-      {
-       "t": "Coste de vender, según el importe y el mercado",
-       "et": "",
-       "desc": "Coste total (comisión + deslizamiento) en % de lo vendido · eje vertical logarítmico · simulación",
-       "u": "sunswap.html#coste-de-vender-segun-el-importe-y-el-mercado",
-       "foto": "sunswap-microscopio--coste-de-vender-segun-el-importe-y-el-mercado.webp",
-       "principal": false
-      },
-      {
-       "t": "¿Cuánto se puede vender con un coste de hasta el 0,5 % o el 1 %?",
-       "et": "",
-       "desc": "Importe máximo de venta, en los 8 mayores mercados · eje horizontal logarítmico · simulación",
-       "u": "sunswap.html#cuanto-se-puede-vender-con-un-coste-de-hasta-el-0-5-o-el-1",
-       "foto": "sunswap-microscopio--cuanto-se-puede-vender-con-un-coste-de-hasta-el-0-5-o-el-1.webp",
-       "principal": false
-      },
-      {
-       "t": "Capital, capital en rango y profundidad ±1 % de los mercados más engañosos",
-       "et": "",
-       "desc": "Eje horizontal logarítmico · pasa el ratón para ver por qué se marcan",
-       "u": "sunswap.html#capital-capital-en-rango-y-profundidad-1-de-los-mercados-mas",
-       "foto": "sunswap-microscopio--capital-capital-en-rango-y-profundidad-1-de-los-mercados-mas.webp",
-       "principal": false
-      }
-     ]
-    },
-    {
-     "nombre": "Volumen y actividad",
-     "tarjetas": [
-      {
-       "t": "Volumen bruto mensual por versión",
-       "et": "",
-       "desc": "Suma de lo operado cada mes (noviembre de 2025 y de 2026 son meses parciales)",
-       "u": "sunswap.html#volumen-bruto-mensual-por-version",
-       "foto": "sunswap-microscopio--volumen-bruto-mensual-por-version.webp",
-       "principal": false
-      },
-      {
-       "t": "Reparto del volumen por versión",
-       "et": "",
-       "desc": "24.549 M$ en la ventana completa · pulsa una fila para ver los números",
-       "u": "sunswap.html#reparto-del-volumen-por-version",
-       "foto": "sunswap-microscopio--reparto-del-volumen-por-version.webp",
-       "principal": false
-      },
-      {
-       "t": "Los 10 mercados con más volumen en 30 días",
-       "et": "",
-       "desc": "Volumen bruto de los últimos 30 días",
-       "u": "sunswap.html#los-10-mercados-con-mas-volumen-en-30-dias",
-       "foto": "sunswap-microscopio--los-10-mercados-con-mas-volumen-en-30-dias.webp",
-       "principal": false
-      },
-      {
-       "t": "Mercados con mucho capital y ningún swap en los últimos 30 días",
-       "et": "",
-       "desc": "Capital de cada mercado el 11-nov-2026 · su volumen de los últimos 30 días es de 0 $ · eje horizontal logarítmico",
-       "u": "sunswap.html#mercados-con-mucho-capital-y-ningun-swap-en-los-ultimos-30-d",
-       "foto": "sunswap-microscopio--mercados-con-mucho-capital-y-ningun-swap-en-los-ultimos-30-d.webp",
-       "principal": false
-      },
-      {
-       "t": "Volumen de los mercados que cumplen C1–C4, por versión",
-       "et": "",
-       "desc": "Del volumen bruto de cada versión, la parte que mueven esos mercados",
-       "u": "sunswap.html#volumen-de-los-mercados-que-cumplen-c1-c4-por-version",
-       "foto": "sunswap-microscopio--volumen-de-los-mercados-que-cumplen-c1-c4-por-version.webp",
-       "principal": false
-      },
-      {
-       "t": "Los cuatro criterios",
-       "et": "",
-       "desc": "Tabla del apartado 9.6 del informe",
-       "u": "sunswap.html#los-cuatro-criterios",
-       "foto": "sunswap-microscopio--los-cuatro-criterios.webp",
-       "principal": false
-      }
-     ]
-    },
-    {
-     "nombre": "Quién pone la liquidez",
-     "tarjetas": [
-      {
-       "t": "Quién aporta y quién retira, por versión",
-       "et": "",
-       "desc": "Direcciones distintas que hicieron altas, retiradas o estuvieron activas en los últimos 90 días",
-       "u": "sunswap.html#quien-aporta-y-quien-retira-por-version",
-       "foto": "sunswap-microscopio--quien-aporta-y-quien-retira-por-version.webp",
-       "principal": false
-      },
-      {
-       "t": "Liquidez que entra y que sale cada mes",
-       "et": "",
-       "desc": "Arriba, lo añadido; abajo, lo retirado (en dólares, valoración al precio del día)",
-       "u": "sunswap.html#liquidez-que-entra-y-que-sale-cada-mes",
-       "foto": "sunswap-microscopio--liquidez-que-entra-y-que-sale-cada-mes.webp",
-       "principal": false
-      },
-      {
-       "t": "Quién tiene hoy las posiciones",
-       "et": "",
-       "desc": "Las diez mayores direcciones titulares y su parte del capital reconstruido (apartado 10.2). ESTIMADO «Titular actual» no es «aportante original».",
-       "u": "sunswap.html#quien-tiene-hoy-las-posiciones",
-       "foto": "sunswap-microscopio--quien-tiene-hoy-las-posiciones.webp",
-       "principal": false
-      }
-     ]
-    },
-    {
-     "nombre": "",
-     "tarjetas": [
-      {
-       "t": "Un año de historia",
-       "et": "",
-       "desc": "Capital reconstruido día a día, cantidades frente a precios y profundidad en el tiempo.",
-       "u": "sunswap.html#un-ano-de-historia",
-       "foto": "sunswap-microscopio--un-ano-de-historia.webp",
-       "principal": false
-      }
-     ]
-    },
-    {
-     "nombre": "Un año de historia",
-     "tarjetas": [
-      {
-       "t": "Capital reconstruido por versión, día a día",
-       "et": "",
-       "desc": "11-nov-2025 → 11-nov-2026 · 366 días · las líneas verticales marcan los hitos que cuenta el informe",
-       "u": "sunswap.html#capital-reconstruido-por-version-dia-a-dia",
-       "foto": "sunswap-microscopio--capital-reconstruido-por-version-dia-a-dia.webp",
-       "principal": false
-      },
-      {
-       "t": "¿Por qué cambió el capital: por cantidades o por precios?",
-       "et": "",
-       "desc": "Variación del capital de cada versión en la ventana, separada en dos efectos",
-       "u": "sunswap.html#por-que-cambio-el-capital-por-cantidades-o-por-precios",
-       "foto": "sunswap-microscopio--por-que-cambio-el-capital-por-cantidades-o-por-precios.webp",
-       "principal": false
-      },
-      {
-       "t": "Profundidad estimada del mercado principal de V3",
-       "et": "",
-       "desc": "WTRX/USDT 0,05 % · profundidad a ±1 %, media de venta y compra, fin de cada día",
-       "u": "sunswap.html#profundidad-estimada-del-mercado-principal-de-v3",
-       "foto": "sunswap-microscopio--profundidad-estimada-del-mercado-principal-de-v3.webp",
-       "principal": false
-      }
-     ]
-    },
-    {
-     "nombre": "",
-     "tarjetas": [
-      {
-       "t": "Anomalías y riesgos",
-       "et": "",
-       "desc": "Picos, retiradas extraordinarias y tokens raros: señales, no acusaciones.",
-       "u": "sunswap.html#anomalias-y-riesgos",
-       "foto": "sunswap-microscopio--anomalias-y-riesgos.webp",
-       "principal": false
-      }
-     ]
-    },
-    {
-     "nombre": "Anomalías y riesgos",
-     "tarjetas": [
-      {
-       "t": "Los hallazgos, uno por uno",
-       "et": "",
-       "desc": "Tabla del apartado 12.2. Filtra por nivel de certeza con el desplegable.",
-       "u": "sunswap.html#los-hallazgos-uno-por-uno",
-       "foto": "sunswap-microscopio--los-hallazgos-uno-por-uno.webp",
-       "principal": false
-      },
-      {
-       "t": "Los mayores picos de volumen",
-       "et": "",
-       "desc": "Cuántas veces su volumen normal movió un mercado en un solo día · eje logarítmico",
-       "u": "sunswap.html#los-mayores-picos-de-volumen",
-       "foto": "sunswap-microscopio--los-mayores-picos-de-volumen.webp",
-       "principal": false
-      },
-      {
-       "t": "Las mayores retiradas de liquidez en un día",
-       "et": "",
-       "desc": "Retirado frente a lo añadido ese mismo día",
-       "u": "sunswap.html#las-mayores-retiradas-de-liquidez-en-un-dia",
-       "foto": "sunswap-microscopio--las-mayores-retiradas-de-liquidez-en-un-dia.webp",
-       "principal": false
-      }
-     ]
-    },
-    {
-     "nombre": "",
-     "tarjetas": [
-      {
-       "t": "Método, límites y evidencia",
-       "et": "",
-       "desc": "Qué se midió y qué no, cómo se contrastó el motor, ejemplos verificables y correcciones.",
-       "u": "sunswap.html#metodo-limites-y-evidencia",
-       "foto": "sunswap-microscopio--metodo-limites-y-evidencia.webp",
-       "principal": false
-      }
-     ]
-    },
-    {
-     "nombre": "Método, límites y evidencia",
-     "tarjetas": [
-      {
-       "t": "El motor frente a los cotizadores oficiales de los contratos",
-       "et": "",
-       "desc": "Cotizaciones por versión, en % de las pedidas (27.313 en total)",
-       "u": "sunswap.html#el-motor-frente-a-los-cotizadores-oficiales-de-los-contratos",
-       "foto": "sunswap-microscopio--el-motor-frente-a-los-cotizadores-oficiales-de-los-contratos.webp",
-       "principal": false
-      },
-      {
-       "t": "Los tres niveles de evidencia de la profundidad",
-       "et": "",
-       "desc": "Tabla del apartado 8.1 del informe",
-       "u": "sunswap.html#los-tres-niveles-de-evidencia-de-la-profundidad",
-       "foto": "sunswap-microscopio--los-tres-niveles-de-evidencia-de-la-profundidad.webp",
-       "principal": false
-      },
-      {
-       "t": "Ejemplos que se pueden comprobar ahora mismo",
-       "et": "",
-       "desc": "14 transacciones del informe, con su hash completo y enlace a TronScan (apartado 16.1). Pulsa el hash para abrirla.",
-       "u": "sunswap.html#ejemplos-que-se-pueden-comprobar-ahora-mismo",
-       "foto": "sunswap-microscopio--ejemplos-que-se-pueden-comprobar-ahora-mismo.webp",
-       "principal": false
-      },
-      {
-       "t": "Método, conclusiones y límites",
-       "et": "",
-       "desc": "Principio: primero datos, después análisis, finalmente conclusiones. Todas las cantidades (saldos, reservas, eventos, volúmenes en tokens) se reconstruyen desde la cadena; los paneles externos (SUN.io, DefiLlama) se usan",
-       "u": "sunswap.html#metodo-conclusiones-y-limites",
-       "foto": "sunswap-microscopio--metodo-conclusiones-y-limites.webp",
-       "principal": false
-      },
-      {
-       "t": "Descargas y verificación",
-       "et": "",
-       "desc": "Tres capas de datos. (1) raw/: cada respuesta tal como llegó, con petición, fecha, estado y SHA-256; inmutable. (2) Bases SQLite normalizadas, que se rehacen enteras desde la capa 1. (3) derivados/: resultados, tablas y ",
-       "u": "sunswap.html#descargas-y-verificacion",
-       "foto": "sunswap-microscopio--descargas-y-verificacion.webp",
-       "principal": false
-      }
-     ]
-    }
-   ]
-  },
-  {
-   "titulo": "JustLend: ¿cuánto dinero se puede recuperar de verdad?",
-   "resumen": "JustLend tiene 3.216 M$ en caja y casi nada prestado, pero solo una parte se convierte en USDT: el «ETH» de 933 M$ rinde ≈ 0,14 M$ si lo vendes. Quién tiene el dinero, de dónde sale el «ETH» y el «BTC», qué salidas hay y qué riesgos vigilar, con una revisión adversarial independiente. Página interactiva con 18 gráficos y una calculadora con tu importe; cada cifra enlaza con su origen y los datos originales están publicados.",
-   "u": "justlend.html",
-   "portada": "assets/img/portada/justlend-liquidez.webp",
-   "grupos": [
-    {
-     "nombre": "",
-     "tarjetas": [
-      {
-       "t": "Lo esencial",
-       "et": "",
-       "desc": "Qué es JustLend, qué medimos y lo que más sorprende, en una página.",
-       "u": "justlend.html#lo-esencial",
-       "foto": "justlend-liquidez--lo-esencial.webp",
-       "principal": false
-      }
-     ]
-    },
-    {
-     "nombre": "Lo esencial",
-     "tarjetas": [
-      {
-       "t": "Lo que dice la caja frente a lo que se saca vendiendo",
-       "et": "",
-       "desc": "Escala logarítmica · gris = caja en dólares · color = USDT estimados al vender toda la caja en sun.io · pulsa una fila para ver el mercado",
-       "u": "justlend.html#lo-que-dice-la-caja-frente-a-lo-que-se-saca-vendiendo",
-       "foto": "justlend-liquidez--lo-que-dice-la-caja-frente-a-lo-que-se-saca-vendiendo.webp",
-       "principal": false
+       "foto": "mercado--lectura-del-dia.webp"
       }
      ]
     },
@@ -1428,292 +284,1446 @@
      "nombre": "Dónde está el dinero",
      "tarjetas": [
       {
-       "t": "Caja por mercado",
-       "et": "",
-       "desc": "3.216 M$ en total · pulsa una porción para ver el mercado",
-       "u": "justlend.html#caja-por-mercado",
-       "foto": "justlend-liquidez--caja-por-mercado.webp",
-       "principal": false
+       "t": "¿Dónde está el capital?",
+       "et": "Mercado › ¿Dónde está el capital?",
+       "desc": "De cada 100 dólares que vale el mercado, cuántos están en bitcoin, en ether, en stablecoins y en el resto.",
+       "u": "mercado.html#donde-esta-el-capital",
+       "foto": "mercado--donde-esta-el-capital.webp"
       },
       {
-       "t": "Cobertura de caja",
-       "et": "",
-       "desc": "Qué parte de lo que se debe a los depositantes está en caja · pulsa una barra para ver el mercado",
-       "u": "justlend.html#cobertura-de-caja",
-       "foto": "justlend-liquidez--cobertura-de-caja.webp",
-       "principal": false
-      },
-      {
-       "t": "Los 24 mercados",
-       "et": "",
-       "desc": "Pulsa una fila para ver su ficha (contrato, caja real, venta, poderes del token y mayores titulares). Las direcciones van completas y enlazan a TronScan.",
-       "u": "justlend.html#los-24-mercados",
-       "foto": "justlend-liquidez--los-24-mercados.webp",
-       "principal": false
+       "t": "Dinero depositado en aplicaciones, por cadena",
+       "et": "Mercado › ¿Dónde está el capital?",
+       "desc": "En qué redes hay más dinero depositado en aplicaciones y en cuáles menos que antes.",
+       "u": "mercado.html#dinero-depositado-en-aplicaciones-por-cadena",
+       "foto": "mercado--dinero-depositado-en-aplicaciones-por-cadena.webp"
       }
      ]
     },
     {
-     "nombre": "Pocas cuentas",
+     "nombre": "Qué sube y qué baja",
      "tarjetas": [
       {
-       "t": "Cuánto tienen los mayores titulares",
-       "et": "",
-       "desc": "Parte del mercado en manos del 1.º, del 2.º–3.º, del 4.º–10.º y del resto · pulsa una barra",
-       "u": "justlend.html#cuanto-tienen-los-mayores-titulares",
-       "foto": "justlend-liquidez--cuanto-tienen-los-mayores-titulares.webp",
-       "principal": false
+       "t": "Mapa de calor",
+       "et": "Mercado › Mapa de calor",
+       "desc": "Cuánto ha subido o bajado cada activo, cada sector y cada cadena: verde sube, rojo baja.",
+       "u": "mercado.html#mapa-de-calor",
+       "foto": "mercado--mapa-de-calor.webp"
       },
       {
-       "t": "Corrida de salida en USDT",
-       "et": "",
-       "desc": "Si los mayores depositantes retiraran TODO uno tras otro · barras = lo que sale · línea = caja que queda · pulsa una barra",
-       "u": "justlend.html#corrida-de-salida-en-usdt",
-       "foto": "justlend-liquidez--corrida-de-salida-en-usdt.webp",
-       "principal": false
+       "t": "Sectores: cuáles suben y cuáles bajan",
+       "et": "Mercado › ¿Qué sectores ganan actividad?",
+       "desc": "El rendimiento de cada sector, del que más sube al que más baja, a varios plazos.",
+       "u": "mercado.html#sectores-de-la-cesta-por-plazo",
+       "foto": "mercado--sectores-de-la-cesta-por-plazo.webp"
       },
       {
-       "t": "Los mayores titulares, mercado a mercado",
-       "et": "",
-       "desc": "",
-       "u": "justlend.html#los-mayores-titulares-mercado-a-mercado",
-       "foto": "justlend-liquidez--los-mayores-titulares-mercado-a-mercado.webp",
-       "principal": false
+       "t": "Los veinte mayores sectores, en 24 horas",
+       "et": "Mercado › ¿Qué sectores ganan actividad?",
+       "desc": "Cuánto ha cambiado en un día el valor de cada sector, según CoinGecko.",
+       "u": "mercado.html#los-veinte-mayores-sectores-segun-coingecko-en-24-horas",
+       "foto": "mercado--los-veinte-mayores-sectores-segun-coingecko-en-24-horas.webp"
       }
      ]
     },
     {
-     "nombre": "El «ETH» y el «BTC»",
+     "nombre": "Volatilidad y correlaciones",
      "tarjetas": [
       {
-       "t": "«ETH»: creado, quemado y depositado en JustLend",
-       "et": "",
-       "desc": "Acumulado en ETH a lo largo del tiempo · pulsa un punto para ver su transacción en TronScan",
-       "u": "justlend.html#eth-creado-quemado-y-depositado-en-justlend",
-       "foto": "justlend-liquidez--eth-creado-quemado-y-depositado-en-justlend.webp",
-       "principal": false
+       "t": "Volatilidad: ¿mercado tranquilo o agitado?",
+       "et": "Mercado › Volatilidad",
+       "desc": "Cuánto se mueve el mercado comparado con su propia historia.",
+       "u": "mercado.html#volatilidad-esta-el-mercado-tranquilo-o-agitado",
+       "foto": "mercado--volatilidad-esta-el-mercado-tranquilo-o-agitado.webp"
       },
       {
-       "t": "«BTC»: creado, quemado y depositado en JustLend",
-       "et": "",
-       "desc": "Acumulado en BTC a lo largo del tiempo · pulsa un punto para ver su transacción en TronScan",
-       "u": "justlend.html#btc-creado-quemado-y-depositado-en-justlend",
-       "foto": "justlend-liquidez--btc-creado-quemado-y-depositado-en-justlend.webp",
-       "principal": false
+       "t": "Bitcoin y ether: volatilidad esperada frente a la real",
+       "et": "Mercado › Volatilidad",
+       "desc": "Lo que el mercado de opciones espera para los próximos 30 días frente a lo que ha pasado.",
+       "u": "mercado.html#bitcoin-y-ether-lo-que-el-mercado-espera-frente-a-lo-que-ha",
+       "foto": "mercado--bitcoin-y-ether-lo-que-el-mercado-espera-frente-a-lo-que-ha.webp"
       },
       {
-       "t": "Las creaciones, una a una",
-       "et": "",
-       "desc": "Cada fila es una llamada a issue que creó unidades. La cuenta que figura como firmante es la que emitió la transacción; la dirección y la transacción enlazan a TronScan.",
-       "u": "justlend.html#las-creaciones-una-a-una",
-       "foto": "justlend-liquidez--las-creaciones-una-a-una.webp",
-       "principal": false
+       "t": "Volatilidad, activo por activo",
+       "et": "Mercado › Volatilidad",
+       "desc": "La volatilidad de cada activo a varios plazos.",
+       "u": "mercado.html#activo-por-activo",
+       "foto": "mercado--activo-por-activo.webp"
+      },
+      {
+       "t": "¿Qué activos se desacoplan de bitcoin?",
+       "et": "Mercado › ¿Qué activos se están desacoplando?",
+       "desc": "Qué activos se mueven menos al compás de bitcoin estos 30 días que los 30 anteriores.",
+       "u": "mercado.html#que-activos-se-estan-desacoplando",
+       "foto": "mercado--que-activos-se-estan-desacoplando.webp"
+      },
+      {
+       "t": "Quién se mueve con quién",
+       "et": "Mercado › ¿Qué activos se están desacoplando?",
+       "desc": "Qué parejas de activos se mueven más juntas y cuáles menos.",
+       "u": "mercado.html#quien-se-mueve-con-quien",
+       "foto": "mercado--quien-se-mueve-con-quien.webp"
       }
      ]
     },
     {
-     "nombre": "Vender en sun.io",
+     "nombre": "Un token a fondo",
      "tarjetas": [
       {
-       "t": "Cuánto cuesta vender, según el tamaño",
-       "et": "",
-       "desc": "Eje horizontal: dólares vendidos (log) · eje vertical: coste en % · elige qué tokens ver",
-       "u": "justlend.html#cuanto-cuesta-vender-segun-el-tamano",
-       "foto": "justlend-liquidez--cuanto-cuesta-vender-segun-el-tamano.webp",
-       "principal": false
+       "t": "Laboratorio de fundamentales",
+       "et": "Fundamentales",
+       "desc": "Escribe un token y mira cómo funciona económicamente: actividad, ingresos, qué captura el token y valoración.",
+       "u": "fundamentales.html",
+       "foto": "fundamentales--pagina.webp"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "riesgo-liquidez",
+   "nombre": "Riesgo y liquidez",
+   "desc": "Cuánto podrías perder, qué pasaría en una caída y cuánto recibirías de verdad si vendes.",
+   "grupos": [
+    {
+     "nombre": "",
+     "tarjetas": [
+      {
+       "t": "Riesgo diario: ¿cuánto podría perder en un día?",
+       "et": "Herramientas › Riesgo diario",
+       "desc": "Con tus posiciones, cuánto podrías perder en un mal día.",
+       "u": "herramientas.html#cuanto-podria-perder-en-un-dia",
+       "foto": "herramientas--cuanto-podria-perder-en-un-dia.webp"
       },
       {
-       "t": "Pruébalo con tu importe",
-       "et": "",
-       "desc": "Elige un token y escribe un importe. Verás las cuatro cosas que importan (caja, venta, salida oficial, poderes del emisor) y un veredicto con las reglas del capítulo 10. ESTIMADO Esta calculadora trabaja con la foto del ",
-       "u": "justlend.html#mi-importe",
-       "foto": "justlend-liquidez--mi-importe.webp",
-       "principal": false
+       "t": "Prueba de estrés: ¿y si el mercado se desploma?",
+       "et": "Herramientas › Prueba de estrés",
+       "desc": "Con tus posiciones, qué le pasaría a tu cartera en una caída fuerte.",
+       "u": "herramientas.html#y-si-el-mercado-se-desploma",
+       "foto": "herramientas--y-si-el-mercado-se-desploma.webp"
       },
       {
-       "t": "Hasta cuánto se puede vender perdiendo menos del 1 %",
-       "et": "",
-       "desc": "Escala logarítmica · pulsa una barra para ver el mercado",
-       "u": "justlend.html#hasta-cuanto-se-puede-vender-perdiendo-menos-del-1",
-       "foto": "justlend-liquidez--hasta-cuanto-se-puede-vender-perdiendo-menos-del-1.webp",
-       "principal": false
+       "t": "Coste de salida: ¿cuánto recibiría si vendo?",
+       "et": "Herramientas › Coste de salida",
+       "desc": "Cuánto recibirías de verdad al vender ahora una cantidad de un activo.",
+       "u": "herramientas.html#cuanto-recibiria-si-vendo",
+       "foto": "herramientas--cuanto-recibiria-si-vendo.webp"
       },
       {
-       "t": "Qué parte de la caja se convierte en USDT",
-       "et": "",
-       "desc": "% de la caja de cada mercado que se obtiene como USDT al vender toda la caja por separado · pulsa una barra",
-       "u": "justlend.html#que-parte-de-la-caja-se-convierte-en-usdt",
-       "foto": "justlend-liquidez--que-parte-de-la-caja-se-convierte-en-usdt.webp",
-       "principal": false
+       "t": "Liquidez en Binance y Kraken",
+       "et": "Mercado › ¿Dónde aumenta la liquidez?",
+       "desc": "Cuánto dinero hay esperando para comprar y para vender cerca del precio, en los ocho mayores activos.",
+       "u": "mercado.html#donde-aumenta-la-liquidez",
+       "foto": "mercado--donde-aumenta-la-liquidez.webp"
+      },
+      {
+       "t": "Liquidez: ¿hay más o menos dinero esperando que antes?",
+       "et": "Mercado › ¿Dónde aumenta la liquidez?",
+       "desc": "El dinero esperando cerca del precio en Binance, comparado con los días anteriores.",
+       "u": "mercado.html#serie-propia-hay-mas-o-menos-dinero-esperando-que-antes",
+       "foto": "mercado--serie-propia-hay-mas-o-menos-dinero-esperando-que-antes.webp"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "investigaciones",
+   "nombre": "Investigaciones",
+   "desc": "Los casos investigados, cada uno con sus gráficos y tablas.",
+   "grupos": [],
+   "investigaciones": [
+    {
+     "titulo": "Robo a Binance (0x5227): trazabilidad en TRON y Ethereum",
+     "resumen": "Seguimiento de 628 M$ robados en TRON y de los fondos en Ethereum: qué está congelado, dónde se repartió el resto, por qué puentes salió y cuánto rastro se pierde.",
+     "u": "report.html?r=trazabilidad-binance-0x5227",
+     "portada": "assets/img/portada/binance-hack.webp",
+     "grupos": [
+      {
+       "nombre": "",
+       "tarjetas": [
+        {
+         "t": "Resumen para cualquier lector",
+         "et": "",
+         "desc": "Del robo en Binance salieron, en Ethereum y otras redes, unos 3.302 M$ (USDT, USDC, ETH y otros activos) y, en TRON, 628 M$. Los emisores congelaron 2.685 M$: es lo único recuperado de verdad, y se comprueba hoy pregunta",
+         "u": "report.html?r=trazabilidad-binance-0x5227#resumen-para-cualquier-lector",
+         "foto": "trazabilidad-binance-0x5227--resumen-para-cualquier-lector.webp",
+         "principal": false
+        }
+       ]
+      },
+      {
+       "nombre": "¿Dónde está el dinero hoy?",
+       "tarjetas": [
+        {
+         "t": "TRON · tras convertir el robo",
+         "et": "",
+         "desc": "Capital 628 M$ · pulsa para profundizar",
+         "u": "report.html?r=trazabilidad-binance-0x5227#tron-tras-convertir-el-robo",
+         "foto": "trazabilidad-binance-0x5227--tron-tras-convertir-el-robo.webp",
+         "principal": false
+        },
+        {
+         "t": "Visión global · todas las cadenas",
+         "et": "",
+         "desc": "",
+         "u": "report.html?r=trazabilidad-binance-0x5227#vision-global-todas-las-cadenas",
+         "foto": "trazabilidad-binance-0x5227--vision-global-todas-las-cadenas.webp",
+         "principal": false
+        },
+        {
+         "t": "Antes y después de la «foto» (30-oct, 22:40 UTC)",
+         "et": "",
+         "desc": "La «foto» es un corte fijo en el tiempo (se explica en el capítulo 2). Importe atribuido al robo por destino · pulsa una barra.",
+         "u": "report.html?r=trazabilidad-binance-0x5227#antes-y-despues-de-la-foto-30-oct-22-40-utc",
+         "foto": "trazabilidad-binance-0x5227--antes-y-despues-de-la-foto-30-oct-22-40-utc.webp",
+         "principal": false
+        }
+       ]
+      },
+      {
+       "nombre": "Ethereum y otras redes compatibles",
+       "tarjetas": [
+        {
+         "t": "Qué hay en Ethereum, por partida",
+         "et": "",
+         "desc": "Verde: verificado en cadena · azul: estimado · pulsa una barra",
+         "u": "report.html?r=trazabilidad-binance-0x5227#que-hay-en-ethereum-por-partida",
+         "foto": "trazabilidad-binance-0x5227--que-hay-en-ethereum-por-partida.webp",
+         "principal": false
+        },
+        {
+         "t": "Entradas registradas a Ethereum en el tiempo",
+         "et": "",
+         "desc": "Cada punto es una transferencia · escala logarítmica · pulsa un punto",
+         "u": "report.html?r=trazabilidad-binance-0x5227#entradas-registradas-a-ethereum-en-el-tiempo",
+         "foto": "trazabilidad-binance-0x5227--entradas-registradas-a-ethereum-en-el-tiempo.webp",
+         "principal": false
+        },
+        {
+         "t": "Direcciones y activos comprobados hoy",
+         "et": "",
+         "desc": "Saldo y estado de bloqueo leídos hoy en el contrato de cada emisor. Pulsa una fila para abrir su ficha.",
+         "u": "report.html?r=trazabilidad-binance-0x5227#direcciones-y-activos-comprobados-hoy",
+         "foto": "trazabilidad-binance-0x5227--direcciones-y-activos-comprobados-hoy.webp",
+         "principal": false
+        }
+       ]
+      },
+      {
+       "nombre": "Cómo se reparte el capital",
+       "tarjetas": [
+        {
+         "t": "Del capital robado a cada destino",
+         "et": "",
+         "desc": "Rueda = zoom · arrastrar = mover · clic = detalle",
+         "u": "report.html?r=trazabilidad-binance-0x5227#del-capital-robado-a-cada-destino",
+         "foto": "trazabilidad-binance-0x5227--del-capital-robado-a-cada-destino.webp",
+         "principal": false
+        }
+       ]
+      },
+      {
+       "nombre": "Línea temporal",
+       "tarjetas": [
+        {
+         "t": "Reparto por hora desde la billetera de reparto",
+         "et": "",
+         "desc": "Barras: importe repartido (USD) · línea: número de envíos",
+         "u": "report.html?r=trazabilidad-binance-0x5227#reparto-por-hora-desde-la-billetera-de-reparto",
+         "foto": "trazabilidad-binance-0x5227--reparto-por-hora-desde-la-billetera-de-reparto.webp",
+         "principal": false
+        },
+        {
+         "t": "USDT congelado por Tether en TRON (acumulado)",
+         "et": "",
+         "desc": "66 de 69 direcciones siguen bloqueadas · 386 M$ vigentes · pulsa un punto",
+         "u": "report.html?r=trazabilidad-binance-0x5227#usdt-congelado-por-tether-en-tron-acumulado",
+         "foto": "trazabilidad-binance-0x5227--usdt-congelado-por-tether-en-tron-acumulado.webp",
+         "principal": false
+        },
+        {
+         "t": "Volumen por hora en TRON, por tipo de movimiento",
+         "et": "",
+         "desc": "Suma en USD de los movimientos del libro mayor. Pulsa una barra para ver los mayores movimientos de esa hora.",
+         "u": "report.html?r=trazabilidad-binance-0x5227#volumen-por-hora-en-tron-por-tipo-de-movimiento",
+         "foto": "trazabilidad-binance-0x5227--volumen-por-hora-en-tron-por-tipo-de-movimiento.webp",
+         "principal": false
+        }
+       ]
+      },
+      {
+       "nombre": "Red de direcciones",
+       "tarjetas": [
+        {
+         "t": "Mapa de direcciones y envíos",
+         "et": "",
+         "desc": "Tamaño = volumen · color = tipo de dirección · flecha = sentido · borde rojo = congelada",
+         "u": "report.html?r=trazabilidad-binance-0x5227#mapa-de-direcciones-y-envios",
+         "foto": "trazabilidad-binance-0x5227--mapa-de-direcciones-y-envios.webp",
+         "principal": false
+        }
+       ]
+      },
+      {
+       "nombre": "Explorador de direcciones",
+       "tarjetas": [
+        {
+         "t": "Todas las direcciones del libro mayor",
+         "et": "",
+         "desc": "12.978 billeteras en TRON y las direcciones de Ethereum que aparecen en el libro",
+         "u": "report.html?r=trazabilidad-binance-0x5227#todas-las-direcciones-del-libro-mayor",
+         "foto": "trazabilidad-binance-0x5227--todas-las-direcciones-del-libro-mayor.webp",
+         "principal": false
+        }
+       ]
+      },
+      {
+       "nombre": "Puentes entre cadenas",
+       "tarjetas": [
+        {
+         "t": "USDT0 (LayerZero)",
+         "et": "",
+         "desc": "186 envíos · 8 M$ enviados · 8 M$ recibidos · pulsa el gráfico",
+         "u": "report.html?r=trazabilidad-binance-0x5227#usdt0-layerzero",
+         "foto": "trazabilidad-binance-0x5227--usdt0-layerzero.webp",
+         "principal": false
+        },
+        {
+         "t": "Symbiosis · llegadas por cadena y activo",
+         "et": "",
+         "desc": "1.325 envíos · 30 revertidos y devueltos · pulsa una barra",
+         "u": "report.html?r=trazabilidad-binance-0x5227#symbiosis-llegadas-por-cadena-y-activo",
+         "foto": "trazabilidad-binance-0x5227--symbiosis-llegadas-por-cadena-y-activo.webp",
+         "principal": false
+        },
+        {
+         "t": "Chainflip · entrada y salida por destino",
+         "et": "",
+         "desc": "151 cambios nuestros de 752 en su explorador · pulsa una barra",
+         "u": "report.html?r=trazabilidad-binance-0x5227#chainflip-entrada-y-salida-por-destino",
+         "foto": "trazabilidad-binance-0x5227--chainflip-entrada-y-salida-por-destino.webp",
+         "principal": false
+        }
+       ]
+      },
+      {
+       "nombre": "Destinos del dinero repartido",
+       "tarjetas": [
+        {
+         "t": "Mayores destinos (importe atribuido)",
+         "et": "",
+         "desc": "Escala logarítmica · color = tipo · pulsa una barra",
+         "u": "report.html?r=trazabilidad-binance-0x5227#mayores-destinos-importe-atribuido",
+         "foto": "trazabilidad-binance-0x5227--mayores-destinos-importe-atribuido.webp",
+         "principal": false
+        },
+        {
+         "t": "Por tipo de destino",
+         "et": "",
+         "desc": "Importe atribuido · pulsa una porción",
+         "u": "report.html?r=trazabilidad-binance-0x5227#por-tipo-de-destino",
+         "foto": "trazabilidad-binance-0x5227--por-tipo-de-destino.webp",
+         "principal": false
+        },
+        {
+         "t": "Casas de cambio que recibieron fondos",
+         "et": "",
+         "desc": "Bruto recibido y parte atribuida al robo · pulsa una plataforma",
+         "u": "report.html?r=trazabilidad-binance-0x5227#casas-de-cambio-que-recibieron-fondos",
+         "foto": "trazabilidad-binance-0x5227--casas-de-cambio-que-recibieron-fondos.webp",
+         "principal": false
+        },
+        {
+         "t": "Cambios de moneda (swaps) por enrutador",
+         "et": "",
+         "desc": "3.256 operaciones · pulsa una barra",
+         "u": "report.html?r=trazabilidad-binance-0x5227#cambios-de-moneda-swaps-por-enrutador",
+         "foto": "trazabilidad-binance-0x5227--cambios-de-moneda-swaps-por-enrutador.webp",
+         "principal": false
+        }
+       ]
+      },
+      {
+       "nombre": "Incertidumbre del modelo: las dos vías de pureza",
+       "tarjetas": [
+        {
+         "t": "Cuánto de lo que entra se reparte entre destinos",
+         "et": "",
+         "desc": "Relación reparto / entrada por vía · pulsa una barra",
+         "u": "report.html?r=trazabilidad-binance-0x5227#cuanto-de-lo-que-entra-se-reparte-entre-destinos",
+         "foto": "trazabilidad-binance-0x5227--cuanto-de-lo-que-entra-se-reparte-entre-destinos.webp",
+         "principal": false
+        },
+        {
+         "t": "Importe llegado a destinos, por vía",
+         "et": "",
+         "desc": "USD atribuidos al robo · pulsa una barra",
+         "u": "report.html?r=trazabilidad-binance-0x5227#importe-llegado-a-destinos-por-via",
+         "foto": "trazabilidad-binance-0x5227--importe-llegado-a-destinos-por-via.webp",
+         "principal": false
+        }
+       ]
+      },
+      {
+       "nombre": "Dónde se pierde el rastro",
+       "tarjetas": [
+        {
+         "t": "Importe atribuido por causa",
+         "et": "",
+         "desc": "Azul: parada reconocida · rojo: desconocido · pulsa una barra",
+         "u": "report.html?r=trazabilidad-binance-0x5227#importe-atribuido-por-causa",
+         "foto": "trazabilidad-binance-0x5227--importe-atribuido-por-causa.webp",
+         "principal": false
+        },
+        {
+         "t": "Las 8 mayores",
+         "et": "",
+         "desc": "Pulsa una fila para abrir su ficha",
+         "u": "report.html?r=trazabilidad-binance-0x5227#las-8-mayores",
+         "foto": "trazabilidad-binance-0x5227--las-8-mayores.webp",
+         "principal": false
+        }
+       ]
+      },
+      {
+       "nombre": "Cruces con fuentes externas",
+       "tarjetas": [
+        {
+         "t": "Arkham · transacciones etiquetadas «Binance Hacker»",
+         "et": "",
+         "desc": "35 transacciones · 1,6 M$ · 2 ya estaban en nuestro libro · pulsa una barra",
+         "u": "report.html?r=trazabilidad-binance-0x5227#arkham-transacciones-etiquetadas-binance-hacker",
+         "foto": "trazabilidad-binance-0x5227--arkham-transacciones-etiquetadas-binance-hacker.webp",
+         "principal": false
+        },
+        {
+         "t": "Polytrop · direcciones que no teníamos",
+         "et": "",
+         "desc": "7.067 direcciones publicadas por Polytrop · pulsa una barra",
+         "u": "report.html?r=trazabilidad-binance-0x5227#polytrop-direcciones-que-no-teniamos",
+         "foto": "trazabilidad-binance-0x5227--polytrop-direcciones-que-no-teniamos.webp",
+         "principal": false
+        }
+       ]
+      },
+      {
+       "nombre": "Control de calidad y trabajo pendiente",
+       "tarjetas": [
+        {
+         "t": "Puntos abiertos",
+         "et": "",
+         "desc": "Lo que falta por saber o por leer, y por qué.",
+         "u": "report.html?r=trazabilidad-binance-0x5227#puntos-abiertos",
+         "foto": "trazabilidad-binance-0x5227--puntos-abiertos.webp",
+         "principal": false
+        }
+       ]
+      },
+      {
+       "nombre": "Fuentes, evidencia y descargas",
+       "tarjetas": [
+        {
+         "t": "Fuentes de datos",
+         "et": "",
+         "desc": "",
+         "u": "report.html?r=trazabilidad-binance-0x5227#fuentes-de-datos",
+         "foto": "trazabilidad-binance-0x5227--fuentes-de-datos.webp",
+         "principal": false
+        }
+       ]
+      },
+      {
+       "nombre": "Historial de versiones",
+       "tarjetas": [
+        {
+         "t": "Ediciones publicadas y conservadas",
+         "et": "",
+         "desc": "Cada edición publicada sigue accesible tal como salió, con sus datos y su huella (SHA-256), para poder comprobar qué se publicó en cada fecha. El informe que abre este panel es, byte a byte, la v0.7 de esta tabla.",
+         "u": "report.html?r=trazabilidad-binance-0x5227#ediciones-publicadas-y-conservadas",
+         "foto": "trazabilidad-binance-0x5227--ediciones-publicadas-y-conservadas.webp",
+         "principal": false
+        }
+       ]
       }
      ]
     },
     {
-     "nombre": "Otras salidas",
-     "tarjetas": [
+     "titulo": "Las cuentas «Vaneck» y TT2T17…: qué se sabe y qué no",
+     "resumen": "942 M TRX enviados entre dos cuentas de TRON, verificados por hash; atribuciones de terceros, hipótesis y estado en vivo con seguimiento diario. Ampliación del 5-nov: la cuenta de paso que hace el relevo de fondos, el TRX de la antigua TRON Foundation y las claves de la cuenta etiquetada «Poloniex». Actualización del 13-nov: la segunda cuenta y la financiadora de «Vaneck» son las dos mayores titulares del capital de sun.io.",
+     "u": "caso-vaneck.html",
+     "portada": "assets/img/portada/caso-vaneck.webp",
+     "grupos": [
       {
-       "t": "La PSM de USDD frente al USDD que hay que sacar",
-       "et": "",
-       "desc": "Lo que cabe por la PSM está compartido con todos los poseedores de USDD · pulsa una barra para abrir el contrato",
-       "u": "justlend.html#la-psm-de-usdd-frente-al-usdd-que-hay-que-sacar",
-       "foto": "justlend-liquidez--la-psm-de-usdd-frente-al-usdd-que-hay-que-sacar.webp",
-       "principal": false
+       "nombre": "",
+       "tarjetas": [
+        {
+         "t": "Lo esencial",
+         "et": "",
+         "desc": "Una página: qué sabemos, qué no, y por qué importa.",
+         "u": "caso-vaneck.html#lo-esencial",
+         "foto": "caso-vaneck-sun--lo-esencial.webp",
+         "principal": false
+        }
+       ]
       },
       {
-       "t": "Cómo sale cada token",
-       "et": "",
-       "desc": "",
-       "u": "justlend.html#como-sale-cada-token",
-       "foto": "justlend-liquidez--como-sale-cada-token.webp",
-       "principal": false
+       "nombre": "Lo esencial",
+       "tarjetas": [
+        {
+         "t": "Las dos cuentas, con su dirección completa",
+         "et": "",
+         "desc": "Cada dirección se puede copiar y comprobar en TronScan. Por eso en el resto de la página las llamamos «Vaneck» y «la segunda cuenta».",
+         "u": "caso-vaneck.html#las-dos-cuentas-con-su-direccion-completa",
+         "foto": "caso-vaneck-sun--las-dos-cuentas-con-su-direccion-completa.webp",
+         "principal": false
+        }
+       ]
       },
       {
-       "t": "Uso real de la PSM",
-       "et": "",
-       "desc": "Últimas salidas de USDT de su GemJoin (leído el 2026-11-13 18:51 UTC). Si hay movimiento a diario, la salida funciona; no prueba que aguante una avalancha.",
-       "u": "justlend.html#uso-real-de-la-psm",
-       "foto": "justlend-liquidez--uso-real-de-la-psm.webp",
-       "principal": false
+       "nombre": "Los hechos verificados en cadena",
+       "tarjetas": [
+        {
+         "t": "De dónde viene y a dónde va el TRX (importes documentados)",
+         "et": "",
+         "desc": "M TRX. El ancho es el importe. Los colores agrupan por tipo de cuenta (leyenda abajo). No es un balance completo: solo los movimientos grandes que se han verificado. Pulsa una banda para ver su fecha y detalle, o el nomb",
+         "u": "caso-vaneck.html#de-donde-viene-y-a-donde-va-el-trx-importes-documentados",
+         "foto": "caso-vaneck-sun--de-donde-viene-y-a-donde-va-el-trx-importes-documentados.webp",
+         "principal": false
+        },
+        {
+         "t": "Transferencias verificadas por hash",
+         "et": "",
+         "desc": "Cada fila se puede comprobar en TronScan. Fuente: TronGrid (investigación del 29-oct).",
+         "u": "caso-vaneck.html#transferencias-verificadas-por-hash",
+         "foto": "caso-vaneck-sun--transferencias-verificadas-por-hash.webp",
+         "principal": false
+        },
+        {
+         "t": "Cómo saca la segunda cuenta el TRX: siempre igual",
+         "et": "",
+         "desc": "Crea una billetera nueva, le manda el TRX y esa billetera lo reenvía ese mismo día. Cada barra es una de esas operaciones (M TRX). Los colores no indican nada bueno ni malo: solo distinguen el destino final, leído en Tro",
+         "u": "caso-vaneck.html#como-saca-la-segunda-cuenta-el-trx-siempre-igual",
+         "foto": "caso-vaneck-sun--como-saca-la-segunda-cuenta-el-trx-siempre-igual.webp",
+         "principal": false
+        },
+        {
+         "t": "Las dos cuentas el 29-oct-2026",
+         "et": "",
+         "desc": "VERIFICADO Lectura en TronGrid del 29-oct. El estado de hoy está en el capítulo 6.",
+         "u": "caso-vaneck.html#las-dos-cuentas-el-29-oct-2026",
+         "foto": "caso-vaneck-sun--las-dos-cuentas-el-29-oct-2026.webp",
+         "principal": false
+        }
+       ]
       },
       {
-       "t": "Capa 4: lo que el dueño de cada token puede hacer",
-       "et": "",
-       "desc": "Se leyó el ABI publicado de los 23 contratos de token y su owner(). El ABI dice qué funciones existen, no quién puede llamarlas: los permisos se atribuyen al diseño estándar solo donde el ABI coincide con él (HIPÓTESIS).",
-       "u": "justlend.html#capa-4-lo-que-el-dueno-de-cada-token-puede-hacer",
-       "foto": "justlend-liquidez--capa-4-lo-que-el-dueno-de-cada-token-puede-hacer.webp",
-       "principal": false
+       "nombre": "Lo que dicen terceros",
+       "tarjetas": [
+        {
+         "t": "Qué dicen, y quién lo dice",
+         "et": "",
+         "desc": "Justin Sun niega controlar la segunda cuenta (según Bloomberg, citado por Protos). Nadie ha vinculado públicamente la cuenta «Vaneck» a Sun; esa relación sale de las transferencias, no de ninguna declaración.",
+         "u": "caso-vaneck.html#que-dicen-y-quien-lo-dice",
+         "foto": "caso-vaneck-sun--que-dicen-y-quien-lo-dice.webp",
+         "principal": false
+        }
+       ]
+      },
+      {
+       "nombre": "Qué pasa ahora",
+       "tarjetas": [
+        {
+         "t": "«Vaneck»",
+         "et": "",
+         "desc": "TCGVFGDd62LSrfZEaz3M3fYifWWdSDHRL8",
+         "u": "caso-vaneck.html#vaneck",
+         "foto": "caso-vaneck-sun--vaneck.webp",
+         "principal": false
+        },
+        {
+         "t": "Segunda cuenta",
+         "et": "",
+         "desc": "TCGVFGDd62LSrfZEaz3M3fYifWWdSDHRL8",
+         "u": "caso-vaneck.html#segunda-cuenta",
+         "foto": "caso-vaneck-sun--segunda-cuenta.webp",
+         "principal": false
+        },
+        {
+         "t": "Movimientos relevantes desde el 29-oct",
+         "et": "Segunda cuenta",
+         "desc": "",
+         "u": "caso-vaneck.html#movimientos-relevantes-desde-el-29-oct",
+         "foto": "caso-vaneck-sun--movimientos-relevantes-desde-el-29-oct.webp",
+         "principal": false
+        },
+        {
+         "t": "Lo que ha anotado el vigilante de EquipoIA",
+         "et": "",
+         "desc": "Hechos de la cadena que el vigilante registra cada hora sobre estas dos cuentas. Para su nombre, se usan las etiquetas que EquipoIA conoce.",
+         "u": "caso-vaneck.html#lo-que-ha-anotado-el-vigilante-de-equipoia",
+         "foto": "caso-vaneck-sun--lo-que-ha-anotado-el-vigilante-de-equipoia.webp",
+         "principal": false
+        },
+        {
+         "t": "Cuándo quedan libres sus TRX",
+         "et": "",
+         "desc": "Cada barra suma los TRX de estas dos cuentas que se podrán retirar ese día. Fuente: calendario de descongelaciones de TRX (lectura del 2026-11-16 06:00 UTC).",
+         "u": "caso-vaneck.html#cuando-quedan-libres-sus-trx",
+         "foto": "caso-vaneck-sun--cuando-quedan-libres-sus-trx.webp",
+         "principal": false
+        }
+       ]
+      },
+      {
+       "nombre": "",
+       "tarjetas": [
+        {
+         "t": "La energía de Binance, la proveedora y el relevo de fondos",
+         "et": "",
+         "desc": "Quién reparte la energía, qué es la proveedora y cómo se movieron los 140 M de USDT del 2-nov.",
+         "u": "caso-vaneck.html#la-energia-de-binance-la-proveedora-y-el-relevo-de-fondos",
+         "foto": "caso-vaneck-sun--la-energia-de-binance-la-proveedora-y-el-relevo-de-fondos.webp",
+         "principal": false
+        }
+       ]
+      },
+      {
+       "nombre": "La energía de Binance, la proveedora y el relevo de fondos",
+       "tarjetas": [
+        {
+         "t": "Los tres relevos de TRX a la cuenta de energía",
+         "et": "",
+         "desc": "Cada envío sale de la proveedora minutos u horas después de entrar en ella, con 1 TRX menos. VERIFICADO",
+         "u": "caso-vaneck.html#los-tres-relevos-de-trx-a-la-cuenta-de-energia",
+         "foto": "caso-vaneck-sun--los-tres-relevos-de-trx-a-la-cuenta-de-energia.webp",
+         "principal": false
+        },
+        {
+         "t": "El 2 de noviembre: 140 M de USDT, eslabón a eslabón",
+         "et": "",
+         "desc": "La segunda cuenta mandó 60 M y 80 M de USDT a dos cuentas creadas ese mismo día; cada una los reenvió a la proveedora en pocos minutos. VERIFICADO",
+         "u": "caso-vaneck.html#el-2-de-noviembre-140-m-de-usdt-eslabon-a-eslabon",
+         "foto": "caso-vaneck-sun--el-2-de-noviembre-140-m-de-usdt-eslabon-a-eslabon.webp",
+         "principal": false
+        }
+       ]
+      },
+      {
+       "nombre": "El TRX de la antigua TRON Foundation",
+       "tarjetas": [
+        {
+         "t": "Primer salto desde las cuentas de reunión (envíos de 100 M TRX o más)",
+         "et": "",
+         "desc": "Etiquetas de TronScan (atribución de terceros). Un depósito en una casa de cambio no dice quién lo hizo ni para quién. ATRIBUCIÓN DE TERCEROS",
+         "u": "caso-vaneck.html#primer-salto-desde-las-cuentas-de-reunion-envios-de-100-m-tr",
+         "foto": "caso-vaneck-sun--primer-salto-desde-las-cuentas-de-reunion-envios-de-100-m-tr.webp",
+         "principal": false
+        },
+        {
+         "t": "Dos conexiones con el círculo de cuentas del caso",
+         "et": "",
+         "desc": "VERIFICADO Tres de las cuentas de reunión mandaron 1.131 M TRX a TWpMnUh9pZS1Mf8yyw9WPiS82WYevKzQo2: 370 M el 2023-07-15; 387 M el 2023-07-15; 374 M el 2024-07-13. Esa misma cuenta había recibido 430 M TRX de «Zion» en 2",
+         "u": "caso-vaneck.html#dos-conexiones-con-el-circulo-de-cuentas-del-caso",
+         "foto": "caso-vaneck-sun--dos-conexiones-con-el-circulo-de-cuentas-del-caso.webp",
+         "principal": false
+        }
+       ]
+      },
+      {
+       "nombre": "Las claves: la cuenta «Poloniex», «Poloniex 2» y la proveedora",
+       "tarjetas": [
+        {
+         "t": "Los tres cambios de permiso de la cuenta «Poloniex»",
+         "et": "",
+         "desc": "Leídos los permisos desde el 2023-10-31 (antes no se leyó: tope de 60.000 transacciones). La firma de cada transacción se convierte en la dirección que firmó; el método se comprobó con cuentas de clave propia (8/8 y 8/8 ",
+         "u": "caso-vaneck.html#los-tres-cambios-de-permiso-de-la-cuenta-poloniex",
+         "foto": "caso-vaneck-sun--los-tres-cambios-de-permiso-de-la-cuenta-poloniex.webp",
+         "principal": false
+        },
+        {
+         "t": "«Poloniex 2» y la proveedora",
+         "et": "",
+         "desc": "Verificado: «Poloniex 2» (creada el 2022-08-21, clave propia) firma en la multifirma TSzSgxRisS5VBXXDcAezTDvnPGi9CbsXvJ (3 de 5, desde el 2024-08-29) y en la multifirma TWPpxPd5PpU5FQk6F6F3HMN5VdufxnVA8K (3 de 5, desde e",
+         "u": "caso-vaneck.html#poloniex-2-y-la-proveedora",
+         "foto": "caso-vaneck-sun--poloniex-2-y-la-proveedora.webp",
+         "principal": false
+        },
+        {
+         "t": "Lo que ha dicho Justin Sun en público sobre Poloniex y HTX",
+         "et": "",
+         "desc": "Fuente: prensa que cita sus declaraciones (no se han podido abrir sus publicaciones originales en X). ATRIBUCIÓN DE TERCEROS",
+         "u": "caso-vaneck.html#lo-que-ha-dicho-justin-sun-en-publico-sobre-poloniex-y-htx",
+         "foto": "caso-vaneck-sun--lo-que-ha-dicho-justin-sun-en-publico-sobre-poloniex-y-htx.webp",
+         "principal": false
+        }
+       ]
+      },
+      {
+       "nombre": "",
+       "tarjetas": [
+        {
+         "t": "El capital de sun.io: la segunda cuenta y la financiadora de «Vaneck»",
+         "et": "",
+         "desc": "Quién tenía el 11-nov el capital depositado en sun.io, según el informe validado, con una comprobación propia de sus posiciones de V3, y lo que eso no significa.",
+         "u": "caso-vaneck.html#el-capital-de-sun-io-la-segunda-cuenta-y-la-financiadora-de",
+         "foto": "caso-vaneck-sun--el-capital-de-sun-io-la-segunda-cuenta-y-la-financiadora-de.webp",
+         "principal": false
+        }
+       ]
+      },
+      {
+       "nombre": "El capital de sun.io: la segunda cuenta y la financiadora de «Vaneck»",
+       "tarjetas": [
+        {
+         "t": "Qué tenía cada una el 11-nov-2026, por versión de sun.io",
+         "et": "",
+         "desc": "Cifras del apartado 10.2 del informe (mezclan cortes de hora distintos y no atribuyen identidad). V3 y V4: principal de las posiciones; V1 y V2: parte de los tokens de liquidez. ESTIMADO",
+         "u": "caso-vaneck.html#que-tenia-cada-una-el-11-nov-2026-por-version-de-sun-io",
+         "foto": "caso-vaneck-sun--que-tenia-cada-una-el-11-nov-2026-por-version-de-sun-io.webp",
+         "principal": false
+        },
+        {
+         "t": "De dónde viene lo que tenían",
+         "et": "",
+         "desc": "Apartado 10.3 del informe: si la posición nació dentro del último año a nombre de su titular (A) o es anterior y su origen no se puede observar (D). La clase está verificada con los traspasos de la ventana; los importes ",
+         "u": "caso-vaneck.html#de-donde-viene-lo-que-tenian",
+         "foto": "caso-vaneck-sun--de-donde-viene-lo-que-tenian.webp",
+         "principal": false
+        },
+        {
+         "t": "Qué hicieron en el último año",
+         "et": "",
+         "desc": "Apartado 10.1 del informe. «Añadido» y «retirado» son lo que entró y salió en la ventana (del 11-nov-2025 al 11-nov-2026); no es el saldo, que está en la primera tabla. Los importes son estimados y la dirección es la tit",
+         "u": "caso-vaneck.html#que-hicieron-en-el-ultimo-ano",
+         "foto": "caso-vaneck-sun--que-hicieron-en-el-ultimo-ano.webp",
+         "principal": false
+        },
+        {
+         "t": "Comprobación propia en la cadena (iniciada el 2026-11-12 23:59 UTC)",
+         "et": "",
+         "desc": "Para no fiarnos solo del informe, leímos en el gestor de posiciones de V3 (TLSWrv7eC1AZCXkRjpqMZUmvgd99cj7pPF) cuántas posiciones con liquidez tenía cada cuenta, una a una, con consultas sucesivas (menos de dos minutos, ",
+         "u": "caso-vaneck.html#comprobacion-propia-en-la-cadena-iniciada-el-2026-11-12-23-5",
+         "foto": "caso-vaneck-sun--comprobacion-propia-en-la-cadena-iniciada-el-2026-11-12-23-5.webp",
+         "principal": false
+        }
+       ]
       }
      ]
     },
     {
-     "nombre": "Quién manda",
-     "tarjetas": [
+     "titulo": "sun.io bajo el microscopio: distribución del capital, titularidad y profundidad en V1–V4",
+     "resumen": "Quién tiene el capital del principal DEX de TRON, cuánto se puede mover de verdad y cuánto se opera, del 11-nov-2025 al 11-nov-2026. Tres mercados reúnen el 59,95 % del capital y dos cuentas tienen aproximadamente el 78 %. Página interactiva con gráficos que se pueden pulsar, todas las tablas del informe y 14 transacciones verificables; el informe completo sigue disponible y lo que no se sabe está escrito en él.",
+     "u": "sunswap.html",
+     "portada": "assets/img/portada/sunswap-microscopio.webp",
+     "grupos": [
       {
-       "t": "El oráculo publica cada ≈ 30 minutos",
-       "et": "",
-       "desc": "Minutos entre las 8 últimas transacciones de la cuenta que publica precios · pulsa una barra para abrirla en TronScan",
-       "u": "justlend.html#el-oraculo-publica-cada-30-minutos",
-       "foto": "justlend-liquidez--el-oraculo-publica-cada-30-minutos.webp",
-       "principal": false
+       "nombre": "",
+       "tarjetas": [
+        {
+         "t": "Lo esencial",
+         "et": "",
+         "desc": "Qué es sun.io, qué medimos y lo que más sorprende, en una página.",
+         "u": "sunswap.html#lo-esencial",
+         "foto": "sunswap-microscopio--lo-esencial.webp",
+         "principal": false
+        }
+       ]
       },
       {
-       "t": "Qué pasa por el Timelock y qué no",
-       "et": "",
-       "desc": "",
-       "u": "justlend.html#que-pasa-por-el-timelock-y-que-no",
-       "foto": "justlend-liquidez--que-pasa-por-el-timelock-y-que-no.webp",
-       "principal": false
+       "nombre": "Lo esencial",
+       "tarjetas": [
+        {
+         "t": "Los 11 hallazgos del resumen ejecutivo",
+         "et": "",
+         "desc": "Texto del apartado 1 del informe, punto por punto. Pulsa uno para leerlo.",
+         "u": "sunswap.html#los-11-hallazgos-del-resumen-ejecutivo",
+         "foto": "sunswap-microscopio--los-11-hallazgos-del-resumen-ejecutivo.webp",
+         "principal": false
+        }
+       ]
+      },
+      {
+       "nombre": "Dónde está el capital",
+       "tarjetas": [
+        {
+         "t": "Capital valorado por versión",
+         "et": "",
+         "desc": "560,4 M$ en total · pulsa una porción para ver sus mayores mercados",
+         "u": "sunswap.html#capital-valorado-por-version",
+         "foto": "sunswap-microscopio--capital-valorado-por-version.webp",
+         "principal": false
+        },
+        {
+         "t": "Los 10 mayores mercados",
+         "et": "",
+         "desc": "Capital valorado · color = versión · pulsa una barra para ver su ficha",
+         "u": "sunswap.html#los-10-mayores-mercados",
+         "foto": "sunswap-microscopio--los-10-mayores-mercados.webp",
+         "principal": false
+        },
+        {
+         "t": "Capital por token",
+         "et": "",
+         "desc": "Los 15 tokens con más capital valorado (el valor de cada lado de cada mercado, sumado por token)",
+         "u": "sunswap.html#capital-por-token",
+         "foto": "sunswap-microscopio--capital-por-token.webp",
+         "principal": false
+        },
+        {
+         "t": "Capital por tipo de activo",
+         "et": "",
+         "desc": "TRX y WTRX, stablecoins y otros tokens con precio fiable",
+         "u": "sunswap.html#capital-por-tipo-de-activo",
+         "foto": "sunswap-microscopio--capital-por-tipo-de-activo.webp",
+         "principal": false
+        },
+        {
+         "t": "En V3 y V4, ¿cuánto del capital está en rango?",
+         "et": "",
+         "desc": "Depositado y valorado, dividido en dentro y fuera del rango de precios actual",
+         "u": "sunswap.html#en-v3-y-v4-cuanto-del-capital-esta-en-rango",
+         "foto": "sunswap-microscopio--en-v3-y-v4-cuanto-del-capital-esta-en-rango.webp",
+         "principal": false
+        }
+       ]
+      },
+      {
+       "nombre": "Pocos mercados, pocas cuentas",
+       "tarjetas": [
+        {
+         "t": "¿Cuántos mercados hacen falta para reunir el capital?",
+         "et": "",
+         "desc": "Parte acumulada del capital que reúnen los N mayores (eje horizontal por pasos, no lineal)",
+         "u": "sunswap.html#cuantos-mercados-hacen-falta-para-reunir-el-capital",
+         "foto": "sunswap-microscopio--cuantos-mercados-hacen-falta-para-reunir-el-capital.webp",
+         "principal": false
+        },
+        {
+         "t": "Qué parte reúnen el mayor, los 10 y los 50 mayores",
+         "et": "",
+         "desc": "Por versión y en conjunto · el índice HHI sale al pasar el ratón",
+         "u": "sunswap.html#que-parte-reunen-el-mayor-los-10-y-los-50-mayores",
+         "foto": "sunswap-microscopio--que-parte-reunen-el-mayor-los-10-y-los-50-mayores.webp",
+         "principal": false
+        },
+        {
+         "t": "El capital valorado según quién tiene hoy las posiciones",
+         "et": "",
+         "desc": "Titulares actuales, no aportantes originales · fecha de la foto: 2026-11-11",
+         "u": "sunswap.html#el-capital-valorado-segun-quien-tiene-hoy-las-posiciones",
+         "foto": "sunswap-microscopio--el-capital-valorado-segun-quien-tiene-hoy-las-posiciones.webp",
+         "principal": false
+        }
+       ]
+      },
+      {
+       "nombre": "",
+       "tarjetas": [
+        {
+         "t": "Capital no es profundidad",
+         "et": "",
+         "desc": "Cuánto se puede vender de verdad antes de mover el precio, según la simulación.",
+         "u": "sunswap.html#capital-no-es-profundidad",
+         "foto": "sunswap-microscopio--capital-no-es-profundidad.webp",
+         "principal": false
+        }
+       ]
+      },
+      {
+       "nombre": "Capital no es profundidad",
+       "tarjetas": [
+        {
+         "t": "Capital frente a profundidad",
+         "et": "",
+         "desc": "Qué parte del capital y qué parte de la profundidad simulada (±1 %) aporta cada versión",
+         "u": "sunswap.html#capital-frente-a-profundidad",
+         "foto": "sunswap-microscopio--capital-frente-a-profundidad.webp",
+         "principal": false
+        },
+        {
+         "t": "De cada 100 $ depositados, ¿cuánto es profundidad?",
+         "et": "",
+         "desc": "Profundidad a ±1 % ÷ capital, por versión (mercados con 100.000 $ o más)",
+         "u": "sunswap.html#de-cada-100-depositados-cuanto-es-profundidad",
+         "foto": "sunswap-microscopio--de-cada-100-depositados-cuanto-es-profundidad.webp",
+         "principal": false
+        },
+        {
+         "t": "Coste de vender, según el importe y el mercado",
+         "et": "",
+         "desc": "Coste total (comisión + deslizamiento) en % de lo vendido · eje vertical logarítmico · simulación",
+         "u": "sunswap.html#coste-de-vender-segun-el-importe-y-el-mercado",
+         "foto": "sunswap-microscopio--coste-de-vender-segun-el-importe-y-el-mercado.webp",
+         "principal": false
+        },
+        {
+         "t": "¿Cuánto se puede vender con un coste de hasta el 0,5 % o el 1 %?",
+         "et": "",
+         "desc": "Importe máximo de venta, en los 8 mayores mercados · eje horizontal logarítmico · simulación",
+         "u": "sunswap.html#cuanto-se-puede-vender-con-un-coste-de-hasta-el-0-5-o-el-1",
+         "foto": "sunswap-microscopio--cuanto-se-puede-vender-con-un-coste-de-hasta-el-0-5-o-el-1.webp",
+         "principal": false
+        },
+        {
+         "t": "Capital, capital en rango y profundidad ±1 % de los mercados más engañosos",
+         "et": "",
+         "desc": "Eje horizontal logarítmico · pasa el ratón para ver por qué se marcan",
+         "u": "sunswap.html#capital-capital-en-rango-y-profundidad-1-de-los-mercados-mas",
+         "foto": "sunswap-microscopio--capital-capital-en-rango-y-profundidad-1-de-los-mercados-mas.webp",
+         "principal": false
+        }
+       ]
+      },
+      {
+       "nombre": "Volumen y actividad",
+       "tarjetas": [
+        {
+         "t": "Volumen bruto mensual por versión",
+         "et": "",
+         "desc": "Suma de lo operado cada mes (noviembre de 2025 y de 2026 son meses parciales)",
+         "u": "sunswap.html#volumen-bruto-mensual-por-version",
+         "foto": "sunswap-microscopio--volumen-bruto-mensual-por-version.webp",
+         "principal": false
+        },
+        {
+         "t": "Reparto del volumen por versión",
+         "et": "",
+         "desc": "24.549 M$ en la ventana completa · pulsa una fila para ver los números",
+         "u": "sunswap.html#reparto-del-volumen-por-version",
+         "foto": "sunswap-microscopio--reparto-del-volumen-por-version.webp",
+         "principal": false
+        },
+        {
+         "t": "Los 10 mercados con más volumen en 30 días",
+         "et": "",
+         "desc": "Volumen bruto de los últimos 30 días",
+         "u": "sunswap.html#los-10-mercados-con-mas-volumen-en-30-dias",
+         "foto": "sunswap-microscopio--los-10-mercados-con-mas-volumen-en-30-dias.webp",
+         "principal": false
+        },
+        {
+         "t": "Mercados con mucho capital y ningún swap en los últimos 30 días",
+         "et": "",
+         "desc": "Capital de cada mercado el 11-nov-2026 · su volumen de los últimos 30 días es de 0 $ · eje horizontal logarítmico",
+         "u": "sunswap.html#mercados-con-mucho-capital-y-ningun-swap-en-los-ultimos-30-d",
+         "foto": "sunswap-microscopio--mercados-con-mucho-capital-y-ningun-swap-en-los-ultimos-30-d.webp",
+         "principal": false
+        },
+        {
+         "t": "Volumen de los mercados que cumplen C1–C4, por versión",
+         "et": "",
+         "desc": "Del volumen bruto de cada versión, la parte que mueven esos mercados",
+         "u": "sunswap.html#volumen-de-los-mercados-que-cumplen-c1-c4-por-version",
+         "foto": "sunswap-microscopio--volumen-de-los-mercados-que-cumplen-c1-c4-por-version.webp",
+         "principal": false
+        },
+        {
+         "t": "Los cuatro criterios",
+         "et": "",
+         "desc": "Tabla del apartado 9.6 del informe",
+         "u": "sunswap.html#los-cuatro-criterios",
+         "foto": "sunswap-microscopio--los-cuatro-criterios.webp",
+         "principal": false
+        }
+       ]
+      },
+      {
+       "nombre": "Quién pone la liquidez",
+       "tarjetas": [
+        {
+         "t": "Quién aporta y quién retira, por versión",
+         "et": "",
+         "desc": "Direcciones distintas que hicieron altas, retiradas o estuvieron activas en los últimos 90 días",
+         "u": "sunswap.html#quien-aporta-y-quien-retira-por-version",
+         "foto": "sunswap-microscopio--quien-aporta-y-quien-retira-por-version.webp",
+         "principal": false
+        },
+        {
+         "t": "Liquidez que entra y que sale cada mes",
+         "et": "",
+         "desc": "Arriba, lo añadido; abajo, lo retirado (en dólares, valoración al precio del día)",
+         "u": "sunswap.html#liquidez-que-entra-y-que-sale-cada-mes",
+         "foto": "sunswap-microscopio--liquidez-que-entra-y-que-sale-cada-mes.webp",
+         "principal": false
+        },
+        {
+         "t": "Quién tiene hoy las posiciones",
+         "et": "",
+         "desc": "Las diez mayores direcciones titulares y su parte del capital reconstruido (apartado 10.2). ESTIMADO «Titular actual» no es «aportante original».",
+         "u": "sunswap.html#quien-tiene-hoy-las-posiciones",
+         "foto": "sunswap-microscopio--quien-tiene-hoy-las-posiciones.webp",
+         "principal": false
+        }
+       ]
+      },
+      {
+       "nombre": "",
+       "tarjetas": [
+        {
+         "t": "Un año de historia",
+         "et": "",
+         "desc": "Capital reconstruido día a día, cantidades frente a precios y profundidad en el tiempo.",
+         "u": "sunswap.html#un-ano-de-historia",
+         "foto": "sunswap-microscopio--un-ano-de-historia.webp",
+         "principal": false
+        }
+       ]
+      },
+      {
+       "nombre": "Un año de historia",
+       "tarjetas": [
+        {
+         "t": "Capital reconstruido por versión, día a día",
+         "et": "",
+         "desc": "11-nov-2025 → 11-nov-2026 · 366 días · las líneas verticales marcan los hitos que cuenta el informe",
+         "u": "sunswap.html#capital-reconstruido-por-version-dia-a-dia",
+         "foto": "sunswap-microscopio--capital-reconstruido-por-version-dia-a-dia.webp",
+         "principal": false
+        },
+        {
+         "t": "¿Por qué cambió el capital: por cantidades o por precios?",
+         "et": "",
+         "desc": "Variación del capital de cada versión en la ventana, separada en dos efectos",
+         "u": "sunswap.html#por-que-cambio-el-capital-por-cantidades-o-por-precios",
+         "foto": "sunswap-microscopio--por-que-cambio-el-capital-por-cantidades-o-por-precios.webp",
+         "principal": false
+        },
+        {
+         "t": "Profundidad estimada del mercado principal de V3",
+         "et": "",
+         "desc": "WTRX/USDT 0,05 % · profundidad a ±1 %, media de venta y compra, fin de cada día",
+         "u": "sunswap.html#profundidad-estimada-del-mercado-principal-de-v3",
+         "foto": "sunswap-microscopio--profundidad-estimada-del-mercado-principal-de-v3.webp",
+         "principal": false
+        }
+       ]
+      },
+      {
+       "nombre": "",
+       "tarjetas": [
+        {
+         "t": "Anomalías y riesgos",
+         "et": "",
+         "desc": "Picos, retiradas extraordinarias y tokens raros: señales, no acusaciones.",
+         "u": "sunswap.html#anomalias-y-riesgos",
+         "foto": "sunswap-microscopio--anomalias-y-riesgos.webp",
+         "principal": false
+        }
+       ]
+      },
+      {
+       "nombre": "Anomalías y riesgos",
+       "tarjetas": [
+        {
+         "t": "Los hallazgos, uno por uno",
+         "et": "",
+         "desc": "Tabla del apartado 12.2. Filtra por nivel de certeza con el desplegable.",
+         "u": "sunswap.html#los-hallazgos-uno-por-uno",
+         "foto": "sunswap-microscopio--los-hallazgos-uno-por-uno.webp",
+         "principal": false
+        },
+        {
+         "t": "Los mayores picos de volumen",
+         "et": "",
+         "desc": "Cuántas veces su volumen normal movió un mercado en un solo día · eje logarítmico",
+         "u": "sunswap.html#los-mayores-picos-de-volumen",
+         "foto": "sunswap-microscopio--los-mayores-picos-de-volumen.webp",
+         "principal": false
+        },
+        {
+         "t": "Las mayores retiradas de liquidez en un día",
+         "et": "",
+         "desc": "Retirado frente a lo añadido ese mismo día",
+         "u": "sunswap.html#las-mayores-retiradas-de-liquidez-en-un-dia",
+         "foto": "sunswap-microscopio--las-mayores-retiradas-de-liquidez-en-un-dia.webp",
+         "principal": false
+        }
+       ]
+      },
+      {
+       "nombre": "",
+       "tarjetas": [
+        {
+         "t": "Método, límites y evidencia",
+         "et": "",
+         "desc": "Qué se midió y qué no, cómo se contrastó el motor, ejemplos verificables y correcciones.",
+         "u": "sunswap.html#metodo-limites-y-evidencia",
+         "foto": "sunswap-microscopio--metodo-limites-y-evidencia.webp",
+         "principal": false
+        }
+       ]
+      },
+      {
+       "nombre": "Método, límites y evidencia",
+       "tarjetas": [
+        {
+         "t": "El motor frente a los cotizadores oficiales de los contratos",
+         "et": "",
+         "desc": "Cotizaciones por versión, en % de las pedidas (27.313 en total)",
+         "u": "sunswap.html#el-motor-frente-a-los-cotizadores-oficiales-de-los-contratos",
+         "foto": "sunswap-microscopio--el-motor-frente-a-los-cotizadores-oficiales-de-los-contratos.webp",
+         "principal": false
+        },
+        {
+         "t": "Los tres niveles de evidencia de la profundidad",
+         "et": "",
+         "desc": "Tabla del apartado 8.1 del informe",
+         "u": "sunswap.html#los-tres-niveles-de-evidencia-de-la-profundidad",
+         "foto": "sunswap-microscopio--los-tres-niveles-de-evidencia-de-la-profundidad.webp",
+         "principal": false
+        },
+        {
+         "t": "Ejemplos que se pueden comprobar ahora mismo",
+         "et": "",
+         "desc": "14 transacciones del informe, con su hash completo y enlace a TronScan (apartado 16.1). Pulsa el hash para abrirla.",
+         "u": "sunswap.html#ejemplos-que-se-pueden-comprobar-ahora-mismo",
+         "foto": "sunswap-microscopio--ejemplos-que-se-pueden-comprobar-ahora-mismo.webp",
+         "principal": false
+        },
+        {
+         "t": "Método, conclusiones y límites",
+         "et": "",
+         "desc": "Principio: primero datos, después análisis, finalmente conclusiones. Todas las cantidades (saldos, reservas, eventos, volúmenes en tokens) se reconstruyen desde la cadena; los paneles externos (SUN.io, DefiLlama) se usan",
+         "u": "sunswap.html#metodo-conclusiones-y-limites",
+         "foto": "sunswap-microscopio--metodo-conclusiones-y-limites.webp",
+         "principal": false
+        },
+        {
+         "t": "Descargas y verificación",
+         "et": "",
+         "desc": "Tres capas de datos. (1) raw/: cada respuesta tal como llegó, con petición, fecha, estado y SHA-256; inmutable. (2) Bases SQLite normalizadas, que se rehacen enteras desde la capa 1. (3) derivados/: resultados, tablas y ",
+         "u": "sunswap.html#descargas-y-verificacion",
+         "foto": "sunswap-microscopio--descargas-y-verificacion.webp",
+         "principal": false
+        }
+       ]
       }
      ]
     },
     {
-     "nombre": "Deudas y garantías",
-     "tarjetas": [
+     "titulo": "JustLend: ¿cuánto dinero se puede recuperar de verdad?",
+     "resumen": "JustLend tiene 3.216 M$ en caja y casi nada prestado, pero solo una parte se convierte en USDT: el «ETH» de 933 M$ rinde ≈ 0,14 M$ si lo vendes. Quién tiene el dinero, de dónde sale el «ETH» y el «BTC», qué salidas hay y qué riesgos vigilar, con una revisión adversarial independiente. Página interactiva con 18 gráficos y una calculadora con tu importe; cada cifra enlaza con su origen y los datos originales están publicados.",
+     "u": "justlend.html",
+     "portada": "assets/img/portada/justlend-liquidez.webp",
+     "grupos": [
       {
-       "t": "De qué está hecha la garantía de los préstamos",
-       "et": "",
-       "desc": "Poder de préstamo (depósito × factor de garantía) de las cuentas con deuda · 210 M$ en total",
-       "u": "justlend.html#de-que-esta-hecha-la-garantia-de-los-prestamos",
-       "foto": "justlend-liquidez--de-que-esta-hecha-la-garantia-de-los-prestamos.webp",
-       "principal": false
+       "nombre": "",
+       "tarjetas": [
+        {
+         "t": "Lo esencial",
+         "et": "",
+         "desc": "Qué es JustLend, qué medimos y lo que más sorprende, en una página.",
+         "u": "justlend.html#lo-esencial",
+         "foto": "justlend-liquidez--lo-esencial.webp",
+         "principal": false
+        }
+       ]
       },
       {
-       "t": "Cuánta deuda está cerca de ser liquidada",
-       "et": "",
-       "desc": "Deuda ÷ poder de préstamo · 100 % = el Comptroller permite liquidar",
-       "u": "justlend.html#cuanta-deuda-esta-cerca-de-ser-liquidada",
-       "foto": "justlend-liquidez--cuanta-deuda-esta-cerca-de-ser-liquidada.webp",
-       "principal": false
+       "nombre": "Lo esencial",
+       "tarjetas": [
+        {
+         "t": "Lo que dice la caja frente a lo que se saca vendiendo",
+         "et": "",
+         "desc": "Escala logarítmica · gris = caja en dólares · color = USDT estimados al vender toda la caja en sun.io · pulsa una fila para ver el mercado",
+         "u": "justlend.html#lo-que-dice-la-caja-frente-a-lo-que-se-saca-vendiendo",
+         "foto": "justlend-liquidez--lo-que-dice-la-caja-frente-a-lo-que-se-saca-vendiendo.webp",
+         "principal": false
+        }
+       ]
       },
       {
-       "t": "Qué pasa si el USDD cae frente al USDT",
-       "et": "",
-       "desc": "Con las deudas constantes · barras = cuentas liquidables · línea = pérdida económica si nadie liquida",
-       "u": "justlend.html#que-pasa-si-el-usdd-cae-frente-al-usdt",
-       "foto": "justlend-liquidez--que-pasa-si-el-usdd-cae-frente-al-usdt.webp",
-       "principal": false
+       "nombre": "Dónde está el dinero",
+       "tarjetas": [
+        {
+         "t": "Caja por mercado",
+         "et": "",
+         "desc": "3.216 M$ en total · pulsa una porción para ver el mercado",
+         "u": "justlend.html#caja-por-mercado",
+         "foto": "justlend-liquidez--caja-por-mercado.webp",
+         "principal": false
+        },
+        {
+         "t": "Cobertura de caja",
+         "et": "",
+         "desc": "Qué parte de lo que se debe a los depositantes está en caja · pulsa una barra para ver el mercado",
+         "u": "justlend.html#cobertura-de-caja",
+         "foto": "justlend-liquidez--cobertura-de-caja.webp",
+         "principal": false
+        },
+        {
+         "t": "Los 24 mercados",
+         "et": "",
+         "desc": "Pulsa una fila para ver su ficha (contrato, caja real, venta, poderes del token y mayores titulares). Las direcciones van completas y enlazan a TronScan.",
+         "u": "justlend.html#los-24-mercados",
+         "foto": "justlend-liquidez--los-24-mercados.webp",
+         "principal": false
+        }
+       ]
       },
       {
-       "t": "Cuánto más se podría pedir prestado",
-       "et": "",
-       "desc": "Lo que falta hasta el tope de préstamo de cada mercado abierto, limitado por su caja · 96,3 M$ en total",
-       "u": "justlend.html#cuanto-mas-se-podria-pedir-prestado",
-       "foto": "justlend-liquidez--cuanto-mas-se-podria-pedir-prestado.webp",
-       "principal": false
+       "nombre": "Pocas cuentas",
+       "tarjetas": [
+        {
+         "t": "Cuánto tienen los mayores titulares",
+         "et": "",
+         "desc": "Parte del mercado en manos del 1.º, del 2.º–3.º, del 4.º–10.º y del resto · pulsa una barra",
+         "u": "justlend.html#cuanto-tienen-los-mayores-titulares",
+         "foto": "justlend-liquidez--cuanto-tienen-los-mayores-titulares.webp",
+         "principal": false
+        },
+        {
+         "t": "Corrida de salida en USDT",
+         "et": "",
+         "desc": "Si los mayores depositantes retiraran TODO uno tras otro · barras = lo que sale · línea = caja que queda · pulsa una barra",
+         "u": "justlend.html#corrida-de-salida-en-usdt",
+         "foto": "justlend-liquidez--corrida-de-salida-en-usdt.webp",
+         "principal": false
+        },
+        {
+         "t": "Los mayores titulares, mercado a mercado",
+         "et": "",
+         "desc": "",
+         "u": "justlend.html#los-mayores-titulares-mercado-a-mercado",
+         "foto": "justlend-liquidez--los-mayores-titulares-mercado-a-mercado.webp",
+         "principal": false
+        }
+       ]
       },
       {
-       "t": "Los mayores deudores",
-       "et": "",
-       "desc": "Pulsa una fila para ver la cuenta. «Margen» es lo que le deja el propio Comptroller antes de poder ser liquidada.",
-       "u": "justlend.html#los-mayores-deudores",
-       "foto": "justlend-liquidez--los-mayores-deudores.webp",
-       "principal": false
+       "nombre": "El «ETH» y el «BTC»",
+       "tarjetas": [
+        {
+         "t": "«ETH»: creado, quemado y depositado en JustLend",
+         "et": "",
+         "desc": "Acumulado en ETH a lo largo del tiempo · pulsa un punto para ver su transacción en TronScan",
+         "u": "justlend.html#eth-creado-quemado-y-depositado-en-justlend",
+         "foto": "justlend-liquidez--eth-creado-quemado-y-depositado-en-justlend.webp",
+         "principal": false
+        },
+        {
+         "t": "«BTC»: creado, quemado y depositado en JustLend",
+         "et": "",
+         "desc": "Acumulado en BTC a lo largo del tiempo · pulsa un punto para ver su transacción en TronScan",
+         "u": "justlend.html#btc-creado-quemado-y-depositado-en-justlend",
+         "foto": "justlend-liquidez--btc-creado-quemado-y-depositado-en-justlend.webp",
+         "principal": false
+        },
+        {
+         "t": "Las creaciones, una a una",
+         "et": "",
+         "desc": "Cada fila es una llamada a issue que creó unidades. La cuenta que figura como firmante es la que emitió la transacción; la dirección y la transacción enlazan a TronScan.",
+         "u": "justlend.html#las-creaciones-una-a-una",
+         "foto": "justlend-liquidez--las-creaciones-una-a-una.webp",
+         "principal": false
+        }
+       ]
       },
       {
-       "t": "Los 10 gigantes no deben nada",
-       "et": "",
-       "desc": "",
-       "u": "justlend.html#los-10-gigantes-no-deben-nada",
-       "foto": "justlend-liquidez--los-10-gigantes-no-deben-nada.webp",
-       "principal": false
-      }
-     ]
-    },
-    {
-     "nombre": "Revisión adversarial",
-     "tarjetas": [
-      {
-       "t": "Las 11 objeciones y qué se hizo",
-       "et": "",
-       "desc": "Pulsa una columna para ordenar. «Gravedad» es la que asignó Codex. En todas, la comprobación fue contra los datos de la investigación, no contra el criterio del revisor.",
-       "u": "justlend.html#las-11-objeciones-y-que-se-hizo",
-       "foto": "justlend-liquidez--las-11-objeciones-y-que-se-hizo.webp",
-       "principal": false
+       "nombre": "Vender en sun.io",
+       "tarjetas": [
+        {
+         "t": "Cuánto cuesta vender, según el tamaño",
+         "et": "",
+         "desc": "Eje horizontal: dólares vendidos (log) · eje vertical: coste en % · elige qué tokens ver",
+         "u": "justlend.html#cuanto-cuesta-vender-segun-el-tamano",
+         "foto": "justlend-liquidez--cuanto-cuesta-vender-segun-el-tamano.webp",
+         "principal": false
+        },
+        {
+         "t": "Pruébalo con tu importe",
+         "et": "",
+         "desc": "Elige un token y escribe un importe. Verás las cuatro cosas que importan (caja, venta, salida oficial, poderes del emisor) y un veredicto con las reglas del capítulo 10. ESTIMADO Esta calculadora trabaja con la foto del ",
+         "u": "justlend.html#mi-importe",
+         "foto": "justlend-liquidez--mi-importe.webp",
+         "principal": false
+        },
+        {
+         "t": "Hasta cuánto se puede vender perdiendo menos del 1 %",
+         "et": "",
+         "desc": "Escala logarítmica · pulsa una barra para ver el mercado",
+         "u": "justlend.html#hasta-cuanto-se-puede-vender-perdiendo-menos-del-1",
+         "foto": "justlend-liquidez--hasta-cuanto-se-puede-vender-perdiendo-menos-del-1.webp",
+         "principal": false
+        },
+        {
+         "t": "Qué parte de la caja se convierte en USDT",
+         "et": "",
+         "desc": "% de la caja de cada mercado que se obtiene como USDT al vender toda la caja por separado · pulsa una barra",
+         "u": "justlend.html#que-parte-de-la-caja-se-convierte-en-usdt",
+         "foto": "justlend-liquidez--que-parte-de-la-caja-se-convierte-en-usdt.webp",
+         "principal": false
+        }
+       ]
       },
       {
-       "t": "E7 · Cuánto recibe un liquidador por cada dólar de deuda",
-       "et": "",
-       "desc": "Dólares recibidos al vender el colateral en sun.io por cada dólar repagado · por encima de 1 = gana, por debajo = pierde",
-       "u": "justlend.html#e7-cuanto-recibe-un-liquidador-por-cada-dolar-de-deuda",
-       "foto": "justlend-liquidez--e7-cuanto-recibe-un-liquidador-por-cada-dolar-de-deuda.webp",
-       "principal": false
+       "nombre": "Otras salidas",
+       "tarjetas": [
+        {
+         "t": "La PSM de USDD frente al USDD que hay que sacar",
+         "et": "",
+         "desc": "Lo que cabe por la PSM está compartido con todos los poseedores de USDD · pulsa una barra para abrir el contrato",
+         "u": "justlend.html#la-psm-de-usdd-frente-al-usdd-que-hay-que-sacar",
+         "foto": "justlend-liquidez--la-psm-de-usdd-frente-al-usdd-que-hay-que-sacar.webp",
+         "principal": false
+        },
+        {
+         "t": "Cómo sale cada token",
+         "et": "",
+         "desc": "",
+         "u": "justlend.html#como-sale-cada-token",
+         "foto": "justlend-liquidez--como-sale-cada-token.webp",
+         "principal": false
+        },
+        {
+         "t": "Uso real de la PSM",
+         "et": "",
+         "desc": "Últimas salidas de USDT de su GemJoin (leído el 2026-11-13 18:51 UTC). Si hay movimiento a diario, la salida funciona; no prueba que aguante una avalancha.",
+         "u": "justlend.html#uso-real-de-la-psm",
+         "foto": "justlend-liquidez--uso-real-de-la-psm.webp",
+         "principal": false
+        },
+        {
+         "t": "Capa 4: lo que el dueño de cada token puede hacer",
+         "et": "",
+         "desc": "Se leyó el ABI publicado de los 23 contratos de token y su owner(). El ABI dice qué funciones existen, no quién puede llamarlas: los permisos se atribuyen al diseño estándar solo donde el ABI coincide con él (HIPÓTESIS).",
+         "u": "justlend.html#capa-4-lo-que-el-dueno-de-cada-token-puede-hacer",
+         "foto": "justlend-liquidez--capa-4-lo-que-el-dueno-de-cada-token-puede-hacer.webp",
+         "principal": false
+        }
+       ]
       },
       {
-       "t": "E2 · El oráculo llega tarde a una caída real",
-       "et": "",
-       "desc": "Precio real (cae un 50 % en 1 h) frente al del oráculo con variación máxima del 10 % por periodo de 30 min",
-       "u": "justlend.html#e2-el-oraculo-llega-tarde-a-una-caida-real",
-       "foto": "justlend-liquidez--e2-el-oraculo-llega-tarde-a-una-caida-real.webp",
-       "principal": false
-      }
-     ]
-    },
-    {
-     "nombre": "Controles, límites y panel",
-     "tarjetas": [
-      {
-       "t": "Controles",
-       "et": "",
-       "desc": "",
-       "u": "justlend.html#controles",
-       "foto": "justlend-liquidez--controles.webp",
-       "principal": false
+       "nombre": "Quién manda",
+       "tarjetas": [
+        {
+         "t": "El oráculo publica cada ≈ 30 minutos",
+         "et": "",
+         "desc": "Minutos entre las 8 últimas transacciones de la cuenta que publica precios · pulsa una barra para abrirla en TronScan",
+         "u": "justlend.html#el-oraculo-publica-cada-30-minutos",
+         "foto": "justlend-liquidez--el-oraculo-publica-cada-30-minutos.webp",
+         "principal": false
+        },
+        {
+         "t": "Qué pasa por el Timelock y qué no",
+         "et": "",
+         "desc": "",
+         "u": "justlend.html#que-pasa-por-el-timelock-y-que-no",
+         "foto": "justlend-liquidez--que-pasa-por-el-timelock-y-que-no.webp",
+         "principal": false
+        }
+       ]
       },
       {
-       "t": "Cuándo se leyó cada cosa",
-       "et": "",
-       "desc": "La foto no es de un único instante: las lecturas se reparten en ≈ 1,5 horas. Cada resultado indica el suyo.",
-       "u": "justlend.html#cuando-se-leyo-cada-cosa",
-       "foto": "justlend-liquidez--cuando-se-leyo-cada-cosa.webp",
-       "principal": false
+       "nombre": "Deudas y garantías",
+       "tarjetas": [
+        {
+         "t": "De qué está hecha la garantía de los préstamos",
+         "et": "",
+         "desc": "Poder de préstamo (depósito × factor de garantía) de las cuentas con deuda · 210 M$ en total",
+         "u": "justlend.html#de-que-esta-hecha-la-garantia-de-los-prestamos",
+         "foto": "justlend-liquidez--de-que-esta-hecha-la-garantia-de-los-prestamos.webp",
+         "principal": false
+        },
+        {
+         "t": "Cuánta deuda está cerca de ser liquidada",
+         "et": "",
+         "desc": "Deuda ÷ poder de préstamo · 100 % = el Comptroller permite liquidar",
+         "u": "justlend.html#cuanta-deuda-esta-cerca-de-ser-liquidada",
+         "foto": "justlend-liquidez--cuanta-deuda-esta-cerca-de-ser-liquidada.webp",
+         "principal": false
+        },
+        {
+         "t": "Qué pasa si el USDD cae frente al USDT",
+         "et": "",
+         "desc": "Con las deudas constantes · barras = cuentas liquidables · línea = pérdida económica si nadie liquida",
+         "u": "justlend.html#que-pasa-si-el-usdd-cae-frente-al-usdt",
+         "foto": "justlend-liquidez--que-pasa-si-el-usdd-cae-frente-al-usdt.webp",
+         "principal": false
+        },
+        {
+         "t": "Cuánto más se podría pedir prestado",
+         "et": "",
+         "desc": "Lo que falta hasta el tope de préstamo de cada mercado abierto, limitado por su caja · 96,3 M$ en total",
+         "u": "justlend.html#cuanto-mas-se-podria-pedir-prestado",
+         "foto": "justlend-liquidez--cuanto-mas-se-podria-pedir-prestado.webp",
+         "principal": false
+        },
+        {
+         "t": "Los mayores deudores",
+         "et": "",
+         "desc": "Pulsa una fila para ver la cuenta. «Margen» es lo que le deja el propio Comptroller antes de poder ser liquidada.",
+         "u": "justlend.html#los-mayores-deudores",
+         "foto": "justlend-liquidez--los-mayores-deudores.webp",
+         "principal": false
+        },
+        {
+         "t": "Los 10 gigantes no deben nada",
+         "et": "",
+         "desc": "",
+         "u": "justlend.html#los-10-gigantes-no-deben-nada",
+         "foto": "justlend-liquidez--los-10-gigantes-no-deben-nada.webp",
+         "principal": false
+        }
+       ]
       },
       {
-       "t": "El panel: «¿Puedo recuperar mi dinero de JustLend?»",
-       "et": "",
-       "desc": "El informe lo propuso y ya está construido, en Herramientas y con datos de la cadena de cada hora. Para cada token, cuatro columnas separadas (caja de JustLend, producto ejecutable de venta, salida oficial, poderes del e",
-       "u": "justlend.html#panel",
-       "foto": "justlend-liquidez--panel.webp",
-       "principal": false
+       "nombre": "Revisión adversarial",
+       "tarjetas": [
+        {
+         "t": "Las 11 objeciones y qué se hizo",
+         "et": "",
+         "desc": "Pulsa una columna para ordenar. «Gravedad» es la que asignó Codex. En todas, la comprobación fue contra los datos de la investigación, no contra el criterio del revisor.",
+         "u": "justlend.html#las-11-objeciones-y-que-se-hizo",
+         "foto": "justlend-liquidez--las-11-objeciones-y-que-se-hizo.webp",
+         "principal": false
+        },
+        {
+         "t": "E7 · Cuánto recibe un liquidador por cada dólar de deuda",
+         "et": "",
+         "desc": "Dólares recibidos al vender el colateral en sun.io por cada dólar repagado · por encima de 1 = gana, por debajo = pierde",
+         "u": "justlend.html#e7-cuanto-recibe-un-liquidador-por-cada-dolar-de-deuda",
+         "foto": "justlend-liquidez--e7-cuanto-recibe-un-liquidador-por-cada-dolar-de-deuda.webp",
+         "principal": false
+        },
+        {
+         "t": "E2 · El oráculo llega tarde a una caída real",
+         "et": "",
+         "desc": "Precio real (cae un 50 % en 1 h) frente al del oráculo con variación máxima del 10 % por periodo de 30 min",
+         "u": "justlend.html#e2-el-oraculo-llega-tarde-a-una-caida-real",
+         "foto": "justlend-liquidez--e2-el-oraculo-llega-tarde-a-una-caida-real.webp",
+         "principal": false
+        }
+       ]
+      },
+      {
+       "nombre": "Controles, límites y panel",
+       "tarjetas": [
+        {
+         "t": "Controles",
+         "et": "",
+         "desc": "",
+         "u": "justlend.html#controles",
+         "foto": "justlend-liquidez--controles.webp",
+         "principal": false
+        },
+        {
+         "t": "Cuándo se leyó cada cosa",
+         "et": "",
+         "desc": "La foto no es de un único instante: las lecturas se reparten en ≈ 1,5 horas. Cada resultado indica el suyo.",
+         "u": "justlend.html#cuando-se-leyo-cada-cosa",
+         "foto": "justlend-liquidez--cuando-se-leyo-cada-cosa.webp",
+         "principal": false
+        },
+        {
+         "t": "El panel: «¿Puedo recuperar mi dinero de JustLend?»",
+         "et": "",
+         "desc": "El informe lo propuso y ya está construido, en Herramientas y con datos de la cadena de cada hora. Para cada token, cuatro columnas separadas (caja de JustLend, producto ejecutable de venta, salida oficial, poderes del e",
+         "u": "justlend.html#panel",
+         "foto": "justlend-liquidez--panel.webp",
+         "principal": false
+        }
+       ]
       }
      ]
     }

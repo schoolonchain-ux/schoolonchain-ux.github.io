@@ -45,3 +45,8 @@
   .ix-comp span{display:none}.ix-comp{padding:7px}
   .ix-pag>h2{font-size:21px}.ix-det{padding:4px 10px 14px}
 }
+/* orden por temas */
+.ix-de{margin:6px 0 0;color:var(--soft);font-size:15px;max-width:760px}
+.ix-pag>.ix-de+.ix-rej{margin-top:18px}
+.ix-c .lugar{margin-top:auto;padding-top:8px;font-size:11.5px;color:var(--mut)}
+.ix-c .lugar::before{content:"Está en: ";opacity:.75}

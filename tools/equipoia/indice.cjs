@@ -6,12 +6,15 @@
 //   - No escribe nada en la salida si el resultado no pasa las comprobaciones del final (código de salida 2).
 //   - Cada página se carga UNA vez. Tarda unos 6 minutos.
 // La regla de troceo (cada trozo de página pertenece a un solo título, dos tarjetas nunca enseñan lo mismo) está en indice-en-pagina.js.
+// El índice se ordena POR TEMA, no por la página donde vive cada cosa: tema, título y frase de cada función están en indice-temas.json.
 const { spawn } = require('child_process'), fs = require('fs'), path = require('path'), os = require('os'), http = require('http');
 const [REPO, SALIDA] = process.argv.slice(2).map((p) => path.resolve(p));
 if (!REPO || !SALIDA || !fs.existsSync(path.join(REPO, 'herramientas.html'))) { console.error('uso: node indice.cjs <copia de la web> <salida>'); process.exit(1); }
 const NAVEGADORES = ['C:\\Program Files (x86)\\Microsoft\\Edge\\Application\\msedge.exe', 'C:\\Program Files\\Microsoft\\Edge\\Application\\msedge.exe', 'C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe'];
 const NAVEGADOR = NAVEGADORES.find((p) => fs.existsSync(p));
 const EN_PAGINA = fs.readFileSync(path.join(__dirname, 'indice-en-pagina.js'), 'utf8');
+const TEMAS = JSON.parse(fs.readFileSync(path.join(__dirname, 'indice-temas.json'), 'utf8'));   // el orden por temas, escrito a mano
+const { organizar } = require('./indice-organizar.cjs');
 const ANCHO = 1280, ALTO = 900, TOPE = 760, ESCALA = 0.5;   // fotos de 640 px de ancho como mucho, en WebP
 const PUERTO_NAV = 9300 + Math.floor(Math.random() * 400);
 
@@ -117,19 +120,14 @@ const agrupar = (ts) => { const gs = []; for (const t of ts) { let g = gs[gs.len
       if (sin.length) avisos.push('pestañas sin tarjeta en ' + p.u + ': ' + sin.join(', '));
       secciones.push({ id: p.id, titulo: p.titulo, u: p.u, ts }); console.error(p.u, '·', entradas.length, 'títulos ·', ts.length, 'tarjetas');
     }
-    // En la web hay dos cosas llamadas «Mercado»: una zona de Herramientas (los precios de hoy) y la página Mercado. En el índice van juntas.
-    const herr = secciones.find((s) => s.id === 'herramientas'), merc = secciones.find((s) => s.id === 'mercado');
-    if (herr && merc) {
-      const suyas = herr.ts.filter((t) => t.grupo === 'Mercado'); herr.ts = herr.ts.filter((t) => t.grupo !== 'Mercado');
-      merc.ts = [...suyas.map((t) => ({ ...t, grupo: '', t: t.t === 'Hoy' ? 'Mercado hoy: precios y miedo y codicia' : t.t, et: 'Está en Herramientas', desc: '', principal: false })), ...merc.ts];
-    }
     // 2) Páginas que son una función en sí mismas
+    const sueltas = [];
     for (const s of SUELTAS) {
       if (!fs.existsSync(path.join(REPO, s.u))) continue;
       await abrirPagina(s.u, s.espera);
       const f = await foto(s.u.replace(/\.html$/, '') + '--pagina.webp', `(() => { const m = document.querySelector('main'); if (!m) return null; const r = m.getBoundingClientRect(); return { x: r.left + scrollX, y: r.top + scrollY, w: r.width, h: Math.min(r.height, ${TOPE}) }; })()`);
       const desc = await evalua(`(document.querySelector('meta[name="description"]') || {}).content || ''`);
-      const sec = secciones.find((x) => x.id === s.seccion); if (f && sec) sec.ts.push({ t: s.t, et: s.et, desc: desc.slice(0, 220), u: s.u, foto: f, principal: true, grupo: s.grupo, tab: '' });
+      if (f) sueltas.push({ t: s.t, desc: desc.slice(0, 220), u: s.u, foto: f });
     }
     // 3) Investigaciones: una tarjeta por investigación (con su portada) y dentro, plegados, sus gráficos y tablas
     const informes = JSON.parse(fs.readFileSync(path.join(REPO, 'reports', 'index.json'), 'utf8')).informes || [], investigaciones = [];
@@ -139,26 +137,28 @@ const agrupar = (ts) => { const gs = []; for (const t of ts) { let g = gs[gs.len
       const entradas = await recorrer(u, 10000, inf.slug), ts = tarjetas(u, entradas, { conPestanas: false, plano: false });
       investigaciones.push({ titulo: inf.titulo, resumen: inf.resumen || '', u, portada: inf.imagen || '', grupos: agrupar(ts) }); console.error(u, '·', entradas.length, 'títulos ·', ts.length, 'tarjetas');
     }
-    salida = { version: 1, generado: new Date().toISOString(), secciones: secciones.map((s) => ({ id: s.id, titulo: s.titulo, u: s.u, grupos: agrupar(s.ts) })), investigaciones };
+    // 4) Ordenar por tema
+    const org = organizar([...secciones.flatMap((s) => s.ts), ...sueltas], investigaciones, TEMAS);
+    for (const a of org.avisos) console.error('aviso:', a);
+    salida = { version: 2, generado: new Date().toISOString(), temas: org.temas };
 
-    // 4) Comprobaciones: si algo no cuadra, NO se escribe nada (la web sigue con el índice anterior)
-    const todas = [...salida.secciones, ...salida.investigaciones].flatMap((s) => s.grupos.flatMap((g) => g.tarjetas));
-    const cuenta = (id) => (salida.secciones.find((s) => s.id === id) || { grupos: [] }).grupos.reduce((k, g) => k + g.tarjetas.length, 0);
+    // 5) Comprobaciones: si algo no cuadra, NO se escribe nada (la web sigue con el índice anterior)
+    const todas = salida.temas.flatMap((t) => [...t.grupos, ...(t.investigaciones || []).flatMap((i) => i.grupos)].flatMap((g) => g.tarjetas));
     const problemas = [...avisos];
-    if (cuenta('herramientas') < 20) problemas.push('Herramientas solo tiene ' + cuenta('herramientas') + ' tarjetas (mínimo 20)');
-    if (cuenta('mercado') < 8) problemas.push('Mercado solo tiene ' + cuenta('mercado') + ' tarjetas (mínimo 8)');
+    if (org.clasificadas < 30) problemas.push('solo hay ' + org.clasificadas + ' funciones clasificadas (mínimo 30)');
+    if (org.sinClasificar > 8) problemas.push('hay ' + org.sinClasificar + ' funciones sin clasificar: hay que ponerlas en indice-temas.json');
     if (investigaciones.length < informes.length) problemas.push('faltan investigaciones: ' + investigaciones.length + ' de ' + informes.length);
     const enlaces = todas.map((t) => t.u), repes = enlaces.filter((x, i) => enlaces.indexOf(x) !== i); if (repes.length) problemas.push('enlaces repetidos: ' + repes.slice(0, 5).join(', '));
     for (const t of todas) { const f = path.join(FOTOS, t.foto); if (!fs.existsSync(f)) problemas.push('falta la foto ' + t.foto); else if (fs.statSync(f).size < 1500) problemas.push('foto casi vacía: ' + t.foto); if (!t.t || t.t.length < 3) problemas.push('tarjeta sin título: ' + t.u); }
     for (const i of investigaciones) if (i.portada && !fs.existsSync(path.join(REPO, i.portada))) problemas.push('no existe la portada ' + i.portada);
     if (problemas.length) { console.error('NO VÁLIDO:\n - ' + problemas.join('\n - ')); process.exitCode = 2; return; }
 
-    // 5) Escribir: solo las fotos que usa alguna tarjeta
+    // 6) Escribir: solo las fotos que usa alguna tarjeta
     const dImg = path.join(SALIDA, 'assets', 'img', 'indice'), dDat = path.join(SALIDA, 'data');
     fs.rmSync(dImg, { recursive: true, force: true }); fs.mkdirSync(dImg, { recursive: true }); fs.mkdirSync(dDat, { recursive: true });
     let peso = 0; for (const t of todas) { const b = fs.readFileSync(path.join(FOTOS, t.foto)); peso += b.length; fs.writeFileSync(path.join(dImg, t.foto), b); }
     fs.writeFileSync(path.join(dDat, 'indice.json'), JSON.stringify(salida, null, 1) + '\n');
-    console.log(JSON.stringify({ ok: true, funciones: cuenta('herramientas') + cuenta('mercado'), investigaciones: investigaciones.length, fotos: todas.length, kb: Math.round(peso / 1024) }));
+    console.log(JSON.stringify({ ok: true, funciones: org.clasificadas, sinClasificar: org.sinClasificar, temas: salida.temas.length, investigaciones: investigaciones.length, fotos: todas.length, kb: Math.round(peso / 1024) }));
   } finally {
     try { if (ws) ws.close(); } catch (e) { /* ok */ }
     nav.kill(); servidor.close(); await pausa(700); try { fs.rmSync(tmp, { recursive: true, force: true }); } catch (e) { /* el navegador aún lo suelta */ }

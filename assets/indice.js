@@ -1,5 +1,6 @@
 /* Índice de funciones (indice.html): pinta las tarjetas de data/indice.json, que genera tools/equipoia/indice.cjs.
-   Cada tarjeta es una herramienta, un gráfico o una tabla, con su foto y su enlace directo. */
+   El índice va por TEMAS (de qué trata cada cosa), no por la página donde vive: el orden, los títulos y las frases
+   están escritos a mano en tools/equipoia/indice-temas.json. Cada tarjeta lleva su foto y su enlace directo. */
 (() => {
   const $ = (s) => document.querySelector(s);
   const el = (t, a = {}, ...k) => { const e = document.createElement(t); for (const [x, v] of Object.entries(a)) { if (x === 'class') e.className = v; else if (x.startsWith('on')) e.addEventListener(x.slice(2), v); else e.setAttribute(x, v); } e.append(...k.filter((c) => c !== null && c !== undefined && c !== '')); return e; };
@@ -19,41 +20,41 @@
     } });
     b.innerHTML = ICONO + '<span>Compartir</span>'; return b;
   }
-  const tarjeta = (t) => el('article', { class: 'ix-c' + (t.principal ? ' principal' : '') }, compartir(t.u, t.t),
+  // Una función: foto, título propio, para qué sirve y, en pequeño, dónde está en la web.
+  const tarjeta = (t) => el('article', { class: 'ix-c' }, compartir(t.u, t.t),
     el('div', { class: 'im' }, el('img', { src: 'assets/img/indice/' + encodeURIComponent(t.foto), alt: '', loading: 'lazy', decoding: 'async' })),
-    el('div', { class: 'tx' }, t.et ? el('div', { class: 'et' }, t.et) : null, el('a', { class: 'ti', href: t.u }, t.t), t.desc && t.desc !== t.t ? el('p', {}, t.desc) : null));
+    el('div', { class: 'tx' }, el('a', { class: 'ti', href: t.u }, t.t), t.desc && t.desc !== t.t ? el('p', {}, t.desc) : null, t.et ? el('div', { class: 'lugar' }, t.et) : null));
   function grupos(caja, gs) { gs.forEach((g) => { if (g.nombre) caja.append(el('div', { class: 'ix-sub' }, g.nombre)); const rej = el('div', { class: 'ix-rej' }); g.tarjetas.forEach((t) => rej.append(tarjeta(t))); caja.append(rej); }); }
   const cuantas = (gs) => gs.reduce((n, g) => n + g.tarjetas.length, 0);
 
-  function pintar(d) {
-    const todo = $('#ix-todo'), nav = $('#ix-pags'); todo.textContent = ''; nav.textContent = ''; let total = 0;
-    d.secciones.forEach((s) => {
-      const n = cuantas(s.grupos); if (!n) return; total += n;
-      nav.append(el('a', { href: '#' + s.id }, s.titulo, el('b', {}, String(n))));
-      const sec = el('section', { class: 'ix-pag', id: s.id }, el('h2', {}, el('a', { href: s.u }, s.titulo), el('small', {}, n + ' funciones')));
-      grupos(sec, s.grupos); todo.append(sec);
+  // Las investigaciones: una tarjeta cada una, con su portada; sus gráficos y tablas se despliegan solo si se piden.
+  function investigaciones(sec, inv) {
+    const rej = el('div', { class: 'ix-rej inv' }), dets = []; sec.append(rej);
+    inv.forEach((i) => {
+      const n = cuantas(i.grupos), det = el('div', { class: 'ix-det', hidden: '' }, el('h3', {}, i.titulo)); grupos(det, i.grupos); dets.push(det);
+      const rotulo = 'Ver sus ' + n + ' gráficos y tablas';
+      const mas = el('button', { class: 'ix-mas', type: 'button', 'aria-expanded': 'false', onclick: (ev) => {
+        ev.preventDefault(); const abrir = det.hidden;
+        dets.forEach((x) => { x.hidden = true; }); sec.querySelectorAll('.ix-mas').forEach((m) => { m.textContent = m.dataset.t + ' ▾'; m.setAttribute('aria-expanded', 'false'); });
+        if (abrir) { det.hidden = false; mas.textContent = 'Ocultar sus gráficos ▴'; mas.setAttribute('aria-expanded', 'true'); det.scrollIntoView({ block: 'start' }); }
+      } }, rotulo + ' ▾'); mas.dataset.t = rotulo;
+      rej.append(el('article', { class: 'ix-c' }, compartir(i.u, i.titulo),
+        el('div', { class: 'im' }, i.portada ? el('img', { src: i.portada, alt: '', loading: 'lazy', decoding: 'async', class: 'portada' }) : null),
+        el('div', { class: 'tx' }, el('a', { class: 'ti', href: i.u }, i.titulo), i.resumen ? el('p', {}, i.resumen) : null, n ? mas : null)));
     });
-    const inv = d.investigaciones || [];
-    if (inv.length) {
-      nav.append(el('a', { href: '#investigaciones' }, 'Investigaciones', el('b', {}, String(inv.length))));
-      const sec = el('section', { class: 'ix-pag', id: 'investigaciones' }, el('h2', {}, 'Investigaciones', el('small', {}, inv.length + ' investigaciones'))), rej = el('div', { class: 'ix-rej inv' }), dets = [];
-      sec.append(rej);
-      inv.forEach((i) => {
-        const n = cuantas(i.grupos), det = el('div', { class: 'ix-det', hidden: '' }, el('h3', {}, i.titulo)); grupos(det, i.grupos); dets.push(det);
-        const rotulo = 'Ver sus ' + n + ' gráficos y tablas';
-        const mas = el('button', { class: 'ix-mas', type: 'button', 'aria-expanded': 'false', onclick: (ev) => {
-          ev.preventDefault(); const abrir = det.hidden;
-          dets.forEach((x) => { x.hidden = true; }); sec.querySelectorAll('.ix-mas').forEach((m) => { m.textContent = m.dataset.t + ' ▾'; m.setAttribute('aria-expanded', 'false'); });
-          if (abrir) { det.hidden = false; mas.textContent = 'Ocultar sus gráficos ▴'; mas.setAttribute('aria-expanded', 'true'); det.scrollIntoView({ block: 'start' }); }
-        } }, rotulo + ' ▾'); mas.dataset.t = rotulo;
-        rej.append(el('article', { class: 'ix-c principal' }, compartir(i.u, i.titulo),
-          el('div', { class: 'im' }, i.portada ? el('img', { src: i.portada, alt: '', loading: 'lazy', decoding: 'async', class: 'portada' }) : null),
-          el('div', { class: 'tx' }, el('div', { class: 'et' }, 'Investigación'), el('a', { class: 'ti', href: i.u }, i.titulo), i.resumen ? el('p', {}, i.resumen) : null, n ? mas : null)));
-      });
-      dets.forEach((x) => sec.append(x)); todo.append(sec);
-    }
+    dets.forEach((x) => sec.append(x));
+  }
+
+  function pintar(d) {
+    const todo = $('#ix-todo'), nav = $('#ix-pags'); todo.textContent = ''; nav.textContent = ''; let total = 0, nInv = 0;
+    (d.temas || []).forEach((t) => {
+      const n = cuantas(t.grupos), inv = t.investigaciones || []; if (!n && !inv.length) return; total += n; nInv += inv.length;
+      nav.append(el('a', { href: '#' + t.id }, t.nombre, el('b', {}, String(n || inv.length))));
+      const sec = el('section', { class: 'ix-pag', id: t.id }, el('h2', {}, t.nombre), t.desc ? el('p', { class: 'ix-de' }, t.desc) : null);
+      grupos(sec, t.grupos); if (inv.length) investigaciones(sec, inv); todo.append(sec);
+    });
     const dias = (Date.now() - new Date(d.generado).getTime()) / 864e5;
-    $('#ix-resumen').textContent = total + ' funciones y ' + inv.length + ' investigaciones. Pulsa una tarjeta para abrirla justo ahí, o «Compartir» para copiar su enlace directo.';
+    $('#ix-resumen').textContent = total + ' funciones y ' + nInv + ' investigaciones, ordenadas por tema. Pulsa una tarjeta para abrirla justo ahí, o «Compartir» para copiar su enlace directo.';
     const nota = $('#ix-nota'); nota.textContent = 'Las fotos de las tarjetas son del ' + fecha(d.generado) + ' y se renuevan solas cada semana; lo que abres al pulsar es siempre la herramienta en vivo.' + (dias > 10 ? ' Aviso: llevan ' + Math.floor(dias) + ' días sin renovarse.' : '');
     nota.classList.toggle('viejo', dias > 10);
   }
