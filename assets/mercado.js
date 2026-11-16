@@ -208,7 +208,7 @@ function dailyReturns(asset, cutoff) {
   const request = (async () => {
     const id = 'coingecko:' + assetsById[asset];
     const start = cutoff - 367 * daySeconds;
-    const {status, data} = await fetchJson('https://coins.llama.fi/chart/' + id + '?start=' + start + '&span=367&period=1d');
+    const {status, data} = await fetchJson('https://coins.llama.fi/chart/' + id + '?start=' + start + '&span=368&period=1d');
     const prices = data?.coins?.[id]?.prices;
     if (status !== 200 || !Array.isArray(prices)) throw Error('Histórico no disponible');
     const closes = new Map();
@@ -216,12 +216,13 @@ function dailyReturns(asset, cutoff) {
       // La fuente puede fechar el cierre unos segundos antes o después de medianoche.
       const day = Math.round(point.timestamp / daySeconds) * daySeconds;
       const offset = Math.abs(point.timestamp - day);
-      if (!Number.isFinite(offset) || offset > 300 || day >= cutoff || !Number.isFinite(point.price) || point.price <= 0) continue;
+      if (!Number.isFinite(offset) || offset > 300 || day > cutoff || !Number.isFinite(point.price) || point.price <= 0) continue;
       if (!closes.has(day) || closes.get(day).offset > offset) closes.set(day, {price: point.price, offset});
     }
     const returns = new Map();
     for (let day = cutoff - 365 * daySeconds; day < cutoff; day += daySeconds) {
-      if (closes.has(day) && closes.has(day - daySeconds)) returns.set(day, closes.get(day).price / closes.get(day - daySeconds).price - 1);
+      // el movimiento del día «day» va de su precio de las 00:00 al de las 00:00 del día siguiente (el último usa el punto de hoy a las 00:00)
+      if (closes.has(day + daySeconds) && closes.has(day)) returns.set(day, closes.get(day + daySeconds).price / closes.get(day).price - 1);
     }
     return returns;
   })().catch(error => { dailyCache.delete(key); throw error; });

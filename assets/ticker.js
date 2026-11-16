@@ -45,7 +45,7 @@
       const K = calendario && calendario.calendario;
       if (!K || !K.porFecha) return [enlace('desbloqueos', el('b', null, 'Descongelaciones de TRX'), ' · calendario por fechas · pulsa para consultarlo')];
       const horas = (Date.now() - Date.parse(calendario.leidoEn)) / 36e5;
-      const hoy = (calendario.leidoEn || '').slice(0, 10);
+      const hoy = new Date().toISOString().slice(0, 10);   // el día UTC del visitante, no el de la lectura
       const its = [];
       if (horas > 48) its.push(enlace('desbloqueos', '⚠ calendario sin actualizar desde hace ' + Math.round(horas / 24) + ' días'));
       if (K.yaDisponible) its.push(enlace('desbloqueos', el('b', null, 'Ya retirables:'), el('span', { class: 'tk-dato' }, mt(K.yaDisponible.trx) + ' · ' + num(K.yaDisponible.cuentas, 0) + ' cuentas')));

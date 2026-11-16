@@ -207,7 +207,6 @@
   "assets/justlend-panel.js | 'Para cada token: cuánta caja hay ahora para retirar, cuánto USDT sacaría": "heredado",
   "assets/lados.js | - t) / 60000; if (m < 1) return 'ahora mismo'; if (m < 60) return 'hace": "heredado",
   "assets/lados.js | const d = h / 24; return d < 2 ? 'ayer' : 'hace ' + Math.round(d) + ' dí": "heredado",
-  "assets/lados.js | ha.length) return null; const hoy = (D.leidoEn || '').slice(0, 10);": "heredado",
   "assets/lados.js | urn el('div', { class: (x.dia === hoy ? 'hoy ' : '') + (x.trx === max &": "heredado",
   "assets/lados.js | 'div', { class: (x.dia === hoy ? 'hoy ' : '') + (x.trx === max && x.trx": "heredado",
   "assets/lados.js | laceChildren(pie('No se pudo leer ahora mismo (' + r.avisos.join(' y ') +": "heredado",
@@ -383,7 +382,6 @@
   "assets/textos.js | NDIENTE</b>: se está investigando ahora.'] }, { k: 'Cómo leerlo', v": "heredado",
   "assets/textos.js | lo que sigue quieto, al precio de hoy; USDT, USDC, USD1 y FDUSD, a su v": "heredado",
   "assets/ticker.js | 'b', null, redesTxt), ' · lectura en directo desde tu navegador'), enlac": "heredado",
-  "assets/ticker.js | rio.leidoEn)) / 36e5; const hoy = (calendario.leidoEn || '').slic": "heredado",
   "assets/ticker.js | ueos', el('b', { class: d.dia === hoy ? 'tk-hoy' : '' }, d.dia === hoy": "heredado",
   "assets/ticker.js | 'b', { class: d.dia === hoy ? 'tk-hoy' : '' }, d.dia === hoy ? 'HOY ' +": "heredado",
   "assets/ticker.js | hoy ? 'tk-hoy' : '' }, d.dia === hoy ? 'HOY ' + fecha(d.dia) : fecha(d": "heredado",
@@ -440,6 +438,8 @@
   "index.html | =\"lado\" id=\"lado-izq\" aria-label=\"Ahora en la cadena\"></aside> <main clas": "heredado",
   "index.html | Y herramientas que leen la cadena en directo desde tu navegador.</p> <di": "heredado",
   "index.html | =\"herramientas.html\">Herramientas en vivo</a> <a class=\"btn\" href=\"": "heredado",
-  "mercado.html | <span class=\"kick\">Mercado · en vivo · desde tu navegador</span> <": "heredado"
+  "mercado.html | <span class=\"kick\">Mercado · en vivo · desde tu navegador</span> <": "heredado",
+  "assets/lados.js | ha.length) return null; const hoy = new Date().toISOString().slice(": "No es un texto: es el nombre de una variable del programa que guarda el día UTC del visitante (reloj de su navegador) para marcar ese día en el calendario",
+  "assets/ticker.js | rio.leidoEn)) / 36e5; const hoy = new Date().toISOString().slice(": "No es un texto: es el nombre de una variable del programa que guarda el día UTC del visitante (reloj de su navegador) para marcar ese día en el teletipo"
  }
 }

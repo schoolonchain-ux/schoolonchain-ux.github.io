@@ -62,7 +62,7 @@
   async function desbloqueos() {
     const D = await cargar('data/desbloqueos-trx.json?v=' + Math.floor(Date.now() / 600000));
     const K = D && D.calendario; if (!K || !Array.isArray(K.porFecha) || !K.porFecha.length) return null;
-    const hoy = (D.leidoEn || '').slice(0, 10);
+    const hoy = new Date().toISOString().slice(0, 10);   // el día UTC del visitante, no el de la lectura
     const dias = K.porFecha.slice(0, 7); const max = Math.max(...dias.map((x) => x.trx));
     const cal = el('div', { class: 'lcal', title: 'TRX que terminan de descongelarse cada día (UTC), en millones' }, dias.map((x) => {
       const d = new Date(x.dia + 'T12:00:00Z');
