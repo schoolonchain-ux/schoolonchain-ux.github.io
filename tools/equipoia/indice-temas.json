@@ -7,7 +7,7 @@
     { "id": "sunio-justlend", "nombre": "sun.io y JustLend", "desc": "Cuánto cuesta vender en sun.io y cuánto dinero se puede sacar de verdad de JustLend." },
     { "id": "mercado", "nombre": "El mercado cripto", "desc": "Precios y lectura del día, dónde está el dinero, qué sube y qué baja, y cómo de agitado está todo." },
     { "id": "riesgo-liquidez", "nombre": "Riesgo y liquidez", "desc": "Cuánto podrías perder, qué pasaría en una caída y cuánto recibirías de verdad si vendes." },
-    { "id": "investigaciones", "nombre": "Investigaciones", "desc": "Los casos investigados, cada uno con sus gráficos y tablas.", "investigaciones": true }
+    { "id": "investigaciones", "nombre": "Investigaciones", "desc": "Los casos investigados, cada uno con su informe completo.", "investigaciones": true }
   ],
   "funciones": {
     "herramientas.html#pega-una-direccion": { "tema": "stablecoins", "t": "Comprobar una dirección", "desc": "Pega una dirección y mira si Tether la ha bloqueado, si es una cuenta o un contrato y si aparece en hackeos.", "lugar": "Herramientas › Comprobar" },
