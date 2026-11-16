@@ -293,7 +293,7 @@
       l('herramientas.html#z-mercado', 'Mercado hoy', 'Ver →'),
       l('herramientas.html#z-trx', 'TRX: descongelaciones, reparto y quema', 'Ver →'),
       l('datos.html', 'De dónde sale cada cifra', 'Datos y método →'),
-      pie('Todas leen la cadena o el mercado en directo'));
+      pie('Unas leen en el momento y otras una lectura diaria u horaria: cada una dice de cuándo es su dato'));
   }
 
   /* =============== montaje =============== */

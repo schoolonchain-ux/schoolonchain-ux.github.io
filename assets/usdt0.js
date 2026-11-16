@@ -26,14 +26,14 @@
 
     /* ---- las cajas de detalle (se crean antes para que las cifras puedan llevar a ellas) ---- */
     const total = C0.totalUsd;
-    const cajaRedes = caja('USDT0 en circulación por red', el('div', { class: 'cs' }, 'Cantidad total de USDT0 que existe en cada red, leída hoy directamente en el contrato del token en los nodos públicos de esa red; deben dar el mismo número. Pulsa una red para abrir ese contrato en su explorador.'),
+    const cajaRedes = caja('USDT0 en circulación por red', el('div', { class: 'cs' }, 'Cantidad total de USDT0 que existe en cada red, leída el ' + fh(Date.parse(D.leidoEn)) + ' directamente en el contrato del token en los nodos públicos de esa red; deben dar el mismo número. Pulsa una red para abrir ese contrato en su explorador.'),
       UI.tabla({ pp: 10, buscar: false, csv: 'usdt0-circulacion-por-red', rows: C0.redes.map((r) => ({ ...r })), orden: [1, -1], onRow: (r) => { if (r.enlace) window.open(r.enlace, '_blank', 'noopener'); },
         cols: [{ t: 'Red', v: (r) => el('span', null, el('b', null, r.nombre), el('br'), r.contrato ? (r.enlace ? ext(r.enlace, 'contrato ' + corto(r.contrato) + ' ↗') : el('span', { class: 'mono', style: 'font-size:11.5px', title: 'Esta red no tiene explorador enlazado: copia la dirección' }, 'contrato ' + r.contrato + ' (sin explorador enlazado)')) : el('span', { class: 'muted' }, 'sin contrato')), o: (r) => r.nombre, csv: (r) => r.nombre + (r.contrato ? ' ' + r.contrato : '') },
           { t: 'USDT0 en circulación', v: (r) => mm(r.usdt0), o: (r) => r.usdt0, csv: (r) => r.usdt0 }, { t: '% del total', v: (r) => n((r.usdt0 / total) * 100, 1) + ' %', o: (r) => r.usdt0 },
           { t: 'Nodos que dieron ese número', v: (r) => (r.nodosQueCoincidieron === r.nodosConfigurados ? n(r.nodosQueCoincidieron) + ' de ' + n(r.nodosConfigurados) : '1 de ' + n(r.nodosConfigurados) + ' (el otro no respondió)'), o: (r) => r.nodosQueCoincidieron }] }),
       el('p', { class: 'hint', style: 'margin:8px 0 0' }, 'Cómo se lee: la función totalSupply() del contrato del token USDT0 de cada red. Lectura del ' + fh(Date.parse(D.leidoEn)) + '.'));
 
-    const cajaRespaldo = caja('¿Cuadra el respaldo?', el('p', { class: 'cs', style: 'margin:0 0 8px' }, 'Se compara el USDT que guarda el adaptador de Ethereum con la suma del USDT0 de las redes de arriba, leído hoy a dos nodos públicos de Ethereum que deben dar el mismo número.'),
+    const cajaRespaldo = caja('¿Cuadra el respaldo?', el('p', { class: 'cs', style: 'margin:0 0 8px' }, 'Se compara el USDT que guarda el adaptador de Ethereum con la suma del USDT0 de las redes de arriba, leído el ' + fh(Date.parse(D.leidoEn)) + ' a dos nodos públicos de Ethereum que deben dar el mismo número.'),
       el('p', { style: 'margin:6px 0' }, 'Adaptador de USDT0 en Ethereum (donde se guarda el USDT): ', ext(R.enlaceAdaptador || ('https://etherscan.io/address/' + R.adaptador), R.adaptador)),
       el('p', { style: 'margin:6px 0' }, 'Contrato del USDT en Ethereum: ', ext(R.enlaceUsdt || ('https://etherscan.io/address/' + R.usdtEthereum), R.usdtEthereum)),
       el('p', { style: 'margin:6px 0' }, 'Cómo se lee: la función balanceOf() del USDT a nombre del adaptador. Para comprobarlo en Etherscan: abre el contrato del USDT, pestaña «Read Contract», balanceOf con la dirección del adaptador.'),

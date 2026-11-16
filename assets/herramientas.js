@@ -209,9 +209,9 @@
       const kp = (l, v, s) => el('div', { class: 'kpi' }, el('div', { class: 'kl' }, l), el('div', { class: 'kv' }, v), el('div', { class: 'kn' }, s));
       const mt = (x) => (x >= 1e6 ? n(x / 1e6, 1) + ' M TRX' : n(x) + ' TRX');
       cuerpo.append(el('div', { class: 'kpis2' },
-        kpc('Se podrán retirar en 14 días', mt(K.proximos14.trx), n(K.proximos14.cuentas) + ' cuentas · con fecha leída de la cadena', () => { filtro.value = ''; tabla.cambiar(filas); irA(cajaTabla); }, 'Ver el calendario detallado'),
+        kpc('Quedan libres en los 14 días siguientes a la lectura', mt(K.proximos14.trx), n(K.proximos14.cuentas) + ' cuentas · con fecha leída de la cadena', () => { filtro.value = ''; tabla.cambiar(filas); irA(cajaTabla); }, 'Ver el calendario detallado'),
         kpc('Ya retirables sin retirar', mt(K.yaDisponible.trx), n(K.yaDisponible.cuentas) + ' cuentas', () => irA(cajaYa), 'Ver esas cuentas'),
-        kpc('En proceso de desbloqueo', mt(T.listaTrx), n(T.cuentas) + ' de las 10.000 mayores cuentas', () => irA(ayudaDes), 'Ver de dónde sale'),
+        kpc('Descongelado sin retirar o descongelándose', mt(T.listaTrx), 'la suma de las dos cifras anteriores · ' + n(T.cuentas) + ' de las 10.000 mayores cuentas', () => irA(ayudaDes), 'Ver de dónde sale'),
         tr ? kpc('TRX en stake en toda la red', mt(tr.stakeTrx), (tr.pct7 != null ? (tr.pct7 >= 0 ? '+' : '−') + n(Math.abs(tr.pct7), 2) + ' % en 7 días' : '') + (tr.pct30 != null ? ' · ' + (tr.pct30 >= 0 ? '+' : '−') + n(Math.abs(tr.pct30), 2) + ' % en 30 días' : ''), () => irA(ayudaDes), 'Ver de dónde sale') : null));
       // calendario por día
       const base = Date.parse(D.leidoEn); const dias = []; for (let i = 0; i <= D.diasDemora; i++) dias.push(new Date(base + i * 86400000).toISOString().slice(0, 10));
@@ -224,7 +224,7 @@
       const filas = D.eventos.filter((e) => e.e && e.e > base).map((e) => ({ ...e }));
       const tabla = UI.tabla({ pp: 12, csv: 'descongelaciones-trx', ph: 'Buscar cuenta o etiqueta…', rows: filas, orden: [0, 1], filtros: [{ t: 'Importe', opciones: ['≥ 10.000 TRX', '≥ 100.000 TRX', '≥ 1 M TRX'], fn: (r, op) => r.x >= (op.startsWith('≥ 1 M') ? 1e6 : op.includes('100.000') ? 1e5 : 1e4) }],
         onRow: (r) => { abrirTab('comprobar'); montado.comprobar.irA(r.a); },
-        cols: [{ t: 'Se podrá retirar', v: (r) => fh(r.e), o: (r) => r.e }, { t: 'En', v: (r) => { const h = (r.e - ahoraMs()) / 3600000; return h < 1 ? 'menos de 1 h' : h < 48 ? n(Math.round(h)) + ' h' : n(Math.round(h / 24)) + ' días'; }, o: (r) => r.e }, { t: 'Cuenta', v: (r) => el('span', null, el('a', { class: 'addr', href: 'https://tronscan.org/#/address/' + r.a, target: '_blank', rel: 'noopener' }, UI.corto(r.a, 9, 6)), r.t ? el('div', { class: 'muted', style: 'font-size:11.5px' }, r.t) : null), o: (r) => r.a, csv: (r) => r.a }, { t: 'TRX', num: 1, v: (r) => n(r.x), o: (r) => r.x }] });
+        cols: [{ t: 'Se podrá retirar', v: (r) => fh(r.e), o: (r) => r.e }, { t: 'En', v: (r) => { const h = (r.e - ahoraMs()) / 3600000; return h <= 0 ? 'ya venció (después de la lectura)' : h < 1 ? 'menos de 1 h' : h < 48 ? n(Math.round(h)) + ' h' : n(Math.round(h / 24)) + ' días'; }, o: (r) => r.e }, { t: 'Cuenta', v: (r) => el('span', null, el('a', { class: 'addr', href: 'https://tronscan.org/#/address/' + r.a, target: '_blank', rel: 'noopener' }, UI.corto(r.a, 9, 6)), r.t ? el('div', { class: 'muted', style: 'font-size:11.5px' }, r.t) : null), o: (r) => r.a, csv: (r) => r.a }, { t: 'TRX', num: 1, v: (r) => n(r.x), o: (r) => r.x }] });
       const filtro = { value: '' };
       const cajaTabla = caja('Calendario detallado', el('div', { class: 'cs' }, n(filas.length) + ' desbloqueos con fecha leída en ' + n(new Set(filas.map((f) => f.a)).size) + ' cuentas. Pulsa una fila para comprobar esa dirección.'), tabla); cuerpo.append(cajaTabla);
       // las cuentas con TRX ya retirable que no han retirado
