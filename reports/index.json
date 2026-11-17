@@ -229,8 +229,8 @@
       "url": "caso-vaneck.html",
       "caso": "Vaneck / Justin Sun · TRON",
       "titulo": "Las cuentas «Vaneck» y TT2T17…: qué se sabe y qué no",
-      "resumen": "942 M TRX enviados entre dos cuentas de TRON, verificados por hash; atribuciones de terceros, hipótesis y estado de las cuentas con seguimiento diario. Ampliación del 5-nov: la cuenta de paso que hace el relevo de fondos, el TRX de la antigua TRON Foundation y las claves de la cuenta etiquetada «Poloniex». Actualización del 13-nov: la segunda cuenta y la financiadora de «Vaneck» son las dos mayores titulares del capital de sun.io.",
-      "version": "seguimiento diario",
+      "resumen": "942 M TRX enviados entre dos cuentas de TRON, verificados por hash; atribuciones de terceros, hipótesis y estado de las cuentas, que se relee cada 6 horas. Ampliación del 5-nov: la cuenta de paso que hace el relevo de fondos, el TRX de la antigua TRON Foundation y las claves de la cuenta etiquetada «Poloniex». Actualización del 13-nov: la segunda cuenta y la financiadora de «Vaneck» son las dos mayores titulares del capital de sun.io.",
+      "version": "seguimiento cada 6 h",
       "cadenas": [
         "TRON"
       ],
@@ -257,7 +257,7 @@
         },
         {
           "t": "Hechos verificados",
-          "texto": "{hechos} transferencias entre las cuentas verificadas por su identificador en la cadena, y el estado de las dos en la lectura diaria.",
+          "texto": "{hechos} transferencias entre las cuentas verificadas por su identificador en la cadena, y el estado de las dos en la última lectura (cada 6 horas).",
           "enlace": "#cap-3",
           "enlaceT": "Capítulo 3"
         },
@@ -293,7 +293,7 @@
         },
         {
           "t": "Última comprobación",
-          "texto": "{ultima} (lectura diaria de las dos cuentas).",
+          "texto": "{ultima} (lectura de las dos cuentas, cada 6 horas).",
           "enlace": "reports/caso-vaneck-sun/seguimiento.json",
           "enlaceT": "Datos del seguimiento"
         }
@@ -320,7 +320,7 @@
       },
       "seguimiento": {
         "estado": "sin",
-        "alcance": "Estudio de un periodo cerrado: no hay seguimiento diario.",
+        "alcance": "Estudio de un periodo cerrado: no hay seguimiento periódico.",
         "siHayMovimientos": ""
       },
       "ficha": [
@@ -354,7 +354,7 @@
         },
         {
           "t": "Última comprobación",
-          "texto": "Datos leídos el 11-nov-2026 (bloque 87.907.580 para el inventario). Estudio de un periodo cerrado: no hay lectura diaria."
+          "texto": "Datos leídos el 11-nov-2026 (bloque 87.907.580 para el inventario). Estudio de un periodo cerrado: no hay lectura periódica."
         }
       ]
     },
@@ -413,7 +413,7 @@
         },
         {
           "t": "Última comprobación",
-          "texto": "Datos leídos el 13-nov-2026 (bloque 87973572). Estudio de un instante: no hay lectura diaria."
+          "texto": "Datos leídos el 13-nov-2026 (bloque 87973572). Estudio de un instante: no hay lectura periódica."
         }
       ]
     }

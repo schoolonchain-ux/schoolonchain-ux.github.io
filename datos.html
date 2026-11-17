@@ -39,18 +39,18 @@
 
   <section class="zp" aria-label="Cómo se lee cada cifra">
     <p class="kick">Tres tipos de dato</p>
-    <h2>En vivo, diario y estudio fijo</h2>
+    <h2>En vivo, cada 6 horas y estudio fijo</h2>
     <div class="dm">
       <div class="dm-row"><b>En vivo</b><span>Se lee en <b>tu navegador</b> al abrir la página, directamente de nodos públicos de las cadenas y de APIs públicas de mercado. No pasa por ningún servidor nuestro y no se guarda lo que escribes (una dirección, tus posiciones, una cantidad).</span></div>
-      <div class="dm-row"><b>Diario</b><span>Lo prepara cada día un programa de EquipoIA (hacia las 07:00, hora de España) y se publica como un fichero de datos. Cada pestaña dice a qué hora se hizo la lectura; si pasan <b>más de 48 horas</b> sin actualizarse, lo avisa.</span></div>
+      <div class="dm-row"><b>Cada 6 horas</b><span>Lo prepara un programa de EquipoIA cuatro veces al día (hacia las 01:00, 07:00, 13:00 y 19:00, hora de España) y se publica como un fichero de datos. Cada pestaña dice a qué hora se hizo la lectura; si pasan <b>más de 13 horas</b> sin actualizarse (dos lecturas perdidas), lo avisa. Hasta el 16-nov-2026 se leía una vez al día.</span></div>
       <div class="dm-row"><b>Estudio fijo</b><span>Un análisis hecho en una fecha concreta que no cambia solo (por ejemplo, el efecto de la propuesta 104 sobre la quema de TRX). Se marca siempre como dato fijo, con su fecha.</span></div>
     </div>
   </section>
 
-  <section class="zp" aria-label="Estado de los datos diarios">
+  <section class="zp" aria-label="Estado de los datos que se leen cada 6 horas">
     <p class="kick">Ahora mismo</p>
-    <h2>Estado de los datos diarios</h2>
-    <p class="sub">Se lee en este momento de los ficheros publicados. Un punto verde es una lectura de menos de 48 horas; ámbar, más antigua.</p>
+    <h2>Estado de los datos que se leen cada 6 horas</h2>
+    <p class="sub">Se lee en este momento de los ficheros publicados. Estos ficheros se releen cada 6 horas. Un punto verde es una lectura de menos de 13 horas; ámbar, más antigua (se han perdido al menos dos lecturas).</p>
     <div id="estado-datos" class="dm"><p class="muted">Leyendo…</p></div>
   </section>
 
@@ -65,11 +65,11 @@
       <div class="dm-row"><b>Hackeos documentados</b><span>Base pública DeFiHackLabs (licencia MIT), <span id="dm-incidentes">varios cientos de incidentes</span>. No cubre TRON, y la página lo dice. Una dirección en la lista no prueba culpabilidad.</span></div>
     </div>
 
-    <h3 class="dm-h">2 · Tether y stablecoins <span class="dm-t vivo">en vivo</span> <span class="dm-t dia">diario</span></h3>
+    <h3 class="dm-h">2 · Tether y stablecoins <span class="dm-t vivo">en vivo</span> <span class="dm-t dia">cada 6 h</span></h3>
     <div class="dm">
       <div class="dm-row"><b>Bloqueos recientes</b><span>Los avisos que emite el propio contrato de USDT cuando Tether bloquea o libera una dirección: los últimos 100 en TRON y los de unos 20.000 bloques en Ethereum. En vivo. Antes de esas fechas no hay lectura, y la gráfica lo dice.</span></div>
       <div class="dm-row"><b>Paridad con 1 USD</b><span>Precios de DefiLlama: el horario cuando existe y, si no, el más cercano a cada hora, con su fuente y sus puntos a la vista. En vivo.</span></div>
-      <div class="dm-row"><b>USDT0</b><span><b>Diario.</b> Circulación por red y USDT guardado en Ethereum: lectura directa en las cadenas, con los nodos públicos configurados (deben dar el mismo número). Bloqueos y mensajes entre redes: los anota el vigilante de USDT0 de EquipoIA con la API pública de LayerZero Scan. No mide Stellar, IOTA ni HyperCore y en algunas redes no guarda todo el historial: la pestaña lo dice.</span></div>
+      <div class="dm-row"><b>USDT0</b><span><b>Cada 6 horas.</b> Circulación por red y USDT guardado en Ethereum: lectura directa en las cadenas, con los nodos públicos configurados (deben dar el mismo número). Bloqueos y mensajes entre redes: los anota el vigilante de USDT0 de EquipoIA con la API pública de LayerZero Scan. No mide Stellar, IOTA ni HyperCore y en algunas redes no guarda todo el historial: la pestaña lo dice.</span></div>
     </div>
 
     <h3 class="dm-h">3 · Mi cartera <span class="dm-t vivo">en vivo</span></h3>
@@ -86,7 +86,7 @@
       <div class="dm-row"><b>Precios y miedo y codicia</b><span>Binance (cambio en 24 h), Coinbase (precio spot) y alternative.me (índice de miedo y codicia). Se relee cada minuto mientras la pestaña está a la vista. Si una fuente no responde, esa celda lo dice.</span></div>
     </div>
 
-    <h3 class="dm-h">5 · TRX en cifras <span class="dm-t dia">diario</span></h3>
+    <h3 class="dm-h">5 · TRX en cifras <span class="dm-t dia">cada 6 h</span></h3>
     <div class="dm">
       <div class="dm-row"><b>Descongelaciones</b><span>Las 10.000 mayores cuentas de TronScan y, para cada una con un desbloqueo en curso, su fecha leída en TronGrid. La consulta de una dirección concreta sí es en vivo.</span></div>
       <div class="dm-row"><b>Reparto</b><span>Las 10.000 mayores cuentas de TronScan agrupadas por lo que TronScan dice que son. Si TronScan pone nombre a una cuenta un día y al siguiente se lo quita, se conserva el último nombre que dio y se cuenta aparte; la pestaña dice cuántas cuentas y cuánto TRX. Las mayores cuentas sin nombre se enseñan enteras y con enlace, y se cruzan con lo que sabemos de cada una, con su fuente: nuestros informes del caso Vaneck/Sun, los anuncios de SUN.io (centro de ayuda de SUN.io) y lecturas de la cadena (un fichero fijo que guarda la fuente de cada descripción; una atribución de terceros se muestra como atribución, no como hecho, y las etiquetas de TronScan se dicen de TronScan).</span></div>
@@ -95,22 +95,22 @@
   </section>
 
   <section class="zp" id="fundamentales" aria-label="Laboratorio de fundamentales">
-    <h3 class="dm-h">6 · Laboratorio de fundamentales <span class="dm-t vivo">en vivo</span> <span class="dm-t dia">diario</span></h3>
+    <h3 class="dm-h">6 · Laboratorio de fundamentales <span class="dm-t vivo">en vivo</span> <span class="dm-t dia">cada 6 h</span></h3>
     <div class="dm">
       <div class="dm-row"><b>Qué es</b><span>Escribes un token y el cuadro de mando se monta en tu navegador con fuentes públicas: cinco tarjetas, el gráfico de un año con cada serie en porcentaje sobre su primer día, la tarta de a quién pertenece el token, la pregunta guía en cinco cifras, la tabla por los seis pasos (economía del token, actividad y demanda, monetización, captura de valor, sostenibilidad, valoración y riesgo), los múltiplos con sus cuatro etiquetas y, aparte, las aplicaciones de su cadena. Hasta cuatro tokens se comparan en columnas con las mismas filas. Sin nota ni recomendaciones.</span></div>
       <div class="dm-row"><b>Precio, capitalización, oferta</b><span>CoinGecko (ficha del token y 365 días de precio, capitalización y volumen); dos lecturas por ficha, con pausa, porque CoinGecko limita por visitante y, si corta, la ficha espera 25 segundos y reintenta una vez. El precio de la cabecera se renueva cada minuto desde coins.llama.fi.</span></div>
       <div class="dm-row"><b>Comisiones, ingresos y valor para el token</b><span>DefiLlama, con el texto de método que publica para cada cadena o protocolo. Cuatro etiquetas que nunca se suman: <em>comisiones de usuarios</em> (lo que pagan quienes usan la red o la aplicación), <em>ingresos del protocolo</em> (lo que se queda el protocolo o su tesorería), <em>valor para el token</em> (lo que llega a los titulares: quema, recompra o reparto) e <em>ingresos de validadores</em> (emisión más comisiones no quemadas). También de DefiLlama: TVL histórico de la cadena, stablecoins en la cadena, volumen de los intercambios descentralizados y las aplicaciones de la cadena con comisiones.</span></div>
       <div class="dm-row"><b>Actividad on-chain</b><span>Coin Metrics (comunidad): direcciones activas, transacciones, transferencias, emisión, oferta y direcciones con saldo, una métrica por lectura, dos años de serie. No cubre todos los activos (SOL, SUI, HYPE o TON no tienen actividad gratuita) y la ficha lo dice en cada fila.</span></div>
-      <div class="dm-row"><b>TRX y ETH</b><span>TRX: TronScan (actividad diaria, validadores con sus votos y lo que se quedan de la recompensa), TronGrid (pago por bloque confirmado en los parámetros de la red) y las lecturas diarias de quema, reparto y descongelaciones de esta misma web. ETH: ultrasound.money (ETH en staking y recompensas de validadores) y el TVL de Lido como aproximación de concentración, rotulada así.</span></div>
+      <div class="dm-row"><b>TRX y ETH</b><span>TRX: TronScan (actividad diaria, validadores con sus votos y lo que se quedan de la recompensa), TronGrid (pago por bloque confirmado en los parámetros de la red) y las lecturas de quema, reparto y descongelaciones (cada 6 horas) de esta misma web. ETH: ultrasound.money (ETH en staking y recompensas de validadores) y el TVL de Lido como aproximación de concentración, rotulada así.</span></div>
       <div class="dm-row"><b>Desarrollo</b><span>GitHub sin clave (60 lecturas por hora y visitante): commits de 28 días en la rama por defecto del primer repositorio que CoinGecko asocia al token y su última versión. Sin semáforo: los commits son una aproximación débil.</span></div>
       <div class="dm-row"><b>Tendencias</b><span>Cada cifra con historia lleva su variación a 7, 30, 90 y 365 días. Flujos (comisiones, operaciones): la suma del periodo frente a la del periodo anterior de igual duración, sin contar el día de hoy. Saldos (capitalización, TVL, oferta): el valor de hoy frente al de hace ese tiempo. Flecha arriba por encima de +5 %, abajo por debajo de −5 %, plana entre medias. Las relaciones (valor para el token / comisiones, ingresos / emisión, ingresos / capital depositado) usan sumas de 30 días.</span></div>
-      <div class="dm-row"><b>El fichero diario</b><span><code>data/fundamentales-indice.json</code>: qué cadena y qué protocolos de DefiLlama corresponden a cada token (la lista completa pesa más de 9 MB y no se puede leer en cada visita), los 250 tokens con más capitalización para el buscador, qué métricas de Coin Metrics tiene cada activo y los <b>cambios de método o de cobertura</b> detectados: cada día se guardan los textos de método de DefiLlama y la cobertura de Coin Metrics (<code>data/fundamentales-metodos.json</code>) y se comparan con los del día anterior; si cambian, la ficha lo avisa con la fecha y los gráficos dibujan una marca, para que un salto de la serie no se lea como un cambio económico. Antes de publicarlo se comprueba que haya al menos 200 cadenas, 1.500 tokens y 1.000 métodos y que TRX y AAVE enlacen con su cadena y su protocolo.</span></div>
+      <div class="dm-row"><b>El fichero del índice (cada 6 horas)</b><span><code>data/fundamentales-indice.json</code>: qué cadena y qué protocolos de DefiLlama corresponden a cada token (la lista completa pesa más de 9 MB y no se puede leer en cada visita), los 250 tokens con más capitalización para el buscador, qué métricas de Coin Metrics tiene cada activo y los <b>cambios de método o de cobertura</b> detectados: en cada lectura se guardan los textos de método de DefiLlama y la cobertura de Coin Metrics (<code>data/fundamentales-metodos.json</code>) y se comparan con los del día anterior; si cambian, la ficha lo avisa con la fecha y los gráficos dibujan una marca, para que un salto de la serie no se lea como un cambio económico. Antes de publicarlo se comprueba que haya al menos 200 cadenas, 1.500 tokens y 1.000 métodos y que TRX y AAVE enlacen con su cadena y su protocolo.</span></div>
       <div class="dm-row"><b>Lo que no hay gratis</b><span>Calendario de desbloqueos de inversores, pagos en tokens a los usuarios (incentivos), valor transferido en la propia moneda, validadores y titulares de la mayoría de cadenas. En la ficha aparecen como «sin dato gratuito», con el motivo; nunca se estima ni se rellena.</span></div>
     </div>
   </section>
 
   <section class="zp" id="mercado" aria-label="Observatorio de mercado">
-    <h3 class="dm-h">7 · Observatorio de mercado <span class="dm-t dia">diario</span> <span class="dm-t vivo">en vivo</span></h3>
+    <h3 class="dm-h">7 · Observatorio de mercado <span class="dm-t dia">cada 6 h</span> <span class="dm-t vivo">en vivo</span></h3>
     <div class="dm">
       <div class="dm-row"><b>Qué es</b><span>La página <a href="mercado.html">Mercado</a>: la lectura del día, dónde está el capital, el mapa de calor, la liquidez, los sectores, la volatilidad y los desacoples. Contexto, sin señales. Toda cifra abre una ficha con su regla, su serie y el enlace a la respuesta en bruto del servicio.</span></div>
       <div class="dm-row"><b>La cesta</b><span>Los mayores activos por capitalización según CoinGecko que cotizan contra USDT en Binance, sin stablecoins, sin versiones envueltas o en depósito y sin oro en fichas. Los que quedan fuera se listan en la página con su motivo. Son los mayores de hoy: los que desaparecieron no están.</span></div>
@@ -119,7 +119,7 @@
       <div class="dm-row"><b>Sectores</b><span>La clasificación es de CoinGecko, una etiqueta de terceros. La cifra de un sector en la cesta es la mediana de sus activos, con tres como mínimo.</span></div>
       <div class="dm-row"><b>Liquidez</b><span>Libros de órdenes de los ocho mayores en Binance (contra USDT) y en Kraken (contra el dólar): dinero esperando a menos de un 1 % y de un 2 % del precio. Una foto al día; «Leer ahora» relee un libro en tu navegador. Si el precio de Kraken se separa más de un 3 % del de Binance, ese libro se descarta.</span></div>
       <div class="dm-row"><b>Volatilidad esperada</b><span>El índice de volatilidad de Deribit para bitcoin y ether: lo que descuentan los precios de las opciones para los 30 días siguientes. Se compara con la volatilidad que de verdad hubo, calculada con los cierres de Binance.</span></div>
-      <div class="dm-row"><b>La serie propia</b><span><code>data/mercado-serie.json</code>: no existe histórico gratuito del peso de bitcoin ni de la profundidad de los libros, así que el programa diario guarda su propia lectura, una fila por día desde el 10-nov-2026. Una fila escrita no se modifica.</span></div>
+      <div class="dm-row"><b>La serie propia</b><span><code>data/mercado-serie.json</code>: no existe histórico gratuito del peso de bitcoin ni de la profundidad de los libros, así que el programa de lectura guarda la suya: una fila por día (la primera lectura de cada día UTC) desde el 10-nov-2026. Una fila escrita no se modifica.</span></div>
       <div class="dm-row"><b>La lectura del día</b><span>Cinco puntos (el día, el capital, la liquidez, la volatilidad y los desacoples) que escribe un programa con reglas fijas, sin IA y sin opinión; las reglas están en la propia página, en «Cómo se escribe esta lectura». Lo que no se puede calcular no se dice.</span></div>
       <div class="dm-row"><b>Los cálculos</b><span>Rendimientos, volatilidad, percentiles, correlaciones y medianas se hacen en tu navegador con un programa que tiene sus pruebas y que se contrasta, sobre los mismos datos, con una segunda herramienta independiente (numpy).</span></div>
       <div class="dm-row"><b>Lo que no hay gratis</b><span>Flujos entre cadenas, entradas y salidas de casas de cambio, interés abierto y liquidaciones de derivados, y la profundidad de los libros antes del primer día de la serie propia. No se estima ni se rellena.</span></div>
@@ -128,7 +128,7 @@
 
   <section class="zp" aria-label="Qué se comprueba">
     <p class="kick">Antes de publicar</p>
-    <h2>Qué se comprueba en cada lectura diaria</h2>
+    <h2>Qué se comprueba en cada lectura (cada 6 horas)</h2>
     <div class="dm">
       <div class="dm-row"><b>Que sea reciente</b><span>La lectura no puede tener más de 2 horas cuando se publica.</span></div>
       <div class="dm-row"><b>Que esté completa</b><span>Un mínimo de cuentas leídas (calendario y reparto de TRX), todas las redes con su dato (USDT0), la serie entera (quema).</span></div>
@@ -146,13 +146,13 @@
       <div class="ai"><b>Sin consejos. </b>Nada de lo publicado es consejo de inversión ni una previsión. Las pruebas de estrés y los riesgos aplican el pasado a lo que tienes hoy.</div>
       <div class="ai"><b>Sin atribuir sin fuente. </b>Un saldo grande no dice de quién es. No se asigna una cuenta a una persona o empresa sin una fuente anotada.</div>
       <div class="ai"><b>Fuentes de terceros. </b>TronScan, TronGrid, DefiLlama, Binance, Coinbase, Kraken, alternative.me, LayerZero Scan y los nodos públicos pueden fallar, cambiar sus datos o sus etiquetas. Cuando eso pasa se dice, no se tapa.</div>
-      <div class="ai"><b>El código. </b>Los programas que preparan los ficheros diarios están en la carpeta <code>tools/equipoia</code> del <a href="https://github.com/schoolonchain-ux/schoolonchain-ux.github.io">repositorio</a>, para que cualquiera los lea.</div>
+      <div class="ai"><b>El código. </b>Los programas que preparan los ficheros de datos están en la carpeta <code>tools/equipoia</code> del <a href="https://github.com/schoolonchain-ux/schoolonchain-ux.github.io">repositorio</a>, para que cualquiera los lea.</div>
     </div>
   </section>
 </main>
 <script src="assets/common.js?v=35a0e468"></script>
 <script src="assets/marca.js?v=d30960e4"></script>
 <script src="assets/globo.js?v=f7a7ba09"></script>
-<script src="assets/datos.js?v=f64b12f8"></script>
+<script src="assets/datos.js?v=ab6114f5"></script>
 </body>
 </html>

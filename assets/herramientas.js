@@ -216,7 +216,7 @@
     json('data/desbloqueos-trx.json?v=' + Math.floor(ahoraMs() / 600000), {}, 15000).then((D) => {
       cuerpo.textContent = '';
       const edad = (ahoraMs() - Date.parse(D.leidoEn)) / 3600000;
-      cuerpo.append(el('div', { class: 'res-head ' + (edad > 48 ? 'warn' : '') }, el('div', { class: 'sub2' }, el('b', null, 'Lectura del ' + fh(Date.parse(D.leidoEn))), ' (hace ' + (edad < 1 ? 'menos de 1 hora' : edad < 48 ? n(Math.round(edad)) + ' horas' : n(Math.round(edad / 24)) + ' días') + '). Es una foto: quien retire o cancele después cambia las cifras. ' + (edad > 48 ? 'Estos datos están anticuados; la consulta de dirección de abajo sí es en vivo.' : 'La consulta de dirección de abajo es en vivo.'))));
+      cuerpo.append(el('div', { class: 'res-head ' + (edad > 13 ? 'warn' : '') }, el('div', { class: 'sub2' }, el('b', null, 'Lectura del ' + fh(Date.parse(D.leidoEn))), ' (hace ' + (edad < 1 ? 'menos de 1 hora' : edad < 48 ? n(Math.round(edad)) + ' horas' : n(Math.round(edad / 24)) + ' días') + '). Es una foto: quien retire o cancele después cambia las cifras. ' + (edad > 13 ? 'Estos datos están anticuados (se releen cada 6 horas y esta lectura tiene más de 13); la consulta de dirección de abajo sí es en vivo.' : 'La consulta de dirección de abajo es en vivo.'))));
       const T = D.total, K = D.calendario, tr = D.tendencia, cob = D.cobertura;
       cifra('trx', (K.yaDisponible.trx >= 1e6 ? n(K.yaDisponible.trx / 1e6, 1) + ' M' : n(K.yaDisponible.trx)) + ' TRX ya retirables');
       const kp = (l, v, s) => el('div', { class: 'kpi' }, el('div', { class: 'kl' }, l), el('div', { class: 'kv' }, v), el('div', { class: 'kn' }, s));

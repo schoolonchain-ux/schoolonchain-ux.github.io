@@ -70,7 +70,7 @@
   const porDia = (s) => { const mp = new Map(); for (const x of s) mp.set(fd(x[0]), x[1]); return mp; };
   // cociente día a día de dos series alineadas por fecha; devuelve [t, a/b, a, b]
   function cociente(A, B) { const mb = porDia(B), out = []; for (const [t, a] of A) { const b = mb.get(fd(t)); if (b != null && b > 0) out.push([t, a / b, a, b]); } return out; }
-  // marcas verticales en los gráficos en las fechas en que la fuente cambió de método o de cobertura (del índice diario)
+  // marcas verticales en los gráficos en las fechas en que la fuente cambió de método o de cobertura (del índice propio)
   const marcasPlugin = (fechas) => ({ id: 'marcas', afterDatasetsDraw(chart) { const x = chart.scales.x, y = chart.scales.y; if (!x || !y || !fechas.length) return; const ctx = chart.ctx; ctx.save(); ctx.setLineDash([4, 4]); ctx.lineWidth = 1; ctx.strokeStyle = C.css('--warn') || '#f6cd4d'; ctx.fillStyle = ctx.strokeStyle; ctx.font = '10px ' + (getComputedStyle(document.body).fontFamily || 'sans-serif'); for (const f of fechas) { const i = chart.data.labels.indexOf(f); if (i < 0) continue; const px = x.getPixelForValue(i); ctx.beginPath(); ctx.moveTo(px, y.top); ctx.lineTo(px, y.bottom); ctx.stroke(); ctx.fillText('cambio de método', px + 3, y.top + 10); } ctx.restore(); } });
   // línea guía vertical mientras la ventanita está abierta (ratón o dedo)
   const cruzPlugin = { id: 'cruz', afterDraw(chart) { const t = chart.tooltip; if (!t || !t.opacity) return; const act = t.getActiveElements(); const y = chart.scales.y; if (!act.length || !y) return; const ctx = chart.ctx; ctx.save(); ctx.globalAlpha = t.opacity; ctx.setLineDash([3, 3]); ctx.lineWidth = 1; ctx.strokeStyle = C.css('--mut') || '#8b9ab4'; ctx.beginPath(); ctx.moveTo(act[0].element.x, y.top); ctx.lineTo(act[0].element.x, y.bottom); ctx.stroke(); ctx.restore(); } };
@@ -165,11 +165,11 @@
   }
   const abrirTexto = (titulo, parrafos, fuentes, sub) => UI.abrir(titulo, () => el('div', null, parrafos.map((p) => (typeof p === 'string' ? el('p', { class: 'serie-nota' }, p) : p)), fuentes && fuentes.length ? el('p', { class: 'fuente' }, 'De dónde sale: ', ...fuentes.flatMap((f, i) => [i ? ' · ' : '', ext(f[0], f[1])]), '.') : null), { sub: sub || 'Sin dato gratuito' });
 
-  /* ================= índice diario ================= */
+  /* ================= índice propio ================= */
   let IDX = null, idxError = null;
-  // fecha del índice diario y aviso si tiene más de un día y medio (los TVL de protocolos salen de él, no de una lectura del momento)
+  // fecha del índice propio y aviso si tiene más de 13 horas (los TVL de protocolos salen de él, no de una lectura del momento)
   const idxFecha = () => (IDX && IDX.leidoEn ? fh(Date.parse(IDX.leidoEn)) : 'sin fecha');
-  const idxViejo = () => (IDX && IDX.leidoEn && Date.now() - Date.parse(IDX.leidoEn) > 36 * 3600000 ? ' · ⚠ el índice tiene más de un día y medio' : '');
+  const idxViejo = () => (IDX && IDX.leidoEn && Date.now() - Date.parse(IDX.leidoEn) > 13 * 3600000 ? ' · ⚠ el índice tiene más de 13 horas (se relee cada 6)' : '');
   const pIdx = traer('data/fundamentales-indice.json?v=' + Math.floor(Date.now() / 600000), 30000).then((d) => { IDX = d; return d; }).catch((e) => { idxError = e; return null; });
 
   /* ================= buscador ================= */
@@ -199,10 +199,10 @@
     input.addEventListener('keydown', (e) => { const bs = [...lista.querySelectorAll('button')]; if (!bs.length || lista.hidden) return; if (e.key === 'ArrowDown') { e.preventDefault(); marcado = Math.min(bs.length - 1, marcado + 1); } else if (e.key === 'ArrowUp') { e.preventDefault(); marcado = Math.max(0, marcado - 1); } else if (e.key === 'Enter' && marcado >= 0) { e.preventDefault(); bs[marcado].click(); return; } else if (e.key === 'Escape') { lista.hidden = true; return; } else return; bs.forEach((b, i) => b.classList.toggle('on', i === marcado)); });
     document.addEventListener('click', (e) => { if (!input.parentElement.contains(e.target)) lista.hidden = true; });
   }
-  // texto escrito → identificador de CoinGecko: primero el índice diario, si no, la búsqueda de CoinGecko (una llamada)
+  // texto escrito → identificador de CoinGecko: primero el índice propio, si no, la búsqueda de CoinGecko (una llamada)
   async function resolverToken(q) {
     const c = candidatos(q); if (c.length) return c[0].id;
-    avisar('No está en el índice diario; se pregunta a CoinGecko…');
+    avisar('No está en el índice propio; se pregunta a CoinGecko…');
     const r = await cg('search?query=' + encodeURIComponent(q)); const hit = (r.coins || [])[0];
     avisar(hit ? '' : 'CoinGecko no encuentra «' + q + '».'); return hit ? hit.id : null;
   }
@@ -275,7 +275,7 @@
     c.stables = F.stablesS ? { v: m(ultimo(F.stablesS)[1]), serie: F.stablesS, tipo: 'saldo', abrir: () => abrirSerie({ titulo: 'Stablecoins en ' + F.cadena.nombre, serie: F.stablesS, tipo: 'saldo', fmt: m, fuentes: [[F.urlStables, 'DefiLlama']], csv: s + '-stablecoins', sub: F.cadena.nombre }) } : SIN(F.cadena ? 'DefiLlama no registra stablecoins en ' + F.cadena.nombre : 'solo para cadenas');
     c.dex = F.dexS ? { v: m(F.dex24) + '/24 h', serie: F.dexS, tipo: 'flujo', abrir: () => abrirSerie({ titulo: 'Volumen DEX en ' + F.cadena.nombre, serie: F.dexS, fmt: m, fuentes: [[F.urlDex, 'DefiLlama']], csv: s + '-dex', sub: F.cadena.nombre }) } : SIN(F.cadena ? 'DefiLlama no registra DEX en ' + F.cadena.nombre : 'solo para cadenas');
     const tvl = F.cadena ? (F.tvlS ? ultimo(F.tvlS)[1] : F.cadena.tvl) : (F.prots[0] ? F.prots[0][4] : null);
-    c.tvl = F.cadena ? { v: m(tvl), etq: 'tvl', sub: 'la cadena', capa: 'Red', serie: F.tvlS, tipo: 'saldo', abrir: () => abrirSerie({ titulo: 'TVL en ' + F.cadena.nombre, serie: F.tvlS || [], tipo: 'saldo', fmt: m, fuentes: [[F.urlTvl, 'DefiLlama']], csv: s + '-tvl', sub: F.cadena.nombre }) } : F.prots[0] ? { v: m(tvl), etq: 'tvl', sub: 'el protocolo (diario)', capa: 'Protocolo', var: F.prots[0][7] ? F.prots[0][4] / F.prots[0][7] - 1 : null, abrir: () => abrirProtocolo(F, F.prots[0]) } : SIN('sin cadena ni protocolo en DefiLlama');
+    c.tvl = F.cadena ? { v: m(tvl), etq: 'tvl', sub: 'la cadena', capa: 'Red', serie: F.tvlS, tipo: 'saldo', abrir: () => abrirSerie({ titulo: 'TVL en ' + F.cadena.nombre, serie: F.tvlS || [], tipo: 'saldo', fmt: m, fuentes: [[F.urlTvl, 'DefiLlama']], csv: s + '-tvl', sub: F.cadena.nombre }) } : F.prots[0] ? { v: m(tvl), etq: 'tvl', sub: 'el protocolo (lectura cada 6 h)', capa: 'Protocolo', var: F.prots[0][7] ? F.prots[0][4] / F.prots[0][7] - 1 : null, abrir: () => abrirProtocolo(F, F.prots[0]) } : SIN('sin cadena ni protocolo en DefiLlama');
     const g3 = (k, titulo) => (G && G[k] ? { v: m(G.t30[k]), etq: k, sub: G.nombre, capa, serie: G[k], tipo: 'flujo', abrir: abrirLlama(F, G, k, titulo + ' · ' + G.nombre) } : SIN(G ? 'la fuente no registra este dato para ' + G.nombre + (k === 'hold' && G.m.hold ? ': «' + G.m.hold.slice(0, 80) + '»' : '') : 'sin cadena ni protocolo con comisiones en DefiLlama'));
     c.fees = g3('fees', 'Comisiones de usuarios'); c.rev = g3('rev', 'Ingresos del protocolo'); c.hold = g3('hold', 'Valor para el token');
     c.revPct = G && G.t30.fees && G.t30.rev != null ? { v: pctAbs(G.t30.rev / G.t30.fees * 100, 0), sub: 'de las comisiones', capa, abrir: c.rev.abrir } : SIN('sin comisiones o ingresos registrados');
@@ -292,7 +292,7 @@
     c.mFees = mult('fees'); c.mRev = mult('rev'); c.mHold = mult('hold');
     c.volCap = { v: F.mcap && md.total_volume ? pctAbs(md.total_volume.usd / F.mcap * 100, 1) : '—', sub: m(md.total_volume && md.total_volume.usd) + ' en 24 h', serie: F.volS, fmt: m, spNombre: 'Volumen negociado en 24 h', tipo: 'flujo', abrir: () => abrirSerie({ titulo: 'Volumen negociado · ' + s, serie: F.volS || [], fmt: m, fuentes: [[F.urlChart, 'CoinGecko']], csv: s + '-volumen', sub: F.nombre }) };
     c.ath = { v: md.ath_change_percentage ? pct(md.ath_change_percentage.usd / 100) : '—', sub: 'máximo ' + usd(md.ath && md.ath.usd) + (md.ath_date && md.ath_date.usd ? ' el ' + fd(Date.parse(md.ath_date.usd)) : ''), abrir: c.precio.abrir };
-    if (F.x.reparto) c.conc = { v: pctAbs(F.x.reparto.concentracion.top100, 1), sub: 'las 100 mayores cuentas (diario)', abrir: () => window.open('herramientas.html#reparto', '_blank', 'noopener') };
+    if (F.x.reparto) c.conc = { v: pctAbs(F.x.reparto.concentracion.top100, 1), sub: 'las 100 mayores cuentas (lectura cada 6 h)', abrir: () => window.open('herramientas.html#reparto', '_blank', 'noopener') };
     else if (F.cm.AdrBalCnt) c.conc = { v: nt(ultimo(F.cm.AdrBalCnt)[1]) + ' direcciones', sub: 'con saldo; no se sabe cuánto cada una', serie: F.cm.AdrBalCnt, tipo: 'saldo', abrir: abrirCM(F, 'AdrBalCnt', 'Direcciones con saldo · ' + s, (v) => n(v, 0), 'saldo') };
     else c.conc = SIN('la lista de titulares exige clave');
     if (F.x.testigos) { const T = F.x.testigos.data || [], prod = T.filter((x) => x.producer).sort((a, b) => b.votes - a.votes), tot = T.reduce((a, x) => a + (x.votes || 0), 0); c.control = { v: pctAbs(prod.slice(0, 27).reduce((a, x) => a + x.votes, 0) / tot * 100, 1), sub: 'de los votos en los 27 productores', abrir: () => abrirTestigos(F) }; c.seg = { v: pctAbs(tot / md.circulating_supply * 100, 1), sub: 'de la oferta votando (en stake)', abrir: () => abrirTestigos(F) }; }
@@ -490,7 +490,7 @@
   function pintarTablero(F) {
     const s = F.simbolo, G = F.G;
     if (F.cambios.length) F.cab.append(el('button', { type: 'button', class: 'cm', onclick: () => abrirCambios(F) }, 'Método o cobertura cambiados: ' + [...new Set(F.cambios.map((c) => c.fecha))].sort().slice(-3).join(', ')));
-    if (idxError) F.cab.append(el('span', { class: 'cm' }, 'El índice diario no se pudo leer: DefiLlama y Coin Metrics no se consultan'));
+    if (idxError) F.cab.append(el('span', { class: 'cm' }, 'El índice propio no se pudo leer: DefiLlama y Coin Metrics no se consultan'));
     // tres niveles: resumen (lectura ejecutiva) → una sección por dimensión → evidencia (tabla completa, fuentes)
     F.rel = calcularRelaciones(F);
     raiz.append(navegacion(F),
@@ -619,7 +619,7 @@
     if (F.x.tron) { const d = F.x.tron.data || [], u = d[d.length - 1]; if (u) e1.append(el('p', { class: 'regla2' }, 'TronScan: ' + n(u.active_account_number, 0) + ' cuentas activas, ' + n(u.newAddressSeen, 0) + ' nuevas y ' + n(u.usdt_transaction, 0) + ' transacciones de USDT el ' + u.dateDayStr + '.')); }
     let e2;
     if (F.stablesS || F.dexS) e2 = etapa(2, 'Uso económico', 'Dinero que la gente decide tener y mover en esta red: stablecoins y volumen de los intercambios descentralizados.', F.stablesS ? m(ultimo(F.stablesS)[1]) + ' en stablecoins' : m(F.dex24) + '/24 h en DEX', F.stablesS && F.dexS ? m(F.dex24) + ' negociados en 24 h en los DEX' : '', F.stablesS ? () => abrirSerie({ titulo: 'Stablecoins en ' + F.cadena.nombre, serie: F.stablesS, tipo: 'saldo', fmt: m, fuentes: [[F.urlStables, 'DefiLlama']], csv: s + '-stablecoins', sub: F.cadena.nombre }) : () => abrirSerie({ titulo: 'Volumen DEX en ' + F.cadena.nombre, serie: F.dexS, fmt: m, fuentes: [[F.urlDex, 'DefiLlama']], csv: s + '-dex', sub: F.cadena.nombre }), graficoLineas(F, { titulo: 'Uso económico', series: [F.stablesS ? { t: 'Stablecoins', serie: F.stablesS, color: C.pal[5], fmt: m, fuente: [F.urlStables, 'DefiLlama'] } : null, F.dexS ? { t: 'Volumen DEX / día', serie: F.dexS, color: C.pal[6], fmt: m, fuente: [F.urlDex, 'DefiLlama'], eje: F.stablesS ? 'y2' : 'y' } : null].filter(Boolean), fmt: m, eje2: !!(F.stablesS && F.dexS), fmt2: m, dias: 90, clase: 'cvs' }));
-    else if (F.prots[0]) { const p = F.prots[0]; e2 = etapa(2, 'Uso económico', 'Capital depositado por los usuarios en ' + p[1] + ' (dato diario del índice; sin serie gratuita).', m(p[4]) + ' TVL', 'índice del ' + idxFecha() + idxViejo() + ' · un día antes ' + m(p[5]) + ' · 7 d antes ' + m(p[6]) + ' · 30 d antes ' + m(p[7]), () => abrirProtocolo(F, p), null); }
+    else if (F.prots[0]) { const p = F.prots[0]; e2 = etapa(2, 'Uso económico', 'Capital depositado por los usuarios en ' + p[1] + ' (dato del índice propio, que se relee cada 6 h; sin serie gratuita).', m(p[4]) + ' TVL', 'índice del ' + idxFecha() + idxViejo() + ' · un día antes ' + m(p[5]) + ' · 7 d antes ' + m(p[6]) + ' · 30 d antes ' + m(p[7]), () => abrirProtocolo(F, p), null); }
     else e2 = etapa(2, 'Uso económico', 'Stablecoins, volumen transferido y DEX.', 'sin dato gratuito', 'el valor transferido lo cobra Coin Metrics; ' + s + ' no es cadena ni protocolo en DefiLlama', () => abrirTexto('Uso económico de ' + s, ['El valor transferido en la propia moneda lo reserva Coin Metrics a su plan de pago, y ' + s + ' no es una cadena ni un protocolo con datos en DefiLlama.']), null);
     const e3 = G && G.fees ? etapa(3, 'Monetización', 'Comisiones que pagan los usuarios: lo que la actividad convierte en dinero.', m(G.t30.fees) + ' en 30 d', G.nombre + ' · ' + m(G.t24.fees) + ' en 24 h', abrirLlama(F, G, 'fees', 'Comisiones de usuarios · ' + G.nombre), mini(G.fees, C.pal[2], m, [G.urls.fees, 'DefiLlama'], 'Comisiones de usuarios / día'), 'monetizacion') : etapa(3, 'Monetización', 'Comisiones que pagan los usuarios.', 'sin dato gratuito', s + ' no tiene cadena ni protocolo con comisiones en DefiLlama', () => abrirTexto('Comisiones de ' + s, [s + ' no tiene cadena ni protocolo con comisiones registradas en DefiLlama, la única fuente gratuita con metodología publicada.']), null, 'monetizacion');
     const e4 = G && G.hold ? etapa(4, 'Captura de valor', 'Lo que de todo eso llega al token: quema, recompra o reparto.', m(G.t30.hold) + ' en 30 d', G.t30.fees ? pctAbs(G.t30.hold / G.t30.fees * 100, 0) + ' de las comisiones' : '', abrirLlama(F, G, 'hold', 'Valor que llega al token · ' + G.nombre), mini(G.hold, C.pal[3], m, [G.urls.hold, 'DefiLlama'], 'Valor para el token / día'), 'captura') : etapa(4, 'Captura de valor', 'Lo que llega al token.', G && G.fees ? 'nada registrado' : 'sin dato gratuito', G && G.m.hold ? '«' + G.m.hold.slice(0, 70) + '…»' : '', () => abrirTexto('Captura de valor · ' + s, [G && G.fees ? 'La fuente registra comisiones pero no quema, recompra ni reparto a los titulares de ' + s + (G.m.hold ? '. Texto de la fuente: «' + G.m.hold + '».' : '.') : 'Sin comisiones registradas no hay forma gratuita de medir lo que llega al token.']), null, 'captura');
@@ -729,7 +729,7 @@
     const s = F.simbolo, G = F.G;
     // emisión diaria en dólares: TRX del fichero diario (emisión × precio del día), resto Coin Metrics IssTotUSD
     let emUsd = null, emFuente = null;
-    if (F.x.quema && F.x.quema.ultimos400) { emUsd = F.x.quema.ultimos400.map((r) => [Date.parse(r[0] + 'T00:00:00Z'), r[1] * r[3]]); emFuente = ['data/quema-trx.json', 'lectura diaria de TronScan (emisión × precio del día)']; }
+    if (F.x.quema && F.x.quema.ultimos400) { emUsd = F.x.quema.ultimos400.map((r) => [Date.parse(r[0] + 'T00:00:00Z'), r[1] * r[3]]); emFuente = ['data/quema-trx.json', 'serie diaria de TronScan (emisión × precio del día)']; }
     else if (F.cm.IssTotUSD) { emUsd = F.cm.IssTotUSD; emFuente = [F.cmUrl.IssTotUSD, 'emisión diaria en dólares (Coin Metrics, IssTotUSD)']; }
     const R = [];
     // 1) valor para el token / comisiones (30 días acumulados)
@@ -742,7 +742,7 @@
     else R.push({ k: 'emision', t: 'Ingresos del protocolo / emisión', sin: !F.cadena ? s + ' no emite para pagar una seguridad propia: no aplica' : !emUsd ? 'sin serie gratuita de emisión en dólares para ' + s : 'sin ingresos registrados en DefiLlama' });
     // 3) ingresos anualizados / capital depositado
     if (G && G.rev && F.tvlS) { const c = cociente(acumulado(G.rev, 30).map((x) => [x[0], x[1] / 30 * 365.25]), F.tvlS); if (c.length > 10) R.push({ k: 'tvl', t: 'Ingresos anualizados / capital depositado', num: ['rev', 'ingresos de 30 días × 365,25/30'], den: ['tvl', 'capital depositado (TVL)'], serie: c, fmt: (v) => pctAbs(v * 100, 2), fmtAB: m, regla: 'Ingresos de 30 días anualizados divididos por el TVL de ese día. Cuánto rinde para el protocolo el dinero depositado. No descuenta incentivos: sin fuente gratuita.', fuentes: [[G.urls.rev, 'ingresos del protocolo (DefiLlama)'], [F.urlTvl, 'TVL histórico (DefiLlama)']] }); }
-    else R.push({ k: 'tvl', t: 'Ingresos anualizados / capital depositado', sin: F.cadena ? 'sin serie de TVL o de ingresos' : 'el TVL de un protocolo solo está como dato diario en el índice, sin serie gratuita' });
+    else R.push({ k: 'tvl', t: 'Ingresos anualizados / capital depositado', sin: F.cadena ? 'sin serie de TVL o de ingresos' : 'el TVL de un protocolo solo está como dato suelto en el índice propio, sin serie gratuita' });
     return R;
   }
   function tarjetaRelacion(F, r, fechas) {
@@ -839,7 +839,7 @@
       const R = F.x.reparto, G = R.grupos, NOM = { exchange: 'Casas de cambio', contrato: 'Contratos', fondo_o_institucion: 'Fondos y gestoras', otros_etiquetados: 'Otras con nombre', ballena_sin_identificar: 'Sin nombre en TronScan (10.000 mayores)', atribuido_externo: 'Atribuidas por otras fuentes' };
       trozos = Object.keys(NOM).filter((k) => G[k] && G[k].cuentas > 0).map((k) => ({ t: NOM[k], v: G[k].trx, p: G[k].pct, sub: n(G[k].cuentas) + ' cuentas' }));
       trozos.push({ t: 'Resto de la red', v: R.cola.trx, p: R.cola.pct, sub: n(R.cola.cuentas) + ' cuentas pequeñas' });
-      titulo = 'De quién es el TRX'; nota = 'Las 10.000 mayores cuentas según TronScan, agrupadas por lo que TronScan dice que son, frente a todo el TRX. Lectura diaria del ' + fd(Date.parse(R.leidoEn)) + '. Pulsa un trozo para ver las cuentas.';
+      titulo = 'De quién es el TRX'; nota = 'Las 10.000 mayores cuentas según TronScan, agrupadas por lo que TronScan dice que son, frente a todo el TRX. Lectura del ' + fh(Date.parse(R.leidoEn)) + '. Pulsa un trozo para ver las cuentas.';
       fuentes = [['https://apilist.tronscanapi.com/api/account/list?sort=-balance&limit=50&start=0', 'lista de cuentas de TronScan']];
       onTrozo = () => window.open('herramientas.html#reparto', '_blank', 'noopener');
     } else if (F.x.staked && md.circulating_supply) {
@@ -889,7 +889,7 @@
   }
 
   /* ---- 5) tabla de detalle por los seis pasos ---- */
-  const ESTADO = { vivo: ['', 'En vivo'], dia: ['dia', 'Diario'], sin: ['sin', 'Sin dato gratuito'] };
+  const ESTADO = { vivo: ['', 'En vivo'], dia: ['dia', 'Cada 6 h'], sin: ['sin', 'Sin dato gratuito'] };
   function tablaDetalle(F) {
     const s = F.simbolo, G = F.G, md = F.md, rows = [];
     const fila = (paso, o) => rows.push({ paso, ...o });
@@ -915,7 +915,7 @@
     if (F.x.tron) { const d = F.x.tron.data || [], u = d[d.length - 1]; if (u) { const serieU = d.map((x) => [x.date, x.usdt_transaction]); fila(2, { t: '1 · Actividad: TronScan, cuentas activas y USDT', v: nt(u.active_account_number) + ' cuentas', sub: n(u.newAddressSeen, 0) + ' cuentas nuevas · ' + n(u.usdt_transaction, 0) + ' transacciones de USDT · energía ' + n(u.energy_usage / 1e9, 1) + ' G · ' + u.dateDayStr, serie: serieU, tipo: 'flujo', dias: 7, fuente: 'TronScan', estado: 'vivo', abrir: () => abrirSerie({ titulo: 'Transacciones de USDT al día en TRON', serie: serieU, fmt: (v) => n(v, 0), nota: 'Operaciones del contrato de USDT (TRC-20) cada día según TronScan (31 días). Cuentas activas: ' + n(u.active_account_number, 0) + '; nuevas: ' + n(u.newAddressSeen, 0) + ' el ' + u.dateDayStr + '.', fuentes: [[F.urlTron, 'actividad diaria en TronScan']], csv: 'TRX-usdt-transacciones', sub: 'TRON' }) }); } }
     if (F.stablesS) fila(2, { t: '2 · Uso económico: stablecoins en la cadena', v: m(ultimo(F.stablesS)[1]), sub: 'dinero que la gente decide tener en esta red', serie: F.stablesS, tipo: 'saldo', fuente: 'DefiLlama', estado: 'vivo', abrir: () => abrirSerie({ titulo: 'Stablecoins en ' + F.cadena.nombre, serie: F.stablesS, tipo: 'saldo', fmt: (v) => m(v), fuentes: [[F.urlStables, 'stablecoins en DefiLlama']], csv: s + '-stablecoins', sub: F.cadena.nombre }) });
     if (F.dexS) fila(2, { t: '2 · Uso económico: volumen en intercambios descentralizados', v: m(F.dex24) + '/24 h', sub: 'negociado en los DEX de la cadena', serie: F.dexS, tipo: 'flujo', fuente: 'DefiLlama', estado: 'vivo', abrir: () => abrirSerie({ titulo: 'Volumen DEX en ' + F.cadena.nombre, serie: F.dexS, fmt: (v) => m(v), fuentes: [[F.urlDex, 'DEX de la cadena en DefiLlama']], csv: s + '-volumen-dex', sub: F.cadena.nombre }) });
-    for (const p of F.prots.slice(0, 2)) fila(2, { t: '2 · Uso económico: ' + p[1], etq: 'tvl', v: m(p[4]), sub: 'en ' + n(p[3]) + ' cadenas' + (p[10] ? ' · ' + n(p[10].length) + ' partes' : ''), var: p[7] ? p[4] / p[7] - 1 : null, fuente: 'DefiLlama (índice diario)', estado: 'dia', abrir: () => abrirProtocolo(F, p) });
+    for (const p of F.prots.slice(0, 2)) fila(2, { t: '2 · Uso económico: ' + p[1], etq: 'tvl', v: m(p[4]), sub: 'en ' + n(p[3]) + ' cadenas' + (p[10] ? ' · ' + n(p[10].length) + ' partes' : ''), var: p[7] ? p[4] / p[7] - 1 : null, fuente: 'DefiLlama (índice propio)', estado: 'dia', abrir: () => abrirProtocolo(F, p) });
     if (!F.stablesS && !F.dexS && !F.prots.length) fila(2, { t: '2 · Uso económico: valor transferido, stablecoins, DEX', estado: 'sin', motivo: 'El valor transferido en la propia moneda lo reserva Coin Metrics a su plan de pago, y ' + s + ' no es una cadena ni un protocolo con datos en DefiLlama.', fuente: '—' });
     if (G && G.fees) fila(2, { t: '3 · Monetización (30 d)', etq: 'fees', v: m(G.t30.fees), sub: G.nombre, serie: G.fees, spNombre: 'Comisiones de usuarios / día', tipo: 'flujo', fuente: 'DefiLlama', estado: 'vivo', abrir: abrirLlama(F, G, 'fees', 'Comisiones de usuarios · ' + G.nombre) });
     else fila(2, { t: '3 · Monetización: comisiones de usuarios', estado: 'sin', motivo: s + ' no tiene cadena ni protocolo con comisiones registradas en DefiLlama.', fuente: '—' });
@@ -1004,15 +1004,15 @@
         el('p', { class: 'fuente' }, 'De dónde sale: ', ext(F.urlApps, 'aplicaciones de la cadena en DefiLlama'), (F.dex24 != null ? [' · volumen DEX de la cadena ', ext(F.urlDex, m(F.dex24) + ' en 24 h')] : null), '.'));
     } else if (F.prots.length) {
       const p = F.prots[0];
-      card.append(el('h4', null, 'Las partes de ' + p[1] + ' en DefiLlama'), el('p', { class: 'cs' }, 'Capital depositado por partes (dato diario del índice). El TVL es dinero de los usuarios, no del protocolo ni del token.'),
+      card.append(el('h4', null, 'Las partes de ' + p[1] + ' en DefiLlama'), el('p', { class: 'cs' }, 'Capital depositado por partes (dato del índice propio, que se relee cada 6 h). El TVL es dinero de los usuarios, no del protocolo ni del token.'),
         p[10] && p[10].length ? UI.tabla({ pp: 8, buscar: false, rows: p[10].slice().sort((a, b) => b[3] - a[3]), onRow: (h) => window.open('https://defillama.com/protocol/' + h[0], '_blank', 'noopener'), cols: [{ t: 'Parte', v: (h) => h[1] }, { t: 'Categoría', v: (h) => h[2] || '—' }, { t: 'TVL', v: (h) => m(h[3]), o: (h) => h[3], num: true }] }) : el('p', { class: 'hint' }, p[1] + ': ' + m(p[4]) + ' depositados en ' + n(p[3]) + ' cadenas.'),
         F.prots.length > 1 ? el('p', { class: 'hint' }, 'También en DefiLlama: ' + F.prots.slice(1).map((q) => q[1] + ' (TVL ' + m(q[4]) + ')').join(', ') + '.') : null,
-        el('p', { class: 'fuente' }, 'De dónde sale: ', ext('https://defillama.com/protocol/' + p[0], 'ficha de ' + p[1] + ' en DefiLlama'), ' · ', ext('https://api.llama.fi/protocols', 'lista completa de protocolos (fuente del índice diario)'), '.'));
+        el('p', { class: 'fuente' }, 'De dónde sale: ', ext('https://defillama.com/protocol/' + p[0], 'ficha de ' + p[1] + ' en DefiLlama'), ' · ', ext('https://api.llama.fi/protocols', 'lista completa de protocolos (fuente del índice propio)'), '.'));
     } else card.append(el('h4', null, 'Aplicaciones y ecosistema'), el('div', { class: 'sd' }, el('b', null, 'Sin dato. '), s + ' no es una cadena ni un protocolo con datos en DefiLlama.'));
     return card;
   }
   function abrirProtocolo(F, p) {
-    UI.abrir('Capital depositado en ' + p[1], () => el('div', null, el('p', { class: 'serie-nota' }, etq('tvl'), 'TVL de ' + p[1] + ' según el índice diario (DefiLlama), leído el ' + idxFecha() + idxViejo() + ': ' + m(p[4]) + '; un día antes ' + m(p[5]) + ', una semana antes ' + m(p[6]) + ' y un mes antes ' + m(p[7]) + '. Es dinero de los usuarios depositado en la aplicación, no del protocolo.'), p[10] ? UI.tabla({ pp: 10, buscar: false, rows: p[10].slice().sort((a, b) => b[3] - a[3]), cols: [{ t: 'Parte', v: (h) => h[1] }, { t: 'Categoría', v: (h) => h[2] || '—' }, { t: 'TVL', v: (h) => m(h[3]), o: (h) => h[3], num: true }] }) : null, el('p', { class: 'fuente' }, 'De dónde sale: ', ext('https://defillama.com/protocol/' + p[0], 'ficha de ' + p[1] + ' en DefiLlama'), ' · ', ext('https://api.llama.fi/protocols', 'lista completa de protocolos (fuente del índice diario)'), '.')), { ancho: true, sub: 'Dato diario' });
+    UI.abrir('Capital depositado en ' + p[1], () => el('div', null, el('p', { class: 'serie-nota' }, etq('tvl'), 'TVL de ' + p[1] + ' según el índice propio (DefiLlama), leído el ' + idxFecha() + idxViejo() + ': ' + m(p[4]) + '; un día antes ' + m(p[5]) + ', una semana antes ' + m(p[6]) + ' y un mes antes ' + m(p[7]) + '. Es dinero de los usuarios depositado en la aplicación, no del protocolo.'), p[10] ? UI.tabla({ pp: 10, buscar: false, rows: p[10].slice().sort((a, b) => b[3] - a[3]), cols: [{ t: 'Parte', v: (h) => h[1] }, { t: 'Categoría', v: (h) => h[2] || '—' }, { t: 'TVL', v: (h) => m(h[3]), o: (h) => h[3], num: true }] }) : null, el('p', { class: 'fuente' }, 'De dónde sale: ', ext('https://defillama.com/protocol/' + p[0], 'ficha de ' + p[1] + ' en DefiLlama'), ' · ', ext('https://api.llama.fi/protocols', 'lista completa de protocolos (fuente del índice propio)'), '.')), { ancho: true, sub: 'Dato del índice (cada 6 h)' });
   }
 
   /* ---- 8) pie: fuentes, hora, método ---- */
@@ -1032,15 +1032,15 @@
       el('p', { class: 'fuente' }, 'De dónde sale: ', ext(F.urlTestigos, 'lista de validadores en TronScan'), '.')), { ancho: true, sub: 'TronScan, en vivo' });
   }
   function abrirCambios(F) {
-    UI.abrir('Cambios de método o de cobertura que afectan a ' + F.nombre, () => el('div', null, el('p', { class: 'serie-nota' }, 'El índice diario guarda cada día el texto de método de DefiLlama y la lista de métricas de Coin Metrics. Cuando cambian, se anota aquí: un salto de la serie en esas fechas puede deberse a la fuente, no al activo.' + ((F.primeras || []).length ? ' No se cuentan aquí ' + F.primeras.length + (F.primeras.length === 1 ? ' método que se anotó' : ' métodos que se anotaron') + ' por primera vez (' + [...new Set(F.primeras.map((c) => c.fecha))].sort().join(', ') + '): eso no es un cambio.' : '')),
-      UI.tabla({ pp: 10, rows: F.cambios.slice().reverse(), csv: 'cambios-' + F.simbolo, cols: [{ t: 'Fecha', v: (c) => c.fecha }, { t: 'Qué', v: (c) => (c.tipo === 'metodo' ? 'Método · ' : 'Cobertura · ') + c.clave }, { t: 'Antes', v: (c) => (typeof c.antes === 'string' ? c.antes : c.antes ? Object.entries(c.antes).map(([k, v]) => k + ': ' + v).join(' | ') : '—') }, { t: 'Después', v: (c) => (typeof c.despues === 'string' ? c.despues : c.despues ? Object.entries(c.despues).map(([k, v]) => k + ': ' + v).join(' | ') : '—') }] })), { ancho: true, sub: 'Índice diario de EquipoIA' });
+    UI.abrir('Cambios de método o de cobertura que afectan a ' + F.nombre, () => el('div', null, el('p', { class: 'serie-nota' }, 'El índice guarda en cada lectura (cada 6 horas) el texto de método de DefiLlama y la lista de métricas de Coin Metrics. Cuando cambian, se anota aquí: un salto de la serie en esas fechas puede deberse a la fuente, no al activo.' + ((F.primeras || []).length ? ' No se cuentan aquí ' + F.primeras.length + (F.primeras.length === 1 ? ' método que se anotó' : ' métodos que se anotaron') + ' por primera vez (' + [...new Set(F.primeras.map((c) => c.fecha))].sort().join(', ') + '): eso no es un cambio.' : '')),
+      UI.tabla({ pp: 10, rows: F.cambios.slice().reverse(), csv: 'cambios-' + F.simbolo, cols: [{ t: 'Fecha', v: (c) => c.fecha }, { t: 'Qué', v: (c) => (c.tipo === 'metodo' ? 'Método · ' : 'Cobertura · ') + c.clave }, { t: 'Antes', v: (c) => (typeof c.antes === 'string' ? c.antes : c.antes ? Object.entries(c.antes).map(([k, v]) => k + ': ' + v).join(' | ') : '—') }, { t: 'Después', v: (c) => (typeof c.despues === 'string' ? c.despues : c.despues ? Object.entries(c.despues).map(([k, v]) => k + ': ' + v).join(' | ') : '—') }] })), { ancho: true, sub: 'Índice de EquipoIA, se relee cada 6 h' });
   }
 
   /* ================= arranque ================= */
   document.addEventListener('DOMContentLoaded', async () => {
     C.chartDefaults && C.chartDefaults();
     await pIdx;
-    if (idxError) avisar('El índice diario no se pudo leer (' + idxError.message + '): el buscador preguntará a CoinGecko y la ficha no tendrá DefiLlama ni Coin Metrics.');
+    if (idxError) avisar('El índice propio no se pudo leer (' + idxError.message + '): el buscador preguntará a CoinGecko y la ficha no tendrá DefiLlama ni Coin Metrics.');
     const qs = new URLSearchParams(location.search), q = qs.get('token'), cmp = (qs.get('comparar') || '').split(',').map((x) => x.trim()).filter(Boolean);
     pintarChips();
     if (cmp.length >= 2) { comparando = cmp.slice(0, 4); pintarChips(); comparar(); }

@@ -23,8 +23,8 @@
   const corta = (dir) => dir.slice(0, 6) + '…' + dir.slice(-5);
   const mt = (x) => (x >= 1e6 ? n(x / 1e6, 1) + ' M' : n(x / 1e3, 0) + ' k');
   const DIAS = ['dom', 'lun', 'mar', 'mié', 'jue', 'vie', 'sáb'];
-  // lectura anticuada: los ficheros diarios se consideran viejos a partir de 48 h (igual que la barra de arriba)
-  const antiguedad = (iso, fuente) => { const h = (Date.now() - Date.parse(iso)) / HORA; return h > 48 ? pie('⚠ ' + fuente + ' sin actualizar desde hace ' + Math.round(h / 24) + ' días', 'warn') : pie(fuente + ' · lectura del ' + ddmm(iso) + ' ' + hhmm(iso)); };
+  // lectura anticuada: los ficheros que se releen cada 6 horas se consideran viejos a partir de 13 h (dos lecturas perdidas; igual que la barra de arriba)
+  const antiguedad = (iso, fuente) => { const h = (Date.now() - Date.parse(iso)) / HORA; return h > 13 ? pie('⚠ ' + fuente + ' sin actualizar desde hace ' + (h < 48 ? Math.round(h) + ' horas' : Math.round(h / 24) + ' días'), 'warn') : pie(fuente + ' · lectura del ' + ddmm(iso) + ' ' + hhmm(iso)); };
   const cada = (ms, fn) => { const tic = () => { if (!document.hidden) fn(); }; setInterval(tic, ms); };
 
   /* =============== 1 · artículos de Medium (rotan solos) =============== */
@@ -224,7 +224,7 @@
     for (const r of idx.informes) {
       const nov = NOV.find((x) => x.caso === r.slug); if (nov && (!ultima || Date.parse(nov.fecha) > Date.parse(ultima))) ultima = nov.fecha;
       const a = el('a', { class: 'lcaso', href: r.url || 'report.html?r=' + encodeURIComponent(r.slug) }, el('b', null, r.caso || r.titulo),
-        el('div', { class: 'lc2' }, (r.version ? r.version + ' · ' : '') + (r.corte ? 'datos hasta ' + ddmm(r.corte) : 'se relee una vez al día') + (nov ? ' · última novedad ' + N.fecha(nov.fecha) : '')),
+        el('div', { class: 'lc2' }, (r.version ? r.version + ' · ' : '') + (r.corte ? 'datos hasta ' + ddmm(r.corte) : 'se relee cada 6 horas') + (nov ? ' · última novedad ' + N.fecha(nov.fecha) : '')),
         window.CASO ? el('div', { class: 'lc2' }, window.CASO.etiquetas(r).map((e) => e.texto).join(' · ')) : null);
       box.append(a);
       if (r.url) continue;
@@ -297,7 +297,7 @@
       l('herramientas.html#z-mercado', 'Mercado', 'Ver →'),
       l('herramientas.html#z-trx', 'TRX: descongelaciones, reparto y quema', 'Ver →'),
       l('datos.html', 'De dónde sale cada cifra', 'Datos y método →'),
-      pie('Unas leen en el momento y otras una lectura diaria u horaria: cada una dice de cuándo es su dato'));
+      pie('Unas leen en el momento y otras una lectura hecha cada hora o cada 6 horas: cada una dice de cuándo es su dato'));
   }
 
   /* =============== montaje =============== */
@@ -312,7 +312,7 @@
     if (cas) derSec.append(cas);
     derSec.append(masHerramientas());
     der.append(apartado('En cifras', '', mercadoMini(), u0, trx));
-    // los ficheros diarios se vuelven a leer cada hora, por si la tarea de las 07:00 ha publicado algo nuevo
+    // los ficheros se vuelven a leer cada hora, por si la tarea (cada 6 horas) ha publicado algo nuevo
     cada(60 * 60000, async () => {
       const [m2, d2] = await Promise.all([medium(), desbloqueos()]);
       if (m2 && med) { med.replaceWith(m2); med = m2; }

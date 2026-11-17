@@ -29,7 +29,7 @@
     cuerpo.append(el('details', { class: 'como' }, el('summary', null, 'En pocas palabras: ¿qué es esto y cómo funciona?'),
       el('p', { html: '<b>USDT0</b> es el dólar digital de Tether preparado para viajar entre muchas redes con el sistema LayerZero. El <b>USDT de verdad queda guardado en un contrato de Ethereum</b> (el «adaptador») y en cada red se crea una cantidad igual de USDT0. Si todo cuadra, el USDT guardado es <b>igual o mayor</b> que el USDT0 que anda por las redes.' }),
       el('p', { html: 'Aquí ves cuánto hay en cada red, si el respaldo cuadra, qué direcciones tienen el USDT0 bloqueado y cómo van los mensajes que mueven el dinero de una red a otra. <b>Cada cifra se puede pulsar</b> para llegar a la tabla de la que sale, y cada fila lleva a su contrato, dirección o mensaje en un explorador público.' })));
-    cuerpo.append(el('div', { class: 'res-head ' + (edad > 48 ? 'warn' : '') }, el('div', { class: 'sub2' }, el('b', null, 'Lectura del ' + fh(Date.parse(D.leidoEn))), ' (' + cuando(edad) + ') · las cifras de circulación y respaldo se leyeron entonces directamente en la cadena; lo de bloqueos y mensajes lo anotó el vigilante de USDT0 a las ' + fh(Date.parse(V.generadoEn)).slice(11) + '.')));
+    cuerpo.append(el('div', { class: 'res-head ' + (edad > 13 ? 'warn' : '') }, el('div', { class: 'sub2' }, el('b', null, 'Lectura del ' + fh(Date.parse(D.leidoEn))), ' (' + cuando(edad) + ') · las cifras de circulación y respaldo se leyeron entonces directamente en la cadena; lo de bloqueos y mensajes lo anotó el vigilante de USDT0 a las ' + fh(Date.parse(V.generadoEn)).slice(11) + '.')));
 
     /* ---- las cajas de detalle (se crean antes para que las cifras puedan llevar a ellas) ---- */
     const total = C0.totalUsd;
@@ -97,7 +97,7 @@
     cuerpo.append(el('div', { class: 'ayuda' }, [
       { k: 'De dónde sale', v: 'Circulación y respaldo: leídos directamente en cada red con los nodos públicos configurados (uno o dos por red); donde hay dos tienen que dar el mismo número, y la tabla dice cuántos lo dieron' + (unNodo.length ? ' (' + n(unNodo.length) + ' redes, el ' + n(parteUnNodo * 100, 0) + ' % del USDT0, se leen con un solo nodo)' : '') + '. Bloqueos y mensajes: el vigilante de USDT0 de EquipoIA (' + n(V.safes.total) + ' cuentas multifirma leídas en las redes, ' + (V.safes.tresDeCinco === V.safes.total ? 'todas con 3 firmas de 5' : n(V.safes.tresDeCinco) + ' con 3 firmas de 5') + '; lectura de ' + fh(Date.parse(V.generadoEn)) + ').' },
       { k: 'Qué NO cubre', v: 'No mide Stellar, IOTA ni HyperCore. En ' + n(V.huecosDeHistorialAbiertos) + ' puntos de la historia (redes cuyos nodos públicos no guardan todo el pasado) el vigilante no ha podido leer los bloqueos antiguos, así que los bloqueos viejos de esas redes pueden faltar. La cifra de «bloqueadas» es la que consta en lo que sí se ha leído. Cuatro redes (Stable, Tempo, MegaETH y Hedera) no tienen explorador enlazado: se enseña la dirección para copiarla.' },
-      { k: 'Cuándo se actualiza', v: 'Una vez al día. Para una dirección concreta, «Comprobar» ' + alcance + '.' }].map((i) => el('div', { class: 'ai' }, el('b', null, i.k + '. '), el('span', { html: i.v })))));
+      { k: 'Cuándo se actualiza', v: 'Cada 6 horas. Para una dirección concreta, «Comprobar» ' + alcance + '.' }].map((i) => el('div', { class: 'ai' }, el('b', null, i.k + '. '), el('span', { html: i.v })))));
     raiz.replaceChildren(cuerpo);
   }
 

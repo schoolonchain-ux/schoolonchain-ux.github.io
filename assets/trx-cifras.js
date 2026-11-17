@@ -12,7 +12,7 @@
   const irA = (nodo) => { nodo.scrollIntoView({ behavior: 'smooth', block: 'start' }); nodo.classList.add('flash'); setTimeout(() => nodo.classList.remove('flash'), 1800); };
   const ext = (href, texto) => el('a', { class: 'lnk', href, target: '_blank', rel: 'noopener', title: 'Se abre en otra pestaña' }, texto);
   const caja = (titulo, ...k) => el('div', { class: 'card', style: 'margin:12px 0' }, titulo ? el('h3', null, titulo) : null, ...k);
-  const lectura = (iso, extra) => { const h = (Date.now() - Date.parse(iso)) / 3600000; return el('div', { class: 'res-head ' + (h > 48 ? 'warn' : '') }, el('div', { class: 'sub2' }, el('b', null, 'Lectura del ' + fh(Date.parse(iso))), ' (' + cuando(h) + '). ' + extra)); };
+  const lectura = (iso, extra) => { const h = (Date.now() - Date.parse(iso)) / 3600000; return el('div', { class: 'res-head ' + (h > 13 ? 'warn' : '') }, el('div', { class: 'sub2' }, el('b', null, 'Lectura del ' + fh(Date.parse(iso))), ' (' + cuando(h) + '). ' + extra)); };
   const aviso = (cont, titulo, msg) => cont.replaceChildren(el('div', { class: 'res-head warn' }, el('div', { class: 'big' }, titulo), el('div', { class: 'sub2' }, msg)));
   const traer = (u) => fetch(u + '?v=' + Math.floor(Date.now() / 600000), { signal: AbortSignal.timeout(15000) }).then((r) => { if (!r.ok) throw new Error('HTTP ' + r.status); return r.json(); });
 

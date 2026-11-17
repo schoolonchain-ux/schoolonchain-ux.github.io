@@ -24,7 +24,7 @@
       el('p', null, r.resumen || ''));
     const zona = el('div'); a.append(zona);
     const ultima = NOV.find((x) => x.caso === r.slug); if (ultima && window.NOVEDADES) a.append(window.NOVEDADES.linea(ultima, { enlace: false }));
-    a.append(el('div', { class: 'foot' }, el('span', null, r.corte ? 'Datos hasta ' + r.corte.replace('T', ' ').slice(0, 16) + ' UTC' : 'Se relee una vez al día'), el('span', null, 'Abrir panel →')));
+    a.append(el('div', { class: 'foot' }, el('span', null, r.corte ? 'Datos hasta ' + r.corte.replace('T', ' ').slice(0, 16) + ' UTC' : 'Se relee cada 6 horas'), el('span', null, 'Abrir panel →')));
     box.append(a);
     if (r.url) continue;
     try {

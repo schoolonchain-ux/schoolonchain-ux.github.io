@@ -1,6 +1,6 @@
 /* Lectura del día del Observatorio de mercado. La escribe este programa con reglas fijas: sin IA y sin opinión.
    Dos pasos, los dos puros (no leen nada de fuera):
-   - hechos(D, filas): saca de la lectura diaria (data/mercado.json) y de la serie propia (data/mercado-serie.json) las cifras que se van a decir.
+   - hechos(D, filas): saca de la última lectura (data/mercado.json) y de la serie propia (data/mercado-serie.json) las cifras que se van a decir.
    - frases(H): con esas cifras escribe cinco puntos (el día, el capital, la liquidez, la volatilidad y los desacoples). Cada cifra lleva una
      referencia («ref») para que la página abra su ficha de origen. Lo que no se puede calcular no se dice: la frase se acorta o el punto no sale.
    Las reglas (umbrales y palabras) están en REGLAS y son las mismas que la página enseña en «Cómo se escribe esta lectura».
@@ -23,7 +23,7 @@
   const REGLAS = [
     ['El día', 'Se cuenta el último día cerrado (en UTC) de cada activo de la cesta: cuántos cerraron por encima del cierre anterior y cuál es la mediana de los cambios. Con el ' + AMPLITUD[0][0] * 100 + ' % o más al alza se dice «subidas casi generales»; del ' + AMPLITUD[1][0] * 100 + ' al ' + AMPLITUD[0][0] * 100 + ' %, «más subidas que bajadas»; entre el ' + AMPLITUD[2][0] * 100 + ' y el ' + AMPLITUD[1][0] * 100 + ' %, «repartido»; y lo mismo al revés para las bajadas. Un activo sin cierre ese día no cuenta. Con menos de ' + MIN_CESTA + ' activos no se dice nada. El sector es la mediana de sus activos, con ' + MIN_SECTOR + ' como mínimo.'],
     ['El capital', 'Capitalización total y peso de bitcoin y ether según CoinGecko; las stablecoins, según DefiLlama. El peso de bitcoin se compara con la última foto de otro día guardada en la serie propia; si la diferencia es menor de ' + String(IGUAL_PUNTOS).replace('.', ',') + ' puntos se dice que es el mismo.'],
-    ['La liquidez', 'Se suman los libros de Binance de la lectura diaria: dinero esperando para comprar y para vender a menos de un 1 % del precio. Si la diferencia entre los dos lados es menor del ' + PAREJO * 100 + ' % de la suma se dice que están parejos. La comparación con otro día usa solo los libros que están en las dos fotos.'],
+    ['La liquidez', 'Se suman los libros de Binance de la última lectura: dinero esperando para comprar y para vender a menos de un 1 % del precio. Si la diferencia entre los dos lados es menor del ' + PAREJO * 100 + ' % de la suma se dice que están parejos. La comparación con otro día usa solo los libros que están en las dos fotos.'],
     ['La volatilidad', 'Estado de bitcoin según el percentil de su volatilidad a 30 días dentro de su propia historia (calma, normal, agitado, extremo), hoy y el día anterior: si cambia se dice «pasa de… a…». Se cuentan los activos agitados o en extremo. La volatilidad esperada es el índice de Deribit del último día cerrado.'],
     ['Los desacoples', 'Un activo «se desacopla» cuando su correlación a 30 días con bitcoin ha caído ' + String(UMBRAL_DES).replace('.', ',') + ' o más respecto a los 30 días anteriores. La misma cuenta se hace con los datos hasta el día anterior para decir quién entra en la lista y quién sale.'],
   ];
@@ -124,7 +124,7 @@
 
     if (H.liquidez) {
       const l = H.liquidez; const mas = l.alMenos ? 'al menos ' : '';
-      const p = ['En ' + (l.n === 1 ? 'el libro' : 'los ' + l.n + ' libros') + ' de Binance de la foto diaria había ' + mas, { t: mUsd(l.compras), ref: 'liquidez' }, ' esperando para comprar y ' + mas, { t: mUsd(l.ventas), ref: 'liquidez' }, ' para vender a menos de un 1 % del precio: ' + l.lado + '.'];
+      const p = ['En ' + (l.n === 1 ? 'el libro' : 'los ' + l.n + ' libros') + ' de Binance de la última foto había ' + mas, { t: mUsd(l.compras), ref: 'liquidez' }, ' esperando para comprar y ' + mas, { t: mUsd(l.ventas), ref: 'liquidez' }, ' para vender a menos de un 1 % del precio: ' + l.lado + '.'];
       if (l.previa) p.push(' Sumados los dos lados, es un ', { t: nf(Math.abs(l.previa.cambio * 100), 1) + ' % ' + (l.previa.cambio >= 0 ? 'más' : 'menos'), ref: 'liquidez' }, ' que en la foto del ' + fd(l.previa.dia) + '.');
       out.push({ k: 'liquidez', titulo: 'La liquidez', ancla: 'liquidez', partes: p });
     }

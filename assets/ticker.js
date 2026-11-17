@@ -47,7 +47,7 @@
       const horas = (Date.now() - Date.parse(calendario.leidoEn)) / 36e5;
       const hoy = new Date().toISOString().slice(0, 10);   // el día UTC del visitante, no el de la lectura
       const its = [];
-      if (horas > 48) its.push(enlace('desbloqueos', '⚠ calendario sin actualizar desde hace ' + Math.round(horas / 24) + ' días'));
+      if (horas > 13) its.push(enlace('desbloqueos', '⚠ calendario sin actualizar desde hace ' + (horas < 48 ? Math.round(horas) + ' horas' : Math.round(horas / 24) + ' días')));
       if (K.yaDisponible) its.push(enlace('desbloqueos', el('b', null, 'Ya retirables:'), el('span', { class: 'tk-dato' }, mt(K.yaDisponible.trx) + ' · ' + num(K.yaDisponible.cuentas, 0) + ' cuentas')));
       K.porFecha.forEach((d) => its.push(enlace('desbloqueos', el('b', { class: d.dia === hoy ? 'tk-hoy' : '' }, d.dia === hoy ? 'HOY ' + fecha(d.dia) : fecha(d.dia)), el('span', { class: 'tk-dato' }, mt(d.trx) + ' · ' + num(d.cuentas, 0) + (d.cuentas === 1 ? ' cuenta' : ' cuentas')))));
       its.push(enlace('desbloqueos', 'Lectura del ' + calendario.leidoEn.slice(8, 10) + '/' + calendario.leidoEn.slice(5, 7) + ' ' + calendario.leidoEn.slice(11, 16) + ' UTC · el primer y el último día del calendario solo cuentan desde y hasta esa hora'));

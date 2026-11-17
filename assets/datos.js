@@ -22,7 +22,7 @@
       try {
         const D = await traer(d.r); const iso = D.leidoEn || D.listaDe; if (!iso || isNaN(Date.parse(iso))) throw new Error('sin fecha');
         const h = (Date.now() - Date.parse(iso)) / 3600000;
-        return el('div', { class: 'dm-row' }, el('b', null, el('span', { class: 'dm-punto' + (h > 48 ? ' warn' : '') }), d.t), el('span', null, 'Lectura del ' + fh(Date.parse(iso)) + ' (' + cuando(h) + ')' + (d.extra ? d.extra(D) : '') + (h > 48 ? ' · anticuada' : '')));
+        return el('div', { class: 'dm-row' }, el('b', null, el('span', { class: 'dm-punto' + (h > 13 ? ' warn' : '') }), d.t), el('span', null, 'Lectura del ' + fh(Date.parse(iso)) + ' (' + cuando(h) + ')' + (d.extra ? d.extra(D) : '') + (h > 13 ? ' · anticuada' : '')));
       } catch (e) {
         return el('div', { class: 'dm-row' }, el('b', null, el('span', { class: 'dm-punto bad' }), d.t), el('span', null, 'No se pudo leer ahora (' + String(e.message).slice(0, 40) + ')'));
       }
