@@ -1,15 +1,15 @@
 {
  "version": 1,
- "leidoEn": "2026-11-16T06:07:45.290Z",
- "cuentasEnLaRed": 414776183,
+ "leidoEn": "2026-11-17T00:15:01.933Z",
+ "cuentasEnLaRed": 414954326,
  "cuentasAnalizadas": 10000,
- "ofertaTrx": 95043647366,
- "saldoDeLaCuentaNTrx": 142487,
+ "ofertaTrx": 95044256494,
+ "saldoDeLaCuentaNTrx": 142891,
  "grupos": {
   "exchange": {
    "cuentas": 43,
-   "trx": 11396331798,
-   "pct": 11.991
+   "trx": 11400652686,
+   "pct": 11.995
   },
   "fondo_o_institucion": {
    "cuentas": 1,
@@ -17,18 +17,18 @@
    "pct": 0.148
   },
   "otros_etiquetados": {
-   "cuentas": 35,
-   "trx": 151964351,
+   "cuentas": 37,
+   "trx": 152121470,
    "pct": 0.16
   },
   "contrato": {
    "cuentas": 10,
-   "trx": 15161749378,
-   "pct": 15.952
+   "trx": 15153101948,
+   "pct": 15.943
   },
   "ballena_sin_identificar": {
-   "cuentas": 9911,
-   "trx": 62737260489,
+   "cuentas": 9909,
+   "trx": 62737943164,
    "pct": 66.009
   },
   "atribuido_externo": {
@@ -38,9 +38,9 @@
   }
  },
  "cola": {
-  "cuentas": 414766183,
-  "trx": 5456114354,
-  "pct": 5.741
+  "cuentas": 414944326,
+  "trx": 5460210231,
+  "pct": 5.745
  },
  "cuentasPorGrupo": {
   "exchange": [
@@ -78,7 +78,7 @@
    {
     "puesto": 24,
     "a": "TKgD8Qnx9Zw3DNvG6o83PkufnMbtEXis4T",
-    "trx": 1126556472,
+    "trx": 1126556515,
     "pct": 1.185,
     "etiqueta": "HTX-Cold 7",
     "recordada": true
@@ -86,7 +86,7 @@
    {
     "puesto": 26,
     "a": "TYh6mgoMNZTCsgpYHBz7gttEfrQmDMABub",
-    "trx": 1082093384,
+    "trx": 1082093427,
     "pct": 1.139,
     "etiqueta": "HTX Exchange",
     "recordada": true
@@ -102,28 +102,28 @@
    {
     "puesto": 46,
     "a": "TJCo98saj6WND61g1uuKwJ9GMWMT9WkJFo",
-    "trx": 555293331,
+    "trx": 555293316,
     "pct": 0.584,
     "etiqueta": "Binance 3"
    },
    {
     "puesto": 50,
     "a": "TASUAUKXCqvwYjesEWv22pFjRsCeF4NKot",
-    "trx": 450619761,
-    "pct": 0.474,
+    "trx": 448019756,
+    "pct": 0.471,
     "etiqueta": "Upbit Exchange Hot Wallet"
    },
    {
-    "puesto": 65,
+    "puesto": 66,
     "a": "TEPSrSYPDSQ7yXpMFPq91Fb1QEWpMkRGfn",
-    "trx": 135832196,
-    "pct": 0.143,
+    "trx": 135402418,
+    "pct": 0.142,
     "etiqueta": "MXC"
    },
    {
     "puesto": 83,
     "a": "TBA6CypYJizwA9XdC7Ubgc5F1bxrQ7SqPt",
-    "trx": 92014821,
+    "trx": 92058135,
     "pct": 0.097,
     "etiqueta": "Gate"
    },
@@ -135,19 +135,19 @@
     "etiqueta": "CoinSpot Exchange Wallet"
    },
    {
-    "puesto": 96,
+    "puesto": 92,
+    "a": "TJTKCzQpsG19CSMYF9TPtxz6wSHPSyeKfa",
+    "trx": 62423429,
+    "pct": 0.066,
+    "etiqueta": "Binance-Hot 12"
+   },
+   {
+    "puesto": 97,
     "a": "TDToUxX8sH4z6moQpK3ZLAN24eupu2ivA4",
     "trx": 56267261,
     "pct": 0.059,
     "etiqueta": "HTX 6",
     "recordada": true
-   },
-   {
-    "puesto": 98,
-    "a": "TJTKCzQpsG19CSMYF9TPtxz6wSHPSyeKfa",
-    "trx": 55609905,
-    "pct": 0.059,
-    "etiqueta": "Binance-Hot 12"
    },
    {
     "puesto": 101,
@@ -157,7 +157,7 @@
     "etiqueta": "Poloniex Deposit"
    },
    {
-    "puesto": 114,
+    "puesto": 113,
     "a": "TT1DyeqXaaJkt6UhVYFWUXBXknaXnBudTK",
     "trx": 42998395,
     "pct": 0.045,
@@ -166,7 +166,7 @@
    {
     "puesto": 123,
     "a": "TB37WWozkkenGVYWD7Do2N5WT2CedqDktJ",
-    "trx": 37887005,
+    "trx": 37886999,
     "pct": 0.04,
     "etiqueta": "MXC 2"
    },
@@ -178,176 +178,176 @@
     "etiqueta": "Poloniex 2"
    },
    {
-    "puesto": 129,
+    "puesto": 130,
     "a": "TU4vEruvZwLLkSfV9bNw12EJTPvNr7Pvaa",
-    "trx": 33311283,
+    "trx": 33104685,
     "pct": 0.035,
     "etiqueta": "Bybit"
    },
    {
     "puesto": 132,
     "a": "TK86Qm97uM848dMk8G7xNbJB7zG1uW3h1n",
-    "trx": 31233760,
+    "trx": 31233752,
     "pct": 0.033,
     "etiqueta": "HTX 5",
     "recordada": true
    },
    {
-    "puesto": 253,
-    "a": "TXFBqBbqJommqZf7BV8NNYzePh97UmJodJ",
-    "trx": 11085782,
-    "pct": 0.012,
-    "etiqueta": "Bitfinex"
-   },
-   {
-    "puesto": 265,
+    "puesto": 256,
     "a": "TDoXUNZ6PajKuiUkcYg3EDSV9bnqGqsbcf",
-    "trx": 10450470,
+    "trx": 10849279,
     "pct": 0.011,
     "etiqueta": "FixedFloat Exchange Hot Wallet"
    },
    {
-    "puesto": 271,
+    "puesto": 257,
+    "a": "TXFBqBbqJommqZf7BV8NNYzePh97UmJodJ",
+    "trx": 10847449,
+    "pct": 0.011,
+    "etiqueta": "Bitfinex"
+   },
+   {
+    "puesto": 279,
     "a": "TG2CMGxnTPgQ6V58kiKd7wbyN8ewtAmY76",
-    "trx": 10298495,
+    "trx": 10040933,
     "pct": 0.011,
     "etiqueta": "Kraken: Hot Wallet"
    },
    {
-    "puesto": 295,
+    "puesto": 294,
     "a": "TAYVfoeN2HX3TR1Rbytq7C26rf7Swu3aSC",
-    "trx": 9929442,
+    "trx": 9929240,
     "pct": 0.01,
     "etiqueta": "Heleket Hot Wallet 1"
    },
    {
-    "puesto": 358,
+    "puesto": 356,
     "a": "TMw1Mzm6FWu1iRAWUeJvW1BiYFGVZbBzZx",
-    "trx": 8081211,
-    "pct": 0.009,
+    "trx": 8077544,
+    "pct": 0.008,
     "etiqueta": "WestWallet Exchange Hot Wallet"
    },
    {
-    "puesto": 388,
+    "puesto": 390,
     "a": "TAA7UjjZYC7QjjTDwmbtAWciPQUFRfK8QA",
     "trx": 7590602,
     "pct": 0.008,
     "etiqueta": "Poloniex cold wallet"
    },
    {
-    "puesto": 404,
+    "puesto": 405,
     "a": "TRYL7PKCG4b4xRCM554Q5J6o8f1UjUmfnY",
     "trx": 7301498,
     "pct": 0.008,
     "etiqueta": "Kucoin-Cold"
    },
    {
-    "puesto": 565,
+    "puesto": 600,
     "a": "TP1V18T1UvFMA2RtFzLfa6n4BGkygHtWHZ",
-    "trx": 4842681,
+    "trx": 4385244,
     "pct": 0.005,
     "etiqueta": "Bithumb Exchange Hot Wallet"
    },
    {
-    "puesto": 752,
-    "a": "TE4mtETxcuHHbprQmQkyVSaCC48Q5yk21i",
-    "trx": 3254614,
+    "puesto": 786,
+    "a": "TYLRgzUKgLHw5wCYox2xRUkCQaWo9koP6K",
+    "trx": 3127906,
     "pct": 0.003,
-    "etiqueta": "Binance-Hot 16"
+    "etiqueta": "Binance-Hot 13"
    },
    {
-    "puesto": 822,
-    "a": "TDoyjmPJHzRFmYfCRLRsPhKjLETwd9fKr9",
-    "trx": 2997154,
-    "pct": 0.003,
-    "etiqueta": "Coinone"
-   },
-   {
-    "puesto": 831,
-    "a": "TGpTXS67vXyPERWMC2iQSG27TosfD13HLZ",
-    "trx": 2948511,
-    "pct": 0.003,
-    "etiqueta": "Binance-Hot 17"
-   },
-   {
-    "puesto": 895,
-    "a": "TTU4bhRuPEtaSWPXvvRQ7CVnyHs6cGu24e",
-    "trx": 2668571,
-    "pct": 0.003,
-    "etiqueta": "Binance-Hot 15"
-   },
-   {
-    "puesto": 902,
+    "puesto": 791,
     "a": "TADfh7Q4KA9LD6WfjjjcPMNra33gNRrCkb",
-    "trx": 2633322,
+    "trx": 3106596,
     "pct": 0.003,
     "etiqueta": "Binance-Hot 18"
    },
    {
-    "puesto": 964,
-    "a": "TGnBDu95RaJEaw7dJpqzHt8Sy7faayBGvj",
-    "trx": 2423389,
-    "pct": 0.003,
-    "etiqueta": "Binance-Hot 20"
-   },
-   {
-    "puesto": 1129,
-    "a": "TDB1RpAHPQdGqfb1qi8J2jLY2oGe2jSy8A",
-    "trx": 2049888,
-    "pct": 0.002,
-    "etiqueta": "Binance-Hot 19"
-   },
-   {
-    "puesto": 1134,
-    "a": "TYLRgzUKgLHw5wCYox2xRUkCQaWo9koP6K",
-    "trx": 2040546,
-    "pct": 0.002,
-    "etiqueta": "Binance-Hot 13"
-   },
-   {
-    "puesto": 1415,
+    "puesto": 813,
     "a": "TNiXZSD38dwRjZ5fXKn1im8crWkfqzskvH",
-    "trx": 1612428,
-    "pct": 0.002,
+    "trx": 3019892,
+    "pct": 0.003,
     "etiqueta": "Binance-Hot 21"
    },
    {
-    "puesto": 1603,
+    "puesto": 860,
+    "a": "TDoyjmPJHzRFmYfCRLRsPhKjLETwd9fKr9",
+    "trx": 2855542,
+    "pct": 0.003,
+    "etiqueta": "Coinone"
+   },
+   {
+    "puesto": 904,
+    "a": "TDB1RpAHPQdGqfb1qi8J2jLY2oGe2jSy8A",
+    "trx": 2627828,
+    "pct": 0.003,
+    "etiqueta": "Binance-Hot 19"
+   },
+   {
+    "puesto": 948,
+    "a": "TTU4bhRuPEtaSWPXvvRQ7CVnyHs6cGu24e",
+    "trx": 2495161,
+    "pct": 0.003,
+    "etiqueta": "Binance-Hot 15"
+   },
+   {
+    "puesto": 1075,
+    "a": "TGnBDu95RaJEaw7dJpqzHt8Sy7faayBGvj",
+    "trx": 2177971,
+    "pct": 0.002,
+    "etiqueta": "Binance-Hot 20"
+   },
+   {
+    "puesto": 1226,
+    "a": "TLaGjwhvA8XQYSxFAcAXy7Dvuue9eGYitv",
+    "trx": 1908427,
+    "pct": 0.002,
+    "etiqueta": "OKX Hot Wallet 8"
+   },
+   {
+    "puesto": 1265,
+    "a": "TGpTXS67vXyPERWMC2iQSG27TosfD13HLZ",
+    "trx": 1845841,
+    "pct": 0.002,
+    "etiqueta": "Binance-Hot 17"
+   },
+   {
+    "puesto": 1647,
     "a": "TCQ8X6x9GiK4khydWVKfLJvm8H6WK3RE8B",
-    "trx": 1396161,
+    "trx": 1348101,
     "pct": 0.001,
     "etiqueta": "Binance-Hot 14"
    },
    {
-    "puesto": 1917,
-    "a": "TLaGjwhvA8XQYSxFAcAXy7Dvuue9eGYitv",
-    "trx": 1127409,
+    "puesto": 1667,
+    "a": "TE4mtETxcuHHbprQmQkyVSaCC48Q5yk21i",
+    "trx": 1334643,
     "pct": 0.001,
-    "etiqueta": "OKX Hot Wallet 8"
+    "etiqueta": "Binance-Hot 16"
    },
    {
-    "puesto": 2870,
+    "puesto": 1727,
     "a": "TJ7hhYhVhaxNx6BPyq7yFpqZrQULL3JSdb",
-    "trx": 721301,
+    "trx": 1284151,
     "pct": 0.001,
     "etiqueta": "Bitget 9"
    },
    {
-    "puesto": 3842,
+    "puesto": 3854,
     "a": "TFrRVZFoHty7scd2a1q6BDxPU5fyqiB4iR",
     "trx": 505002,
     "pct": 0.001,
     "etiqueta": "Bitget 1"
    },
    {
-    "puesto": 4573,
+    "puesto": 4579,
     "a": "TM1zzNDZD2DPASbKcgdVoTYhfmYgtfwx9R",
     "trx": 401284,
     "pct": 0,
     "etiqueta": "Okex 1"
    },
    {
-    "puesto": 8253,
+    "puesto": 8273,
     "a": "TUpHuDkiCCmwaTZBHZvQdwWzGNm5t8J2b9",
     "trx": 183408,
     "pct": 0,
@@ -358,21 +358,21 @@
    {
     "puesto": 1,
     "a": "TU3kjFuhtEo42tsCBtfYUAZxoqQ4yuSLQ5",
-    "trx": 9872508405,
-    "pct": 10.387,
+    "trx": 9873106801,
+    "pct": 10.388,
     "etiqueta": "STRXProxy"
    },
    {
     "puesto": 2,
     "a": "TNUC9Qb1rRpS5CbWLmNMxXBjyFoydXjWFR",
-    "trx": 3396668249,
-    "pct": 3.574,
+    "trx": 3391419069,
+    "pct": 3.568,
     "etiqueta": "WTRX"
    },
    {
     "puesto": 15,
     "a": "TE2RzoSV3wFK99w6J9UnnZ4vLfXYoxvRwP",
-    "trx": 1575849049,
+    "trx": 1575807205,
     "pct": 1.658,
     "etiqueta": "CEther"
    },
@@ -384,42 +384,42 @@
     "etiqueta": "TWjkoz18Y48SgWoxEeGG11ezCCzee8wo1A"
    },
    {
-    "puesto": 75,
+    "puesto": 76,
     "a": "TVjuTE3V5bMVdpfNhid8kD2v35T2k1u1Br",
-    "trx": 109560074,
-    "pct": 0.115,
+    "trx": 105605604,
+    "pct": 0.111,
     "etiqueta": "PoolManager"
    },
    {
-    "puesto": 161,
+    "puesto": 160,
     "a": "TDXSzDdCtHaewUshMSkHUWE1fADfxHRRVR",
     "trx": 21521599,
     "pct": 0.023,
     "etiqueta": "EclipcityGlobalInsurance"
    },
    {
-    "puesto": 217,
+    "puesto": 216,
     "a": "TFi3v5PtYRnVdC43qSvPR3upZhgreiURga",
     "trx": 14316411,
     "pct": 0.015,
     "etiqueta": "TFi3v5PtYRnVdC43qSvPR3upZhgreiURga"
    },
    {
-    "puesto": 227,
+    "puesto": 226,
     "a": "TEWQKz9Rzn4rtNPgcChKW4C7vC5BayJFrT",
     "trx": 13345774,
     "pct": 0.014,
     "etiqueta": "SunStakerSimpleStandAlone"
    },
    {
-    "puesto": 241,
+    "puesto": 240,
     "a": "TCkBkQBnSmsNXJvdn5ihPKUjUSHrjfT5xv",
-    "trx": 12124831,
+    "trx": 12124500,
     "pct": 0.013,
     "etiqueta": "TCkBkQBnSmsNXJvdn5ihPKUjUSHrjfT5xv"
    },
    {
-    "puesto": 256,
+    "puesto": 254,
     "a": "TXXD6jwUYdPRcMA3CP6gCWPQPY7LwrD5mZ",
     "trx": 10870897,
     "pct": 0.011,
@@ -439,243 +439,257 @@
    {
     "puesto": 106,
     "a": "TA3fr8DX9EJjE1LunfWZcrHmz6qVbhtwLA",
-    "trx": 46677569,
-    "pct": 0.049,
+    "trx": 47207685,
+    "pct": 0.05,
     "etiqueta": "TronLucky DepositAndWithdraw 1"
    },
    {
     "puesto": 136,
     "a": "TU5zwe3736jK1y2kZvQbi8YiPWg28LHss1",
-    "trx": 29835315,
+    "trx": 29834833,
     "pct": 0.031,
     "etiqueta": "TronLucky DepositAndWithdraw 2"
    },
    {
-    "puesto": 173,
+    "puesto": 171,
     "a": "TDD97yguPESTpcrJMqU6h2ozZbibv4Vaqm",
-    "trx": 18902538,
+    "trx": 18898222,
     "pct": 0.02,
     "etiqueta": "SR Partners"
    },
    {
-    "puesto": 386,
+    "puesto": 388,
     "a": "TCot7EFnbvCqAyboVyRBSEL15nfBQiwrVq",
-    "trx": 7626440,
+    "trx": 7627403,
     "pct": 0.008,
     "etiqueta": "SR Partners"
    },
    {
-    "puesto": 416,
+    "puesto": 417,
     "a": "TAHg5zi2ejWeWiE6bqtDT9vfbH3zNTWrfA",
     "trx": 7097477,
     "pct": 0.007,
     "etiqueta": "SR Partners"
    },
    {
-    "puesto": 424,
+    "puesto": 425,
     "a": "TMG95kirH4cKW5GnKoCcCye1dBqbt77yGu",
     "trx": 6975373,
     "pct": 0.007,
     "etiqueta": "SR Partners"
    },
    {
-    "puesto": 425,
+    "puesto": 426,
     "a": "TQgxyP1jDXGBvmgwqnJ7jKkEqWEogfRM5V",
-    "trx": 6915320,
+    "trx": 6922748,
     "pct": 0.007,
     "etiqueta": "Well Wallet Hot 2"
    },
    {
-    "puesto": 632,
+    "puesto": 626,
     "a": "TCTSGYpsV7hjvaFDrjzcvWr9UU7pWyjHnR",
-    "trx": 4086075,
+    "trx": 4151974,
     "pct": 0.004,
     "etiqueta": "Cobo Custody"
    },
    {
-    "puesto": 730,
+    "puesto": 733,
     "a": "TL9ihHWHkqXd11HFdCtyTx2r6qmVH7cfJg",
-    "trx": 3371945,
+    "trx": 3371236,
     "pct": 0.004,
     "etiqueta": "Swapster Wallet"
    },
    {
-    "puesto": 803,
+    "puesto": 805,
     "a": "TFteLKKHFVG47aVcj2sqUAWT7gzFbdQ7M7",
     "trx": 3050004,
     "pct": 0.003,
     "etiqueta": "ONUS Exchange Hot Wallet"
    },
    {
-    "puesto": 1405,
+    "puesto": 1407,
     "a": "TK4qxwmq8nDeymtjxzXMkPzq4Gsb39fkLu",
-    "trx": 1628092,
+    "trx": 1628300,
     "pct": 0.002,
     "etiqueta": "SR Partners"
    },
    {
-    "puesto": 1531,
+    "puesto": 1534,
     "a": "TQFemZuyBZKaaARRDuDfvDvQsdpDb9Qt7v",
     "trx": 1485071,
     "pct": 0.002,
     "etiqueta": "SR Partners"
    },
    {
-    "puesto": 1546,
+    "puesto": 1548,
     "a": "THCoSKZdoki8bgmvyNnubCctPqb5sm8UX3",
-    "trx": 1462547,
+    "trx": 1465870,
     "pct": 0.002,
     "etiqueta": "TRXfee Energy Rent"
    },
    {
-    "puesto": 1585,
+    "puesto": 1586,
     "a": "TVdSuBp3zL2E1tWYH4N4Jd6D47BFJEeWad",
-    "trx": 1405235,
+    "trx": 1410477,
     "pct": 0.001,
     "etiqueta": "TronLucky Energy Fee"
    },
    {
-    "puesto": 1736,
+    "puesto": 1739,
     "a": "TMxmWh1MEcyyHiNq2aBbHAbzyiGdXrF9V7",
-    "trx": 1272403,
+    "trx": 1272369,
     "pct": 0.001,
     "etiqueta": "SR Partners"
    },
    {
-    "puesto": 1781,
+    "puesto": 1771,
     "a": "TApNqy5BNx11TiNa7oibbBUV63BY5a2sNE",
-    "trx": 1223861,
+    "trx": 1249437,
     "pct": 0.001,
     "etiqueta": "OURBIT Exchange Hot Wallet"
    },
    {
-    "puesto": 1802,
+    "puesto": 1812,
     "a": "TYR4w7SWcaWCHHoTvvR5aVWh6y7pa6wgdK",
-    "trx": 1215698,
+    "trx": 1213818,
     "pct": 0.001,
     "etiqueta": "VIR8 Hot Wallet 1"
    },
    {
-    "puesto": 1911,
+    "puesto": 1916,
     "a": "TJP6zoGwWwUmANvMdrtqYq9iWA8qMAAY4q",
-    "trx": 1130393,
+    "trx": 1130373,
     "pct": 0.001,
     "etiqueta": "OURBIT Exchange Reserves"
    },
    {
-    "puesto": 2073,
-    "a": "TMe5mY83AmKreStw4PDaWGH8ds74i8KnSY",
-    "trx": 1047292,
-    "pct": 0.001,
-    "etiqueta": "MaskEX Hot Wallet 69"
-   },
-   {
-    "puesto": 2401,
+    "puesto": 2404,
     "a": "TWVVi4x2QNhRJyhqa7qrwM4aSXnXoUDDwY",
-    "trx": 915371,
+    "trx": 915395,
     "pct": 0.001,
     "etiqueta": "SR Partners"
    },
    {
-    "puesto": 2748,
+    "puesto": 2752,
     "a": "T9yD14Nj9j7xAB4dbGeiX9h8unkKHxuWwb",
-    "trx": 773793,
+    "trx": 773802,
     "pct": 0.001,
     "etiqueta": "Black Hole Address(0)"
    },
    {
-    "puesto": 3295,
+    "puesto": 3303,
     "a": "TA6SbszfFYC7NYt48viCM9LMD5F5E1Gbi8",
     "trx": 600111,
     "pct": 0.001,
     "etiqueta": "Flipster Exchange Hot Wallet"
    },
    {
-    "puesto": 4260,
+    "puesto": 4270,
     "a": "TA31NvjYtYm8kTKHy2XcBvRRRubptFUWuw",
-    "trx": 444177,
+    "trx": 444184,
     "pct": 0,
     "etiqueta": "SR Partners"
    },
    {
-    "puesto": 4667,
+    "puesto": 4668,
+    "a": "TMe5mY83AmKreStw4PDaWGH8ds74i8KnSY",
+    "trx": 397294,
+    "pct": 0,
+    "etiqueta": "MaskEX Hot Wallet 69"
+   },
+   {
+    "puesto": 4674,
     "a": "TRSMQteQDRt4kHoaQ8uU24WHPrTsDTZEVR",
     "trx": 396783,
     "pct": 0,
     "etiqueta": "SR Partners"
    },
    {
-    "puesto": 5170,
-    "a": "TWBPGLwQw2EbqYLLw1DJnTDt2ZQ9yJW1JJ",
-    "trx": 342141,
-    "pct": 0,
-    "etiqueta": "WhiteBIT"
-   },
-   {
-    "puesto": 5864,
+    "puesto": 5866,
     "a": "TGcwj4sP1iiSwMrMEPmDw43J1V3CehK7rM",
-    "trx": 293975,
+    "trx": 294774,
     "pct": 0,
     "etiqueta": "SR Partners"
    },
    {
-    "puesto": 6236,
+    "puesto": 6246,
     "a": "TDwuXCnmcGMDd6RWzgvPHaT4e1SxBCwUYo",
-    "trx": 267554,
+    "trx": 267664,
     "pct": 0,
     "etiqueta": "TRXfee Energy Rent"
    },
    {
-    "puesto": 6868,
+    "puesto": 6860,
+    "a": "TVXxphhFQMAMzPJsdA7CMX9reXtqvYzGNb",
+    "trx": 234012,
+    "pct": 0,
+    "etiqueta": "HiFiSwap cross-chain 3"
+   },
+   {
+    "puesto": 6888,
     "a": "TJDziZkvjTbHKpniRf6ySveef77zv7rjBW",
     "trx": 232825,
     "pct": 0,
     "etiqueta": "SR Partners"
    },
    {
-    "puesto": 7022,
-    "a": "TVXxphhFQMAMzPJsdA7CMX9reXtqvYzGNb",
-    "trx": 225325,
-    "pct": 0,
-    "etiqueta": "HiFiSwap cross-chain 3"
-   },
-   {
-    "puesto": 7190,
+    "puesto": 7232,
     "a": "TVCEYdpK6o8hBt71h82aUVbgfyyxJNMYfe",
-    "trx": 217628,
+    "trx": 216942,
     "pct": 0,
     "etiqueta": "Cropty Wallet Hot Wallet"
    },
    {
-    "puesto": 8044,
+    "puesto": 7954,
+    "a": "TWBPGLwQw2EbqYLLw1DJnTDt2ZQ9yJW1JJ",
+    "trx": 195425,
+    "pct": 0,
+    "etiqueta": "WhiteBIT"
+   },
+   {
+    "puesto": 8064,
     "a": "TGydWLsWzUnYG6fPvrVeMSs1UJBTTFgXY3",
     "trx": 190614,
     "pct": 0,
     "etiqueta": "SR"
    },
    {
-    "puesto": 8255,
+    "puesto": 8605,
     "a": "TM1teWRPJAhX3LkNdaX5GsCxHVFtAKrdfB",
-    "trx": 183356,
+    "trx": 173583,
     "pct": 0,
     "etiqueta": "Artis Turba"
    },
    {
-    "puesto": 8615,
+    "puesto": 8607,
+    "a": "TWZEhq5JuUVvGtutNgnRBATbF8BnHGyn4S",
+    "trx": 173517,
+    "pct": 0,
+    "etiqueta": "TronSave Energy Hot Wallet"
+   },
+   {
+    "puesto": 8975,
     "a": "TMYqAPoS3JBXs61U1ATwPBxPb2d5HV4mrC",
-    "trx": 172571,
+    "trx": 162571,
     "pct": 0,
     "etiqueta": "Bitpie5"
    },
    {
-    "puesto": 9456,
+    "puesto": 9126,
+    "a": "TEXeBqRbQdPETi4eK44Weo2WVESZ1Bf28r",
+    "trx": 159826,
+    "pct": 0,
+    "etiqueta": "UEEx Hot Wallet 2"
+   },
+   {
+    "puesto": 9477,
     "a": "TPP4Pz6ajt75KkqVDRKAXvNXudrZdRFsgo",
-    "trx": 151610,
+    "trx": 151608,
     "pct": 0,
     "etiqueta": "YouHodler Exchange Hot Wallet"
    },
    {
-    "puesto": 9739,
+    "puesto": 9763,
     "a": "TKHuVq1oKVruCGLvqVexFs6dawKv6fQgFs",
     "trx": 147871,
     "pct": 0,
@@ -776,7 +790,7 @@
    {
     "puesto": 23,
     "a": "TZ1SsapyhKNWaVLca6P2qgVzkHTdk6nkXa",
-    "trx": 1144455892,
+    "trx": 1144455935,
     "pct": 1.204
    },
    {
@@ -800,13 +814,13 @@
    {
     "puesto": 29,
     "a": "TF2fmSbg5HAD34KPUH7WtWCxxvgXHohzYM",
-    "trx": 1071295331,
+    "trx": 1071295430,
     "pct": 1.127
    },
    {
     "puesto": 30,
     "a": "THZovMcKoZaV9zzFTWteQYd2f3NEvnzxAM",
-    "trx": 1070401868,
+    "trx": 1070401924,
     "pct": 1.126
    },
    {
@@ -824,13 +838,13 @@
    {
     "puesto": 33,
     "a": "TKRVSSF5LicLNBTwcoyxYxNFXmjDw7uHRu",
-    "trx": 1045617108,
+    "trx": 1045617207,
     "pct": 1.1
    },
    {
     "puesto": 34,
     "a": "TT7BkPRW4qdGrmDrkVgkZHqtKfHnX6kih9",
-    "trx": 1044309150,
+    "trx": 1044309205,
     "pct": 1.099
    },
    {
@@ -908,8 +922,8 @@
    {
     "puesto": 49,
     "a": "TCw6YaWm3y6DvxY7M8hrCDnrJGeGMumzGJ",
-    "trx": 479656125,
-    "pct": 0.505
+    "trx": 481653982,
+    "pct": 0.507
    },
    {
     "puesto": 51,
@@ -938,7 +952,7 @@
    {
     "puesto": 55,
     "a": "TS3cmLYjnQYM3rpRRTvCjHqYFx8QYnguan",
-    "trx": 200000233,
+    "trx": 200000235,
     "pct": 0.21
    },
    {
@@ -968,7 +982,7 @@
    {
     "puesto": 60,
     "a": "TC3fCMDMoX4hmB8BSJ9wNSAzrenzCHpRmg",
-    "trx": 166286799,
+    "trx": 166286701,
     "pct": 0.175
    },
    {
@@ -980,19 +994,19 @@
    {
     "puesto": 62,
     "a": "TUAEpR16Th4pLbjECPVYTgvPyStNKyB54h",
-    "trx": 142990692,
-    "pct": 0.15
+    "trx": 143143679,
+    "pct": 0.151
    },
    {
     "puesto": 63,
     "a": "TAXJRgHa4eizT1BwNTgv7mqt1idjtg5xUU",
-    "trx": 141784563,
+    "trx": 141796819,
     "pct": 0.149
    },
    {
-    "puesto": 66,
+    "puesto": 65,
     "a": "TYah6kK3TKwTdTVt4XWpwpFCayLmnbURRM",
-    "trx": 135547986,
+    "trx": 135547984,
     "pct": 0.143
    },
    {
@@ -1038,7 +1052,7 @@
     "pct": 0.12
    },
    {
-    "puesto": 76,
+    "puesto": 75,
     "a": "TEbvoZaKbTTbAmSM7nCAthiXjnU6Gku7a8",
     "trx": 107160203,
     "pct": 0.113
@@ -1064,7 +1078,7 @@
    {
     "puesto": 80,
     "a": "TTtzKVHzZK9nNmft6V8Pki7DFkYTpu5Xcm",
-    "trx": 94606336,
+    "trx": 94616868,
     "pct": 0.1
    },
    {
@@ -1076,7 +1090,7 @@
    {
     "puesto": 82,
     "a": "TBf14pAU2aZ2kYjnfwDgcVDF2nH6kVHhkZ",
-    "trx": 92060251,
+    "trx": 92068230,
     "pct": 0.097
    },
    {
@@ -1122,31 +1136,31 @@
     "pct": 0.066
    },
    {
-    "puesto": 92,
+    "puesto": 93,
     "a": "TMTs9Sb7cqjxEZECJUi1H7WrwqUYa9oogd",
     "trx": 60393600,
     "pct": 0.064
    },
    {
-    "puesto": 93,
+    "puesto": 94,
     "a": "TJEXuYta9B3zKL8QXFHqpS25zJRhmTi6qT",
     "trx": 59915126,
     "pct": 0.063
    },
    {
-    "puesto": 94,
+    "puesto": 95,
     "a": "TK7NVqAFUXkpWrg27G63ZR9c8tv5RnhMs8",
     "trx": 59306347,
     "pct": 0.062
    },
    {
-    "puesto": 95,
+    "puesto": 96,
     "a": "TTjV4rpWP1HXFS4meBgtq1x2HwfXpsjvvB",
     "trx": 58025753,
     "pct": 0.061
    },
    {
-    "puesto": 97,
+    "puesto": 98,
     "a": "TT5iK8oqGEyRKJAnRwrLSZ4fM5y77F2LNT",
     "trx": 55700059,
     "pct": 0.059
@@ -1184,7 +1198,7 @@
    {
     "puesto": 105,
     "a": "TBD8DhkdNb6EZGxnhkL2Kf5tCJEgdWuuaw",
-    "trx": 47905983,
+    "trx": 47906082,
     "pct": 0.05
    },
    {
@@ -1201,56 +1215,56 @@
    },
    {
     "puesto": 109,
-    "a": "TJL3Ba6qaTdubKCyv6AMRkLZk6yxVQDUeU",
-    "trx": 44353174,
-    "pct": 0.047
+    "a": "TKrYe3bp1Ljowmas5uG8UgXNXzCw1B9DTM",
+    "trx": 44124342,
+    "pct": 0.046
    },
    {
     "puesto": 110,
-    "a": "TKrYe3bp1Ljowmas5uG8UgXNXzCw1B9DTM",
-    "trx": 44198530,
-    "pct": 0.047
-   },
-   {
-    "puesto": 111,
     "a": "TUfiruVu9bdMpmiiY5XipEz9XVpqjCoqev",
     "trx": 43971215,
     "pct": 0.046
    },
    {
-    "puesto": 112,
+    "puesto": 111,
     "a": "TY4Zi98PYMxn1CsYnf9YXA4Swpr1qwf7D9",
-    "trx": 43588764,
+    "trx": 43441213,
     "pct": 0.046
    },
    {
-    "puesto": 113,
+    "puesto": 112,
     "a": "TMDETNuLmTQR8qMNBhNEFNj9wUfXuPzK4A",
     "trx": 43380029,
     "pct": 0.046
    },
    {
-    "puesto": 115,
+    "puesto": 114,
     "a": "TL1os3CTyKgViiS9cPJxqyjwYWGTXmP7au",
     "trx": 42635465,
     "pct": 0.045
    },
    {
-    "puesto": 116,
-    "a": "TJxe1MWrb5ppk3beWArqU2Dwg3jvhGUGx5",
-    "trx": 42425565,
-    "pct": 0.045
-   },
-   {
-    "puesto": 117,
+    "puesto": 115,
     "a": "TBctCaYndofQv4cDGdPLUy6ivFTbdFYfmp",
     "trx": 41999900,
     "pct": 0.044
    },
    {
-    "puesto": 118,
+    "puesto": 116,
+    "a": "TJL3Ba6qaTdubKCyv6AMRkLZk6yxVQDUeU",
+    "trx": 41619512,
+    "pct": 0.044
+   },
+   {
+    "puesto": 117,
     "a": "TW2i5MgmLY8nxNuN6gE6LgKxtxb8qo7cY2",
     "trx": 41164726,
+    "pct": 0.043
+   },
+   {
+    "puesto": 118,
+    "a": "TJxe1MWrb5ppk3beWArqU2Dwg3jvhGUGx5",
+    "trx": 40923561,
     "pct": 0.043
    },
    {
@@ -1262,7 +1276,7 @@
    {
     "puesto": 120,
     "a": "TXMBRcRb8oq9izHd6HWKM2jDVu465CLYnb",
-    "trx": 40000011,
+    "trx": 40000009,
     "pct": 0.042
    },
    {
@@ -1286,7 +1300,7 @@
    {
     "puesto": 126,
     "a": "TVfV4YUUTjSzfQd3ZuHvvttg8keEK5MMKw",
-    "trx": 34372440,
+    "trx": 34003655,
     "pct": 0.036
    },
    {
@@ -1298,11 +1312,11 @@
    {
     "puesto": 128,
     "a": "TWtnWC3b4L65eshY2rirmfPkVzQ8PVn9iB",
-    "trx": 33489181,
+    "trx": 33302018,
     "pct": 0.035
    },
    {
-    "puesto": 130,
+    "puesto": 129,
     "a": "TCDc4BCYq8bbJzzWZtsyJxbCJNhF9L1WpZ",
     "trx": 33123930,
     "pct": 0.035
@@ -1316,19 +1330,19 @@
    {
     "puesto": 133,
     "a": "TYCsBubzCerDceNvZmeqrYGb5k1FDM4JPY",
-    "trx": 31125689,
+    "trx": 31137601,
     "pct": 0.033
    },
    {
     "puesto": 134,
     "a": "TCqZkyExhEMjaLQXjy9sUqJ43qinqUbYnP",
-    "trx": 30746745,
+    "trx": 30749535,
     "pct": 0.032
    },
    {
     "puesto": 135,
     "a": "TLUd7JuJbZuqxkn1itHGurXUknygmRuiSj",
-    "trx": 30002226,
+    "trx": 30002227,
     "pct": 0.032
    },
    {
@@ -1394,7 +1408,7 @@
    {
     "puesto": 147,
     "a": "TFEC8v19pjw7bWU8umKvzqvPtFo83cqMkx",
-    "trx": 24991445,
+    "trx": 24993714,
     "pct": 0.026
    },
    {
@@ -1406,7 +1420,7 @@
    {
     "puesto": 149,
     "a": "TQvhNtVLyJy3PfuZQieRd5PSeH8mEpgva1",
-    "trx": 24691032,
+    "trx": 24693276,
     "pct": 0.026
    },
    {
@@ -1417,188 +1431,188 @@
    },
    {
     "puesto": 151,
-    "a": "TKxafEsUEyBaXjYb1hDcFt5FzXuxLUwE31",
-    "trx": 23911732,
-    "pct": 0.025
-   },
-   {
-    "puesto": 152,
-    "a": "TRDkBa9nX9EkDnCLVNVpPeSLcY836hmMQb",
-    "trx": 23847978,
-    "pct": 0.025
-   },
-   {
-    "puesto": 153,
     "a": "TGddFQCnL913P6tpKdcwXxQTb3tgx5SAsp",
     "trx": 23786640,
     "pct": 0.025
    },
    {
-    "puesto": 154,
+    "puesto": 152,
     "a": "TMcMJ4ygqLCDSm9f3iS2JCYU6Yskv6sQry",
-    "trx": 23692979,
+    "trx": 23683479,
     "pct": 0.025
    },
    {
-    "puesto": 155,
+    "puesto": 153,
     "a": "TLvg8p7dE6txHh3MBZW6zhfEHVeo99kor5",
     "trx": 23658606,
     "pct": 0.025
    },
    {
-    "puesto": 156,
+    "puesto": 154,
     "a": "TNeiX2sfYowazKr98A2wHPsTSCoymBDxqm",
     "trx": 23373680,
     "pct": 0.025
    },
    {
-    "puesto": 157,
+    "puesto": 155,
     "a": "TJGv1jeHA8QxZ5jjwY8wc4PQ2GHg4772L8",
     "trx": 22749727,
     "pct": 0.024
    },
    {
-    "puesto": 158,
+    "puesto": 156,
     "a": "TJRu7dW92bmq8kDQyPZUDRTKmALTcJNXdD",
     "trx": 22674941,
     "pct": 0.024
    },
    {
-    "puesto": 159,
+    "puesto": 157,
     "a": "TH1xytqF5fcrZcgBmtun7swHBeLHg7TyNj",
     "trx": 22469523,
     "pct": 0.024
    },
    {
-    "puesto": 160,
+    "puesto": 158,
     "a": "TQm5fQhgZUXKC5JbiEUe1zgFjxokuFxcP6",
-    "trx": 21696344,
+    "trx": 21696330,
     "pct": 0.023
    },
    {
-    "puesto": 162,
+    "puesto": 159,
+    "a": "TKxafEsUEyBaXjYb1hDcFt5FzXuxLUwE31",
+    "trx": 21599623,
+    "pct": 0.023
+   },
+   {
+    "puesto": 161,
     "a": "TSgHjDRyVb8BDQLc6svy7T2aeYXNzUffff",
     "trx": 21451853,
     "pct": 0.023
    },
    {
-    "puesto": 163,
+    "puesto": 162,
     "a": "TYEudbGvKPVmo8nKD8gWED5vkXm3rg7bs2",
     "trx": 21000024,
     "pct": 0.022
    },
    {
-    "puesto": 164,
+    "puesto": 163,
     "a": "TU13DKGb1RCPZFoAnzztyjg657rrrUZRf8",
     "trx": 20977760,
     "pct": 0.022
    },
    {
-    "puesto": 165,
+    "puesto": 164,
     "a": "TXLTFvE5zvMJMdoKDL4MDVrGJe5G43Sh1T",
     "trx": 20725094,
     "pct": 0.022
    },
    {
-    "puesto": 166,
+    "puesto": 165,
     "a": "TRKsmaWttVXiBL3zXKTKgwRvu9inShnLe9",
     "trx": 20455745,
     "pct": 0.022
    },
    {
-    "puesto": 167,
+    "puesto": 166,
     "a": "TNkeWLH8cPvuu6wQZyRqHnSxHXCieoYXvn",
-    "trx": 20147994,
+    "trx": 20159540,
+    "pct": 0.021
+   },
+   {
+    "puesto": 167,
+    "a": "TBjYKZhpDCqV7H6ubWF2VVvBVGcid528US",
+    "trx": 20013735,
     "pct": 0.021
    },
    {
     "puesto": 168,
-    "a": "TBjYKZhpDCqV7H6ubWF2VVvBVGcid528US",
-    "trx": 20006886,
+    "a": "TQtVz6iEXtQJXPo8pBT4cvwC94hmg2ABAw",
+    "trx": 20000007,
     "pct": 0.021
    },
    {
     "puesto": 169,
-    "a": "TQtVz6iEXtQJXPo8pBT4cvwC94hmg2ABAw",
-    "trx": 20000010,
-    "pct": 0.021
-   },
-   {
-    "puesto": 170,
     "a": "TKffQpBLT3w1cd15Vv35y4uf1ZXAMTx4Fv",
     "trx": 19414246,
     "pct": 0.02
    },
    {
-    "puesto": 171,
-    "a": "TWCdmQZk2YqP9NWVVeyiAbwPUPm8p96zEB",
-    "trx": 19129732,
+    "puesto": 170,
+    "a": "TNqyHcMFicN1Vb27gyKXPw2FYMAF3fRrHh",
+    "trx": 18921771,
     "pct": 0.02
    },
    {
     "puesto": 172,
-    "a": "TPtW5TEHhouj6KGshVu5ZQSKZA48QPBnXG",
-    "trx": 18922887,
+    "a": "TRDkBa9nX9EkDnCLVNVpPeSLcY836hmMQb",
+    "trx": 18847978,
     "pct": 0.02
    },
    {
-    "puesto": 174,
+    "puesto": 173,
     "a": "TG7dDrtoG5MnLGyAJRep67oQcS4fsA6bwP",
     "trx": 18752630,
     "pct": 0.02
    },
    {
-    "puesto": 175,
-    "a": "TNqyHcMFicN1Vb27gyKXPw2FYMAF3fRrHh",
-    "trx": 18640730,
+    "puesto": 174,
+    "a": "TQNb1qjbzvu4r6bFeqxxyUzkZyDa2pDZbT",
+    "trx": 18674946,
     "pct": 0.02
    },
    {
-    "puesto": 176,
+    "puesto": 175,
     "a": "TA2jEnFGuPpivKd1JwtFNtpdpfD33eekTB",
     "trx": 18624091,
     "pct": 0.02
    },
    {
-    "puesto": 177,
-    "a": "TQNb1qjbzvu4r6bFeqxxyUzkZyDa2pDZbT",
-    "trx": 18598522,
-    "pct": 0.02
-   },
-   {
-    "puesto": 178,
+    "puesto": 176,
     "a": "TQ2PvH3cUb5js8PTnTraYTDb6VJPVJspbM",
     "trx": 18400117,
     "pct": 0.019
    },
    {
-    "puesto": 179,
+    "puesto": 177,
     "a": "TJXWzjm6EuS7tzSXRBf9sHYBA5pcbsW7as",
     "trx": 18204036,
     "pct": 0.019
    },
    {
-    "puesto": 180,
+    "puesto": 178,
+    "a": "TWCdmQZk2YqP9NWVVeyiAbwPUPm8p96zEB",
+    "trx": 18146893,
+    "pct": 0.019
+   },
+   {
+    "puesto": 179,
     "a": "TBNHZP2iAVyDhpTSZ8ee2Xjci1JExZTPE5",
     "trx": 18140451,
     "pct": 0.019
    },
    {
-    "puesto": 181,
+    "puesto": 180,
     "a": "TTqu1vJ2KYwoTC9kMgvZfgoC7Fedy3y5PH",
-    "trx": 18088547,
+    "trx": 18091647,
     "pct": 0.019
    },
    {
-    "puesto": 182,
+    "puesto": 181,
     "a": "TLHGzRj1YpTiLxhNxmeVVJT9dBYU63XRcb",
     "trx": 18058371,
     "pct": 0.019
    },
    {
+    "puesto": 182,
+    "a": "TPtW5TEHhouj6KGshVu5ZQSKZA48QPBnXG",
+    "trx": 18032983,
+    "pct": 0.019
+   },
+   {
     "puesto": 183,
-    "a": "TXzrqz2Xzs3u4p6H7cUvKEYj6K8D44dYoJ",
-    "trx": 17973936,
+    "a": "TTnRTmMiG89ubivdPzSMgQ6ePqHoCExMgw",
+    "trx": 17857947,
     "pct": 0.019
    },
    {
@@ -1609,21 +1623,21 @@
    },
    {
     "puesto": 185,
-    "a": "TTnRTmMiG89ubivdPzSMgQ6ePqHoCExMgw",
-    "trx": 17854915,
-    "pct": 0.019
-   },
-   {
-    "puesto": 186,
     "a": "TGYxQgnGvd2X2T3BdUWeMycC7QTXNWF7Lt",
     "trx": 17828534,
     "pct": 0.019
    },
    {
-    "puesto": 187,
+    "puesto": 186,
     "a": "TKGTz3mdoa2MduJLraRdGsy6pTbVptaQtW",
     "trx": 17776672,
     "pct": 0.019
+   },
+   {
+    "puesto": 187,
+    "a": "TXzrqz2Xzs3u4p6H7cUvKEYj6K8D44dYoJ",
+    "trx": 17560983,
+    "pct": 0.018
    },
    {
     "puesto": 188,
@@ -1640,7 +1654,7 @@
    {
     "puesto": 190,
     "a": "TGuo2i4Fra8oKTXp9Fxf1EL53wbuGSKyRs",
-    "trx": 17000051,
+    "trx": 17000067,
     "pct": 0.018
    },
    {
@@ -1664,43 +1678,43 @@
    {
     "puesto": 194,
     "a": "TCdqNzR8QsmEXVbJFyqzdthi5T6zm6DHoK",
-    "trx": 16721326,
+    "trx": 16721362,
     "pct": 0.018
    },
    {
     "puesto": 195,
-    "a": "THwyeoCMSXQq2aGDpXpSqo89VnTtFktGGp",
-    "trx": 16613550,
-    "pct": 0.017
-   },
-   {
-    "puesto": 196,
     "a": "TWA3uH3prgUGUAYCLCHcnmaAGBchUgGtZX",
     "trx": 16518085,
     "pct": 0.017
    },
    {
-    "puesto": 197,
+    "puesto": 196,
     "a": "TUZrjxUgYmxcoAWAvweJeiPeAsc1Ay5mFN",
-    "trx": 16419564,
+    "trx": 16430442,
     "pct": 0.017
    },
    {
-    "puesto": 198,
+    "puesto": 197,
     "a": "TL24SiGL2HSuqiJL9dZReLhk122ZatcXW9",
     "trx": 16355223,
     "pct": 0.017
    },
    {
-    "puesto": 199,
+    "puesto": 198,
     "a": "TUqzCMaBVbDwhcbcSAuk6CccqkVnDuuN34",
     "trx": 16354738,
     "pct": 0.017
    },
    {
-    "puesto": 200,
+    "puesto": 199,
     "a": "TKSpy5F8kQSNsT6er1VDyhxQRJs6h6LXMs",
-    "trx": 16295610,
+    "trx": 16297997,
+    "pct": 0.017
+   },
+   {
+    "puesto": 200,
+    "a": "TYak24LSNUK6x7FPntxwn6xEDc68UtVJxq",
+    "trx": 16285127,
     "pct": 0.017
    },
    {
@@ -1723,62 +1737,62 @@
    },
    {
     "puesto": 204,
-    "a": "TYak24LSNUK6x7FPntxwn6xEDc68UtVJxq",
-    "trx": 15626348,
-    "pct": 0.016
-   },
-   {
-    "puesto": 205,
     "a": "TSdEJ5edDrGtWLRNMoPVGUd735yUWAW3Jv",
     "trx": 15591022,
     "pct": 0.016
    },
    {
-    "puesto": 206,
+    "puesto": 205,
     "a": "TG3gX6XzZUXV7sSBaqqAdiMawAzWyGsU3i",
-    "trx": 15534333,
+    "trx": 15536142,
     "pct": 0.016
    },
    {
-    "puesto": 207,
+    "puesto": 206,
     "a": "TJG8Ad5TetnybUXC618GewPrgsa5dhbpie",
     "trx": 15328580,
     "pct": 0.016
    },
    {
-    "puesto": 208,
+    "puesto": 207,
     "a": "TDU8Hz8L6sXJpK5r9cbegZqn6uUi4w9gVH",
     "trx": 15317269,
     "pct": 0.016
    },
    {
-    "puesto": 209,
+    "puesto": 208,
     "a": "TNjvKY4QLzEndTPDcwupZnVYT6QthLoayB",
     "trx": 15252104,
     "pct": 0.016
    },
    {
-    "puesto": 210,
+    "puesto": 209,
     "a": "TNfR5R1s4uPqqWX3F2GbkkEUDQSs7dzqV2",
-    "trx": 15007281,
+    "trx": 15007279,
     "pct": 0.016
    },
    {
-    "puesto": 211,
+    "puesto": 210,
     "a": "TJTPqivUyhWGZMwk8ru7b2pYv8cZmJUdDZ",
     "trx": 14948403,
     "pct": 0.016
    },
    {
-    "puesto": 212,
+    "puesto": 211,
     "a": "TVmowKrNepsDeEwzvtMr1cfg1eJE5G2ux9",
-    "trx": 14931266,
+    "trx": 14931285,
+    "pct": 0.016
+   },
+   {
+    "puesto": 212,
+    "a": "TFq9UBSKXrSfmVtdN4xgfuSw2fmBSzSM1e",
+    "trx": 14754671,
     "pct": 0.016
    },
    {
     "puesto": 213,
-    "a": "TFq9UBSKXrSfmVtdN4xgfuSw2fmBSzSM1e",
-    "trx": 14753575,
+    "a": "TSzSgxRisS5VBXXDcAezTDvnPGi9CbsXvJ",
+    "trx": 14743182,
     "pct": 0.016
    },
    {
@@ -1789,98 +1803,98 @@
    },
    {
     "puesto": 215,
-    "a": "TSzSgxRisS5VBXXDcAezTDvnPGi9CbsXvJ",
-    "trx": 14452187,
-    "pct": 0.015
-   },
-   {
-    "puesto": 216,
     "a": "TWwWwWN2j8FQiZqdhTgooMMa73PwFH4NUo",
-    "trx": 14360838,
+    "trx": 14360751,
     "pct": 0.015
    },
    {
-    "puesto": 218,
+    "puesto": 217,
     "a": "TDUiUScimQNfmD1F76Uq6YaXbofCVuAvxH",
     "trx": 14273947,
     "pct": 0.015
    },
    {
-    "puesto": 219,
+    "puesto": 218,
     "a": "TNjBUNb6byw1fS1F3Px8v5KzgquUyQXBnm",
-    "trx": 14162030,
+    "trx": 14163213,
     "pct": 0.015
    },
    {
-    "puesto": 220,
+    "puesto": 219,
     "a": "TU4xH8RjYdJEpH66qF3ye88bMXtURQCcdK",
     "trx": 14120120,
     "pct": 0.015
    },
    {
-    "puesto": 221,
+    "puesto": 220,
     "a": "TE3KB58e3znmg7gRL2pr23RJTj1ZMpoLgr",
     "trx": 14094638,
     "pct": 0.015
    },
    {
-    "puesto": 222,
+    "puesto": 221,
     "a": "TVvH6aVzgftuNpan7BNuygRRAdfBHCbzt9",
     "trx": 13967960,
     "pct": 0.015
    },
    {
-    "puesto": 223,
+    "puesto": 222,
     "a": "TS34E1HCGJhumNSd6QqYGy89FELFtCGRo3",
     "trx": 13710047,
     "pct": 0.014
    },
    {
-    "puesto": 224,
-    "a": "TJBiBYtMDSW2vWNdRtj9SXU9J8YnWD7K16",
-    "trx": 13688351,
-    "pct": 0.014
-   },
-   {
-    "puesto": 225,
+    "puesto": 223,
     "a": "TCRRjT63jfgzkxst4KBr9eavjN5a31W3hY",
     "trx": 13647104,
     "pct": 0.014
    },
    {
-    "puesto": 226,
-    "a": "TH7yPN3b8rQ7M3FdvcJcEVMQxCKRaLkcrq",
-    "trx": 13638983,
+    "puesto": 224,
+    "a": "TJBiBYtMDSW2vWNdRtj9SXU9J8YnWD7K16",
+    "trx": 13643769,
     "pct": 0.014
    },
    {
-    "puesto": 228,
+    "puesto": 225,
+    "a": "TH7yPN3b8rQ7M3FdvcJcEVMQxCKRaLkcrq",
+    "trx": 13638999,
+    "pct": 0.014
+   },
+   {
+    "puesto": 227,
     "a": "TPbCb3QKZhnaVJbJWR8Fqg2cJR5pi42yQR",
     "trx": 13289844,
     "pct": 0.014
    },
    {
-    "puesto": 229,
+    "puesto": 228,
     "a": "TAZ6b1ihx6k6sw5zSgXRyq9FaWy9PHGg3a",
-    "trx": 13203944,
+    "trx": 13203703,
     "pct": 0.014
    },
    {
-    "puesto": 230,
+    "puesto": 229,
     "a": "TBzhRKHBRB8UKhFCm4zXi6x46TFASEfm5T",
     "trx": 13187607,
     "pct": 0.014
    },
    {
-    "puesto": 231,
+    "puesto": 230,
     "a": "TEeAxSRZP6nEcFfENGzc3CgBRJTQci2wp4",
-    "trx": 13139688,
+    "trx": 13140879,
+    "pct": 0.014
+   },
+   {
+    "puesto": 231,
+    "a": "TER7V76yhAQ8j4E1MeabkUKUFpieMRhjvr",
+    "trx": 13008899,
     "pct": 0.014
    },
    {
     "puesto": 232,
-    "a": "TER7V76yhAQ8j4E1MeabkUKUFpieMRhjvr",
-    "trx": 13008899,
+    "a": "TF6G8dEZimFfiNwfj1J97ZLJvmn2MXvva2",
+    "trx": 13000100,
     "pct": 0.014
    }
   ]
@@ -1889,61 +1903,61 @@
   {
    "tramo": "100 M o más",
    "cuentas": 62,
-   "trx": 50213553054,
-   "pct": 52.832
+   "trx": 50215716408,
+   "pct": 52.834
   },
   {
    "tramo": "10 M - 100 M",
    "cuentas": 190,
-   "trx": 4745046998,
-   "pct": 4.992
+   "trx": 4724694992,
+   "pct": 4.971
   },
   {
    "tramo": "1 M - 10 M",
-   "cuentas": 1947,
-   "trx": 5095421971,
-   "pct": 5.361
+   "cuentas": 1951,
+   "trx": 5112514988,
+   "pct": 5.379
   },
   {
    "tramo": "300 k - 1 M",
-   "cuentas": 3498,
-   "trx": 1830951777,
-   "pct": 1.926
+   "cuentas": 3502,
+   "trx": 1832666187,
+   "pct": 1.928
   },
   {
    "tramo": "menos de 300 k",
-   "cuentas": 4214,
-   "trx": 852286689,
+   "cuentas": 4204,
+   "trx": 852350590,
    "pct": 0.897
   }
  ],
  "concentracion": {
-  "top1": 10.387,
-  "top10": 29.952,
-  "top50": 75.332,
-  "top100": 81.868,
-  "top500": 87.623,
-  "top1000": 89.483,
-  "top5000": 93.095,
-  "top10000": 94.259
+  "top1": 10.388,
+  "top10": 29.947,
+  "top50": 75.326,
+  "top100": 81.865,
+  "top500": 87.601,
+  "top1000": 89.467,
+  "top5000": 93.088,
+  "top10000": 94.255
  },
  "detalle": {
   "exchange": [
    {
     "nombre": "HTX",
-    "trx": 8161984315
+    "trx": 8161984393
    },
    {
     "nombre": "Binance",
-    "trx": 2252319377
+    "trx": 2259189395
    },
    {
     "nombre": "Upbit",
-    "trx": 450619761
+    "trx": 448019756
    },
    {
     "nombre": "MXC",
-    "trx": 173719201
+    "trx": 173289417
    },
    {
     "nombre": "Poloniex",
@@ -1951,7 +1965,7 @@
    },
    {
     "nombre": "Gate",
-    "trx": 92014821
+    "trx": 92058135
    },
    {
     "nombre": "CoinSpot",
@@ -1959,21 +1973,21 @@
    },
    {
     "nombre": "Bybit",
-    "trx": 33311283
+    "trx": 33104685
    }
   ],
   "contrato": [
    {
     "nombre": "STRXProxy",
-    "trx": 9872508405
+    "trx": 9873106801
    },
    {
     "nombre": "WTRX",
-    "trx": 3396668249
+    "trx": 3391419069
    },
    {
     "nombre": "CEther",
-    "trx": 1575849049
+    "trx": 1575807205
    },
    {
     "nombre": "TWjkoz18Y48SgWoxEeGG11ezCCzee8wo1A",
@@ -1981,7 +1995,7 @@
    },
    {
     "nombre": "PoolManager",
-    "trx": 109560074
+    "trx": 105605604
    },
    {
     "nombre": "EclipcityGlobalInsurance",
@@ -1999,27 +2013,27 @@
   "otros_etiquetados": [
    {
     "nombre": "SR Partners",
-    "trx": 47270525
+    "trx": 47268176
    },
    {
     "nombre": "TronLucky DepositAndWithdraw 1",
-    "trx": 46677569
+    "trx": 47207685
    },
    {
     "nombre": "TronLucky DepositAndWithdraw 2",
-    "trx": 29835315
+    "trx": 29834833
    },
    {
     "nombre": "Well Wallet Hot 2",
-    "trx": 6915320
+    "trx": 6922748
    },
    {
     "nombre": "Cobo Custody",
-    "trx": 4086075
+    "trx": 4151974
    },
    {
     "nombre": "Swapster Wallet",
-    "trx": 3371945
+    "trx": 3371236
    }
   ],
   "fondo_o_institucion": [
@@ -2031,7 +2045,7 @@
  },
  "etiquetasRecordadas": {
   "cuentas": 8,
-  "trx": 8161984315,
+  "trx": 8161984393,
   "pct": 8.588,
   "ejemplos": [
    {
@@ -2052,12 +2066,12 @@
    {
     "etiqueta": "HTX-Cold 7",
     "visto": "2026-10-26",
-    "trx": 1126556472
+    "trx": 1126556515
    },
    {
     "etiqueta": "HTX Exchange",
     "visto": "2026-10-26",
-    "trx": 1082093384
+    "trx": 1082093427
    },
    {
     "etiqueta": "HTX-Cold 6",
@@ -2072,14 +2086,14 @@
    {
     "etiqueta": "HTX 5",
     "visto": "2026-10-26",
-    "trx": 31233760
+    "trx": 31233752
    }
   ]
  },
  "cobertura": {
   "paginasFallidas": 0,
-  "tipoComprobado": 274,
-  "tipoSinComprobar": 9637
+  "tipoComprobado": 275,
+  "tipoSinComprobar": 9634
  },
  "fuentes": [
   "TronScan /api/account/list (10.000 mayores cuentas por saldo total)",
