@@ -10,6 +10,56 @@
   },
   "cambios": [
     {
+      "id": "2026-11-18-01",
+      "fecha": "2026-11-18",
+      "tipo": "ampliacion",
+      "caso": "caso-vaneck-sun",
+      "titulo": "La segunda cuenta retira los 519 M TRX descongelados y saca de sun.io más TRX del que vuelve a poner",
+      "antes": "La página decía que los 519 M TRX quedarían libres el 15-nov y que la segunda cuenta tenía 10 posiciones de sun.io V3 con liquidez (lectura del 12-nov), las mismas que midió el informe.",
+      "ahora": "El 17-nov a las 06:05 UTC retiró a su saldo los 519,0 M TRX. Entre el 14 y el 17-nov retiró de sun.io 545,1 M TRX y 22,6 M USDT y volvió a poner 158,1 M TRX y 66,0 M USDT. En la lectura del 18-nov tenía 9 posiciones de V3 con liquidez (3 vaciadas y 2 nuevas) y 2386,7 M TRX libres. No envió TRX a ninguna otra dirección; «Vaneck» no hizo ninguna operación.",
+      "porque": "Seguimiento de las fechas que la propia página anunciaba. El porcentaje del capital de sun.io del capítulo 10 es del 11-nov y no se ha recalculado: la página lo dice.",
+      "detectado": "Avisos del vigilante de EquipoIA, comprobados después transacción a transacción en la cadena.",
+      "evidencia": [
+        {
+          "t": "Capítulo 6 del caso",
+          "href": "caso-vaneck.html?cap=6"
+        },
+        {
+          "t": "Capítulo 10 del caso",
+          "href": "caso-vaneck.html?cap=10"
+        },
+        {
+          "t": "Datos de la actualización (JSON)",
+          "href": "reports/caso-vaneck-sun/actualizacion-18-nov.json"
+        },
+        {
+          "t": "Retirada de los 519 M TRX",
+          "href": "https://tronscan.org/#/transaction/7d63397454fee11b741a3f5c9bd3ff3adede8500450794a1ff7117fe2c4c6315"
+        },
+        {
+          "t": "Programas y lecturas",
+          "href": "https://github.com/schoolonchain-ux/schoolonchain-ux.github.io/tree/main/investigacion/research/tron-vaneck-sun/actualizacion-2026-11-18/"
+        }
+      ]
+    },
+    {
+      "id": "2026-11-18-02",
+      "fecha": "2026-11-18",
+      "tipo": "error",
+      "caso": "caso-vaneck-sun",
+      "titulo": "El resumen del capítulo 6 decía «ha empezado una nueva descongelación de 0 TRX»",
+      "antes": "Desde que la segunda cuenta retiró los 519 M TRX (17-nov), la frase automática del resumen decía que había «empezado una nueva descongelación de 0 TRX», y presentaba la suma de todo el TRX adjuntado a contratos como si fueran solo dos operaciones.",
+      "ahora": "La frase solo habla de una descongelación si la hay, y dice que la suma es de todas las llamadas a contratos desde el 29-oct, que están una a una en la tabla de movimientos.",
+      "porque": "La frase se escribió cuando había una descongelación en curso y no preveía que terminase. No cambia ninguna conclusión del caso.",
+      "detectado": "Revisión de la página al preparar la actualización del 18-nov.",
+      "evidencia": [
+        {
+          "t": "Capítulo 6 del caso",
+          "href": "caso-vaneck.html?cap=6"
+        }
+      ]
+    },
+    {
       "id": "2026-11-13-01",
       "fecha": "2026-11-13",
       "tipo": "ampliacion",

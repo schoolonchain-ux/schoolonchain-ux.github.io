@@ -229,7 +229,7 @@
       "url": "caso-vaneck.html",
       "caso": "Vaneck / Justin Sun · TRON",
       "titulo": "Las cuentas «Vaneck» y TT2T17…: qué se sabe y qué no",
-      "resumen": "942 M TRX enviados entre dos cuentas de TRON, verificados por hash; atribuciones de terceros, hipótesis y estado de las cuentas, que se relee cada 6 horas. Ampliación del 5-nov: la cuenta de paso que hace el relevo de fondos, el TRX de la antigua TRON Foundation y las claves de la cuenta etiquetada «Poloniex». Actualización del 13-nov: la segunda cuenta y la financiadora de «Vaneck» son las dos mayores titulares del capital de sun.io.",
+      "resumen": "942 M TRX enviados entre dos cuentas de TRON, verificados por hash; atribuciones de terceros, hipótesis y estado de las cuentas, que se relee cada 6 horas. Ampliación del 5-nov: la cuenta de paso que hace el relevo de fondos, el TRX de la antigua TRON Foundation y las claves de la cuenta etiquetada «Poloniex». Actualización del 13-nov: la segunda cuenta y la financiadora de «Vaneck» son las dos mayores titulares del capital de sun.io. Actualización del 18-nov: la segunda cuenta retira 519 M TRX descongelados y saca de sun.io más TRX del que vuelve a poner.",
       "version": "seguimiento cada 6 h",
       "cadenas": [
         "TRON"
@@ -240,12 +240,12 @@
       "imagenAlt": "Tablón de investigación del caso Vaneck / Justin Sun: carteles de VanEck y TRON, una pantalla con direcciones y una calavera encapuchada",
       "investigacion": {
         "estado": "curso",
-        "nota": "Investigación abierta: se amplía cuando hay hechos nuevos (29-oct, 30-oct, 4-nov, 5-nov y 13-nov)."
+        "nota": "Investigación abierta: se amplía cuando hay hechos nuevos (29-oct, 30-oct, 4-nov, 5-nov, 13-nov y 18-nov)."
       },
       "seguimiento": {
         "estado": "activo",
         "datos": "seguimiento.json",
-        "alcance": "Las dos cuentas se leen cada día para esta página; el vigilante de EquipoIA las mira cada hora y avisa en privado si retiran o envían TRX.",
+        "alcance": "Las dos cuentas se leen cada 6 horas para esta página; el vigilante de EquipoIA las mira cada hora y avisa en privado si retiran o envían TRX.",
         "siHayMovimientos": "Los movimientos nuevos se publican como nota de seguimiento."
       },
       "ficha": [
@@ -287,7 +287,7 @@
         },
         {
           "t": "Historial de conclusiones",
-          "texto": "{novedades} novedades fechadas, cuatro documentos (investigación del 29-oct, seguimientos del 30-oct y 4-nov y ampliación del 5-nov), una actualización de la página del 13-nov y {cambios} entradas en el registro de cambios.",
+          "texto": "{novedades} novedades fechadas, cuatro documentos (investigación del 29-oct, seguimientos del 30-oct y 4-nov y ampliación del 5-nov), dos actualizaciones de la página (13-nov y 18-nov) y {cambios} entradas en el registro de cambios.",
           "enlace": "cambios.html?caso=caso-vaneck-sun",
           "enlaceT": "Registro de cambios del caso"
         },

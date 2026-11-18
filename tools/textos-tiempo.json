@@ -2,11 +2,7 @@
  "_nota": "Lista del control de textos de tiempo (tools/comprobar-textos-tiempo.cjs). Clave = fichero | texto de alrededor. Valor = por qué ese «hoy/ahora/en vivo» es verdad, o «heredado» si ya estaba el 16-nov-2026 y nadie lo ha revisado todavía. Un texto que no esté aquí hace fallar el control.",
  "textos": {
   "acerca.html | , herramientas que leen la cadena en directo, y un laboratorio para entender c": "heredado",
-  "assets/caso-vaneck.js | mba.' }, { n: 6, t: 'Qué pasa ahora', d: 'Estado en vivo de las dos c": "heredado",
-  "assets/caso-vaneck.js | , t: 'Qué pasa ahora', d: 'Estado en vivo de las dos cuentas, el calendario": "heredado",
-  "assets/caso-vaneck.js | ('reports/caso-vaneck-sun/sunswap-hoy.json')]); app.textContent = '": "heredado",
   "assets/caso-vaneck.js | de «Vaneck».')], ['6', 'Qué pasa ahora: entre el 4-nov (10:40 UTC) y el": "heredado",
-  "assets/caso-vaneck.js | TronGrid del 29-oct. El estado de hoy está en el capítulo 6.')),": "heredado",
   "assets/caso-vaneck.js | letera de la que TRON Inc. recibe ahora su TRX; la mayor parte vendría de": "heredado",
   "assets/caso-vaneck.js | M TRX en 2021 frente a un ETN que hoy vale unos 33 M TRX.', 'Comportami": "heredado",
   "assets/caso-vaneck.js | ves pero sin nombre detrás.'], 'Y ahora lo que cambia día a día: qué está": "heredado",
@@ -14,7 +10,6 @@
   "assets/caso-vaneck.js | ', { class: 'muted' }, 'El estado en vivo no está disponible ahora mismo.')": "heredado",
   "assets/caso-vaneck.js | estado en vivo no está disponible ahora mismo.'));": "heredado",
   "assets/caso-vaneck.js | M TRX que fueron a la cuenta que ahora da energía a las billeteras nueva": "heredado",
-  "assets/caso-vaneck.js | ta página lo recoge cada día.'], 'Ahora, la energía de Binance y la prove": "heredado",
   "assets/caso-vaneck.js | a ampliación no están disponibles ahora mismo.'); const PV = 'TWhDfwC": "heredado",
   "assets/caso-vaneck.js | él lo niega y el 12-nov confirma en directo que es uno de los inversores y qu": "heredado",
   "assets/caso-vaneck.js | a que controle ninguna clave.'], 'Ahora, el capital que dos de estas cuen": "heredado",
@@ -365,6 +360,10 @@
   "datos.html | ablecoins <span class=\"dm-t vivo\">en vivo</span> <span class=\"dm-t dia\">cad": "Etiqueta de zona: junto a «cada 6 h» marca que esa zona tiene además herramientas que leen en el momento desde el navegador (cada fila dice cuál es cuál).",
   "datos.html | amentales <span class=\"dm-t vivo\">en vivo</span> <span class=\"dm-t dia\">cad": "Etiqueta de zona: junto a «cada 6 h» marca que esa zona tiene además herramientas que leen en el momento desde el navegador (cada fila dice cuál es cuál).",
   "datos.html | h</span> <span class=\"dm-t vivo\">en vivo</span></h3> <div class=\"dm\">": "Etiqueta de zona: junto a «cada 6 h» marca que esa zona tiene además herramientas que leen en el momento desde el navegador (cada fila dice cuál es cuál).",
-  "datos.html | k\">Tres tipos de dato</p> <h2>En vivo, cada 6 horas y estudio fijo</h2>": "Título que nombra los tres tipos de dato; «en vivo» se define justo debajo como lo que la página lee en el momento desde el navegador."
+  "datos.html | k\">Tres tipos de dato</p> <h2>En vivo, cada 6 horas y estudio fijo</h2>": "Título que nombra los tres tipos de dato; «en vivo» se define justo debajo como lo que la página lee en el momento desde el navegador.",
+  "assets/caso-vaneck.js | ('reports/caso-vaneck-sun/sunswap-hoy.json'), cargar('reports/caso-vane": "Nombre de un fichero de datos (sunswap-hoy.json), no texto que vea el visitante",
+  "assets/caso-vaneck.js | px;padding:0' }, [['6', 'Qué pasa ahora: el ' + fh(Date.parse(U18.retirad": "«Qué pasa ahora» es el nombre del capítulo 6; la frase que sigue lleva su fecha y hora",
+  "assets/caso-vaneck.js | ado a ninguna otra dirección.'], 'Ahora, la energía de Binance y la prove": "Texto que ya existía: enlace de paso al capítulo siguiente («Ahora, la energía…» = a continuación); no habla de un dato",
+  "assets/caso-vaneck.js | mba.' }, { n: 6, t: 'Qué pasa ahora', d: 'Estado de las dos cuentas e": "«Qué pasa ahora» es el nombre del capítulo 6 (ya existía); su descripción dice que es la última lectura, cada 6 horas"
  }
 }

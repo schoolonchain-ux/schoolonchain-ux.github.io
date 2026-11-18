@@ -1,0 +1,264 @@
+{
+ "version": 1,
+ "leidoEn": "2026-11-18T08:24:52.860Z",
+ "fuente": "TronGrid /wallet/gettransactioninfobyid, /wallet/gettransactionbyid y /wallet/triggerconstantcontract (solo lectura)",
+ "cuenta": "TT2T17KZhoDu47i2E4FWxfG79zdkEWkU9N",
+ "operaciones": [
+  {
+   "tx": "c1bf3e6a472132d54eb594a2ad60afc5d4ae96635cf8bf2911c67e4d462c1b0c",
+   "hora": "2026-11-14T15:32:15.000Z",
+   "bloque": 87998814,
+   "tipo": "TriggerSmartContract",
+   "resultado": "SUCCESS",
+   "contrato": "TLSWrv7eC1AZCXkRjpqMZUmvgd99cj7pPF",
+   "selector": "ac9650d8",
+   "trxQueEntra": 0,
+   "trxQueSale": 0,
+   "usdtQueEntra": 21393.81906,
+   "usdtQueSale": 0,
+   "retiradaDescongelado": null
+  },
+  {
+   "tx": "ccaf7b16b2fc7a2719310152205ccf854b68b1d4f92e042b26c454b4e6f28dbc",
+   "hora": "2026-11-14T15:36:45.000Z",
+   "bloque": 87998904,
+   "tipo": "TriggerSmartContract",
+   "resultado": "SUCCESS",
+   "contrato": "TLSWrv7eC1AZCXkRjpqMZUmvgd99cj7pPF",
+   "selector": "ac9650d8",
+   "trxQueEntra": 0,
+   "trxQueSale": 0,
+   "usdtQueEntra": 0,
+   "usdtQueSale": 2000000,
+   "retiradaDescongelado": null
+  },
+  {
+   "tx": "1abd35575b95bda2ad17ec20eb7c12f9b16c51df8b1babcafe53293518c9cb58",
+   "hora": "2026-11-14T15:37:48.000Z",
+   "bloque": 87998925,
+   "tipo": "TriggerSmartContract",
+   "resultado": "SUCCESS",
+   "contrato": "TLSWrv7eC1AZCXkRjpqMZUmvgd99cj7pPF",
+   "selector": "ac9650d8",
+   "trxQueEntra": 285688853.355262,
+   "trxQueSale": 0,
+   "usdtQueEntra": 11916318.389484,
+   "usdtQueSale": 0,
+   "retiradaDescongelado": null
+  },
+  {
+   "tx": "8d18c130b2520d61f4b9a0cac218ffff95ec8447b210945a0b9aeb291ee75182",
+   "hora": "2026-11-14T15:39:57.000Z",
+   "bloque": 87998968,
+   "tipo": "TriggerSmartContract",
+   "resultado": "SUCCESS",
+   "contrato": "TLSWrv7eC1AZCXkRjpqMZUmvgd99cj7pPF",
+   "selector": "ac9650d8",
+   "trxQueEntra": 0,
+   "trxQueSale": 45521436.068596,
+   "usdtQueEntra": 0,
+   "usdtQueSale": 20000000,
+   "retiradaDescongelado": null
+  },
+  {
+   "tx": "2a730d235555b399d0b0b91c78a0040b335ff09ffbfba8ea5d6baa5d1ca7fbcb",
+   "hora": "2026-11-14T15:41:15.000Z",
+   "bloque": 87998994,
+   "tipo": "TriggerSmartContract",
+   "resultado": "SUCCESS",
+   "contrato": "TC8xQzPHfn5KceZV6s6GmZkBCFWWUoPXs1",
+   "selector": "ac9650d8",
+   "trxQueEntra": 259421620.670073,
+   "trxQueSale": 0,
+   "usdtQueEntra": 10645178.185607,
+   "usdtQueSale": 0,
+   "retiradaDescongelado": null
+  },
+  {
+   "tx": "fc44fa43534b111a519d2b36e07e07baa5f7281774840922d6cf9bd381be32b9",
+   "hora": "2026-11-14T15:42:42.000Z",
+   "bloque": 87999023,
+   "tipo": "TriggerSmartContract",
+   "resultado": "SUCCESS",
+   "contrato": "TC8xQzPHfn5KceZV6s6GmZkBCFWWUoPXs1",
+   "selector": "ac9650d8",
+   "trxQueEntra": 0,
+   "trxQueSale": 32015759.141326,
+   "usdtQueEntra": 0,
+   "usdtQueSale": 14000000,
+   "retiradaDescongelado": null
+  },
+  {
+   "tx": "7d63397454fee11b741a3f5c9bd3ff3adede8500450794a1ff7117fe2c4c6315",
+   "hora": "2026-11-17T06:05:24.000Z",
+   "bloque": 88073844,
+   "tipo": "WithdrawExpireUnfreezeContract",
+   "resultado": "OK",
+   "contrato": null,
+   "selector": null,
+   "trxQueEntra": 0,
+   "trxQueSale": 0,
+   "usdtQueEntra": 0,
+   "usdtQueSale": 0,
+   "retiradaDescongelado": 519035766.469722
+  },
+  {
+   "tx": "d401222a71d3f70ca26a44944338e5ccc3672a77363d69b4207224f62a14c2b2",
+   "hora": "2026-11-17T06:07:12.000Z",
+   "bloque": 88073880,
+   "tipo": "TriggerSmartContract",
+   "resultado": "SUCCESS",
+   "contrato": "TC8xQzPHfn5KceZV6s6GmZkBCFWWUoPXs1",
+   "selector": "ac9650d8",
+   "trxQueEntra": 19060.497311,
+   "trxQueSale": 80606853.964183,
+   "usdtQueEntra": 0,
+   "usdtQueSale": 29994635.466989,
+   "retiradaDescongelado": null
+  },
+  {
+   "tx": "41ecfb55976d46d3570474a7ea000191ec6d1808453dbe78d665ed7235c7ffeb",
+   "hora": "2026-11-17T06:08:12.000Z",
+   "bloque": 88073900,
+   "tipo": "TriggerSmartContract",
+   "resultado": "SUCCESS",
+   "contrato": "TLSWrv7eC1AZCXkRjpqMZUmvgd99cj7pPF",
+   "selector": "ac9650d8",
+   "trxQueEntra": 0,
+   "trxQueSale": 0,
+   "usdtQueEntra": 8957.870901,
+   "usdtQueSale": 0,
+   "retiradaDescongelado": null
+  }
+ ],
+ "posiciones": [
+  {
+   "id": 4,
+   "token0": "TPYmHEhy5n8TCEfYGqW2rPxsghSfzghPDn",
+   "token1": "TR7NHqjeKQxGTCi8q8ZY4pL8otSzgjLj6t",
+   "comision": 100,
+   "tickInferior": -276425,
+   "tickSuperior": -276225,
+   "liquidez": "19655943533027550912"
+  },
+  {
+   "id": 5,
+   "token0": "TR7NHqjeKQxGTCi8q8ZY4pL8otSzgjLj6t",
+   "token1": "TUpMhErZL2fhh4sVNULAbNKLokS4GjC1F4",
+   "comision": 100,
+   "tickInferior": 276224,
+   "tickSuperior": 276424,
+   "liquidez": "183913334576605660868"
+  },
+  {
+   "id": 726,
+   "token0": "TR7NHqjeKQxGTCi8q8ZY4pL8otSzgjLj6t",
+   "token1": "TXDk8mbtRbXeYuMNS83CfKPaYYT8XWv9Hz",
+   "comision": 100,
+   "tickInferior": 276316,
+   "tickSuperior": 276336,
+   "liquidez": "2000797455118628982281"
+  },
+  {
+   "id": 844,
+   "token0": "TNUC9Qb1rRpS5CbWLmNMxXBjyFoydXjWFR",
+   "token1": "TU3kjFuhtEo42tsCBtfYUAZxoqQ4yuSLQ5",
+   "comision": 100,
+   "tickInferior": 273700,
+   "tickSuperior": 275554,
+   "liquidez": "198651528237884451776"
+  },
+  {
+   "id": 937,
+   "token0": "TPFqcBAaaUMCSVRCqPaQ9QnzKhmuoLR6Rc",
+   "token1": "TR7NHqjeKQxGTCi8q8ZY4pL8otSzgjLj6t",
+   "comision": 100,
+   "tickInferior": -276374,
+   "tickSuperior": -276274,
+   "liquidez": "204351885348630028515"
+  },
+  {
+   "id": 978,
+   "token0": "TNUC9Qb1rRpS5CbWLmNMxXBjyFoydXjWFR",
+   "token1": "TPFqcBAaaUMCSVRCqPaQ9QnzKhmuoLR6Rc",
+   "comision": 500,
+   "tickInferior": 263590,
+   "tickSuperior": 266650,
+   "liquidez": "5955463507986070017"
+  },
+  {
+   "id": 979,
+   "token0": "TR7NHqjeKQxGTCi8q8ZY4pL8otSzgjLj6t",
+   "token1": "TXZQuyCasxN42bjAcYpP2xwYVMCF6gHBnv",
+   "comision": 500,
+   "tickInferior": 250670,
+   "tickSuperior": 257610,
+   "liquidez": "0"
+  },
+  {
+   "id": 1118,
+   "token0": "TR7NHqjeKQxGTCi8q8ZY4pL8otSzgjLj6t",
+   "token1": "TSSMHYeV2uE9qYH95DqyoCuNCzEL1NvU3S",
+   "comision": 500,
+   "tickInferior": 309850,
+   "tickSuperior": 315450,
+   "liquidez": "0"
+  },
+  {
+   "id": 1120,
+   "token0": "TR7NHqjeKQxGTCi8q8ZY4pL8otSzgjLj6t",
+   "token1": "TUPM7K8REVzD2UdV4R5fe5M8XbnR2DdoJ6",
+   "comision": 500,
+   "tickInferior": 403500,
+   "tickSuperior": 410430,
+   "liquidez": "0"
+  },
+  {
+   "id": 1573,
+   "token0": "TNUC9Qb1rRpS5CbWLmNMxXBjyFoydXjWFR",
+   "token1": "TR7NHqjeKQxGTCi8q8ZY4pL8otSzgjLj6t",
+   "comision": 500,
+   "tickInferior": -12040,
+   "tickSuperior": -9160,
+   "liquidez": "330298840545746"
+  },
+  {
+   "id": 1992,
+   "token0": "TR7NHqjeKQxGTCi8q8ZY4pL8otSzgjLj6t",
+   "token1": "TUPM7K8REVzD2UdV4R5fe5M8XbnR2DdoJ6",
+   "comision": 500,
+   "tickInferior": 407550,
+   "tickSuperior": 412250,
+   "liquidez": "18773617079258243574099"
+  },
+  {
+   "id": 1993,
+   "token0": "TNUC9Qb1rRpS5CbWLmNMxXBjyFoydXjWFR",
+   "token1": "TR7NHqjeKQxGTCi8q8ZY4pL8otSzgjLj6t",
+   "comision": 500,
+   "tickInferior": -13470,
+   "tickSuperior": -10500,
+   "liquidez": "428610725313387"
+  }
+ ],
+ "estado": {
+  "saldoLibreTrx": 2386656491.817168,
+  "congeladoV2": [
+   {
+    "tipo": "BANDWIDTH",
+    "trx": 20329621.666876
+   },
+   {
+    "tipo": "ENERGY",
+    "trx": 0
+   },
+   {
+    "tipo": "TRON_POWER",
+    "trx": 0
+   }
+  ],
+  "delegadoEnergiaTrx": 187482220.552002,
+  "delegadoAnchoTrx": 0,
+  "descongelando": []
+ }
+}

@@ -1,0 +1,542 @@
+{
+ "version": 1,
+ "leidoEn": "2026-11-18T08:22:48.400Z",
+ "desde": "2026-11-13T00:39:00.000Z",
+ "fuente": "TronGrid /v1/accounts/{a}/transactions y /transactions/trc20 (min_timestamp), paginado",
+ "cuentas": {
+  "vaneck": {
+   "direccion": "TCGVFGDd62LSrfZEaz3M3fYifWWdSDHRL8",
+   "transacciones": [],
+   "trc20": [],
+   "salidas": 0
+  },
+  "segunda_cuenta": {
+   "direccion": "TT2T17KZhoDu47i2E4FWxfG79zdkEWkU9N",
+   "transacciones": [
+    {
+     "hora": "2026-11-13T08:46:54.000Z",
+     "tipo": "TransferAssetContract",
+     "de": "TBGXZ9VeS22Anca2exyQTW8k6Bg3oxGMBR",
+     "a": "TT2T17KZhoDu47i2E4FWxfG79zdkEWkU9N",
+     "trx": 0.68126,
+     "sale": false,
+     "tx": "25e4fccd02e18edf6b0ea42835315da64a98eeaa3e14cd2f0a3ea9dc3b6af860"
+    },
+    {
+     "hora": "2026-11-13T14:36:54.000Z",
+     "tipo": "TriggerSmartContract",
+     "de": "TT2T17KZhoDu47i2E4FWxfG79zdkEWkU9N",
+     "a": "TQcNLD2PAdQhH9q5WWwYaNWPDHKoK4GEYh",
+     "trx": null,
+     "sale": true,
+     "tx": "4994b78b74ef14a7a561a72f95a5828037391d3424889291f9096b4f9721b653"
+    },
+    {
+     "hora": "2026-11-13T14:37:03.000Z",
+     "tipo": "TriggerSmartContract",
+     "de": "TT2T17KZhoDu47i2E4FWxfG79zdkEWkU9N",
+     "a": "TNJVzGqKBWkJxJB5XYSqGAwUTV15U24pPq",
+     "trx": null,
+     "sale": true,
+     "tx": "0e1943ba5a65e6a33eb35d365129c8b6142e55147faa6e8291274ffe28b3a16b"
+    },
+    {
+     "hora": "2026-11-13T14:37:45.000Z",
+     "tipo": "TriggerSmartContract",
+     "de": "TT2T17KZhoDu47i2E4FWxfG79zdkEWkU9N",
+     "a": "TURYwFtG6gvpEyPSm55FyjJWpgQQ2rDm5e",
+     "trx": null,
+     "sale": true,
+     "tx": "a5212ea9268311dc60a7d05b4aa685f73a3dea796aa5cbe6294ada2d81a564dd"
+    },
+    {
+     "hora": "2026-11-13T14:39:00.000Z",
+     "tipo": "TriggerSmartContract",
+     "de": "TT2T17KZhoDu47i2E4FWxfG79zdkEWkU9N",
+     "a": "TURYwFtG6gvpEyPSm55FyjJWpgQQ2rDm5e",
+     "trx": null,
+     "sale": true,
+     "tx": "36065d6dfcbaecb71ee0e6f42f7d89d3ba692160f08f6d07c874581ed9a981b8"
+    },
+    {
+     "hora": "2026-11-14T15:32:15.000Z",
+     "tipo": "TriggerSmartContract",
+     "de": "TT2T17KZhoDu47i2E4FWxfG79zdkEWkU9N",
+     "a": "TLSWrv7eC1AZCXkRjpqMZUmvgd99cj7pPF",
+     "trx": null,
+     "sale": true,
+     "tx": "c1bf3e6a472132d54eb594a2ad60afc5d4ae96635cf8bf2911c67e4d462c1b0c"
+    },
+    {
+     "hora": "2026-11-14T15:33:03.000Z",
+     "tipo": "TriggerSmartContract",
+     "de": "TT2T17KZhoDu47i2E4FWxfG79zdkEWkU9N",
+     "a": "TXJgMdjVX5dKiQaUi9QobwNxtSQaFqccvd",
+     "trx": null,
+     "sale": true,
+     "tx": "72550c1604b0147f9971fb7d0a1c02acbca27fdb90400a5e524c971f3aa880bc"
+    },
+    {
+     "hora": "2026-11-14T15:36:45.000Z",
+     "tipo": "TriggerSmartContract",
+     "de": "TT2T17KZhoDu47i2E4FWxfG79zdkEWkU9N",
+     "a": "TLSWrv7eC1AZCXkRjpqMZUmvgd99cj7pPF",
+     "trx": null,
+     "sale": true,
+     "tx": "ccaf7b16b2fc7a2719310152205ccf854b68b1d4f92e042b26c454b4e6f28dbc"
+    },
+    {
+     "hora": "2026-11-14T15:37:48.000Z",
+     "tipo": "TriggerSmartContract",
+     "de": "TT2T17KZhoDu47i2E4FWxfG79zdkEWkU9N",
+     "a": "TLSWrv7eC1AZCXkRjpqMZUmvgd99cj7pPF",
+     "trx": null,
+     "sale": true,
+     "tx": "1abd35575b95bda2ad17ec20eb7c12f9b16c51df8b1babcafe53293518c9cb58"
+    },
+    {
+     "hora": "2026-11-14T15:38:27.000Z",
+     "tipo": "TriggerSmartContract",
+     "de": "TT2T17KZhoDu47i2E4FWxfG79zdkEWkU9N",
+     "a": "TXJgMdjVX5dKiQaUi9QobwNxtSQaFqccvd",
+     "trx": null,
+     "sale": true,
+     "tx": "2320962fa0b7dda9f299b32750bbec4405ce1bb08a6d5421720d4f2725641f93"
+    },
+    {
+     "hora": "2026-11-14T15:39:57.000Z",
+     "tipo": "TriggerSmartContract",
+     "de": "TT2T17KZhoDu47i2E4FWxfG79zdkEWkU9N",
+     "a": "TLSWrv7eC1AZCXkRjpqMZUmvgd99cj7pPF",
+     "trx": 45521436.068596,
+     "sale": true,
+     "tx": "8d18c130b2520d61f4b9a0cac218ffff95ec8447b210945a0b9aeb291ee75182"
+    },
+    {
+     "hora": "2026-11-14T15:41:15.000Z",
+     "tipo": "TriggerSmartContract",
+     "de": "TT2T17KZhoDu47i2E4FWxfG79zdkEWkU9N",
+     "a": "TC8xQzPHfn5KceZV6s6GmZkBCFWWUoPXs1",
+     "trx": null,
+     "sale": true,
+     "tx": "2a730d235555b399d0b0b91c78a0040b335ff09ffbfba8ea5d6baa5d1ca7fbcb"
+    },
+    {
+     "hora": "2026-11-14T15:42:42.000Z",
+     "tipo": "TriggerSmartContract",
+     "de": "TT2T17KZhoDu47i2E4FWxfG79zdkEWkU9N",
+     "a": "TC8xQzPHfn5KceZV6s6GmZkBCFWWUoPXs1",
+     "trx": 32015759.141326,
+     "sale": true,
+     "tx": "fc44fa43534b111a519d2b36e07e07baa5f7281774840922d6cf9bd381be32b9"
+    },
+    {
+     "hora": "2026-11-14T16:30:51.000Z",
+     "tipo": "TransferContract",
+     "de": "TEHLa7iq3JLsbjaA9WsytZRzo3Kmccj5M2",
+     "a": "TT2T17KZhoDu47i2E4FWxfG79zdkEWkU9N",
+     "trx": 0.000004,
+     "sale": false,
+     "tx": "5c6a3d70b17220afd2988df305f2d839b59b099fb4f5331edc5bc642768bccdb"
+    },
+    {
+     "hora": "2026-11-17T06:05:24.000Z",
+     "tipo": "WithdrawExpireUnfreezeContract",
+     "de": "TT2T17KZhoDu47i2E4FWxfG79zdkEWkU9N",
+     "a": null,
+     "trx": null,
+     "sale": true,
+     "tx": "7d63397454fee11b741a3f5c9bd3ff3adede8500450794a1ff7117fe2c4c6315"
+    },
+    {
+     "hora": "2026-11-17T06:07:12.000Z",
+     "tipo": "TriggerSmartContract",
+     "de": "TT2T17KZhoDu47i2E4FWxfG79zdkEWkU9N",
+     "a": "TC8xQzPHfn5KceZV6s6GmZkBCFWWUoPXs1",
+     "trx": 80606853.964183,
+     "sale": true,
+     "tx": "d401222a71d3f70ca26a44944338e5ccc3672a77363d69b4207224f62a14c2b2"
+    },
+    {
+     "hora": "2026-11-17T06:08:12.000Z",
+     "tipo": "TriggerSmartContract",
+     "de": "TT2T17KZhoDu47i2E4FWxfG79zdkEWkU9N",
+     "a": "TLSWrv7eC1AZCXkRjpqMZUmvgd99cj7pPF",
+     "trx": null,
+     "sale": true,
+     "tx": "41ecfb55976d46d3570474a7ea000191ec6d1808453dbe78d665ed7235c7ffeb"
+    },
+    {
+     "hora": "2026-11-17T06:08:48.000Z",
+     "tipo": "TriggerSmartContract",
+     "de": "TT2T17KZhoDu47i2E4FWxfG79zdkEWkU9N",
+     "a": "TLSWrv7eC1AZCXkRjpqMZUmvgd99cj7pPF",
+     "trx": null,
+     "sale": true,
+     "tx": "d9d7fc7dd71631fde91b18704ba291baf5148058046f77e97235d37b6060e943"
+    },
+    {
+     "hora": "2026-11-17T06:45:57.000Z",
+     "tipo": "TransferContract",
+     "de": "TCuzm1LbnSW2ew9FkvYkDtLE2HDP6QURsQ",
+     "a": "TT2T17KZhoDu47i2E4FWxfG79zdkEWkU9N",
+     "trx": 0.000091,
+     "sale": false,
+     "tx": "3fb3795fad0e6b4c6ca467e9398d444383981ab6acef02ec198d890c9e534bdf"
+    },
+    {
+     "hora": "2026-11-17T07:18:06.000Z",
+     "tipo": "TransferContract",
+     "de": "TVwWAdp4h5v6WZ5BYK685GqgVpov9JbQo2",
+     "a": "TT2T17KZhoDu47i2E4FWxfG79zdkEWkU9N",
+     "trx": 0.000005,
+     "sale": false,
+     "tx": "8011529cfb57303201cbfd96705946f1e370a94a023dcd4e03b30c99dbee244d"
+    },
+    {
+     "hora": "2026-11-17T07:20:06.000Z",
+     "tipo": "TransferContract",
+     "de": "TQt2htfsFtMAQuZoHUZhwunVva7QsQuQo2",
+     "a": "TT2T17KZhoDu47i2E4FWxfG79zdkEWkU9N",
+     "trx": 0.000009,
+     "sale": false,
+     "tx": "6e6ef87ea81304b0f2e1989f70cc5197b2010e02f233067249fdf8a3b7ae7cb5"
+    },
+    {
+     "hora": "2026-11-17T07:20:27.000Z",
+     "tipo": "TriggerSmartContract",
+     "de": "TT2T17KZhoDu47i2E4FWxfG79zdkEWkU9N",
+     "a": "TXJgMdjVX5dKiQaUi9QobwNxtSQaFqccvd",
+     "trx": null,
+     "sale": true,
+     "tx": "ed30ad41c239fc4e6516387127ae719c92b7c405350970246c413cc76057bb84"
+    },
+    {
+     "hora": "2026-11-17T07:21:39.000Z",
+     "tipo": "TransferContract",
+     "de": "TSqJo7rLuDg5ytoMJ8GFq2Xf43V3X85Qo2",
+     "a": "TT2T17KZhoDu47i2E4FWxfG79zdkEWkU9N",
+     "trx": 0.000002,
+     "sale": false,
+     "tx": "31e4fb3726419471c7621cd599ebbb043f81ac8f89d9e842c8b60cc1a375a1a6"
+    }
+   ],
+   "trc20": [
+    {
+     "hora": "2026-11-13T08:46:45.000Z",
+     "token": "USDT",
+     "de": "TWhDfwC8QE6pQyiYy248dNor3uphPEw5M2",
+     "a": "TT2T17KZhoDu47i2E4FWxfG79zdkEWkU9N",
+     "valor": "200000000000",
+     "sale": false,
+     "tx": "7a4473ccbdaf1dd60003e029f0e815f4cfa390aae588637cf01803b2bae742c9"
+    },
+    {
+     "hora": "2026-11-13T14:36:54.000Z",
+     "token": "S-USDT-stUSDT",
+     "de": "TT2T17KZhoDu47i2E4FWxfG79zdkEWkU9N",
+     "a": "TNJVzGqKBWkJxJB5XYSqGAwUTV15U24pPq",
+     "valor": "115792089237316195423570985008687907853269984665640564039457584007913129639935",
+     "sale": true,
+     "tx": "4994b78b74ef14a7a561a72f95a5828037391d3424889291f9096b4f9721b653"
+    },
+    {
+     "hora": "2026-11-13T14:37:03.000Z",
+     "token": "S-USDT-stUSDT",
+     "de": "TT2T17KZhoDu47i2E4FWxfG79zdkEWkU9N",
+     "a": "TQcNLD2PAdQhH9q5WWwYaNWPDHKoK4GEYh",
+     "valor": "9999999999998999",
+     "sale": true,
+     "tx": "0e1943ba5a65e6a33eb35d365129c8b6142e55147faa6e8291274ffe28b3a16b"
+    },
+    {
+     "hora": "2026-11-13T14:37:03.000Z",
+     "token": "USDT",
+     "de": "TQcNLD2PAdQhH9q5WWwYaNWPDHKoK4GEYh",
+     "a": "TT2T17KZhoDu47i2E4FWxfG79zdkEWkU9N",
+     "valor": "10202944274",
+     "sale": false,
+     "tx": "0e1943ba5a65e6a33eb35d365129c8b6142e55147faa6e8291274ffe28b3a16b"
+    },
+    {
+     "hora": "2026-11-13T14:37:03.000Z",
+     "token": "stUSDT",
+     "de": "TQcNLD2PAdQhH9q5WWwYaNWPDHKoK4GEYh",
+     "a": "TT2T17KZhoDu47i2E4FWxfG79zdkEWkU9N",
+     "valor": "10169920316425244968942",
+     "sale": false,
+     "tx": "0e1943ba5a65e6a33eb35d365129c8b6142e55147faa6e8291274ffe28b3a16b"
+    },
+    {
+     "hora": "2026-11-13T14:37:45.000Z",
+     "token": "stUSDT",
+     "de": "TT2T17KZhoDu47i2E4FWxfG79zdkEWkU9N",
+     "a": "TURYwFtG6gvpEyPSm55FyjJWpgQQ2rDm5e",
+     "valor": "115792089237316195423570985008687907853269984665639187843949609859012299574259",
+     "sale": true,
+     "tx": "a5212ea9268311dc60a7d05b4aa685f73a3dea796aa5cbe6294ada2d81a564dd"
+    },
+    {
+     "hora": "2026-11-13T14:37:45.000Z",
+     "token": "stUSDT",
+     "de": "TT2T17KZhoDu47i2E4FWxfG79zdkEWkU9N",
+     "a": "T9yD14Nj9j7xAB4dbGeiX9h8unkKHxuWwb",
+     "valor": "10169920316425244968941",
+     "sale": true,
+     "tx": "a5212ea9268311dc60a7d05b4aa685f73a3dea796aa5cbe6294ada2d81a564dd"
+    },
+    {
+     "hora": "2026-11-13T14:39:00.000Z",
+     "token": "USDT",
+     "de": "TURYwFtG6gvpEyPSm55FyjJWpgQQ2rDm5e",
+     "a": "TT2T17KZhoDu47i2E4FWxfG79zdkEWkU9N",
+     "valor": "10169920316",
+     "sale": false,
+     "tx": "36065d6dfcbaecb71ee0e6f42f7d89d3ba692160f08f6d07c874581ed9a981b8"
+    },
+    {
+     "hora": "2026-11-14T15:32:15.000Z",
+     "token": "USDT",
+     "de": "TEZWKD7eujZVDJAm74ArJUCJ7s95xj2vn7",
+     "a": "TT2T17KZhoDu47i2E4FWxfG79zdkEWkU9N",
+     "valor": "21393819060",
+     "sale": false,
+     "tx": "c1bf3e6a472132d54eb594a2ad60afc5d4ae96635cf8bf2911c67e4d462c1b0c"
+    },
+    {
+     "hora": "2026-11-14T15:32:15.000Z",
+     "token": "HTX",
+     "de": "TEZWKD7eujZVDJAm74ArJUCJ7s95xj2vn7",
+     "a": "TT2T17KZhoDu47i2E4FWxfG79zdkEWkU9N",
+     "valor": "3168680292156253523187063282500",
+     "sale": false,
+     "tx": "c1bf3e6a472132d54eb594a2ad60afc5d4ae96635cf8bf2911c67e4d462c1b0c"
+    },
+    {
+     "hora": "2026-11-14T15:33:03.000Z",
+     "token": "USDT",
+     "de": "TXJgMdjVX5dKiQaUi9QobwNxtSQaFqccvd",
+     "a": "TT2T17KZhoDu47i2E4FWxfG79zdkEWkU9N",
+     "valor": "5000000000000",
+     "sale": false,
+     "tx": "72550c1604b0147f9971fb7d0a1c02acbca27fdb90400a5e524c971f3aa880bc"
+    },
+    {
+     "hora": "2026-11-14T15:33:03.000Z",
+     "token": "jUSDT",
+     "de": "TT2T17KZhoDu47i2E4FWxfG79zdkEWkU9N",
+     "a": "TXJgMdjVX5dKiQaUi9QobwNxtSQaFqccvd",
+     "valor": "45883161788320566",
+     "sale": true,
+     "tx": "72550c1604b0147f9971fb7d0a1c02acbca27fdb90400a5e524c971f3aa880bc"
+    },
+    {
+     "hora": "2026-11-14T15:36:45.000Z",
+     "token": "USDT",
+     "de": "TT2T17KZhoDu47i2E4FWxfG79zdkEWkU9N",
+     "a": "TEZWKD7eujZVDJAm74ArJUCJ7s95xj2vn7",
+     "valor": "2000000000000",
+     "sale": true,
+     "tx": "ccaf7b16b2fc7a2719310152205ccf854b68b1d4f92e042b26c454b4e6f28dbc"
+    },
+    {
+     "hora": "2026-11-14T15:36:45.000Z",
+     "token": "HTX",
+     "de": "TT2T17KZhoDu47i2E4FWxfG79zdkEWkU9N",
+     "a": "TEZWKD7eujZVDJAm74ArJUCJ7s95xj2vn7",
+     "valor": "2055533098926323161735890483754",
+     "sale": true,
+     "tx": "ccaf7b16b2fc7a2719310152205ccf854b68b1d4f92e042b26c454b4e6f28dbc"
+    },
+    {
+     "hora": "2026-11-14T15:36:45.000Z",
+     "token": "SUN-V3-POS",
+     "de": "T9yD14Nj9j7xAB4dbGeiX9h8unkKHxuWwb",
+     "a": "TT2T17KZhoDu47i2E4FWxfG79zdkEWkU9N",
+     "valor": "1992",
+     "sale": false,
+     "tx": "ccaf7b16b2fc7a2719310152205ccf854b68b1d4f92e042b26c454b4e6f28dbc"
+    },
+    {
+     "hora": "2026-11-14T15:37:48.000Z",
+     "token": "USDT",
+     "de": "TLSWrv7eC1AZCXkRjpqMZUmvgd99cj7pPF",
+     "a": "TT2T17KZhoDu47i2E4FWxfG79zdkEWkU9N",
+     "valor": "11916318389484",
+     "sale": false,
+     "tx": "1abd35575b95bda2ad17ec20eb7c12f9b16c51df8b1babcafe53293518c9cb58"
+    },
+    {
+     "hora": "2026-11-14T15:38:27.000Z",
+     "token": "USDT",
+     "de": "TXJgMdjVX5dKiQaUi9QobwNxtSQaFqccvd",
+     "a": "TT2T17KZhoDu47i2E4FWxfG79zdkEWkU9N",
+     "valor": "9004966087849",
+     "sale": false,
+     "tx": "2320962fa0b7dda9f299b32750bbec4405ce1bb08a6d5421720d4f2725641f93"
+    },
+    {
+     "hora": "2026-11-14T15:38:27.000Z",
+     "token": "jUSDT",
+     "de": "TT2T17KZhoDu47i2E4FWxfG79zdkEWkU9N",
+     "a": "TXJgMdjVX5dKiQaUi9QobwNxtSQaFqccvd",
+     "valor": "82635254619162766",
+     "sale": true,
+     "tx": "2320962fa0b7dda9f299b32750bbec4405ce1bb08a6d5421720d4f2725641f93"
+    },
+    {
+     "hora": "2026-11-14T15:39:57.000Z",
+     "token": "USDT",
+     "de": "TT2T17KZhoDu47i2E4FWxfG79zdkEWkU9N",
+     "a": "TSUUVjysXV8YqHytSNjfkNXnnB49QDvZpx",
+     "valor": "20000000000000",
+     "sale": true,
+     "tx": "8d18c130b2520d61f4b9a0cac218ffff95ec8447b210945a0b9aeb291ee75182"
+    },
+    {
+     "hora": "2026-11-14T15:39:57.000Z",
+     "token": "SUN-V3-POS",
+     "de": "T9yD14Nj9j7xAB4dbGeiX9h8unkKHxuWwb",
+     "a": "TT2T17KZhoDu47i2E4FWxfG79zdkEWkU9N",
+     "valor": "1993",
+     "sale": false,
+     "tx": "8d18c130b2520d61f4b9a0cac218ffff95ec8447b210945a0b9aeb291ee75182"
+    },
+    {
+     "hora": "2026-11-14T15:41:15.000Z",
+     "token": "USDT",
+     "de": "TVjuTE3V5bMVdpfNhid8kD2v35T2k1u1Br",
+     "a": "TT2T17KZhoDu47i2E4FWxfG79zdkEWkU9N",
+     "valor": "10645178185607",
+     "sale": false,
+     "tx": "2a730d235555b399d0b0b91c78a0040b335ff09ffbfba8ea5d6baa5d1ca7fbcb"
+    },
+    {
+     "hora": "2026-11-14T15:42:42.000Z",
+     "token": "SUN-SWAP-V4-POSM",
+     "de": "T9yD14Nj9j7xAB4dbGeiX9h8unkKHxuWwb",
+     "a": "TT2T17KZhoDu47i2E4FWxfG79zdkEWkU9N",
+     "valor": "808",
+     "sale": false,
+     "tx": "fc44fa43534b111a519d2b36e07e07baa5f7281774840922d6cf9bd381be32b9"
+    },
+    {
+     "hora": "2026-11-14T15:42:42.000Z",
+     "token": "USDT",
+     "de": "TT2T17KZhoDu47i2E4FWxfG79zdkEWkU9N",
+     "a": "TVjuTE3V5bMVdpfNhid8kD2v35T2k1u1Br",
+     "valor": "14000000000000",
+     "sale": true,
+     "tx": "fc44fa43534b111a519d2b36e07e07baa5f7281774840922d6cf9bd381be32b9"
+    },
+    {
+     "hora": "2026-11-14T16:28:12.000Z",
+     "token": "USDT",
+     "de": "TWhDfwC8QE6pQyiYy248dNor3uphPEw5M2",
+     "a": "TT2T17KZhoDu47i2E4FWxfG79zdkEWkU9N",
+     "valor": "29999998800000",
+     "sale": false,
+     "tx": "16e422d447e5388e48fa5221c91f1ed693ae7614ac2a7d79f18e44833f0f7fe5"
+    },
+    {
+     "hora": "2026-11-17T06:07:12.000Z",
+     "token": "USDT",
+     "de": "TT2T17KZhoDu47i2E4FWxfG79zdkEWkU9N",
+     "a": "TVjuTE3V5bMVdpfNhid8kD2v35T2k1u1Br",
+     "valor": "29994635466989",
+     "sale": true,
+     "tx": "d401222a71d3f70ca26a44944338e5ccc3672a77363d69b4207224f62a14c2b2"
+    },
+    {
+     "hora": "2026-11-17T06:08:12.000Z",
+     "token": "USDT",
+     "de": "TDvGaAn29mHna9b4yrdvX2hivitYUkWTh5",
+     "a": "TT2T17KZhoDu47i2E4FWxfG79zdkEWkU9N",
+     "valor": "8957870901",
+     "sale": false,
+     "tx": "41ecfb55976d46d3570474a7ea000191ec6d1808453dbe78d665ed7235c7ffeb"
+    },
+    {
+     "hora": "2026-11-17T06:08:12.000Z",
+     "token": "SUN",
+     "de": "TDvGaAn29mHna9b4yrdvX2hivitYUkWTh5",
+     "a": "TT2T17KZhoDu47i2E4FWxfG79zdkEWkU9N",
+     "valor": "441311408571234360369696051",
+     "sale": false,
+     "tx": "41ecfb55976d46d3570474a7ea000191ec6d1808453dbe78d665ed7235c7ffeb"
+    },
+    {
+     "hora": "2026-11-17T06:08:48.000Z",
+     "token": "USDT",
+     "de": "TP3CiYXmoM4u34WinAibb5F4yoUuDUJYer",
+     "a": "TT2T17KZhoDu47i2E4FWxfG79zdkEWkU9N",
+     "valor": "8530744579",
+     "sale": false,
+     "tx": "d9d7fc7dd71631fde91b18704ba291baf5148058046f77e97235d37b6060e943"
+    },
+    {
+     "hora": "2026-11-17T06:08:48.000Z",
+     "token": "TRUMP",
+     "de": "TP3CiYXmoM4u34WinAibb5F4yoUuDUJYer",
+     "a": "TT2T17KZhoDu47i2E4FWxfG79zdkEWkU9N",
+     "valor": "119411496511468670644736",
+     "sale": false,
+     "tx": "d9d7fc7dd71631fde91b18704ba291baf5148058046f77e97235d37b6060e943"
+    },
+    {
+     "hora": "2026-11-17T07:17:57.000Z",
+     "token": "USDT",
+     "de": "TWpMnUh9pZS1Mf8yyw9WPiS82WYevKzQo2",
+     "a": "TT2T17KZhoDu47i2E4FWxfG79zdkEWkU9N",
+     "valor": "5044200000000",
+     "sale": false,
+     "tx": "3df6d7b67c0edd4e147926aa702a23ab1f43a978607eef7eed7e4561573498bf"
+    },
+    {
+     "hora": "2026-11-17T07:18:54.000Z",
+     "token": "USDT",
+     "de": "TKpiitwGUuW5WgsBMg5w5QWUpC6nUTroqa",
+     "a": "TT2T17KZhoDu47i2E4FWxfG79zdkEWkU9N",
+     "valor": "31781504903400",
+     "sale": false,
+     "tx": "085713bde48e25a9f798a7d5b525a1607fe5e21aa76cda57ddfedf3a41ad80a6"
+    },
+    {
+     "hora": "2026-11-17T07:20:27.000Z",
+     "token": "USDT",
+     "de": "TT2T17KZhoDu47i2E4FWxfG79zdkEWkU9N",
+     "a": "TXJgMdjVX5dKiQaUi9QobwNxtSQaFqccvd",
+     "valor": "37656786198481",
+     "sale": true,
+     "tx": "ed30ad41c239fc4e6516387127ae719c92b7c405350970246c413cc76057bb84"
+    },
+    {
+     "hora": "2026-11-17T07:20:27.000Z",
+     "token": "jUSDT",
+     "de": "TXJgMdjVX5dKiQaUi9QobwNxtSQaFqccvd",
+     "a": "TT2T17KZhoDu47i2E4FWxfG79zdkEWkU9N",
+     "valor": "345514806465944194",
+     "sale": false,
+     "tx": "ed30ad41c239fc4e6516387127ae719c92b7c405350970246c413cc76057bb84"
+    }
+   ],
+   "salidas": 29
+  },
+  "financiadora": {
+   "direccion": "TPyjyZfsYaXStgz2NmAraF1uZcMtkgNan5",
+   "transacciones": [],
+   "trc20": [
+    {
+     "hora": "2026-11-16T03:10:48.000Z",
+     "token": "USDT",
+     "de": "TWhDfwC8QE6pQyiYy248dNor3uphPEw5M2",
+     "a": "TPyjyZfsYaXStgz2NmAraF1uZcMtkgNan5",
+     "valor": "10000000",
+     "sale": false,
+     "tx": "7d3c23e8cc51710c9482a25f8673d593d1118cd3f219a11285434ae8fcd873f2"
+    }
+   ],
+   "salidas": 0
+  }
+ }
+}

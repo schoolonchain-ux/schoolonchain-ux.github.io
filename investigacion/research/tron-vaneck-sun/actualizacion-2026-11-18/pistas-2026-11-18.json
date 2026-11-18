@@ -1,0 +1,521 @@
+{
+ "version": 1,
+ "leidoEn": "2026-11-18T08:44:49.288Z",
+ "fuente": "TronGrid (solo lectura)",
+ "desde": "2026-11-13T00:00:00.000Z",
+ "p1": {
+  "cuenta": "TKpiitwGUuW5WgsBMg5w5QWUpC6nUTroqa",
+  "creada": "2024-08-20T18:11:45.000Z",
+  "libreTrx": 156109969.57153,
+  "completo": true,
+  "transacciones": [
+   {
+    "hora": "2026-11-17T06:42:24.000Z",
+    "tipo": "TransferContract",
+    "de": "TUXq6rxHALCiUmP8Ws1N3nqq294YWzh219",
+    "a": "TKpiitwGUuW5WgsBMg5w5QWUpC6nUTroqa",
+    "trx": 0.000005,
+    "resultado": "SUCCESS",
+    "tx": "17de40b0f5aec726051909c86140414d886e7f62364ae65d30cd0451820fc5b5"
+   },
+   {
+    "hora": "2026-11-17T06:44:00.000Z",
+    "tipo": "TransferContract",
+    "de": "TJTKCzQpsG19CSMYF9TPtxz6wSHPSyeKfa",
+    "a": "TKpiitwGUuW5WgsBMg5w5QWUpC6nUTroqa",
+    "trx": 14999998,
+    "resultado": "SUCCESS",
+    "tx": "255ea37c66b8b59806c89536c9b59932a585b250070878ec7570e0ef70be0f2b"
+   },
+   {
+    "hora": "2026-11-17T06:44:03.000Z",
+    "tipo": "TransferContract",
+    "de": "TQfoUh1PDW6bvHyNaZi13ZvWfebsXmJ9he",
+    "a": "TKpiitwGUuW5WgsBMg5w5QWUpC6nUTroqa",
+    "trx": 0.000001,
+    "resultado": "SUCCESS",
+    "tx": "81bc580e6022813f7386986c80ca76903a4469fac3571ce03582e10d0a020163"
+   },
+   {
+    "hora": "2026-11-17T06:44:33.000Z",
+    "tipo": "TransferContract",
+    "de": "TJTKCzQpsG19CSMYF9TPtxz6wSHPSyeKfa",
+    "a": "TKpiitwGUuW5WgsBMg5w5QWUpC6nUTroqa",
+    "trx": 14999998,
+    "resultado": "SUCCESS",
+    "tx": "ec2154d012992beb0034b7cd26ea88572e362a858b5f3f4248004ec56ea94034"
+   },
+   {
+    "hora": "2026-11-17T06:44:54.000Z",
+    "tipo": "TransferContract",
+    "de": "TYiZGV7wDRuBxro9W2RjnXNJgyVDFWY219",
+    "a": "TKpiitwGUuW5WgsBMg5w5QWUpC6nUTroqa",
+    "trx": 0.000002,
+    "resultado": "SUCCESS",
+    "tx": "c2d5e393ade24c3dc843dcbce39a7b45e12fe1fe9cfbc02cee1e9568c00f2bee"
+   },
+   {
+    "hora": "2026-11-17T06:45:06.000Z",
+    "tipo": "TransferContract",
+    "de": "TJTKCzQpsG19CSMYF9TPtxz6wSHPSyeKfa",
+    "a": "TKpiitwGUuW5WgsBMg5w5QWUpC6nUTroqa",
+    "trx": 14999998,
+    "resultado": "SUCCESS",
+    "tx": "c5a9cf45937650f77bba094e8c99ebc1ebd22b329c12dd86ce7904ceda508556"
+   },
+   {
+    "hora": "2026-11-17T06:54:27.000Z",
+    "tipo": "TransferContract",
+    "de": "TJTKCzQpsG19CSMYF9TPtxz6wSHPSyeKfa",
+    "a": "TKpiitwGUuW5WgsBMg5w5QWUpC6nUTroqa",
+    "trx": 13999998,
+    "resultado": "SUCCESS",
+    "tx": "b1e85459c7f9ad76df4374abc331d656803fc9387d36ba159041604566db4a1d"
+   },
+   {
+    "hora": "2026-11-17T07:18:54.000Z",
+    "tipo": "TriggerSmartContract",
+    "de": "TKpiitwGUuW5WgsBMg5w5QWUpC6nUTroqa",
+    "a": "TR7NHqjeKQxGTCi8q8ZY4pL8otSzgjLj6t",
+    "trx": null,
+    "resultado": "SUCCESS",
+    "tx": "085713bde48e25a9f798a7d5b525a1607fe5e21aa76cda57ddfedf3a41ad80a6"
+   },
+   {
+    "hora": "2026-11-17T07:19:00.000Z",
+    "tipo": "TransferAssetContract",
+    "de": "TNpnBH6gbUXZamRoDkJayhGGABPR83e69N",
+    "a": "TKpiitwGUuW5WgsBMg5w5QWUpC6nUTroqa",
+    "trx": 4444.444444,
+    "resultado": "SUCCESS",
+    "tx": "3738cce1a33fb365c75961f52b9ef1f27636a3749071e216581f60a3e7eb7025"
+   },
+   {
+    "hora": "2026-11-17T07:19:57.000Z",
+    "tipo": "TransferContract",
+    "de": "TVCUVr2r1mkWKxJbpNTL4RA4fjXzXRBU9N",
+    "a": "TKpiitwGUuW5WgsBMg5w5QWUpC6nUTroqa",
+    "trx": 0.000001,
+    "resultado": "SUCCESS",
+    "tx": "cc0db19d3b25735e31ed0cc81b844e63804e6b3d4bba6d3ad88cb9beb4978067"
+   },
+   {
+    "hora": "2026-11-17T07:21:03.000Z",
+    "tipo": "TransferContract",
+    "de": "TFSs6HxkdTP8DLrFkht7KcHMZx6rUYPU9N",
+    "a": "TKpiitwGUuW5WgsBMg5w5QWUpC6nUTroqa",
+    "trx": 0.000009,
+    "resultado": "SUCCESS",
+    "tx": "1769670d71d808c7fb927d142826dc0a583e7bb06238e10c9ac6293c860e1638"
+   },
+   {
+    "hora": "2026-11-17T07:22:12.000Z",
+    "tipo": "TransferAssetContract",
+    "de": "TBunC9E6i9Yig42jf1auiE9aBCvXcb3HY9",
+    "a": "TKpiitwGUuW5WgsBMg5w5QWUpC6nUTroqa",
+    "trx": 0.97,
+    "resultado": "SUCCESS",
+    "tx": "2ace58c1aff1ff7df35a4c3a790ad4b29cd717082d9c6726b8d8aae8a2a0db94"
+   },
+   {
+    "hora": "2026-11-17T16:21:57.000Z",
+    "tipo": "TransferContract",
+    "de": "TJTKCzQpsG19CSMYF9TPtxz6wSHPSyeKfa",
+    "a": "TKpiitwGUuW5WgsBMg5w5QWUpC6nUTroqa",
+    "trx": 14999998,
+    "resultado": "SUCCESS",
+    "tx": "b25e13d3621ef01f3bec92f48583cbc54ab915708985b34f0604172330710f82"
+   },
+   {
+    "hora": "2026-11-17T16:22:24.000Z",
+    "tipo": "TransferContract",
+    "de": "TJTKCzQpsG19CSMYF9TPtxz6wSHPSyeKfa",
+    "a": "TKpiitwGUuW5WgsBMg5w5QWUpC6nUTroqa",
+    "trx": 14999998,
+    "resultado": "SUCCESS",
+    "tx": "d0484942f10bef8c139c75bd7e4f9e007ff17904b2a8afe25321ff12ee2b5df9"
+   },
+   {
+    "hora": "2026-11-17T16:24:06.000Z",
+    "tipo": "TransferContract",
+    "de": "TJTKCzQpsG19CSMYF9TPtxz6wSHPSyeKfa",
+    "a": "TKpiitwGUuW5WgsBMg5w5QWUpC6nUTroqa",
+    "trx": 6299998,
+    "resultado": "SUCCESS",
+    "tx": "19841bfd6e4afb25e48ce4aa0e11608182d67ef928928dcdf782752998535ec0"
+   },
+   {
+    "hora": "2026-11-18T08:28:27.000Z",
+    "tipo": "TransferContract",
+    "de": "TJTKCzQpsG19CSMYF9TPtxz6wSHPSyeKfa",
+    "a": "TKpiitwGUuW5WgsBMg5w5QWUpC6nUTroqa",
+    "trx": 14999998,
+    "resultado": "SUCCESS",
+    "tx": "d6f26475f98bced0a91e9b09a2447e4fb0b6758ce3c768c087d1be8d20624c08"
+   },
+   {
+    "hora": "2026-11-18T08:28:33.000Z",
+    "tipo": "TransferContract",
+    "de": "TJTKCzQpsG19CSMYF9TPtxz6wSHPSyeKfa",
+    "a": "TKpiitwGUuW5WgsBMg5w5QWUpC6nUTroqa",
+    "trx": 14999998,
+    "resultado": "SUCCESS",
+    "tx": "19c2802f89af5c4a38dd26f678ee8085917fecefb424624b0926f514be8cd3be"
+   },
+   {
+    "hora": "2026-11-18T08:28:57.000Z",
+    "tipo": "TransferContract",
+    "de": "TJTKCzQpsG19CSMYF9TPtxz6wSHPSyeKfa",
+    "a": "TKpiitwGUuW5WgsBMg5w5QWUpC6nUTroqa",
+    "trx": 14999998,
+    "resultado": "SUCCESS",
+    "tx": "42d1a5ce063ec37e56c094d83baede13fc33f996b3d59120c13793921a313cd2"
+   },
+   {
+    "hora": "2026-11-18T08:29:21.000Z",
+    "tipo": "TransferContract",
+    "de": "TJTKCzQpsG19CSMYF9TPtxz6wSHPSyeKfa",
+    "a": "TKpiitwGUuW5WgsBMg5w5QWUpC6nUTroqa",
+    "trx": 14999998,
+    "resultado": "SUCCESS",
+    "tx": "2e33207c7697f87bd49444908ddd1515c87b532c167b0f1336d5085fb436c08c"
+   },
+   {
+    "hora": "2026-11-18T08:30:06.000Z",
+    "tipo": "TransferContract",
+    "de": "TTU4bhRuPEtaSWPXvvRQ7CVnyHs6cGu24e",
+    "a": "TKpiitwGUuW5WgsBMg5w5QWUpC6nUTroqa",
+    "trx": 799998,
+    "resultado": "SUCCESS",
+    "tx": "0e9390d4b31ffd0016ffe2538abddf8259fd5f8b13df563940e67052246943c5"
+   }
+  ],
+  "trc20": [
+   {
+    "hora": "2026-11-17T06:42:06.000Z",
+    "token": "USDT",
+    "decimales": 6,
+    "de": "TJTKCzQpsG19CSMYF9TPtxz6wSHPSyeKfa",
+    "a": "TKpiitwGUuW5WgsBMg5w5QWUpC6nUTroqa",
+    "valor": "19999997000000",
+    "tx": "20c8d0602e54966ccfd2061c67d3de843540a05fc1b1d630e379862e62159597"
+   },
+   {
+    "hora": "2026-11-17T06:42:09.000Z",
+    "token": "USDT",
+    "decimales": 6,
+    "de": "TJTKCzQpsG19CSMYF9TPtxz6wSHPSyeKfa",
+    "a": "TKpiitwGUuW5WgsBMg5w5QWUpC6nUTroqa",
+    "valor": "10704034000000",
+    "tx": "8fc575914bc206313d6282cd782e23b7cab87b5293dba3e31466f72c67458614"
+   },
+   {
+    "hora": "2026-11-17T07:13:54.000Z",
+    "token": "USDT",
+    "decimales": 6,
+    "de": "TCQ8X6x9GiK4khydWVKfLJvm8H6WK3RE8B",
+    "a": "TKpiitwGUuW5WgsBMg5w5QWUpC6nUTroqa",
+    "valor": "1077473903400",
+    "tx": "ce51f5a024a4fda3c0d2e759c27e61e3371c76be4ce2c6b1740c28d7bd677178"
+   },
+   {
+    "hora": "2026-11-17T07:18:54.000Z",
+    "token": "USDT",
+    "decimales": 6,
+    "de": "TKpiitwGUuW5WgsBMg5w5QWUpC6nUTroqa",
+    "a": "TT2T17KZhoDu47i2E4FWxfG79zdkEWkU9N",
+    "valor": "31781504903400",
+    "tx": "085713bde48e25a9f798a7d5b525a1607fe5e21aa76cda57ddfedf3a41ad80a6"
+   }
+  ]
+ },
+ "p2": {
+  "cuenta": "TU4vEruvZwLLkSfV9bNw12EJTPvNr7Pvaa",
+  "creada": "2021-08-06T17:10:39.000Z",
+  "libreTrx": 36483675.517197,
+  "esContrato": false,
+  "permisos": {
+   "owner": {
+    "umbral": 1,
+    "claves": [
+     {
+      "direccion": "TU4vEruvZwLLkSfV9bNw12EJTPvNr7Pvaa",
+      "peso": 1
+     }
+    ]
+   },
+   "activos": [
+    {
+     "id": 2,
+     "nombre": "active",
+     "umbral": 1,
+     "operaciones": "7fff1fc0033e0300000000000000000000000000000000000000000000000000",
+     "claves": [
+      {
+       "direccion": "TU4vEruvZwLLkSfV9bNw12EJTPvNr7Pvaa",
+       "peso": 1
+      }
+     ]
+    }
+   ],
+   "testigo": null
+  },
+  "energiaRecibidaTrx": 323269113.263746,
+  "delegacion": {
+   "tx": "d1d5d3806c8343c52a91f7940df529291c29fa5ec5689ae6f5fa2383b45b8658",
+   "hora": "2026-11-08T09:04:15.000Z",
+   "tipo": "DelegateResourceContract",
+   "de": "TEF9ZVUxhmGGffvkf59e2vdLfAG1QCMb7B",
+   "a": "TU4vEruvZwLLkSfV9bNw12EJTPvNr7Pvaa",
+   "trx": 150000000,
+   "recurso": "ENERGY",
+   "bloqueada": false
+  }
+ },
+ "p3": [
+  {
+   "cuenta": "TSzSgxRisS5VBXXDcAezTDvnPGi9CbsXvJ",
+   "tx": "d549741db9d81e01975ced9e25ebe37a3e0842cb3add450153eb4edb8be21f03",
+   "hora": "2026-11-12T09:40:12.000Z",
+   "tipo": "AccountPermissionUpdateContract",
+   "permisoUsado": 0,
+   "firmas": 3,
+   "nuevo": {
+    "owner": {
+     "umbral": 3,
+     "claves": [
+      {
+       "direccion": "TShAfXbh4kUzmkJ9Ckdo5J6ujWi1M5NLE2",
+       "peso": 1
+      },
+      {
+       "direccion": "TUgSgCQL6pMSy9zByn4sgxqrJa95sZExBG",
+       "peso": 1
+      },
+      {
+       "direccion": "TVnGY8vuJhxDX5b7mTpwaJ9vNDtmjdBxMm",
+       "peso": 1
+      },
+      {
+       "direccion": "TV7WmJXhYyd4rqRjbWg62eX8e5DoPbyiA3",
+       "peso": 1
+      },
+      {
+       "direccion": "TDAuHDXYNTrtY1k6GNibek44yHEqyQfVkC",
+       "peso": 1
+      }
+     ]
+    },
+    "activos": [
+     {
+      "nombre": "active",
+      "umbral": 3,
+      "operaciones": "7fff1fc0033ec30f000000000000000000000000000000000000000000000000",
+      "claves": [
+       {
+        "direccion": "TShAfXbh4kUzmkJ9Ckdo5J6ujWi1M5NLE2",
+        "peso": 1
+       },
+       {
+        "direccion": "TUgSgCQL6pMSy9zByn4sgxqrJa95sZExBG",
+        "peso": 1
+       },
+       {
+        "direccion": "TVnGY8vuJhxDX5b7mTpwaJ9vNDtmjdBxMm",
+        "peso": 1
+       },
+       {
+        "direccion": "TV7WmJXhYyd4rqRjbWg62eX8e5DoPbyiA3",
+        "peso": 1
+       },
+       {
+        "direccion": "TDAuHDXYNTrtY1k6GNibek44yHEqyQfVkC",
+        "peso": 1
+       }
+      ]
+     },
+     {
+      "nombre": "vip",
+      "umbral": 1,
+      "operaciones": "0000000000000006000000000000000000000000000000000000000000000000",
+      "claves": [
+       {
+        "direccion": "TLrXr28SvaKNZLDTbkdRxeCE4TE11edxZ5",
+        "peso": 1
+       }
+      ]
+     }
+    ]
+   },
+   "permisosEnLaLectura": {
+    "owner": {
+     "umbral": 3,
+     "claves": [
+      {
+       "direccion": "TShAfXbh4kUzmkJ9Ckdo5J6ujWi1M5NLE2",
+       "peso": 1
+      },
+      {
+       "direccion": "TUgSgCQL6pMSy9zByn4sgxqrJa95sZExBG",
+       "peso": 1
+      },
+      {
+       "direccion": "TVnGY8vuJhxDX5b7mTpwaJ9vNDtmjdBxMm",
+       "peso": 1
+      },
+      {
+       "direccion": "TV7WmJXhYyd4rqRjbWg62eX8e5DoPbyiA3",
+       "peso": 1
+      },
+      {
+       "direccion": "TDAuHDXYNTrtY1k6GNibek44yHEqyQfVkC",
+       "peso": 1
+      }
+     ]
+    },
+    "activos": [
+     {
+      "id": 2,
+      "nombre": "active",
+      "umbral": 3,
+      "operaciones": "7fff1fc0033ec30f000000000000000000000000000000000000000000000000",
+      "claves": [
+       {
+        "direccion": "TShAfXbh4kUzmkJ9Ckdo5J6ujWi1M5NLE2",
+        "peso": 1
+       },
+       {
+        "direccion": "TUgSgCQL6pMSy9zByn4sgxqrJa95sZExBG",
+        "peso": 1
+       },
+       {
+        "direccion": "TVnGY8vuJhxDX5b7mTpwaJ9vNDtmjdBxMm",
+        "peso": 1
+       },
+       {
+        "direccion": "TV7WmJXhYyd4rqRjbWg62eX8e5DoPbyiA3",
+        "peso": 1
+       },
+       {
+        "direccion": "TDAuHDXYNTrtY1k6GNibek44yHEqyQfVkC",
+        "peso": 1
+       }
+      ]
+     },
+     {
+      "id": 3,
+      "nombre": "vip",
+      "umbral": 1,
+      "operaciones": "0000000000000006000000000000000000000000000000000000000000000000",
+      "claves": [
+       {
+        "direccion": "TLrXr28SvaKNZLDTbkdRxeCE4TE11edxZ5",
+        "peso": 1
+       }
+      ]
+     }
+    ],
+    "testigo": null
+   }
+  },
+  {
+   "cuenta": "TU3rMHyWHzeEJBReWLzHko728hbz6MtfNg",
+   "tx": "d8758f857d6879c9481acdeb61007b58b7df1407165cf91bd5efe989db7c9cca",
+   "hora": "2026-11-13T13:18:09.000Z",
+   "tipo": "AccountPermissionUpdateContract",
+   "permisoUsado": 0,
+   "firmas": 1,
+   "nuevo": {
+    "owner": {
+     "umbral": 1,
+     "claves": [
+      {
+       "direccion": "TM3sTVyahiGWYktKg8G6miHpTzRurKDt7b",
+       "peso": 1
+      }
+     ]
+    },
+    "activos": [
+     {
+      "nombre": "active",
+      "umbral": 1,
+      "operaciones": "000000c002200000000000000000000000000000000000000000000000000000",
+      "claves": [
+       {
+        "direccion": "TCXrf8SwGjcmQYY1FcFnV3LUXSQpqod3bi",
+        "peso": 1
+       }
+      ]
+     }
+    ]
+   },
+   "permisosEnLaLectura": {
+    "owner": {
+     "umbral": 1,
+     "claves": [
+      {
+       "direccion": "TM3sTVyahiGWYktKg8G6miHpTzRurKDt7b",
+       "peso": 1
+      }
+     ]
+    },
+    "activos": [
+     {
+      "id": 2,
+      "nombre": "active",
+      "umbral": 1,
+      "operaciones": "000000c002200000000000000000000000000000000000000000000000000000",
+      "claves": [
+       {
+        "direccion": "TCXrf8SwGjcmQYY1FcFnV3LUXSQpqod3bi",
+        "peso": 1
+       }
+      ]
+     }
+    ],
+    "testigo": null
+   }
+  }
+ ],
+ "p4": {
+  "tx": "0e1943ba5a65e6a33eb35d365129c8b6142e55147faa6e8291274ffe28b3a16b",
+  "hora": "2026-11-13T14:37:03.000Z",
+  "bloque": 87968918,
+  "resultado": "SUCCESS",
+  "firmante": "TT2T17KZhoDu47i2E4FWxfG79zdkEWkU9N",
+  "contrato": "TNJVzGqKBWkJxJB5XYSqGAwUTV15U24pPq",
+  "selector": "baa2abde",
+  "traspasos": [
+   {
+    "token": "TQcNLD2PAdQhH9q5WWwYaNWPDHKoK4GEYh",
+    "de": "TT2T17KZhoDu47i2E4FWxfG79zdkEWkU9N",
+    "a": "TQcNLD2PAdQhH9q5WWwYaNWPDHKoK4GEYh",
+    "valor": "9999999999998999"
+   },
+   {
+    "token": "TQcNLD2PAdQhH9q5WWwYaNWPDHKoK4GEYh",
+    "de": "T9yD14Nj9j7xAB4dbGeiX9h8unkKHxuWwb",
+    "a": "TPdthWzUHfepu2TEBimTFi1sBWtGYi3Ksa",
+    "valor": "31444391753498"
+   },
+   {
+    "token": "TQcNLD2PAdQhH9q5WWwYaNWPDHKoK4GEYh",
+    "de": "TQcNLD2PAdQhH9q5WWwYaNWPDHKoK4GEYh",
+    "a": "T9yD14Nj9j7xAB4dbGeiX9h8unkKHxuWwb",
+    "valor": "9999999999998999"
+   },
+   {
+    "token": "TR7NHqjeKQxGTCi8q8ZY4pL8otSzgjLj6t",
+    "de": "TQcNLD2PAdQhH9q5WWwYaNWPDHKoK4GEYh",
+    "a": "TT2T17KZhoDu47i2E4FWxfG79zdkEWkU9N",
+    "valor": "10202944274"
+   },
+   {
+    "token": "TThzxNRLrW2Brp9DcTQU8i4Wd9udCWEdZ3",
+    "de": "TQcNLD2PAdQhH9q5WWwYaNWPDHKoK4GEYh",
+    "a": "TT2T17KZhoDu47i2E4FWxfG79zdkEWkU9N",
+    "valor": "10169920316425244968942"
+   }
+  ]
+ }
+}

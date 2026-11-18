@@ -1,0 +1,22 @@
+{
+ "version": 1,
+ "leidoEn": "2026-11-18T08:43:46.915Z",
+ "fuente": "TronGrid /wallet/getdelegatedresourcev2",
+ "de": "TEF9ZVUxhmGGffvkf59e2vdLfAG1QCMb7B",
+ "a": "TU4vEruvZwLLkSfV9bNw12EJTPvNr7Pvaa",
+ "energiaTrx": 250000000,
+ "anchoTrx": 0,
+ "el5Nov": {
+  "energiaTrx": 100000000,
+  "origen": "investigacion-energia-2026-11-05/a2-a4-a5/receptores-81.json"
+ },
+ "bruto": {
+  "delegatedResource": [
+   {
+    "from": "TEF9ZVUxhmGGffvkf59e2vdLfAG1QCMb7B",
+    "to": "TU4vEruvZwLLkSfV9bNw12EJTPvNr7Pvaa",
+    "frozen_balance_for_energy": 250000000000000
+   }
+  ]
+ }
+}

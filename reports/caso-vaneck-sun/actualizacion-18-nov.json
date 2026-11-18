@@ -1,0 +1,351 @@
+{
+ "version": 1,
+ "generadoEn": "2026-11-18T08:45:03.651Z",
+ "nota": "Actualización del 18-nov-2026 del caso Vaneck. Generado por j7-datos-para-la-web.cjs a partir de las lecturas de investigacion/research/tron-vaneck-sun/actualizacion-2026-11-18/ (TronGrid, solo lectura).",
+ "tramo": {
+  "desde": "2026-11-13T00:39:00.000Z",
+  "hasta": "2026-11-18T08:22:48.400Z"
+ },
+ "cuenta": "TT2T17KZhoDu47i2E4FWxfG79zdkEWkU9N",
+ "vaneck": {
+  "transacciones": 0,
+  "trc20": 0,
+  "libreTrx": 7523697.544997,
+  "retirableSinRetirarTrx": 132703297
+ },
+ "financiadora": {
+  "transacciones": 0,
+  "trc20": 1
+ },
+ "retirada": {
+  "hora": "2026-11-17T06:05:24.000Z",
+  "tx": "7d63397454fee11b741a3f5c9bd3ff3adede8500450794a1ff7117fe2c4c6315",
+  "trx": 519035766.469722,
+  "podiaDesde": "2026-11-15T07:37:39.000Z"
+ },
+ "sunio": {
+  "operaciones": [
+   {
+    "hora": "2026-11-14T15:36:45.000Z",
+    "tx": "ccaf7b16b2fc7a2719310152205ccf854b68b1d4f92e042b26c454b4e6f28dbc",
+    "version": "V3",
+    "contrato": "TLSWrv7eC1AZCXkRjpqMZUmvgd99cj7pPF",
+    "que": "pone",
+    "trx": 0,
+    "usdt": 2000000
+   },
+   {
+    "hora": "2026-11-14T15:37:48.000Z",
+    "tx": "1abd35575b95bda2ad17ec20eb7c12f9b16c51df8b1babcafe53293518c9cb58",
+    "version": "V3",
+    "contrato": "TLSWrv7eC1AZCXkRjpqMZUmvgd99cj7pPF",
+    "que": "retira",
+    "trx": 285688853.355262,
+    "usdt": 11916318.389484
+   },
+   {
+    "hora": "2026-11-14T15:39:57.000Z",
+    "tx": "8d18c130b2520d61f4b9a0cac218ffff95ec8447b210945a0b9aeb291ee75182",
+    "version": "V3",
+    "contrato": "TLSWrv7eC1AZCXkRjpqMZUmvgd99cj7pPF",
+    "que": "pone",
+    "trx": 45521436.068596,
+    "usdt": 20000000
+   },
+   {
+    "hora": "2026-11-14T15:41:15.000Z",
+    "tx": "2a730d235555b399d0b0b91c78a0040b335ff09ffbfba8ea5d6baa5d1ca7fbcb",
+    "version": "V4",
+    "contrato": "TC8xQzPHfn5KceZV6s6GmZkBCFWWUoPXs1",
+    "que": "retira",
+    "trx": 259421620.670073,
+    "usdt": 10645178.185607
+   },
+   {
+    "hora": "2026-11-14T15:42:42.000Z",
+    "tx": "fc44fa43534b111a519d2b36e07e07baa5f7281774840922d6cf9bd381be32b9",
+    "version": "V4",
+    "contrato": "TC8xQzPHfn5KceZV6s6GmZkBCFWWUoPXs1",
+    "que": "pone",
+    "trx": 32015759.141326,
+    "usdt": 14000000
+   },
+   {
+    "hora": "2026-11-17T06:07:12.000Z",
+    "tx": "d401222a71d3f70ca26a44944338e5ccc3672a77363d69b4207224f62a14c2b2",
+    "version": "V4",
+    "contrato": "TC8xQzPHfn5KceZV6s6GmZkBCFWWUoPXs1",
+    "que": "pone",
+    "trx": 80587793.466872,
+    "usdt": 29994635.466989
+   }
+  ],
+  "totales": {
+   "retiradoTrx": 545110474.025335,
+   "retiradoUsdt": 22561496.575091,
+   "puestoTrx": 158124988.676794,
+   "puestoUsdt": 65994635.466989,
+   "netoTrx": -386985485.348541,
+   "netoUsdt": 43433138.891898
+  },
+  "contratos": {
+   "V3": "TLSWrv7eC1AZCXkRjpqMZUmvgd99cj7pPF",
+   "V4": "TC8xQzPHfn5KceZV6s6GmZkBCFWWUoPXs1"
+  }
+ },
+ "justlend": [
+  {
+   "hora": "2026-11-14T15:33:03.000Z",
+   "tx": "72550c1604b0147f9971fb7d0a1c02acbca27fdb90400a5e524c971f3aa880bc",
+   "que": "retira",
+   "usdt": 5000000
+  },
+  {
+   "hora": "2026-11-14T15:38:27.000Z",
+   "tx": "2320962fa0b7dda9f299b32750bbec4405ce1bb08a6d5421720d4f2725641f93",
+   "que": "retira",
+   "usdt": 9004966.087849
+  },
+  {
+   "hora": "2026-11-17T07:20:27.000Z",
+   "tx": "ed30ad41c239fc4e6516387127ae719c92b7c405350970246c413cc76057bb84",
+   "que": "deposita",
+   "usdt": 37656786.198481
+  }
+ ],
+ "usdtRecibido": [
+  {
+   "hora": "2026-11-14T16:28:12.000Z",
+   "tx": "16e422d447e5388e48fa5221c91f1ed693ae7614ac2a7d79f18e44833f0f7fe5",
+   "de": "TWhDfwC8QE6pQyiYy248dNor3uphPEw5M2",
+   "usdt": 29999998.8
+  },
+  {
+   "hora": "2026-11-17T07:17:57.000Z",
+   "tx": "3df6d7b67c0edd4e147926aa702a23ab1f43a978607eef7eed7e4561573498bf",
+   "de": "TWpMnUh9pZS1Mf8yyw9WPiS82WYevKzQo2",
+   "usdt": 5044200
+  },
+  {
+   "hora": "2026-11-17T07:18:54.000Z",
+   "tx": "085713bde48e25a9f798a7d5b525a1607fe5e21aa76cda57ddfedf3a41ad80a6",
+   "de": "TKpiitwGUuW5WgsBMg5w5QWUpC6nUTroqa",
+   "usdt": 31781504.9034
+  }
+ ],
+ "enviosTrxAOtraDireccion": 0,
+ "usdtEnviadoAOtraDireccion": 0,
+ "posicionesV3": {
+  "gestor": "TLSWrv7eC1AZCXkRjpqMZUmvgd99cj7pPF",
+  "antes": {
+   "leidoEn": "2026-11-12T23:59:30.678Z",
+   "conLiquidez": 10,
+   "nft": 48,
+   "ids": [
+    4,
+    5,
+    726,
+    844,
+    937,
+    978,
+    979,
+    1118,
+    1120,
+    1573
+   ]
+  },
+  "despues": {
+   "leidoEn": "2026-11-18T08:22:53.026Z",
+   "conLiquidez": 9,
+   "nft": 50,
+   "ids": [
+    4,
+    5,
+    726,
+    844,
+    937,
+    978,
+    1573,
+    1992,
+    1993
+   ]
+  },
+  "vaciadas": [
+   {
+    "id": 979,
+    "par": {
+     "token0": "TR7NHqjeKQxGTCi8q8ZY4pL8otSzgjLj6t",
+     "token1": "TXZQuyCasxN42bjAcYpP2xwYVMCF6gHBnv",
+     "nombre": "USDT / TRUMP",
+     "comisionPct": 0.05
+    }
+   },
+   {
+    "id": 1118,
+    "par": {
+     "token0": "TR7NHqjeKQxGTCi8q8ZY4pL8otSzgjLj6t",
+     "token1": "TSSMHYeV2uE9qYH95DqyoCuNCzEL1NvU3S",
+     "nombre": "USDT / SUN",
+     "comisionPct": 0.05
+    }
+   },
+   {
+    "id": 1120,
+    "par": {
+     "token0": "TR7NHqjeKQxGTCi8q8ZY4pL8otSzgjLj6t",
+     "token1": "TUPM7K8REVzD2UdV4R5fe5M8XbnR2DdoJ6",
+     "nombre": "USDT / HTX",
+     "comisionPct": 0.05
+    }
+   }
+  ],
+  "nuevas": [
+   {
+    "id": 1992,
+    "par": {
+     "token0": "TR7NHqjeKQxGTCi8q8ZY4pL8otSzgjLj6t",
+     "token1": "TUPM7K8REVzD2UdV4R5fe5M8XbnR2DdoJ6",
+     "nombre": "USDT / HTX",
+     "comisionPct": 0.05
+    }
+   },
+   {
+    "id": 1993,
+    "par": {
+     "token0": "TNUC9Qb1rRpS5CbWLmNMxXBjyFoydXjWFR",
+     "token1": "TR7NHqjeKQxGTCi8q8ZY4pL8otSzgjLj6t",
+     "nombre": "WTRX / USDT",
+     "comisionPct": 0.05
+    }
+   }
+  ],
+  "financiadora": {
+   "antes": {
+    "conLiquidez": 1,
+    "ids": [
+     980
+    ]
+   },
+   "despues": {
+    "conLiquidez": 1,
+    "ids": [
+     980
+    ]
+   }
+  }
+ },
+ "entorno": {
+  "usdtDesdeBinance": {
+   "cuenta": "TKpiitwGUuW5WgsBMg5w5QWUpC6nUTroqa",
+   "creada": "2024-08-20T18:11:45.000Z",
+   "hot12": "TJTKCzQpsG19CSMYF9TPtxz6wSHPSyeKfa",
+   "entradas": [
+    {
+     "hora": "2026-11-17T06:42:06.000Z",
+     "tx": "20c8d0602e54966ccfd2061c67d3de843540a05fc1b1d630e379862e62159597",
+     "de": "TJTKCzQpsG19CSMYF9TPtxz6wSHPSyeKfa",
+     "usdt": 19999997
+    },
+    {
+     "hora": "2026-11-17T06:42:09.000Z",
+     "tx": "8fc575914bc206313d6282cd782e23b7cab87b5293dba3e31466f72c67458614",
+     "de": "TJTKCzQpsG19CSMYF9TPtxz6wSHPSyeKfa",
+     "usdt": 10704034
+    },
+    {
+     "hora": "2026-11-17T07:13:54.000Z",
+     "tx": "ce51f5a024a4fda3c0d2e759c27e61e3371c76be4ce2c6b1740c28d7bd677178",
+     "de": "TCQ8X6x9GiK4khydWVKfLJvm8H6WK3RE8B",
+     "usdt": 1077473.9034
+    }
+   ],
+   "deHot12Usdt": 30704031,
+   "totalEntradoUsdt": 31781504.9034,
+   "salida": {
+    "hora": "2026-11-17T07:18:54.000Z",
+    "tx": "085713bde48e25a9f798a7d5b525a1607fe5e21aa76cda57ddfedf3a41ad80a6",
+    "a": "TT2T17KZhoDu47i2E4FWxfG79zdkEWkU9N",
+    "usdt": 31781504.9034
+   },
+   "trxDesdeHot12": {
+    "envios": 11,
+    "trx": 155299978,
+    "primero": "2026-11-17T06:44:00.000Z",
+    "ultimo": "2026-11-18T08:29:21.000Z",
+    "txs": [
+     "255ea37c66b8b59806c89536c9b59932a585b250070878ec7570e0ef70be0f2b",
+     "ec2154d012992beb0034b7cd26ea88572e362a858b5f3f4248004ec56ea94034",
+     "c5a9cf45937650f77bba094e8c99ebc1ebd22b329c12dd86ce7904ceda508556",
+     "b1e85459c7f9ad76df4374abc331d656803fc9387d36ba159041604566db4a1d",
+     "b25e13d3621ef01f3bec92f48583cbc54ab915708985b34f0604172330710f82",
+     "d0484942f10bef8c139c75bd7e4f9e007ff17904b2a8afe25321ff12ee2b5df9",
+     "19841bfd6e4afb25e48ce4aa0e11608182d67ef928928dcdf782752998535ec0",
+     "d6f26475f98bced0a91e9b09a2447e4fb0b6758ce3c768c087d1be8d20624c08",
+     "19c2802f89af5c4a38dd26f678ee8085917fecefb424624b0926f514be8cd3be",
+     "42d1a5ce063ec37e56c094d83baede13fc33f996b3d59120c13793921a313cd2",
+     "2e33207c7697f87bd49444908ddd1515c87b532c167b0f1336d5085fb436c08c"
+    ]
+   },
+   "libreTrx": 156109969.57153,
+   "leidoEn": "2026-11-18T08:44:49.288Z"
+  },
+  "energiaBybit": {
+   "de": "TEF9ZVUxhmGGffvkf59e2vdLfAG1QCMb7B",
+   "a": "TU4vEruvZwLLkSfV9bNw12EJTPvNr7Pvaa",
+   "antesTrx": 100000000,
+   "despuesTrx": 250000000,
+   "leidoEn": "2026-11-18T08:43:46.915Z",
+   "delegacion": {
+    "tx": "d1d5d3806c8343c52a91f7940df529291c29fa5ec5689ae6f5fa2383b45b8658",
+    "hora": "2026-11-08T09:04:15.000Z",
+    "tipo": "DelegateResourceContract",
+    "de": "TEF9ZVUxhmGGffvkf59e2vdLfAG1QCMb7B",
+    "a": "TU4vEruvZwLLkSfV9bNw12EJTPvNr7Pvaa",
+    "trx": 150000000,
+    "recurso": "ENERGY",
+    "bloqueada": false
+   }
+  },
+  "stusdt": {
+   "tx": "0e1943ba5a65e6a33eb35d365129c8b6142e55147faa6e8291274ffe28b3a16b",
+   "hora": "2026-11-13T14:37:03.000Z",
+   "usdt": 10202.944274,
+   "stusdt": 10169.920316
+  },
+  "permisoPareja": {
+   "cuenta": "TSzSgxRisS5VBXXDcAezTDvnPGi9CbsXvJ",
+   "tx": "d549741db9d81e01975ced9e25ebe37a3e0842cb3add450153eb4edb8be21f03",
+   "hora": "2026-11-12T09:40:12.000Z",
+   "firmas": 3,
+   "propietario": {
+    "umbral": 3,
+    "claves": 5
+   },
+   "nuevo": {
+    "nombre": "vip",
+    "umbral": 1,
+    "clave": "TLrXr28SvaKNZLDTbkdRxeCE4TE11edxZ5",
+    "operaciones": "0000000000000006000000000000000000000000000000000000000000000000"
+   }
+  }
+ },
+ "estado": {
+  "leidoEn": "2026-11-18T08:25:51.215Z",
+  "segundaCuenta": {
+   "libreTrx": 2386656491.817168,
+   "congeladoTrx": 20329621.666876,
+   "delegadoTrx": 187482220.552002,
+   "descongelando": 0
+  }
+ },
+ "origen": {
+  "movimientos": "movimientos-desde-13-nov.json",
+  "operaciones": "operaciones-sunio-14-y-17-nov.json",
+  "posiciones": "posiciones-v3-2026-11-18.json",
+  "posicionesAntes": "../actualizacion-2026-11-13/posiciones-v3-2026-11-13.json",
+  "estado": "estado-cuentas-2026-11-18.json",
+  "simbolos": "simbolos-tokens.json",
+  "pistas": "pistas-2026-11-18.json",
+  "energiaBybit": "energia-a-bybit-2026-11-18.json"
+ }
+}

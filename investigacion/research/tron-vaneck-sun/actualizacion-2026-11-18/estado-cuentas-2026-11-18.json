@@ -1,0 +1,75 @@
+{
+ "version": 1,
+ "leidoEn": "2026-11-18T08:25:51.215Z",
+ "fuente": "TronGrid /wallet/getaccount (visible)",
+ "cuentas": {
+  "vaneck": {
+   "direccion": "TCGVFGDd62LSrfZEaz3M3fYifWWdSDHRL8",
+   "libreTrx": 7523697.544997,
+   "congeladoEnergia": 0,
+   "congeladoAncho": 0,
+   "delegadoEnergia": 0,
+   "delegadoAncho": 0,
+   "descongelando": [
+    {
+     "trx": 132703297,
+     "libreEl": "2026-10-31T15:20:45.000Z"
+    }
+   ]
+  },
+  "segunda_cuenta": {
+   "direccion": "TT2T17KZhoDu47i2E4FWxfG79zdkEWkU9N",
+   "libreTrx": 2386656491.817168,
+   "congeladoEnergia": 0,
+   "congeladoAncho": 20329621.666876,
+   "delegadoEnergia": 187482220.552002,
+   "delegadoAncho": 0,
+   "descongelando": []
+  },
+  "financiadora": {
+   "direccion": "TPyjyZfsYaXStgz2NmAraF1uZcMtkgNan5",
+   "libreTrx": 1875965534.561589,
+   "congeladoEnergia": 0,
+   "congeladoAncho": 0,
+   "delegadoEnergia": 0,
+   "delegadoAncho": 0,
+   "descongelando": []
+  },
+  "cuenta_de_energia": {
+   "direccion": "TEF9ZVUxhmGGffvkf59e2vdLfAG1QCMb7B",
+   "libreTrx": 336.177869,
+   "congeladoEnergia": 853059,
+   "congeladoAncho": 40900,
+   "delegadoEnergia": 1648732141,
+   "delegadoAncho": 28817200,
+   "descongelando": []
+  },
+  "proveedora": {
+   "direccion": "TWhDfwC8QE6pQyiYy248dNor3uphPEw5M2",
+   "libreTrx": 401090.197704,
+   "congeladoEnergia": 0,
+   "congeladoAncho": 0,
+   "delegadoEnergia": 0,
+   "delegadoAncho": 0,
+   "descongelando": []
+  },
+  "TYL7z7VS": {
+   "direccion": "TYL7z7VSVRShLoJ6YRQMA4t9pSECt9ZLmz",
+   "libreTrx": 950029975.951602,
+   "congeladoEnergia": 0,
+   "congeladoAncho": 0,
+   "delegadoEnergia": 0,
+   "delegadoAncho": 0,
+   "descongelando": []
+  },
+  "TKpiitwG": {
+   "direccion": "TKpiitwGUuW5WgsBMg5w5QWUpC6nUTroqa",
+   "libreTrx": 95309979.57153,
+   "congeladoEnergia": 0,
+   "congeladoAncho": 0,
+   "delegadoEnergia": 0,
+   "delegadoAncho": 0,
+   "descongelando": []
+  }
+ }
+}
