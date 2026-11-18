@@ -39,6 +39,9 @@
   M.paginaActual = () => { const f = (location.pathname.split('/').pop() || 'index.html').toLowerCase(); return { 'mercado.html': 'mer', 'herramientas.html': 'her', 'fundamentales.html': 'fun', 'datos.html': 'met', 'como-investigamos.html': 'met', 'cambios.html': 'met', 'acerca.html': 'ace', 'novedades.html': 'ace', 'buscar.html': 'bus', 'index.html': 'inv', 'report.html': 'inv', 'caso-vaneck.html': 'inv', 'archivo.html': 'inv' }[f] || ''; };
   M.navEl = () => { const act = M.paginaActual(); const enPortada = /^(index\.html)?$/.test((location.pathname.split('/').pop() || '').toLowerCase()); return M.nav.map((e) => { const a = document.createElement('a'); a.className = 'nv-sitio' + (e.k === act ? ' on' : ''); a.href = e.k === 'inv' && enPortada ? '#informes' : e.u; a.textContent = e.t; if (e.titulo) a.title = e.titulo; return a; }); };
   document.addEventListener('DOMContentLoaded', () => {
+    // bandera de cabecera (decorativa), justo debajo del menú, igual en todas las páginas
+    const menu = document.querySelector('.topbar');
+    if (menu && !document.querySelector('.bandera-cab')) { const d = document.createElement('div'); d.className = 'bandera-cab'; d.setAttribute('aria-hidden', 'true'); d.innerHTML = '<div class="marco"><img src="assets/brand/bandera.jpg" alt="" width="1600" height="800" decoding="async"></div>'; menu.after(d); }
     // barra principal: la misma en todas las páginas; las que tienen capítulos propios los añaden después de estos enlaces
     const nv = document.querySelector('.topbar nav'); if (nv) nv.replaceChildren(...M.navEl());
     // marca en la barra superior

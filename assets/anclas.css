@@ -1,0 +1,7 @@
+/* Saltos a capítulos: el menú va fijo arriba (63 px; 112 px en los informes, que llevan los capítulos en una segunda fila),
+   así que al saltar a un capítulo se deja hueco para que no tape el título.
+   (Antes de quitar las barras de novedades, estos márgenes sumaban también la altura de las barras: 52 px.) */
+section.blk{scroll-margin-top:78px}
+@supports selector(:has(*)){
+  html:has(.topbar nav a[href^="#cap-"]) section.blk, html:has(.topbar nav a[href^="#cap-"]) .cap{scroll-margin-top:127px}
+}

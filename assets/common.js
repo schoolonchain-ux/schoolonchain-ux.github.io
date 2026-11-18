@@ -1,7 +1,7 @@
-/* Utilidades compartidas: tema, formatos, tooltip y colores. */
+/* Utilidades compartidas: formatos, tooltip y colores. */
 (function () {
   const root = document.documentElement;
-  try { const t = localStorage.getItem('tema'); if (t) root.setAttribute('data-theme', t); } catch (e) {}
+  root.setAttribute('data-theme', 'dark'); // la web es solo oscura (estilo «bandera»): ya no hay botón de tema ni se lee el tema guardado
   const nf = (d) => new Intl.NumberFormat('es-ES', { maximumFractionDigits: d, minimumFractionDigits: 0, useGrouping: 'always' });
   const C = window.C = {
     n: (x, d = 0) => (x == null || isNaN(x) ? '—' : nf(d).format(x)),
@@ -51,13 +51,4 @@
       Chart.defaults.plugins.tooltip.padding = 9; Chart.defaults.plugins.tooltip.cornerRadius = 8;
     },
   };
-  document.addEventListener('DOMContentLoaded', () => {
-    const b = document.getElementById('theme');
-    if (b) b.addEventListener('click', () => {
-      const cur = root.getAttribute('data-theme') || (matchMedia('(prefers-color-scheme:dark)').matches ? 'dark' : 'light');
-      const nxt = cur === 'dark' ? 'light' : 'dark'; root.setAttribute('data-theme', nxt);
-      try { localStorage.setItem('tema', nxt); } catch (e) {}
-      location.reload();
-    });
-  });
 })();

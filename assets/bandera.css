@@ -1,0 +1,121 @@
+/* ===== Estilo «Bandera» de toda la web =====
+   Negro de tela, rojo bandera y texto hueso, como Contract Intelligence. Titulares en Saira Condensed (mayúsculas), texto en IBM Plex Sans,
+   direcciones y cifras en IBM Plex Mono (las tres se sirven desde assets/fuentes.css, sin servicios externos).
+   Solo cambia la «ropa» de la web: los colores de los DATOS (verde = bien, ámbar = aviso, gráficos, mapas) no se tocan.
+   Va SIEMPRE la última hoja del <head> y todas las reglas llevan el prefijo html.bandera[data-theme] (que cada página declara en <html>),
+   para ganar a las hojas de cada página sin usar !important. La web es solo oscura: ya no hay botón de tema. */
+
+html.bandera[data-theme]{
+  --bg:#0b0b0c; --pan:#121214; --fg:#e9e4da; --soft:#bdb7ad; --mut:#8f897f; --line:#2a2a2e;
+  --acc:#ff3b3f; --hack:#d61f26;
+  --rojo:#d61f26; --rojo2:#ff3b3f; --rojo-osc:#5a0f12;
+  --m-azul:#d61f26; --m-naranja:#d61f26;
+  --velo:rgba(255,255,255,0);
+  --shadow:0 1px 2px rgba(0,0,0,.65),0 12px 28px rgba(0,0,0,.45);
+  --brillo:inset 0 0 0 rgba(0,0,0,0);
+  --titulo:'Saira Condensed','Arial Narrow',sans-serif;
+  --texto:'IBM Plex Sans',system-ui,-apple-system,'Segoe UI',Roboto,sans-serif;
+  --mono:'IBM Plex Mono',ui-monospace,Consolas,monospace;
+  color-scheme:dark;
+}
+html.bandera[data-theme] body{
+  font-family:var(--texto);
+  background-color:var(--bg);
+  background-image:
+    repeating-linear-gradient(0deg,rgba(255,255,255,.012) 0 1px,transparent 1px 3px),
+    repeating-linear-gradient(90deg,rgba(255,255,255,.01) 0 1px,transparent 1px 3px),
+    radial-gradient(ellipse at 50% -10%,#1d1d21 0,var(--bg) 60%);
+}
+
+/* ---- menú: lo único fijo arriba ---- */
+html.bandera[data-theme] .topbar{background:#070708;background-image:none;border-bottom:1px solid var(--line);backdrop-filter:none}
+html.bandera[data-theme] .topbar .wrap{height:62px}
+html.bandera[data-theme] .brand{font-family:var(--titulo);font-size:23px;font-weight:800;letter-spacing:.05em;text-transform:uppercase}
+html.bandera[data-theme] .topbar .brand .bn{line-height:1}
+html.bandera[data-theme] .topbar .brand .bn small{font-family:var(--texto);font-size:9.5px;font-weight:500;letter-spacing:.14em;margin-top:3px;color:var(--mut)}
+html.bandera[data-theme] .topbar nav a{font-family:var(--titulo);font-size:15.5px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:var(--soft);border-radius:0;padding:9px 11px;border-bottom:2px solid transparent;background:none}
+html.bandera[data-theme] .topbar nav a:hover{color:#fff;background:none;border-bottom-color:var(--rojo-osc)}
+html.bandera[data-theme] .topbar nav a.on{color:var(--rojo2);background:none;border-bottom-color:var(--rojo)}
+html.bandera[data-theme] .soc{border-radius:3px;background:transparent;border-color:var(--line)}
+html.bandera[data-theme] .soc:hover{border-color:var(--rojo);color:#fff}
+/* en los informes, los capítulos van en una segunda fila (regla de site4.css): la altura fija de arriba no debe cortarla */
+html.bandera[data-theme] .topbar .wrap:has(nav a[href^="#cap-"]){height:auto;min-height:62px}
+/* pantallas medianas y móvil: el menú es algo más compacto para que quepan las siete secciones */
+@media (min-width:641px) and (max-width:1180px){
+  html.bandera[data-theme] .brand{font-size:20px}
+  html.bandera[data-theme] .topbar nav a{font-size:14px;padding:9px 7px;letter-spacing:.05em}
+}
+@media (max-width:640px){
+  html.bandera[data-theme] .topbar .wrap{height:56px}
+  html.bandera[data-theme] .brand{font-size:19px}
+  html.bandera[data-theme] .topbar nav a{font-size:14px;padding:8px 8px;letter-spacing:.05em}
+}
+
+/* ---- globo de fondo: al verse a través de los huecos del contenido, los nombres de puertos y los barcos podían pasar justo detrás del texto.
+   Se pone una banda oscura y translúcida detrás de la columna de contenido (con los bordes difuminados): el texto se lee con calma y el globo
+   se ve entero en los márgenes y a través de la banda. ---- */
+html.bandera[data-theme] main.wrap,
+html.bandera[data-theme] .pie-sitio{background:linear-gradient(90deg,transparent 0,rgba(11,11,12,.7) 36px,rgba(11,11,12,.7) calc(100% - 36px),transparent 100%)}
+
+/* ---- bandera de cabecera (la pone marca.js debajo del menú en todas las páginas) ---- */
+.bandera-cab{max-width:1240px;margin:22px auto 0;padding:0 20px}
+.bandera-cab .marco{position:relative;width:100%;aspect-ratio:2/1;max-height:340px;overflow:hidden;background:#000;border:1px solid #000;box-shadow:0 18px 40px rgba(0,0,0,.6)}
+.bandera-cab img{display:block;width:100%;height:100%;object-fit:cover;object-position:30% 60%}
+@media (max-width:640px){.bandera-cab{padding:0 14px}}
+
+/* ---- titulares de todas las páginas: los mismos que en la portada (Saira Condensed en mayúsculas); el tamaño lo sigue fijando cada página ---- */
+html.bandera[data-theme] h1{font-family:var(--titulo);font-weight:800;text-transform:uppercase;letter-spacing:.01em;line-height:1.02}
+html.bandera[data-theme] h2{font-family:var(--titulo);font-weight:700;text-transform:uppercase;letter-spacing:.025em;line-height:1.08}
+/* el título de un informe puede llevar un identificador (p. ej. «0x5227»): se deja tal cual está escrito, sin mayúsculas, para no alterar la «x» */
+html.bandera[data-theme] .rhead h1{text-transform:none}
+
+/* ---- portada ---- */
+html.bandera[data-theme] .hero2{border:1px solid var(--line);border-radius:4px;background:linear-gradient(180deg,#151517,#0e0e10);box-shadow:var(--shadow)}
+html.bandera[data-theme] .hero2::before{content:"";position:absolute;left:0;top:0;bottom:0;width:4px;background:var(--rojo)}
+html.bandera[data-theme] .hero2 .kick{font-family:var(--mono);font-size:11.5px;font-weight:500;letter-spacing:.09em;color:var(--rojo2)}
+html.bandera[data-theme] .hero2 .kick::before{background:var(--rojo);box-shadow:0 0 0 4px rgba(214,31,38,.28)}
+html.bandera[data-theme] .hero2 h1{font-family:var(--titulo);font-weight:800;text-transform:uppercase;font-size:clamp(36px,5.4vw,66px);line-height:.95;letter-spacing:.005em}
+html.bandera[data-theme] .hero2 h1 em{background:none;color:var(--rojo2);-webkit-text-fill-color:var(--rojo2)}
+html.bandera[data-theme] .hero2 p{color:var(--soft)}
+html.bandera[data-theme] .hero2 .art{border-radius:3px;border-color:var(--rojo-osc);box-shadow:0 18px 50px rgba(214,31,38,.2)}
+html.bandera[data-theme] .hero2 .lema{border-left-color:var(--rojo);color:var(--mut)}
+
+html.bandera[data-theme] .btn{border-radius:3px;font-family:var(--titulo);font-size:14.5px;font-weight:700;letter-spacing:.09em;text-transform:uppercase;padding:9px 17px;background:transparent;border:1px solid #4a4a50;color:var(--fg);box-shadow:none;text-shadow:none}
+html.bandera[data-theme] .btn:hover{border-color:var(--rojo2);color:#fff;filter:none}
+html.bandera[data-theme] .btn.primary{background:var(--rojo);border-color:var(--rojo);color:#fff}
+html.bandera[data-theme] .btn.primary:hover{background:var(--rojo2);border-color:var(--rojo2)}
+html.bandera[data-theme] .seg button.on{background:var(--rojo);color:#fff!important;box-shadow:none;text-shadow:none}
+
+/* ---- novedades y tarjetas ---- */
+html.bandera[data-theme] .novedades{border-radius:4px}
+html.bandera[data-theme] .novedades h2{font-family:var(--titulo);font-size:20px;letter-spacing:.06em;color:var(--fg);display:flex;align-items:center;gap:10px}
+html.bandera[data-theme] .novedades h2::before{content:"";flex:none;width:12px;height:12px;background:var(--rojo);clip-path:polygon(50% 0,100% 25%,100% 75%,50% 100%,0 75%,0 25%)}
+html.bandera[data-theme] .nov-nuevo{background:var(--rojo);border-radius:2px;font-family:var(--titulo);font-size:12px;letter-spacing:.1em;padding:1px 7px 0}
+html.bandera[data-theme] .nov-caso{color:var(--rojo2);font-family:var(--titulo);font-size:13px;letter-spacing:.1em}
+html.bandera[data-theme] .nov-linea{border-radius:3px;background:rgba(214,31,38,.07);border-color:rgba(214,31,38,.32)}
+
+html.bandera[data-theme] .rcard{border-radius:4px;background:var(--pan);background-image:none}
+html.bandera[data-theme] .rcard:hover{border-color:var(--rojo)}
+html.bandera[data-theme] .rcard.destacada{border-color:var(--rojo-osc);box-shadow:0 0 0 1px rgba(214,31,38,.14),var(--shadow)}
+html.bandera[data-theme] .rcard-img{border-radius:3px 3px 0 0}
+html.bandera[data-theme] .rcard h3{font-family:var(--titulo);font-size:24px;line-height:1.04;font-weight:800;text-transform:uppercase;letter-spacing:.01em}
+html.bandera[data-theme] .caso{background:var(--rojo);color:#fff;border-radius:2px;font-family:var(--titulo);font-size:13px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;text-shadow:none;box-shadow:none}
+html.bandera[data-theme] .chip{border-radius:2px;font-family:var(--mono);font-size:11px}
+html.bandera[data-theme] .rcard .nums div b{font-family:var(--mono);font-weight:600}
+html.bandera[data-theme] .mas-inv a{color:var(--soft)}
+html.bandera[data-theme] .mas-inv a:hover{color:var(--rojo2)}
+
+/* ---- laterales de la portada ---- */
+html.bandera[data-theme] .lado .lb{border-radius:4px;background:var(--pan);background-image:none}
+html.bandera[data-theme] .lado .lt{font-family:var(--titulo);font-size:17px;font-weight:700;letter-spacing:.04em;text-transform:uppercase}
+html.bandera[data-theme] .lado .lh{font-family:var(--titulo);font-size:14px;letter-spacing:.14em;color:var(--mut)}
+html.bandera[data-theme] .lado .lin input{border-radius:3px;background:#000}
+html.bandera[data-theme] .lado .lin button{border-radius:3px;background:var(--rojo);color:#fff;font-family:var(--titulo);font-size:14px;letter-spacing:.08em;text-transform:uppercase}
+html.bandera[data-theme] .lado .lcal>div{border-radius:3px;background:#0b0b0c}
+html.bandera[data-theme] .lado .lcal .hoy{border-color:var(--rojo2)}
+html.bandera[data-theme] .lado .ldots i.on{background:var(--rojo)}
+
+/* ---- pie ---- */
+html.bandera[data-theme] .pie-sitio{border-top:3px solid var(--rojo);margin-top:30px;padding-top:6px}
+html.bandera[data-theme] footer.marca .mt b{font-family:var(--titulo);font-size:20px;letter-spacing:.05em;text-transform:uppercase}
+html.bandera[data-theme] footer.marca .pie-nav b{font-family:var(--titulo);font-size:15px;letter-spacing:.1em;text-transform:uppercase;color:var(--rojo2)}
