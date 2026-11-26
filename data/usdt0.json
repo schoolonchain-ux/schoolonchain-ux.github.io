@@ -1,13 +1,13 @@
 {
  "version": 1,
- "leidoEn": "2026-11-26T06:05:44.225Z",
+ "leidoEn": "2026-11-26T12:05:44.281Z",
  "circulacion": {
-  "totalUsd": 3701831750,
+  "totalUsd": 3714376537,
   "redes": [
    {
     "id": "arbitrum",
     "nombre": "Arbitrum One",
-    "usdt0": 1105836286,
+    "usdt0": 1109804568,
     "nodosQueCoincidieron": 2,
     "nodosConfigurados": 2,
     "contrato": "0xFd086bC7CD5C481DCC9C85ebE478A1C0b69FCbb9",
@@ -16,7 +16,7 @@
    {
     "id": "polygon",
     "nombre": "Polygon PoS",
-    "usdt0": 859049437,
+    "usdt0": 864012444,
     "nodosQueCoincidieron": 2,
     "nodosConfigurados": 2,
     "contrato": "0xc2132D05D31c914a87C6611C10748AEb04B58e8F",
@@ -25,7 +25,7 @@
    {
     "id": "plasma",
     "nombre": "Plasma",
-    "usdt0": 831540867,
+    "usdt0": 831229596,
     "nodosQueCoincidieron": 1,
     "nodosConfigurados": 1,
     "contrato": "0xB8CE59FC3717ada4C02eaDF9682A9e934F625ebb",
@@ -34,7 +34,7 @@
    {
     "id": "mantle",
     "nombre": "Mantle",
-    "usdt0": 417428710,
+    "usdt0": 417379119,
     "nodosQueCoincidieron": 2,
     "nodosConfigurados": 2,
     "contrato": "0x779Ded0c9e1022225f8E0630b35a9b54bE713736",
@@ -43,7 +43,7 @@
    {
     "id": "xlayer",
     "nombre": "XLayer",
-    "usdt0": 142588146,
+    "usdt0": 142734647,
     "nodosQueCoincidieron": 2,
     "nodosConfigurados": 2,
     "contrato": "0x779Ded0c9e1022225f8E0630b35a9b54bE713736",
@@ -52,7 +52,7 @@
    {
     "id": "optimism",
     "nombre": "Optimism",
-    "usdt0": 92148145,
+    "usdt0": 94653948,
     "nodosQueCoincidieron": 2,
     "nodosConfigurados": 2,
     "contrato": "0x01bFF41798a0BcF287b996046Ca68b395DbC1071",
@@ -61,7 +61,7 @@
    {
     "id": "ink",
     "nombre": "Ink",
-    "usdt0": 53690082,
+    "usdt0": 53746239,
     "nodosQueCoincidieron": 2,
     "nodosConfigurados": 2,
     "contrato": "0x0200C29006150606B650577BBE7B6248F58470c1",
@@ -70,7 +70,7 @@
    {
     "id": "hyperevm",
     "nombre": "HyperEVM",
-    "usdt0": 51348835,
+    "usdt0": 51316945,
     "nodosQueCoincidieron": 1,
     "nodosConfigurados": 2,
     "contrato": "0xB8CE59FC3717ada4C02eaDF9682A9e934F625ebb",
@@ -79,7 +79,7 @@
    {
     "id": "unichain",
     "nombre": "Unichain",
-    "usdt0": 32861211,
+    "usdt0": 34157654,
     "nodosQueCoincidieron": 2,
     "nodosConfigurados": 2,
     "contrato": "0x9151434b16b9763660705744891fA906F660EcC5",
@@ -88,7 +88,7 @@
    {
     "id": "monad",
     "nombre": "Monad",
-    "usdt0": 31712021,
+    "usdt0": 31609158,
     "nodosQueCoincidieron": 2,
     "nodosConfigurados": 2,
     "contrato": "0xe7cd86e13AC4309349F30B3435a9d337750fC82D",
@@ -106,7 +106,7 @@
    {
     "id": "flare",
     "nombre": "Flare",
-    "usdt0": 19473150,
+    "usdt0": 19409253,
     "nodosQueCoincidieron": 2,
     "nodosConfigurados": 2,
     "contrato": "0xe7cd86e13AC4309349F30B3435a9d337750fC82D",
@@ -115,7 +115,7 @@
    {
     "id": "stable",
     "nombre": "Stable",
-    "usdt0": 16469944,
+    "usdt0": 16522416,
     "nodosQueCoincidieron": 1,
     "nodosConfigurados": 1,
     "contrato": "0x779Ded0c9e1022225f8E0630b35a9b54bE713736",
@@ -124,7 +124,7 @@
    {
     "id": "morph",
     "nombre": "Morph",
-    "usdt0": 10162386,
+    "usdt0": 10162770,
     "nodosQueCoincidieron": 2,
     "nodosConfigurados": 2,
     "contrato": "0xe7cd86e13AC4309349F30B3435a9d337750fC82D",
@@ -133,7 +133,7 @@
    {
     "id": "tempo",
     "nombre": "Tempo",
-    "usdt0": 7074183,
+    "usdt0": 6697128,
     "nodosQueCoincidieron": 1,
     "nodosConfigurados": 1,
     "contrato": "0x20C00000000000000000000014f22CA97301EB73",
@@ -142,7 +142,7 @@
    {
     "id": "berachain",
     "nombre": "Berachain",
-    "usdt0": 5152346,
+    "usdt0": 5655092,
     "nodosQueCoincidieron": 1,
     "nodosConfigurados": 1,
     "contrato": "0x779Ded0c9e1022225f8E0630b35a9b54bE713736",
@@ -160,7 +160,7 @@
    {
     "id": "rootstock",
     "nombre": "Rootstock",
-    "usdt0": 1494549,
+    "usdt0": 1494584,
     "nodosQueCoincidieron": 2,
     "nodosConfigurados": 2,
     "contrato": "0x779dED0C9e1022225F8e0630b35A9B54Be713736",
@@ -169,7 +169,7 @@
    {
     "id": "sei",
     "nombre": "Sei",
-    "usdt0": 1472883,
+    "usdt0": 1462409,
     "nodosQueCoincidieron": 2,
     "nodosConfigurados": 2,
     "contrato": "0x9151434b16b9763660705744891fA906F660EcC5",
@@ -190,9 +190,9 @@
   "metodo": "cantidad total emitida del token USDT0 en cada red (totalSupply), leída hoy a los nodos públicos configurados, que tienen que coincidir"
  },
  "respaldo": {
-  "usdtEnElAdaptador": 3717723747,
-  "diferenciaUsd": 15891998,
-  "diferenciaPct": 0.427,
+  "usdtEnElAdaptador": 3730505098,
+  "diferenciaUsd": 16128561,
+  "diferenciaPct": 0.432,
   "adaptador": "0x6C96dE32CEa08842dcc4058c14d3aaAD7Fa41dee",
   "usdtEthereum": "0xdAC17F958D2ee523a2206206994597C13D831ec7",
   "enlaceAdaptador": "https://etherscan.io/address/0x6C96dE32CEa08842dcc4058c14d3aaAD7Fa41dee",
@@ -201,7 +201,7 @@
   "nota": "No incluye Stellar, IOTA ni HyperCore, donde también hay USDT0 respaldado por este adaptador. Que haya más USDT guardado que USDT0 medido no es un faltante."
  },
  "vigilante": {
-  "generadoEn": "2026-11-26T05:43:06.797Z",
+  "generadoEn": "2026-11-26T11:44:17.963Z",
   "bloqueos": {
    "vigentesTotal": 65,
    "porRed": [
@@ -966,21 +966,21 @@
      "enlaceTx": "https://www.oklink.com/xlayer/tx/0x52efb57d0ec59cfbe57d72f68ecedfec5e255ad749bf1cce7e893dc3fa0f9ed1"
     }
    ],
-   "direccionesLeidasEn": "2026-11-26T06:05:44.225Z"
+   "direccionesLeidasEn": "2026-11-26T12:05:44.281Z"
   },
   "mensajes": {
    "ultimas24h": {
-    "total": 2265,
-    "entregados": 2232,
-    "enCurso": 33,
+    "total": 2330,
+    "entregados": 2283,
+    "enCurso": 47,
     "conProblema": 0
    },
-   "volumenUsd24h": 199279207,
+   "volumenUsd24h": 190691006,
    "rutasMayores": [
     {
      "ruta": "ethereum→ink",
      "mensajes": 3,
-     "usd": 45009918,
+     "usd": 45017328,
      "ejemplos": [
       {
        "guid": "0xc2bf431455754d0a95c96543d610075dc864bed4d730c95b2dd55b850bb9a01c",
@@ -1001,20 +1001,20 @@
        "enlaceTxOrigen": "https://etherscan.io/tx/0x7310ddd1b698ea6644b5f80510058fb1813d812e53cb9a01fdf773720dfd0ce3"
       },
       {
-       "guid": "0xa38aaaf3b344cffa6d61d5d9ce4327be39f120e9850b1c8c1cb221ff879bad05",
-       "estado": "DELIVERED",
-       "usd": 9918,
-       "cuando": "2026-11-25T11:20:59.000Z",
-       "enlace": "https://layerzeroscan.com/tx/0xa38aaaf3b344cffa6d61d5d9ce4327be39f120e9850b1c8c1cb221ff879bad05",
-       "txOrigen": "0x257c0a07bd6b28bc29c58b5efe381e2cacd4e13951e926aae1eac88dfb55c501",
-       "enlaceTxOrigen": "https://etherscan.io/tx/0x257c0a07bd6b28bc29c58b5efe381e2cacd4e13951e926aae1eac88dfb55c501"
+       "guid": "0x41202583645704948703485ca1cbc4e8303e1ca4ea6c1328e8aa36441a9cf7b2",
+       "estado": "INFLIGHT",
+       "usd": 17328,
+       "cuando": "2026-11-26T11:36:23.000Z",
+       "enlace": "https://layerzeroscan.com/tx/0x41202583645704948703485ca1cbc4e8303e1ca4ea6c1328e8aa36441a9cf7b2",
+       "txOrigen": "0xcd43358f89aa76a5f915cfd65104538402bc0661ca78d0c473ed37a6d328d700",
+       "enlaceTxOrigen": "https://etherscan.io/tx/0xcd43358f89aa76a5f915cfd65104538402bc0661ca78d0c473ed37a6d328d700"
       }
      ]
     },
     {
      "ruta": "ink→ethereum",
-     "mensajes": 4,
-     "usd": 42510341,
+     "mensajes": 5,
+     "usd": 42510342,
      "ejemplos": [
       {
        "guid": "0xf38b68fb6d6ed2069dffcd940224e97a30b282ab6dcfe8d98686fe27218945e1",
@@ -1051,23 +1051,23 @@
        "enlace": "https://layerzeroscan.com/tx/0x1e9f59bfa39755889074dca388404c4db168ec56f69c3c3094db9fb7c6d06df3",
        "txOrigen": "0xdeab52c496385233d6f19852d57a80918edbee8d41d0737c8cd92126ddf3e62b",
        "enlaceTxOrigen": "https://explorer.inkonchain.com/tx/0xdeab52c496385233d6f19852d57a80918edbee8d41d0737c8cd92126ddf3e62b"
+      },
+      {
+       "guid": "0xfe0d95fc7bbc0ca06f0d64d3bceb336be0ffbc62b0862917dffbaf7f3a442990",
+       "estado": "DELIVERED",
+       "usd": 1,
+       "cuando": "2026-11-26T05:53:56.000Z",
+       "enlace": "https://layerzeroscan.com/tx/0xfe0d95fc7bbc0ca06f0d64d3bceb336be0ffbc62b0862917dffbaf7f3a442990",
+       "txOrigen": "0xa1791d7ca5f0c470c4b0db621b820897c3dd9a9b939c7179a1f3dcf52146f117",
+       "enlaceTxOrigen": "https://explorer.inkonchain.com/tx/0xa1791d7ca5f0c470c4b0db621b820897c3dd9a9b939c7179a1f3dcf52146f117"
       }
      ]
     },
     {
      "ruta": "ethereum→tron",
-     "mensajes": 146,
-     "usd": 17257798,
+     "mensajes": 124,
+     "usd": 12144566,
      "ejemplos": [
-      {
-       "guid": "0x7c6ebb03764ae5e8d36a8a8476c8b467da4686d926525cf3d484cc8d652b33e4",
-       "estado": "DELIVERED",
-       "usd": 999649,
-       "cuando": "2026-11-25T10:31:35.000Z",
-       "enlace": "https://layerzeroscan.com/tx/0x7c6ebb03764ae5e8d36a8a8476c8b467da4686d926525cf3d484cc8d652b33e4",
-       "txOrigen": "0xce0f894f7018562a159c4a8f159d6e1f4548c4d92f348dbe59febbbc78faf2fa",
-       "enlaceTxOrigen": "https://etherscan.io/tx/0xce0f894f7018562a159c4a8f159d6e1f4548c4d92f348dbe59febbbc78faf2fa"
-      },
       {
        "guid": "0x0b16a1d28ffba923ad4301580cd5afbfd3d1dcf9ce585db3bde247287b043b3a",
        "estado": "DELIVERED",
@@ -1076,33 +1076,6 @@
        "enlace": "https://layerzeroscan.com/tx/0x0b16a1d28ffba923ad4301580cd5afbfd3d1dcf9ce585db3bde247287b043b3a",
        "txOrigen": "0xe03326d4550b37f1dfcf906a1b5807f9d65323481f5d1b66a9df7f711b652050",
        "enlaceTxOrigen": "https://etherscan.io/tx/0xe03326d4550b37f1dfcf906a1b5807f9d65323481f5d1b66a9df7f711b652050"
-      },
-      {
-       "guid": "0x02bb194a45e7b449a1ee750259ad56dd0900186c36531ed5010db372180d6493",
-       "estado": "DELIVERED",
-       "usd": 839243,
-       "cuando": "2026-11-25T10:41:23.000Z",
-       "enlace": "https://layerzeroscan.com/tx/0x02bb194a45e7b449a1ee750259ad56dd0900186c36531ed5010db372180d6493",
-       "txOrigen": "0x7ca1549cbc45ce75106b8885d582bf1f1167462f01cce1b6783b3444388b20de",
-       "enlaceTxOrigen": "https://etherscan.io/tx/0x7ca1549cbc45ce75106b8885d582bf1f1167462f01cce1b6783b3444388b20de"
-      },
-      {
-       "guid": "0xe6ae0b0d442c6a5c06375aea26b355f970583ec3b6aec74e255a701fe3d011e8",
-       "estado": "DELIVERED",
-       "usd": 659497,
-       "cuando": "2026-11-25T08:42:35.000Z",
-       "enlace": "https://layerzeroscan.com/tx/0xe6ae0b0d442c6a5c06375aea26b355f970583ec3b6aec74e255a701fe3d011e8",
-       "txOrigen": "0x3fe209c9ee0861dd9bd553265206419dad395442d9c3f86c6015e1e80aac6332",
-       "enlaceTxOrigen": "https://etherscan.io/tx/0x3fe209c9ee0861dd9bd553265206419dad395442d9c3f86c6015e1e80aac6332"
-      },
-      {
-       "guid": "0xe392f1224bfffe7a03a00e0d9bd645b0d6b4f7d989a4ade61efa8ebc81592234",
-       "estado": "DELIVERED",
-       "usd": 588597,
-       "cuando": "2026-11-25T08:17:47.000Z",
-       "enlace": "https://layerzeroscan.com/tx/0xe392f1224bfffe7a03a00e0d9bd645b0d6b4f7d989a4ade61efa8ebc81592234",
-       "txOrigen": "0x5b108a82a1b6af618f373496fc590e16df466d672e0f4e74072abc86346028f7",
-       "enlaceTxOrigen": "https://etherscan.io/tx/0x5b108a82a1b6af618f373496fc590e16df466d672e0f4e74072abc86346028f7"
       },
       {
        "guid": "0x23f21fdd3896b332fbaacc5adecbe336a952078214f06e329ddc8ea18855835e",
@@ -1123,20 +1096,56 @@
        "enlaceTxOrigen": "https://etherscan.io/tx/0x3116a49193c0c9e4c2d5cb5be1f3085fc3fcae161a1c3f0ca5fb7f7afb57e6ec"
       },
       {
-       "guid": "0xaf02328880a485b786ae042a354f847070d89c17512bf548b193d80588bcc315",
+       "guid": "0x13197b0482676e84ad591ae86fea1897a05e51386519dda4c14a48deee9a3373",
+       "estado": "DELIVERED",
+       "usd": 499644,
+       "cuando": "2026-11-26T09:23:47.000Z",
+       "enlace": "https://layerzeroscan.com/tx/0x13197b0482676e84ad591ae86fea1897a05e51386519dda4c14a48deee9a3373",
+       "txOrigen": "0x3bf47ed51d89bb69c61383f4bdc773c692640d6aa77ecaf8e3fbc81f861527fa",
+       "enlaceTxOrigen": "https://etherscan.io/tx/0x3bf47ed51d89bb69c61383f4bdc773c692640d6aa77ecaf8e3fbc81f861527fa"
+      },
+      {
+       "guid": "0x0405fad197d8fef737173841fd75753b4765f235b86e7d7bec6cb4399fd8f538",
        "estado": "DELIVERED",
        "usd": 499638,
-       "cuando": "2026-11-25T07:15:23.000Z",
-       "enlace": "https://layerzeroscan.com/tx/0xaf02328880a485b786ae042a354f847070d89c17512bf548b193d80588bcc315",
-       "txOrigen": "0x3733ba77856ff17134a86abbe12abf98482cd11c56949883db45d59c3defd0ab",
-       "enlaceTxOrigen": "https://etherscan.io/tx/0x3733ba77856ff17134a86abbe12abf98482cd11c56949883db45d59c3defd0ab"
+       "cuando": "2026-11-26T09:00:23.000Z",
+       "enlace": "https://layerzeroscan.com/tx/0x0405fad197d8fef737173841fd75753b4765f235b86e7d7bec6cb4399fd8f538",
+       "txOrigen": "0x6f578d423064c88aadf3e62ab60cde9edbef4024ef5d078daeb6a86157a9f637",
+       "enlaceTxOrigen": "https://etherscan.io/tx/0x6f578d423064c88aadf3e62ab60cde9edbef4024ef5d078daeb6a86157a9f637"
+      },
+      {
+       "guid": "0x3c52181de805343b100bf27340d6a0a717f54a68eaa51ee58a2046ef99054678",
+       "estado": "DELIVERED",
+       "usd": 499637,
+       "cuando": "2026-11-26T08:03:11.000Z",
+       "enlace": "https://layerzeroscan.com/tx/0x3c52181de805343b100bf27340d6a0a717f54a68eaa51ee58a2046ef99054678",
+       "txOrigen": "0x95b6d9501a8a4b862183e0b3b43b01a226ead3e2e4ad505706c3db820fa483a5",
+       "enlaceTxOrigen": "https://etherscan.io/tx/0x95b6d9501a8a4b862183e0b3b43b01a226ead3e2e4ad505706c3db820fa483a5"
+      },
+      {
+       "guid": "0x151d9ca08a36a5594783c5b5618f876a2de25ed09a0d231309f2d6625b1c7b90",
+       "estado": "DELIVERED",
+       "usd": 499636,
+       "cuando": "2026-11-26T08:31:11.000Z",
+       "enlace": "https://layerzeroscan.com/tx/0x151d9ca08a36a5594783c5b5618f876a2de25ed09a0d231309f2d6625b1c7b90",
+       "txOrigen": "0x660ff7e30d5efdf1ea195fa4289f5704f82642be74c35a9695e3a5fe9b8b3df8",
+       "enlaceTxOrigen": "https://etherscan.io/tx/0x660ff7e30d5efdf1ea195fa4289f5704f82642be74c35a9695e3a5fe9b8b3df8"
+      },
+      {
+       "guid": "0x5b44807aad73cdcda0b7a1e9a4ef3bd6c870a03e4044a9808ae5d49f7ecd4656",
+       "estado": "DELIVERED",
+       "usd": 488997,
+       "cuando": "2026-11-26T09:51:59.000Z",
+       "enlace": "https://layerzeroscan.com/tx/0x5b44807aad73cdcda0b7a1e9a4ef3bd6c870a03e4044a9808ae5d49f7ecd4656",
+       "txOrigen": "0x2dda71070001c6a45d9818a4d3ad745fee317d14c1057d5bb8141f5c247b4720",
+       "enlaceTxOrigen": "https://etherscan.io/tx/0x2dda71070001c6a45d9818a4d3ad745fee317d14c1057d5bb8141f5c247b4720"
       }
      ]
     },
     {
      "ruta": "plasma→ethereum",
-     "mensajes": 16,
-     "usd": 14535473,
+     "mensajes": 15,
+     "usd": 11015985,
      "ejemplos": [
       {
        "guid": "0x6ad6e6909832ebbee97f0aa55d6172217ee49b36e807b20a548c221d3b4b7bd9",
@@ -1157,24 +1166,6 @@
        "enlaceTxOrigen": "https://plasmascan.to/tx/0x540e5581b31b7ffd323b6fcf6d038e0985b54b022c9865fbc4e894e2d0f96fb5"
       },
       {
-       "guid": "0x2b7277ca81a7fc4c89cebd8a3d5be21cec93ab2f00d235d149d3a10ce19dfaca",
-       "estado": "DELIVERED",
-       "usd": 2000000,
-       "cuando": "2026-11-25T07:06:41.000Z",
-       "enlace": "https://layerzeroscan.com/tx/0x2b7277ca81a7fc4c89cebd8a3d5be21cec93ab2f00d235d149d3a10ce19dfaca",
-       "txOrigen": "0x10796e7ce3f82ea3b00afee951379348c878b958f97b114c46eba897c60755b0",
-       "enlaceTxOrigen": "https://plasmascan.to/tx/0x10796e7ce3f82ea3b00afee951379348c878b958f97b114c46eba897c60755b0"
-      },
-      {
-       "guid": "0xe78f70facd60b9db058a7605654578d4fcab2484b21dc36ff39393640cd94ce0",
-       "estado": "DELIVERED",
-       "usd": 2000000,
-       "cuando": "2026-11-25T07:07:11.000Z",
-       "enlace": "https://layerzeroscan.com/tx/0xe78f70facd60b9db058a7605654578d4fcab2484b21dc36ff39393640cd94ce0",
-       "txOrigen": "0x7cb4735485a57c7baa53c9a4f4901322b071b5c8600bb2006c37f5af359feb5a",
-       "enlaceTxOrigen": "https://plasmascan.to/tx/0x7cb4735485a57c7baa53c9a4f4901322b071b5c8600bb2006c37f5af359feb5a"
-      },
-      {
        "guid": "0xbe26b02e58df2d19964d0d74085494150f026743f1bbaffd0b5ac6398a7fde42",
        "estado": "DELIVERED",
        "usd": 1501338,
@@ -1193,6 +1184,15 @@
        "enlaceTxOrigen": "https://plasmascan.to/tx/0xac730d2694c40b189e36a7cbc74bc4196f9b80d82f8c6f9d8d8c7a7e6818947d"
       },
       {
+       "guid": "0xa67a9320009d6c5f6d186454f35d2ab7c1ef672cd94fc8c64e9e8ef97044bd62",
+       "estado": "DELIVERED",
+       "usd": 1128237,
+       "cuando": "2026-11-26T10:06:41.000Z",
+       "enlace": "https://layerzeroscan.com/tx/0xa67a9320009d6c5f6d186454f35d2ab7c1ef672cd94fc8c64e9e8ef97044bd62",
+       "txOrigen": "0x41b34d90aa5cdabf8ba16adc155b33bffc144d4202cd8ac039208ca2cdf6e474",
+       "enlaceTxOrigen": "https://plasmascan.to/tx/0x41b34d90aa5cdabf8ba16adc155b33bffc144d4202cd8ac039208ca2cdf6e474"
+      },
+      {
        "guid": "0x4c90040ee802201118bbe7d99f80a5ee857648b2de61d1470b7fab5631bf62f9",
        "estado": "DELIVERED",
        "usd": 1068273,
@@ -1202,92 +1202,101 @@
        "enlaceTxOrigen": "https://plasmascan.to/tx/0xa88758b17221a50d2eb56988ab6f5f8f89c1575d95f1008b8bcbb14f2eb95535"
       },
       {
-       "guid": "0xa712bb2b8ee83de8ebb26e27b1a18391af81c5f3d344e9597319ce5886de4271",
+       "guid": "0x9b7d2bf2d9d4b67b122ac3fa79f464ee65983fd7da8946de8c61b20cb453dd0c",
        "estado": "DELIVERED",
-       "usd": 482195,
-       "cuando": "2026-11-25T07:07:41.000Z",
-       "enlace": "https://layerzeroscan.com/tx/0xa712bb2b8ee83de8ebb26e27b1a18391af81c5f3d344e9597319ce5886de4271",
-       "txOrigen": "0x5d19616fac6561e9cabae9b31ecf0c4d8da90a4a7c2f5a4124d263d82535361e",
-       "enlaceTxOrigen": "https://plasmascan.to/tx/0x5d19616fac6561e9cabae9b31ecf0c4d8da90a4a7c2f5a4124d263d82535361e"
+       "usd": 100009,
+       "cuando": "2026-11-25T13:46:49.000Z",
+       "enlace": "https://layerzeroscan.com/tx/0x9b7d2bf2d9d4b67b122ac3fa79f464ee65983fd7da8946de8c61b20cb453dd0c",
+       "txOrigen": "0xe64409a65ed4ea10c2d13e444114eac00776d21ec72f4841465197340b28b8a3",
+       "enlaceTxOrigen": "https://plasmascan.to/tx/0xe64409a65ed4ea10c2d13e444114eac00776d21ec72f4841465197340b28b8a3"
+      },
+      {
+       "guid": "0x8b6359fa96c0a5c199b881a62b6a63d89abc2258e44524cf1069c18b8d6cf799",
+       "estado": "DELIVERED",
+       "usd": 41130,
+       "cuando": "2026-11-26T01:59:26.000Z",
+       "enlace": "https://layerzeroscan.com/tx/0x8b6359fa96c0a5c199b881a62b6a63d89abc2258e44524cf1069c18b8d6cf799",
+       "txOrigen": "0xf229595f8d5e01775190e4d90f8ceb60c956a083aaa298e968c881154dc39949",
+       "enlaceTxOrigen": "https://plasmascan.to/tx/0xf229595f8d5e01775190e4d90f8ceb60c956a083aaa298e968c881154dc39949"
       }
      ]
     },
     {
-     "ruta": "tron→ethereum",
-     "mensajes": 140,
-     "usd": 11519264,
+     "ruta": "ethereum→arbitrum",
+     "mensajes": 50,
+     "usd": 8862573,
      "ejemplos": [
       {
-       "guid": "0x3f02dabf3dff7487c8ea4cc1c7b51accd04ae8072afa44d4f90254a68fcae521",
+       "guid": "0x2904746cb8012050d8b2089102b5ad5a45ba10cee508d8a88744d15aacb43edc",
        "estado": "DELIVERED",
-       "usd": 999702,
-       "cuando": "2026-11-25T07:48:09.000Z",
-       "enlace": "https://layerzeroscan.com/tx/0x3f02dabf3dff7487c8ea4cc1c7b51accd04ae8072afa44d4f90254a68fcae521",
-       "txOrigen": "0x16899fbd85f2cffa1496e74ed7473620561b6846a883efcf405e19bb07400e8e",
-       "enlaceTxOrigen": "https://tronscan.org/#/transaction/0x16899fbd85f2cffa1496e74ed7473620561b6846a883efcf405e19bb07400e8e"
+       "usd": 2000000,
+       "cuando": "2026-11-26T08:06:35.000Z",
+       "enlace": "https://layerzeroscan.com/tx/0x2904746cb8012050d8b2089102b5ad5a45ba10cee508d8a88744d15aacb43edc",
+       "txOrigen": "0x849ea382c72c1a38aa387a8222e3389c04c9cc14d1d99123f66ad956dee7e83e",
+       "enlaceTxOrigen": "https://etherscan.io/tx/0x849ea382c72c1a38aa387a8222e3389c04c9cc14d1d99123f66ad956dee7e83e"
       },
       {
-       "guid": "0x30d295e1c93e90138ba4f75adc5d1cd2b07cead04866f130b034c0bdad688207",
+       "guid": "0x2d942e9d57eb2ad0d5106bc62f245278c767613402f930e80e260011ab9642b4",
        "estado": "DELIVERED",
-       "usd": 659781,
-       "cuando": "2026-11-25T08:34:45.000Z",
-       "enlace": "https://layerzeroscan.com/tx/0x30d295e1c93e90138ba4f75adc5d1cd2b07cead04866f130b034c0bdad688207",
-       "txOrigen": "0x8cf51c6557e1283d2279e76eb0d568bc4f461da9606d221a9c7ba7272be9b260",
-       "enlaceTxOrigen": "https://tronscan.org/#/transaction/0x8cf51c6557e1283d2279e76eb0d568bc4f461da9606d221a9c7ba7272be9b260"
+       "usd": 1835140,
+       "cuando": "2026-11-25T17:06:35.000Z",
+       "enlace": "https://layerzeroscan.com/tx/0x2d942e9d57eb2ad0d5106bc62f245278c767613402f930e80e260011ab9642b4",
+       "txOrigen": "0x0af9173a5201e048c36fec7722221de34ed6e56f131fbc9d6354584cdae543b1",
+       "enlaceTxOrigen": "https://etherscan.io/tx/0x0af9173a5201e048c36fec7722221de34ed6e56f131fbc9d6354584cdae543b1"
       },
       {
-       "guid": "0x8b708ea9c3a18ffb49e506fe7cad84edec85f61596db0634586b1b188bef438d",
+       "guid": "0xe35040bff3306da16ebcf7b25e5d9b0a306726debd44aeb8e22e755e8b88686d",
        "estado": "DELIVERED",
-       "usd": 599820,
-       "cuando": "2026-11-25T18:49:42.000Z",
-       "enlace": "https://layerzeroscan.com/tx/0x8b708ea9c3a18ffb49e506fe7cad84edec85f61596db0634586b1b188bef438d",
-       "txOrigen": "0x8c7096a8762c2464410007d6b564cb01efb070057af4cac0ae6f2cd005702401",
-       "enlaceTxOrigen": "https://tronscan.org/#/transaction/0x8c7096a8762c2464410007d6b564cb01efb070057af4cac0ae6f2cd005702401"
+       "usd": 1759634,
+       "cuando": "2026-11-26T08:07:11.000Z",
+       "enlace": "https://layerzeroscan.com/tx/0xe35040bff3306da16ebcf7b25e5d9b0a306726debd44aeb8e22e755e8b88686d",
+       "txOrigen": "0x541426a6caa95671b44d5127c68567bfb7d6e9c5ee8c6fed2d2d2e79dc8d635d",
+       "enlaceTxOrigen": "https://etherscan.io/tx/0x541426a6caa95671b44d5127c68567bfb7d6e9c5ee8c6fed2d2d2e79dc8d635d"
       },
       {
-       "guid": "0x7eba8f4741333b961f10a99772df56338ec426eeb6054ab8059f16efab752c13",
+       "guid": "0xe75de1978192c99487504cb26abe679f4e6a001345cfb8d837c65b7b02942ba7",
        "estado": "DELIVERED",
-       "usd": 499850,
-       "cuando": "2026-11-25T07:06:24.000Z",
-       "enlace": "https://layerzeroscan.com/tx/0x7eba8f4741333b961f10a99772df56338ec426eeb6054ab8059f16efab752c13",
-       "txOrigen": "0xa97779e919fd17a63d4ca71f04b64a22f1cff7759f4567dc990948392c921560",
-       "enlaceTxOrigen": "https://tronscan.org/#/transaction/0xa97779e919fd17a63d4ca71f04b64a22f1cff7759f4567dc990948392c921560"
+       "usd": 1000000,
+       "cuando": "2026-11-25T17:34:23.000Z",
+       "enlace": "https://layerzeroscan.com/tx/0xe75de1978192c99487504cb26abe679f4e6a001345cfb8d837c65b7b02942ba7",
+       "txOrigen": "0x0d2c4726c839195e2900a5b6398d1dd600a18a2acee2cf11fc672a99e51deda0",
+       "enlaceTxOrigen": "https://etherscan.io/tx/0x0d2c4726c839195e2900a5b6398d1dd600a18a2acee2cf11fc672a99e51deda0"
       },
       {
-       "guid": "0x625bb9168061f86e761f3362346b42700c9e68ffed44fd0b5602d6d7f734c3b5",
+       "guid": "0xe093ba523e45ed6d04dbeefe07dc2e6eea06ff9d4783106ae9abba4ca661cc14",
        "estado": "DELIVERED",
-       "usd": 499850,
-       "cuando": "2026-11-25T07:20:06.000Z",
-       "enlace": "https://layerzeroscan.com/tx/0x625bb9168061f86e761f3362346b42700c9e68ffed44fd0b5602d6d7f734c3b5",
-       "txOrigen": "0x1b9996f9858d9b04dd736df4d8640b1a79f9a126ae54e6f9980649cf009979ca",
-       "enlaceTxOrigen": "https://tronscan.org/#/transaction/0x1b9996f9858d9b04dd736df4d8640b1a79f9a126ae54e6f9980649cf009979ca"
+       "usd": 871187,
+       "cuando": "2026-11-25T22:37:47.000Z",
+       "enlace": "https://layerzeroscan.com/tx/0xe093ba523e45ed6d04dbeefe07dc2e6eea06ff9d4783106ae9abba4ca661cc14",
+       "txOrigen": "0x908d68d236583c28a8d07bd1751f59bb48bd243a89ddc32b86be2acaf6f6339f",
+       "enlaceTxOrigen": "https://etherscan.io/tx/0x908d68d236583c28a8d07bd1751f59bb48bd243a89ddc32b86be2acaf6f6339f"
       },
       {
-       "guid": "0x0d713fdc3b9356fcb2d48bc8c238b3891c0326e0c787fb407a043657f05edf15",
+       "guid": "0x28723b0e7960e630b18dc6b16d57b77d56063a48fe037440aad172610d4bdadd",
        "estado": "DELIVERED",
-       "usd": 499850,
-       "cuando": "2026-11-25T07:36:09.000Z",
-       "enlace": "https://layerzeroscan.com/tx/0x0d713fdc3b9356fcb2d48bc8c238b3891c0326e0c787fb407a043657f05edf15",
-       "txOrigen": "0xa89a8e7d4d924614278688eb279b692a51f6c84b613ddca95047e9f1b7620252",
-       "enlaceTxOrigen": "https://tronscan.org/#/transaction/0xa89a8e7d4d924614278688eb279b692a51f6c84b613ddca95047e9f1b7620252"
+       "usd": 870167,
+       "cuando": "2026-11-26T09:52:11.000Z",
+       "enlace": "https://layerzeroscan.com/tx/0x28723b0e7960e630b18dc6b16d57b77d56063a48fe037440aad172610d4bdadd",
+       "txOrigen": "0xbc6a7b62d9bcb1b69e76b7378373d0c9b19d9728bebf7e73744fced2f3f8caea",
+       "enlaceTxOrigen": "https://etherscan.io/tx/0xbc6a7b62d9bcb1b69e76b7378373d0c9b19d9728bebf7e73744fced2f3f8caea"
       },
       {
-       "guid": "0x5d9df0efdb06b6ef66183c801628438925788d5a28f586afc45e0d5ef78efd3f",
+       "guid": "0x6c12ba0f17af2cb927bcfbade3a76e20101cf93d9fbd7c34a105ca9dd7a5bf45",
        "estado": "DELIVERED",
-       "usd": 499850,
-       "cuando": "2026-11-25T07:49:48.000Z",
-       "enlace": "https://layerzeroscan.com/tx/0x5d9df0efdb06b6ef66183c801628438925788d5a28f586afc45e0d5ef78efd3f",
-       "txOrigen": "0xb1d1f3cb68402c0310a50d092616a31f3cdc0111ce04fb60c86fca94c997b012",
-       "enlaceTxOrigen": "https://tronscan.org/#/transaction/0xb1d1f3cb68402c0310a50d092616a31f3cdc0111ce04fb60c86fca94c997b012"
+       "usd": 78000,
+       "cuando": "2026-11-25T20:07:47.000Z",
+       "enlace": "https://layerzeroscan.com/tx/0x6c12ba0f17af2cb927bcfbade3a76e20101cf93d9fbd7c34a105ca9dd7a5bf45",
+       "txOrigen": "0xb885e8ea14ab772fdbccc098da079cd4804b6d70c0dab4d9d80e5dad8f9c7654",
+       "enlaceTxOrigen": "https://etherscan.io/tx/0xb885e8ea14ab772fdbccc098da079cd4804b6d70c0dab4d9d80e5dad8f9c7654"
       },
       {
-       "guid": "0x1350eaf4de7fe009c5b68c3fe54a06384cc4d7a001a17faeb86a841d55cfda92",
+       "guid": "0xa33bdb33d20b96f2896bfbba6c372984d14e1a8340c2100c18ca14c1add8809c",
        "estado": "DELIVERED",
-       "usd": 499850,
-       "cuando": "2026-11-25T08:07:21.000Z",
-       "enlace": "https://layerzeroscan.com/tx/0x1350eaf4de7fe009c5b68c3fe54a06384cc4d7a001a17faeb86a841d55cfda92",
-       "txOrigen": "0x59d8ed9b44281e2492f7a97e3ded53786620f1d4a2cef334ef6d3de3b0a7c5a8",
-       "enlaceTxOrigen": "https://tronscan.org/#/transaction/0x59d8ed9b44281e2492f7a97e3ded53786620f1d4a2cef334ef6d3de3b0a7c5a8"
+       "usd": 73000,
+       "cuando": "2026-11-25T23:02:47.000Z",
+       "enlace": "https://layerzeroscan.com/tx/0xa33bdb33d20b96f2896bfbba6c372984d14e1a8340c2100c18ca14c1add8809c",
+       "txOrigen": "0xc52e15ceb854afef3744f5f7a1416a8307e2f387b49f4b60b197e18a3ed81abf",
+       "enlaceTxOrigen": "https://etherscan.io/tx/0xc52e15ceb854afef3744f5f7a1416a8307e2f387b49f4b60b197e18a3ed81abf"
       }
      ]
     }
@@ -1297,7 +1306,7 @@
      "guid": "0x3e67ad4341c8dade5c3fd3dfcbd306f2b8563c197f526445c349480f67bf8277",
      "ruta": "tron→ethereum",
      "estado": "INFLIGHT",
-     "horas": 650.6,
+     "horas": 656.6,
      "usd": 1000,
      "enlace": "https://layerzeroscan.com/tx/0x3e67ad4341c8dade5c3fd3dfcbd306f2b8563c197f526445c349480f67bf8277"
     },
@@ -1305,7 +1314,7 @@
      "guid": "0x595f45b6f66df5ddedaf46799cb14c6c8fd8d7ef810a3c90b1e3cdb5eab0def7",
      "ruta": "tron→ethereum",
      "estado": "INFLIGHT",
-     "horas": 650.6,
+     "horas": 656.6,
      "usd": 999,
      "enlace": "https://layerzeroscan.com/tx/0x595f45b6f66df5ddedaf46799cb14c6c8fd8d7ef810a3c90b1e3cdb5eab0def7"
     },
@@ -1313,7 +1322,7 @@
      "guid": "0xb89e0f0bf5967d11b5b951cf1d46b942692f9a38fc9ac18d181864df023a311a",
      "ruta": "tron→arbitrum",
      "estado": "INFLIGHT",
-     "horas": 631.3,
+     "horas": 637.3,
      "usd": 337,
      "enlace": "https://layerzeroscan.com/tx/0xb89e0f0bf5967d11b5b951cf1d46b942692f9a38fc9ac18d181864df023a311a"
     },
@@ -1321,23 +1330,15 @@
      "guid": "0x42f2bb815884fd7571b5b58a49242bd4da8388e8b937f2d29b6ddade0c7042ae",
      "ruta": "ethereum→tron",
      "estado": "INFLIGHT",
-     "horas": 527.1,
+     "horas": 533.2,
      "usd": 1000,
      "enlace": "https://layerzeroscan.com/tx/0x42f2bb815884fd7571b5b58a49242bd4da8388e8b937f2d29b6ddade0c7042ae"
-    },
-    {
-     "guid": "0x6ed1da65672f666e98c1ee25bfd6342543e865e99bf30043f8a8020c84e676b4",
-     "ruta": "ton→arbitrum",
-     "estado": "INFLIGHT",
-     "horas": 18.8,
-     "usd": 198,
-     "enlace": "https://layerzeroscan.com/tx/0x6ed1da65672f666e98c1ee25bfd6342543e865e99bf30043f8a8020c84e676b4"
     },
     {
      "guid": "0xaebbf69e62d5bedd6aef022c7cb7d2631694fae899af105d5c88214cb0452180",
      "ruta": "ton→ethereum",
      "estado": "INFLIGHT",
-     "horas": 16,
+     "horas": 22,
      "usd": null,
      "enlace": "https://layerzeroscan.com/tx/0xaebbf69e62d5bedd6aef022c7cb7d2631694fae899af105d5c88214cb0452180"
     },
@@ -1345,7 +1346,7 @@
      "guid": "0x44472d3835c12bf0442d7d31a472d815d41e100a6827d2aead997b6adc792a33",
      "ruta": "ton→tron",
      "estado": "INFLIGHT",
-     "horas": 15.9,
+     "horas": 21.9,
      "usd": null,
      "enlace": "https://layerzeroscan.com/tx/0x44472d3835c12bf0442d7d31a472d815d41e100a6827d2aead997b6adc792a33"
     },
@@ -1353,7 +1354,7 @@
      "guid": "0x283ed3477644f9d6ef820ced74319917d4653df1b261a8a96bd865fa1fdde741",
      "ruta": "ton→arbitrum",
      "estado": "INFLIGHT",
-     "horas": 13,
+     "horas": 19,
      "usd": null,
      "enlace": "https://layerzeroscan.com/tx/0x283ed3477644f9d6ef820ced74319917d4653df1b261a8a96bd865fa1fdde741"
     },
@@ -1361,7 +1362,7 @@
      "guid": "0x63ba7070e083f9869602f6a95232b1148560380bb7e3178c11f4fc53276c8a23",
      "ruta": "ton→celo",
      "estado": "INFLIGHT",
-     "horas": 11.8,
+     "horas": 17.8,
      "usd": null,
      "enlace": "https://layerzeroscan.com/tx/0x63ba7070e083f9869602f6a95232b1148560380bb7e3178c11f4fc53276c8a23"
     },
@@ -1369,7 +1370,7 @@
      "guid": "0xd24427880fbcdcdf56c951af02fcc1478f603b5028a8b0810590ec2a67115c78",
      "ruta": "ton→solana",
      "estado": "INFLIGHT",
-     "horas": 11.8,
+     "horas": 17.8,
      "usd": null,
      "enlace": "https://layerzeroscan.com/tx/0xd24427880fbcdcdf56c951af02fcc1478f603b5028a8b0810590ec2a67115c78"
     },
@@ -1377,26 +1378,34 @@
      "guid": "0x2357c08f14a710a77959d1615b6cb5a48742ede799e6a44f87574a92bc32e7c7",
      "ruta": "ton→arbitrum",
      "estado": "INFLIGHT",
-     "horas": 11.8,
+     "horas": 17.8,
      "usd": 1,
      "enlace": "https://layerzeroscan.com/tx/0x2357c08f14a710a77959d1615b6cb5a48742ede799e6a44f87574a92bc32e7c7"
     },
     {
-     "guid": "0xfdaceb56a581fd8eaf63f2768c504e95a60ff1d242c871f2b1f5d0c4c8e260ac",
-     "ruta": "hyperevm→arbitrum",
+     "guid": "0xba89ef79b2c5f53eb70d504d0298fa6a6816513c034a68ce0c7420e57de44e74",
+     "ruta": "ton→ethereum",
      "estado": "INFLIGHT",
-     "horas": 11,
-     "usd": 86086,
-     "enlace": "https://layerzeroscan.com/tx/0xfdaceb56a581fd8eaf63f2768c504e95a60ff1d242c871f2b1f5d0c4c8e260ac"
+     "horas": 12.1,
+     "usd": 1020,
+     "enlace": "https://layerzeroscan.com/tx/0xba89ef79b2c5f53eb70d504d0298fa6a6816513c034a68ce0c7420e57de44e74"
+    },
+    {
+     "guid": "0x638766460cbc11311a40bb54f394794fefc7a4fbad84b58473ee3cbb3fc8ecfb",
+     "ruta": "hyperevm→mantle",
+     "estado": "INFLIGHT",
+     "horas": 8.9,
+     "usd": 0,
+     "enlace": "https://layerzeroscan.com/tx/0x638766460cbc11311a40bb54f394794fefc7a4fbad84b58473ee3cbb3fc8ecfb"
     }
    ],
    "fuente": "https://layerzeroscan.com",
-   "enCursoAhora": 47,
+   "enCursoAhora": 61,
    "masAntiguoEnCurso": {
     "ruta": "tron→ethereum",
-    "horas": 650.6
+    "horas": 656.6
    },
-   "atascadosNuevos24h": 3
+   "atascadosNuevos24h": 6
   },
   "safes": {
    "total": 14,
@@ -1409,10 +1418,10 @@
   "cuadreConVigilante": {
    "circulacionPct": null,
    "vigilanteSinTotalCompleto": true,
-   "adaptadorPct": 0.09
+   "adaptadorPct": 0.34
   },
   "libroDelVigilante": {
-   "lineas": 23478,
+   "lineas": 23526,
    "huellasMalas": 0,
    "ilegibles": 0,
    "numerosQueFaltan": 0,
